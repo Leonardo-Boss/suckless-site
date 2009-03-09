@@ -360,11 +360,11 @@ blockquote {
 
 /* # Page/Handler specific # */
 h1.dir-list-head, ul.dir-list {
-  text-transform: capitalize;
+  text-transform: none;
   font-weight: bold;
 }
 ul.sitemap-list a {
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 /* # Junk: should move elsewhere # */

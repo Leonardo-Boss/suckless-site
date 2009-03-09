@@ -1,4 +1,4 @@
-![wmii](/wmii/wmii.gif)
+![wmii](wmii.gif)
 
 WINDOW MANAGER IMPROVED 2
 =========================
@@ -10,14 +10,14 @@ codebase.
 
 <center>
 [
-![Screenshot](/wmii/screenshots/wmii-20080117-thumb.png)
-](/wmii/screenshots/wmii-20080117.png)
+![Screenshot](screenshots/wmii-20080117-thumb.png)
+](screenshots/wmii-20080117.png)
 </center>
 
 Links
 -----
 
-* Latest release: [wmii-3.6](http://code.suckless.org/dl/wmii/wmii-3.6.tar.gz) (Note that it requires [dmenu](/programs/dmenu.html) and [libixp-0.4](/libs/libixp.html), [p9p](http://plan9.us/) recommended)
+* Latest release: [wmii-3.6](http://code.suckless.org/dl/wmii/wmii-3.6.tar.gz) (Note that it requires [dmenu](http://tools.suckless.org/dmenu) and [libixp-0.4](/libs/libixp.html), [p9p](http://plan9.us/) recommended)
 * Latest snapshot: [wmii+ixp-20080520](http://code.suckless.org/dl/wmii/wmii+ixp-20080520.tgz)
 * Latest devel tip: <code>hg clone [http://code.suckless.org/hg/wmii](http://code.suckless.org/hg/wmii)</code>
 * Bugs: [Google Code issue tracker](http://code.google.com/p/wmii/issues)

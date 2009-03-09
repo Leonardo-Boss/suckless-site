@@ -1,4 +1,4 @@
-![dwm](/dwm/dwm.gif)
+![dwm](dwm.gif)
 
 DYNAMIC WINDOW MANAGER
 ======================
@@ -26,7 +26,7 @@ window are highlighted with a small point.
 
 dwm draws a small border around windows to indicate their focus state.
 
-<center>[![Screenshot](/dwm/screenshots/dwm-20070930s.png)](/dwm/screenshots/dwm-20070930.png)</center>
+<center>[![Screenshot](screenshots/dwm-20070930s.png)](screenshots/dwm-20070930.png)</center>
 
 Differences
 -----------
@@ -49,7 +49,7 @@ Download
 --------
 * [MIT/X Consortium license](http://code.suckless.org/hg/dwm/raw-file/tip/LICENSE)
 * [dwm 5.4.1](http://code.suckless.org/dl/dwm/dwm-5.4.1.tar.gz) (18kb) (20090208)
-* See also [dmenu](/programs/dmenu.html)
+* See also [dmenu](http://tools.suckless.org/dmenu)
 
 Development
 -----------

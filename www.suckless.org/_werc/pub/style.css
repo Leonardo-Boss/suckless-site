@@ -230,6 +230,13 @@ li ul {
   border-bottom: 1px solid #336699;
 }
 
+#main-copy h3 {
+  color: #336699;
+  background-color: transparent;
+  font-size: 105%;
+  margin: 2em 0 0 0;
+}
+
 #main-copy .topOfPage {
   color: #66cccc;
   background-color: transparent;

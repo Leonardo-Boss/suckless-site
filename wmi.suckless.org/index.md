@@ -6,7 +6,7 @@ some occasional users of wmi. If you like to check how the good old days felt,
 check it out, though its code sucks more unfortunately than our more
 recent projects.
 
-<center>[![Screenshot](/wmi/screenshots/wmi-20080718s.png)](/wmi/screenshots/wmi-20080718.png)</center>
+<center>[![Screenshot](screenshots/wmi-20080718s.png)](screenshots/wmi-20080718.png)</center>
 
 Download
 --------
@@ -19,7 +19,7 @@ Build
 -----
 In order to build wmi-10 on more recent systems than they were back 4
 years ago, you will need to apply [this
-patch](/wmi/wmi-10_compile_fixes.diff) by Sergey Dolgov.
+patch](wmi-10_compile_fixes.diff) by Sergey Dolgov.
 
 Issues
 ------

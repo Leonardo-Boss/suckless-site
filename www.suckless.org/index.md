@@ -3,6 +3,10 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
+09/03/2009
+----------
+We are applying as a mentoring organization for [GSoC2009](http://www.suckless.org/GSoC2009).
+
 08/02/2009
 ----------
 New [dwm](http://dwm.suckless.org) release: [dwm-5.4.1](http://code.suckless.org/dl/dwm/dwm-5.4.1.tar.gz)

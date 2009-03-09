@@ -140,7 +140,7 @@ li ul {
   margin: 0;
   padding: 0.35em 1ex 0.35em 2mm;
   display: block;
-  text-transform: capitalize;
+  text-transform: none;
   font-weight: bold!important;
   font-size: 104%;
 }

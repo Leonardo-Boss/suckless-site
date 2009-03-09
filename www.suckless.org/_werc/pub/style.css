@@ -235,6 +235,7 @@ li ul {
   background-color: transparent;
   font-size: 105%;
   margin: 2em 0 0 0;
+  padding: 0.5ex 0 0.5ex 0.6ex;
 }
 
 #main-copy .topOfPage {

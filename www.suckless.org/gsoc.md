@@ -7,27 +7,25 @@ Background
 ----------
 We are home of quality software such as dwm, dmenu, libixp, and wmii, with
 a focus on simplicity, clarity and frugality. Our [philosophy](/common/) is
-about keeping things simple, minimal and elitist. We believe it should become
-the mainstream philosophy in the IT sector. Unfortunately the tendency to
-complex, error-prone and slow software seems to be predominanat in present-day
+about keeping things simple, minimal and elitist. We believe this should become
+the mainstream philosophy in the IT sector. Unfortunately, the tendency for
+complex, error-prone and slow software seems to be prevalent in present-day
 software industry. We intend to prove the opposite with our software projects.
 
 Our project focuses on advanced and experienced computer users. In contrast
 to the usual proprietary software world or many mainstream Free Software
-projects who focus more on average and normal end users, we think that
-experienced users are pretty much ignored by software projects. This is
+projects that focus more on average and normal end users, we think that
+experienced users are mostly ignored by software projects. This is
 particularly true for user interfaces, such as graphical environments on
 desktop computers, on mobile devices, and in so-called Web applications. We
-believe that the market of experienced users is growing continously, because
-every computer user advances during the time and looks for more appropriate
-solutions for his work style from time to time.
+believe that the market of experienced users is growing continously, with each user looking for more appropriate solutions for his/her work style from time to 
+time.
 
-Furthermore, minimalism quickly yields reasonable and attainable results;
-other organizations with a different approach may finish with unreliable
-and uncompleted projects.
+Furthermore, minimalism results in reasonable and attainable goals. While other organizations, without a driving philosophy of minimalism, may furnish unreliable 
+and incomplete projects, we strive to maintain minimalism and clarity to drive development to completion.
 
-Unlike most Free Software projects strong leadership is essential to us.
-Our projects are usually led by a single person, who maintains the mainline
+Unlike most Free Software projects, strong leadership is essential to us.
+Our projects are usually led by a single person who maintains the mainline
 code repository. Users discuss, review and contribute to the project on
 [Dedicated project mailing lists and on IRC](/common/community.html).
 
@@ -36,14 +34,19 @@ Mentors
 We intend that each student will be the project leader of his/her particular
 project and the only individual with commit privilege for the repository.
 
-There will one mentor and one backup mentor per project. In addition, the
-suckless.org community will act as more rigid external reviewers of the
-student's progress, and also of the mentor.
+There will be one mentor and one backup mentor per project. In addition, the
+suckless.org community will act as a rigid external reviewer of the
+student's progress, as well as of the mentor's.
 
 The following persons have volunteered to serve as mentor during Google
 Summer of Code 2009:
 
 * Anselm R. Garbe <<garbeam@gmail.com>>
+* Szabolcs Nagy <<nszabolcs@gmail.com>>
+* Tuncer Ayaz <<tuncer.ayaz@gmail.com>>
+* Uriel <<uriel99@gmail.com>>
+* Kai Hendry <kai.hendry@gmail.com>
+* ...more to be announced...
 
 If you want to act as a mentor as well, please contact Anselm before you
 add yourself to the list.
@@ -55,9 +58,9 @@ to focus on:
 
 * Graphical user interfaces for expert users (such as more advanced
   concepts for mail clients, messaging clients, music players, text editors)
-* Web applications for expert users collaborating the GUI concepts
-* Mobile applications for expert user collaborating the GUI concepts
-* General userland enhancements Unix-like operating systems, in particular
+* Web applications for expert users collaborating on the GUI concepts
+* Mobile applications for expert user collaborating on the GUI concepts
+* General userland enhancements to Unix-like operating systems, in particular
   GNU/Linux
 * Audio applications
 * Image/Streaming/Gallery desktop and web applications
@@ -70,8 +73,8 @@ Conrete ideas
 Post your project ideas for students projects during Google Summer of Code
 2009 here. See the [FAQ entry][FAQ] on the ideas list for further details.
 
-The listed ideas generally require good knowledge in C and experience with
-Unix-like operating systems. Their severity ranges from low to medium.
+The listed ideas generally require good knowledge of C and experience with
+Unix-like operating systems. The difficulty ranges from low to medium.
 An academical background in computer science is usually not required.
 
 Please consider to contact us first if you want to apply for a project, so we
@@ -81,7 +84,7 @@ can discuss the ideas at first and avoid misunderstandings in the first place.
 
 Although there have been several attempts to replace GNU coretutils
 on GNU/Linux by smaller counterparts, no suckless collection of fully
-POSIX-compliant utilities exits. Existing programmes should be evaluated
+POSIX-compliant utilities exits. Existing programs should be evaluated
 and reused if possible.
 
 ### Port dwm to Microsoft Windows

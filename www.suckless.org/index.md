@@ -1,11 +1,7 @@
-suckless.org
-============
-Dedicated to software which sucks less.
-
 Home of [wmii](http://wmii.suckless.org), [dwm](/http://dwm.suckless.org), [libixp](http://libs.suckless.org/libixp), and other quality
 software with a focus on simplicity, clarity, and frugality.
 
-Read more about our [philosophy](/common/index.html) and join us on the [mailing list](common/community.html).
+Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
 08/02/2009
 ----------

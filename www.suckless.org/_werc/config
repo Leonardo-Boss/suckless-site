@@ -1,3 +1,9 @@
 masterSite=www.suckless.org
 siteTitle='SCKLSS'
 siteSubTitle='Dedicated to software which sucks less'
+
+conf_perm_redirect '^/dwm/(.*)\.html' 'http://dwm.suckless.org\1'
+conf_perm_redirect '^/wmii/(.*)\.html' 'http://wmii.suckless.org\1'
+conf_perm_redirect '^/libs/(.*)\.html' 'http://libs.suckless.org\1'
+conf_perm_redirect '^/programs/(.*)\.html' 'http://tools.suckless.org\1'
+conf_perm_redirect '^/wmi/(.*)\.html' 'http://wmi.suckless.org\1'

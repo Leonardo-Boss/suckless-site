@@ -1,4 +1,4 @@
-Home of [wmii](http://wmii.suckless.org), [dwm](/http://dwm.suckless.org), [libixp](http://libs.suckless.org/libixp), and other quality
+Home of [wmii](http://wmii.suckless.org), [dwm](http://dwm.suckless.org), [libixp](http://libs.suckless.org/libixp), and other quality
 software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).

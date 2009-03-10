@@ -1,6 +1,6 @@
 masterSite=www.suckless.org
 siteTitle='SCKLSS'
-siteSubTitle='Dedicated to software which sucks less'
+siteSubTitle='Dedicated to software that sucks less'
 
 conf_perm_redirect '^/gsoc\.html' 'http://www.suckless.org/GSoC2009'
 conf_perm_redirect '^/gsoc' 'http://www.suckless.org/GSoC2009'

@@ -31,13 +31,13 @@ tags. Selecting certain tags displays all windows with these tags.
 <P>
 
 dwm contains a small status bar which displays all available tags, the layout,
-the title of the focused window, and the text read from standard input. A
-floating window is indicated with an empty square and a maximised
-floating window is indicated with a filled square before the windows
-title.  The selected tags are indicated with a different color. The tags of
-the focused window are indicated with a filled square in the top left
-corner.  The tags which are applied to one or more windows are indicated
-with an empty square in the top left corner.
+the title of the focused window, and the text read from the name of the
+root window (xsetroot -name "string" to set the name). A floating window
+is indicated with an empty square and a maximised floating window is
+indicated with a filled square before the windows title.  The selected tags are
+indicated with a different color. The tags of the focused window are indicated
+with a filled square in the top left corner.  The tags which are applied to one
+or more windows are indicated with an empty square in the top left corner.
 <P>
 
 dwm draws a small border around windows to indicate the focus state.
@@ -207,13 +207,6 @@ code. This keeps it fast, secure and simple.
 
 <A NAME="lbAL">&nbsp;</A>
 <H2>BUGS</H2>
-
-The status bar may display
-<B>EOF</B>
-when dwm has been started by an X session manager like
-<B>xdm</B>(1),
-because those close standard output before executing dwm.
-<P>
 
 Java applications which use the XToolkit/XAWT backend may draw grey windows
 only. The XToolkit/XAWT backend breaks ICCCM-compliance in recent JDK 1.5 and early

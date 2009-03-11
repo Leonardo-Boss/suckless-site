@@ -20,9 +20,9 @@ Windows are grouped by tags. Each window can be tagged with one or multiple
 tags. Selecting certain tags displays all windows with those tags.
 
 dwm contains a small status bar which displays all available tags, the layout,
-the title of the focused window, and text read from standard input. The
-selected tags are highlighted with a different color, while the tags of the focused
-window are highlighted with a small point.
+the title of the focused window, and the text read from the name of the
+root window. The selected tags are highlighted with a different color, while the
+tags of the focused window are highlighted with a small point.
 
 dwm draws a small border around windows to indicate their focus state.
 
@@ -35,9 +35,9 @@ In contrast to ion, larswm, and wmii, dwm is much smaller, faster and simpler.
 * dwm has no Lua integration, no 9P support, no shell-based configuration, no remote control, and comes without any additional tools, such as for printing the selection or warping the mouse.
 * dwm is only a single binary, and its source code is intended to never exceed 2000 SLOC.
 * dwm doesn't distinguish between layers: there is no floating or tiled layer. Whether or not the clients of currently selected tag(s) are in tiled layout, you can rearrange them on the fly. Popup and fixed-size windows are always floating, however.
-* dwm is customized through editing its source code, which makes it extremely fast and secure - it does not process any input data which isn't been known at compile time, except window titles and status text read from the standard input. You don't have to learn Lua/sh/ruby or some weird configuration file format (like X resource files), beside C, to customize it for your needs: you only have to learn C (at least editing header files).
+* dwm is customized through editing its source code, which makes it extremely fast and secure - it does not process any input data which isn't known at compile time, except window titles and status text read from the root window's name. You don't have to learn Lua/sh/ruby or some weird configuration file format (like X resource files), beside C, to customize it for your needs: you only have to learn C (at least editing header files).
 * Because dwm is customized through editing its source code, it's pointless to make binary packages of it. This keeps its userbase small and elitist. No novices asking stupid questions.
-* dwm reads from the standard input to print arbitrary status text (like the date, load, battery charge). That's much simpler than larsremote, wmiir and what not...
+* dwm reads from the root window's name to print arbitrary status text (like the date, load, battery charge). That's much simpler than larsremote, wmiir and what not...
 
 Links
 -----

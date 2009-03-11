@@ -3,27 +3,27 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
-09/03/2009
+2009/03/09
 ----------
 We are applying as a mentoring organization for [GSoC2009](http://www.suckless.org/GSoC2009).
 
-08/02/2009
+2009/02/09
 ----------
 New [dwm](http://dwm.suckless.org) release: [dwm-5.4.1](http://code.suckless.org/dl/dwm/dwm-5.4.1.tar.gz)
 
-09/09/2008
+2008/09/09
 ----------
 New [dmenu](http://tools.suckless.org/dmenu) release: [dmenu-3.9](http://code.suckless.org/dl/tools/dmenu-3.9.tar.gz)
 
-09/08/2008
+2008/08/09
 ----------
 New [ii](http://tools.suckless.org/ii) release: [ii-1.4](http://code.suckless.org/dl/tools/ii-1.4.tar.gz)
 
-02/08/2008
+2008/08/02
 ----------
 New [wmname](http://tools.suckless.org/wmname) release: [wmname-0.1](http://code.suckless.org/dl/tools/wmname-0.1.tar.gz)
 
-29/07/2008
+2008/07/29
 ----------
 New [sic](http://tools.suckless.org/sic) release: [sic-1.0](http://code.suckless.org/dl/tools/sic-1.0.tar.gz)
 
@@ -31,7 +31,7 @@ New [slock](http://tools.suckless.org/slock) release: [slock-0.9](http://code.su
 
 New [sselp](http://tools.suckless.org/sselp) release: [sselp-0.2](http://code.suckless.org/dl/tools/sselp-0.2.tar.gz)
 
-16/11/2007
+2007/11/16
 ----------
 New [wmii](http://wmii.suckless.org) release: [wmii-3.6](http://code.suckless.org/dl/wmii/wmii-3.6.tar.gz).
 

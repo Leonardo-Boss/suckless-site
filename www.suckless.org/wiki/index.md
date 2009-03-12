@@ -13,11 +13,9 @@ minimize any problems.
 	hg push
 
 The wiki repository above is world-writable. Your changes will be visible
-at the PREVIEW upstream wiki web site for upcoming changes at
-<http://sandbox.suckless.org/> shortly (*within 5 minutes*). This web site
-contains an additional disclaimer at the bottom that any content is not our
-responsibility, and is only intended to give you an idea how your changes will
-look like once they are accepted. 
+immediatly after the push.  This web site contains an additional disclaimer at
+the bottom that any content is not our responsibility, and is only intended to
+give you an idea how your changes will look like once they are accepted. 
 
 Rules
 -----
@@ -31,13 +29,6 @@ Rules
   should be `.diff`.
 * The extension of newly created Markdown files has to be `.md`.
 * Please do not add HTML files or inline JavaScript.
-
-*Note:* We perform automatic pre-checks before the PREVIEW upstream wiki is
-updated, e.g. following things will be denied:
-
-* Files with extensions we don't accept.
-* Files bigger than 100kb
-* Any symbolic links, regardless where they link to
 
 Bugs
 ----

@@ -41,7 +41,7 @@ In contrast to ion, larswm, and wmii, dwm is much smaller, faster and simpler.
 
 Links
 -----
-* [Man page](/dwm/manpage.html)
+* [Man page](/dwm/manpage)
 * Mailing List: `dwm+subscribe@suckless.org` [(Archives)](http://lists.suckless.org/dwm) [(GMANE Archive)](http://dir.gmane.org/gmane.comp.window-managers.dwm)
 * IRC channel: #dwm at irc.oftc.net [(irc log)](TODO)
 

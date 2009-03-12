@@ -12,5 +12,4 @@ This patch provides a way to move clients position inside the clients list.
 ## Download
 
   * [push-5.3.c] (2K) (20090124)
-  * [push-4.7.c](http://news.nopcode.org/push-4.7.c) (2K) (20071202)
 

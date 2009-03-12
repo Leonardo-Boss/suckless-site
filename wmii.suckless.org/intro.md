@@ -99,4 +99,3 @@ Event-based scripting is a very powerful and useful part of wmii. It allows scri
 
 in a terminal and generating some events, by changing focus, clicking on titlebars, etc. Once you understand how it works, you can use it in your scripts. Note: for key events, due to the nature of X11, only those keys grabbed by wmii (wmiir read /keys) will generate events. So, when creating a new keybinding in wmiirc, make sure to list it in the write to /keys and the event loop.
 
-

@@ -8,5 +8,5 @@ This count is displayed in the statusbar as [CURRENT/TOTAL], e.g. [1/5], only wh
 
 Download
 --------
-* [dwm-5.2-monocle_count.diff](http://suckless.org/dwm/patches/dwm-5.2-monocle_count.diff)
+* [dwm-5.2-monocle_count.diff](http://dwm.suckless.org/patches/dwm-5.2-monocle_count.diff)
 * [dwm-5.1-monocle_count.diff](http://v4hn.de/patches/dwm-5.1-monocle_count.diff)

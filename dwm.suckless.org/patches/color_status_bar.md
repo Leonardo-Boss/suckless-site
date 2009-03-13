@@ -38,6 +38,6 @@ echo -e NEW mail: $mailnew \| VOL front: $audiofront \| BAT:[i]$batpercent[i]\| 
 If you find any bugs or may improve the code, feel free to do so and push the changes to the wiki.
 
 
-[1]: http://suckless.org/dwm/patches/dwm-5.2-colorstatus.diff
-[2]: http://suckless.org/dwm/patches/dwm-5.2-colorstatus.xinitrc.txt
+[1]: http://dwm.suckless.org/patches/dwm-5.2-colorstatus.diff
+[2]: http://dwm.suckless.org/patches/dwm-5.2-colorstatus.xinitrc.txt
 

@@ -103,7 +103,7 @@ IPv6
 ----
 
 There is no official IPv6 support included but there is a patch by Alexander Clouter to enable IPv6:  
-[IPv6 patch by Alexander Clouter](http://www.suckless.org/~nion/ii-ipv6.patch)
+[IPv6 patch by Alexander Clouter](http://suckless.org/~nion/ii-ipv6.patch)
 
 
 bots for irc it (ii)

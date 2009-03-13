@@ -28,5 +28,5 @@ Comment: There may be problems applying the patch, if another layout has been ad
 
 
 [1]: /dwm/patches/gridmode.html
-[2]: http://www.suckless.org/dwm/patches/dwm-5.2-gaplessgrid.diff
+[2]: http://suckless.org/dwm/patches/dwm-5.2-gaplessgrid.diff
 

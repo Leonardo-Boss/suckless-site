@@ -1,5 +1,5 @@
     <div class="left">
-      <a href="http://www.suckless.org">home</a> |
+      <a href="http://suckless.org">home</a> |
       <a href="http://code.suckless.org/hg">code</a> |
       <a href="http://code.suckless.org/dl">download</a> |
       <a href="http://dwm.suckless.org">dwm</a> |

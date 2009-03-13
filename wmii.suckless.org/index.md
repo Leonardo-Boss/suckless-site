@@ -22,7 +22,7 @@ Links
 * Latest devel tip: <code>hg clone [http://code.suckless.org/hg/wmii](http://code.suckless.org/hg/wmii)</code>
 * Bugs: [Google Code issue tracker](http://code.google.com/p/wmii/issues)
 * Mailing List: `wmii+subscribe@suckless.org` [(Archives)](http://lists.suckless.org/wmii) [(GMANE Archive)](http://dir.gmane.org/gmane.comp.window-managers.wmii)
-* IRC channel: `#wmii at irc.oftc.net` [(irc log)](http://www.suckless.org/irc/)
+* IRC channel: `#wmii at irc.oftc.net` [(irc log)](http://suckless.org/irc/)
 
 Notes
 -----

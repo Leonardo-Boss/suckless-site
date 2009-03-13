@@ -88,7 +88,7 @@ To change the view, the *view <tag>* command is written to the */ctl* file:
 (WMII uses the name from the window props ( wmiir read /client/sel/props and wmiir read /tag/sel/index ) )
 
 (This is an excerpt of [wmiirc](http://suckless.org/repos/wmii/rc/wmiirc), where
-the [broken](http://www.suckless.org/common/broken_programs.html) clients XMMS and Gimp are moved to the
+the [broken](http://suckless.org/common/broken_programs.html) clients XMMS and Gimp are moved to the
 float layer, so they're not managed by wmii.)
 
 Events

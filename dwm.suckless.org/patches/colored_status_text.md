@@ -61,6 +61,6 @@ An example status script snippet to take advantage of the colors:
 ## Comment ##
 If you find any bugs or may improve the code, feel free to do so and push the changes to the wiki.
 
-[1]: http://www.suckless.org/dwm/patches/dwm-5.3.1-statuscolors.png
-[2]: http://www.suckless.org/dwm/patches/dwm-5.3.1-statuscolors.diff
+[1]: http://suckless.org/dwm/patches/dwm-5.3.1-statuscolors.png
+[2]: http://suckless.org/dwm/patches/dwm-5.3.1-statuscolors.diff
 

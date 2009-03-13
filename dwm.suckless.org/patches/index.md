@@ -41,7 +41,7 @@ external repositories / related projects
 ----------------------------------------
 * [awesome](http://awesome.naquadah.org/)
 * [awm](http://www.freaknet.org/alpt/src/alpt-wm/readme)
-* [bwm](http://www.suckless.org/pipermail/dwm/2007-August/003088.html)
+* [bwm](http://suckless.org/pipermail/dwm/2007-August/003088.html)
 * [bug.n](http://freenet-homepage.de/bug.n/)
 * [DWM-Hacked](http://sourceforge.net/projects/dwm-hacked/) -- A compilation of all the DWM hacks that I could find
 * [dwm-gtx](http://s01.de/~gottox/index.cgi/proj_dwm)

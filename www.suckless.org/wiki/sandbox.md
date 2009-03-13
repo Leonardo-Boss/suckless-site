@@ -4,7 +4,7 @@ This is a test sandbox, to show all features of markdown.
 
 Topic
 -----
-[a link](http://www.suckless.org)
+[a link](http://suckless.org)
 
 	a bold text
 

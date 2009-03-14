@@ -50,9 +50,8 @@ Official channels of suckless.org projects:
 
 Other popular channels:
 
-* [#9p](irc://irc.oftc.net/#9p)
 * [#acme](irc://irc.oftc.net/#acme)
-* [#plan9](irc://irc.ofc.net/#plan9) (also [#plan9](irc://irc.freenode.net/#plan9))
+* [#plan9](irc://irc.freenode.net/#plan9)
 * [#inferno](irc://irc.freenode.net/#inferno)
 
 [dwmarchive]: http://lists.suckless.org/dwm/

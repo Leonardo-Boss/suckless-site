@@ -36,19 +36,19 @@ offsite patches
 * [fnegronidwm](http://sharesource.org/project/fnegronidwm/wiki/)
 * [patches written by InfinityX](http://flash.metawaredesign.co.uk/4/)
 * [displaydate](http://henry.precheur.org/2008/8/25/Switching%20to%20dwm.html)
+* [DWM-Hacked](http://sourceforge.net/projects/dwm-hacked/) -- (old)
 
 
-external repositories / related projects
-----------------------------------------
+related projects
+----------------
 * [awesome](http://awesome.naquadah.org/) -- dwm fork with XCB, EWMH, Lua script, Xft, D-Bus, multihead.. support
 * [awm](http://www.freaknet.org/alpt/src/alpt-wm/readme) -- (old) modified dwm with workspaces and /proc like interface
 * [bwm](http://lists.suckless.org/dwm/0708/3085.html) -- (old) modified dwm with extensive mouse support
 * [bug.n](http://freenet-homepage.de/bug.n/) -- dwm for windows written in AutoHotkey
-* [DWM-Hacked](http://sourceforge.net/projects/dwm-hacked/) -- A compilation of all the DWM hacks that I could find
 * [dwm-gtx](http://s01.de/~gottox/index.cgi/proj_dwm) -- dwm branch with Xinerama support, pointer movement, different layout
 * [dwm-pancake](http://news.nopcode.org/miau/pvc.cgi?prj=dwm) -- (old) modified dwm with client per tag, nmaster patch
 * [echinus](http://www.rootshell.be/~polachok/code/) -- dwm fork with EWMH, Xft support
 * [i3](http://i3.zekjur.net/) -- wmii fork with XCB, multihead, vertical column, command mode
 * [scrotwm](http://www.peereboom.us/scrotwm/html/scrotwm.html) -- dwm clone with multihead, config file, restart.. support
-* [teslawm](http://teslawm.org/) -- dwm fork with multihead, mouse and commands via stdin support (was dwm-rfigura)
+* [teslawm](http://teslawm.org/) -- dwm fork with multihead, mouse, stdin commands support (was dwm-rfigura)
 * [xmonad](http://www.xmonad.org/) -- dwm clone in haskell

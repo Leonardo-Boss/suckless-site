@@ -1,6 +1,6 @@
 PROJECT IDEAS FOR FUTURE GSOCs
 ==============================
-We applyed as a mentoring organization for [Google Summer of Code 2009](http://code.google.com/soc/), but were rejected this time. Perhaps we will apply in 2010 again.
+We applied as a mentoring organization for [Google Summer of Code 2009](http://code.google.com/soc/), but were rejected this time. Perhaps we will apply in 2010 again.
 
 Background
 ----------

@@ -32,7 +32,7 @@ You should also notice the `[]=` symbol between the tag numbers and the title ba
 
 dwm has two further layout modes, **floating** `><>` `[Alt]+[f]` and
 **monocle** `[M]` `[Alt]+[m]`. Monocle is good for ensuring a window is kept
-maximised and focused. This is useful in web kiosk environments and watching
+maximized and focused. This is useful in web kiosk environments and watching
 flash videos.
 
 Floating layout will be familiar to Windows users. Use `[Alt]+[mouse button]` to

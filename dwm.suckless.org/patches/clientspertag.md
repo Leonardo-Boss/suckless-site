@@ -40,7 +40,7 @@ TODO
 ----
 
 * Maybe it should be renamed to "tiledlimit" or "clientslimit". 
-* Think about a way to make the focused client always visible (enhaced monocle patch?)
+* Think about a way to make the focused client always visible (enhanced monocle patch?)
 
 Feedback is welcome :)
 

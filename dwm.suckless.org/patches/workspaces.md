@@ -66,7 +66,7 @@ Or mouse buttons:
 Comments
 --------
 
-It is so easy to change the viewed tags, layout and mfact in dwm than having artifacts to remember them are not neccesary, this patch is just an example of how it could be implemented, but it won't be updated for future releases.
+It is so easy to change the viewed tags, layout and mfact in dwm than having artifacts to remember them are not necessary, this patch is just an example of how it could be implemented, but it won't be updated for future releases.
 
 It should be easy to add to the workspaces the possibility to remember bar position too.
 
@@ -82,4 +82,3 @@ or:
 
 	static Workspace workspaces[16];
 
-	

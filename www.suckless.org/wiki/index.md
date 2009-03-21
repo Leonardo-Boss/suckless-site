@@ -13,7 +13,7 @@ minimize any problems.
 	hg push
 
 The wiki repository above is world-writable. Your changes will be visible
-immediatly after the push at <http://sandbox.suckless.org>.  This web site
+immediately after the push at <http://sandbox.suckless.org>.  This web site
 contains an additional disclaimer at the bottom that any content is not our
 responsibility, and is only intended to give you an idea how your changes will
 look like once they are accepted. 

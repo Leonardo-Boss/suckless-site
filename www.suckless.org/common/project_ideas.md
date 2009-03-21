@@ -19,7 +19,7 @@ projects that focus more on average and non-technical end users, we think that
 experienced users are mostly ignored. This is particularly true for user
 interfaces, such as graphical environments on desktop computers, on mobile
 devices, and in so-called Web applications. We believe that the market of
-experienced users is growing continously, with each user looking for more
+experienced users is growing continuously, with each user looking for more
 appropriate solutions for his/her work style.
 
 Designing simple and elegant software is far more difficult than letting ad-hoc
@@ -63,7 +63,7 @@ An academic background in computer science is desirable but not essential.
 
 Projects like [dmenu](http://tools.suckless.org/dmenu) prove that it's possible
 to bring the Unix philosophy onto the desktop and into the land of graphical
-applications. We believe that there is big potential for doing similiar things
+applications. We believe that there is big potential for doing similar things
 for other purposes such as managing contacts, bookmarks, browsing
 files/directories, reading/managing mails, organizing/viewing images/videos and
 listening to music, all in a very elegant and Unix-like way. We believe that such
@@ -111,9 +111,9 @@ Request System) and IRS (Incident Response System) all together.
 ### Lightweight volume manager alternative
 
 We'd like to see a lightweight and simple alternative to gnome-volume-manager
-and similiar programs.
+and similar programs.
 
-***Requirements:*** Good C knowledge and knowledge of DBUS and similiar techniques are essential.
+***Requirements:*** Good C knowledge and knowledge of DBUS and similar techniques are essential.
 
 ### Yet another less sucking editor
 

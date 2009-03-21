@@ -3,8 +3,8 @@ Remove application defaults from config.h
 
 *blame [Filippo Erik Negroni](mailto:f dot e dot negroni at googlemail dot com>) about this document*
 
-The rules array is initialised, by default, to treat windows of class `Gimp` and `Firefox` in a special way.
-If, like me, you don't want any application to be treated in a special way, you must be careful when editing the rules array initialisation code.
+The rules array is initialized, by default, to treat windows of class `Gimp` and `Firefox` in a special way.
+If, like me, you don't want any application to be treated in a special way, you must be careful when editing the rules array initialization code.
 
 The original code describes what each value represents within the Rule structure.
 
@@ -17,7 +17,7 @@ The original code describes what each value represents within the Rule structure
 For instance, Gimp and Firefox will be labeled as floating windows, even if the layout selected is Monocle or Tiled.
 In particular, the tag mask will attach Firefox to tag '9'.
 
-If we don't want any window class to be treated in a special way, we need to initialise rules with at least one element:
+If we don't want any window class to be treated in a special way, we need to initialize rules with at least one element:
 
 	static Rule rules[] = {
 	    /* class      instance    title       tags mask     isfloating */

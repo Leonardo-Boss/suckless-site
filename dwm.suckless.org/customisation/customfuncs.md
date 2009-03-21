@@ -226,7 +226,7 @@ This example is for people who prefer to control dwm with the mouse (for dwm 5.1
 Usage of the above configuration
 --------------------------
 
-In case you want to try this configuration there are some differences with the default dwm config to be taken into account. Mouse actions will be explained later, keys have simlar behaviour. There are other small changes, but the config.h file should be pretty straightforward.
+In case you want to try this configuration there are some differences with the default dwm config to be taken into account. Mouse actions will be explained later, keys have similar behaviour. There are other small changes, but the config.h file should be pretty straightforward.
 
 ###Tagging
 
@@ -234,8 +234,8 @@ In the tag buttons:
 
 - B1: view a tag, trying to view the selected tagset will result in a change to the previous one.
 - B3: toggle a tag, trying to toggle the last selected tag will result in viewing all tags.
-- B2+B1: asign tag to the sel client.
-- B2+B3: toggle tag for the sel client, trying to toggle the last tag will result in asigning all tags.
+- B2+B1: assign tag to the sel client.
+- B2+B3: toggle tag for the sel client, trying to toggle the last tag will result in assigning all tags.
 
 ###Layouts
 
@@ -250,7 +250,7 @@ In the layout symbol:
 in the status bar, the root window, or the selected window (with Mod pressed)
 
 - Wheel to focus prev/next client. Floating clients will just be focused after the tiled ones.
-- B1  to move (the pointer will be wrapped to the upper-left corner if neccesary).
+- B1  to move (the pointer will be wrapped to the upper-left corner if necessary).
 - B3 to resize (the pointer will be wrapped to the bottom-right corner).
 - B2 to zoom or toggle floating status if zooming is not possible.
 

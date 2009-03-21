@@ -21,7 +21,7 @@ environment for the application in use and the task performed.
 In tiled layouts windows are managed in a master and stacking area. The master
 area contains the window which currently needs most attention, whereas the
 stacking area contains all other windows. In monocle layout all windows are
-maximised to the screen size. In floating layout windows can be resized and
+maximized to the screen size. In floating layout windows can be resized and
 moved freely. Dialog windows are always managed floating, regardless of the
 layout applied.
 <P>
@@ -33,7 +33,7 @@ tags. Selecting certain tags displays all windows with these tags.
 dwm contains a small status bar which displays all available tags, the layout,
 the title of the focused window, and the text read from the name of the
 root window (xsetroot -name "string" to set the name). A floating window
-is indicated with an empty square and a maximised floating window is
+is indicated with an empty square and a maximized floating window is
 indicated with a filled square before the windows title.  The selected tags are
 indicated with a different color. The tags of the focused window are indicated
 with a filled square in the top left corner.  The tags which are applied to one
@@ -222,7 +222,7 @@ GTK 2.10.9+ versions contain a broken
 <B>Save-As</B>
 file dialog implementation,
 which requests to reconfigure its window size in an endless loop. However, its
-window is still respondable during this state, so you can simply ignore the flicker
+window is still responsive during this state, so you can simply ignore the flicker
 until a new GTK version appears, which will fix this bug, approximately
 GTK 2.10.12+ versions.
 <P>

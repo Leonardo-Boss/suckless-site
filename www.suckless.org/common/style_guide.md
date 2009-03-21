@@ -40,7 +40,7 @@ in C. However we argue that in general C++ software performs poorer than
 software written in C, because of its tendency to complexity and its hidden
 pitfalls like expensive function calls in loops or too many inlines.
 
-All these problems do not happen with C, because C is to simple for being
+All these problems do not happen with C, because C is too simple for being
 misused in our opinion.
 
 So the second rule of this style guide concludes:

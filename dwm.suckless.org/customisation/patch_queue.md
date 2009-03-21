@@ -46,7 +46,7 @@ Verify your extension is enabled:
 
 ###Prepare a base mercurial repository
 
-If you downloaded the prepackaged source tree, it is now a good time to initialise a mercurial repository:
+If you downloaded the prepackaged source tree, it is now a good time to initialize a mercurial repository:
 
 	$ cd dwm-5.1
 	$ hg init
@@ -57,7 +57,7 @@ If you cloned the official repo, but prefer to work on less frequent updates, yo
 	$ cd dwm
 	$ hg up -r 5.1
 
-###Initialise the MQ repository
+###Initialize the MQ repository
 
 From within your working copy, run the command:
 

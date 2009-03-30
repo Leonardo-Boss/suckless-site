@@ -87,6 +87,7 @@ Web Browsers
 * [links2](http://links.twibright.com/)
 * [Lynx](http://lynx.isc.org/)
 * [w3m](http://w3m.sf.net/)
+* [edbrowse](http://edbrowse.sourceforge.net/)
 
 Web Servers (httpd)
 ------------

@@ -5,7 +5,7 @@ Read more about our [philosophy](/common/) and join us on the [mailing list](com
 
 2009/03/09
 ----------
-We are applying as a mentoring organization for [GSoC2009](http://suckless.org/GSoC2009).
+We applied as a mentoring organization for [GSoC2009](http://suckless.org/common/project_ideas).
 
 2009/02/09
 ----------

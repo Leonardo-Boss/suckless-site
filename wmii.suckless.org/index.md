@@ -99,5 +99,5 @@ Arch Linux
 
 Gentoo
 ------
-Ebuild is available at x11-wm/wmii.
+Ebuild is available at [x11-wm/wmii](http://packages.gentoo.org/package/x11-wm/wmii).
 

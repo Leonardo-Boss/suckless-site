@@ -113,6 +113,8 @@ Request System) and IRS (Incident Response System) all together.
 We'd like to see a lightweight and simple alternative to gnome-volume-manager
 and similar programs.
 
+There's one such project already available at <http://github.com/dimigon/skvm/tree/master>.
+
 ***Requirements:*** Good C knowledge and knowledge of DBUS and similar techniques are essential.
 
 ### Yet another less sucking editor

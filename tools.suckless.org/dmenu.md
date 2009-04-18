@@ -6,7 +6,7 @@ items efficiently.
 
 Download
 --------
-* [dmenu-3.9](http://code.suckless.org/dl/tools/dmenu-3.9.tar.gz) (20080909)
+* [dmenu-4.0](http://code.suckless.org/dl/tools/dmenu-4.0.tar.gz) (20090417)
 
 Mailing list
 ------------

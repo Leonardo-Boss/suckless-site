@@ -48,7 +48,7 @@ Links
 Download
 --------
 * [MIT/X Consortium license](http://code.suckless.org/hg/dwm/raw-file/tip/LICENSE)
-* [dwm 5.4.1](http://code.suckless.org/dl/dwm/dwm-5.4.1.tar.gz) (18kb) (20090208)
+* [dwm 5.5](http://code.suckless.org/dl/dwm/dwm-5.5.tar.gz) (18kb) (20090417)
 * See also [dmenu](http://tools.suckless.org/dmenu)
 
 Development

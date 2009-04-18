@@ -3,17 +3,15 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
+2009/04/17
+----------
+New [dwm](http://dwm.suckless.org) release: [dwm-5.5](http://code.suckless.org/dl/dwm/dwm-5.5.tar.gz)
+
+New [dmenu](http://tools.suckless.org/dmenu) release: [dmenu-4.0](http://code.suckless.org/dl/tools/dmenu-4.0.tar.gz)
+
 2009/03/09
 ----------
 We applied as a mentoring organization for [GSoC2009](http://suckless.org/common/project_ideas).
-
-2009/02/09
-----------
-New [dwm](http://dwm.suckless.org) release: [dwm-5.4.1](http://code.suckless.org/dl/dwm/dwm-5.4.1.tar.gz)
-
-2008/09/09
-----------
-New [dmenu](http://tools.suckless.org/dmenu) release: [dmenu-3.9](http://code.suckless.org/dl/tools/dmenu-3.9.tar.gz)
 
 2008/08/09
 ----------

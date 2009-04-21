@@ -48,6 +48,7 @@ related projects
 * [dvtm](http://www.brain-dump.org/projects/dvtm/) -- virtual terminal manager (dwm on the console)
 * [dwm-gtx](http://s01.de/~gottox/index.cgi/proj_dwm) -- dwm branch with Xinerama support, pointer movement, different layout
 * [dwm-pancake](http://news.nopcode.org/miau/pvc.cgi?prj=dwm) -- (old) modified dwm with client per tag, nmaster patch
+* [dwm-win32](http://lists.suckless.org/dwm/0904/7893.html) -- dwm ported to windows
 * [echinus](http://www.rootshell.be/~polachok/code/) -- dwm fork with EWMH, Xft support
 * [gemini](http://gemini.digitalmediaplanet.net) -- terminal manager
 * [i3](http://i3.zekjur.net/) -- wmii fork with XCB, multihead, vertical column, command mode

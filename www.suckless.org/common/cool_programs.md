@@ -13,7 +13,7 @@ Text Editors
 ------------
 * [acme][acme] - [Rob Pike][rob]'s framing text editor for Plan 9. Included in [plan9port][].
 * [nvi](http://www.bostic.com/vi/) - A small, multiple file vi-alike.
-* [sam](http://swtch.com/plan9port/man/man1/sam.html) - An editor by [Rob Pike][rob] with inspiration from ed.
+* [sam](http://sam.cat-v.org/) - An editor by [Rob Pike][rob] with inspiration from ed.
 * [traditional vi](http://ex-vi.sourceforge.net/) - A fixed version of the original vi.
 * [vim](http://www.vim.org) (With the GUI, use `:set go+=c` to kill popup dialogs)
 * [wily](http://www.cs.yorku.ca/~oz/wily/) - An acme clone for POSIX.
@@ -95,5 +95,5 @@ Web Servers (httpd)
 
 [rob]: http://herpolhode.com/rob/
 [plan9port]: http://swtch.com/plan9port/
-[acme]: http://plan9.bell-labs.com/sys/doc/acme.html
+[acme]: http://acme.cat-v.org
 

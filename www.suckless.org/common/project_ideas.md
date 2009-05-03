@@ -120,7 +120,7 @@ There's one such project already available at <http://github.com/dimigon/skvm/tr
 ### Yet another less sucking editor
 
 Although vi(m) does its job, it has become a monster over the years. We
-believe there is a gap between ed, sam, acme and vim which must be filled with
+believe there is a gap between [ed](http://man.cat-v.org/plan_9/1/ed), [sam](http://sam.cat-v.org), [acme](http://acme.cat-v.org) and vim which must be filled with
 a completely new, less-sucking editor.
 
 ***Requirements:*** Good C knowledge and knowledge of I/O APIs is essential.

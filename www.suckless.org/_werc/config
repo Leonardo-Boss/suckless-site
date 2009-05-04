@@ -1,5 +1,5 @@
 masterSite=suckless.org
-siteTitle='SCKLSS'
+siteTitle='suckless.org'
 siteSubTitle='Dedicated to software that sucks less'
 
 conf_perm_redirect '^/gsoc\.html' 'http://suckless.org/GSoC2009'

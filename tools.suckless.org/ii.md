@@ -117,7 +117,7 @@ Simple Perl script "nagios_post.pl" as interface between [Nagios](http://www.nag
     #!/usr/bin/perl -w
 
     my $users = "your_nickname(s)";
-    my $pipe = "$ENV{HOME}/irc/your_irc_server/#your_channel/in';
+    my $pipe = "$ENV{HOME}/irc/your_irc_server/#your_channel/in";
     my %color = (
        red    => "\0034",
        purple => "\0036",

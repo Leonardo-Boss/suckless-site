@@ -59,6 +59,4 @@ dwm is actively developed in parallel to wmii. You can [browse](http://code.suck
 
 Miscellaneous
 -------------
-* Optionally you can install [dmenu](/programs/dmenu.html) to extend dwm with a wmii-alike menu.
-
-
+* Optionally you can install [dmenu](http://tools.suckless.org/dmenu) to extend dwm with a wmii-alike menu.

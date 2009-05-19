@@ -45,6 +45,7 @@ fn theme {
 		</div>
 		%{
 	}
+	WMII_FONT=()
 }
 
 WMII_FOCUSCOLORS=('#ffffff' '#153F1F' '#2A7F3F')

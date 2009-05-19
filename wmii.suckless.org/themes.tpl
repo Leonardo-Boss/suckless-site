@@ -1,4 +1,3 @@
-% formatter=(perl $home/werc/bin/contrib/markdown.pl)
 % {
 THEMES
 ======

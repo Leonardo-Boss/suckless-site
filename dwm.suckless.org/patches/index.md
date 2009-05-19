@@ -52,6 +52,7 @@ related projects
 * [echinus](http://www.rootshell.be/~polachok/code/) -- dwm fork with EWMH, Xft support
 * [gemini](http://gemini.digitalmediaplanet.net) -- terminal manager
 * [i3](http://i3.zekjur.net/) -- wmii fork with XCB, multihead, vertical column, command mode
+* [musca](http://aerosuidae.net/musca.html) -- inspired by dwm, more complex layout, configurable with commands, EWMH support
 * [scrotwm](http://www.peereboom.us/scrotwm/html/scrotwm.html) -- dwm clone with multihead, config file, restart.. support
 * [teslawm](http://teslawm.org/) -- dwm fork with multihead, mouse, stdin commands support (was dwm-rfigura)
 * [xmonad](http://www.xmonad.org/) -- dwm clone in haskell

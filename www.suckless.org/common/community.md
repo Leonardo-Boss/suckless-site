@@ -45,8 +45,7 @@ The channels are in the [OFTC](http://www.oftc.net) IRC network: [irc.oftc.net](
 
 Official channels of suckless.org projects:
 
-* [#wmii](irc://irc.oftc.net/#wmii)
-* [#dwm](irc://irc.oftc.net/#dwm)
+* [#suckless](irc://irc.oftc.net/#suckless)
 
 Other popular channels:
 

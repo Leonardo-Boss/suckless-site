@@ -12,8 +12,7 @@ Following people are currently donating in one or another way to the suckless.or
 
 * Jason Thigpen donates a slicehost server, which hosts the source code and the tarballs of our projects.
 * Anselm R Garbe donates all other servers currently in use.
-* Filippo Negroni donated <b> 10 GBP </b>
-* Markus Schnalke donated <b> 10 EUR</b>
+* John V. Turek donated <b> 10 EUR</b>
 
 Past
 ----
@@ -21,6 +20,8 @@ Following people have donated to the [wmii](/wmii) resp. [dwm](/dwm) project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
+* Filippo Negroni donated <b> 10 GBP </b>
+* Markus Schnalke donated <b> 10 EUR</b>
 * Sebastian Noack donated <b> 50 EUR </b>
 * Jason Thigpen donated <b> 100 USD </b>
 * Markus Schnalke donated <b> 20 EUR </b>

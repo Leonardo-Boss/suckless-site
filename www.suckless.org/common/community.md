@@ -4,10 +4,9 @@ COMMUNITY
 Mailing lists
 -------------
 
-* `dwm@suckless.org` - for dwm users, development discussion, bug reports, patches, and general discussion
+* `dev@suckless.org` - for dwm users, wmii users, st user, ...,  development discussion, bug reports, patches, and general discussion
 * `hackers@suckless.org` - commit messages and diffs from all suckless projects are posted here, and can be replied to
 * `wiki@suckless.org` - for discussion about wiki, also automatic wiki commit messages are posted here.
-* `wmii@suckless.org`- for wmii users, bug reports, and general discussion
 
 ### Mailing list commands
 
@@ -27,9 +26,13 @@ Mailing lists web archive
 
 Archive of all mails posted to mailing lists is accessible via [http://lists.suckless.org/](http://lists.suckless.org/)
 
-* [dwm mailing list archive][dwmarchive]
+* [dev mailing list archive][devarchive]
 * [hackers mailing list archive][hackersarchive]
 * [wiki mailing list archive][wikiarchive]
+
+Old
+---
+* [dwm mailing list archive][dwmarchive]
 * [wmii mailing list archive][wmiiarchive]
 
 Related lists
@@ -43,7 +46,7 @@ IRC
 
 The channels are in the [OFTC](http://www.oftc.net) IRC network: [irc.oftc.net](irc://irc.oftc.net/)
 
-Official channels of suckless.org projects:
+Official channel of suckless.org projects:
 
 * [#suckless](irc://irc.oftc.net/#suckless)
 
@@ -53,6 +56,7 @@ Other popular channels:
 * [#plan9](irc://irc.freenode.net/#plan9)
 * [#inferno](irc://irc.freenode.net/#inferno)
 
+[devarchive]: http://lists.suckless.org/dev/
 [dwmarchive]: http://lists.suckless.org/dwm/
 [hackersarchive]: http://lists.suckless.org/hackers/
 [wikiarchive]: http://lists.suckless.org/wiki/

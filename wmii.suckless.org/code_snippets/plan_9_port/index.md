@@ -28,6 +28,34 @@ Cycle Views
             wmiir xwrite /ctl view `{ read_tags | tail -r | next_tag}
     }
 
+Resize windows with the keyboard
+--------------------------------
+Adds a resize pseudo-mode to easily move or resize windows. M-C-r
+enters resize mode, Escape exits it.
+
+    # <h/j/k/l>   grows the window in the given direction
+    # C-<h/j/k/l> shrinks the window in the given direction
+    # S-<h/j/k/l> moves the window in the given direction
+    fn Key-$mod-Control-r {
+        @{
+            . wmii.rc $"*
+
+            fn mode {
+                mod=$1; cmd=$2; shift 2
+                eval '
+                    fn Key-$mod^$left  {' wmiir xwrite /tag/sel/ctl $cmd sel sel left  $"* '}
+                    fn Key-$mod^$right {' wmiir xwrite /tag/sel/ctl $cmd sel sel right $"* '}
+                    fn Key-$mod^$up    {' wmiir xwrite /tag/sel/ctl $cmd sel sel up    $"* '}
+                    fn Key-$mod^$down  {' wmiir xwrite /tag/sel/ctl $cmd sel sel down  $"* '}'}
+            mode ''         grow
+            mode Control-   grow -1
+            mode Shift-     nudge
+
+            fn Key-Escape { wi_cleankeys; exit }
+
+            wi_eventloop
+        }&}
+
 Tag selected client and jump to new view
 ----------------------------------------
 If tagged with multiple tags, it will jump to the last view of the set.

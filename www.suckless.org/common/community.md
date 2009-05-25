@@ -4,7 +4,7 @@ COMMUNITY
 Mailing lists
 -------------
 
-* `dev@suckless.org` - for dwm users, wmii users, st user, ...,  development discussion, bug reports, patches, and general discussion
+* `dev@suckless.org` - for dwm/wmii/st/... users, development discussion, bug reports, patches, and general discussion
 * `hackers@suckless.org` - commit messages and diffs from all suckless projects are posted here, and can be replied to
 * `wiki@suckless.org` - for discussion about wiki, also automatic wiki commit messages are posted here.
 

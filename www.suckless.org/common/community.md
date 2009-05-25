@@ -11,7 +11,9 @@ Mailing lists
 ### Mailing list commands
 
 Send a mail from your (not yet) subscribed email address to one of the
-following addresses to perform the described action, replace ***`MAILHOST` with `suckless.org`***:
+following addresses to perform the described action.
+
+**Note, replace `MAILHOST` with `suckless.org`**:
 
 ### `dev@MAILHOST`
 

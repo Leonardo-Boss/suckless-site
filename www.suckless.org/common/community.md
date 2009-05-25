@@ -8,6 +8,12 @@ Mailing lists
 * `hackers@suckless.org` - commit messages and diffs from all suckless projects are posted here, and can be replied to
 * `wiki@suckless.org` - for discussion about wiki, also automatic wiki commit messages are posted here.
 
+Best practice
+-------------
+Please mention `dwm` or `wmii` in the subject when beginning a new discussion
+on the `dev@suckless.org` mailing list, if your email is stricly `dwm` or
+`wmii` related only.
+
 ### Mailing list commands
 
 Send a mail from your (not yet) subscribed email address to one of the

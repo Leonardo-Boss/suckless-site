@@ -15,7 +15,7 @@ following addresses to perform the described action.
 
 **Note, replace `MAILHOST` with `suckless.org`**
 
-### `dev@MAILHOST`
+### `dev@suckless.org`
 
 * `dev+subscribe@MAILHOST` - subscribe to the mailing list
 * `dev+subscribe-digest@MAILHOST` - subscribe to the digest version of the mailing list
@@ -26,7 +26,7 @@ following addresses to perform the described action.
 * `dev+get-N@MAILHOST` - retrieve message number N
 * `dev+help@MAILHOST` - receive detailed description of the mailing list commands
 
-### `hackers@MAILHOST`
+### `hackers@suckless.org`
 
 * `hackers+subscribe@MAILHOST` - subscribe to the mailing list
 * `hackers+subscribe-digest@MAILHOST` - subscribe to the digest version of the mailing list
@@ -37,7 +37,7 @@ following addresses to perform the described action.
 * `hackers+get-N@MAILHOST` - retrieve message number N
 * `hackers+help@MAILHOST` - receive detailed description of the mailing list commands
 
-### `wiki@MAILHOST`
+### `wiki@suckless.org`
 
 * `wiki+subscribe@MAILHOST` - subscribe to the mailing list
 * `wiki+subscribe-digest@MAILHOST` - subscribe to the digest version of the mailing list

@@ -10,16 +10,42 @@ Mailing lists
 
 ### Mailing list commands
 
-Attach one of the following commands to the username part of the mailing list's e-mail address:
+Send a mail from your (not yet) subscribed email address to one of the
+following addresses to perform the described action, replace ***`MAILHOST` with `suckless.org`***:
 
-* `+subscribe` - subscribe to the mailing list
-* `+subscribe-digest` - subscribe to the digest version of the mailing list
-* `+subscribe-nomail` - subscribe without receiving e-mails from the mailing list
-* `+unsubscribe` - unsubscribe from the mailing list
-* `+unsubscribe-digest` - unsubscribe from the digest version
-* `+unsubscribe-nomail` - receive e-mails from the maing list
-* `+get-N` - retrieve message number N
-* `+help` - receive detailed description of the mailing list commands
+### `dev@MAILHOST`
+
+* `dev+subscribe@MAILHOST` - subscribe to the mailing list
+* `dev+subscribe-digest@MAILHOST` - subscribe to the digest version of the mailing list
+* `dev+subscribe-nomail@MAILHOST` - subscribe without receiving e-mails from the mailing list
+* `dev+unsubscribe@MAILHOST` - unsubscribe from the mailing list
+* `dev+unsubscribe-digest@MAILHOST` - unsubscribe from the digest version
+* `dev+unsubscribe-nomail@MAILHOST` - receive e-mails from the maing list
+* `dev+get-N@MAILHOST` - retrieve message number N
+* `dev+help@MAILHOST` - receive detailed description of the mailing list commands
+
+### `hackers@MAILHOST`
+
+* `hackers+subscribe@MAILHOST` - subscribe to the mailing list
+* `hackers+subscribe-digest@MAILHOST` - subscribe to the digest version of the mailing list
+* `hackers+subscribe-nomail@MAILHOST` - subscribe without receiving e-mails from the mailing list
+* `hackers+unsubscribe@MAILHOST` - unsubscribe from the mailing list
+* `hackers+unsubscribe-digest@MAILHOST` - unsubscribe from the digest version
+* `hackers+unsubscribe-nomail@MAILHOST` - receive e-mails from the maing list
+* `hackers+get-N@MAILHOST` - retrieve message number N
+* `hackers+help@MAILHOST` - receive detailed description of the mailing list commands
+
+### `wiki@MAILHOST`
+
+* `wiki+subscribe@MAILHOST` - subscribe to the mailing list
+* `wiki+subscribe-digest@MAILHOST` - subscribe to the digest version of the mailing list
+* `wiki+subscribe-nomail@MAILHOST` - subscribe without receiving e-mails from the mailing list
+* `wiki+unsubscribe@MAILHOST` - unsubscribe from the mailing list
+* `wiki+unsubscribe-digest@MAILHOST` - unsubscribe from the digest version
+* `wiki+unsubscribe-nomail@MAILHOST` - receive e-mails from the maing list
+* `wiki+get-N@MAILHOST` - retrieve message number N
+* `wiki+help@MAILHOST` - receive detailed description of the mailing list commands
+
 
 Mailing lists web archive
 -------------------------

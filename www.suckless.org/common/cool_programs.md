@@ -88,6 +88,7 @@ Web Browsers
 * [Lynx](http://lynx.isc.org/)
 * [w3m](http://w3m.sf.net/)
 * [edbrowse](http://edbrowse.sourceforge.net/)
+* [uzbl](http://uzbl.org/)
 
 Web Servers (httpd)
 ------------

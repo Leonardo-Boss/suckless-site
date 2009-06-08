@@ -1,7 +1,7 @@
 ![surf](surf.gif)
 
-DYNAMIC WINDOW MANAGER
-======================
+SURF
+====
 
 Description
 -----------
@@ -13,7 +13,7 @@ one can point surf to another URI by setting it's XProperties.
 
 Links
 -----
-* [Man page](manpage)
+* [Man page](http://code.suckless.org/hg/surf/raw-file/tip/LICENSE))
 * Mailing List: `dev+subscribe@suckless.org` [(Archives)](http://lists.suckless.org/dev)
 * IRC channel: #suckless at irc.oftc.net
 

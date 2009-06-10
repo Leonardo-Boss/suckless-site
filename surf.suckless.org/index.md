@@ -24,6 +24,6 @@ Download
 
 Development
 -----------
-surf is actively developed. You can [browse](http://code.suckless.org/hg/dwm) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with following command:
+surf is actively developed. You can [browse](http://code.suckless.org/hg/surf) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with following command:
 
 	hg clone http://code.suckless.org/hg/surf

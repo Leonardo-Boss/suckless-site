@@ -6,8 +6,6 @@ This patch saves size and position of every floating window before it is forced
 into tiled mode. If the window is made floating again, the old dimensions will
 be restored.
 
- * Recently it became part of the main distribution of dwm.
-
 ## Download ##
  * [dwm-5.0-save_floats.diff][4]
  * [dwm-4.6-save_floats.diff][3]

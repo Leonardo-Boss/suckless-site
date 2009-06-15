@@ -21,7 +21,7 @@ Links
 * Latest snapshot: [wmii+ixp-20090512](http://code.suckless.org/dl/wmii/wmii+ixp-20090512.tgz)
 * Latest devel tip: <code>hg clone [http://code.suckless.org/hg/wmii](http://code.suckless.org/hg/wmii)</code>
 * Bugs: [Google Code issue tracker](http://code.google.com/p/wmii/issues)
-* Mailing List: `wmii+subscribe@suckless.org` [(Archives)](http://lists.suckless.org/wmii) [(GMANE Archive)](http://dir.gmane.org/gmane.comp.window-managers.wmii)
+* Mailing List: `dev+subscribe@suckless.org` ([Archives](http://lists.suckless.org/dev/)) ([Old Archives](http://lists.suckless.org/wmii/)) (see [community](http://suckless.org/common/community/) for details)
 * IRC channel: `#suckless at irc.oftc.net` [(irc log)](http://suckless.org/irc/)
 
 Notes

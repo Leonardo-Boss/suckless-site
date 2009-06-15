@@ -1,6 +1,6 @@
 DMENU
 =====
-dynamic menu is a generic menu for X, originally designed for [dwm](/dwm/).
+dynamic menu is a generic menu for X, originally designed for [dwm](http://dwm.suckless.org/).
 It  manages  huge  amounts  (up  to  10.000  and more) of user defined menu
 items efficiently.
 
@@ -10,7 +10,7 @@ Download
 
 Mailing list
 ------------
-* `mailto:dwm+subscribe@suckless.org` [(Archives)](http://lists.suckless.org/dwm) [(GMANE Archive)](http://dir.gmane.org/gmane.comp.window-managers.dwm)
+* `dev+subscribe@suckless.org` ([Archives](http://lists.suckless.org/dev/)) ([Old Archives](http://lists.suckless.org/dwm/)) (see [community](http://suckless.org/common/community/) for details)
 
 <H2>SYNOPSIS</H2>
 

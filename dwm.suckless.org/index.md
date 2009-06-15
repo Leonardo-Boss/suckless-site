@@ -8,7 +8,7 @@ Description
 dwm is a dynamic window manager for X. It manages windows in tiled and
 floating layouts. Either layout can be applied dynamically, optimizing the
 environment for the application in use and the task performed. It is 
-the little brother of [wmii](/wmii/).
+the little brother of [wmii](http://wmii.suckless.org/).
 
 In tiled layout, windows are managed in a master and stacking area. The master
 area contains the windows which currently need most attention, whereas the

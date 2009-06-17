@@ -42,3 +42,9 @@ The following programs are broken (see [cool programs](/common/cool_programs.htm
 * Xchat
 * xine (same as xmms)
 * XMMS (assumes fixed size, doesn't set transient_for hint properly)
+
+
+SEE ALSO
+--------
+
+The [list of harmful software](http://harmful.cat-v.org/software/) at [cat-v.org](http://cat-v.org).

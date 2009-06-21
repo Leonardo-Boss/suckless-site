@@ -19,6 +19,8 @@ on the `dev@suckless.org` mailing list, if your email is stricly `dwm` or
 Send a mail from your (not yet) subscribed email address to one of the
 following addresses to perform the described action.
 
+**After both subscribe and unsubscribe command, confirmation email will be send to you (So look into your spam bin)!**
+
 **Note, replace `MAILHOST` with `suckless.org`**
 
 ### `dev@suckless.org`

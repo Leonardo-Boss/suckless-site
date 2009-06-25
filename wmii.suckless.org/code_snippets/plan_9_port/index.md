@@ -145,16 +145,16 @@ Add this to your rc.wmii BEFORE the other keys (you still want your other old ke
       key $MODKEY-A-^(a b c d e f g h i j k l m n o p q r s t u v w x y z) || fn $key  {
           TagCycle $1}
 
-Find and go to clients
-----------------------
+Find and go to client
+---------------------
 
     fn title {
-        echo `{wmiir read /client/$1/label}}
+        echo -n `{wmiir read /client/$1/label}}
 
     fn focusclient {
         tag=`{wmiir read /client/$1/tags | cut -d+ -f1}
-        wmiir xwrite /ctl view $tag
-        wmiir xwrite /tag/$tag/ctl select client $1}
+        wmiir xwrite /tag/$tag/ctl select client $1
+        wmiir xwrite /ctl view $tag}
 
     key $MODKEY-u || fn $key {
         ifs=$wi_nl {

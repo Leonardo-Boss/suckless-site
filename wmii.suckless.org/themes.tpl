@@ -99,6 +99,11 @@ WMII_BACKGROUND='#757575'
 WMII_NORMCOLORS=('#000000' '#ffffea' '#bdb76b')
 WMII_FONT='-artwiz-glispbold-*-*-*-*-*-*-*-*-*-*-*-*'
 theme 'acme style'
+WMII_FOCUSCOLORS=('#000000' '#9eeeee' '#8888cc')
+WMII_BACKGROUND='#757575'
+WMII_NORMCOLORS=('#000000' '#eeee9e' '#99994c')
+WMII_FONT='-artwiz-glispbold-*-*-*-*-*-*-*-*-*-*-*-*'
+theme 'acme darkly style'
 WMII_FOCUSCOLORS=('#000000' '#9191FF' '#444444')
 WMII_BACKGROUND='#333333'
 WMII_NORMCOLORS=('#9191FF' '#000000' '#444444')

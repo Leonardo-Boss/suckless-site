@@ -1,15 +1,15 @@
-Tutorial following the default binds specified in the header file [config.def.h](http://code.suckless.org/hg/dwm/file/tip/config.def.h).
+Following the default binds configured by the header file
+[config.def.h](http://code.suckless.org/hg/dwm/file/tip/config.def.h).
 
 	[Shift]+[Alt]+[Enter] - launch terminal
-	[Alt]+[p] - dmenu for running program like x-www-browser
+	[Alt]+[p] - dmenu for running programs like the x-www-browser
 
-By default there are 9 tags. You can think of them as workspaces, though
-pedantically they are tags.
+By default there are 9 tags (~workspaces).
 
-Launch a few terminals and dwm will tile the windows between the **master** and
-**stack**. A new terminal appears on the **master** window. Existing windows
-are pushed upon a **stack** to the right of the screen. `[Alt]+[Enter]` toggles
-windows between master and stack.
+Launch a few terminals `[Shift]+[Alt]+[Enter]` and dwm will _tile_ the windows
+between the **master** and **stack**. A new terminal appears on the **master**
+window. Existing windows are pushed upon a **stack** to the right of the
+screen. `[Alt]+[Enter]` toggles windows between master and stack.
 
 To move a terminal pane/tile/window to another tag you select the window by
 hovering over the window. Then execute the bind `[Shift]+[Alt]+[2]` to move the
@@ -41,3 +41,5 @@ move or resize a window.
 To quit dwm cleanly:
 
 	[Shift]+[Alt]+[q]
+
+To launch dwm, ideally you should setup an [xinitrc](http://git.webconverger.org/?p=home.git;a=blob_plain;f=.xinitrc).

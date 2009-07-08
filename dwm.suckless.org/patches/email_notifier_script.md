@@ -16,7 +16,8 @@ Config .fetchmailrc
 -------------------
 This config works with GMail over IMAP with the IDLE extension for low bandwidth usage:
 
-	poll imap.gmail.com port 993 proto IMAP user "<your_user>@gmail.com" there with password "<your_pass>" keep ssl idle
+	poll imap.gmail.com port 993 proto IMAP user "<your_user>@gmail.com"
+		there with password "<your_pass>" keep ssl idle
 
 Init script
 -----------

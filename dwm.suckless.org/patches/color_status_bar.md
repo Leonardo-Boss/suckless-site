@@ -30,14 +30,6 @@ echo -e NEW mail: $mailnew \| VOL front: $audiofront \| BAT:[i]$batpercent[i]\| 
 
 ## Download ##
 
- * [dwm-5.2-colorstatus.diff][1] (4.1k, 131 additional lines) (20081117)
- * [.xinitrc example][2] (0.8k) (20081117)
-
-
-## Comment ##
-If you find any bugs or may improve the code, feel free to do so and push the changes to the wiki.
-
-
-[1]: http://dwm.suckless.org/patches/dwm-5.2-colorstatus.diff
-[2]: http://dwm.suckless.org/patches/dwm-5.2-colorstatus.xinitrc.txt
+ * [dwm-5.2-colorstatus.diff](dwm-5.2-colorstatus.diff) (4.1k, 131 additional lines) (20081117)
+ * [.xinitrc example](dwm-5.2-colorstatus.xinitrc) (0.8k) (20081117)
 

@@ -29,7 +29,7 @@ The following definition in 'config.h':
     };
 
 Coupled with a matching status script produces the following:
-  ![Example Colored Status Text][1]
+  ![Example Colored Status Text](dwm-5.3.1-statuscolors.png)
 
 A really silly example:
 
@@ -56,11 +56,8 @@ An example status script snippet to take advantage of the colors:
 
 ## Download ##
 
- * [dwm-5.3.1-statuscolors.diff][2]
+ * [dwm-5.3.1-statuscolors.diff](dwm-5.3.1-statuscolors.diff)
 
 ## Comment ##
 If you find any bugs or may improve the code, feel free to do so and push the changes to the wiki.
-
-[1]: http://dwm.suckless.org/patches/dwm-5.3.1-statuscolors.png
-[2]: http://dwm.suckless.org/patches/dwm-5.3.1-statuscolors.diff
 

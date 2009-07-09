@@ -6,8 +6,8 @@ This patch provides a way to move clients position inside the clients list.
 
      #include "push-5.6.c"
 
-     { MODKEY|ControlMask,           XK_j,           pushdown,       NULL },
-     { MODKEY|ControlMask,           XK_k,           pushup,         NULL },
+     { MODKEY|ControlMask,           XK_j,           pushdown,       {0} },
+     { MODKEY|ControlMask,           XK_k,           pushup,         {0} },
 
 ## Download
 

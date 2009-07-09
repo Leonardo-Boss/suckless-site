@@ -4,12 +4,13 @@
 
 This patch provides a way to move clients position inside the clients list.
 
-     #include "push-5.3.c"
+     #include "push-5.6.c"
 
-     { MODKEY|ControlMask,           XK_j,           pushdown,       NULL }, \
-     { MODKEY|ControlMask,           XK_k,           pushup,         NULL }, \
+     { MODKEY|ControlMask,           XK_j,           pushdown,       NULL },
+     { MODKEY|ControlMask,           XK_k,           pushup,         NULL },
 
 ## Download
 
-  * [push-5.3.c](push-5.3.c) (2K) (20090124)
+  * [push-5.6.c](push-5.6.c) (1K) (20090709)
+  * [push-5.3.c](push-5.3.c) (1K) (20090124)
 

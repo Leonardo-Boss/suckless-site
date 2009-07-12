@@ -1,32 +1,6 @@
 SUCK LESS PHILOSOPHY
 ====================
 
-Our philosophy exemplified, dwm-1.0 vs dwm-5.1
-----------------------------------------------
-	@@ -1,17 +1,7 @@
-	 void
-	-tag(Arg *arg)
-	-{
-	-	unsigned int i;
-	-
-	-	if(!sel)
-	-		return;
-	-
-	-	for(i = 0; i < ntags; i++)
-	-		sel->tags[i] = False;
-	-	sel->tags[arg->i] = True;
-	-	settitle(sel);
-	-	if(!isvisible(sel))
-	-		arrange(NULL);
-	-	else
-	-		drawstatus();
-	+tag(const Arg *arg) {
-	+	if(sel && arg->ui & TAGMASK) {
-	+		sel->tags = arg->ui & TAGMASK;
-	+		arrange();
-	+	}
-	 }
-
 Many (open source) hackers are proud if they achieve large amounts of code,
 because they believe the more lines of code they've written, the more progress
 they have made. The more progress they have made, the more skilled they are.

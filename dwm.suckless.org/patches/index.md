@@ -53,6 +53,8 @@ related projects
 * [gemini](http://gemini.digitalmediaplanet.net) -- terminal manager
 * [i3](http://i3.zekjur.net/) -- wmii fork with XCB, multihead, vertical column, command mode
 * [musca](http://aerosuidae.net/musca.html) -- inspired by dwm, more complex layout, configurable with commands, EWMH support
+* [qtile](http://www.qtile.org/) -- pure python wm, used ideas from dwm
 * [scrotwm](http://www.peereboom.us/scrotwm/html/scrotwm.html) -- dwm clone with multihead, config file, restart.. support
+* [TAL/wm](http://talwm.sourceforge.net/) -- minimal tiled wm based on dwm (discontinued)
 * [teslawm](http://teslawm.org/) -- dwm fork with multihead, mouse, stdin commands support (was dwm-rfigura)
 * [xmonad](http://www.xmonad.org/) -- dwm clone in haskell

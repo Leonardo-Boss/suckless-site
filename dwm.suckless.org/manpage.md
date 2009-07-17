@@ -217,10 +217,7 @@ backend instead):
 
 <P>
 
-GTK 2.10.9+ versions contain a broken
-<B>Save-As</B>
-
-file dialog implementation,
+GTK 2.10.9+ versions contain a broken <B>Save-As</B> file dialog implementation,
 which requests to reconfigure its window size in an endless loop. However, its
 window is still respondable during this state, so you can simply ignore the flicker
 until a new GTK version appears, which will fix this bug, approximately

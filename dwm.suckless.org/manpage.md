@@ -96,7 +96,7 @@ Focus next screen, if any.
 
 <DD>
 Send focused window to previous screen, if any.
-<DT><B>Mod1-Shift-,</B>
+<DT><B>Mod1-Shift-.</B>
 
 <DD>
 Send focused window to next screen, if any.
@@ -155,10 +155,7 @@ Toggles to the previously selected tags.
 <DT><B>Mod1-Shift-[1..n]</B>
 
 <DD>
-Apply
-nth
-
-tag to focused window.
+Apply nth tag to focused window.
 <DT><B>Mod1-Shift-0</B>
 
 <DD>
@@ -166,17 +163,11 @@ Apply all tags to focused window.
 <DT><B>Mod1-Control-Shift-[1..n]</B>
 
 <DD>
-Add/remove
-<B>nth</B>
-
-tag to/from focused window.
+Add/remove nth tag to/from focused window.
 <DT><B>Mod1-[1..n]</B>
 
 <DD>
-View all windows with
-<B>nth</B>
-
-tag.
+View all windows with nth tag.
 <DT><B>Mod1-0</B>
 
 <DD>
@@ -184,10 +175,7 @@ View all windows with any tag.
 <DT><B>Mod1-Control-[1..n]</B>
 
 <DD>
-Add/remove all windows with
-<B>nth</B>
-
-tag to/from the view.
+Add/remove all windows with nth tag to/from the view.
 <DT><B>Mod1-Shift-q</B>
 
 <DD>

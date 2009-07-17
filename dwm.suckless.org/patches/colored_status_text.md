@@ -58,6 +58,3 @@ An example status script snippet to take advantage of the colors:
 
  * [dwm-5.3.1-statuscolors.diff](dwm-5.3.1-statuscolors.diff)
 
-## Comment ##
-If you find any bugs or may improve the code, feel free to do so and push the changes to the wiki.
-

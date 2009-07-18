@@ -5,9 +5,7 @@
 dwm - dynamic window manager
 <H2>SYNOPSIS</H2>
 
-<B>dwm</B>
-
-[<B>-v</B>]
+<B>dwm</B> [<B>-v</B>]
 
 <H2>DESCRIPTION</H2>
 

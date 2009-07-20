@@ -51,10 +51,12 @@ prints version information to standard output, then exits.
 <H3>Status bar</H3>
 
 <DL COMPACT>
-<DT><B>Standard input</B>
+<DT><B>X root window name</B>
 
 <DD>
-is read and displayed in the status text area.
+is read and displayed in the status text area. It can be set with the
+<B>xsetroot</B>(1)
+command.
 <DT><B>Button1</B>
 
 <DD>
@@ -80,7 +82,7 @@ click on a tag label adds/removes that tag to/from the focused window.
 
 <DD>
 Start
-<B>xterm.</B>
+<B>uxterm</B>(1).
 
 <DT><B>Mod1-,</B>
 

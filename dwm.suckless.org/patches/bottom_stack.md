@@ -3,19 +3,7 @@ BOTTOM STACK PATCH
 
 Description
 -----------
-This patch provides an additional bottom stack layout for the dwm window manager. (It no longer includes code for 'tileleft' or 'bstacklandscape'.)
-
-Vertical Stack Tiling:
-----------------------
-	tile          ([]=)
-	+----------+------+
-	|          |      |
-	|          +------+
-	|          |      |
-	|          +------+
-	|          |      |
-	|          |      |
-	+----------+------+
+This patch provides an additional bottom stack layout for the dwm window manager. (It no longer includes code for 'tileleft' or 'bstacklandscape'). Use 'patch -p0' when patching.
 
 Bottom Stack Tiling:
 --------------------

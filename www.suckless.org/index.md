@@ -5,7 +5,7 @@ Read more about our [philosophy](/common/) and join us on the [mailing list](com
 
 2009/08/03
 ----------
-New [9base](http://tools.suckless.orgu/9base) release: [9base-3](http://code.suckless.org/dl/tools/9base-3.tar.gz)
+New [9base](http://tools.suckless.org/9base) release: [9base-3](http://code.suckless.org/dl/tools/9base-3.tar.gz)
 
 2009/07/26
 ----------

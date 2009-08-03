@@ -3,6 +3,10 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
+2009/08/03
+----------
+New [9base](http://tools.suckless.orgu/9base) release: [9base-3](http://code.suckless.org/dl/tools/9base-3.tar.gz)
+
 2009/07/26
 ----------
 New [dwm](http://dwm.suckless.org) release: [dwm-5.6.1](http://code.suckless.org/dl/dwm/dwm-5.6.1.tar.gz)

@@ -1,6 +1,6 @@
     <div class="left">
       <a href="http://suckless.org">home</a> |
-      <a href="http://code.suckless.org/hg">code</a> |
+      <a href="http://hg.suckless.org/">code</a> |
       <a href="http://code.suckless.org/dl">download</a> |
       <a href="http://dwm.suckless.org">dwm</a> |
       <a href="http://libs.suckless.org">libs</a> |

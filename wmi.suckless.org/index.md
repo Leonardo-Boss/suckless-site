@@ -6,7 +6,7 @@ some occasional users of wmi. If you like to check how the good old days felt,
 check it out, though its code sucks more unfortunately than our more
 recent projects.
 
-<center>[![Screenshot](screenshots/wmi-20080718s.png)](screenshots/wmi-20080718.png)</center>
+->[![Screenshot](screenshots/wmi-20080718s.png)](screenshots/wmi-20080718.png)<-
 
 Download
 --------

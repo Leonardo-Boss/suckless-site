@@ -8,11 +8,7 @@ filesystem interface and supports classic and tiling (acme-like) window
 management. It aims to maintain a small and clean (read hackable and beautiful)
 codebase.
 
-<center>
-[
-![Screenshot](screenshots/wmii-20080117-thumb.png)
-](screenshots/wmii-20080117.png)
-</center>
+->[![Screenshot](screenshots/wmii-20080117-thumb.png)](screenshots/wmii-20080117.png)<-
 
 Links
 -----

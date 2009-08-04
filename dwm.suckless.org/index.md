@@ -31,7 +31,7 @@ the top left corner.
 
 dwm draws a small border around windows to indicate the focus state.
 
-<center>[![Screenshot](screenshots/dwm-20070930s.png)](screenshots/dwm-20070930.png)</center>
+<center>![Screenshot](screenshots/dwm-20070930s.png)</center>
 
 Differences
 -----------

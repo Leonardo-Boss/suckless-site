@@ -50,15 +50,6 @@ Another cool thing is to use it with splitvt so you have multitail windows on to
 There is also a blog entry which describes the whole configuration: 
 [http://nion.modprobe.de/blog/archives/440-Using-the-ii-irc-client.html](http://nion.modprobe.de/blog/archives/440-Using-the-ii-irc-client.html)
 
-Alternatives:
--------------
-* use [gualteri's iirc](http://rootshell.be/~gualteri/rc/iirc) script
-* use [Neptun's criis](http://www.flo.haos.ro/index.php/Ii/Criis)
-
-Tools
------
-* [iicol](http://www.flo.haos.ro/index.php/Ii/Iicol) - ii log colouriser
-
 Web frontend
 ------------
 phpii is a simple web frontend for ii. You can see a demo of it and download the php source here: [phpii homepage](http://yogan.meinungsverstaerker.de/phpii)

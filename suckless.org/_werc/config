@@ -2,8 +2,8 @@ masterSite=default.suckless.org
 siteTitle='suckless.org'
 siteSubTitle='Dedicated to software that sucks less'
 
-conf_perm_redirect '^/gsoc\.html' 'http://suckless.org/GSoC2009'
-conf_perm_redirect '^/gsoc' 'http://suckless.org/GSoC2009'
+conf_perm_redirect '^/gsoc\.html' 'http://suckless.org/common/project_ideas'
+conf_perm_redirect '^/gsoc' 'http://suckless.org/common/project_ideas'
 conf_perm_redirect '^/dwm/index.html' 'http://dwm.suckless.org'
 conf_perm_redirect '^/dwm/(.*)\.html' 'http://dwm.suckless.org/\1'
 conf_perm_redirect '^/dwm/(.*)' 'http://dwm.suckless.org/\1'

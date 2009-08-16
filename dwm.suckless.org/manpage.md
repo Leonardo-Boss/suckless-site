@@ -209,11 +209,17 @@ code. This keeps it fast, secure and simple.
 
 Java applications which use the XToolkit/XAWT backend may draw grey windows
 only. The XToolkit/XAWT backend breaks ICCCM-compliance in recent JDK 1.5 and early
-JDK 1.6 versions, because it assumes a reparenting window manager. As a workaround
-you can use JDK 1.4 (which doesn't contain the XToolkit/XAWT backend) or you
-can set the following environment variable (to use the older Motif
-backend instead):
-<B>AWT_TOOLKIT=MToolkit</B>.
+JDK 1.6 versions, because it assumes a reparenting window manager. Possible workarounds
+are using JDK 1.4 (which doesn't contain the XToolkit/XAWT backend) or setting the
+environment variable
+<B>AWT_TOOLKIT=MToolkit</B>
+(to use the older Motif backend instead) or running
+<B>xprop -root -f _NET_WM_NAME 32a -set _NET_WM_NAME LG3D</B>
+or
+<B>wmname LG3D</B>
+(to pretend that a non-reparenting window manager is running that the
+XToolkit/XAWT backend can recognize) or when using OpenJDK setting the environment variable
+<B>_JAVA_AWT_WM_NONREPARENTING=1</B>.
 
 <P>
 

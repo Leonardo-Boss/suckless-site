@@ -1,6 +1,34 @@
 SUCK LESS PHILOSOPHY
 ====================
 
+Background
+----------
+We are the home of quality software such as [dwm](http://dwm.suckless.org),
+[dmenu](http://tools.suckless.org), [libixp](http://libs.suckless.org/libixp),
+[wmii](http://wmii.suckless.org) and plenty of other [tools](http://tools.suckless.org), with
+a focus on simplicity, clarity and frugality. Our [philosophy](/common/) is
+about keeping things simple, minimal and usable. We believe this should become
+the mainstream philosophy in the IT sector. Unfortunately, the tendency for
+complex, error-prone and slow software seems to be prevalent in the present-day
+software industry. We intend to prove the opposite with our software projects.
+
+Our project focuses on advanced and experienced computer users. In contrast
+with the usual proprietary software world or many mainstream open source
+projects that focus more on average and non-technical end users, we think that
+experienced users are mostly ignored. This is particularly true for user
+interfaces, such as graphical environments on desktop computers, on mobile
+devices, and in so-called Web applications. We believe that the market of
+experienced users is growing continuously, with each user looking for more
+appropriate solutions for his/her work style.
+
+Designing simple and elegant software is far more difficult than letting ad-hoc
+or over-ambitious features obscure the code over time. However one has to pay
+this price to achieve reliability and maintainability. Furthermore, minimalism
+results in reasonable and attainable goals. We strive to maintain minimalism and
+clarity to drive development to completion.
+
+Manifest
+--------
 Many (open source) hackers are proud if they achieve large amounts of code,
 because they believe the more lines of code they've written, the more progress
 they have made. The more progress they have made, the more skilled they are.

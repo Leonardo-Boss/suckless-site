@@ -34,8 +34,8 @@ The overall SLOC is about 36kSLOC, so this userland + all libs is much smaller a
 
 Download
 --------
-* [9base-3](http://code.suckless.org/dl/tools/9base-3.tar.gz) (20090803)
-* <code>hg clone [http://code.suckless.org/hg/9base](http://code.suckless.org/hg/9base)</code>
+* [9base-3](http://dl.suckless.org/tools/9base-3.tar.gz) (20090803)
+* <code>hg clone [http://hg.suckless.org/9base](http://hg.suckless.org/9base)</code>
 
 Usage
 -----

@@ -14,6 +14,6 @@ LIBIXP
 
 Download
 --------
-* [libixp-0.5](http://code.suckless.org/dl/libs/libixp-0.5.tar.gz)
-* <code>hg clone [http://code.suckless.org/hg/libixp](http://code.suckless.org/hg/libixp)</code>
+* [libixp-0.5](http://dl.suckless.org/libs/libixp-0.5.tar.gz)
+* <code>hg clone [http://hg.suckless.org/libixp](http://hg.suckless.org/libixp)</code>
 

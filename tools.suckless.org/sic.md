@@ -4,13 +4,13 @@ sic is an extremely simple IRC client. It consists of lesser than 250 lines of c
 
 Download
 --------
-* [sic 1.0](http://code.suckless.org/dl/tools/sic-1.0.tar.gz) (4kb) (20080729)
+* [sic 1.0](http://dl.suckless.org/tools/sic-1.0.tar.gz) (4kb) (20080729)
 
 Development
 -----------
-You can [browse](http://code.suckless.org/hg/sic) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with following command:
+You can [browse](http://hg.suckless.org/sic) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with following command:
 
-	hg clone http://code.suckless.org/hg/sic
+	hg clone http://hg.suckless.org/sic
 
 
 <H2>SYNOPSIS</H2>

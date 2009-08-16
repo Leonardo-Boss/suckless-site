@@ -6,4 +6,4 @@ needs, the source file needs to be modified, this keeps it fast, secure and simp
 
 Repository
 ----------
-* Latest devel tip: <code>hg clone [http://code.suckless.org/hg/skvm](http://code.suckless.org/hg/skvm)</code>
+* Latest devel tip: <code>hg clone [http://hg.suckless.org/skvm](http://hg.suckless.org/skvm)</code>

@@ -5,7 +5,7 @@ Installation
 ------------
 Check if the package management of your operating system already provides a
 package for the latest wmii snapshot and install this, or build wmii from scratch after
-[downloading](http://code.suckless.org/) the source. If you build it from
+[downloading](http://dl.suckless.org/wmii) the source. If you build it from
 scratch, follow the instructions in the shipped README file.
 
 Running wmii

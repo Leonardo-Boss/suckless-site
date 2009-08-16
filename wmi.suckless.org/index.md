@@ -11,7 +11,7 @@ recent projects.
 Download
 --------
 You can download the historic copy of
-[wmi-10](http://code.suckless.org/dl/misc/wmi-10.tar.gz). Unfortunately there
+[wmi-10](http://dl.suckless.org/misc/wmi-10.tar.gz). Unfortunately there
 is no associated repository anymore. There used to be a subversion repository
 in the older days.
 

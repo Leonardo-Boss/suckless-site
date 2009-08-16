@@ -29,9 +29,9 @@ It will hopefully help others do the same and also improve the quality of the pa
 
 You have two options:
 
-- download the prepackaged source tarball, currently [dwm-5.1](http://code.suckless.org/dl/dwm/dwm-5.1.tar.gz)
+- download the prepackaged source tarball, currently [dwm-5.1](http://dl.suckless.org/dwm/dwm-5.1.tar.gz)
 
-- clone the mercurial repository at `http://code.suckless.org/hg/dwm`
+- clone the mercurial repository at `http://hg.suckless.org/dwm`
 
 ###Enable the MQ extension
 

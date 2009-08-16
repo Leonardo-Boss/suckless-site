@@ -8,5 +8,5 @@ will warp the pointer to (100, 100) on your screen.
 
 Download
 --------
-* [swarp-0.1](http://code.suckless.org/dl/tools/swarp-0.1.tar.gz) (20061013)
+* [swarp-0.1](http://dl.suckless.org/tools/swarp-0.1.tar.gz) (20061013)
 

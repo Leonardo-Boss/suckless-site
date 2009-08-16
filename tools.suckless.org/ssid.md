@@ -4,4 +4,4 @@ Simple setsid replacement, nothing special about it except it being really simpl
 
 Download
 --------
-* [ssid-0.1](http://code.suckless.org/dl/tools/ssid-0.1.tar.gz) (20061013)
+* [ssid-0.1](http://dl.suckless.org/tools/ssid-0.1.tar.gz) (20061013)

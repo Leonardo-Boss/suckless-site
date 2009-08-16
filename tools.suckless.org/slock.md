@@ -7,5 +7,5 @@ pub.
 
 Download
 --------
-* [slock-0.9](http://code.suckless.org/dl/tools/slock-0.9.tar.gz) (20080729)
+* [slock-0.9](http://dl.suckless.org/tools/slock-0.9.tar.gz) (20080729)
 

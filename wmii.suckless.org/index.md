@@ -13,9 +13,9 @@ codebase.
 Links
 -----
 
-* Latest release: [wmii-3.6](http://code.suckless.org/dl/wmii/wmii-3.6.tar.gz) (Note that it requires [dmenu](http://tools.suckless.org/dmenu) and [libixp-0.4](/libs/libixp.html), [p9p](http://plan9.us/) recommended)
-* Latest snapshot: [wmii+ixp-20090703](http://code.suckless.org/dl/wmii/wmii+ixp-snap20090703.tgz)
-* Latest devel tip: <code>hg clone [http://code.suckless.org/hg/wmii](http://code.suckless.org/hg/wmii)</code>
+* Latest release: [wmii-3.6](http://dl.suckless.org/wmii/wmii-3.6.tar.gz) (Note that it requires [dmenu](http://tools.suckless.org/dmenu) and [libixp-0.4](/libs/libixp.html), [p9p](http://plan9.us/) recommended)
+* Latest snapshot: [wmii+ixp-20090703](http://dl.suckless.org/wmii/wmii+ixp-snap20090703.tgz)
+* Latest devel tip: <code>hg clone [http://hg.suckless.org/wmii](http://hg.suckless.org/wmii)</code>
 * Bugs: [Google Code issue tracker](http://code.google.com/p/wmii/issues)
 * Mailing List: `dev+subscribe@suckless.org` ([Archives](http://lists.suckless.org/dev/)) ([Old Archives](http://lists.suckless.org/wmii/)) (see [community](http://suckless.org/common/community/) for details)
 * IRC channel: `#suckless at irc.oftc.net` [(irc log)](http://suckless.org/irc/)
@@ -36,20 +36,20 @@ standard `wmiirc`.
 
 Development
 -----------
-You can [browse](http://code.suckless.org/hg/wmii) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with following command:
+You can [browse](http://hg.suckless.org/wmii) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with following command:
 
-	hg clone http://code.suckless.org/hg/libixp
-	hg clone http://code.suckless.org/hg/wmii
+	hg clone http://hg.suckless.org/libixp
+	hg clone http://hg.suckless.org/wmii
 
 Older releases
 --------------
-* [wmii-3.6](http://code.suckless.org/dl/wmii/wmii-3.6.tar.gz) (historical, 2007-11-16)
-* [wmii-3.5.1](http://code.suckless.org/dl/wmii/wmii-3.5.1.tar.gz) (historical, 2006-12-27)
-* [wmii-3.1](http://code.suckless.org/dl/wmii/wmii-3.1.tar.gz) (historical, 2006-06-17)
-* [9base-2](http://code.suckless.org/dl/misc/9base-2.tar.gz) (historical, 2006-01-25)
-* [wmii-2.5.2](http://code.suckless.org/dl/wmii/wmii-2.5.2.tar.gz) (historical, 2006-01-27)
-* [wmii-2](http://code.suckless.org/dl/wmii/wmii-2.tar.gz) (historical, 2005-10-21)
-* [wmi-10](http://code.suckless.org/dl/misc/wmi-10.tar.gz) (historical, 2004-10-03)
+* [wmii-3.6](http://dl.suckless.org/wmii/wmii-3.6.tar.gz) (historical, 2007-11-16)
+* [wmii-3.5.1](http://dl.suckless.org/wmii/wmii-3.5.1.tar.gz) (historical, 2006-12-27)
+* [wmii-3.1](http://dl.suckless.org/wmii/wmii-3.1.tar.gz) (historical, 2006-06-17)
+* [9base-2](http://dl.suckless.org/misc/9base-2.tar.gz) (historical, 2006-01-25)
+* [wmii-2.5.2](http://dl.suckless.org/wmii/wmii-2.5.2.tar.gz) (historical, 2006-01-27)
+* [wmii-2](http://dl.suckless.org/wmii/wmii-2.tar.gz) (historical, 2005-10-21)
+* [wmi-10](http://dl.suckless.org/misc/wmi-10.tar.gz) (historical, 2004-10-03)
 
 Make sure that the X Window System headers are installed, if you want to build
 wmii from source.

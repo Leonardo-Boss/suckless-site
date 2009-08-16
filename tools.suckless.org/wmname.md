@@ -8,15 +8,15 @@ programs assuming a reparenting window manager for instance.
 
 Download
 --------
-* [wmname-0.1](http://code.suckless.org/dl/tools/wmname-0.1.tar.gz)
+* [wmname-0.1](http://dl.suckless.org/tools/wmname-0.1.tar.gz)
 
 Repository
 ----------
-You can [browse](http://code.suckless.org/hg/wmname) the source code or get a
+You can [browse](http://hg.suckless.org/wmname) the source code or get a
 copy using [Mercurial](http://www.selenic.com/mercurial/) with following
 command:
 
-	hg clone http://code.suckless.org/hg/wmname
+	hg clone http://hg.suckless.org/wmname
 
 Usage
 -----

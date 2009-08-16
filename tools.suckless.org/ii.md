@@ -30,13 +30,13 @@ It consists of <= 500 lines of code and is the big brother of [sic](/programs/si
 
 Download
 --------
-* [ii 1.4](http://code.suckless.org/dl/tools/ii-1.4.tar.gz) (9.4kb) (20080809)
+* [ii 1.4](http://dl.suckless.org/tools/ii-1.4.tar.gz) (9.4kb) (20080809)
 
 Development
 -----------
-You can [browse](http://code.suckless.org/hg/ii) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with following command:
+You can [browse](http://hg.suckless.org/ii) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with following command:
 
-`hg clone http://code.suckless.org/hg/ii`
+`hg clone http://hg.suckless.org/ii`
 
 Usage
 ------

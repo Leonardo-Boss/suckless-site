@@ -1,5 +1,5 @@
 Following the default binds configured by the header file
-[config.def.h](http://code.suckless.org/hg/dwm/file/tip/config.def.h).
+[config.def.h](http://hg.suckless.org/dwm/file/tip/config.def.h).
 
 	[Shift]+[Alt]+[Enter] - launch terminal
 	[Alt]+[p] - dmenu for running programs like the x-www-browser

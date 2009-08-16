@@ -13,11 +13,11 @@ Links
 
 Download
 --------
-* [MIT/X Consortium license](http://code.suckless.org/hg/st/raw-file/tip/LICENSE)
+* [MIT/X Consortium license](http://hg.suckless.org/st/raw-file/tip/LICENSE)
 * See also [st](http://st.suckless.org)
 
 Development
 -----------
-st is actively developed. You can [browse](http://code.suckless.org/hg/st) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with following command:
+st is actively developed. You can [browse](http://hg.suckless.org/st) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with following command:
 
-	hg clone http://code.suckless.org/hg/st
+	hg clone http://hg.suckless.org/st

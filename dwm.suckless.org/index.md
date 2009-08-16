@@ -53,15 +53,15 @@ Links
 
 Download
 --------
-* [MIT/X Consortium license](http://code.suckless.org/hg/dwm/raw-file/tip/LICENSE)
-* [dwm 5.6.1](http://code.suckless.org/dl/dwm/dwm-5.6.1.tar.gz) (19kb) (20090726)
+* [MIT/X Consortium license](http://hg.suckless.org/dwm/raw-file/tip/LICENSE)
+* [dwm 5.6.1](http://dl.suckless.org/dwm/dwm-5.6.1.tar.gz) (19kb) (20090726)
 * See also [dmenu](http://tools.suckless.org/dmenu)
 
 Development
 -----------
-dwm is actively developed in parallel to wmii. You can [browse](http://code.suckless.org/hg/dwm) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with following command:
+dwm is actively developed in parallel to wmii. You can [browse](http://hg.suckless.org/dwm) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with following command:
 
-	hg clone http://code.suckless.org/hg/dwm
+	hg clone http://hg.suckless.org/dwm
 
 Miscellaneous
 -------------

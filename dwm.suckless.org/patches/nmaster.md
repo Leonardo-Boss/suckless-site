@@ -44,6 +44,8 @@ The nmaster patch for dwm 4.6 adds two new layouts called ntile (classic) and dn
     - contains ntile, dntile and tilecols. Also supports the clients-per-tag
  * [nmaster-4.5.diff][2] (dwm 4.5) (2.7kb) (20071016)
  * [dwm-4.4.1-nmaster.diff][1] (dwm 4.4) (2.8kb) (20070826)
+ * [nmaster+bstack-5.6.1.diff] (dwm 5.6.1) (5.9kb) (20090817)
+    - another variation; contains bstack with nmaster support
 
 [1]: http://schot.a-eskwadraat.nl/files/dwm-4.4.1-nmaster.diff
 [2]: http://news.nopcode.org/nmaster-4.5.patch

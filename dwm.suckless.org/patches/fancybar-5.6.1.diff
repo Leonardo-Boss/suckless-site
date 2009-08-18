@@ -1,0 +1,86 @@
+diff -r e47a47bd3ed4 dwm.c
+--- a/dwm.c	Tue Jul 21 10:57:54 2009 +0100
++++ b/dwm.c	Mon Aug 17 16:28:08 2009 +0200
+@@ -648,10 +648,11 @@
+ 
+ void
+ drawbar(Monitor *m) {
+-	int x;
++	int x, ow, mw = 0, extra, tw;
+ 	unsigned int i, n = 0, occ = 0, urg = 0;
+ 	unsigned long *col;
+-	Client *c;
++	Client *c, *firstvis, *lastvis = NULL;
++	DC seldc;
+ 
+ 	for(c = m->clients; c; c = c->next) {
+ 		if(ISVISIBLE(c))
+@@ -689,16 +690,61 @@
+ 	}
+ 	else
+ 		dc.x = m->ww;
+-	if((dc.w = dc.x - x) > bh) {
+-		dc.x = x;
+-		if(m->sel) {
+-			col = m == selmon ? dc.sel : dc.norm;
+-			drawtext(m->sel->name, col, False);
+-			drawsquare(m->sel->isfixed, m->sel->isfloating, False, col);
++
++	for(c = m->clients; c && !ISVISIBLE(c); c = c->next);
++	firstvis = c;
++
++	col = m == selmon ? dc.sel : dc.norm;
++	dc.w = dc.x - x;
++	dc.x = x;
++
++	if(n > 0) {
++		mw = dc.w / n;
++		extra = 0;
++		seldc = dc;
++		i = 0;
++
++		while(c) {
++			lastvis = c;
++			tw = TEXTW(c->name);
++			if(tw < mw) extra += (mw - tw); else i++;
++			for(c = c->next; c && !ISVISIBLE(c); c = c->next);
+ 		}
+-		else
++
++		if(i > 0) mw += extra / i;
++
++		c = firstvis;
++		x = dc.x;
++	}
++
++	while(dc.w > bh) {
++		if(c) {
++			ow = dc.w;
++			tw = TEXTW(c->name);
++			dc.w = MIN(ow, tw);
++
++			if(dc.w > mw) dc.w = mw;
++			if(m->sel == c) seldc = dc;
++			if(c == lastvis) dc.w = ow;
++
++			drawtext(c->name, col, False);
++			drawsquare(c->isfixed, c->isfloating, False, col);
++
++			dc.x += dc.w;
++			dc.w = ow - dc.w;
++			for(c = c->next; c && !ISVISIBLE(c); c = c->next);
++		} else {
+ 			drawtext(NULL, dc.norm, False);
++			break;
++		}
+ 	}
++
++	if(m == selmon && m->sel && ISVISIBLE(m->sel)) {
++		dc = seldc;
++		drawtext(m->sel->name, col, True);
++		drawsquare(m->sel->isfixed, m->sel->isfloating, True, col);
++	}
++
+ 	XCopyArea(dpy, dc.drawable, m->barwin, dc.gc, 0, 0, m->ww, bh, 0, 0);
+ 	XSync(dpy, False);
+ }

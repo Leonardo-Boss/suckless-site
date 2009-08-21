@@ -1,0 +1,2 @@
+conf_enable_wman /var/www/man/wmii-3/
+wman_unix_mode=1

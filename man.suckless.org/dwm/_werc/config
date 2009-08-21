@@ -1,0 +1,2 @@
+conf_enable_wman /var/www/man/dwm/
+wman_unix_mode=1

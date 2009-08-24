@@ -1,7 +1,15 @@
 diff -r e47a47bd3ed4 dwm.c
 --- a/dwm.c	Tue Jul 21 10:57:54 2009 +0100
-+++ b/dwm.c	Mon Aug 24 17:22:55 2009 +0200
-@@ -648,10 +648,11 @@
++++ b/dwm.c	Mon Aug 24 18:28:57 2009 +0200
+@@ -169,6 +169,7 @@
+ static Monitor *dirtomon(int dir);
+ static void drawbar(Monitor *m);
+ static void drawbars(void);
++static void drawvline(unsigned long col[ColLast]);
+ static void drawsquare(Bool filled, Bool empty, Bool invert, unsigned long col[ColLast]);
+ static void drawtext(const char *text, unsigned long col[ColLast], Bool invert);
+ static void enternotify(XEvent *e);
+@@ -648,10 +649,11 @@
  
  void
  drawbar(Monitor *m) {
@@ -15,7 +23,7 @@ diff -r e47a47bd3ed4 dwm.c
  
  	for(c = m->clients; c; c = c->next) {
  		if(ISVISIBLE(c))
-@@ -689,16 +690,61 @@
+@@ -689,16 +691,62 @@
  	}
  	else
  		dc.x = m->ww;
@@ -64,6 +72,7 @@ diff -r e47a47bd3ed4 dwm.c
 +			if(c == lastvis) dc.w = ow;
 +
 +			drawtext(c->name, col, False);
++			if(c != firstvis) drawvline(col);
 +			drawsquare(c->isfixed, c->isfloating, False, col);
 +
 +			dc.x += dc.w;
@@ -84,7 +93,23 @@ diff -r e47a47bd3ed4 dwm.c
  	XCopyArea(dpy, dc.drawable, m->barwin, dc.gc, 0, 0, m->ww, bh, 0, 0);
  	XSync(dpy, False);
  }
-@@ -1235,8 +1281,7 @@
+@@ -709,6 +757,15 @@
+ 
+ 	for(m = mons; m; m = m->next)
+ 		drawbar(m);
++}
++
++void
++drawvline(unsigned long col[ColLast]) {
++	XGCValues gcv;
++
++	gcv.foreground = col[ColFG];
++	XChangeGC(dpy, dc.gc, GCForeground, &gcv);
++	XDrawLine(dpy, dc.drawable, dc.gc, dc.x, dc.y, dc.x, dc.y + (dc.font.ascent + dc.font.descent + 2));
+ }
+ 
+ void
+@@ -1235,8 +1292,7 @@
  		}
  		if(ev->atom == XA_WM_NAME || ev->atom == netatom[NetWMName]) {
  			updatetitle(c);

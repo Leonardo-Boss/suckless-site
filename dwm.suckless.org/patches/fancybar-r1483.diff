@@ -1,6 +1,6 @@
-diff -r e47a47bd3ed4 dwm.c
---- a/dwm.c	Tue Jul 21 10:57:54 2009 +0100
-+++ b/dwm.c	Mon Aug 24 17:22:55 2009 +0200
+diff -r 63e19dad219c dwm.c
+--- a/dwm.c	Tue Aug 18 15:59:38 2009 +0100
++++ b/dwm.c	Mon Aug 24 17:26:52 2009 +0200
 @@ -648,10 +648,11 @@
  
  void
@@ -88,9 +88,9 @@ diff -r e47a47bd3ed4 dwm.c
  		}
  		if(ev->atom == XA_WM_NAME || ev->atom == netatom[NetWMName]) {
  			updatetitle(c);
--			if(c == selmon->sel)
--				drawbars();
-+			drawbars();
+-			if(c == c->mon->sel)
+-				drawbar(c->mon);
++			drawbar(c->mon);
  		}
  	}
  }

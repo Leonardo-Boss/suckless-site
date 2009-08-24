@@ -12,7 +12,8 @@ fit, they're cropped. The title of the selected window is inverted.
 
 ## Download
 
- * [fancybar-5.6.1.diff](fancybar-5.6.1.diff) (1.8K) (20090818)
+ * [fancybar-5.6.1.diff](fancybar-5.6.1.diff) (2.0K) (20090824)
+ * [fancybar-r1483.diff](fancybar-r1483.diff) (2.0K) (20090824)
 
 ## Author
 

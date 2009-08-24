@@ -1,6 +1,6 @@
 diff -r e47a47bd3ed4 config.def.h
 --- a/config.def.h	Tue Jul 21 10:57:54 2009 +0100
-+++ b/config.def.h	Mon Aug 17 15:08:48 2009 +0200
++++ b/config.def.h	Mon Aug 24 17:14:00 2009 +0200
 @@ -24,11 +24,13 @@
  
  /* layout(s) */
@@ -35,7 +35,7 @@ diff -r e47a47bd3ed4 config.def.h
  	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 diff -r e47a47bd3ed4 dwm.c
 --- a/dwm.c	Tue Jul 21 10:57:54 2009 +0100
-+++ b/dwm.c	Mon Aug 17 15:08:48 2009 +0200
++++ b/dwm.c	Mon Aug 24 17:14:00 2009 +0200
 @@ -122,6 +122,7 @@
  
  struct Monitor {
@@ -104,8 +104,8 @@ diff -r e47a47bd3ed4 dwm.c
 -	resize(c, m->wx, m->wy, (n == 1 ? m->ww : mw) - 2 * c->bw, m->wh - 2 * c->bw, False);
 -	if(--n == 0)
 -		return;
-+	if(selmon->nmaster > 0) {
-+		nm = n < selmon->nmaster ? n : selmon->nmaster;
++	if(m->nmaster > 0) {
++		nm = n < m->nmaster ? n : m->nmaster;
 +		c = nexttiled(m->clients);
 +		mw = m->mfact * m->ww;
 +		h = m->wh / nm;
@@ -150,8 +150,8 @@ diff -r e47a47bd3ed4 dwm.c
 +	if(n == 0)
 +		return;
 +
-+	if(selmon->nmaster > 0) {
-+		nm = n < selmon->nmaster ? n : selmon->nmaster;
++	if(m->nmaster > 0) {
++		nm = n < m->nmaster ? n : m->nmaster;
 +		c = nexttiled(m->clients);
 +		mh = m->mfact * m->wh;
 +		x = m->wx;

@@ -1,7 +1,7 @@
 BROKEN PROGRAMS
 ===============
 
-There are plenty broken X programs. Go bug the developers of these
+There are many broken X programs. Go bug the developers of these
 broken programs to fix them. Here are some of the main causes of this
 brokenness:
 

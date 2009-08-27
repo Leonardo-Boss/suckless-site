@@ -13,7 +13,7 @@ one can point surf to another URI by setting its XProperties.
 
 Links
 -----
-* [Man page](http://hg.suckless.org/surf/raw-file/tip/LICENSE)
+* [Man page](manpage)
 * Mailing List: `dev+subscribe@suckless.org` ([Archives](http://lists.suckless.org/dev))
 * IRC channel: #suckless at irc.oftc.net
 

@@ -14,7 +14,7 @@ Links
 Download
 --------
 * [MIT/X Consortium license](http://hg.suckless.org/st/raw-file/tip/LICENSE)
-* See <b>Development</b>
+* tip tarball: [http://hg.suckless.org/st/archive/tip.tar.gz](http://hg.suckless.org/st/archive/tip.tar.gz)
 
 Development
 -----------

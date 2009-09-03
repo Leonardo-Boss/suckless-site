@@ -14,7 +14,7 @@ Links
 Download
 --------
 * [MIT/X Consortium license](http://hg.suckless.org/st/raw-file/tip/LICENSE)
-* See also [st](http://st.suckless.org)
+* See [st](http://hg.suckless.org/st)
 
 Development
 -----------

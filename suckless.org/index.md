@@ -1,7 +1,7 @@
 Home of [wmii](http://wmii.suckless.org), [dwm](http://dwm.suckless.org), [libixp](http://libs.suckless.org/libixp), and other quality
 software with a focus on simplicity, clarity, and frugality.
 
-Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
+Read more about our [philosophy](/manifest) and join us on the [mailing list](/community).
 
 2009/08/27
 ----------
@@ -17,7 +17,7 @@ New [dmenu](http://tools.suckless.org/dmenu) release: [dmenu-4.0](http://dl.suck
 
 2009/03/09
 ----------
-We applied as a mentoring organization for [GSoC2009](http://suckless.org/common/project_ideas).
+We applied as a mentoring organization for [GSoC2009](http://suckless.org/project_ideas).
 
 2008/08/09
 ----------

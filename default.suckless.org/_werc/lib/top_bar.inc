@@ -2,6 +2,7 @@
       <a href="http://suckless.org">home</a> &nbsp;
       <a href="http://hg.suckless.org">code</a> &nbsp;
       <a href="http://dl.suckless.org">download</a> &nbsp;
+      <a href="http://man.suckless.org">man</a> &nbsp;
       <a href="http://dwm.suckless.org">dwm</a> &nbsp;
       <a href="http://libs.suckless.org">libs</a> &nbsp;
       <a href="http://st.suckless.org">st</a> &nbsp;

@@ -1,7 +1,8 @@
 <br class="doNotDisplay doNotPrint" />
 
-<div class="left"><a href="http://werc.cat-v.org/">Powered by werc</a></div>
-
+<div class="left">
+      <a href="http://werc.cat-v.org/">Powered by werc</a>
+</div>
 <div class="right">
 <form action="http://www.google.com/cse" id="cse-search-box" style="display: in
 line">

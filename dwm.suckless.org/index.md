@@ -1,8 +1,3 @@
-DYNAMIC WINDOW MANAGER
-======================
-
-Description
------------
 dwm is a dynamic window manager for X. It manages windows in tiled, monocle
 and floating layouts. Either layout can be applied dynamically, optimising the
 environment for the application in use and the task performed.

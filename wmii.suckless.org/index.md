@@ -1,6 +1,3 @@
-WINDOW MANAGER IMPROVED 2
-=========================
-
 wmii is a small, dynamic window manager for X11. It is scriptable, has a 9p
 filesystem interface and supports classic and tiling (acme-like) window
 management. It aims to maintain a small and clean (read hackable and beautiful)

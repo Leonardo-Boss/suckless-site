@@ -1,8 +1,3 @@
-SURF
-====
-
-Description
------------
 surf is a simple web browser based on WebKit/GTK+. It is able
 to display websites and follow links. It supports the XEmbed protocol
 which makes it possible to embed it in another application. Furthermore,

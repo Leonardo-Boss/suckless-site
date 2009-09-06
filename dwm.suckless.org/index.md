@@ -1,5 +1,3 @@
-![dwm](dwm.gif)
-
 DYNAMIC WINDOW MANAGER
 ======================
 

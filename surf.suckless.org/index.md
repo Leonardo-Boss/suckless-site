@@ -1,5 +1,3 @@
-![surf](surf.gif)
-
 SURF
 ====
 

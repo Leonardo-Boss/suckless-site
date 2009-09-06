@@ -1,3 +1,4 @@
 masterSite=default.suckless.org
 siteTitle='wmii'
+siteImage='/wmii.gif'
 siteSubTitle='window manager improved 2'

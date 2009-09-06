@@ -1,3 +1,4 @@
 masterSite=default.suckless.org
 siteTitle='surf'
+siteImage='/surf.gif'
 siteSubTitle='surf browser, a WebKit based browser'

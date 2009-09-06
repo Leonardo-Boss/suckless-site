@@ -1,5 +1,3 @@
-![wmii](wmii.gif)
-
 WINDOW MANAGER IMPROVED 2
 =========================
 

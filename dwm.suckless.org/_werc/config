@@ -1,3 +1,4 @@
 masterSite=default.suckless.org
-siteTitle='<img src="/dwm.gif" alt="dwm"/>'
+siteTitle='dwm'
+siteImage='/dwm.gif'
 siteSubTitle='dynamic window manager'

@@ -1,5 +1,5 @@
     <ul>
-      <li><a class="thisPage" href="http://suckless.org">home/</a></li>
+      <li class="thisPage"><a href="http://suckless.org">home/</a></li>
       <li><a href="http://hg.suckless.org">code</a></li>
       <li><a href="http://dl.suckless.org">download</a></li>
       <li><a href="http://man.suckless.org">man/</a></li>

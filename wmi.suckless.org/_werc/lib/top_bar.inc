@@ -9,5 +9,5 @@
       <li><a href="http://surf.suckless.org">surf</a></li>
       <li><a href="http://tools.suckless.org">tools/</a></li>
       <li><a href="http://wmii.suckless.org">wmii/</a></li>
-      <li><a class="thisPage" href="http://wmi.suckless.org">wmi/</a></li>
+      <li class="thisPage"><a href="http://wmi.suckless.org">wmi/</a></li>
     </ul>

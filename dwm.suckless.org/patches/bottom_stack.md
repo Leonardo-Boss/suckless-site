@@ -45,4 +45,4 @@ Download
 --------
 * [bstack.c](bstack.c) (dwm 5.6.1) (20090908)
 * [bstackhoriz.c](bstackhoriz.c) (dwm 5.6.1) (20090908)
-* see older versions in [historical patches](../historical)
+* see older versions in [historical patches](historical)

@@ -55,4 +55,4 @@ This feature was dropped from vanilla dwm in version 4.4.
 ## Download
 
 * [nmaster.c](nmaster.c) (dwm 5.6.1) (20090908)
-* see older versions in [historical patches](../historical)
+* see older versions in [historical patches](historical)

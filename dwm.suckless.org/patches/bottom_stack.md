@@ -1,12 +1,25 @@
-BOTTOM STACK PATCH
-==================
+BOTTOM STACK
+============
 
 Description
 -----------
-This patch provides an additional bottom stack layout for the dwm window manager. (It no longer includes code for 'tileleft' or 'bstacklandscape'). Use 'patch -p0' when patching.
+`bstack` and `bstackhoriz` are two bottom stack layouts for dwm.
 
-Bottom Stack Tiling:
---------------------
+Include the sources in your `config.h` (after the definition of `mfact`)
+and update the layouts and key bindings.
+
+	#include "bstack.c"
+	#include "bstackhoriz.c"
+	
+	static const Layout layouts[] = {
+		/* symbol     arrange function */
+		...
+		{ "TTT",      bstack },
+		{ "===",      bstackhoriz },
+
+
+Bottom Stack Tiling
+-------------------
 
 	bstack        (TTT)
 	+-----------------+
@@ -18,7 +31,18 @@ Bottom Stack Tiling:
 	|     |     |     |
 	+-----+-----+-----+
 
+	bstackhoriz   (===)
+	+-----------------+
+	|                 |
+	|                 |
+	|                 |
+	+-----------------+
+	+-----------------+
+	+-----------------+
+	+-----------------+
+
 Download
 --------
-* [dwm-5.6.1-bstack.diff](http://bsdgroup.org/files/dwm-5.6.1-bstack.diff) (2k) (20090726)
-* [dwm-5.5-bstack.diff](http://bsdgroup.org/files/dwm-5.5-bstack.diff) (2k) (20090307)
+* [bstack.c](bstack.c) (dwm 5.6.1) (20090908)
+* [bstackhoriz.c](bstackhoriz.c) (dwm 5.6.1) (20090908)
+* see older versions in [historical patches](../historical)

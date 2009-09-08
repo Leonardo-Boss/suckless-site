@@ -1,34 +1,30 @@
-# GAPLESS GRID LAYOUT #
+# GAPLESS GRID LAYOUT
 
-## Description ##
+## Description
 
-This patch is similar to [gridmode][1] (in fact it is an altered version) in that it provides a layout for dwm, which arranges the windows in a grid. Though instead of using a regular grid, which in case leaves empty cells (e. g. with 3 windows there are 4 cells, one cell is empty), it uses the same number of columns, but adjusts the number of rows (at first x rows and (x+1) rows, when needed) leaving no empty cells.
+This patch is an altered [gridmode](../historical/gridmode) layout for dwm,
+which arranges the windows in a grid.
+Instead of using a regular grid, which might leave empty cells when there are
+not enough windows to fill the grid, it adjusts the number of windows in the
+first few columns to avoid empty cells.
 
+## Usage
 
-## Usage ##
+Download `gaplessgrid.c` and add the gapless layout to your `config.h`:
 
-Download the patch and apply it according to the [general instructions](.). The patch will make the following changes:
+	#include "gaplessgrid.c"
+	
+	static const Layout layouts[] = {
+		/* symbol     arrange function */
+		{ "###",      gaplessgrid },
+	...
+	
+	static Key keys[] = {
+		/* modifier                     key        function        argument */
+		{ MODKEY,                       XK_g,      setlayout,      {.v = &layouts[0] } },
+	...
 
- - gaplessgrid.c: adding the file
- - config.def.h: adding the include-line for 'gaplessgrid.c'
- - config.def.h: adding the layout '"###", gaplessgrid'
+## Download
 
-Comment: There may be problems applying the patch, if another layout has been added before.
-
-
-## Configuration ##
-
- * Transfer the changes made by the patch in 'config.def.h' to 'config.h', if needed.
- * Add a key definition like '{ MODKEY, XK_g, setlayout, {.v = &layouts[3]} },'.
-
-
-## Download ##
-
- * [dwm-5.2-gaplessgrid.diff][2] (1.9k) (20081020)
- * [dwm-r1437-gaplessgrid.diff][3] (1.9k) (20090704)
-
-
-[1]: /dwm/patches/gridmode.html
-[2]: http://dwm.suckless.org/patches/dwm-5.2-gaplessgrid.diff
-[3]: http://dwm.suckless.org/patches/dwm-r1437-gaplessgrid.diff
-
+* [gaplessgrid.c](gaplessgrid.c) (dwm 5.6.1) (20090908)
+* see [historical patches](../historical) for older versoins

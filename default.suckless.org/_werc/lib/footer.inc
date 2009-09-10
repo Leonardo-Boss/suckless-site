@@ -5,7 +5,7 @@
 <style type="text/css">
 @import url(http://www.google.com/cse/api/branding.css);
 </style>
-<div class="cse-branding-bottom" style="background-color:#eeeeee;color:#000000">
+<div class="cse-branding-bottom">
 <div class="cse-branding-form">
 <form action="http://www.google.com/cse" id="cse-search-box">
 <div>

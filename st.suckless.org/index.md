@@ -1,8 +1,3 @@
-ST
-==
-
-Description
------------
 st is a simple terminal implementation for X.
 
 

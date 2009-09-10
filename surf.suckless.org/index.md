@@ -13,6 +13,7 @@ Links
 Download
 --------
 * [MIT/X Consortium license](http://hg.suckless.org/surf/raw-file/tip/LICENSE)
+* [surf 0.1](http://dl.suckless.org/surf/surf-0.1.tar.gz) (19kb) (20090726)
 * See also [dmenu](http://tools.suckless.org/dmenu)
 
 Development

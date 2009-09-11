@@ -1,4 +1,4 @@
-wmi was the initial project which became popular, though [wmii](/wmii/) is the
+wmi was the initial project which became popular, though [wmii](http://wmii.suckless.org) is the
 successor of wmi. The last release of wmi happened back in 2004. There are still
 some occasional users of wmi. If you like to check how the good old days felt,
 check it out, though its code sucks more unfortunately than our more

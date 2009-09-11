@@ -9,9 +9,9 @@ recent projects.
 Download
 --------
 You can download the historic copy of
-[wmi-10](http://dl.suckless.org/misc/wmi-10.tar.gz). Unfortunately there
-is no associated repository anymore. There used to be a subversion repository
-in the older days.
+[wmi-10](http://dl.suckless.org/misc/wmi-10.tar.gz). You can also [browse](http://hg.suckless.org/wmi) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with the following command:
+
+	hg clone http://hg.suckless.org/wmi
 
 Build
 -----

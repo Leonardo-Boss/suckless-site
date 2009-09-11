@@ -1,14 +1,13 @@
 wmi was the initial project which became popular, though [wmii](http://wmii.suckless.org) is the
 successor of wmi. The last release of wmi happened back in 2004. There are still
-some occasional users of wmi. If you like to check how the good old days felt,
-check it out, though its code sucks more unfortunately than our more
-recent projects.
+some occasional users of wmi. If you would like to experience the good old days,
+please check it out; though, its code sucks more unfortunately than our recent projects.
 
 ->[![Screenshot](screenshots/wmi-20080718s.png)](screenshots/wmi-20080718.png)<-
 
 Download
 --------
-You can download the historic copy of
+You can download an historic copy of
 [wmi-10](http://dl.suckless.org/misc/wmi-10.tar.gz). You can also [browse](http://hg.suckless.org/wmi) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with the following command:
 
 	hg clone http://hg.suckless.org/wmi

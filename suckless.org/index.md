@@ -3,6 +3,9 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/manifest) and join us on the [mailing list](/community).
 
+NEWS
+====
+
 2009/09/11
 ----------
 New [surf](http://surf.suckless.org) release: [surf-0.1.2](http://dl.suckless.org/surf/surf-0.1.2.tar.gz)

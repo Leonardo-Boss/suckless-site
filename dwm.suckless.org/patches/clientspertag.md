@@ -40,7 +40,7 @@ will result on swapping between the defined value and -1.
 
 ## Download
 
- * [dwm-5.6.1-cpt.diff][dwm-5.6.1-cpt.diff] (2.9k) (20090913)
+ * [dwm-5.6.1-cpt.diff](dwm-5.6.1-cpt.diff) (2.9k) (20090913)
 
 ## Maintainer
 

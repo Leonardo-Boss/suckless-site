@@ -1,18 +1,3 @@
-Only in dwm-5.6.1-cpt: ch
-diff -ru dwm-5.6.1/config.def.h dwm-5.6.1-cpt/config.def.h
---- dwm-5.6.1/config.def.h	2009-09-13 18:11:32.000000000 +0200
-+++ dwm-5.6.1-cpt/config.def.h	2009-07-26 15:01:50.000000000 +0200
-@@ -80,8 +80,6 @@
- 	TAGKEYS(                        XK_7,                      6)
- 	TAGKEYS(                        XK_8,                      7)
- 	TAGKEYS(                        XK_9,                      8)
--	{ MODKEY,             		XK_q,      clientspertag,  {.v="^2"} },
--	{ MODKEY,             		XK_a,      clientspertag,  {.v="^3"} },
- 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
- };
- 
-Only in dwm-5.6.1-cpt: config.h
-Only in dwm-5.6.1-cpt: dwm
 diff -ru dwm-5.6.1/dwm.c dwm-5.6.1-cpt/dwm.c
 --- dwm-5.6.1/dwm.c	2009-07-26 15:01:50.000000000 +0200
 +++ dwm-5.6.1-cpt/dwm.c	2009-09-13 18:08:50.000000000 +0200
@@ -84,5 +69,3 @@ diff -ru dwm-5.6.1/dwm.c dwm-5.6.1-cpt/dwm.c
 +		}
  	}
  }
- 
-Only in dwm-5.6.1-cpt: dwm.o

@@ -3,7 +3,8 @@
 ## Description
 
 This patch modifies the tile() layout to limit the maximum number of visible
-clients per tag. Out-of-limit windows are arranged.
+clients per tag. Out-of-limit windows are arranged behind the visible ones
+in the slave area.
 
 
     +-----------------------+  +-----------------------+

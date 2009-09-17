@@ -40,19 +40,17 @@ arrangement can be seen below.
 
 ## Download
 
- * [dwm-5.2-fibonacci.diff][5] (1.9k) (20081003)
- * [dwm-5.1-fibonacci.diff][3] (1.9k) (20080731)
+ * [dwm-5.6.1-fibonacci.diff][4] (1.9k) (20090911)
 
-## Author
+## Maintainer
 
- * Jeroen Schot - <schot@a-eskwadraat.nl>
+ * Niki Yoshiuchi - <aplusbi@gmail.com>
 
-Joe Thornber's spiral tiling for [Xmonad][4] formed the inspiration for this
+Joe Thornber's spiral tiling for [Xmonad][3] formed the inspiration for this
 patch. Thanks to Jan Christoph Ebersbach for updating this patch for versions
 4.5 to 4.9.
 
 [1]: http://schot.a-eskwadraat.nl/images/dwm-spiral_small.png
 [2]: http://schot.a-eskwadraat.nl/images/dwm-spiral.png
-[3]: http://schot.a-eskwadraat.nl/files/dwm-5.1-fibonacci.diff
-[4]: http://www.xmonad.org
-[5]: http://www.aplusbi.com/dwm/dwm-5.2-fibonacci.diff
+[3]: http://www.xmonad.org
+[4]: http://www.aplusbi.com/projects/dwm/dwm-5.6.1-fibonacci.diff

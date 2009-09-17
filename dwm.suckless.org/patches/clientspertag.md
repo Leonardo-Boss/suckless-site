@@ -1,54 +1,48 @@
-LIMIT CLIENTS PER TAG PATCH
-===========================
+# CLIENTS PER TAG
 
-Last update: 2007-10-25
+## Description
 
-See [nmaster][2] for cpt on dwm-4.6.
+This patch modifies the tile() layout to limit the maximum number of visible
+clients per tag. Out-of-limit windows are arranged behind the visible ones
+in the slave area.
 
-This patch allows you to limit the number of clients to be shown.
-This restriction only affects non-floating windows.
 
-This patch can be used as a 'set' or 'toggle' mode.
+    +-----------------------+  +-----------------------+
+    | -1/3                  |  |  2/3                  |
+    +-----------+-----------+  +-----------+-----------+
+    |           |           |  |           |           |
+    |           |     2     |  |           |           |
+    |           |           |  |           |           |
+    |     1     +-----------+  |     1     |     2     |
+    |           |           |  |           |           |
+    |           |     3     |  |           |           |
+    |           |           |  |           |           |
+    +-----------+-----------+  +-----------+-----------+
+              cpt=-1                     cpt=2
 
-Tips
-----
+## Usage
 
-* To show all windows put "-1" as argument value. 
-* To only display floating windows put "0" as argument.
-* For a toggling pair put "^2".
+ 1. Download the patch and apply according to the [general instructions](.).
+ 2. The patch adds two new keybindings (META-q/a) which set cpt to ^2 and ^3:
 
-Configuration
--------------
+If the argument to 'clientspertag' starts with '^' pressing twice the key
+will result on swapping between the defined value and -1.
 
-The MODKEY+w toggles between two visible tiled windows and MODKEY+SHIFT+w hides all tiled windows.
+  * To show all windows put "-1" as argument value. 
+  * To only display floating windows put "0" as argument.
+  * For a toggling pair put "^2".
 
-        { MODKEY|ShiftMask,             XK_q,           clientspertag,  "0" }, \
-        { MODKEY,                       XK_q,           clientspertag,  "^1" }, \
-        { MODKEY,                       XK_w,           clientspertag,  "^2" }, \
-        { MODKEY,                       XK_e,           clientspertag,  "^3" }, \
+  static Key keys[] = {
+        /* modifier      key        function        argument */
+        ...
+        { MODKEY,        XK_q,      clientspertag,  {.v="^2"} },
+        { MODKEY,        XK_a,      clientspertag,  {.v="^3"} },
+  };
 
-Download
---------
+## Download
 
-You can download this patch [dwm-4.4-cpt.patch](http://news.nopcode.org/dwm-4.4-cpt.patch) (3K)
+ * [dwm-5.6.1-cpt.diff](dwm-5.6.1-cpt.diff) (2.9k) (20090913)
 
-See [nmaster][1] for dwm-4.6.
+## Maintainer
 
-Here's a [patch][2] from <i>Ritesh Kumar</i> that modifies dwm.c to show cpt and total number of clients in the statusbar.
-
-TODO
-----
-
-* Maybe it should be renamed to "tiledlimit" or "clientslimit". 
-* Think about a way to make the focused client always visible (enhanced monocle patch?)
-
-Feedback is welcome :)
-
-AUTHOR
-------
-
-* pancake -- pancake /at/ youterm /dot/ com
-
-[1]: /dwm/patches/nmaster.html
-[2]: http://news.nopcode.org/cptdwm-4.6.diff
-
+ * pancake - <pancake@nopcode.org>

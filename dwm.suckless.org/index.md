@@ -1,10 +1,3 @@
-![dwm](dwm.gif)
-
-DYNAMIC WINDOW MANAGER
-======================
-
-Description
------------
 dwm is a dynamic window manager for X. It manages windows in tiled, monocle
 and floating layouts. Either layout can be applied dynamically, optimising the
 environment for the application in use and the task performed.
@@ -47,7 +40,7 @@ In contrast to ion, larswm, and wmii, dwm is much smaller, faster and simpler.
 
 Links
 -----
-* [Man page](manpage)
+* [Man page](http://man.suckless.org/dwm/1/dwm)
 * Mailing List: `dev+subscribe@suckless.org` ([Archives](http://lists.suckless.org/dev/)) ([Old Archives](http://lists.suckless.org/dwm/)) (see [community](http://suckless.org/common/community/) for details)
 * IRC channel: #suckless at irc.oftc.net ([irc log](TODO))
 

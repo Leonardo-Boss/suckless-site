@@ -54,16 +54,14 @@ Packages
 If there are no packages for your Linux distribution/OS yet, ask the
 appropriate maintainers to create one or compile wmii from source.
 
-Debian
-------
+### Debian
 Official debian packages are available in the unstable and testing repository
 on debian.org. Backports for stable are available on
 [backports.org](http://www.backports.org/). Prospective packages and/or
 snapshots can be downloaded from the [maintainers
 website](http://archive.daniel-baumann.ch/debian/packages/wmii/).
 
-Source Mage
------------
+### Source Mage
 A Source Mage spell for the 20070516 wmii snapshot is available. As usual, just
 type
 
@@ -71,24 +69,19 @@ type
 
 in a term to install it.
 
-FreeBSD
--------
+### FreeBSD
 Port is available at x11-wm/wmii.
 
-NetBSD
-------
+### NetBSD
 A pkgsrc package for wmii is available in [wm/wmii](http://pkgsrc.se/wm/wmii) and [wip/wmii-devel](http://pkgsrc.se/wip/wmii-devel).
 
-OpenBSD
--------
+### OpenBSD
 wmii is included in the OpenBSD ports tree ([x11/wmii](http://www.openbsd.org/cgi-bin/cvsweb/ports/x11/wmii/)), and binary packages are available from most [OpenBSD mirrors](http://openbsd.org/ftp.html).
 
-Arch Linux
-----------
+### Arch Linux
 * [wmii-3.6](http://archlinux.org/packages/search/?q=wmii) is available in the Arch \[extra\] repository.
 * [wmii-hg](http://aur.archlinux.org/packages.php?ID=3497) is available in AUR \[unsupported\]. Building with `makepkg` pulls the latest hg revision.
 
-Gentoo
-------
+### Gentoo
 Ebuild is available at [x11-wm/wmii](http://packages.gentoo.org/package/x11-wm/wmii).
 

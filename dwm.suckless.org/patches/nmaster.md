@@ -45,15 +45,15 @@ This feature was dropped from vanilla dwm in version 4.4.
 	
 	static Key keys[] = {
 		/* modifier                     key        function        argument */
-		{ MODKEY,                       XK_a,      incmaster,      {.i = +1 } },
-		{ MODKEY,                       XK_z,      incmaster,      {.i = -1 } },
-		{ MODKEY,                       XK_x,      setmaster,      {.i = 2 } },
+		{ MODKEY,                       XK_a,      incnmaster,     {.i = +1 } },
+		{ MODKEY,                       XK_z,      incnmaster,     {.i = -1 } },
+		{ MODKEY,                       XK_x,      setnmaster,     {.i = 2 } },
 		{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0] } },
 		{ MODKEY,                       XK_b,      setlayout,      {.v = &layouts[1] } },
 	...
 
 ## Download
 
-* [nmaster-sym.c](nmaster-sym.c) (dwm 5.7) (20090916) - layout symbol shows the number of masters: `n]=`, `TnT`
+* [nmaster-sym.c](nmaster-sym.c) (dwm 5.7) (20090922) - layout symbol shows the number of masters: `n]=`, `TnT`
 * [nmaster.c](nmaster.c) (dwm 5.6.1) (20090908)
 * see older versions in [historical patches](historical)

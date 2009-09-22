@@ -33,15 +33,13 @@ setnmaster(const Arg *arg) {
 
 static void
 ntile(Monitor *m) {
-	static char ntext[8];
 	int x, y, h, w, mw, nm;
 	unsigned int i, n;
 	Client *c;
 
 	initnmaster();
 	/* override layout symbol */
-	snprintf(ntext, sizeof ntext, "%d]=", nmasters[m->num]);
-	m->ltsymbol = ntext;
+	snprintf(m->ltsymbol, sizeof m->ltsymbol, "%d]=", nmasters[m->num]);
 	for(n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++);
 	c = nexttiled(m->clients);
 	nm = m->num < MaxMon ? nmasters[m->num] : nmaster;
@@ -82,15 +80,13 @@ ntile(Monitor *m) {
 
 static void
 nbstack(Monitor *m) {
-	static char ntext[8];
 	int x, y, h, w, mh, nm;
 	unsigned int i, n;
 	Client *c;
 
 	initnmaster();
 	/* override layout symbol */
-	snprintf(ntext, sizeof ntext, "T%dT", nmasters[m->num]);
-	m->ltsymbol = ntext;
+	snprintf(m->ltsymbol, sizeof m->ltsymbol, "T%dT", nmasters[m->num]);
 	for(n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++);
 	c = nexttiled(m->clients);
 	nm = m->num < MaxMon ? nmasters[m->num] : nmaster;

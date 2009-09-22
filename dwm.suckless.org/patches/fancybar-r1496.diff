@@ -1,7 +1,7 @@
-diff -r 63e19dad219c dwm.c
---- a/dwm.c	Tue Aug 18 15:59:38 2009 +0100
-+++ b/dwm.c	Mon Aug 24 18:29:24 2009 +0200
-@@ -169,6 +169,7 @@
+diff -r de4a2998e1f5 dwm.c
+--- a/dwm.c	Tue Sep 22 09:53:11 2009 +0100
++++ b/dwm.c	Tue Sep 22 12:32:15 2009 +0200
+@@ -171,6 +171,7 @@
  static Monitor *dirtomon(int dir);
  static void drawbar(Monitor *m);
  static void drawbars(void);
@@ -9,21 +9,26 @@ diff -r 63e19dad219c dwm.c
  static void drawsquare(Bool filled, Bool empty, Bool invert, unsigned long col[ColLast]);
  static void drawtext(const char *text, unsigned long col[ColLast], Bool invert);
  static void enternotify(XEvent *e);
-@@ -648,10 +649,11 @@
+@@ -668,12 +669,15 @@
  
  void
  drawbar(Monitor *m) {
 -	int x;
+-	unsigned int i, occ = 0, urg = 0;
 +	int x, ow, mw = 0, extra, tw;
- 	unsigned int i, n = 0, occ = 0, urg = 0;
++	unsigned int i, n = 0, occ = 0, urg = 0;
  	unsigned long *col;
 -	Client *c;
 +	Client *c, *firstvis, *lastvis = NULL;
 +	DC seldc;
  
  	for(c = m->clients; c; c = c->next) {
- 		if(ISVISIBLE(c))
-@@ -689,16 +691,62 @@
++		if(ISVISIBLE(c))
++			n++;
+ 		occ |= c->tags;
+ 		if(c->isurgent)
+ 			urg |= c->tags;
+@@ -702,16 +706,62 @@
  	}
  	else
  		dc.x = m->ww;
@@ -93,23 +98,23 @@ diff -r 63e19dad219c dwm.c
  	XCopyArea(dpy, dc.drawable, m->barwin, dc.gc, 0, 0, m->ww, bh, 0, 0);
  	XSync(dpy, False);
  }
-@@ -709,6 +757,15 @@
+@@ -725,6 +775,15 @@
+ }
  
- 	for(m = mons; m; m = m->next)
- 		drawbar(m);
-+}
-+
-+void
+ void
 +drawvline(unsigned long col[ColLast]) {
 +	XGCValues gcv;
 +
 +	gcv.foreground = col[ColFG];
 +	XChangeGC(dpy, dc.gc, GCForeground, &gcv);
 +	XDrawLine(dpy, dc.drawable, dc.gc, dc.x, dc.y, dc.x, dc.y + (dc.font.ascent + dc.font.descent + 2));
- }
- 
- void
-@@ -1235,8 +1292,7 @@
++}
++
++void
+ drawsquare(Bool filled, Bool empty, Bool invert, unsigned long col[ColLast]) {
+ 	int x;
+ 	XGCValues gcv;
+@@ -1274,8 +1333,7 @@
  		}
  		if(ev->atom == XA_WM_NAME || ev->atom == netatom[NetWMName]) {
  			updatetitle(c);

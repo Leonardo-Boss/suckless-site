@@ -20,8 +20,8 @@ Text Editors
 
 Audio Players
 -------------
-* [cmus](http://onion.dynserv.net/~timo/cmus.html)
-* [cplay](http://mask.tf.hut.fi/~flu/hacks/cplay/)
+* [cmus](http://cmus.sourceforge.net/)
+* [cplay](http://cplay.sourceforge.net/)
 * [moc](http://moc.daper.net/)
 * [mpd](http://www.musicpd.org/) - A client/server based music player with console and graphical front-ends.
 * [mpg123](http://www.mpg123.de/) - A console mpg player which doesn't use auto*hell, or extra libraries.
@@ -46,14 +46,14 @@ Image Viewers
 * [jpg/gif/bmp/png][plan9port] - Simple programs from Plan 9 to display images in no-frills windows. Included with plan9port.
 * [page][plan9port] - Plan 9's image/document viewer program. Included with plan9port.
 * [qiv](http://www.klografx.net/qiv/)
-* [xli](http://pantransit.reptiles.org/prog/)
+* [xli](http://pantransit.reptiles.org/prog/) - broken link? Apparently, there's a copy here: http://ftp.x.org/contrib/applications/ -- at your own risk
 * [xzgv](http://sourceforge.net/projects/xzgv)
 
 IRC Clients
 -----------
 * [acme:SAC](http://caerwyn.com/acme/index.html)
 * [ii](/programs/ii.html) - A FIFO based IRC client which is part of the suckless.org project.
-* [ircc](http://www.r-36.net/ircc.tgz) - A no-frills, ncurses free, console-based IRC client.
+* [ircc](http://www.r-36.net/ircc.tgz) - A no-frills, ncurses free, console-based IRC client. Broken link. Is it [netwalker-ircc?](http://www.freebsdsoftware.org/irc/netwalker-ircc.html)
 * [Irc](http://swtch.com/irc/)
 * [ircrc](http://plan9.bell-labs.com/sources/contrib/fgb/rc/ircrc) - An rc-based IRC client similar to ircc. Needs minor modification to run on UNIX.
 * [irssi](http://www.irssi.org/)

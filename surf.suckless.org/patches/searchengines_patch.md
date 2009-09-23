@@ -15,11 +15,11 @@ like this in your config.h:
 This will enable searching in your favorit search engine by simply
 putting the prefix of your search engine in front your keywords:
 
-> "g foo bar"
+    g foo bar
 
 Or:
 
-> "leo hello"
+    leo hello
 
 Download
 ------

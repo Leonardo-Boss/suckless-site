@@ -1,6 +1,6 @@
 diff -r fee97b4579f2 config.def.h
 --- a/config.def.h	Mon Sep 21 03:27:20 2009 +0200
-+++ b/config.def.h	Wed Sep 23 01:21:45 2009 +0200
++++ b/config.def.h	Wed Sep 23 15:00:12 2009 +0200
 @@ -30,3 +30,6 @@
      { 0,                    GDK_Return, hideurl,    { 0 },          UrlBar },
  };
@@ -10,7 +10,7 @@ diff -r fee97b4579f2 config.def.h
 +}
 diff -r fee97b4579f2 surf.c
 --- a/surf.c	Mon Sep 21 03:27:20 2009 +0200
-+++ b/surf.c	Wed Sep 23 01:21:45 2009 +0200
++++ b/surf.c	Wed Sep 23 15:00:12 2009 +0200
 @@ -58,6 +58,11 @@
  	KeyFocus focus;
  } Key;
@@ -23,7 +23,15 @@ diff -r fee97b4579f2 surf.c
  static Display *dpy;
  static Atom urlprop;
  static SoupCookieJar *cookiejar;
-@@ -348,14 +353,27 @@
+@@ -92,6 +97,7 @@
+ static Client *newclient(void);
+ static WebKitWebView *newwindow(WebKitWebView  *v, WebKitWebFrame *f, Client *c);
+ static void pasteurl(GtkClipboard *clipboard, const gchar *text, gpointer d);
++static gchar *parseuri(const gchar *uri);
+ static GdkFilterReturn processx(GdkXEvent *xevent, GdkEvent *event, gpointer d);
+ static void print(Client *c, const Arg *arg);
+ static void proccookies(SoupMessage *m, Client *c);
+@@ -348,14 +354,26 @@
  	g_free(uri);
  }
  
@@ -33,10 +41,9 @@ diff -r fee97b4579f2 surf.c
 +    for (i = 0; i < LENGTH(searchengines); i++) {
 +        if (searchengines[i].token == NULL || searchengines[i].uri == NULL)
 +            continue;
-+        int length = strlen(searchengines[i].token) + 1;
-+        gchar *prefix = g_strdup_printf("%s ", searchengines[i].token);
-+        if(g_str_has_prefix(uri, prefix))
-+            return g_strdup_printf(searchengines[i].uri, uri+length);
++        if(g_str_has_prefix(uri, searchengines[i].token)) {
++            return g_strdup_printf(searchengines[i].uri, uri + strlen(searchengines[i].token) + 1);
++        }
 +    }
 +    return g_strrstr(uri, "://") ? g_strdup(uri) : g_strdup_printf("http://%s", uri);
 +}

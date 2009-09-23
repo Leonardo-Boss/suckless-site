@@ -7,7 +7,7 @@ diff -r fee97b4579f2 config.def.h
  
 +static SearchEngine searchengines[] = {
 +    { NULL, NULL },
-+}
++};
 diff -r fee97b4579f2 surf.c
 --- a/surf.c	Mon Sep 21 03:27:20 2009 +0200
 +++ b/surf.c	Wed Sep 23 15:00:12 2009 +0200

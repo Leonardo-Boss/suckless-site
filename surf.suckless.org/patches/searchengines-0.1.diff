@@ -1,6 +1,6 @@
 diff -r fee97b4579f2 config.def.h
 --- a/config.def.h	Mon Sep 21 03:27:20 2009 +0200
-+++ b/config.def.h	Wed Sep 23 15:00:12 2009 +0200
++++ b/config.def.h	Wed Sep 23 22:58:21 2009 +0200
 @@ -30,3 +30,6 @@
      { 0,                    GDK_Return, hideurl,    { 0 },          UrlBar },
  };
@@ -10,7 +10,7 @@ diff -r fee97b4579f2 config.def.h
 +};
 diff -r fee97b4579f2 surf.c
 --- a/surf.c	Mon Sep 21 03:27:20 2009 +0200
-+++ b/surf.c	Wed Sep 23 15:00:12 2009 +0200
++++ b/surf.c	Wed Sep 23 22:58:21 2009 +0200
 @@ -58,6 +58,11 @@
  	KeyFocus focus;
  } Key;
@@ -31,7 +31,7 @@ diff -r fee97b4579f2 surf.c
  static GdkFilterReturn processx(GdkXEvent *xevent, GdkEvent *event, gpointer d);
  static void print(Client *c, const Arg *arg);
  static void proccookies(SoupMessage *m, Client *c);
-@@ -348,14 +354,26 @@
+@@ -348,14 +354,25 @@
  	g_free(uri);
  }
  
@@ -39,11 +39,10 @@ diff -r fee97b4579f2 surf.c
 +parseuri(const gchar *uri) {
 +    guint i;
 +    for (i = 0; i < LENGTH(searchengines); i++) {
-+        if (searchengines[i].token == NULL || searchengines[i].uri == NULL)
++        if (searchengines[i].token == NULL || searchengines[i].uri == NULL || *(uri + strlen(searchengines[i].token)) != ' ')
 +            continue;
-+        if(g_str_has_prefix(uri, searchengines[i].token)) {
++        if(g_str_has_prefix(uri, searchengines[i].token))
 +            return g_strdup_printf(searchengines[i].uri, uri + strlen(searchengines[i].token) + 1);
-+        }
 +    }
 +    return g_strrstr(uri, "://") ? g_strdup(uri) : g_strdup_printf("http://%s", uri);
 +}

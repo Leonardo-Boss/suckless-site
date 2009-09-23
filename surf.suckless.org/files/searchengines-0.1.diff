@@ -1,0 +1,55 @@
+diff -r fee97b4579f2 config.def.h
+--- a/config.def.h	Mon Sep 21 03:27:20 2009 +0200
++++ b/config.def.h	Wed Sep 23 01:21:45 2009 +0200
+@@ -30,3 +30,6 @@
+     { 0,                    GDK_Return, hideurl,    { 0 },          UrlBar },
+ };
+ 
++static SearchEngine searchengines[] = {
++    { NULL, NULL },
++}
+diff -r fee97b4579f2 surf.c
+--- a/surf.c	Mon Sep 21 03:27:20 2009 +0200
++++ b/surf.c	Wed Sep 23 01:21:45 2009 +0200
+@@ -58,6 +58,11 @@
+ 	KeyFocus focus;
+ } Key;
+ 
++typedef struct {
++    char *token;
++    char *uri;
++} SearchEngine;
++
+ static Display *dpy;
+ static Atom urlprop;
+ static SoupCookieJar *cookiejar;
+@@ -348,14 +353,27 @@
+ 	g_free(uri);
+ }
+ 
++gchar *
++parseuri(const gchar *uri) {
++    guint i;
++    for (i = 0; i < LENGTH(searchengines); i++) {
++        if (searchengines[i].token == NULL || searchengines[i].uri == NULL)
++            continue;
++        int length = strlen(searchengines[i].token) + 1;
++        gchar *prefix = g_strdup_printf("%s ", searchengines[i].token);
++        if(g_str_has_prefix(uri, prefix))
++            return g_strdup_printf(searchengines[i].uri, uri+length);
++    }
++    return g_strrstr(uri, "://") ? g_strdup(uri) : g_strdup_printf("http://%s", uri);
++}
++
+ void
+ loaduri(Client *c, const Arg *arg) {
+ 	gchar *u;
+ 	const gchar *uri = (gchar *)arg->v;
+ 	if(!uri)
+ 		uri = gtk_entry_get_text(GTK_ENTRY(c->urlbar));
+-	u = g_strrstr(uri, "://") ? g_strdup(uri)
+-		: g_strdup_printf("http://%s", uri);
++	u = parseuri(uri);
+ 	webkit_web_view_load_uri(c->view, u);
+ 	c->progress = 0;
+ 	c->title = copystr(&c->title, u);

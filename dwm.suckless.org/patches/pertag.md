@@ -27,4 +27,4 @@ installed) per tag.
 [5]: http://v4hn.de/patches/dwm-5.1-pertag.diff
 [6]: http://dwm.suckless.org/patches/historical/dwm-5.2-pertag.diff
 [7]: http://dwm.suckless.org/patches/historical/dwm-5.4-pertag.diff
-[8]: http://dwm.suckless.org/patches/historical/dwm-pertag-5.6.1.diff
+[8]: http://dwm.suckless.org/patches/dwm-pertag-5.6.1.diff

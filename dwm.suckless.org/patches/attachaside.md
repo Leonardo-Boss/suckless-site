@@ -3,7 +3,7 @@
 ## Description
 
 Make new client get attached and focused in the stacking area instead of
-always becoming the new master. 
+always becoming the new master.
 Basically an attachabove mod.
 
 ## Example
@@ -22,9 +22,9 @@ Basically an attachabove mod.
 
 	New Behaviour :
 	+-----------------+-------+
-	|                 |       | 
-	|                 |   N   | 
-	|                 |       | 
+	|                 |       |
+	|                 |   N   |
+	|                 |       |
 	|        P        +-------+
 	|                 |       |
 	|                 |       |
@@ -37,9 +37,9 @@ Basically an attachabove mod.
 	|                 |   P   |
 	|                 |       |
 	|                 +-------+
-	|                 |       | 
-	|                 |   N   | 
-	|                 |       | 
+	|                 |       |
+	|                 |   N   |
+	|                 |       |
 	+-----------------+-------+
 
 ## Download

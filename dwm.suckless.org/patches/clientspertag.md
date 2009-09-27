@@ -28,7 +28,7 @@ in the slave area.
 If the argument to 'clientspertag' starts with '^' pressing twice the key
 will result on swapping between the defined value and -1.
 
-  * To show all windows put "-1" as argument value. 
+  * To show all windows put "-1" as argument value.
   * To only display floating windows put "0" as argument.
   * For a toggling pair put "^2".
 

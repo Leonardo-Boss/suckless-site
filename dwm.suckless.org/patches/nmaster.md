@@ -54,6 +54,6 @@ This feature was dropped from vanilla dwm in version 4.4.
 
 ## Download
 
-* [nmaster-sym.c](nmaster-sym.c) (dwm 5.7) (20090922) - layout symbol shows the number of masters: `n]=`, `TnT`
+* [nmaster-sym.c](nmaster-sym.c) (dwm 5.7.1) (20090927) - layout symbol shows the number of masters: `n]=`, `TnT`
 * [nmaster.c](nmaster.c) (dwm 5.6.1) (20090908)
 * see older versions in [historical patches](historical)

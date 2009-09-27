@@ -20,7 +20,7 @@ incnmaster(const Arg *arg) {
 	nmasters[selmon->num] += arg->i;
 	if(nmasters[selmon->num] < 0)
 		nmasters[selmon->num] = 0;
-	arrange();
+	arrange(selmon);
 }
 
 static void
@@ -28,7 +28,7 @@ setnmaster(const Arg *arg) {
 	if(!arg || !selmon->lt[selmon->sellt]->arrange || selmon->num >= MaxMon)
 		return;
 	nmasters[selmon->num] = arg->i > 0 ? arg->i : 0;
-	arrange();
+	arrange(selmon);
 }
 
 static void

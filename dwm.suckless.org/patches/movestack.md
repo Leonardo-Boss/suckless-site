@@ -1,4 +1,4 @@
-# MOVESTACK 
+# MOVESTACK
 
 ## Description
 
@@ -15,7 +15,7 @@ movestack(-1) will swap the client with the current focus with the previous clie
 
         #include "movestack.c"
         static Key keys[] = {
- 	       /* modifier                     key        function        argument */
+	       /* modifier                     key        function        argument */
 	       ...
 	       { MODKEY|ShiftMask,             XK_j,      movestack,      {.i = +1 } },
 	       { MODKEY|ShiftMask,             XK_k,      movestack,      {.i = -1 } },

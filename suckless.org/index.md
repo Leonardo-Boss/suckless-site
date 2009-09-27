@@ -5,7 +5,7 @@ Read more about our [philosophy](/common/) and join us on the [mailing list](com
 
 2009/09/27
 ----------
-New [dwm](http://dwm.suckless.org) release: [dwm-5.7.1](http://dl.suckless.org/dwm/dwm-5.7.1.tar.gz)
+New [dwm](http://dwm.suckless.org) release: [dwm-5.7.2](http://dl.suckless.org/dwm/dwm-5.7.2.tar.gz)
 
 2009/08/27
 ----------

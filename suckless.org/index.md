@@ -3,9 +3,9 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
-2009/09/26
+2009/09/27
 ----------
-New [dwm](http://dwm.suckless.org) release: [dwm-5.7](http://dl.suckless.org/dwm/dwm-5.7.tar.gz)
+New [dwm](http://dwm.suckless.org) release: [dwm-5.7.1](http://dl.suckless.org/dwm/dwm-5.7.1.tar.gz)
 
 2009/08/27
 ----------

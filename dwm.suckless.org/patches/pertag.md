@@ -6,6 +6,7 @@ More general approach of [taglayouts patch][3]. The patch keeps layout, mwfact, 
 installed) per tag.
 
 ## Download ##
+ * [dwm-5.7.2-pertag.diff][9]
  * [dwm-pertag-5.6.1.diff][8]
  * [dwm-5.4-pertag.diff][7]
  * [dwm-5.2-pertag.diff][6]
@@ -19,6 +20,7 @@ installed) per tag.
  * Jan Christoph Ebersbach - <jceb@e-jc.de>
  * Updated by V4hn - v4hn.de
  * Updated by Jerome Andrieux - <jerome@gcu.info>
+ * Updated by Sidney Amani - <seed AT uffs.org>
 
 [1]: http://www.e-jc.de/dwm/4.6/current/dwm-4.6-pertag.diff
 [2]: http://www.e-jc.de/dwm/4.6/current/dwm-4.6-pertag_nmaster.diff
@@ -28,3 +30,4 @@ installed) per tag.
 [6]: http://dwm.suckless.org/patches/historical/dwm-5.2-pertag.diff
 [7]: http://dwm.suckless.org/patches/historical/dwm-5.4-pertag.diff
 [8]: http://dwm.suckless.org/patches/dwm-pertag-5.6.1.diff
+[9]: http://dwm.suckless.org/patches/dwm-5.7.2-pertag.diff

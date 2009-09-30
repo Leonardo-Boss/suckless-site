@@ -3,13 +3,14 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
+2009/09/29
+----------
+[wmii 3.9a2](http://wmii.suckless.org/) released: [download](http://dl.suckless.org/wmii/wmii+ixp-3.9a2.tgz)
+
+
 2009/09/27
 ----------
 New [dwm](http://dwm.suckless.org) release: [dwm-5.7.2](http://dl.suckless.org/dwm/dwm-5.7.2.tar.gz)
-
-2009/08/27
-----------
-[wmii 3.9a1](http://wmii.suckless.org/) released: [download](http://dl.suckless.org/wmii/wmii+ixp-3.9a1.tgz)
 
 2009/08/03
 ----------

@@ -1,11 +1,14 @@
-% {
+%{
 # To add your themes to this file, define them below as you would
 # in rc syntax, and follow them with a call to:
 #
 #   theme "theme name"
 #
 # See below for examples.
+%}
 
+
+% {
 THEMES
 ======
 

@@ -93,5 +93,5 @@ Original guide by Steffen Liebergeld (stepardo) — perl at gmx.org
 German translation by Norman Golisz — hp at zcat.de  
 Italian translation by Stefano K. Lee — wizinblack at gmail.com
 
-[1]: http://code.google.com/p/wmii/source/browse/doc/wmii.pdf
+[1]: http://wmii.googlecode.com/hg/doc/wmii.pdf
 [2]: http://www.gnu.org/licenses/gpl-2.0.html

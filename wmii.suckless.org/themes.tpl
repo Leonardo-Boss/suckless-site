@@ -35,7 +35,7 @@ fn theme {
 	bg = $WMII_BACKGROUND
 %}
 	<h1>%($name%)</h1>
-	<div style="color: %($ff%); background: %($bg%); border-color: %($fr%);">
+	<div style="color: %($ff%); background: %($bg%); border: 1px solid %($fr%);">
 		<div style="color: %($ff%); background: %($fb%); border: 0px; border-bottom: 1px solid %($fr%); margin: 0;">
 		    WMII_FOCUSCOLORS=('%($ff%)' '%($fb%)' '%($fr%)')
 		</div>
@@ -43,7 +43,7 @@ fn theme {
 			WMII_BACKGROUND='%($bg%)'
 		</div>
 	</div>
-	<div style="color: %($nf%); background: %($nb%); border-color: %($nr%); margin-top: .5em;">
+	<div style="color: %($nf%); background: %($nb%); border: 1px solid %($nr%); margin-top: .5em;">
 		WMII_NORMCOLORS=('%($nf%)' '%($nb%)' '%($nr%)')
 	</div>
 %{

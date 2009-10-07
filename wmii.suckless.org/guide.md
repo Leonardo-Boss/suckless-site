@@ -1,7 +1,13 @@
-A GUIDE TO wmii
-===============
+Archival wmii documentation
+=============================
 
-These documents are licensed under the terms of the [GNU GPLv2](http://www.gnu.org/licenses/gpl-2.0.html).
+Here, for archival purposes, are the guides to historical releases of wmii.
+They have been superseded by [`doc/wmii.pdf`][1] in the standard distribution.
+
+A GUIDE TO wmii
+---------------
+
+These documents are licensed under the terms of the [GNU GPLv2][2].
 
 This is a page about the beginners guide to wmii, a document written to give newcomers a good understanding of wmii, the usage, the project and its goals. The original version was written by Steffen Liebergeld in English.
 
@@ -28,28 +34,28 @@ Also, please note that there have been many changes since wmii-3.1 so that the g
 	</tr>
 	<tr>
 	<td><a href="http://code.suckless.org/contrib/guide/wmii-3/guide-en/guide_en.pdf">pdf</a></td>
-	<td>&#8212;</td>
+	<td>—</td>
 	<td><a href="http://code.suckless.org/contrib/guide/wmii-3/guide-it/guide_it.pdf">pdf</a></td>
 	<td><a href="http://code.suckless.org/contrib/guide/wmii-3/guide-es/guide_es.pdf">pdf</a></td>
 	</tr>
 	<tr>
 	<td><a href="http://code.suckless.org/contrib/guide/wmii-3/guide-en/guide_en.ps">ps</a></td>
-	<td>&#8212;</td>
+	<td>—</td>
 	<td><a href="http://code.suckless.org/contrib/guide/wmii-3/guide-it/guide_it.ps">ps</a></td>
 	<td><a href="http://code.suckless.org/contrib/guide/wmii-3/guide-es/guide_es.ps">ps</a></td>
 	</tr>
 	<tr>
 	<td><a href="http://code.suckless.org/contrib/guide/wmii-3/guide-en/guide_en.tex">tex</a></td>
-	<td>&#8212;</td>
+	<td>—</td>
 	<td><a href="http://code.suckless.org/contrib/guide/wmii-3/guide-it/guide_it.tex">tex</a></td>
 	<td><a href="http://code.suckless.org/contrib/guide/wmii-3/guide-es/guide_es.tex">tex</a></td>
 	</tr>
 </table>
 
-Original guide by Steffen Liebergeld (stepardo) &#8212; perl (at) gmx (dot) org  
-Dutch translation by Jeremy Roon p.roon (at) &#8212; chello (dot) nl  
-Italian translation by Stefano Lee &#8212; wizinblack (at) gmail (dot) com  
-Spanish translation by Salvador Peiro (gualteri) &#8212; saoret.one/gmail.com
+Original guide by Steffen Liebergeld (stepardo) — perl at gmx.org  
+Dutch translation by Jeremy Roon — p.roon at chello.nl  
+Italian translation by Stefano Lee — wizinblack at gmail.com  
+Spanish translation by Salvador Peiro (gualteri) — saoret.one at gmail.com
 
 ## wmii-2
 <table cellpadding="5mm">
@@ -83,7 +89,9 @@ Spanish translation by Salvador Peiro (gualteri) &#8212; saoret.one/gmail.com
 	</tr>
 </table>
 
-Original guide by Steffen Liebergeld (stepardo) &#8212; perl (at) gmx (dot) org  
-German translation by Norman Golisz &#8212; hp (at) zcat (dot) de  
-Italian translation by Stefano K. Lee &#8212; wizinblack (at) gmail (dot) com
+Original guide by Steffen Liebergeld (stepardo) — perl at gmx.org  
+German translation by Norman Golisz — hp at zcat.de  
+Italian translation by Stefano K. Lee — wizinblack at gmail.com
 
+[1]: http://code.google.com/p/wmii/source/browse/doc/wmii.pdf
+[2]: http://www.gnu.org/licenses/gpl-2.0.html

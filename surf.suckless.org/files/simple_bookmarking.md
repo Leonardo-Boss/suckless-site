@@ -12,12 +12,12 @@ surf -x >> ~/.surf/id
 
 bookmarkurl :
 
-#!/bin/sh
 file=~/.surf/bookmarks
 surfid=`head -n 1 ~/.surf/id`
 url=`xprop -id $surfid | grep URL | awk '{print $3}' | sed 's/\"/\ /g'`
 title=`xprop -id $surfid | grep WM_ICON_NAME\(STRING\) | cut -c 24-`
-echo -e `echo -e $url $title | dmenu` >> $file 
+echo -e `echo -e $url $title | dmenu` >> $file
+ 
 
 to add tags, when dmenu displays, simply tab, space and write your tag
 
@@ -25,7 +25,6 @@ loadbookmark :
 (needs a vertical patch on dmenu for convenience, choose the one you like,
 Meillo's is the lightweight, Fresch's is the full featured)
 
-#!/bin/sh
 url=`cat ~/.surf/bookmarks | dmenu -i -b -l 10 | awk '{print $1}'`
 xprop -id `head -n 1 ~/.surf/id` -f _SURF_URL 8s -set _SURF_URL $url
 

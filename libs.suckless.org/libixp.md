@@ -6,7 +6,7 @@ LIBIXP
 
 * `libixp` multiplexes connections internally, while on `Plan 9`, the kernel performs this task, and in [plan9port](http://plan9.us/), a separate process is spawned to do so. Despite this divergence, the user of the library will not notice any difference in behavior, except that there may be duplicate `tag` and `fid` numbers between different connections. This issue is of little relevance, however, as the library handles the task of mapping `fid`s and `tag`s to arbitrary pointers and `P9Req` structs.
 
-* `libixp` is released under a lenient MIT-style license, with the exception of the file `intmap.c`, which comes from `Plan 9`, and falls under the LPL. This file may be rewritten at some point, but the author, as of yet, has been uncompelled to do so.
+* `libixp` is released under a lenient MIT-style license.
 
 * `libixp` lacks `lib9p`'s file trees.
 

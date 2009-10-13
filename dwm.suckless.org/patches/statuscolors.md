@@ -29,7 +29,7 @@ The following definition in 'config.h':
     };
 
 Coupled with a matching status script produces the following:
-  ![Example Colored Status Text](dwm-5.3.1-statuscolors.png)
+  ![Example Colored Status Text](dwm-5.7.2-statuscolors.png)
 
 A really silly example:
 
@@ -56,5 +56,5 @@ An example status script snippet to take advantage of the colors:
 
 ## Download ##
 
- * [dwm-5.3.1-statuscolors.diff](dwm-5.3.1-statuscolors.diff)
+ * [dwm-5.7.2-statuscolors.diff](dwm-5.7.2-statuscolors.diff)
 

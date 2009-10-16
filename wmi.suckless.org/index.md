@@ -3,7 +3,7 @@ successor of wmi. The last release of wmi happened back in 2004. There are still
 some occasional users of wmi. If you would like to experience the good old days,
 please check it out; though, its code sucks more unfortunately than our recent projects.
 
-*UPDATE* There will be a wmi-11 release in Sep 2009 very soon!
+*UPDATE* There will be a wmi-11 release in Oct 2009 very soon!
 
 ->[![Screenshot](screenshots/wmi-20080718s.png)](screenshots/wmi-20080718.png)<-
 

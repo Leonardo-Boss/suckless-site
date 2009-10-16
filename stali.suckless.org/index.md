@@ -35,5 +35,25 @@ Generally /usr will be removed, what a useless directory, for non-base system st
 
 Updating system is simply rsync'ing from distro server.
 
+Typical end-user system
+-----------------------
+
+	[anselm@x200s rootfs]$ tree
+	.
+	|-- bin
+	|-- dev
+	|-- etc
+	|-- home
+	|   `-- root
+	|-- mnt
+	|-- proc
+	|-- sys
+	|-- tmp
+	`-- var
+
+Note, end-user systems have no /lib, /include etc, they just have what's really
+necessary and nothing else.
+
+
 TBC
 

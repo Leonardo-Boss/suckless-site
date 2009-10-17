@@ -3,10 +3,13 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
+2009/10/17
+----------
+[surf 0.2](http://surf.suckless.org/) released: [download](http://dl.suckless.org/surf/surf-0.2.tar.gz)
+
 2009/09/29
 ----------
 [wmii 3.9a2](http://wmii.suckless.org/) released: [download](http://dl.suckless.org/wmii/wmii+ixp-3.9a2.tgz)
-
 
 2009/09/27
 ----------

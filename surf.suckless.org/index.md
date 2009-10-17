@@ -4,6 +4,12 @@ which makes it possible to embed it in another application. Furthermore,
 one can point surf to another URI by setting its XProperties.
 
 
+2009/9/17 Simon Rozet <simon@rozet.name>:
+> I though exactly the same before. I always had +20 tabs open in firefox.
+> Honestly, I'd never though I'd enjoy using a browser with no tab support
+> until I forced myself to use surf for a week. I am now much less distracted
+> and more focused when browsing the web. dwm + surf <3
+
 Links
 -----
 * [Man page](http://man.suckless.org/surf/1/surf)
@@ -13,7 +19,7 @@ Links
 Download
 --------
 * [MIT/X Consortium license](http://hg.suckless.org/surf/raw-file/tip/LICENSE)
-* [surf 0.1.2](http://dl.suckless.org/surf/surf-0.1.2.tar.gz) (7.6kb) (20090910)
+* [surf 0.2](http://dl.suckless.org/surf/surf-0.2.tar.gz) (9.3K) (20091017)
 * See also [dmenu](http://tools.suckless.org/dmenu)
 
 Development

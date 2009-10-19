@@ -18,4 +18,4 @@ Authors
 -------
 
 * Jason Thigpen (cdarwin) <[darwin@senet.us](mailto:darwin@senet.us)>
-* wart_
+* Peter John Hartman (wart_) <[peterjohnhartman@gmail.com](mailto:peterjohnhartman@gmail.com)>

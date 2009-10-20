@@ -1,6 +1,6 @@
-diff -r 15761ac5e2f1 dwm.c
---- a/dwm.c	Sun Sep 27 20:20:10 2009 +0100
-+++ b/dwm.c	Mon Sep 28 21:27:13 2009 +0200
+diff -r 2bcd25cce4ab dwm.c
+--- a/dwm.c	Sun Sep 27 20:20:14 2009 +0100
++++ b/dwm.c	Tue Oct 20 18:27:52 2009 -0300
 @@ -120,26 +120,6 @@
  	void (*arrange)(Monitor *);
  } Layout;
@@ -69,7 +69,15 @@ diff -r 15761ac5e2f1 dwm.c
  	strncpy(selmon->ltsymbol, selmon->lt[selmon->sellt]->symbol, sizeof selmon->ltsymbol);
  	if(selmon->sel)
  		arrange(selmon);
-@@ -1475,6 +1480,8 @@
+@@ -1468,13 +1473,15 @@
+ 	f = arg->f < 1.0 ? arg->f + selmon->mfact : arg->f - 1.0;
+ 	if(f < 0.1 || f > 0.9)
+ 		return;
+-	selmon->mfact = f;
++	selmon->mfact = selmon->mfacts[selmon->curtag] = f;
+ 	arrange(selmon);
+ }
+ 
  void
  setup(void) {
  	XSetWindowAttributes wa;

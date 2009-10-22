@@ -9,7 +9,7 @@ Links
 -----
 
 * Latest release: [wmii-3.6](http://dl.suckless.org/wmii/wmii-3.6.tar.gz) (Note that it requires [dmenu](http://tools.suckless.org/dmenu) and [libixp-0.4](/libs/libixp.html), [p9p](http://plan9.us/) recommended)
-* Latest alpha: [wmii 3.9a2](http://dl.suckless.org/wmii/wmii+ixp-3.9a2.tgz)
+* Latest beta: [wmii 3.9b1](http://dl.suckless.org/wmii/wmii+ixp-3.9b1.tbz)
 * Latest devel tip: <code>hg clone [http://hg.suckless.org/wmii](http://hg.suckless.org/wmii)</code>
 * Bugs: [Google Code issue tracker](http://code.google.com/p/wmii/issues)
 * Mailing List: `dev+subscribe@suckless.org` ([Archives](http://lists.suckless.org/dev/)) ([Old Archives](http://lists.suckless.org/wmii/)) (see [community](http://suckless.org/common/community/) for details)

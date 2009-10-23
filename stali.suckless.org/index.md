@@ -56,6 +56,9 @@ Typical end-user system
 Note, end-user systems have no /lib, /include etc, they just have what's really
 necessary and nothing else.
 
+First stage1 rootfs can now be downloaded
+-----------------------------------------
 
-TBC
+* [stage1](http://dl.suckless.org/stali/stali.tar.bz2) (20091023) 18M
 
+Please see the README file in that archive for further info.

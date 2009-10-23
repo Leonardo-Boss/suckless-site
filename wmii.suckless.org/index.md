@@ -8,26 +8,12 @@ codebase.
 Links
 -----
 
-* Latest release: [wmii-3.6](http://dl.suckless.org/wmii/wmii-3.6.tar.gz) (Note that it requires [dmenu](http://tools.suckless.org/dmenu) and [libixp-0.4](/libs/libixp.html), [p9p](http://plan9.us/) recommended)
-* Latest beta: [wmii 3.9b1](http://dl.suckless.org/wmii/wmii+ixp-3.9b1.tbz)
+* Latest beta: [wmii 3.9b1](http://dl.suckless.org/wmii/wmii+ixp-3.9b1.tbz) (recommended)
+* Latest release: [wmii-3.6](http://dl.suckless.org/wmii/wmii-3.6.tar.gz) (Note that it requires [dmenu](http://tools.suckless.org/dmenu) and [libixp-0.4](/libs/libixp.html), [p9p](http://plan9.us/) recommended) (deprecated)
 * Latest devel tip: <code>hg clone [http://hg.suckless.org/wmii](http://hg.suckless.org/wmii)</code>
 * Bugs: [Google Code issue tracker](http://code.google.com/p/wmii/issues)
 * Mailing List: `dev+subscribe@suckless.org` ([Archives](http://lists.suckless.org/dev/)) ([Old Archives](http://lists.suckless.org/wmii/)) (see [community](http://suckless.org/common/community/) for details)
-* IRC channel: `#suckless at irc.oftc.net` [(irc log)](http://suckless.org/irc/)
-
-Notes
------
-If [plan9port](http://plan9.us/) is found at runtime, wmii will use an
-alternate controlling script, written in
-[rc](http://plan9.bell-labs.com/sys/doc/rc.html). `rc.wmii` supports a
-`rc.wmii.local` convention which allows you to keep local customisations
-separate from the main script so you don't have to merge them every time
-`rc.wmii` changes.
-
-It is optional, the default `wmiirc` depends on only standard unix tools,
-however - `rc.wmii` is better supported. All the code snippets/color schemes
-on the site are written in rc and need some syntax adjustment to work in the
-standard `wmiirc`.
+* IRC channel: [`#suckless`](irc://irc.oftc.net/wmii) at `irc.oftc.net` ([irc log](http://suckless.org/irc/))
 
 Development
 -----------
@@ -58,6 +44,20 @@ on debian.org. Backports for stable are available on
 [backports.org](http://www.backports.org/). Prospective packages and/or
 snapshots can be downloaded from the [maintainers
 website](http://archive.daniel-baumann.ch/debian/packages/wmii/).
+
+wmii also comes with debian packaging materials. To build a deb, type:
+
+	make deb-dep # Installs any missing build dependencies.
+	make deb     # Builds a deb
+
+See also Ubuntu, below.
+
+### Ubuntu
+Official ubuntu packages are available in the universe repository. Up-to-date
+snapshots are also available in the
+[wmii Launchpad PPA](https://launchpad.net/~maglione-k/+archive/ppa). These
+packages may also work on debian systems. To build your own deb, see Debian
+above.
 
 ### Source Mage
 A Source Mage spell for the 20070516 wmii snapshot is available. As usual, just

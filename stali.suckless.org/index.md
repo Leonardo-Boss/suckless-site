@@ -62,3 +62,7 @@ First stage1 rootfs can now be downloaded
 * [stage1](http://dl.suckless.org/stali/stali.tar.bz2) (20091024) 29M
 
 Please see the README file in that archive for further info.
+
+Some related links
+------------------
+* [$6M libc](http://codingrelic.geekhold.com/2008/11/six-million-dollar-libc.html)

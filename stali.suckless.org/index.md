@@ -66,3 +66,5 @@ Please see the README file in that archive for further info.
 Some related links
 ------------------
 * [$6M libc](http://codingrelic.geekhold.com/2008/11/six-million-dollar-libc.html)
+* [ldd arbitrary code execution](http://www.catonmat.net/blog/ldd-arbitrary-code-execution/)
+* [static linking](http://blog.garbe.us/2008/02/08/01_Static_linking/)

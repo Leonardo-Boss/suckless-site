@@ -3,6 +3,10 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
+2009/10/27
+----------
+First [tabbed](http://tools.suckless.org/tabbed) release: [tabbed-0.1](http://dl.suckless.org/tools/tabbed-0.1.tar.gz)
+
 2009/10/22
 ---------
 [wmii 3.9b1](http://wmii.suckless.org/) released: [download](http://dl.suckless.org/wmii/wmii+ixp-3.9b1.tbz)

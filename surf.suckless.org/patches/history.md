@@ -4,9 +4,9 @@ HISTORY
 Description
 -----------
 
-This little patch writes the the loaded uri to a file.
+This little patch writes the loaded uri to a file.
 
-wart_ also privides a little shell script that uses dmenu to display and select an uri
+wart_ also provides a little shell script that uses dmenu to display and select a uri:
     cat ~/.surf/history | sort -r | uniq | dmenu -l 10 -b -i | xprop -id `cat ~/.surf/id` -f _SURF_URI 8s -set _SURF_URI
 
 Download

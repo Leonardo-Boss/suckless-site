@@ -15,9 +15,7 @@ Read more about our [philosophy](/common/) and join us on the [mailing list](com
 ----------
 New [dwm](http://dwm.suckless.org) release: [dwm-5.7.2](http://dl.suckless.org/dwm/dwm-5.7.2.tar.gz)
 
-2009/08/03
-----------
-New [9base](http://tools.suckless.org/9base) release: [9base-3](http://dl.suckless.org/tools/9base-3.tar.gz)
+New [9base](http://tools.suckless.org/9base) release: [9base-4](http://dl.suckless.org/tools/9base-4.tar.gz)
 
 2009/04/18
 ----------

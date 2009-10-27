@@ -3,7 +3,7 @@ TABBED
 Simple generic tabbed fronted to xembed aware applications, originally designed
 for [surf](http://surf.suckless.org) but also usable with many other
 application, i.e. [uzbl](http://uzbl.org),
-[http://software.schmorp.de/pkg/rxvt-unicode](urxvt) and
+[urxvt](http://software.schmorp.de/pkg/rxvt-unicode) and
 [xterm](http://invisible-island.net/xterm/)
 
 Download

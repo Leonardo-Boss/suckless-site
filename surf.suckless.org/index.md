@@ -16,14 +16,14 @@ Links
 * Mailing List: `dev+subscribe@suckless.org` ([Archives](http://lists.suckless.org/dev))
 * IRC channel: #suckless at irc.oftc.net
 
-Download
---------
-* [MIT/X Consortium license](http://hg.suckless.org/surf/raw-file/tip/LICENSE)
-* [surf 0.2](http://dl.suckless.org/surf/surf-0.2.tar.gz) (9.3K) (20091017)
-* See also [dmenu](http://tools.suckless.org/dmenu)
-
 Development
 -----------
 surf is actively developed. You can [browse](http://hg.suckless.org/surf) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with the following command:
 
 	hg clone http://hg.suckless.org/surf
+
+Download
+--------
+* [MIT/X Consortium license](http://hg.suckless.org/surf/raw-file/tip/LICENSE)
+* [surf 0.2](http://dl.suckless.org/surf/surf-0.2.tar.gz) (9.3K) (20091017)
+* See also [dmenu](http://tools.suckless.org/dmenu), [tabbed](http://tools.suckless.org/tabbed)

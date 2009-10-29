@@ -57,3 +57,7 @@ Ingenious ideas are simple. Ingenious software is simple. Simplicity is the
 heart of the Unix philosophy. The more code lines you have removed, the more
 progress you have made. As the number of lines of code in your software
 shrinks, the more skilled you have become and the less your software sucks.
+
+Related links
+-------------
+* [The Duct Tape Programmer](http://www.joelonsoftware.com/items/2009/09/23.html)

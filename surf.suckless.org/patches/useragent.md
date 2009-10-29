@@ -4,7 +4,7 @@ USER AGENT
 Description
 -----------
 
-This patch adds the _SURF_AGENT xproperty which allows updating surf's useragent
+This patch adds the `_SURF_AGENT` xproperty which allows updating surf's useragent
 while running. It may be useful to have a file of predefined useragents to pipe
 through dmenu, or to have a script user xprop and set it for you.
 

@@ -4,7 +4,7 @@ SEARCH ENGINES
 Description
 -----------
 
-This little patch allows the simple use of search engines. Put something
+This patch allows the simple use of search engines. Put something
 like this in your config.h:
 
 	static SearchEngine searchengines[] = {
@@ -15,11 +15,11 @@ like this in your config.h:
 Then you can access each search engine by putting its prefix in front of your 
 keywords:
 
-    g foo bar
+	g foo bar
 
-Or:
+or:
 
-    leo hello
+	leo hello
 
 Download
 --------

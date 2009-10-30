@@ -25,5 +25,5 @@ surf is actively developed. You can [browse](http://hg.suckless.org/surf) its so
 Download
 --------
 * [MIT/X Consortium license](http://hg.suckless.org/surf/raw-file/tip/LICENSE)
-* [surf 0.2](http://dl.suckless.org/surf/surf-0.2.tar.gz) (9.3K) (20091017)
+* [surf 0.3](http://dl.suckless.org/surf/surf-0.3.tar.gz) (9.7K) (20091030)
 * See also [dmenu](http://tools.suckless.org/dmenu), [tabbed](http://tools.suckless.org/tabbed)

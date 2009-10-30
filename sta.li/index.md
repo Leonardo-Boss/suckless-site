@@ -54,15 +54,15 @@ Typical end-user system
 Note, end-user systems have no /lib, /include etc, they just have what's really
 necessary and nothing else.
 
-First stage1 rootfs can now be downloaded
------------------------------------------
+Current state of the build environment can be clone'ed
+------------------------------------------------------
 
-* [stage1](http://dl.suckless.org/stali/stali.tar.bz2) (20091024) 29M
+	git clone git://sta.li/stali (1.2 GB)
 
 Please see the README file in that archive for further info.
 
 Some related links
 ------------------
-* [$6M libc](http://codingrelic.geekhold.com/2008/11/six-million-dollar-libc.html)
-* [ldd arbitrary code execution](http://www.catonmat.net/blog/ldd-arbitrary-code-execution/)
-* [static linking](http://blog.garbe.us/2008/02/08/01_Static_linking/)
+* [$6M libc](http://codingrelic.geekhold.com/2008/11/six-million-dollar-libc.html) bionic is a nice library, though only usable for sane stuff
+* [ldd arbitrary code execution](http://www.catonmat.net/blog/ldd-arbitrary-code-execution/) nic exploit
+* [static linking](http://blog.garbe.us/2008/02/08/01_Static_linking/) my old blog entry

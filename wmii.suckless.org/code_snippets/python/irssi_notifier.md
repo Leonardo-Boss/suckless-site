@@ -1,42 +1,42 @@
 Irssi Message Notifier
 ======================
 
-This script notifies you, by setting the Urgent hint on your irssi window, of
-messages with your nick, or in channels you care about. It can optionally
-display the messages on the bar. You'll need to set the title of the window
-running irssi to 'irssi' for this to work. I use `label`(1) from plan9port.
+An IRC notifier based on the [../plan9port/irssi_notifier](plan9port version).
 
-See also the [../python/irssi_notifier](python version).
+This script notifies you when messages containing your nick, private
+messages, or messages in certain important channels, arrive in
+irssi.
 
-This portion goes in your rc.wmii.local, or can be modified to run standalone:
+First, create `~/.wmii/plugins/irc_notify.py` with the following
+contents:
 
-    showmessage=false # true, false
+    from wmiirc import *
+    from pygmi import *
+    
+    def isirssi(client):
+        return Client(client).label == 'irssi'
+    
+    def irc_message(whom, message):
+        if isirssi('sel'):
+            return
+        for t in Tag.all():
+            for a in t.index:
+                for f in a.frames:
+                    if isirssi(f.client):
+                        f.client.urgent = True
+                        notice.show('IRC: %s %s' % (whom, message))
+                        return
+    
+    events.bind({
+        Match('ClientFocus', _): lambda e, c: isirssi(c) and setattr(Client(c), 'urgent', False),
+        'IRCMessage': lambda s: irc_message(*s.split(' ', 2)[1:]),
+    })
 
-    fn isirssi { ~ `{wmiir read /client/$"*/label} irssi }
-    fn clients { wmiir ls /client | sed 's,/,,; /^sel$/d' }
-
-    fn Event-IRCMessage {
-            if(! isirssi sel) {
-                    for(c in `{clients})
-                            if(isirssi $c)
-                                    wmiir xwrite /client/$c/ctl Urgent
-                    if($showmessage) {
-                            shift 2
-                            echo $WMII_NORMCOLORS $* | wmiir create /rbar/0status
-                    }
-            }
-    }
-
-    fn Event-ClientFocus {
-            if(isirssi $1)
-                    wmiir xwrite /client/$1/ctl NotUrgent
-    }
-
-This portion is a perl script for irssi. It should go in `~/.irssi/scripts`,
-and can be loaded with `/script load notify`, or autoloaded by symlinking it
-into `~/.irssi/scripts/autorun`. The irssi `notify_channels` setting takes a
-list of channels to always notify you of messages to, or '*' to notify you for
-all channels.
+This portion is a perl script for irssi. It should go in
+`~/.irssi/scripts`, and can be loaded with `/script load notify`, or
+autoloaded by symlinking it into `~/.irssi/scripts/autorun`. The
+irssi `notify_channels` setting takes a list of channels to always
+notify you of messages to, or '*' to notify you for all channels.
 
     # ---------------------------------------------------------------------------
     # "THE BEER-WARE LICENSE" (Revision 42):
@@ -65,6 +65,10 @@ all channels.
 
     use Irssi;
     use Fcntl;
+
+    open my $tty, '>', '/dev/tty';
+    print $tty "\033]0;irssi\007";
+    close $tty;
 
     sub should_notify ($);
 
@@ -95,10 +99,4 @@ all channels.
     Irssi::signal_add('message private', 'message_handler');
     Irssi::signal_add('message public',  'message_handler');
     Irssi::settings_add_str('misc', 'notify_channels', '');
-
-You can also set the label as required, if you so choose, from the IRSSI
-plugin as so:
-
-    open my $tty, '>', '/dev/tty';
-    print $tty "\033]0;irssi\007";
 

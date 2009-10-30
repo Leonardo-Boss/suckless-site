@@ -88,7 +88,7 @@ all channels.
             my $target = shift;
             my @notifies = split /,\s*/, Irssi::settings_get_str('notify_channels');
 
-	    return 1 if grep { $_ eq "*" || $_ eq $target } @notifies;
+            return 1 if grep { $_ eq "*" || $_ eq $target } @notifies;
             0;
     }
 

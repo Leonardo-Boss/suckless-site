@@ -17,13 +17,12 @@ contents:
         return Client(client).label == 'irssi'
 
     def irc_message(whom, message):
-        if isirssi('sel'):
-            return
-        for c in Client.all():
-            if isirssi(c):
-                c.urgent = True
-                notice.show('IRC: %s %s' % (whom, message))
-                return
+        if not isirssi('sel'):
+            for c in Client.all():
+                if isirssi(c):
+                    c.urgent = True
+                    notice.show('IRC: %s %s' % (whom, message))
+                    return
 
     events.bind({
         Match('ClientFocus', _): lambda e, c: isirssi(c) and setattr(Client(c), 'urgent', False),
@@ -90,7 +89,7 @@ notify you of messages to, or '*' to notify you for all channels.
             my $target = shift;
             my @notifies = split /,\s*/, Irssi::settings_get_str('notify_channels');
 
-	    return 1 if grep { $_ eq "*" || $_ eq $target } @notifies;
+            return 1 if grep { $_ eq "*" || $_ eq $target } @notifies;
             0;
     }
 

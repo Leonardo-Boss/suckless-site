@@ -1,8 +1,6 @@
 sta[tic] li[nux]
 ================
 
-![stali](stali.png)
-
 General system design
 ---------------------
 

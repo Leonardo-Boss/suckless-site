@@ -12,21 +12,19 @@ contents:
 
     from wmiirc import *
     from pygmi import *
-    
+
     def isirssi(client):
         return Client(client).label == 'irssi'
-    
+
     def irc_message(whom, message):
         if isirssi('sel'):
             return
-        for t in Tag.all():
-            for a in t.index:
-                for f in a.frames:
-                    if isirssi(f.client):
-                        f.client.urgent = True
-                        notice.show('IRC: %s %s' % (whom, message))
-                        return
-    
+        for c in Client.all():
+            if isirssi(c):
+                c.urgent = True
+                notice.show('IRC: %s %s' % (whom, message))
+                return
+
     events.bind({
         Match('ClientFocus', _): lambda e, c: isirssi(c) and setattr(Client(c), 'urgent', False),
         'IRCMessage': lambda s: irc_message(*s.split(' ', 2)[1:]),

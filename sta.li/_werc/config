@@ -1,3 +1,4 @@
 masterSite=default.suckless.org
 siteTitle='static linux'
+siteImage='/stali.png'
 siteSubTitle='statically linked only'

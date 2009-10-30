@@ -6,7 +6,7 @@ General system design
 
 * binary is primary focus, each executable is statically linked, potentially different executable format than ELF, since ELF is mainly designed to support dynamic linking
 * kernel is a single monolit based on linux, by default no kernel module support
-* system loader is lilo, no other loader supported
+* system loader is lilo (maybe we start maintaining it)
 * no initrd initially
 * perhaps later whole system in ramdisk? will see (20h idea)
 * init system should be based on just 1 /etc/rc.{start,stop} script (look at p9 how they do it)
@@ -57,9 +57,11 @@ necessary and nothing else.
 Current state of the build environment can be clone'ed
 ------------------------------------------------------
 
-	git clone git://sta.li/stali (1.2 GB)
+	git clone git://sta.li/stali (1.2 GB) -- note this is disabled right now due to bandwidth limitations
 
-Please see the README file in that archive for further info.
+HELP
+----
+We need a proper server to host the git repo on (expected size of build environment repo is 2GB), any mirror service welcome, expect 100 clones at the least per month (so 200GB traffic volume in the mid term).
 
 Some related links
 ------------------

@@ -57,7 +57,7 @@ necessary and nothing else.
 Current state of the build environment can be clone'ed
 ------------------------------------------------------
 
-	git clone git://sta.li/stali (1.2 GB) -- note this is disabled right now due to bandwidth limitations
+	git clone git://sta.li/stali # (1.2 GB)
 
 HELP
 ----

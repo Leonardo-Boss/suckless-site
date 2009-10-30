@@ -3,9 +3,10 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
-2009/10/27
+2009/10/30
 ----------
-First [tabbed](http://tools.suckless.org/tabbed) release: [tabbed-0.1](http://dl.suckless.org/tools/tabbed-0.1.tar.gz)
+[tabbed 0.2](http://tools.suckless.org/tabbed) released: [download](http://dl.suckless.org/tools/tabbed-0.1.tar.gz)
+[surf 0.3](http://surf.suckless.org/) released: [download](http://dl.suckless.org/surf/surf-0.2.tar.gz)
 
 2009/10/22
 ---------

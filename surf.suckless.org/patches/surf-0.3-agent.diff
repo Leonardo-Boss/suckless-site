@@ -1,7 +1,7 @@
-diff -r 2998ef786732 config.def.h
---- a/config.def.h	Wed Oct 28 22:22:20 2009 +0100
-+++ b/config.def.h	Wed Oct 28 15:14:59 2009 -0700
-@@ -28,6 +28,7 @@
+diff -r 46d516fd2167 config.def.h
+--- a/config.def.h	Fri Oct 30 13:38:14 2009 +0100
++++ b/config.def.h	Fri Oct 30 10:26:39 2009 -0700
+@@ -29,6 +29,7 @@
      { MODKEY,               GDK_k,      scroll,     { .i = -1 } },
      { 0,                    GDK_Escape, stop,       { 0 } },
      { MODKEY,               GDK_o,      source,     { 0 } },
@@ -9,9 +9,9 @@ diff -r 2998ef786732 config.def.h
      { MODKEY,               GDK_g,      spawn,      SETPROP("_SURF_URI") },
      { MODKEY,               GDK_slash,  spawn,      SETPROP("_SURF_FIND") },
      { MODKEY,               GDK_n,      find,       { .b = TRUE } },
-diff -r 2998ef786732 surf.c
---- a/surf.c	Wed Oct 28 22:22:20 2009 +0100
-+++ b/surf.c	Wed Oct 28 15:14:59 2009 -0700
+diff -r 46d516fd2167 surf.c
+--- a/surf.c	Fri Oct 30 13:38:14 2009 +0100
++++ b/surf.c	Fri Oct 30 10:26:39 2009 -0700
 @@ -55,7 +55,7 @@
  } Key;
  

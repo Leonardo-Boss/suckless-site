@@ -1,5 +1,0 @@
-masterSite=default.suckless.org
-siteTitle='stali.org'
-siteSubTitle='Redirecting'
-
-conf_perm_redirect '^/(.*)' 'http://sta.li/\1'

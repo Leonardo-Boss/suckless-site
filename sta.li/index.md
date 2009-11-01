@@ -66,10 +66,13 @@ Typical end-user system
 Note, end-user systems have no /lib, /include etc, they just have what's really
 necessary and nothing else.
 
-Current state of the build environment can be cloned
-------------------------------------------------------
+Development
+-----------
+The current state of the build environment can be cloned with the following command:
 
-	git clone git://sta.li/stali # (1.2 GB)
+	git clone git://sta.li/stali
+
+Size: 1.2 GB
 
 HELP
 ----

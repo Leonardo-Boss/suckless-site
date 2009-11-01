@@ -20,35 +20,35 @@ actually used by a program.
 
 What's wrong with glibc?
 ------------------------
-We think nearly everything is wrong with it. It's enormous complexity,
-it's lack of good structure and well separated object files
+We think nearly everything is wrong with it. Its enormous complexity,
+its lack of good structure and well separated object files
 (otherwise linking trivial programs wouldn't result in 600kb oberhead) and
-even worse than that, it's design decision to use ldopen for certain
+even worse than that, its design decision to use ldopen for certain
 "separated" library features (NSS, locales, IDN, ...), which makes it nearly
 impossible to use glibc for static linking in non-trivial programs.
-Unfortunately for certain tools we will ship glibc for pragmatic reasons.  Of
-course Ulrich Drepper disagrees[2].
+Unfortunately, for certain tools we will ship glibc for pragmatic reasons.  Of
+course, Ulrich Drepper disagrees[2].
 
 Aren't statically linked executables less secure?
 ----------------------------------------------
-Several people argue (with implicitely requiring ABI-stability) that
+Several people argue (with implicitly requiring ABI-stability) that
 dynamically linked executables benefit from security fixes in libraries they
 depend on. This is true, however the opposite is also true: if there is a
-security flaw in a dynamically linked library all programs are affected whereas
-statically executables won't be affected in such a scenario (assumed they have
+security flaw in a dynamically linked library, all programs are affected; whereas
+statically executables won't be affected in such a scenario (assuming they have
 been linked against secure libraries).
 
 We know that there is some overhead in re-compiling all affected executables if a
 dependent library is insecure, but we don't see this as a critical
-dis-advantage, because we also focus on a small and maintainable userland,
+disadvantage, because we also focus on a small and maintainable userland,
 where only one tool for each task exists.
 
-Another argument often heared is, that static function have predictable
+Another argument often heard is that static functions have predictable
 addresses, whereas dynamic linking provides the ability of address
-randomization. We have two answers to this: the first is, technically it is
-possible to use platform-independent code in static executables and hence assumed
+randomization. We have two answers to this. The first is: Technically it is
+possible to use platform-independent code in static executables and hence assuming
 the kernel supports address randomization for executables we have a similar
-feature. The second answer is in reality address randomization is predictable
+feature. The second is: In reality, address randomization is predictable
 and we usually see the same addresses when a dynamic library is loaded or has
 been pre-loaded again and again. Thus we consider this as an issue with low
 impact and this is not a real focus for us.
@@ -60,23 +60,23 @@ Aren't statically linked executables consuming more memory?
 --------------------------------------------------------
 We believe that due to the small size of the base system the opposite will be
 the case. First of all, the kernel will load each static executable's .rodata, .data,
-.text and .comment sections only once for all instances into memory,
+.text and .comment sections only once for all instances into memory.
 Second, because each static binary has only been linked with the object files
-necessary, it has been optimised at linkage time already for memory
+necessary, it has already been optimised at linkage time for memory
 consumption. When loading it, we don't require the kernel to map all
 dependent dynamic libraries into memory from which our binary might only use 5%
-of the functions they provide. So in reality the memory footprint is becoming
+of the functions they provide. So, in reality, the memory footprint is becoming
 less, and the dead code hold in memory (or paged) reduces overall consumption.
-This is also true for programs like surf, it doesn't use all webkit/gtk/glib
+This is also true for programs, like surf, which don't use all webkit/gtk/glib
 functions.
 
 Isn't starting statically linked executables slower?
 ----------------------------------------------------
-In most cases the answer is No. In the theoretical case of a huge static
-executable the payload might be loading the executable into memory, but we
-focus small static executables. In experiments the execution time of a static
-executable was about 4000% faster than with its dynamically linked counterpart
-when no dependent libraries (except glibc) were pre-loaded and 100% faster when
+In most cases the answer is "No". In the theoretical case of a huge static
+executable, the payload might be loading the executable into memory; but we
+focus on small, static executables. In experiments, the execution time of a static
+executable was about 4000% faster than its dynamically linked counterpart
+when no dependent libraries (except glibc) were pre-loaded, and 100% faster when
 the dependent libraries were pre-loaded. We believe the overhead for looking up
 all needed symbols in the dynamically loaded libraries seems to be very
 expensive. On modern hardware this is only noticable with endlessly executing

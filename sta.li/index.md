@@ -1,5 +1,13 @@
-sta[tic] li[nux]
-================
+sta[tic] li[nux] is a new suckless.org production and project that creates a
+new linux distribution with the aim to be based on a hand selected collection
+of the best tools for each tasks and each tool being statically linked
+(including some X clients such as xterm, surf, dwm, dmenu, mplayer). It also
+aims binary size reduction through the avoidance of glibc where possible (early
+experiments show that usually statically linked binaries are
+smaller than their dynamically linked glibc counterparts!!!).
+Due to the side-benefit that statically linked binaries start faster the
+distribution also targets performance gains.
+It is expected that the first usable version will be available during Nov 2009.
 
 General system design
 ---------------------

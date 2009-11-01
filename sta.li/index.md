@@ -63,8 +63,8 @@ Typical end-user system
 	|-- tmp
 	`-- var
 
-Note, end-user systems have no /lib, /include etc, they just have what's really
-necessary and nothing else.
+Note: End-user systems have no /lib, /include, et cetera. They just have
+what is really necessary and nothing else.
 
 Development
 -----------
@@ -76,10 +76,12 @@ Size: 1.2 GB
 
 HELP
 ----
-We need a proper server to host the git repo on (expected size of build environment repo is 2GB), any mirror service welcome, expect 100 clones at the least per month (so 200GB traffic volume in the mid term).
+We need a proper server to host the git repository (expected size of the
+build environment repo is 2GB). Any mirror service is welcome; expect 
+100 clones per month, at least (so, 200GB traffic volume in the mid term).
 
 Some related links
 ------------------
-* [$6M libc](http://codingrelic.geekhold.com/2008/11/six-million-dollar-libc.html) bionic is a nice library, though only usable for sane stuff
-* [ldd arbitrary code execution](http://www.catonmat.net/blog/ldd-arbitrary-code-execution/) nice exploit
-* [static linking](http://blog.garbe.us/2008/02/08/01_Static_linking/) my old blog entry
+* [$6M libc](http://codingrelic.geekhold.com/2008/11/six-million-dollar-libc.html) - Bionic is a nice library, though only usable for sane stuff
+* [ldd arbitrary code execution](http://www.catonmat.net/blog/ldd-arbitrary-code-execution/) - Nice exploit
+* [static linking](http://blog.garbe.us/2008/02/08/01_Static_linking/) - My old blog entry

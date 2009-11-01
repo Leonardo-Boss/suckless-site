@@ -4,11 +4,11 @@ statically linked (including some X clients such as xterm, surf, dwm, dmenu,
 mplayer).
 
 It also targets binary size reduction through the avoidance of glibc and other
-bloated GNU libraries where possible (early experiments show that usually
-statically linked binaries are smaller than their dynamically linked glibc counterparts!!!).
+bloated GNU libraries where possible (early experiments show that statically 
+linked binaries are usually smaller than their dynamically linked glibc counterparts!!!).
 Note, this is pretty much contrary to what Ulrich Drepper reckons about static linking.
 
-Due to the side-benefit that statically linked binaries start faster the
+Due to the side-benefit that statically linked binaries start faster, the
 distribution also targets performance gains.
 
 It is expected that the first usable version will be available during Nov 2009.

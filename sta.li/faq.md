@@ -84,6 +84,8 @@ the static and dynamic executable in a loop for several minutes and counting
 the number of executions. We plan to publish the benchmark results for further
 info at a later point.
 
-[1] You can clone OpenBSD ksh using `git://github.com/dryfish/openbsd-pdksh.git`
-[2] http://people.redhat.com/drepper/no_static_linking.html
-[3] http://www.catonmat.net/blog/ldd-arbitrary-code-execution/
+References
+---------
+* [1] You can clone OpenBSD ksh using `git://github.com/dryfish/openbsd-pdksh.git`
+* [2] http://people.redhat.com/drepper/no_static_linking.html
+* [3] http://www.catonmat.net/blog/ldd-arbitrary-code-execution/

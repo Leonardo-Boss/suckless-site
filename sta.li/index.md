@@ -78,5 +78,5 @@ We need a proper server to host the git repo on (expected size of build environm
 Some related links
 ------------------
 * [$6M libc](http://codingrelic.geekhold.com/2008/11/six-million-dollar-libc.html) bionic is a nice library, though only usable for sane stuff
-* [ldd arbitrary code execution](http://www.catonmat.net/blog/ldd-arbitrary-code-execution/) nic exploit
+* [ldd arbitrary code execution](http://www.catonmat.net/blog/ldd-arbitrary-code-execution/) nice exploit
 * [static linking](http://blog.garbe.us/2008/02/08/01_Static_linking/) my old blog entry

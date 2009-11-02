@@ -23,7 +23,7 @@ What's wrong with glibc?
 We think nearly everything is wrong with it. Its enormous complexity,
 its lack of good structure and well separated object files
 (otherwise linking trivial programs wouldn't result in 600kb oberhead) and
-even worse than that, its design decision to use ldopen for certain
+even worse than that, its design decision to use dlopen for certain
 "separated" library features (NSS, locales, IDN, ...), which makes it nearly
 impossible to use glibc for static linking in non-trivial programs.
 Unfortunately, for certain tools we will ship glibc for pragmatic reasons.  Of

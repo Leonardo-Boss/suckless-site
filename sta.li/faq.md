@@ -4,7 +4,7 @@ FAQ
 Aren't statically linked executables huge?
 -------------------------------------------
 It depends. Linking a stripped hello world program with glibc results in 600kb.
-Linking it with uclibc in about 7kb. Linking OpenBSD's stripped ksh[1], which
+Linking it with uclibc in about 7kb. Linking OpenBSD's stripped [ksh](git://github.com/dryfish/openbsd-pdksh.git), which
 will be stali's default shell, statically against uclibc results in a 170kb
 binary -- linking it dynamically against glibc results in 234kb.
 Of course this won't scale with every binary, for example we expect surf
@@ -27,7 +27,7 @@ even worse than that, its design decision to use dlopen for certain
 "separated" library features (NSS, locales, IDN, ...), which makes it nearly
 impossible to use glibc for static linking in non-trivial programs.
 Unfortunately, for certain tools we will ship glibc for pragmatic reasons.  Of
-course, Ulrich Drepper disagrees[2].
+course, [Ulrich Drepper disagrees](http://people.redhat.com/drepper/no_static_linking.html).
 
 Aren't statically linked executables less secure?
 ----------------------------------------------
@@ -54,7 +54,14 @@ been pre-loaded again and again. Thus we consider this as an issue with low
 impact and this is not a real focus for us.
 
 If you are really concerned about the security of statically linked executables,
-have a look at what great ldd exploits[3] exist.
+have a look at what [great ldd exploits](http://www.catonmat.net/blog/ldd-arbitrary-code-execution/) exist.
+
+Contrary to the pro-arguments for dynamic linking wrt the downsides of static linking, there are also good arguments why statically linked executables are actually more secure. Imagine that the insecure library functions aren't linked into the static executable and hence the executable is not affected at all (but it would be affected if we did link it dynamically).
+
+Apart from that we tend to link against libraries with low footprint (eg uclibc
+instead of glibc when possible). This leads to an increased
+likelihood of lesser vulnerabilities, simply because lesser code contains fewer
+bugs from a statistical point of view.
 
 Aren't statically linked executables consuming more memory?
 --------------------------------------------------------
@@ -83,9 +90,3 @@ expensive. On modern hardware this is only noticable with endlessly executing
 the static and dynamic executable in a loop for several minutes and counting
 the number of executions. We plan to publish the benchmark results for further
 info at a later point.
-
-References
----------
-* [1] You can clone OpenBSD ksh using `git://github.com/dryfish/openbsd-pdksh.git`
-* [2] http://people.redhat.com/drepper/no_static_linking.html
-* [3] http://www.catonmat.net/blog/ldd-arbitrary-code-execution/

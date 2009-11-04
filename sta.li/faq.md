@@ -11,12 +11,20 @@ Of course this won't scale with every binary, for example we expect surf
 being about 5-6MB in size, but the normal Unix userland will be rather small,
 compared to most popular linux distros.
 
+See also
+
+* <http://9fans.net/archive/2008/11/142>
+
 Aren't whole libraries linked into a static executable?
 -------------------------------------------------------
 No. Good libraries implement each library function in separate object (.o)
 files, this enables the linker (ld) to only extract and link those
 object files from an archive (.a) that export the symbols that are
 actually used by a program.
+
+See also
+
+* <http://9fans.net/archive/2002/02/21>
 
 What's wrong with glibc?
 ------------------------

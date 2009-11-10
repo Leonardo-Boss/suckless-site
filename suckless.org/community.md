@@ -62,9 +62,11 @@ Mailing lists web archive
 
 Archive of all mails posted to mailing lists is accessible via [http://lists.suckless.org/](http://lists.suckless.org/)
 
-* [dev mailing list archive][devarchive]
+* [dev mailing list archive][devarchive] [gmane.comp.misc.suckless](http://dir.gmane.org/gmane.comp.misc.suckless)
 * [hackers mailing list archive][hackersarchive]
 * [wiki mailing list archive][wikiarchive]
+
+
 
 Old
 ---

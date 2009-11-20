@@ -98,3 +98,11 @@ expensive. On modern hardware this is only noticable with endlessly executing
 the static and dynamic executable in a loop for several minutes and counting
 the number of executions. We plan to publish the benchmark results for further
 info at a later point.
+
+How does stali compare to Google Chromium OS?
+---------------------------------------------
+
+See also
+* <http://teddziuba.com/2008/09/a-web-os-are-you-dense.html>
+
+

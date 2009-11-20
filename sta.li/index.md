@@ -17,26 +17,26 @@ General system design
 ---------------------
 
 * binary is primary focus, each executable is statically linked, potentially different executable format than ELF, since ELF is mainly designed to support dynamic linking
-* kernel is a single monolit based on linux, by default no kernel module support
-* system loader is lilo (maybe we start maintaining it)
+* kernel is a single monolith based on linux, by default no kernel module support
+* system loader is lilo (maybe we will start maintaining it)
 * no initrd initially
-* perhaps later whole system in ramdisk? will see (20h idea)
-* init system should be based on just 1 /etc/rc.{start,stop} script (look at p9 how they do it)
+* perhaps later whole the system will be a ramdisk? will see (20h idea)
+* init system should be based on just one /etc/rc.{start,stop} script (look at p9 how they do it)
 
 Basic filesystem design
 -----------------------
-Generally /usr will be removed, what a useless directory, for non-base system stuff we might consider /local perhaps
+Generally, /usr will be removed, what a useless directory, for non-base system stuff we might consider /local
 
 * /bin - all executables go here
 * /bin/kernel (linux kernel)
-* /dev - devices, check if we can avoid udev or what linux requires nowadays, simplest approach would be best
+* /dev - devices, check if we can avoid udev or what linux requires nowadays, the simplest approach would be best
 * /etc - system config/program config/user setup/network setup
-* /etc/rc.{start,stop} (init scripts)
+* /etc/rc.{start,stop} - init scripts
 * /home/root (root's home)
-* /home/* (user home dirs)
-* /include (include)
+* /home/* - user home dirs
+* /include - include files
 * /lib - libraries, when used as devel box, only static libs, potentially
-* /local - perhaps, dunno?
+* /local - possibly for software that's no in the base
 * /mnt - mounts
 * /proc - linux crap
 * /share - man pages, locales and crap that several libraries ship

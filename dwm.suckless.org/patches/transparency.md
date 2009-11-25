@@ -8,7 +8,7 @@ when a rule is found. There may be Bugs. A lot of them. Creeeeepy!
 
 ## Download
 
- * [http://0mark.unserver.de/dwm-sprinkles/export/31/trunk/patches/dwm-transparency.diff](dwm-transparency.diff) latest transparency patch
+ * [dwm-transparency.diff](http://0mark.unserver.de/dwm-sprinkles/export/31/trunk/patches/dwm-transparency.diff) latest transparency patch
 
 ## Author
 

@@ -15,7 +15,7 @@ everywhere but in the status area.
 
 ## Download
 
- * [http://0mark.unserver.de/dwm-sprinkles/export/31/trunk/patches/dwm-fancycoloredbarclickable.diff](dwm-fancycoloredbarclickable.diff) latest fancycoloredbarclickable patch
+ * [dwm-fancycoloredbarclickable.diff](http://0mark.unserver.de/dwm-sprinkles/export/31/trunk/patches/dwm-fancycoloredbarclickable.diff) latest fancycoloredbarclickable patch
 
 ## Glueer (for is is a patch of patches, im not really the author, but one who glued things together ;)
 

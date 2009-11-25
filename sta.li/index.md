@@ -72,16 +72,20 @@ The current state of the build environment can be cloned with the following comm
 
 	git clone git://sta.li/stali
 
-Size: 1.2 GB
+Note, please use one of the following mirrors instead:
 
-HELP
-----
-We need a proper server to host the git repository (expected size of the
-build environment repo is 2GB). Any mirror service is welcome; expect 
-100 clones per month, at least (so, 200GB traffic volume in the mid term).
+	git clone git://stali.yokuts.org/
+
+(More to follow)
+
+Size: 400 MB
 
 Some related links
 ------------------
 * [$6M libc](http://codingrelic.geekhold.com/2008/11/six-million-dollar-libc.html) - Bionic is a nice library, though only usable for sane stuff
 * [ldd arbitrary code execution](http://www.catonmat.net/blog/ldd-arbitrary-code-execution/) - Nice exploit
 * [static linking](http://blog.garbe.us/2008/02/08/01_Static_linking/) - My old blog entry
+
+Credit
+------
+* Thanks to yoshi for providing a mirror service.

@@ -4,13 +4,11 @@
 
 This patch provides rudimentary experimentel transparency (xcompmgr needed).
 Opacity is set for every not focused client, and also for focused client
-when a rule is found.
-
-This patch is very experimental. There are Bugs.
+when a rule is found. There may be Bugs. A lot of them. Creeeeepy!
 
 ## Download
 
- * [dwm-transparency.diff](dwm-transparency.diff) (dwm 5.7.2) (20091124)
+ * [http://0mark.unserver.de/dwm-sprinkles/export/31/trunk/patches/dwm-transparency.diff](dwm-transparency.diff) latest transparency patch
 
 ## Author
 

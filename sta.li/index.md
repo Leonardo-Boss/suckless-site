@@ -36,7 +36,7 @@ Generally, /usr will be removed, what a useless directory, for non-base system s
 * /home/* - user home dirs
 * /include - include files
 * /lib - libraries, when used as devel box, only static libs, potentially
-* /local - possibly for software that's no in the base
+* /local - possibly for software that's not in the base
 * /mnt - mounts
 * /proc - linux crap
 * /share - man pages, locales and crap that several libraries ship

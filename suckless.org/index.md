@@ -10,51 +10,47 @@ front of the BCC at Alexanderplatz (the building where the 26C3 is located) at
 8pm and then head out for some nice bars in Berlin in order to discuss the next
 suckless software projects.
 
-2009/10/30
+2009-11-27
+----------
+[wmi-11](http://wmi.suckless.org/) released: [download](http://dl.suckless.org/wmi/wmii-11.tar.gz)
+
+2009-10-30
 ----------
 [tabbed 0.2](http://tools.suckless.org/tabbed) released: [download](http://dl.suckless.org/tools/tabbed-0.2.tar.gz)
 
 [surf 0.3](http://surf.suckless.org/) released: [download](http://dl.suckless.org/surf/surf-0.3.tar.gz)
 
-2009/10/22
+2009-10-22
 ---------
 [wmii 3.9b1](http://wmii.suckless.org/) released: [download](http://dl.suckless.org/wmii/wmii+ixp-3.9b1.tbz)
 
-2009/10/17
+2009-10-17
 ----------
 [surf 0.2](http://surf.suckless.org/) released: [download](http://dl.suckless.org/surf/surf-0.2.tar.gz)
 
-2009/09/27
+2009-09-27
 ----------
-New [dwm](http://dwm.suckless.org) release: [dwm-5.7.2](http://dl.suckless.org/dwm/dwm-5.7.2.tar.gz)
+[dwm 5.7.2](http://dwm.suckless.org) released: [download](http://dl.suckless.org/dwm/dwm-5.7.2.tar.gz)
 
-New [9base](http://tools.suckless.org/9base) release: [9base-4](http://dl.suckless.org/tools/9base-4.tar.gz)
+[9base-4](http://tools.suckless.org/9base) released: [download](http://dl.suckless.org/tools/9base-4.tar.gz)
 
-2009/04/18
+2009-04-18
 ----------
-New [dmenu](http://tools.suckless.org/dmenu) release: [dmenu-4.0](http://dl.suckless.org/tools/dmenu-4.0.tar.gz)
+[dmenu 4.0](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.0.tar.gz)
 
-2009/03/09
+2008-08-09
 ----------
-We applied as a mentoring organization for [GSoC2009](http://suckless.org/common/project_ideas).
+[ii 1.4](http://tools.suckless.org/ii) released: [download](http://dl.suckless.org/tools/ii-1.4.tar.gz)
 
-2008/08/09
+2008-08-02
 ----------
-New [ii](http://tools.suckless.org/ii) release: [ii-1.4](http://dl.suckless.org/tools/ii-1.4.tar.gz)
+[wmname 0.1](http://tools.suckless.org/wmname) released: [download](http://dl.suckless.org/tools/wmname-0.1.tar.gz)
 
-2008/08/02
+2008-07-29
 ----------
-New [wmname](http://tools.suckless.org/wmname) release: [wmname-0.1](http://dl.suckless.org/tools/wmname-0.1.tar.gz)
+[sic 1.0](http://tools.suckless.org/sic) released: [download](http://dl.suckless.org/tools/sic-1.0.tar.gz)
 
-2008/07/29
-----------
-New [sic](http://tools.suckless.org/sic) release: [sic-1.0](http://dl.suckless.org/tools/sic-1.0.tar.gz)
+[slock 0.9](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-0.9.tar.gz)
 
-New [slock](http://tools.suckless.org/slock) release: [slock-0.9](http://dl.suckless.org/tools/slock-0.9.tar.gz)
-
-New [sselp](http://tools.suckless.org/sselp) release: [sselp-0.2](http://dl.suckless.org/tools/sselp-0.2.tar.gz)
-
-2007/11/16
-----------
-New [wmii](http://wmii.suckless.org) release: [wmii-3.6](http://dl.suckless.org/wmii/wmii-3.6.tar.gz).
+[sselp 0.2](http://tools.suckless.org/sselp) released: [download](http://dl.suckless.org/tools/sselp-0.2.tar.gz)
 

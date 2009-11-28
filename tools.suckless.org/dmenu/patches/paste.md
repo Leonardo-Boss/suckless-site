@@ -18,3 +18,6 @@ Author
 ------
 
 * Evan Gates (emg) <[evan.gates@gmail.com](mailto:evan.gates@gmail.com)>
+
+
+***Note, this patch is being accepted for mainstream dmenu and in hg tip.***

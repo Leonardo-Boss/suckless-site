@@ -11,8 +11,6 @@ Note, this is pretty much contrary to what Ulrich Drepper reckons about static l
 Due to the side-benefit that statically linked binaries start faster, the
 distribution also targets performance gains.
 
-The first usable version will be released on ***Dec 1 2009***. Watch out! ;)
-
 General system design
 ---------------------
 

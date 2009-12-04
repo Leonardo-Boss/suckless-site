@@ -24,7 +24,7 @@ or:
 Download
 --------
 
-* [searchengines-0.1.diff](searchengines-0.1.diff) (4K) (20090923)
+* [surf-0.1-searchengines.diff](surf-0.1-searchengines.diff) (1964) (20090923)
 * [surf-0.3-searchengines.diff](surf-0.3-searchengines.diff) (2107) (20091204)
 
 Author

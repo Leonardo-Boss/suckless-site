@@ -69,7 +69,7 @@ WMII_NORMCOLORS=('#e0e0e0' '#444444' '#666666')
 
 theme 'Wombat (from Vim)'
 WMII_FOCUSCOLORS=('#000000' '#cae682' '#303030')
-WMII_BACKGROUND='#303030'
+WMII_BACKGROUND='#000000'
 WMII_NORMCOLORS=('#f6f3e8' '#242424' '#303030')
 
 theme 'gray and green'

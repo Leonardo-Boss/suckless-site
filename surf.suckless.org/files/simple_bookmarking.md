@@ -10,7 +10,7 @@ bookmarkurl :
 
 	#!/bin/sh
 	file=~/.surf/bookmarks
-	url=`xprop -id $1 | grep URL | awk '{print $3}' | sed 's/\"//g'`
+	url=`xprop -id $1 | grep URI | awk '{print $3}' | sed 's/\"//g'`
 	title=`xprop -id $1 | grep WM_ICON_NAME\(STRING\) | cut -c 24-`
 	echo $url $title | dmenu -nl >> $file
  

@@ -5,8 +5,8 @@ Read more about our [philosophy](/common/) and join us on the [mailing list](com
 
 suckless community meeting
 --------------------------
-There'll be a community meeting on Dec 28 2009 starting from 8pm. Meet up in
-front of the BCC at Alexanderplatz (the building where the 26C3 is located) at
+There'll be a community meeting on **Dec 28 2009** starting from **8pm**. Meet up in
+front of the BCC at Alexanderplatz (the building where the **26C3** is located) at
 8pm and then head out for some nice bars in Berlin in order to discuss the next
 suckless software projects.
 

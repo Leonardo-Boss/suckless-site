@@ -8,6 +8,8 @@ There are several other projects which are inspired by the spirit of suckless.
 * [spp](http://hg.youterm.com/spp/) - simple pre processor
 * [alt](http://hg.youterm.com/alt/) - abstract language tree
 * [acr](http://hg.youterm.com/acr/) - autoconf replacement
+* [sup](http://hg.youterm.com/sup/) - minimalistic sudo replacement
+* [dmc](http://lolcathost.org/cgi-bin/hg/dmc/) - dynamic mail client
 * [slpm](http://hg.youterm.com/slpm/) - suckless package manager
 * [mmsdk](http://hg.youterm.com/mmsdk/) - minimal maemo sdk (based on qemu-arm)
 * [micy](http://hg.youterm.com/micy/) - minimalistic mouse handler (depends on driver)

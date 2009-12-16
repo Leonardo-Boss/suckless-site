@@ -14,7 +14,7 @@ Tip: You might want to put this in your surf start script:
 
 	cat ~/.surf/history.txt | sort -u >~/.surf/history.txt
 
-This works well in conjunct with the dmenu history patch.
+This works well in conjunction with the dmenu history patch.
 
 Download
 --------

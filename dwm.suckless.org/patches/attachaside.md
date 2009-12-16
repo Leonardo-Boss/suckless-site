@@ -45,6 +45,7 @@ Basically an attachabove mod.
 ## Download
 
  * [attachaside-5.6.1.diff](attachaside-5.6.1.diff) (1.1K) (20090915)
+ * [dwm-attachaside-5.7-2.diff](dwm-attachaside-5.7.2.diff) (1.1K) (20091215)
 
 ## Author
 

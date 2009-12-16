@@ -1,7 +1,7 @@
 CURSOR HANDLING
 ===============
 
-This patch allows to use extended text editing.
+This patch implements extended text editing.
 
 Download
 --------

@@ -5,7 +5,7 @@ Description
 -----------
 
 This patch allows you to paste the contents of the X selection into dmenu. The
-default keybindings for this is mod1+p
+default keybinding for this is mod1+p.
 
 The patch depends on [sselp](/sselp).
 

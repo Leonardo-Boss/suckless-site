@@ -10,7 +10,7 @@ This patch hides the status indicator when a page has finished loading.  The pat
 Download
 --------
 
-* (http://www.xteddy.org/surf.html)
+* [http://www.xteddy.org/surf.html](http://www.xteddy.org/surf.html)
 
 Author
 ------

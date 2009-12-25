@@ -16,4 +16,4 @@ There is no configuration for this patch.
 
 ## Author
 
- * Ray Kohler - <ataraxia937 gmail com>
+ * Ray Kohler - ataraxia937 gmail com

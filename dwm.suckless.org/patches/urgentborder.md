@@ -12,4 +12,4 @@ Use config.h item "urgbordercolor" to change it.
 
 ## Author
 
- * Ray Kohler - <ataraxia937 gmail com>
+ * Ray Kohler - ataraxia937 gmail com

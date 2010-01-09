@@ -1,6 +1,5 @@
-Simple Bookmarking, Redux
+SIMPLE BOOKMARKING, REDUX
 =========================
-
 
 Description
 -----------
@@ -23,7 +22,6 @@ Then, inside `keys[]`, add:
     { MODKEY,               GDK_b,      spawn,      BM_PICK },
     { MODKEY|GDK_SHIFT_MASK,GDK_b,      spawn,      BM_ADD },
 
-
 ### Modkeys
 
 **CTRL-b**
@@ -33,7 +31,6 @@ Executes dmenu(1) displaying the list of bookmarks.
 **CTRL-SHIFT-b**
 
 Adds the current page to the list of bookmarks, while removing duplicate entries.
-
 
 Author
 ------

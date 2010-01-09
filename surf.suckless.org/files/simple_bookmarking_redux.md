@@ -19,8 +19,8 @@ Modify your config.h just before the definition of `keys[]`:
 
 Then, inside `keys[]`, add:
 
-    { MODKEY,               GDK_b,      spawn,      BM_PICK },
-    { MODKEY|GDK_SHIFT_MASK,GDK_b,      spawn,      BM_ADD },
+	{ MODKEY,               GDK_b,      spawn,      BM_PICK },
+	{ MODKEY|GDK_SHIFT_MASK,GDK_b,      spawn,      BM_ADD },
 
 ### Modkeys
 

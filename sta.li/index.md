@@ -18,7 +18,7 @@ General system design
 * kernel is a single monolith based on linux, by default no kernel module support
 * system loader is lilo (maybe we will start maintaining it)
 * no initrd initially
-* perhaps later whole the system will be a ramdisk? will see (20h idea)
+* perhaps later the whole system will be a ramdisk? will see (20h idea)
 * init system should be based on just one /etc/rc.{start,stop} script (look at p9 how they do it)
 
 Basic filesystem design

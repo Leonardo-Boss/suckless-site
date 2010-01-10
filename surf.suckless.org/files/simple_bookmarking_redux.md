@@ -35,4 +35,4 @@ Adds the current page to the list of bookmarks, while removing duplicate entries
 Author
 ------
 
-* Lorenzo Bolla <lbolla at gmail dot com>
+* Lorenzo Bolla < lbolla at gmail dot com >

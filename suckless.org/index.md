@@ -3,12 +3,9 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
-suckless community meeting
---------------------------
-There'll be a community meeting on **Dec 28 2009** starting from **8pm**. Meet up in
-front of the BCC at Alexanderplatz (the building where the **26C3** is located) at
-8pm and then head out for some nice bars in Berlin in order to discuss the next
-suckless software projects.
+2009-12-28
+----------
+There was a small community meeting in Berlin! Thanks to all attenders.
 
 2009-11-27
 ----------

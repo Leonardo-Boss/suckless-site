@@ -20,7 +20,7 @@ Author
 Code
 ----
 
-	/* based on chromium plugin code */
+	/* based on chromium plugin code, adapted by Nibble<.gs@gmail> */
 	var hint_num_str = '';
 	var hint_elems = [];
 	var hint_open_in_new_tab = false;
@@ -28,8 +28,11 @@ Code
 
 	function hintMode(newtab){
 		hint_enabled = true;
-		if (newtab) hint_open_in_new_tab = true;
-		else hint_open_in_new_tab = false;
+		if (newtab) {
+			hint_open_in_new_tab = true;
+		} else {
+			hint_open_in_new_tab = false;
+		}
 		setHints();
 		document.removeEventListener('keydown', initKeyBind, false);
 		document.addEventListener('keydown', hintHandler, false);
@@ -43,17 +46,9 @@ Code
 			if (hint_num_str == '')
 				hint_num_str = '1';
 			judgeHintNum(Number(hint_num_str));
-		} else if (/[0-9asdfghjkl;]/.test(pressedKey) == false || pressedKey =='Esc') {
+		} else if (/[0-9]/.test(pressedKey) == false) {
 			removeHints();
 		} else {
-			// TODO
-			if (pressedKey == 'U+00BA') {
-				pressedKey = ';';
-			}
-			var num = ';asdfghjkl'.indexOf(pressedKey);
-			if (num >= 0) {
-				pressedKey = num;
-			}
 			hint_num_str += pressedKey;
 			var hint_num = Number(hint_num_str);
 			if (hint_num * 10 > hint_elems.length + 1) {
@@ -206,7 +201,6 @@ Code
 	function initKeyBind(e){
 		var t = e.target;
 		if( t.nodeType == 1){
-			tn=t.tagName.toLowerCase();
 			addKeyBind( 'C-f', 'hintMode()', e );
 			addKeyBind( 'C-F', 'hintMode(true)', e );
 			addKeyBind( 'C-c', 'removeHints()', e );

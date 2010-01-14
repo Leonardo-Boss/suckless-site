@@ -8,9 +8,9 @@ This script enables link hinting support to surf. Deploy it into ~/.surf/user.js
 
 Keybindings
 -----------
-  ^f (open link in current window)
-  ^F (open link in new window)
-  ^c (cancel hinting)
+	^f (open link in current window)
+	^F (open link in new window)
+	^c (cancel hinting)
 
 Author
 ------

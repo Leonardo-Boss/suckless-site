@@ -30,7 +30,7 @@ enters resize mode, Escape exits it.
     # <h/j/k/l>   grows the window in the given direction
     # C-<h/j/k/l> shrinks the window in the given direction
     # S-<h/j/k/l> moves the window in the given direction
-    Key $MODYEY-Control-r
+    Key $MODKEY-Control-r
             (
                 . wmii.sh
                 for i in "'' grow" "Control- grow -1" "Shift- nudge"; do

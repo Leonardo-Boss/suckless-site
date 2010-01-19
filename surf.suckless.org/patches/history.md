@@ -7,38 +7,37 @@ Description
 This patch writes the loaded URI to a file and that is all it does.  You must modify config.h and 
 add the following:
 
-static char *historyfile        = ".surf/history";
+	static char *historyfile        = ".surf/history";
 
 Here are some ways of using it.
 
-1. Write a small shell script.
+(1) Write a small shell script.
 
-#!/bin/sh
-cat ~/.surf/history | sort -ru | dmenu -l 10 -b -i | xprop -id `cat ~/.surf/id` -f SURF_URI 8s -set _SURF_URI
+	cat ~/.surf/history | sort -ru | dmenu -l 10 -b -i | xprop -id `cat ~/.surf/id` -f SURF_URI 8s -set _SURF_URI
 
-2. Modify config.h and add the following.
+(2) Modify config.h and add the following.
 
-#define SETURI(p)       { .v = (char *[]){ "/bin/sh", "-c", \
-"prop=\"`dmenu.uri.sh`\" &&" \
-"xprop -id $1 -f $0 8s -set $0 \"$prop\"", \
-p, winid, NULL } }
+	#define SETURI(p)       { .v = (char *[]){ "/bin/sh", "-c", \
+	"prop=\"`dmenu.uri.sh`\" &&" \
+	"xprop -id $1 -f $0 8s -set $0 \"$prop\"", \
+	p, winid, NULL } }
 
-Add, in static Key keys[] add:
+and in static Key keys[] add:
 
-{ MODKEY,               GDK_Return, spawn,      SETURI("_SURF_URI") },
+	{ MODKEY,               GDK_Return, spawn,      SETURI("_SURF_URI") },
 
 Here are some tips on using it.
 
-1. Remove duplicates periodically:
+(1) Remove duplicates periodically:
 
-cat ~/.surf/history > ~/.surf/history.$$
-cat ~/.surf/history.$$ | sort | uniq >~/.surf/history
-rm -f ~/.surf/history.$$
+	cat ~/.surf/history > ~/.surf/history.$$
+	cat ~/.surf/history.$$ | sort | uniq >~/.surf/history
+	rm -f ~/.surf/history.$$
 
-2. Import firefox history:
+(2) Import firefox history:
 
-sqlite3  -list /home/$USER/.mozilla/firefox/*.default/places.sqlite 'select url from moz_places ;' |\
-grep http >> ~/.surf/history
+	sqlite3  -list /home/$USER/.mozilla/firefox/*.default/places.sqlite 'select url from moz_places ;' |\
+	grep http >> ~/.surf/history
 
 Download
 --------

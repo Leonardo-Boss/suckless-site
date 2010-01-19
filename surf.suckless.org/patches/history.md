@@ -4,17 +4,41 @@ HISTORY
 Description
 -----------
 
-This patch writes the loaded URI to a file.
+This patch writes the loaded URI to a file and that is all it does.  You must modify config.h and 
+add the following:
 
-wart_ also provides a shell script using dmenu to display and select a URI:
+static char *historyfile        = ".surf/history";
 
-	cat ~/.surf/history.txt | sort -r | uniq | dmenu -l 10 -b -i | xprop -id `cat ~/.surf/id` -f _SURF_URI 8s -set _SURF_URI
+Here are some ways of using it.
 
-Tip: You might want to put this in your surf start script:
+1. Write a small shell script.
 
-	cat ~/.surf/history.txt | sort -u >~/.surf/history.txt
+	#!/bin/sh
+	cat ~/.surf/history | sort -ru | dmenu -l 10 -b -i | xprop -id `cat ~/.surf/id` -f SURF_URI 8s -set _SURF_URI
 
-This works well in conjunction with the dmenu history patch.
+2. Modify config.h and add the following.
+
+#define SETURI(p)       { .v = (char *[]){ "/bin/sh", "-c", \
+        "prop=\"`dmenu.uri.sh`\" &&" \
+        "xprop -id $1 -f $0 8s -set $0 \"$prop\"", \
+        p, winid, NULL } }
+
+Add, in static Key keys[] add:
+
+{ MODKEY,               GDK_Return, spawn,      SETURI("_SURF_URI") },
+
+Here are some tips on using it.
+
+1. Remove duplicates periodically:
+
+	cat ~/.surf/history > ~/.surf/history.$$
+	cat ~/.surf/history.$$ | sort | uniq >~/.surf/history
+	rm -f ~/.surf/history.$$
+
+2. Import firefox history:
+
+	sqlite3  -list /home/$USER/.mozilla/firefox/*.default/places.sqlite 'select url from moz_places ;' |\
+	grep http >> ~/.surf/history
 
 Download
 --------
@@ -27,5 +51,5 @@ Authors
 -------
 
 * Jason Thigpen (cdarwin) <[darwin@senet.us](mailto:darwin@senet.us)>
-* Peter John Hartman (wart_) <[http://antiopus.trilidun.org/durandus/](htttp://antiopus.trilidun.org/durandus/)>
+* Peter John Hartman (wart_) <[http://durandus.trilidun.org/durandus/](htttp://durandus.trilidun.org/durandus/)>
 * Samuel Baldwin (shardz) <[recursive.forest@gmail.com](mailto:recursive.forest@gmail.com)>

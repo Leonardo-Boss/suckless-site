@@ -4,7 +4,7 @@ KEYBOARD LINK HINTING
 Description
 -----------
 
-This script enables link hinting support to surf. Deploy it into ~/.surf/user.js.
+This script enables link hinting support to surf. Deploy it into ~/.surf/script.js.
 
 Keybindings
 -----------
@@ -15,12 +15,12 @@ Keybindings
 Author
 ------
 
-- The code was originally from chromium but was adapted by nibble(.ds(at)gmail(dot).com) to work with surf.
+- The code was originally from chromium but was adapted by nibble(.ds(at)gmail(dot)com) to work with surf.
 
 Code
 ----
 
-	/* based on chromium plugin code, adapted by Nibble<.gs@gmail> */
+	/* based on chromium plugin code, adapted by Nibble<.gs@gmail.com> */
 	var hint_num_str = '';
 	var hint_elems = [];
 	var hint_open_in_new_tab = false;

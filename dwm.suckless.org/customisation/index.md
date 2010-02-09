@@ -37,4 +37,4 @@ Therefore, during an update of your repository you may run into conflicts if the
 Are there any example customisations to get me started?
 -------------------------------------------------------
 
-On the sidebar of this wiki page you will soon find links to example modifications that you may find useful to get started.
+Various customisation options are illustrated in the sub-directories of this wiki page. Under each of the categories (customfuncs, fonts, etc.,) you will find example modifications that will get you started.

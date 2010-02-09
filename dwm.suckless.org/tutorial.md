@@ -15,7 +15,7 @@ To move a terminal pane/tile/window to another tag you select the window by
 hovering over the window. Then execute the bind `[Shift]+[Alt]+[2]` to move the
 window to the 2 tag. `[Alt]+[2]` moves your focus to tag 2.
 
-As stated in the [manpage](manpage.html#lbAG) you can click tags with the left
+As stated in the manpage you can click tags with the left
 mouse button and simulating `[Alt]+[tag number]`, but you can also click an
 other tag with the right mouse button in order to bring those windows additionally
 into your current focus.

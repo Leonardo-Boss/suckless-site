@@ -1,4 +1,4 @@
-Following the default binds configured by the header file
+The following default binds are configured by the header file
 [config.def.h](http://hg.suckless.org/dwm/file/tip/config.def.h).
 
 	[Shift]+[Alt]+[Enter] - launch terminal
@@ -15,8 +15,7 @@ To move a terminal pane/tile/window to another tag you select the window by
 hovering over the window. Then execute the bind `[Shift]+[Alt]+[2]` to move the
 window to the 2 tag. `[Alt]+[2]` moves your focus to tag 2.
 
-As stated in the [dwm manpage](http://man.suckless.org/dwm/1/dwm), you can click tags with the left mouse button and simulating `[Alt]+[tag number]`, but you can also click an
-other tag with the right mouse button in order to bring those windows additionally
+As stated in the [dwm manpage](http://man.suckless.org/dwm/1/dwm), you can click tags with the left mouse button and simulating `[Alt]+[tag number]`, but you can also click another tag with the right mouse button in order to bring those windows additionally
 into your current focus.
 
 To kill a window:
@@ -32,7 +31,7 @@ You should also notice the `[]=` symbol between the tag numbers and the title ba
 dwm has two further layout modes, **floating** `><>` `[Alt]+[f]` and
 **monocle** `[M]` `[Alt]+[m]`. Monocle is good for ensuring a window is kept
 maximized and focused. This is useful in web kiosk environments and watching
-flash videos.
+flash videos. Further layout modes can be included through [patches](http://dwm.suckless.org/patches/).
 
 Floating layout will be familiar to Windows users. Use `[Alt]+[mouse button]` to
 move or resize a window.

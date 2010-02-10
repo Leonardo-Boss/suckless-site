@@ -2,5 +2,5 @@
       <a href="http://werc.cat-v.org/">Powered by werc</a>
 </div>
 <div class="right">
-    &copy; 2006-2009 suckless.org community
+    &copy; 2006-2010 suckless.org community
 </div>

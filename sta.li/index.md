@@ -83,6 +83,7 @@ Some related links
 * [$6M libc](http://codingrelic.geekhold.com/2008/11/six-million-dollar-libc.html) - Bionic is a nice library, though only usable for sane stuff
 * [ldd arbitrary code execution](http://www.catonmat.net/blog/ldd-arbitrary-code-execution/) - Nice exploit
 * [static linking](http://blog.garbe.us/2008/02/08/01_Static_linking/) - My old blog entry
+* [blog post about stali](http://elevenislouder.blogspot.com/2010/02/stali.html)
 
 Credit
 ------

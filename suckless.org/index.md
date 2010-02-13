@@ -3,6 +3,10 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
+2010-02-13
+----------
+Some of us will visit [CLT2010](http://chemnitzer.linux-tage.de/2010/). Anselm will give a [talk](http://chemnitzer.linux-tage.de/2010/vortraege/detail.html?idx=308) about [stali](http://sta.li) on the second day of CLT2010 at 5pm.
+
 2009-12-28
 ----------
 There was a small community meeting in Berlin! Thanks to all attenders.

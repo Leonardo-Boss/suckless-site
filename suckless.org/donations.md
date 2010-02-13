@@ -1,10 +1,12 @@
 DONATIONS
 =========
-We thank all people who have donated or are donating in one way or another
-to a suckless.org related project. We kindly ask to continue donating to the
-suckless.org project. As the project grows and grows, there are plans to get
-in touch with the [GSoC](http://code.google.com/soc/2008/) in 2009 to sponsor
-more less sucking projects we have in mind.
+Continuing to produce and host suckless software requires the contribution of time, code and -especially for the hosting part- money. If you are able to make a contribution, no matter the size, it will go towards ensuring that we are able to continue to write, support and host the high quality software that makes all of our lives easier.
+
+You can donate through [PayPal](https://paypal.com/) using Anselm's gmail address:
+garbeam [at].
+
+We'd like to thank all people who have donated or are donating in one way or another
+to a suckless.org related project. Your generosity of time and/or money is appreciated by the entire suckless community.
 
 Present
 -------

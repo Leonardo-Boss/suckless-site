@@ -14,7 +14,6 @@ Following people are currently donating in one or another way to the suckless.or
 
 * Jason Thigpen donates a slicehost server, which hosts the source code and the tarballs of our projects.
 * Anselm R Garbe donates domains and backup servers.
-* Jason W Ryan donated <b>30 EUR</b>
 
 Past
 ----
@@ -26,6 +25,7 @@ in the past:
 * John V. Turek donated <b> 10 EUR</b>
 * Filippo Negroni donated <b> 10 GBP </b>
 * Markus Schnalke donated <b> 10 EUR</b>
+* Jason Ryan donated <b>30 EUR</b>
 * Sebastian Noack donated <b> 50 EUR </b>
 * Jason Thigpen donated <b> 100 USD </b>
 * Markus Schnalke donated <b> 20 EUR </b>

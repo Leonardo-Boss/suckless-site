@@ -16,6 +16,7 @@ Text Editors
 * [sam](http://sam.cat-v.org/) - An editor by [Rob Pike][rob] with inspiration from ed.
 * [traditional vi](http://ex-vi.sourceforge.net/) - A fixed version of the original vi.
 * [vim](http://www.vim.org) (With the GUI, use `:set go+=c` to kill popup dialogs)
+* [ired](http://www.radare.org) (Minimalist hexadecimal editor and bindiffer for p9, w32 and *nix)
 * [wily](http://www.cs.yorku.ca/~oz/wily/) - An acme clone for POSIX.
 
 Audio Players
@@ -39,6 +40,11 @@ Utilities
 * [9menu](http://www.freshports.org/x11/9menu/) - A menu program based on the Blit-style menus so prevalent in Plan 9.
 	  A take on it is included with wmii.
 * [dmenu](/programs/dmenu.html) - Obvious
+
+Programming languages
+---------------------
+* [TinyPy](http://www.tinypy.org/) - Tiny Python (partial python)
+* [Lua](http://www.lua.org)
 
 Image Viewers
 -------------
@@ -66,6 +72,7 @@ Mail Clients
 * [mutt](http://www.mutt.org/)
 * [muttator](http://vimperator.org/) - A Thunderbird extension to make it keyboard friendly and mutt/Vim-like.
 * [nmh](http://www.nongnu.org/nmh/)
+* [dmc](http://hg.youterm.com/dmc/) - A minimalistic approach to a commandline mail client (WIP)
 * Sylpheed claws
 
 Instant Messaging Clients

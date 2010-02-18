@@ -112,7 +112,7 @@ A general conclusion is, the more dynamic libraries an executable depends on,
 the slower it'll start, regardless if the libraries are preloaded or not.
 This also means that usually big static executables (which we try to avoid)
 easily outperform dynamic executables with lots of dependencies. If a big
-static executable is already running, executed another one is nearly
+static executable is already running, executing another one is nearly
 instantaniously, because the payload is already in the memory. In the dynamic
 case the startup is not instantaniously because the dynamic linker has to make
 sure that there were no updates in the dependencies.

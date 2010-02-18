@@ -34,22 +34,25 @@ its lack of good structure and well separated object files
 even worse than that, its design decision to use dlopen for certain
 "separated" library features (NSS, locales, IDN, ...), which makes it nearly
 impossible to use glibc for static linking in non-trivial programs.
-Unfortunately, for certain tools we will ship glibc for pragmatic reasons.  Of
-course, [Ulrich Drepper disagrees](http://people.redhat.com/drepper/no_static_linking.html).
+Unfortunately, for certain tools we will ship glibc for pragmatic reasons.
+
+Of course [Ulrich Drepper thinks that dynamic linking is
+great](http://people.redhat.com/drepper/no_static_linking.html), but clearly
+that's because of his lack of experience and his delusions of grandeur.
+
 
 Aren't statically linked executables less secure?
 ----------------------------------------------
-Several people argue (with implicitly requiring ABI-stability) that
-dynamically linked executables benefit from security fixes in libraries they
-depend on. This is true, however the opposite is also true: if there is a
-security flaw in a dynamically linked library, all programs are affected; whereas
-statically executables won't be affected in such a scenario (assuming they have
-been linked against secure libraries).
+Several people argue (with implicitly requiring ABI-stability) that dynamically
+linked executables benefit from security fixes in libraries they depend on.
+This is true to some extend, but if there is a security flaw in a dynamically
+linked library, all programs are affected as well; whereas statically
+executables aren't.
 
-We know that there is some overhead in re-compiling all affected executables if a
-dependent library is insecure, but we don't see this as a critical
-disadvantage, because we also focus on a small and maintainable userland,
-where only one tool for each task exists.
+We know that there is some overhead in re-compiling all affected executables if
+a dependent library is insecure, but we don't see this as a critical
+disadvantage, because we also focus on a small and maintainable userland, where
+only one tool for each task exists.
 
 Another argument often heard is that static functions have predictable
 addresses, whereas dynamic linking provides the ability of address
@@ -64,12 +67,19 @@ impact and this is not a real focus for us.
 If you are really concerned about the security of statically linked executables,
 have a look at what [great ldd exploits](http://www.catonmat.net/blog/ldd-arbitrary-code-execution/) exist.
 
-Contrary to the pro-arguments for dynamic linking wrt the downsides of static linking, there are also good arguments why statically linked executables are actually more secure. Imagine that the insecure library functions aren't linked into the static executable and hence the executable is not affected at all (but it would be affected if we did link it dynamically).
+Another security issue with dynamic linking is versioning, see [this
+excerpt](http://harmful.cat-v.org/software/dynamic-linking/versioned-symbols)
+for some insight.
 
-Apart from that we tend to link against libraries with low footprint (eg uclibc
-instead of glibc when possible). This leads to an increased
-likelihood of lesser vulnerabilities, simply because lesser code contains fewer
-bugs from a statistical point of view.
+Also a security issue with dynamically linked libraries are executables with
+the suid flag. A user can easily run dynamic library code using LD_PRELOAD in
+conjunction with some trivial program like ping. Using a statically linked
+executable with the suid flag eliminates this problem completely.
+
+Apart from that we link against libraries with low footprint (eg uclibc instead
+of glibc when possible). This leads to an increased likelihood
+of lesser vulnerabilities, simply because lesser code contains fewer bugs from
+a statistical point of view.
 
 Aren't statically linked executables consuming more memory?
 --------------------------------------------------------
@@ -87,7 +97,7 @@ functions.
 
 Isn't starting statically linked executables slower?
 ----------------------------------------------------
-In most cases the answer is "No". In the theoretical case of a huge static
+In nearly all cases the answer is "No". In the theoretical case of a huge static
 executable, the payload might be loading the executable into memory; but we
 focus on small, static executables. In experiments, the execution time of a static
 executable was about 4000% faster than its dynamically linked counterpart
@@ -96,8 +106,27 @@ the dependent libraries were pre-loaded. We believe the overhead for looking up
 all needed symbols in the dynamically loaded libraries seems to be very
 expensive. On modern hardware this is only noticable with endlessly executing
 the static and dynamic executable in a loop for several minutes and counting
-the number of executions. We plan to publish the benchmark results for further
-info at a later point.
+the number of executions. 
+
+A general conclusion is, the more dynamic libraries an executable depends on,
+the slower it'll start, regardless if the libraries are preloaded or not.
+This also means that usually big static executables (which we try to avoid)
+easily outperform dynamic executables with lots of dependencies. If a big
+statically executable is already running, executed another one is nearly
+instantaniously, because the payload is already in the memory. In the dynamic
+case the startup is not instantaniously because the dynamic linker has to make
+sure that there were no updates in the dependencies.
+
+So all in all dynamic executables are painfully slow, regardless what hacks on
+top people came up with in the past. There is zero evidence that dynamic
+linking makes executables faster. There is only some evidence that preloading
+dynamic libraries vs no preloading dynamic libraries improves the startup of
+dynamic executables. But the introduction of preloading comes to a cost as
+well, the kernel will have to do much more work when supporting such hacks.
+
+Dynamic linking also greately increases the complexity of the kernel VM and
+makes it much slower. And those hacks that try to prevent this make things more
+complicated and add many more points of total failure.
 
 How does stali compare to Google Chromium OS?
 ---------------------------------------------

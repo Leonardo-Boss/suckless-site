@@ -73,7 +73,7 @@ for some insight.
 
 Also a security issue with dynamically linked libraries are executables with
 the suid flag. A user can easily run dynamic library code using LD_PRELOAD in
-conjunction with some trivial program like ping. Using a statically linked
+conjunction with some trivial program like ping. Using a static 
 executable with the suid flag eliminates this problem completely.
 
 Apart from that we link against libraries with low footprint (eg uclibc instead
@@ -112,7 +112,7 @@ A general conclusion is, the more dynamic libraries an executable depends on,
 the slower it'll start, regardless if the libraries are preloaded or not.
 This also means that usually big static executables (which we try to avoid)
 easily outperform dynamic executables with lots of dependencies. If a big
-statically executable is already running, executed another one is nearly
+static executable is already running, executed another one is nearly
 instantaniously, because the payload is already in the memory. In the dynamic
 case the startup is not instantaniously because the dynamic linker has to make
 sure that there were no updates in the dependencies.

@@ -59,3 +59,26 @@ dwm is actively developed in parallel to wmii. You can [browse](http://hg.suckle
 Miscellaneous
 -------------
 * Optionally you can install [dmenu](http://tools.suckless.org/dmenu) to extend dwm with a wmii-like menu.
+
+Related discussion
+------------------
+* <http://dobbscodetalk.com/index.php?option=com_myblog&show=dwm.html&Itemid=29>
+* <http://tuxtraining.com/2008/10/20/an-introduction-to-tiling-window-managers>
+* <http://www.iyiz.com/20-most-simple-and-cool-x-window-managers-for-linux/>
+* <http://lbolla.wordpress.com/2010/01/08/dwm-restart/>
+* <http://danielkaes.wordpress.com/2009/12/03/adding-a-pidgin-trayicon-to-dwm/>
+* <http://openmindlifestyle.wordpress.com/2009/11/28/howto-compile-and-configure-dwm-tiling-window-manager-on-ubuntu/>
+* <http://lsetc.wordpress.com/2009/11/27/gno-more-gnome/>
+* <http://cdwillis.wordpress.com/2009/07/02/dwm-and-common-lisp/>
+* <http://leanux.wordpress.com/2009/03/13/tiling-window-managers-reprise/>
+* <http://afterstep13.wordpress.com/2008/10/14/less-is-more/>
+* <http://steveno.wordpress.com/2007/05/30/dwm-and-slim/>
+* <http://www.youtube.com/watch?v=F2sYPwuRPvc>
+* <http://houst0n.wordpress.com/2009/12/20/dwm-the-dynamic-window-manager-for-solaris/>
+* <http://stockground.net/?p=18>
+* <http://maxwellequations.blogspot.com/2007/04/unix-review-dwm-dynamic-window-manager_17.html>
+* <http://the-monkeymind.blogspot.com/2007/03/dwm-dynamic-window-manager-home-page-at.html>
+* <http://tonytraductor.livejournal.com/120674.html>
+* <http://www.halbmoendli.ch/blog/archive/2007/03/31/dwm-dynamic-window-manager.html>
+* <http://peterstuifzand.nl/20060816212719.html>
+

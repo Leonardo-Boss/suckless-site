@@ -66,17 +66,15 @@ what is really necessary and nothing else.
 
 Development
 -----------
-The current state of the build environment can be cloned with the following command:
+You can [browse](http://hg.suckless.org/stali-toolchain) the stali toolchain
+source code repository or get a copy using
+[Mercurial](http://www.selenic.com/mercurial/) with the following command:
 
-	git clone git://sta.li/stali
-
-Note, please use one of the following mirrors instead:
-
-	git clone git://stali.yokuts.org/
+	hg clone http://hg.suckless.org/stali-toolchain
 
 (More to follow)
 
-Size: 400 MB
+Size: ~250MB
 
 Some related links
 ------------------

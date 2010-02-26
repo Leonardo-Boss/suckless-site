@@ -62,6 +62,7 @@ Miscellaneous
 
 Related discussion
 ------------------
+* <http://www.linuxgoodies.com/review_dwm.html>
 * <http://dobbscodetalk.com/index.php?option=com_myblog&show=dwm.html&Itemid=29>
 * <http://tuxtraining.com/2008/10/20/an-introduction-to-tiling-window-managers>
 * <http://www.iyiz.com/20-most-simple-and-cool-x-window-managers-for-linux/>

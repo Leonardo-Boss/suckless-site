@@ -22,7 +22,7 @@ There was a small community meeting in Berlin! Thanks to all attenders.
 [surf 0.3](http://surf.suckless.org/) released: [download](http://dl.suckless.org/surf/surf-0.3.tar.gz)
 
 2009-10-22
----------
+----------
 [wmii 3.9b1](http://wmii.suckless.org/) released: [download](http://dl.suckless.org/wmii/wmii+ixp-3.9b1.tbz)
 
 2009-10-17

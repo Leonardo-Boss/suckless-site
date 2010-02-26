@@ -34,7 +34,7 @@ It currently contains the following original (no source changes) shell commands 
 * yacc
 
 It also contains the Plan 9 libc, libbio, libregexp, libfmt and libutf.
-The overall SLOC is about 40kSLOC, so this userland + all libs is much smaller as for example bash (duh!).
+The overall SLOC is about 40kSLOC, so this userland + all libs is much smaller than, e.g. bash (duh!).
 
 
 Download

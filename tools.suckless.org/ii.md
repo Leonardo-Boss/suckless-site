@@ -85,10 +85,15 @@ Automatic reconnects
 
 If you want some kind of automatic reconnects in ii you can make a something like this in a shell script:
 
-    while true ; do  
-        ( sleep 5 && echo "/j #ii" > ~/irc/irc.oftc.net/in ) &  
+    while true; do  
         ii -s irc.oftc.net -n iifoo -f "John Doe"  
-    done
+        iipid=$!  
+        sleep 5  
+        echo "/j #ii" > ~/irc/irc.oftc.net/in  
+        while [[ -e /proc/$iipid ]]; do  
+            sleep 30  
+        done  
+    done  
 
 IPv6
 ----

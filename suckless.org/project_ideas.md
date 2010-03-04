@@ -181,3 +181,15 @@ browser for VCS repositories including support for
 ***Requirements:*** Good knowledge of the [rc](http://en.wikipedia.org/wiki/Rc) shell
 and the [Plan 9 userland for Unix](http://plan9.us) is essential. Good C
 knowledge for the helper tools would be desirable.
+
+### Write cookie handler for surf
+
+surf biggest disadvantage is the sloppy cookie handling. The problem about this is
+that libwebkit and libsoup (which is used for HTTP) were never designed to run
+in multiple processes simultaniously.
+
+Your task is to write a new cookie handler in surf which creates a nice human
+readable cookiefile and is able to run in multiple concurrent processes.
+
+***Requirements:*** Good knowledge of C. Good knowledge of posix file locking.
+Basic knowledge of GTK and its other evil friends.

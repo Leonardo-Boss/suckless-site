@@ -1,6 +1,6 @@
-PROJECT IDEAS FOR FUTURE GSOCs
-==============================
-We applied as a mentoring organization for [Google Summer of Code 2009](http://code.google.com/soc/), but were rejected this time. Perhaps we will apply in 2010 again.
+PROJECT IDEAS FOR GSOC 2010
+===========================
+We are applying as a mentoring organization for [Google Summer of Code 2010](http://socghop.appspot.com/).
 
 Please read our [philosophy](/manifest) for background information.
 
@@ -15,18 +15,16 @@ student's progress, as well as of the mentor's.
 
 General ideas
 -------------
-Our project ideas in general intended to focus on:
+Our project ideas in general intend to focus on our innovative development
+environment, including graphical user interfaces and development tools.
 
-* Graphical user interfaces for expert users (such as more advanced
+* Graphical user interfaces for developers (such as more advanced
   concepts for mail clients, messaging clients, music players, text editors)
-* Web applications for expert users following our GUI concepts
-* Mobile applications for expert users following our GUI concepts
+* Web applications for developers following our GUI concepts (issue and bug tracking)
+* Mobile applications for developers that integrate well into our general development environment
 * General userland enhancements to Unix-like operating systems, in particular
   GNU/Linux
-* Audio applications
-* Image/Streaming/Gallery desktop and web applications
 * Foundations of a new windowing system for Unix-like operating systems
-  (based on xorg drivers, but no X11- or XServer-dependency)
 * Improvements of our existing software projects
 
 Concrete ideas

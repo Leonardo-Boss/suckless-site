@@ -3,6 +3,10 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
+2010-03-07
+----------
+We are going to apply as a mentoring organisation to GSoC 2010. See our [project ideas for GSoC 2010](/project_ideas) page for further details.
+
 2010-02-13
 ----------
 Some of us will visit [CLT2010](http://chemnitzer.linux-tage.de/2010/). Anselm will give a [talk](http://chemnitzer.linux-tage.de/2010/vortraege/detail.html?idx=308) about [stali](http://sta.li) on the second day of CLT2010 at 5pm.

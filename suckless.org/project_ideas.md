@@ -80,10 +80,12 @@ general case.
 
 ### goblin 
 
-Write the most used unix userland commands in the new [Go
+Write the most useful unix userland commands in the new [Go
 language](http://golang.org) created by Google to form a robust base for future
 Unix-like userlands that do not suffer from the vulnerabilities that are common
-in C or C++ code. The minimum of commands that need to be implemented in Go are those found in [9base](http://tools.suckless.org/9base).
+in C or C++ code. The minimum of commands that need to be implemented in Go are
+those found in [9base](http://tools.suckless.org/9base), with the exception of
+rc and awk which could be separated into a second project for another student.
 
 Having goblin would allow to migrate decent web frameworks like
 [werc](http://werc.cat-v.org) on a proper foundation.
@@ -92,20 +94,12 @@ Having goblin would allow to migrate decent web frameworks like
 
 ### Write a decent bug and issue tracking system
 
-All bug and issue tracking systems that exist have many issues themselves, some
-are too simplistic and have a web-only approach, some only focus mails, some do
-many unrelated things, most of them are very complicated and monstrous.
-
-We need a decent bug and issue tracking system that not only can be used for
-bug tracking but also for dealing with issues in customer relations.
-
-It is crucial that all communication can be done via email but also that all
-communication can tracked and done via a proper web interface.
-
-The system should not attempt to achieve too many features such as enforcing
-some role management which is found in some existing systems. It should focus
-on the most basic tasks instead and get them right. Most existing systems
-provide all such functionality but often in very cumbersome ways.
+We a need a decent ticket management system, as this is a common task in
+today's daily activity in business and private time management. This task
+includes the design and implementation of a suckless system that solves the
+problems of TTS (Trouble Ticket System), ARS (Action Request System) and IRS
+(Incident Response System) all together. It also must be usable as a bug
+tracking system.
 
 ***Requirements:*** Good C/Shell/web technology/HTML5 knowledge would be desirable, knowledge of bug tracking and issue tracking in practice is essential.
 
@@ -119,67 +113,6 @@ the mutt MUA and which is designed with low footprint and efficiency in mind.
 We expect this tool as a stand-alone Unix tool written in C or shell.
 
 ***Requirements:*** Good C/Shell/HTML5 knowledge would be desirable.
-
-
-### Unix utilities
-
-Projects like [dmenu](http://tools.suckless.org/dmenu) prove that it's possible
-to bring the Unix philosophy onto the desktop and into the land of graphical
-applications. We believe that there is big potential for doing similar things
-for other purposes such as managing contacts, bookmarks, browsing
-files/directories, reading/managing mails, organizing/viewing images/videos and
-listening to music, all in a very elegant and Unix-like way. We believe that such
-tools should have a GUI but communicate via standard I/O and be very flexible in
-the combination of their purposes.
-
-***Requirements:*** Good knowledge of the Unix userland, C and Xlib is essential.
-
-### Port dwm to different platforms
-
-Many dwm users who have to use Microsoft Windows regularly have requested a
-port of dwm to Microsoft Windows. There are several tiling window managers, but
-unfortunately the majority are proprietary software and can't keep up with dwm.
-
-Similarly we believe that porting dwm to Mac OS X, or onto mobile devices (with
-certain constraints) might create a new paradigm of future window management
-concepts in mainstream software.
-
-There might also be the opportunity to make dwm itself more friendly with
-well-established desktop environments, to integrate well with Gnome or KDE in
-order to prove that dynamic and tiled window management should be the default
-in future window management concepts.
-
-***Requirements:*** Good knowledge of Xlib and C is desirable. Also good
-knowledge of the specific target platform, such as Cocoa/Quartz on Max OS X
-or the Win32 API on Windows would be desirable.
-
-### ddm
-
-There is no suckless display manager for X11 at the moment, thus a new
-dynamic display manager (ddm) should be designed and implemented.
-
-***Requirements:*** Good knowledge of Xlib and C is desirable.
-
-### stm
-
-There seems to be a need for a suckless ticket management system, as this
-is a common task in today's daily activity in business and private time
-management. This task includes the design and implementation of a suckless
-system that solves the problems of TTS (Trouble Ticket System), ARS (Action
-Request System) and IRS (Incident Response System) all together.
-
-***Requirements:*** Good knowledge of web technologies are essential, good
-knowledge of C is desirable.
-
-### Lightweight volume manager alternative
-
-We'd like to see a lightweight and simple alternative to gnome-volume-manager
-and similar programs.
-
-There is one such project already available at <http://tools.suckless.org/skvm>.
-
-***Requirements:*** Good C knowledge and knowledge of DBUS and similar techniques
-are essential.
 
 ### Yet another less sucking editor
 
@@ -223,26 +156,13 @@ improved. gcc is too slow, too focused on language-agnostics and particularly
 too focused on C++ support. We believe most open source software is written in
 C and makes no use of C++; hence, we desire an improved tcc.
 
-We are also concerned about recent attempts to implement the C front-end of gcc
-in C++. Requiring C++ in a bootstrapping environment is a bad decision in
-general, so we would like to get rid of the gcc dependency for the above reasons.
+llvm has the same drawbacks as gcc.
 
 We'd like the improved tcc to be able to build all suckless projects and perhaps
 even the modern libc replacement.
 
 ***Requirements:*** Very good C knowledge is essential as well as knowledge of
 x86 assembler and executable formats.
-
-### Comprehensive code audit
-
-All software hosted at suckless.org should undergo a comprehensive
-code audit. This includes searching for vulnerabilities, a verification of
-all algorithms, proof-reading of the documentation and possibly a code
-cleanup. The result has to be a report on all found errors and maybe some
-advice for the project maintainers. This task requires experience in this
-field.
-
-***Requirements:*** Good C knowledge is essential.
 
 ### Improve sltar
 
@@ -252,7 +172,6 @@ extending sltar with support for these compression applications and writing a
 test suite for it.
 
 ***Requirements:*** Good C knowledge would be desirable.
-
 
 ### Extend werc with a repository browser
 

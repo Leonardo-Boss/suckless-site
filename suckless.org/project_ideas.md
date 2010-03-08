@@ -1,6 +1,7 @@
 PROJECT IDEAS FOR GSOC 2010
 ===========================
-We are applying as a mentoring organization for [Google Summer of Code 2010](http://socghop.appspot.com/).
+We are applying as a mentoring organization for
+[Google Summer of Code 2010](http://socghop.appspot.com/).
 
 Please read our [philosophy](/manifest) for background information.
 
@@ -20,12 +21,14 @@ environment, including graphical user interfaces and development tools.
 
 * Graphical user interfaces for developers (such as more advanced
   concepts for mail clients, messaging clients, music players, text editors)
-* Web applications for developers following our GUI concepts (issue and bug tracking)
-* Mobile applications for developers that integrate well into our general development environment
+* Web applications for developers following our GUI concepts (issue and bug
+  tracking)
+* Mobile applications for developers that integrate well into our general
+  development environment
 * General userland enhancements to Unix-like operating systems, in particular
   GNU/Linux
 * Foundations of a new windowing system for Unix-like operating systems
-* Improvements of our existing software projects
+* Improvements to our existing software projects
 
 Concrete ideas
 --------------
@@ -44,7 +47,7 @@ listening to music, all in a very elegant and Unix-like way. We believe that suc
 tools should have a GUI but communicate via standard I/O and be very flexible in
 the combination of their purposes.
 
-***Requirements:*** Good knowledge of the Unix userland, C and of the Xlib is essential.
+***Requirements:*** Good knowledge of the Unix userland, C and Xlib is essential.
 
 ### Port dwm to different platforms
 
@@ -61,16 +64,16 @@ well-established desktop environments, to integrate well with Gnome or KDE in
 order to prove that dynamic and tiled window management should be the default
 in future window management concepts.
 
-***Requirements:*** Good knowledge of the Xlib and C is desirable. Also good
-knowledge of the specific target platform, such as Cocoa/Quartz on Max OS X,
- resp. Win32 API on Windows would be desirable.
+***Requirements:*** Good knowledge of Xlib and C is desirable. Also good
+knowledge of the specific target platform, such as Cocoa/Quartz on Max OS X
+or the Win32 API on Windows would be desirable.
 
 ### ddm
 
 There is no suckless display manager for X11 at the moment, thus a new
 dynamic display manager (ddm) should be designed and implemented.
 
-***Requirements:*** Good knowledge of the Xlib and C is desirable.
+***Requirements:*** Good knowledge of Xlib and C is desirable.
 
 ### stm
 
@@ -80,24 +83,29 @@ management. This task includes the design and implementation of a suckless
 system that solves the problems of TTS (Trouble Ticket System), ARS (Action
 Request System) and IRS (Incident Response System) all together.
 
-***Requirements:*** Good knowledge of web technologies are essential, good knowledge of C is desirable.
+***Requirements:*** Good knowledge of web technologies are essential, good
+knowledge of C is desirable.
 
 ### Lightweight volume manager alternative
 
 We'd like to see a lightweight and simple alternative to gnome-volume-manager
 and similar programs.
 
-There's one such project already available at <http://tools.suckless.org/skvm>.
+There is one such project already available at <http://tools.suckless.org/skvm>.
 
-***Requirements:*** Good C knowledge and knowledge of DBUS and similar techniques are essential.
+***Requirements:*** Good C knowledge and knowledge of DBUS and similar techniques
+are essential.
 
 ### Yet another less sucking editor
 
 Although vi(m) does its job, it has become a monster over the years. We
-believe there is a gap between [ed](http://man.cat-v.org/plan_9/1/ed), [sam](http://sam.cat-v.org), [acme](http://acme.cat-v.org) and vim which must be filled with
-a completely new, less-sucking editor.
+believe there is a gap between [ed](http://man.cat-v.org/plan_9/1/ed),
+[sam](http://sam.cat-v.org), [acme](http://acme.cat-v.org) and vim which must
+be filled with a completely new, less-sucking editor.
 
-It has been [suggested](http://lists.suckless.org/dev/0911/2255.html) that "...a curses interface for the sam protocol would be interesting and perhaps even useful..."
+It has been [suggested](http://lists.suckless.org/dev/0911/2255.html) that
+"...a curses interface for the sam protocol would be interesting and perhaps
+even useful..."
 
 ***Requirements:*** Good C knowledge and knowledge of I/O APIs is essential.
 
@@ -117,34 +125,35 @@ The standard libc is full of awkward and legacy concepts. We believe that
 recent approaches such as Google's bionic libc are a step into the right
 direction, though not radical enough. We think there is a great opportunity to
 implement a completely new libc which abstracts a very nice standard
-environment which can be implemented on modern OS platforms in a straightforward manner. 
+environment which can be implemented on modern OS platforms in a straightforward
+manner. 
 Our goal would be to realize an initial proposal on Linux.
 
 ***Requirements:*** Very good C knowledge is essential.
 
 ### Improve tcc
 
-We'd like to see [tcc](http://bellard.org/tcc/) being continued and improved.  gcc is too slow and too
-focused on language-agnostics and particularly focused on its C++ support. We
-have the impression that most open source software is written in C and makes no
-use of C++, so we desire an improved tcc.
+We would like to see [tcc](http://bellard.org/tcc/) development continued and
+improved. gcc is too slow, too focused on language-agnostics and particularly
+too focused on C++ support. We believe most open source software is written in
+C and makes no use of C++; hence, we desire an improved tcc.
 
 We are also concerned about recent attempts to implement the C front-end of gcc
-in C++. We believe that is a bad decision in general (due to demanding C++ as
-bootstrapping environment) and would like to get rid of the gcc dependency
-for these reasons.
+in C++. Requiring C++ in a bootstrapping environment is a bad decision in
+general, so we would like to get rid of the gcc dependency for the above reasons.
 
-We'd like the improved tcc to be able to build all suckless projects
-and perhaps the modern libc replacement.
+We'd like the improved tcc to be able to build all suckless projects and perhaps
+even the modern libc replacement.
 
-***Requirements:*** Very good C knowledge is essential as well as knowledge of x86 assembler and executable formats.
+***Requirements:*** Very good C knowledge is essential as well as knowledge of
+x86 assembler and executable formats.
 
 ### Comprehensive code audit
 
 All software hosted at suckless.org should undergo a comprehensive
-code audit. This includes search for vulnerabilities, verification of
+code audit. This includes searching for vulnerabilities, a verification of
 all algorithms, proof-reading of the documentation and possibly a code
-clean-up. The result has to be a report on all found errors and maybe some
+cleanup. The result has to be a report on all found errors and maybe some
 advice for the project maintainers. This task requires experience in this
 field.
 
@@ -153,8 +162,9 @@ field.
 ### Improve sltar
 
 [sltar](http://s01.de/~gottox/index.cgi/proj_sltar) is a simplified tar
-implementation which lacks gzip and bzip2 integration. The task requires to
-extend sltar with these and to also write a test suite for it.
+implementation which lacks gzip and bzip2 integration. The task requires
+extending sltar with support for these compression applications and writing a
+test suite for it.
 
 ***Requirements:*** Good C knowledge would be desirable.
 
@@ -182,12 +192,14 @@ knowledge for the helper tools would be desirable.
 
 ### Write cookie handler for surf
 
-surf biggest disadvantage is the sloppy cookie handling. The problem about this is
-that libwebkit and libsoup (which is used for HTTP) were never designed to run
-in multiple processes simultaniously.
+The biggest disadvantage of [surf](http://surf.suckless.org) is sloppy
+cookie handling. libwebkit and libsoup (which are used for HTTP) were never
+designed to run in multiple processes simultaneously.
 
-Your task is to write a new cookie handler in surf which creates a nice human
-readable cookiefile and is able to run in multiple concurrent processes.
+This task requires writing a new cookie handler in surf which:
 
-***Requirements:*** Good knowledge of C. Good knowledge of posix file locking.
-Basic knowledge of GTK and its other evil friends.
+* creates a nice human-readable cookie file
+* is able to run in multiple concurrent processes
+
+***Requirements:*** Good knowledge of C and POSIX file locking. Basic knowledge
+of GTK and its other evil friends.

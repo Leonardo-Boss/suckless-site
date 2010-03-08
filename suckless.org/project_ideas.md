@@ -36,6 +36,91 @@ The listed ideas generally require good knowledge of C and experience with
 Unix-like operating systems. The difficulty ranges from medium to high.
 An academic background in computer science is desirable but not essential.
 
+### Port [stali](http://sta.li) to use bionic
+
+So far [static linux](http://sta.li) requires [uclibc](http://www.uclibc.org) for most userland
+tools and glibc for some exceptions. We'd like to replace the uclibc dependency
+with bionic from android.
+
+This project can be achieved on a tool by tool basis because it will require
+some code patching.
+
+***Requirements:*** Good C/Unix knowledge is necessary.
+
+### Port [9base](http://tools.suckless.org/9base) to use bionic
+
+So far 9base uses the hosts C library. We'd like to replace the host libc
+dependency with bionic from android.
+
+This project can be extended to do the same in
+[plan9port](http://swtch.com/plan9port/) by Russ Cox, if the progress is fast
+in achieving this.
+
+***Requirements:*** Good C/Unix knowledge is essential.
+
+### Write ld wrapper or replacement for static linking
+
+The GNU autotools such as automake and autoconf are completely unusable in
+non-chroot'ed cross-compile environments and often completely fail to produce
+statically linked libraries or executables.  Also they are
+extremely slow and bloated.
+
+The stali build system is not using autotools for good reason, however many
+Unix/Linux open source packages do. To create statically linked libraries out
+of the ld arguments we need an ld wrapper or re-implementation that creates
+static libraries or executables. This would enable us to build static libraries
+and executables out of any automake generated makefiles without the need to
+write make replacements or patching the build system of a particular package. 
+
+The ld wrapper needs to be extended to also link against uclibc first and if
+that fails to fallback to glibc, in order to produce smaller executables in the
+general case.
+
+***Requirements:*** Good C/Unix knowledge is essential, knowledge about linking/linker internals are desirable..
+
+### goblin 
+
+Write the most used unix userland commands in the new [Go
+language](http://golang.org) created by Google to form a robust base for future
+Unix-like userlands that do not suffer from the vulnerabilities that are common
+in C or C++ code. The minimum of commands that need to be implemented in Go are those found in [9base](http://tools.suckless.org/9base).
+
+Having goblin would allow to migrate decent web frameworks like
+[werc](http://werc.cat-v.org) on a proper foundation.
+
+***Requirements:*** Good C/Unix and Go knowledge is essential.
+
+### Write a decent bug and issue tracking system
+
+All bug and issue tracking systems that exist have many issues themselves, some
+are too simplistic and have a web-only approach, some only focus mails, some do
+many unrelated things, most of them are very complicated and monstrous.
+
+We need a decent bug and issue tracking system that not only can be used for
+bug tracking but also for dealing with issues in customer relations.
+
+It is crucial that all communication can be done via email but also that all
+communication can tracked and done via a proper web interface.
+
+The system should not attempt to achieve too many features such as enforcing
+some role management which is found in some existing systems. It should focus
+on the most basic tasks instead and get them right. Most existing systems
+provide all such functionality but often in very cumbersome ways.
+
+***Requirements:*** Good C/Shell/web technology/HTML5 knowledge would be desirable, knowledge of bug tracking and issue tracking in practice is essential.
+
+### Write a decent mailing list Web archive system
+
+All web archive systems such as hypermail, pipermail, etc. have plenty
+drawbacks and are quite out-dated. This task requires to write a completely new
+web mailing list archiving tool that follows the thread view concepts found in
+the mutt MUA and which is designed with low footprint and efficiency in mind.
+
+We expect this tool as a stand-alone Unix tool written in C or shell.
+
+***Requirements:*** Good C/Shell/HTML5 knowledge would be desirable.
+
+
 ### Unix utilities
 
 Projects like [dmenu](http://tools.suckless.org/dmenu) prove that it's possible
@@ -168,16 +253,6 @@ test suite for it.
 
 ***Requirements:*** Good C knowledge would be desirable.
 
-### Write a decent mailing list Web archive system
-
-All web archive systems such as hypermail, pipermail, etc. have plenty
-drawbacks and are quite out-dated. This task requires to write a completely new
-web mailing list archiving tool that follows the thread view concepts found in
-the mutt MUA and which is designed with low footprint and efficiency in mind.
-
-We expect this tool as a stand-alone Unix tool written in C or shell.
-
-***Requirements:*** Good C/Shell/HTML5 knowledge would be desirable.
 
 ### Extend werc with a repository browser
 

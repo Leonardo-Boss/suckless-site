@@ -70,7 +70,7 @@ Unix/Linux open source packages do. To create statically linked libraries out
 of the ld arguments we need an ld wrapper or re-implementation that creates
 static libraries or executables. This would enable us to build static libraries
 and executables out of any automake generated makefiles without the need to
-write make replacements or patching the build system of a particular package. 
+write make replacements or patching the build system of a particular package.
 
 The ld wrapper needs to be extended to also link against uclibc first and if
 that fails to fallback to glibc, in order to produce smaller executables in the
@@ -78,7 +78,7 @@ general case.
 
 ***Requirements:*** Good C/Unix knowledge is essential, knowledge about linking/linker internals are desirable..
 
-### goblin 
+### goblin
 
 Write the most useful unix userland commands in the new [Go
 language](http://golang.org) created by Google to form a robust base for future
@@ -126,43 +126,6 @@ It has been [suggested](http://lists.suckless.org/dev/0911/2255.html) that
 even useful..."
 
 ***Requirements:*** Good C knowledge and knowledge of I/O APIs is essential.
-
-### Less sucking C99 subset spec
-
-Although sufficient, C99 is not a perfect programming language. It suffers from
-legacy syntax and semantics and lacks features that make designing libraries
-and developing abstractions much easier. To address these shortcomings the
-student should survey the problems of C, evaluate possible solutions and
-enhance the language as a subset of C99.
-
-***Requirements:*** Very good C knowledge is essential.
-
-### Modern libc
-
-The standard libc is full of awkward and legacy concepts. We believe that
-recent approaches such as Google's bionic libc are a step into the right
-direction, though not radical enough. We think there is a great opportunity to
-implement a completely new libc which abstracts a very nice standard
-environment which can be implemented on modern OS platforms in a straightforward
-manner. 
-Our goal would be to realize an initial proposal on Linux.
-
-***Requirements:*** Very good C knowledge is essential.
-
-### Improve tcc
-
-We would like to see [tcc](http://bellard.org/tcc/) development continued and
-improved. gcc is too slow, too focused on language-agnostics and particularly
-too focused on C++ support. We believe most open source software is written in
-C and makes no use of C++; hence, we desire an improved tcc.
-
-llvm has the same drawbacks as gcc.
-
-We'd like the improved tcc to be able to build all suckless projects and perhaps
-even the modern libc replacement.
-
-***Requirements:*** Very good C knowledge is essential as well as knowledge of
-x86 assembler and executable formats.
 
 ### Improve sltar
 

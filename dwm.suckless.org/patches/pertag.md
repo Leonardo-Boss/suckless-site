@@ -24,7 +24,7 @@ installed) per tag.
 
 [1]: http://www.e-jc.de/dwm/4.6/current/dwm-4.6-pertag.diff
 [2]: http://www.e-jc.de/dwm/4.6/current/dwm-4.6-pertag_nmaster.diff
-[3]: /dwm/patches/taglayouts.html
+[3]: historical/taglayouts
 [4]: http://www.e-jc.de/dwm/5.0/current/dwm-5.0-pertag.diff
 [5]: http://v4hn.de/patches/dwm-5.1-pertag.diff
 [6]: http://dwm.suckless.org/patches/historical/dwm-5.2-pertag.diff

@@ -6,9 +6,23 @@ one can point surf to another URI by setting its XProperties.
 
 2009/9/17 Simon Rozet <simon@rozet.name>:
 > I though exactly the same before. I always had +20 tabs open in firefox.
-> Honestly, I'd never though I'd enjoy using a browser with no tab support
+> Honestly, I'd never thought I'd enjoy using a browser with no tab support
 > until I forced myself to use surf for a week. I am now much less distracted
 > and more focused when browsing the web. dwm + surf <3
+
+What Works
+----------
+* [Github](http://github.com)
+* [Google Calendar](http://calendar.google.com)
+* [Google Code](http://code.google.com)
+* [Google Docs](http://docs.google.com)
+* [Google Mail](http://mail.google.com)
+* [Google Maps[(http://maps.google.com)
+* [Google Reader](http://reader.google.com)
+* [Google Translate](http://translate.google.com)
+* [Facebook](http://facebook.com)
+* [YouTube](http://youtube.com)
+* phbb v2 forums
 
 Links
 -----

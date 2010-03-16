@@ -17,7 +17,7 @@ What Works
 * [Google Code](http://code.google.com)
 * [Google Docs](http://docs.google.com)
 * [Google Mail](http://mail.google.com)
-* [Google Maps[(http://maps.google.com)
+* [Google Maps](http://maps.google.com)
 * [Google Reader](http://reader.google.com)
 * [Google Translate](http://translate.google.com)
 * [Facebook](http://facebook.com)

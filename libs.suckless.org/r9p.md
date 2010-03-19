@@ -5,7 +5,7 @@ R9P
     Version: 0.4
     Repo:    http://hg.suckless.org/r9p
 
-`r9p` is a simple [9P](http://cat-v.org/9p/) client implementation for Ruby. It currently supports basic filesystem operations, including reading, writing, and listing files. It also supports the operations of the IO class by providing a true file descriptor through a proxy thread.
+`r9p` is a simple [9P](http://9p.cat-v.org) client implementation for Ruby. It currently supports basic filesystem operations, including reading, writing, and listing files. It also supports the operations of the IO class by providing a true file descriptor through a proxy thread.
 
 * [`r9p 0.4`](http://dl.suckless.org/libs/r9p-0.4.tgz)
 * Latest: `hg clone http://hg.suckless.org/r9p`

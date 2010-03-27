@@ -1,7 +1,8 @@
-PROJECT IDEAS FOR GSOC 2010
-===========================
-We are applying as a mentoring organization for
-[Google Summer of Code 2010](http://socghop.appspot.com/).
+PROJECT IDEAS 
+=============
+We applied as a mentoring organization for [Google Summer of Code
+2010](http://socghop.appspot.com/), unfortunately we were rejected this year as
+well (second time now).
 
 Please read our [philosophy](/manifest) for background information.
 

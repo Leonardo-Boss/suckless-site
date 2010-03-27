@@ -5,7 +5,7 @@ Read more about our [philosophy](/common/) and join us on the [mailing list](com
 
 2010-03-07
 ----------
-We are going to apply as a mentoring organisation for GSoC 2010. See our [project ideas for GSoC 2010](/project_ideas) page for further details.
+We applied as a mentoring organisation for GSoC 2010. See our [project ideas for GSoC 2010](/project_ideas) page for further details.
 
 2010-02-13
 ----------

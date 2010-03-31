@@ -1,7 +1,7 @@
 AUTOLOGIN
 =========
 
-Feel free to post autologin scripts to your favorite site. __Do not forget to
+Feel free to post autologin scripts for your favorite site. __Do not forget to
 remove your passwords from the script!!!__
 
 * Twitter

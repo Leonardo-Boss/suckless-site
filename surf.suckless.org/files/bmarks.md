@@ -60,7 +60,7 @@ Code
 	-sb $selbgcolor -sf $selfgcolor"
 
 	s_xprop() {
-		[ -z "$2" ] || xprop -id $xid -f $1 8s -set $1 "$2"
+		[ -n "$2" ] && xprop -id $xid -f $1 8s -set $1 "$2"
 	}
 
 	case "$p" in
@@ -88,7 +88,7 @@ Code
 			uri="http://www.google.com/search?q=$arg"
 			;;
 		"t") # tinyurl
-			[ -n "$uri" ] && uri="http://tinyurl.com/create.php?url=$uri"
+			uri="http://tinyurl.com/create.php?url=$uri"
 			;;
 		"w") # wikipedia
 			uri="http://wikipedia.org/wiki/$arg"

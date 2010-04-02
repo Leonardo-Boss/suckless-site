@@ -15,7 +15,6 @@ Keybindings
 URL handlers
 ------------
 	This script implements several url handlers
-	"b tag .."  (open bookmark matching given tags or keywords)
 	"d " (bookmark current url in delicious)
 	"t " (create tinyurl from current page)
 	"w word .." (lookup word in wikipedia)
@@ -51,44 +50,37 @@ Code
 	normfgcolor='#e9e9e9'
 	selbgcolor='#dd6003'
 	selfgcolor='#e9e9e9'
-	hist=~/.surf/history.txt
+	bmarks=~/.surf/bookmarks.txt
 
 	xid=$1
 	p=$2
 	uri=`xprop -id $xid _SURF_URI | cut -d '"' -f 2`
-	name=`xprop -id $xid WM_ICON_NAME | cut -d '"' -f 2`
+	kw=`xprop -id $xid _SURF_FIND | cut -d '"' -f 2`
 	dmenu="dmenu -e $xid -fn $font -nb $normbgcolor -nf $normfgcolor \
-		-sb $selbgcolor -sf $selfgcolor"
+	-sb $selbgcolor -sf $selfgcolor"
 
-	s_set_uri() { # uri
-		xprop -id $xid -f _SURF_URI 8s -set _SURF_URI "$1"
+	s_xprop() {
+		[ -z "$2" ] || xprop -id $xid -f $1 8s -set $1 "$2"
 	}
 
 	case "$p" in
 	"_SURF_FIND")
-		find="`echo | $dmenu -p find:`"
-		xprop -id $xid -f _SURF_FIND 8s -set _SURF_FIND "$find"
+		find="`echo $kw | $dmenu -p find:`"
+		s_xprop _SURF_FIND "$find"
 		;;
 	"_SURF_BMARK")
-		tags="`echo | $dmenu -p tags:`"
-		[ -n "$tags" ] && \
-			grep "$uri" $hist >/dev/null 2>&1 || echo "$uri $tags" >> $hist
+		grep "$uri" $bmarks >/dev/null 2>&1 || echo "$uri" >> $bmarks
 		;;
 	"_SURF_URI_RAW")
-		uri="`echo | $dmenu -p uri:`"
-		s_set_uri "$uri"
+		uri=`echo $uri | $dmenu -p "uri:"`
+		s_xprop _SURF_URI "$uri"
 		;;
 	"_SURF_URI")
-		sel=`tac $hist 2> /dev/null | cut -d ' ' -f 1 | $dmenu -p "uri [bdgtwy*]:"`
-		# if we hit escape, then exit
+		sel=`tac $bmarks 2> /dev/null | $dmenu -p "uri [dgtwy*]:"`
 		[ -z "$sel" ] && exit
 		opt=$(echo $sel | cut -d ' ' -f 1)
 		arg=$(echo $sel | cut -d ' ' -f 2-)
 		case "$opt" in
-		"b") # find in bookmarks
-			kw=$(echo $arg | sed -s 's, , -e,g')
-			uri="`grep -e $kw $hist | head -n 1 | cut -d ' ' -f 1`"
-			;;
 		"d") # del.icio.us
 			uri="http://del.icio.us/save?url=$uri"
 			;;
@@ -108,7 +100,7 @@ Code
 			uri="$sel"
 			;;
 		esac
-		s_set_uri "$uri"
+		s_xprop _SURF_URI "$uri"
 		;;
 	*)
 		echo Unknown xprop

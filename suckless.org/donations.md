@@ -21,6 +21,7 @@ Following people have donated to the [wmii](/wmii) resp. [dwm](/dwm) project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
+* Donald Allen donated <b> 50 USD </b>
 * Xavier Cartron donated <b> 20 EUR </b>
 * Markus Schnalke donated <b> 10 EUR </b>
 * John V. Turek donated <b> 10 EUR</b>

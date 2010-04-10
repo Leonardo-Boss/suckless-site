@@ -41,7 +41,6 @@ Then, inside `keys[]`, add:
 
 Development
 -----------
-
 	hg clone http://bitbucket.org/antlechrist/sprop-bm-surf/
 
 or browse the [repository](http://bitbucket.org/antlechrist/sprop-bm-surf/)

@@ -39,6 +39,13 @@ Then, inside `keys[]`, add:
 	{ MODKEY,               GDK_b,      spawn,      BML("_SURF_URI") },
 	{ MODKEY|GDK_SHIFT_MASK,GDK_b,      spawn,      BMA },
 
+Development
+-----------
+
+	hg clone http://bitbucket.org/antlechrist/sprop-bm-surf/
+
+or browse the [repository](http://bitbucket.org/antlechrist/sprop-bm-surf/)
+
 Author
 ------
 Andrew Antle `<andrew dot antle at gmail dot com>`

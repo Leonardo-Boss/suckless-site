@@ -12,6 +12,8 @@ one can point surf to another URI by setting its XProperties.
 
 What Works
 ----------
+* [Bitbucket](http://bitbucket.org)
+* [Facebook](http://facebook.com)
 * [Github](http://github.com)
 * [Google Calendar](http://calendar.google.com)
 * [Google Code](http://code.google.com)
@@ -20,7 +22,6 @@ What Works
 * [Google Maps](http://maps.google.com)
 * [Google Reader](http://reader.google.com)
 * [Google Translate](http://translate.google.com)
-* [Facebook](http://facebook.com)
 * [YouTube](http://youtube.com)
 * phbb v2 forums
 
@@ -32,7 +33,9 @@ Links
 
 Development
 -----------
-surf is actively developed. You can [browse](http://hg.suckless.org/surf) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with the following command:
+surf is actively developed. You can [browse](http://hg.suckless.org/surf) its
+source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/)
+with the following command:
 
 	hg clone http://hg.suckless.org/surf
 
@@ -40,4 +43,5 @@ Download
 --------
 * [MIT/X Consortium license](http://hg.suckless.org/surf/raw-file/tip/LICENSE)
 * [surf 0.3](http://dl.suckless.org/surf/surf-0.3.tar.gz) (9.7K) (20091030)
-* See also [dmenu](http://tools.suckless.org/dmenu), [tabbed](http://tools.suckless.org/tabbed)
+* See also [dmenu](http://tools.suckless.org/dmenu),
+  [tabbed](http://tools.suckless.org/tabbed)

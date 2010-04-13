@@ -98,8 +98,12 @@ Web Browsers
 * [uzbl](http://uzbl.org/)
 
 Web Servers (httpd)
-------------
+-----------
 * [Nostromo](http://www.nazgul.ch/dev_nostromo.html)
+
+Pdf Viewers
+-----------
+* [Zathura](http://zathura.pwmt.org/)
 
 [rob]: http://herpolhode.com/rob/
 [plan9port]: http://swtch.com/plan9port/

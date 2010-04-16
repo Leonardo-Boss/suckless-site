@@ -65,3 +65,7 @@ There was a small community meeting in Berlin! Thanks to all attenders.
 [slock 0.9](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-0.9.tar.gz)
 
 [sselp 0.2](http://tools.suckless.org/sselp) released: [download](http://dl.suckless.org/tools/sselp-0.2.tar.gz)
+
+See also
+--------
+[Eyjafjallajoekull](http://eyjafjallajoekull.com/)

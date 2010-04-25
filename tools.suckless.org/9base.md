@@ -32,7 +32,6 @@ It currently contains the following original (no source changes) shell commands 
 * seq
 * sleep
 * sort
-* std.mk
 * tail
 * tee
 * test

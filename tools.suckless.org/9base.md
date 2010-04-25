@@ -15,16 +15,25 @@ It currently contains the following original (no source changes) shell commands 
 * dc
 * du
 * echo
+* factor
+* fortune
+* freq
+* getflags
 * grep
 * hoc
 * ls
 * mk
+* mkdir
+* mtime
+* primes
 * rc
 * read
 * sed
 * seq
 * sleep
 * sort
+* std.mk
+* tail
 * tee
 * test
 * touch
@@ -36,10 +45,9 @@ It currently contains the following original (no source changes) shell commands 
 It also contains the Plan 9 libc, libbio, libregexp, libfmt and libutf.
 The overall SLOC is about 40kSLOC, so this userland + all libs is much smaller than, e.g. bash (duh!).
 
-
 Download
 --------
-* [9base-4](http://dl.suckless.org/tools/9base-4.tar.gz) (20090827)
+* [9base-5](http://dl.suckless.org/tools/9base-5.tar.gz) (20100425)
 * <code>hg clone [http://hg.suckless.org/9base](http://hg.suckless.org/9base)</code>
 
 Usage

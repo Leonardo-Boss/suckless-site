@@ -3,6 +3,10 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
+2010-04-25
+----------
+[9base-5](http://tools.suckless.org/9base) released: [download](http://dl.suckless.org/tools/9base-5.tar.gz)
+
 2010-03-28
 ----------
 We learned today that the previous wmii maintainer, who wasn't actively
@@ -43,8 +47,6 @@ There was a small community meeting in Berlin! Thanks to all attenders.
 2009-09-27
 ----------
 [dwm 5.7.2](http://dwm.suckless.org) released: [download](http://dl.suckless.org/dwm/dwm-5.7.2.tar.gz)
-
-[9base-4](http://tools.suckless.org/9base) released: [download](http://dl.suckless.org/tools/9base-4.tar.gz)
 
 2009-04-18
 ----------

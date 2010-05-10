@@ -3,15 +3,18 @@
 ## Description ##
 
 This patch replaces the tile layout with a more flexible version. The features include the following:
+
  * tile like the original version (left single master, right stack)
  * left/right/top/bottom n-master, right/left/bottom/top/no stack/deck (deck is like monocle in the stack area)
  * per-tag configuration
 
 It therefor provides i. a. the following additional possibilities:
+
  * tile for left-handed people
  * compare multiple files with one other each at a time without switching between views
 
 The patch incorporates and expands the following patches:
+
  * bottom stack (bstack and bstackhoriz)
  * nmaster
  * pertag

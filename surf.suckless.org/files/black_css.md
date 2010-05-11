@@ -6,13 +6,15 @@ Description
 
 This file must be deployed into ~/.surf/style.css to get a black themed surf
 
-	textarea,body,input,td,tr,p {
+	pre,textarea,body,input,td,tr,p {
 		background-color: black !important;
+		background-image: none !important;
 		color: #e0e0e0 !important;
 	}
 
 	div {
 		background-color: #202020 !important;
+		background-image: none !important;
 		color: #e0e0e0 !important;
 	}
 

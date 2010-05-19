@@ -66,10 +66,22 @@ static int uptodate(char** paths)
     return 1;
 }
 
+static void die(const char* msg)
+{
+    perror(msg);
+    exit(EXIT_FAILURE);
+}
+
 static char* get_cache_path()
 {
-    const char* home = getenv("HOME");
-    char* path = (char*)malloc(strlen(home) + strlen("/.dmenu_cache") + 1);
+    const char* home;
+    char* path;
+    home = getenv("HOME");
+    if (home == NULL)
+	die("getenv");
+    path = (char*)malloc(strlen(home) + strlen("/.dmenu_cache") + 1);
+    if (path == NULL)
+	die("malloc");
     strcpy(path, home);
     strcat(path, "/.dmenu_cache");
     return path;
@@ -80,10 +92,7 @@ static char* get_PATH()
     const char* path = getenv("PATH");
     char* copy_path;
     if (path == NULL)
-    {
-	perror("getenv");
-	exit(1);
-    }
+	die("getenv");
 
     copy_path = strdup(path);
     return copy_path;
@@ -96,10 +105,14 @@ static void split_PATH(char* PATH, char*** dirs_in)
     size_t i = 0;
     size_t allocated = 10;
     dirs = (char**)malloc(sizeof(char*) * allocated);
+    if (dirs == NULL)
+	die("malloc");
 
     while (dir != NULL)
     {
 	dirs[i] = (char*)malloc(strlen(dir) + 1);
+	if (dirs[i] == NULL)
+	    die("malloc");
 	strcpy(dirs[i], dir);
 	dir = strtok(NULL, ":");
 	i++;
@@ -107,6 +120,8 @@ static void split_PATH(char* PATH, char*** dirs_in)
 	{
 	    allocated *= 2;
 	    dirs = (char**)realloc(dirs, allocated * sizeof(char**));
+	    if (dirs == NULL)
+		die("realloc");
 	}
     }
     dirs[i] = NULL;
@@ -148,21 +163,14 @@ static size_t count_charpp(char** in)
     return count;
 }
 
-
-static int isexecutable(const char* dir, const char* file)
+static int isexecutable(const char* fname)
 {
-    char* fname;
     struct stat st;
     int ret;
     int success;
     gid_t* grouplist;
-    fname = (char*)malloc(strlen(dir) + strlen(file) + 2);
-    strcpy(fname, dir);
-    strcat(fname, "/");
-    strcat(fname, file);
 
     ret = stat(fname, &st);
-    free(fname);
     if (ret != 0)
 	return 0;
     if (!S_ISREG(st.st_mode)) /* this catches regular files and symlinks as well */
@@ -179,6 +187,8 @@ static int isexecutable(const char* dir, const char* file)
 	success = 0;
 	ret = getgroups(0, 0);
 	grouplist = (gid_t*)malloc(sizeof(gid_t) * ret);
+	if (grouplist == NULL)
+	    die("malloc");
 	ret = getgroups(ret, grouplist);
 	while (ret != 0)
 	{
@@ -206,11 +216,15 @@ static void add(const char* prog, char*** progs)
     {
 	progs_allocated = progs_allocated == 0 ? 256 : progs_allocated * 2;
 	*progs = (char**)realloc(*progs, sizeof(char*) * progs_allocated);
+	if (*progs == NULL)
+	    die("realloc");
     }
 
     if (prog != NULL)
     {
 	(*progs)[progs_used] = (char*)malloc(strlen(prog) + 1);
+	if ((*progs)[progs_used] == NULL)
+	    die("malloc");
 	strcpy((*progs)[progs_used], prog);
 	progs_used++;
     }
@@ -224,6 +238,10 @@ static void refresh_path(const char* path, char*** progs)
 {
     DIR* dirp = opendir(path);
     struct dirent* dp;
+    char fullpath[PATH_MAX];
+    char* end;
+    strcpy(fullpath, path);
+    end = fullpath + strlen(fullpath);
 
     if (dirp == NULL)
     {
@@ -235,7 +253,9 @@ static void refresh_path(const char* path, char*** progs)
     dp = readdir(dirp);
     while (dp != NULL)
     {
-	if (isexecutable(path, dp->d_name))
+	strcat(end, "/");
+	strcpy(end + 1, dp->d_name);
+	if (isexecutable(fullpath))
 	    add(dp->d_name, progs);
 	dp = readdir(dirp);
     }
@@ -254,10 +274,15 @@ static void sort(char*** progs)
 
 static void uniq(char*** progs)
 {
-    char** progs_new = (char**)malloc(sizeof(char*) * (count_charpp(*progs) + 1));
+    char** progs_new;
     char** ptr_1 = *progs;
     char** ptr_2 = ptr_1 + 1;
     unsigned long i = 0;;
+
+    progs_new = (char**)malloc(sizeof(char*) * (count_charpp(*progs) + 1));
+    if (progs_new == NULL)
+	die("malloc");
+
     while (*ptr_1 != NULL)
     {
 	while (*ptr_2 != NULL && strcmp(*ptr_1, *ptr_2) == 0)
@@ -290,10 +315,7 @@ static void refresh(char** paths)
 
     out = fopen(cache_path, "w");
     if (out == NULL)
-    {
-	perror("fopen");
-	exit(1);
-    }
+	die("fopen");
 
     sort(&progs);
     uniq(&progs);
@@ -312,21 +334,15 @@ static void cat()
     size_t still_unread;
     size_t chunk;
     if (cache == NULL)
-    {
-	perror("fopen cache");
-	exit(1);
-    }
+	die("fopen");
 
     if (stat(cache_path, &cachestat))
-    {
-	perror("stat");
-	exit(1);
-    }
+	die("stat");
     still_unread = cachestat.st_size;
 
     while (still_unread > 0)
     {
-	chunk = fread(buf, 1, 4096, cache);
+	chunk = fread(buf, 1, sizeof(buf), cache);
 	still_unread -= chunk;
 	fwrite(buf, 1, chunk, stdout);
     }
@@ -335,15 +351,11 @@ static void cat()
 
 int main(int argc, char *argv[])
 {
-    char* PATH = get_PATH();
+    char* PATH;
     char** paths = NULL;
+    PATH = get_PATH();
     uid = getuid();
     gid = getgid();
-    if (uid == 0 || gid == 0)
-    {
-	puts("I refuse to run as root!");
-	return 1;
-    }
 
     cache_path = get_cache_path();
     split_PATH(PATH, &paths);
@@ -351,7 +363,7 @@ int main(int argc, char *argv[])
     sort(&paths);
     uniq(&paths);
 
-    if ((argc == 2 && strcmp(argv[1], "--force") == 0)
+    if ((argc == 2 && strcmp(argv[1], "-f") == 0)
 	    || !uptodate(paths))
 	refresh(paths);
     else

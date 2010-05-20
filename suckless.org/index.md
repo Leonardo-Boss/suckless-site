@@ -3,6 +3,10 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
+2010-05-20
+----------
+[wmii 3.9](http://wmii.suckless.org/) released: [download](http://dl.suckless.org/wmii/wmii+ixp-3.9.tbz)
+
 2010-04-25
 ----------
 [9base-5](http://tools.suckless.org/9base) released: [download](http://dl.suckless.org/tools/9base-5.tar.gz)
@@ -28,17 +32,13 @@ There was a small community meeting in Berlin! Thanks to all attenders.
 
 2009-11-27
 ----------
-[wmi-11](http://wmi.suckless.org/) released: [download](http://dl.suckless.org/wmi/wmii-11.tar.gz)
+[wmi-11](http://wmi.suckless.org/) released: [download](http://dl.suckless.org/wmi/wmi-11.tar.gz)
 
 2009-10-30
 ----------
 [tabbed 0.2](http://tools.suckless.org/tabbed) released: [download](http://dl.suckless.org/tools/tabbed-0.2.tar.gz)
 
 [surf 0.3](http://surf.suckless.org/) released: [download](http://dl.suckless.org/surf/surf-0.3.tar.gz)
-
-2009-10-22
-----------
-[wmii 3.9b1](http://wmii.suckless.org/) released: [download](http://dl.suckless.org/wmii/wmii+ixp-3.9b1.tbz)
 
 2009-10-17
 ----------

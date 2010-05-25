@@ -24,7 +24,7 @@ diff -r 72e52c5333ef dwm.c
  resize(Client *c, int x, int y, int w, int h, Bool interact) {
  	XWindowChanges wc;
  
-+	if(c->isfloating) {	globalborder = 0 ; }
++	if(c->isfloating || selmon->lt[selmon->sellt]->arrange == NULL) { globalborder = 0 ; }
 +	else {
 +		if (selmon->lt[selmon->sellt]->arrange == monocle) { globalborder = 0 - borderpx ; }
 +		else { globalborder =  gappx ; }

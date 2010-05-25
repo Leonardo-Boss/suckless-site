@@ -33,7 +33,7 @@ The size of the gap is configured in config.def.h.
 
 ## Download
 
- * [dwm-uselessgap-5.8.diff](dwm-uselessgap-5.8.diff) (0.7K) (20100308)
+ * [dwm-uselessgap-5.8.diff](dwm-uselessgap-5.8.diff) (0.7K) (20100225 updated. Thanks Guillaume for your bug report)
    
 	Fix floating clients bug and remove all borders in monocle mode.
  

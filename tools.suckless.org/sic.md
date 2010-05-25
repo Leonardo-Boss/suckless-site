@@ -4,7 +4,7 @@ sic is an extremely simple IRC client. It consists of less than 250 lines of cod
 
 Download
 --------
-* [sic 1.0](http://dl.suckless.org/tools/sic-1.0.tar.gz) (4kb) (20080729)
+* [sic 1.1](http://dl.suckless.org/tools/sic-1.1.tar.gz) (5KB) (20100525)
 
 Development
 -----------

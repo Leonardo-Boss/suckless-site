@@ -8,7 +8,7 @@ codebase.
 Links
 -----
 
-* Latest release: [wmii 3.9](http://dl.suckless.org/wmii/wmii+ixp-3.9.tbz) (recommended)
+* Latest release: [wmii 3.9](http://dl.suckless.org/wmii/wmii+ixp-3.9-2.tbz) (recommended)
 * Latest devel tip: <code>hg clone [http://hg.suckless.org/wmii](http://hg.suckless.org/wmii)</code>
 * Bugs: [Google Code issue tracker](http://code.google.com/p/wmii/issues)
 * Mailing List: `dev+subscribe@suckless.org` ([Archives](http://lists.suckless.org/dev/)) ([Old Archives](http://lists.suckless.org/wmii/)) (see [community](http://suckless.org/common/community/) for details)

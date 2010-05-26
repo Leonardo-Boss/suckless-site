@@ -3,9 +3,13 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
+2010-05-25
+----------
+[sic 1.1](http://tools.suckless.org/sic) released: [download](http://dl.suckless.org/tools/sic-1.1.tar.gz)
+
 2010-05-20
 ----------
-[wmii 3.9](http://wmii.suckless.org/) released: [download](http://dl.suckless.org/wmii/wmii+ixp-3.9.tbz)
+[wmii 3.9](http://wmii.suckless.org/) released: [download](http://dl.suckless.org/wmii/wmii+ixp-3.9-2.tbz)
 
 2010-04-25
 ----------
@@ -62,8 +66,6 @@ There was a small community meeting in Berlin! Thanks to all attenders.
 
 2008-07-29
 ----------
-[sic 1.0](http://tools.suckless.org/sic) released: [download](http://dl.suckless.org/tools/sic-1.0.tar.gz)
-
 [slock 0.9](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-0.9.tar.gz)
 
 [sselp 0.2](http://tools.suckless.org/sselp) released: [download](http://dl.suckless.org/tools/sselp-0.2.tar.gz)

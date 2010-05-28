@@ -7,8 +7,6 @@ Read more about our [philosophy](/common/) and join us on the [mailing list](com
 ----------
 [dwm 5.8](http://dwm.suckless.org) released: [download](http://dl.suckless.org/dwm/dwm-5.8.tar.gz)
 
-2010-05-28
-----------
 [dmenu 4.1](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.1.tar.gz)
 
 2010-05-25

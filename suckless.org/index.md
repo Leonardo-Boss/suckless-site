@@ -17,7 +17,7 @@ Read more about our [philosophy](/common/) and join us on the [mailing list](com
 
 2010-05-20
 ----------
-[wmii 3.9](http://wmii.suckless.org/) released: [download](http://dl.suckless.org/wmii/wmii+ixp-3.9-2.tbz)
+[wmii 3.9](http://wmii.suckless.org/) released: [download](http://dl.suckless.org/wmii/wmii+ixp-3.9-4.tbz)
 
 2010-04-25
 ----------

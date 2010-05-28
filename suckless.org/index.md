@@ -3,6 +3,14 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
+2010-05-28
+----------
+[dwm 5.8](http://dwm.suckless.org) released: [download](http://dl.suckless.org/dwm/dwm-5.8.tar.gz)
+
+2010-05-28
+----------
+[dmenu 4.1](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.1.tar.gz)
+
 2010-05-25
 ----------
 [sic 1.1](http://tools.suckless.org/sic) released: [download](http://dl.suckless.org/tools/sic-1.1.tar.gz)
@@ -47,14 +55,6 @@ There was a small community meeting in Berlin! Thanks to all attenders.
 2009-10-17
 ----------
 [surf 0.2](http://surf.suckless.org/) released: [download](http://dl.suckless.org/surf/surf-0.2.tar.gz)
-
-2009-09-27
-----------
-[dwm 5.7.2](http://dwm.suckless.org) released: [download](http://dl.suckless.org/dwm/dwm-5.7.2.tar.gz)
-
-2009-04-18
-----------
-[dmenu 4.0](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.0.tar.gz)
 
 2008-08-09
 ----------

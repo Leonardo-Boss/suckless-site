@@ -3,11 +3,11 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
-2010-05-28
+2010-05-29
 ----------
-[dwm 5.8](http://dwm.suckless.org) released: [download](http://dl.suckless.org/dwm/dwm-5.8.tar.gz)
+[dwm 5.8.1](http://dwm.suckless.org) released: [download](http://dl.suckless.org/dwm/dwm-5.8.1.tar.gz)
 
-[dmenu 4.1](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.1.tar.gz)
+[dmenu 4.1.1](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.1.1.tar.gz)
 
 2010-05-25
 ----------

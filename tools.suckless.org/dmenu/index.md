@@ -8,7 +8,7 @@ It manages huge amounts (up to 10,000 and more) of user defined menu items effic
 Download
 --------
 
-* [dmenu-4.1](http://dl.suckless.org/tools/dmenu-4.1.tar.gz) (20100528)
+* [dmenu-4.1.1](http://dl.suckless.org/tools/dmenu-4.1.1.tar.gz) (20100529)
 
 
 Mailing list

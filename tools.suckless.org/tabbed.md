@@ -14,5 +14,5 @@ You can [browse](http://hg.suckless.org/tabbed) its source code repository or ge
 
 Download
 --------
-* [tabbed-0.2](http://dl.suckless.org/tools/tabbed-0.2.tar.gz) (20091030)
+* [tabbed-0.3](http://dl.suckless.org/tools/tabbed-0.3.tar.gz) (20100531)
 

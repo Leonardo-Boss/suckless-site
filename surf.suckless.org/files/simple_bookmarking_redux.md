@@ -7,7 +7,7 @@ Description
 Modify your config.h just before the definition of `keys[]`:
 
 	#define BM_PICK { .v = (char *[]){ "/bin/sh", "-c", \
-	"xprop -id $0 -f _SURF_URI 8s -set _SURF_URI \
+	"xprop -id $0 -f _SURF_GO 8s -set _SURF_GO \
 	`cat ~/.surf/bookmarks | dmenu || exit 0`", \
 	winid, NULL } }
 

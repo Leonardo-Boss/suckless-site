@@ -37,6 +37,11 @@ Copy the following code into a shellscript named 'surf.sh' in $PATH. Edit config
 Code
 ----
 	#!/bin/sh
+	# v. 2.0 - upgrade based on surf 4.0
+	# Creative Commons License.  Peter John Hartman (http://individual.utoronto.ca/peterjh)
+	# Much thanks to nibble and pancake who have a different surf.sh script available which
+	# doesn't do the history bit.
+	#
 	# this script does:
 	# * stores history of: (1) successful uri entries; (2) certain smart prefix entries, e.g., "g foobar"; (3) find entries
 	# * direct bookmark (via ^b)
@@ -48,7 +53,7 @@ Code
 	# $2 = $p = _SURF_FIND _SURF_BMARK _SURF_URI (what SETPROP sets in config.h)
 	#
 	# // replace default setprop with this one
-	# #define SETPROP(p) { .v = (char *[]){ "/bin/sh", "-c", "surf.sh $1 $0", p, winid, NULL } }
+	# #define SETPROP(p) { .v = (char *[]){ "/bin/sh", "-c", "surf.sh $0 $1 $2", p, q, winid, NULL } }
 	#
 	# { MODKEY, GDK_b, spawn, SETPROP("_SURF_BMARK") },
 	# { MODKEY|GDK_SHIFT_MASK, GDK_i, spawn, SETPROP("_SURF_INFO") },
@@ -57,14 +62,16 @@ Code
 	font='-*-terminus-medium-*-*-*-*-*-*-*-*-*-*-*'
 	normbgcolor='#181818'
 	normfgcolor='#e9e9e9'
-	selbgcolor='#dd6003'
-	selfgcolor='#e9e9e9'
+	selbgcolor=$normbgcolor
+	selfgcolor='#dd6003'
 	bmarks=~/.surf/history.txt
-	ffile=~/.surf/find.txt # pjh
+	ffile=~/.surf/find.txt 
 
-	xid=$1
-	p=$2
-	dmenu="dmenu -e $xid -fn $font -nb $normbgcolor -nf $normfgcolor \
+	pid=$1
+	fid=$2
+	xid=$3
+
+	dmenu="dmenu -e $xid -nb $normbgcolor -nf $normfgcolor \
 		   -sb $selbgcolor -sf $selfgcolor"
 
 	s_get_prop() { # xprop
@@ -81,32 +88,33 @@ Code
 	}
 
 	s_set_write_proper_uri() { # uri
+		# TODO: (xprop -spy _SURF_URI ... | while read name __ value; do echo $value; done works quite nice for eventloops)
 		# input is whatever the use inputed, so don't store that!
 		# first, clear the name field because surf doesn't sometimes
-		s_set_prop WM_ICON_NAME ""
+		#s_set_prop WM_ICON_NAME ""
 		# set the uri
-		s_set_prop _SURF_URI "$1"
+		s_set_prop _SURF_GO "$1"
 		# get the new name
 		name=`s_get_prop WM_ICON_NAME`
 		# loop until the [10%] stuff is finished and we have a load (is this necessary?)
-		while echo $name | grep "[*%\]" >/dev/null 2>&1; do 
-			name=`s_get_prop WM_ICON_NAME`
-		done 
+		#while echo $name | grep "[*%\]" >/dev/null 2>&1; do 
+		#	name=`s_get_prop WM_ICON_NAME`
+		#done 
 		# bail on error and don't store
-		if [[ $name != "Error" ]]; then
-			uri=`s_get_prop _SURF_URI`
+		#if [[ $name != "Error" ]]; then
+		#	uri=`s_get_prop _SURF_URI`
 			# store to the bmarks file the OFFICIAL url (with http://whatever)
 			s_write_f $bmarks "$1"
 			#grep "$uri" $bmarks >/dev/null 2>&1 || echo "$uri" >> $bmarks
-		fi
+		#fi
 	}
 
-	case "$p" in
+	case "$pid" in
 	"_SURF_INFO")
-		xprop -id $xid | sed 's/\t/    /g' | $dmenu -b -l 20
+		xprop -id $xid | sed 's/\t/    /g' | $dmenu -fn "$font" -b -l 20
 		;;
 	"_SURF_FIND")
-		find="`tac $ffile 2>/dev/null | $dmenu -b -p find:`"
+		find="`tac $ffile 2>/dev/null | $dmenu -fn "$font" -b -p find:`"
 		s_set_prop _SURF_FIND "$find"
 		s_write_f $ffile "$find"
 		;;
@@ -115,11 +123,11 @@ Code
 		s_write_f $bmarks "$uri"
 		;;
 	"_SURF_URI_RAW")
-		uri=`echo $(s_get_prop _SURF_URI) | $dmenu -b -p "uri:"`
-		s_set_prop _SURF_URI "$uri"
+		uri=`echo $(s_get_prop _SURF_URI) | $dmenu -fn "$font" -b -p "uri:"`
+		s_set_prop _SURF_GO "$uri"
 		;;
 	"_SURF_URI")
-		sel=`tac $bmarks 2> /dev/null | $dmenu -b -l 5 -p "uri [dgtwuy*]:"`
+		sel=`tac $bmarks 2> /dev/null | $dmenu -fn "$font" -b -l 5 -p "uri [dgtwuy*]:"`
 		[ -z "$sel" ] && exit
 		opt=$(echo $sel | cut -d ' ' -f 1)
 		arg=$(echo $sel | cut -d ' ' -f 2-)
@@ -158,9 +166,9 @@ Code
 		esac
 
 		# only set the uri; don't write to file
-		[ $save -eq 0 ] && s_set_prop _SURF_URI "$uri"
+		[ $save -eq 0 ] && s_set_prop _SURF_GO "$uri"
 		# set the url and write exactly what the user inputed to the file
-		[ $save -eq 1 ] && (s_set_prop _SURF_URI "$uri"; s_write_f $bmarks "$sel")
+		[ $save -eq 1 ] && (s_set_prop _SURF_GO "$uri"; s_write_f $bmarks "$sel")
 		# try to set the uri only if it is a success
 		[ $save -eq 2 ] && s_set_write_proper_uri "$uri"
 		;;

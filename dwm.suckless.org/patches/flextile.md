@@ -23,21 +23,26 @@ The patch incorporates and expands the following patches:
 ## Configuration ##
 
  (1) Download the patch and apply it according to the [general instructions](.).
+
  (2) Transfer the changes made by the patch in 'config.def.h' to your 'config.h', if needed.
+
      In the 'layout(s)' section:
+
          static const int layoutaxis[] = {
              1,    /* layout axis: 1 = x, 2 = y; negative values mirror the layout, setting the master area to the right / bottom instead of left / top */
              2,    /* master axis: 1 = x (from left to right), 2 = y (from top to bottom), 3 = z (monocle) */
              2,    /* stack axis:  1 = x (from left to right), 2 = y (from top to bottom), 3 = z (monocle) */
          };
          static const unsigned int mastersplit = 1;    /* number of tiled clients in the master area */
+
      In the 'keys' array:
+
          { MODKEY|ControlMask,           XK_t,      rotatelayoutaxis, {.i = 0} },    /* 0 = layout axis */
          { MODKEY|ControlMask,           XK_Tab,    rotatelayoutaxis, {.i = 1} },    /* 1 = master axis */
          { MODKEY|ControlMask|ShiftMask, XK_Tab,    rotatelayoutaxis, {.i = 2} },    /* 2 = stack axis */
          { MODKEY|ControlMask,           XK_Return, mirrorlayout,     {0} },
-         { MODKEY|ControlMask,           XK_j,      shiftmastersplit, {.i = -1} },
-         { MODKEY|ControlMask,           XK_k,      shiftmastersplit, {.i = +1} },
+         { MODKEY|ControlMask,           XK_j,      shiftmastersplit, {.i = -1} },   /* reduce the number of tiled clients in the master area */
+         { MODKEY|ControlMask,           XK_k,      shiftmastersplit, {.i = +1} },   /* increase the number of tiled clients in the master area */
  
  
 ## Usage ##
@@ -48,8 +53,8 @@ The original tile layout is only available by setting the above parameters, but 
 
 ## Download ##
 
- * [flextile-5.8-100510.diff][1] (13k) (20100510)
+ * [flextile-5.8.1.diff][1] (14k) (20100531, joten <joten (at) freenet (dot) de>)
 
 
-[1]: http://dwm.suckless.org/patches/flextile-5.8-100510.diff
+[1]: http://dwm.suckless.org/patches/flextile-5.8.1.diff
 

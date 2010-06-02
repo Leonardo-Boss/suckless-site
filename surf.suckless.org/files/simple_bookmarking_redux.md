@@ -3,7 +3,6 @@ SIMPLE BOOKMARKING, REDUX
 
 Description
 -----------
-
 Modify your config.h just before the definition of `keys[]`:
 
 	#define BM_PICK { .v = (char *[]){ "/bin/sh", "-c", \
@@ -34,5 +33,4 @@ Adds the current page to the list of bookmarks, while removing duplicate entries
 
 Author
 ------
-
-* Lorenzo Bolla < lbolla at gmail dot com >
+* Lorenzo Bolla `<lbolla at gmail dot com>`

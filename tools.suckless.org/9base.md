@@ -5,48 +5,62 @@
 
 It currently contains the following original (no source changes) shell commands from Plan 9 for Unix:
 
+* ascii
 * awk
 * basename
 * bc
 * cal
 * cat
 * cleanname
+* cmp
 * date
 * dc
 * du
+* dd
+* diff
 * echo
+* ed
 * factor
 * fortune
+* fmt
 * freq
 * getflags
 * grep
 * hoc
+* join
+* look
 * ls
 * mk
 * mkdir
 * mtime
+* pbd
 * primes
 * rc
 * read
+* sam
+* sha1sum
 * sed
 * seq
 * sleep
 * sort
+* split
+* strings
 * tail
 * tee
 * test
 * touch
 * tr
 * troff
+* unicode
 * uniq
-* yacc
+* unutf
 
 It also contains the Plan 9 libc, libbio, libregexp, libfmt and libutf.
-The overall SLOC is about 40kSLOC, so this userland + all libs is much smaller than, e.g. bash (duh!).
+The overall SLOC is about 66kSLOC, so this userland + all libs is much smaller than, e.g. bash (duh!).
 
 Download
 --------
-* [9base-5](http://dl.suckless.org/tools/9base-5.tar.gz) (20100425)
+* [9base-6](http://dl.suckless.org/tools/9base-6.tar.gz) (20100604)
 * <code>hg clone [http://hg.suckless.org/9base](http://hg.suckless.org/9base)</code>
 
 Usage

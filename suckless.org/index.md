@@ -3,6 +3,10 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
+2010-06-08
+----------
+[surf 0.4](http://surf.suckless.org) released: [download](http://dl.suckless.org/surf/surf-0.4.tar.gz)
+
 2010-06-04
 ----------
 [dwm 5.8.2](http://dwm.suckless.org) released: [download](http://dl.suckless.org/dwm/dwm-5.8.2.tar.gz)
@@ -12,10 +16,6 @@ Read more about our [philosophy](/common/) and join us on the [mailing list](com
 2010-05-31
 ----------
 [tabbed 0.3](http://tools.suckless.org/tabbed) released: [download](http://dl.suckless.org/tools/tabbed-0.3.tar.gz)
-
-2010-05-30
-----------
-[surf 0.4](http://surf.suckless.org) released: [download](http://dl.suckless.org/surf/surf-0.4.tar.gz)
 
 2010-05-29
 ----------

@@ -42,6 +42,6 @@ with the following command:
 Download
 --------
 * [MIT/X Consortium license](http://hg.suckless.org/surf/raw-file/tip/LICENSE)
-* [surf 0.4](http://dl.suckless.org/surf/surf-0.4.tar.gz) (9.7K) (20100530)
+* [surf 0.4.1](http://dl.suckless.org/surf/surf-0.4.1.tar.gz) (9.9K) (20100608)
 * See also [dmenu](http://tools.suckless.org/dmenu),
   [tabbed](http://tools.suckless.org/tabbed)

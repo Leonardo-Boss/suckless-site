@@ -5,7 +5,7 @@ Read more about our [philosophy](/common/) and join us on the [mailing list](com
 
 2010-06-08
 ----------
-[surf 0.4](http://surf.suckless.org) released: [download](http://dl.suckless.org/surf/surf-0.4.tar.gz)
+[surf 0.4.1](http://surf.suckless.org) released: [download](http://dl.suckless.org/surf/surf-0.4.1.tar.gz)
 
 2010-06-04
 ----------

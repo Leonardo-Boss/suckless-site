@@ -5,7 +5,6 @@ Read more about our [philosophy](/common/) and join us on the [mailing list](com
 
 2010-06-08
 ----------
-----------
 [wmii 3.9.1](http://wmii.suckless.org/) released: [download](http://dl.suckless.org/wmii/wmii+ixp-3.9.1.tbz)<sup>[[md5](http://dl.suckless.org/wmii/wmii+ixp-3.9.1.tbz.sum)]</sup>
 
 [surf 0.4.1](http://surf.suckless.org) released: [download](http://dl.suckless.org/surf/surf-0.4.1.tar.gz)

@@ -8,7 +8,7 @@ codebase.
 Links
 -----
 
-* Latest release: [wmii 3.9.1](http://dl.suckless.org/wmii/wmii+ixp-3.9.1.tbz) (recommended)
+* Latest release: [wmii 3.9.2](http://dl.suckless.org/wmii/wmii+ixp-3.9.2.tbz) (recommended)
 * Latest devel tip: <code>hg clone [http://hg.suckless.org/wmii](http://hg.suckless.org/wmii)</code>
 * Bugs: [Google Code issue tracker](http://code.google.com/p/wmii/issues)
 * Mailing List: `dev+subscribe@suckless.org` ([Archives](http://lists.suckless.org/dev/)) ([Old Archives](http://lists.suckless.org/wmii/)) (see [community](http://suckless.org/common/community/) for details)
@@ -29,7 +29,7 @@ Older releases
 * [wmii-2.5.2](http://dl.suckless.org/wmii/wmii-2.5.2.tar.gz) (historical, 2006-01-27)
 * [wmii-2](http://dl.suckless.org/wmii/wmii-2.tar.gz) (historical, 2005-10-21)
 
-Make sure that the X Window System headers are installed, if you want to build
+Make sure that the X Window System headers are installed if you want to build
 wmii from source.
 
 Packages
@@ -78,6 +78,8 @@ wmii is included in the OpenBSD ports tree ([x11/wmii](http://www.openbsd.org/cg
 ### Arch Linux
 * [wmii-3.6](http://archlinux.org/packages/search/?q=wmii) is available in the Arch \[extra\] repository.
 * [wmii-hg](http://aur.archlinux.org/packages.php?ID=3497) is available in AUR \[unsupported\]. Building with `makepkg` pulls the latest hg revision.
+
+It is also possible to build an Arch package by simply running `makepkg` from the base of the wmii source tree.
 
 ### Gentoo
 Ebuild is available at [x11-wm/wmii](http://packages.gentoo.org/package/x11-wm/wmii).

@@ -12,16 +12,16 @@ With key modes you can use any key binding for window management without risking
 There are two different patches:
 
  * keymodes: the minimal patch
- * vim-keymodes: This patch tries to emulate the key bindings of Vim. Therefor it includes additional functions, which depend on the [flextile patch](../flextile).
+ * vim-keymodes: This patch tries to emulate the key bindings of Vim. Therefor it includes additional functions, which depend on the [flextile patch](./flextile).
 
 
 ## Configuration ##
 
- (1) Download the favoured patch and apply it according to the [general instructions](.). If you choose vim-keymodes you will have to apply the flextile patch first.
+ (1) Download the favoured patch and apply it according to the [general instructions](.). If you choose vim-keymodes you will have to apply the [flextile patch](./flextile) first.
 
  (2) Transfer the changes made by the patch in 'config.def.h' to your 'config.h', if needed; please see the patch file for details.
 
- (3) Verify the following lines in the aforementioned arrays:
+ (3) Verify the following lines in the aforementioned arrays. The entries in the `cmdkeys` array are defined like those in the original `keys` array of dwm and take precedence over the key bindings defined in the `commands` array. The modifier and keysym definitions in the `commands` array are themselves arrays with four entries, whereas the first entry in the modifier array corresponds to the first entry in the keysym array and so forth.
 
      static Key keys[] = {
          /* modifier             key                 function       argument */
@@ -37,8 +37,6 @@ There are two different patches:
          /* modifier (4 keys)    keysyms (4 keys)    function       argument */
          ...
      };
-
-     The entries in the `cmdkeys` array are defined like those in the original `keys` array of dwm and take precedence over the key bindings defined in the `commands` array. The modifier and keysym definitions in the `commands` array are themselves arrays with four entries, whereas the first entry in the modifier array corresponds to the first entry in the keysym array and so forth.
 
 
 ## Usage ##

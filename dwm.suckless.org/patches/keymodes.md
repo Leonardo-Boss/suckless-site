@@ -7,7 +7,7 @@ This patch provides key modes (like in Vim). There are two key modes:
  1. `COMMANDMODE`: In this mode any key is grabbed and only the registered command keys have any effect.
  2. `INSERTMODE`:  This is the normal key mode, in which the original key bindings of dwm and applications are effective and text can be entered.
 
-With key modes you can use any key binding for window management without risking conflicts with existing key bindings in applications.
+With key modes you can use any key binding for window management without risking conflicts with existing key bindings in applications or have a Vim-style dwm.
 
 There are two different patches:
 
@@ -19,9 +19,9 @@ There are two different patches:
 
  (1) Download the favoured patch and apply it according to the [general instructions](.). If you choose vim-keymodes you will have to apply the [flextile patch](./flextile) first.
 
- (2) Transfer the changes made by the patch in 'config.def.h' to your 'config.h', if needed; please see the patch file for details.
+ (2) Transfer the changes made by the patch in `config.def.h` to your `config.h`, if needed; please see the patch file for details.
 
- (3) Verify the following lines in the aforementioned arrays. The entries in the `cmdkeys` array are defined like those in the original `keys` array of dwm and take precedence over the key bindings defined in the `commands` array. The modifier and keysym definitions in the `commands` array are themselves arrays with four entries, whereas the first entry in the modifier array corresponds to the first entry in the keysym array and so forth.
+ (3) Verify the following lines in the aforementioned arrays; the key bindings are set in reference to a german keyboard layout. The entries in the `cmdkeys` array are defined like those in the original `keys` array of dwm and take precedence over the key bindings defined in the `commands` array. The modifier and keysym definitions in the `commands` array are themselves arrays with four entries, whereas the first entry in the modifier array corresponds to the first entry in the keysym array and so forth. You can find an example configuration [here][3].
 
      static Key keys[] = {
          /* modifier             key                 function       argument */
@@ -52,3 +52,4 @@ With this patch dwm starts in `COMMANDMODE` and you can use the key bindings as 
 
 [1]: http://dwm.suckless.org/patches/keymodes-5.8.2.diff
 [2]: http://dwm.suckless.org/patches/keymodes-5.8.2-vim.diff
+[3]: http://dwm.suckless.org/patches/keymodes-5.8.2-vim-example-config.h

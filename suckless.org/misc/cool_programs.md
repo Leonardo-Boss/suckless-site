@@ -48,7 +48,7 @@ Programming languages
 
 Image Viewers
 -------------
-* [feh](http://linuxbrit.co.uk/feh/)
+* [feh](https://derf.homelinux.org/projects/feh/)
 * [jpg/gif/bmp/png][plan9port] - Simple programs from Plan 9 to display images in no-frills windows. Included with plan9port.
 * [page][plan9port] - Plan 9's image/document viewer program. Included with plan9port.
 * [qiv](http://www.klografx.net/qiv/)

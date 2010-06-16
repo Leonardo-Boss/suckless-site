@@ -1,14 +1,15 @@
-# ATTACHABOVE
+ATTACHABOVE
+===========
 
-## Description
+Description
+-----------
+`attachabove` makes new clients attach above the selected client (instead of
+always becoming the new master) - basically how Xmonad does it.
 
-Make new clients get attached above the selected client (instead of always
-becoming the new master) - basically how Xmonad does it.
+Download
+--------
+* [dwm-5.6.1-attachabove.diff](dwm-5.6.1-attachabove.diff) (1.1K) (20090817)
 
-## Download
-
- * [attachabove-5.6.1.diff](attachabove-5.6.1.diff) (1.1K) (20090817)
-
-## Author
-
- * Mate Nagy - <mnagy@port70.net>
+Author
+------
+* Mate Nagy - <mnagy@port70.net>

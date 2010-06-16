@@ -1,12 +1,11 @@
-# ATTACHASIDE
+ATTACHASIDE
+===========
 
-## Description
-
-Make new client get attached and focused in the stacking area instead of
-always becoming the new master.
-Basically an attachabove mod.
-
-## Example
+Description
+-----------
+`attachaside` makes the new client get attached and focused in the stacking
+area instead of always becoming the new master. It's basically an
+[attachabove](attachabove) mod.
 
 	Original behaviour :
 	+-----------------+-------+
@@ -42,11 +41,11 @@ Basically an attachabove mod.
 	|                 |       |
 	+-----------------+-------+
 
-## Download
+Download
+--------
+* [dwm-5.7.2-attachaside.diff](dwm-5.7.2-attachaside.diff) (1.1K) (20091215)
+* [dwm-6.6.1-attachaside.diff](dwm-5.6.1-attachaside.diff) (1.1K) (20090915)
 
- * [attachaside-5.6.1.diff](attachaside-5.6.1.diff) (1.1K) (20090915)
- * [dwm-attachaside-5.7-2.diff](dwm-attachaside-5.7.2.diff) (1.1K) (20091215)
-
-## Author
-
- * Jerome Andrieux - <jerome@gcu.info>
+Author
+------
+* Jerome Andrieux - `<jerome at gcu dot info>`

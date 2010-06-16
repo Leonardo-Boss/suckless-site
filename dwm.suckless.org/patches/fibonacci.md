@@ -40,7 +40,7 @@ arrangement can be seen below.
 
 ## Download
 
- * [dwm-5.6.1-fibonacci.diff][4] (1.9k) (20090911)
+ * [dwm-5.8.2-fibonacci.diff](dwm-5.8.2-fibonacci.diff)
 
 ## Maintainer
 
@@ -53,4 +53,3 @@ patch. Thanks to Jan Christoph Ebersbach for updating this patch for versions
 [1]: http://schot.a-eskwadraat.nl/images/dwm-spiral_small.png
 [2]: http://schot.a-eskwadraat.nl/images/dwm-spiral.png
 [3]: http://www.xmonad.org
-[4]: http://www.aplusbi.com/projects/dwm/dwm-5.6.1-fibonacci.diff

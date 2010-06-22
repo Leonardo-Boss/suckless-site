@@ -52,4 +52,4 @@ With this patch dwm starts in `COMMANDMODE` and you can use the key bindings as 
 
 [1]: http://dwm.suckless.org/patches/keymodes-5.8.2.diff
 [2]: http://dwm.suckless.org/patches/keymodes-5.8.2-vim.diff
-[3]: http://dwm.suckless.org/patches/keymodes-5.8.2-vim-example-config.h
+[3]: http://dwm.suckless.org/patches/keymodes-5.8.2-vim-config.h

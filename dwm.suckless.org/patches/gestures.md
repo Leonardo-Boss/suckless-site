@@ -3,12 +3,12 @@ GESTURES
 
 Description
 -----------
-`gestures` adds support for simple mouse gestures to dwm. Currently gestures are
-only used for the execution of programs.
+`gestures` adds support for simple mouse gestures to dwm. The patch assumes make has been run
+and adds a gestures array to config.h. A gesture can call any dwm function. I usually call spawn.
 
 Download
 --------
-* [gesturepatch.diff](gesturepatch.diff) (4.0K) (20100623)
+* [dwm-5.8-gestures.diff](dwm-5.8-gestures.diff)
 
 Author
 ------

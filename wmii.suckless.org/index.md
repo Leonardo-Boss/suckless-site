@@ -81,6 +81,12 @@ wmii is included in the OpenBSD ports tree ([x11/wmii](http://www.openbsd.org/cg
 
 It is also possible to build an Arch package by simply running `makepkg` from the base of the wmii source tree.
 
+For up-do-date packages, you can add the suckless repo to
+`/etc/pacman.conf`:
+
+    [suckless]
+    Server = http://dl.suckless.org/arch/x86_64
+
 ### Gentoo
 Ebuild is available at [x11-wm/wmii](http://packages.gentoo.org/package/x11-wm/wmii).
 

@@ -8,7 +8,7 @@ mwfact, barpos and nmaster (if installed) per tag.
 
 Download
 --------
-* [dwm-5.8.2-pertag_without_bar.diff][11]
+* [dwm-5.8.2-pertag\_without\_bar.diff][11]
 * [dwm-5.8.2-pertag.diff][10]
 * [dwm-5.7.2-pertag.diff][9]
 * [dwm-pertag-5.6.1.diff][8]

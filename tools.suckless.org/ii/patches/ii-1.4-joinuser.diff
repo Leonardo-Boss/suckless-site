@@ -1,0 +1,54 @@
+diff -r d93eaacde742 ii.c
+--- a/ii.c	Fri Jun 25 10:55:05 2010 +0200
++++ b/ii.c	Wed Jun 30 14:44:35 2010 -0700
+@@ -105,6 +105,7 @@
+ 	return open(infile, O_RDONLY | O_NONBLOCK, 0);
+ }
+ 
++static void print_out(char *channel, char *buf); // needs to be declared
+ static void add_channel(char *name) {
+ 	Channel *c;
+ 	int fd;
+@@ -130,6 +131,12 @@
+ 	}
+ 	c->fd = fd;
+ 	c->name = strdup(name);
++
++	if(!((name[0]=='#')||(name[0]=='&')||(name[0]=='+')||(name[0]=='!'))) {
++		char msg[128];
++		snprintf(msg, PIPE_BUF, "-!- %s has joined %s", nick, name);
++		print_out(name, msg);
++	}
+ }
+ 
+ static void rm_channel(Channel *c) {
+@@ -211,6 +218,7 @@
+ 	if(strstr(buf, server)) channel="";
+ 	create_filepath(outfile, sizeof(outfile), channel, "out");
+ 	if(!(out = fopen(outfile, "a"))) return;
++	if(channel && channel[0]) add_channel(channel);
+ 
+ 	strftime(buft, sizeof(buft), "%F %R", localtime(&t));
+ 	fprintf(out, "%s %s\n", buft, buf);
+@@ -237,17 +245,14 @@
+ 		case 'j':
+ 			p = strchr(&buf[3], ' ');
+ 			if(p) *p = 0;
++			add_channel(&buf[3]);
+ 			if((buf[3]=='#')||(buf[3]=='&')||(buf[3]=='+')||(buf[3]=='!')){
+ 				if(p) snprintf(message, PIPE_BUF, "JOIN %s %s\r\n", &buf[3], p + 1); /* password protected channel */
+ 				else snprintf(message, PIPE_BUF, "JOIN %s\r\n", &buf[3]);
+-				add_channel(&buf[3]);
+ 			}
+-			else {
+-				if(p){
+-					add_channel(&buf[3]);
+-					proc_channels_privmsg(&buf[3], p + 1);
+-					return;
+-				}
++			else if(p) {
++				proc_channels_privmsg(&buf[3], p + 1);
++				return;
+ 			}
+ 			break;
+ 		case 't':

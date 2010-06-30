@@ -5,7 +5,8 @@ Description
 -----------
 
 When a user messages you or you are made to join a channel (as with bitlbee),
-ii will automatically join so there is no need to `$ echo "/j user" > in`
+ii will automatically join so there is no need to either `$ echo "/j channel > in"`
+or `$ echo "/j user message" > in`
 before you can start sending messages.
 
 Download

@@ -34,10 +34,13 @@ Here are some tips on using it.
 	cat ~/.surf/history.$$ | sort | uniq >~/.surf/history
 	rm -f ~/.surf/history.$$
 
-(2) Import firefox history:
+(2) Import history:
 
-	sqlite3  -list /home/$USER/.mozilla/firefox/*.default/places.sqlite 'select url from moz_places ;' |\
-	grep http >> ~/.surf/history
+Firefox:
+	sqlite3 -list $HOME/.mozilla/firefox/*.default/places.sqlite 'select url from moz_places ;' | grep ^http >> ~/.surf/history
+
+Chromium:
+	sqlite3 -list $HOME/.config/chromium/Default/History 'select url from urls' | grep ^http >> ~/.surf/history
 
 Download
 --------

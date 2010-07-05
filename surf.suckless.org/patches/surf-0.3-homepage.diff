@@ -1,15 +1,13 @@
 diff -r dbb565b8d61c surf.c
 --- a/surf.c	Fri Jun 25 09:42:58 2010 +0200
-+++ b/surf.c	Mon Jul 05 14:55:45 2010 -0500
-@@ -839,6 +839,11 @@
- 	newclient();
- 	if(arg.v)
- 		loaduri(clients, &arg);
-+	#ifdef HOMEPAGE
-+	else
-+		arg.v = HOMEPAGE;
-+		loaduri(clients, &arg);
-+	#endif
- 	gtk_main();
- 	cleanup();
- 	return EXIT_SUCCESS;
++++ b/surf.c	Mon Jul 05 21:56:52 2010 +0100
+@@ -833,6 +833,9 @@
+ 			usage();
+ 		}
+ 	}
++#ifdef HOMEPAGE
++	arg.v = HOMEPAGE;
++#endif
+ 	if(i < argc)
+ 		arg.v = argv[i];
+ 	setup();

@@ -13,6 +13,7 @@ Download
 --------
 
 * [dmenu-4.0-paste.diff](dmenu-4.0-paste.diff) (597) (20091029)
+* [dmenu-tip-paste.diff](dmenu-tip-paste.diff) (594) (20100706)
 
 Author
 ------

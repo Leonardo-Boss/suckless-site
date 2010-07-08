@@ -30,5 +30,6 @@ Bottom Stack Tiling
 
 Download
 --------
-* [dwm-5.8.2-bstack.diff](dwm-5.8.2-bstack.diff)
+* Not for use with pertag patch: [dwm-5.8.2-bstack.diff](dwm-5.8.2-bstack.diff) 
+* For use with pertag patch: [dwm-5.8.2-bstack-alt.diff](dwm-5.8.2-bstack-alt.diff)
 * see older versions in [historical patches](historical)

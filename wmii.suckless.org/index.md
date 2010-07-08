@@ -43,6 +43,8 @@ on debian.org. Backports for stable are available on
 [backports.org](http://www.backports.org/). Prospective packages and/or
 snapshots can be downloaded from the [maintainers
 website](http://archive.daniel-baumann.ch/debian/packages/wmii/).
+There is also a [user-supplied apt repository at
+dpkg.org](http://dpkg.org).
 
 wmii also comes with debian packaging materials. To build a deb, type:
 

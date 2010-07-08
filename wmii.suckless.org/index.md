@@ -37,7 +37,16 @@ Packages
 If there are no packages for your Linux distribution/OS yet, ask the
 appropriate maintainers to create one or compile wmii from source.
 
-### Debian
+1. [Debian](#Debian)
+2. [Ubuntu](#Ubuntu)
+3. [Arch Linux](#ArchLinux)
+4. [Gentoo](#Gentoo)
+5. [Source Mage](#SourceMage)
+6. [FreeBSD](#FreeBSD)
+7. [NetBSD](#NetBSD)
+8. [OpenBSD](#OpenBSD)
+
+### <a id="Debian">Debian</a>
 Official debian packages are available in the unstable and testing repository
 on debian.org. Backports for stable are available on
 [backports.org](http://www.backports.org/). Prospective packages and/or
@@ -53,31 +62,14 @@ wmii also comes with debian packaging materials. To build a deb, type:
 
 See also Ubuntu, below.
 
-### Ubuntu
+### <a id="Ubuntu">Ubuntu</a>
 Official ubuntu packages are available in the universe repository. Up-to-date
 snapshots are also available in the
 [wmii Launchpad PPA](https://launchpad.net/~maglione-k/+archive/ppa). These
 packages may also work on debian systems. To build your own deb, see Debian
 above.
 
-### Source Mage
-A Source Mage spell for the 20070516 wmii snapshot is available. As usual, just
-type
-
-`cast wmii`
-
-in a term to install it.
-
-### FreeBSD
-Port is available at x11-wm/wmii.
-
-### NetBSD
-A pkgsrc package for wmii is available in [wm/wmii](http://pkgsrc.se/wm/wmii) and [wip/wmii-devel](http://pkgsrc.se/wip/wmii-devel).
-
-### OpenBSD
-wmii is included in the OpenBSD ports tree ([x11/wmii](http://www.openbsd.org/cgi-bin/cvsweb/ports/x11/wmii/)), and binary packages are available from most [OpenBSD mirrors](http://openbsd.org/ftp.html).
-
-### Arch Linux
+### <a id="ArchLinux">Arch Linux</a> 
 * [wmii-3.6](http://archlinux.org/packages/search/?q=wmii) is available in the Arch \[extra\] repository.
 * [wmii-hg](http://aur.archlinux.org/packages.php?ID=3497) is available in AUR \[unsupported\]. Building with `makepkg` pulls the latest hg revision.
 
@@ -87,8 +79,25 @@ For up-do-date packages, you can add the suckless repo to
 `/etc/pacman.conf`:
 
     [suckless]
-    Server = http://dl.suckless.org/arch/x86_64
+    Server = http://dl.suckless.org/arch/$arch
 
-### Gentoo
+### <a id="Gentoo">Gentoo</a>
 Ebuild is available at [x11-wm/wmii](http://packages.gentoo.org/package/x11-wm/wmii).
+
+### <a id="SourceMage">Source Mage</a>
+A Source Mage spell for the 20070516 wmii snapshot is available. As usual, just
+type
+
+`cast wmii`
+
+in a term to install it.
+
+### <a id="FreeBSD">FreeBSD</a>
+Port is available at x11-wm/wmii.
+
+### <a id="NetBSD">NetBSD</a>
+A pkgsrc package for wmii is available in [wm/wmii](http://pkgsrc.se/wm/wmii) and [wip/wmii-devel](http://pkgsrc.se/wip/wmii-devel).
+
+### <a id="OpenBSD">OpenBSD</a>
+wmii is included in the OpenBSD ports tree ([x11/wmii](http://www.openbsd.org/cgi-bin/cvsweb/ports/x11/wmii/)), and binary packages are available from most [OpenBSD mirrors](http://openbsd.org/ftp.html).
 

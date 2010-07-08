@@ -1,6 +1,6 @@
 diff -r d93eaacde742 ii.c
 --- a/ii.c	Fri Jun 25 10:55:05 2010 +0200
-+++ b/ii.c	Fri Jul 02 11:46:55 2010 -0700
++++ b/ii.c	Thu Jul 08 00:55:27 2010 -0700
 @@ -105,6 +105,7 @@
  	return open(infile, O_RDONLY | O_NONBLOCK, 0);
  }
@@ -16,7 +16,7 @@ diff -r d93eaacde742 ii.c
 +
 +	if(name[0] && !((name[0]=='#')||(name[0]=='&')||(name[0]=='+')||(name[0]=='!'))) {
 +		char msg[128];
-+		snprintf(msg, PIPE_BUF, "-!- %s has joined %s", nick, name);
++		snprintf(msg, sizeof(msg), "-!- %s has joined %s", nick, name);
 +		print_out(name, msg);
 +	}
  }

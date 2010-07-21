@@ -15,6 +15,9 @@ Theoretical features
 * st should keep a pointer to the beginning of the oldest line, because we
   would like to keep lines and not part of them (pancake)
 * Edit previous text in the terminal like in Plan 9 and 9term (jt_)
+* URL selecting/launching in browser similiar to vimperator's mark mode and the
+  urxvt script (patch?) (possibly piped through something like plumb to
+  determine which app to use) (n0nsense)
 * More features not thought up at the moment
 
 Goals

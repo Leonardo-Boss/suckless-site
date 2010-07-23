@@ -14,7 +14,6 @@ compared to most popular linux distros.
 See also
 
 * <http://9fans.net/archive/2008/11/142>
-* [The Sun paper](http://research.sun.com/techrep/1993/smli_tr-1993-15.pdf)
 
 Aren't whole libraries linked into a static executable?
 -------------------------------------------------------

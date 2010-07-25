@@ -1,0 +1,16 @@
+diff -r 67d8f41d51d7 dmenu.c
+--- a/dmenu.c	Fri Jul 02 06:49:05 2010 +0100
++++ b/dmenu.c	Sun Jul 25 16:41:23 2010 +0100
+@@ -326,9 +326,10 @@
+ 		}
+ 		break;
+ 	case XK_Tab:
+-		if(sel)
++		if(sel) {
+ 			strncpy(text, sel->text, sizeof text);
+-		dinput();
++			match();
++		}
+ 		break;
+ 	}
+ 	drawbar();

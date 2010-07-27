@@ -6,7 +6,7 @@
 
 ## Download
 
- * [dwm-r1520-viewontag.diff](dwm-r1520-viewontag.diff) (dwm r1520) (20100613)
+ * [dwm-r1522-viewontag.diff](dwm-r1522-viewontag.diff) (dwm r1522) (20100725)
 
 ## Author
 

@@ -17,5 +17,5 @@ Download
 Author
 ------
 
-* Bob Lowry (bobertlo) <[bobertlo@gmail.com](mailto:bobertlo@gmail.com)>
+* Robert Lowry (bobertlo) <[robertwlowry@gmail.com](mailto:robertwlowry@gmail.com)>
 * Evan Gates (emg) <[evan.gates@gmail.com](mailto:evan.gates@gmail.com)>

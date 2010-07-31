@@ -1,6 +1,6 @@
 diff -r d93eaacde742 config.mk
 --- a/config.mk	Fri Jun 25 10:55:05 2010 +0200
-+++ b/config.mk	Sun Jul 25 16:15:31 2010 -0700
++++ b/config.mk	Sat Jul 31 11:32:04 2010 -0700
 @@ -16,7 +16,7 @@
  
  # includes and libs
@@ -12,7 +12,7 @@ diff -r d93eaacde742 config.mk
  #CFLAGS      = -g ${INCLUDES} -DVERSION=\"${VERSION}\"
 diff -r d93eaacde742 ii.1
 --- a/ii.1	Fri Jun 25 10:55:05 2010 +0200
-+++ b/ii.1	Sun Jul 25 16:15:31 2010 -0700
++++ b/ii.1	Sat Jul 31 11:32:04 2010 -0700
 @@ -25,6 +25,8 @@
  .IR servername ]
  .RB [ \-p
@@ -35,7 +35,7 @@ diff -r d93eaacde742 ii.1
  (be aware of the problem that this is visible in the process list, if you
 diff -r d93eaacde742 ii.c
 --- a/ii.c	Fri Jun 25 10:55:05 2010 +0200
-+++ b/ii.c	Sun Jul 25 16:15:31 2010 -0700
++++ b/ii.c	Sat Jul 31 11:32:04 2010 -0700
 @@ -19,6 +19,9 @@
  #include <ctype.h>
  #include <time.h>
@@ -216,16 +216,19 @@ diff -r d93eaacde742 ii.c
  			handle_server_output();
  			last_response = time(NULL);
  		}
-@@ -481,9 +514,12 @@
+@@ -478,12 +511,15 @@
+ 			case 'i': snprintf(prefix,sizeof(prefix),"%s", argv[++i]); break;
+ 			case 's': host = argv[++i]; break;
+ 			case 'p': port = strtol(argv[++i], NULL, 10); break;
++			case 'e': use_ssl = 1; ++i; break;
  			case 'n': snprintf(nick,sizeof(nick),"%s", argv[++i]); break;
  			case 'k': key = argv[++i]; break;
  			case 'f': fullname = argv[++i]; break;
-+			case 'e': use_ssl = 1; break;
  			default: usage(); break;
  		}
  	}
 +	if(use_ssl)
-+		port = port == SERVER_PORT ? SSL_SERVER_PORT : SERVER_PORT;
++		port = port == SERVER_PORT ? SSL_SERVER_PORT : port;
  	irc = tcpopen(port);
  	if(!snprintf(path, sizeof(path), "%s/%s", prefix, host)) {
  		fprintf(stderr, "%s", "ii: path to irc directory too long\n");

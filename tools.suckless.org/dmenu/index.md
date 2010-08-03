@@ -1,8 +1,9 @@
 DMENU
 =====
 
-dynamic menu is a generic menu for X, originally designed for [dwm](http://dwm.suckless.org/).
-It manages huge amounts (up to 10,000 and more) of user defined menu items efficiently.
+dmenu is a dynamic menu for X, originally designed for
+[dwm](http://dwm.suckless.org/). It manages large numbers of user-defined menu
+items efficiently.
 
 
 Download

@@ -13,7 +13,6 @@ Download
 --------
 
 * [dmenu-4.0-paste.diff](dmenu-4.0-paste.diff) (597) (20091029)
-* [dmenu-tip-paste.diff](dmenu-tip-paste.diff) (594) (20100706)
 
 Author
 ------
@@ -21,4 +20,4 @@ Author
 * Evan Gates (emg) <[evan.gates@gmail.com](mailto:evan.gates@gmail.com)>
 
 
-***Note, this patch is being accepted for mainstream dmenu and in hg tip.***
+***Note, this patch is present in dmenu-4.1.1.***

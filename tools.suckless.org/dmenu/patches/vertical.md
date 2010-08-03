@@ -11,4 +11,4 @@ Download
 * [dmenu-4.0-vertical_meillo.diff](dmenu-4.0-vertical_meillo.diff)
 
 
-***Note, this patch is being accepted for mainstream dmenu and in hg tip.***
+***Note, this patch is present in dmenu-4.1.1.***

@@ -15,6 +15,7 @@ developers and contributors.  If you are missing, feel free to add yourself.
 * Christian Schneider (provides the Slackware package)
 * Christof Musik (various feedback, small fixes)
 * [Christoph Wegscheider](http://www.wegi.net) (python bindings of old libixp, former irc logging)
+* Connor Lane Smith (dmenu developer)
 * Daniel Baumann (<a href="http://suckless.debian-maintainers.org">Debian packaging</a>)
 * Daniel W&auml;ber (wabu) (fixes and patches)
 * &dagger; Denis Grelich (ex-maintainer)

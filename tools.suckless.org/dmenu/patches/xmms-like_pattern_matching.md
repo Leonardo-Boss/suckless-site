@@ -14,13 +14,12 @@ could match
 
 This feature is enabled by -xs command line flag, it can be useful to ease the matching on huge strings.
 
-The code comes from a vertical patch for dmenu_3.9 wrote by Fresch, the original patch has a lot of options, I just cutted out the ones I use on top of Meillo's dmenu vertical patch. (multiselect, newline and this one) 
-
-Cutter
-------
-- Julien Steinhauser <[julien.steinhauser@orange.fr](mailto:julien.steinhauser@orange.fr)>
-
 Download
 --------
 
-* [dmenu_xmms.diff](dmenu_xmms.diff)
+* [dmenu-tip-xmms.diff](dmenu-tip-xmms.diff) (for hg tip - **use at your own risk**)
+
+* [dmenu-4.1.1-xmms.diff](dmenu-4.1.1-xmms.diff) (latest dmenu release at time of writing)
+
+* [dmenu_xmms.diff](dmenu_xmms.diff) (for **dmenu_3.9** - the original patch submitted by Julien Steinhauser <[julien.steinhauser@orange.fr](mailto:julien.steinhauser@orange.fr)>, taken from [https://bbs.archlinux.org/viewtopic.php?pid=429090#p429090](fresch's patch))
+

@@ -10,14 +10,21 @@ could match
 
 	 http://tools.suckless.org/dmenu/patches/
 
- in someone's bookmarks file.
+It can be useful to ease the matching on huge strings.
 
-This feature is enabled by -xs command line flag, it can be useful to ease the matching on huge strings.
+The patch comes in two flavours:
 
-Download
---------
+* **tok** (tokenise), for dmenu tip and upcoming release. Enabled with **-t** command line flag.
 
-* [dmenu-tip-xmms.diff](dmenu-tip-xmms.diff) (for hg tip - **use at your own risk**)
+* **xmms**, for legacy dmenu. The original patch submitted by Julien Steinhauser. Enabled with the **-xs** command line flag.
+
+Download tok
+------------
+
+* [dmenu-tip-tok.diff](dmenu-tip-tok.diff) (for hg tip (checked against 358) - **use at your own risk**)
+
+Download xmms
+-------------
 
 * [dmenu-4.1.1-xmms.diff](dmenu-4.1.1-xmms.diff) (latest dmenu release at time of writing)
 

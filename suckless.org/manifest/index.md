@@ -4,7 +4,7 @@ SUCK LESS PHILOSOPHY
 Background
 ----------
 We are the home of quality software such as [dwm](http://dwm.suckless.org),
-[dmenu](http://tools.suckless.org), [libixp](http://libs.suckless.org/libixp),
+[dmenu](http://tools.suckless.org/dmenu), [libixp](http://libs.suckless.org/libixp),
 [wmii](http://wmii.suckless.org) and plenty of other [tools](http://tools.suckless.org), with
 a focus on simplicity, clarity and frugality. Our philosophy is
 about keeping things simple, minimal and usable. We believe this should become

@@ -1,6 +1,6 @@
-diff -r 8e45498dc735 dmenu.1
---- a/dmenu.1	Wed Aug 11 15:02:03 2010 +0100
-+++ b/dmenu.1	Thu Aug 12 00:24:17 2010 +0100
+diff -r ccb2b92086bf dmenu.1
+--- a/dmenu.1	Thu Aug 12 15:35:51 2010 +0100
++++ b/dmenu.1	Sat Aug 14 19:28:49 2010 +0100
 @@ -5,6 +5,7 @@
  .B dmenu
  .RB [ \-b ]
@@ -19,19 +19,19 @@ diff -r 8e45498dc735 dmenu.1
  .BI \-l " lines"
  dmenu lists items vertically, with the given number of lines.
  .TP
-diff -r 8e45498dc735 dmenu.c
---- a/dmenu.c	Wed Aug 11 15:02:03 2010 +0100
-+++ b/dmenu.c	Thu Aug 12 00:24:17 2010 +0100
-@@ -31,7 +31,8 @@
+diff -r ccb2b92086bf dmenu.c
+--- a/dmenu.c	Thu Aug 12 15:35:51 2010 +0100
++++ b/dmenu.c	Sat Aug 14 19:28:49 2010 +0100
+@@ -30,7 +30,8 @@
  static void grabkeyboard(void);
  static void insert(const char *s, ssize_t n);
  static void keypress(XKeyEvent *ev);
 -static void match(void);
 +static void matchstr(void);
 +static void matchtok(void);
- static void paste(Atom atom);
+ static size_t nextrune(int incr);
+ static void paste(void);
  static void readstdin(void);
- static void run(void);
 @@ -61,6 +62,7 @@
  static Window root, win;
  
@@ -40,7 +40,7 @@ diff -r 8e45498dc735 dmenu.c
  
  void
  appenditem(Item *item, Item **list, Item **last) {
-@@ -331,7 +333,7 @@
+@@ -321,7 +323,7 @@
  }
  
  void
@@ -49,10 +49,11 @@ diff -r 8e45498dc735 dmenu.c
  	size_t len;
  	Item *item, *itemend, *lexact, *lprefix, *lsubstr, *exactend, *prefixend, *substrend;
  
-@@ -371,6 +373,33 @@
+@@ -360,6 +362,33 @@
+ 	calcoffsets();
  }
  
- void
++void
 +matchtok(void) {
 +	char buf[sizeof text];
 +	char **tokv, *s;
@@ -79,11 +80,10 @@ diff -r 8e45498dc735 dmenu.c
 +	calcoffsets();
 +}
 +
-+void
- paste(Atom atom) {
- 	char *p, *q;
- 	int di;
-@@ -489,7 +518,7 @@
+ size_t
+ nextrune(int incr) {
+ 	size_t n, len;
+@@ -487,7 +516,7 @@
  
  void
  usage(void) {
@@ -92,7 +92,7 @@ diff -r 8e45498dc735 dmenu.c
  	      "             [-nf color] [-sb color] [-sf color] [-v]\n", stderr);
  	exit(EXIT_FAILURE);
  }
-@@ -509,6 +538,8 @@
+@@ -507,6 +536,8 @@
  			topbar = False;
  		else if(!strcmp(argv[i], "-i"))
  			fstrncmp = strncasecmp;

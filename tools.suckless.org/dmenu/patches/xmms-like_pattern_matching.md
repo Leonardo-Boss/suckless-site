@@ -21,7 +21,7 @@ The patch comes in two flavours:
 Download tok
 ------------
 
-* [dmenu-tip-tok.diff](dmenu-tip-tok.diff) (for hg tip (checked against 358) - **use at your own risk**)
+* [dmenu-tip-tok.diff](dmenu-tip-tok.diff) (for hg tip (checked against 359) - **use at your own risk**)
 
 Download xmms
 -------------

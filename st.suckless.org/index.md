@@ -32,11 +32,12 @@ Configuration
 -------------
 
 The configuration is done in `config.h` (like in dwm). You can define:
+
 * TERM
 * fonts
 * default colors
 * special key
-* line drawing characters. The VT100 name is used as an index in the `gfx` table. From terminfo(5):
+* line drawing characters. The VT100 name is used as an index in the `gfx` array. From terminfo(5):
 
 
 	Line Graphics

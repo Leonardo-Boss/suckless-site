@@ -4,7 +4,6 @@ GOALS
 Confirmed st features
 ----------------------
 * _Good_ xterm compliance (Arg)
-* 256 colour support (Arg)
 * Filters that change colour (Arg)
 * Server to save session in case you crash X (Arg)
 * Unlimited scrollback buffer (Arg)

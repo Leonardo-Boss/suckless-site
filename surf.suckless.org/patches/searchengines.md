@@ -26,9 +26,11 @@ Download
 
 * [surf-0.1-searchengines.diff](surf-0.1-searchengines.diff) (1964) (20090923)
 * [surf-0.3-searchengines.diff](surf-0.3-searchengines.diff) (2107) (20091204)
+* [surf-0.4-searchengines.diff](surf-0.4-searchengines.diff) (2107) (20091204)
 
 Author
 ------
 
 * Nils Schweinsberg (McManiaC) <[mail@n-sch.de](mailto:mail@n-sch.de)>
 * Samuel Baldwin (shardz) <[recursive.forest@gmail.com](mailto:recursive.forest@gmail.com)>
+* Alex Puterbaugh (zombine) <[puterbaugh0@gmail.com](mailto:puterbaugh0@gmail.com)>

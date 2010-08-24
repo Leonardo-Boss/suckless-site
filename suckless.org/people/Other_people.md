@@ -71,3 +71,7 @@ developers and contributors.  If you are missing, feel free to add yourself.
 * Uwe Zeisberger (code review, bug fixings)
 * Wilson Oliveira (contributed the [wmizer tool](http://clientes.netvisao.pt/petrucci/))
 * yiyus || Jesus Galan (dwm patches a go-go)
+
+Also have a look at the
+
+* [Debian maintainers](http://suckless.debian-maintainers.org/) of suckless.org software 

@@ -112,3 +112,8 @@ Development
 st is actively developed. You can [browse](http://hg.suckless.org/st) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with the following command:
 
 	hg clone http://hg.suckless.org/st
+
+Authors
+-------
+* Aurélien Aptel (active developer)
+* Devin J. Pohly (lots of patches :)

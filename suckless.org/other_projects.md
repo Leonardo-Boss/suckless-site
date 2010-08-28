@@ -9,9 +9,9 @@ There are several other projects which are inspired by the spirit of suckless.
 * [dietline](http://hg.youterm.com/radare/file/87579f8c5087/src/dietline.c) - minimal readline-like implementation
 * [dmc](http://lolcathost.org/cgi-bin/hg/dmc/) - dynamic mail client
 * [dvtm](http://www.brain-dump.org/projects/dvtm/) - screen-like dwm (curses)
-* [dzen](http://dzen.geekmode.org/)
+* [dzen](http://dzen.geekmode.org/) - display status/notification/menu windows
 * [ired](http://hg.youterm.com/ired/) - minimalistic hexadecimal editor inspired in radare
-* [kelp](http://kelp.sf.net)
+* [kelp](http://kelp.sf.net) - source code annotation framework
 * [micy](http://hg.youterm.com/micy/) - minimalistic mouse handler (depends on driver)
 * [mmsdk](http://hg.youterm.com/mmsdk/) - minimal maemo sdk (based on qemu-arm)
 * [passman](http://nibble.develsec.org/hg/toys/file/) - password manager + other nibble suckless toys

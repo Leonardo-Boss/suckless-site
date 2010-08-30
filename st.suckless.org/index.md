@@ -25,7 +25,7 @@ Current state
 See the "[goals](http://st.suckless.org/goals)" section for a list of features that will (or won't) be implemented.
 
 * 256 colors
-* most VT10/x/ escape sequences
+* most VT10x escape sequences
 * no multibyte encoding
 
 Configuration
@@ -89,9 +89,9 @@ Common Problems
 ### 1. *random program* complains that st is unknown/not recognised/unsupported/whatever!
 It means that st doesn't have any terminfo entry on your
 system. Chances are you did not `make install`.  If you just want to
-test it without installing it, you can manualy run `tic st.info` in st
+test it without installing it, you can manualy run `tic -s st.info` in st
 dir. It will compile st.info into a fully working local terminfo
-description in `~/.terminfo`. You can delete it when you're done.
+description. You can delete it when you're done.
 
 ### 2. Nothing works, and nothing is said about an unknown terminal!
 * Some programs just assume they're running in xterm i.e. they don't rely on terminfo. What you see is the current state of the "xterm compliance".
@@ -113,7 +113,8 @@ st is actively developed. You can [browse](http://hg.suckless.org/st) its source
 
 	hg clone http://hg.suckless.org/st
 
-Authors
--------
+Contributors
+------------
+* Anselm R. Garbe
 * Aurélien Aptel (active developer)
 * Devin J. Pohly (lots of patches :)

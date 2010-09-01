@@ -1,6 +1,6 @@
-diff -r ccb2b92086bf dmenu.1
---- a/dmenu.1	Thu Aug 12 15:35:51 2010 +0100
-+++ b/dmenu.1	Sat Aug 14 19:28:49 2010 +0100
+diff -r 23bd778df432 dmenu.1
+--- a/dmenu.1	Fri Aug 20 19:57:13 2010 +0100
++++ b/dmenu.1	Wed Sep 01 22:39:02 2010 +0100
 @@ -5,6 +5,7 @@
  .B dmenu
  .RB [ \-b ]
@@ -19,9 +19,9 @@ diff -r ccb2b92086bf dmenu.1
  .BI \-l " lines"
  dmenu lists items vertically, with the given number of lines.
  .TP
-diff -r ccb2b92086bf dmenu.c
---- a/dmenu.c	Thu Aug 12 15:35:51 2010 +0100
-+++ b/dmenu.c	Sat Aug 14 19:28:49 2010 +0100
+diff -r 23bd778df432 dmenu.c
+--- a/dmenu.c	Fri Aug 20 19:57:13 2010 +0100
++++ b/dmenu.c	Wed Sep 01 22:39:02 2010 +0100
 @@ -30,7 +30,8 @@
  static void grabkeyboard(void);
  static void insert(const char *s, ssize_t n);
@@ -40,7 +40,7 @@ diff -r ccb2b92086bf dmenu.c
  
  void
  appenditem(Item *item, Item **list, Item **last) {
-@@ -321,7 +323,7 @@
+@@ -322,7 +324,7 @@
  }
  
  void
@@ -49,7 +49,7 @@ diff -r ccb2b92086bf dmenu.c
  	size_t len;
  	Item *item, *itemend, *lexact, *lprefix, *lsubstr, *exactend, *prefixend, *substrend;
  
-@@ -360,6 +362,33 @@
+@@ -361,6 +363,33 @@
  	calcoffsets();
  }
  
@@ -83,7 +83,7 @@ diff -r ccb2b92086bf dmenu.c
  size_t
  nextrune(int incr) {
  	size_t n, len;
-@@ -487,7 +516,7 @@
+@@ -489,7 +518,7 @@
  
  void
  usage(void) {
@@ -92,7 +92,7 @@ diff -r ccb2b92086bf dmenu.c
  	      "             [-nf color] [-sb color] [-sf color] [-v]\n", stderr);
  	exit(EXIT_FAILURE);
  }
-@@ -507,6 +536,8 @@
+@@ -509,6 +538,8 @@
  			topbar = False;
  		else if(!strcmp(argv[i], "-i"))
  			fstrncmp = strncasecmp;

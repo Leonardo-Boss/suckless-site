@@ -1,14 +1,11 @@
-DMENU_PATH
-===============
+DMENU_PATH.C
+============
 
-This is a C rewrite for dmenu_path
+The mainline dmenu_path is a shell script, which means it can be slow. Faster
+implementations have been written in C.
 
 Download
 --------
 
-* [dmenu_path.c](dmenu_path.c)
-
-
-Author
-------
-* Elmo Todurov <todurov@gmail.com>
+* [376 LOC](dmenu_path.c) by Elmo Todurov - <todurov@gmail.com>
+* [100 LOC](dmenu_path-cls.c) by Connor Lane Smith - <cls@lubutu.com>

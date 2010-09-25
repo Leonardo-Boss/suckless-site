@@ -25,6 +25,7 @@ Authors
 * Updated by V4hn - `v4hn.de`
 * Updated by Jerome Andrieux - `<jerome at gcu dot info>`
 * Updated by Sidney Amani - `<seed at uffs dot org>`
+* Updated by William Light - `<wrl at illest dot net>`
 
 [1]: http://www.e-jc.de/dwm/4.6/current/dwm-4.6-pertag.diff
 [2]: http://www.e-jc.de/dwm/4.6/current/dwm-4.6-pertag_nmaster.diff

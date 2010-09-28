@@ -12,7 +12,7 @@ Present
 -------
 Following people are currently donating in one or another way to the suckless.org project:
 
-* Anselm R Garbe donates domains and backup servers.
+* Anselm R Garbe donates domains and servers.
 
 Past
 ----

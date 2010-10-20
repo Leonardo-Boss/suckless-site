@@ -46,8 +46,8 @@ replace the `if()` statement above with this code:
 
 	if(!(m->sel && arg && arg->v))
 		return;
-	if(m->sel->lt[m->sellt]->arrange && !m->sel->isfloating)
-		m->sel->isfloating = True;
+	if(m->lt[m->sellt]->arrange && !m->sel->isfloating)
+		togglefloating(NULL);
 
 ## Mantainer
 

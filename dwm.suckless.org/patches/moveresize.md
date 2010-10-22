@@ -2,12 +2,13 @@
 
 ## Description
 
-This addition to `config.h` allows you to move and resize dwm's clients using
-keyboard bindings. See [historical patches](historical) for older versions.
+This changes allows you to move and resize dwm's clients using keyboard
+bindings. See [historical patches](historical) for older versions.
 
 ## Usage
 
- 1. Put the following `moveresize()` function somewhere in your `config.h` file:
+ 1. Put the following `moveresize()` function somewhere in your `dwm.h`,
+    **after** the line which includes the config.h file:
 
 	static void
 	moveresize(const Arg *arg)

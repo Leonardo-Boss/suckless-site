@@ -7,7 +7,7 @@ bindings. See [historical patches](historical) for older versions.
 
 ## Usage
 
- 1. Put the following `moveresize()` function somewhere in your `dwm.h`,
+ 1. Put the following `moveresize()` function somewhere in your `dwm.c`,
     **after** the line which includes the config.h file:
 
 	static void

@@ -15,7 +15,7 @@ xterm is bloated and unmaintainable. Here's an excerpt from the README:
 
 Needless to say things have *not* changed, it's still ugly.
 It has over 65K lines of code and emulates obscure and obsolete terminals 
-you will [never need](http://www.science.uva.nl/museum/tek4014.html). 
+you will [never need](http://www.science.uva.nl/museum/tek4014.php). 
 The popular alternative, rxvt has *only* 32K lines of code. This is just
 too much for something as simple as a terminal emulator; it's yet another
 example of code complexity.

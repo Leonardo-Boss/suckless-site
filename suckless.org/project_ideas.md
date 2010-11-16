@@ -37,6 +37,15 @@ The listed ideas generally require good knowledge of C and experience with
 Unix-like operating systems. The difficulty ranges from medium to high.
 An academic background in computer science is desirable but not essential.
 
+### Create a CLI to Chrome's PDF viewer `/opt/google/chrome/libpdf.so`
+
+Though [Google's Chrome's PDF
+viewer](http://blog.chromium.org/2010/06/bringing-improved-pdf-support-to-google.html)
+is non-free, it is a fast and high quality [PDF
+viewer](http://en.wikipedia.org/wiki/Portable_Document_Format).
+
+***Requirements:*** Good [NPAPI](https://wiki.mozilla.org/NPAPI:Pepper) knowledge
+
 ### Port [stali](http://sta.li) to use bionic
 
 So far [static linux](http://sta.li) requires [uclibc](http://www.uclibc.org) for most userland

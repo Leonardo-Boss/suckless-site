@@ -3,6 +3,10 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
+2010-11-19
+----------
+[dmenu 4.2](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.2.tar.gz)
+
 2010-06-10
 ----------
 [wmii 3.9.2](http://wmii.suckless.org/) released: [download](http://dl.suckless.org/wmii/wmii+ixp-3.9.2.tbz)<sup><small>[[md5](http://dl.suckless.org/wmii/wmii+ixp-3.9.2.tbz.sum)]</small></sup>
@@ -20,10 +24,6 @@ Read more about our [philosophy](/common/) and join us on the [mailing list](com
 2010-05-31
 ----------
 [tabbed 0.3](http://tools.suckless.org/tabbed) released: [download](http://dl.suckless.org/tools/tabbed-0.3.tar.gz)
-
-2010-05-29
-----------
-[dmenu 4.1.1](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.1.1.tar.gz)
 
 2010-05-25
 ----------

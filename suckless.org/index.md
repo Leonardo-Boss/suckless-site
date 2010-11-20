@@ -3,9 +3,9 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
-2010-11-19
+2010-11-20
 ----------
-[dmenu 4.2](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.2.tar.gz)
+[dmenu 4.2.1](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.2.1.tar.gz)
 
 2010-06-10
 ----------

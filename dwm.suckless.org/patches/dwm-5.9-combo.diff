@@ -1,6 +1,6 @@
 diff -r c361034c5a1c dwm.c
 --- a/dwm.c	Sat Sep 11 19:00:18 2010 +0000
-+++ b/dwm.c	Wed Sep 22 17:44:34 2010 -0700
++++ b/dwm.c	Mon Nov 22 12:40:59 2010 -0800
 @@ -243,6 +243,11 @@
  static int xerrorstart(Display *dpy, XErrorEvent *ee);
  static void zoom(const Arg *arg);
@@ -62,3 +62,11 @@ diff -r c361034c5a1c dwm.c
  void
  applyrules(Client *c) {
  	const char *class, *instance;
+@@ -425,6 +465,7 @@
+ 	Monitor *m;
+ 	XButtonPressedEvent *ev = &e->xbutton;
+ 
++	combo = 0;
+ 	click = ClkRootWin;
+ 	/* focus monitor if necessary */
+ 	if((m = wintomon(ev->window)) && m != selmon) {

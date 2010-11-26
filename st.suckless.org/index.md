@@ -1,5 +1,7 @@
 st is a simple terminal implementation for X.
 
+<a href="http://www.flickr.com/photos/hendry/5208787780/" title="dwm &amp; st -- two essential suckless applications by Kai Hendry, on Flickr"><img src="http://farm5.static.flickr.com/4087/5208787780_43589e5cb2.jpg" width="500" height="313" alt="dwm &amp; st -- two essential suckless applications" /></a>
+
 What is wrong with xterm?
 -------------------------
 xterm is bloated and unmaintainable. Here's an excerpt from the README:

@@ -1,6 +1,6 @@
 diff -r c361034c5a1c dwm.c
 --- a/dwm.c	Sat Sep 11 19:00:18 2010 +0000
-+++ b/dwm.c	Mon Nov 22 12:40:59 2010 -0800
++++ b/dwm.c	Thu Nov 25 22:54:04 2010 -0800
 @@ -243,6 +243,11 @@
  static int xerrorstart(Display *dpy, XErrorEvent *ee);
  static void zoom(const Arg *arg);
@@ -13,7 +13,15 @@ diff -r c361034c5a1c dwm.c
  /* variables */
  static const char broken[] = "broken";
  static char stext[256];
-@@ -260,6 +265,7 @@
+@@ -253,6 +258,7 @@
+ static unsigned int numlockmask = 0;
+ static void (*handler[LASTEvent]) (XEvent *) = {
+ 	[ButtonPress] = buttonpress,
++	[ButtonRelease] = keyrelease,
+ 	[ClientMessage] = clientmessage,
+ 	[ConfigureRequest] = configurerequest,
+ 	[ConfigureNotify] = configurenotify,
+@@ -260,6 +266,7 @@
  	[EnterNotify] = enternotify,
  	[Expose] = expose,
  	[FocusIn] = focusin,
@@ -21,7 +29,7 @@ diff -r c361034c5a1c dwm.c
  	[KeyPress] = keypress,
  	[MappingNotify] = mappingnotify,
  	[MapRequest] = maprequest,
-@@ -282,6 +288,40 @@
+@@ -282,6 +289,40 @@
  struct NumTags { char limitexceeded[LENGTH(tags) > 31 ? -1 : 1]; };
  
  /* function implementations */
@@ -62,11 +70,3 @@ diff -r c361034c5a1c dwm.c
  void
  applyrules(Client *c) {
  	const char *class, *instance;
-@@ -425,6 +465,7 @@
- 	Monitor *m;
- 	XButtonPressedEvent *ev = &e->xbutton;
- 
-+	combo = 0;
- 	click = ClkRootWin;
- 	/* focus monitor if necessary */
- 	if((m = wintomon(ev->window)) && m != selmon) {

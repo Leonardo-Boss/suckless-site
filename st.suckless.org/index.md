@@ -28,7 +28,8 @@ See the "[goals](http://st.suckless.org/goals)" section for a list of features t
 
 * 256 colors
 * most VT10x escape sequences
-* no multibyte encoding
+* utf8
+* X11 copy/paste
 
 Configuration
 -------------
@@ -99,6 +100,15 @@ description. You can delete it when you're done.
 * Some programs just assume they're running in xterm i.e. they don't rely on terminfo. What you see is the current state of the "xterm compliance".
 * Some programs don't complain about the lacking st description and default to another terminal. In that case see 1.
 
+### 3. I get some weird glitches/visual bug on *random program*!
+Try lauching it with a different TERM: `$ TERM=xterm myapp`.  toe(1)
+will give you a list of available terminals, but you'll most likely
+switch between `xterm`, `st` or `st-256color`. The default value for TERM can be
+changed in config.h (TNAME). 
+
+If all else fails, send an email to a contributor/ML explaining your
+problem in detail.
+
 Links
 -----
 * Mailing List: `dev+subscribe@suckless.org` [(Archives)](http://lists.suckless.org/dev)
@@ -118,5 +128,5 @@ st is actively developed. You can [browse](http://hg.suckless.org/st) its source
 Contributors
 ------------
 * Anselm R. Garbe
-* Aurélien Aptel (active developer)
+* Aurélien Aptel <aurelien dot aptel at gmail dot com> (active developer)
 * Devin J. Pohly (lots of patches :)

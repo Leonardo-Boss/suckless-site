@@ -100,7 +100,7 @@ Our base repository now includes information about our patch:
 
 ###Commit the patch to the MQ repository
 
-Since we are happy about our first customisation, we want to commit that in our MQ repository. This way, should we corrupt anything in our working copy, we can always roll back to a know state.
+Since we are happy about our first customisation, we want to commit that in our MQ repository. This way, should we corrupt anything in our working copy, we can always roll back to a known state.
 
 The MQ repository is one level down from the base repo, so we use the special command //qcommit//:
 

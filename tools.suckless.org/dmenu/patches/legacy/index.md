@@ -1,4 +1,4 @@
 LEGACY PATCHES
 ==============
 
-Patches that have been integrated to dmenu and that do not apply anymore
+Patches that have since been merged into dmenu trunk in the latest release.

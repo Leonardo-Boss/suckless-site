@@ -23,4 +23,3 @@ Links
 -----
 
 * [Man page](http://man.suckless.org/tools/1/dmenu)
-* Rewrite of dmenu_path in C is under [Patches](http://tools.suckless.org/dmenu/patches). It is supposedly around 2-4 times faster on cache hits and around 10-20 times faster on cache misses.

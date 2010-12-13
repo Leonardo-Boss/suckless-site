@@ -1,4 +1,4 @@
-# FOCUSONCLICK
+# CURRENT_DESKTOP
 
 ## Description
 

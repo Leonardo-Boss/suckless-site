@@ -128,10 +128,9 @@ Dynamic linking also greately increases the complexity of the kernel VM and
 makes it much slower. And those hacks that try to prevent this make things more
 complicated and add many more points of total failure.
 
-How does stali compare to Google Chromium OS?
----------------------------------------------
-
 See also
+--------
 * <http://teddziuba.com/2008/09/a-web-os-are-you-dense.html>
+* <http://www.nth-dimension.org.uk/pub/BTL.pdf>
 
 

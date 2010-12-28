@@ -1,15 +1,14 @@
-diff -r 23bd778df432 dmenu.1
---- a/dmenu.1	Fri Aug 20 19:57:13 2010 +0100
-+++ b/dmenu.1	Wed Sep 01 22:39:02 2010 +0100
-@@ -5,6 +5,7 @@
+--- a/dmenu.1	2010-12-28 17:26:44.368974910 +0000
++++ b/dmenu.1	2010-12-28 17:28:41.902912662 +0000
+@@ -5,6 +5,7 @@ dmenu \- dynamic menu
  .B dmenu
  .RB [ \-b ]
  .RB [ \-i ]
 +.RB [ \-t ]
  .RB [ \-l
  .IR lines ]
- .RB [ \-p
-@@ -48,6 +49,9 @@
+ .RB [ \-m
+@@ -50,6 +51,9 @@ dmenu appears at the bottom of the scree
  .B \-i
  dmenu matches menu items case insensitively.
  .TP
@@ -19,10 +18,9 @@ diff -r 23bd778df432 dmenu.1
  .BI \-l " lines"
  dmenu lists items vertically, with the given number of lines.
  .TP
-diff -r 23bd778df432 dmenu.c
---- a/dmenu.c	Fri Aug 20 19:57:13 2010 +0100
-+++ b/dmenu.c	Wed Sep 01 22:39:02 2010 +0100
-@@ -30,7 +30,8 @@
+--- a/dmenu.c	2010-12-28 17:26:44.368974910 +0000
++++ b/dmenu.c	2010-12-28 17:53:30.548303785 +0000
+@@ -30,7 +30,8 @@ static char *fstrstr(const char *s, cons
  static void grabkeyboard(void);
  static void insert(const char *s, ssize_t n);
  static void keypress(XKeyEvent *ev);
@@ -32,15 +30,24 @@ diff -r 23bd778df432 dmenu.c
  static size_t nextrune(int incr);
  static void paste(void);
  static void readstdin(void);
-@@ -61,6 +62,7 @@
+@@ -62,6 +63,7 @@ static Item *prev, *curr, *next;
  static Window root, win;
  
  static int (*fstrncmp)(const char *, const char *, size_t) = strncmp;
 +static void (*match)(void) = matchstr;
  
- void
- appenditem(Item *item, Item **list, Item **last) {
-@@ -322,7 +324,7 @@
+ int
+ main(int argc, char *argv[]) {
+@@ -78,6 +80,8 @@ main(int argc, char *argv[]) {
+ 			topbar = False;
+ 		else if(!strcmp(argv[i], "-i"))
+ 			fstrncmp = strncasecmp;
++		else if(!strcmp(argv[i], "-t"))
++			match = matchtok;
+ 		else if(i == argc-1)
+ 			usage();
+ 		/* double flags */
+@@ -368,7 +372,7 @@ keypress(XKeyEvent *ev) {
  }
  
  void
@@ -49,7 +56,7 @@ diff -r 23bd778df432 dmenu.c
  	size_t len;
  	Item *item, *itemend, *lexact, *lprefix, *lsubstr, *exactend, *prefixend, *substrend;
  
-@@ -361,6 +363,33 @@
+@@ -407,6 +411,33 @@ match(void) {
  	calcoffsets();
  }
  
@@ -83,21 +90,12 @@ diff -r 23bd778df432 dmenu.c
  size_t
  nextrune(int incr) {
  	size_t n, len;
-@@ -489,7 +518,7 @@
+@@ -536,7 +567,7 @@ setup(void) {
  
  void
  usage(void) {
--	fputs("usage: dmenu [-b] [-i] [-l lines] [-p prompt] [-fn font] [-nb color]\n"
-+	fputs("usage: dmenu [-b] [-i] [-t] [-l lines] [-p prompt] [-fn font] [-nb color]\n"
- 	      "             [-nf color] [-sb color] [-sf color] [-v]\n", stderr);
+-	fputs("usage: dmenu [-b] [-i] [-l lines] [-m monitor] [-p prompt] [-fn font]\n"
++	fputs("usage: dmenu [-b] [-i] [-t] [-l lines] [-m monitor] [-p prompt] [-fn font]\n"
+ 	      "             [-nb color] [-nf color] [-sb color] [-sf color] [-v]\n", stderr);
  	exit(EXIT_FAILURE);
  }
-@@ -509,6 +538,8 @@
- 			topbar = False;
- 		else if(!strcmp(argv[i], "-i"))
- 			fstrncmp = strncasecmp;
-+		else if(!strcmp(argv[i], "-t"))
-+			match = matchtok;
- 		else if(i == argc-1)
- 			usage();
- 		/* double flags */

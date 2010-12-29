@@ -66,8 +66,6 @@ Archive of all mails posted to mailing lists is accessible via [http://lists.suc
 * [hackers mailing list archive][hackersarchive]
 * [wiki mailing list archive][wikiarchive]
 
-
-
 Old
 ---
 * [dwm mailing list archive][dwmarchive]

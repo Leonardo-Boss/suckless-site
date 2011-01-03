@@ -20,6 +20,7 @@ Following people have donated to the [wmii](/wmii) resp. [dwm](/dwm) project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
+* James Erickson donated <b> 10 USD </b>
 * Xavier Cartron donated <b> 35 EUR </b>
 * Jason Thigpen donated a slicehost server, which hosted the source code and the tarballs of our projects.
 * Donald Allen donated <b> 50 USD </b>

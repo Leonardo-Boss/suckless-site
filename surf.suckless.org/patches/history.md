@@ -48,6 +48,7 @@ Download
 * [surf-0.2-history.diff](surf-0.2-history.diff) (891) (20091019)
 * [surf-0.3-history.diff](surf-0.3-history.diff) (1475) (20091203)
 * [surf-tip-history.diff](surf-tip-history.diff) (2952) (20091215)
+* [surf-0.4.1-history.diff](surf-0.4.1-history.diff) (1346) (20101225)
 
 Authors
 -------

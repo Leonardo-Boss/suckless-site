@@ -1,12 +1,12 @@
-stali (sta[tic] li[nux]) is a new new linux distribution based on a hand
-selected collection of the best tools for each task and each tool being
-statically linked (including some X clients such as xterm, surf, dwm, dmenu,
-mplayer).
+stali (sta[tic] li[nux]) is a linux system based on a hand selected collection
+of the best tools for each task and each tool being statically linked
+(including some X clients such as xterm, surf, dwm, dmenu, mplayer).
 
 It also targets binary size reduction through the avoidance of glibc and other
-bloated GNU libraries where possible (early experiments show that statically 
-linked binaries are usually smaller than their dynamically linked glibc counterparts!!!).
-Note, this is pretty much contrary to what Ulrich Drepper reckons about static linking.
+bloated GNU libraries where possible (early experiments show that statically
+linked binaries are usually smaller than their dynamically linked glibc
+counterparts!!!). Note, this is pretty much contrary to what Ulrich Drepper
+reckons about static linking.
 
 Due to the side-benefit that statically linked binaries start faster, the
 distribution also targets performance gains.

@@ -12,22 +12,22 @@ This covers most console-based programs and programs from [plan9port][].
 Text Editors
 ------------
 * [acme][acme] - [Rob Pike][rob]'s framing text editor for Plan 9. Included in [plan9port][].
+* [ired](http://www.radare.org) (Minimalist hexadecimal editor and bindiffer for p9, w32 and *nix)
 * [nvi](http://www.bostic.com/vi/) - A small, multiple file vi-alike.
 * [sam](http://sam.cat-v.org/) - An editor by [Rob Pike][rob] with inspiration from ed.
 * [traditional vi](http://ex-vi.sourceforge.net/) - A fixed version of the original vi.
 * [vim](http://www.vim.org) (With the GUI, use `:set go+=c` to kill popup dialogs)
-* [ired](http://www.radare.org) (Minimalist hexadecimal editor and bindiffer for p9, w32 and *nix)
 * [wily](http://www.cs.yorku.ca/~oz/wily/) - An acme clone for POSIX.
 
 Audio Players
 -------------
+* [PyTone](http://www.luga.de/pytone/) - PyTone is a music jukebox written in Python with a curses based GUI. It provides features like crossfading and multiple players, special emphasis is put on ease of use.
 * [cmus](http://cmus.sourceforge.net/)
 * [cplay](http://cplay.sourceforge.net/)
 * [moc](http://moc.daper.net/)
 * [mpd](http://www.musicpd.org/) - A client/server based music player with console and graphical front-ends.
 * [mpg123](http://www.mpg123.de/) - A console mpg player which doesn't use auto*hell, or extra libraries.
 * [mpg321](http://mpg321.sourceforge.net)
-* [PyTone](http://www.luga.de/pytone/) - PyTone is a music jukebox written in Python with a curses based GUI. It provides features like crossfading and multiple players, special emphasis is put on ease of use.
 * [vorbis-tools](http://www.xiph.org/) (Ogg/FLAC) - Command-line tools to play Ogg and FLAC files.
 
 Media Players
@@ -37,14 +37,13 @@ Media Players
 
 Utilities
 ---------
-* [9menu](http://www.freshports.org/x11/9menu/) - A menu program based on the Blit-style menus so prevalent in Plan 9.
-	  A take on it is included with wmii.
+* [9menu](http://www.freshports.org/x11/9menu/) - A menu program based on the Blit-style menus so prevalent in Plan 9.  A take on it is included with wmii.
 * [dmenu](/programs/dmenu.html) - Obvious
 
 Programming languages
 ---------------------
-* [TinyPy](http://www.tinypy.org/) - Tiny Python (partial python)
 * [Lua](http://www.lua.org)
+* [TinyPy](http://www.tinypy.org/) - Tiny Python (partial python)
 
 Image Viewers
 -------------
@@ -57,23 +56,24 @@ Image Viewers
 
 IRC Clients
 -----------
+* [Irc](http://swtch.com/irc/)
 * [acme:SAC](http://caerwyn.com/acme/index.html)
 * [ii](/programs/ii.html) - A FIFO based IRC client which is part of the suckless.org project.
 * [ircc](http://www.r-36.net/ircc.tgz) - A no-frills, ncurses free, console-based IRC client. Broken link. Is it [netwalker-ircc?](http://www.freebsdsoftware.org/irc/netwalker-ircc.html)
-* [Irc](http://swtch.com/irc/)
 * [ircrc](http://plan9.bell-labs.com/sources/contrib/fgb/rc/ircrc) - An rc-based IRC client similar to ircc. Needs minor modification to run on UNIX.
 * [irssi](http://www.irssi.org/)
 * [sic](/programs/sic.html) - Another suckless.org IRC client. Similar to ircc.
 
 Mail Clients
 ------------
-* [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
 * [Mail][plan9port] - A mail client for [acme][acme]. Included with plan9port.
+* [Sylpheed](http://sylpheed.sraoss.jp/en/)
+* [dmc](http://hg.youterm.com/dmc/) - A minimalistic approach to a commandline mail client (WIP)
+* [fdm](http://fdm.sourceforge.net/) - MDA
+* [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
 * [mutt](http://www.mutt.org/)
 * [muttator](http://vimperator.org/) - A Thunderbird extension to make it keyboard friendly and mutt/Vim-like.
 * [nmh](http://www.nongnu.org/nmh/)
-* [dmc](http://hg.youterm.com/dmc/) - A minimalistic approach to a commandline mail client (WIP)
-* Sylpheed claws
 
 Instant Messaging Clients
 -------------------------
@@ -86,18 +86,22 @@ Instant Messaging Clients
 
 Web Browsers
 ------------
-* [Vimperator](http://vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like.
-	Developed in part by wmii's maintainer.
 * [Conkeror](http://www.conkeror.org/) - A Gecko based browser, imparting it Emacs style key bindings, appearances, and behaviors.
-* [Dillo](http://www.dillo.org/) (try the i18n version)
+* [Dillo](http://www.dillo.org/)
 * [ELinks](http://elinks.or.cz/)
-* [links2](http://links.twibright.com/)
 * [Lynx](http://lynx.isc.org/)
-* [w3m](http://w3m.sf.net/)
+* [Vimperator](http://vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like.  Developed in part by wmii's maintainer.
 * [edbrowse](http://edbrowse.sourceforge.net/)
+* [links2](http://links.twibright.com/)
+* [surf](http://surf.suckless.org/)
 * [uzbl](http://uzbl.org/)
+* [w3m](http://w3m.sf.net/)
 
-Web Servers (httpd)
+Feed aggregators
+----------------
+* [newsbeuter](http://www.newsbeuter.org/)
+
+Web Servers
 -----------
 * [Nostromo](http://www.nazgul.ch/dev_nostromo.html)
 
@@ -105,7 +109,10 @@ Pdf Viewers
 -----------
 * [Zathura](http://zathura.pwmt.org/)
 
+Accounting
+----------
+* [Ledger](https://github.com/jwiegley/ledger/wiki)
+
 [rob]: http://herpolhode.com/rob/
 [plan9port]: http://swtch.com/plan9port/
 [acme]: http://acme.cat-v.org
-

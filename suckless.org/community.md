@@ -56,7 +56,6 @@ following addresses to perform the described action.
 * `wiki+get-N@MAILHOST` - retrieve message number N
 * `wiki+help@MAILHOST` - receive detailed description of the mailing list commands
 
-
 Mailing lists web archive
 -------------------------
 

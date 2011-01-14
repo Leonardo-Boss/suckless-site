@@ -38,5 +38,3 @@ in the past:
 * Alexis Hildebrandt donated <b>100 EUR</b>
 * Al Wong (aka alvin) donated <b>100 USD</b>
 * Heiko Schlichting (aka rundstutzen) donated <b>100 EUR</b>
-
-

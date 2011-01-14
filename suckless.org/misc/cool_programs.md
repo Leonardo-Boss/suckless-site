@@ -5,7 +5,7 @@ Some programs work well with wmii or dwm. Some general rules of thumb
 for judging a programs as usable are:
 
 * The program will accept any window size
-* The program consists of a single window (There are no nested windows, such as in Xpdf)
+* The program consists of a single window (there are no nested windows, such as in Xpdf)
 
 This covers most console-based programs and programs from [plan9port][].
 
@@ -21,8 +21,9 @@ Text Editors
 
 Audio Players
 -------------
+* [C* Music Player](http://cmus.sourceforge.net/)
+* [DeaDBeeF](http://deadbeef.sourceforge.net/)
 * [PyTone](http://www.luga.de/pytone/) - PyTone is a music jukebox written in Python with a curses based GUI. It provides features like crossfading and multiple players, special emphasis is put on ease of use.
-* [cmus](http://cmus.sourceforge.net/)
 * [cplay](http://cplay.sourceforge.net/)
 * [moc](http://moc.daper.net/)
 * [mpd](http://www.musicpd.org/) - A client/server based music player with console and graphical front-ends.
@@ -72,7 +73,7 @@ Mail Clients
 * [fdm](http://fdm.sourceforge.net/) - MDA
 * [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
 * [mutt](http://www.mutt.org/)
-* [muttator](http://vimperator.org/) - A Thunderbird extension to make it keyboard friendly and mutt/Vim-like.
+* [muttator(]http://vimperator.org/muttator) - A Thunderbird extension to make it keyboard friendly and mutt/Vim-like.
 * [nmh](http://www.nongnu.org/nmh/)
 
 Instant Messaging Clients
@@ -86,13 +87,14 @@ Instant Messaging Clients
 
 Web Browsers
 ------------
+* [Abaco](http://lab-fgb.com/abaco/)
 * [Conkeror](http://www.conkeror.org/) - A Gecko based browser, imparting it Emacs style key bindings, appearances, and behaviors.
 * [Dillo](http://www.dillo.org/)
 * [ELinks](http://elinks.or.cz/)
+* [Links](http://links.twibright.com/)
 * [Lynx](http://lynx.isc.org/)
 * [Vimperator](http://vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like.  Developed in part by wmii's maintainer.
 * [edbrowse](http://edbrowse.sourceforge.net/)
-* [links2](http://links.twibright.com/)
 * [surf](http://surf.suckless.org/)
 * [uzbl](http://uzbl.org/)
 * [w3m](http://w3m.sf.net/)
@@ -105,9 +107,9 @@ Web Servers
 -----------
 * [Nostromo](http://www.nazgul.ch/dev_nostromo.html)
 
-Pdf Viewers
+PDF Viewers
 -----------
-* [Zathura](http://zathura.pwmt.org/)
+* [zathura](http://zathura.pwmt.org/)
 
 Accounting
 ----------

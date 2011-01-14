@@ -46,4 +46,3 @@ misused in our opinion.
 So the second rule of this style guide concludes:
 
 * We use C as our primary programming language because it enforces clear and simple software.
-

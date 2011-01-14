@@ -25,4 +25,3 @@ If you encounter freezes (no crash at all) of the program, you can debug as foll
 
 Send the output of that command to the mailing list along with the output of
 `program -v`! Thank you!
-

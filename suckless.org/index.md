@@ -3,6 +3,10 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
+2011-01-24
+----------
+[ii 1.5](http://tools.suckless.org/ii) released: [download](http://dl.suckless.org/tools/ii-1.5.tar.gz)
+
 2010-11-20
 ----------
 [dmenu 4.2.1](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.2.1.tar.gz)

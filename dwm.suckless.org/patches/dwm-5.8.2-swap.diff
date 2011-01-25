@@ -1,0 +1,53 @@
+diff -crB a/config.def.h b/config.def.h
+*** a/config.def.h	2010-06-04 13:39:15.000000000 +0300
+--- b/config.def.h	2011-01-25 14:55:53.667217737 +0200
+***************
+*** 53,58 ****
+--- 53,59 ----
+  	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
+  	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+  	{ MODKEY,                       XK_b,      togglebar,      {0} },
++ 	{ MODKEY,                       XK_s,      swapfocus,      {0} },
+  	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
+  	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
+  	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
+Only in b: config.h
+diff -crB a/dwm.c b/dwm.c
+*** a/dwm.c	2010-06-04 13:39:15.000000000 +0300
+--- b/dwm.c	2011-01-25 14:54:37.169197602 +0200
+***************
+*** 183,188 ****
+--- 183,189 ----
+  static void focusin(XEvent *e);
+  static void focusmon(const Arg *arg);
+  static void focusstack(const Arg *arg);
++ static void swapfocus();
+  static unsigned long getcolor(const char *colstr);
+  static Bool getrootptr(int *x, int *y);
+  static long getstate(Window w);
+***************
+*** 244,249 ****
+--- 245,251 ----
+  static void zoom(const Arg *arg);
+  
+  /* variables */
++ static Arg focusdirection={.i=1};
+  static const char broken[] = "broken";
+  static char stext[256];
+  static int screen;
+***************
+*** 886,891 ****
+--- 888,900 ----
+  	}
+  }
+  
++ void 
++ swapfocus(){
++ 	focusdirection.i*=-1;
++ 	focusstack(&focusdirection);
++ }
++ 
++ 
+  unsigned long
+  getcolor(const char *colstr) {
+  	Colormap cmap = DefaultColormap(dpy, screen);

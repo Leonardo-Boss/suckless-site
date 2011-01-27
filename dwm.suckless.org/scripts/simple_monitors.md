@@ -12,7 +12,7 @@ Battery
 Your battery may be called something different, so check /proc/acpi for its name. Also, change 89000 to whatever the capacity is for your battery.
 This returns the remaining battery power as a percentage.
 
-	$(echo $(cat /proc/acpi/battery/BAT0/state| grep remaining| awk '{print $3}') / 89000| hoc| cut -c3,4)%
+        $(echo $(awk '/rem/ { print $3/89000 }' /proc/acpi/battery/BAT0/state| hoc| cut -c3,4)%
 
 hoc comes from plan9port or 9base.
 
@@ -21,7 +21,7 @@ Ram used
 
 Return the amount of ram used, in megabytes.
 
-	$(free -m | grep cache\: | awk '{ print $3 }')M
+        $(free -m |awk '/cache:/ { print $3"M" })
 
 Temperature
 ---

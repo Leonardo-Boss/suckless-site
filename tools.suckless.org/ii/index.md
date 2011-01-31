@@ -30,7 +30,7 @@ It consists of <= 500 lines of code and is the big brother of [sic](/sic)
 
 Download
 --------
-* [ii 1.5](http://dl.suckless.org/tools/ii-1.5.tar.gz) (9.8kb) (20110124)
+* [ii 1.6](http://dl.suckless.org/tools/ii-1.5.tar.gz) (9.8kb) (20110131)
 
 Development
 -----------

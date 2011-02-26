@@ -12,7 +12,7 @@ Modify the colors definition in 'config.h' to suit your needs.  Make sure to def
 
 ## Usage ##
 
-Add code to your status script to output the raw characters '\x03' to switch to the 'urgent' color, or '\x04' to switch to the 4th defined color, etc.  Note that the color indices in the status text are +1 from the definition in 'config.h' (because '\0' is the string terminator).  To switch back to the normal text color use '\x01'.
+Add code to your status script to output the raw characters '\x03' to switch to the 'urgent' color, or '\x04' to switch to the 4th defined color, etc.  Note that the color indices in the status text are +1 from the definition in 'config.h' (because '\0' is the string terminator).  To switch back to the normal text color use '\x01'. To enter the raw character '\x01' in vim, press ctrl+v followed by x, 0, and 1 in that order. '\x01' gives the first character, which appears as a bold "A" on the screen to distinguish it from the regular character A.
 
 ### Example ###
 
@@ -57,4 +57,4 @@ An example status script snippet to take advantage of the colors:
 ## Download ##
 
  * [dwm-5.7.2-statuscolors.diff](dwm-5.7.2-statuscolors.diff)
-
+ * [dwm-5.8.2-statuscolors.diff](dwm-5.8.2-statuscolors.diff)

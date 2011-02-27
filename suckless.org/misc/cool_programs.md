@@ -31,6 +31,10 @@ Audio Players
 * [mpg321](http://mpg321.sourceforge.net)
 * [vorbis-tools](http://www.xiph.org/) (Ogg/FLAC) - Command-line tools to play Ogg and FLAC files.
 
+BitTorrent Clients
+------------------
+* [btpd](https://github.com/btpd/btpd)
+
 Media Players
 -------------
 * [mplayer](http://www.mplayerhq.hu/) (without GUI) - You know mplayer, but you may not know that it works well without the GUI.

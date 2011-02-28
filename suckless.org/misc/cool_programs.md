@@ -27,7 +27,7 @@ Audio Players
 
 BitTorrent Clients
 ------------------
-* [btpd](https://github.com/btpd/btpd)
+* [btpd](https://github.com/btpd/btpd) - The BitTorrent Protocol Daemon
 
 Feed aggregators
 ----------------

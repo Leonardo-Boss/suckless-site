@@ -12,7 +12,7 @@ are: Be as simple as possible and as useful as possible.
 * logging
 	* [socklog](http://smarden.org/socklog/)
 * documents
-	* [ted](http://www.nllg.nl/Ted/)
+	* [ted](http://www.nllgg.nl/ted/)
 * udev
 	* [mdev](http://lists.busybox.net/pipermail/busybox/2005-December/017183.html)
 * wm

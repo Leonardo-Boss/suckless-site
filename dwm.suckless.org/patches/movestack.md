@@ -34,4 +34,8 @@ movestack(-1) will swap the client with the current focus with the previous clie
 
  * Moritz Wilhelmy (fix to work with dwm 5.8) - `<`moritz plus suckless at wzff dot de`>`
 
+## Note
+
+This patch seems to be equivalent to the [push](push) patch.
+
 [1]: http://www.aplusbi.com/projects/dwm/dwm-5.6.1-movestack.diff

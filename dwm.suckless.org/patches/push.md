@@ -14,3 +14,7 @@
 ## Download
 
 * [push.c](push.c) (dwm 5.7.1) (20090927)
+
+## Note
+
+This patch seems to be equivalent to the [movestack](movestack) patch.

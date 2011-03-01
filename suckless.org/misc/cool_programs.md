@@ -9,15 +9,9 @@ for judging a programs as usable are:
 
 This covers most console-based programs and programs from [plan9port][].
 
-Text Editors
-------------
-* [acme][acme] - [Rob Pike][rob]'s framing text editor for Plan 9. Included in [plan9port][].
-* [ired](http://www.radare.org) (Minimalist hexadecimal editor and bindiffer for p9, w32 and *nix)
-* [nvi](http://www.bostic.com/vi/) - A small, multiple file vi-alike.
-* [sam](http://sam.cat-v.org/) - An editor by [Rob Pike][rob] with inspiration from ed.
-* [traditional vi](http://ex-vi.sourceforge.net/) - A fixed version of the original vi.
-* [vim](http://www.vim.org) (With the GUI, use `:set go+=c` to kill popup dialogs)
-* [wily](http://www.cs.yorku.ca/~oz/wily/) - An acme clone for POSIX.
+Accounting
+----------
+* [Ledger](https://github.com/jwiegley/ledger/wiki)
 
 Audio Players
 -------------
@@ -31,29 +25,13 @@ Audio Players
 * [mpg321](http://mpg321.sourceforge.net)
 * [vorbis-tools](http://www.xiph.org/) (Ogg/FLAC) - Command-line tools to play Ogg and FLAC files.
 
-Media Players
--------------
-* [mplayer](http://www.mplayerhq.hu/) (without GUI) - You know mplayer, but you may not know that it works well without the GUI.
-* smplayer
+BitTorrent Clients
+------------------
+* [btpd](https://github.com/btpd/btpd) - The BitTorrent Protocol Daemon
 
-Utilities
----------
-* [9menu](http://www.freshports.org/x11/9menu/) - A menu program based on the Blit-style menus so prevalent in Plan 9.  A take on it is included with wmii.
-* [dmenu](/programs/dmenu.html) - Obvious
-
-Programming languages
----------------------
-* [Lua](http://www.lua.org)
-* [TinyPy](http://www.tinypy.org/) - Tiny Python (partial python)
-
-Image Viewers
--------------
-* [feh](https://derf.homelinux.org/projects/feh/)
-* [jpg/gif/bmp/png][plan9port] - Simple programs from Plan 9 to display images in no-frills windows. Included with plan9port.
-* [page][plan9port] - Plan 9's image/document viewer program. Included with plan9port.
-* [qiv](http://www.klografx.net/qiv/)
-* [xli](http://pantransit.reptiles.org/prog/) - broken link? Apparently, there's a copy here: http://ftp.x.org/contrib/applications/ -- at your own risk
-* [xzgv](http://sourceforge.net/projects/xzgv)
+Feed aggregators
+----------------
+* [newsbeuter](http://www.newsbeuter.org/)
 
 IRC Clients
 -----------
@@ -64,6 +42,24 @@ IRC Clients
 * [ircrc](http://plan9.bell-labs.com/sources/contrib/fgb/rc/ircrc) - An rc-based IRC client similar to ircc. Needs minor modification to run on UNIX.
 * [irssi](http://www.irssi.org/)
 * [sic](/programs/sic.html) - Another suckless.org IRC client. Similar to ircc.
+
+Image Viewers
+-------------
+* [feh](https://derf.homelinux.org/projects/feh/)
+* [jpg/gif/bmp/png][plan9port] - Simple programs from Plan 9 to display images in no-frills windows. Included with plan9port.
+* [page][plan9port] - Plan 9's image/document viewer program. Included with plan9port.
+* [qiv](http://www.klografx.net/qiv/)
+* [xli](http://pantransit.reptiles.org/prog/) - broken link? Apparently, there's a copy here: http://ftp.x.org/contrib/applications/ -- at your own risk
+* [xzgv](http://sourceforge.net/projects/xzgv)
+
+Instant Messaging Clients
+-------------------------
+* [bitlbee](http://www.bitlbee.org/) - A program to translate IM protocols to IRC. You can now IM from your IRC client, and you don't even need to install anything.
+* [centericq](http://konst.org.ua/centericq/)
+* [centerim](http://www.centerim.org/) - A centericq fork.
+* [climm](http://www.climm.org/)
+* [mcabber](http://www.lilotux.net/~mikael/mcabber/) - A console jabber client.
+* [ysm](http://ysmv7.sourceforge.net/)
 
 Mail Clients
 ------------
@@ -76,14 +72,34 @@ Mail Clients
 * [muttator](http://vimperator.org/muttator) - A Thunderbird extension to make it keyboard friendly and mutt/Vim-like.
 * [nmh](http://www.nongnu.org/nmh/)
 
-Instant Messaging Clients
--------------------------
-* [bitlbee](http://www.bitlbee.org/) - A program to translate IM protocols to IRC. You can now IM from your IRC client, and you don't even need to install anything.
-* [centericq](http://konst.org.ua/centericq/)
-* [centerim](http://www.centerim.org/) - A centericq fork.
-* [climm](http://www.climm.org/)
-* [mcabber](http://www.lilotux.net/~mikael/mcabber/) - A console jabber client.
-* [ysm](http://ysmv7.sourceforge.net/)
+Media Players
+-------------
+* [mplayer](http://www.mplayerhq.hu/) (without GUI) - You know mplayer, but you may not know that it works well without the GUI.
+* smplayer
+
+PDF Viewers
+-----------
+* [zathura](http://zathura.pwmt.org/)
+
+Programming languages
+---------------------
+* [Lua](http://www.lua.org)
+* [TinyPy](http://www.tinypy.org/) - Tiny Python (partial python)
+
+Text Editors
+------------
+* [acme][acme] - [Rob Pike][rob]'s framing text editor for Plan 9. Included in [plan9port][].
+* [ired](http://www.radare.org) (Minimalist hexadecimal editor and bindiffer for p9, w32 and *nix)
+* [nvi](http://www.bostic.com/vi/) - A small, multiple file vi-alike.
+* [sam](http://sam.cat-v.org/) - An editor by [Rob Pike][rob] with inspiration from ed.
+* [traditional vi](http://ex-vi.sourceforge.net/) - A fixed version of the original vi.
+* [vim](http://www.vim.org) (With the GUI, use `:set go+=c` to kill popup dialogs)
+* [wily](http://www.cs.yorku.ca/~oz/wily/) - An acme clone for POSIX.
+
+Utilities
+---------
+* [9menu](http://www.freshports.org/x11/9menu/) - A menu program based on the Blit-style menus so prevalent in Plan 9.  A take on it is included with wmii.
+* [dmenu](/programs/dmenu.html) - Obvious
 
 Web Browsers
 ------------
@@ -99,21 +115,9 @@ Web Browsers
 * [uzbl](http://uzbl.org/)
 * [w3m](http://w3m.sf.net/)
 
-Feed aggregators
-----------------
-* [newsbeuter](http://www.newsbeuter.org/)
-
 Web Servers
 -----------
 * [Nostromo](http://www.nazgul.ch/dev_nostromo.html)
-
-PDF Viewers
------------
-* [zathura](http://zathura.pwmt.org/)
-
-Accounting
-----------
-* [Ledger](https://github.com/jwiegley/ledger/wiki)
 
 [rob]: http://herpolhode.com/rob/
 [plan9port]: http://swtch.com/plan9port/

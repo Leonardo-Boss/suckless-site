@@ -2,7 +2,6 @@ OTHER PROJECTS
 ==============
 There are several other projects which are inspired by the spirit of suckless.
 
-* [acr](http://hg.youterm.com/acr/) - autoconf replacement
 * [alt](http://hg.youterm.com/alt/) - abstract language tree
 * [bgs](http://s01.de/~tox/index.cgi/proj_bgs) - background setter
 * [bug](http://vicerveza.homeunix.net/~viric/soft/bug/) - commandline todo-tracking system

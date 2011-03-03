@@ -37,7 +37,7 @@ change this line of thinking."
 Cryptography
 ------------
 * [libtomcrypt](http://libtom.org/?page=features&newsitems=5&whatfile=crypt) - the cryptography library from the libtom project
-* [polarssl](http://polarssl.org/) - lightweight SSL/TLS implementation using libmpi (unfortunately GPL)
+* [polarssl](http://polarssl.org/) - lightweight SSL/TLS implementation (unfortunately GPL)
 
 Mathematics
 -----------

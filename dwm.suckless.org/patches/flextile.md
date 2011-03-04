@@ -58,7 +58,7 @@ The original `tile` layout is only available by setting the above parameters, bu
 ## Download ##
 
  * [flextile-5.8.1.diff][1] (14k) (20100531, joten (at) freenet (dot) de)
- * [flextile-5.8.2.diff][2] (13k, +169 SLOC) (20100611, joten (at) freenet (dot) de)
+ * [flextile-5.8.2.diff][2] (13k, +164 SLOC) (20100611, joten (at) freenet (dot) de) updated by Pascal Wittmann `<mail at pascal-wittmann dot de>`
 
 
 [1]: http://dwm.suckless.org/patches/flextile-5.8.1.diff

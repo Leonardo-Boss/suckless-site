@@ -115,9 +115,6 @@ Web Browsers
 * [uzbl](http://uzbl.org/)
 * [w3m](http://w3m.sf.net/)
 
-Web Servers
------------
-* [Nostromo](http://www.nazgul.ch/dev_nostromo.html)
 
 [rob]: http://herpolhode.com/rob/
 [plan9port]: http://swtch.com/plan9port/

@@ -32,7 +32,8 @@ All of these are dual-licensed under WTFPL and also public domain. According
 to the website, "[…] the GPG and OpenSSL folk assume that completely abhorrent
 and messy source code is ok, so long as it works. The LibTom Projects aims to
 change this line of thinking."
-* [libtommath, libtomcrypt and libtomfastmath](http://libtom.org/)
+
+* [libtommath, libtomcrypt and tomsfastmath](http://libtom.org/)
 
 Cryptography
 ------------
@@ -49,3 +50,4 @@ Miscellaneous
 -------------
 * [code snippets database](http://c.snippets.org/browser.php) - contains various code snippets, most of which are public domain
 * [pjsip](http://www.pjsip.org/) - open source SIP stack (GPL)
+* [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modeled after libevent but much smaller (dual licensed under 2-clause BSD and GPL)

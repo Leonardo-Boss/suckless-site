@@ -85,6 +85,10 @@ Official channel of suckless.org projects:
 
 * [#suckless](irc://irc.oftc.net/#suckless)
 
+Unofficial wmii channel (please don't ask wmii questions on #suckless):
+
+* [#wmii](irc://irc.oftc.net/#wmii)
+
 Other popular channels:
 
 * [#acme](irc://irc.oftc.net/#acme)

@@ -12,7 +12,6 @@ Links
 * Latest devel tip: <code>hg clone [http://hg.suckless.org/wmii](http://hg.suckless.org/wmii)</code>
 * Bugs: [Google Code issue tracker](http://code.google.com/p/wmii/issues)
 * Mailing List: `dev+subscribe@suckless.org` ([Archives](http://lists.suckless.org/dev/)) ([Old Archives](http://lists.suckless.org/wmii/)) (see [community](http://suckless.org/common/community/) for details)
-* IRC channel: [`#suckless`](irc://irc.oftc.net/wmii) at `irc.oftc.net`
 
 Development
 -----------

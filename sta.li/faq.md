@@ -81,6 +81,9 @@ of glibc when possible). This leads to an increased likelihood
 of lesser vulnerabilities, simply because lesser code contains fewer bugs from
 a statistical point of view.
 
+See also:
+* [On the Effectiveness of Address-Space Randomization](http://benpfaff.org/papers/asrandom.pdf)
+
 Aren't statically linked executables consuming more memory?
 --------------------------------------------------------
 We believe that due to the small size of the base system the opposite will be
@@ -132,5 +135,5 @@ See also
 --------
 * <http://teddziuba.com/2008/09/a-web-os-are-you-dense.html>
 * <http://www.nth-dimension.org.uk/pub/BTL.pdf>
-
+* [On the Effectiveness of Address-Space Randomization](http://benpfaff.org/papers/asrandom.pdf)
 

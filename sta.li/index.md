@@ -82,6 +82,7 @@ Some related links
 * [ldd arbitrary code execution](http://www.catonmat.net/blog/ldd-arbitrary-code-execution/) - Nice exploit
 * [static linking](http://blog.garbe.us/2008/02/08/01_Static_linking/) - My old blog entry
 * [blog post about stali](http://elevenislouder.blogspot.com/2010/02/stali.html)
+* [On the Effectiveness of Address-Space Randomization](http://benpfaff.org/papers/asrandom.pdf)
 
 Credit
 ------

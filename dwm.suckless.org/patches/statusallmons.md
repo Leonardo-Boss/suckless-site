@@ -11,4 +11,4 @@ Download
 
 Author
 ------
-* Pascal Wittmann - <mail at pascal-wittmann dot de>
+* Pascal Wittmann - <mail@pascal-wittmann.de>

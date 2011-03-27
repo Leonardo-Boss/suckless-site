@@ -53,9 +53,17 @@ Download
 * [dwm 5.8.2](http://dl.suckless.org/dwm/dwm-5.8.2.tar.gz) (20kb) (20100604)
 * See also [dmenu](http://tools.suckless.org/dmenu)
 
+Support
+-------
+See the [faq](http://dwm.suckless.org/faq] for the frequent problems that
+arise. The next step is to look at the sourcecode and the config.h for obvious
+names, which could be related to the problem that arose. If that does not help
+to fix the problem, then there is the #suckless IRC channel and the
+mailinglist.
+
 Development
 -----------
-dwm is actively developed in parallel to wmii. You can [browse](http://hg.suckless.org/dwm) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with the following command:
+You can [browse](http://hg.suckless.org/dwm) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with the following command:
 
 	hg clone http://hg.suckless.org/dwm
 

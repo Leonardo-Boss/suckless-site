@@ -1,9 +1,17 @@
 DONATIONS
 =========
-Continuing to produce and host suckless software requires the contribution of time, code and -especially for the hosting part- money. If you are able to make a contribution, no matter the size, it will go towards ensuring that we are able to continue to write, support and host the high quality software that makes all of our lives easier.
+Continuing to produce and host suckless software requires the contribution of
+time, code and -especially for the hosting part- money. If you are able to make
+a contribution, no matter the size, it will go towards ensuring that we are
+able to continue to write, support and host the high quality software that
+makes all of our lives easier.
 
-You can donate through [PayPal](https://paypal.com/) using Anselm's gmail address:
-garbeam [at] gmail [dot] com.
+If your donation is *not* wmii related, you can donate through
+[PayPal](https://paypal.com/) using Anselm's gmail address: garbeam [at] gmail
+[dot] com.
+
+If you want to donate particularly to the wmii project, you can donate through
+[PayPal](https://paypal.com/) using Kris' gmail address: maglione [dot] k [at] gmail [dot] com .
 
 We'd like to thank all people who have donated or are donating in one way or another
 to a suckless.org related project. Your generosity of time and/or money is appreciated by the entire suckless community.

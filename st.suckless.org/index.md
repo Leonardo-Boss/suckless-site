@@ -116,8 +116,9 @@ Links
 
 Download
 --------
-* [MIT/X Consortium license](http://hg.suckless.org/st/raw-file/tip/LICENSE)
+* [st 0.1](http://hg.suckless.org/st/archive/0.1.tar.gz) (2011-04-02)
 * tip tarball: [http://hg.suckless.org/st/archive/tip.tar.gz](http://hg.suckless.org/st/archive/tip.tar.gz)
+* [MIT/X Consortium license](http://hg.suckless.org/st/raw-file/tip/LICENSE)
 
 Development
 -----------

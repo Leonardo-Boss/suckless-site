@@ -3,6 +3,10 @@ software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
+2011-04-02
+----------
+[st 0.1](http://st.suckless.org) released: [download](http://hg.suckless.org/st/archive/0.1.tar.gz)
+
 2011-01-31
 ----------
 [ii 1.6](http://tools.suckless.org/ii) released (regression fix): [download](http://dl.suckless.org/tools/ii-1.6.tar.gz)

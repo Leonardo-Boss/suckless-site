@@ -55,7 +55,7 @@ Download
 
 Support
 -------
-See the [faq](http://dwm.suckless.org/faq] for the frequent problems that
+See the [faq](http://dwm.suckless.org/faq) for the frequent problems that
 arise. The next step is to look at the sourcecode and the config.h for obvious
 names, which could be related to the problem that arose. If that does not help
 to fix the problem, then there is the #suckless IRC channel and the

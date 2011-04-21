@@ -33,8 +33,22 @@ dwm has two further layout modes, **floating** `><>` `[Alt]+[f]` and
 maximized and focused. This is useful in web kiosk environments and watching
 flash videos. Further layout modes can be included through [patches](http://dwm.suckless.org/patches/).
 
-Floating layout will be familiar to Windows users. Use `[Alt]+[mouse button]` to
-move or resize a window.
+Floating layout will be familiar to Windows users. Use `[Alt]+[right mouse
+button]` to resize the floating window and `[Alt]+[left mouse button]` to move
+it around.
+
+There are several ways to get specific windows into being managed as a
+floating window, despite the tiled layout being activated. First there is
+`[Alt]+[Shift]+[space]`, which will toggle floating mode on the active window.
+Then there is the possible to simply resize the window using `[Alt]+[right
+mouse button]`. The last method is to `[Alt]+[middle mouse button]` onto the
+window, to toggle it in being floating. These floating windows then can be
+used to force certain window sizes, when some application requires this for
+aesthetics or simply to being usable.
+
+If you want to set some type of window to be always floating, look at the
+[config.def.h](http://hg.suckless.org/dwm/file/tip/config.def.h) and the
+`rules` array, where the last but one element defines this behaviour.
 
 To quit dwm cleanly:
 

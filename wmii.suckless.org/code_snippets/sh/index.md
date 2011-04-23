@@ -51,3 +51,39 @@ enters resize mode, Escape exits it.
                 wi_eventloop
             ) & 
 
+Add a name to views 0..9
+------------------------
+
+Add this code to the beginning of your wmiirc:
+
+    VIEW_NAME='[0] [1] [2]Chat [3]Dev [4]Web [5] [6] [7] [8] [9]'
+    getviewname(){ 
+        i=$(($i+1))
+        echo $VIEW_NAME | awk "{print $`echo $i`}"; 
+    }
+
+and replace this:
+    
+    for i in 0 1 2 3 4 5 6 7 8 9; do
+                cat <<!
+    Key $MODKEY-$i           # Move to the numbered view
+        wmiir xwrite /ctl view "$i"
+    Key $MODKEY-Shift-$i     # Retag selected client with the numbered tag
+        wmiir xwrite /client/sel/tags "$i"
+    !
+    done
+
+by:
+
+    for i in 0 1 2 3 4 5 6 7 8 9; do
+                cat <<!
+    Key $MODKEY-$i           # Move to the numbered view
+        wmiir xwrite /ctl view "`getviewname $i`"
+    Key $MODKEY-Shift-$i     # Retag selected client with the numbered tag
+        wmiir xwrite /client/sel/tags "`getviewname $i`"
+    !
+    done
+
+
+
+

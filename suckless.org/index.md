@@ -9,6 +9,10 @@ News
 on **May 14 at 5pm in Europa II** at the [LinuxTag](http://www.linuxtag.org)
 conference in Berlin.
 
+2011-05-18
+----------
+[dmenu 4.3](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.3.tar.gz)
+
 2011-04-02
 ----------
 [st 0.1.1](http://st.suckless.org) released: [download](http://hg.suckless.org/st/archive/0.1.1.tar.gz)
@@ -20,10 +24,6 @@ conference in Berlin.
 2011-01-24
 ----------
 [ii 1.5](http://tools.suckless.org/ii) released: [download](http://dl.suckless.org/tools/ii-1.5.tar.gz)
-
-2010-11-20
-----------
-[dmenu 4.2.1](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.2.1.tar.gz)
 
 2010-06-10
 ----------

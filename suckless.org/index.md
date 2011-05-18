@@ -11,7 +11,7 @@ conference in Berlin.
 
 2011-05-18
 ----------
-[dmenu 4.3](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.3.tar.gz)
+[dmenu 4.3.1](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.3.1.tar.gz)
 
 2011-04-02
 ----------

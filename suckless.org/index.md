@@ -5,13 +5,15 @@ Read more about our [philosophy](/common/) and join us on the [mailing list](com
 
 News
 ====
-[Anselm](http://garbe.us) will give a talk about [The 'suckless.org' universe](http://www.linuxtag.org/2011/de/program/themenschwerpunkte/anwender-einsteiger/vortragsdetails.html?talkid=491)
-on **May 14 at 5pm in Europa II** at the [LinuxTag](http://www.linuxtag.org)
-conference in Berlin.
 
 2011-05-18
 ----------
 [dmenu 4.3.1](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.3.1.tar.gz)
+
+2011-05-14
+----------
+Anselm gave a talk about **The 'suckless.org' universe** at the [LinuxTag 2011](http://www.linuxtag.org)
+conference in Berlin.
 
 2011-04-02
 ----------

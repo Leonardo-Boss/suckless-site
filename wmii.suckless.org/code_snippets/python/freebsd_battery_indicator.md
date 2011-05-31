@@ -13,7 +13,8 @@ This is a battery indicator written specifically for FreeBSD. FreeBSD has a simp
      @defmonitor
      def bsdbattery(self):
      	 a = commands.getoutput('acpiconf -i' + bat).splitlines()
-	 b = dict([[i for i in j.split('\t') if i is not ''] for j in a])
+	 b = dict([[i for i in j.split('\t') if i is not ''] \
+	   for j in a])
     	 return wmii.cache['normcolors'], 'Status: ' + b['State:'] +\
          	'Capacity: ' + b['Remaining capacity:'] + ' ' +\
         	'Time remaining: ' + b['Remaining time:']

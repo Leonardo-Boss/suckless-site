@@ -6,6 +6,10 @@ Read more about our [philosophy](/common/) and join us on the [mailing list](com
 News
 ====
 
+2011-06-04
+----------
+[lsw 0.2](http://tools.suckless.org/lsw) released: [download](http://dl.suckless.org/tools/lsw-0.2.tar.gz)
+
 2011-05-18
 ----------
 [dmenu 4.3.1](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.3.1.tar.gz)

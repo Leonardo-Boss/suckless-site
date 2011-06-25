@@ -48,6 +48,5 @@ Mathematics
 
 Miscellaneous
 -------------
-* [code snippets database](http://c.snippets.org/browser.php) - contains various code snippets, most of which are public domain
 * [pjsip](http://www.pjsip.org/) - open source SIP stack (GPL)
 * [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modeled after libevent but much smaller (dual licensed under 2-clause BSD and GPL)

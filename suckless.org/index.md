@@ -6,6 +6,10 @@ Read more about our [philosophy](/common/) and join us on the [mailing list](com
 News
 ====
 
+2011-07-10
+----------
+[dwm 5.9](http://dwm.suckless.org) released: [download](http://dl.suckless.org/dwm/dwm-5.9.tar.gz)
+
 2011-06-04
 ----------
 [lsw 0.2](http://tools.suckless.org/lsw) released: [download](http://dl.suckless.org/tools/lsw-0.2.tar.gz)
@@ -41,8 +45,6 @@ conference in Berlin.
 
 2010-06-04
 ----------
-[dwm 5.8.2](http://dwm.suckless.org) released: [download](http://dl.suckless.org/dwm/dwm-5.8.2.tar.gz)
-
 [9base-6](http://tools.suckless.org/9base) released: [download](http://dl.suckless.org/tools/9base-6.tar.gz)
 
 2010-05-31

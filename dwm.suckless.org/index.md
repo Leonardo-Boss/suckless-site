@@ -61,6 +61,9 @@ names, which could be related to the problem that arose. If that does not help
 to fix the problem, then there is the #suckless IRC channel and the
 mailinglist.
 
+If it is your first time using dwm, start with reading the
+[tutorial](http://dwm.suckless.org/tutorial).
+
 Development
 -----------
 You can [browse](http://hg.suckless.org/dwm) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with the following command:

@@ -20,6 +20,8 @@ There are several other projects which are inspired by the spirit of suckless.
 * [smu](http://s01.de/~tox/index.cgi/proj_smu) - simple markup
 * [spp](http://hg.youterm.com/spp/) - simple pre processor
 * [srw](http://www.deepcube.net/code/srw) - simple read wrapper
+* [ssg](http://nibble.develsec.org/projects/ssg.html) - slide generation system with markdown-like syntax
 * [sup](http://hg.youterm.com/sup/) - minimalistic sudo replacement
+* [sw](http://nibble.develsec.org/projects/sw.html) - minimalistic web framework
 * [xicon](http://hg.youterm.com/xicon/) - small icon-based dzen-like utility
 * [xpw](http://hg.youterm.com/xpw/) - X piped widgets - X widget library based on pipes

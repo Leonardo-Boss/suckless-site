@@ -51,6 +51,7 @@ Image Viewers
 * [qiv](http://www.klografx.net/qiv/)
 * [xli](http://pantransit.reptiles.org/prog/) - broken link? Apparently, there's a copy here: http://ftp.x.org/contrib/applications/ -- at your own risk
 * [xzgv](http://sourceforge.net/projects/xzgv)
+* [sxiv](https://github.com/muennich/sxiv) - Simple (or small or suckless) X Image Viewer. Depends on xlib and imlib2.
 
 Instant Messaging Clients
 -------------------------

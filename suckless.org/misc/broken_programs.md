@@ -39,7 +39,7 @@ programs](/common/cool_programs.html) for saner alternatives):
 * gthumb
 * mplayer with GUI (assumes special window management model. It works without the GUI)
 * xine (same as xmms)
-* aterm (doesn't like being resized by the WM), See [aterm-ml-post]
+* aterm (doesn't like being resized by the WM), See [aterm-ml-post][aterm-ml-post]  
 	Alternatives: (u)xterm, urxvt, [st][st], [uuterm][uuterm]
 
 SEE ALSO

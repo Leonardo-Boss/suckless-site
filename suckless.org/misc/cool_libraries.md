@@ -16,9 +16,6 @@ libc implementations
 Configuration file parsers
 --------------------------
 * [iniparser](http://ndevilla.free.fr/iniparser/) - relatively small ini parsing library, contains a dictionary data structure and accessory functions (MIT licensed)
-* [ini.c](http://c.snippets.org/snip_lister.php?fname=ini.c) - code snippet on snippets.org (public domain)
-* [cfg.c](http://c.snippets.org/snip_lister.php?fname=cfg.c) - code snippet for parsing a simple key-value config file (public domain)
-* [initvars.c](http://c.snippets.org/snip_lister.php?fname=initvars.c) - yet another snippet (public domain)
 
 Compression
 -----------

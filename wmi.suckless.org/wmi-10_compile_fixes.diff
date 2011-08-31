@@ -4,7 +4,7 @@ diff -r 6b4e7138042b src/action.cpp
 @@ -2,6 +2,11 @@
  // See ../LICENSE.txt for license details.
  //
- // $Id: action.cpp 734 2004-09-27 18:15:45Z garbeam $
+ // $Id$
 +
 +extern "C" {
 +#include <stdlib.h> // free
@@ -64,7 +64,7 @@ diff -r 6b4e7138042b src/logger.cpp
 @@ -2,6 +2,10 @@
  // See ../LICENSE.txt for license details.
  //
- // $Id: logger.cpp 734 2004-09-27 18:15:45Z garbeam $
+ // $Id$
 +
 +extern "C" {
 +#include <stdlib.h> // exit

@@ -23,6 +23,8 @@ Download tok
 
 * [dmenu-4.2.1-tok.diff](dmenu-4.2.1-tok.diff)
 
+* [dmenu-4.4-tok.diff](dmenu-4.4-tok.diff)
+
 Download xmms (legacy)
 -------------
 

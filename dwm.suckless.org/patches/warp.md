@@ -21,4 +21,4 @@ Author
 Contributor
 -----------
 
-* Moritz Wilhelmy (n0nsense) `<`moritz plus dwm at wzff dot de`>`
+* Moritz Wilhelmy (n0nsense) `<`moritz plus dwm at wzff dot de`>` - did the port to newer dwm

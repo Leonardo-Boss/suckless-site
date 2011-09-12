@@ -34,7 +34,7 @@ Authors
 [5]: http://v4hn.de/patches/dwm-5.1-pertag.diff
 [6]: historical/dwm-5.2-pertag.diff
 [7]: historical/dwm-5.4-pertag.diff
-[8]: dwm-pertag-5.6.1.diff
-[9]: dwm-5.7.2-pertag.diff
+[8]: historical/dwm-pertag-5.6.1.diff
+[9]: historical/dwm-5.7.2-pertag.diff
 [10]: dwm-5.8.2-pertag.diff
 [11]: dwm-5.8.2-pertag_without_bar.diff

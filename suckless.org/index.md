@@ -6,9 +6,9 @@ Read more about our [philosophy](/common/) and join us on the [mailing list](com
 News
 ====
 
-2011-07-19
+2011-09-19
 ----------
-[dmenu 4.4](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.4.tar.gz)
+[dmenu 4.4.1](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.4.1.tar.gz)
 
 2011-07-10
 ----------

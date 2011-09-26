@@ -10,21 +10,6 @@ one can point surf to another URI by setting its XProperties.
 > until I forced myself to use surf for a week. I am now much less distracted
 > and more focused when browsing the web. dwm + surf <3
 
-What Works
-----------
-* [Bitbucket](http://bitbucket.org)
-* [Facebook](http://facebook.com)
-* [Github](http://github.com)
-* [Google Calendar](http://calendar.google.com)
-* [Google Code](http://code.google.com)
-* [Google Docs](http://docs.google.com)
-* [Google Mail](http://mail.google.com)
-* [Google Maps](http://maps.google.com)
-* [Google Reader](http://reader.google.com)
-* [Google Translate](http://translate.google.com)
-* [YouTube](http://youtube.com)
-* phbb v2 forums
-
 Links
 -----
 * [Man page](http://man.suckless.org/surf/1/surf)

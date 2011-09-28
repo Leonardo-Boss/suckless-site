@@ -4,4 +4,4 @@ Rapidshare
 ==========
 Downloads from Rapidshare and similar javascript-heavy download sites don't 
 tend to work. Building downloads into surf directly rather than calling an
-external tool should fix this.
+external tool fixes this - see the [downloading](patches/downloading) patch.

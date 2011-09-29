@@ -6,6 +6,10 @@ Read more about our [philosophy](/common/) and join us on the [mailing list](com
 News
 ====
 
+2011-09-29
+----------
+suckless.org bas been moved to a new host and will undergo some changes during the following weeks. In particular this wiki structure will be improved and the dwm development will get back to speed soon.
+
 2011-09-19
 ----------
 [dmenu 4.4.1](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.4.1.tar.gz)

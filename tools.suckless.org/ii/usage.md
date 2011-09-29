@@ -12,7 +12,7 @@ There is also a blog entry which describes the whole configuration:
 
 Popup Chat Windows
 ------------------
-You can also try [pcw](http://www.deepcube.net/code/pcw) which will (by default) open a new terminal for each channel you join.  On startup, and after receiving SIGUSR1, pcw will open a terminal for every channel you are already in.  By default it depends on [srw](http://www.deepcube.net/code/srw) as a line editing wrapper.  Just run 'pcw ~/irc' (or whichever directory you have ii using) then start up ii.  Note that closing a terminal does not exit the channel.  If that channel receives a new message the terminal will open again.  To leave the channel you must first '/l' and then close the window.  (the combination of pcw + ii + bitlbee let me stop using pidgin :-D)
+You can also try [pcw](http://bitbucket.org/emg/pcw) which will (by default) open a new terminal for each channel you join.  On startup, and after receiving SIGUSR1, pcw will open a terminal for every channel you are already in.  By default it depends on [srw](http://bitbucket.org/emg/srw) as a line editing wrapper.  Just run 'pcw ~/irc' (or whichever directory you have ii using) then start up ii.  Note that closing a terminal does not exit the channel.  If that channel receives a new message the terminal will open again.  To leave the channel you must first '/l' and then close the window.  (the combination of pcw + ii + bitlbee let me stop using pidgin :-D)
 
 Web frontend
 ------------

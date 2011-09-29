@@ -64,18 +64,6 @@ Typical end-user system
 Note: End-user systems have no /lib, /include, et cetera. They just have
 what is really necessary and nothing else.
 
-Development
------------
-You can [browse](http://hg.suckless.org/stali-toolchain) the stali toolchain
-source code repository or get a copy using
-[Mercurial](http://www.selenic.com/mercurial/) with the following command:
-
-	hg clone http://hg.suckless.org/stali-toolchain
-
-(More to follow)
-
-Size: ~250MB
-
 Some related links
 ------------------
 * [$6M libc](http://codingrelic.geekhold.com/2008/11/six-million-dollar-libc.html) - Bionic is a nice library, though only usable for sane stuff
@@ -83,7 +71,4 @@ Some related links
 * [static linking](http://blog.garbe.us/2008/02/08/01_Static_linking/) - My old blog entry
 * [blog post about stali](http://elevenislouder.blogspot.com/2010/02/stali.html)
 * [On the Effectiveness of Address-Space Randomization](http://benpfaff.org/papers/asrandom.pdf)
-
-Credit
-------
-* Thanks to yoshi for providing a mirror service.
+* [musl libc](http://www.etalabs.net/musl/)

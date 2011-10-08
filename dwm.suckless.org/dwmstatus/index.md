@@ -20,3 +20,5 @@ Helper functions
 If you have simple C functions for gathering system information, please
 add them here as file or as code example.
 
+* [Support for the new battery ACPI code in Linux](new-acpi-battery.c)
+

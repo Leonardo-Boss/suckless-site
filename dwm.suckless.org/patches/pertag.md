@@ -8,6 +8,7 @@ mwfact, barpos and nmaster (if installed) per tag.
 
 Download
 --------
+* [dwm-r1578-pertag.diff][12] (nmaster included in mainline)
 * [dwm-5.8.2-pertag\_without\_bar.diff][11]
 * [dwm-5.8.2-pertag.diff][10]
 * [dwm-5.7.2-pertag.diff][9]
@@ -26,6 +27,7 @@ Authors
 * Updated by Jerome Andrieux - `<jerome at gcu dot info>`
 * Updated by Sidney Amani - `<seed at uffs dot org>`
 * Updated by William Light - `<wrl at illest dot net>`
+* Updated by termac - `<terror.macbeth.I at gmail dot com>`
 
 [1]: http://www.e-jc.de/dwm/4.6/current/dwm-4.6-pertag.diff
 [2]: http://www.e-jc.de/dwm/4.6/current/dwm-4.6-pertag_nmaster.diff
@@ -38,3 +40,4 @@ Authors
 [9]: historical/dwm-5.7.2-pertag.diff
 [10]: dwm-5.8.2-pertag.diff
 [11]: dwm-5.8.2-pertag_without_bar.diff
+[12]: dwm-r1578-pertag.diff

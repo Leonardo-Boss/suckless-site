@@ -8,21 +8,21 @@ readfile(char *base, char *file)
 
 	path = smprintf("%s/%s", base, file);
 	fd = fopen(path, "r");
-	if (fd == NULL) {
-		perror("fopen");
-		exit(1);
-	}
+	if (fd == NULL)
+		return NULL;
 	free(path);
 
-	if (fgets(line, sizeof(line)-1, fd) == NULL) {
-		perror("fgets");
-		exit(1);
-	}
+	if (fgets(line, sizeof(line)-1, fd) == NULL)
+		return NULL;
 	fclose(fd);
 
 	return smprintf("%s", line);
 }
 
+/*
+ * Linux seems to change the filenames after suspend/hibernate
+ * according to a random scheme. So just check for both possibilities.
+ */
 char *
 getbattery(char *base)
 {
@@ -40,10 +40,20 @@ getbattery(char *base)
 	free(co);
 
 	co = readfile(base, "charge_full_design");
+	if (co == NULL) {
+		co = readfile(base, "energy_full_design");
+		if (co == NULL)
+			return smprintf("");
+	}
 	sscanf(co, "%d", &descap);
 	free(co);
 
 	co = readfile(base, "charge_now");
+	if (co == NULL) {
+		co = readfile(base, "energy_now");
+		if (co == NULL)
+			return smprintf("");
+	}
 	sscanf(co, "%d", &remcap);
 	free(co);
 

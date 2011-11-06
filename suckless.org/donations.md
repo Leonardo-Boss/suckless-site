@@ -28,6 +28,7 @@ Following people have donated to the [wmii](/wmii) resp. [dwm](/dwm) project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
+* Hiltjo Posthuma donated <b> 20 EUR </b>
 * Pascal Wittmann donated <b> 50 EUR </b>
 * Joshua Lawrence donated <b> 30 USD </b>
 * James Erickson donated <b> 10 USD </b>

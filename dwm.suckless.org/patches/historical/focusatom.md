@@ -31,6 +31,8 @@ And then call dmenu to choose a window by title, xprop to set it:
 ## Notes
 
 * May not be extremely portable
+* You can now use this with mainline lsw by using the -l parameter
+* This patch is now historical since dwm supports _NET_ACTIVE_WINDOW
 
 ## Download
 

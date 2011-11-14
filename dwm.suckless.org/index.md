@@ -77,6 +77,7 @@ Miscellaneous
 
 Related discussion
 ------------------
+* <http://http://fsk141.com/dwm-colors>
 * <http://www.linuxjournal.com/content/going-fast-dwm>
 * <http://www.linuxgoodies.com/review_dwm.html>
 * <http://dobbscodetalk.com/index.php?option=com_myblog&show=dwm.html&Itemid=29>

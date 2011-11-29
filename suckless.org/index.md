@@ -38,10 +38,6 @@ conference in Berlin.
 ----------
 [ii 1.5](http://tools.suckless.org/ii) released: [download](http://dl.suckless.org/tools/ii-1.5.tar.gz)
 
-2010-06-10
-----------
-[wmii 3.9.2](http://wmii.suckless.org/) released: [download](http://dl.suckless.org/wmii/wmii+ixp-3.9.2.tbz)<sup><small>[[md5](http://dl.suckless.org/wmii/wmii+ixp-3.9.2.tbz.sum)]</small></sup>
-
 2010-06-08
 ----------
 [surf 0.4.1](http://surf.suckless.org) released: [download](http://dl.suckless.org/surf/surf-0.4.1.tar.gz)

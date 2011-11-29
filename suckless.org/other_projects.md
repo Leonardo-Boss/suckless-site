@@ -24,4 +24,6 @@ There are several other projects which are inspired by the spirit of suckless.
 * [sup](http://hg.youterm.com/sup/) - minimalistic sudo replacement
 * [sw](http://nibble.develsec.org/projects/sw.html) - minimalistic web framework
 * [xicon](http://hg.youterm.com/xicon/) - small icon-based dzen-like utility
+* [xlsh](https://github.com/Nadrin/xlsh) - a simple login shell with readline functionality and PAM integration
 * [xpw](http://hg.youterm.com/xpw/) - X piped widgets - X widget library based on pipes
+

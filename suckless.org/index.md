@@ -1,5 +1,4 @@
-Home of [wmii](http://wmii.suckless.org), [dwm](http://dwm.suckless.org), [libixp](http://libs.suckless.org/libixp), and other quality
-software with a focus on simplicity, clarity, and frugality.
+Home of [dwm](http://dwm.suckless.org), [dmenu](http://tools.suckless.org/dmenu) and other quality software with a focus on simplicity, clarity, and frugality.
 
 Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
 
@@ -59,10 +58,6 @@ conference in Berlin.
 ----------
 [sic 1.1](http://tools.suckless.org/sic) released: [download](http://dl.suckless.org/tools/sic-1.1.tar.gz)
 
-2010-05-20
-----------
-[wmii 3.9](http://wmii.suckless.org/) released: [download](http://dl.suckless.org/wmii/wmii+ixp-3.9-4.tbz)
-
 2010-03-28
 ----------
 We learned today that the previous wmii maintainer, who wasn't actively
@@ -109,7 +104,3 @@ There was a small community meeting in Berlin! Thanks to all attenders.
 [slock 0.9](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-0.9.tar.gz)
 
 [sselp 0.2](http://tools.suckless.org/sselp) released: [download](http://dl.suckless.org/tools/sselp-0.2.tar.gz)
-
-See also
---------
-[Eyjafjallajoekull](http://eyjafjallajoekull.com/)

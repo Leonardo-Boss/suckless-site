@@ -5,8 +5,7 @@ Description
 -----------
 
 Builds in download support, rather than invoking an external tool such as
-wget. This ensures that complicated javascript using download sites such
-as rapidshare and sendspace work correctly.
+wget.
 
 Download
 --------

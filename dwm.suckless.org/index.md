@@ -77,7 +77,8 @@ Miscellaneous
 
 Related discussion
 ------------------
-* <http://http://fsk141.com/dwm-colors>
+* <http://www.gambaru.de/blog/2011/12/10/elitare-fenstermanager-sind-vielleicht-doch-einfacher-zu-bedienen-als-gedacht/>
+* <http://fsk141.com/dwm-colors>
 * <http://www.linuxjournal.com/content/going-fast-dwm>
 * <http://www.linuxgoodies.com/review_dwm.html>
 * <http://dobbscodetalk.com/index.php?option=com_myblog&show=dwm.html&Itemid=29>

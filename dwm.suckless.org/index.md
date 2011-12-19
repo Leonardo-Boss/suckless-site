@@ -50,7 +50,7 @@ Links
 Download
 --------
 * [MIT/X Consortium license](http://hg.suckless.org/dwm/raw-file/tip/LICENSE)
-* [dwm 6.0](http://dl.suckless.org/dwm/dwm-6.0.tar.gz) (20kb) (20111209)
+* [dwm 6.0](http://dl.suckless.org/dwm/dwm-6.0.tar.gz) (20kb) (20111219)
 * See also [dmenu](http://tools.suckless.org/dmenu)
 
 Support

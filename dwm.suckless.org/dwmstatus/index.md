@@ -14,6 +14,14 @@ The Barebone
 
 This is a barebone project you can use for changing it to your needs.
 
+User submitted versions
+-----------------------
+
+Please add your own version of dwmstatus here. 
+
+* [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent and date/time
+
+
 Helper functions
 ----------------
 

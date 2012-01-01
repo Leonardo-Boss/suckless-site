@@ -33,8 +33,8 @@ getbattery(char *base)
 	remcap = -1;
 
 	co = readfile(base, "present");
-	if (co[0] != '1') {
-		free(co);
+	if (co == NULL || co[0] != '1') {
+		if (co != NULL) free(co);
 		return smprintf("not present");
 	}
 	free(co);

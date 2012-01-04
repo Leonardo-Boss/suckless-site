@@ -17,9 +17,9 @@ For example, 28pt Sans:
 Download
 --------
 
-* [dmenu-4.4.1-xft.diff](dmenu 4.4.1)
+* [dmenu 4.4.1](dmenu-4.4.1-xft.diff)
 
 History
 ------
 
-Created from Dan Brown's [http://lists.suckless.org/dev/1011/6474.html](4.2.1 patch).
+Created from Dan Brown's [4.2.1 patch](http://lists.suckless.org/dev/1011/6474.html).

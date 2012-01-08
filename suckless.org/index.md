@@ -5,6 +5,10 @@ Read more about our [philosophy](/common/) and join us on the [mailing list](com
 News
 ====
 
+2012-01-08
+----------
+[dmenu 4.5](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.5.tar.gz)
+
 2011-12-19
 ----------
 [dwm 6.0](http://dwm.suckless.org) released: [download](http://dl.suckless.org/dwm/dwm-6.0.tar.gz)
@@ -12,10 +16,6 @@ News
 2011-09-29
 ----------
 suckless.org bas been moved to a new host and will undergo some changes during the following weeks. In particular this wiki structure will be improved and the dwm development will get back to speed soon.
-
-2011-09-19
-----------
-[dmenu 4.4.1](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.4.1.tar.gz)
 
 2011-06-04
 ----------

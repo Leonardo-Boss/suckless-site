@@ -17,6 +17,7 @@ For example, 28pt Sans:
 Download
 --------
 
+* [dmenu 4.5](dmenu-4.5-xft.diff)
 * [dmenu 4.4.1](dmenu-4.4.1-xft.diff)
 
 History

@@ -10,7 +10,7 @@ show examples on how to extend it to your needs.
 The Barebone
 ------------
 
-* [dwmstatus-1.0.tar.gz](dwmstatus-1.0.tar.gz)
+* [dwmstatus-1.1.tar.gz](dwmstatus-1.1.tar.gz)
 
 This is a barebone project you can use for changing it to your needs.
 

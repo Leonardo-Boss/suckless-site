@@ -117,6 +117,15 @@ Web Browsers
 * [uzbl](http://uzbl.org/)
 * [w3m](http://w3m.sf.net/)
 
+X11
+---
+* [xdotool](http://www.semicomplete.com/projects/xdotool/) – A tool for
+  scripting X11 actions.
+* [xzoom](http://git.r-36.net/xzoom/) – A simple zoom application.
+* [xclip](http://sourceforge.net/projects/xclip/) – A tool for controlling the
+  X11 clipboard.
+* [keynav](http://www.semicomplete.com/projects/keynav/) – A new way for
+  keyboard selection.
 
 [rob]: http://herpolhode.com/rob/
 [plan9port]: http://swtch.com/plan9port/

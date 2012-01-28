@@ -126,6 +126,7 @@ X11
   X11 clipboard.
 * [keynav](http://www.semicomplete.com/projects/keynav/) – A new way for
   keyboard selection.
+* [ffcast](https://github.com/lolilolicon/FFcast2) – Simple screencasting.
 
 [rob]: http://herpolhode.com/rob/
 [plan9port]: http://swtch.com/plan9port/

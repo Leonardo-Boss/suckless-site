@@ -1,6 +1,6 @@
 Home of [dwm](http://dwm.suckless.org), [dmenu](http://tools.suckless.org/dmenu) and other quality software with a focus on simplicity, clarity, and frugality.
 
-Read more about our [philosophy](/common/) and join us on the [mailing list](common/community).
+Read more about our [philosophy](/manifest) and join us on the [mailing list](/community).
 
 News
 ====

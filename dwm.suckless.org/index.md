@@ -77,6 +77,7 @@ Miscellaneous
 
 Related discussion
 ------------------
+* [dwm blog post in German](http://musicmatze.wordpress.com/2012/02/04/mein-dwm-dynamic-window-manager/)
 * [dwm blog post in Persian](http://efazati.blog.ir/post/DWM-%D8%B1%D8%A7%D9%87%DA%A9%D8%A7%D8%B1-%D9%85%D9%86%D8%A7%D8%B3%D8%A8%DB%8C-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D9%BE%D9%86%D8%AC%D8%B1%D9%87-%D9%87%D8%A7-%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3)
 * <http://www.gambaru.de/blog/2011/12/10/elitare-fenstermanager-sind-vielleicht-doch-einfacher-zu-bedienen-als-gedacht/>
 * <http://fsk141.com/dwm-colors>

@@ -1,3 +1,4 @@
 masterSite=default.suckless.org
 siteTitle='st'
 siteSubTitle='a simple X terminal'
+siteBarNavTitle='Home'

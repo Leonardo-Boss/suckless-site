@@ -30,14 +30,15 @@ See the "[goals](http://st.suckless.org/goals)" section for a list of features t
 * most VT10x escape sequences
 * utf8
 * X11 copy/paste
+* antialiased fonts (experimental, see xft branch in the repo)
 
 Configuration
 -------------
 
 The configuration is done in `config.h` (like in dwm). You can define:
 
-* TERM
-* fonts
+* TERM environnement variable
+* fonts (you can use `xfontsel(1)` to generate a valid XLFD)
 * default colors
 * special key
 * line drawing characters. The VT100 name is used as an index in the `gfx` array. From terminfo(5):
@@ -116,7 +117,7 @@ Links
 
 Download
 --------
-* [st 0.1.1](http://hg.suckless.org/st/archive/0.1.1.tar.gz) (2011-04-02)
+* [st 0.2](http://hg.suckless.org/st/archive/0.2.tar.gz) (2012-02-08)
 * tip tarball: [http://hg.suckless.org/st/archive/tip.tar.gz](http://hg.suckless.org/st/archive/tip.tar.gz)
 * [MIT/X Consortium license](http://hg.suckless.org/st/raw-file/tip/LICENSE)
 

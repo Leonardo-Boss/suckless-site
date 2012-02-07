@@ -5,6 +5,10 @@ Read more about our [philosophy](/manifest) and join us on the [mailing list](/c
 News
 ====
 
+2012-02-08
+----------
+[st 0.2](http://st.suckles.org) released: [download](http://hg.suckless.org/st/archive/0.2.tar.gz)
+
 2012-01-08
 ----------
 [dmenu 4.5](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.5.tar.gz)

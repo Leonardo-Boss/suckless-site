@@ -117,7 +117,7 @@ Links
 
 Download
 --------
-* [st 0.2](http://hg.suckless.org/st/archive/0.2.tar.gz) (2012-02-08)
+* [st 0.2](http://dl.suckless.org/st/st-0.2.tar.gz) (2012-02-08)
 * tip tarball: [http://hg.suckless.org/st/archive/tip.tar.gz](http://hg.suckless.org/st/archive/tip.tar.gz)
 * [MIT/X Consortium license](http://hg.suckless.org/st/raw-file/tip/LICENSE)
 

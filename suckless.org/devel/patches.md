@@ -13,7 +13,7 @@ For tarballs:
     cd modified-program-directory/..
     diff -up original-program-directory modified-program-directory > program-X.Y-yourpatchname.diff
 
-where `X.Y` is a wmii tag name or version number.
+where `X.Y` is a dwm tag name or version number.
 
 patch program
 -------------

@@ -24,7 +24,7 @@ Following people are currently donating in one or another way to the suckless.or
 
 Past
 ----
-Following people have donated to the [wmii](/wmii) resp. [dwm](/dwm) project
+Following people have donated to the suckless.org project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 

@@ -1,7 +1,7 @@
 COOL PROGRAMS
 =============
 
-Some programs work well with wmii or dwm. Some general rules of thumb
+Some programs work well with dwm. Some general rules of thumb
 for judging a programs as usable are:
 
 * The program will accept any window size
@@ -111,7 +111,7 @@ Web Browsers
 * [ELinks](http://elinks.or.cz/)
 * [Links](http://links.twibright.com/)
 * [Lynx](http://lynx.isc.org/)
-* [Vimperator](http://vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like.  Developed in part by wmii's maintainer.
+* [Vimperator](http://vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like.  
 * [edbrowse](http://edbrowse.sourceforge.net/)
 * [surf](http://surf.suckless.org/)
 * [uzbl](http://uzbl.org/)

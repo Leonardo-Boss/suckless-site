@@ -3,7 +3,7 @@ Cool Daemons
 
 This page is dedicated to Daemons that are related to the UNIX philosophy (but
 don't really belong into the cool programs section which is about programs
-which work well with dwm/wmii).
+which work well with dwm).
 
 Web Servers
 -----------

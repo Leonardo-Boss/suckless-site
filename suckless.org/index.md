@@ -30,17 +30,9 @@ suckless.org bas been moved to a new host and will undergo some changes during t
 Anselm gave a talk about **The 'suckless.org' universe** at the [LinuxTag 2011](http://www.linuxtag.org)
 conference in Berlin.
 
-2011-04-02
-----------
-[st 0.1.1](http://st.suckless.org) released: [download](http://hg.suckless.org/st/archive/0.1.1.tar.gz)
-
 2011-01-31
 ----------
 [ii 1.6](http://tools.suckless.org/ii) released (regression fix): [download](http://dl.suckless.org/tools/ii-1.6.tar.gz)
-
-2011-01-24
-----------
-[ii 1.5](http://tools.suckless.org/ii) released: [download](http://dl.suckless.org/tools/ii-1.5.tar.gz)
 
 2010-06-08
 ----------
@@ -90,10 +82,6 @@ There was a small community meeting in Berlin! Thanks to all attenders.
 2009-10-17
 ----------
 [surf 0.2](http://surf.suckless.org/) released: [download](http://dl.suckless.org/surf/surf-0.2.tar.gz)
-
-2008-08-09
-----------
-[ii 1.4](http://tools.suckless.org/ii) released: [download](http://dl.suckless.org/tools/ii-1.4.tar.gz)
 
 2008-08-02
 ----------

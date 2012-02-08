@@ -1,18 +1,18 @@
-COMMUNITY
+Community
 =========
 
 Mailing lists
 -------------
 
-* `dev@suckless.org` - for dwm/wmii/st/... users, development discussion, bug reports, patches, and general discussion
+* `dev@suckless.org` - for dwm/dmenu/st/... users, development discussion, bug reports, patches, and general discussion
 * `hackers@suckless.org` - commit messages and diffs from all suckless projects are posted here, and can be replied to
 * `wiki@suckless.org` - for discussion about wiki, also automatic wiki commit messages are posted here.
 
 ### Best practice
 
-Please mention `dwm` or `wmii` in the subject when beginning a new discussion
+Please mention `dwm` or `dmenu` in the subject when beginning a new discussion
 on the `dev@suckless.org` mailing list, if your email is stricly `dwm` or
-`wmii` related only.
+`dmenu` related only.
 
 ### Mailing list commands
 
@@ -84,10 +84,6 @@ The channels are in the [OFTC](http://www.oftc.net) IRC network: [irc.oftc.net](
 Official channel of suckless.org projects:
 
 * [#suckless](irc://irc.oftc.net/#suckless)
-
-Unofficial wmii channel (please don't ask wmii questions on #suckless):
-
-* [#wmii](irc://irc.oftc.net/#wmii)
 
 Other popular channels:
 

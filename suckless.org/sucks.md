@@ -52,8 +52,7 @@ Workarounds
 If you still need some program which expects a floating WM, use it in
 floating mode.
 
-The following programs are broken (see [cool
-programs](/common/cool_programs.html) for saner alternatives):
+The following programs are broken (see [rocking stuff](/rocks) for saner alternatives):
 
 * XMMS (assumes fixed size, doesn't set transient\_for hint properly)
 * Xchat

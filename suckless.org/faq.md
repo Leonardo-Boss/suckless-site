@@ -1,5 +1,6 @@
 FAQ
 ===
+
 Why don't you use autoconf, et al.?
 -----------------------------------
 We don't use auto*hell for various reasons, start here:

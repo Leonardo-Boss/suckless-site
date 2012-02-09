@@ -1,6 +1,58 @@
-COOL PROGRAMS
-=============
+Stuff that rocks
+================
 
+Libraries
+=========
+This section is for small, usable development libraries, which can be used for
+writing software that sucks less.
+These should preferrably be under the MIT/X consortium or BSD licenses, WTFPL,
+or public domain, or alternatively LGPL, because it makes them legally
+compatible with other suckless projects. 
+
+libc implementations
+--------------------
+* [uClibc](http://www.uclibc.org/) - strives to be a minimalist C library suitable for embedded computing
+* [musl](http://www.etalabs.net/musl/) - standard C library that attempts to be even smaller than uClibc
+* See also: [embedded libc comparison](http://www.etalabs.net/compare_libcs.html)
+
+Configuration file parsers
+--------------------------
+* [iniparser](http://ndevilla.free.fr/iniparser/) - relatively small ini parsing library, contains a dictionary data structure and accessory functions (MIT licensed)
+
+Compression
+-----------
+* [liblzf](http://oldhome.schmorp.de/marc/liblzf.html) - very fast, legally unencumbered compression library (dual licensed: 2-clause BSD or GPL License)
+* [xz embedded](http://tukaani.org/xz/embedded.html) - lightweight decompressor for the xz LZMA compressor (public domain)
+* [zlib](http://zlib.net/) - the "standard" compression/decompression library used in many applications ([zlib license](http://zlib.net/zlib_license.html))
+
+libtom project
+--------------
+All of these are dual-licensed under WTFPL and also public domain. According
+to the website, "[…] the GPG and OpenSSL folk assume that completely abhorrent
+and messy source code is ok, so long as it works. The LibTom Projects aims to
+change this line of thinking."
+
+* [libtommath, libtomcrypt and tomsfastmath](http://libtom.org/)
+
+Cryptography
+------------
+* [libtomcrypt](http://libtom.org/?page=features&newsitems=5&whatfile=crypt) - the cryptography library from the libtom project
+* [polarssl](http://polarssl.org/) - lightweight SSL/TLS implementation (unfortunately GPL)
+
+Mathematics
+-----------
+* [libtommath](http://libtom.org/?page=features&newsitems=5&whatfile=ltm) - math/bignum library (can be used insted of the much bigger [GNU MP](http://gmplib.org) library).
+* [libtomfastmath](http://libtom.org/?page=features&newsitems=5&whatfile=tfm) - port of libtommath using inline assembler for speedup on various architectures
+* [libmpi](http://spinning-yarns.org/michael/mpi/) - lightweight math lib from which libtommath was originally forked
+
+Miscellaneous
+-------------
+* [pjsip](http://www.pjsip.org/) - open source SIP stack (GPL)
+* [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modeled after libevent but much smaller (dual licensed under 2-clause BSD and GPL)
+
+
+Programs
+========
 Some programs work well with dwm. Some general rules of thumb
 for judging a programs as usable are:
 
@@ -131,3 +183,22 @@ X11
 [rob]: http://herpolhode.com/rob/
 [plan9port]: http://swtch.com/plan9port/
 [acme]: http://acme.cat-v.org
+
+
+Daemons
+=======
+
+This section is dedicated to Daemons that are related to the UNIX philosophy (but
+don't really belong into the cool programs section which is about programs
+which work well with dwm).
+
+Web Servers
+-----------
+* [Nostromo](http://www.nazgul.ch/dev_nostromo.html)
+* [thttpd](http://acme.com/software/thttpd/) - Outperforms many bigger httpds. Old, still works very well!
+* [mini_httpd](http://acme.com/software/mini_httpd/) - By the thttpd developers. Even smaller subset of thttpd with support for .htpasswd, CGI, dirlisting, HTTP errors and SSL, nothing more or less than that.
+* See also: our very own [quark](http://hg.suckless.org/quark/) which has not yet been released
+
+Gopher Servers
+--------------
+* [geomyidae](http://www.r-36.net/src/geomyidae/) - small gopher-daemon written by 20h

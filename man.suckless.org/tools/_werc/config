@@ -1,2 +1,0 @@
-conf_enable_wman /var/www/man/tools/
-wman_unix_mode=1

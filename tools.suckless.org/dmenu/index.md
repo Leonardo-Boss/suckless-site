@@ -18,8 +18,3 @@ Mailing list
 * `dev+subscribe@suckless.org` ([Archives](http://lists.suckless.org/dev/)) 
 ([Old Archives](http://lists.suckless.org/dwm/)) (see [community](http://suckless.org/common/community/) for details)
 
-
-Links
------
-
-* [Man page](http://man.suckless.org/tools/1/dmenu)

@@ -12,6 +12,3 @@ You can [browse](http://hg.suckless.org/sic) its source code repository or get a
 
 	hg clone http://hg.suckless.org/sic
 
-Links
------
-* [Man page](http://man.suckless.org/tools/1/sic)

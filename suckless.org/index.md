@@ -5,6 +5,10 @@ Read more about our [philosophy](/manifest) and join us on the [mailing list](/c
 News
 ====
 
+2012-02-11
+----------
+[slock 1.0](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-1.0.tar.gz)
+
 2012-02-08
 ----------
 [st 0.2](http://st.suckless.org) released: [download](http://dl.suckless.org/st/st-0.2.tar.gz)
@@ -89,6 +93,4 @@ There was a small community meeting in Berlin! Thanks to all attenders.
 
 2008-07-29
 ----------
-[slock 0.9](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-0.9.tar.gz)
-
 [sselp 0.2](http://tools.suckless.org/sselp) released: [download](http://dl.suckless.org/tools/sselp-0.2.tar.gz)

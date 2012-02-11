@@ -1,6 +1,6 @@
 masterSite=default.suckless.org
 siteTitle='man'
 siteSubTitle='pages'
-sideBarNavTitle="overview"
+sideBarNavTitle='overview'
 conf_enable_wman /var/www/man/suckless/
 wman_unix_mode=1

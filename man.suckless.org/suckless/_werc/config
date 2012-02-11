@@ -1,2 +1,0 @@
-conf_enable_wman /var/www/man/suckless/
-wman_unix_mode=1

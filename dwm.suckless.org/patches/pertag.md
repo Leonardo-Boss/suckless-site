@@ -4,10 +4,11 @@ PERTAG
 Description
 -----------
 More general approach to [taglayouts patch][3]. This patch keeps layout,
-mwfact, barpos and nmaster (if installed) per tag.
+mwfact, barpos and nmaster per tag.
 
 Download
 --------
+* [dwm-6.0-pertag.diff][13]
 * [dwm-r1578-pertag.diff][12] (nmaster included in mainline)
 * [dwm-5.8.2-pertag\_without\_bar.diff][11]
 * [dwm-5.8.2-pertag.diff][10]
@@ -41,3 +42,4 @@ Authors
 [10]: dwm-5.8.2-pertag.diff
 [11]: dwm-5.8.2-pertag_without_bar.diff
 [12]: dwm-r1578-pertag.diff
+[12]: dwm-6.0-pertag.diff

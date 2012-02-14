@@ -5,6 +5,7 @@
 This patch allows you to specify a different border color for floating windows.
 
 ## Download ##
+ * [dwm-6.0-float-border-color2.diff][4]
  * [dwm-5.0-float-border-color2.diff][3]
  * [dwm-4.6-float-border-color2.diff][2]
  * [dwm-4.5-float-border-color2.diff][1]
@@ -16,4 +17,4 @@ This patch allows you to specify a different border color for floating windows.
 [1]: http://www.e-jc.de/dwm/4.5/dwm-4.5-tip_ac233c362502-float-border-color2.diff
 [2]: http://www.e-jc.de/dwm/4.6/current/dwm-4.6-float-border-color2.diff
 [3]: http://www.e-jc.de/dwm/5.0/current/dwm-5.0-float-border-color2.diff
-
+[4]: dwm-6.0-float_border_color2.diff

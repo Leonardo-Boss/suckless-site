@@ -42,4 +42,4 @@ Authors
 [10]: dwm-5.8.2-pertag.diff
 [11]: dwm-5.8.2-pertag_without_bar.diff
 [12]: dwm-r1578-pertag.diff
-[12]: dwm-6.0-pertag.diff
+[13]: dwm-6.0-pertag.diff

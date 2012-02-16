@@ -37,7 +37,7 @@ Configuration
 
 The configuration is done in `config.h` (like in dwm). You can define:
 
-* TERM environnement variable
+* TERM environnement variable (TNAME)
 * fonts (you can use `xfontsel(1)` to generate a valid XLFD)
 * default colors
 * special key
@@ -117,7 +117,7 @@ Links
 
 Download
 --------
-* [st 0.2](http://dl.suckless.org/st/st-0.2.tar.gz) (2012-02-08)
+* [st 0.2.1](http://hg.suckless.org/st/archive/0.2.1.tar.gz) (2012-02-16)
 * tip tarball: [http://hg.suckless.org/st/archive/tip.tar.gz](http://hg.suckless.org/st/archive/tip.tar.gz)
 * [MIT/X Consortium license](http://hg.suckless.org/st/raw-file/tip/LICENSE)
 

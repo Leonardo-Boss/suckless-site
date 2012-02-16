@@ -5,6 +5,10 @@ Read more about our [philosophy](/manifest) and join us on the [mailing list](/c
 News
 ====
 
+2012-02-16
+----------
+[slock 0.2.1](http://st.suckless.org) released: [download](http://hg.suckless.org/st/archive/0.2.1.tar.gz)
+
 2012-02-11
 ----------
 [slock 1.0](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-1.0.tar.gz)

@@ -9,9 +9,6 @@ News
 ----------
 [st 0.2.1](http://st.suckless.org) released: [download](http://dl.suckless.org/st/st-0.2.1.tar.gz)
 
-[slock 0.2.1](http://st.suckless.org) released: [download](http://hg.suckless.org/st/archive/0.2.1.tar.gz)
-
-
 2012-02-11
 ----------
 [slock 1.0](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-1.0.tar.gz)

@@ -84,11 +84,12 @@ Using the tools of X.org, this can be set using:
 There are various tools and methods to populate this text with useful
 information from your system or services running on your system. A barebone
 for doing this in C is [dwmstatus](http://dwm.suckless.org/dwmstatus/).
-See the [xinitrc](http://git.webconverger.org/?p=home.git;a=blob_plain;f=.xinitrc)
+See the [xinitrc](http://dwm.suckless.org/xinitrc.example)
 example for how to do it using a script.
 
 Launching
 ---------
 
-To launch dwm, ideally you should setup an [xinitrc](http://git.webconverger.org/?p=home.git;a=blob_plain;f=.xinitrc).
+To launch dwm, ideally you should setup an
+[xinitrc](http://dwm.suckless.org/xinitrc.example).
 

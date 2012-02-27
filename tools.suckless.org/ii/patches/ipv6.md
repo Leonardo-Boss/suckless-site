@@ -9,7 +9,7 @@ Enable IPv6 for ii
 Download
 --------
 
-* [ii-ipv6.patch](http://suckless.org/~nion/ii-ipv6.patch) (seems to have gone missing)
+* [ii-ipv6.diff](ii-ipv6.diff) (seems to have gone missing)
 
 Author
 ------

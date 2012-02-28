@@ -30,14 +30,15 @@ Bottom Stack Tiling
 
 Download
 --------
-* Not for use with pertag patch: [dwm-5.8.2-bstack.diff](dwm-5.8.2-bstack.diff) 
-* For use with pertag patch: [dwm-5.8.2-bstack-alt.diff](dwm-5.8.2-bstack-alt.diff)
+### 6.0
+* Not for use with pertag patch: [dwm-6.0-bstack.diff](dwm-6.0-bstack.diff)
+
+### 5.9
+* Not for use with pertag patch: [dwm-5.9-bstack.diff](historical/dwm-5.9-bstack.diff)
+* For use with pertag patch: [dwm-5.9-bstack-alt.diff](historical/dwm-5.9-bstack-alt.diff)
+
+### 5.8
+* Not for use with pertag patch: [dwm-5.8.2-bstack.diff](historical/dwm-5.8.2-bstack.diff)
+* For use with pertag patch: [dwm-5.8.2-bstack-alt.diff](historical/dwm-5.8.2-bstack-alt.diff)
 * see older versions in [historical patches](historical)
-
-5.9 (20110107) :
-* Not for use with pertag patch: [dwm-5.9-bstack.diff](dwm-5.9-bstack.diff) 
-* For use with pertag patch: [dwm-5.9-bstack-alt.diff](dwm-5.9-bstack-alt.diff)
-
-6.0 (20120228) : is aware of nmaster
-* Not for use with pertag patch: [dwm-6.0-bstack.diff](dwm-6.0-bstack.diff) 
 

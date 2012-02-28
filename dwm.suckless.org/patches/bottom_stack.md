@@ -38,3 +38,6 @@ Download
 * Not for use with pertag patch: [dwm-5.9-bstack.diff](dwm-5.9-bstack.diff) 
 * For use with pertag patch: [dwm-5.9-bstack-alt.diff](dwm-5.9-bstack-alt.diff)
 
+6.0 (20120228) : is aware of nmaster
+* Not for use with pertag patch: [dwm-6.0-bstack.diff](dwm-6.0-bstack.diff) 
+

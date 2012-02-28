@@ -1,5 +1,5 @@
-MOVERESIZE
-==========
+MAXIMIZE
+========
 
 Description
 -----------

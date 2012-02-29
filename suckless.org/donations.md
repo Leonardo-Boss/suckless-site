@@ -28,6 +28,7 @@ Following people have donated to the suckless.org project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
+* Darryl Jamieson donated <b> 15 EUR </b>
 * Kay Smarczewski donated <b> 25 EUR </b>
 * Sergey Matveev donated <b> 10 EUR </b>
 * Hiltjo Posthuma donated <b> 20 EUR </b>

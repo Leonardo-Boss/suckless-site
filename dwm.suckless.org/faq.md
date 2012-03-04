@@ -13,3 +13,11 @@ dwm - Frequently asked questions
 	   config.h to turn resizehints off. This wastes the same amount of  space
 	   inside the terminal window that would otherwise be wasted outside.
 
+	Q: How do I find out the values of the rules[] array in config.h?
+
+	A: The class, instance and title properties of an X11 window can be
+	   found out by issuring xprop(1). The corresponding values are:
+
+	   	WM_CLASS(STRING) = instance, class
+		WM_NAME(STRING) = title
+

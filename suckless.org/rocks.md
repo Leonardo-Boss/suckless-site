@@ -23,7 +23,8 @@ Compression
 -----------
 * [liblzf](http://oldhome.schmorp.de/marc/liblzf.html) - very fast, legally unencumbered compression library (dual licensed: 2-clause BSD or GPL License)
 * [xz embedded](http://tukaani.org/xz/embedded.html) - lightweight decompressor for the xz LZMA compressor (public domain)
-* [zlib](http://zlib.net/) - the "standard" compression/decompression library used in many applications ([zlib license](http://zlib.net/zlib_license.html))
+* [zlib](http://zlib.net/) - the "standard" compression/decompression library, quite small, used in many applications ([zlib license](http://zlib.net/zlib_license.html))
+* [miniz](http://code.google.com/p/miniz/) - single C-file reimplementation of zlib, public domain.
 
 libtom project
 --------------
@@ -37,7 +38,7 @@ change this line of thinking."
 Cryptography
 ------------
 * [libtomcrypt](http://libtom.org/?page=features&newsitems=5&whatfile=crypt) - the cryptography library from the libtom project
-* [polarssl](http://polarssl.org/) - lightweight SSL/TLS implementation (unfortunately GPL)
+* [polarssl](http://polarssl.org/) - lightweight SSL/TLS implementation (GPL with [exceptions](http://polarssl.org/license_exception))
 
 Mathematics
 -----------

@@ -1,7 +1,7 @@
 Kris Maglione aka JG
 ====================
 
-I'm the current(?) maintainer of [wmii](/wmii.suckless.org).
+I'm the current(?) maintainer of [wmii](http://wmii.suckless.org).
 
 This is a place for me to post the random scripts that I'm compelled to write and consider useful.
 

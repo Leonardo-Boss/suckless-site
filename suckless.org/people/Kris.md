@@ -1,7 +1,7 @@
 Kris Maglione aka JG
 ====================
 
-I'm the current maintainer of [wmii](/wiki/wmii/).
+I'm the current(?) maintainer of [wmii](/wmii.suckless.org).
 
 This is a place for me to post the random scripts that I'm compelled to write and consider useful.
 
@@ -11,26 +11,26 @@ Scripts
 
 All of these scripts are written in rc, and require plan9port to run.
 
-* [webpaste](/~jg/webpaste) - A script which reads its standard input or the files
+* webpaste - A script which reads its standard input or the files
     on its command line and prints a URI where the data can be retrieved. Requires: curl.
 
-* [pasteweb](/~jg/pasteweb) - Similar to webpaste, but reads the contents of your
+* pasteweb - Similar to webpaste, but reads the contents of your
    clipboard and replaces them with a URI where the contents can be retrieved.
    Requires: curl, and one of xclip, xsel, or sselp (in which case, it will print the URI)
 
-* [plastfm](/~jg/plastfm) - An rc script which connects to Last.FM and plays its stream with
+* plastfm - An rc script which connects to Last.FM and plays its stream with
    a command-line mp3 player. Commands are read from the standard input and song info is
    printed to the standard error. Requires: mpg123 or similar client. *This has been replaced
    by [last](/hg.rc/last).*
 
-* [eris.rc](/~jg/eris.rc) - This is an IRC bot, written in rc, of course, which prints mercurial
+* eris.rc - This is an IRC bot, written in rc, of course, which prints mercurial
    commits to channels. The name comes from George Neis' python version. Requires: sic or similar.
 
-* [hgnotify.rc](/~jg/hgnotify.rc) - This is an mailing list bot which posts mercurial commits
+* hgnotify.rc - This is an mailing list bot which posts mercurial commits
    along with their diffs to a mailing list, or arbitrary mailing address. The sender, subject,
    and date all reflect those of the commit. Requires: A sendmail compatible MTA.
 
-* [logger.rc](/~jg/logger.rc) - A simple IRC logger bot, which uses the httplog logger to handle
+* logger.rc - A simple IRC logger bot, which uses the httplog logger to handle
    log rotation. It also extracts lines beginning with 'BUG' and writes them to a separate file.
    Requires: httplog, sic.
 

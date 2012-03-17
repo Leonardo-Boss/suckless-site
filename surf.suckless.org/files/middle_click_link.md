@@ -1,4 +1,4 @@
-MIDDLE CLICK LINKS
+Middle click links
 ==================
 
 Description

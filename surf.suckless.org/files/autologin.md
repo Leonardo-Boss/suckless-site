@@ -1,4 +1,4 @@
-AUTOLOGIN
+autologin
 =========
 
 Feel free to post autologin scripts for your favorite site. __Do not forget to

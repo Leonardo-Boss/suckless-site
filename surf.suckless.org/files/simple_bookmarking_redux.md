@@ -1,4 +1,4 @@
-SIMPLE BOOKMARKING, REDUX
+Simple bookmarking, redux
 =========================
 
 Description

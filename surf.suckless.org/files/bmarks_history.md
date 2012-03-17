@@ -1,4 +1,4 @@
-BOOKMARKS FOR SURF
+Bookmarks for surf
 ==================
 
 Description

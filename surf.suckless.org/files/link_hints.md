@@ -1,4 +1,4 @@
-KEYBOARD LINK HINTING
+Keyboard link hinting
 =====================
 
 Description

@@ -1,4 +1,4 @@
-EDIT SOURCE
+Edit source
 ===========
 
 Description

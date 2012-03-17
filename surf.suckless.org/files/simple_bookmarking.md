@@ -1,4 +1,4 @@
-SIMPLE_BOOKMARKING
+Simple bookmarking
 ==================
 
 Description

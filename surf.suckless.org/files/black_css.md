@@ -1,4 +1,4 @@
-BLACK CSS THEME
+Black css theme
 ===============
 
 Description

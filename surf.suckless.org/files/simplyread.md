@@ -1,4 +1,4 @@
-SimplyRead
+Simplyread
 ==========
 
 Description

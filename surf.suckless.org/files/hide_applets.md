@@ -1,4 +1,4 @@
-HIDE APPLETS
+Hide applets
 ============
 
 Description

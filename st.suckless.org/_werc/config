@@ -1,4 +1,2 @@
-masterSite=default.suckless.org
-siteTitle='st'
-siteSubTitle='a simple X terminal'
-sideBarNavTitle='home'
+siteTitle='simple terminal'
+menuTitle='about'

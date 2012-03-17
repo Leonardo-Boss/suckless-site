@@ -1,8 +1,2 @@
-masterSite=default.suckless.org
-siteTitle='suckless.org'
-siteSubTitle='Dedicated to software that sucks less'
-sideBarNavTitle='news'
-
-conf_perm_redirect '^/gsoc\.html' 'http://suckless.org/project_ideas'
-conf_perm_redirect '^/gsoc$' 'http://suckless.org/project_ideas'
-conf_perm_redirect '^/gsoc/i$' 'http://suckless.org/project_ideas'
+siteTitle='Everything should be made as simple as possible, but not simpler'
+menuTitle='news'

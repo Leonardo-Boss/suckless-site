@@ -1,5 +1,2 @@
-masterSite=default.suckless.org
-siteTitle='stali - static linux'
-siteImage='/stali.png'
-siteSubTitle='statically linked only'
-sideBarNavTitle='home'
+siteTitle='static linux'
+menuTitle='about'

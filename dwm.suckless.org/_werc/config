@@ -1,5 +1,2 @@
-masterSite=default.suckless.org
-siteTitle='dwm'
-siteImage='/dwm.png'
-siteSubTitle='dynamic window manager'
-sideBarNavTitle='home'
+siteTitle='dynamic window manager'
+menuTitle='about'

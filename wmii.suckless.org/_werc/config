@@ -1,6 +1,2 @@
-masterSite=default.suckless.org
-siteTitle='wmii'
-siteImage='/wmii.png'
-siteSubTitle='window manager improved 2'
-conf_perm_redirect /scripts_n_snips/themes /themes
-conf_perm_redirect /scripts_n_snips/.* /code_snippets
+siteTitle='deprecated window manager improved 2 (wmii)'
+menuTitle='about'

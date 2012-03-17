@@ -1,4 +1,2 @@
-masterSite=default.suckless.org
-siteTitle='wmi'
-siteSubTitle='window manager improved'
-sideBarNavTitle='home'
+siteTitle='deprecated window manager improved (wmi)'
+menuTitle='about'

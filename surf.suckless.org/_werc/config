@@ -1,5 +1,2 @@
-masterSite=default.suckless.org
 siteTitle='surf'
-siteImage='/surf.png'
-siteSubTitle='a WebKit based browser'
-sideBarNavTitle='home'
+menuTitle='about'

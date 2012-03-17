@@ -1,4 +1,4 @@
-EMAIL NOTIFIER SCRIPT
+email notifier script
 =====================
 
 Description

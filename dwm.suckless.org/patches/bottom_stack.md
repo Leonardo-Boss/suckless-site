@@ -1,4 +1,4 @@
-BOTTOM STACK
+bottom stack
 ============
 
 Description

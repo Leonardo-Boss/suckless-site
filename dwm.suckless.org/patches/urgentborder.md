@@ -1,4 +1,4 @@
-# CUSTOM URGENT BORDER
+# custom urgent border
 
 ## Description
 

@@ -1,4 +1,4 @@
-# FIBONACCI LAYOUTS
+# fibonacci layouts
 
 ## Description
 

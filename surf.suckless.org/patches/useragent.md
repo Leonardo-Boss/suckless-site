@@ -1,4 +1,4 @@
-USER AGENT
+User agent
 ==========
 
 Description

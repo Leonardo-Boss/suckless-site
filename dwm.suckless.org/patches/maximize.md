@@ -1,4 +1,4 @@
-MAXIMIZE
+maximize
 ========
 
 Description

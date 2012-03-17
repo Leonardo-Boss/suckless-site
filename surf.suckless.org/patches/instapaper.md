@@ -1,4 +1,4 @@
-INSTAPAPER
+instapaper
 ==========
 
 Description

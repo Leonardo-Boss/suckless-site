@@ -1,4 +1,4 @@
-# FLEXTILE LAYOUT #
+# flextile layout #
 
 ## Description ##
 

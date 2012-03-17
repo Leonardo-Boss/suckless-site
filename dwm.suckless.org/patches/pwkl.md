@@ -1,5 +1,5 @@
-PER-WINDOW KEYBOARD LAYOUT
-===========
+Per-window keyboard layout
+==========================
 
 Description
 -----------

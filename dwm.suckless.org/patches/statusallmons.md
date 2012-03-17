@@ -1,4 +1,4 @@
-STATUSBAR ON ALL MONITORS
+statusbar on all monitors
 =========================
 
 Description

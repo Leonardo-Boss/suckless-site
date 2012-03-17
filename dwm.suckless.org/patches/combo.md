@@ -1,4 +1,4 @@
-COMBO
+combo
 =====
 Description
 -----------

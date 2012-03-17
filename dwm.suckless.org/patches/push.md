@@ -1,4 +1,4 @@
-# PUSH UP/DOWN
+# push up/down
 
 ## Description
 

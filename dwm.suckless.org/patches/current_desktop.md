@@ -1,4 +1,4 @@
-# CURRENT_DESKTOP
+# current_desktop
 
 ## Description
 

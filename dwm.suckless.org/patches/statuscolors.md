@@ -1,4 +1,4 @@
-# COLORED STATUS TEXT #
+# colored status text #
 
 ## Description ##
 

@@ -1,4 +1,4 @@
-AUTO OPEN DOWNLOADS
+auto open downloads
 ===================
 
 Description

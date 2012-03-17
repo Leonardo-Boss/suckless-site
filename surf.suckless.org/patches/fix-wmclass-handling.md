@@ -1,4 +1,4 @@
-FIX WM_CLASS ALLOCATION
+Fix WM_CLASS allocation
 =======================
 
 Description

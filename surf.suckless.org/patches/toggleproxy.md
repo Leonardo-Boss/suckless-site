@@ -1,4 +1,4 @@
-TOGGLE PROXY SERVER / TOGGLE INDICATOR WINDOW
+Toggle proxy server / toggle indicator window
 =============================================
 
 Description

@@ -1,4 +1,4 @@
-GRIDMODE
+gridmode
 ========
 
 Description

@@ -1,4 +1,4 @@
-# GAPLESS GRID LAYOUT
+# gapless grid layout
 
 ## Description
 

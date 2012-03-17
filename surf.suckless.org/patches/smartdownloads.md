@@ -1,4 +1,4 @@
-SMARTDOWNLOADS
+smartdownloads
 =======
 
 Description

@@ -1,4 +1,4 @@
-# OBEY ALL SIZEHINTS
+# obey all sizehints
 
 ## Description
 

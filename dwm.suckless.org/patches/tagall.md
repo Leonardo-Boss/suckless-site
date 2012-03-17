@@ -1,4 +1,4 @@
-# TAG ALL #
+# tag all #
 
 ## Description ##
 

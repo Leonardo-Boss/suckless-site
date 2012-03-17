@@ -1,4 +1,4 @@
-# KEYMODES #
+# keymodes #
 
 ## Description ##
 

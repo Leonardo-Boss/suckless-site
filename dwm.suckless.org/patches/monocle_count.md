@@ -1,4 +1,4 @@
-MONOCLE COUNT
+monocle count
 =============
 
 Description

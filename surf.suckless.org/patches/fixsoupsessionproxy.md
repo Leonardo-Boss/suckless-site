@@ -1,4 +1,4 @@
-FIX SOUPSESSION http_proxy ENVIRONMENT HANDLING
+Fix soupsession http_proxy environment handling
 ===============================================
 
 Description

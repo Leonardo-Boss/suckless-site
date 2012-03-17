@@ -1,4 +1,4 @@
-# NEXT PREV TAG
+# next prev tag
 
 ## Description
 

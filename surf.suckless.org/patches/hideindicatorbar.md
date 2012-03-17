@@ -1,4 +1,4 @@
-HIDE INDICATOR BAR
+Hide indicator bar
 ==================
 
 Description

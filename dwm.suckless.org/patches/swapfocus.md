@@ -1,4 +1,4 @@
-# SWAP FOCUS
+# swap focus
 
 ## Description
 

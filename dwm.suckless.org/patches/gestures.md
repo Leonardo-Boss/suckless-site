@@ -1,4 +1,4 @@
-GESTURES
+gestures
 ========
 
 Description

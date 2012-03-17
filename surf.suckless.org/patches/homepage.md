@@ -1,4 +1,4 @@
-HOMEPAGE
+Homepage
 ========
 
 Description

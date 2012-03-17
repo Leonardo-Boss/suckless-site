@@ -1,4 +1,4 @@
-SPROP
+sprop
 =====
 
 sprop is a simple X property utility. Less is more.

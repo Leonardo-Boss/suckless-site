@@ -1,4 +1,4 @@
-LSX
+lsx
 ===
 List executables in a directory tree. It just does this, nothing else.
 

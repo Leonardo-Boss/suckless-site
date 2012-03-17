@@ -1,4 +1,4 @@
-LSW
+lsw
 ===
 Lists the titles of all running X windows to stdout, similar to ls(1). Might be
 useful for script integration.

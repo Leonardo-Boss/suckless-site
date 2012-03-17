@@ -1,4 +1,4 @@
-DONATIONS
+Donations
 =========
 Continuing to produce and host suckless software requires the contribution of
 time, code and -especially for the hosting part- money. If you are able to make

@@ -1,4 +1,4 @@
-PATCHES
+Patches
 =======
 
 diff generation

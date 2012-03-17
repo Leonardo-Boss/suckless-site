@@ -1,5 +1,5 @@
-dwm - Frequently asked questions
-================================
+FAQ
+===
 
 	Q: I've got a 1 or 2 pixel gap between the right side of my terminal and the
 	   right side of the screen, and I want to turn it off.

@@ -1,4 +1,4 @@
-SSID
+ssid
 ====
 Simple setsid replacement, nothing special about it except it being really simple.
 

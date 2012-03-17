@@ -1,4 +1,4 @@
-GOALS
+Goals
 =====
 
 Confirmed st features

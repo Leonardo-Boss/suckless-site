@@ -1,4 +1,4 @@
-PROJECT IDEAS 
+Project ideas
 =============
 We applied as a mentoring organization for [Google Summer of Code
 2010](http://socghop.appspot.com/), unfortunately we were rejected this year as

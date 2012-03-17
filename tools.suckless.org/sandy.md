@@ -1,6 +1,6 @@
-SANDY
+sandy
 =====
-Sandy is an ncurses text editor with an easy-to-read, hackable C source. Sandy tries to maximize screen estate, minimize the SLOC used and not get in your way too much. It can somehow be controlled using a named pipe that lives in /tmp and all preferences and keybindings are to be chosen at compile time.
+sandy is an ncurses text editor with an easy-to-read, hackable C source. Sandy tries to maximize screen estate, minimize the SLOC used and not get in your way too much. It can somehow be controlled using a named pipe that lives in /tmp and all preferences and keybindings are to be chosen at compile time.
 
 Features / Non-features
 -----------------------

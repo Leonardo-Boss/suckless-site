@@ -1,4 +1,4 @@
-THIS WIKI
+This wiki
 =========
 If you would like to contribute new content, you can clone this wiki to your
 local host using the following command:

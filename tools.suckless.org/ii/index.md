@@ -1,4 +1,4 @@
-IRC IT (II)
+Irc it (ii)
 ===========
 ii is a minimalist FIFO and filesystem-based IRC client. It creates an irc directory tree with server, channel and nick name directories. In every directory a FIFO in file and a normal out file is created.
 

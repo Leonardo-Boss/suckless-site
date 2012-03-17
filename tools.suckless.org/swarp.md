@@ -1,4 +1,4 @@
-SWARP
+swarp
 =====
 Simple pointer warping tool for X. Warps the mouse pointer to a given position, e.g.:
 

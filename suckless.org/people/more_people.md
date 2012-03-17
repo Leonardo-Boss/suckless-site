@@ -1,5 +1,5 @@
-OTHER PEOPLE
-============
+More people
+===========
 
 The following people are/were involved mainly in wmii and dwm development as
 developers and contributors.  If you are missing, feel free to add yourself.

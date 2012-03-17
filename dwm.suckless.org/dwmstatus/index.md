@@ -1,4 +1,4 @@
-DWMSTATUS
+dwmstatus
 =========
 
 **dwm**'s status bar text can be set using the `xsetroot -name $status`

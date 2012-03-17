@@ -1,4 +1,4 @@
-OTHER PROJECTS
+Other projects
 ==============
 There are several other projects which are inspired by the spirit of suckless.
 

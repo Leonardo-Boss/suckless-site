@@ -1,4 +1,4 @@
-WMNAME
+wmname
 ======
 wmname prints/sets the window manager name property of the root window similar
 to how hostname(1) behaves.

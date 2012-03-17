@@ -1,4 +1,4 @@
-CUSTOMISATION
+Customisation
 =============
 
 *blame [Filippo Erik Negroni](mailto:f dot e dot negroni at googlemail dot com>) about this document*

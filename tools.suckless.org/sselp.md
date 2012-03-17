@@ -1,4 +1,4 @@
-SSELP
+sselp
 =====
 Simple X selection printer. Prints the X selection to stdout. If there is no X
 client owning the selection it just exits. Useful for scripts where you can

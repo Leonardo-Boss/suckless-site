@@ -1,5 +1,5 @@
-SUCK LESS PHILOSOPHY
-====================
+Philosophy
+==========
 
 Background
 ----------

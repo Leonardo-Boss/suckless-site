@@ -1,4 +1,4 @@
-DYNAMIC WINDOW MANAGEMENT
+Dynamic window management
 =========================
 
 We think that static window management as seen in Ion or wmi-10 is a far too

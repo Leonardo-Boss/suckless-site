@@ -1,4 +1,4 @@
-SVKBD
+svkbd
 =====
 This is a simple virtual keyboard, intended to be used in environments,
 where no keyboard is available.

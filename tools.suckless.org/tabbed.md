@@ -1,4 +1,4 @@
-TABBED
+tabbed
 ======
 Simple generic tabbed fronted to xembed aware applications, originally designed
 for [surf](http://surf.suckless.org) but also usable with many other

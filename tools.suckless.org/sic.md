@@ -1,4 +1,4 @@
-SIMPLE IRC CLIENT
+simple irc client
 =================
 sic is an extremely simple IRC client. It consists of less than 250 lines of code. It is the little brother of [irc it](/ii).
 

@@ -15,7 +15,7 @@ developers and contributors.  If you are missing, feel free to add yourself.
 * Christian Schneider (provides the Slackware package)
 * Christof Musik (various feedback, small fixes)
 * [Christoph Wegscheider](http://www.wegi.net) (python bindings of old libixp, former irc logging)
-* Daniel Baumann ([Debian packaging](http://suckless.debian-maintainers.org))
+* Daniel Baumann (Debian packaging)
 * Daniel W&auml;ber (wabu) (fixes and patches)
 * &dagger; Denis Grelich (ex-maintainer)
 * Fabian Braennstroem (contributed archlinux packages)
@@ -62,15 +62,12 @@ developers and contributors.  If you are missing, feel free to add yourself.
 * Sebastian Roth (several bugfixes in C and Makefiles, Doxyfile)
 * [Stefan Kuttler](http://www.netbeisser.de) (inventor of project name)
 * Stefan Tibus (fixes and patches)
-* [Steffen Liebergeld](http://www.inf.tu-dresden.de/~s1010824) ("A guide to wmii" author)
+* Steffen Liebergeld ("A guide to wmii" author)
 * Steve Hoffman (various feedback, small fixes)
 * Szabolcs Nagy (fixes and patches)
 * Tobias Walkowiak (provided various feedback)
 * Tuncer Ayaz (contributed some grammar fixes for the Improved GUI concepts paper)
 * Uwe Zeisberger (code review, bug fixings)
-* Wilson Oliveira (contributed the [wmizer tool](http://clientes.netvisao.pt/petrucci/))
+* Wilson Oliveira (contributed the wmizer tool)
 * yiyus || Jesus Galan (dwm patches a go-go)
 
-Also have a look at the
-
-* [Debian maintainers](http://suckless.debian-maintainers.org/) of suckless.org software 

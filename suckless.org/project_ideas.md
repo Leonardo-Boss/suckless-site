@@ -4,7 +4,7 @@ We applied as a mentoring organization for [Google Summer of Code
 2010](http://socghop.appspot.com/), unfortunately we were rejected this year as
 well (second time now).
 
-Please read our [philosophy](/manifest) for background information.
+Please read our [philosophy](/philosophy) for background information.
 
 Mentors
 -------

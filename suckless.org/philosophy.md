@@ -1,8 +1,6 @@
 Philosophy
 ==========
 
-Background
-----------
 We are the home of quality software such as [dwm](http://dwm.suckless.org),
 [dmenu](http://tools.suckless.org/dmenu), [st](http://st.suckless.org/) and
 plenty of other [tools](http://tools.suckless.org), with

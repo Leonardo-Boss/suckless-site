@@ -2,11 +2,10 @@
 
 ## Description ##
 
-This patch enables one layout per tag in contrast of one layout for all tags. - A more general approach is the [pertag patch][3].
+This patch enables one layout per tag in contrast of one layout for all tags. - A more general approach is the [pertag patch][1].
 
 ## Download ##
- * [dwm-4.6-taglayouts.diff][2]
- * [dwm-4.5-taglayouts.diff][1]
+ * None anymore
 
 ## Known Bugs ##
 
@@ -19,7 +18,4 @@ This patch enables one layout per tag in contrast of one layout for all tags. - 
  * http://na.srck.net/dwm
  * Updated by Jan Christoph Ebersbach - <jceb@e-jc.de>
 
-[1]: http://www.e-jc.de/dwm/4.5/dwm-4.5-tip_ac233c362502-taglayouts.diff
-[2]: http://www.e-jc.de/dwm/4.6/current/dwm-4.6-taglayouts.diff
-[3]: /dwm/patches/pertag.html
-
+[1]: /dwm/patches/pertag.html

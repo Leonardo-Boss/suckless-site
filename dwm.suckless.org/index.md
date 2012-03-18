@@ -100,3 +100,5 @@ Related discussion
 * <http://tonytraductor.livejournal.com/120674.html>
 * <http://www.halbmoendli.ch/blog/archive/2007/03/31/dwm-dynamic-window-manager.html>
 * <http://peterstuifzand.nl/20060816212719.html>
+* <http://forums.debian.net/viewtopic.php?f=16&t=65110>
+

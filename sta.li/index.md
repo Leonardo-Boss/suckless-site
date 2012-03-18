@@ -1,3 +1,5 @@
+![stali](/stali.png)
+
 stali (sta[tic] li[nux]) is a linux system based on a hand selected collection
 of the best tools for each task and each tool being statically linked
 (including some X clients such as xterm, surf, dwm, dmenu, mplayer).

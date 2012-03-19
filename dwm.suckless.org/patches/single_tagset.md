@@ -19,25 +19,25 @@ Several deep changes needed to be made:
 
 Please be aware that this patch probably breaks any other patch!
 
-* [dwm-6.0-single_tagset.diff](dwm-6.0-single_tagset.diff) (14K) (20120318)
+ * [dwm-6.0-single_tagset.diff](dwm-6.0-single_tagset.diff) (14K) (20120319)
 
 Special Version
 ---------------
 This is a special version of the patch that was created with following patches being applied:
-* [attachabove](attachabove)
-* [float_border_color](float_border_color)
-* [focusmaster](https://bitbucket.org/jceb81/dwm-patches/src/90fb0feedff9/focusmaster.patch)
-* [moveresize](moveresize)
-* [noborder](noborder)
-* [pertag](pertag)
-* [push](push)
-* [save_floats](save_floats)
-* [statusallmons](statusallmons)
-* [swapfocus](swapfocus)
-* [tagall](tagall)
-* [zoomswap](zoomswap)
+ * [attachabove](attachabove)
+ * [float_border_color](float_border_color)
+ * [focusmaster](https://bitbucket.org/jceb81/dwm-patches/src/90fb0feedff9/focusmaster.patch)
+ * [moveresize](moveresize)
+ * [noborder](noborder)
+ * [pertag](pertag)
+ * [push](push)
+ * [save_floats](save_floats)
+ * [statusallmons](statusallmons)
+ * [swapfocus](swapfocus)
+ * [tagall](tagall)
+ * [zoomswap](zoomswap)
 
-[dwm-6.0-single_tagset_all.diff](dwm-6.0-single_tagset_all.diff) (18K) (20120318)
+[dwm-6.0-single_tagset_all.diff](dwm-6.0-single_tagset_all.diff) (18K) (20120319)
 
 Authors
 -------

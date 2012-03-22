@@ -24,24 +24,25 @@ Following people have donated to the suckless.org project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
-* Darryl Jamieson donated <b> 15 EUR </b>
-* Kay Smarczewski donated <b> 25 EUR </b>
-* Sergey Matveev donated <b> 10 EUR </b>
-* Hiltjo Posthuma donated <b> 20 EUR </b>
-* Pascal Wittmann donated <b> 50 EUR </b>
-* Joshua Lawrence donated <b> 30 USD </b>
-* James Erickson donated <b> 10 USD </b>
-* Xavier Cartron donated <b> 35 EUR </b>
-* Jason Thigpen donated a slicehost server, which hosted the source code and the tarballs of our projects.
-* Donald Allen donated <b> 50 USD </b>
-* Markus Schnalke donated <b> 10 EUR </b>
-* John V. Turek donated <b> 10 EUR</b>
-* Filippo Negroni donated <b> 10 GBP </b>
-* Markus Schnalke donated <b> 10 EUR</b>
+* Ryan Nabinger donated <b>100 USD</b>
+* Darryl Jamieson donated <b>15 EUR</b>
+* Kay Smarczewski donated <b>25 EUR</b>
+* Sergey Matveev donated <b>10 EUR</b>
+* Hiltjo Posthuma donated <b>20 EUR</b>
+* Pascal Wittmann donated <b>50 EUR</b>
+* Joshua Lawrence donated <b>30 USD</b>
+* James Erickson donated <b>10 USD</b>
+* Xavier Cartron donated <b>35 EUR</b>
+* Jason Thigpen donated a slicehost server, which hosted the source code and the tarballs from 2007-2010 of our projects.
+* Donald Allen donated <b>50 USD</b>
+* Markus Schnalke donated <b>10 EUR</b>
+* John V. Turek donated <b>10 EUR</b>
+* Filippo Negroni donated <b>10 GBP</b>
+* Markus Schnalke donated <b>10 EUR</b>
 * Jason Ryan donated <b>30 EUR</b>
-* Sebastian Noack donated <b> 50 EUR </b>
-* Jason Thigpen donated <b> 100 USD </b>
-* Markus Schnalke donated <b> 20 EUR </b>
+* Sebastian Noack donated <b>50 EUR</b>
+* Jason Thigpen donated <b>100 USD</b>
+* Markus Schnalke donated <b>20 EUR</b>
 * Enno 'Gottox' Boland donated <b>50 EUR</b>
 * Ivan F. Villanueva B. donated <b>20 EUR</b>
 * Alexandre Dulaunoy donated <b>100 EUR</b>

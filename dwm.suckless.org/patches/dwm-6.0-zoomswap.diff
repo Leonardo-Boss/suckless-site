@@ -1,9 +1,10 @@
+Author: Jan Christoph Ebersbach <jceb@e-jc.de>
 URL: http://dwm.suckless.org/patches/zoomswap
 This patch swaps the current window with the previous master when zooming.
 
-diff -r 6f54bd1ef439 dwm.c
---- a/dwm.c	Wed Jan 04 13:30:12 2012 +0100
-+++ b/dwm.c	Tue Feb 14 07:09:37 2012 +0100
+diff -r ad90e7fab364 dwm.c
+--- a/dwm.c	Fri Feb 10 00:36:08 2012 +0000
++++ b/dwm.c	Sat Mar 24 13:41:14 2012 +0100
 @@ -253,6 +253,7 @@
  static void zoom(const Arg *arg);
  
@@ -12,7 +13,7 @@ diff -r 6f54bd1ef439 dwm.c
  static const char broken[] = "broken";
  static char stext[256];
  static int screen;
-@@ -2116,14 +2117,32 @@
+@@ -2119,14 +2120,32 @@
  void
  zoom(const Arg *arg) {
  	Client *c = selmon->sel;

@@ -1,10 +1,11 @@
+Author: Jan Christoph Ebersbach <jceb@e-jc.de>
 URL: http://dwm.suckless.org/patches/noborder
 This patch removes the border when there is just one window visible in tiled or
 monocle layout.
 
-diff -r 6f54bd1ef439 dwm.c
---- a/dwm.c	Wed Jan 04 13:30:12 2012 +0100
-+++ b/dwm.c	Sun Feb 12 09:32:38 2012 +0100
+diff -r ad90e7fab364 dwm.c
+--- a/dwm.c	Fri Feb 10 00:36:08 2012 +0000
++++ b/dwm.c	Sat Mar 24 13:41:09 2012 +0100
 @@ -1191,7 +1191,7 @@
  
  void
@@ -34,7 +35,7 @@ diff -r 6f54bd1ef439 dwm.c
  }
  
  void
-@@ -1703,7 +1712,7 @@
+@@ -1704,7 +1713,7 @@
  
  void
  tile(Monitor *m) {
@@ -43,7 +44,7 @@ diff -r 6f54bd1ef439 dwm.c
  	Client *c;
  
  	for(n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++);
-@@ -1714,17 +1723,36 @@
+@@ -1715,17 +1724,36 @@
  		mw = m->nmaster ? m->ww * m->mfact : 0;
  	else
  		mw = m->ww;
@@ -81,7 +82,7 @@ diff -r 6f54bd1ef439 dwm.c
  }
  
  void
-@@ -1740,9 +1768,15 @@
+@@ -1741,9 +1769,15 @@
  	if(!selmon->sel)
  		return;
  	selmon->sel->isfloating = !selmon->sel->isfloating || selmon->sel->isfixed;

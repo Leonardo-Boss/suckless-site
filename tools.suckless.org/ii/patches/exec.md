@@ -1,4 +1,4 @@
-EXEC
+Exec
 ====
 
 Description

@@ -1,4 +1,4 @@
-JOINUSER
+Joinuser
 ========
 
 Description

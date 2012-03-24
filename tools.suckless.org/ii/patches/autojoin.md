@@ -1,4 +1,4 @@
-AUTOJOIN
+Autojoin
 ========
 
 Description

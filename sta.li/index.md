@@ -1,8 +1,8 @@
 ![stali](/stali.png)
 
-stali (sta[tic] li[nux]) is a linux system based on a hand selected collection
-of the best tools for each task and each tool being statically linked
-(including some X clients such as xterm, surf, dwm, dmenu, mplayer).
+static linux is based on a hand selected collection of the best tools for each
+task and each tool being statically linked (including some X clients such as
+st, surf, dwm, dmenu),
 
 It also targets binary size reduction through the avoidance of glibc and other
 bloated GNU libraries where possible (early experiments show that statically

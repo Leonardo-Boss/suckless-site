@@ -3,8 +3,8 @@ systray
 
 Description
 -----------
-A simple system tray implementation. Multi-monitor support is untested - the
-tray should follow the selected monitor.
+A simple system tray implementation. Multi-monitor is also supported. The tray
+is following the selected monitor.
 
 Download
 --------

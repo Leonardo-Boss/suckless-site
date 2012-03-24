@@ -1,4 +1,4 @@
-INCREMENTAL OUTPUT
+Incremental output
 ==================
 
 This patch causes dmenu to print out the current text each time a key is pressed.

@@ -1,4 +1,4 @@
-INCREMENTAL OUTPUT
+Incremental output
 ==================
 
 This patch allows to confgure font and colors using X resource database.

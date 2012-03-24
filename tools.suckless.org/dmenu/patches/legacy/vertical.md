@@ -1,4 +1,4 @@
-VERTICAL MENU
+Vertical menu
 =============
 
 This patch allows you to present a vertical menu instead of a horizontal (this is especially useful for long menu entries such as URLs in conjunction with surf).

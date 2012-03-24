@@ -1,4 +1,4 @@
-DMENU_PATH.C
+dmenu_path.c
 ============
 
 The mainline dmenu_path is a shell script, which means it can be slow. Faster

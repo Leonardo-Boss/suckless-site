@@ -1,4 +1,4 @@
-KEYPAD DECIMAL KEY
+Keypad decimal key
 ==================
 
 This patch allows the decimal key on keypads to input a decimal in dmenu.

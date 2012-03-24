@@ -1,4 +1,4 @@
-FOLLOW INPUT FOCUS
+Follow input focus
 ==================
 
 With this patch dmenu will show up on the monitor which has input focus.

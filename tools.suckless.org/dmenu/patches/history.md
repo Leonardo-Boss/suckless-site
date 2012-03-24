@@ -1,4 +1,4 @@
-HISTORY
+History
 =======
 
 Description

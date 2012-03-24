@@ -1,4 +1,4 @@
-PASTE
+Paste
 =====
 
 Description

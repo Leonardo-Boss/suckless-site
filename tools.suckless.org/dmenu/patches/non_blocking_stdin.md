@@ -1,4 +1,4 @@
-NON BLOCKING STDIN
+Non-blocking stdin
 ==================
 
 Description

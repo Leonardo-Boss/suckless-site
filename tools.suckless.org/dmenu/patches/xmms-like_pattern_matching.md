@@ -1,4 +1,4 @@
-XMMS-LIKE PATTERN MATCHING
+xmms-like pattern matching
 ==========================
 
 This patch allows the user to match strings in several pieces.

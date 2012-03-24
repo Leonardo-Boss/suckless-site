@@ -1,4 +1,4 @@
-Xft Support
+Xft support
 ===========
 
 Description

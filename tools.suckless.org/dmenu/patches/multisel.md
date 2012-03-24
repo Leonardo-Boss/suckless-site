@@ -1,4 +1,4 @@
-MULTISELECT
+Multiselect
 ===========
 
 Allow for selecting multiple items.  Ctrl+Enter prints an item, colors it differently, and allows input to continue.

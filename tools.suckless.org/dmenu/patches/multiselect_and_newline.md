@@ -1,4 +1,4 @@
-MULTISELECT AND NEWLINE
+Multiselect and newline
 =======================
 
 multi-select: selecting an item and pressing return won't terminate dmenu  

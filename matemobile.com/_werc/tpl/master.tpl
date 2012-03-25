@@ -13,6 +13,7 @@
 	<div id="menu">
 		&nbsp;
 		<div class="right">
+			<a href="http://suckless.org">suckless.org</a>
 			<a href="http://eyjafjallajoekull.com">art</a>
 		</div>
 	</div>

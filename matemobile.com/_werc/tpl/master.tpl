@@ -40,7 +40,7 @@
 
 	<div id="footer">
 	<div class="right">
-	&copy; 2012 matemobile
+	&copy; 2012 matemobile | <a href="http://garbe.us/Contact">Impressum</a>
 	</div>
 	</div>
 </body>

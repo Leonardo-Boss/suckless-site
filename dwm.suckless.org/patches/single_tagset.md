@@ -19,7 +19,7 @@ Several deep changes needed to be made:
 
 Please be aware that this patch probably breaks any other patch!
 
- * [dwm-6.0-single_tagset.diff](dwm-6.0-single_tagset.diff) (14K) (20120319)
+ * [dwm-6.0-single_tagset.diff](dwm-6.0-single_tagset.diff) (14K) (20120325)
 
 Special Version
 ---------------
@@ -37,7 +37,7 @@ This is a special version of the patch that was created with following patches b
  * [tagall](tagall)
  * [zoomswap](zoomswap)
 
-[dwm-6.0-single_tagset_all.diff](dwm-6.0-single_tagset_all.diff) (18K) (20120319)
+[dwm-6.0-single_tagset_all.diff](dwm-6.0-single_tagset_all.diff) (18K) (20120325)
 
 Authors
 -------

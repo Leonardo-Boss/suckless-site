@@ -21,10 +21,6 @@ News
 ----------
 [dwm 6.0](http://dwm.suckless.org) released: [download](http://dl.suckless.org/dwm/dwm-6.0.tar.gz)
 
-2011-09-29
-----------
-suckless.org bas been moved to a new host and will undergo some changes during the following weeks. In particular this wiki structure will be improved and the dwm development will get back to speed soon.
-
 2011-06-04
 ----------
 [lsw 0.2](http://tools.suckless.org/lsw) released: [download](http://dl.suckless.org/tools/lsw-0.2.tar.gz)

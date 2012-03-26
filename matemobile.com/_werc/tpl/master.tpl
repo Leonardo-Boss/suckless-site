@@ -11,11 +11,10 @@
 	</div>
 
 	<div id="menu">
-		&nbsp;
-		<div class="right">
+		<span class="right">
 			<a href="http://suckless.org">suckless.org</a>
 			<a href="http://eyjafjallajoekull.com">art</a>
-		</div>
+		</span>
 	</div>
 
 	<div id="content">
@@ -40,9 +39,9 @@
 	</div>
 
 	<div id="footer">
-	<div class="right">
+	<span class="right">
 	&copy; 2012 matemobile | <a href="http://garbe.us/Contact">Impressum</a>
-	</div>
+	</span>
 	</div>
 </body>
 </html>

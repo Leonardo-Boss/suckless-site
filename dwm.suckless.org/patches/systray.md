@@ -8,7 +8,7 @@ is following the selected monitor.
 
 Download
 --------
-* [dwm-6.0-systray.diff](dwm-6.0-systray.diff) (14K) (20120325)
+* [dwm-6.0-systray.diff](dwm-6.0-systray.diff) (18K) (20120330)
 
 Author
 ------

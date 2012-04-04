@@ -13,6 +13,16 @@ reckons about static linking.
 Due to the side-benefit that statically linked binaries start faster, the
 distribution also targets performance gains.
 
+Contributing
+------------
+
+Sta.li is still in a design phase. You can contribute by adding ideas
+to the [sandbox](http://sta.li/sandbox) or by working on
+[the masterplan](http://sta.li/masterplan).
+
+Join the [suckless community](http://suckless.org/community) to
+discuss further development of sta.li.
+
 Some related links
 ------------------
 * [Bifrost/Linux](http://bifrost.slu.se/) - a minimalist Linux distro for USB media

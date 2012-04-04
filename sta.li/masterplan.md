@@ -33,7 +33,7 @@ In this step some easy way to emulate the old dynamic linking,
 which will allow to use pre-existing packages for other
 distributions, is needed to be implemented.
 
-A proposal for the emulation directory is '/old'. All applications
+A proposal for the emulation directory is '/emul'. All applications
 running below this directory will be run in a chroot under this
 path.
 

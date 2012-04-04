@@ -13,59 +13,6 @@ reckons about static linking.
 Due to the side-benefit that statically linked binaries start faster, the
 distribution also targets performance gains.
 
-General system design
----------------------
-
-* binary is primary focus, each executable is statically linked, potentially different executable format than ELF, since ELF is mainly designed to support dynamic linking
-* kernel is a single monolith based on linux, by default no kernel module support
-* system loader is lilo (maybe we will start maintaining it)
-* no initrd initially
-* perhaps later the whole system will be a ramdisk? will see (20h idea)
-* init system should be based on just one /etc/rc.{start,stop} script (look at p9 how they do it)
-
-Basic filesystem design
------------------------
-Generally, /usr will be removed, what a useless directory, for non-base system stuff we might consider /local
-
-* /bin - all executables go here
-* /bin/kernel (linux kernel)
-* /dev - devices, check if we can avoid udev or what linux requires nowadays, the simplest approach would be best
-* /etc - system config/program config/user setup/network setup
-* /etc/rc.{start,stop} - init scripts
-* /home/root (root's home)
-* /home/* - user home dirs
-* /include - include files
-* /lib - libraries, when used as devel box, only static libs, potentially
-* /local - possibly for software that's not in the base
-* /mnt - mounts
-* /proc - linux crap
-* /share - man pages, locales and crap that several libraries ship
-* /sys - linux crap
-* /tmp - obvious
-* /var - spool, run, log, cache
-* /usr -> / (potentially softlink, will see if we can avoid this, mainly for broken packages)
-
-Updating system is simply rsync'ing from distro server.
-
-Typical end-user system
------------------------
-
-	[anselm@x200s rootfs]$ tree
-	.
-	|-- bin
-	|-- dev
-	|-- etc
-	|-- home
-	|   `-- root
-	|-- mnt
-	|-- proc
-	|-- sys
-	|-- tmp
-	`-- var
-
-Note: End-user systems have no /lib, /include, et cetera. They just have
-what is really necessary and nothing else.
-
 Some related links
 ------------------
 * [Bifrost/Linux](http://bifrost.slu.se/) - a minimalist Linux distro for USB media

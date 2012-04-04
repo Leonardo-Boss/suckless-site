@@ -11,10 +11,10 @@ to be a certain guideline how to accomplish sta.li.
 Steps
 -----
 
-1.) Get a static base environment working
-2.) Allow the emulation of the old dynamically-linked environment
-3.) Make the installation user-friendly
-4.) Maintain the community
+* Get a static base environment working
+* Allow the emulation of the old dynamically-linked environment
+* Make the installation user-friendly
+* Maintain the community
 
 1.) Get a static base environment working
 -----------------------------------------

@@ -12,6 +12,8 @@
 		{ MODKEY|ControlMask,           XK_k,           pushup,         {0} },
 
 ## Download
+Patches against different versions of dwm are available at
+[dwm-clean-patches](https://bitbucket.org/jceb81/dwm-clean-patches/src).
 
 * [dwm-6.0-push.diff](dwm-6.0-push.diff) (1.3K) (20120214)
 * [push.c](push.c) (dwm 5.7.1) (20090927)

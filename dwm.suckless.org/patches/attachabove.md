@@ -8,6 +8,9 @@ always becoming the new master) - basically how Xmonad does it.
 
 Download
 --------
+Patches against different versions of dwm are available at
+[dwm-clean-patches](https://bitbucket.org/jceb81/dwm-clean-patches/src).
+
 * [dwm-6.0-attachabove.diff](dwm-6.0-attachabove.diff) (1.6K) (20120214)
 * [dwm-5.6.1-attachabove.diff](dwm-5.6.1-attachabove.diff) (1.1K) (20090817)
 

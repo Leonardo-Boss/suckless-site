@@ -40,6 +40,9 @@ This patch swaps the current window (C) with the previous master (P) when zoomin
 
 Download
 --------
+Patches against different versions of dwm are available at
+[dwm-clean-patches](https://bitbucket.org/jceb81/dwm-clean-patches/src).
+
 * [dwm-6.0-zoomswap.diff](dwm-6.0-zoomswap.diff) (1.4K) (20120214)
 
 Author

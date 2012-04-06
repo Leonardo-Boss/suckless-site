@@ -57,6 +57,9 @@ Multi-head
 ----------
 From dwm 6.0 onward there's the following patch which is aware of the screen sizes in a multi monitor setup.
 
+Patches against different versions of dwm are available at
+[dwm-clean-patches](https://bitbucket.org/jceb81/dwm-clean-patches/src).
+
 * [dwm-6.0-moveresize.diff][0]
 
 [0]: dwm-6.0-moveresize.diff

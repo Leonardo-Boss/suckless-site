@@ -3,10 +3,10 @@ URL: http://dwm.suckless.org/patches/noborder
 This patch removes the border when there is just one window visible in tiled or
 monocle layout.
 
-diff -r ec4baab78314 dwm.c
---- a/dwm.c	Mon Dec 19 15:38:30 2011 +0100
-+++ b/dwm.c	Fri Apr 06 08:23:31 2012 +0200
-@@ -1191,7 +1191,7 @@
+diff -r 10e232f9ace7 dwm.c
+--- a/dwm.c	Sun Mar 25 17:49:35 2012 +0200
++++ b/dwm.c	Fri Apr 06 08:16:34 2012 +0200
+@@ -1197,7 +1197,7 @@
  
  void
  monocle(Monitor *m) {
@@ -15,7 +15,7 @@ diff -r ec4baab78314 dwm.c
  	Client *c;
  
  	for(c = m->clients; c; c = c->next)
-@@ -1199,8 +1199,17 @@
+@@ -1205,8 +1205,17 @@
  			n++;
  	if(n > 0) /* override layout symbol */
  		snprintf(m->ltsymbol, sizeof m->ltsymbol, "[%d]", n);
@@ -35,7 +35,7 @@ diff -r ec4baab78314 dwm.c
  }
  
  void
-@@ -1703,7 +1712,7 @@
+@@ -1722,7 +1731,7 @@
  
  void
  tile(Monitor *m) {
@@ -44,7 +44,7 @@ diff -r ec4baab78314 dwm.c
  	Client *c;
  
  	for(n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++);
-@@ -1714,17 +1723,36 @@
+@@ -1733,17 +1742,36 @@
  		mw = m->nmaster ? m->ww * m->mfact : 0;
  	else
  		mw = m->ww;
@@ -82,7 +82,7 @@ diff -r ec4baab78314 dwm.c
  }
  
  void
-@@ -1741,6 +1769,12 @@
+@@ -1760,6 +1788,12 @@
  		return;
  	selmon->sel->isfloating = !selmon->sel->isfloating || selmon->sel->isfixed;
  	if(selmon->sel->isfloating)
@@ -94,4 +94,4 @@ diff -r ec4baab78314 dwm.c
 +	if(selmon->sel->isfloating)
  		resize(selmon->sel, selmon->sel->x, selmon->sel->y,
  		       selmon->sel->w, selmon->sel->h, False);
- 	arrange(selmon);
+ 	else if(selmon->sel->isfullscreen)

@@ -2,9 +2,9 @@ Author: Jan Christoph Ebersbach <jceb@e-jc.de>, inspired by http://code.google.c
 URL: http://dwm.suckless.org/patches/systray
 Implements a system tray for dwm.
 
-diff -r ec4baab78314 config.def.h
---- a/config.def.h	Mon Dec 19 15:38:30 2011 +0100
-+++ b/config.def.h	Fri Apr 06 08:25:40 2012 +0200
+diff -r 10e232f9ace7 config.def.h
+--- a/config.def.h	Sun Mar 25 17:49:35 2012 +0200
++++ b/config.def.h	Wed Apr 04 22:18:50 2012 +0200
 @@ -10,6 +10,8 @@
  static const char selfgcolor[]      = "#eeeeee";
  static const unsigned int borderpx  = 1;        /* border pixel of windows */
@@ -14,9 +14,9 @@ diff -r ec4baab78314 config.def.h
  static const Bool showbar           = True;     /* False means no bar */
  static const Bool topbar            = True;     /* False means bottom bar */
  
-diff -r ec4baab78314 dwm.c
---- a/dwm.c	Mon Dec 19 15:38:30 2011 +0100
-+++ b/dwm.c	Fri Apr 06 08:25:40 2012 +0200
+diff -r 10e232f9ace7 dwm.c
+--- a/dwm.c	Sun Mar 25 17:49:35 2012 +0200
++++ b/dwm.c	Wed Apr 04 22:18:50 2012 +0200
 @@ -55,12 +55,30 @@
  #define TAGMASK                 ((1 << LENGTH(tags)) - 1)
  #define TEXTW(X)                (textnw(X, strlen(X)) + dc.font.height)
@@ -43,10 +43,10 @@ diff -r ec4baab78314 dwm.c
  enum { ColBorder, ColFG, ColBG, ColLast };              /* color */
 -enum { NetSupported, NetWMName, NetWMState,
 -       NetWMFullscreen, NetActiveWindow, NetWMWindowType,
--       NetWMWindowTypeDialog, NetLast };     /* EWMH atoms */
+-       NetWMWindowTypeDialog, NetClientList, NetLast };     /* EWMH atoms */
 +enum { NetSupported, NetSystemTray, NetSystemTrayOP, NetSystemTrayOrientation,
 +	   NetWMName, NetWMState, NetWMFullscreen, NetActiveWindow, NetWMWindowType,
-+	   NetWMWindowTypeDialog, NetLast }; /* EWMH atoms */
++	   NetWMWindowTypeDialog, NetClientList, NetLast }; /* EWMH atoms */
 +enum { Manager, Xembed, XembedInfo, XLast }; /* Xembed atoms */
  enum { WMProtocols, WMDelete, WMState, WMTakeFocus, WMLast }; /* default atoms */
  enum { ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle,
@@ -94,7 +94,7 @@ diff -r ec4baab78314 dwm.c
  static void sendmon(Client *c, Monitor *m);
  static void setclientstate(Client *c, long state);
  static void setfocus(Client *c);
-@@ -241,18 +270,24 @@
+@@ -242,18 +271,24 @@
  static void updatenumlockmask(void);
  static void updatesizehints(Client *c);
  static void updatestatus(void);
@@ -119,7 +119,7 @@ diff -r ec4baab78314 dwm.c
  static const char broken[] = "broken";
  static char stext[256];
  static int screen;
-@@ -274,9 +309,10 @@
+@@ -275,9 +310,10 @@
  	[MapRequest] = maprequest,
  	[MotionNotify] = motionnotify,
  	[PropertyNotify] = propertynotify,
@@ -131,7 +131,7 @@ diff -r ec4baab78314 dwm.c
  static Bool running = True;
  static Cursor cursor[CurLast];
  static Display *dpy;
-@@ -497,6 +533,11 @@
+@@ -498,6 +534,11 @@
  	XFreeCursor(dpy, cursor[CurMove]);
  	while(mons)
  		cleanupmon(mons);
@@ -142,8 +142,8 @@ diff -r ec4baab78314 dwm.c
 +	}
  	XSync(dpy, False);
  	XSetInputFocus(dpy, PointerRoot, RevertToPointerRoot, CurrentTime);
- }
-@@ -530,9 +571,48 @@
+ 	XDeleteProperty(dpy, root, netatom[NetActiveWindow]);
+@@ -532,9 +573,48 @@
  
  void
  clientmessage(XEvent *e) {
@@ -192,7 +192,7 @@ diff -r ec4baab78314 dwm.c
  	if(!c)
  		return;
  	if(cme->message_type == netatom[NetWMState]) {
-@@ -583,7 +663,7 @@
+@@ -585,7 +665,7 @@
  			dc.drawable = XCreatePixmap(dpy, root, sw, bh, DefaultDepth(dpy, screen));
  			updatebars();
  			for(m = mons; m; m = m->next)
@@ -201,7 +201,7 @@ diff -r ec4baab78314 dwm.c
  			focus(NULL);
  			arrange(NULL);
  		}
-@@ -667,6 +747,11 @@
+@@ -669,6 +749,11 @@
  
  	if((c = wintoclient(ev->window)))
  		unmanage(c, True);
@@ -213,7 +213,7 @@ diff -r ec4baab78314 dwm.c
  }
  
  void
-@@ -722,6 +807,7 @@
+@@ -724,6 +809,7 @@
  	unsigned long *col;
  	Client *c;
  
@@ -221,7 +221,7 @@ diff -r ec4baab78314 dwm.c
  	for(c = m->clients; c; c = c->next) {
  		occ |= c->tags;
  		if(c->isurgent)
-@@ -743,6 +829,9 @@
+@@ -745,6 +831,9 @@
  	if(m == selmon) { /* status is only drawn on selected monitor */
  		dc.w = TEXTW(stext);
  		dc.x = m->ww - dc.w;
@@ -231,7 +231,7 @@ diff -r ec4baab78314 dwm.c
  		if(dc.x < x) {
  			dc.x = x;
  			dc.w = m->ww - x;
-@@ -771,6 +860,7 @@
+@@ -773,6 +862,7 @@
  
  	for(m = mons; m; m = m->next)
  		drawbar(m);
@@ -239,7 +239,7 @@ diff -r ec4baab78314 dwm.c
  }
  
  void
-@@ -917,10 +1007,17 @@
+@@ -921,10 +1011,17 @@
  	unsigned long dl;
  	unsigned char *p = NULL;
  	Atom da, atom = None;
@@ -258,7 +258,7 @@ diff -r ec4baab78314 dwm.c
  		XFree(p);
  	}
  	return atom;
-@@ -962,6 +1059,15 @@
+@@ -966,6 +1063,15 @@
  	return result;
  }
  
@@ -274,7 +274,7 @@ diff -r ec4baab78314 dwm.c
  Bool
  gettextprop(Window w, Atom atom, char *text, unsigned int size) {
  	char **list = NULL;
-@@ -1096,7 +1202,7 @@
+@@ -1100,7 +1206,7 @@
  killclient(const Arg *arg) {
  	if(!selmon->sel)
  		return;
@@ -283,7 +283,7 @@ diff -r ec4baab78314 dwm.c
  		XGrabServer(dpy);
  		XSetErrorHandler(xerrordummy);
  		XSetCloseDownMode(dpy, DestroyAll);
-@@ -1180,6 +1286,12 @@
+@@ -1186,6 +1292,12 @@
  maprequest(XEvent *e) {
  	static XWindowAttributes wa;
  	XMapRequestEvent *ev = &e->xmaprequest;
@@ -296,7 +296,7 @@ diff -r ec4baab78314 dwm.c
  
  	if(!XGetWindowAttributes(dpy, ev->window, &wa))
  		return;
-@@ -1293,6 +1405,16 @@
+@@ -1303,6 +1415,16 @@
  	Window trans;
  	XPropertyEvent *ev = &e->xproperty;
  
@@ -313,7 +313,7 @@ diff -r ec4baab78314 dwm.c
  	if((ev->window == root) && (ev->atom == XA_WM_NAME))
  		updatestatus();
  	else if(ev->state == PropertyDelete)
-@@ -1342,12 +1464,33 @@
+@@ -1352,12 +1474,33 @@
  }
  
  void
@@ -347,7 +347,7 @@ diff -r ec4baab78314 dwm.c
  resizeclient(Client *c, int x, int y, int w, int h) {
  	XWindowChanges wc;
  
-@@ -1412,6 +1555,18 @@
+@@ -1425,6 +1568,18 @@
  }
  
  void
@@ -366,7 +366,7 @@ diff -r ec4baab78314 dwm.c
  restack(Monitor *m) {
  	Client *c;
  	XEvent ev;
-@@ -1495,25 +1650,35 @@
+@@ -1508,25 +1663,35 @@
  }
  
  Bool
@@ -413,16 +413,16 @@ diff -r ec4baab78314 dwm.c
  	}
  	return exists;
  }
-@@ -1522,7 +1687,7 @@
- setfocus(Client *c) {
- 	if(!c->neverfocus)
- 		XSetInputFocus(dpy, c->win, RevertToPointerRoot, CurrentTime);
+@@ -1539,7 +1704,7 @@
+  		                XA_WINDOW, 32, PropModeReplace,
+  		                (unsigned char *) &(c->win), 1);
+ 	}
 -	sendevent(c, wmatom[WMTakeFocus]);
 +	sendevent(c->win, wmatom[WMTakeFocus], NoEventMask, wmatom[WMTakeFocus], CurrentTime, 0, 0, 0);
  }
  
  void
-@@ -1602,11 +1767,17 @@
+@@ -1619,12 +1784,18 @@
  	wmatom[WMTakeFocus] = XInternAtom(dpy, "WM_TAKE_FOCUS", False);
  	netatom[NetActiveWindow] = XInternAtom(dpy, "_NET_ACTIVE_WINDOW", False);
  	netatom[NetSupported] = XInternAtom(dpy, "_NET_SUPPORTED", False);
@@ -434,13 +434,14 @@ diff -r ec4baab78314 dwm.c
  	netatom[NetWMFullscreen] = XInternAtom(dpy, "_NET_WM_STATE_FULLSCREEN", False);
  	netatom[NetWMWindowType] = XInternAtom(dpy, "_NET_WM_WINDOW_TYPE", False);
  	netatom[NetWMWindowTypeDialog] = XInternAtom(dpy, "_NET_WM_WINDOW_TYPE_DIALOG", False);
+ 	netatom[NetClientList] = XInternAtom(dpy, "_NET_CLIENT_LIST", False);
 +	xatom[Manager] = XInternAtom(dpy, "MANAGER", False);
 +	xatom[Xembed] = XInternAtom(dpy, "_XEMBED", False);
 +	xatom[XembedInfo] = XInternAtom(dpy, "_XEMBED_INFO", False);
  	/* init cursors */
  	cursor[CurNormal] = XCreateFontCursor(dpy, XC_left_ptr);
  	cursor[CurResize] = XCreateFontCursor(dpy, XC_sizing);
-@@ -1623,6 +1794,8 @@
+@@ -1641,6 +1812,8 @@
  	XSetLineAttributes(dpy, dc.gc, 1, LineSolid, CapButt, JoinMiter);
  	if(!dc.font.set)
  		XSetFont(dpy, dc.gc, dc.font.xfont->fid);
@@ -449,7 +450,7 @@ diff -r ec4baab78314 dwm.c
  	/* init bars */
  	updatebars();
  	updatestatus();
-@@ -1731,7 +1904,18 @@
+@@ -1750,7 +1923,18 @@
  togglebar(const Arg *arg) {
  	selmon->showbar = !selmon->showbar;
  	updatebarpos(selmon);
@@ -469,7 +470,7 @@ diff -r ec4baab78314 dwm.c
  	arrange(selmon);
  }
  
-@@ -1816,18 +2000,28 @@
+@@ -1840,11 +2024,18 @@
  		else
  			unmanage(c, False);
  	}
@@ -488,9 +489,10 @@ diff -r ec4baab78314 dwm.c
  	XSetWindowAttributes wa = {
  		.override_redirect = True,
  		.background_pixmap = ParentRelative,
- 		.event_mask = ButtonPressMask|ExposureMask
- 	};
+@@ -1853,7 +2044,10 @@
  	for(m = mons; m; m = m->next) {
+ 		if (m->barwin)
+ 			continue;
 -		m->barwin = XCreateWindow(dpy, root, m->wx, m->by, m->ww, bh, 0, DefaultDepth(dpy, screen),
 +		w = m->ww;
 +		if(showsystray && m == selmon)
@@ -499,7 +501,7 @@ diff -r ec4baab78314 dwm.c
  		                          CopyFromParent, DefaultVisual(dpy, screen),
  		                          CWOverrideRedirect|CWBackPixmap|CWEventMask, &wa);
  		XDefineCursor(dpy, m->barwin, cursor[CurNormal]);
-@@ -2011,6 +2205,104 @@
+@@ -2050,6 +2244,104 @@
  }
  
  void
@@ -604,7 +606,7 @@ diff -r ec4baab78314 dwm.c
  updatewindowtype(Client *c) {
  	Atom state = getatomprop(c, netatom[NetWMState]);
  	Atom wtype = getatomprop(c, netatom[NetWMWindowType]);
-@@ -2080,6 +2372,16 @@
+@@ -2118,6 +2410,16 @@
  	return selmon;
  }
  

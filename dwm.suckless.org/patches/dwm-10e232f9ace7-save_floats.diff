@@ -3,9 +3,9 @@ This patch saves size and position of every floating window before it is forced
 into tiled mode. If the window is made floating again, the old dimensions will
 be restored.
 
-diff -r ec4baab78314 dwm.c
---- a/dwm.c	Mon Dec 19 15:38:30 2011 +0100
-+++ b/dwm.c	Fri Apr 06 08:23:18 2012 +0200
+diff -r 10e232f9ace7 dwm.c
+--- a/dwm.c	Sun Mar 25 17:49:35 2012 +0200
++++ b/dwm.c	Fri Apr 06 08:16:21 2012 +0200
 @@ -86,6 +86,7 @@
  	char name[256];
  	float mina, maxa;
@@ -14,7 +14,7 @@ diff -r ec4baab78314 dwm.c
  	int oldx, oldy, oldw, oldh;
  	int basew, baseh, incw, inch, maxw, maxh, minw, minh;
  	int bw, oldbw;
-@@ -1149,6 +1150,10 @@
+@@ -1153,6 +1154,10 @@
  	updatewindowtype(c);
  	updatesizehints(c);
  	updatewmhints(c);
@@ -25,7 +25,7 @@ diff -r ec4baab78314 dwm.c
  	XSelectInput(dpy, w, EnterWindowMask|FocusChangeMask|PropertyChangeMask|StructureNotifyMask);
  	grabbuttons(c, False);
  	if(!c->isfloating)
-@@ -1741,8 +1746,16 @@
+@@ -1760,10 +1765,18 @@
  		return;
  	selmon->sel->isfloating = !selmon->sel->isfloating || selmon->sel->isfixed;
  	if(selmon->sel->isfloating)
@@ -34,6 +34,8 @@ diff -r ec4baab78314 dwm.c
 +		/*restore last known float dimensions*/
 +		resize(selmon->sel, selmon->sel->sfx, selmon->sel->sfy,
 +		       selmon->sel->sfw, selmon->sel->sfh, False);
+ 	else if(selmon->sel->isfullscreen)
+ 		setfullscreen(selmon->sel, False);
 +	else {
 +		/*save last known float dimensions*/
 +		selmon->sel->sfx = selmon->sel->x;

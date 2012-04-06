@@ -1,9 +1,9 @@
 URL: http://dwm.suckless.org/patches/push
 pushup and pushdown provide a way to move clients inside the clients list.
 
-diff -r ec4baab78314 push.c
+diff -r 10e232f9ace7 push.c
 --- /dev/null	Thu Jan 01 00:00:00 1970 +0000
-+++ b/push.c	Fri Apr 06 08:23:37 2012 +0200
++++ b/push.c	Fri Apr 06 08:16:39 2012 +0200
 @@ -0,0 +1,58 @@
 +static Client *
 +prevtiled(Client *c) {

@@ -3,9 +3,9 @@ This patch makes it possible to switch focus with one single shortcut (alt-s)
 instead of having to think if you should use alt-j or alt-k for reaching the
 last used window.
 
-diff -r ec4baab78314 dwm.c
---- a/dwm.c	Mon Dec 19 15:38:30 2011 +0100
-+++ b/dwm.c	Fri Apr 06 08:23:42 2012 +0200
+diff -r 10e232f9ace7 dwm.c
+--- a/dwm.c	Sun Mar 25 17:49:35 2012 +0200
++++ b/dwm.c	Fri Apr 06 08:16:45 2012 +0200
 @@ -224,6 +224,7 @@
  static void showhide(Client *c);
  static void sigchld(int unused);
@@ -14,7 +14,7 @@ diff -r ec4baab78314 dwm.c
  static void tag(const Arg *arg);
  static void tagmon(const Arg *arg);
  static int textnw(const char *text, unsigned int len);
-@@ -253,6 +254,7 @@
+@@ -254,6 +255,7 @@
  static void zoom(const Arg *arg);
  
  /* variables */
@@ -22,7 +22,7 @@ diff -r ec4baab78314 dwm.c
  static const char broken[] = "broken";
  static char stext[256];
  static int screen;
-@@ -1675,6 +1677,14 @@
+@@ -1694,6 +1696,14 @@
  }
  
  void
@@ -37,15 +37,15 @@ diff -r ec4baab78314 dwm.c
  tag(const Arg *arg) {
  	if(selmon->sel && arg->ui & TAGMASK) {
  		selmon->sel->tags = arg->ui & TAGMASK;
-@@ -1775,6 +1785,7 @@
+@@ -1796,6 +1806,7 @@
  unfocus(Client *c, Bool setfocus) {
  	if(!c)
  		return;
 +	prevclient = c;
  	grabbuttons(c, False);
  	XSetWindowBorder(dpy, c->win, dc.norm[ColBorder]);
- 	if(setfocus)
-@@ -2116,6 +2127,7 @@
+ 	if(setfocus) {
+@@ -2154,6 +2165,7 @@
  void
  zoom(const Arg *arg) {
  	Client *c = selmon->sel;

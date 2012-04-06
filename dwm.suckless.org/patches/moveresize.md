@@ -3,13 +3,11 @@ moveresize
 
 Description
 -----------
-
 This changes allows you to move and resize dwm's clients using keyboard
 bindings.
 
 Usage
 -----
-
  1. Put the following `moveresize()` function somewhere in your `dwm.c`,
     **after** the line which includes the config.h file:
 
@@ -55,17 +53,20 @@ replace the `if()` statement above with this code:
 
 Multi-head
 ----------
-From dwm 6.0 onward there's the following patch which is aware of the screen sizes in a multi monitor setup.
+From dwm 6.0 onward there's the following patch which is aware of the screen
+sizes in a multi monitor setup. A second patch allows you to maximize windows.
 
+Download
+--------
 Patches against different versions of dwm are available at
 [dwm-clean-patches](https://bitbucket.org/jceb81/dwm-clean-patches/src).
 
-* [dwm-6.0-moveresize.diff][0]
-
-[0]: dwm-6.0-moveresize.diff
+ * [dwm-10e232f9ace7-moveresize.diff](dwm-10e232f9ace7-moveresize.diff) (2025b) (20120406)
+ * [dwm-10e232f9ace7-maximize_vert_horz.diff](dwm-10e232f9ace7-maximize_vert_horz.diff) (2385b) (20120406)
+ * [dwm-6.0-moveresize.diff](dwm-6.0-moveresize.diff) (2025b) (20120406)
+ * [dwm-6.0-maximize_vert_horz.diff](dwm-6.0-maximize_vert_horz.diff) (2385b) (20120406)
 
 Authors
 -------
-
  * Claudio M. Alessi - <smoppy@gmail.com>
  * Jan Christoph Ebersbach - <jceb@e-jc.de>

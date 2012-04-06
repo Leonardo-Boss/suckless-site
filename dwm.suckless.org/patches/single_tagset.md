@@ -24,8 +24,8 @@ Please be aware that this patch probably breaks any other patch!
 Patches against different versions of dwm are available at
 [dwm-clean-patches](https://bitbucket.org/jceb81/dwm-clean-patches/src).
 
- * [dwm-6.0-single_tagset.diff](dwm-6.0-single_tagset.diff) (14K) (20120325)
-
+ * [dwm-10e232f9ace7-single_tagset.diff](dwm-10e232f9ace7-single_tagset.diff) (14748b) (20120406)
+ * [dwm-6.0-single_tagset.diff](dwm-6.0-single_tagset.diff) (14417b) (20120406)
 
 Special Version
 ---------------
@@ -43,7 +43,7 @@ This is a special version of the patch that was created with following patches b
  * [tagall](tagall)
  * [zoomswap](zoomswap)
 
-[dwm-6.0-single_tagset_all.diff](dwm-6.0-single_tagset_all.diff) (18K) (20120325)
+[dwm-6.0-single_tagset_all.diff](https://bitbucket.org/jceb81/dwm-patches/raw/cc88093b8acb/single_tagset_all.patch)
 
 Authors
 -------

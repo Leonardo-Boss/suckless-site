@@ -145,7 +145,7 @@ Text Editors
 ------------
 * [acme][acme] - [Rob Pike][rob]'s framing text editor for Plan 9. Included in [plan9port][].
 * [ired](http://www.radare.org) (Minimalist hexadecimal editor and bindiffer for p9, w32 and *nix)
-* [nvi](http://www.bostic.com/vi/) - A small, multiple file vi-alike.
+* [nvi](https://sites.google.com/a/bostic.com/keithbostic/nvi) - A small, multiple file vi-alike.
 * [sam](http://sam.cat-v.org/) - An editor by [Rob Pike][rob] with inspiration from ed.
 * [traditional vi](http://ex-vi.sourceforge.net/) - A fixed version of the original vi.
 * [vim](http://www.vim.org) (With the GUI, use `:set go+=c` to kill popup dialogs)

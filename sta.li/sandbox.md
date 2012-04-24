@@ -39,5 +39,5 @@ Needed application replacements
 -------------------------------
 
 * new bluetooth stack without dbus
-* simpld mDNS without dbus
+* simple mDNS without dbus
 

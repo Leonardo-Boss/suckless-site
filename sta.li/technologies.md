@@ -20,4 +20,5 @@ are: Be as simple as possible and as useful as possible.
 	* [nowm](https://github.com/patrickhaller/no-wm)
 * dyndns
 	* [tinydyndns](http://smarden.org/tinydyndns/)
-
+* dhcp
+	* [sdhcp](http://galos.no-ip.org/sdhcp)

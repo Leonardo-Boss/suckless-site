@@ -15,6 +15,7 @@ There are several other projects which are inspired by the spirit of suckless.
 * [mmsdk](http://hg.youterm.com/mmsdk/) - minimal maemo sdk (based on qemu-arm)
 * [passman](http://nibble.develsec.org/hg/toys/file/) - password manager + other nibble suckless toys
 * [pcw](http://bitbucket.org/emg/pcw) - popup chat windows (ii front end)
+* [sdhcp](http://galos.no-ip.org/sdhcp) - tiny dchp client
 * [slpm](http://hg.youterm.com/slpm/) - suckless package manager
 * [sltar](http://s01.de/~tox/index.cgi/proj_sltar) - suckless tar
 * [smu](http://s01.de/~tox/index.cgi/proj_smu) - simple markup
@@ -26,4 +27,3 @@ There are several other projects which are inspired by the spirit of suckless.
 * [xicon](http://hg.youterm.com/xicon/) - small icon-based dzen-like utility
 * [xlsh](https://github.com/Nadrin/xlsh) - a simple login shell with readline functionality and PAM integration
 * [xpw](http://hg.youterm.com/xpw/) - X piped widgets - X widget library based on pipes
-

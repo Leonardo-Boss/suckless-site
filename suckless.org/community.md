@@ -91,7 +91,6 @@ Other popular channels:
 
 * [#cat-v](irc://irc.freenode.net/#cat-v)
 * [#plan9](irc://irc.freenode.net/#plan9)
-* [#go-nuts](irc://irc.freenode.net/#go-nuts)
 
 
 [devarchive]: http://lists.suckless.org/dev/

@@ -3,7 +3,6 @@ Other projects
 There are several other projects which are inspired by the spirit of suckless.
 
 * [alt](http://hg.youterm.com/alt/) - abstract language tree
-* [bgs](http://s01.de/~tox/index.cgi/proj_bgs) - background setter
 * [bug](http://vicerveza.homeunix.net/~viric/soft/bug/) - commandline todo-tracking system
 * [dietline](http://hg.youterm.com/radare/file/87579f8c5087/src/dietline.c) - minimal readline-like implementation
 * [dmc](http://hg.suckless.org/dmc/) - dynamic mail client
@@ -18,6 +17,7 @@ There are several other projects which are inspired by the spirit of suckless.
 * [sdhcp](http://galos.no-ip.org/sdhcp) - tiny dchp client
 * [slpm](http://hg.youterm.com/slpm/) - suckless package manager
 * [sltar](http://s01.de/~tox/index.cgi/proj_sltar) - suckless tar
+* [bgs](http://s01.de/~tox/index.cgi/proj_bgs) - background setter
 * [smu](http://s01.de/~tox/index.cgi/proj_smu) - simple markup
 * [spp](http://hg.youterm.com/spp/) - simple pre processor
 * [srw](http://bitbucket.org/emg/srw) - simple read wrapper
@@ -25,5 +25,4 @@ There are several other projects which are inspired by the spirit of suckless.
 * [sup](http://hg.youterm.com/sup/) - minimalistic sudo replacement
 * [sw](http://nibble.develsec.org/projects/sw.html) - minimalistic web framework
 * [xicon](http://hg.youterm.com/xicon/) - small icon-based dzen-like utility
-* [xlsh](https://github.com/Nadrin/xlsh) - a simple login shell with readline functionality and PAM integration
 * [xpw](http://hg.youterm.com/xpw/) - X piped widgets - X widget library based on pipes

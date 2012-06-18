@@ -73,8 +73,10 @@ Old
 Related lists
 -------------
 
-* [9fans](http://plan9.bell-labs.com/wiki/plan9/mailing_lists/#9fans) - Fans of the [Plan 9 from Bell Labs](http://9fans.net) operating system.
+* [9fans](http://plan9.bell-labs.com/wiki/plan9/mailing_lists/#9fans) - fans of the [Plan 9 from Bell Labs](http://9fans.net) operating system
 * [inferno-list](http://plan9.bell-labs.com/wiki/plan9/mailing_lists/#INFERNO-LIST) - Inferno users and developers
+* [9front](https://groups.google.com/group/9front) - 9front users and hackers
+* [cat-v](https://groups.google.com/group/cat-v) - cat-v.org trolling
 
 IRC
 ---
@@ -87,9 +89,10 @@ Official channel of suckless.org projects:
 
 Other popular channels:
 
-* [#acme](irc://irc.oftc.net/#acme)
+* [#cat-v](irc://irc.freenode.net/#cat-v)
 * [#plan9](irc://irc.freenode.net/#plan9)
-* [#inferno](irc://irc.freenode.net/#inferno)
+* [#go-nuts](irc://irc.freenode.net/#go-nuts)
+
 
 [devarchive]: http://lists.suckless.org/dev/
 [dwmarchive]: http://lists.suckless.org/dwm/

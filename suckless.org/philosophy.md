@@ -59,3 +59,4 @@ shrinks, the more skilled you have become and the less your software sucks.
 Related links
 -------------
 * [The Duct Tape Programmer](http://www.joelonsoftware.com/items/2009/09/23.html)
+* [Why should I have written ZeroMQ in C, not C++](http://www.250bpm.com/blog:4)

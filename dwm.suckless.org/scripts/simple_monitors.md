@@ -21,7 +21,7 @@ Ram used
 
 Return the amount of ram used, in megabytes.
 
-        $(free -m |awk '/cache:/ { print $3"M" })
+        $(free -m |awk '/cache:/ { print $3"M" }')
 
 Temperature
 ---

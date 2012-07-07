@@ -1,0 +1,32 @@
+diff -r 399346e83a88 dwm.c
+--- a/dwm.c	Fri Mar 23 15:19:53 2012 +0100
++++ b/dwm.c	Fri Mar 23 15:21:38 2012 +0100
+@@ -266,7 +266,6 @@
+ 	[ConfigureRequest] = configurerequest,
+ 	[ConfigureNotify] = configurenotify,
+ 	[DestroyNotify] = destroynotify,
+-	[EnterNotify] = enternotify,
+ 	[Expose] = expose,
+ 	[FocusIn] = focusin,
+ 	[KeyPress] = keypress,
+@@ -456,6 +455,7 @@
+ 	}
+ 	else if((c = wintoclient(ev->window))) {
+ 		focus(c);
++		XAllowEvents(dpy, ReplayPointer, CurrentTime);
+ 		click = ClkClientWin;
+ 	}
+ 	for(i = 0; i < LENGTH(buttons); i++)
+@@ -1001,11 +1001,11 @@
+ 						XGrabButton(dpy, buttons[i].button,
+ 						            buttons[i].mask | modifiers[j],
+ 						            c->win, False, BUTTONMASK,
+-						            GrabModeAsync, GrabModeSync, None, None);
++						            GrabModeSync, GrabModeSync, None, None);
+ 		}
+ 		else
+ 			XGrabButton(dpy, AnyButton, AnyModifier, c->win, False,
+-			            BUTTONMASK, GrabModeAsync, GrabModeSync, None, None);
++			            BUTTONMASK, GrabModeSync, GrabModeSync, None, None);
+ 	}
+ }

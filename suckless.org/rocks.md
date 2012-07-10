@@ -42,9 +42,8 @@ Cryptography
 
 Mathematics
 -----------
-* [libtommath](http://libtom.org/?page=features&newsitems=5&whatfile=ltm) - math/bignum library (can be used insted of the much bigger [GNU MP](http://gmplib.org) library).
+* [libtommath](http://libtom.org/?page=features&newsitems=5&whatfile=ltm) - math/bignum library (can be used instead of the much bigger [GNU MP](http://gmplib.org) library).
 * [libtomfastmath](http://libtom.org/?page=features&newsitems=5&whatfile=tfm) - port of libtommath using inline assembler for speedup on various architectures
-* [libmpi](http://spinning-yarns.org/michael/mpi/) - lightweight math lib from which libtommath was originally forked
 
 Miscellaneous
 -------------
@@ -113,6 +112,7 @@ Instant Messaging Clients
 * [centericq](http://konst.org.ua/centericq/)
 * [centerim](http://www.centerim.org/) - A centericq fork.
 * [climm](http://www.climm.org/)
+* [irssi-xmpp](http://cybione.org/~irssi-xmpp/)
 * [mcabber](http://www.lilotux.net/~mikael/mcabber/) - A console jabber client.
 * [ysm](http://ysmv7.sourceforge.net/)
 
@@ -150,6 +150,7 @@ Text Editors
 * [traditional vi](http://ex-vi.sourceforge.net/) - A fixed version of the original vi.
 * [vim](http://www.vim.org) (With the GUI, use `:set go+=c` to kill popup dialogs)
 * [wily](http://www.cs.yorku.ca/~oz/wily/) - An acme clone for POSIX.
+* [ed](http://swtch.com/plan9port/man/man1/ed.html) - [ED IS THE STANDARD TEXT EDITOR!](http://www.gnu.org/fun/jokes/ed-msg.html)
 
 Utilities
 ---------

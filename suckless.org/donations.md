@@ -24,6 +24,7 @@ Following people have donated to the suckless.org project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
+* Brandon Mulcahy donated <b>10 USD</b>
 * Ryan Nabinger donated <b>100 USD</b>
 * Darryl Jamieson donated <b>15 EUR</b>
 * Kay Smarczewski donated <b>25 EUR</b>

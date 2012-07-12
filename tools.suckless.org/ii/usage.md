@@ -17,3 +17,20 @@ You can also try [pcw](http://bitbucket.org/emg/pcw) which will (by default) ope
 Web frontend
 ------------
 phpii is a simple web frontend for ii. You can see a demo of it and download the php source here: [phpii homepage](http://yogan.meinungsverstaerker.de/phpii)
+
+iii
+---
+[iii](https://github.com/c00kiemon5ter/iii) (maybe interactive ii, or something) is a collection of shell scripts to produce a cli frontend to ii.
+iii looks like a "normal" irc client (ie irssi), working on top of ii.
+It features connections to multiple servers and autojoin of channels, auto-reconnect to servers and channels on network failure, autocompletion through rlwrap, formatted and colored output etc. 
+It can be used directly in the command line, or like pcw spawning terminals for each channel, or inside a dedicated tmux session. 
+Read the readme file, and do not hesitate to ask c00kiemon5ter for help on freenode and oftc.
+
+iil
+---
+The [iil](http://chiselapp.com/user/onys/repository/iil/home) (short for iiless) is fast viewer/reader for ii irc client, using your shell and less.
+
+im-scripts
+----------
+[im-scripts](http://github.com/gravicappa/im-scripts) is a set of sh-scripts for convenient use of ii and ji.
+

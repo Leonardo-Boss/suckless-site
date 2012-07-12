@@ -156,6 +156,7 @@ Utilities
 ---------
 * [9menu](http://www.freshports.org/x11/9menu/) - A menu program based on the Blit-style menus so prevalent in Plan 9.  A take on it is included with wmii.
 * [dmenu](/programs/dmenu.html) - Obvious
+* [slmenu](https://bitbucket.org/rafaelgg/slmenu) - Dmenu spinoff for the console
 
 Web Browsers
 ------------

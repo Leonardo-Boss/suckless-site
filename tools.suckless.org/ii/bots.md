@@ -27,12 +27,10 @@ If you want some kind of automatic reconnects in ii you can make a something lik
 
     while true; do  
         ii -s irc.oftc.net -n iifoo -f "John Doe" &
-        iipid=$!  
+        iipid="$!"  
         sleep 5  
-        echo "/j #ii" > ~/irc/irc.oftc.net/in  
-        while [ -e "/proc/$iipid" ]; do  
-            sleep 30  
-        done  
+        printf "/j %s\n" "#ii" > ~/irc/irc.oftc.net/in  
+        wait "$iipid"
     done  
 
 bots for irc it (ii)

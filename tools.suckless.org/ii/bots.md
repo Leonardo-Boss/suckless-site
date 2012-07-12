@@ -1,12 +1,11 @@
 Its very easy to write shell script based bots with ii. As a short example look at this:
 
-    tail -f \\#<CHANNEL>/out |  
-    while read foo ; do  
-        name=$(echo $foo | awk '{print $2}' | sed 's,<\\(.*\\)>,\\1,')  
-        if awk 'BEGIN{srand(); exit rand()<.1)}' ; then  
-            echo "$name: WHAT??" ;  
-        fi;  
-    done
+    tail -f \\#<CHANNEL>/out |
+        while read -r date time nick mesg; do
+            nick="${nick#<}"
+            nick="${nick%>}"
+            printf "%s: WHAT??\n" "$nick"
+        done > \\#<CHANNEL>/in
 
 Its just spamming a channel but I guess your imagination is boundless.
 I also heard about people using it together with nagios to get the notifications into IRC.

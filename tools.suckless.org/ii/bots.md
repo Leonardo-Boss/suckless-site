@@ -36,6 +36,24 @@ If you want some kind of automatic reconnects in ii you can make a something lik
 bots for irc it (ii)
 ====================
 
+iibot
+------
+
+[iibot](https://github.com/c00kiemon5ter/iibot) by c00kiemon5ter
+is written in bash, but can easily be translated to plain sh (ask him).
+
+It uses a main script to connect to multiple servers and channels,
+and auto-reconnect and auto-join on network failure.
+
+It reads commands with a leading '!' and calls a secondary script
+to handle the command and the responce.
+That way commands can be added or removed dynamically.
+The secondary script knows the network, channel, nick and message that
+triggered the command, so it is easy to filter responses to commands
+to specified channels, users and such.
+
+if you need help, do not hesitate to ask c00kiemon5ter on freenode and oftc.
+
 nagios
 ------
 

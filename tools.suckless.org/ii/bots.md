@@ -1,6 +1,6 @@
 Its very easy to write shell script based bots with ii. As a short example look at this:
 
-    tail -f \\#<CHANNEL>/out |
+    tail -f \#<CHANNEL>/out | \
         while read -r date time nick mesg; do
             nick="${nick#<}"
             nick="${nick%>}"

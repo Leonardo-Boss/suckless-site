@@ -95,6 +95,7 @@ IRC Clients
 * [ircrc](http://plan9.bell-labs.com/sources/contrib/fgb/rc/ircrc) - An rc-based IRC client similar to ircc. Needs minor modification to run on UNIX.
 * [irssi](http://www.irssi.org/)
 * [sic](http://tools.suckless.org/sic) - Another suckless.org IRC client. Similar to ircc.
+* [quIRC](https://github.com/ec429/quIRC) - a lightweight console IRC client
 
 Image Viewers
 -------------

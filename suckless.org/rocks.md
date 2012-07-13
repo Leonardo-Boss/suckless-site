@@ -51,6 +51,7 @@ Miscellaneous
 * [pjsip](http://www.pjsip.org/) - open source SIP stack (GPL)
 * [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modeled after libevent but much smaller (dual licensed under 2-clause BSD and GPL)
 * [termbox](https://github.com/nsf/termbox) - simple ncurses-like library for creating TUIs
+* [ccv](https://github.com/liuliu/ccv) - C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library
 
 Programs
 ========

@@ -39,6 +39,7 @@ Cryptography
 ------------
 * [libtomcrypt](http://libtom.org/?page=features&newsitems=5&whatfile=crypt) - the cryptography library from the libtom project
 * [polarssl](http://polarssl.org/) - lightweight SSL/TLS implementation (GPL with [exceptions](http://polarssl.org/license_exception))
+* [(C)yassl](http://www.yassl.com/yaSSL/Home.html) - portable RTOS-targeted embedded SSL library - licensed under both the GPLv2 as well as standard commercial licensing
 
 Mathematics
 -----------

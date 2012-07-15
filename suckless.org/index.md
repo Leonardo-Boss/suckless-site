@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2012-07-14
+----------
+[surf 0.5](http://surf.suckless.org) released: [download](http://dl.suckless.org/surf/surf-0.5.tar.gz)
+
 2012-07-08
 ----------
 [tabbed 0.4](http://tools.suckless.org/tabbed) released: [download](http://dl.suckless.org/tools/tabbed-0.4.tar.gz)

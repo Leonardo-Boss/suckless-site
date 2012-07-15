@@ -28,6 +28,6 @@ with the following command:
 Download
 --------
 * [MIT/X Consortium license](http://hg.suckless.org/surf/raw-file/tip/LICENSE)
-* [surf 0.5](http://dl.suckless.org/surf/surf-0.5.tar.gz) (20120614)
+* [surf 0.5](http://dl.suckless.org/surf/surf-0.5.tar.gz) (20120714)
 * See also [dmenu](http://tools.suckless.org/dmenu),
   [tabbed](http://tools.suckless.org/tabbed)

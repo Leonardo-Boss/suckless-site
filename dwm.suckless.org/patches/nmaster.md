@@ -1,9 +1,15 @@
 # nmaster patch
 
+## History
+
+This patch restores the ability to have multiple clients in the master
+area of the tiled layout. This feature was dropped from vanilla dwm in
+version 4.4. The ntile mode from below is included in dwm as of version
+6.0.
+
 ## Description
 
-This patch restores the ability to have multiple clients in the master area of the tiled layout.
-This feature was dropped from vanilla dwm in version 4.4.
+The figures show how tiling will work when the patch is applied.
 
 	ntile         (-|=)
 	+----------+------+

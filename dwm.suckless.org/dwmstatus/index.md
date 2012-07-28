@@ -29,4 +29,5 @@ If you have simple C functions for gathering system information, please
 add them here as file or as code example.
 
 * [Support for ACPI battery status Linux](new-acpi-battery.c)
+* [Reading out a temperature from /sys](dwmstatus-temperature.c)
 

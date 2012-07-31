@@ -30,13 +30,13 @@ This example is for people who prefer to control dwm with the mouse (for dwm 5.1
 	const char tags[][MAXTAGLEN] = { "1", "2", "3", "4", "5", "w" };
 	
 	static Rule rules[] = {
-		/* class      instance    title       tags mask     isfloating */
-		{ "acme",      NULL,       NULL,       1 << 2,  False },
-		{ "Acroread",  NULL,       NULL,       0,       True },
-		{ "Gimp",      NULL,       NULL,       0,       True },
-		{ "GQview",    NULL,       NULL,       0,       True },
-		{ "MPlayer",   NULL,	   NULL,       0,	True },
-		{ "Navigator", NULL,       NULL,       1 << 5,  False },
+		/* class      instance    title       tags mask     isfloating   monitor */
+		{ "acme",      NULL,       NULL,       1 << 2,       False,       -1 },
+		{ "Acroread",  NULL,       NULL,       0,            True,        -1 },
+		{ "Gimp",      NULL,       NULL,       0,            True,        -1 },
+		{ "GQview",    NULL,       NULL,       0,            True,        -1 },
+		{ "MPlayer",   NULL,       NULL,       0,            True,        -1 },
+		{ "Navigator", NULL,       NULL,       1 << 5,       False,       -1 },
 	};
 	
 	/* layout(s) */

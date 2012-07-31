@@ -9,9 +9,9 @@ If, like me, you don't want any application to be treated in a special way, you 
 The original code describes what each value represents within the Rule structure.
 
 	static Rule rules[] = {
-	    /* class      instance    title       tags mask     isfloating */
-	    { "Gimp",     NULL,       NULL,       0,            True },
-	    { "Firefox",  NULL,       NULL,       1 << 8,       True },
+	    /* class      instance    title       tags mask     isfloating   monitor */
+	    { "Gimp",     NULL,       NULL,       0,            True,        -1 },
+	    { "Firefox",  NULL,       NULL,       1 << 8,       True,        -1 },
 	};
 
 For instance, Gimp and Firefox will be labeled as floating windows, even if the layout selected is Monocle or Tiled.
@@ -20,8 +20,8 @@ In particular, the tag mask will attach Firefox to tag '9'.
 If we don't want any window class to be treated in a special way, we need to initialize rules with at least one element:
 
 	static Rule rules[] = {
-	    /* class      instance    title       tags mask     isfloating */
-	    { NULL,     NULL,       NULL,       0,            False },
+	    /* class      instance    title       tags mask     isfloating   monitor */
+	    { NULL,       NULL,       NULL,       0,            False,       -1 },
 	};
 
 The code in dwm.c will check that the `class` element is not NULL before any matching is done.

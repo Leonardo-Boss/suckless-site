@@ -14,9 +14,9 @@ means the currently viewed tags, and the default mode is tiled so isfloating is
 Example from the default config:
 
 	static Rule rules[] = {
-	    /* class      instance    title       tags mask     isfloating */
-	    { "Gimp",     NULL,       NULL,       0,            True },
-	    { "Firefox",  NULL,       NULL,       1 << 8,       True },
+	    /* class      instance    title       tags mask     isfloating   monitor */
+	    { "Gimp",     NULL,       NULL,       0,            True,        -1 },
+	    { "Firefox",  NULL,       NULL,       1 << 8,       True,        -1 },
 	};
 
 These rules make every Gimp and Firefox window floating and makes Firefox

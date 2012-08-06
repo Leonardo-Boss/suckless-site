@@ -1,3 +1,5 @@
+[![Screenshot](dwm-20120806s.png)](dwm-20120806.png)
+
 [![Screenshot](dwm-20110720s.png)](dwm-20110720.png)
 
 [![Screenshot](dwm-20100318s.png)](dwm-20100318.png)

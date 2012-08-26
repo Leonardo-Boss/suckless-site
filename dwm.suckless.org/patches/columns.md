@@ -15,3 +15,15 @@ Download
 Author
 ------
 * Evan Gates (emg)<evan.gates@gmail.com>
+
+Special Version
+---------------
+This patch tweaks the one above to respect the master width % (mfact in config.h)
+and resizings.  So instead of the entire screen divided into even columns only 
+the master portion is, with the remaining space becoming the last column for the
+stack.  It effectively acts like the default tiling mode, except provides for
+vertical instead of horizontal master windows.
+
+* [dwm-6.0-column_master.diff](dwm-6.0-column_master.diff)
+
+* noah dot rosser gmail

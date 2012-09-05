@@ -1,6 +1,6 @@
 st is a simple terminal implementation for X.
 
-<a href="http://www.flickr.com/photos/hendry/5208787780/" title="dwm &amp; st -- two essential suckless applications by Kai Hendry, on Flickr"><img src="http://farm5.static.flickr.com/4087/5208787780_43589e5cb2.jpg" width="500" height="313" alt="dwm &amp; st -- two essential suckless applications" /></a>
+<a href="http://st.suckless.org/screenshots/20h-2012.png" title="dwm &amp; st"><img src="http://st.suckless.org/screenshots/20h-2012.png" width="500" height="313" alt="dwm &amp; st" /></a>
 
 What is wrong with xterm?
 -------------------------
@@ -31,6 +31,7 @@ See the "[goals](http://st.suckless.org/goals)" section for a list of features t
 * utf8
 * X11 copy/paste
 * antialiased fonts (experimental, see xft branch in the repo)
+* resize
 
 Configuration
 -------------
@@ -130,5 +131,8 @@ st is actively developed. You can [browse](http://hg.suckless.org/st) its source
 Contributors
 ------------
 * Anselm R. Garbe
-* Aurélien Aptel <aurelien dot aptel at gmail dot com> (active developer)
-* Devin J. Pohly (lots of patches :)
+* Aurélien Aptel
+* Devin J. Pohly
+* Christoph Lohmann
+* Roberto E. Vargas Caballero
+

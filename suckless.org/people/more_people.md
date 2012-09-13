@@ -60,7 +60,7 @@ developers and contributors.  If you are missing, feel free to add yourself.
 * Sander van Dijk (developer)
 * Sebastian Hartmann (Manual pages for wmii)
 * Sebastian Roth (several bugfixes in C and Makefiles, Doxyfile)
-* [Stefan Kuttler] (inventor of project name)
+* Stefan Kuttler (inventor of the WMI project name)
 * Stefan Tibus (fixes and patches)
 * Steffen Liebergeld ("A guide to wmii" author)
 * Steve Hoffman (various feedback, small fixes)

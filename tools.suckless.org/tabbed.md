@@ -1,3 +1,5 @@
+![tabbed running nyancat](/tabbed.png)
+
 tabbed
 ======
 Simple generic tabbed fronted to xembed aware applications, originally designed

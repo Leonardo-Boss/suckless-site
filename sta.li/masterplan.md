@@ -20,7 +20,7 @@ Steps
 -----------------------------------------
 
 Steps in this direction have been done in the
-[sabotage](https://github.com/chneukirchen/sabotage) and
+[sabotage](https://github.com/rofl0r/sabotage) and
 [bootstrap](https://github.com/pikhq/bootstrap-linux)
 Linux distribution. They should serve as a base for further
 a further extension to make a base environment which can be

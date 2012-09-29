@@ -28,11 +28,9 @@ following addresses to perform the described action.
 * `dev+subscribe@MAILHOST` - subscribe to the mailing list (read/write)
 * `dev+subscribe-digest@MAILHOST` - subscribe to the digest version of the mailing list (read/write)
 * `dev+subscribe-nomail@MAILHOST` - subscribe without receiving e-mails from the mailing list (write)
-
 * `dev+unsubscribe@MAILHOST` - unsubscribe from the mailing list
 * `dev+unsubscribe-digest@MAILHOST` - unsubscribe from the digest version
 * `dev+unsubscribe-nomail@MAILHOST` - unsubscribe from the nomail version 
-
 * `dev+get-N@MAILHOST` - retrieve message number N
 * `dev+help@MAILHOST` - receive detailed description of the mailing list commands
 
@@ -41,11 +39,9 @@ following addresses to perform the described action.
 * `hackers+subscribe@MAILHOST` - subscribe to the mailing list (read/write)
 * `hackers+subscribe-digest@MAILHOST` - subscribe to the digest version of the mailing list (read/write)
 * `hackers+subscribe-nomail@MAILHOST` - subscribe without receiving e-mails from the mailing list (write)
-
 * `hackers+unsubscribe@MAILHOST` - unsubscribe from the mailing list
 * `hackers+unsubscribe-digest@MAILHOST` - unsubscribe from the digest version
 * `hackers+unsubscribe-nomail@MAILHOST` - unsubscribe from the nomail version 
-
 * `hackers+get-N@MAILHOST` - retrieve message number N
 * `hackers+help@MAILHOST` - receive detailed description of the mailing list commands
 
@@ -54,11 +50,9 @@ following addresses to perform the described action.
 * `wiki+subscribe@MAILHOST` - subscribe to the mailing list (read/write)
 * `wiki+subscribe-digest@MAILHOST` - subscribe to the digest version of the mailing list (read/write)
 * `wiki+subscribe-nomail@MAILHOST` - subscribe without receiving e-mails from the mailing list (write)
-
 * `wiki+unsubscribe@MAILHOST` - unsubscribe from the mailing list
 * `wiki+unsubscribe-digest@MAILHOST` - unsubscribe from the digest version
 * `wiki+unsubscribe-nomail@MAILHOST` - unsubscribe from the nomail version 
-
 * `wiki+get-N@MAILHOST` - retrieve message number N
 * `wiki+help@MAILHOST` - receive detailed description of the mailing list commands
 

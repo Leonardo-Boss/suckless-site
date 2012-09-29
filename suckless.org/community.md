@@ -30,7 +30,7 @@ following addresses to perform the described action.
 * `dev+subscribe-nomail@MAILHOST` - subscribe without receiving e-mails from the mailing list
 * `dev+unsubscribe@MAILHOST` - unsubscribe from the mailing list
 * `dev+unsubscribe-digest@MAILHOST` - unsubscribe from the digest version
-* `dev+unsubscribe-nomail@MAILHOST` - receive e-mails from the maing list
+* `dev+unsubscribe-nomail@MAILHOST` - receive e-mails from the mailing list
 * `dev+get-N@MAILHOST` - retrieve message number N
 * `dev+help@MAILHOST` - receive detailed description of the mailing list commands
 
@@ -41,7 +41,7 @@ following addresses to perform the described action.
 * `hackers+subscribe-nomail@MAILHOST` - subscribe without receiving e-mails from the mailing list
 * `hackers+unsubscribe@MAILHOST` - unsubscribe from the mailing list
 * `hackers+unsubscribe-digest@MAILHOST` - unsubscribe from the digest version
-* `hackers+unsubscribe-nomail@MAILHOST` - receive e-mails from the maing list
+* `hackers+unsubscribe-nomail@MAILHOST` - receive e-mails from the mailing list
 * `hackers+get-N@MAILHOST` - retrieve message number N
 * `hackers+help@MAILHOST` - receive detailed description of the mailing list commands
 
@@ -52,7 +52,7 @@ following addresses to perform the described action.
 * `wiki+subscribe-nomail@MAILHOST` - subscribe without receiving e-mails from the mailing list
 * `wiki+unsubscribe@MAILHOST` - unsubscribe from the mailing list
 * `wiki+unsubscribe-digest@MAILHOST` - unsubscribe from the digest version
-* `wiki+unsubscribe-nomail@MAILHOST` - receive e-mails from the maing list
+* `wiki+unsubscribe-nomail@MAILHOST` - receive e-mails from the mailing list
 * `wiki+get-N@MAILHOST` - retrieve message number N
 * `wiki+help@MAILHOST` - receive detailed description of the mailing list commands
 
@@ -98,3 +98,4 @@ Other popular channels:
 [hackersarchive]: http://lists.suckless.org/hackers/
 [wikiarchive]: http://lists.suckless.org/wiki/
 [wmiiarchive]: http://lists.suckless.org/wmii/
+

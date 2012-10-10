@@ -19,8 +19,10 @@ Download
 --------
 
  * [dwm-5.9-combo.diff](dwm-5.9-combo.diff) (2010-10-30)
+ * [dwm-6.0-combo.diff](dwm-6.0-combo.diff) (2012-10-09)
 
 Author
 ------
 
  * Wolf Tivy - wolf at tivy dot com.
+ * Dan McNair - cosfx at h0v3 dot net (mechanical update to 6.0)

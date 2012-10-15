@@ -5,6 +5,16 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2012-10-14
+----------
+Today we heard the very sad news that our friend, contributor and philosophical advisor Uriel has passed away peacefully.
+We will miss him a lot.
+
+![uriel](/uriel.png)
+
+RIP
+
+
 2012-07-30
 ----------
 [https://github.com/suckless](https://github.com/suckless) is a github mirror of [http://hg.suckless.org/](http://hg.suckless.org/) updated with a daily cronjob. Please contribute by posting patches to the [mailing list](http://suckless.org/community).

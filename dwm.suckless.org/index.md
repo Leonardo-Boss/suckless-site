@@ -86,7 +86,6 @@ Related discussion
 * <http://fsk141.com/dwm-colors>
 * <http://www.linuxjournal.com/content/going-fast-dwm>
 * <http://www.linuxgoodies.com/review_dwm.html>
-* <http://dobbscodetalk.com/index.php?option=com_myblog&show=dwm.html&Itemid=29>
 * <http://www.iyiz.com/20-most-simple-and-cool-x-window-managers-for-linux/>
 * <http://lbolla.wordpress.com/2010/01/08/dwm-restart/>
 * <http://danielkaes.wordpress.com/2009/12/03/adding-a-pidgin-trayicon-to-dwm/>

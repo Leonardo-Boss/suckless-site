@@ -56,17 +56,9 @@ conference in Berlin.
 ----------
 [ii 1.6](http://tools.suckless.org/ii) released (regression fix): [download](http://dl.suckless.org/tools/ii-1.6.tar.gz)
 
-2010-06-08
-----------
-[surf 0.4.1](http://surf.suckless.org) released: [download](http://dl.suckless.org/surf/surf-0.4.1.tar.gz)
-
 2010-06-04
 ----------
 [9base-6](http://tools.suckless.org/9base) released: [download](http://dl.suckless.org/tools/9base-6.tar.gz)
-
-2010-05-31
-----------
-[tabbed 0.3](http://tools.suckless.org/tabbed) released: [download](http://dl.suckless.org/tools/tabbed-0.3.tar.gz)
 
 2010-05-25
 ----------
@@ -94,16 +86,6 @@ There was a small community meeting in Berlin! Thanks to all attenders.
 2009-11-27
 ----------
 [wmi-11](http://wmi.suckless.org/) released: [download](http://dl.suckless.org/wmi/wmi-11.tar.gz)
-
-2009-10-30
-----------
-[tabbed 0.2](http://tools.suckless.org/tabbed) released: [download](http://dl.suckless.org/tools/tabbed-0.2.tar.gz)
-
-[surf 0.3](http://surf.suckless.org/) released: [download](http://dl.suckless.org/surf/surf-0.3.tar.gz)
-
-2009-10-17
-----------
-[surf 0.2](http://surf.suckless.org/) released: [download](http://dl.suckless.org/surf/surf-0.2.tar.gz)
 
 2008-08-02
 ----------

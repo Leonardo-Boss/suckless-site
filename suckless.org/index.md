@@ -68,7 +68,7 @@ conference in Berlin.
 ----------
 We learned today that the previous wmii maintainer, who wasn't actively
 involved since 2007, Denis Grelich, [died on 12 March
-2010](http://fsing.fs.uni-sb.de/drupal/node/169). We offer him our
+2010](http://www.lmt.uni-saarland.de/de/aktuelles/grelich.html). We offer him our
 condolences and thank him for his work. Rest in peace.
 
 2010-03-07

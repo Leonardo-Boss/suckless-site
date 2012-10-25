@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2012-10-25
+----------
+[slock 1.1](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-1.1.tar.gz)
+
 2012-10-14
 ----------
 Today we heard the very sad news that our friend, contributor and philosophical advisor Uriel has passed away peacefully.
@@ -13,7 +17,6 @@ We will miss him a lot.
 ![uriel](/uriel.png)
 
 RIP
-
 
 2012-07-30
 ----------
@@ -31,9 +34,6 @@ RIP
 ----------
 [st 0.2.1](http://st.suckless.org) released: [download](http://dl.suckless.org/st/st-0.2.1.tar.gz)
 
-2012-02-11
-----------
-[slock 1.0](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-1.0.tar.gz)
 
 2012-01-08
 ----------

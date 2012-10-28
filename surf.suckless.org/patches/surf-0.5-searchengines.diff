@@ -1,0 +1,52 @@
+--- surf.c	2012-10-26 17:58:18.912014914 +0200
++++ surf.c	2012-10-27 15:54:06.332317229 +0200
+@@ -68,6 +68,11 @@
+ 
+ G_DEFINE_TYPE(CookieJar, cookiejar, SOUP_TYPE_COOKIE_JAR_TEXT)
+ 
++typedef struct {
++	char *token;
++	char *uri;
++} SearchEngine;
++
+ static Display *dpy;
+ static Atom atoms[AtomLast];
+ static Client *clients = NULL;
+@@ -105,6 +110,7 @@
+ static void navigate(Client *c, const Arg *arg);
+ static Client *newclient(void);
+ static void newwindow(Client *c, const Arg *arg, gboolean noembed);
++static gchar *parseuri(const gchar *uri);
+ static void pasteuri(GtkClipboard *clipboard, const char *text, gpointer d);
+ static void populatepopup(WebKitWebView *web, GtkMenu *menu, Client *c);
+ static void popupactivate(GtkMenuItem *menu, Client *);
+@@ -475,8 +481,7 @@
+ 
+ 	if(strcmp(uri, "") == 0)
+ 		return;
+-	u = g_strrstr(uri, "://") ? g_strdup(uri)
+-		: g_strdup_printf("http://%s", uri);
++	u = parseuri(uri);
+ 	/* prevents endless loop */
+ 	if(c->uri && strcmp(u, c->uri) == 0) {
+ 		reload(c, &a);
+@@ -679,6 +684,19 @@
+ 	}
+ }
+ 
++
++gchar *
++parseuri(const gchar *uri) {
++	guint i;
++	for (i = 0; i < LENGTH(searchengines); i++) {
++		if (searchengines[i].token == NULL || searchengines[i].uri == NULL || *(uri + strlen(searchengines[i].token)) != ' ')
++			continue;
++		if (g_str_has_prefix(uri, searchengines[i].token))
++			return g_strdup_printf(searchengines[i].uri, uri + strlen(searchengines[i].token) + 1);
++	}
++	return g_strrstr(uri, "://") ? g_strdup(uri) : g_strdup_printf("http://%s", uri);
++}
++
+ void
+ pasteuri(GtkClipboard *clipboard, const char *text, gpointer d) {
+ 	Arg arg = {.v = text };

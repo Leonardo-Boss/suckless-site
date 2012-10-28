@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2012-10-28
+----------
+[sprop 0.1](http://tools.suckless.org/sprop) released: [download](http://dl.suckless.org/tools/sprop-0.1.tar.gz)
+
 2012-10-25
 ----------
 [slock 1.1](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-1.1.tar.gz)

@@ -31,4 +31,4 @@ Some related links
 * [static linking](http://blog.garbe.us/2008/02/08/01_Static_linking/) - My old blog entry
 * [blog post about stali](http://elevenislouder.blogspot.com/2010/02/stali.html)
 * [On the Effectiveness of Address-Space Randomization](http://benpfaff.org/papers/asrandom.pdf)
-* [musl libc](http://www.etalabs.net/musl/)
+* [musl libc](http://www.musl-libc.org/)

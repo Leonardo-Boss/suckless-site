@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2012-11-02
+----------
+[st 0.3](http://st.suckless.org) released: [download](http://dl.suckless.org/st/st-0.3.tar.gz)
+
 2012-10-28
 ----------
 [sprop 0.1](http://tools.suckless.org/sprop) released: [download](http://dl.suckless.org/tools/sprop-0.1.tar.gz)
@@ -33,11 +37,6 @@ RIP
 2012-07-08
 ----------
 [tabbed 0.4](http://tools.suckless.org/tabbed) released: [download](http://dl.suckless.org/tools/tabbed-0.4.tar.gz)
-
-2012-02-16
-----------
-[st 0.2.1](http://st.suckless.org) released: [download](http://dl.suckless.org/st/st-0.2.1.tar.gz)
-
 
 2012-01-08
 ----------

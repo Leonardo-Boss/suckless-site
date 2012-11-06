@@ -1,0 +1,38 @@
+--- a/st.c
++++ b/st.c
+@@ -353,6 +353,7 @@ static void selinit(void);
+ static inline bool selected(int, int);
+ static void selcopy(void);
+ static void selpaste(void);
++static void clipboardpaste(void);
+ static void selscroll(int, int);
+ 
+ static int utf8decode(char *, long *);
+@@ -751,6 +752,12 @@ void selclear(XEvent *e) {
+ }
+ 
+ void
++clipboardpaste() {
++	Atom clipboard = XInternAtom(xw.dpy, "CLIPBOARD", 0);
++	XConvertSelection(xw.dpy, clipboard, sel.xtarget, XA_PRIMARY, xw.win, CurrentTime);
++}
++
++void
+ selrequest(XEvent *e) {
+ 	XSelectionRequestEvent *xsre;
+ 	XSelectionEvent xev;
+@@ -2690,8 +2697,12 @@ kpress(XEvent *ev) {
+ 			ttywrite(buf, 3);
+ 			break;
+ 		case XK_Insert:
+-			if(shift)
+-				selpaste();
++			if(shift) {
++				if(meta)
++					clipboardpaste();
++				else
++					selpaste();
++			}
+ 			break;
+ 		case XK_Return:
+ 			if(meta)

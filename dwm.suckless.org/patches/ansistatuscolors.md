@@ -89,4 +89,12 @@ in perl/python/c, within a string literal, it''s "\x1b".
     )], shell=False)
 ###Screenshot###
 my battery is discharging and my wifi signal is iffy ...
+
 ![alt text](ansistatuscolors.png)
+
+###Author###
+Brandon Dowell <brandon DOT dowell AT gmail>
+
+github.com/la11111
+
+holler if you find a bug, or fork it on github and fix it!

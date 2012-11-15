@@ -123,7 +123,7 @@ Mail Clients
 ------------
 * [Mail][plan9port] - A mail client for [acme][acme]. Included with plan9port.
 * [Sylpheed](http://sylpheed.sraoss.jp/en/)
-* [dmc](http://lolcathost.org/cgi-bin/hg/dmc/) - A minimalistic approach to a commandline mail client (WIP)
+* [dmc](http://hg.suckless.org/dmc/) - A minimalistic approach to a commandline mail client (WIP)
 * [fdm](http://fdm.sourceforge.net/) - MDA
 * [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
 * [mutt](http://www.mutt.org/)

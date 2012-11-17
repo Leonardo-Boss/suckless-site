@@ -24,6 +24,7 @@ Following people have donated to the suckless.org project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
+* Kirill Sapelkin donated <b>10 US</b>
 * Xavier Alvelo donated <b>20 USD</b>
 * Brandon Mulcahy donated <b>10 USD</b>
 * Ryan Nabinger donated <b>100 USD</b>

@@ -25,14 +25,13 @@ certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
 * Thomas Hilber donated <b>50 EUR</b>
-* Matveev Sergey donated <b>10 EUR</b>
 * Kirill Sapelkin donated <b>10 US</b>
 * Xavier Alvelo donated <b>20 USD</b>
 * Brandon Mulcahy donated <b>10 USD</b>
 * Ryan Nabinger donated <b>100 USD</b>
 * Darryl Jamieson donated <b>15 EUR</b>
 * Kay Smarczewski donated <b>25 EUR</b>
-* Sergey Matveev donated <b>10 EUR</b>
+* Sergey Matveev donated <b>20 EUR</b>
 * Hiltjo Posthuma donated <b>20 EUR</b>
 * Pascal Wittmann donated <b>50 EUR</b>
 * Joshua Lawrence donated <b>30 USD</b>

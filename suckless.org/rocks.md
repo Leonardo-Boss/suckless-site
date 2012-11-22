@@ -137,6 +137,7 @@ Media Players
 
 PDF Viewers
 -----------
+* [mupdf](http://mupdf.com/)
 * [zathura](http://zathura.pwmt.org/)
 
 Programming languages

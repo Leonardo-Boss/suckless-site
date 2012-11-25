@@ -1,0 +1,35 @@
+# HG changeset patch
+# User Barbu Paul - Gheorghe <barbu.paul.gheorghe@gmail.com>
+# Date 1353844130 -7200
+# Node ID 6a057e59c31e7b831766d5abe84bdb0db868db92
+# Parent  9cace08dcb7e57f76a2206bada6fc3b9557c63dc
+Added the possibility to selfrestart dwm without external script
+
+diff -r 9cace08dcb7e -r 6a057e59c31e config.def.h
+--- a/config.def.h	Sun Nov 18 17:52:42 2012 +0100
++++ b/config.def.h	Sun Nov 25 13:48:50 2012 +0200
+@@ -1,5 +1,17 @@
+ /* See LICENSE file for copyright and license details. */
+ 
++/**
++ * self-restart
++ *
++ * Inspired by: Yu-Jie Lin
++ * https://sites.google.com/site/yjlnotes/notes/dwm
++ */
++#define DWM_PATH "/usr/local/bin/dwm"
++void self_restart(const Arg *arg) {
++    char *const argv[] = {DWM_PATH, NULL};
++    execv(argv[0], argv);
++}
++
+ /* appearance */
+ static const char font[]            = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
+ static const char normbordercolor[] = "#444444";
+@@ -87,6 +99,7 @@
+ 	TAGKEYS(                        XK_7,                      6)
+ 	TAGKEYS(                        XK_8,                      7)
+ 	TAGKEYS(                        XK_9,                      8)
++	{ MODKEY|ShiftMask,             XK_r,      self_restart,   {0} },
+ 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+ };

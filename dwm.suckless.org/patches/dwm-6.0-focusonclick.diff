@@ -1,7 +1,20 @@
-diff -r 399346e83a88 dwm.c
---- a/dwm.c	Fri Mar 23 15:19:53 2012 +0100
-+++ b/dwm.c	Fri Mar 23 15:21:38 2012 +0100
-@@ -266,7 +266,6 @@
+diff -up dwm-6.0/config.def.h dwm-6.0-focusonclick/config.def.h
+--- dwm-6.0/config.def.h	2011-12-19 09:02:46.000000000 -0600
++++ dwm-6.0-focusonclick/config.def.h	2012-11-24 17:48:19.867072611 -0600
+@@ -13,6 +13,9 @@ static const unsigned int snap      = 32
+ static const Bool showbar           = True;     /* False means no bar */
+ static const Bool topbar            = True;     /* False means bottom bar */
+ 
++/* False means using the scroll wheel on a window will not change focus */
++static const Bool focusonwheelscroll = False;
++
+ /* tagging */
+ static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+ 
+diff -up dwm-6.0/dwm.c dwm-6.0-focusonclick/dwm.c
+--- dwm-6.0/dwm.c	2011-12-19 09:02:46.000000000 -0600
++++ dwm-6.0-focusonclick/dwm.c	2012-11-24 18:00:08.902254102 -0600
+@@ -266,7 +266,6 @@ static void (*handler[LASTEvent]) (XEven
  	[ConfigureRequest] = configurerequest,
  	[ConfigureNotify] = configurenotify,
  	[DestroyNotify] = destroynotify,
@@ -9,15 +22,18 @@ diff -r 399346e83a88 dwm.c
  	[Expose] = expose,
  	[FocusIn] = focusin,
  	[KeyPress] = keypress,
-@@ -456,6 +455,7 @@
+@@ -455,7 +454,9 @@ buttonpress(XEvent *e) {
+ 			click = ClkWinTitle;
  	}
  	else if((c = wintoclient(ev->window))) {
- 		focus(c);
+-		focus(c);
++		if (focusonwheelscroll || (ev->button != Button4 && ev->button != Button5))
++			focus(c);
 +		XAllowEvents(dpy, ReplayPointer, CurrentTime);
  		click = ClkClientWin;
  	}
  	for(i = 0; i < LENGTH(buttons); i++)
-@@ -1001,11 +1001,11 @@
+@@ -1001,11 +1002,11 @@ grabbuttons(Client *c, Bool focused) {
  						XGrabButton(dpy, buttons[i].button,
  						            buttons[i].mask | modifiers[j],
  						            c->win, False, BUTTONMASK,
@@ -30,3 +46,4 @@ diff -r 399346e83a88 dwm.c
 +			            BUTTONMASK, GrabModeSync, GrabModeSync, None, None);
  	}
  }
+ 

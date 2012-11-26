@@ -12,6 +12,8 @@ There are several other projects which are inspired by the spirit of suckless.
 * [kelp](http://kelp.sf.net) - source code annotation framework
 * [micy](http://hg.youterm.com/micy/) - minimalistic mouse handler (depends on driver)
 * [mmsdk](http://hg.youterm.com/mmsdk/) - minimal maemo sdk (based on qemu-arm)
+* [oboeta](https://github.com/joodan-van-github/oboeta) - minimalistic plain-text flashcard system
+* [honden](https://github.com/joodan-van-github/honden) - system built on top of oboeta
 * [passman](http://nibble.develsec.org/hg/toys/file/) - password manager + other nibble suckless toys
 * [pcw](http://bitbucket.org/emg/pcw) - popup chat windows (ii front end)
 * [sdhcp](http://galos.no-ip.org/sdhcp) - tiny dchp client

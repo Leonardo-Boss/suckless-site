@@ -35,5 +35,5 @@ Questions
 ---------
 
 If you have any questions regarding dwmstatus, contact Christoph Lohmann
-<20h@r-36.net>.
+(<20h@r-36.net>).
 

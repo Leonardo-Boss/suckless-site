@@ -3,7 +3,7 @@ Introduction
 
 Using dwm can be done in pure keyboard control or through some extra mouse
 handling. See the
-[config.def.h](http://hg.suckless.org/dwm/file/tip/config.def.h) for what
+[config.def.h](http://git.suckless.org/dwm/plain/config.def.h) for what
 are the default bindings. They are used in this tutorial.
 
 	[Shift]+[Alt]+[Enter] - launch terminal

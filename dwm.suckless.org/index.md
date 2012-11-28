@@ -50,7 +50,7 @@ Links
 
 Download
 --------
-* [MIT/X Consortium license](http://hg.suckless.org/dwm/raw-file/tip/LICENSE)
+* [MIT/X Consortium license](http://git.suckless.org/dwm/plain/LICENSE)
 * [dwm 6.0](http://dl.suckless.org/dwm/dwm-6.0.tar.gz) (20kb) (20111219)
 * See also [dmenu](http://tools.suckless.org/dmenu)
 
@@ -67,9 +67,9 @@ If it is your first time using dwm, start with reading the
 
 Development
 -----------
-You can [browse](http://hg.suckless.org/dwm) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with the following command:
+You can [browse](http://git.suckless.org/dwm) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with the following command:
 
-	hg clone http://hg.suckless.org/dwm
+	git clone http://git.suckless.org/dwm
 
 Miscellaneous
 -------------

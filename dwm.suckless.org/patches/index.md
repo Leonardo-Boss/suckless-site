@@ -6,7 +6,7 @@ diff generation
 For mercurial users:
 
     cd dwm-directory
-    hg diff > dwm-X.Y-yourpatchname.diff
+    git diff > dwm-X.Y-yourpatchname.diff
 
 For tarballs:
 
@@ -21,7 +21,7 @@ patch application
 For mercurial users:
 
     cd dwm-directory
-    hg patch path/to/patch.diff
+    git apply path/to/patch.diff
 
 For tarballs:
 

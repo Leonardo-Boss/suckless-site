@@ -119,14 +119,13 @@ Links
 Download
 --------
 * [st 0.3](http://dl.suckless.org/st/st-0.3.tar.gz) (2012-11-02)
-* tip tarball: [http://hg.suckless.org/st/archive/tip.tar.gz](http://hg.suckless.org/st/archive/tip.tar.gz)
-* [MIT/X Consortium license](http://hg.suckless.org/st/raw-file/tip/LICENSE)
+* [MIT/X Consortium license](http://git.suckless.org/st/plain/LICENSE)
 
 Development
 -----------
-st is actively developed. You can [browse](http://hg.suckless.org/st) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with the following command:
+st is actively developed. You can [browse](http://git.suckless.org/st) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with the following command:
 
-	hg clone http://hg.suckless.org/st
+	git clone http://git.suckless.org/st
 
 Contributors
 ------------

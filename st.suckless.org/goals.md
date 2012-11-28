@@ -3,7 +3,7 @@ Goals
 
 TODO
 ----
-* see the TODO file in the [repository](http://hg.suckless.org/st/summary)
+* see the TODO file in the [repository](http://git.suckless.org/st/plain/TODO)
 
 Confirmed st features
 ----------------------
@@ -36,5 +36,5 @@ Non-goals
 Links
 -----
 * [Mailing list thread](http://lists.suckless.org/dev/0908/0868.html)
-* [Repository](http://hg.suckless.org/st/summary)
+* [Repository](http://git.suckless.org/st)
 

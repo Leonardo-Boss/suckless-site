@@ -5,17 +5,21 @@ local host using the following command:
 
 	git clone git://git.suckless.org/sites
 
-You can make changes to the wiki, though your changes will be reviewed by the
-suckless moderators before going public into the mainstream web site. Please
-make sure to pull for incoming changes before you push your changes, to
-minimize any problems.
+To push your changes to the queue for the review by the suckless moderators,
+use:
 
 	git push
 
+The review of your changes might take one day, due to the different timezones
+we all live in.
+
+Please make sure to pull for incoming changes before you push your changes, to
+minimize problems.
+
 The wiki repository above is world-writable.
 
-Be careful, that only over the git:// protocol pushes are possible. It is
-possible to checkout the »sites« repository over http too.
+Be careful, that only push changes using the git:// protocol. It is possible
+to checkout the source over http:// but not to push changes using it.
 
 Rules
 -----

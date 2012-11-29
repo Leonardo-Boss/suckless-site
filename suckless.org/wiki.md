@@ -3,16 +3,19 @@ This wiki
 If you would like to contribute new content, you can clone this wiki to your
 local host using the following command:
 
-	hg clone http://hg.suckless.org/sites
+	git clone git://git.suckless.org/sites
 
 You can make changes to the wiki, though your changes will be reviewed by the
 suckless moderators before going public into the mainstream web site. Please
 make sure to pull for incoming changes before you push your changes, to
 minimize any problems.
 
-	hg push
+	git push
 
 The wiki repository above is world-writable.
+
+Be careful, that only over the git:// protocol pushes are possible. It is
+possible to checkout the »sites« repository over http too.
 
 Rules
 -----

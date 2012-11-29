@@ -28,7 +28,8 @@ RIP
 
 2012-07-30
 ----------
-[https://github.com/suckless](https://github.com/suckless) is a github mirror of [http://hg.suckless.org/](http://hg.suckless.org/) updated with a daily cronjob. Please contribute by posting patches to the [mailing list](http://suckless.org/community).
+[https://github.com/suckless](https://github.com/suckless) is a github mirror
+of [http://git.suckless.org/](http://git.suckless.org/) updated with a daily cronjob. Please contribute by posting patches to the [mailing list](http://suckless.org/community).
 
 2012-07-14
 ----------

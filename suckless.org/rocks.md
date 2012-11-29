@@ -123,7 +123,7 @@ Mail Clients
 ------------
 * [Mail][plan9port] - A mail client for [acme][acme]. Included with plan9port.
 * [Sylpheed](http://sylpheed.sraoss.jp/en/)
-* [dmc](http://hg.suckless.org/dmc/) - A minimalistic approach to a commandline mail client (WIP)
+* [dmc](http://git.suckless.org/dmc/) - A minimalistic approach to a commandline mail client (WIP)
 * [fdm](http://fdm.sourceforge.net/) - MDA
 * [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
 * [mutt](http://www.mutt.org/)
@@ -204,7 +204,7 @@ Web Servers
 * [Nostromo](http://www.nazgul.ch/dev_nostromo.html)
 * [thttpd](http://acme.com/software/thttpd/) - Outperforms many bigger httpds. Old, still works very well!
 * [mini_httpd](http://acme.com/software/mini_httpd/) - By the thttpd developers. Even smaller subset of thttpd with support for .htpasswd, CGI, dirlisting, HTTP errors and SSL, nothing more or less than that.
-* See also: our very own [quark](http://hg.suckless.org/quark/) which has not yet been released
+* See also: our very own [quark](http://git.suckless.org/quark/) which has not yet been released
 
 Gopher Servers
 --------------

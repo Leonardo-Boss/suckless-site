@@ -5,7 +5,7 @@ There are several other projects which are inspired by the spirit of suckless.
 * [alt](http://hg.youterm.com/alt/) - abstract language tree
 * [bug](http://vicerveza.homeunix.net/~viric/soft/bug/) - commandline todo-tracking system
 * [dietline](http://hg.youterm.com/radare/file/87579f8c5087/src/dietline.c) - minimal readline-like implementation
-* [dmc](http://hg.suckless.org/dmc/) - dynamic mail client
+* [dmc](http://git.suckless.org/dmc/) - dynamic mail client
 * [dvtm](http://www.brain-dump.org/projects/dvtm/) - screen-like dwm (curses)
 * [dzen](http://dzen.geekmode.org/) - display status/notification/menu windows
 * [ired](http://hg.youterm.com/ired/) - minimalistic hexadecimal editor inspired in radare

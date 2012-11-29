@@ -23,7 +23,7 @@ How do I modify **config.h**?
 
 config.h can be edited just like any other C source code file.
 It contains definitions of variables that are going to be used by dwm.c and therefore it is vital that the file is always up to date.
-The default Makefile distributed with dwm will not overwrite your customised config.h with the contents of config.def.h, even if it was updated in the latest mercurial pull.
+The default Makefile distributed with dwm will not overwrite your customised config.h with the contents of config.def.h, even if it was updated in the latest git pull.
 Therefore, you should always compare your customised config.h with config.def.h and make sure you include any changes to the latter in your config.h.
 
 How do I modify **config.mk**?

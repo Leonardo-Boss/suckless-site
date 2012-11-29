@@ -5,6 +5,12 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2012-11-29
+----------
+We are glad to announce the switch to git from mercurial in all of our
+repositories. You can find them at <http://git.suckless.org>. Many thanks to
+20h for his contribution!
+
 2012-11-02
 ----------
 [st 0.3](http://st.suckless.org) released: [download](http://dl.suckless.org/st/st-0.3.tar.gz)

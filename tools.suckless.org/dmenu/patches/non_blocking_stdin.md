@@ -12,7 +12,7 @@ patch, so that you can use stdout to feed stdin.
 Download
 --------
 
-This patch should apply on mercurial version 2b9683c50723 (the latest -
+This patch should apply on git version 2b9683c50723 (the latest -
 2010-12-08)
 
 * [dmenu-tip-non-blocking-stdin.diff](dmenu-tip-non-blocking-stdin.diff)

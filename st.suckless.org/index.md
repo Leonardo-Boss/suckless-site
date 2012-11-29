@@ -123,7 +123,7 @@ Download
 
 Development
 -----------
-st is actively developed. You can [browse](http://git.suckless.org/st) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with the following command:
+st is actively developed. You can [browse](http://git.suckless.org/st) its source code repository or get a copy using git with the following command:
 
 	git clone http://git.suckless.org/st
 

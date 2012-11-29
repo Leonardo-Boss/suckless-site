@@ -3,7 +3,7 @@ Patches
 
 diff generation
 ---------------
-For mercurial users:
+For git users:
 
     cd dmenu-directory
     hg diff > dmenu-X.Y-yourpatchname.diff
@@ -18,7 +18,7 @@ where `X.Y` is a dmenu tag name or version number.
 
 patch application
 -----------------
-For mercurial users:
+For git users:
 
     cd dmenu-directory
     hg patch path/to/patch.diff

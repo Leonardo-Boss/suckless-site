@@ -32,7 +32,7 @@ Patches
 
 diff generation
 ---------------
-For mercurial users:
+For git users:
 
     cd program-directory
     git diff > program-X.Y-yourpatchname.diff
@@ -46,7 +46,7 @@ where `X.Y` is a dwm tag name or version number.
 
 patch program
 -------------
-For mercurial users:
+For git users:
 
     cd program-directory
     git apply path/to/patch.diff

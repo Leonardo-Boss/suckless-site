@@ -67,7 +67,7 @@ If it is your first time using dwm, start with reading the
 
 Development
 -----------
-You can [browse](http://git.suckless.org/dwm) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with the following command:
+You can [browse](http://git.suckless.org/dwm) its source code repository or get a copy using git  with the following command:
 
 	git clone http://git.suckless.org/dwm
 

@@ -12,11 +12,11 @@ Download
 
 Development
 -----------
-You can also [browse](http://hg.suckless.org/wmi) its source code repository or
-get a copy using [Mercurial](http://www.selenic.com/mercurial/) with the
+You can also [browse](http://git.suckless.org/wmi) its source code repository or
+get a copy using git with the
 following command:
 
-	hg clone http://hg.suckless.org/wmi
+	git clone git://suckless.org/wmi
 
 Build
 -----

@@ -34,8 +34,21 @@ Rules
 * The extension of newly created Markdown files has to be `.md`.
 * Please do not add HTML files or inline JavaScript.
 
-Bugs
-----
-Mercurial aborts with the message "unknown bundle compression type" if you want
-to push with version 0.9.1. (Maybe this affects every version before 1.0.)
-If you use Debian Etch, there is a backport.
+Moderators
+----------
+
+If you are a moderator, you will likely need the following procedure to pull
+the changes into the main repository:
+
+	cd /var/www/sites
+	sudo -u www-data git checkout .
+	sudo -u www-data git pull
+
+These commands can be found at /usr/local/bin/updatewiki for your convenience.
+
+The checkout is needed to prevent local atime changes to stop the pull. Please
+keep on using www-data, so the webserver can access everything.
+
+For managing the patches (reject/modify etc.) of course the other git commands
+apply too.
+

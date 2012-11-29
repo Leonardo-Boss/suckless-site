@@ -36,7 +36,7 @@ Rules
 
 Changes
 -------
-The incoming changes to the wiki are all sent to the wiki@suckless.org
+The incoming changes to the wiki are all sent to the wiki@
 mailinglist. See [community](http://suckless.org/community) for how to
 subscribe to this list.
 

@@ -3,7 +3,7 @@ Patches
 
 diff generation
 ---------------
-For mercurial users:
+For git users:
 
     cd dwm-directory
     git diff > dwm-X.Y-yourpatchname.diff
@@ -18,7 +18,7 @@ where `X.Y` is a dwm tag name or version number.
 
 patch application
 -----------------
-For mercurial users:
+For git users:
 
     cd dwm-directory
     git apply path/to/patch.diff

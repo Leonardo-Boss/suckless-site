@@ -8,7 +8,7 @@ Download
 
 Repository
 ----------
-	hg clone http://hg.suckless.org/sprop
+	git clone http://git.suckless.org/sprop
 
 Links
 -----

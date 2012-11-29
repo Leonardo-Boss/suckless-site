@@ -12,11 +12,10 @@ Download
 
 Repository
 ----------
-You can [browse](http://hg.suckless.org/wmname) the source code or get a
-copy using [Mercurial](http://www.selenic.com/mercurial/) with following
-command:
+You can [browse](http://git.suckless.org/wmname) the source code or get a
+copy using the following command:
 
-	hg clone http://hg.suckless.org/wmname
+	git clone http://git.suckless.org/wmname
 
 Usage
 -----

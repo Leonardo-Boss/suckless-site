@@ -3,10 +3,10 @@ Patches
 
 diff generation
 ---------------
-For mercurial users:
+For git users:
 
     cd ii-directory
-    hg diff > ii-X.Y-yourpatchname.diff
+    git diff > ii-X.Y-yourpatchname.diff
 
 For tarballs:
 
@@ -18,10 +18,10 @@ where `X.Y` is an ii tag name or version number.
 
 patch application
 -----------------
-For mercurial users:
+For git users:
 
     cd ii-directory
-    hg patch path/to/patch.diff
+    git apply path/to/patch.diff
 
 For tarballs:
 

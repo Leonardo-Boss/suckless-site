@@ -3,10 +3,10 @@ Patches
 
 diff generation
 ---------------
-For mercurial users:
+For git users:
 
     cd surf-directory
-    hg diff > surf-X.Y-yourpatchname.diff
+    git diff > surf-X.Y-yourpatchname.diff
 
 For tarballs:
 
@@ -18,10 +18,10 @@ where `X.Y` is a surf tag name or version number.
 
 patch application
 -----------------
-For mercurial users:
+For git users:
 
     cd surf-directory
-    hg patch path/to/patch.diff
+    git apply path/to/patch.diff
 
 For tarballs:
 

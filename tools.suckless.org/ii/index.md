@@ -34,10 +34,12 @@ Download
 
 Development
 -----------
-You can [browse](http://hg.suckless.org/ii) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with following command:
+You can [browse](http://git.suckless.org/ii) its source code repository or get
+a copy using the following command:
 
-`hg clone http://hg.suckless.org/ii`
+`git clone http://git.suckless.org/ii`
 
 Contact
 -------
 send mail to [ii@modprobe.de]( mailto:ii@modprobe.de) or feel free to join #ii on irc.oftc.net
+

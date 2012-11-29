@@ -8,7 +8,8 @@ Download
 
 Development
 -----------
-You can [browse](http://hg.suckless.org/sic) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with the following command:
+You can [browse](http://git.suckless.org/sic) its source code repository or
+get a copy using the following command:
 
-	hg clone http://hg.suckless.org/sic
+	git clone http://git.suckless.org/sic
 

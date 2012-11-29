@@ -19,15 +19,14 @@ Links
 
 Development
 -----------
-surf is actively developed. You can [browse](http://hg.suckless.org/surf) its
-source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/)
-with the following command:
+surf is actively developed. You can [browse](http://git.suckless.org/surf) its
+source code repository or get a copy with the following command:
 
-	hg clone http://hg.suckless.org/surf
+	git clone http://git.suckless.org/surf
 
 Download
 --------
-* [MIT/X Consortium license](http://hg.suckless.org/surf/raw-file/tip/LICENSE)
+* [MIT/X Consortium license](http://git.suckless.org/surf/plain/LICENSE)
 * [surf 0.5](http://dl.suckless.org/surf/surf-0.5.tar.gz) (20120714)
 * See also [dmenu](http://tools.suckless.org/dmenu),
   [tabbed](http://tools.suckless.org/tabbed)

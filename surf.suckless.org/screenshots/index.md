@@ -1,8 +1,8 @@
-[![Screenshot](surf+tabbed-20091028-thumb.jpg)](surf+tabbed-20091028.jpg)  
+[![Screenshot](surf+tabbed-20091028-thumb.jpg)](surf+tabbed-20091028.jpg)
 surf with [wmii](http://wmii.suckless.org) using [tabbed](http://tools.suckless.org/tabbed)
 
 [![Screenshot](20100423_surf_win-thumb.png)](20100423_surf_win.png)
 surf on win32 with a webkitgtk build targetting Windows underneath.
 
-[![Screenshot](surf-20091028-thumb.jpg)](surf-20091028.jpg)  
+[![Screenshot](surf-20091028-thumb.jpg)](surf-20091028.jpg)
 surf with [dwm](http://dwm.suckless.org)

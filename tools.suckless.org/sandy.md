@@ -16,7 +16,7 @@ Features / Non-features
 
 Development
 -----------
-You can [browse](http://hg.suckless.org/sandy) the source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with the following command:
+You can [browse](http://git.suckless.org/sandy) the source code repository or get a copy with the following command:
 
-        hg clone http://hg.suckless.org/sandy
+        git clone http://git.suckless.org/sandy
 

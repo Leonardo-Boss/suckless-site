@@ -10,9 +10,9 @@ application, i.e. [st](http://st.suckless.org), [uzbl](http://uzbl.org),
 
 Development
 -----------
-You can [browse](http://hg.suckless.org/tabbed) its source code repository or get a copy using [Mercurial](http://www.selenic.com/mercurial/) with the following command:
+You can [browse](http://git.suckless.org/tabbed) its source code repository or get a copy using the following command:
 
-	hg clone http://hg.suckless.org/tabbed
+	git clone http://git.suckless.org/tabbed
 
 Download
 --------

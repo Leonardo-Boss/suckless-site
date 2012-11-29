@@ -34,9 +34,14 @@ Rules
 * The extension of newly created Markdown files has to be `.md`.
 * Please do not add HTML files or inline JavaScript.
 
+Changes
+-------
+The incoming changes to the wiki are all sent to the wiki@suckless.org
+mailinglist. See [community](http://suckless.org/community) for how to
+subscribe to this list.
+
 Moderators
 ----------
-
 If you are a moderator, you will likely need the following procedure to pull
 the changes into the main repository:
 

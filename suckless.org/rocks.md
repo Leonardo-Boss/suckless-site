@@ -71,7 +71,6 @@ Audio Players
 -------------
 * [C* Music Player](http://cmus.sourceforge.net/)
 * [DeaDBeeF](http://deadbeef.sourceforge.net/)
-* [PyTone](http://www.luga.de/pytone/) - PyTone is a music jukebox written in Python with a curses based GUI. It provides features like crossfading and multiple players, special emphasis is put on ease of use.
 * [cplay](http://cplay.sourceforge.net/)
 * [moc](http://moc.daper.net/)
 * [mpd](http://www.musicpd.org/) - A client/server based music player with console and graphical front-ends.
@@ -122,7 +121,6 @@ Instant Messaging Clients
 Mail Clients
 ------------
 * [Mail][plan9port] - A mail client for [acme][acme]. Included with plan9port.
-* [Sylpheed](http://sylpheed.sraoss.jp/en/)
 * [dmc](http://git.suckless.org/dmc/) - A minimalistic approach to a commandline mail client (WIP)
 * [fdm](http://fdm.sourceforge.net/) - MDA
 * [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
@@ -133,21 +131,15 @@ Mail Clients
 Media Players
 -------------
 * [mplayer](http://www.mplayerhq.hu/) (without GUI) - You know mplayer, but you may not know that it works well without the GUI.
-* smplayer
 
 PDF Viewers
 -----------
 * [mupdf](http://mupdf.com/)
 * [zathura](http://zathura.pwmt.org/)
 
-Programming languages
----------------------
-* [Lua](http://www.lua.org)
-* [TinyPy](http://www.tinypy.org/) - Tiny Python (partial python)
-
 Text Editors
 ------------
-* [acme][acme] - [Rob Pike][rob]'s framing text editor for Plan 9. Included in [plan9port][].
+* [acme][acme] - Rob Pike's framing text editor for Plan 9. Included in [plan9port][].
 * [ired](http://www.radare.org) (Minimalist hexadecimal editor and bindiffer for p9, w32 and *nix)
 * [nvi](https://sites.google.com/a/bostic.com/keithbostic/nvi) - A small, multiple file vi-alike.
 * [sam](http://sam.cat-v.org/) - An editor by [Rob Pike][rob] with inspiration from ed.
@@ -187,7 +179,6 @@ X11
   keyboard selection.
 * [ffcast](https://github.com/lolilolicon/FFcast2) – Simple screencasting.
 
-[rob]: http://herpolhode.com/rob/
 [plan9port]: http://swtch.com/plan9port/
 [acme]: http://acme.cat-v.org
 
@@ -209,3 +200,4 @@ Web Servers
 Gopher Servers
 --------------
 * [geomyidae](http://www.r-36.net/src/geomyidae/) - small gopher-daemon written by 20h
+

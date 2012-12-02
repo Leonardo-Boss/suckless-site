@@ -13,6 +13,10 @@ FAQ
 	   config.h to turn resizehints off. This wastes the same amount of  space
 	   inside the terminal window that would otherwise be wasted outside.
 
+	Q: Why are there gaps between my windows?
+
+	A: See the question above.
+
 	Q: How do I find out the values of the rules[] array in config.h?
 
 	A: The class, instance and title properties of an X11 window can be

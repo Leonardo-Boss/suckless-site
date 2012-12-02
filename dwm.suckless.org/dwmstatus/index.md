@@ -10,7 +10,7 @@ show examples on how to extend it to your needs.
 The Barebone
 ------------
 
-* [dwmstatus-1.2.tar.gz](dwmstatus-1.2.tar.gz)
+	git clone git://git.suckless.org/dwmstatus
 
 This is a barebone project you can use for changing it to your needs.
 

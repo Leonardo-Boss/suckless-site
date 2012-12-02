@@ -5,6 +5,10 @@ local host using the following command:
 
 	git clone git://git.suckless.org/sites
 
+or
+
+	git clone http://git.suckless.org/sites
+
 To push your changes to the queue for the review by the suckless moderators,
 use:
 
@@ -17,9 +21,6 @@ Please make sure to pull for incoming changes before you push your changes, to
 minimize problems.
 
 The wiki repository above is world-writable.
-
-Be careful, that only push changes using the git:// protocol. It is possible
-to checkout the source over http:// but not to push changes using it.
 
 Rules
 -----

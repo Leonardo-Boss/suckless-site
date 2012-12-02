@@ -57,3 +57,14 @@ keep on using www-data, so the webserver can access everything.
 For managing the patches (reject/modify etc.) of course the other git commands
 apply too.
 
+Repositories
+------------
+
+This is for moderators.
+
+There is a script in /usr/local/bin/newrepo with the usage
+
+	newrepo $reponame
+
+It should be used to create new git repositories.
+

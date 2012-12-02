@@ -1,5 +1,7 @@
 Stuff that sucks
 ================
+See the [philosophy][http://suckless.org/philosophy] page abou4t what
+applies to this page. 
 
 Libraries
 ---------

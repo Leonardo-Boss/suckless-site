@@ -16,5 +16,5 @@ Mailing list
 ------------
 
 * `dev+subscribe@suckless.org` ([Archives](http://lists.suckless.org/dev/)) 
-([Old Archives](http://lists.suckless.org/dwm/)) (see [community](http://suckless.org/common/community/) for details)
+([Old Archives](http://lists.suckless.org/dwm/)) (see [community](http://suckless.org/community/) for details)
 

@@ -1,4 +1,4 @@
-![tabbed running nyancat](/tabbed.png)
+![tabbed running nyancat](tabbed.png)
 
 tabbed
 ======

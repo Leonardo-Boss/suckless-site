@@ -1,0 +1,13 @@
+Autohide
+========
+
+This patch hides the tab bar if only one tab is open.
+
+Download
+--------
+* [tabbed-0.4.1-autohide.diff](tabbed-0.4.1-autohide.diff)
+
+Author
+------
+* original author unknown
+* 0.4.1  doom - <dm@archlinux.info>

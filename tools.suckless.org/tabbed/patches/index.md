@@ -6,7 +6,7 @@ diff generation
 For git users:
 
     cd dmenu-directory
-    hg diff > dmenu-X.Y-yourpatchname.diff
+    git diff > dmenu-X.Y-yourpatchname.diff
 
 For tarballs:
 
@@ -21,9 +21,10 @@ patch application
 For git users:
 
     cd dmenu-directory
-    hg patch path/to/patch.diff
+    git apply path/to/patch.diff
 
 For tarballs:
 
     cd dmenu-directory
     patch -p1 < path/to/patch.diff
+

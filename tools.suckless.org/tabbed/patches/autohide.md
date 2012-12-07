@@ -10,4 +10,4 @@ Download
 Author
 ------
 * original author  Carlos Pita - <carlosjosepita_AT_gmail.com>
-* 0.4.1  Doomicide - <dm@archlinux.info>
+* 0.4.1  Doomicide - <dm_AT_archlinux.info>

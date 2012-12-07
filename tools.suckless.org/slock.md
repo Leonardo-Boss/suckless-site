@@ -11,5 +11,9 @@ Download
 
 Usage
 -----
-slock can be started with [xautolock](http://www.ibiblio.org/pub/linux/X11/screensavers/) after specified period of user's inactivity:
-<code>xautolock -time 10 -locker slock</code>
+Slock can be started after a specific period of user inactivity using
+[xautolock](http://www.ibiblio.org/pub/linux/X11/screensavers/). The
+command syntax is:
+
+	xautolock -time 10 -locker slock
+

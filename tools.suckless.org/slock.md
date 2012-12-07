@@ -9,3 +9,7 @@ Download
 --------
 * [slock-1.1](http://dl.suckless.org/tools/slock-1.1.tar.gz) (20121025)
 
+Usage
+-----
+slock can be started with [xautolock](http://www.ibiblio.org/pub/linux/X11/screensavers/) after specified period of user's inactivity:
+<code>xautolock -time 10 -locker slock</code>

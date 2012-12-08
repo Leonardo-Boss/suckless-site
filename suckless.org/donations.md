@@ -24,6 +24,7 @@ Following people have donated to the suckless.org project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
+* Variable Scope Solutions donated <b>25 CAD</b>
 * Thomas Hilber donated <b>50 EUR</b>
 * Kirill Sapelkin donated <b>10 US</b>
 * Xavier Alvelo donated <b>20 USD</b>

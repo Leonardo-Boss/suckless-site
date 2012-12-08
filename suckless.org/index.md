@@ -32,11 +32,6 @@ We will miss him a lot.
 
 RIP
 
-2012-07-30
-----------
-[https://github.com/suckless](https://github.com/suckless) is a github mirror
-of [http://git.suckless.org/](http://git.suckless.org/) updated with a daily cronjob. Please contribute by posting patches to the [mailing list](http://suckless.org/community).
-
 2012-07-14
 ----------
 [surf 0.5](http://surf.suckless.org) released: [download](http://dl.suckless.org/surf/surf-0.5.tar.gz)
@@ -92,10 +87,6 @@ Some of us will visit [CLT2010](http://chemnitzer.linux-tage.de/2010/). Anselm w
 2009-12-28
 ----------
 There was a small community meeting in Berlin! Thanks to all attenders.
-
-2009-11-27
-----------
-[wmi-11](http://wmi.suckless.org/) released: [download](http://dl.suckless.org/wmi/wmi-11.tar.gz)
 
 2008-08-02
 ----------

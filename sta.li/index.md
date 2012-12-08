@@ -25,6 +25,7 @@ discuss further development of sta.li.
 
 Some related links
 ------------------
+* [starch linux](http://starchlinux.org/) - a statically linked archlinux variant
 * [Bifrost/Linux](http://bifrost.slu.se/) - a minimalist Linux distro for USB media
 * [$6M libc](http://codingrelic.geekhold.com/2008/11/six-million-dollar-libc.html) - Bionic is a nice library, though only usable for sane stuff
 * [ldd arbitrary code execution](http://www.catonmat.net/blog/ldd-arbitrary-code-execution/) - Nice exploit

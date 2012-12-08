@@ -88,10 +88,6 @@ Some of us will visit [CLT2010](http://chemnitzer.linux-tage.de/2010/). Anselm w
 ----------
 There was a small community meeting in Berlin! Thanks to all attenders.
 
-2009-11-27
-----------
-[wmi-11](http://wmi.suckless.org/) released: [download](http://dl.suckless.org/wmi/wmi-11.tar.gz)
-
 2008-08-02
 ----------
 [wmname 0.1](http://tools.suckless.org/wmname) released: [download](http://dl.suckless.org/tools/wmname-0.1.tar.gz)

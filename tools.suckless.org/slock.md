@@ -24,3 +24,7 @@ command syntax is:
 
 	xautolock -time 10 -locker slock
 
+Simpler alternatives to xautolock might be
+[xssstate](http://git.suckless.org/xssstate/) or
+[xss](http://woozle.org/~neale/src/xss.html).
+

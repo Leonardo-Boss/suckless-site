@@ -31,6 +31,7 @@ add them here as file or as code example.
 * [Support for ACPI battery status Linux](new-acpi-battery.c)
 * [Reading out a temperature from /sys](dwmstatus-temperature.c)
 * [Reading eth0 up-, and downspeed from /proc/net](dwmstatus-netusage.c)
+* [Counting number of mails in a Maildir/new](mail_counter.c)
 
 Questions
 ---------

@@ -75,6 +75,7 @@ parse_netdev(unsigned long long int *receivedabs, unsigned long long int *sentab
 		return 0;
 	    }
 	}
+	fclose(devfd);
 	free(buf);
 	return 1;
 }

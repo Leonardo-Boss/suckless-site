@@ -71,6 +71,7 @@ parse_netdev(unsigned long long int *receivedabs, unsigned long long int *sentab
 		// With thanks to the conky project at http://conky.sourceforge.net/
 		sscanf(eth0start + 6, "%llu  %*d     %*d  %*d  %*d  %*d   %*d        %*d       %llu",\
 		       receivedabs, sentabs);
+		fclose(devfd);
 		free(buf);
 		return 0;
 	    }

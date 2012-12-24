@@ -3,6 +3,7 @@
 //  Dernière modification: 21 déc. 2012 16:25:16
 
 #define _BSD_SOURCE
+#define _GNU_SOURCE
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -23,25 +24,18 @@ char *
 smprintf(char *fmt, ...)
 {
 	va_list fmtargs;
-	char *ret;
-	int len;
+	char *buf = NULL;
 
 	va_start(fmtargs, fmt);
-	len = vsnprintf(NULL, 0, fmt, fmtargs);
-	va_end(fmtargs);
-
-	ret = malloc(++len);
-	if (ret == NULL) {
-		perror("malloc");
+	if (vasprintf(&buf, fmt, fmtargs) == -1){
+		fprintf(stderr, "malloc vasprintf\n");
 		exit(1);
-	}
-
-	va_start(fmtargs, fmt);
-	vsnprintf(ret, len, fmt, fmtargs);
+    }
 	va_end(fmtargs);
 
-	return ret;
+	return buf;
 }
+
 void
 setstatus(char *str)
 {
@@ -51,9 +45,10 @@ setstatus(char *str)
 
 char *get_nmail(char *directory, char *label)
 {
-    /* directory can be a Maildir as example */
-    /* label is whet will be shown as title*/
-
+    /* directory : Maildir path 
+    * return label : number_of_new_mails
+    */
+    
     int n = 0;
     DIR* dir = NULL;
     struct dirent* rf = NULL;
@@ -81,7 +76,7 @@ int
 main(void)
 {
 	char *status;
-    char *mail_laposte;
+    char *newmails;
     
 	if (!(dpy = XOpenDisplay(NULL))) {
 		fprintf(stderr, "dwmstatus: cannot open display.\n");
@@ -89,12 +84,12 @@ main(void)
 	}
 
 	for (;;sleep(60)) {
-        mail_laposte = get_nmail("/home/xavier/Maildir/laposte/new", "Laposte:");
+        newmails = get_nmail("/home/xavier/Maildir/laposte/new", "Mails:");
 
 
-		status = smprintf("%s",mail_laposte);
+		status = smprintf("%s",newmails);
 		setstatus(status);
-		free(mail_laposte);
+		free(newmails);
 		free(status);
 	}
 

@@ -1,13 +1,11 @@
 Goals
 =====
 
+This page is to discuss and maybe add comments on the future of st.
+
 TODO
 ----
 * see the TODO file in the [repository](http://git.suckless.org/st/plain/TODO)
-
-Confirmed st features
-----------------------
-* much has been implemented
 
 Theoretical features
 --------------------
@@ -35,6 +33,5 @@ Non-goals
 
 Links
 -----
-* [Mailing list thread](http://lists.suckless.org/dev/0908/0868.html)
 * [Repository](http://git.suckless.org/st)
 

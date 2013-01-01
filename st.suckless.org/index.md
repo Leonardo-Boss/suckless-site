@@ -24,68 +24,28 @@ example of code complexity.
 
 Current state
 -------------
-See the "[goals](http://st.suckless.org/goals)" section for a list of features that will (or won't) be implemented.
+See the [TODO](http://git.suckless.org/st/plain/TODO) file for what needs to
+be implemented or fixed.
 
+What has been implemented:
 * 256 colors
-* most VT10x escape sequences
+* most VT10X escape sequences
 * utf8
 * X11 copy/paste
-* antialiased fonts (experimental, see xft branch in the repo)
+* antialiased fonts (using fontconfig)
+* fallback fonts
 * resize
+* shortcuts via config.h
+* line drawing
+(This list might be out of date due to st being a moving project.)
+
+See the "[goals](http://st.suckless.org/goals)" section for more details.
 
 Configuration
 -------------
 
-The configuration is done in `config.h` (like in dwm). You can define:
-
-* TERM environnement variable (TNAME)
-* fonts (you can use `xfontsel(1)` to generate a valid XLFD)
-* default colors
-* special key
-* line drawing characters. The VT100 name is used as an index in the `gfx` array. From terminfo(5):
-
-
-	Line Graphics
-	       Many  terminals have alternate character sets useful for forms-drawing.
-	       Terminfo and curses build in support for the  drawing  characters  sup-
-	       ported  by  the VT100, with some characters from the AT&T 4410v1 added.
-	       This alternate character set may be specified by the acsc capability.
-	
-	
-	                Glyph                  ACS                Ascii          VT100
-	                 Name                  Name               Default        Name
-	       UK pound sign                   ACS_STERLING       f              }
-	       arrow pointing down             ACS_DARROW         v              .
-	       arrow pointing left             ACS_LARROW         <              ,
-	       arrow pointing right            ACS_RARROW         >              +
-	       arrow pointing up               ACS_UARROW         ^              -
-	       board of squares                ACS_BOARD          #              h
-	       bullet                          ACS_BULLET         o              ~
-	       checker board (stipple)         ACS_CKBOARD        :              a
-	       degree symbol                   ACS_DEGREE         \              f
-	       diamond                         ACS_DIAMOND        +              `
-	       greater-than-or-equal-to        ACS_GEQUAL         >              z
-	       greek pi                        ACS_PI             *              {
-	       horizontal line                 ACS_HLINE          -              q
-	       lantern symbol                  ACS_LANTERN        #              i
-	       large plus or crossover         ACS_PLUS           +              n
-	       less-than-or-equal-to           ACS_LEQUAL         <              y
-	       lower left corner               ACS_LLCORNER       +              m
-	       lower right corner              ACS_LRCORNER       +              j
-	       not-equal                       ACS_NEQUAL         !              |
-	       plus/minus                      ACS_PLMINUS        #              g
-	       scan line 1                     ACS_S1             ~              o
-	       scan line 3                     ACS_S3             -              p
-	       scan line 7                     ACS_S7             -              r
-	       scan line 9                     ACS_S9             _              s
-	       solid square block              ACS_BLOCK          #              0
-	       tee pointing down               ACS_TTEE           +              w
-	       tee pointing left               ACS_RTEE           +              u
-	       tee pointing right              ACS_LTEE           +              t
-	       tee pointing up                 ACS_BTEE           +              v
-	       upper left corner               ACS_ULCORNER       +              l
-	       upper right corner              ACS_URCORNER       +              k
-	       vertical line                   ACS_VLINE          |              x
+The configuration is done in `config.h` (like in dwm). See the comments in the
+generated `config.h` to edit it to your needs.
 
 
 Common Problems

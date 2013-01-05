@@ -7,17 +7,17 @@ What is wrong with xterm?
 xterm is bloated and unmaintainable. Here's an excerpt from the README:
 
 					Abandon All Hope, Ye Who Enter Here
-		
-		
+
+
 	This is undoubtedly the most ugly program in the distribution.	It was one of
 	the first "serious" programs ported, and still has a lot of historical baggage.
-	Ideally, there would be a general tty widget and then vt102 and tek4014 
-	subwidgets so that they could be used in other programs.  We are trying to 
+	Ideally, there would be a general tty widget and then vt102 and tek4014
+	subwidgets so that they could be used in other programs.  We are trying to
 	clean things up as we go, but there is still a lot of work to do.
 
 Needless to say things have *not* changed, it's still ugly.
-It has over 65K lines of code and emulates obscure and obsolete terminals 
-you will [never need](http://www.science.uva.nl/museum/tek4014.php). 
+It has over 65K lines of code and emulates obscure and obsolete terminals
+you will [never need](http://www.science.uva.nl/museum/tek4014.php).
 The popular alternative, rxvt has *only* 32K lines of code. This is just
 too much for something as simple as a terminal emulator; it's yet another
 example of code complexity.
@@ -66,7 +66,19 @@ description. You can delete it when you're done.
 Try lauching it with a different TERM: `$ TERM=xterm myapp`.  toe(1)
 will give you a list of available terminals, but you'll most likely
 switch between `xterm`, `st` or `st-256color`. The default value for TERM can be
-changed in config.h (TNAME). 
+changed in config.h (TNAME).
+
+### 4. How do I scroll back up?
+Invoke st with a screen multiplexer like <a
+href="http://en.wikipedia.org/wiki/GNU_Screen">GNU screen</a> or <a
+href="http://en.wikipedia.org/wiki/Tmux">tmux</a>. `st -e screen` works
+better for [text reflowing](http://superuser.com/a/346784/4929). To enter
+screen's scroll back mode aka "copy mode", it's C-a ESC. You probably want
+`defscrollback 10000` in your `~/.screenrc` too.
+
+### 5. Why does st not handle utmp entries?
+Use the excellent tool of [utmp](http://git.suckless.org/utmp) for this task.
+
 
 If all else fails, send an email to a contributor/ML explaining your
 problem in detail.

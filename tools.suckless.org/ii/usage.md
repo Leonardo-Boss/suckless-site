@@ -1,13 +1,13 @@
 Multitail + Vim
 ---------------
-To make ii a bit more comfortable use it in combination with the multitail program and for example with vim. Run vim in the server directory and use key mapping like:
+To make ii a bit more comfortable, use it in combination with the multitail program and for example with vim. Run vim in the server directory and use key mapping like:
 `map w1 :.w >> \\#ii/in<cr>`
 `map w2 :.w >> \\#wmii/in<cr>`
 to post to channels. Thanks to Matthias Kopfermann for this hint.
 
 Another cool thing is to use it with splitvt so you have multitail windows on top and for example four lines of vim at the bottom.
 
-There is also a blog entry which describes the whole configuration: 
+There is also a blog post which describes the whole configuration: 
 [http://nion.modprobe.de/blog/archives/440-Using-the-ii-irc-client.html](http://nion.modprobe.de/blog/archives/440-Using-the-ii-irc-client.html)
 
 Popup Chat Windows
@@ -29,6 +29,10 @@ Read the readme file, and do not hesitate to ask c00kiemon5ter for help on freen
 iil
 ---
 The [iil](http://chiselapp.com/user/onys/repository/iil/home) (short for iiless) is fast viewer/reader for ii irc client, using your shell and less.
+
+uii
+---
+[uii](https://github.com/erlehmann/uii) (usable irc it) is a set of shell scripts that provides readline support, uses inotify to monitor channels and pops up notifications.
 
 im-scripts
 ----------

@@ -28,6 +28,7 @@ See the [TODO](http://git.suckless.org/st/plain/TODO) file for what needs to
 be implemented or fixed.
 
 What has been implemented:
+
 * 256 colors
 * most VT10X escape sequences
 * utf8
@@ -37,9 +38,8 @@ What has been implemented:
 * resize
 * shortcuts via config.h
 * line drawing
-(This list might be out of date due to st being a moving project.)
 
-See the "[goals](http://st.suckless.org/goals)" section for more details.
+See the [goals](http://st.suckless.org/goals) section for more details.
 
 Configuration
 -------------

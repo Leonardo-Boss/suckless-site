@@ -20,6 +20,7 @@ User submitted versions
 Please add your own version of dwmstatus here. 
 
 * [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent and date/time
+* [p1c0-dwmstatus-volume.c](p1c0-dwmstatus-volume.c) - volume percentage & bar display
 
 
 Helper functions

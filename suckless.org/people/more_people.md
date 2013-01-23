@@ -5,6 +5,7 @@ The following people are/were involved mainly in wmii and dwm development as
 developers and contributors.  If you are missing, feel free to add yourself.
 
 * Alexandre DE DOMMELIN (contributed a theme and works on PHP based theme configurator)
+* Andrew Milkovich (patches, updates)
 * [Anthony Martin](http://pbrane.org) (ality) (developer, bug fixes, documentation)
 * AntThyKem (contributed rpm package)
 * Bernhard Leiner (wmipager improvements)

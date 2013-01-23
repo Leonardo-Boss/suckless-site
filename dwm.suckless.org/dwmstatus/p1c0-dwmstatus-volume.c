@@ -1,7 +1,7 @@
 /* made by p1c0 2013-1-23.
 **
 ** Compile with:
-** gcc -Wall -pedantic -std=c99 -lX11 status.c
+** gcc -Wall -pedantic -std=c99 status.c -lX11
 **
 ** Notes:
 ** bind volume keys in dwm config.h
@@ -176,7 +176,8 @@ main(int argc, char *argv[])
 		if (strcmp(argv[1], "volume") == 0) {
 			if (strcmp(argv[2], "up") == 0) {
 				volume = getvolume();
-				if (volume < 100) volume += 5;
+				if (volume < 100)
+					volume += 5;
 				setvolume(volume);
 				volumebar = mkprogressbar(22, volume);
 				avgs = loadavg();
@@ -191,7 +192,8 @@ main(int argc, char *argv[])
 				exit(0);
 			} else if (strcmp(argv[2], "down") == 0) {
                                 volume = getvolume();
-				if (volume > 0) volume -= 5;
+				if (volume > 0)
+					volume -= 5;
                                 setvolume(volume);
                                 volumebar = mkprogressbar(22, volume);
                                 avgs = loadavg();
@@ -208,10 +210,10 @@ main(int argc, char *argv[])
 		}
 	}
 
-	volume = getvolume();
 	for (;;sleep(90)) {
 		avgs = loadavg();
 		tla = mktimes("%H:%M", tzla);
+		volume = getvolume();
 		volumebar = mkprogressbar(22, volume);
 		status = smprintf("%i%% %s | %s | %s",
 			volume, volumebar, avgs, tla);

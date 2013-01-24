@@ -1,8 +1,5 @@
 Project ideas
 =============
-We applied as a mentoring organization for [Google Summer of Code
-2010](http://socghop.appspot.com/), unfortunately we were rejected this year as
-well (second time now).
 
 Please read our [philosophy](/philosophy) for background information.
 
@@ -37,15 +34,6 @@ The listed ideas generally require good knowledge of C and experience with
 Unix-like operating systems. The difficulty ranges from medium to high.
 An academic background in computer science is desirable but not essential.
 
-### Create a CLI to Chrome's PDF viewer `/opt/google/chrome/libpdf.so`
-
-Though [Google's Chrome's PDF
-viewer](http://blog.chromium.org/2010/06/bringing-improved-pdf-support-to-google.html)
-is non-free, it is a fast and high quality [PDF
-viewer](http://en.wikipedia.org/wiki/Portable_Document_Format).
-
-***Requirements:*** Good [NPAPI](https://wiki.mozilla.org/NPAPI:Pepper) knowledge
-
 ### Port [stali](http://sta.li) to use bionic
 
 So far [static linux](http://sta.li) requires [uclibc](http://www.uclibc.org) for most userland
@@ -75,12 +63,13 @@ non-chroot'ed cross-compile environments and often completely fail to produce
 statically linked libraries or executables.  Also they are
 extremely slow and bloated.
 
-The stali build system is not using autotools for good reason, however many
-Unix/Linux open source packages do. To create statically linked libraries out
-of the ld arguments we need an ld wrapper or re-implementation that creates
-static libraries or executables. This would enable us to build static libraries
-and executables out of any automake generated makefiles without the need to
-write make replacements or patching the build system of a particular package.
+The [stali](http://sta.li/) build system is not using autotools for good
+reason, however many Unix/Linux open source packages do. To create statically
+linked libraries out of the ld arguments we need an ld wrapper or
+re-implementation that creates static libraries or executables. This would
+enable us to build static libraries and executables out of any automake
+generated makefiles without the need to write make replacements or patching the
+build system of a particular package.
 
 The ld wrapper needs to be extended to also link against uclibc first and if
 that fails to fallback to glibc, in order to produce smaller executables in the
@@ -111,7 +100,9 @@ problems of TTS (Trouble Ticket System), ARS (Action Request System) and IRS
 (Incident Response System) all together. It also must be usable as a bug
 tracking system.
 
-***Requirements:*** Good C/Shell/web technology/HTML5 knowledge would be desirable, knowledge of bug tracking and issue tracking in practice is essential.
+* <https://github.com/blog/411-github-issue-tracker>
+
+***Requirements:*** Good C/Shell/web technology/HTML knowledge would be desirable, knowledge of bug tracking and issue tracking in practice is essential.
 
 ### Write a decent mailing list Web archive system
 
@@ -120,9 +111,17 @@ drawbacks and are quite out-dated. This task requires to write a completely new
 web mailing list archiving tool that follows the thread view concepts found in
 the mutt MUA and which is designed with low footprint and efficiency in mind.
 
-We expect this tool as a stand-alone Unix tool written in C or shell.
+We expect this tool as a stand-alone Unix tool written in C or shell. To get
+started you could use [Dovecot](http://dovecot.org/) to produce a sanitized
+structure:
 
-***Requirements:*** Good C/Shell/HTML5 knowledge would be desirable.
+	printf "1 select inbox\n2 thread references us-ascii all\n3 fetch 1:*
+	envelope\n4 logout\n" |
+	/usr/local/libexec/dovecot/imap  2>/dev/null
+
+* <http://www.codinghorror.com/blog/2012/12/web-discussions-flat-by-design.html>
+
+***Requirements:*** Good C/Shell/HTML knowledge would be desirable.
 
 ### Yet another less sucking editor
 
@@ -139,23 +138,12 @@ even useful..."
 
 ### Improve sltar
 
-[sltar](http://s01.de/~gottox/index.cgi/proj_sltar) is a simplified tar
+[sltar](https://github.com/Gottox/sltar) is a simplified tar
 implementation which lacks gzip and bzip2 integration. The task requires
 extending sltar with support for these compression applications and writing a
 test suite for it.
 
 ***Requirements:*** Good C knowledge would be desirable.
-
-### Extend werc with a repository browser
-
-This task requires to extend [werc](http://werc.cat-v.org) with a source
-browser for VCS repositories including support for
-[subversion](http://subversion.tigris.org/),
-[mercurial](http://www.selenic.com/mercurial/) and [git](http://git-scm.com).
-
-***Requirements:*** Good knowledge of the [rc](http://en.wikipedia.org/wiki/Rc) shell
-and the [Plan 9 userland for Unix](http://plan9.us) is essential. Good C
-knowledge for the helper tools would be desirable.
 
 ### Write cookie handler for surf
 

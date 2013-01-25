@@ -141,13 +141,13 @@ setvolume(int percent) {
 char*
 mkprogressbar(unsigned int size, unsigned int percent) {
 	unsigned int num = ((size-2)*percent)/100;
-	char *bar = malloc(size);
+	char *bar = malloc(size+1);
 	if (bar == NULL) {
 		perror("malloc");
 		exit(1);
 	}
 	bar[0] = '[';
-	for (int i = 1; i <= num; i++) {
+	for (int i = 1; i < num+1; i++) {
 	      bar[i] = '*';
 	}
 	for (int i = num+1; i < size-1; i++) {

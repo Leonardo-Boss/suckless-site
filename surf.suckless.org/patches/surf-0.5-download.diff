@@ -11,7 +11,7 @@ index 1cba4d7..3065c73 100644
  static char *cafile         = "/etc/ssl/certs/ca-certificates.crt";
  static char *strictssl      = FALSE; /* Refuse untrusted SSL connections */
 diff --git a/surf.c b/surf.c
-index c9fa08d..6c95f6e 100644
+index c9fa08d..4d589aa 100644
 --- a/surf.c
 +++ b/surf.c
 @@ -114,6 +114,7 @@ static void destroyclient(Client *c);
@@ -22,10 +22,25 @@ index c9fa08d..6c95f6e 100644
  static void eval(Client *c, const Arg *arg);
  static gboolean exposeindicator(GtkWidget *w, GdkEventExpose *e, Client *c);
  static void find(Client *c, const Arg *arg);
-@@ -290,6 +291,29 @@ cookiejar_set_property(GObject *self, guint prop_id, const GValue *value,
+@@ -289,6 +290,50 @@ cookiejar_set_property(GObject *self, guint prop_id, const GValue *value,
+ 	flock(COOKIEJAR(self)->lock, LOCK_UN);
  }
  
- static void
++struct client_size_tuple {
++	Client* c;
++	gint s;
++};
++
++static void
++late_download_update(WebKitWebView* view, GParamSpec *pspec, struct client_size_tuple* t){
++	char script[1024]; char* s= script;
++	snprintf(script, 1024, "c(%d, %d)", t->s, t->s);
++	const Arg a= {.v = (void*) &s};
++	eval(t->c, &a);
++	free(t);
++}
++
++static void
 +download(WebKitDownload *o, GParamSpec *pspec, Client *c) {
 +	WebKitDownloadStatus status;
 +	char script[2048]; char* s= script;
@@ -33,26 +48,32 @@ index c9fa08d..6c95f6e 100644
 +	status = webkit_download_get_status(o);
 +	if(status == WEBKIT_DOWNLOAD_STATUS_STARTED || status == WEBKIT_DOWNLOAD_STATUS_CREATED) {
 +		snprintf(script, 2048, "u(%d, %d, %d)",
-+		         (gint)webkit_download_get_current_size(o),
-+		         (gint)webkit_download_get_total_size(o),
-+		         (gint)(webkit_download_get_progress(o) * 100));
++			(gint)webkit_download_get_current_size(o),
++			(gint)webkit_download_get_total_size(o),
++			(gint)(webkit_download_get_progress(o) * 100));
 +		const Arg a= {.v = (void*) &s};
 +		eval(c, &a);
 +	}
 +	else if (status == WEBKIT_DOWNLOAD_STATUS_FINISHED){
-+		snprintf(script, 2048, "c(%d, %d)",
-+		         (gint)webkit_download_get_current_size(o),
-+		         (gint)webkit_download_get_total_size(o));
-+		const Arg a= {.v = (void*) &s};
-+		eval(c, &a);
++		if( webkit_web_view_get_load_status(c->view) == WEBKIT_LOAD_FINISHED ){
++			snprintf(script, 2048, "c(%d, %d)",
++				(gint)webkit_download_get_current_size(o),
++				(gint)webkit_download_get_total_size(o));
++			const Arg a= {.v = (void*) &s};
++			eval(c, &a);
++		}
++		else {
++			struct client_size_tuple* t= calloc(1, sizeof(struct client_size_tuple));
++			t->c= c; t->s= (gint)webkit_download_get_current_size(o);
++			g_signal_connect(c->view, "document-load-finished", G_CALLBACK(late_download_update), t);
++		}
 +	}
 +}
 +
-+static void
+ static void
  evalscript(JSContextRef js, char *script, char* scriptname) {
  	JSStringRef jsscript, jsscriptname;
- 	JSValueRef exception = NULL;
-@@ -496,12 +520,104 @@ geturi(Client *c) {
+@@ -496,12 +541,105 @@ geturi(Client *c) {
  
  static gboolean
  initdownload(WebKitWebView *view, WebKitDownload *o, Client *c) {
@@ -133,22 +154,25 @@ index c9fa08d..6c95f6e 100644
 +"</body>" \
 +"</html>";
 +	char html[sizeof(template)+2048];
-+	n = newclient();
 +	filename = webkit_download_get_suggested_filename(o);
 +
 +	path = g_build_filename(downdir, filename, NULL);
 +	uri = g_filename_to_uri(path, NULL, NULL);
 +
++	webkit_download_set_destination_uri(o, uri);
++	webkit_download_start(o);
++
++	n = newclient();
 +	snprintf(html, sizeof(template)+2048, template, filename, filename, path);
 +	webkit_web_view_load_string(n->view, html, NULL, NULL, NULL);
 +
 +	g_signal_connect(o, "notify::progress", G_CALLBACK(download), n);
 +	g_signal_connect(o, "notify::status", G_CALLBACK(download), n);
++
 +	n->title = g_strdup_printf("Downloading %s", filename);
 +	n->progress = 0;
 +	update(n);
 +
-+	webkit_download_set_destination_uri(o, uri);
 +	g_free(path);
 +	g_free(uri);
  
@@ -156,8 +180,6 @@ index c9fa08d..6c95f6e 100644
 -	arg = (Arg)DOWNLOAD((char *)webkit_download_get_uri(o), geturi(c));
 -	spawn(c, &arg);
 -	return FALSE;
-+	webkit_download_start(o);
-+
 +	return TRUE;
  }
  

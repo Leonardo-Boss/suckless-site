@@ -166,6 +166,7 @@ Web Browsers
 * [edbrowse](http://edbrowse.sourceforge.net/)
 * [surf](http://surf.suckless.org/)
 * [uzbl](http://uzbl.org/)
+* [netsurf](http://www.netsurf-browser.org/)
 * [w3m](http://w3m.sf.net/)
 
 X11

@@ -56,6 +56,10 @@ just register the talk/event. Suckless is flexible.
   files which can't be viewed in st(1). less(1) is our PAGER. Please break
   your lines at 80 chars.
 
+# What language should talks be in?
+* English. If you have any communication problems contact us at con@MAILHOST
+  and we will find some solution.
+
 # What are the costs?
 * After we received the number of people interested in such a conference costs
   are calculated. Standard economics apply.

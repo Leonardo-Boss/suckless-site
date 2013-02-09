@@ -32,7 +32,7 @@ of Munich at slcon 2013.
 * Send an e-mail to con@MAILHOST telling us your name and on how many of
   the days you want to attend the conference. Please do this until 2013-03-15.
 
-# What topics will the SUckless Conference be about?
+# What topics will the Suckless Conference be about?
 * Suckless software
 	* talks about existing suckless software
 	* ideas for further improvement

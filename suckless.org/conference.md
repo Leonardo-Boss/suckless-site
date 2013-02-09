@@ -50,8 +50,8 @@ just register the talk/event. Suckless is flexible.
 # How do I register for a talk/event?
 * Send the title and a description of what you will present to con@MAILHOST
   until 2013-04-15.
-* Be sure to register that you will attend too so we can plan the size of the
-  of the place where the conference happens more easily.
+* Be sure to register that you will attend too, so we can plan the size of the
+  place where the conference happens more easily.
 * Preferred format is text/plain and formatted UTF-8. Don't send huge PDF
   files which can't be viewed in st(1). less(1) is our PAGER. Please break
   your lines at 80 chars.

@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2013-02-10
+----------
+We are glad to announce the [suckless conference 2013](/conference). Please register and review our CfP.
+
 2012-11-29
 ----------
 We are glad to announce the switch to git from mercurial in all of our

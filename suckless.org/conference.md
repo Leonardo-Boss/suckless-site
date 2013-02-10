@@ -1,3 +1,6 @@
+slcon 2013
+==========
+
 Suckless people from all around the world will meet this year in the city
 of Munich at slcon 2013.
 

@@ -7,7 +7,7 @@ News
 
 2013-02-10
 ----------
-We are glad to announce the [suckless conference 2013](/conference). Please register and review our CfP.
+We are glad to announce the [slcon 2013](/conference). Please register and review our CfP.
 
 2012-11-29
 ----------

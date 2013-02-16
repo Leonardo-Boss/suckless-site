@@ -10,9 +10,10 @@ an alternative port is specified with the -p flag.
 Download
 --------
 
-* [ii-1.6-ssl.diff](ii-1.6-ssl.diff)
+* [ii-1.7-ssl.diff](ii-1.7-ssl.diff)
 
 Author
 ------
 
 * Hunter Haugen (Hunner) <[h.haugen@gmail.com](mailto:h.haugen@gmail.com)>
+* Ported to ii 1.7 by Nik Unger

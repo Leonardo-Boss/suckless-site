@@ -9,6 +9,8 @@ News
 ----------
 We are glad to announce the [slcon 2013](/conference). Please register and review our CfP.
 
+[surf 0.6](http://surf.suckless.org) released: [download](http://dl.suckless.org/surf/surf-0.6.tar.gz)
+
 2012-11-29
 ----------
 We are glad to announce the switch to git from mercurial in all of our

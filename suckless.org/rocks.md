@@ -12,7 +12,7 @@ compatible with other suckless projects.
 libc implementations
 --------------------
 * [uClibc](http://www.uclibc.org/) - strives to be a minimalist C library suitable for embedded computing
-* [musl](http://www.etalabs.net/musl/) - standard C library that attempts to be even smaller than uClibc
+* [musl](http://www.musl-libc.org/) - standard C library that attempts to be even smaller than uClibc
 * See also: [embedded libc comparison](http://www.etalabs.net/compare_libcs.html)
 
 Configuration file parsers
@@ -38,7 +38,7 @@ change this line of thinking."
 Cryptography
 ------------
 * [libtomcrypt](http://libtom.org/?page=features&newsitems=5&whatfile=crypt) - the cryptography library from the libtom project
-* [polarssl](http://polarssl.org/) - lightweight SSL/TLS implementation (GPL with [exceptions](http://polarssl.org/license_exception))
+* [polarssl](https://polarssl.org/) - lightweight SSL/TLS implementation (GPL with [exceptions](https://polarssl.org/foss-license-exception))
 * [(C)yassl](http://www.yassl.com/yaSSL/Home.html) - portable RTOS-targeted embedded SSL library - licensed under both the GPLv2 as well as standard commercial licensing
 
 Mathematics
@@ -65,7 +65,7 @@ This covers most console-based programs and programs from [plan9port][].
 
 Accounting
 ----------
-* [Ledger](https://github.com/jwiegley/ledger/wiki)
+* [Ledger](http://ledger-cli.org/)
 
 Audio Players
 -------------
@@ -73,7 +73,7 @@ Audio Players
 * [DeaDBeeF](http://deadbeef.sourceforge.net/)
 * [cplay](http://cplay.sourceforge.net/)
 * [moc](http://moc.daper.net/)
-* [mpd](http://www.musicpd.org/) - A client/server based music player with console and graphical front-ends.
+* [mpd](http://mpd.wikia.com/wiki/Music_Player_Daemon_Wiki) - A client/server based music player with console and graphical front-ends.
 * [mpg123](http://www.mpg123.de/) - A console mpg player which doesn't use auto*hell, or extra libraries.
 * [mpg321](http://mpg321.sourceforge.net)
 * [vorbis-tools](http://www.xiph.org/) (Ogg/FLAC) - Command-line tools to play Ogg and FLAC files.
@@ -99,20 +99,20 @@ IRC Clients
 
 Image Viewers
 -------------
-* [feh](https://derf.homelinux.org/projects/feh/)
+* [feh](http://feh.finalrewind.org/)
 * [jpg/gif/bmp/png][plan9port] - Simple programs from Plan 9 to display images in no-frills windows. Included with plan9port.
 * [meh](http://www.johnhawthorn.com/meh/) - image viewer using raw XLib, libjpeg, libpng and libgif
 * [page][plan9port] - Plan 9's image/document viewer program. Included with plan9port.
 * [qiv](http://www.klografx.net/qiv/)
 * [sxiv](https://github.com/muennich/sxiv) - Simple (or small or suckless) X Image Viewer. Depends on xlib and imlib2.
-* [xli](http://pantransit.reptiles.org/prog/) - broken link? Apparently, there's a copy here: http://ftp.x.org/contrib/applications/ -- at your own risk
-* [xzgv](http://sourceforge.net/projects/xzgv)
+* [xli](http://web.aanet.com.au/gwg/xli.html)
+* [xzgv](http://sourceforge.net/projects/xzgv/)
 
 Instant Messaging Clients
 -------------------------
-* [bitlbee](http://www.bitlbee.org/) - A program to translate IM protocols to IRC. You can now IM from your IRC client, and you don't even need to install anything.
+* [bitlbee](http://www.bitlbee.org/main.php/news.r.html) - A program to translate IM protocols to IRC. You can now IM from your IRC client, and you don't even need to install anything.
 * [centericq](http://konst.org.ua/centericq/)
-* [centerim](http://www.centerim.org/) - A centericq fork.
+* [CenterIM](http://www.centerim.org/index.php/Main_Page) - A centericq fork.
 * [climm](http://www.climm.org/)
 * [irssi-xmpp](http://cybione.org/~irssi-xmpp/)
 * [mcabber](http://www.lilotux.net/~mikael/mcabber/) - A console jabber client.
@@ -125,7 +125,7 @@ Mail Clients
 * [fdm](http://fdm.sourceforge.net/) - MDA
 * [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
 * [mutt](http://www.mutt.org/)
-* [muttator](http://vimperator.org/muttator) - A Thunderbird extension to make it keyboard friendly and mutt/Vim-like.
+* [muttator](http://www.vimperator.org/muttator) - A Thunderbird extension to make it keyboard friendly and mutt/Vim-like.
 * [nmh](http://www.nongnu.org/nmh/)
 
 Media Players
@@ -135,17 +135,17 @@ Media Players
 PDF Viewers
 -----------
 * [mupdf](http://mupdf.com/)
-* [zathura](http://zathura.pwmt.org/)
+* [zathura](http://pwmt.org/projects/zathura/)
 
 Text Editors
 ------------
 * [acme][acme] - Rob Pike's framing text editor for Plan 9. Included in [plan9port][].
-* [ired](http://www.radare.org) (Minimalist hexadecimal editor and bindiffer for p9, w32 and *nix)
-* [nvi](https://sites.google.com/a/bostic.com/keithbostic/nvi) - A small, multiple file vi-alike.
+* [ired](http://www.radare.org/y/) (Minimalist hexadecimal editor and bindiffer for p9, w32 and *nix)
+* [nvi](https://sites.google.com/a/bostic.com/keithbostic/vi) - A small, multiple file vi-alike.
 * [sam](http://sam.cat-v.org/) - An editor by Rob Pike with inspiration from ed.
 * [traditional vi](http://ex-vi.sourceforge.net/) - A fixed version of the original vi.
 * [vim](http://www.vim.org) (With the GUI, use `:set go+=c` to kill popup dialogs)
-* [wily](http://www.cs.yorku.ca/~oz/wily/) - An acme clone for POSIX.
+* [wily](http://www.cse.yorku.ca/~oz/wily/) - An acme clone for POSIX.
 * [ed](http://swtch.com/plan9port/man/man1/ed.html) - [ED IS THE STANDARD TEXT EDITOR!](http://www.gnu.org/fun/jokes/ed-msg.html)
 
 Utilities
@@ -159,15 +159,15 @@ Web Browsers
 * [Abaco](http://lab-fgb.com/abaco/)
 * [Conkeror](http://www.conkeror.org/) - A Gecko based browser, imparting it Emacs style key bindings, appearances, and behaviors.
 * [Dillo](http://www.dillo.org/)
+* [edbrowse](http://edbrowse.sourceforge.net/)
 * [ELinks](http://elinks.or.cz/)
 * [Links](http://links.twibright.com/)
 * [Lynx](http://lynx.isc.org/)
-* [Vimperator](http://vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like.  
-* [edbrowse](http://edbrowse.sourceforge.net/)
+* [netsurf](http://www.netsurf-browser.org/)
 * [surf](http://surf.suckless.org/)
 * [uzbl](http://uzbl.org/)
-* [netsurf](http://www.netsurf-browser.org/)
-* [w3m](http://w3m.sf.net/)
+* [Vimperator](http://www.vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like.  
+* [w3m](http://w3m.sourceforge.net/)
 
 X11
 ---

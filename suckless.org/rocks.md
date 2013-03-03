@@ -159,15 +159,21 @@ Web Browsers
 * [Abaco](http://lab-fgb.com/abaco/)
 * [Conkeror](http://www.conkeror.org/) - A Gecko based browser, imparting it Emacs style key bindings, appearances, and behaviors.
 * [Dillo](http://www.dillo.org/)
+* [dwb](http://portix.bitbucket.org/dwb/) - A lightweight web browser based on the webkit.
 * [edbrowse](http://edbrowse.sourceforge.net/)
 * [ELinks](http://elinks.or.cz/)
+* [hbro](https://github.com/k0ral/hbro) - A minimal KISS-compliant browser written and configured in Haskell.
+* [hv3](http://tkhtml.tcl.tk/)
+* [jumanji](http://pwmt.org/projects/jumanji/) - A highly customizable and functional web browser based on the libwebkit.
 * [Links](http://links.twibright.com/)
+* [luakit](http://mason-larobina.github.com/luakit/) - Fast, small, webkit based browser framework extensible by Lua.
 * [Lynx](http://lynx.isc.org/)
 * [netsurf](http://www.netsurf-browser.org/)
 * [surf](http://surf.suckless.org/)
-* [uzbl](http://uzbl.org/)
+* [uzbl](http://uzbl.org/) - Web interface tools which adhere to the unix philosophy.
 * [Vimperator](http://www.vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like.  
 * [w3m](http://w3m.sourceforge.net/)
+* [xombrero](https://opensource.conformal.com/wiki/xombrero) - A minimalist web browser with sophisticated security features designed-in. Formerly known as [xxxterm](https://opensource.conformal.com/wiki/xxxterm)
 
 X11
 ---

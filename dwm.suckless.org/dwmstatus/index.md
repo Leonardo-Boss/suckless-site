@@ -34,6 +34,7 @@ add them here as file or as code example.
 * [Reading eth0 up-, and downspeed from /proc/net](dwmstatus-netusage.c)
 * [Counting number of mails in a Maildir/new](mail_counter.c)
 * [Get disk usage and execute some check at different moments](diskspace_timechk.c) : Because you don't want to check new mails every second
+* [Detecting Man-In-The-Middle](dwmstatus-mitm.c)
 
 Questions
 ---------

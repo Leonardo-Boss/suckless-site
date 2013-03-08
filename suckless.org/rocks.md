@@ -26,25 +26,10 @@ Compression
 * [zlib](http://zlib.net/) - the "standard" compression/decompression library, quite small, used in many applications ([zlib license](http://zlib.net/zlib_license.html))
 * [miniz](http://code.google.com/p/miniz/) - single C-file reimplementation of zlib, public domain.
 
-libtom project
---------------
-All of these are dual-licensed under WTFPL and also public domain. According
-to the website, "[…] the GPG and OpenSSL folk assume that completely abhorrent
-and messy source code is ok, so long as it works. The LibTom Projects aims to
-change this line of thinking."
-
-* [libtommath, libtomcrypt and tomsfastmath](http://libtom.org/)
-
 Cryptography
 ------------
-* [libtomcrypt](http://libtom.org/?page=features&newsitems=5&whatfile=crypt) - the cryptography library from the libtom project
 * [polarssl](https://polarssl.org/) - lightweight SSL/TLS implementation (GPL with [exceptions](https://polarssl.org/foss-license-exception))
 * [(C)yassl](http://www.yassl.com/yaSSL/Home.html) - portable RTOS-targeted embedded SSL library - licensed under both the GPLv2 as well as standard commercial licensing
-
-Mathematics
------------
-* [libtommath](http://libtom.org/?page=features&newsitems=5&whatfile=ltm) - math/bignum library (can be used instead of the much bigger [GNU MP](http://gmplib.org) library).
-* [libtomfastmath](http://libtom.org/?page=features&newsitems=5&whatfile=tfm) - port of libtommath using inline assembler for speedup on various architectures
 
 Miscellaneous
 -------------
@@ -125,7 +110,6 @@ Mail Clients
 * [fdm](http://fdm.sourceforge.net/) - MDA
 * [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
 * [mutt](http://www.mutt.org/)
-* [muttator](http://www.vimperator.org/muttator) - A Thunderbird extension to make it keyboard friendly and mutt/Vim-like.
 * [nmh](http://www.nongnu.org/nmh/)
 
 Media Players
@@ -166,12 +150,11 @@ Web Browsers
 * [hv3](http://tkhtml.tcl.tk/)
 * [jumanji](http://pwmt.org/projects/jumanji/) - A highly customizable and functional web browser based on the libwebkit.
 * [Links](http://links.twibright.com/)
-* [luakit](http://mason-larobina.github.com/luakit/) - Fast, small, webkit based browser framework extensible by Lua.
 * [Lynx](http://lynx.isc.org/)
 * [netsurf](http://www.netsurf-browser.org/)
 * [surf](http://surf.suckless.org/)
 * [uzbl](http://uzbl.org/) - Web interface tools which adhere to the unix philosophy.
-* [Vimperator](http://www.vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like.  
+* [Vimperator](http://www.vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like.
 * [w3m](http://w3m.sourceforge.net/)
 * [xombrero](https://opensource.conformal.com/wiki/xombrero) - A minimalist web browser with sophisticated security features designed-in. Formerly known as [xxxterm](https://opensource.conformal.com/wiki/xxxterm)
 

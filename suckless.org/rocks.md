@@ -146,8 +146,6 @@ Web Browsers
 * [dwb](http://portix.bitbucket.org/dwb/) - A lightweight web browser based on the webkit.
 * [edbrowse](http://edbrowse.sourceforge.net/)
 * [ELinks](http://elinks.or.cz/)
-* [hbro](https://github.com/k0ral/hbro) - A minimal KISS-compliant browser written and configured in Haskell.
-* [hv3](http://tkhtml.tcl.tk/)
 * [jumanji](http://pwmt.org/projects/jumanji/) - A highly customizable and functional web browser based on the libwebkit.
 * [Links](http://links.twibright.com/)
 * [Lynx](http://lynx.isc.org/)

@@ -19,9 +19,6 @@ This software has to be installed on the system for my whoto to work:
 
 Feel free to use other components if desired.
 
-I do apply a patch to 'surf' that adds parameter '-k' and disables all
-key strokes. See the [patches](../patches/kioskmode) section for the patch.
-
 Basic setup
 -----------
 

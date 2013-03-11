@@ -11,7 +11,7 @@ index d9a2be9..adfa7a6 100644
  /* Webkit default features */
  static Bool enablescrollbars = TRUE;
 diff --git a/surf.1 b/surf.1
-index 97c00f0..6b8e233 100644
+index 97c00f0..c228fbd 100644
 --- a/surf.1
 +++ b/surf.1
 @@ -32,6 +32,9 @@ Reparents to window specified by
@@ -19,13 +19,13 @@ index 97c00f0..6b8e233 100644
  Disable Images
  .TP
 +.B \-k
-+Enable kiosk mode (disable key stokes)
++Enable kiosk mode (disable key stokes and right click)
 +.TP
  .B \-n
  Disable the Web Inspector (Developer Tools).
  .TP
 diff --git a/surf.c b/surf.c
-index 214b9c7..06d6767 100644
+index 214b9c7..37db29a 100644
 --- a/surf.c
 +++ b/surf.c
 @@ -644,7 +644,8 @@ newclient(void) {
@@ -38,7 +38,16 @@ index 214b9c7..06d6767 100644
  			"key-press-event",
  			G_CALLBACK(keypress), c);
  
-@@ -790,7 +791,7 @@ newclient(void) {
+@@ -748,6 +749,8 @@ newclient(void) {
+ 			enablespatialbrowsing, NULL);
+ 	g_object_set(G_OBJECT(settings), "enable-developer-extras",
+ 			enableinspector, NULL);
++	g_object_set(G_OBJECT(settings), "enable-default-context-menu",
++			kioskmode ^ 1, NULL);
+ 
+ 	if(enableinspector) {
+ 		c->inspector = WEBKIT_WEB_INSPECTOR(
+@@ -790,7 +793,7 @@ newclient(void) {
  static void
  newwindow(Client *c, const Arg *arg, gboolean noembed) {
  	guint i = 0;
@@ -47,7 +56,7 @@ index 214b9c7..06d6767 100644
  	const Arg a = { .v = (void *)cmd };
  	char tmp[64];
  
-@@ -804,6 +805,8 @@ newwindow(Client *c, const Arg *arg, gboolean noembed) {
+@@ -804,6 +807,8 @@ newwindow(Client *c, const Arg *arg, gboolean noembed) {
  	}
  	if(!loadimages)
  		cmd[i++] = "-i";
@@ -56,7 +65,7 @@ index 214b9c7..06d6767 100644
  	if(!enableplugins)
  		cmd[i++] = "-p";
  	if(!enablescripts)
-@@ -1180,7 +1183,7 @@ updatewinid(Client *c) {
+@@ -1180,7 +1185,7 @@ updatewinid(Client *c) {
  
  static void
  usage(void) {
@@ -65,7 +74,7 @@ index 214b9c7..06d6767 100644
  		" [-t stylefile] [-u useragent] [uri]\n", basename(argv0));
  }
  
-@@ -1226,6 +1229,9 @@ main(int argc, char *argv[]) {
+@@ -1226,6 +1231,9 @@ main(int argc, char *argv[]) {
  	case 'i':
  		loadimages = 0;
  		break;

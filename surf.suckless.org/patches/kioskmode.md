@@ -10,7 +10,7 @@ strokes within surf. Text input on websites is still possible though.
 Download
 --------
 
-* [surf-kiosk.diff](surf-kiosk.diff) (2k) (20130310)
+* [surf-kiosk.diff](surf-kiosk.diff) (2.3k) (20130311)
 
 Author
 ------

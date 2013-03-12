@@ -37,6 +37,9 @@ Additionally we create a file '/etc/X11/xorg.conf.d/15-no-vt.conf'.
 Now X.org does not allow to change to the virtual terminal via
 'Ctrl-Alt-F1'.
 
+Depending on your setup you may want to stop and disable services like
+ssh daemon and/or disable public key authentication.
+
 Login manager
 -------------
 

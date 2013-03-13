@@ -63,7 +63,10 @@ following file to '/home/kiosk/.i3/config':
         # shut down system with systemd/polkit
         bindsym Control+Shift+E exec /usr/bin/systemctl poweroff
 
-        for_window [title="surf"] fullscreen enable
+	# make surf start in fullscreen
+        for_window [class="Surf"] fullscreen
+
+	# execute surf
         exec /usr/bin/surf -k http://surf.suckless.org/
 
 Now reboot your system and have fun. ;)

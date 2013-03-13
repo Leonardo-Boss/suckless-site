@@ -31,7 +31,8 @@ Description
 
 Issues
 ------
-In a multi-monitor setup, you will see monitor one's borders on monitor two and vice-versa. This is because the border on screen edges are simply placed off-screen.
+* In a multi-monitor setup, you will see monitor one's borders on monitor two and vice-versa. This is because the borders on screen edges are simply placed off-screen.
+* Floating clients will be hidden behind tiled clients when one changes focus from a floating client to a tiled client.
 
 Download
 --------

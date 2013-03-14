@@ -21,6 +21,7 @@ Please add your own version of dwmstatus here.
 
 * [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent and date/time
 * [p1c0-dwmstatus-volume.c](p1c0-dwmstatus-volume.c) - volume percentage & bar display
+* [suspend-statusbar.c](suspend-statusbar.c) - loadavg, wifi, battery and date. If battery goes below threshold - run suspend command
 
 
 Helper functions

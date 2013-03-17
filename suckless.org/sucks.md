@@ -11,10 +11,17 @@ possible to avoid them. If you use them, consider looking for alternatives.
 * [glib][1] - implements C++ STL on top of C (because C++ sucks so much, let's
   reinvent it!), adding lots of useless data types for
   ["portability" and "readability" reasons][2].
-  Alternatives: whoever thinks it needs alternatives shall fill this space.
+  even worse, it is not possible to write robust applications using glib,
+  since it [aborts in out-of-memory situations][8].
+  glib usage is required to write gtk+ and gnome applications, but is also used
+  when common functionality is needed (e.g. hashlists, base64 decoder, etc).
+  it is not suited at all for static linking due to its huge size.
+  
+  Alternatives: [libmowgli][9], [libulz][10]
 
 * [GMP][3] - GNU's bignum/arbitrary precision library. Quite bloated, slow and
   [calls abort() on failed malloc][4]
+  
   Alternatives: [libtommath][5], [TomsFastMath][6], [MPI][7]
 
 
@@ -25,6 +32,36 @@ possible to avoid them. If you use them, consider looking for alternatives.
 [5]: http://libtom.org/?page=features&newsitems=5&whatfile=ltm
 [6]: http://libtom.org/?page=features&newsitems=5&whatfile=tfm
 [7]: http://spinning-yarns.org/michael/mpi/
+[8]: https://bugzilla.gnome.org/show_bug.cgi?id=674446
+[9]: https://github.com/atheme/libmowgli-2
+[10]: https://github.com/rofl0r/libulz
+
+Build Systems
+-------------
+
+* [cmake][11] - cmake is written in C++ but often used to compile C programs.
+  that means (on a self-bootstrapping system) that one needs to compile a C++
+  compiler and cmake just in order to be able to build some C code.
+  it is so huge and bloated that compilation takes more time than compilation
+  of GCC (!).
+  it's not even possible to use it to create freestanding Makefiles, since
+  the generated Makefiles call back into the cmake binary itself.
+
+  Alternatives: [gnu make][14]
+
+* [waf][12] and [scons][13] - waf/scons are both written in python but often
+  used to compile C programs.
+  that means (on a self-bootstrapping system) that one needs to compile python
+  in order to be able to build some C code.
+  waf code is dropped into the compilee's build tree, so it does not benefit
+  from updated versions and bugfixes.
+
+  Alternatives: [gnu make][14]
+
+[11]: http://www.cmake.org/
+[12]: https://code.google.com/p/waf/
+[13]: http://www.scons.org/
+[14]: https://www.gnu.org/software/make/
 
 Programs
 --------

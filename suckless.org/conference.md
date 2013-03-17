@@ -64,6 +64,11 @@ just register the talk/event. Suckless is flexible.
   meaning of »hypocrisis«. Writing your own suckless presentation software is
   surely something that will be appreciated.
 
+# How lang can by talk last?
+* Every speaker can use up to 45 min for his/her presentation. After that 10
+  minutes of discussion follow and a 5 min break. If you need less time, then
+  use less.
+
 # What language should talks be in?
 * English. If you have any communication problems contact us at con@MAILHOST
   and we will find some solution.
@@ -72,7 +77,13 @@ just register the talk/event. Suckless is flexible.
 * Yes, video and audio streams are planned.
 
 # Will the talks be recorded?
-* Only if there is a consent by the presenter that it should be done.
+* Only if there is a consent by the presenter that it should be done. The
+  easiest way to preserve what was said on the conference is to have a text
+  file in UTF-8 text/plain and some text formatting that tells the audience
+  what was said. This is the maximum compression such a talk can be held and
+  preserved in. We don't want academic papers, but something you would want to
+  read when trying to get some information about what you as presenter said.
+* The easiest way is to just publish the PDF of the slides.
 
 # What are the costs?
 * After we received the number of people interested in such a conference costs

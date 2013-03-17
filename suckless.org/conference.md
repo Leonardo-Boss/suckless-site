@@ -11,7 +11,7 @@ of Munich at slcon 2013.
 * Replace MAILHOST with "suckless.org"
 
 # What will happen when?
-* until 2013-03-15
+* until 2013-03-15 (OVER)
 	* Call for Registration
 * until 2013-04-15
 	* Call for Papers
@@ -32,8 +32,8 @@ of Munich at slcon 2013.
 	  registration will describe where slcon 2013 will happen exactly.
 
 # How do I register to attend?
-* Send an e-mail to con@MAILHOST telling us your name and on how many of
-  the days you want to attend the conference. Please do this until 2013-03-15.
+* The call for registration is over. Now you should register a talk to attend
+  slcon. See the appropriate question for how to do this.
 
 # What topics will the Suckless Conference be about?
 * Suckless software
@@ -59,9 +59,20 @@ just register the talk/event. Suckless is flexible.
   files which can't be viewed in st(1). less(1) is our PAGER. Please break
   your lines at 80 chars.
 
+# What software should the talk be held in?
+* Use what you like. There is Libreoffice available, but always think of the
+  meaning of »hypocrisis«. Writing your own suckless presentation software is
+  surely something that will be appreciated.
+
 # What language should talks be in?
 * English. If you have any communication problems contact us at con@MAILHOST
   and we will find some solution.
+
+# Are video streams and audio streams planned?
+* Yes, video and audio streams are planned.
+
+# Will the talks be recorded?
+* Only if there is a consent by the presenter that it should be done.
 
 # What are the costs?
 * After we received the number of people interested in such a conference costs

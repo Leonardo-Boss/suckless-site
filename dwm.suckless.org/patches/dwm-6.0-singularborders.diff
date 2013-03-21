@@ -1,5 +1,5 @@
---- dwm.c	2011-12-19 16:02:46.000000000 +0100
-+++ dwm.c	2013-03-21 01:02:01.376581432 +0100
+--- dwm.c.orig	2013-03-21 12:53:45.498473296 +0100
++++ dwm.c	2013-03-21 12:54:45.321805710 +0100
 @@ -206,6 +206,7 @@
  static void pop(Client *);
  static void propertynotify(XEvent *e);
@@ -26,7 +26,7 @@
  }
  
  void
-@@ -1328,6 +1331,18 @@
+@@ -1328,6 +1331,20 @@
  	running = False;
  }
  
@@ -35,9 +35,11 @@
 +	Client *c;
 +	XEvent ev;
 +
-+	for(c = selmon->clients; c; c = c->next)
-+		if(c->isfloating)
-+			XRaiseWindow(dpy, c->win);
++	if(selmon->lt[selmon->sellt]->arrange) {
++		for(c = selmon->clients; c; c = c->next)
++			if(c->isfloating)
++				XRaiseWindow(dpy, c->win);
++	}
 +	XSync(dpy, False);
 +	while(XCheckMaskEvent(dpy, EnterWindowMask, &ev));
 +}
@@ -45,7 +47,7 @@
  Monitor *
  recttomon(int x, int y, int w, int h) {
  	Monitor *m, *r = selmon;
-@@ -1717,13 +1732,13 @@
+@@ -1717,13 +1734,13 @@
  	for(i = my = ty = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)
  		if(i < m->nmaster) {
  			h = (m->wh - my) / (MIN(n, m->nmaster) - i);

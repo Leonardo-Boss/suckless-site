@@ -61,10 +61,10 @@ just register the talk/event. Suckless is flexible.
 
 # What software should the talk be held in?
 * Use what you like. There is Libreoffice available, but always think of the
-  meaning of »hypocrisis«. Writing your own suckless presentation software is
+  meaning of »hypocrisy«. Writing your own suckless presentation software is
   surely something that will be appreciated.
 
-# How lang can by talk last?
+# How long can by talk last?
 * Every speaker can use up to 45 min for his/her presentation. After that 10
   minutes of discussion follow and a 5 min break. If you need less time, then
   use less.

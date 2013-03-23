@@ -20,7 +20,7 @@
 +	if(n == 0)
 +		return;
 +
-+	dn = n - 1;
++	dn = n - m->nmaster;
 +	if(dn > 0) /* override layout symbol */
 +		snprintf(m->ltsymbol, sizeof m->ltsymbol, "D %d", dn);
 +

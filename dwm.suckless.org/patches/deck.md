@@ -1,4 +1,4 @@
-\singular borders
+\deck layout
 ===========
 
 Description

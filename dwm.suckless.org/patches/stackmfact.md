@@ -29,11 +29,6 @@ Description
 	|                 |       |
 	+-----------------+-------+
 
-Issues
-------
-* with more than X clients, increasing smfact too much will crash DWM.
-* negative smfact can't properly function in the way smfact is implemented.
-
 Download
 --------
 * [dwm-6.0-smfact.diff](dwm-6.0-smfact.diff)

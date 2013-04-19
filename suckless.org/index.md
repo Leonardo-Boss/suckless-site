@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2013-03-29
+----------
+[st 0.4](http://st.suckless.org) released: [download](http://dl.suckless.org/st/st-0.4.tar.gz)
+
 2013-02-10
 ----------
 We are glad to announce the [slcon 2013](/conference). Please register and review our CfP.

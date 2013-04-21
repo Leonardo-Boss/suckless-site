@@ -5,14 +5,16 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2013-04-21
+----------
+We are glad to announce the [slcon 2013](/conference) programme.
+
 2013-03-29
 ----------
 [st 0.4](http://st.suckless.org) released: [download](http://dl.suckless.org/st/st-0.4.tar.gz)
 
 2013-02-10
 ----------
-We are glad to announce the [slcon 2013](/conference). Please register and review our CfP.
-
 [surf 0.6](http://surf.suckless.org) released: [download](http://dl.suckless.org/surf/surf-0.6.tar.gz)
 
 2012-11-29

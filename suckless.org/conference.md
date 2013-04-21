@@ -8,8 +8,8 @@ Friday 21 June 2013
         AUGUSTINERKELLER
         Arnulfstr. 52
         80335 München
-        <http://www.augustinerkeller.de/>
         (5 mins walking distance to the 4YOU hostel)
+<http://www.augustinerkeller.de/>
 
 Saturday 22 June 2013
 =====================
@@ -81,7 +81,8 @@ Talks
         ATZINGER
         Schellingstr. 9
         80799 München
-        http://www.atzingermuenchen.de/
+
+<http://www.atzingermuenchen.de/>
 
 
 Sunday 23 June 2013
@@ -91,7 +92,8 @@ Sunday 23 June 2013
         HOFBR&Auml;UHAUS M&Uuml;NCHEN
         Platzl 9
         80331 München
-        http://www.hofbraeuhaus.de/en/index_en.html
+
+<http://www.hofbraeuhaus.de/en/index_en.html>
 
 
 Recommended accommodation
@@ -102,16 +104,18 @@ Budget rates
         THE 4YOU HOSTEL & HOTEL MÜNCHEN
         Hirtenstraße 18
         80335 München
-        http://www.the4you.de/en/
+
+<http://www.the4you.de/en/>
 
 Medium rates
 ------------
         IBIS MUENCHEN CITY
         Dachauer Strasse 21
         80335 MUENCHEN
-        GERMANY
-        http://www.accorhotels.com/de/hotel-1450-ibis-muenchen-city/index.shtml
+
+<http://www.accorhotels.com/de/hotel-1450-ibis-muenchen-city/index.shtml>
 
 Fallback
 --------
-        http://www.hrs.com
+
+<http://www.hrs.com>

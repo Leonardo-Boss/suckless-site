@@ -1,105 +1,117 @@
-slcon 2013
-==========
+suckless conference 2013, Munich
+================================
 
-Suckless people from all around the world will meet this year in the city
-of Munich at slcon 2013.
+Friday 21 June 2013
+===================
+* 6.00pm-10.00pm:
 
-# What timezone are the mentioned dates in?
-* Europe/Berlin
+        AUGUSTINERKELLER
+        Arnulfstr. 52
+        80335 München
+        <http://www.augustinerkeller.de/>
+        (5 mins walking distance to the 4YOU hostel)
 
-# How do I get the mentioned e-mail addresses to work?
-* Replace MAILHOST with "suckless.org"
+Saturday 22 June 2013
+=====================
+* 9.00am-6.00pm:
 
-# What will happen when?
-* until 2013-03-15 (OVER)
-	* Call for Registration
-* until 2013-04-15
-	* Call for Papers
-* on 2013-05-15
-	* Release of the programme and schedule
-* 2013-06-21 to 2013-06-23
-	* 2013-06-21
-		* social event
-	* 2013-06-22
-		* slcon 2013 day 1 + social event
-	* 2013-06-23
-		* slcon 2013 day 2 + end
+        LMU MÜNCHEN (Ludwig-Maximilians-Universität)
+        Theresienstr 39
+        80333 München
 
-# Where will it happen?
-* Munich
-	* The location depends on how many people register.
-	* A separate announcement right after the deadline for the
-	  registration will describe where slcon 2013 will happen exactly.
+        Room A027 / Raum A027
 
-# How do I register to attend?
-* The call for registration is over. Now you should register a talk to attend
-  slcon. See the appropriate question for how to do this.
+Talks
+-----
+* 9.00am-9.45am: Welcome the future of dwm, Anselm R Garbe
 
-# What topics will the Suckless Conference be about?
-* Suckless software
-	* talks about existing suckless software
-	* ideas for further improvement
-* Suckless techtalk
-	* talks about suckless technology
-* Suckless project ideas
-	* talks about project ideas
-* Suckless philosophy
-	* talks about the suckless philosophy
+        Anselm will present his plan about the next steps of the dwm
+        development.
 
-These are hints what the topics should be mainly about. If you think something
-belongs onto the schedule of slcon but it does not fit the the above points,
-just register the talk/event. Suckless is flexible.
+* 9.45am-10.30am: st - the past and future, Christoph Lohmann
 
-# How do I register for a talk/event?
-* Send the title and a description of what you will present to con@MAILHOST
-  until 2013-04-15.
-* Be sure to register that you will attend too, so we can plan the size of the
-  place where the conference happens more easily.
-* Preferred format is text/plain and formatted UTF-8. Don't send huge PDF
-  files which can't be viewed in st(1). less(1) is our PAGER. Please break
-  your lines at 80 chars.
+        Christoph will present his plan about the next steps of st
+        development.
 
-# What software should the talk be held in?
-* Use what you like. There is Libreoffice available, but always think of the
-  meaning of »hypocrisy«. Writing your own suckless presentation software is
-  surely something that will be appreciated.
+* 10.30am-11.15am: Bugs found by musl, Szabolcs Nagy
 
-# How long can by talk last?
-* Every speaker can use up to 45 min for his/her presentation. After that 10
-  minutes of discussion follow and a 5 min break. If you need less time, then
-  use less.
+        Szabolcs plans to pick a few issues and to show how a new libc can be
+        (and is) beneficial.
 
-# What language should talks be in?
-* English. If you have any communication problems contact us at con@MAILHOST
-  and we will find some solution.
+* 11.15am-11.30am: Short break
 
-# Are video streams and audio streams planned?
-* Yes, video and audio streams are planned.
+* 11.30am-12:15am: Future of sta.li, Anselm R Garbe
 
-# Will the talks be recorded?
-* Only if there is a consent by the presenter that it should be done. The
-  easiest way to preserve what was said on the conference is to have a text
-  file in UTF-8 text/plain and some text formatting that tells the audience
-  what was said. This is the maximum compression such a talk can be held and
-  preserved in. We don't want academic papers, but something you would want to
-  read when trying to get some information about what you as presenter said.
-* The easiest way is to just publish the PDF of the slides.
+        Anselm will present his current state of sta.li and next steps of the
+        sta.li development.
 
-# What are the costs?
-* After we received the number of people interested in such a conference costs
-  are calculated. Standard economics apply.
+* 12.15pm-1.00pm: runit and ignite , Christian Neukirchen
 
-# Where can I sleep?
-* When the location is announced a list of nearby Hotels will be given.
+        Christian will present runit and ignite and discuss if these systems
+        are in line with the suckless philosophy.
 
-# How do I get there?
-* Germany has a very good infrastructure. Except for trains everything works
-  very well. Since the location is not defined yet, planning for the airport
-  MUC should be enough for now.
+* 1.00pm-2.00pm: Lunch break
 
-# Where is the website?
-* http://suckless.org/conference
+* 2.00pm-2.45pm: The costs of abstraction, Szabolcs Nagy
+
+        Szabolcs will discuss why C is still the only serious programming
+        language.
+
+* 2.45pm-3.30pm: The suckless web ideas, Christoph Lohmann
+
+        Christoph will discuss suckless web ideas.
 
 
-slcon 2013 organisation team
+* 3.30pm-4.15pm: Next generation, Anselm R Garbe
 
+        Anselm will investigate how to incorporate the next generation in the
+        decision making process of suckless.org, in order to spread the idea
+        further and to grow our influence.
+
+* 4.15pm-4.30pm: Coffee break
+
+* 4.30pm-5.15pm: suckless e.V., Anselm R Garbe
+
+        Anselm will discuss the plan to form a suckless e.V. in Germany.
+
+* 5.14pm-6pm: Buffer
+
+* 6.00pm-10.00pm:
+
+        ATZINGER
+        Schellingstr. 9
+        80799 München
+        http://www.atzingermuenchen.de/
+
+
+Sunday 23 June 2013
+===================
+* 10.00am-2.00pm: Fr&uuml;hschoppen and Wrap-Up
+
+        HOFBR&Auml;UHAUS M&Uuml;NCHEN
+        Platzl 9
+        80331 München
+        http://www.hofbraeuhaus.de/en/index_en.html
+
+
+Recommended accommodation
+=========================
+
+Budget rates
+------------
+        THE 4YOU HOSTEL & HOTEL MÜNCHEN
+        Hirtenstraße 18
+        80335 München
+        http://www.the4you.de/en/
+
+Medium rates
+------------
+        IBIS MUENCHEN CITY
+        Dachauer Strasse 21
+        80335 MUENCHEN
+        GERMANY
+        http://www.accorhotels.com/de/hotel-1450-ibis-muenchen-city/index.shtml
+
+Fallback
+--------
+        http://www.hrs.com

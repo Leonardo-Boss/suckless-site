@@ -89,7 +89,7 @@ Sunday 23 June 2013
 ===================
 * 10.00am-2.00pm: Fr&uuml;hschoppen and Wrap-Up
 
-        HOFBR&Auml;UHAUS M&Uuml;NCHEN
+        HOFBRÄUHAUS MÜNCHEN
         Platzl 9
         80331 München
 

@@ -99,4 +99,5 @@ Related discussion
 * <http://www.halbmoendli.ch/blog/archive/2007/03/31/dwm-dynamic-window-manager.html>
 * <http://peterstuifzand.nl/20060816212719.html>
 * <http://forums.debian.net/viewtopic.php?f=16&t=65110>
+* <http://www.wongdev.com/blog/2013/01/24/dwm-tags-are-not-workspaces/>
 

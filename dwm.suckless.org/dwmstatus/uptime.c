@@ -36,17 +36,6 @@ smprintf(char *fmt, ...)
 	return buf;
 }
 
-char*
-runcmd(char* cmd) {
-	FILE* fp = popen(cmd, "r");
-	if (fp == NULL) return NULL;
-	char ln[50];
-	fgets(ln, sizeof(ln)-1, fp);
-	pclose(fp);
-	ln[strlen(ln)-1]='\0';
-	return smprintf("%s", ln);
-}
-
 void
 settz(char *tzname)
 {

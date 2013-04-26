@@ -39,6 +39,7 @@ add them here as file or as code example.
 * [Show line per line the content of a file](dynamic_info.c) : See
   tmpinfo function. It prints line after line the content of
   /tmp/dwmbuf.
+* [Simple function to have uptime](uptime.c)
 
 Questions
 ---------

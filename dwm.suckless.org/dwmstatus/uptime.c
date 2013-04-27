@@ -93,8 +93,8 @@ up() {
     int h,m = 0;
     sysinfo(&info);
     h = info.uptime/3600;
-    m = info.uptime/60;
-    return smprintf("%dh %dm",h,m);
+    m = (info.uptime - h*3600 )/60;
+    return smprintf("%dh%dm",h,m);
 }
 
 

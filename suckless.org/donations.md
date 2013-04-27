@@ -24,6 +24,7 @@ Following people have donated to the suckless.org project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
+* Robert Halbert danoted <b>5 GBP</b>
 * Gordon Celesta donated <b>25 CAD</b>
 * Thomas Hilber donated <b>50 EUR</b>
 * Kirill Sapelkin donated <b>10 US</b>

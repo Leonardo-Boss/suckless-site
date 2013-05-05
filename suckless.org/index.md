@@ -23,10 +23,6 @@ We are glad to announce the switch to git from mercurial in all of our
 repositories. You can find them at <http://git.suckless.org>. Many thanks to
 20h for his contribution!
 
-2012-11-02
-----------
-[st 0.3](http://st.suckless.org) released: [download](http://dl.suckless.org/st/st-0.3.tar.gz)
-
 2012-10-28
 ----------
 [sprop 0.1](http://tools.suckless.org/sprop) released: [download](http://dl.suckless.org/tools/sprop-0.1.tar.gz)
@@ -43,10 +39,6 @@ We will miss him a lot.
 ![uriel](/uriel.png)
 
 RIP
-
-2012-07-14
-----------
-[surf 0.5](http://surf.suckless.org) released: [download](http://dl.suckless.org/surf/surf-0.5.tar.gz)
 
 2012-07-08
 ----------

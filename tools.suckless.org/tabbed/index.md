@@ -17,5 +17,5 @@ or get a copy using the following command:
 
 Download
 --------
-* [tabbed-0.4.1](http://dl.suckless.org/tools/tabbed-0.4.1.tar.gz) (20120707)
+* [tabbed-0.5](http://dl.suckless.org/tools/tabbed-0.5.tar.gz) (20130506)
 

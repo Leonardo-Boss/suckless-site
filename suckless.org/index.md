@@ -5,6 +5,12 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2013-05-06
+----------
+[tabbed 0.5](http://tools.suckless.org/tabbed) released: [download](http://dl.suckless.org/tools/tabbed-0.5.tar.gz)
+
+[xssstate 1.0](http://tools.suckless.org/xssstate) released: [download](http://dl.suckless.org/tools/xssstate-1.0.tar.gz)
+
 2013-04-21
 ----------
 We are glad to announce the [slcon 2013](/conference) programme.
@@ -39,10 +45,6 @@ We will miss him a lot.
 ![uriel](/uriel.png)
 
 RIP
-
-2012-07-08
-----------
-[tabbed 0.4](http://tools.suckless.org/tabbed) released: [download](http://dl.suckless.org/tools/tabbed-0.4.tar.gz)
 
 2012-01-08
 ----------

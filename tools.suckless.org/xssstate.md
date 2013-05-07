@@ -5,7 +5,8 @@ A simple tool to retrieve the X screensaver state.
 Release
 -------
 
-* [xssstate-1.0.tgz](http://dl.suckless.org/tools/xssstate-1.0.tar.gz)
+* [xssstate-1.1.tgz](http://dl.suckless.org/tools/xssstate-1.1.tar.gz)
+  (20130507)
 
 Development
 -----------

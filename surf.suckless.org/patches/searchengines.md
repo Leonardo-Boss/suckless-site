@@ -21,6 +21,8 @@ or:
 
 	leo hello
 
+0.6 patch patches the searchengines array into the config.def.h file.
+
 Download
 --------
 
@@ -28,6 +30,7 @@ Download
 * [surf-0.3-searchengines.diff](surf-0.3-searchengines.diff) (2107) (20091204)
 * [surf-0.4-searchengines.diff](surf-0.4-searchengines.diff) (2107) (20091204)
 * [surf-0.5-searchengines.diff](surf-0.5-searchengines.diff) (1611) (20101028)
+* [surf-0.6-searchengines.diff](surf-0.6-searchengines.diff) (20130514)
 
 Author
 ------

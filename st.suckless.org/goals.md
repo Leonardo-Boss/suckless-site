@@ -23,8 +23,8 @@ Non-goals
 ---------
 - filters that change colour (should be done by tmux or something doing the
   higher layers *in* st)
-- server to save sessions in case of X crash (should be done by tmux)
-- unlimited scrollback buffer (done by tmux) 
+- server to save sessions in case of X crash (should be done by dtach)
+- unlimited scrollback buffer (done by dvtm) 
 - URL selecting/launching in browser similiar to vimperator's mark mode and the
   urxvt script (patch?) (possibly piped through something like plumb to
   	- This one is done by a simple shortcut in dwm which will launch your

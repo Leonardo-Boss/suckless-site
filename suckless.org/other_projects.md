@@ -7,7 +7,7 @@ There are several other projects which are inspired by the spirit of suckless.
 * [dietline](https://github.com/radare/radare2/blob/master/libr/cons/dietline.c) - minimalist implementation of a readline-like library
 * [dmc](http://git.suckless.org/dmc/) - dynamic mail client
 * [dvtm](http://www.brain-dump.org/projects/dvtm/) - screen-like dwm (curses)
-* [dzen](http://dzen.geekmode.org/) - display status/notification/menu windows
+* [dzen](https://github.com/robm/dzen/) - display status/notification/menu windows
 * [ired](https://github.com/radare/ired) - minimalistic hexadecimal editor inspired in radare
 * [kelp](http://kelp.sf.net) - source code annotation framework
 * [micy](https://github.com/radare/toys/tree/master/micy) - minimalistic mouse handler (depends on driver)
@@ -16,15 +16,15 @@ There are several other projects which are inspired by the spirit of suckless.
 * [honden](https://github.com/joodan-van-github/honden) - system built on top of oboeta
 * [passman](http://nibble.develsec.org/hg/toys/file/) - password manager + other nibble suckless toys
 * [pcw](http://bitbucket.org/emg/pcw) - popup chat windows (ii front end)
-* [sdhcp](http://galos.no-ip.org/sdhcp) - tiny dchp client
+* [sdhcp](http://galos.no-ip.org/sdhcp) (dead link) - tiny dchp client
 * [slpm](https://github.com/radare/slpm) - suckless package manager
 * [sltar](http://s01.de/~tox/index.cgi/proj_sltar) - suckless tar
-* [bgs](http://s01.de/~tox/index.cgi/proj_bgs) - background setter
-* [smu](http://s01.de/~tox/index.cgi/proj_smu) - simple markup
+* [bgs](http://s01.de/~tox/index.cgi/proj_bgs) (dead link) - background setter
+* [smu](http://s01.de/~tox/index.cgi/proj_smu) (dead link) - simple markup
 * [spp](https://github.com/radare/spp) - simple pre processor
 * [tiv](https://github.com/radare/tiv) - terminal image viewer
 * [srw](http://bitbucket.org/emg/srw) - simple read wrapper
 * [ssg](http://nibble.develsec.org/projects/ssg.html) - slide generation system with markdown-like syntax
 * [sup](http://git.suckless.org/sup) - minimalistic sudo replacement
 * [sw](http://nibble.develsec.org/projects/sw.html) - minimalistic web framework
-* [xicon](http://hg.youterm.com/xicon/) - small icon-based dzen-like utility
+* [xicon](http://hg.youterm.com/xicon/) (dead link) - small icon-based dzen-like utility

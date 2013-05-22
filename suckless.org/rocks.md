@@ -153,6 +153,9 @@ Web Browsers
 * [surf](http://surf.suckless.org/)
 * [uzbl](http://uzbl.org/) - Web interface tools which adhere to the unix philosophy.
 * [Vimperator](http://www.vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like.
+* [VimFX](https://addons.mozilla.org/en-US/firefox/addon/vimfx/) -
+  Another extension to make Firefox Vim-like. Less invasive than
+  Vimperator
 * [w3m](http://w3m.sourceforge.net/)
 * [xombrero](https://opensource.conformal.com/wiki/xombrero) - A minimalist web browser with sophisticated security features designed-in. Formerly known as [xxxterm](https://opensource.conformal.com/wiki/xxxterm)
 

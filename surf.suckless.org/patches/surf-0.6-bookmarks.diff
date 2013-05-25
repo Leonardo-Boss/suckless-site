@@ -1,5 +1,5 @@
 diff --git a/config.def.h b/config.def.h
-index 08ff707..8185136 100644
+index 08ff707..3800f63 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -25,7 +25,8 @@ static Bool allowgeolocation = TRUE;
@@ -17,9 +17,9 @@ index 08ff707..8185136 100644
  }
  
 +#define BM_ADD { .v = (char *[]){ "/bin/sh", "-c", \
-+  "(echo `xprop -id $0 _SURF_URI | cut -d '\"' -f 2` && \
-+  cat ~/.surf/bookmarks) > ~/.surf/bookmarks_new && \
-+  mv ~/.surf/bookmarks_new ~/.surf/bookmarks", \
++  "(echo `xprop -id $0 _SURF_URI | cut -d '\"' -f 2` && "\
++  "cat ~/.surf/bookmarks) | awk '!seen[$0]++' > ~/.surf/bookmarks_new && "\
++  "mv ~/.surf/bookmarks_new ~/.surf/bookmarks", \
 +  winid, NULL } }
 +
  #define MODKEY GDK_CONTROL_MASK

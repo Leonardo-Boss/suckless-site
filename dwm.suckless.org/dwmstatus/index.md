@@ -19,6 +19,7 @@ User submitted versions
 
 Please add your own version of dwmstatus here. 
 
+* [dwmsd](https://github.com/johnko/dwmsd) - a daemon that listens on localhost tcp (may be useful as a base for asynchronous updates)
 * [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent and date/time
 * [p1c0-dwmstatus-volume.c](p1c0-dwmstatus-volume.c) - volume percentage & bar display
 * [suspend-statusbar.c](suspend-statusbar.c) - loadavg, wifi, battery and date. If battery goes below threshold - run suspend command

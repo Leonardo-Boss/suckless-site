@@ -98,7 +98,7 @@ Sunday 23 June 2013
 
 <http://www.hofbraeuhaus.de/en/index_en.html>
 
-* Table booking not yet confirmed.
+* A table for 10 persons in the Br&auml;ust&uuml;berl (upper level) has been confirmed.
 
 Recommended accommodation
 =========================

@@ -3,13 +3,15 @@ suckless conference 2013, Munich
 
 Friday 21 June 2013
 ===================
-* 6.00pm-10.00pm:
+* 7.00pm-10.00pm:
 
         AUGUSTINERKELLER
         Arnulfstr. 52
         80335 München
         (5 mins walking distance to the 4YOU hostel)
 <http://www.augustinerkeller.de/>
+
+* A table for 10 persons is reserved. Call +49-176-70302961 in order to get to the right table.
 
 Saturday 22 June 2013
 =====================
@@ -76,7 +78,7 @@ Talks
 
 * 5.14pm-6pm: Buffer
 
-* 6.00pm-10.00pm:
+* 6.30pm-10.00pm:
 
         ATZINGER
         Schellingstr. 9
@@ -84,6 +86,7 @@ Talks
 
 <http://www.atzingermuenchen.de/>
 
+* A table for 15 persons is reserved. 
 
 Sunday 23 June 2013
 ===================
@@ -95,6 +98,7 @@ Sunday 23 June 2013
 
 <http://www.hofbraeuhaus.de/en/index_en.html>
 
+* Table booking not yet confirmed.
 
 Recommended accommodation
 =========================

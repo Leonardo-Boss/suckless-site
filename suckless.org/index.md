@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2013-06-16
+----------
+[sic 1.2](http://tools.suckless.org/sic) released: [download](http://dl.suckless.org/tools/sic-1.2.tar.gz)
+
 2013-05-07
 ----------
 [xssstate 1.1](http://tools.suckless.org/xssstate) released: [download](http://dl.suckless.org/tools/xssstate-1.1.tar.gz)
@@ -72,10 +76,6 @@ conference in Berlin.
 2010-06-04
 ----------
 [9base-6](http://tools.suckless.org/9base) released: [download](http://dl.suckless.org/tools/9base-6.tar.gz)
-
-2010-05-25
-----------
-[sic 1.1](http://tools.suckless.org/sic) released: [download](http://dl.suckless.org/tools/sic-1.1.tar.gz)
 
 2010-03-28
 ----------

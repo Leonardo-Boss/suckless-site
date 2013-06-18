@@ -5,8 +5,7 @@
 Three Column Layout (tcl) is a new layout with a wide master panel centered on the screen.
 
 	+-----+-------------+-----+
-	|     |             |     |
-	|-----+             +-----+
+	|     |             |     | |-----+             +-----+
 	|     |      M      |     |
 	|-----+             +-----+
 	|     |             |     |
@@ -33,3 +32,7 @@ Three Column Layout (tcl) is a new layout with a wide master panel centered on t
 ## Maintainer
 
  * Chris Truett - <chris.truett@gmail.com>
+
+## Note
+
+This layout idea was found in a rough form in this [mailing list post](http://lists.suckless.org/dev/1008/5506.html).

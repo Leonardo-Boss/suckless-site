@@ -100,4 +100,5 @@ Related discussion
 * <http://peterstuifzand.nl/20060816212719.html>
 * <http://forums.debian.net/viewtopic.php?f=16&t=65110>
 * <http://www.wongdev.com/blog/2013/01/24/dwm-tags-are-not-workspaces/>
+* [dwm usage and configuration page (french)](http://yeuxdelibad.net/Logiciel-libre/Suckless/dwm/index.html)
 

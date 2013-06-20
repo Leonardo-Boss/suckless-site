@@ -41,6 +41,7 @@ add them here as file or as code example.
   tmpinfo function. It prints line after line the content of
   /tmp/dwmbuf.
 * [Simple function to have uptime](uptime.c)
+* [Simple function to have mpd title/artist info](mpdstatus.c)
 
 Questions
 ---------

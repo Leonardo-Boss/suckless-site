@@ -23,7 +23,11 @@ getmpdstat() {
 	char * retstr = NULL;
 	int elapsed = 0, total = 0;
     struct mpd_connection * conn = mpd_connection_new(NULL, 0, 30000);
-    if (mpd_connection_get_error(conn)) return("");
+    if (!(conn = mpd_connection_new("localhost", 0, 30000)) ||
+        mpd_connection_get_error(conn)){
+        retstr = smprintf("");
+        return retstr;
+    }
 
     mpd_command_list_begin(conn, true);
     mpd_send_status(conn);
@@ -31,7 +35,7 @@ getmpdstat() {
     mpd_command_list_end(conn);
 
     struct mpd_status* theStatus = mpd_recv_status(conn);
-        if (!theStatus) return("");
+        if (!theStatus) retstr = smprintf("");
         else
             if (mpd_status_get_state(theStatus) == MPD_STATE_PLAY) {
                 mpd_response_next(conn);

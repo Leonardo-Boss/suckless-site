@@ -41,7 +41,7 @@ getmpdstat() {
                 elapsed = mpd_status_get_elapsed_time(theStatus);
                 total = mpd_status_get_total_time(theStatus);
                 mpd_song_free(song);
-                retstr = smprintf("%d:%d/%d:%d %s - %s",
+                retstr = smprintf("%.2d:%.2d/%.2d:%.2d %s - %s",
                                 elapsed/60, elapsed%60,
                                 total/60, total%60,
                                 artist, title);

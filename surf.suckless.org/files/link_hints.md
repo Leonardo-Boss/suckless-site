@@ -12,6 +12,21 @@ Keybindings
 	^F (open link in new window)
 	^c (cancel hinting)
 
+Azerty keyboards
+----------------
+Just replace like this to use `&é"'(-è_çà` as numbers : 
+
+    "U+a0c3" : "0",
+    "U+0026" : "1",
+    "U+a9c3" : "2",
+    "U+0022" : "3",
+    "U+0027" : "4",
+    "U+0028" : "5",
+    "U+002d" : "6",
+    "U+a8c3" : "7",
+    "U+005f" : "8",
+    "U+a7c3" : "9",
+
 Author
 ------
 

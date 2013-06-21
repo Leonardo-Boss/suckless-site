@@ -38,4 +38,14 @@ snotif()
 }
 
 
+int
+main(void)
+{
+    int ret = 0;
+    ret = mkfifo(FIFO, ACCESSPERMS);
+    if (ret == -1) perror("fifo creation");
+    
+    // your code
 
+	return 0;
+}

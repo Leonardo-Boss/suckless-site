@@ -10,7 +10,6 @@
 #include <fcntl.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <errno.h>
 
 #define FIFO "/tmp/dwm.fifo"
 
@@ -18,25 +17,24 @@ char *
 snotif()
 {
     char buf[BUFSIZ];
-    buf[0] = '\0';
+    int len = 0;
 
-    int f = open(FIFO, O_RDONLY | O_NONBLOCK);
+    int f = open(FIFO, O_NONBLOCK | O_RDWR);
     if (f == -1){
-        perror("fifo opening");
         return smprintf("%s","");
     }
 
-    if (read(f, buf, sizeof(buf) ) == -1){
+    len = read(f, buf, sizeof(buf));
+    if (len == -1){
         perror("fifo read");
         return smprintf("%s","");
     }
     close(f);
 
-    buf[strlen(buf)-1] = '\0';
+    buf[len-1] = '\0';
 
     return smprintf("%s",buf);
 }
-
 
 int
 main(void)

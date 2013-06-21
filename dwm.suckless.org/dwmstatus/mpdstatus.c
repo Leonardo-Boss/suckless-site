@@ -25,8 +25,7 @@ getmpdstat() {
     struct mpd_connection * conn = mpd_connection_new(NULL, 0, 30000);
     if (!(conn = mpd_connection_new("localhost", 0, 30000)) ||
         mpd_connection_get_error(conn)){
-        retstr = smprintf("");
-        return retstr;
+        return smprintf("");
     }
 
     mpd_command_list_begin(conn, true);

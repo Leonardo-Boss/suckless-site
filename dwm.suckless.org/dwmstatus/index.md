@@ -42,6 +42,8 @@ add them here as file or as code example.
   /tmp/dwmbuf.
 * [Simple function to have uptime](uptime.c)
 * [Simple function to have mpd title/artist info](mpdstatus.c)
+* [Print any info in dwm status bar via fifo](fifo.c). Replaces
+  dynamic_info.
 
 Questions
 ---------

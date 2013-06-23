@@ -30,7 +30,7 @@ Talks
         Anselm presented his plan about the next steps of the dwm
         development.
 
-        <http://www.youtube.com/watch?v=qvmYo7Bhm0Y>
+<http://www.youtube.com/watch?v=qvmYo7Bhm0Y>
 
 * 10.40am-11.20am: st - the past and future, Christoph Lohmann
 

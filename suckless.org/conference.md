@@ -25,14 +25,16 @@ Saturday 22 June 2013
 
 Talks
 -----
-* 9.00am-9.45am: Welcome the future of dwm, Anselm R Garbe
+* 10.00am-10.40am: Welcome the future of dwm, Anselm R Garbe
 
-        Anselm will present his plan about the next steps of the dwm
+        Anselm presented his plan about the next steps of the dwm
         development.
 
-* 9.45am-10.30am: st - the past and future, Christoph Lohmann
+        <http://www.youtube.com/watch?v=qvmYo7Bhm0Y>
 
-        Christoph will present his plan about the next steps of st
+* 10.40am-11.20am: st - the past and future, Christoph Lohmann
+
+        Christoph presented his plan about the next steps of st
         development.
 
 * 10.30am-11.15am: Bugs found by musl, Szabolcs Nagy

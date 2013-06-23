@@ -14,8 +14,7 @@ Three Column Layout (tcl) is a new layout with a wide master panel centered on t
 
 ## Usage
 
- 1. Download the patch and apply according to the [general instructions](.).
- 2. Include the `tcl.c` source file and add `tcl` to the `Layout` section of your `config.h` file.
+ 1. Include the `tcl.c` source file and add `tcl` to the `Layout` section of your `config.h` file.
     Example from `config.default.h`:
 
         #include "tcl.c"

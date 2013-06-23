@@ -30,12 +30,14 @@ Talks
         Anselm presented his plan about the next steps of the dwm
         development.
 
-<http://www.youtube.com/watch?v=qvmYo7Bhm0Y>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/qvmYo7Bhm0Y" frameborder="0" allowfullscreen></iframe>
 
 * 10.40am-11.20am: st - the past and future, Christoph Lohmann
 
         Christoph presented his plan about the next steps of st
         development.
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/4C7LgG6rl6E" frameborder="0" allowfullscreen></iframe>
 
 * 10.30am-11.15am: Bugs found by musl, Szabolcs Nagy
 

@@ -23,6 +23,9 @@ Saturday 22 June 2013
 
         Room A027 / Raum A027
 
+
+![foto](/slcon2013.png)
+
 Talks
 -----
 * 10.00am-10.40am: Welcome the future of dwm, Anselm R Garbe
@@ -37,19 +40,30 @@ Talks
         Christoph presented his plan about the next steps of st
         development.
 
+Part 1
+
 <iframe width="560" height="315" src="http://www.youtube.com/embed/4C7LgG6rl6E" frameborder="0" allowfullscreen></iframe>
 
-* 10.30am-11.15am: Bugs found by musl, Szabolcs Nagy
+Part 2
 
-        Szabolcs plans to pick a few issues and to show how a new libc can be
+<iframe width="560" height="315" src="http://www.youtube.com/embed/Lr7OEXw7huE" frameborder="0" allowfullscreen></iframe>
+
+* 11.45am-13.00am: Bugs found by musl, Szabolcs Nagy
+
+        Szabolcs picked a few issues found by musl and to show how a new libc can be
         (and is) beneficial.
 
-* 11.15am-11.30am: Short break
+Part 1
 
-* 11.30am-12:15am: Future of sta.li, Anselm R Garbe
+<iframe width="560" height="315" src="http://www.youtube.com/embed/m6V-l-9_39E" frameborder="0" allowfullscreen></iframe>
 
-        Anselm will present his current state of sta.li and next steps of the
-        sta.li development.
+Part 2
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/gVdC8ebn5Vw" frameborder="0" allowfullscreen></iframe>
+
+Part 3
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/sNSQ0hQFSK0" frameborder="0" allowfullscreen></iframe>
 
 * 12.15pm-1.00pm: runit and ignite , Christian Neukirchen
 

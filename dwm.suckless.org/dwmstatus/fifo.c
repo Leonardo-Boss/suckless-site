@@ -31,7 +31,7 @@ snotif()
     }
     close(f);
 
-    buf[len-1] = '\0';
+    buf[len-1] = ' ';
 
     return smprintf("%s",buf);
 }

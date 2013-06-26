@@ -44,6 +44,8 @@ add them here as file or as code example.
 * [Simple function to have mpd title/artist info](mpdstatus.c)
 * [Print any info in dwm status bar via fifo](fifo.c). Replaces
   dynamic_info.
+* [Battery function](batterystatus.c) : Battery percentage and status. + if
+  charging, - if discharging, = if full.
 
 Questions
 ---------

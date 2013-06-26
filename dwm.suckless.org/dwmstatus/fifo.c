@@ -27,6 +27,7 @@ snotif()
     len = read(f, buf, sizeof(buf));
     if (len == -1){
         perror("fifo read");
+        close(f);
         return smprintf("%s","");
     }
     close(f);

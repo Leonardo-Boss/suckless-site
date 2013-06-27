@@ -3,20 +3,21 @@ dualstatus
 
 Description
 -----------
-This patch will enable both a top and bottom status bar in dwm. The bottom bar can be toggled along with the top bar or independently.
+This patch will enable an extra status bar in dwm. The extra bar can be toggled along with the standard bar or independently.
 
 The status bar text can be set as follows:
-xsetroot -name "Top textBOTTOM=Bottom text"
+xsetroot -name "Top text;Bottom text"
 
 Download
 --------
 
- * [dwm-6.1-dualstatus.diff](dwm-6.1-dualstatus.diff) (5793b) (20130123)
+ * [dwm-6.1-dualstatus.diff](dwm-6.1-dualstatus.diff) (4655b) (20130626)
 
 Screenshot
 ----------
 
 a simple dual status bar
+
 ![alt text](dwm-dualstatus.png)
 
 Authors

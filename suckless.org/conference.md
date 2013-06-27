@@ -81,12 +81,16 @@ Part 3
 
         Christoph will discuss suckless web ideas.
 
+<iframe width="560" height="315" src="http://www.youtube.com/embed/Dnr4sXArCwI" frameborder="0" allowfullscreen></iframe>
+
 
 * 3.30pm-4.15pm: Next generation, Anselm R Garbe
 
         Anselm will investigate how to incorporate the next generation in the
         decision making process of suckless.org, in order to spread the idea
         further and to grow our influence.
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/Zu9Qm9bNMUU" frameborder="0" allowfullscreen></iframe>
 
 * 4.15pm-4.30pm: Coffee break
 

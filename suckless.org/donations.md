@@ -24,6 +24,7 @@ Following people have donated to the suckless.org project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
+* Raphael Proust donated <b>50 GBP</b>
 * Silvan Jegen donated <b>50 EUR</b>
 * Sebastian Lacombe donated <b>25 CAD</b>
 * Robert Halbert donated <b>5 GBP</b>

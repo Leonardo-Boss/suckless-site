@@ -13,7 +13,7 @@ Save this script as ~/bin/yt and adjust it to your needs. (Requires [youtube-dl]
 	tmpdir="$HOME/tmp"
 	
 	url="$1"
-	filepath="$tmpdir/$(youtube-dl --id --get-filename -f34 $url)"
+	filepath="$tmpdir/$(youtube-dl --id --get-filename $format $url)"
 	
 	youtube-dl -c -o $filepath $format $url &
 	echo $! > $filepath.$$.pid

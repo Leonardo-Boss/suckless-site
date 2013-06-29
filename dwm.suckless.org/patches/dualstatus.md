@@ -11,7 +11,7 @@ xsetroot -name "Top text;Bottom text"
 Download
 --------
 
- * [dwm-6.1-dualstatus.diff](dwm-6.1-dualstatus.diff) (4655b) (20130626)
+ * [dwm-6.1-dualstatus.diff](dwm-6.1-dualstatus.diff) (4690b) (20130628)
 
 Screenshot
 ----------

@@ -19,7 +19,7 @@ index d300687..e286e5d 100644
  	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
  	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
 diff --git a/dwm.c b/dwm.c
-index 314adf4..0ab7edc 100644
+index 314adf4..09a14f8 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -140,6 +140,13 @@ typedef struct {
@@ -132,7 +132,7 @@ index 314adf4..0ab7edc 100644
  }
  
  void
-@@ -1920,8 +1960,19 @@ updatetitle(Client *c) {
+@@ -1920,8 +1960,21 @@ updatetitle(Client *c) {
  
  void
  updatestatus(void) {
@@ -146,9 +146,11 @@ index 314adf4..0ab7edc 100644
 +		char *e = strchr(text, ';');
 +		if(e) {
 +			*e = '\0'; e++;
-+			strncpy(eb.text, e, sizeof(eb.text));
++			strncpy(eb.text, e, sizeof(eb.text)-1);
 +		}
-+		strncpy(stext, text, sizeof(stext));
++		else
++			eb.text[0] = '\0';
++		strncpy(stext, text, sizeof(stext)-1);
 +	}
  	drawbar(selmon);
  }

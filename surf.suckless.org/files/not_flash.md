@@ -23,7 +23,7 @@ Save this script as ~/bin/yt and adjust it to your needs. (Requires [youtube-dl]
 		sleep 3
 	done
 	
-	$player $filepath.part || $player $filepath
+	[ -r $filepath.part ] && $player $filepath.part || $player $filepath
 	kill $(cat $filepath.$$.pid)
 	rm $filepath.$$.pid
 

@@ -38,3 +38,12 @@ im-scripts
 ----------
 [im-scripts](http://github.com/gravicappa/im-scripts) is a set of sh-scripts for convenient use of ii and ji.
 
+wii
+---
+[wii](http://github.com/younix/wii) is a simple web frontend for ii.
+It just uses HTML, java-script and shell-script.
+
+xii
+---
+[xii](http://github.com/younix/xii) is a simple X11 frontend for ii.
+It is written in plain C based on Xaw and Xt library.

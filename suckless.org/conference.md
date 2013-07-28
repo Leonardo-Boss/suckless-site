@@ -18,7 +18,8 @@ Talks
 * 10.00am-10.40am: Welcome the future of dwm, Anselm R Garbe
 
         Anselm presented his plan about the next steps of the dwm
-        development.
+        development. Stripped down videos can be found at 
+        http://mirror.netbeisser.de/slcon2013
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/qvmYo7Bhm0Y" frameborder="0" allowfullscreen></iframe>
 

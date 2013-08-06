@@ -133,7 +133,7 @@ complicated and add many more points of total failure.
 
 See also
 --------
-* <http://teddziuba.com/2008/09/a-web-os-are-you-dense.html>
+* <http://web.archive.org/web/20120509105723/http://teddziuba.com/2008/09/a-web-os-are-you-dense.html>
 * <http://www.nth-dimension.org.uk/pub/BTL.pdf>
 * [On the Effectiveness of Address-Space Randomization](http://benpfaff.org/papers/asrandom.pdf)
 

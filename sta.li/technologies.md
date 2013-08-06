@@ -22,3 +22,5 @@ are: Be as simple as possible and as useful as possible.
 	* [tinydyndns](http://smarden.org/tinydyndns/)
 * dhcp
 	* [sdhcp](http://galos.no-ip.org/sdhcp)
+* shell
+	* [mksh](https://www.mirbsd.org/mksh.htm)

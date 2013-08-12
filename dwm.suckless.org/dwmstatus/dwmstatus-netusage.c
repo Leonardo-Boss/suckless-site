@@ -52,80 +52,73 @@ settz(char *tzname)
 int
 parse_netdev(unsigned long long int *receivedabs, unsigned long long int *sentabs)
 {
-	char *buf;
-	char *eth0start;
+	char buf[255];
+	char *datastart;
 	static int bufsize;
+	int rval;
 	FILE *devfd;
+	unsigned long long int receivedacc, sentacc;
 
-	buf = (char *) calloc(255, 1);
 	bufsize = 255;
 	devfd = fopen("/proc/net/dev", "r");
+	rval = 1;
 
-	// ignore the first two lines of the file
+	// Ignore the first two lines of the file
 	fgets(buf, bufsize, devfd);
 	fgets(buf, bufsize, devfd);
 
 	while (fgets(buf, bufsize, devfd)) {
-	    if ((eth0start = strstr(buf, "eth0:")) != NULL) {
+	    if ((datastart = strstr(buf, "lo:")) == NULL) {
+		datastart = strstr(buf, ":");
 
 		// With thanks to the conky project at http://conky.sourceforge.net/
-		sscanf(eth0start + 6, "%llu  %*d     %*d  %*d  %*d  %*d   %*d        %*d       %llu",\
-		       receivedabs, sentabs);
-		fclose(devfd);
-		free(buf);
-		return 0;
+		sscanf(datastart + 1, "%llu  %*d     %*d  %*d  %*d  %*d   %*d        %*d       %llu",\
+		       &receivedacc, &sentacc);
+		*receivedabs += receivedacc;
+		*sentabs += sentacc;
+		rval = 0;
 	    }
 	}
+
 	fclose(devfd);
-	free(buf);
-	return 1;
+	return rval;
+}
+
+void
+calculate_speed(char *speedstr, unsigned long long int newval, unsigned long long int oldval)
+{
+	double speed;
+	speed = (newval - oldval) / 1024.0;
+	if (speed > 1024.0) {
+	    speed /= 1024.0;
+	    sprintf(speedstr, "%.3f MB/s", speed);
+	} else {
+	    sprintf(speedstr, "%.2f KB/s", speed);
+	}
 }
 
 char *
-get_netusage()
+get_netusage(unsigned long long int *rec, unsigned long long int *sent)
 {
-	unsigned long long int oldrec, oldsent, newrec, newsent;
-	double downspeed, upspeed;
-	char *downspeedstr, *upspeedstr;
-	char *retstr;
+	unsigned long long int newrec, newsent;
+	newrec = newsent = 0;
+	char downspeedstr[15], upspeedstr[15];
+	static char retstr[42];
 	int retval;
 
-	downspeedstr = (char *) malloc(15);
-	upspeedstr = (char *) malloc(15);
-	retstr = (char *) malloc(42);
-
-	retval = parse_netdev(&oldrec, &oldsent);
-	if (retval) {
-	    fprintf(stdout, "Error when parsing /proc/net/dev file.\n");
-	    exit(1);
-	}
-
-	sleep(1);
 	retval = parse_netdev(&newrec, &newsent);
 	if (retval) {
 	    fprintf(stdout, "Error when parsing /proc/net/dev file.\n");
 	    exit(1);
 	}
 
-	downspeed = (newrec - oldrec) / 1024.0;
-	if (downspeed > 1024.0) {
-	    downspeed /= 1024.0;
-	    sprintf(downspeedstr, "%.3f MB/s", downspeed);
-	} else {
-	    sprintf(downspeedstr, "%.2f KB/s", downspeed);
-	}
+	calculate_speed(downspeedstr, newrec, *rec);
+	calculate_speed(upspeedstr, newsent, *sent);
 
-	upspeed = (newsent - oldsent) / 1024.0;
-	if (upspeed > 1024.0) {
-	    upspeed /= 1024.0;
-	    sprintf(upspeedstr, "%.3f MB/s", upspeed);
-	} else {
-	    sprintf(upspeedstr, "%.2f KB/s", upspeed);
-	}
 	sprintf(retstr, "down: %s up: %s", downspeedstr, upspeedstr);
 
-	free(downspeedstr);
-	free(upspeedstr);
+	*rec = newrec;
+	*sent = newsent;
 	return retstr;
 }
 
@@ -182,24 +175,25 @@ main(void)
 	char *tmutc;
 	char *tmbln;
 	char *netstats;
+	static unsigned long long int rec, sent;
 
 	if (!(dpy = XOpenDisplay(NULL))) {
 		fprintf(stderr, "dwmstatus: cannot open display.\n");
 		return 1;
 	}
 
-	for (;;sleep(90)) {
+	parse_netdev(&rec, &sent);
+	for (;;sleep(1)) {
 		avgs = loadavg();
 		tmar = mktimes("%H:%M", tzargentina);
 		tmutc = mktimes("%H:%M", tzutc);
 		tmbln = mktimes("KW %W %a %d %b %H:%M %Z %Y", tzberlin);
-		netstats = get_netusage();
+		netstats = get_netusage(&rec, &sent);
 
 		status = smprintf("[L: %s|N: %s|A: %s|U: %s|%s]",
 				avgs, netstats, tmar, tmutc, tmbln);
 		setstatus(status);
 		free(avgs);
-		free(netstats);
 		free(tmar);
 		free(tmutc);
 		free(tmbln);

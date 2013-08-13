@@ -33,7 +33,7 @@ add them here as file or as code example.
 
 * [Support for ACPI battery status Linux](new-acpi-battery.c)
 * [Reading out a temperature from /sys](dwmstatus-temperature.c)
-* [Reading eth0 up-, and downspeed from /proc/net](dwmstatus-netusage.c)
+* [Reading up-, and downspeeds of all network interfaces from /proc/net](dwmstatus-netusage.c)
 * [Counting number of mails in a Maildir/new](mail_counter.c)
 * [Get disk usage and execute some check at different moments](diskspace_timechk.c) : Because you don't want to check new mails every second
 * [Detecting Man-In-The-Middle](dwmstatus-mitm.c)

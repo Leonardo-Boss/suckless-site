@@ -23,6 +23,8 @@ The following command prints the window manager name, if any:
 
 	; wmname
 
+This helpfull when attempting to run java swing(broken) applications, 
+it makes them think they are running through the looking glass and behave as expected
 The following command sets the window manager name, e.g.
 
 	; wmname LG3D

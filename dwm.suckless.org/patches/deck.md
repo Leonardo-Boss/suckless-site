@@ -1,4 +1,4 @@
-\deck layout
+deck layout
 ===========
 
 Description

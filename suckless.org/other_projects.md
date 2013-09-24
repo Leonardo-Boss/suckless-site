@@ -16,6 +16,7 @@ There are several other projects which are inspired by the spirit of suckless.
 * [honden](https://github.com/joodan-van-github/honden) - system built on top of oboeta
 * [passman](http://nibble.develsec.org/hg/toys/file/) - password manager + other nibble suckless toys
 * [pcw](https://bitbucket.org/emg/pcw) - popup chat windows (ii front end)
+* [ptar](https://github.com/joodan-van-github/ptar) - plain-text archives: like tar, but better
 * [sdhcp](http://galos.no-ip.org/sdhcp) - tiny dchp client
 * [slpm](https://github.com/radare/slpm) - suckless package manager
 * [sltar](https://github.com/Gottox/sltar) - suckless tar

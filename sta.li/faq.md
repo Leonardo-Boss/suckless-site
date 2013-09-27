@@ -45,9 +45,9 @@ Aren't statically linked executables less secure?
 ----------------------------------------------
 Several people argue (with implicitly requiring ABI-stability) that dynamically
 linked executables benefit from security fixes in libraries they depend on.
-This is true to some extend, but if there is a security flaw in a dynamically
-linked library, all programs are affected as well; whereas statically
-executables aren't.
+While this is true to some extent, statically linked executables aren't
+en-masse affected by vulnerabilities in the dynamic libraries installed on your
+system in the first place.
 
 We know that there is some overhead in re-compiling all affected executables if
 a dependent library is insecure, but we don't see this as a critical
@@ -73,7 +73,7 @@ for some insight.
 
 Also a security issue with dynamically linked libraries are executables with
 the suid flag. A user can easily run dynamic library code using LD_PRELOAD in
-conjunction with some trivial program like ping. Using a static 
+conjunction with some trivial program like ping. Using a static
 executable with the suid flag eliminates this problem completely.
 
 Apart from that we link against libraries with low footprint (eg uclibc instead
@@ -109,7 +109,7 @@ the dependent libraries were pre-loaded. We believe the overhead for looking up
 all needed symbols in the dynamically loaded libraries seems to be very
 expensive. On modern hardware this is only noticable with endlessly executing
 the static and dynamic executable in a loop for several minutes and counting
-the number of executions. 
+the number of executions.
 
 A general conclusion is, the more dynamic libraries an executable depends on,
 the slower it'll start, regardless if the libraries are preloaded or not.

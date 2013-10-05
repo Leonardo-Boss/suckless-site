@@ -6,9 +6,9 @@ Description
 
 This patch is an extension of the [searchengines
 patch](http://surf.suckless.org/patches/searchengines).  It parses what you
-type in the dmenu window when you input new address or a query.  If what
-you wrote is not an internet address, it will use default search engine to
-query for that phrase: like the google bar.
+type in the dmenu window when you input new address or a query.  If what you
+wrote is not an internet address or a file`s uri, it will use a default search
+engine to query for that phrase: like the chrome bar does.
 
 
 Configuration
@@ -25,7 +25,7 @@ Add something like this to your `config.h`:
 Download
 --------
 
-* [surf-0.1-googlebar.diff](surf-0.1-googlebar.diff) (20130703)
+* [surf-0.1-chromebar.diff](surf-0.1-chromebar.diff) (20130703)
 
 Author
 ------

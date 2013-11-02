@@ -20,7 +20,7 @@ Adblocking is a non-trivial task, but there are trivial solutions.
 	# In the above directory.
 	% sudo cp examples/gethostszero /bin
 	% sudo chmod 775 /bin/gethostszero
-	% sudo /bin/gerhostszero
+	% sudo /bin/gethostszero
 	% sudo hosts-gen 
 
 Now the /etc/hosts with the zero hosts is ready and will be used in any

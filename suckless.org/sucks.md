@@ -96,7 +96,6 @@ The following programs are broken (see [rocking stuff](/rocks) for saner alterna
 * XMMS (assumes fixed size, doesn't set transient\_for hint properly)
 * Xchat
 * [Firefox](http://www.mozilla.org/products/firefox) (doesn't set the TRANSIENT\_FOR hint correctly on its download dialog)
-* [GIMP](http://www.gimp.org/) (GIMP expects a float environment to be useable)
 * beep-media-player
 * gqview
 * gthumb

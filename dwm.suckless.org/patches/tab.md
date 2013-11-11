@@ -4,13 +4,23 @@ Tab
 Description
 -----------
 
-Attached tabs to the windows transforming the monocle layout into a ''tabbed''
-layout. Navigating from window to window is done by clicking on the window tabs
-or using the usual Mod1-j, Mod1-k keys. The tabs are arranged in a bar on top or
-at bottom of the screen, which can be displayed in the other layouts than
-monocle.  Three display modes can be selected at run time, auto display,
-permanent display and no-display. In auto mode the tabs are displayed only with
-the monocle layout and in presence of several windows.
+Transforms the monocle layout into a ''tabbed'' layout if more than one window
+is present on the monocle view.  Navigating from window to window is done by
+clicking on the window tabs or using the usual Mod1-j, Mod1-k keys. The tabs are
+arranged in a bar on top or at bottom of the screen, which can also be displayed
+in the other layouts than monocle.  Three display modes can be selected at run
+time, auto display, permanent display and no display. In permanent mode the tab
+bar is always display independently of the layout, while in the auto mode it is
+displayed only with the monocle layout and in presence of several windows.
+
+<center>
+<table>
+<caption align="bottom" style="font-size: 80%;"><b>Tab in action.</b> Monocle view with the tab extension.</caption>
+<tr><td><img alt="Screenshot" src="http://philippe.gras.free.fr/img/tab-screenshot-1.png"></td></tr>
+</table>
+</center>
+
+<!--![Screen shot](http://philippe.gras.free.fr/img/tab-screenshot-1.png "") -->
 
 This patch can be used as an alternative to the
 [tabbed](http://tools.suckless.org/tabbed/) tool. It differs in two ways: the
@@ -26,10 +36,9 @@ bar display. Switch focus to a window with a mouse left-click on its tab or by
 using the usual Mod1-j, Mod1-k commands. Usage is also documented in the dwm man
 page once the patch is applied.
 
-In the right corner of the tab bar the window ''tag'' currently selected for
-display is recalled. This feature is interesting when the standard status bar is
-disabled. If multiple tags are selected for viewing then three dots are
-displayed without more details.
+The selected view (''tag'') is reminded at the right corner of the tab bar. This
+feature is mainly meant to be used when the standard status bar is disabled. In
+case of a multi-tag view three dots are displayed without additional details.
 
 Configuration and Installation
 ------------------------------
@@ -105,8 +114,28 @@ dwm FAQ.
 Download
 --------
 
- * [dwm-6.0-tab-v2.diff](dwm-6.0-tab-v2.diff)
- * [dwm-6.0-pertag-tab-v2.diff](dwm-6.0-pertag-tab-v2.diff) combined patch with the [pertag](pertag) patch from Jan Christoph Ebersbach. Follow the [link](pertag) for the description of this patch and the credits.
+<i>Please contact the author if the patch provided for the git master branch does not work with the current head.</i>
+
+ * Tab patch alone
+  * For dwm 6.0: [dwm-6.0-tab-v2a.diff](dwm-6.0-tab-v2a.diff)
+  * For dwm from the git master branch: [dwm-master\_2013-08-27\_cdec978-tab-v2a.diff](dwm-master_2013-08-27_cdec978-tab-v2a.diff)
+
+ * Combined patch of tab and the [pertag](pertag) patch from Jan Christoph Ebersbach. 
+  * Follow the [link](pertag) for the description of this patch and the credits. The possibility to define the default layout per view has been added.
+  * For dwm 6.0: [dwm-6.0-pertag-tab-v2a.diff](dwm-6.0-pertag-tab-v2a.diff)
+  * For dwm from the git master branch: [dwm-master\_2013-08-27\_cdec978-pertag-tab-v2a.diff](dwm-master_2013-08-27_cdec978-pertag-tab-v2a.diff)
+
+Old versions
+
+ * [dwm-6.0-tab-v2.diff](historical/dwm-6.0-tab-v2.diff), [dwm-6.0-pertag-tab-v2.diff](historical/dwm-6.0-pertag-tab-v2.diff)
+
+Change log
+----------
+
+<dl>
+ <dt>v2a </dt><dl>Typo corrected in the man page. Combined pertag-tab patch includes the modification to allow per-view configuration of the default layout.</dl>
+ <dt>v2  </dt><dl>First public version.</dl>
+</dl>
 
 Author
 ------

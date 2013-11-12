@@ -66,6 +66,13 @@ one window. The section "More Options" explains how to add more display options.
 	       enum showtab_modes { showtab_never, showtab_auto, showtab_nmodes, showtab_always};
 	       static const int showtab            = showtab_auto; /* Default tab bar show mode  */
 	       static const Bool toptab            = True;         /* False means bottom tab bar */
+
+If you use the combined pertag+tab patch, include also (adapt the number of '0' to your `tags` array configuration):
+
+	       /* default layout per tags */
+	       /* The first element is for all-tag view, following i-th element corresponds to */
+	       /* tags[i]. Layout is referred using the layouts array index.*/
+	       static int def_layouts[1 + LENGTH(tags)]  = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 <ul>
 <li>Run make and make install.
 </ul>

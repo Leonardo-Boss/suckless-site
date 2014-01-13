@@ -1,5 +1,5 @@
-smoothscrolling
-==========
+smoothscrolling via GTK3
+========================
 
 Description
 -----------

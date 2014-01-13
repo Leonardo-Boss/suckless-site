@@ -75,6 +75,22 @@ For example, here is the configuration code for the default presets described ab
     { MODKEY|ShiftMask,   XK_t, setdirs, {.v = (int[]){ DirHor, DirVer, DirVer } } },
     { MODKEY|ControlMask, XK_t, setdirs, {.v = (int[]){ DirVer, DirHor, DirHor } } },
 
+Layout symbol
+-------------
+
+The layout symbol will probably look cryptic at first sight but it's very easily decoded.
+It consists of three characters, one for the direction of each area:
+
+* Global area: '<', '>', 'v', '^', just think of it as an arrow that points in the
+  direction of the master area.
+
+* Master area: '|' for vertically tiled masters and '-' for horizontally tiled masters.
+
+* Stack area: same as for the master area.
+
+For example, '<||' stands for the default right stack tile provided by dwm and '^--'
+stands for bstack (as defined by the bottom stack patch).
+
 Digressions
 -----------
 

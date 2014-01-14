@@ -9,10 +9,10 @@ This patch implements a generalization of the tile layout which adds two attribu
 allocatable visual space and it's subdivided into the master and stack subareas.
 
 The direction of the global area controls the position of the master area relatively to
-the stack area and it can be one of `DirHor(0)` (traditional right stack), `DirVer(1)`
-(bottom stack), `DirRotHor` (left stack) and `DirRotVer` (top stack). The direction of the
-master and of the stack areas are independently set and can be one of `DirHor(0)` and
-`DirVer(1)`.  This combines to a total of 4\*2\*2=16 layouts.
+the stack area and it can be one of `DirHor` (traditional right stack), `DirVer` (bottom
+stack), `DirRotHor` (left stack) and `DirRotVer` (top stack). The direction of the master
+and of the stack areas are independently set and can be one of `DirHor` and `DirVer`.
+This combines to a total of 4\*2\*2=16 layouts.
 
 The fact numbers indicate the relative size of the first subarea/client along the
 direction of the considered area (i.e. width for `DirHor` and `DirRotHor` and height for
@@ -115,14 +115,14 @@ me how to allow the specification of facts for the first two clients in an intui
 One obvious additional generalization would have been to extrapolate the nmaster idea to
 all three areas, or at least to the stack area. So if you allowed only m masters and n
 slaves you would end up with m+n tiled windows and with the rest of the clients in the
-current tagset stacked or decked "below" the last tiled client. flextile, clients-per-tag
-and deck patches provide variations on this kind of layout. I've also implemented a
-version of xtile that supports it and even subsumes monocle, but I think this promotes a
-bad pattern of usage. Coupled with stack manipulation operations as the ones provided by
-the stacker or push patches, there is the temptation to manage visibility by moving the
-desired clients in the current tag to the first n+m visible positions of the focus stack
-(not to be confused with the stack area). There are a number of problems with this
-approach:
+current tagset stacked or decked "below" the last tiled client. flextile,
+clients-per-tag and deck patches provide variations on this kind of layout. I've also
+implemented a version of xtile that supports it and even subsumes monocle, but I think
+this promotes a bad pattern of usage. Coupled with stack manipulation operations as the
+ones provided by the stacker or push patches, there is the temptation to manage visibility
+by moving the desired clients in the current tagset to the first n+m visible positions of
+the focus stack (not to be confused with the stack area). There are a number of problems
+with this approach:
 
 * The stack is global to dwm, so pushing around clients in one tag will rearrange them in
   other tags also. This could become a problem if you rely too much on explicit stack
@@ -155,7 +155,8 @@ Mandatory dependencies:
 
 * [pertag](pertag): we all know this one.
 
-Related patches: [bottom stack](bottom_stack), [flextile](flextile).
+Related patches: [bottom stack](bottom_stack), [flextile](flextile), cfacts,
+[stackmfact](stackmfact).
 
 Download
 --------

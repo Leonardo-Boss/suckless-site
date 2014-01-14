@@ -48,7 +48,7 @@ Default key bindings
 Download
 --------
 
-* [dwm-6.1-cfacts.diff](dwm-6.1-ctags.diff)
+* [dwm-6.1-cfacts.diff](dwm-6.1-cfacts.diff)
 
 Author
 ------

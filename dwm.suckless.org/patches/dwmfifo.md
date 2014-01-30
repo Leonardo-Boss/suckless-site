@@ -24,8 +24,8 @@ The sleep in between is currently needed to avoid buffering up
 more than a single command.  You may experiment with the actual
 sleep value.
 
-Similarly you can modify your `config.h' and add more commands
-that you may want to execute (like `tabbed-surf' or similar).
+Similarly you can modify your config.h and add more commands
+that you may want to execute (like tabbed-surf or similar).
 
 Download
 --------

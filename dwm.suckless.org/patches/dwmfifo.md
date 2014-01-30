@@ -10,15 +10,15 @@ actions.  You can use this patch to script dwm.  As an example the
 following sequence of commands starts 2 terminals on each of the
 2 monitors.
 
-echo -n term > /tmp/dwm.fifo
-sleep 0.5
-echo -n term > /tmp/dwm.fifo
-sleep 0.5
-echo -n focusmon+ > /tmp/dwm.fifo
-sleep 0.5
-echo -n term > /tmp/dwm.fifo
-sleep 0.5
-echo -n term > /tmp/dwm.fifo
+	echo -n term > /tmp/dwm.fifo
+	sleep 0.5
+	echo -n term > /tmp/dwm.fifo
+	sleep 0.5
+	echo -n focusmon+ > /tmp/dwm.fifo
+	sleep 0.5
+	echo -n term > /tmp/dwm.fifo
+	sleep 0.5
+	echo -n term > /tmp/dwm.fifo
 
 The sleep in between is currently needed to avoid buffering up
 more than a single command.  You may experiment with the actual

@@ -35,4 +35,4 @@ Download
 Author
 ------
 
- * sin <sin@2f30.org>
+ * sin - <sin@2f30.org>

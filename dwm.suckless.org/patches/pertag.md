@@ -11,6 +11,7 @@ Download
 Patches against different versions of dwm are available at
 [dwm-clean-patches](https://bitbucket.org/jceb81/dwm-clean-patches/src).
 
+ * [dwm-6.1-pertag.diff](dwm-6.1-pertag.diff) (6630b) (20140209)
  * [dwm-10e232f9ace7-pertag.diff](dwm-10e232f9ace7-pertag.diff) (5955b) (20120406)
  * [dwm-6.0-pertag.diff](dwm-6.0-pertag.diff) (5955b) (20120406)
  * [dwm-r1578-pertag.diff][9] (nmaster included in mainline)

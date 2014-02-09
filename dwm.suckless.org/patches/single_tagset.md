@@ -22,8 +22,9 @@ Download
 Please be aware that this patch probably breaks any other patch!
 
 Patches against different versions of dwm are available at
-[dwm-clean-patches](https://bitbucket.org/jceb81/dwm-clean-patches/src).
+[dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
 
+ * [dwm-6.1-single_tagset.diff](dwm-6.1-single_tagset.diff) (16634b) (20140209)
  * [dwm-10e232f9ace7-single_tagset.diff](dwm-10e232f9ace7-single_tagset.diff) (14748b) (20120406)
  * [dwm-6.0-single_tagset.diff](dwm-6.0-single_tagset.diff) (14417b) (20120406)
 
@@ -32,7 +33,7 @@ Special Version
 This is a special version of the patch that was created with following patches being applied:
  * [attachabove](attachabove)
  * [float_border_color](float_border_color)
- * [focusmaster](https://bitbucket.org/jceb81/dwm-patches/src/90fb0feedff9/focusmaster.patch)
+ * [focusmaster](https://raw.github.com/jceb/dwm-patches/master/patches/focusmaster.patch)
  * [moveresize](moveresize)
  * [noborder](noborder)
  * [pertag](pertag)
@@ -43,7 +44,7 @@ This is a special version of the patch that was created with following patches b
  * [tagall](tagall)
  * [zoomswap](zoomswap)
 
-[dwm-6.0-single_tagset_all.diff](https://bitbucket.org/jceb81/dwm-patches/raw/cc88093b8acb/single_tagset_all.patch)
+[dwm-6.1-single_tagset_all.diff](https://raw.github.com/jceb/dwm-patches/master/patches/single_tagset_all.patch)
 
 Authors
 -------

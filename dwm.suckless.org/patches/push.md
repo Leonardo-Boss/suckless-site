@@ -15,8 +15,9 @@
 
 ## Download
 Patches against different versions of dwm are available at
-[dwm-clean-patches](https://bitbucket.org/jceb81/dwm-clean-patches/src).
+[dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
 
+ * [dwm-6.1-push.diff](dwm-6.1-push.diff) (1402b) (20140209)
  * [dwm-10e232f9ace7-push.diff](dwm-10e232f9ace7-push.diff) (1332b) (20120406)
  * [dwm-6.0-push.diff](dwm-6.0-push.diff) (1332b) (20120406)
  * [dwm-6.0-push_no_master.diff](dwm-6.0-push_no_master.diff)
@@ -25,7 +26,6 @@ Patches against different versions of dwm are available at
  * [push-5.3.c](historical/push-5.3.c) (1K) (20090124)
 
 ## Note
-
 This patch seems to be equivalent to the [movestack](movestack) patch.
 
 ## Author

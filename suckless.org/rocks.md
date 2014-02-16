@@ -15,10 +15,6 @@ libc implementations
 * [musl](http://www.musl-libc.org/) - standard C library that attempts to be even smaller than uClibc
 * See also: [embedded libc comparison](http://www.etalabs.net/compare_libcs.html)
 
-Configuration file parsers
---------------------------
-* [iniparser](http://ndevilla.free.fr/iniparser/) - relatively small ini parsing library, contains a dictionary data structure and accessory functions (MIT licensed)
-
 Compression
 -----------
 * [liblzf](http://oldhome.schmorp.de/marc/liblzf.html) - very fast, legally unencumbered compression library (dual licensed: 2-clause BSD or GPL License)

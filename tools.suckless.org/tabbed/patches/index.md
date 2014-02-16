@@ -5,26 +5,26 @@ diff generation
 ---------------
 For git users:
 
-    cd dmenu-directory
-    git diff > dmenu-X.Y-yourpatchname.diff
+    cd tabbed-directory
+    git diff > tabbed-X.Y-yourpatchname.diff
 
 For tarballs:
 
-    cd modified-dmenu-directory/..
-    diff -up original-dmenu-directory modified-dmenu-directory > dmenu-X.Y-yourpatchname.diff
+    cd modified-tabbed-directory/..
+    diff -up original-tabbed-directory modified-tabbed-directory > tabbed-X.Y-yourpatchname.diff
 
-where `X.Y` is a dmenu tag name or version number.
+where `X.Y` is a tabbed tag name or version number.
 
 
 patch application
 -----------------
 For git users:
 
-    cd dmenu-directory
+    cd tabbed-directory
     git apply path/to/patch.diff
 
 For tarballs:
 
-    cd dmenu-directory
+    cd tabbed-directory
     patch -p1 < path/to/patch.diff
 

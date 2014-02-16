@@ -30,7 +30,7 @@ Quick Ideas
 * use mdev for device management
 	* add a »dev« command for controlling mdev
 		* make some minor/major/netlink extractor to a script
-* use busybox as first userland, then gradually move to stools
+* use busybox as first userland, then gradually move to sbase + ubase
 * use svc for services
 * first use X11 for graphics until Wayland is getting sane
 	* if kernel graphics is getting faster use a framebuffer

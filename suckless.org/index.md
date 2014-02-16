@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2014-01-21
+----------
+[tabbed 0.6](http://tools.suckless.org/tabbed) released: [download](http://dl.suckless.org/tools/tabbed-0.6.tar.gz)
+
 2013-06-16
 ----------
 [sic 1.2](http://tools.suckless.org/sic) released: [download](http://dl.suckless.org/tools/sic-1.2.tar.gz)

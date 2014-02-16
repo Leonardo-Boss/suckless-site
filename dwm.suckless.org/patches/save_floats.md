@@ -7,8 +7,9 @@ be restored.
 
 ## Download ##
 Patches against different versions of dwm are available at
-[dwm-clean-patches](https://bitbucket.org/jceb81/dwm-clean-patches/src).
+[dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
 
+ * [dwm-6.1-save_floats.diff](dwm-6.1-save_floats.diff) (1605b) (20140209)
  * [dwm-10e232f9ace7-save_floats.diff](dwm-10e232f9ace7-save_floats.diff) (1604b) (20120406)
  * [dwm-6.0-save_floats.diff](dwm-6.0-save_floats.diff) (1528b) (20120406)
 

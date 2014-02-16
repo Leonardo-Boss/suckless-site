@@ -61,6 +61,7 @@ Download
 Patches against different versions of dwm are available at
 [dwm-clean-patches](https://bitbucket.org/jceb81/dwm-clean-patches/src).
 
+ * [dwm-6.1-moveresize.diff](dwm-6.1-moveresize.diff) (2095b) (20140209)
  * [dwm-10e232f9ace7-moveresize.diff](dwm-10e232f9ace7-moveresize.diff) (2025b) (20120406)
  * [dwm-10e232f9ace7-maximize_vert_horz.diff](dwm-10e232f9ace7-maximize_vert_horz.diff) (2385b) (20120406)
  * [dwm-6.0-moveresize.diff](dwm-6.0-moveresize.diff) (2025b) (20120406)

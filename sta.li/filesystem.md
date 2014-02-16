@@ -8,7 +8,6 @@ will fit the changed principles of the OS.
 	/boot - all boot files
 	/dev - devices
 	/etc - system configuration
-	/svc - services
 	/home - user directories
 	/root - the root home
 	/var - spool, run, log, cache

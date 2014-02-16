@@ -6,8 +6,9 @@ Shortcut to move all (floating) windows from one tag to another.
 
 ## Download ##
 Patches against different versions of dwm are available at
-[dwm-clean-patches](https://bitbucket.org/jceb81/dwm-clean-patches/src).
+[dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
 
+ * [dwm-6.1-tagall.diff](dwm-6.1-tagall.diff) (1058b) (20140209)
  * [dwm-10e232f9ace7-tagall.diff](dwm-10e232f9ace7-tagall.diff) (988b) (20120406)
  * [dwm-6.0-tagall.diff](dwm-6.0-tagall.diff) (988b) (20120406)
 

@@ -11,12 +11,12 @@ or how recently it has been used, or even whether it’s running or not.
 Usage
 -----
 
-1. In your config.h:
+1 In your config.h:
 
     static const char *emacs[] = { "emacsclient", "-c", NULL, NULL, "Emacs" };
     static const char *browser[] = { "firefox", NULL, NULL, NULL, "Firefox" };
 
-1. In your keybindings add something like:
+2 In your keybindings add something like:
 
     { Modkey,                       XK_e,      runorraise,     {.v = emacs } },
     { Modkey,                       XK_f,      runorraise,     {.v = firefox } },

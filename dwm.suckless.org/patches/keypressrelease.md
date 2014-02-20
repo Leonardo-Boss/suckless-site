@@ -29,10 +29,9 @@ Download
 
 Author
 ------
-
- * Niklas Høj <niklas at hoej dot me>
+ * Niklas Høj - `<niklas at hoej dot me>`
 
 ---
 
-[1] Error produced: "giblib error: couldn't grab keyboard: Resource temporarily unavailable"
-[2] Old discussion thread: [http://lists.suckless.org/dev/1108/9185.html]
+[1] Error produced: "giblib error: couldn't grab keyboard: Resource temporarily unavailable"  
+[2] Old discussion thread: [http://lists.suckless.org/dev/1108/9185.html](http://lists.suckless.org/dev/1108/9185.html)

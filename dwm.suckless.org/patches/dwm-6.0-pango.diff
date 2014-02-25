@@ -4,7 +4,7 @@ index 77ff358..3bee2e7 100644
 +++ b/config.def.h
 @@ -1,7 +1,7 @@
  /* See LICENSE file for copyright and license details. */
-
+ 
  /* appearance */
 -static const char font[]            = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
 +static const char font[]            = "Sans 8";
@@ -16,7 +16,7 @@ index 77ff358..3bee2e7 100644
  static const Bool showbar           = True;     /* False means no bar */
  static const Bool topbar            = True;     /* False means bottom bar */
 +static const Bool statusmarkup      = True;     /* True means use pango markup in status message */
-
+ 
  /* tagging */
  static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 diff --git a/config.mk b/config.mk
@@ -25,17 +25,17 @@ index 484554a..cdfb642 100644
 +++ b/config.mk
 @@ -15,8 +15,8 @@ XINERAMALIBS = -L${X11LIB} -lXinerama
  XINERAMAFLAGS = -DXINERAMA
-
+ 
  # includes and libs
 -INCS = -I. -I/usr/include -I${X11INC}
 -LIBS = -L/usr/lib -lc -L${X11LIB} -lX11 ${XINERAMALIBS}
 +INCS = -I. -I/usr/include -I${X11INC} `pkg-config --cflags xft pango pangoxft`
 +LIBS = -L/usr/lib -lc -L${X11LIB} -lX11 ${XINERAMALIBS} `pkg-config --libs xft pango pangoxft`
-
+ 
  # flags
  CPPFLAGS = -DVERSION=\"${VERSION}\" ${XINERAMAFLAGS}
 diff --git a/dwm.c b/dwm.c
-index 1d78655..4e73727 100644
+index 1d78655..8fae3ba 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -36,6 +36,9 @@
@@ -78,7 +78,7 @@ index 1d78655..4e73727 100644
 +		PangoLayout *layout;
  	} font;
  } DC; /* draw context */
-
+ 
 @@ -186,7 +197,7 @@ static void focus(Client *c);
  static void focusin(XEvent *e);
  static void focusmon(const Arg *arg);
@@ -89,7 +89,7 @@ index 1d78655..4e73727 100644
  static long getstate(Window w);
  static Bool gettextprop(Window w, Atom atom, char *text, unsigned int size);
 @@ -254,7 +265,7 @@ static void zoom(const Arg *arg);
-
+ 
  /* variables */
  static const char broken[] = "broken";
 -static char stext[256];
@@ -102,7 +102,7 @@ index 1d78655..4e73727 100644
  	Layout foo = { "", NULL };
  	Monitor *m;
 +	int i;
-
+ 
  	view(&a);
  	selmon->lt[selmon->sellt] = &foo;
  	for(m = mons; m; m = m->next)
@@ -131,6 +131,15 @@ index 1d78655..4e73727 100644
  			updatebars();
  			for(m = mons; m; m = m->next)
  				XMoveResizeWindow(dpy, m->barwin, m->wx, m->by, m->ww, bh);
+@@ -787,7 +802,7 @@ drawsquare(Bool filled, Bool empty, Bool invert, unsigned long col[ColLast]) {
+ 
+ void
+ drawtext(const char *text, unsigned long col[ColLast], Bool invert) {
+-	char buf[256];
++	char buf[512];
+ 	int i, x, y, h, len, olen;
+ 
+ 	XSetForeground(dpy, dc.gc, col[invert ? ColFG : ColBG]);
 @@ -796,20 +811,25 @@ drawtext(const char *text, unsigned long col[ColLast], Bool invert) {
  		return;
  	olen = strlen(text);
@@ -161,28 +170,28 @@ index 1d78655..4e73727 100644
 +	if(text == stext && statusmarkup) /* clear markup attributes */
 +		pango_layout_set_attributes(dc.font.layout, NULL);
  }
-
+ 
  void
 @@ -927,13 +947,13 @@ getatomprop(Client *c, Atom prop) {
  }
-
+ 
  unsigned long
 -getcolor(const char *colstr) {
 +getcolor(const char *colstr, XftColor *color) {
  	Colormap cmap = DefaultColormap(dpy, screen);
 -	XColor color;
 +	Visual *vis = DefaultVisual(dpy, screen);
-
+ 
 -	if(!XAllocNamedColor(dpy, cmap, colstr, &color, &color))
 +	if(!XftColorAllocName(dpy, vis, cmap, colstr, color))
  		die("error, cannot allocate color '%s'\n", colstr);
 -	return color.pixel;
 +	return color->pixel;
  }
-
+ 
  Bool
 @@ -1034,36 +1054,24 @@ incnmaster(const Arg *arg) {
-
+ 
  void
  initfont(const char *fontstr) {
 -	char *def, **missing;
@@ -233,7 +242,7 @@ index 1d78655..4e73727 100644
 +	pango_font_metrics_unref(metrics);
 +	g_object_unref(context);
  }
-
+ 
  #ifdef XINERAMA
 @@ -1612,17 +1620,16 @@ setup(void) {
  	cursor[CurResize] = XCreateFontCursor(dpy, XC_sizing);
@@ -261,7 +270,7 @@ index 1d78655..4e73727 100644
  	updatebars();
  	updatestatus();
 @@ -1692,13 +1699,15 @@ tagmon(const Arg *arg) {
-
+ 
  int
  textnw(const char *text, unsigned int len) {
 -	XRectangle r;
@@ -281,5 +290,5 @@ index 1d78655..4e73727 100644
 +		pango_layout_set_attributes(dc.font.layout, NULL);
 +	return r.width / PANGO_SCALE;
  }
-
+ 
  void

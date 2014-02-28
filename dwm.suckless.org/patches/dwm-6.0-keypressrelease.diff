@@ -1,6 +1,6 @@
-diff -up dwmvanilla/config.h dwmpatched/config.h
---- dwmvanilla/config.h	2011-12-19 16:02:46.000000000 +0100
-+++ dwmpatched/config.h	2014-02-15 02:34:25.503574829 +0100
+diff -up dwm-6.0-clean/config.def.h dwm-6.0-patched/config.def.h
+--- dwm-6.0-clean/config.def.h	2011-12-19 16:02:46.000000000 +0100
++++ dwm-6.0-patched/config.def.h	2014-02-28 22:21:05.254046315 +0100
 @@ -37,10 +37,10 @@ static const Layout layouts[] = {
  /* key definitions */
  #define MODKEY Mod1Mask
@@ -80,46 +80,25 @@ diff -up dwmvanilla/config.h dwmpatched/config.h
  };
  
  /* button definitions */
-Only in dwmpatched: dwm
-diff -up dwmvanilla/dwm.c dwmpatched/dwm.c
---- dwmvanilla/dwm.c	2011-12-19 16:02:46.000000000 +0100
-+++ dwmpatched/dwm.c	2014-02-15 02:39:19.967568786 +0100
+diff -up dwm-6.0-clean/dwm.c dwm-6.0-patched/dwm.c
+--- dwm-6.0-clean/dwm.c	2011-12-19 16:02:46.000000000 +0100
++++ dwm-6.0-patched/dwm.c	2014-02-28 22:19:58.466047686 +0100
 @@ -113,6 +113,7 @@ typedef struct {
  } DC; /* draw context */
  
  typedef struct {
-+    int type;
++	int type;
  	unsigned int mod;
  	KeySym keysym;
  	void (*func)(const Arg *);
-@@ -194,7 +195,7 @@ static void grabbuttons(Client *c, Bool
- static void grabkeys(void);
- static void incnmaster(const Arg *arg);
- static void initfont(const char *fontstr);
--static void keypress(XEvent *e);
-+static void keypressrelease(XEvent *e);
- static void killclient(const Arg *arg);
- static void manage(Window w, XWindowAttributes *wa);
- static void mappingnotify(XEvent *e);
-@@ -269,7 +270,8 @@ static void (*handler[LASTEvent]) (XEven
- 	[EnterNotify] = enternotify,
+@@ -270,6 +271,7 @@ static void (*handler[LASTEvent]) (XEven
  	[Expose] = expose,
  	[FocusIn] = focusin,
--	[KeyPress] = keypress,
-+	[KeyPress] = keypressrelease,
-+	[KeyRelease] = keypressrelease,
+ 	[KeyPress] = keypress,
++	[KeyRelease] = keypress,
  	[MappingNotify] = mappingnotify,
  	[MapRequest] = maprequest,
  	[MotionNotify] = motionnotify,
-@@ -1078,7 +1080,7 @@ isuniquegeom(XineramaScreenInfo *unique,
- #endif /* XINERAMA */
- 
- void
--keypress(XEvent *e) {
-+keypressrelease(XEvent *e) {
- 	unsigned int i;
- 	KeySym keysym;
- 	XKeyEvent *ev;
 @@ -1087,6 +1089,7 @@ keypress(XEvent *e) {
  	keysym = XKeycodeToKeysym(dpy, (KeyCode)ev->keycode, 0);
  	for(i = 0; i < LENGTH(keys); i++)

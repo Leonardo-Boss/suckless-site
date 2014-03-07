@@ -14,5 +14,5 @@ Note that **you need an X composite manager** to make this patch effective. (e.g
  * [st-0.4.1-argbbg.diff](st-0.4.1-argbbg.diff)
 
 ## Author ##
- * Eon S. Jeon - esjeon@lavabit.com
+ * Eon S. Jeon - esjeon@hyunmu.am
 

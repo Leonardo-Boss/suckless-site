@@ -1,6 +1,8 @@
 argbbg
 ======
 
+[![Screenshot](st-argbbg.png)](st-argbbg.png)
+
 ## Description ##
 This patch allows users to change the opacity of the background.
 Note that **you need an X composite manager** to make this patch effective. (e.g. compton, xcompmgr)

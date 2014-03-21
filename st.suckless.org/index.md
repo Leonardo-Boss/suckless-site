@@ -47,12 +47,6 @@ Configuration
 The configuration is done in `config.h` (like in dwm). See the comments in the
 generated `config.h` to edit it to your needs.
 
-
-<abbr title="Frequently Asked Questions">FAQ</abbr>
----------------
-
-[Canonical FAQ](http://git.suckless.org/st/tree/FAQ)
-
 ## Why does st not handle utmp entries?
 
 Use the excellent tool of [utmp](http://git.suckless.org/utmp/) for this task.

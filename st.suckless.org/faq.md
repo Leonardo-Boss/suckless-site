@@ -1,4 +1,4 @@
-FAQ
+<abbr title="Frequently Asked Questions">FAQ</abbr>
 ===
 
 The FAQ is maintained in the st git repository and can be read 

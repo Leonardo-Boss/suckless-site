@@ -32,9 +32,11 @@ Usage
 
 Each patch can be applied using "patch -p1" or "git am":
 
-    cd dwm; patch -p1 <multimon-1-added-monitor-marker-to-bar.diff
+        cd dwm; patch -p1 <multimon-1-added-monitor-marker-to-bar.diff
+
 -OR-
-    cd dwm; git pull; git am multimon-1-added-monitor-marker-to-bar.diff
+
+        cd dwm; git pull; git am multimon-1-added-monitor-marker-to-bar.diff
 
 There are default settings and bindings in "config.def.h" which you will likely want to customize.
 
@@ -53,7 +55,7 @@ The patches are intended to be applied in order, one after the other, but can al
 Author
 ------
 
- * Gary B. Genett - <me at garybgenett dot net>
+ * Gary B. Genett - <me@garybgenett.net>
 
 ---
 Original Submission: [http://lists.suckless.org/dev/1403/20488.html](http://lists.suckless.org/dev/1403/20488.html)

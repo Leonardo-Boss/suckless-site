@@ -61,7 +61,7 @@ following file to '/home/kiosk/.i3/config':
         set $mod Mod4
 
         # shut down system with systemd/polkit
-        bindsym Control+Shift+E exec /usr/bin/systemctl poweroff
+        bindsym Control+Shift+C exec /usr/bin/systemctl poweroff
 
 	# make surf start in fullscreen
         for_window [class="Surf"] fullscreen

@@ -45,10 +45,10 @@ Download
 
 Each of the patches was created by "format-patch" based on commit: [cdec9782a1789bd5c3a84772fd59abb9da288597](http://git.suckless.org/dwm/commit/?id=cdec9782a1789bd5c3a84772fd59abb9da288597)
 
-  * monitor marker (6228b): [multimon-1-added-monitor-marker-to-bar.diff](multimon-1-added-monitor-marker-to-bar.diff) -[GitHub](https://github.com/garybgenett/.dwm/commit/143e7f2f3caa047469c7219cd6b0cb704466683f)-
-  * unified view   (6558b): [multimon-2-added-n-view-wrappers-for-unified-multi-monitor.diff](multimon-2-added-n-view-wrappers-for-unified-multi-monitor.diff) -[GitHub](https://github.com/garybgenett/.dwm/commit/2521a74714bb7c4b8787f30584f1565cc582928b)-
-  * reset view     (6816b): [multimon-3-added-reset_view-function.diff](multimon-3-added-reset_view-function.diff) -[GitHub](https://github.com/garybgenett/.dwm/commit/b9f79c3dd07b285e974b2dfdf2371a72467539bb)-
-  * status all     (6165b): [multimon-4-added-statusall-toggle-replacing-need-for-patch.diff](multimon-4-added-statusall-toggle-replacing-need-for-patch.diff) -[GitHub](https://github.com/garybgenett/.dwm/commit/d318ffdc7ab7a365e548776a1d8ed5ccbd67cd42)-
+  * monitor marker (6228b): [multimon-1-added-monitor-marker-to-bar.diff](multimon-1-added-monitor-marker-to-bar.diff) ([GitHub](https://github.com/garybgenett/.dwm/commit/143e7f2f3caa047469c7219cd6b0cb704466683f))
+  * unified view   (6558b): [multimon-2-added-n-view-wrappers-for-unified-multi-monitor.diff](multimon-2-added-n-view-wrappers-for-unified-multi-monitor.diff) ([GitHub](https://github.com/garybgenett/.dwm/commit/2521a74714bb7c4b8787f30584f1565cc582928b))
+  * reset view     (6816b): [multimon-3-added-reset_view-function.diff](multimon-3-added-reset_view-function.diff) ([GitHub](https://github.com/garybgenett/.dwm/commit/b9f79c3dd07b285e974b2dfdf2371a72467539bb))
+  * status all     (6165b): [multimon-4-added-statusall-toggle-replacing-need-for-patch.diff](multimon-4-added-statusall-toggle-replacing-need-for-patch.diff) ([GitHub](https://github.com/garybgenett/.dwm/commit/d318ffdc7ab7a365e548776a1d8ed5ccbd67cd42))
 
 The patches are intended to be applied in order, one after the other, but can also be used independently.
 

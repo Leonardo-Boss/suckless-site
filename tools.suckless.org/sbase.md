@@ -75,7 +75,7 @@ The following programs are currently implemented:
 * xargs
 * yes
 
-The overall SLOC is about 6kSlOC, so this userland is about the same size as GNU ls.
+The overall SLOC is about 6kSLOC, so this userland is about the same size as GNU ls.
 
 Download
 --------

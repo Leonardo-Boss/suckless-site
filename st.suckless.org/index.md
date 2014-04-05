@@ -140,7 +140,7 @@ Links
 
 Download
 --------
-* [st 0.4.1](http://dl.suckless.org/st/st-0.4.1.tar.gz) (2013-04-20)
+* [st 0.5](http://dl.suckless.org/st/st-0.5.tar.gz) (2014-04-05)
 * [MIT/X Consortium license](http://git.suckless.org/st/plain/LICENSE)
 
 Development

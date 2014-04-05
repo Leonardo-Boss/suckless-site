@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2014-04-05
+----------
+[st 0.5](http://st.suckless.org) released: [download](http://dl.suckless.org/st/st-0.5.tar.gz)
+
 2014-01-21
 ----------
 [tabbed 0.6](http://tools.suckless.org/tabbed) released: [download](http://dl.suckless.org/tools/tabbed-0.6.tar.gz)

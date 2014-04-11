@@ -14,7 +14,8 @@ Note that **you need an X composite manager** to make this patch effective. (e.g
 
 ## Download ##
  * [st-0.4.1-argbbg.diff](st-0.4.1-argbbg.diff)
+ * [st-0.5-argbbg.diff](st-0.5-argbbg.diff)
 
 ## Author ##
  * Eon S. Jeon - esjeon@hyunmu.am
-
+ * pr - protodev@gmx.net (st-0.5 port)

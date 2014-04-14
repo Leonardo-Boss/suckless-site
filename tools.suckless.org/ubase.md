@@ -33,6 +33,7 @@ The following programs are currently implemented:
 * su
 * swapoff
 * swapon
+* switch_root
 * truncate
 * umount
 * unshare

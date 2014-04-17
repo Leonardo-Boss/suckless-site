@@ -28,12 +28,14 @@ The following programs are currently implemented:
 * pidof
 * pivot_root
 * ps
+* respawn
 * rmmod
 * stat
 * su
 * swapoff
 * swapon
 * switch_root
+* sysctl
 * truncate
 * umount
 * unshare

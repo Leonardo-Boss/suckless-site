@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2014-04-18
+----------
+[sinit 0.9](http://tools.suckless.org/sinit) released: [download](http://dl.suckless.org/sinit/sinit-0.9.tar.gz)
+
 2014-04-05
 ----------
 [st 0.5](http://st.suckless.org) released: [download](http://dl.suckless.org/st/st-0.5.tar.gz)

@@ -20,4 +20,4 @@ expected to happen.
 Contact
 -------
 E-mail [sin@2f30.org](mailto:sin@2f30.org) or post your issue to the
-dev@suckless.org mailing list.
+[dev@suckless.org](mailto:dev@suckless.org) mailing list.

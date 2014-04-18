@@ -1,7 +1,7 @@
 sinit - suckless init
 =====================
 
-sinti is a simple init, initially based on Rich Felker's minimal [init](https://gist.github.com/rofl0r/6168719).
+sinit is a simple init, initially based on Rich Felker's minimal [init](https://gist.github.com/rofl0r/6168719).
 
 Download
 --------

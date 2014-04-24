@@ -11,8 +11,8 @@ compatible with other suckless projects.
 
 libc implementations
 --------------------
-* [uClibc](http://www.uclibc.org/) - strives to be a minimalist C library suitable for embedded computing
 * [musl](http://www.musl-libc.org/) - standard C library that attempts to be even smaller than uClibc
+* [uClibc](http://www.uclibc.org/) - strives to be a minimalist C library suitable for embedded computing
 * See also: [embedded libc comparison](http://www.etalabs.net/compare_libcs.html)
 
 Compression

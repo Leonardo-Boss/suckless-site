@@ -5,6 +5,11 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2014-05-01
+----------
+
+[ubase 0.1](http://tools.suckless.org/ubase) released: [download](http://dl.suckless.org/ubase/ubase-0.1.tar.gz)
+
 2014-04-18
 ----------
 [sinit 0.9](http://tools.suckless.org/sinit) released: [download](http://dl.suckless.org/sinit/sinit-0.9.tar.gz)

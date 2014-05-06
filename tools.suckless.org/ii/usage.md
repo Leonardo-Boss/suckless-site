@@ -47,3 +47,8 @@ xii
 ---
 [xii](http://github.com/younix/xii) is a simple X11 frontend for ii.
 It is written in plain C based on Xaw and Xt library.
+
+hysteria
+--------
+[hysteria](http://git.2f30.org/hysteria/) is another set of scripts
+(mostly shell) which provide support for highlighting, autojoining, etc.

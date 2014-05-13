@@ -6,7 +6,7 @@ remove your passwords from the script!!!__
 
 * Twitter
 
-		#!/bin/sh
+		#!/bin/bash
 		read -p "Name: " name
 		read -p "Password: " -s pass
 		echo

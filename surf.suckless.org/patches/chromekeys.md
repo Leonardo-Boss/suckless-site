@@ -13,7 +13,7 @@ mod-u is view source, and mod-shift-u opens the inspector.
 Download
 --------
 
-* [surf-0.6-chromekeys.diff](surf-0.6-chromekeys.diff) (1908) (20140515)
+* [surf-0.6-chromekeys.diff](surf-0.6-chromekeys.diff) (20140519)
 
 Author
 ------

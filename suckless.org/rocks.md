@@ -33,6 +33,7 @@ Miscellaneous
 * [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modeled after libevent but much smaller (dual licensed under 2-clause BSD and GPL)
 * [termbox](https://github.com/nsf/termbox) - simple ncurses-like library for creating TUIs
 * [ccv](https://github.com/liuliu/ccv) - C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library
+* [morpheus](http://morpheus.2f30.org) - a statically linked musl based Linux distro
 
 Programs
 ========

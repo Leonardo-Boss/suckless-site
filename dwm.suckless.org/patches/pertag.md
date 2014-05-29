@@ -9,7 +9,7 @@ mwfact, barpos and nmaster per tag.
 Download
 --------
 Patches against different versions of dwm are available at
-[dwm-clean-patches](https://bitbucket.org/jceb81/dwm-clean-patches/src).
+[dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
 
  * [dwm-6.1-pertag.diff](dwm-6.1-pertag.diff) (6630b) (20140209)
  * [dwm-10e232f9ace7-pertag.diff](dwm-10e232f9ace7-pertag.diff) (5955b) (20120406)

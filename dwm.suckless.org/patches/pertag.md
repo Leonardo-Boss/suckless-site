@@ -13,7 +13,7 @@ Patches against different versions of dwm are available at
 
  * [dwm-6.1-pertag.diff](dwm-6.1-pertag.diff) (6630b) (20140209)
  * [dwm-10e232f9ace7-pertag.diff](dwm-10e232f9ace7-pertag.diff) (5955b) (20120406)
- * [dwm-6.0-pertag\_without\_bar.diff](dwm-6.0-pertag_without_bar.diff)
+ * [dwm-6.0-pertag_without_bar.diff](dwm-6.0-pertag_without_bar.diff) (5578b) (20140530)
  * [dwm-6.0-pertag.diff](dwm-6.0-pertag.diff) (5955b) (20120406)
  * [dwm-r1578-pertag.diff][9] (nmaster included in mainline)
  * [dwm-5.8.2-pertag\_without\_bar.diff][8]

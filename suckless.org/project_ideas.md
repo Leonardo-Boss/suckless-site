@@ -101,19 +101,6 @@ structure:
 
 ***Requirements:*** Good C/Shell/HTML knowledge would be desirable.
 
-### Yet another less sucking editor
-
-Although vi(m) does its job, it has become a monster over the years. We
-believe there is a gap between [ed](http://man.cat-v.org/plan_9/1/ed),
-[sam](http://sam.cat-v.org), [acme](http://acme.cat-v.org) and vim which must
-be filled with a completely new, less-sucking editor.
-
-It has been [suggested](http://lists.suckless.org/dev/0911/2255.html) that
-"...a curses interface for the sam protocol would be interesting and perhaps
-even useful..."
-
-***Requirements:*** Good C knowledge and knowledge of I/O APIs is essential.
-
 ### Improve sltar
 
 [sltar](https://github.com/Gottox/sltar) is a simplified tar

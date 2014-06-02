@@ -18,6 +18,7 @@ The following programs are currently implemented:
 * id
 * insmod
 * killall5
+* login
 * lsmod
 * lsusb
 * mknod

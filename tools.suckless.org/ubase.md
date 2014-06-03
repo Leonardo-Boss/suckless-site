@@ -15,6 +15,7 @@ The following programs are currently implemented:
 * free
 * getty
 * halt
+* hwclock
 * id
 * insmod
 * killall5

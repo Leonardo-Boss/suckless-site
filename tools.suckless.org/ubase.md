@@ -8,6 +8,7 @@ The following programs are currently implemented:
 * chvt
 * clear
 * ctrlaltdel
+* dd
 * df
 * dmesg
 * eject

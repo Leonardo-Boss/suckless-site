@@ -13,7 +13,8 @@ Notes
 -----
 
 No matter if you choose the light or dark theme, to get the correct 
-colors, you *always* have to apply the [patch to st.c][3].  Then, 
+colors, you *always* have to apply the [patch to st.c][7] (if you're
+using the latest git version of st, use [this patch to st.c][3]).  Then,
 apply one of the patches for either the [light][4] or the [dark][5] 
 version of solarized.
 
@@ -36,6 +37,7 @@ The font is [Source Code Pro][6].
 Download
 --------
 
+ * [st-0.5-no-bold-colors.diff][7]
  * [st-no-bold-colors.diff][3]
  * [st-solarized-light.diff][4]
  * [st-solarized-dark.diff][5]
@@ -46,6 +48,7 @@ Download
 [4]: st-solarized-light.diff
 [5]: st-solarized-dark.diff
 [6]: http://en.wikipedia.org/wiki/Source_Code_Pro
+[7]: st-0.5-no-bold-colors.diff
 
 Author
 ------

@@ -4,18 +4,18 @@ Solarized color scheme
 Description
 -----------
 
-[Solarized][1] is a color scheme by Ethan Schoonover and exists in a 
-dark and a light variant.  These patches make the solarized colors 
+[Solarized][1] is a color scheme by Ethan Schoonover and exists in a
+dark and a light variant.  These patches make the solarized colors
 available on st.
 
 
 Notes
 -----
 
-No matter if you choose the light or dark theme, to get the correct 
+No matter if you choose the light or dark theme, to get the correct
 colors, you *always* have to apply the [patch to st.c][7] (if you're
 using the latest git version of st, use [this patch to st.c][3]).  Then,
-apply one of the patches for either the [light][4] or the [dark][5] 
+apply one of the patches for either the [light][4] or the [dark][5]
 version of solarized.
 
 These patches apply to the latest git of st, but should apply to older

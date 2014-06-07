@@ -1,4 +1,4 @@
-hide_vacant_tags
+hide vacant tags
 ================
 
 Description
@@ -13,3 +13,8 @@ Download
 --------
 
 * [dwm-6.1-hide_vacant_tags.diff](dwm-6.1-hide_vacant_tags.diff) (957b) (20140607)
+
+Author
+------
+
+Ondřej Grover - <ondrej dot grover at gmail dot com>

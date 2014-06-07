@@ -66,7 +66,7 @@ conflicts.
 
 ## Updating customizations after new release ##
 
-When the time comes to update your customizations to after a new
+When the time comes to update your customizations after a new
 release of dwm or when the dwm repository contains a commit fixing
 some bug, you first pull the new upstream changes into the master
 branch
@@ -89,3 +89,7 @@ continue
 If you want to give up, you can always abort the rebase
 
 	git rebase --abort
+
+## Author ##
+
+* [Ondřej Grover](mailto:ondrej.grover@gmail.com)

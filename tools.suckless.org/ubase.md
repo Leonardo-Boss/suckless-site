@@ -28,6 +28,7 @@ The following programs are currently implemented:
 * mount
 * mountpoint
 * pagesize
+* passwd
 * pidof
 * pivot_root
 * ps

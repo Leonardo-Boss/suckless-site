@@ -46,6 +46,7 @@ add them here as file or as code example.
   dynamic_info.
 * [Battery function](batterystatus.c) : Battery percentage and status. + if
   charging, - if discharging, = if full.
+* [Alsa Volume API](getvol.c) : Alsa Volume via the Alsa API
 
 Questions
 ---------

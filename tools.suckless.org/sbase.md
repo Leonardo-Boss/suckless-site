@@ -65,6 +65,7 @@ The following programs are currently implemented:
 * uudecode
 * uuencode
 * uname
+* unexpand
 * uniq
 * unlink
 * seq

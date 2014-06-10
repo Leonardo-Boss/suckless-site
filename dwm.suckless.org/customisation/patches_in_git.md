@@ -77,11 +77,14 @@ branch
 Then rebase your customization branch on top of the master branch
 
 	git checkout my_dwm
-	git rebase master
+	git rebase --preserve-merges master
 
-In case there are merge conflicts resolve them (possibly with the help
-of `git mergetool`), then record them as resolved and let the rebase
-continue
+The `--preserve-merges` option ensures that you don't have to resolve
+conflicts which you have already resolved while performing merges again.
+
+In case there are merge conflicts anyway, resolve them (possibly with
+the help of `git mergetool`), then record them as resolved and let the
+rebase continue
 
 	git add resolved_file.ext
 	git rebase --continue

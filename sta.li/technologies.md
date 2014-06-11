@@ -8,8 +8,8 @@ are: Be as simple as possible and as useful as possible.
 	* [sbase](http://git.suckless.org/sbase/)
 	* [ubase](http://git.suckless.org/ubase/)
 * init
+	* [sinit](http://git.suckless.org/sinit/)
 	* [cinit](http://www.nico.schottelius.org/software/cinit/)
-	* [sinit](http://git.2f30.org/sinit/)
 * services
 	* [runit](http://smarden.org/runit/)
 	* [svc](http://git.r-36.net/svc/)

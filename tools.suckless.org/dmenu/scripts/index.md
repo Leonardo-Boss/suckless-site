@@ -6,6 +6,8 @@ dmenu's user, feel free to add your own scripts, or comment existents.
 Download
 --------
 
+* [passmenu](http://git.zx2c4.com/password-store/tree/contrib/dmenu)
+  : get password from pass.
 * [run-recent](run-recent) : List recent commands first. End a command
   with ";" to run it in e terminal.
   [source](https://bbs.archlinux.org/viewtopic.php?id=56646&p=12)

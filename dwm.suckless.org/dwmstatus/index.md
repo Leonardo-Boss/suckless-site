@@ -23,6 +23,7 @@ Please add your own version of dwmstatus here.
 * [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent and date/time
 * [suspend-statusbar.c](suspend-statusbar.c) - loadavg, wifi, battery and date. If battery goes below threshold - run suspend command
 * [gods](https://github.com/schachmat/gods) - implemented in Go. prints network speed, cpu, ram, date/time
+* [barmonitor](https://github.com/levi0x0/Scrips-IO/blob/master/bar_monitor.c) - display battery status, date/time.
 
 
 Helper functions

@@ -28,6 +28,8 @@ There are several other projects which are inspired by the spirit of suckless.
 * [ssg](http://nibble.develsec.org/projects/ssg.html) - slide generation system with markdown-like syntax
 * [sup](http://git.suckless.org/sup) - minimalistic sudo replacement
 * [sw](http://nibble.develsec.org/projects/sw.html) - minimalistic web framework
+* [swx](http://yeuxdelibad.net/Programmation/swx.html) - static site
+  generator (inspired from sw) 
 * [xicon](http://hg.youterm.com/xicon/) (dead link) - small icon-based dzen-like utility
 * [xkev](https://github.com/vlaadbrain/xkev) - simply simulate KeyPress/KeyRelease
 * [xbmouse](https://github.com/vlaadbrain/xbmouse) - simply bind a mouse button to a command

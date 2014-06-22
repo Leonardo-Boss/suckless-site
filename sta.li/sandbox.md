@@ -27,8 +27,8 @@ Ideas
 Quick Ideas
 -----------
 
-* use mdev for device management
-	* add a »dev« command for controlling mdev
+* use nldev + mdev/smdev for device management
+	* add a »dev« command for controlling mdev/smdev
 		* make some minor/major/netlink extractor to a script
 * use busybox as first userland, then gradually move to sbase + ubase
 * use svc for services
@@ -40,4 +40,3 @@ Needed application replacements
 
 * new bluetooth stack without dbus
 * simple mDNS without dbus
-

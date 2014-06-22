@@ -17,7 +17,7 @@ There are several other projects which are inspired by the spirit of suckless.
 * [passman](http://nibble.develsec.org/hg/toys/file/) - password manager + other nibble suckless toys
 * [pcw](https://bitbucket.org/emg/pcw) - popup chat windows (ii front end)
 * [ptar](https://github.com/joodan-van-github/ptar) - plain-text archives: like tar, but better
-* [sdhcp](http://galos.no-ip.org/sdhcp) - tiny dchp client
+* [sdhcp](http://galos.no-ip.org/sdhcp) - tiny dhcp client
 * [slpm](https://github.com/radare/slpm) - suckless package manager
 * [sltar](https://github.com/Gottox/sltar) - suckless tar
 * [bgs](https://github.com/Gottox/bgs) - background setter
@@ -28,6 +28,8 @@ There are several other projects which are inspired by the spirit of suckless.
 * [ssg](http://nibble.develsec.org/projects/ssg.html) - slide generation system with markdown-like syntax
 * [sup](http://git.suckless.org/sup) - minimalistic sudo replacement
 * [sw](http://nibble.develsec.org/projects/sw.html) - minimalistic web framework
+* [swx](http://yeuxdelibad.net/Programmation/swx_en.html) - static site
+  generator (inspired from sw) 
 * [xicon](http://hg.youterm.com/xicon/) (dead link) - small icon-based dzen-like utility
 * [xkev](https://github.com/vlaadbrain/xkev) - simply simulate KeyPress/KeyRelease
 * [xbmouse](https://github.com/vlaadbrain/xbmouse) - simply bind a mouse button to a command

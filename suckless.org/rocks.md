@@ -11,8 +11,8 @@ compatible with other suckless projects.
 
 libc implementations
 --------------------
-* [uClibc](http://www.uclibc.org/) - strives to be a minimalist C library suitable for embedded computing
 * [musl](http://www.musl-libc.org/) - standard C library that attempts to be even smaller than uClibc
+* [uClibc](http://www.uclibc.org/) - strives to be a minimalist C library suitable for embedded computing
 * See also: [embedded libc comparison](http://www.etalabs.net/compare_libcs.html)
 
 Compression
@@ -33,6 +33,7 @@ Miscellaneous
 * [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modeled after libevent but much smaller (dual licensed under 2-clause BSD and GPL)
 * [termbox](https://github.com/nsf/termbox) - simple ncurses-like library for creating TUIs
 * [ccv](https://github.com/liuliu/ccv) - C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library
+* [morpheus](http://morpheus.2f30.org) - a statically linked musl based Linux distro
 
 Programs
 ========
@@ -70,8 +71,7 @@ Feed aggregators
 IRC Clients
 -----------
 * [Irc](http://swtch.com/irc/)
-* [acme:SAC](http://caerwyn.com/acme/index.html)
-* [ii](/programs/ii.html) - A FIFO based IRC client which is part of the suckless.org project.
+* [ii](http://tools.suckless.org/ii/) - A FIFO based IRC client which is part of the suckless.org project.
 * [ircc](http://www.r-36.net/src/Various/ircc.tgz) - A no-frills, ncurses free, console-based IRC client.
 * [ircrc](http://plan9.bell-labs.com/sources/contrib/fgb/rc/ircrc) - An rc-based IRC client similar to ircc. Needs minor modification to run on UNIX.
 * [irssi](http://www.irssi.org/)

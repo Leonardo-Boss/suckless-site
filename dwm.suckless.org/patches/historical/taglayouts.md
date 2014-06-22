@@ -18,4 +18,4 @@ This patch enables one layout per tag in contrast of one layout for all tags. - 
  * http://na.srck.net/dwm
  * Updated by Jan Christoph Ebersbach - <jceb@e-jc.de>
 
-[1]: /dwm/patches/pertag.html
+[1]: /patches/pertag

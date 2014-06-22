@@ -20,9 +20,10 @@ Steps
 -----------------------------------------
 
 Steps in this direction have been done in the
-[sabotage](https://github.com/rofl0r/sabotage) and
-[bootstrap](https://github.com/pikhq/bootstrap-linux)
-Linux distribution. They should serve as a base for further
+[sabotage](https://github.com/rofl0r/sabotage),
+[bootstrap](https://github.com/pikhq/bootstrap-linux) and
+[morpheus](http://morpheus.2f30.org)
+Linux distributions. They should serve as a base for further
 a further extension to make a base environment which can be
 used by the average suckless user.
 
@@ -55,4 +56,3 @@ Maintaining an Open Source community isn't just maintaining the
 status quo. It needs templates and tutorials on how to spread
 the suckless ways of thinking and being productive. The web is
 not a part of this.
-

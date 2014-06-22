@@ -34,28 +34,6 @@ The listed ideas generally require good knowledge of C and experience with
 Unix-like operating systems. The difficulty ranges from medium to high.
 An academic background in computer science is desirable but not essential.
 
-### Port [stali](http://sta.li) to use bionic
-
-So far [static linux](http://sta.li) requires [uclibc](http://www.uclibc.org) for most userland
-tools and glibc for some exceptions. We'd like to replace the uclibc dependency
-with bionic from android.
-
-This project can be achieved on a tool by tool basis because it will require
-some code patching.
-
-***Requirements:*** Good C/Unix knowledge is necessary.
-
-### Port [9base](http://tools.suckless.org/9base) to use bionic
-
-So far 9base uses the hosts C library. We'd like to replace the host libc
-dependency with bionic from android.
-
-This project can be extended to do the same in
-[plan9port](http://swtch.com/plan9port/) by Russ Cox, if the progress is fast
-in achieving this.
-
-***Requirements:*** Good C/Unix knowledge is essential.
-
 ### Write ld wrapper or replacement for static linking
 
 The GNU autotools such as automake and autoconf are completely unusable in
@@ -122,19 +100,6 @@ structure:
 * <http://www.codinghorror.com/blog/2012/12/web-discussions-flat-by-design.html>
 
 ***Requirements:*** Good C/Shell/HTML knowledge would be desirable.
-
-### Yet another less sucking editor
-
-Although vi(m) does its job, it has become a monster over the years. We
-believe there is a gap between [ed](http://man.cat-v.org/plan_9/1/ed),
-[sam](http://sam.cat-v.org), [acme](http://acme.cat-v.org) and vim which must
-be filled with a completely new, less-sucking editor.
-
-It has been [suggested](http://lists.suckless.org/dev/0911/2255.html) that
-"...a curses interface for the sam protocol would be interesting and perhaps
-even useful..."
-
-***Requirements:*** Good C knowledge and knowledge of I/O APIs is essential.
 
 ### Improve sltar
 

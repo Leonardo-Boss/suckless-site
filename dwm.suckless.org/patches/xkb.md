@@ -17,6 +17,11 @@ The patch depends on two variables:
  * `xkb_layouts` array defines the text, which will appear on the 
     bar according to current group if `showxkb` set to `TRUE`.
 
+There is new field in Rule struckture, by witch you can specify
+default xkb layout for window (see config.def.h for details). 
+This could be useful with dmenu_run, but unfortunately for some reasons
+rules can't be applied to dmenu.
+
 Download
 --------
 

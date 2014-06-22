@@ -7,11 +7,20 @@ client's xkb status and restores it when client became focused.
 
 Applying
 --------
-Firstly you have to configure xkb as you need as described here:
-http://www.x.org/archive/X11R7.5/doc/input/XKB-Config.html
-The patch depends on two variables: showxkb flag defines, should patch show
-current xkb group on the bar; xkb_layouts array defines the text, which will
-appear on the bar according to current group if showxkb set to TRUE.
+Firstly you have to configure xkb as you need as described 
+[here](http://www.x.org/archive/X11R7.5/doc/input/XKB-Config.html).
+The patch depends on two variables:
+
+ * `showxkb` flag defines, should patch show current xkb group on 
+   the bar or not; 
+
+ * `xkb_layouts` array defines the text, which will appear on the 
+    bar according to current group if `showxkb` set to `TRUE`.
+
+There is new field in Rule struckture, by witch you can specify
+default xkb layout for window (see config.def.h for details). 
+This could be useful with dmenu_run, but unfortunately for some reasons
+rules can't be applied to dmenu.
 
 Download
 --------
@@ -21,4 +30,4 @@ Download
 Author
 ------
 
- * Yury Shvedov - shved at lvk dot cs dot msu dot su (or mestofel13 at gmail dot com).
+ * Yury Shvedov - [shved AT lvk DOT cs DOT msu DOT su](mailto:shved@lvk.cs.msu.su) (or [mestofel13 AT gmail DOT com](mailto:mestofel13@gmail.com)).

@@ -14,6 +14,8 @@ The following programs are currently implemented:
 * eject
 * fallocate
 * free
+* freeramdisk
+* fsfreeze
 * getty
 * halt
 * hwclock

@@ -1,7 +1,7 @@
 Stuff that sucks
 ================
 See the [philosophy](http://suckless.org/philosophy) page about what
-applies to this page. 
+applies to this page.
 
 Libraries
 ---------
@@ -16,12 +16,12 @@ possible to avoid them. If you use them, consider looking for alternatives.
   glib usage is required to write gtk+ and gnome applications, but is also used
   when common functionality is needed (e.g. hashlists, base64 decoder, etc).
   it is not suited at all for static linking due to its huge size.
-  
+
   Alternatives: [libmowgli][9], [libulz][10]
 
 * [GMP][3] - GNU's bignum/arbitrary precision library. Quite bloated, slow and
   [calls abort() on failed malloc][4]
-  
+
   Alternatives: [libtommath][5], [TomsFastMath][6], [MPI][7]
 
 
@@ -39,38 +39,37 @@ possible to avoid them. If you use them, consider looking for alternatives.
 Build Systems
 -------------
 
-* [cmake][11] - cmake is written in C++ but often used to compile C programs.
-  that means (on a self-bootstrapping system) that one needs to compile a C++
+* [cmake][11] - written in C++ but often used to compile C programs.
+  This means that (on a self-bootstrapping system) one needs to compile a C++
   compiler and cmake just in order to be able to build some C code.
-  it is so huge and bloated that compilation takes more time than compilation
-  of GCC (!).
-  it's not even possible to use it to create freestanding Makefiles, since
+  It is so huge and bloated that compilation takes more time than compiling
+  GCC (!).
+  It's not even possible to use it to create freestanding Makefiles, since
   the generated Makefiles call back into the cmake binary itself.
 
-  Alternatives: [gnu make][14]
-
-* [waf][12] and [scons][13] - waf/scons are both written in python but often
-  used to compile C programs.
-  that means (on a self-bootstrapping system) that one needs to compile python
+* [waf][12] and [scons][13] - both written in Python but often used to compile
+  C programs.
+  This means that (on a self-bootstrapping system) one needs to compile Python
   in order to be able to build some C code.
   waf code is dropped into the compilee's build tree, so it does not benefit
   from updated versions and bugfixes.
 
-  Alternatives: [gnu make][14]
+Alternatives: [mk][14], [gnu make][15]
 
 [11]: http://www.cmake.org/
 [12]: https://code.google.com/p/waf/
 [13]: http://www.scons.org/
-[14]: https://www.gnu.org/software/make/
+[14]: http://doc.cat-v.org/plan_9/4th_edition/papers/mk
+[15]: https://www.gnu.org/software/make/
 
 Programs
 --------
 There are many broken X programs. Go bug the developers of these broken
 programs to fix them. Here are some of the main causes of this brokenness:
 
-* The program assumes a specific window management model, i.e.
+* The program assumes a specific window management model, e.g.
   assumes you are using a WIMP-window manager like those
-  found in KDE or Gnome. This assumption breaks the 
+  found in KDE or Gnome. This assumption breaks the
   [ICCCM conventions][icccm].
 * The application uses a fixed size - this limitation does not fit
   into the world of tiling window managers very well, and can also be
@@ -101,7 +100,7 @@ The following programs are broken (see [rocking stuff](/rocks) for saner alterna
 * gthumb
 * mplayer with GUI (assumes special window management model. It works without the GUI)
 * xine (same as xmms)
-* aterm (doesn't like being resized by the WM), See [aterm-ml-post][aterm-ml-post]  
+* aterm (doesn't like being resized by the WM), See [aterm-ml-post][aterm-ml-post]
 	Alternatives: (u)xterm, urxvt, [st][st], [uuterm][uuterm]
 
 See also

@@ -39,20 +39,18 @@ possible to avoid them. If you use them, consider looking for alternatives.
 Build Systems
 -------------
 
-* [cmake][11] - written in C++ but often used to compile C programs.
-  This means that (on a self-bootstrapping system) one needs to compile a C++
-  compiler and cmake just in order to be able to build some C code.
-  It is so huge and bloated that compilation takes more time than compiling
-  GCC (!).
+* [cmake][11] (written in C++) - It is so huge and bloated that compilation
+  takes more time than compiling GCC (!).
   It's not even possible to use it to create freestanding Makefiles, since
   the generated Makefiles call back into the cmake binary itself.
 
-* [waf][12] and [scons][13] - both written in Python but often used to compile
-  C programs.
-  This means that (on a self-bootstrapping system) one needs to compile Python
-  in order to be able to build some C code.
-  waf code is dropped into the compilee's build tree, so it does not benefit
-  from updated versions and bugfixes.
+* [waf][12] and [scons][13] (both written in Python) - waf code is dropped
+  into the compilee's build tree, so it does not benefit from updated versions
+  and bugfixes.
+
+As these build systems are often used to compile C programs, one has to set up a
+C++ compiler or Python interpreter respectively just in order to be able to build
+some C code.
 
 Alternatives: [mk][14], [gnu make][15]
 

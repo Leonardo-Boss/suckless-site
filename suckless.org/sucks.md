@@ -39,10 +39,10 @@ possible to avoid them. If you use them, consider looking for alternatives.
 Build Systems
 -------------
 
-* [cmake][11] (written in C++) - It is so huge and bloated that compilation
-  takes more time than compiling GCC (!).
-  It's not even possible to use it to create freestanding Makefiles, since
-  the generated Makefiles call back into the cmake binary itself.
+* [cmake][11] (written in C++) - so huge and bloated, compilation takes longer
+  than compiling GCC (!).
+  It's not even possible to create freestanding Makefiles, since the generated
+  Makefiles call back into the cmake binary itself.
 
 * [waf][12] and [scons][13] (both written in Python) - waf code is dropped
   into the compilee's build tree, so it does not benefit from updated versions
@@ -65,22 +65,22 @@ Programs
 There are many broken X programs. Go bug the developers of these broken
 programs to fix them. Here are some of the main causes of this brokenness:
 
-* The program assumes a specific window management model, e.g.
+* The program **assumes a specific window management model**, e.g.
   assumes you are using a WIMP-window manager like those
   found in KDE or Gnome. This assumption breaks the
   [ICCCM conventions][icccm].
-* The application uses a fixed size - this limitation does not fit
+* The application uses a **fixed size** - this limitation does not fit
   into the world of tiling window managers very well, and can also be
   seen as breaking the ICCCM conventions, because a fixed sized window
   assumes a specific window management model as well (though the ICCCM
   does not forbid fixed-size windows). In any case, the ICCCM requests
   that clients accept any size the window manager proposes to them.
-* The program is based on strange non-standard window manager
-  hints that only work properly with a window manager supporting these
+* The program is based on strange **non-standard window manager
+  hints** that only work properly with a window manager supporting these
   extensions - this simply breaks the ICCCM as well. E.g. trash icon
   programs.
-* The program does not conform to ICCCM due to some missing or
-  improperly set hints.
+* The program does not conform to ICCCM due to some **missing or
+  improperly set hints**.
 
 Workarounds
 -----------
@@ -90,16 +90,10 @@ floating mode.
 
 The following programs are broken (see [rocking stuff](/rocks) for saner alternatives):
 
-* XMMS (assumes fixed size, doesn't set transient\_for hint properly)
-* Xchat
-* [Firefox](http://www.mozilla.org/products/firefox) (doesn't set the TRANSIENT\_FOR hint correctly on its download dialog)
-* beep-media-player
-* gqview
-* gthumb
+* [Firefox](http://www.mozilla.org/products/firefox) (doesn't set the TRANSIENT\_FOR
+  hint correctly on its download dialog)
 * mplayer with GUI (assumes special window management model. It works without the GUI)
-* xine (same as xmms)
-* aterm (doesn't like being resized by the WM), See [aterm-ml-post][aterm-ml-post]
-	Alternatives: (u)xterm, urxvt, [st][st], [uuterm][uuterm]
+* xine
 
 See also
 --------

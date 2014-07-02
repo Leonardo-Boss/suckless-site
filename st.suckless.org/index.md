@@ -1,6 +1,6 @@
 st is a simple terminal implementation for X.
 
-->[![Screenshot of dwm & st](screenshots/20h-2012s.png)](screenshots/20h-2012.png)<-
+->[![Screenshot of dwm & st](screenshots/20h-2012-s.png)](screenshots/20h-2012.png)<-
 
 What is wrong with xterm?
 -------------------------

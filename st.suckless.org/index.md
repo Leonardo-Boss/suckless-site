@@ -1,6 +1,6 @@
 st is a simple terminal implementation for X.
 
-<a href="http://st.suckless.org/screenshots/20h-2012.png" title="dwm &amp; st"><img src="http://st.suckless.org/screenshots/20h-2012.png" width="500" height="313" alt="dwm &amp; st" /></a>
+->[![Screenshot of dwm & st](screenshots/20h-2012s.png)](screenshots/20h-2012.png)<-
 
 What is wrong with xterm?
 -------------------------

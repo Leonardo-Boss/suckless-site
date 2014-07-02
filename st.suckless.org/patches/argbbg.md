@@ -1,7 +1,7 @@
 argbbg
 ======
 
-[![Screenshot](st-argbbg.png)](st-argbbg.png)
+->[![Screenshot](st-argbbg-s.png)](st-argbbg.png)<-
 
 ## Description ##
 This patch allows users to change the opacity of the background.

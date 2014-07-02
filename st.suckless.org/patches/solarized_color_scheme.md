@@ -29,8 +29,8 @@ You find more information in my [thread][2] at the arch linux forums.
 Example
 -------
 
-[![Screenshot](st-solarized-light.png)](st-solarized-light.png)
-[![Screenshot](st-solarized-dark.png)](st-solarized-dark.png)
+->[![Screenshot](st-solarized-light-s.png)](st-solarized-light.png)<-
+->[![Screenshot](st-solarized-dark-s.png)](st-solarized-dark.png)<-
 
 The font is [Source Code Pro][6].
 

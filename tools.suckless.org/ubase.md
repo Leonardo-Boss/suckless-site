@@ -34,6 +34,7 @@ The following programs are currently implemented:
 * pidof
 * pivot_root
 * ps
+* readahead
 * respawn
 * rmmod
 * stat

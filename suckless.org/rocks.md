@@ -188,3 +188,7 @@ Gopher Servers
 --------------
 * [geomyidae](http://www.r-36.net/src/geomyidae/) - small gopher-daemon written by 20h
 
+
+Misc Daemons
+------------
+* [scron](http://git.2f30.org/scron/) - simple crond.

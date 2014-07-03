@@ -11,14 +11,14 @@ Saturday 22 June 2013
         Room A027 / Raum A027
 
 
-![foto](/slcon2013.png)
+->[![slcon2013 group photo](slcon2013-s.png)](slcon2013.png)<-
 
 Talks
 -----
 * 10.00am-10.40am: Welcome the future of dwm, Anselm R Garbe
 
         Anselm presented his plan about the next steps of the dwm
-        development. Stripped down videos can be found at 
+        development. Stripped down videos can be found at
         http://mirror.netbeisser.de/slcon2013
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/qvmYo7Bhm0Y" frameborder="0" allowfullscreen></iframe>

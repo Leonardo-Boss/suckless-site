@@ -1,3 +1,5 @@
+![st](st.png)
+
 st is a simple terminal implementation for X.
 
 ->[![Screenshot of dwm & st](screenshots/20h-2012-s.png)](screenshots/20h-2012.png)<-

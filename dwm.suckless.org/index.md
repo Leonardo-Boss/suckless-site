@@ -1,4 +1,4 @@
-![dwm](/dwm.png)
+![dwm](dwm.svg)
 
 dwm is a dynamic window manager for X. It manages windows in tiled,
 monocle and floating layouts. All of the layouts can be applied

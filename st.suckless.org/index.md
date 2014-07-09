@@ -1,4 +1,4 @@
-![st](st.png)
+![st](st.svg)
 
 st is a simple terminal implementation for X.
 

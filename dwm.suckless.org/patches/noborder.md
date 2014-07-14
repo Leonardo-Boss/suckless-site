@@ -5,6 +5,9 @@ Description
 -----------
 This patch removes the border when there is just one window visible in tiled or monocle layout.
 
+For an alternative that works with most layouts without any layout-specific
+changes, check out [better borders](http://dwm.suckless.org/patches/better-borders).
+
 Download
 --------
 Patches against different versions of dwm are available at

@@ -1,9 +1,9 @@
 /*
  * bar_monitor.c - another version of dwmstatus. 
  *
- * Written by: levi0x0 (levi0x0x@gmail.com) for dwm.
+ * Written by: levi0x0 (levi0x0x[AT]gmail[DOT]com) for dwm.
  * Date: 19/07/2014, 02/07/2014
- * Version: 0.4
+ * Version: 0.5
  * License: GPL 3
  *
  * What it's Displays::

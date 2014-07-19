@@ -2,7 +2,7 @@
  * bar_monitor.c - another version of dwmstatus. 
  *
  * Written by: levi0x0 (levi0x0x@gmail.com) for dwm.
- * Date: 02/07/2014
+ * Date: 19/07/2014, 02/07/2014
  * Version: 0.4
  * License: GPL 3
  *
@@ -11,6 +11,7 @@
  * 	2. temerature
  * 	3. wireless Status.
  * 	4. battery status.
+ * 	5. Uptime (Optional)
  *
  * if you are not using laptop, please define: LAPTOP 0 
  * 
@@ -33,6 +34,7 @@
 
 
 #include <stdio.h>
+#include <sys/sysinfo.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
@@ -49,12 +51,18 @@
 #define pcapacity	open_capacity()
 #define temp	read_temp()
 #define nett	net()
-#define LAPTOP	1
 
+/*
+1 - True
+0 - False
+*/
+#define LAPTOP	1
+#define DISPLAY_UPTIME	0
 
 static char status_linecp[STR_SIZE];
 static char time_buffer[STR_SIZE];
 static char net_buffer[STR_SIZE];
+static char uptime[STR_SIZE];
 int capacity;
 
 /*prototypes*/
@@ -88,8 +96,21 @@ int main(int argc, char **argv) {
 		printf("w00t?\n");
 
 	}
+	
+	#if DISPLAY_UPTIME
+		struct sysinfo sys;
+		int h = 0;
+		int m = 0;
+
+		sysinfo(&sys);
+
+		h = sys.uptime / 3600;
+		m = ( sys.uptime - h * 3600) / 60;
+		printf(" (%dh, %dm)", h, m);
+	#endif 
+
 	#if LAPTOP
-		printf(" %s %dC %s", nett,temp, date);
+		printf(" %s %dC %s", nett,temp, date); 
 	#else
 		printf(" %dC %s", temp, date);
 	#endif

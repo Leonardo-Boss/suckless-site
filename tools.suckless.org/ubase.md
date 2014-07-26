@@ -25,6 +25,7 @@ The following programs are currently implemented:
 * login
 * lsmod
 * lsusb
+* mesg
 * mknod
 * mkswap
 * mount

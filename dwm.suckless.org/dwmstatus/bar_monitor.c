@@ -2,8 +2,8 @@
  * bar_monitor.c - another version of dwmstatus. 
  *
  * Written by: levi0x0 (levi0x0x[AT]gmail[DOT]com) for dwm.
- * Date: 19/07/2014, 02/07/2014
- * Version: 0.5
+ * Date: 08/08/2014, 19/07/2014, 02/07/2014
+ * Version: 0.6
  * License: GPL 3
  *
  * What it's Displays::
@@ -12,6 +12,9 @@
  * 	3. wireless Status.
  * 	4. battery status.
  * 	5. Uptime (Optional)
+ * 	6. Kernel Options.
+ *
+ *  the bar_monitor.c Written Under Archlinux (x86_64) and Works for me.
  *
  * if you are not using laptop, please define: LAPTOP 0 
  * 
@@ -32,9 +35,10 @@
  *
  */
 
-
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <sys/sysinfo.h>
+#include <sys/utsname.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
@@ -57,7 +61,14 @@
 0 - False
 */
 #define LAPTOP	1
-#define DISPLAY_UPTIME	0
+#define DISPLAY_UPTIME	1 //display uptime
+#define DISPLAY_KERNEL	1 //display kernel bar
+#define DISPLAY_KVER	0 //display kernel version
+#define DISPLAY_SYSNAME 0 //display system name
+#define DISPLAY_NODENAME 0
+#define DISPLAY_ARCH 1 //display Machine
+#define SLEEP	1 //contain sleep(1) fucntion by default
+#define battery 1 //Display battery level
 
 static char status_linecp[STR_SIZE];
 static char time_buffer[STR_SIZE];
@@ -73,30 +84,32 @@ int open_capacity(void);
 int read_temp(void);
 
 int main(int argc, char **argv) {
-	if (!strcmp(status, "Discharging")) {
-		//printf("[%d%], Discharging\n", pcapacity);	
-		if ( pcapacity < 10 ) {	
-			printf("%d%% **Low Battery**", pcapacity);
+	#if battery
+		if (!strcmp(status, "Discharging")) {
+			//printf("[%d%], Discharging\n", pcapacity);	
+			if ( pcapacity < 10 ) {	
+				printf("%d%% **Low Battery**", pcapacity);
+			}
+			else {
+				printf("%d%%", pcapacity);
+			}
 		}
-		else {
+
+		else if (!strcmp(status, "Charging")) {
+			//printf("[%d%], Charging\n", pcapacity);	
 			printf("%d%%", pcapacity);
 		}
-	}
+		else if (!strcmp(status, "Full")) {
+			printf("[Full]");
 
-	else if (!strcmp(status, "Charging")) {
-		//printf("[%d%], Charging\n", pcapacity);	
-		printf("%d%%", pcapacity);
-	}
-	else if (!strcmp(status, "Full")) {
-		printf("[Full]");
+		}
+		else {
+			//What?! the program can't read the battery status
+			printf("w00t?\n");
 
-	}
-	else {
-		//What?! the program can't read the battery status
-		printf("w00t?\n");
+		}
+	#endif 
 
-	}
-	
 	#if DISPLAY_UPTIME
 		struct sysinfo sys;
 		int h = 0;
@@ -109,14 +122,35 @@ int main(int argc, char **argv) {
 		printf(" (%dh, %dm)", h, m);
 	#endif 
 
+	
+	/*
+	 * it will only display one of the Options,
+	 * We need to save space for the title.
+	 */
+	#if DISPLAY_KERNEL
+		struct utsname name;
+		uname(&name);
+
+		#if DISPLAY_KVER
+			printf(" %s", name.release);
+		#elif DISPLAY_SYSNAME
+			printf(" %s", name.sysname);
+		#elif DISPLAY_NODENAME
+			printf(" %s", name.nodename);
+		#elif DISPLAY_ARCH
+			printf(" %s", name.machine);
+		#endif
+	#endif
+
 	#if LAPTOP
 		printf(" %s %dC %s", nett,temp, date); 
 	#else
 		printf(" %dC %s", temp, date);
 	#endif
 
-	sleep(1);
-
+	#if SLEEP
+		sleep(1);
+	#endif
 	return 0;
 }
 

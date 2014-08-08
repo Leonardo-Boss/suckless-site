@@ -3,7 +3,7 @@
  *
  * Written by: levi0x0 (levi0x0x[AT]gmail[DOT]com) for dwm.
  * Date: 08/08/2014, 19/07/2014, 02/07/2014
- * Version: 0.6
+ * Version: 0.7
  * License: GPL 3
  *
  * What it's Displays::
@@ -13,7 +13,7 @@
  * 	4. battery status.
  * 	5. Uptime (Optional)
  * 	6. Kernel Options.
- *
+ *	7. proc number
  *  the bar_monitor.c Written Under Archlinux (x86_64) and Works for me.
  *
  * if you are not using laptop, please define: LAPTOP 0 
@@ -49,7 +49,7 @@
 #define net_file	"/proc/net/wireless"
 #define temp_file	"/sys/class/hwmon/hwmon0/temp1_input"
 #define STR_SIZE 30
-#define TIME_FORMAT	"%H:%M %d-%m-%y"
+#define TIME_FORMAT	"%H:%M | %d-%m-%y"
 #define date	read_date()
 #define status	open_status()
 #define pcapacity	open_capacity()
@@ -61,12 +61,18 @@
 0 - False
 */
 #define LAPTOP	1
-#define DISPLAY_UPTIME	1 //display uptime
-#define DISPLAY_KERNEL	1 //display kernel bar
+#define DISPLAY_SYS	1
+/*SECTION: You can enable only one of the options!*/
+/*sys section uptime, procs*/
+#define DISPLAY_PROC 1 // display proc number
+#define DISPLAY_UPTIME	0 //display uptime
+/*kernel section*/
+#define DISPLAY_KERNEL	1
 #define DISPLAY_KVER	0 //display kernel version
 #define DISPLAY_SYSNAME 0 //display system name
 #define DISPLAY_NODENAME 0
 #define DISPLAY_ARCH 1 //display Machine
+/*system*/
 #define SLEEP	1 //contain sleep(1) fucntion by default
 #define battery 1 //Display battery level
 
@@ -88,38 +94,45 @@ int main(int argc, char **argv) {
 		if (!strcmp(status, "Discharging")) {
 			//printf("[%d%], Discharging\n", pcapacity);	
 			if ( pcapacity < 10 ) {	
-				printf("%d%% **Low Battery**", pcapacity);
+				printf(" %d%% **Low Battery**", pcapacity);
 			}
 			else {
-				printf("%d%%", pcapacity);
+				printf(" %d%%", pcapacity);
 			}
 		}
 
 		else if (!strcmp(status, "Charging")) {
 			//printf("[%d%], Charging\n", pcapacity);	
-			printf("%d%%", pcapacity);
+			printf(" %d%%", pcapacity);
 		}
 		else if (!strcmp(status, "Full")) {
-			printf("[Full]");
+			printf(" [Full]");
 
 		}
 		else {
 			//What?! the program can't read the battery status
-			printf("w00t?\n");
+			printf(" w00t?\n");
 
 		}
 	#endif 
 
-	#if DISPLAY_UPTIME
+	#if DISPLAY_SYS
 		struct sysinfo sys;
 		int h = 0;
 		int m = 0;
 
 		sysinfo(&sys);
+		
 
-		h = sys.uptime / 3600;
-		m = ( sys.uptime - h * 3600) / 60;
-		printf(" (%dh, %dm)", h, m);
+		#if DISPLAY_UPTIME
+			h = sys.uptime / 3600;
+			m = ( sys.uptime - h * 3600) / 60;
+			printf(" | (%dh, %dm) |", h, m);
+		#elif DISPLAY_PROC
+			int procs = 0;
+
+			printf("| %dP | ", sys.procs);
+		#endif
 	#endif 
 
 	
@@ -143,9 +156,9 @@ int main(int argc, char **argv) {
 	#endif
 
 	#if LAPTOP
-		printf(" %s %dC %s", nett,temp, date); 
+		printf(" | %s | %dC | %s", nett,temp, date); 
 	#else
-		printf(" %dC %s", temp, date);
+		printf(" | %dC | %s", temp, date);
 	#endif
 
 	#if SLEEP

@@ -10,8 +10,11 @@ actual query, e.g. 'w pancakes' would search en.wikipedia.org for the string
 'pancakes'. This reduces the necessary shell plumbing to a couple of pipes
 and a case statement.
 
-Character ugliness in the query is avoided using xxd, tr, and sed. This
+Character ugliness in the query is avoided using od and tr. This
 has worked so far.
+
+**EDIT:** Replaced xxd with od and eliminated a sed pipe. Replaced cut pipes
+with sh variable expansion.
 
 Author
 ------
@@ -30,31 +33,18 @@ Code
 	#!/bin/sh
 	#
 	# surf_qsearch:
-	# Search engine script for surf. Takes the surf window id as argument.
-	# POSIX compliant and GNU-free, I think.
-	#
-	# Add something like the following to your surf/config.(def.)h, replacing
-	# surf_qsearch with the name of the file you've copied this code into:
-	#
-	# /* Quick searching. */
-	# #define QSEARCH { \
-	#     .v = (char *[]){"/bin/sh", "-c", "surf_qsearch $0 $1", winid, NULL } \
-	# }
-	#
-	# Add a keybinding in keys[]:
-	#
-	# { MODKEY, GDK_q, spawn, QSEARCH },
-	#
+	# Search script for surf. Takes the surf window id as argument.
 
-	# Get the full query. The 'echo | dmenu' idiom may be a bit of a hack.
-	q="$(echo | dmenu -p 'Search')"
+	# Get the full query. The 'echo | dmenu' idiom may be a bit of
+	# a hack, but it seems to work.
+	q="$(echo | dmenu)"
 	[ -z "$q" ] && exit 0
 
 	# Extract the engine code.
-	e=$(printf %s "$q" | cut -c 1)
+	e="${q%% *}"
 
 	# Encode the search string (i.e. the rest of q)
-	s=$(printf %s "$q" | cut -c 3- | xxd -plain | tr -d '\n' | sed 's/\(..\)/%\1/g')
+	s=$(printf %s "${q#* }" | od -t x1 -An | tr -d '\n' | tr ' ' '%')
 
 	# These are examples. Change as desired.
 	# 's' = startpage.com

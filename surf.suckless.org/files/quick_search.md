@@ -34,6 +34,20 @@ Code
 	#
 	# surf_qsearch:
 	# Search script for surf. Takes the surf window id as argument.
+	# POSIX compliant and GNU-free, I think.
+	#
+	# Add something like the following to your surf/config.(def.)h, replacing
+	# surf_qsearch with the name of the file you've copied this code into:
+	#
+	# /* Quick searching. */
+	# #define QSEARCH { \
+	#     .v = (char *[]){"/bin/sh", "-c", "surf_qsearch $0 $1", winid, NULL } \
+	# }
+	#
+	# Add a keybinding in keys[]:
+	#
+	# { MODKEY, GDK_q, spawn, QSEARCH },
+	#
 
 	# Get the full query. The 'echo | dmenu' idiom may be a bit of
 	# a hack, but it seems to work.
@@ -43,7 +57,10 @@ Code
 	# Extract the engine code.
 	e="${q%% *}"
 
-	# Encode the search string (i.e. the rest of q)
+	# Encode the search string (i.e. the rest of q). xxd was formerly used
+	# here, but xxd is part of vim packages on some systems, whereas od is
+	# ubiquitous. A search script that breaks if someone accidentally removes
+	# vim is stupid.
 	s=$(printf %s "${q#* }" | od -t x1 -An | tr -d '\n' | tr ' ' '%')
 
 	# These are examples. Change as desired.

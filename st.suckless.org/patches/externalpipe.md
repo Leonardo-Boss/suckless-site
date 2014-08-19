@@ -26,10 +26,12 @@ Download
 --------
 
 * [st-0.4.1-externalpipe.diff][0]
+* [st-0.5-externalpipe.diff][3]
 
 [0]: st-0.4.1-externalpipe.diff
 [1]: https://raw.github.com/bobrippling/perlbin/master/xurls
 [2]: https://github.com/bobrippling/open
+[3]: http://witsquash.com/~marty/st-0.5-externalpipe.diff
 
 
 Author

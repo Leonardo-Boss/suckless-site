@@ -5,7 +5,7 @@ sinit is a simple init, initially based on Rich Felker's minimal [init](https://
 
 Download
 --------
-* [sinit 0.9](http://dl.suckless.org/sinit/sinit-0.9.tar.gz) (2.5kB) (20140418)
+* [sinit 0.9.1](http://dl.suckless.org/sinit/sinit-0.9.1.tar.gz) (3kB) (20140805)
 
 Development
 -----------

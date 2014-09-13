@@ -1,36 +1,24 @@
 /*
  * bar_monitor.c - another version of dwmstatus. 
  *
- * Written by: levi0x0 (levi0x0x[AT]gmail[DOT]com) for dwm.
- * Date: 08/08/2014, 19/07/2014, 02/07/2014
- * Version: 0.7
- * License: GPL 3
+ *  Author: levi0x0.
  *
- * What it's Displays::
- * 	1. time/date
- * 	2. temerature
- * 	3. wireless Status.
- * 	4. battery status.
- * 	5. Uptime (Optional)
- * 	6. Kernel Options.
- *	7. proc number
- *  the bar_monitor.c Written Under Archlinux (x86_64) and Works for me.
+ * ChangeLog:
+ * 	 13/09/2014, - 0.8
+ * 	 08/08/2014, - 0.7
+ * 	 19/07/2014, - 0.3
+ * 	 02/07/2014, - 0.1
  *
- * if you are not using laptop, please define: LAPTOP 0 
- * 
- * ** Using with .xinitrc **:
+ * .xinitrc:
  *
  * 	while [ true ];do
- * 		bar=`bar_monitor`
- * 		xsetroot -name "$bar"
+ * 		xsetroot -name "$(bar_monitor)"
  * 	done &
  *
  * bar_monitor contain sleep(1) function.
- * if you want to add more functions to bar_monitor,
- * please let me know.
+ *
  *
  * gcc bar_monitor.c -o bar_monitor
- * 
  * mv bar_monitor /usr/local/bin/bar_monitor
  *
  */
@@ -60,18 +48,20 @@
 1 - True
 0 - False
 */
-#define LAPTOP	1
+#define NET	0
 #define DISPLAY_SYS	1
+/*short bar*/
+#define SHORT	1
 /*SECTION: You can enable only one of the options!*/
 /*sys section uptime, procs*/
-#define DISPLAY_PROC 1 // display proc number
+#define DISPLAY_PROC 0 // display proc number
 #define DISPLAY_UPTIME	0 //display uptime
 /*kernel section*/
 #define DISPLAY_KERNEL	1
 #define DISPLAY_KVER	0 //display kernel version
 #define DISPLAY_SYSNAME 0 //display system name
-#define DISPLAY_NODENAME 0
-#define DISPLAY_ARCH 1 //display Machine
+#define DISPLAY_NODENAME 1
+#define DISPLAY_ARCH 0 //display Machine
 /*system*/
 #define SLEEP	1 //contain sleep(1) fucntion by default
 #define battery 1 //Display battery level
@@ -145,17 +135,17 @@ int main(int argc, char **argv) {
 		uname(&name);
 
 		#if DISPLAY_KVER
-			printf(" %s", name.release);
+			printf(" | %s", name.release);
 		#elif DISPLAY_SYSNAME
-			printf(" %s", name.sysname);
+			printf(" | %s", name.sysname);
 		#elif DISPLAY_NODENAME
-			printf(" %s", name.nodename);
+			printf(" | %s", name.nodename);
 		#elif DISPLAY_ARCH
-			printf(" %s", name.machine);
+			printf(" | %s", name.machine);
 		#endif
 	#endif
 
-	#if LAPTOP
+	#if NET
 		printf(" | %s | %dC | %s", nett,temp, date); 
 	#else
 		printf(" | %dC | %s", temp, date);

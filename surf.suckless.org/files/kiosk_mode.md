@@ -45,7 +45,7 @@ Login manager
 
 As the accounts are locked we need to enable auto login in the login
 manager. To make sure the correct window manager is started we add this
-in '/etc/lxdm/lxdm.cond', too.
+in '/etc/lxdm/lxdm.conf', too.
 
         autologin=kiosk
         session=i3

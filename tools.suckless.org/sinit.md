@@ -14,8 +14,7 @@ a copy using the following command:
 
 `git clone http://git.suckless.org/sinit`
 
-sinit is currently considered complete and finished, no further development is
-expected to happen.
+sinit is considered complete and no further development is expected to happen.
 
 Contact
 -------

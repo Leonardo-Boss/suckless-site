@@ -42,6 +42,7 @@ The following programs are currently implemented:
 * nohup
 * paste
 * printenv
+* printf
 * pwd
 * readlink
 * renice

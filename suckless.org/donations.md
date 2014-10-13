@@ -24,9 +24,17 @@ Following people have donated to the suckless.org project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
-* Dimitris Papastamos donated <b>30 GBP</b>
+* Surin Anton donated <b>20 USD</b>
+* Eero Molkoselkä donated <b>10 EUR</b>
+* Dimitrios Papastamos donated <b>30 GBP</b>
+* Azer Koculu donated <b>30 UDS</b>
+* Wolfgang Corcoran-Mathe donated <b>10 USD</b>
+* Moritz Lotze donated <b>10 EUR</b>
+* Variable Scope Solutions donated <b>25 CAD</b>
+* Ashley Kesling donated <b>10 USD</b>
+* Patrick Bucher donated <b>50 CHF</b>
 * Raphael Proust donated <b>50 GBP</b>
-* Silvan Jegen donated <b>50 EUR</b>
+* Silvan Jegen donated <b>75 EUR</b>
 * Sebastian Lacombe donated <b>25 CAD</b>
 * Robert Halbert donated <b>5 GBP</b>
 * Gordon Celesta donated <b>25 CAD</b>

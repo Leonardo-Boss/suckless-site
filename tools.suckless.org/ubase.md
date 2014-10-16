@@ -3,53 +3,8 @@ ubase
 ubase is a collection of tools similar in spirit to util-linux but
 much simpler.
 
-The following programs are currently implemented:
-
-* chvt
-* clear
-* ctrlaltdel
-* dd
-* df
-* dmesg
-* eject
-* fallocate
-* free
-* freeramdisk
-* fsfreeze
-* getty
-* halt
-* hwclock
-* id
-* insmod
-* killall5
-* login
-* lsmod
-* lsusb
-* mesg
-* mknod
-* mkswap
-* mount
-* mountpoint
-* pagesize
-* passwd
-* pidof
-* pivot_root
-* ps
-* readahead
-* respawn
-* rmmod
-* stat
-* su
-* swapoff
-* swapon
-* switch_root
-* sysctl
-* truncate
-* umount
-* unshare
-* uptime
-* watch
-* who
+For a list of tools that are currently implemented, please refer
+to the [README](http://git.suckless.org/ubase/tree/README).
 
 Download
 --------

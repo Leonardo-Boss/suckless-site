@@ -10,7 +10,7 @@ the available URLs.
 Download
 --------
 
-* [st-git-copyurl.diff](st-git-copyurl.diff)
+* [st-git-copyurl.diff](http://jangler.info/code/st-git-copyurl.diff)
 
 Author
 ------

@@ -74,8 +74,6 @@
 #define LAPTOP  0
 
 #if LAPTOP
-	#define SHOW_BATTERY  0
-	#define SHOW_TEMP   0
 	#define TEMP_FILE	"/sys/class/hwmon/hwmon0/temp1_input"
 	
     /* BAT1 or BAT0 change if needed*/
@@ -126,8 +124,8 @@ int main(int argc, char **argv) {
         #endif
  
         #if LAPTOP
-                sprintf(status, "( %d%%m %s ) (%d) %s", ReadBatteryCap, 
-                                ReadBatteryStat, Newmail, TimeADate());
+                sprintf(status, "(%dc) ( %d%%m %s ) (%d) %s", ReadTemp(), ReadBatteryCap(), 
+                                ReadBatteryStat(), Newmail, TimeADate());
                 XSetRoot(status);
         #else
                 sprintf(status, "(%d) %s", Newmail, TimeADate());

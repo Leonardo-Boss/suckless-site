@@ -71,7 +71,7 @@ this will move active window in specified direction and perform the action, desc
 Download
 --------
 
- * [dwm-6.1-taggrid.diff](dwm-6.1-xkb.diff) (2014-02-16)
+ * [dwm-6.1-taggrid.diff](dwm-6.1-taggrid.diff) (2014-02-16)
 
 Author
 ------

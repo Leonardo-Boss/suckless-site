@@ -10,13 +10,16 @@
  * 
  *
  * XXX:
- *  IN VERSION 0.9 I DIDN'T CHECKED bar_monitor ON a LAPTOP
+ *  IN VERSION 0.9/10 I DIDN'T CHECKED bar_monitor ON a LAPTOP
  *  IF YOU FOUND ANY BUGS PLEASE LET ME KNOW!
  *
  *-----------
  *  News:
  *-----------
- *      What's New in Version 0.9?
+ *       13-11-2014 - version 0.10 added utsname options
+ *--------------------------------------------------------
+ *
+ *      07-11-2014 - What's New in Version 0.9?
  *
  *      1) Check Mail function for gmail using libcurl!
  *      2) a Laptop Support 
@@ -25,9 +28,10 @@
  *     
  *     And many more!
  *
- *-------------
+ *---------------------------------------------------------
  * ChangeLog:
  * ------------
+ * 	 13/11/2014, - 0.10
  * 	 07/11/2014, - 0.9
  * 	 13/09/2014, - 0.8
  * 	 08/08/2014, - 0.7
@@ -62,13 +66,16 @@
 #include <time.h>
 #include <string.h>
 #include <X11/Xlib.h>
+#include <sys/utsname.h>
 
 /* globals*/
 #define VERSION "0.9"
 #define TIME_FORMAT "%H:%M (%d/%m/%Y)"
 #define MEXSTR  1024
 #define CHECK_GMAIL_MAIL  0
-
+#define SHOW_MACHINE    0
+#define SHOW_KERNEL 1
+#define SHOW_NODENAME 0
 
 /* Laptop config*/
 #define LAPTOP  0
@@ -104,6 +111,7 @@
 /* Variables */
 static char buffer[MEXSTR];
 static char data_size[MEXSTR];
+static char UNnamebuffer[MEXSTR];
 
 /* functions prototypes */
 char * TimeADate(void);
@@ -112,6 +120,7 @@ void XSetRoot(char *);
 int main(int argc, char **argv) {
         char status[MEXSTR];
         int Newmail = 0;
+        struct utsname s;
 
         #if CHECK_GMAIL_MAIL
                 CheckGmail();
@@ -122,21 +131,32 @@ int main(int argc, char **argv) {
                 else
                         Newmail = 0;
         #endif
- 
+        uname(&s);
+
+        #if SHOW_KERNEL
+                strcat(UNnamebuffer, s.release);    
+        #elif SHOW_MACHINE
+                strcat(UNnamebuffer, s.machine);
+        #elif SHOW_NODENAME
+                strcat(UNnamebuffer, s.nodename);
+        #elif SHOW_SYSNAME
+                strcat(UNnamebuffer, s.sysname);
+        #else
+                strcat(UNnamebuffer, s.nodename);
+        #endif
+
         #if LAPTOP
-                sprintf(status, "(%dc) ( %d%%m %s ) (%d) %s", ReadTemp(), ReadBatteryCap(), 
+                sprintf(status, "(%s) (%dc) ( %d%%, %s ) (%d) %s", UNnamebuffer, ReadTemp(), ReadBatteryCap(), 
                                 ReadBatteryStat(), Newmail, TimeADate());
                 XSetRoot(status);
         #else
-                sprintf(status, "(%d) %s", Newmail, TimeADate());
+                sprintf(status, "(%s) (%d) %s", UNnamebuffer, Newmail, TimeADate());
                 XSetRoot(status);
         #endif
          
  
 
-        /* Sleep function sleep 30 sec and update the bar_monitor
-         * you can inc/dec */
-        sleep(30);
+        sleep(1);
 
         return 0;
 }

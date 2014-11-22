@@ -1,0 +1,253 @@
+From 5f1755d241d386c48175b95dd78eab3990c9798d Mon Sep 17 00:00:00 2001
+From: Markus Teich <markus.teich@stusta.mhn.de>
+Date: Mon, 17 Nov 2014 02:09:53 +0100
+Subject: [PATCH] add per-site user styles
+
+since the css domain selectors do not work in webkit, another approach needs to
+be taken to support custom css for specific sites. In config.h there is now a
+list of regexes and corresponding css filenames. When a page is loaded and
+userstyles are active, the first entry that matches the uri is used as
+user-stylesheet-uri. The old static stylesheet is removed but can still be used
+by installing a default rule matching any site at the end of the list.
+---
+ config.def.h |  8 +++++++-
+ surf.1       |  9 +--------
+ surf.c       | 56 ++++++++++++++++++++++++++++++++++++++------------------
+ 3 files changed, 46 insertions(+), 27 deletions(-)
+
+diff --git a/config.def.h b/config.def.h
+index 80a0feb..ebab5bd 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -2,7 +2,6 @@
+ static char *useragent      = "Mozilla/5.0 (X11; U; Unix; en-US) "
+ 	"AppleWebKit/537.15 (KHTML, like Gecko) Chrome/24.0.1295.0 "
+ 	"Safari/537.15 Surf/"VERSION;
+-static char *stylefile      = "~/.surf/style.css";
+ static char *scriptfile     = "~/.surf/script.js";
+ 
+ static Bool kioskmode       = FALSE; /* Ignore shortcuts */
+@@ -51,6 +50,13 @@ static Bool allowgeolocation = TRUE;
+ 
+ #define MODKEY GDK_CONTROL_MASK
+ 
++#define STYLEDIR "~/.surf/styles/"
++static SiteSpecificStyle styles[] = {
++	{ "^https?://[a-z]+\\.wikipedia\\.org", STYLEDIR "wiki.css" },
++	{ "^https?://startpage\\.com",          STYLEDIR "startpage.css" },
++	{ ".*",                                 STYLEDIR "default.css" },
++};
++
+ /* hotkeys */
+ /*
+  * If you use anything else but MODKEY and GDK_SHIFT_MASK, don't forget to
+diff --git a/surf.1 b/surf.1
+index ffb2986..f4940ad 100644
+--- a/surf.1
++++ b/surf.1
+@@ -8,7 +8,6 @@ surf \- simple webkit-based browser
+ .RB [-c\ cookiefile]
+ .RB [-e\ xid]
+ .RB [-r\ scriptfile]
+-.RB [-t\ stylefile]
+ .RB [-u\ useragent]
+ .RB [-z\ zoomlevel]
+ .RB "URI"
+@@ -90,10 +89,6 @@ Disable Javascript
+ .B \-S
+ Enable Javascript
+ .TP
+-.B \-t stylefile
+-Specify the user
+-.I stylefile.
+-.TP
+ .B \-u useragent 
+ Specify the
+ .I useragent
+@@ -194,9 +189,7 @@ Toggle caret browsing. This will reload the page.
+ Toggle auto-loading of images. This will reload the page.
+ .TP
+ .B Ctrl\-Shift\-m
+-Toggle if the
+-.I stylefile 
+-file should be loaded. This will reload the page.
++Toggle if custom styles should be loaded. This will reload the page.
+ .TP
+ .B Ctrl\-Shift\-o
+ Open the Web Inspector (Developer Tools) window for the current page.
+diff --git a/surf.c b/surf.c
+index 6beda59..be280c4 100644
+--- a/surf.c
++++ b/surf.c
+@@ -23,6 +23,7 @@
+ #include <sys/file.h>
+ #include <libgen.h>
+ #include <stdarg.h>
++#include <regex.h>
+ 
+ #include "arg.h"
+ 
+@@ -71,6 +72,12 @@ typedef struct {
+ 
+ G_DEFINE_TYPE(CookieJar, cookiejar, SOUP_TYPE_COOKIE_JAR_TEXT)
+ 
++typedef struct {
++	char *regex;
++	char *style;
++	regex_t re;
++} SiteSpecificStyle;
++
+ static Display *dpy;
+ static Atom atoms[AtomLast];
+ static Client *clients = NULL;
+@@ -127,6 +134,8 @@ static const char *getatom(Client *c, int a);
+ static void gettogglestat(Client *c);
+ static void getpagestat(Client *c);
+ static char *geturi(Client *c);
++static gchar *getstyle(const char *uri);
++
+ static gboolean initdownload(WebKitWebView *v, WebKitDownload *o, Client *c);
+ 
+ static void inspector(Client *c, const Arg *arg);
+@@ -264,7 +273,6 @@ cleanup(void) {
+ 		destroyclient(clients);
+ 	g_free(cookiefile);
+ 	g_free(scriptfile);
+-	g_free(stylefile);
+ }
+ 
+ static void
+@@ -533,6 +541,15 @@ geturi(Client *c) {
+ 	return uri;
+ }
+ 
++static gchar *
++getstyle(const char *uri) {
++	int i;
++	for(i = 0; i < LENGTH(styles); i++)
++		if(styles[i].regex && !regexec(&(styles[i].re), uri, 0, NULL, 0))
++			return g_strconcat("file://", styles[i].style, NULL);
++	return g_strdup("");
++}
++
+ static gboolean
+ initdownload(WebKitWebView *view, WebKitDownload *o, Client *c) {
+ 	Arg arg;
+@@ -629,6 +646,7 @@ loadstatuschange(WebKitWebView *view, GParamSpec *pspec, Client *c) {
+ 	WebKitWebFrame *frame;
+ 	WebKitWebDataSource *src;
+ 	WebKitNetworkRequest *request;
++	WebKitWebSettings *set = webkit_web_view_get_settings(c->view);
+ 	SoupMessage *msg;
+ 	char *uri;
+ 
+@@ -644,6 +662,7 @@ loadstatuschange(WebKitWebView *view, GParamSpec *pspec, Client *c) {
+ 			                & SOUP_MESSAGE_CERTIFICATE_TRUSTED);
+ 		}
+ 		setatom(c, AtomUri, uri);
++		g_object_set(G_OBJECT(set), "user-stylesheet-uri", getstyle(uri), NULL);
+ 		break;
+ 	case WEBKIT_LOAD_FINISHED:
+ 		c->progress = 100;
+@@ -702,7 +721,7 @@ newclient(void) {
+ 	GdkGeometry hints = { 1, 1 };
+ 	GdkScreen *screen;
+ 	gdouble dpi;
+-	char *uri, *ua;
++	char *ua;
+ 
+ 	if(!(c = calloc(1, sizeof(Client))))
+ 		die("Cannot malloc!\n");
+@@ -832,8 +851,6 @@ newclient(void) {
+ 	if(!(ua = getenv("SURF_USERAGENT")))
+ 		ua = useragent;
+ 	g_object_set(G_OBJECT(settings), "user-agent", ua, NULL);
+-	uri = g_strconcat("file://", stylefile, NULL);
+-	g_object_set(G_OBJECT(settings), "user-stylesheet-uri", uri, NULL);
+ 	g_object_set(G_OBJECT(settings), "auto-load-images", loadimages,
+ 			NULL);
+ 	g_object_set(G_OBJECT(settings), "enable-plugins", enableplugins,
+@@ -888,8 +905,6 @@ newclient(void) {
+ 		fullscreen(c, NULL);
+ 	}
+ 
+-	g_free(uri);
+-
+ 	setatom(c, AtomFind, "");
+ 	setatom(c, AtomUri, "about:blank");
+ 	if(hidebackground)
+@@ -1094,6 +1109,7 @@ setatom(Client *c, int a, const char *v) {
+ 
+ static void
+ setup(void) {
++	int i;
+ 	char *proxy;
+ 	char *new_proxy;
+ 	SoupURI *puri;
+@@ -1114,7 +1130,15 @@ setup(void) {
+ 	/* dirs and files */
+ 	cookiefile = buildpath(cookiefile);
+ 	scriptfile = buildpath(scriptfile);
+-	stylefile = buildpath(stylefile);
++
++	/* site specific stylesheet regexes */
++	for(i = 0; i < LENGTH(styles); i++) {
++		if(regcomp(&(styles[i].re), styles[i].regex, REG_EXTENDED)) {
++			fprintf(stderr, "Could not compile regex: %s\n", styles[i].regex);
++			styles[i].regex = NULL;
++		}
++		styles[i].style = buildpath(styles[i].style);
++	}
+ 
+ 	/* request handler */
+ 	s = webkit_get_default_session();
+@@ -1282,13 +1306,12 @@ togglescrollbars(Client *c, const Arg *arg) {
+ 
+ static void
+ togglestyle(Client *c, const Arg *arg) {
+-	WebKitWebSettings *settings;
+-	char *uri;
++	WebKitWebSettings *settings = webkit_web_view_get_settings(c->view);
++	char *path;
+ 
+-	settings = webkit_web_view_get_settings(c->view);
+-	g_object_get(G_OBJECT(settings), "user-stylesheet-uri", &uri, NULL);
+-	uri = uri[0] ? g_strdup("") : g_strconcat("file://", stylefile, NULL);
+-	g_object_set(G_OBJECT(settings), "user-stylesheet-uri", uri, NULL);
++	g_object_get(G_OBJECT(settings), "user-stylesheet-uri", &path, NULL);
++	path = (path && path[0]) ? g_strdup("") : getstyle(geturi(c));
++	g_object_set(G_OBJECT(settings), "user-stylesheet-uri", path, NULL);
+ 
+ 	updatetitle(c);
+ }
+@@ -1318,7 +1341,7 @@ gettogglestat(Client *c){
+ 	togglestat[p++] = value? 'V': 'v';
+ 
+ 	g_object_get(G_OBJECT(settings), "user-stylesheet-uri", &uri, NULL);
+-	togglestat[p++] = uri[0] ? 'M': 'm';
++	togglestat[p++] = (uri && uri[0]) ? 'M': 'm';
+ 
+ 	togglestat[p] = '\0';
+ }
+@@ -1377,7 +1400,7 @@ usage(void) {
+ 	die("usage: %s [-bBfFgGiIkKnNpPsSvx]"
+ 		" [-a cookiepolicies ] "
+ 		" [-c cookiefile] [-e xid] [-r scriptfile]"
+-		" [-t stylefile] [-u useragent] [-z zoomlevel]"
++		" [-u useragent] [-z zoomlevel]"
+ 		" [uri]\n", basename(argv0));
+ }
+ 
+@@ -1472,9 +1495,6 @@ main(int argc, char *argv[]) {
+ 	case 'S':
+ 		enablescripts = 1;
+ 		break;
+-	case 't':
+-		stylefile = EARGF(usage());
+-		break;
+ 	case 'u':
+ 		useragent = EARGF(usage());
+ 		break;
+-- 
+2.0.4
+

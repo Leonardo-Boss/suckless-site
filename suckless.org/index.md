@@ -5,6 +5,13 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2014-11-24
+----------
+There will be a
+[suckless assembly](https://events.ccc.de/congress/2014/wiki/Assembly:Suckless)
+at the [31C3](https://events.ccc.de/congress/2014).  The whole suckless
+community is invited to come, meet and hack!
+
 2014-08-05
 ----------
 [sinit 0.9.1](http://tools.suckless.org/sinit) released: [download](http://dl.suckless.org/sinit/sinit-0.9.1.tar.gz)

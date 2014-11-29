@@ -12,6 +12,10 @@ There will be a
 at the [31C3](https://events.ccc.de/congress/2014).  The whole suckless
 community is invited to come, meet and hack!
 
+2014-11-29
+----------
+[lsw 0.3](http://tools.suckless.org/lsw) released: [download](http://dl.suckless.org/tools/lsw-0.3.tar.gz)
+
 2014-08-05
 ----------
 [sinit 0.9.1](http://tools.suckless.org/sinit) released: [download](http://dl.suckless.org/sinit/sinit-0.9.1.tar.gz)
@@ -86,10 +90,6 @@ RIP
 2011-12-19
 ----------
 [dwm 6.0](http://dwm.suckless.org) released: [download](http://dl.suckless.org/dwm/dwm-6.0.tar.gz)
-
-2011-06-04
-----------
-[lsw 0.2](http://tools.suckless.org/lsw) released: [download](http://dl.suckless.org/tools/lsw-0.2.tar.gz)
 
 2011-05-14
 ----------

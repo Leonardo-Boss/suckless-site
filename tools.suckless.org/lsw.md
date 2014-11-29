@@ -5,4 +5,4 @@ useful for script integration.
 
 Download
 --------
-* [lsw-0.2](http://dl.suckless.org/tools/lsw-0.2.tar.gz) (20110604)
+* [lsw-0.3](http://dl.suckless.org/tools/lsw-0.3.tar.gz) (20141129)

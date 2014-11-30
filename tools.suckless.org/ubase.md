@@ -4,7 +4,7 @@ ubase is a collection of tools similar in spirit to util-linux but
 much simpler.
 
 For a list of tools that are currently implemented, please refer
-to the [README](http://git.suckless.org/ubase/tree/README).
+to the [repo](http://git.suckless.org/ubase/tree/).
 
 Download
 --------

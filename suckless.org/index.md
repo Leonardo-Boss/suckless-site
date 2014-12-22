@@ -12,6 +12,10 @@ There will be a
 at the [31C3](https://events.ccc.de/congress/2014).  The whole suckless
 community is invited to come, meet and hack!
 
+2014-12-22
+----------
+[slock 1.2](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-1.2.tar.gz)
+
 2014-11-29
 ----------
 [lsw 0.3](http://tools.suckless.org/lsw) released: [download](http://dl.suckless.org/tools/lsw-0.3.tar.gz)
@@ -23,10 +27,6 @@ community is invited to come, meet and hack!
 2014-05-01
 ----------
 [ubase 0.1](http://tools.suckless.org/ubase) released: [download](http://dl.suckless.org/ubase/ubase-0.1.tar.gz)
-
-2014-04-18
-----------
-[sinit 0.9](http://tools.suckless.org/sinit) released: [download](http://dl.suckless.org/sinit/sinit-0.9.tar.gz)
 
 2014-04-05
 ----------
@@ -52,10 +52,6 @@ community is invited to come, meet and hack!
 ----------
 We are glad to announce the [slcon 2013](/conference) programme.
 
-2013-03-29
-----------
-[st 0.4](http://st.suckless.org) released: [download](http://dl.suckless.org/st/st-0.4.tar.gz)
-
 2013-02-10
 ----------
 [surf 0.6](http://surf.suckless.org) released: [download](http://dl.suckless.org/surf/surf-0.6.tar.gz)
@@ -69,10 +65,6 @@ repositories. You can find them at <http://git.suckless.org>. Many thanks to
 2012-10-28
 ----------
 [sprop 0.1](http://tools.suckless.org/sprop) released: [download](http://dl.suckless.org/tools/sprop-0.1.tar.gz)
-
-2012-10-25
-----------
-[slock 1.1](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-1.1.tar.gz)
 
 2012-10-14
 ----------

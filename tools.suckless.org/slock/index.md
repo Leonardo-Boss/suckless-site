@@ -14,7 +14,7 @@ or get a copy using the following command:
 
 Download
 --------
-* [slock-1.1](http://dl.suckless.org/tools/slock-1.1.tar.gz) (20121025)
+* [slock-1.2](http://dl.suckless.org/tools/slock-1.2.tar.gz) (20141222)
 
 Xautolock
 ---------

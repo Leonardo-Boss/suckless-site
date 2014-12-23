@@ -34,6 +34,7 @@ Miscellaneous
 * [termbox](https://github.com/nsf/termbox) - simple ncurses-like library for creating TUIs
 * [ccv](https://github.com/liuliu/ccv) - C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library
 * [morpheus](http://morpheus.2f30.org) - a statically linked musl based Linux distro
+* [ratox](http://ratox.2f30.org/) - a FIFO based tox client
 
 Programs
 ========
@@ -88,6 +89,7 @@ Image Viewers
 * [sxiv](https://github.com/muennich/sxiv) - Simple (or small or suckless) X Image Viewer. Depends on xlib and imlib2.
 * [xli](http://web.aanet.com.au/gwg/xli.html)
 * [xzgv](http://sourceforge.net/projects/xzgv/)
+* [lel](http://git.2f30.org/lel/) - Suckless imagefile viewer
 
 Instant Messaging Clients
 -------------------------

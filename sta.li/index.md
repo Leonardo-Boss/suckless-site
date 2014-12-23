@@ -25,6 +25,7 @@ discuss further development of sta.li.
 
 Some related links
 ------------------
+* [morpheus](http://morpheus.2f30.org/) - a statically linked musl based distro
 * [starch linux](http://starchlinux.org/) - a statically linked archlinux variant
 * [Bifrost/Linux](http://bifrost.slu.se/) - a minimalist Linux distro for USB media
 * [$6M libc](http://codingrelic.geekhold.com/2008/11/six-million-dollar-libc.html) - Bionic is a nice library, though only usable for sane stuff

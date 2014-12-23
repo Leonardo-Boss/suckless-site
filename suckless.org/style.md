@@ -146,3 +146,16 @@ Handling Errors
 * `return` or `exit` early on failures instead of multiple nested levels
 * Unreachable code should have a NOTREACHED comment
 * Think long and hard on whether or not you should cleanup on fatal errors
+
+Enums vs #define
+----------------
+* Use enums for values that are grouped semantically and #define otherwise.
+
+		#define MAXSZ  4096
+		#define MAGIC1 0xdeadbeef
+
+		enum {
+			DIRECTION_X,
+			DIRECTION_Y,
+			DIRECTION_Z
+		};

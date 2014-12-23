@@ -91,7 +91,7 @@ Keywords
 Switch
 ------
 * Do not indent cases another level
-* Comment cases that fall through
+* Comment cases that FALLTHROUGH
 
 Headers
 -------
@@ -144,4 +144,5 @@ Handling Errors
 			hcf();
 * Use `goto` to unwind and cleanup when necessary instead of multiple nested levels
 * `return` or `exit` early on failures instead of multiple nested levels
+* Unreachable code should have a NOTREACHED comment
 * Think long and hard on whether or not you should cleanup on fatal errors

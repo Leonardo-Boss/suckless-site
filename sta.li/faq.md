@@ -123,7 +123,7 @@ sure that there were no updates in the dependencies.
 So all in all dynamic executables are painfully slow, regardless what hacks on
 top people came up with in the past. There is zero evidence that dynamic
 linking makes executables faster. There is only some evidence that preloading
-dynamic libraries vs no preloading dynamic libraries improves the startup of
+dynamic libraries vs not preloading dynamic libraries improves the startup of
 dynamic executables. But the introduction of preloading comes to a cost as
 well, the kernel will have to do much more work when supporting such hacks.
 

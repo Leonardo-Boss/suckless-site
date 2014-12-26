@@ -85,7 +85,7 @@ Image Viewers
 * [jpg/gif/bmp/png][plan9port] - Simple programs from Plan 9 to display images in no-frills windows. Included with plan9port.
 * [meh](http://www.johnhawthorn.com/meh/) - image viewer using raw XLib, libjpeg, libpng and libgif
 * [page][plan9port] - Plan 9's image/document viewer program. Included with plan9port.
-* [qiv](http://www.klografx.net/qiv/)
+* [qiv](http://spiegl.de/qiv/)
 * [sxiv](https://github.com/muennich/sxiv) - Simple (or small or suckless) X Image Viewer. Depends on xlib and imlib2.
 * [xli](http://web.aanet.com.au/gwg/xli.html)
 * [xzgv](http://sourceforge.net/projects/xzgv/)

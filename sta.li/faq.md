@@ -120,15 +120,16 @@ instantaniously, because the payload is already in the memory. In the dynamic
 case the startup is not instantaniously because the dynamic linker has to make
 sure that there were no updates in the dependencies.
 
-So all in all dynamic executables are painfully slow, regardless what hacks on
-top people came up with in the past. There is zero evidence that dynamic
-linking makes executables faster. There is only some evidence that preloading
-dynamic libraries vs not preloading dynamic libraries improves the startup of
-dynamic executables. But the introduction of preloading comes to a cost as
-well, the kernel will have to do much more work when supporting such hacks.
+So all in all dynamic executables are painfully slow, regardless of what
+inelegant hacks people came up with in the past. There is zero evidence that
+dynamic linking makes executables faster. There is only some evidence that
+preloading dynamic libraries vs not preloading dynamic libraries improves the 
+startup of dynamic executables. But the introduction of preloading comes to a
+cost as well, the kernel will have to do much more work when supporting such
+contrivances.
 
 Dynamic linking also greately increases the complexity of the kernel VM and
-makes it much slower. And those hacks that try to prevent this make things more
+makes it much slower. And kludgy solutions to this make things more
 complicated and add many more points of total failure.
 
 See also

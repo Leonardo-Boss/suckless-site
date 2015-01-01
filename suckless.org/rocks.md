@@ -175,6 +175,7 @@ X11
 [plan9port]: http://swtch.com/plan9port/
 [acme]: http://acme.cat-v.org
 [swm]: https://github.com/dcat/swm - A simple window manager (creatively) called Simple Window Manager. Floating but keyboard-accessible.
+[wmutils]: https://github.com/wmutils/core - A set of utilities for managing windows. Can be used on their own or to augment a WM itself. Support for tiling present.
 
 
 Daemons

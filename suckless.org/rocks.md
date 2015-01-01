@@ -174,6 +174,7 @@ X11
 
 [plan9port]: http://swtch.com/plan9port/
 [acme]: http://acme.cat-v.org
+[swm]: https://github.com/dcat/swm - A simple window manager (creatively) called Simple Window Manager. Floating but keyboard-accessible.
 
 
 Daemons

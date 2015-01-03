@@ -1,4 +1,4 @@
-From 5f1755d241d386c48175b95dd78eab3990c9798d Mon Sep 17 00:00:00 2001
+From 2e463d21bb653d38282be1101c9aae1c5fd87623 Mon Sep 17 00:00:00 2001
 From: Markus Teich <markus.teich@stusta.mhn.de>
 Date: Mon, 17 Nov 2014 02:09:53 +0100
 Subject: [PATCH] add per-site user styles
@@ -12,8 +12,8 @@ by installing a default rule matching any site at the end of the list.
 ---
  config.def.h |  8 +++++++-
  surf.1       |  9 +--------
- surf.c       | 56 ++++++++++++++++++++++++++++++++++++++------------------
- 3 files changed, 46 insertions(+), 27 deletions(-)
+ surf.c       | 59 +++++++++++++++++++++++++++++++++++++++++------------------
+ 3 files changed, 49 insertions(+), 27 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
 index 80a0feb..ebab5bd 100644
@@ -42,7 +42,7 @@ index 80a0feb..ebab5bd 100644
  /*
   * If you use anything else but MODKEY and GDK_SHIFT_MASK, don't forget to
 diff --git a/surf.1 b/surf.1
-index ffb2986..f4940ad 100644
+index f838773..9e13932 100644
 --- a/surf.1
 +++ b/surf.1
 @@ -8,7 +8,6 @@ surf \- simple webkit-based browser
@@ -76,7 +76,7 @@ index ffb2986..f4940ad 100644
  .B Ctrl\-Shift\-o
  Open the Web Inspector (Developer Tools) window for the current page.
 diff --git a/surf.c b/surf.c
-index 6beda59..be280c4 100644
+index 6beda59..5994486 100644
 --- a/surf.c
 +++ b/surf.c
 @@ -23,6 +23,7 @@
@@ -133,23 +133,28 @@ index 6beda59..be280c4 100644
  static gboolean
  initdownload(WebKitWebView *view, WebKitDownload *o, Client *c) {
  	Arg arg;
-@@ -629,6 +646,7 @@ loadstatuschange(WebKitWebView *view, GParamSpec *pspec, Client *c) {
+@@ -629,8 +646,10 @@ loadstatuschange(WebKitWebView *view, GParamSpec *pspec, Client *c) {
  	WebKitWebFrame *frame;
  	WebKitWebDataSource *src;
  	WebKitNetworkRequest *request;
 +	WebKitWebSettings *set = webkit_web_view_get_settings(c->view);
  	SoupMessage *msg;
  	char *uri;
++	char *path;
  
-@@ -644,6 +662,7 @@ loadstatuschange(WebKitWebView *view, GParamSpec *pspec, Client *c) {
+ 	switch(webkit_web_view_get_load_status (c->view)) {
+ 	case WEBKIT_LOAD_COMMITTED:
+@@ -644,6 +663,9 @@ loadstatuschange(WebKitWebView *view, GParamSpec *pspec, Client *c) {
  			                & SOUP_MESSAGE_CERTIFICATE_TRUSTED);
  		}
  		setatom(c, AtomUri, uri);
-+		g_object_set(G_OBJECT(set), "user-stylesheet-uri", getstyle(uri), NULL);
++		g_object_get(G_OBJECT(set), "user-stylesheet-uri", &path, NULL);
++		if (path && path[0])
++			g_object_set(G_OBJECT(set), "user-stylesheet-uri", getstyle(uri), NULL);
  		break;
  	case WEBKIT_LOAD_FINISHED:
  		c->progress = 100;
-@@ -702,7 +721,7 @@ newclient(void) {
+@@ -702,7 +724,7 @@ newclient(void) {
  	GdkGeometry hints = { 1, 1 };
  	GdkScreen *screen;
  	gdouble dpi;
@@ -158,7 +163,7 @@ index 6beda59..be280c4 100644
  
  	if(!(c = calloc(1, sizeof(Client))))
  		die("Cannot malloc!\n");
-@@ -832,8 +851,6 @@ newclient(void) {
+@@ -832,8 +854,6 @@ newclient(void) {
  	if(!(ua = getenv("SURF_USERAGENT")))
  		ua = useragent;
  	g_object_set(G_OBJECT(settings), "user-agent", ua, NULL);
@@ -167,7 +172,7 @@ index 6beda59..be280c4 100644
  	g_object_set(G_OBJECT(settings), "auto-load-images", loadimages,
  			NULL);
  	g_object_set(G_OBJECT(settings), "enable-plugins", enableplugins,
-@@ -888,8 +905,6 @@ newclient(void) {
+@@ -888,8 +908,6 @@ newclient(void) {
  		fullscreen(c, NULL);
  	}
  
@@ -176,7 +181,7 @@ index 6beda59..be280c4 100644
  	setatom(c, AtomFind, "");
  	setatom(c, AtomUri, "about:blank");
  	if(hidebackground)
-@@ -1094,6 +1109,7 @@ setatom(Client *c, int a, const char *v) {
+@@ -1094,6 +1112,7 @@ setatom(Client *c, int a, const char *v) {
  
  static void
  setup(void) {
@@ -184,7 +189,7 @@ index 6beda59..be280c4 100644
  	char *proxy;
  	char *new_proxy;
  	SoupURI *puri;
-@@ -1114,7 +1130,15 @@ setup(void) {
+@@ -1114,7 +1133,15 @@ setup(void) {
  	/* dirs and files */
  	cookiefile = buildpath(cookiefile);
  	scriptfile = buildpath(scriptfile);
@@ -201,7 +206,7 @@ index 6beda59..be280c4 100644
  
  	/* request handler */
  	s = webkit_get_default_session();
-@@ -1282,13 +1306,12 @@ togglescrollbars(Client *c, const Arg *arg) {
+@@ -1282,13 +1309,12 @@ togglescrollbars(Client *c, const Arg *arg) {
  
  static void
  togglestyle(Client *c, const Arg *arg) {
@@ -220,7 +225,7 @@ index 6beda59..be280c4 100644
  
  	updatetitle(c);
  }
-@@ -1318,7 +1341,7 @@ gettogglestat(Client *c){
+@@ -1318,7 +1344,7 @@ gettogglestat(Client *c){
  	togglestat[p++] = value? 'V': 'v';
  
  	g_object_get(G_OBJECT(settings), "user-stylesheet-uri", &uri, NULL);
@@ -229,7 +234,7 @@ index 6beda59..be280c4 100644
  
  	togglestat[p] = '\0';
  }
-@@ -1377,7 +1400,7 @@ usage(void) {
+@@ -1377,7 +1403,7 @@ usage(void) {
  	die("usage: %s [-bBfFgGiIkKnNpPsSvx]"
  		" [-a cookiepolicies ] "
  		" [-c cookiefile] [-e xid] [-r scriptfile]"
@@ -238,7 +243,7 @@ index 6beda59..be280c4 100644
  		" [uri]\n", basename(argv0));
  }
  
-@@ -1472,9 +1495,6 @@ main(int argc, char *argv[]) {
+@@ -1472,9 +1498,6 @@ main(int argc, char *argv[]) {
  	case 'S':
  		enablescripts = 1;
  		break;
@@ -249,5 +254,5 @@ index 6beda59..be280c4 100644
  		useragent = EARGF(usage());
  		break;
 -- 
-2.0.4
+2.0.5
 

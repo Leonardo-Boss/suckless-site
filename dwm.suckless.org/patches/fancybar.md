@@ -15,10 +15,12 @@ fit, they're cropped. The title of the selected window is inverted.
  * [fancybar-5.6.1.diff](historical/fancybar-5.6.1.diff) (dwm 5.6.1) (20090824)
  * [fancybar-r1496.diff](fancybar-r1496.diff) (dwm 5.7) (20090922)
  * [fancybar-c794a9f5ae5e.patch](fancybar-c794a9f5ae5e.patch) (20120708)
+ * [dwm-35db6d8-fancybar.diff](dwm-35db6d8-fancybar.diff) (20150105)
 
 ## Author
 
  * Mate Nagy - <mnagy@port70.net>
+ * Jochen Sprickerhof - project @ firstname . lastname . de
 
 This patch was inspired by the decorated tabbed layout of Xmonad.
 

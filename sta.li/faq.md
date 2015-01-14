@@ -20,7 +20,11 @@ Aren't whole libraries linked into a static executable?
 No. Good libraries implement each library function in separate object (.o)
 files, this enables the linker (ld) to only extract and link those
 object files from an archive (.a) that export the symbols that are
-actually used by a program.
+actually used by a program. Additionally, link-time optimization and
+dead code elimination (available in most modern GNU and LLVM based toolchains)
+allows for the extraction of necessary code on a _function-by-function_ basis,
+while eliminating _all_ unused library code, resulting in a smaller, faster,
+and more secure executables.
 
 See also
 
@@ -30,7 +34,7 @@ What's wrong with glibc?
 ------------------------
 We think nearly everything is wrong with it. Its enormous complexity,
 its lack of good structure and well separated object files
-(otherwise linking trivial programs wouldn't result in 600kb oberhead) and
+(otherwise linking trivial programs wouldn't result in 600kb overhead) and
 even worse than that, its design decision to use dlopen for certain
 "separated" library features (NSS, locales, IDN, ...), which makes it nearly
 impossible to use glibc for static linking in non-trivial programs.
@@ -56,13 +60,15 @@ only one tool for each task exists.
 
 Another argument often heard is that static functions have predictable
 addresses, whereas dynamic linking provides the ability of address
-randomization. We have two answers to this. The first is: Technically it is
-possible to use platform-independent code in static executables and hence assuming
-the kernel supports address randomization for executables we have a similar
-feature. The second is: In reality, address randomization is predictable
-and we usually see the same addresses when a dynamic library is loaded or has
-been pre-loaded again and again. Thus we consider this as an issue with low
-impact and this is not a real focus for us.
+randomization. We have two answers to this. The first is: it is
+simple to use position-independent code in static executables and (assuming
+a modern kernel that supports address randomization for executables) fully
+[position-independent
+executables](https://en.wikipedia.org/wiki/Position-independent_code)
+are easily created on all modern operating systems. The second is: In reality,
+address randomization is predictable and we usually see the same addresses when
+a dynamic library is loaded or has been pre-loaded again and again. Thus we
+consider this as an issue with low impact and this is not a real focus for us.
 
 If you are really concerned about the security of statically linked executables,
 have a look at what [great ldd exploits](http://www.catonmat.net/blog/ldd-arbitrary-code-execution/) exist.
@@ -90,7 +96,7 @@ We believe that due to the small size of the base system the opposite will be
 the case. First of all, the kernel will load each static executable's .rodata, .data,
 .text and .comment sections only once for all instances into memory.
 Second, because each static binary has only been linked with the object files
-necessary, it has already been optimised at linkage time for memory
+necessary, it has already been optimized at linkage time for memory
 consumption. When loading it, we don't require the kernel to map all
 dependent dynamic libraries into memory from which our binary might only use 5%
 of the functions they provide. So, in reality, the memory footprint is becoming
@@ -107,7 +113,7 @@ executable was about 4000% faster than its dynamically linked counterpart
 when no dependent libraries (except glibc) were pre-loaded, and 100% faster when
 the dependent libraries were pre-loaded. We believe the overhead for looking up
 all needed symbols in the dynamically loaded libraries seems to be very
-expensive. On modern hardware this is only noticable with endlessly executing
+expensive. On modern hardware this is only noticeable with endlessly executing
 the static and dynamic executable in a loop for several minutes and counting
 the number of executions.
 
@@ -116,8 +122,8 @@ the slower it'll start, regardless if the libraries are preloaded or not.
 This also means that usually big static executables (which we try to avoid)
 easily outperform dynamic executables with lots of dependencies. If a big
 static executable is already running, executing another one is nearly
-instantaniously, because the payload is already in the memory. In the dynamic
-case the startup is not instantaniously because the dynamic linker has to make
+instantaneously, because the payload is already in the memory. In the dynamic
+case the startup is not instantaneously because the dynamic linker has to make
 sure that there were no updates in the dependencies.
 
 So all in all dynamic executables are painfully slow, regardless of what

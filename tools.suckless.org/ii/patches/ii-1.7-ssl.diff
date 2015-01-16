@@ -30,7 +30,7 @@ diff -up a/ii.1 b/ii.1
 +lets you connect using ssl encryption. The default ssl port is 6697.
 +.TP
  .BI \-k " environment variable"
- lets you specify an environment variable that contains your IRC password, e.g. IIPASS="foobar" ii -k FOOBAR.
+ lets you specify an environment variable that contains your IRC password, e.g. IIPASS="foobar" ii -k IIPASS.
  This is done in order to prevent other users from eavesdropping the server password via the process list.
 diff -up a/ii.c b/ii.c
 --- a/ii.c	2013-01-05 08:26:47.000000000 -0500

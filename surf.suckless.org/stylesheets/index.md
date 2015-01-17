@@ -23,7 +23,7 @@ Then create the styles directory:
 
 	% mkdir -p $HOME/.surf/styles
 
-And add a file there containing:
+And add a `wikipedia.css` file there containing:
 
 	* {
 		font-weight: bold;

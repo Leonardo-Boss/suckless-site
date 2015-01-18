@@ -34,14 +34,14 @@ Usage
     arrow keys to move (mod+arrow) or resize (mod+shift+arrow) the selected
     client:
 
-        { MODKEY,                       XK_Down,   moveresize,     {.v = (int []){ 0, 25, 0, 0 }}},
-        { MODKEY,                       XK_Up,     moveresize,     {.v = (int []){ 0, -25, 0, 0 }}},
-        { MODKEY,                       XK_Right,  moveresize,     {.v = (int []){ 25, 0, 0, 0 }}},
-        { MODKEY,                       XK_Left,   moveresize,     {.v = (int []){ -25, 0, 0, 0 }}},
-        { MODKEY|ShiftMask,             XK_Down,   moveresize,     {.v = (int []){ 0, 0, 0, 25 }}},
-        { MODKEY|ShiftMask,             XK_Up,     moveresize,     {.v = (int []){ 0, 0, 0, -25 }}},
-        { MODKEY|ShiftMask,             XK_Right,  moveresize,     {.v = (int []){ 0, 0, 25, 0 }}},
-        { MODKEY|ShiftMask,             XK_Left,   moveresize,     {.v = (int []){ 0, 0, -25, 0 }}},
+	{ MODKEY,                       XK_Down,   moveresize,     {.v =  "0x 25y 0w 0h"}},
+	{ MODKEY,                       XK_Up,     moveresize,     {.v =  "0x -25y 0w 0h"}},
+	{ MODKEY,                       XK_Right,  moveresize,     {.v =  "25x 0y 0w 0h"}},
+	{ MODKEY,                       XK_Left,   moveresize,     {.v =  "-25x 0y 0w 0h"}},
+	{ MODKEY|ShiftMask,             XK_Down,   moveresize,     {.v =  "0x 0y 0w 25h"}},
+	{ MODKEY|ShiftMask,             XK_Up,     moveresize,     {.v =  "0x 0y 0w -25h"}},
+	{ MODKEY|ShiftMask,             XK_Right,  moveresize,     {.v =  "0x 0y 25w 0h"}},
+	{ MODKEY|ShiftMask,             XK_Left,   moveresize,     {.v =  "0x 0y -25w 0h"}},
 
 If you want to automatically toggle the client floating when move/resize,
 replace the `if()` statement above with this code:

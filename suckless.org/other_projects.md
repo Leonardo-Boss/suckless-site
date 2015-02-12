@@ -3,6 +3,7 @@ Other projects
 There are several other projects which are inspired by the spirit of suckless.
 
 * [alt](https://github.com/radare/alt) - abstract language tree
+* [autonet](https://github.com/mrdomino/autonet) - automatic wifi network chooser for OpenBSD
 * [bug](http://vicerveza.homeunix.net/~viric/soft/bug/) - commandline todo-tracking system
 * [dietline](https://github.com/radare/radare2/blob/master/libr/cons/dietline.c) - minimalist implementation of a readline-like library
 * [dmc](http://git.suckless.org/dmc/) - dynamic mail client

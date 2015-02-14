@@ -24,6 +24,7 @@ Following people have donated to the suckless.org project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
+* Jakub Jirutka donated <b>10 USD</b>
 * Surin Anton donated <b>20 USD</b>
 * Eero Molkoselkä donated <b>10 EUR</b>
 * Dimitrios Papastamos donated <b>30 GBP</b>

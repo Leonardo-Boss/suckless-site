@@ -17,6 +17,8 @@ paper proposal for talks between 20 and 60 minutes until the CfP deadline
 
 *30. April 2015*
 
+Please submit your proposed paper to [con@suckless.org](mailto:con@suckless.org).
+
 Good luck and looking forward!
 
 

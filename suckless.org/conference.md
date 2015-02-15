@@ -25,4 +25,4 @@ Good luck and looking forward!
 
 Previous conferences
 --------------------
-* [slcon1 2013](http://suckless.org/slcon1)
+* [slcon 2013](http://suckless.org/con/2013)

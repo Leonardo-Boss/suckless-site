@@ -5,7 +5,7 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
-2014-02-14
+2015-02-14
 ----------
 There will be [slcon2](http://suckless.org/conference/) held in Budpast end of Oct 2015.
 

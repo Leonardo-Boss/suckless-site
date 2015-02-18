@@ -118,6 +118,11 @@ Media Players
 -------------
 * [mplayer](http://www.mplayerhq.hu/) (without GUI) - You know mplayer, but you may not know that it works well without the GUI.
 
+Password managers
+-----------------
+* [pass](http://www.passwordstore.org/) - The standard unix password manager
+* [tpm](https://github.com/nmeum/tpm/) - Tiny password manager
+
 PDF Viewers
 -----------
 * [mupdf](http://mupdf.com/)

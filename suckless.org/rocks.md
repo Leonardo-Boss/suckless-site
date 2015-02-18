@@ -69,6 +69,10 @@ Feed aggregators
 ----------------
 * [newsbeuter](http://www.newsbeuter.org/)
 
+File browsers
+-------------
+* [noice](http://git.2f30.org/noice/) - Small and portable file browser
+
 IRC Clients
 -----------
 * [Irc](http://swtch.com/irc/)
@@ -157,10 +161,6 @@ Web Browsers
 * [w3m](http://w3m.sourceforge.net/)
 * [xombrero](https://opensource.conformal.com/wiki/xombrero) - A minimalist web browser with sophisticated security features designed-in. Formerly known as [xxxterm](https://opensource.conformal.com/wiki/xxxterm)
 
-File browsers
--------------
-* [noice](http://git.2f30.org/noice/) - Small and portable file browser
-
 X11
 ---
 * [xdotool](http://www.semicomplete.com/projects/xdotool/) – A tool for
@@ -176,7 +176,6 @@ X11
 
 [plan9port]: http://swtch.com/plan9port/
 [acme]: http://acme.cat-v.org
-
 
 Daemons
 =======

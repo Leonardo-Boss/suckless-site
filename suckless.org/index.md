@@ -11,13 +11,6 @@ There will be [slcon2](http://suckless.org/conference/) held in Budpast end of O
 
 The CfP for interested participants is now open and will end *30 April 2015*.
 
-2014-11-24
-----------
-There will be a
-[suckless assembly](https://events.ccc.de/congress/2014/wiki/Assembly:Suckless)
-at the [31C3](https://events.ccc.de/congress/2014).  The whole suckless
-community is invited to come, meet and hack!
-
 2014-12-22
 ----------
 [slock 1.2](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-1.2.tar.gz)
@@ -25,6 +18,13 @@ community is invited to come, meet and hack!
 2014-11-29
 ----------
 [lsw 0.3](http://tools.suckless.org/lsw) released: [download](http://dl.suckless.org/tools/lsw-0.3.tar.gz)
+
+2014-11-24
+----------
+There will be a
+[suckless assembly](https://events.ccc.de/congress/2014/wiki/Assembly:Suckless)
+at the [31C3](https://events.ccc.de/congress/2014).  The whole suckless
+community is invited to come, meet and hack!
 
 2014-08-05
 ----------

@@ -237,16 +237,16 @@ Index: dwm/dwm.c
  	for(c = m->clients; c; c = c->next) {
  		occ |= c->tags;
  		if(c->isurgent)
-@@ -726,6 +814,9 @@ drawbar(Monitor *m) {
- 	}
- 	else
- 		x = m->ww;
-+	if(showsystray && m == systraytomon(m)) {
-+		x -= getsystraywidth();
-+	}
- 	if((w = x - xx) > bh) {
- 		x = xx;
- 		if(m->sel) {
+@@ -718,6 +806,9 @@ drawbar(Monitor *m) {
+ 	if(m == selmon) { /* status is only drawn on selected monitor */
+ 		w = TEXTW(stext);
+ 		x = m->ww - w;
++		if(showsystray && m == systraytomon(m)) {
++			x -= getsystraywidth();
++		}
+ 		if(x < xx) {
+ 			x = xx;
+ 			w = m->ww - xx;
 @@ -747,6 +838,7 @@ drawbars(void) {
  
  	for(m = mons; m; m = m->next)

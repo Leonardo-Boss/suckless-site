@@ -32,6 +32,7 @@ Helper functions
 If you have simple C functions for gathering system information, please
 add them here as file or as code example.
 
+* [Get ram, disk, kernel, volume and time](dwm-bar.c)
 * [Support for ACPI battery status Linux](new-acpi-battery.c)
 * [Reading out a temperature from /sys](dwmstatus-temperature.c)
 * [Reading up-, and downspeeds of all network interfaces from /proc/net](dwmstatus-netusage.c)

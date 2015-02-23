@@ -24,7 +24,7 @@ Please add your own version of dwmstatus here.
 * [suspend-statusbar.c](suspend-statusbar.c) - loadavg, wifi, battery and date. If battery goes below threshold - run suspend command
 * [gods](https://github.com/schachmat/gods) - implemented in Go. prints network speed, cpu, ram, date/time
 * [go-dwmstatus](https://github.com/oniichaNj/go-dwmstatus) - A Go bar that prints current MPD song, load averages, time/date and battery percentage.
-* [BarMonitor](bar_monitor.c) - displays, battery status, date/time, temperature, check mail function.
+* [barM](barM.c) - can display all, time/date, ram usage, output of commands (the New BarMonitor).
 
 Helper functions
 ----------------

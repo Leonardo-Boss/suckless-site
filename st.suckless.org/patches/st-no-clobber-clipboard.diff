@@ -1,0 +1,33 @@
+From 7552a9358aecd38006cdbcff61491ae8e713aa13 Mon Sep 17 00:00:00 2001
+From: Wander Nauta <info@wandernauta.nl>
+Date: Fri, 20 Feb 2015 00:36:48 +0100
+Subject: [PATCH] Don't clobber CLIPBOARD
+
+---
+ st.c | 7 -------
+ 1 file changed, 7 deletions(-)
+
+diff --git a/st.c b/st.c
+index b9d30a7..5af4dc2 100644
+--- a/st.c
++++ b/st.c
+@@ -1080,16 +1080,9 @@ selrequest(XEvent *e) {
+ 
+ void
+ xsetsel(char *str) {
+-	/* register the selection for both the clipboard and the primary */
+-	Atom clipboard;
+-
+ 	free(sel.clip);
+ 	sel.clip = str;
+-
+ 	XSetSelectionOwner(xw.dpy, XA_PRIMARY, xw.win, CurrentTime);
+-
+-	clipboard = XInternAtom(xw.dpy, "CLIPBOARD", 0);
+-	XSetSelectionOwner(xw.dpy, clipboard, xw.win, CurrentTime);
+ }
+ 
+ void
+-- 
+2.3.0
+

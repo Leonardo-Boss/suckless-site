@@ -150,7 +150,7 @@ Web Browsers
 * [Abaco](http://lab-fgb.com/abaco/)
 * [Conkeror](http://www.conkeror.org/) - A Gecko based browser, imparting it Emacs style key bindings, appearances, and behaviors.
 * [Dillo](http://www.dillo.org/)
-* [dwb](http://portix.bitbucket.org/dwb/) - A lightweight web browser based on the webkit.
+* [dwb](http://portix.bitbucket.org/dwb/) - A lightweight web browser based on WebKitGTK.
 * [qutebrowser](http://www.qutebrowser.org/) - A vim-like browser based on PyQt5 and QtWebKit. Inspired by dwb.
 * [edbrowse](http://edbrowse.sourceforge.net/)
 * [ELinks](http://elinks.or.cz/)

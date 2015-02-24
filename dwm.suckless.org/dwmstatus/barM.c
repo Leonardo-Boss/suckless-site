@@ -72,19 +72,9 @@ void XSetRoot(char *name) {
 int main(int argc, char **argv) {
         char status[MAXSTR];
 
-        /*append here your commands for the spawn function*/
-        char *ram = spawn("free -mh | awk 'NR==2{print $3\"/\"$2}'");
-        
-        /* Examples:
-                char *battery = spawn("/sys/class/power_supply/BAT1/capacity");
-                char *uname = spawn("uname");
-                char * battery_status= spawn("/sys/class/power_supply/BAT1/status");
+        sprintf(status, "(%s) %s",  spawn("free -mh | awk 'NR==2{print $3\"/\"$2}'"), 
+                        TimeADate());
 
-
-        XXX: DONT! forget to add the varibale to sprintf() 
-        */
-        
-        sprintf(status, "(%s) %s", ram, TimeADate());
         XSetRoot(status);
 
         /*sleep function*/

@@ -118,6 +118,7 @@ Media Players
 -------------
 * [mplayer](http://www.mplayerhq.hu/) (without GUI) - You know mplayer, but you may not know that it works well without the GUI.
 * [mpv](http://mpv.io/) - a free, open source, and cross-platform media player
+* [ffplay](https://www.ffmpeg.org/ffplay.html) - FFplay is a very simple and portable media player. It came with ffmpeg which is a mplayer dependence.
 
 Password managers
 -----------------

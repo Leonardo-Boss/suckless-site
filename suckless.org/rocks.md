@@ -18,23 +18,23 @@ libc implementations
 Compression
 -----------
 * [liblzf](http://oldhome.schmorp.de/marc/liblzf.html) - very fast, legally unencumbered compression library (dual licensed: 2-clause BSD or GPL License)
+* [miniz](http://code.google.com/p/miniz/) - single C-file reimplementation of zlib, public domain.
 * [xz embedded](http://tukaani.org/xz/embedded.html) - lightweight decompressor for the xz LZMA compressor (public domain)
 * [zlib](http://zlib.net/) - the "standard" compression/decompression library, quite small, used in many applications ([zlib license](http://zlib.net/zlib_license.html))
-* [miniz](http://code.google.com/p/miniz/) - single C-file reimplementation of zlib, public domain.
 
 Cryptography
 ------------
-* [polarssl](https://polarssl.org/) - lightweight SSL/TLS implementation (GPL with [exceptions](https://polarssl.org/foss-license-exception))
-* [(C)yassl](http://www.yassl.com/yaSSL/Home.html) - portable RTOS-targeted embedded SSL library - licensed under both the GPLv2 as well as standard commercial licensing
+* [libressl](http://www.libressl.org/) - LibreSSL is a version of the TLS/crypto stack forked from OpenSSL in 2014
 
 Miscellaneous
 -------------
-* [pjsip](http://www.pjsip.org/) - open source SIP stack (GPL)
-* [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modeled after libevent but much smaller (dual licensed under 2-clause BSD and GPL)
-* [termbox](https://github.com/nsf/termbox) - simple ncurses-like library for creating TUIs
 * [ccv](https://github.com/liuliu/ccv) - C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library
+* [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modeled after libevent but much smaller (dual licensed under 2-clause BSD and GPL)
+* [mdocml](http://mdocml.bsd.lv/) - The mandoc UNIX manpage compiler toolset
 * [morpheus](http://morpheus.2f30.org) - a statically linked musl based Linux distro
-* [ratox](http://ratox.2f30.org/) - a FIFO based tox client
+* [pjsip](http://www.pjsip.org/) - open source SIP stack (GPL)
+* [sdhcp](http://git.2f30.org/sdhcp/) - IPV4 DHCP client
+* [termbox](https://github.com/nsf/termbox) - simple ncurses-like library for creating TUIs
 
 Programs
 ========
@@ -53,8 +53,8 @@ Accounting
 Audio Players
 -------------
 * [C* Music Player](http://cmus.sourceforge.net/)
-* [DeaDBeeF](http://deadbeef.sourceforge.net/)
 * [cplay](http://cplay.sourceforge.net/)
+* [DeaDBeeF](http://deadbeef.sourceforge.net/)
 * [moc](http://moc.daper.net/)
 * [mpd](http://mpd.wikia.com/wiki/Music_Player_Daemon_Wiki) - A client/server based music player with console and graphical front-ends.
 * [mpg123](http://www.mpg123.de/) - A console mpg player which doesn't use auto*hell, or extra libraries.
@@ -93,16 +93,16 @@ Image Viewers
 * [sxiv](https://github.com/muennich/sxiv) - Simple (or small or suckless) X Image Viewer. Depends on xlib and imlib2.
 * [xli](http://web.aanet.com.au/gwg/xli.html)
 * [xzgv](http://sourceforge.net/projects/xzgv/)
-* [lel](http://git.2f30.org/lel/) - Suckless imagefile viewer
+* [lel](http://git.2f30.org/lel/) - Suckless imagefile viewer (WIP)
 
 Instant Messaging Clients
 -------------------------
 * [bitlbee](http://www.bitlbee.org/main.php/news.r.html) - A program to translate IM protocols to IRC. You can now IM from your IRC client, and you don't even need to install anything.
-* [centericq](http://konst.org.ua/centericq/)
 * [CenterIM](http://www.centerim.org/index.php/Main_Page) - A centericq fork.
 * [climm](http://www.climm.org/)
 * [irssi-xmpp](http://cybione.org/~irssi-xmpp/)
 * [mcabber](http://www.lilotux.net/~mikael/mcabber/) - A console jabber client.
+* [ratox](http://ratox.2f30.org/) - a FIFO based tox client
 * [ysm](http://ysmv7.sourceforge.net/)
 
 Mail Clients
@@ -117,6 +117,7 @@ Mail Clients
 Media Players
 -------------
 * [mplayer](http://www.mplayerhq.hu/) (without GUI) - You know mplayer, but you may not know that it works well without the GUI.
+* [mpv](http://mpv.io/) - a free, open source, and cross-platform media player
 
 Password managers
 -----------------
@@ -127,6 +128,10 @@ PDF Viewers
 -----------
 * [mupdf](http://mupdf.com/)
 * [zathura](http://pwmt.org/projects/zathura/)
+
+Shells
+------
+* [mksh](https://www.mirbsd.org/mksh.htm - MirBSD Korn Shell, an actively developed free implementation of the Korn Shell programming language and a successor to the Public Domain Korn Shell (pdksh)
 
 Text Editors
 ------------
@@ -142,7 +147,7 @@ Text Editors
 Utilities
 ---------
 * [9menu](http://www.freshports.org/x11/9menu/) - A menu program based on the Blit-style menus so prevalent in Plan 9.  A take on it is included with wmii.
-* [dmenu](/programs/dmenu.html) - Obvious
+* [dmenu](http://tools.suckless.org/dmenu/) - dmenu is a dynamic menu for X
 * [slmenu](https://bitbucket.org/rafaelgg/slmenu) - Dmenu spinoff for the console
 
 Web Browsers
@@ -191,15 +196,14 @@ which work well with dwm).
 
 Web Servers
 -----------
-* [Nostromo](http://www.nazgul.ch/dev_nostromo.html)
+* [Nostromo](http://www.nazgul.ch/dev_nostromo.html) - nhttpd is a simple, fast and secure HTTP server
 * [thttpd](http://acme.com/software/thttpd/) - Outperforms many bigger httpds. Old, still works very well!
 * [mini_httpd](http://acme.com/software/mini_httpd/) - By the thttpd developers. Even smaller subset of thttpd with support for .htpasswd, CGI, dirlisting, HTTP errors and SSL, nothing more or less than that.
-* See also: our very own [quark](http://git.suckless.org/quark/) which has not yet been released
+* [quark](http://git.suckless.org/quark/) - suckless httpd, not released yet
 
 Gopher Servers
 --------------
 * [geomyidae](http://www.r-36.net/src/geomyidae/) - small gopher-daemon written by 20h
-
 
 Misc Daemons
 ------------

@@ -131,7 +131,7 @@ PDF Viewers
 
 Shells
 ------
-* [mksh](https://www.mirbsd.org/mksh.htm - MirBSD Korn Shell, an actively developed free implementation of the Korn Shell programming language and a successor to the Public Domain Korn Shell (pdksh)
+* [mksh](https://www.mirbsd.org/mksh.htm) - MirBSD Korn Shell, an actively developed free implementation of the Korn Shell programming language and a successor to the Public Domain Korn Shell (pdksh)
 
 Text Editors
 ------------

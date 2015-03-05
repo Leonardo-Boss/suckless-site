@@ -25,7 +25,6 @@ Compression
 Cryptography
 ------------
 * [libressl](http://www.libressl.org/) - LibreSSL is a version of the TLS/crypto stack forked from OpenSSL in 2014
-* [mbed TLS](https://tls.mbed.org/) (formerly PolarSSL) - lightweight TLS implementation (GPL with [exceptions](https://tls.mbed.org/foss-license-exception))
 
 Miscellaneous
 -------------

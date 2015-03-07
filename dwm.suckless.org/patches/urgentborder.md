@@ -8,8 +8,8 @@ Use config.h item "urgbordercolor" to change it.
 
 ## Download
 
- * [dwm-5.7.2-urgentborder.diff](dwm-5.7.2-urgentborder.diff) (1.6K) (20091221)
+ * [dwm-6.1-make-the-borders-of-urgent-windows-a-different-color.diff](dwm-6.1-make-the-borders-of-urgent-windows-a-different-color.diff) (2.2K) (20150307)
 
 ## Author
 
- * Ray Kohler - ataraxia937 gmail com
+ * Alexander Huemer - alexander dot huemer dot xx dot vu (Based on former work by Ray Kohler - ataraxia937 gmail com)

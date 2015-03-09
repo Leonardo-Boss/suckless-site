@@ -1,56 +1,46 @@
-From 56556405a10f3a677d50854e2f5aca353258e6ea Mon Sep 17 00:00:00 2001
-From: FRIGN <dev@frign.de>
-Date: Fri, 20 Feb 2015 17:08:48 +0100
-Subject: [PATCH] Use DEL (0x7F) for backspace key
+From 34dd3e504e19f074949dd28bb6a43cef7e9993b3 Mon Sep 17 00:00:00 2001
+From: "Roberto E. Vargas Caballero" <k0ga@shike2.com>
+Date: Mon, 9 Mar 2015 23:35:05 +0000
+Subject: [PATCH] Do the only true correct DEL/BACKSPACE style
 
-Original patch by k0ga.
 ---
- config.def.h | 7 +++----
+ config.def.h | 5 ++---
  st.info      | 4 ++--
- 2 files changed, 5 insertions(+), 6 deletions(-)
+ 2 files changed, 4 insertions(+), 5 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
-index 1667ed6..af7b2a0 100644
+index 5b985cd..1667ed6 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -166,6 +166,7 @@ static uint forceselmod = ShiftMask;
- 
- static Key key[] = {
- 	/* keysym           mask            string      appkey appcursor crlf */
-+	{ XK_BackSpace,     XK_ANY_MOD,     "\177",          0,    0,    0},
- 	{ XK_KP_Home,       ShiftMask,      "\033[2J",       0,   -1,    0},
- 	{ XK_KP_Home,       ShiftMask,      "\033[1;2H",     0,   +1,    0},
- 	{ XK_KP_Home,       XK_ANY_MOD,     "\033[H",        0,   -1,    0},
-@@ -202,8 +203,7 @@ static Key key[] = {
- 	{ XK_KP_Delete,     ControlMask,    "\033[3;5~",    +1,    0,    0},
+@@ -203,7 +203,7 @@ static Key key[] = {
  	{ XK_KP_Delete,     ShiftMask,      "\033[2K",      -1,    0,    0},
  	{ XK_KP_Delete,     ShiftMask,      "\033[3;2~",    +1,    0,    0},
--	{ XK_KP_Delete,     XK_ANY_MOD,     "\033[P",       -1,    0,    0},
--	{ XK_KP_Delete,     XK_ANY_MOD,     "\177",         +1,    0,    0},
-+	{ XK_KP_Delete,     XK_ANY_MOD,     "\033[3~",       0,    0,    0},
+ 	{ XK_KP_Delete,     XK_ANY_MOD,     "\033[P",       -1,    0,    0},
+-	{ XK_KP_Delete,     XK_ANY_MOD,     "\033[3~",      +1,    0,    0},
++	{ XK_KP_Delete,     XK_ANY_MOD,     "\177",         +1,    0,    0},
  	{ XK_KP_Multiply,   XK_ANY_MOD,     "\033Oj",       +2,    0,    0},
  	{ XK_KP_Add,        XK_ANY_MOD,     "\033Ok",       +2,    0,    0},
  	{ XK_KP_Enter,      XK_ANY_MOD,     "\033OM",       +2,    0,    0},
-@@ -257,8 +257,7 @@ static Key key[] = {
- 	{ XK_Delete,        ControlMask,    "\033[3;5~",    +1,    0,    0},
+@@ -258,8 +258,7 @@ static Key key[] = {
  	{ XK_Delete,        ShiftMask,      "\033[2K",      -1,    0,    0},
  	{ XK_Delete,        ShiftMask,      "\033[3;2~",    +1,    0,    0},
--	{ XK_Delete,        XK_ANY_MOD,     "\033[P",       -1,    0,    0},
--	{ XK_Delete,        XK_ANY_MOD,     "\177",         +1,    0,    0},
-+	{ XK_Delete,        XK_ANY_MOD,     "\033[3~",       0,    0,    0},
+ 	{ XK_Delete,        XK_ANY_MOD,     "\033[P",       -1,    0,    0},
+-	{ XK_Delete,        XK_ANY_MOD,     "\033[3~",      +1,    0,    0},
+-	{ XK_BackSpace,     XK_ANY_MOD,     "\177",         +1,    0,    0},
++	{ XK_Delete,        XK_ANY_MOD,     "\177",         +1,    0,    0},
  	{ XK_Home,          ShiftMask,      "\033[2J",       0,   -1,    0},
  	{ XK_Home,          ShiftMask,      "\033[1;2H",     0,   +1,    0},
  	{ XK_Home,          XK_ANY_MOD,     "\033[H",        0,   -1,    0},
 diff --git a/st.info b/st.info
-index 3b754db..f760a6a 100644
+index 2acd8b2..21b4734 100644
 --- a/st.info
 +++ b/st.info
 @@ -53,7 +53,7 @@ st| simpleterm,
  	ka3=\E[5~,
  	kc1=\E[4~,
  	kc3=\E[6~,
--	kbs=\010,
-+	kbs=\0177,
+-	kbs=\177,
++	kbs=\010,
  	kcbt=\E[Z,
  	kb2=\EOu,
  	kcub1=\EOD,
@@ -58,11 +48,11 @@ index 3b754db..f760a6a 100644
  	kri=\E[1;2A,
  	kclr=\E[3;5~,
  	kdl1=\E[3;2~,
--	kdch1=\0177,
-+	kdch1=\E[3~,
+-	kdch1=\E[3~,
++	kdch1=\177~,
  	kich1=\E[2~,
  	kend=\E[4~,
  	kf1=\EOP,
 -- 
-1.8.5.5
+2.2.1
 

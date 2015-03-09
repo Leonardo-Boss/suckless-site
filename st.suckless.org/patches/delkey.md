@@ -4,8 +4,7 @@ delkey
 Description
 -----------
 
-Use DEL (0x7F) as the backspace key. This is particularly useful
-with Emacs.
+Return BS in Backspace and DEL in Delete key.
 
 Download
 --------

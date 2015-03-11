@@ -1,4 +1,4 @@
-From 34dd3e504e19f074949dd28bb6a43cef7e9993b3 Mon Sep 17 00:00:00 2001
+From cd3626ef20da275de94fbc5fc52e8a30e0a44384 Mon Sep 17 00:00:00 2001
 From: "Roberto E. Vargas Caballero" <k0ga@shike2.com>
 Date: Mon, 9 Mar 2015 23:35:05 +0000
 Subject: [PATCH] Do the only true correct DEL/BACKSPACE style
@@ -9,7 +9,7 @@ Subject: [PATCH] Do the only true correct DEL/BACKSPACE style
  2 files changed, 4 insertions(+), 5 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
-index 5b985cd..1667ed6 100644
+index 28a413b..1667ed6 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -203,7 +203,7 @@ static Key key[] = {
@@ -26,7 +26,7 @@ index 5b985cd..1667ed6 100644
  	{ XK_Delete,        ShiftMask,      "\033[3;2~",    +1,    0,    0},
  	{ XK_Delete,        XK_ANY_MOD,     "\033[P",       -1,    0,    0},
 -	{ XK_Delete,        XK_ANY_MOD,     "\033[3~",      +1,    0,    0},
--	{ XK_BackSpace,     XK_ANY_MOD,     "\177",         +1,    0,    0},
+-	{ XK_BackSpace,     XK_ANY_MOD,     "\177",          0,    0,    0},
 +	{ XK_Delete,        XK_ANY_MOD,     "\177",         +1,    0,    0},
  	{ XK_Home,          ShiftMask,      "\033[2J",       0,   -1,    0},
  	{ XK_Home,          ShiftMask,      "\033[1;2H",     0,   +1,    0},

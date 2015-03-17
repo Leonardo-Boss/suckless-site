@@ -1,5 +1,16 @@
+From 50a21cfd1474dc113fa5c36aaf82c8e758165d9c Mon Sep 17 00:00:00 2001
+From: Alexander Huemer <alexander.huemer@xx.vu>
+Date: Tue, 17 Mar 2015 22:26:33 +0100
+Subject: [PATCH] Add scrollback buffer
+
+---
+ FAQ          |   7 +---
+ config.def.h |   3 ++
+ st.c         | 118 ++++++++++++++++++++++++++++++++++++++++++++++-------------
+ 3 files changed, 98 insertions(+), 30 deletions(-)
+
 diff --git a/FAQ b/FAQ
-index a47c024..bc9375f 100644
+index 3502c60..62a0a6c 100644
 --- a/FAQ
 +++ b/FAQ
 @@ -22,12 +22,9 @@ you a list of available terminals, but you’ll most likely switch between xterm
@@ -18,7 +29,7 @@ index a47c024..bc9375f 100644
  ## Why doesn't the Del key work in some programs?
  
 diff --git a/config.def.h b/config.def.h
-index 1667ed6..4e788b0 100644
+index 56bae2d..9c6f759 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -7,6 +7,7 @@
@@ -29,9 +40,9 @@ index 1667ed6..4e788b0 100644
  static char shell[] = "/bin/sh";
  static char *utmp = NULL;
  
-@@ -120,6 +121,8 @@ static Shortcut shortcuts[] = {
- 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
- 	{ MODKEY|ShiftMask,     XK_Insert,      clippaste,      {.i =  0} },
+@@ -122,6 +123,8 @@ static Shortcut shortcuts[] = {
+ 	{ MODKEY|ShiftMask,     XK_C,           clipcopy,       {.i =  0} },
+ 	{ MODKEY|ShiftMask,     XK_V,           clippaste,      {.i =  0} },
  	{ MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
 +	{ ShiftMask,		XK_Page_Up,	kscrollup,	{.i = -1} },
 +	{ ShiftMask,		XK_Page_Down,	kscrolldown,	{.i = -1} },
@@ -39,10 +50,10 @@ index 1667ed6..4e788b0 100644
  
  /*
 diff --git a/st.c b/st.c
-index fc91334..f3c2b77 100644
+index 836ae21..6104b89 100644
 --- a/st.c
 +++ b/st.c
-@@ -85,6 +85,8 @@ char *argv0;
+@@ -83,6 +83,8 @@ char *argv0;
  #define TRUERED(x)       (((x) & 0xff0000) >> 8)
  #define TRUEGREEN(x)     (((x) & 0xff00))
  #define TRUEBLUE(x)      (((x) & 0xff) << 8)
@@ -51,7 +62,7 @@ index fc91334..f3c2b77 100644
  
  
  enum glyph_attribute {
-@@ -225,6 +227,9 @@ typedef struct {
+@@ -223,6 +225,9 @@ typedef struct {
  	int col;      /* nb col */
  	Line *line;   /* screen */
  	Line *alt;    /* alternate screen */
@@ -61,16 +72,16 @@ index fc91334..f3c2b77 100644
  	bool *dirty;  /* dirtyness of lines */
  	TCursor c;    /* cursor */
  	int top;      /* top    scroll limit */
-@@ -315,6 +320,8 @@ typedef struct {
- 
+@@ -314,6 +319,8 @@ typedef struct {
  /* function definitions used in config.h */
+ static void clipcopy(const Arg *);
  static void clippaste(const Arg *);
 +static void kscrolldown(const Arg *);
 +static void kscrollup(const Arg *);
  static void numlock(const Arg *);
  static void selpaste(const Arg *);
  static void xzoom(const Arg *);
-@@ -385,8 +392,8 @@ static void tputtab(int);
+@@ -384,8 +391,8 @@ static void tputtab(int);
  static void tputc(char *, int);
  static void treset(void);
  static void tresize(int, int);
@@ -81,7 +92,7 @@ index fc91334..f3c2b77 100644
  static void tsetattr(int *, int);
  static void tsetchar(char *, Glyph *, int, int);
  static void tsetscroll(int, int);
-@@ -666,10 +673,10 @@ y2row(int y) {
+@@ -671,10 +678,10 @@ y2row(int y) {
  static int tlinelen(int y) {
  	int i = term.col;
  
@@ -94,7 +105,7 @@ index fc91334..f3c2b77 100644
  		--i;
  
  	return i;
-@@ -725,7 +732,7 @@ selsnap(int mode, int *x, int *y, int direction) {
+@@ -730,7 +737,7 @@ selsnap(int mode, int *x, int *y, int direction) {
  		 * Snap around if the word wraps around at the end or
  		 * beginning of a line.
  		 */
@@ -103,7 +114,7 @@ index fc91334..f3c2b77 100644
  		prevdelim = strchr(worddelimiters, prevgp->c[0]) != NULL;
  		for(;;) {
  			newx = *x + direction;
-@@ -740,14 +747,14 @@ selsnap(int mode, int *x, int *y, int direction) {
+@@ -745,14 +752,14 @@ selsnap(int mode, int *x, int *y, int direction) {
  					yt = *y, xt = *x;
  				else
  					yt = newy, xt = newx;
@@ -120,7 +131,7 @@ index fc91334..f3c2b77 100644
  			delim = strchr(worddelimiters, gp->c[0]) != NULL;
  			if(!(gp->mode & ATTR_WDUMMY) && (delim != prevdelim
  					|| (delim && gp->c[0] != prevgp->c[0])))
-@@ -768,14 +775,14 @@ selsnap(int mode, int *x, int *y, int direction) {
+@@ -773,14 +780,14 @@ selsnap(int mode, int *x, int *y, int direction) {
  		*x = (direction < 0) ? 0 : term.col - 1;
  		if(direction < 0 && *y > 0) {
  			for(; *y > 0; *y += direction) {
@@ -137,7 +148,7 @@ index fc91334..f3c2b77 100644
  						& ATTR_WRAP)) {
  					break;
  				}
-@@ -940,13 +947,13 @@ getsel(void) {
+@@ -945,13 +952,13 @@ getsel(void) {
  		linelen = tlinelen(y);
  
  		if(sel.type == SEL_RECTANGULAR) {
@@ -154,7 +165,7 @@ index fc91334..f3c2b77 100644
  		while(last >= gp && last->c[0] == ' ')
  			--last;
  
-@@ -1276,10 +1283,16 @@ ttyread(void) {
+@@ -1313,10 +1320,16 @@ ttyread(void) {
  
  	/* keep any uncomplete utf8 char for the next call */
  	memmove(buf, ptr, buflen);
@@ -171,7 +182,7 @@ index fc91334..f3c2b77 100644
  	if(xwrite(cmdfd, s, n) == -1)
  		die("write error on tty: %s\n", strerror(errno));
  }
-@@ -1407,13 +1420,51 @@ tswapscreen(void) {
+@@ -1444,13 +1457,51 @@ tswapscreen(void) {
  }
  
  void
@@ -224,7 +235,7 @@ index fc91334..f3c2b77 100644
  	tclearregion(0, term.bot-n+1, term.col-1, term.bot);
  
  	for(i = term.bot; i >= orig+n; i--) {
-@@ -1426,12 +1477,19 @@ tscrolldown(int orig, int n) {
+@@ -1463,12 +1514,19 @@ tscrolldown(int orig, int n) {
  }
  
  void
@@ -245,7 +256,7 @@ index fc91334..f3c2b77 100644
  	tclearregion(0, orig, term.col-1, orig+n-1);
  	tsetdirt(orig+n, term.bot);
  
-@@ -1478,7 +1536,7 @@ tnewline(int first_col) {
+@@ -1515,7 +1573,7 @@ tnewline(int first_col) {
  	int y = term.c.y;
  
  	if(y == term.bot) {
@@ -254,7 +265,7 @@ index fc91334..f3c2b77 100644
  	} else {
  		y++;
  	}
-@@ -1638,13 +1696,13 @@ tinsertblank(int n) {
+@@ -1675,13 +1733,13 @@ tinsertblank(int n) {
  void
  tinsertblankline(int n) {
  	if(BETWEEN(term.c.y, term.top, term.bot))
@@ -270,7 +281,7 @@ index fc91334..f3c2b77 100644
  }
  
  int32_t
-@@ -2073,11 +2131,11 @@ csihandle(void) {
+@@ -2110,11 +2168,11 @@ csihandle(void) {
  		break;
  	case 'S': /* SU -- Scroll <n> line up */
  		DEFAULT(csiescseq.arg[0], 1);
@@ -284,7 +295,7 @@ index fc91334..f3c2b77 100644
  		break;
  	case 'L': /* IL -- Insert <n> blank lines */
  		DEFAULT(csiescseq.arg[0], 1);
-@@ -2518,7 +2576,7 @@ eschandle(uchar ascii) {
+@@ -2555,7 +2613,7 @@ eschandle(uchar ascii) {
  		return 0;
  	case 'D': /* IND -- Linefeed */
  		if(term.c.y == term.bot) {
@@ -293,7 +304,7 @@ index fc91334..f3c2b77 100644
  		} else {
  			tmoveto(term.c.x, term.c.y+1);
  		}
-@@ -2531,7 +2589,7 @@ eschandle(uchar ascii) {
+@@ -2568,7 +2626,7 @@ eschandle(uchar ascii) {
  		break;
  	case 'M': /* RI -- Reverse index */
  		if(term.c.y == term.top) {
@@ -302,7 +313,7 @@ index fc91334..f3c2b77 100644
  		} else {
  			tmoveto(term.c.x, term.c.y-1);
  		}
-@@ -2699,7 +2757,7 @@ tputc(char *c, int len) {
+@@ -2739,7 +2797,7 @@ tputc(char *c, int len) {
  
  void
  tresize(int col, int row) {
@@ -311,7 +322,7 @@ index fc91334..f3c2b77 100644
  	int minrow = MIN(row, term.row);
  	int mincol = MIN(col, term.col);
  	int slide = term.c.y - row + 1;
-@@ -2735,9 +2793,18 @@ tresize(int col, int row) {
+@@ -2775,9 +2833,18 @@ tresize(int col, int row) {
  	/* resize to new height */
  	term.line = xrealloc(term.line, row * sizeof(Line));
  	term.alt  = xrealloc(term.alt,  row * sizeof(Line));
@@ -330,7 +341,7 @@ index fc91334..f3c2b77 100644
  	/* resize each row to new width, zero-pad if needed */
  	for(i = 0; i < minrow; i++) {
  		term.line[i] = xrealloc(term.line[i], col * sizeof(Glyph));
-@@ -3594,10 +3661,10 @@ drawregion(int x1, int y1, int x2, int y2) {
+@@ -3634,10 +3701,10 @@ drawregion(int x1, int y1, int x2, int y2) {
  
  		xtermclear(0, y, term.col, y);
  		term.dirty[y] = 0;
@@ -343,7 +354,7 @@ index fc91334..f3c2b77 100644
  			if(new.mode == ATTR_WDUMMY)
  				continue;
  			if(ena_sel && selected(x, y))
-@@ -3620,7 +3687,8 @@ drawregion(int x1, int y1, int x2, int y2) {
+@@ -3660,7 +3727,8 @@ drawregion(int x1, int y1, int x2, int y2) {
  		if(ib > 0)
  			xdraws(buf, base, ox, y, ic, ib);
  	}
@@ -353,3 +364,6 @@ index fc91334..f3c2b77 100644
  }
  
  void
+-- 
+2.1.4
+

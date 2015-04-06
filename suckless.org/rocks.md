@@ -150,6 +150,8 @@ Utilities
 * [9menu](http://www.freshports.org/x11/9menu/) - A menu program based on the Blit-style menus so prevalent in Plan 9.  A take on it is included with wmii.
 * [dmenu](http://tools.suckless.org/dmenu/) - dmenu is a dynamic menu for X
 * [slmenu](https://bitbucket.org/rafaelgg/slmenu) - Dmenu spinoff for the console
+* [dvtm](http://www.brain-dump.org/projects/dvtm/) - dynamic virtual terminal manager
+* [abduco](http://www.brain-dump.org/projects/abduco/) - session {at,de}tach support
 
 Web Browsers
 ------------

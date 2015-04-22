@@ -2,8 +2,8 @@ diff --git a/config.def.h b/config.def.h
 index a221c86..c3aef5e 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -93,3 +93,4 @@ static Key keys[] = {
-     { MODKEY|GDK_SHIFT_MASK,GDK_v,      toggle,     { .v = "enable-plugins" } },
+@@ -103,3 +103,4 @@ static Key keys[] = {
+     { MODKEY|GDK_SHIFT_MASK,GDK_g,      togglegeolocation, { 0 } },
  };
  
 +static char *searchengine   = "https://duckduckgo.com/?q=";

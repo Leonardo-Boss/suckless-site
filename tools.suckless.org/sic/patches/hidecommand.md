@@ -17,5 +17,5 @@ Use the command without arguments to stop hiding any messages.
 Download
 --------
 
-* [patch](sic-hidecommand.diff)
+* [patch](hidecommand.diff)
 

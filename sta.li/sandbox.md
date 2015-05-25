@@ -17,7 +17,7 @@ Ideas
 * maybe a different format to ELF
 * kernel is a monolithic Linux kernel
 	* still make less used modules loadable (all kind of USB)
-* system loader is lilo
+* system loader is linux loader
 * no initrd
 * make the whole system a ramdisk
 * a basic initsystem

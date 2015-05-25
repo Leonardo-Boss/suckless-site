@@ -2,11 +2,11 @@
 
 ## Description
 
-Scroll back thru terminal output.
+Scroll back through terminal output.
 
 ## Download
 
-* [st-scrollback.diff](st-scrollback.diff)
+* [st-scrollback.diff](st-scrollback.diff) (against current git master)
 
 ## Author
 

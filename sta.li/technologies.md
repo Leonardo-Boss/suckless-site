@@ -29,4 +29,6 @@ are: Be as simple as possible and as useful as possible.
 * dhcp
 	* [sdhcp](http://galos.no-ip.org/sdhcp)
 * shell
+        * [rc](http://plan9.bell-labs.com/sys/doc/rc.html)
+        * [loksh](https://github.com/dimkr/loksh)
 	* [mksh](https://www.mirbsd.org/mksh.htm)

@@ -1,0 +1,52 @@
+diff --git a/config.def.h b/config.def.h
+index 58b470e..8a8d968 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -47,7 +47,7 @@ static int bellvolume = 0;
+ static char termname[] = "st-256color";
+ 
+ static unsigned int tabspaces = 8;
+-
++#define WORD_BREAK " "
+ 
+ /* Terminal colors (16 first used in escape sequence) */
+ static const char *colorname[] = {
+diff --git a/st.c b/st.c
+index 392f12d..6a32d03 100644
+--- a/st.c
++++ b/st.c
+@@ -343,6 +343,7 @@ typedef struct {
+ } DC;
+ 
+ static void die(const char *, ...);
++static bool is_word_break(char);
+ static void draw(void);
+ static void redraw(int);
+ static void drawregion(int, int, int, int);
+@@ -751,7 +752,7 @@ selsnap(int mode, int *x, int *y, int direction) {
+ 		 */
+ 		if(direction > 0) {
+ 			i = term.col;
+-			while(--i > 0 && term.line[*y][i].c[0] == ' ')
++			while(--i > 0 && is_word_break(term.line[*y][i].c[0]))
+ 				/* nothing */;
+ 			if(i > 0 && i < *x)
+ 				*x = term.col - 1;
+@@ -1141,6 +1142,17 @@ die(const char *errstr, ...) {
+ 	exit(EXIT_FAILURE);
+ }
+ 
++bool
++is_word_break(char c) {
++	static char *word_break = WORD_BREAK;
++	char *s = word_break;
++	while(*s) {
++		if(*s == c) return true;
++		s++;
++	}
++	return false;
++}
++
+ void
+ execsh(void) {
+ 	char **args;

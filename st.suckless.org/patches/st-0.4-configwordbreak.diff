@@ -1,8 +1,8 @@
 diff --git a/config.def.h b/config.def.h
-index 1ba6d8e..3ddbe10 100644
+index 693bdbd..cba3754 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -13,7 +13,7 @@ static unsigned int tripleclicktimeout = 600;
+@@ -21,7 +21,7 @@ static unsigned int actionfps = 30;
  static char termname[] = "st-256color";
  
  static unsigned int tabspaces = 8;
@@ -12,18 +12,18 @@ index 1ba6d8e..3ddbe10 100644
  /* Terminal colors (16 first used in escape sequence) */
  static const char *colorname[] = {
 diff --git a/st.c b/st.c
-index 8e0df08..2998468 100644
+index 8b1fc56..8ed395c 100644
 --- a/st.c
 +++ b/st.c
-@@ -279,6 +279,7 @@ typedef struct {
+@@ -294,6 +294,7 @@ typedef struct {
  } DC;
  
  static void die(const char *, ...);
 +static bool is_word_break(char);
  static void draw(void);
- static void redraw(void);
+ static void redraw(int);
  static void drawregion(int, int, int, int);
-@@ -813,12 +814,12 @@ brelease(XEvent *e) {
+@@ -920,12 +921,12 @@ brelease(XEvent *e) {
  				/* double click to select word */
  				sel.bx = sel.ex;
  				while(sel.bx > 0 && term.line[sel.ey][sel.bx-1].state & GLYPH_SET &&
@@ -38,7 +38,7 @@ index 8e0df08..2998468 100644
  					sel.ex++;
  				}
  				sel.e.x = sel.ex;
-@@ -866,6 +867,17 @@ die(const char *errstr, ...) {
+@@ -974,6 +975,17 @@ die(const char *errstr, ...) {
  	exit(EXIT_FAILURE);
  }
  

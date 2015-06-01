@@ -10,9 +10,11 @@ the available URLs.
 Download
 --------
 
-* [st-git-copyurl.diff](http://jangler.info/code/st-git-copyurl.diff)
+* [st-git-20141017-copyurl.diff](st-git-20141017-copyurl.diff)
+* [st-git-20150601-copyurl.diff](st-git-20150601-copyurl.diff)
 
 Author
 ------
 
- * Brandon Mulcahy - brandon @ jangler . info
+ * Brandon Mulcahy - brandon@jangler.info
+ * FRIGN - dev@frign.de (git port)

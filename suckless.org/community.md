@@ -5,8 +5,8 @@ Mailing lists
 -------------
 
 * `dev@suckless.org` - for dwm/dmenu/st/... users, development discussion, bug reports and general discussion
-* `hackers@suckless.org` - for patches. Commit messages and diffs from all suckless projects are posted here, and can be replied to.
-* `news@suckless.org` - for release news
+* `hackers@suckless.org` - for patches and patch discussion. Commit messages and diffs from all suckless projects are posted here and can be replied to.
+* `news@suckless.org` - for release and other news. Please send release news to dev@ too.
 * `wiki@suckless.org` - for discussion about the wiki, also automatic wiki commit messages are posted here.
 
 ### Best practice

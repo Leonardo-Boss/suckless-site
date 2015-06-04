@@ -4,9 +4,10 @@ Community
 Mailing lists
 -------------
 
-* `dev@suckless.org` - for dwm/dmenu/st/... users, development discussion, bug reports, patches, and general discussion
-* `hackers@suckless.org` - commit messages and diffs from all suckless projects are posted here, and can be replied to
-* `wiki@suckless.org` - for discussion about wiki, also automatic wiki commit messages are posted here.
+* `dev@suckless.org` - for dwm/dmenu/st/... users, development discussion, bug reports and general discussion
+* `hackers@suckless.org` - for patches. Commit messages and diffs from all suckless projects are posted here, and can be replied to.
+* `news@suckless.org` - for release news
+* `wiki@suckless.org` - for discussion about the wiki, also automatic wiki commit messages are posted here.
 
 ### Best practice
 
@@ -45,6 +46,17 @@ following addresses to perform the described action.
 * `hackers+get-N@MAILHOST` - retrieve message number N
 * `hackers+help@MAILHOST` - receive detailed description of the mailing list commands
 
+### `news@suckless.org`
+
+* `news+subscribe@MAILHOST` - subscribe to the mailing list (read/write)
+* `news+subscribe-digest@MAILHOST` - subscribe to the digest version of the mailing list (read/write)
+* `news+subscribe-nomail@MAILHOST` - subscribe without receiving e-mails from the mailing list (write)
+* `news+unsubscribe@MAILHOST` - unsubscribe from the mailing list
+* `news+unsubscribe-digest@MAILHOST` - unsubscribe from the digest version
+* `news+unsubscribe-nomail@MAILHOST` - unsubscribe from the nomail version 
+* `news+get-N@MAILHOST` - retrieve message number N
+* `news+help@MAILHOST` - receive detailed description of the mailing list commands
+
 ### `wiki@suckless.org`
 
 * `wiki+subscribe@MAILHOST` - subscribe to the mailing list (read/write)
@@ -63,6 +75,7 @@ Archive of all mails posted to mailing lists is accessible via [http://lists.suc
 
 * [dev mailing list archive][devarchive] [gmane.comp.misc.suckless](http://dir.gmane.org/gmane.comp.misc.suckless)
 * [hackers mailing list archive][hackersarchive]
+* [news mailing list archive][newsarchive]
 * [wiki mailing list archive][wikiarchive]
 
 Old
@@ -97,6 +110,7 @@ Other popular channels:
 [devarchive]: http://lists.suckless.org/dev/
 [dwmarchive]: http://lists.suckless.org/dwm/
 [hackersarchive]: http://lists.suckless.org/hackers/
+[newsarchive]: http://lists.suckless.org/hackers/
 [wikiarchive]: http://lists.suckless.org/wiki/
 [wmiiarchive]: http://lists.suckless.org/wmii/
 

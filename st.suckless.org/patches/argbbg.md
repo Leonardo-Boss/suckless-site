@@ -16,7 +16,7 @@ Note that **you need an X composite manager** to make this patch effective. (e.g
  * [st-0.4.1-argbbg.diff](st-0.4.1-argbbg.diff)
  * [st-0.5-argbbg.diff](st-0.5-argbbg.diff)
  * [st-git-20141122-argbbg.diff](st-git-20141122-argbbg.diff)
- * [st-git-20150601-argbbg.diff](st-git-20150601-argbbg.diff)
+ * [st-git-20150611-argbbg.diff](st-git-20150611-argbbg.diff)
 
 ## Authors ##
  * Eon S. Jeon - esjeon@hyunmu.am

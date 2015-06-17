@@ -1,6 +1,6 @@
 # Multi-monitor setup #
 
-If configured to use Xinerama libraries in `congik.mk`, dwm can
+If configured to use Xinerama libraries in `config.mk`, dwm can
 automatically detect configured screen outputs (monitor, overhead
 projector, etc.) and their resolutions and draw the windows in the
 output area accordingly.

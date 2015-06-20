@@ -77,6 +77,7 @@ File browsers
 File managers
 -------------
 * [mc](https://www.midnight-commander.org/) - Midnight Commander is a free cross-platform orthodox file manager
+* [ranger](http://ranger.nongnu.org/) - ranger is a file manager with vi key bindings written in python but with an interface that rocks
 
 IRC Clients
 -----------

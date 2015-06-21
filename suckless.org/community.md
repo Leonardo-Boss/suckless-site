@@ -11,16 +11,16 @@ Mailing lists
 
 ### Best practice
 
-Please mention `dwm` or `dmenu` in the subject when beginning a new discussion
-on the `dev@suckless.org` mailing list, if your email is stricly `dwm` or
-`dmenu` related only.
+When beginning a new discussion on the `dev@suckless.org` mailing
+list, please mention `dwm` or `dmenu` in the subject *only* if your
+email is strictly `dwm` or `dmenu` related.
 
 ### Mailing list commands
 
 Send a mail from your (not yet) subscribed email address to one of the
 following addresses to perform the described action.
 
-**After both subscribe and unsubscribe command, confirmation email will be send to you (So look into your spam bin)!**
+**After both the `subscribe` and `unsubscribe` command, a confirmation email will be sent to you (so look into your spam bin!)**
 
 **Note, replace `MAILHOST` with `suckless.org`**
 
@@ -71,7 +71,7 @@ following addresses to perform the described action.
 Mailing lists web archive
 -------------------------
 
-Archive of all mails posted to mailing lists is accessible via [http://lists.suckless.org/](http://lists.suckless.org/)
+An archive of all mails posted to the mailing lists is accessible via [http://lists.suckless.org/](http://lists.suckless.org/)
 
 * [dev mailing list archive][devarchive] [gmane.comp.misc.suckless](http://dir.gmane.org/gmane.comp.misc.suckless)
 * [hackers mailing list archive][hackersarchive]

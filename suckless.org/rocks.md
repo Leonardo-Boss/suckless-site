@@ -113,6 +113,7 @@ Mail Clients
 * [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
 * [mutt](http://www.mutt.org/)
 * [nmh](http://www.nongnu.org/nmh/)
+* [Prayer](http://www-uxsup.csx.cam.ac.uk/~dpc22/prayer/) - Webmail interface for IMAP servers. Doesn't use javascript or frames and doesn't need cookies. 100% C code.
 
 Media Players
 -------------

@@ -72,6 +72,7 @@ Feed aggregators
 File browsers
 -------------
 * [noice](http://git.2f30.org/noice/) - Small and portable file browser
+* [rover](https://github.com/lecram/rover) - Simple file browser for the terminal 
 
 IRC Clients
 -----------

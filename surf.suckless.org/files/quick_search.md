@@ -61,7 +61,7 @@ Code
 	# here, but xxd is part of vim packages on some systems, whereas od is
 	# ubiquitous. A search script that breaks if someone accidentally removes
 	# vim is stupid.
-	s=$(printf %s "${q#* }" | od -t x1 -An | tr -d '\n' | tr ' ' '%')
+	s=$(printf %s "${q#* }" | tr -d '\n' | od -t x1 -An |  tr ' ' '%')
 
 	# These are examples. Change as desired.
 	# 's' = startpage.com

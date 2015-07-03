@@ -12,7 +12,11 @@ having to think about two clipboards. I don't like having to use typically
 three key combination to copy my selected text into the clipboard used by my
 browser.
 
-## Fix
+## Download
+
+* [1clipboard.diff]
+
+or
 
 Append `clipcopy(NULL);` to the end of the xsetsel function in [st.c](http://git.suckless.org/st/tree/st.c).
 

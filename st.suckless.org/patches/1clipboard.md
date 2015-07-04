@@ -14,7 +14,7 @@ browser.
 
 ## Download
 
-* [1clipboard.diff]
+* [[1clipboard.diff]]
 
 or
 

@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2015-07-07
+----------
+[st 0.6](http://st.suckless.org) released: [download](http://dl.suckless.org/st/st-0.6.tar.gz)
+
 2015-02-14
 ----------
 There will be [slcon2](http://suckless.org/conference/) held in Budpast end of Oct 2015.

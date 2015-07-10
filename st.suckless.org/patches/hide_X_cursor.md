@@ -11,6 +11,7 @@ Download
 --------
 
 * [st-0.5-hidexcursor.diff](st-0.5-hidexcursor.diff)
+* [st-0.6-hidexcursor.diff](st-0.6-hidexcursor.diff)
 * [st-git-hidexcursor.diff](st-git-hidexcursor.diff)
 
 Author

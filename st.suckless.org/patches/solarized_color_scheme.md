@@ -4,7 +4,7 @@ Solarized color scheme
 Description
 -----------
 
-[Solarized][1] is a color scheme by Ethan Schoonover and exists in a
+[Solarized][1] is a color scheme by Ethan Schoonover which exists in a
 dark and a light variant.  These patches make the solarized colors
 available on st.
 
@@ -13,7 +13,7 @@ Notes
 -----
 
 No matter if you choose the light or dark theme, to get the correct
-colors, you *always* have to apply the [patch to st.c][7] (if you're
+colors, you *always* have to apply the [patch to st.c][8] (if you're
 using the latest git version of st, use [this patch to st.c][3]).  Then,
 apply one of the patches for either the [light][4] or the [dark][5]
 version of solarized.
@@ -38,6 +38,7 @@ Download
 --------
 
  * [st-0.5-no-bold-colors.diff][7]
+ * [st-0.6-no-bold-colors.diff][8]
  * [st-no-bold-colors.diff][3]
  * [st-solarized-light.diff][4]
  * [st-solarized-dark.diff][5]
@@ -49,6 +50,7 @@ Download
 [5]: st-solarized-dark.diff
 [6]: http://en.wikipedia.org/wiki/Source_Code_Pro
 [7]: st-0.5-no-bold-colors.diff
+[8]: st-0.6-no-bold-colors.diff
 
 Author
 ------

@@ -56,7 +56,7 @@ generated `config.h` to edit it to your needs.
 
 FAQ
 ---
-The FAQ is maintained in the st git repository and can be rad
+The FAQ is maintained in the st git repository and can be read
 [here](http://git.suckless.org/st/tree/FAQ).
 
 Links

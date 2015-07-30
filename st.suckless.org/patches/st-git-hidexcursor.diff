@@ -1,21 +1,21 @@
-From e428b2c12c6e471f5134c9c886eaf850a0e3c4f2 Mon Sep 17 00:00:00 2001
+From 679b7353a8a6146c81f9fbb5a4012324e87f8008 Mon Sep 17 00:00:00 2001
 From: Ivan Delalande <colona@ycc.fr>
-Date: Thu, 9 Jul 2015 20:24:23 -0700
-Subject: [PATCH] Hide X cursor when typing.
+Date: Thu, 30 Jul 2015 01:53:26 -0700
+Subject: [PATCH] Hide X mouse cursor when typing.
 
 Hide the X cursor when typing in the terminal. The cursor is displayed again
 when the mouse is moved.
 
 [ s/cursor/pointer - Alex Pilon ]
 ---
- st.c | 36 ++++++++++++++++++++++++++++++------
- 1 file changed, 30 insertions(+), 6 deletions(-)
+ st.c | 32 ++++++++++++++++++++++++++++----
+ 1 file changed, 28 insertions(+), 4 deletions(-)
 
 diff --git a/st.c b/st.c
-index b052b2b..3f703f6 100644
+index 1df4fde..96b58e3 100644
 --- a/st.c
 +++ b/st.c
-@@ -256,6 +256,11 @@ typedef struct {
+@@ -258,6 +258,11 @@ typedef struct {
  	Draw draw;
  	Visual *vis;
  	XSetWindowAttributes attrs;
@@ -27,8 +27,8 @@ index b052b2b..3f703f6 100644
  	int scr;
  	int isfixed; /* is fixed geometry? */
  	int l, t; /* left and top offset */
-@@ -1180,6 +1185,13 @@ void
- bmotion(XEvent *e) {
+@@ -1285,6 +1290,13 @@ bmotion(XEvent *e)
+ {
  	int oldey, oldex, oldsby, oldsey;
  
 +	if(!xw.pointerisvisible) {
@@ -38,51 +38,55 @@ index b052b2b..3f703f6 100644
 +			xsetpointermotion(0);
 +	}
 +
- 	if(IS_SET(MODE_MOUSE) && !(e->xbutton.state & forceselmod)) {
+ 	if (IS_SET(MODE_MOUSE) && !(e->xbutton.state & forceselmod)) {
  		mousereport(e);
  		return;
-@@ -3179,9 +3191,11 @@ xzoomreset(const Arg *arg) {
- void
- xinit(void) {
+@@ -3408,10 +3420,10 @@ void
+ xinit(void)
+ {
  	XGCValues gcvalues;
 -	Cursor cursor;
  	Window parent;
  	pid_t thispid = getpid();
-+	XColor xcwhite = {.red = 0xffff, .green = 0xffff, .blue = 0xffff};
-+	XColor xcblack = {.red = 0x0000, .green = 0x0000, .blue = 0x0000};
+ 	XColor xmousefg, xmousebg;
 +	Pixmap blankpm;
  
- 	if(!(xw.dpy = XOpenDisplay(NULL)))
+ 	if (!(xw.dpy = XOpenDisplay(NULL)))
  		die("Can't open display\n");
-@@ -3254,11 +3268,13 @@ xinit(void) {
+@@ -3484,8 +3496,9 @@ xinit(void)
  		die("XCreateIC failed. Could not obtain input method.\n");
  
  	/* white cursor, black outline */
--	cursor = XCreateFontCursor(xw.dpy, XC_xterm);
+-	cursor = XCreateFontCursor(xw.dpy, mouseshape);
 -	XDefineCursor(xw.dpy, xw.win, cursor);
--	XRecolorCursor(xw.dpy, cursor,
--		&(XColor){.red = 0xffff, .green = 0xffff, .blue = 0xffff},
--		&(XColor){.red = 0x0000, .green = 0x0000, .blue = 0x0000});
-+	xw.vpointer = XCreateFontCursor(xw.dpy, XC_xterm);
-+	XDefineCursor(xw.dpy, xw.win, xw.vpointer);
-+	XRecolorCursor(xw.dpy, xw.vpointer, &xcwhite, &xcblack);
 +	xw.pointerisvisible = 1;
++	xw.vpointer = XCreateFontCursor(xw.dpy, mouseshape);
++	XDefineCursor(xw.dpy, xw.win, xw.vpointer);
+ 
+ 	if (XParseColor(xw.dpy, xw.cmap, colorname[mousefg], &xmousefg) == 0) {
+ 		xmousefg.red   = 0xffff;
+@@ -3499,7 +3512,10 @@ xinit(void)
+ 		xmousebg.blue  = 0x0000;
+ 	}
+ 
+-	XRecolorCursor(xw.dpy, cursor, &xmousefg, &xmousebg);
++	XRecolorCursor(xw.dpy, xw.vpointer, &xmousefg, &xmousebg);
 +	blankpm = XCreateBitmapFromData(xw.dpy, xw.win, &(char){0}, 1, 1);
 +	xw.bpointer = XCreatePixmapCursor(xw.dpy, blankpm, blankpm,
-+	                                  &xcblack, &xcblack, 0, 0);
++					  &xmousefg, &xmousebg, 0, 0);
  
  	xw.xembed = XInternAtom(xw.dpy, "_XEMBED", False);
  	xw.wmdeletewin = XInternAtom(xw.dpy, "WM_DELETE_WINDOW", False);
-@@ -3721,6 +3737,8 @@ unmap(XEvent *ev) {
- 
+@@ -3974,6 +3990,8 @@ unmap(XEvent *ev)
  void
- xsetpointermotion(int set) {
+ xsetpointermotion(int set)
+ {
 +	if(!set && !xw.pointerisvisible)
 +		return;
  	MODBIT(xw.attrs.event_mask, set, PointerMotionMask);
  	XChangeWindowAttributes(xw.dpy, xw.win, CWEventMask, &xw.attrs);
  }
-@@ -3814,6 +3832,12 @@ kpress(XEvent *ev) {
+@@ -4073,6 +4091,12 @@ kpress(XEvent *ev)
  	Status status;
  	Shortcut *bp;
  
@@ -92,9 +96,9 @@ index b052b2b..3f703f6 100644
 +		xw.pointerisvisible = 0;
 +	}
 +
- 	if(IS_SET(MODE_KBDLOCK))
+ 	if (IS_SET(MODE_KBDLOCK))
  		return;
  
 -- 
-2.4.5
+2.4.6
 

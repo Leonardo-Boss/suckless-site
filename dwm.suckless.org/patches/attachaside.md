@@ -50,7 +50,7 @@ The original version of attachaside does does not attach to the stack when
 windows are spawned on a tag that is not currently focused. This version is
 improved to also attach to the stack on unfocused tags.
 
-* [dwm-6.0-attachaside-tagfix.patch](dwm-6.0-attachaside-tagfix.patch) (2.9K) (20150729)
+* [dwm-6.1-attachaside-tagfix.diff](dwm-6.1-attachaside-tagfix.diff) (2.9K) (20150729)
 
 ### Original
 

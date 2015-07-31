@@ -212,7 +212,7 @@ plain file.)
 * [kdbus](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n57)
 	* As of 2015-07-31 kdbus is not in the mainline Linux kernel. Systemd
 	  made kdbus non-optional in its release. This is the best example how
-	  systemd is forcing you into decisions. Of course if your a mindless
+	  systemd is forcing you into decisions. Of course if you are a mindless
 	  bureaucrat it helps you to keep your job.
 * [readahead removed](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n950)
 	* The first thing swallowed in on Fedora was readahead. Now that (of

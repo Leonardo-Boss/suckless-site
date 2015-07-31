@@ -196,7 +196,7 @@ plain file.)
 	  domination. This is the next example of a hack that is prone to
 	  fail.
 * [umount -rf](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n380)
-	* This is umount for dummies. Just done one thing – right.
+	* This is umount for dummies. Just do one thing – right.
 * [libudev will be orphaned](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n291)
 	* With the advent of udevd there was a compatibility to its complexity
 	  called libudev. X11 uses it to query the changing devices. And of
@@ -217,7 +217,7 @@ plain file.)
 	  still debating the kdbus ABI or possible alternatives, but if
 	  systemd depends on the current state of kdbus the kernel maintainers
 	  are faced with the hard decision to either break Fedora userspace or
-	  accept the current kdbus proposal into the kernel with its securitx
+	  accept the current kdbus proposal into the kernel with its security
 	  and maintainability issues. This is the best example how
 	  systemd is forcing you into decisions. Of course if you are  a mindless
 	  bureaucrat it helps you to keep your job.
@@ -228,5 +228,5 @@ plain file.)
 	  to make it a separate tool again?  There's no time for that, we are implementing
 	  new features.
 
--- Führerbunker, 2015-07-31
+---- Führerbunker, 2015-07-31
 

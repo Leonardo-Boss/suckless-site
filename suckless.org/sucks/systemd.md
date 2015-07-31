@@ -128,7 +128,7 @@ plain file.)
 	  APIs and of course it will never fail and break systemd on your
 	  initial boot.
 	* They are planning (2015-07) to add multicast DNS to your pid 1.
-	  Multicast DNS implies an enforced timout to know if someone answered.
+	  Multicast DNS implies an enforced timeout to know if someone answered.
 	  Systemd was about speed, you know. Look at avahi in how to ruin this
 	  concept for Linux. It has the same developer flaws as systemd: Too
 	  many forced dependencies, you need to implement its API and when it is
@@ -195,10 +195,10 @@ plain file.)
 	* We have talked about misdesign, too-big-to-fail and world
 	  domination. This is the next example of a hack that is prone to
 	  fail.
-* [mount -rf](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n380)
+* [umount -rf](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n380)
 	* This is umount for dummies. Just done one thing – right.
 * [libudev will be orphaned](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n291)
-	* With the advent of udevd was there a compatibility to its complexity
+	* With the advent of udevd there was a compatibility to its complexity
 	  called libudev. X11 uses it to query the changing devices. And of
 	  course make it a non-independent API in systemd. Why? You can guess
 	  why: Defeating the infidels.
@@ -224,9 +224,8 @@ plain file.)
 * [readahead removed](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n950)
 	* The first thing swallowed in on Fedora was readahead. Now that (of
 	  course!) everyone is using an SSD (at least the developers of
-	  systemd do that) it can be removed. Why was it there? Could it be
-	  popped out into userspace to have the user decide about that it
-	  should be still done? There's no time for that, we are implementing
+	  systemd do that) it can be removed. Why was it there? Is it possible
+	  to make it a separate tool again?  There's no time for that, we are implementing
 	  new features.
 
 -- Führerbunker, 2015-07-31

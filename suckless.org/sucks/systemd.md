@@ -17,7 +17,8 @@ distribution.
 
 What PID 1 Should Do
 ------------------------
-On bootup does the kernel execute some given binary in its known namespace. To
+When your system boots up the kernel is executing a given binary in its known
+namespace. To
 see what are the only tasks the application running as pid 1 has to do, see
 [sinit](http://git.suckless.org/sinit/). Just wait for child process to reap
 and run some other init scripts.
@@ -33,6 +34,7 @@ Part 1
 ------
 (If you are adding more parts, link to the right revision and not just the
 plain file.)
+
 [NEWS revision 3f80af378331748e1373d4c189a8e20cddb735c9](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c)
 
 * [logind should wait](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n2089)
@@ -41,12 +43,12 @@ plain file.)
 	  artifical time we found out might work for the developers
 	  laptops. More on this small world hypothesis of the systemd
 	  devleopers below.
-* [scree  brightness](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1852)
+* [screen brightness](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1852)
 	* Screen brightness is something that should crash your boot up when
 	  it is not working.
 * [hostnamed](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1763)
 	* There really should be a process running which exposes the content
-	  of a file. Complex is without cost.
+	  of a file. Complexity is without cost.
 * [seqnum removed](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1742)
 	* The sequential ordering of requests was one reason why udevd was
 	  introduced. Now remove it, because the developer laptops do not have
@@ -56,7 +58,7 @@ plain file.)
 	  example of the mass of group name dependencies systemd is adding.
 	  See sinit for how to not need such dependencies.
 * [sysv removed](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1651)
-	* We have won. Now remove all remains of the our defeated enemy as
+	* We have won. Now remove all remains of our defeated enemy as
 	  fast as we can. As said in the beginning of the systemd crusade
 	  against the UNIX infidels: »You can patch it out.« It is no more
 	  there.
@@ -75,14 +77,14 @@ plain file.)
 	* »Everything will end up having a remote API.« I wonder when systemd
 	  will understand MIME and e-mail.
 * [init does man](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1465)
-	* My init process is to big, it needs its own file hierarchy and an
+	* My init process is too big, it needs its own file hierarchy and an
 	  abstraction layer to find paths.
 * [factory reset](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1401)
 	* Welcome to the Windows OEM world: Factory reset for Linux! Of course
 	  it is in your init process.
 * [system runs runs](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1397)
 	* Exactly. The predisposition of being able to call such a complex
-	  command does not imply the running system. Let's check it.
+	  command does not imply the running system. Let's check it again.
 * [clean up directories](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1306)
 	* There is another monster, in system which does tmp file handling.
 	  There are just some cases before it was introduced to have to clean up
@@ -103,13 +105,12 @@ plain file.)
 * [systemd-terminal](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1224)
 	* Why does the kernel have tty handling? So in serious situations you
 	  will be able to debug it over the last standing PIN on your
-	  motherboard. Let us remove this. Run it in pid 1.
+	  motherboard. Let us remove this, run it in pid 1.
 * [networkd is your oppressor](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1216)
 	* Premature optimisation of IP configurations always leads to misery.
 * [We do not understand broadcast](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1211)
-	* As systemd is growing in its complexity and all stuff it is touching
-	  of course somewhen the addition of hacks with new implications is
-	  increasing.
+	* With the growth of systemd in complexity and the new depending
+	  software the implications of the added hacks are increasing.
 * [Timezone hack](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1193)
 	* Systemd is too complex for such a simple transaction with the
 	  kernel. Do not inform the kernel and add another assumption which is
@@ -172,20 +173,21 @@ plain file.)
 	* Of course graphics were missing in pid 1.
 * [complexity is purity](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n738)
 	* You will of course need PPPoE when you do parallel bootup. Every
-	  1000 lines of code add one critical bug you never find.
+	  1000 lines of code add one critical bug you never fix.
 * [gateway hostname](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n700)
 	* We rule the world so we are above IETF and IANA. Now add our own
 	  hostnames that of course won't add another assumption.
 * [no editor in systemd](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n689)
 	* This one is a setback. Why is there no default editor in systemd in
 	  case of factory reset?
-* [7x ctrl + alt + del](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n610)
-	* In systemd you press seven times Ctrl+Alt+Del to trigger reboot.
+* [8x ctrl + alt + del](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n610)
+	* In systemd you press eight times Ctrl+Alt+Del to trigger reboot.
 * [privacy policy](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n594)
 	* For the next generations: In 2015 privacy was a big issue because of
-	  the mentioned hard-wiring between the web and software. Now as seen
-	  does every commit which adds some preparation in systemd add an
-	  interpretation on what will be seen as a major feature. If you
+	  the mentioned hard-wiring between the web and software.
+	  As you can see, every commit which adds some preparation for a 
+	  feature adds another intepretation of what will be a major
+	  assumption in a next release. If you
 	  handle privacy you will have some features depending on that user
 	  decision and of course the factory reset default value.
 	* Why didn't they use XML for /etc/os-release?
@@ -211,8 +213,13 @@ plain file.)
 	* The web thing has been discussed before.
 * [kdbus](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n57)
 	* As of 2015-07-31 kdbus is not in the mainline Linux kernel. Systemd
-	  made kdbus non-optional in its release. This is the best example how
-	  systemd is forcing you into decisions. Of course if your a mindless
+	  made kdbus non-optional in its release. The kernel maintainers are
+	  still debating the kdbus ABI or possible alternatives, but if
+	  systemd depends on the current state of kdbus the kernel maintainers
+	  are faced with the hard decision to either break Fedora userspace or
+	  accept the current kdbus proposal into the kernel with its securitx
+	  and maintainability issues. This is the best example how
+	  systemd is forcing you into decisions. Of course if you are  a mindless
 	  bureaucrat it helps you to keep your job.
 * [readahead removed](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n950)
 	* The first thing swallowed in on Fedora was readahead. Now that (of

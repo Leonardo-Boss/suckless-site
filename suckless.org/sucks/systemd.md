@@ -86,7 +86,7 @@ plain file.)
 	* Exactly. The predisposition of being able to call such a complex
 	  command does not imply the running system. Let's check it again.
 * [clean up directories](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1306)
-	* There is another monster, in system which does tmp file handling.
+	* There is another monster in systemd, it handles tmp files.
 	  There are just some cases before it was introduced to have to clean up
 	  a directory in the file tree. Now there are hundreds. And easily
 	  another case can be added! Of course your init process does that.

@@ -41,7 +41,7 @@ plain file.)
 	  artifical time we found out might work for the developers
 	  laptops. More on this small world hypothesis of the systemd
 	  devleopers below.
-* [scree  brightness](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1852)
+* [screen brightness](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1852)
 	* Screen brightness is something that should crash your boot up when
 	  it is not working.
 * [hostnamed](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1763)

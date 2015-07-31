@@ -75,7 +75,7 @@ plain file.)
 	* »Everything will end up having a remote API.« I wonder when systemd
 	  will understand MIME and e-mail.
 * [init does man](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1465)
-	* My init process is to big, it needs its own file hierarchy and an
+	* My init process is too big, it needs its own file hierarchy and an
 	  abstraction layer to find paths.
 * [factory reset](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1401)
 	* Welcome to the Windows OEM world: Factory reset for Linux! Of course

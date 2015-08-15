@@ -1,0 +1,51 @@
+From 592c9f76bd234a12131a67e7c6dfdffa2f04f6e8 Mon Sep 17 00:00:00 2001
+From: Alex Kozadaev <akozadaev at yahoo com>
+Date: Wed, 12 Aug 2015 09:02:36 +0100
+Subject: [PATCH] Wrapper for xterm to fix missing .terminfo.
+
+The patch allows automatic fallback to xterm and xterm-256color in case the st
+and st-256color is not available. This setup allows hassle-free work on multiple
+remote SSH servers when uploading .terminfo on every one of them isn't an option.
+---
+ config.def.h | 2 +-
+ st.info      | 7 ++++++-
+ 2 files changed, 7 insertions(+), 2 deletions(-)
+
+diff --git a/config.def.h b/config.def.h
+index 930e468..61c6c50 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -63,7 +63,7 @@ static unsigned int cursorthickness = 2;
+ static int bellvolume = 0;
+
+ /* TERM value */
+-static char termname[] = "st-256color";
++static char termname[] = "xterm";
+
+ static unsigned int tabspaces = 8;
+
+diff --git a/st.info b/st.info
+index b70fefa..72ea938 100644
+--- a/st.info
++++ b/st.info
+@@ -187,7 +187,6 @@ st| simpleterm,
+ 	xenl,
+ 	vpa=\E[%i%p1%dd,
+
+-
+ st-256color| simpleterm with 256 colors,
+ 	use=st,
+ 	colors#256,
+@@ -211,3 +210,9 @@ st-meta-256color| simpleterm with meta key and 256 colors,
+ 	smm=\E[?1034h,
+ 	rs2=\E[4l\E>\E[?1034h,
+ 	is2=\E[4l\E>\E[?1034h,
++
++xterm| st,
++	use=st,
++
++xterm-256color| st-256-color,
++	use=st-256color,
+--
+2.1.4
+

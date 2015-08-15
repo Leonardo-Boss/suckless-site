@@ -30,6 +30,11 @@ Bottom Stack Tiling
 
 Download
 --------
+
+### 6.1
+
+* `tile`-like `htile` implementation, similar to `bstack` [dwm-6.1-htile.diff](dwm-6.1-htile.diff)
+
 ### 6.0
 * Not for use with pertag patch: [dwm-6.0-bstack.diff](dwm-6.0-bstack.diff)
 

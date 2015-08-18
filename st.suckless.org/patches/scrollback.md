@@ -16,3 +16,4 @@ Apply only one of them:
 
  * Jochen Sprickerhof - dwm @ jochen . sprickerhof . de
  * M Farkas-Dyck - strake888 @ gmail . com
+ * Ivan Tham - pickfire @ riseup . net (The gluer)

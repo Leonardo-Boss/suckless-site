@@ -124,23 +124,27 @@ Download
 <i>Please contact the author if the patch provided for the git master branch does not work with the current head.</i>
 
  * Tab patch alone
-  * For dwm 6.0: [dwm-6.0-tab-v2a.diff](dwm-6.0-tab-v2a.diff)
-  * For dwm from the git master branch: [dwm-master\_2013-08-27\_cdec978-tab-v2a.diff](dwm-master_2013-08-27_cdec978-tab-v2a.diff)
+   * For dwm 6.0: [dwm-6.0-tab-v2b.diff](dwm-6.0-tab-v2b.diff)
+   * For dwm from the git master branch: [dwm-master\_2015-03-05\_14343e-tab-v2b.diff](dwm-master\_2015-03-05\_14343e-tab-v2b.diff)
 
  * Combined patch of tab and the [pertag](pertag) patch from Jan Christoph Ebersbach. 
-  * Follow the [link](pertag) for the description of this patch and the credits. The possibility to define the default layout per view has been added.
-  * For dwm 6.0: [dwm-6.0-pertag-tab-v2a.diff](dwm-6.0-pertag-tab-v2a.diff)
-  * For dwm from the git master branch: [dwm-master\_2013-08-27\_cdec978-pertag-tab-v2a.diff](dwm-master_2013-08-27_cdec978-pertag-tab-v2a.diff)
+   * Follow the [link](pertag) for the description of this patch and the credits. The possibility to define the default layout per view has been added.
+   * For dwm 6.0: [dwm-6.0-pertag-tab-v2b.diff](dwm-6.0-pertag-tab-v2b.diff)
+   * For dwm from the git master branch: [dwm-master\_2015-03-05\_14343e-pertag-tab-v2b.diff](dwm-master\_2015-03-05\_14343e-pertag-tab-v2b.diff)
 
 Old versions
 
+ * [dwm-master\_2013-08-27\_cdec978-tab-v2a.diff](historical/dwm-master_2013-08-27_cdec978-tab-v2a.diff),  [dwm-master\_2013-08-27\_cdec978-pertag-tab-v2a.diff](historical/dwm-master_2013-08-27_cdec978-pertag-tab-v2a.diff)
+ * [dwm-6.0-tab-v2a.diff](historical/dwm-6.0-tab-v2a.diff), [dwm-6.0-pertag-tab-v2a.diff](historical/dwm-6.0-pertag-tab-v2a.diff)
  * [dwm-6.0-tab-v2.diff](historical/dwm-6.0-tab-v2.diff), [dwm-6.0-pertag-tab-v2.diff](historical/dwm-6.0-pertag-tab-v2.diff)
+
 
 Change log
 ----------
 
 <dl>
- <dt>v2a </dt><dl>Typo corrected in the man page. Combined pertag-tab patch includes the modification to allow per-view configuration of the default layout.</dl>
+ <dt>v2b </dt><dl>Fixed in the pertag-tab patch the support for per-tag default layout specification. No change in the tab only patch.</dl>
+ <dt>v2a </dt><dl>Typo corrected in the man page. For the combined pertag-tab patch, specification of a default layout per-tag layout was added in the config.h configuration file, but it was not taken into account properly. The versin v2b fixed this issue.</dl>
  <dt>v2  </dt><dl>First public version.</dl>
 </dl>
 

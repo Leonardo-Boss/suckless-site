@@ -31,7 +31,7 @@ be implemented or fixed.
 
 What has been implemented:
 
-* 256 colors
+* 256 colors and [true colors](https://gist.github.com/XVilka/8346728)
 * most VT10X escape sequences
 * utf8
 * X11 copy/paste

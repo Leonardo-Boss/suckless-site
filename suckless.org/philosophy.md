@@ -60,3 +60,5 @@ Related links
 -------------
 * [The Duct Tape Programmer](http://www.joelonsoftware.com/items/2009/09/23.html)
 * [Why should I have written ZeroMQ in C, not C++](http://www.250bpm.com/blog:4)
+* [Best practices in application architecture: Use layers to decouple](http://geekandpoke.typepad.com/.a/6a00d8341d3df553ef014e5f920093970c-pi)
+

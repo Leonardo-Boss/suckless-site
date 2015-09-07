@@ -11,7 +11,7 @@ News
 
 2015-02-14
 ----------
-There will be [slcon2](http://suckless.org/conference/) held in Budpast end of Oct 2015.
+There will be [slcon2](http://suckless.org/conference/) held in Budapest end of Oct 2015.
 
 The CfP for interested participants is now open and will end *30 April 2015*.
 

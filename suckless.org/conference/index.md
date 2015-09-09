@@ -29,7 +29,7 @@ conference schedule.
 
 2.00pm - 2.30pm arg will present new suckless tool ideas in the context of stali
 
-2.30pm - 3.00pm 20h will provide an overview what happened with suckless since 2013 (slcon1)
+2.30pm - 3.00pm Anselm will present 20h's slides on an overview what happened with suckless since 2013 (slcon1)
 
 3.00pm - 3.30pm Coffee/tea break
 
@@ -56,37 +56,30 @@ Saturday 31 October 2015
 Talks
 -----
 
-10.30am - 10.45am arg will open day 2 and update on the latest develoments
+10.30am - 10.45am arg will open day 2 and update on the latest developments
 
-Anselm will also charge the conference fees (presuably we can provide invoices as foundation on this day already)
+Anselm will also charge the conference fees (presumably we can provide invoices as foundation on this day already)
 
 10.45am - 11.00am Coffee break
 
 11.00am - 11.30am Marc will present his dvtm talk.
 
-11.30am - 12.00am Suckless Python Project by 20h
-
-Christoph will advise on how to integrate high-level programming languages into
-the suckless ideology.
+11.30am - 12.00am Jan will present his simple jabber project
 
 12.00am - 1.00pm Lunch break
 
-1.00pm - 1.30pm Jan will present his simple jabber project
+1.00pm - 2.00pm FRIGN will discuss Farbfeld - his view on rethinking image-formats
 
-1.30pm - 2.00pm Marc will present his vis project
+2.00pm - 2.30pm Manu will provide us an insight into his document processing project
 
-2.00pm - 3.00pm FRIGN will discuss Farbfeld - his view on rethinking image-formats
+2.30pm - 3.00pm Coffee/tea break
 
-3.00pm - 3.30pm Manu will provide us an insight into his document processing project
-
-3.30pm - 4.00pm Coffee/tea break
-
-4.00pm - 5.00pm UTF-8 everywhere? Writing Unicode compliant software that sucks less by FRIGN
+3.00pm - 4.00pm UTF-8 everywhere? Writing Unicode compliant software that sucks less by FRIGN
 
 Hacking
 -------
 
-5.00pm - 5.45pm working on the projects with all brain power
+4.00pm - 5.45pm working on the projects with all brain power
 
 End
 ---

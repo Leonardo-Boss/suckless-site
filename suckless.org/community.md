@@ -110,7 +110,7 @@ Other popular channels:
 [devarchive]: http://lists.suckless.org/dev/
 [dwmarchive]: http://lists.suckless.org/dwm/
 [hackersarchive]: http://lists.suckless.org/hackers/
-[newsarchive]: http://lists.suckless.org/hackers/
+[newsarchive]: http://lists.suckless.org/news/
 [wikiarchive]: http://lists.suckless.org/wiki/
 [wmiiarchive]: http://lists.suckless.org/wmii/
 

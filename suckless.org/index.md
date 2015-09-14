@@ -109,9 +109,9 @@ conference in Berlin.
 2010-03-28
 ----------
 We learned today that the previous wmii maintainer, who wasn't actively
-involved since 2007, Denis Grelich, [died on 12 March
-2010](http://www.lmt.uni-saarland.de/de/aktuelles/grelich.html). We offer him our
-condolences and thank him for his work. Rest in peace.
+involved since 2007, Denis Grelich,
+[died on 2010-03-12](https://web.archive.org/web/20140208043925/http://www.lmt.uni-saarland.de/de/aktuelles/grelich.html).
+We offer him our condolences and thank him for his work. Rest in peace.
 
 2010-03-07
 ----------

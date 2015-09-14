@@ -11,9 +11,9 @@ News
 
 2015-02-14
 ----------
-There will be [slcon2](http://suckless.org/conference/) held in Budapest end of Oct 2015.
+[slcon2](http://suckless.org/conference/) will be held in Budapest on 2015-10-(30-31).
 
-The CfP for interested participants is now open and will end *30 April 2015*.
+The CfP for interested participants is now open and will end on 2015-04-30.
 
 2014-12-22
 ----------
@@ -119,11 +119,11 @@ We applied as a mentoring organisation for GSoC 2010. See our [project ideas for
 
 2010-02-13
 ----------
-Some of us will visit [CLT2010](http://chemnitzer.linux-tage.de/2010/). Anselm will give a [talk](http://chemnitzer.linux-tage.de/2010/vortraege/detail.html?idx=308) about [stali](http://sta.li) on the second day of CLT2010 at 5pm.
+Some of us will visit [CLT2010](http://chemnitzer.linux-tage.de/2010/). Anselm will give a [talk](http://chemnitzer.linux-tage.de/2010/vortraege/detail.html?idx=308) about [stali](http://sta.li) on the second day of CLT2010 at 17:00.
 
 2009-12-28
 ----------
-There was a small community meeting in Berlin! Thanks to all attenders.
+There was a small community meeting in Berlin! Thanks to all attendees.
 
 2008-08-02
 ----------

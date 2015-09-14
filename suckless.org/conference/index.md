@@ -24,7 +24,7 @@ Talks
 
 (12:00-13:00) Lunch break
 
-(13:00-14:00) *suckless core - A suckless userpace foundation*, Laslo Hunhold
+(13:00-14:00) *suckless core - A suckless userspace foundation*, Laslo Hunhold
 
         This talk will focus on recent developments in the suckless core
         programs, the design and motivation behind them and which issues were

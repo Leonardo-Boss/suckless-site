@@ -1,16 +1,16 @@
 diff --git a/config.def.h b/config.def.h
-index 930e468..0601fe5 100644
+index b6adc5e..6c98b36 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -7,6 +7,7 @@
   */
- static char font[] = "Liberation Mono:pixelsize=12:antialias=false:autohint=false";
+ static char font[] = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
  static int borderpx = 2;
 +static int histsize = 2000;
  
  /*
   * What program is execed by st depends of these precedence rules:
-@@ -123,10 +124,16 @@ static unsigned int defaultunderline = 7;
+@@ -132,10 +133,16 @@ static unsigned int defaultunderline = 7;
  
  /* Internal mouse shortcuts. */
  /* Beware that overloading Button1 will disable the selection. */
@@ -30,7 +30,7 @@ index 930e468..0601fe5 100644
  };
  
  /* Internal keyboard shortcuts. */
-@@ -145,6 +152,8 @@ static Shortcut shortcuts[] = {
+@@ -155,6 +162,8 @@ static Shortcut shortcuts[] = {
  	{ MODKEY|ShiftMask,     XK_C,           clipcopy,       {.i =  0} },
  	{ MODKEY|ShiftMask,     XK_V,           clippaste,      {.i =  0} },
  	{ MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
@@ -40,10 +40,10 @@ index 930e468..0601fe5 100644
  
  /*
 diff --git a/st.c b/st.c
-index 35a840b..bb97783 100644
+index bd8b815..7a35166 100644
 --- a/st.c
 +++ b/st.c
-@@ -84,6 +84,8 @@ char *argv0;
+@@ -85,6 +85,8 @@ char *argv0;
  #define TRUERED(x)		(((x) & 0xff0000) >> 8)
  #define TRUEGREEN(x)		(((x) & 0xff00))
  #define TRUEBLUE(x)		(((x) & 0xff) << 8)
@@ -52,7 +52,7 @@ index 35a840b..bb97783 100644
  
  
  enum glyph_attribute {
-@@ -232,6 +234,9 @@ typedef struct {
+@@ -233,6 +235,9 @@ typedef struct {
  	int col;      /* nb col */
  	Line *line;   /* screen */
  	Line *alt;    /* alternate screen */
@@ -62,7 +62,7 @@ index 35a840b..bb97783 100644
  	int *dirty;  /* dirtyness of lines */
  	XftGlyphFontSpec *specbuf; /* font spec buffer used for rendering */
  	TCursor c;    /* cursor */
-@@ -316,6 +321,13 @@ typedef union {
+@@ -317,6 +322,13 @@ typedef union {
  } Arg;
  
  typedef struct {
@@ -76,7 +76,7 @@ index 35a840b..bb97783 100644
  	uint mod;
  	KeySym keysym;
  	void (*func)(const Arg *);
-@@ -325,6 +337,8 @@ typedef struct {
+@@ -326,6 +338,8 @@ typedef struct {
  /* function definitions used in config.h */
  static void clipcopy(const Arg *);
  static void clippaste(const Arg *);
@@ -85,7 +85,7 @@ index 35a840b..bb97783 100644
  static void numlock(const Arg *);
  static void selpaste(const Arg *);
  static void xzoom(const Arg *);
-@@ -396,8 +410,8 @@ static void tputtab(int);
+@@ -398,8 +412,8 @@ static void tputtab(int);
  static void tputc(Rune);
  static void treset(void);
  static void tresize(int, int);
@@ -96,7 +96,7 @@ index 35a840b..bb97783 100644
  static void tsetattr(int *, int);
  static void tsetchar(Rune, Glyph *, int, int);
  static void tsetscroll(int, int);
-@@ -727,10 +741,10 @@ tlinelen(int y)
+@@ -729,10 +743,10 @@ tlinelen(int y)
  {
  	int i = term.col;
  
@@ -109,7 +109,7 @@ index 35a840b..bb97783 100644
  		--i;
  
  	return i;
-@@ -792,7 +806,7 @@ selsnap(int *x, int *y, int direction)
+@@ -794,7 +808,7 @@ selsnap(int *x, int *y, int direction)
  		 * Snap around if the word wraps around at the end or
  		 * beginning of a line.
  		 */
@@ -118,7 +118,7 @@ index 35a840b..bb97783 100644
  		prevdelim = ISDELIM(prevgp->u);
  		for (;;) {
  			newx = *x + direction;
-@@ -807,14 +821,14 @@ selsnap(int *x, int *y, int direction)
+@@ -809,14 +823,14 @@ selsnap(int *x, int *y, int direction)
  					yt = *y, xt = *x;
  				else
  					yt = newy, xt = newx;
@@ -135,7 +135,7 @@ index 35a840b..bb97783 100644
  			delim = ISDELIM(gp->u);
  			if (!(gp->mode & ATTR_WDUMMY) && (delim != prevdelim
  					|| (delim && gp->u != prevgp->u)))
-@@ -835,14 +849,14 @@ selsnap(int *x, int *y, int direction)
+@@ -837,14 +851,14 @@ selsnap(int *x, int *y, int direction)
  		*x = (direction < 0) ? 0 : term.col - 1;
  		if (direction < 0) {
  			for (; *y > 0; *y += direction) {
@@ -152,7 +152,7 @@ index 35a840b..bb97783 100644
  						& ATTR_WRAP)) {
  					break;
  				}
-@@ -942,13 +956,14 @@ bpress(XEvent *e)
+@@ -944,13 +958,14 @@ bpress(XEvent *e)
  {
  	struct timespec now;
  	Mousekey *mk;
@@ -168,7 +168,7 @@ index 35a840b..bb97783 100644
  		if (e->xbutton.button == mk->b
  				&& match(mk->mask, e->xbutton.state)) {
  			ttysend(mk->s, strlen(mk->s));
-@@ -956,6 +971,14 @@ bpress(XEvent *e)
+@@ -958,6 +973,14 @@ bpress(XEvent *e)
  		}
  	}
  
@@ -183,8 +183,8 @@ index 35a840b..bb97783 100644
  	if (e->xbutton.button == Button1) {
  		clock_gettime(CLOCK_MONOTONIC, &now);
  
-@@ -1005,13 +1028,13 @@ getsel(void)
- 		linelen = tlinelen(y);
+@@ -1010,13 +1033,13 @@ getsel(void)
+ 		}
  
  		if (sel.type == SEL_RECTANGULAR) {
 -			gp = &term.line[y][sel.nb.x];
@@ -200,7 +200,7 @@ index 35a840b..bb97783 100644
  		while (last >= gp && last->u == ' ')
  			--last;
  
-@@ -1484,6 +1507,8 @@ ttyread(void)
+@@ -1489,6 +1512,8 @@ ttyread(void)
  
  	/* keep any uncomplete utf8 char for the next call */
  	memmove(buf, ptr, buflen);
@@ -209,7 +209,7 @@ index 35a840b..bb97783 100644
  }
  
  void
-@@ -1492,6 +1517,9 @@ ttywrite(const char *s, size_t n)
+@@ -1497,6 +1522,9 @@ ttywrite(const char *s, size_t n)
  	fd_set wfd;
  	struct timespec tv;
  	ssize_t r;
@@ -219,7 +219,7 @@ index 35a840b..bb97783 100644
  
  	/*
  	 * Remember that we are using a pty, which might be a modem line.
-@@ -1682,13 +1710,53 @@ tswapscreen(void)
+@@ -1688,13 +1716,53 @@ tswapscreen(void)
  }
  
  void
@@ -274,7 +274,7 @@ index 35a840b..bb97783 100644
  	tsetdirt(orig, term.bot-n);
  	tclearregion(0, term.bot-n+1, term.col-1, term.bot);
  
-@@ -1702,13 +1770,20 @@ tscrolldown(int orig, int n)
+@@ -1708,13 +1776,20 @@ tscrolldown(int orig, int n)
  }
  
  void
@@ -296,7 +296,7 @@ index 35a840b..bb97783 100644
  	tclearregion(0, orig, term.col-1, orig+n-1);
  	tsetdirt(orig+n, term.bot);
  
-@@ -1757,7 +1832,7 @@ tnewline(int first_col)
+@@ -1763,7 +1838,7 @@ tnewline(int first_col)
  	int y = term.c.y;
  
  	if (y == term.bot) {
@@ -305,7 +305,7 @@ index 35a840b..bb97783 100644
  	} else {
  		y++;
  	}
-@@ -1922,14 +1997,14 @@ void
+@@ -1928,14 +2003,14 @@ void
  tinsertblankline(int n)
  {
  	if (BETWEEN(term.c.y, term.top, term.bot))
@@ -322,7 +322,7 @@ index 35a840b..bb97783 100644
  }
  
  int32_t
-@@ -2363,11 +2438,11 @@ csihandle(void)
+@@ -2369,11 +2444,11 @@ csihandle(void)
  		break;
  	case 'S': /* SU -- Scroll <n> line up */
  		DEFAULT(csiescseq.arg[0], 1);
@@ -336,7 +336,7 @@ index 35a840b..bb97783 100644
  		break;
  	case 'L': /* IL -- Insert <n> blank lines */
  		DEFAULT(csiescseq.arg[0], 1);
-@@ -2837,7 +2912,7 @@ eschandle(uchar ascii)
+@@ -2869,7 +2944,7 @@ eschandle(uchar ascii)
  		return 0;
  	case 'D': /* IND -- Linefeed */
  		if (term.c.y == term.bot) {
@@ -345,7 +345,7 @@ index 35a840b..bb97783 100644
  		} else {
  			tmoveto(term.c.x, term.c.y+1);
  		}
-@@ -2850,7 +2925,7 @@ eschandle(uchar ascii)
+@@ -2882,7 +2957,7 @@ eschandle(uchar ascii)
  		break;
  	case 'M': /* RI -- Reverse index */
  		if (term.c.y == term.top) {
@@ -354,7 +354,7 @@ index 35a840b..bb97783 100644
  		} else {
  			tmoveto(term.c.x, term.c.y-1);
  		}
-@@ -3013,7 +3088,7 @@ tputc(Rune u)
+@@ -3045,7 +3120,7 @@ tputc(Rune u)
  void
  tresize(int col, int row)
  {
@@ -363,7 +363,7 @@ index 35a840b..bb97783 100644
  	int minrow = MIN(row, term.row);
  	int mincol = MIN(col, term.col);
  	int *bp;
-@@ -3050,9 +3125,18 @@ tresize(int col, int row)
+@@ -3082,9 +3157,18 @@ tresize(int col, int row)
  	/* resize to new height */
  	term.line = xrealloc(term.line, row * sizeof(Line));
  	term.alt  = xrealloc(term.alt,  row * sizeof(Line));
@@ -382,7 +382,7 @@ index 35a840b..bb97783 100644
  	/* resize each row to new width, zero-pad if needed */
  	for (i = 0; i < minrow; i++) {
  		term.line[i] = xrealloc(term.line[i], col * sizeof(Glyph));
-@@ -3924,11 +4008,11 @@ drawregion(int x1, int y1, int x2, int y2)
+@@ -3956,11 +4040,11 @@ drawregion(int x1, int y1, int x2, int y2)
  		term.dirty[y] = 0;
  
  		specs = term.specbuf;
@@ -396,7 +396,7 @@ index 35a840b..bb97783 100644
  			if (new.mode == ATTR_WDUMMY)
  				continue;
  			if (ena_sel && selected(x, y))
-@@ -3948,7 +4032,8 @@ drawregion(int x1, int y1, int x2, int y2)
+@@ -3980,7 +4064,8 @@ drawregion(int x1, int y1, int x2, int y2)
  		if (i > 0)
  			xdrawglyphfontspecs(specs, base, i, ox, y);
  	}

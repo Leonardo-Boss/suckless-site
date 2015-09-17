@@ -11,6 +11,7 @@ Download
 
 * [dwm-6.0-xft.diff](dwm-6.0-xft.diff) (6.6k) (16 May 2012)
 	* memory leak fixed and improved implementation.
+	* include config.def.h and config.mk changes.
 
 
 Author

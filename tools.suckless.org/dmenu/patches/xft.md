@@ -20,6 +20,7 @@ Download
 * [dmenu git](dmenu-git-xft.diff) applies cleanly against 13a529ce63364544bdc851dfd5d3aa2ef8740914
 * [dmenu 4.5](dmenu-4.5-xft.diff)
 * [dmenu 4.5 for debian](dmenu-4.5-xft-debian.diff)
+* [dmenu 4.5 (improved)](dmenu-4.5-xft-improved.diff)
 * [dmenu 4.4.1](dmenu-4.4.1-xft.diff)
 
 History

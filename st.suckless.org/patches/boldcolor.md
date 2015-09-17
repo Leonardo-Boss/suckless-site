@@ -4,16 +4,16 @@ boldcolor
 Description
 -----------
 
-This is a hack to allow using different color for bold, italic
-or underlined text when the text is in defaultfg color otherwise.
+This is a hack allowing to use different colors for bold, italic
+and underlined text when the text would be in defaultfg color otherwise.
 
-Makes the special attributes more visible, when no bold or italic
-font is available, or the defaultfg is a special color (>255 value).
+This makes the special attributes more visible when no bold or italic
+font is available or defaultfg is a special color (> 255).
 
 Usage
 -----
 
-example config.h
+This is an example for a config.h set up with this patch:
 
 	static const char *colorname[] = {
 		// ...
@@ -39,11 +39,9 @@ example config.h
 
 Download
 --------
-* [st-0.3-boldcolor.diff][0]
-
-[0]: st-0.3-boldcolor.diff
+* [st-0.3-boldcolor.diff](st-0.3-boldcolor.diff)
 
 Author
 ------
 
- * Szabolcs Nagy - nsz
+ * Szabolcs Nagy - nsz@port70.net

@@ -19,6 +19,7 @@ allow scrolling using Shift+MouseWheel.
 Authors
 -------
 
+ * Jochen Sprickerhof - dwm@jochen.sprickerhof.de
  * M Farkas-Dyck - strake888@gmail.com
  * Ivan Tham - pickfire@riseup.net (mouse scrolling)
  * Laslo Hunhold - dev@frign.de (st-git-20150917 port and unscrambling)

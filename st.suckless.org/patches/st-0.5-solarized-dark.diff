@@ -1,7 +1,8 @@
 diff --git a/config.def.h b/config.def.h
+index 58b470e..f1c5ed1 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -51,30 +51,23 @@
+@@ -51,30 +51,23 @@ static unsigned int tabspaces = 8;
  
  /* Terminal colors (16 first used in escape sequence) */
  static const char *colorname[] = {
@@ -49,7 +50,7 @@ diff --git a/config.def.h b/config.def.h
  };
  
  
-@@ -82,9 +75,9 @@
+@@ -82,9 +75,9 @@ static const char *colorname[] = {
   * Default colors (colorname index)
   * foreground, background, cursor
   */

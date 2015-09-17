@@ -38,11 +38,12 @@ to disable lighting up bold colors.
 Choose one of the following patches to get either the light
 or the dark color scheme:
 
+Light:
  * [st-0.5-solarized-light.diff](st-0.5-solarized-light.diff)
  * [st-0.6-solarized-light.diff](st-0.6-solarized-light.diff)
  * [st-git-20150917-solarized-light.diff](st-git-20150917-solarized-light.diff)
 
-
+Dark:
  * [st-0.5-solarized-dark.diff](st-0.5-solarized-dark.diff)
  * [st-0.6-solarized-dark.diff](st-0.6-solarized-dark.diff)
  * [st-git-20150917-solarized-dark.diff](st-git-20150917-solarized-dark.diff)

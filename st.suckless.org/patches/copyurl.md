@@ -4,7 +4,7 @@ copyurl
 Description
 -----------
 
-Select and copy the last URL displayed with MOD+l.
+Select and copy the last URL displayed with Mod1+l.
 Multiple invocations cycle through the available URLs.
 
 Notes

@@ -1,4 +1,4 @@
-Solarized
+solarized
 =========
 
 Description
@@ -41,6 +41,7 @@ or the dark color scheme:
  * [st-0.5-solarized-light.diff](st-0.5-solarized-light.diff)
  * [st-0.6-solarized-light.diff](st-0.6-solarized-light.diff)
  * [st-git-20150917-solarized-light.diff](st-git-20150917-solarized-light.diff)
+
 
  * [st-0.5-solarized-dark.diff](st-0.5-solarized-dark.diff)
  * [st-0.6-solarized-dark.diff](st-0.6-solarized-dark.diff)

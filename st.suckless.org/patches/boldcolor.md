@@ -13,7 +13,7 @@ font is available or defaultfg is a special color (> 255).
 Usage
 -----
 
-This is an example for a config.h set up with this patch:
+config.h example:
 
 	static const char *colorname[] = {
 		// ...

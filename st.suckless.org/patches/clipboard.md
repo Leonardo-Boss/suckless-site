@@ -1,4 +1,4 @@
-# One clipboard
+# clipboard
 
 ## Description
 

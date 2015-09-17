@@ -21,6 +21,7 @@ Example
 -------
 
 ->[![Screenshot](st-solarized-light-s.png)](st-solarized-light.png)<-
+
 ->[![Screenshot](st-solarized-dark-s.png)](st-solarized-dark.png)<-
 
 The font used is Source Code Pro.

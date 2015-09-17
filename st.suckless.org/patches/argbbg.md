@@ -15,13 +15,11 @@ Note that **you need an X composite manager** to make this patch effective. (e.g
 ## Download ##
  * [st-0.4.1-argbbg.diff](st-0.4.1-argbbg.diff)
  * [st-0.5-argbbg.diff](st-0.5-argbbg.diff)
- * [st-git-20141122-argbbg.diff](st-git-20141122-argbbg.diff)
- * [st-git-20150611-argbbg.diff](st-git-20150611-argbbg.diff)
+ * [st-0.6-argbbg.diff](st-0.6-argbbg.diff)
  * [st-git-20150910-argbbg.diff](st-git-20150910-argbbg.diff)
 
 ## Authors ##
  * Eon S. Jeon - esjeon@hyunmu.am
  * pr - protodev@gmx.net (st-0.5 port)
- * Juan Aguilar - aritmeeul@gmail.com (st-git-20141122 port)
- * Laslo Hunhold - dev@frign.de (st-git-20150601 port)
+ * Laslo Hunhold - dev@frign.de (st-0.6 port)
  * David Phillips - dbphillipsnz@gmail.com (st-git-20150910 port)

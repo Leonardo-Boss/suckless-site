@@ -1,19 +1,24 @@
-# Scrollback
+scrollback
+==========
 
-## Description
+Description
+-----------
 
-Scroll back through terminal output.
+Scroll back through terminal output using Shift+{PageUp, PageDown}.
 
-## Download
+Download
+--------
 
-Apply only one of them:
+* [st-git-20150917-scrollback.diff](st-git-20150917-scrollback.diff)
 
-* [st-scrollback.diff](st-scrollback.diff) (against current git master)
-* [st-scrollback-shift-mouse.diff](st-scrollback-shift-mouse.diff) - With shift
-  mouse
+Apply the following patch on top of the previous to additionally
+allow scrolling using Shift+MouseWheel.
 
-## Author
+* [st-git-20150917-scrollback-mouse.diff](st-git-20150917-scrollback-mouse.diff)
 
- * Jochen Sprickerhof - dwm @ jochen . sprickerhof . de
- * M Farkas-Dyck - strake888 @ gmail . com
- * Ivan Tham - pickfire @ riseup . net (The gluer)
+Authors
+-------
+
+ * M Farkas-Dyck - strake888@gmail.com
+ * Ivan Tham - pickfire@riseup.net (mouse scrolling)
+ * Laslo Hunhold - dev@frign.de (st-git-20150917 port and unscrambling)

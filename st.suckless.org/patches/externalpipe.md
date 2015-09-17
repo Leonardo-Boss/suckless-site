@@ -1,44 +1,36 @@
-External Pipe
-=============
+externalpipe
+============
 
 Description
 -----------
 
-This patch lets you write st's screen text out through a pipe, for example,
-url-select (below).
+This patch lets you write st's screen through a pipe.
 
 Example
 -------
 
-Bind alt+u to extract all visible urls and present dmenu, to choose and open
-said urls:
+config.h example, binding Mod1+u to extract all visible URLs and present
+dmenu to select and open one:
 
 	static Shortcut shortcuts[] = {
 		...
 		{ MODKEY, 'u', externalpipe, { .s = "xurls | dmenu -l 10 | xargs -r open" } },
 	};
 
-
-([xurls][1] and [open][2] are external scripts)
+([xurls](https://raw.github.com/bobrippling/perlbin/master/xurls) and
+[open](https://github.com/bobrippling/open) are external scripts)
 
 
 Download
 --------
 
-* [st-0.4.1-externalpipe.diff][0]
-* [st-0.5-externalpipe.diff][3]
-* [st-0.6-externalpipe.diff][4]
-* [st-git-20150824-externalpipe.diff][5]
+* [st-0.4.1-externalpipe.diff](st-0.4.1-externalpipe.diff)
+* [st-0.5-externalpipe.diff](st-0.5-externalpipe.diff)
+* [st-0.6-externalpipe.diff](st-0.6-externalpipe.diff)
+* [st-git-20150917-externalpipe.diff][st-git-20150917-externalpipe.diff]
 
-[0]: st-0.4.1-externalpipe.diff
-[1]: https://raw.github.com/bobrippling/perlbin/master/xurls
-[2]: https://github.com/bobrippling/open
-[3]: http://witsquash.com/~marty/st-0.5-externalpipe.diff
-[4]: st-0.6-externalpipe.diff
-[5]: st-git-20150824-externalpipe.diff
+Authors
+-------
 
-
-Author
-------
-
- * Rob Pilling - my name @ gmail
+ * Rob Pilling - robpilling@gmail.com
+ * Laslo Hunhold - dev@frign.de (st-0.4.1, st-0.5, st-0.6, st-git-20150917 ports)

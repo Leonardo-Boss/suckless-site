@@ -12,8 +12,10 @@ CLIPBOARD.
 
 ## Download
 
-* [clipboard.diff](clipboard.diff)
+* [st-0.6-clipboard.diff](st-0.6-clipboard.diff)
+* [st-git-20150917-clipboard.diff](st-git-20150917-clipboard.diff)
 
 ## Author
 
-[Kai Hendry](http://hendry.iki.fi/)
+ * Kai Hendry - hendry@iki.fi
+ * Laslo Hunhold - dev@frign.de (st-git-20150917 port)

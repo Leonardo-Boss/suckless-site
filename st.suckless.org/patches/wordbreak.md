@@ -1,10 +1,10 @@
-configwordbreak
-===============
+wordbreak
+=========
 
 Description
 -----------
 
-This is a patch allowing to configure which characters are used as
+This patch allows you to configure which characters are used as
 word boundaries for double click selections (instead of just ' ').
 This feature is already implemented in all versions later than 0.5.
 
@@ -17,10 +17,10 @@ config.h example:
 
 Download
 --------
-* [st-0.3-configwordbreak.diff](st-0.3-configwordbreak.diff)
-* [st-0.4-configwordbreak.diff](st-0.4-configwordbreak.diff)
-* [st-0.4.1-configwordbreak.diff](st-0.4.1-configwordbreak.diff)
-* [st-0.5-configwordbreak.diff](st-0.5-configwordbreak.diff)
+* [st-0.3-wordbreak.diff](st-0.3-wordbreak.diff)
+* [st-0.4-wordbreak.diff](st-0.4-wordbreak.diff)
+* [st-0.4.1-wordbreak.diff](st-0.4.1-wordbreak.diff)
+* [st-0.5-wordbreak.diff](st-0.5-wordbreak.diff)
 
 Authors
 -------

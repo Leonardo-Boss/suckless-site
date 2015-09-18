@@ -1,0 +1,12 @@
+diff --git a/dmenu.c b/dmenu.c
+index 4ea95f8..4b76da5 100644
+--- a/dmenu.c
++++ b/dmenu.c
+@@ -482,6 +482,7 @@ readstdin(void) {
+ 	}
+ 	if(items)
+ 		items[i].text = NULL;
++	if (i == 1 && items[0].text[0] == '\0') items = realloc(items, 0);
+ 	inputw = maxstr ? textw(dc, maxstr) : 0;
+ 	lines = MIN(lines, i);
+ }

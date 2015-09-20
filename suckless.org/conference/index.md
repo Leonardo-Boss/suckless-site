@@ -95,7 +95,12 @@ Talks
         compression is discussed, evaluating the advantages over other image
         formats using different kinds of images.
 
-(14:00-14:30) *Document processing*, Manu Raster
+(14:00-14:30) *Finite state document processing*, Manu Raster
+
+        Mainstream XML processing techniques wastefully consume time
+        and memory for example in file format conversions popularly
+        known as 'save as …'. In this talk we present a less
+        wasteful method based on finite-state transducers.
 
 (14:30-15:00) Coffee/tea break
 

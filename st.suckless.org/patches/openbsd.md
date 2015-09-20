@@ -21,7 +21,7 @@ to st.info can be pushed upstream to ncurses and then be merged
 back to OpenBSD, effectively making this patch obsolete for
 future stable releases.
 More information on this issue can be found in this
-[thread](http://marc.info/?l=openbsd-misc&m=139540215025526&w=2)
+[thread](http://marc.info/?l=openbsd-misc&m=139540215025526&w=2).
 
 
 Download

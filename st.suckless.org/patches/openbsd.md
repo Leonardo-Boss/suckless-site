@@ -4,13 +4,13 @@ openbsd
 Description
 -----------
 
-OpenBSD primariley searches for terminfo descriptions in
+OpenBSD primarily searches for terminfo descriptions in
 terminfo databases before considering terminfo files.
 Given the terminfo currently stored in the global database
 is for st 0.1.1, this leads to conflicts and misbehaviour.
 
-This patch renames st to st-git to force OpenBSD to use
-the provided terminfo file.
+This patch renames st to st-git forcing OpenBSD to use the provided
+terminfo file.
 
 
 Notes

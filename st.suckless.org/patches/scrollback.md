@@ -9,7 +9,7 @@ Scroll back through terminal output using Shift+{PageUp, PageDown}.
 Download
 --------
 
-* [st-git-20150917-scrollback.diff](st-git-20150917-scrollback.diff)
+* [st-git-20150920-scrollback.diff](st-git-20150920-scrollback.diff)
 
 Apply the following patch on top of the previous to additionally
 allow scrolling using Shift+MouseWheel.
@@ -21,5 +21,5 @@ Authors
 
  * Jochen Sprickerhof - dwm@jochen.sprickerhof.de
  * M Farkas-Dyck - strake888@gmail.com
- * Ivan Tham - pickfire@riseup.net (mouse scrolling)
- * Laslo Hunhold - dev@frign.de (st-git-20150917 port and unscrambling)
+ * Ivan Tham - pickfire@riseup.net (mouse scrolling, st-git-20150920 port)
+ * Laslo Hunhold - dev@frign.de (unscrambling, st-git-20150917 port)

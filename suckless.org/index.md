@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2015-09-23
+----------
+Kai and Anselm gave an interview about suckless.org on Randal Schwartz' [FLOSS Weekly show](https://twit.tv/shows/floss-weekly/episodes/355?autostart=false)
+
 2015-07-07
 ----------
 [st 0.6](http://st.suckless.org) released: [download](http://dl.suckless.org/st/st-0.6.tar.gz)

@@ -8,8 +8,8 @@
 	
 	static Key keys[] = {
 		...
-		{ MODKEY|ControlMask,           XK_j,           pushdown,       {0} },
-		{ MODKEY|ControlMask,           XK_k,           pushup,         {0} },
+		{ MODKEY|ControlMask,           XK_j,      pushdown,       {0} },
+		{ MODKEY|ControlMask,           XK_k,      pushup,         {0} },
 
 `push_no_master` is the same as the regular `push` patch, but it does not push up nor push down into the master area. We have zoom() for that.
 

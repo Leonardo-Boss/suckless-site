@@ -4,7 +4,7 @@ xft
 Description
 -----------
 
-This patch implements Xft. This allows users to utilize the UTF8 character set.
+This patch implements Xft. This allows users to utilize the UTF8 character set. This is enabled by default when you are using the latest dwm-git.
 
 Download
 --------

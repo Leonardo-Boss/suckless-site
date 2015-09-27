@@ -51,7 +51,7 @@ index c8fc7d7..0924ace 100644
 +		else {
  			c->isurgent = (wmh->flags & XUrgencyHint) ? True : False;
 +			if (c->isurgent)
-+				XSetWindowBorder(dpy, c->win, scheme[SchemeUrg].border->rgb);
++				XSetWindowBorder(dpy, c->win, scheme[SchemeUrg].border->pix);
 +		}
  		if(wmh->flags & InputHint)
  			c->neverfocus = !wmh->input;

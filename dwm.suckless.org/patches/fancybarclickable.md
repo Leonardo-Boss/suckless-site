@@ -14,8 +14,7 @@ Download
 
 Authors
 -------
-
-* Stefan Mark wrote fancycoloredbarclickable.
-* Mate Nagy wrote fancybar.
+* Stefan Mark wrote [fancycoloredbarclickable](fancycoloredbarclickable.md).
+* Mate Nagy wrote [fancybar](fancybar.md).
 * An anonymous Canadian updated the fancybar patch and added the
-  selectby-click-on-title function from fancycoloredbarclickable to it.
+  `selectby-click-on-title` function from fancycoloredbarclickable to it.

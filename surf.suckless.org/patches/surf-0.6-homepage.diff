@@ -1,18 +1,20 @@
-diff -u a/config.def.h b/config.def.h
---- a/config.def.h	2014-08-16 02:14:02.536275454 -0300
-+++ b/config.def.h	2014-08-16 02:12:18.784283700 -0300
-@@ -31,6 +31,7 @@
- static Bool hidebackground  = FALSE;
- static Bool allowgeolocation = TRUE;
+diff --git a/config.def.h b/config.def.h
+index 1eb9566..8dbd96b 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -35,6 +35,7 @@ static Bool loadimages            = TRUE;
+ static Bool hidebackground        = FALSE;
+ static Bool allowgeolocation      = TRUE;
  
 +#define HOMEPAGE "https://www.duckduckgo.com/"
  #define SETPROP(p, q) { \
  	.v = (char *[]){ "/bin/sh", "-c", \
  		"prop=\"`xprop -id $2 $0 | cut -d '\"' -f 2 | xargs -0 printf %b | dmenu`\" &&" \
-diff -u a/surf.c b/surf.c
---- a/surf.c	2014-08-16 02:14:02.536275454 -0300
-+++ b/surf.c	2014-08-16 02:09:58.216294873 -0300
-@@ -1483,6 +1483,9 @@
+diff --git a/surf.c b/surf.c
+index 02656ec..c6a6806 100644
+--- a/surf.c
++++ b/surf.c
+@@ -1645,6 +1645,9 @@ main(int argc, char *argv[]) {
  	default:
  		usage();
  	} ARGEND;
@@ -21,3 +23,4 @@ diff -u a/surf.c b/surf.c
 +	#endif
  	if(argc > 0)
  		arg.v = argv[0];
+ 

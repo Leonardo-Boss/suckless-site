@@ -19,10 +19,10 @@ just like most normal unformatted text when selected.
 Download
 --------
 
- * [st-git-20150922-spoiler.diff](st-git-20150922-spoiler.diff)
  * [st-0.6-spoiler.diff](st-0.6-spoiler.diff)
+ * [st-git-20150922-spoiler.diff](st-git-20150922-spoiler.diff)
 
-Authors
--------
+Author
+------
 
  * dequis - dx@dxzone.com.ar

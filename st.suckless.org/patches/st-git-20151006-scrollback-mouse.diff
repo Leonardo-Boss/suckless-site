@@ -1,11 +1,11 @@
 diff --git a/config.def.h b/config.def.h
-index c3636fc..6c98b36 100644
+index 4ab9a68..6ea816b 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -133,10 +133,16 @@ static unsigned int defaultunderline = 7;
- 
- /* Internal mouse shortcuts. */
- /* Beware that overloading Button1 will disable the selection. */
+@@ -135,10 +135,16 @@ static unsigned int defaultunderline = 7;
+  * Internal mouse shortcuts.
+  * Beware that overloading Button1 will disable the selection.
+  */
 -static Mousekey mshortcuts[] = {
 +static Mousekey mkeys[] = {
  	/* button               mask            string */
@@ -23,7 +23,7 @@ index c3636fc..6c98b36 100644
  
  /* Internal keyboard shortcuts. */
 diff --git a/st.c b/st.c
-index 3aaeb86..7a35166 100644
+index 30ea2c3..0528117 100644
 --- a/st.c
 +++ b/st.c
 @@ -322,6 +322,13 @@ typedef union {

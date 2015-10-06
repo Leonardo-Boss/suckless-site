@@ -11,10 +11,10 @@ Download
 
 * [st-git-20150920-scrollback.diff](st-git-20150920-scrollback.diff)
 
-Apply the following patch on top of the previous to additionally
-allow scrolling using Shift+MouseWheel.
+Apply the following patch on top of the previous to allow scrolling
+using Shift+MouseWheel.
 
-* [st-git-20150917-scrollback-mouse.diff](st-git-20150917-scrollback-mouse.diff)
+* [st-git-20151006-scrollback-mouse.diff](st-git-20151006-scrollback-mouse.diff)
 
 Authors
 -------

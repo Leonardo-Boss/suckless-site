@@ -8,6 +8,7 @@ Download
 
 * [passmenu](http://git.zx2c4.com/password-store/tree/contrib/dmenu)
   : get password from pass.
+* [passmenu2](passmenu2): "pass" browser, vertical display and recursive "pass" folder support
 * [run-recent](run-recent) : List recent commands first. End a command
   with ";" to run it in e terminal.
   [source](https://bbs.archlinux.org/viewtopic.php?id=56646&p=12)

@@ -4,7 +4,7 @@ externalpipe
 Description
 -----------
 
-This patch lets you write st's screen through a pipe.
+Reading and writing st's screen through a pipe.
 
 Example
 -------
@@ -14,7 +14,7 @@ dmenu to select and open one:
 
 	static Shortcut shortcuts[] = {
 		...
-		{ MODKEY, 'u', externalpipe, { .s = "xurls | dmenu -l 10 | xargs -r open" } },
+		{ MODKEY, 'u', externalpipe, { .v = "xurls | dmenu -l 10 | xargs -r open" } },
 	};
 
 ([xurls](https://raw.github.com/bobrippling/perlbin/master/xurls) and

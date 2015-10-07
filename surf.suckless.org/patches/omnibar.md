@@ -21,7 +21,7 @@ the following to your tabbed config.h:
 		} \
 	}
 
-Now you can use the following key (don't forget to remove old one):
+Now you can use the following key (don't forget to remove the old one):
 
 	{ MODKEY,                       XK_t,      spawn,          GOTO },
 

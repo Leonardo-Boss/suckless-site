@@ -10,6 +10,22 @@ URIs visited by clicking on links will be stored as well.
 
 Note: the patch also changes the config.def.h file.
 
+Tabbed integration
+------------------
+For [tabbed](http://tools.suckless.org/tabbed/) users, you may also want to add
+the following to your tabbed config.h:
+
+	#define GOTO { \
+		.v = (char *[]){"/bin/sh", "-c", \
+			"~/.surf/omnibar goto $0 $1", winid, "_TABBED_SELECT_TAB", NULL \
+		} \
+	}
+
+Now you can use the following key (don't forget to remove old one):
+
+	{ MODKEY,                       XK_t,      spawn,          GOTO },
+
+
 Download
 --------
 * [surf-0.6-omnibar.diff](surf-0.6-omnibar.diff) (1.4k) (20151006)

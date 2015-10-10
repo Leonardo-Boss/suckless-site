@@ -1,5 +1,5 @@
 diff --git a/config.def.h b/config.def.h
-index 1eb9566..fac7fa7 100644
+index 1eb9566..37615a9 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -63,6 +63,18 @@ static Bool allowgeolocation      = TRUE;
@@ -8,7 +8,7 @@ index 1eb9566..fac7fa7 100644
  
 +#define ONLOAD(u) { \
 +	.v = (char *[]){"/bin/sh", "-c", \
-+		"~/.surf/omnibar addhist \"$0\"", u, NULL \
++		"~/.surf/omnibar addhist \"$0\"", u, embed, NULL \
 +	}  \
 +}
 +
@@ -26,20 +26,21 @@ index 1eb9566..fac7fa7 100644
      { MODKEY|GDK_SHIFT_MASK,GDK_o,      inspector,  { 0 } },
  
 -    { MODKEY,               GDK_g,      spawn,      SETPROP("_SURF_URI", "_SURF_GO") },
-+    { MODKEY,               GDK_g,      spawn,      GOTO },
++    { MODKEY,               GDK_KEY_g,  spawn,      GOTO },
      { MODKEY,               GDK_f,      spawn,      SETPROP("_SURF_FIND", "_SURF_FIND") },
      { MODKEY,               GDK_slash,  spawn,      SETPROP("_SURF_FIND", "_SURF_FIND") },
  
 diff --git a/surf.c b/surf.c
-index 02656ec..1d84358 100644
+index 02656ec..d7a907d 100644
 --- a/surf.c
 +++ b/surf.c
-@@ -731,6 +731,8 @@ loadstatuschange(WebKitWebView *view, GParamSpec *pspec, Client *c) {
- 			g_object_set(G_OBJECT(set), "user-stylesheet-uri",
- 					getstyle(uri), NULL);
+@@ -733,6 +733,9 @@ loadstatuschange(WebKitWebView *view, GParamSpec *pspec, Client *c) {
  		}
-+		Arg a = (Arg)ONLOAD((char *)uri);
-+		spawn(NULL, &a);
  		break;
  	case WEBKIT_LOAD_FINISHED:
++		uri = geturi(c);
++		Arg a = (Arg)ONLOAD((char *)uri);
++		spawn(NULL, &a);
  		c->progress = 100;
+ 		updatetitle(c);
+ 		if(diskcache) {

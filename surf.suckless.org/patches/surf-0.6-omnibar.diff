@@ -1,5 +1,5 @@
 diff --git a/config.def.h b/config.def.h
-index 1eb9566..064ddb4 100644
+index 1eb9566..e1f142d 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -63,6 +63,18 @@ static Bool allowgeolocation      = TRUE;
@@ -8,7 +8,7 @@ index 1eb9566..064ddb4 100644
  
 +#define ONLOAD(u) { \
 +	.v = (char *[]){"/bin/sh", "-c", \
-+		"~/.surf/omnibar load \"$0\" \"$1\"", u, winid, NULL \
++		"~/.surf/omnibar addhist \"$0\"", u, NULL \
 +	} \
 +}
 +
@@ -31,7 +31,7 @@ index 1eb9566..064ddb4 100644
      { MODKEY,               GDK_slash,  spawn,      SETPROP("_SURF_FIND", "_SURF_FIND") },
  
 diff --git a/surf.c b/surf.c
-index 02656ec..86bb23e 100644
+index 02656ec..1ccd821 100644
 --- a/surf.c
 +++ b/surf.c
 @@ -712,11 +712,11 @@ loadstatuschange(WebKitWebView *view, GParamSpec *pspec, Client *c) {
@@ -40,7 +40,7 @@ index 02656ec..86bb23e 100644
  	SoupMessage *msg;
 -	char *uri;
 +	char *uri = geturi(c);
-+	Arg arg = (Arg)ONLOAD((char *)uri);
++	Arg arg = (Arg)ONLOAD(uri);
  
  	switch(webkit_web_view_get_load_status (c->view)) {
  	case WEBKIT_LOAD_COMMITTED:
@@ -48,3 +48,11 @@ index 02656ec..86bb23e 100644
  		if(strstr(uri, "https://") == uri) {
  			frame = webkit_web_view_get_main_frame(c->view);
  			src = webkit_web_frame_get_data_source(frame);
+@@ -733,6 +733,7 @@ loadstatuschange(WebKitWebView *view, GParamSpec *pspec, Client *c) {
+ 		}
+ 		break;
+ 	case WEBKIT_LOAD_FINISHED:
++		spawn(NULL, &arg);
+ 		c->progress = 100;
+ 		updatetitle(c);
+ 		if(diskcache) {

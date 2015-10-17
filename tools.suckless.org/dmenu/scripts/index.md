@@ -20,4 +20,4 @@ Download
  rather than a cache. As such, it also takes into account programs executed from
  the terminal.
 * [browse](https://github.com/clamiax/scripts/blob/master/browse):
-  little file browser which uses MIME to open files.
+  little files navigator

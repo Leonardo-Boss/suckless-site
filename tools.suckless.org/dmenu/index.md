@@ -18,3 +18,9 @@ Mailing list
 * `dev+subscribe@suckless.org` ([Archives](http://lists.suckless.org/dev/)) 
 ([Old Archives](http://lists.suckless.org/dwm/)) (see [community](http://suckless.org/community/) for details)
 
+
+Development
+-----------
+You can [browse](http://git.suckless.org/dmenu) its source code repository or get a copy using git with the following command:
+
+	git clone http://git.suckless.org/dmenu

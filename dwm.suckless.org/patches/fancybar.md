@@ -24,4 +24,4 @@ fit, they're cropped. The title of the selected window is inverted.
 
 This patch was inspired by the decorated tabbed layout of Xmonad.
 
-[1]: http://s4.postimg.org/ql2f934wd/fancybar.png
+[1]: http://s27.postimg.org/nvlkivn03/2015_10_14_132203_727x15_scrot.png

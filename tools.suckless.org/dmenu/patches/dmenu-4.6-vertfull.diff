@@ -1,0 +1,13 @@
+diff --git a/dmenu.c b/dmenu.c
+index 4f22ffe..c9b51e3 100644
+--- a/dmenu.c
++++ b/dmenu.c
+@@ -152,7 +152,7 @@ drawmenu(void)
+ 			else
+ 				drw_setscheme(drw, &scheme[SchemeNorm]);
+ 
+-			drw_text(drw, x, y, w, bh, item->text, 0);
++			drw_text(drw, 0, y, mw, bh, item->text, 0);
+ 		}
+ 	} else if (matches) {
+ 		/* draw horizontal list */

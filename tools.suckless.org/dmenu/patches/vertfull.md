@@ -1,6 +1,6 @@
 Vertical full width
 ===================
-Prevents dmenu to indents items at the same level as the prompt length.
+Prevents dmenu from indenting items at the same level as the prompt length.
 
 Download
 --------

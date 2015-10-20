@@ -17,4 +17,4 @@ Authors
 ------
 
 * Jan Christoph Ebersbach - jceb@e-jc.de
-* Laslo Hunhold - dev@frign.de (st-git-20151020 port)
+* Laslo Hunhold - dev@frign.de (dmenu-4.5, dmenu-git-20151020 ports)

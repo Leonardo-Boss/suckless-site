@@ -35,7 +35,7 @@ C Features
 * Do not use for loop initial declarations
 * Use `/* */` for comments, not `//`
 * Variadic macros are acceptable, but remember
-	* __VA_ARGS__ not a named parameter
+	* `__VA_ARGS__` not a named parameter
 	* Arg list cannot be empty
 
 Blocks

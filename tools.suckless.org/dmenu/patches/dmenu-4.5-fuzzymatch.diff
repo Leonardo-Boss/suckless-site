@@ -1,12 +1,8 @@
-Author: Jan Christoph Ebersbach <jceb@e-jc.de>
-URL: no url in suckless wiki yet
-Add add fuzzy matching to dmenu
-
-Index: dmenu-patches/dmenu/dmenu.c
-===================================================================
---- dmenu-patches.orig/dmenu/dmenu.c
-+++ dmenu-patches/dmenu/dmenu.c
-@@ -22,12 +22,14 @@ typedef struct Item Item;
+diff --git a/dmenu.c b/dmenu.c
+index 4ea95f8..19c5cb6 100644
+--- a/dmenu.c
++++ b/dmenu.c
+@@ -22,6 +22,7 @@ typedef struct Item Item;
  struct Item {
  	char *text;
  	Item *left, *right;
@@ -14,54 +10,10 @@ Index: dmenu-patches/dmenu/dmenu.c
  };
  
  static void appenditem(Item *item, Item **list, Item **last);
- static void calcoffsets(void);
- static char *cistrstr(const char *s, const char *sub);
- static void drawmenu(void);
-+static void fuzzymatch(void);
- static void grabkeyboard(void);
- static void insert(const char *str, ssize_t n);
- static void keypress(XKeyEvent *ev);
-@@ -230,7 +232,7 @@ insert(const char *str, ssize_t n) {
- 	if(n > 0)
- 		memcpy(&text[cursor], str, n);
- 	cursor += n;
--	match();
-+	fuzzymatch();
+@@ -221,6 +222,86 @@ grabkeyboard(void) {
+ 	eprintf("cannot grab keyboard\n");
  }
  
- void
-@@ -260,7 +262,7 @@ keypress(XKeyEvent *ev) {
- 
- 		case XK_k: /* delete right */
- 			text[cursor] = '\0';
--			match();
-+			fuzzymatch();
- 			break;
- 		case XK_u: /* delete left */
- 			insert(NULL, 0 - cursor);
-@@ -379,7 +381,7 @@ keypress(XKeyEvent *ev) {
- 			return;
- 		strncpy(text, sel->text, sizeof text);
- 		cursor = strlen(text);
--		match();
-+		fuzzymatch();
- 		break;
- 	}
- 	drawmenu();
-@@ -578,7 +580,7 @@ setup(void) {
- 	}
- 	promptw = prompt ? textw(dc, prompt) : 0;
- 	inputw = MIN(inputw, mw/3);
--	match();
-+	fuzzymatch();
- 
- 	/* create menu window */
- 	swa.override_redirect = True;
-Index: dmenu-patches/dmenu/fuzzymatch.c
-===================================================================
---- /dev/null
-+++ dmenu-patches/dmenu/fuzzymatch.c
-@@ -0,0 +1,79 @@
 +int
 +compare_distance(const void *a, const void *b) {
 +	Item const *da = *(Item **) a;
@@ -141,3 +93,43 @@ Index: dmenu-patches/dmenu/fuzzymatch.c
 +	curr = sel = matches;
 +	calcoffsets();
 +}
++
+ void
+ insert(const char *str, ssize_t n) {
+ 	if(strlen(text) + n > sizeof text - 1)
+@@ -230,7 +311,7 @@ insert(const char *str, ssize_t n) {
+ 	if(n > 0)
+ 		memcpy(&text[cursor], str, n);
+ 	cursor += n;
+-	match();
++	fuzzymatch();
+ }
+ 
+ void
+@@ -260,7 +341,7 @@ keypress(XKeyEvent *ev) {
+ 
+ 		case XK_k: /* delete right */
+ 			text[cursor] = '\0';
+-			match();
++			fuzzymatch();
+ 			break;
+ 		case XK_u: /* delete left */
+ 			insert(NULL, 0 - cursor);
+@@ -379,7 +460,7 @@ keypress(XKeyEvent *ev) {
+ 			return;
+ 		strncpy(text, sel->text, sizeof text);
+ 		cursor = strlen(text);
+-		match();
++		fuzzymatch();
+ 		break;
+ 	}
+ 	drawmenu();
+@@ -578,7 +659,7 @@ setup(void) {
+ 	}
+ 	promptw = prompt ? textw(dc, prompt) : 0;
+ 	inputw = MIN(inputw, mw/3);
+-	match();
++	fuzzymatch();
+ 
+ 	/* create menu window */
+ 	swa.override_redirect = True;

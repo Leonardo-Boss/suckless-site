@@ -3,6 +3,10 @@ Stuff that sucks
 See the [philosophy](http://suckless.org/philosophy) page about what
 applies to this page.
 
+Bigger topics that suck:
+[systemd](http://suckless.org/http://suckless.org/sucks/systemd), [the
+web](http://suckless.org/sucks/web)
+
 Libraries
 ---------
 These libraries are broken/considered harmful and should not be used if it's

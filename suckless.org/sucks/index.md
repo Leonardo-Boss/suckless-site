@@ -110,6 +110,16 @@ the source code, is not worth the time.
 The suckless way is to have a short usage and a descriptive manpage. The
 complete details are in the source.
 
+C Compilers
+---------
+* [GCC][gcc] is the virus which has spread into nearly every Linux
+  distribution and has added its language extensions to be not easily
+  replacable. As of 2015 it is now written in C++ and so complete suck. Why
+  can't a compiler just be a simple binary doing its work, instead it adds
+  path dependencies deep into the system?
+* [Clang][clang] is written in C++. If you don't believe that it sucks, try to
+  build clang by hand.
+
 See also
 --------
 
@@ -120,4 +130,6 @@ The [list of harmful software](http://harmful.cat-v.org/software/) at [cat-v.org
 [uuterm]: http://etalabs.net/uuterm.html
 [icccm]:  http://tronche.com/gui/x/icccm/
 [texinfo]: https://www.gnu.org/software/texinfo/
+[gcc]:    http://gcc.gnu.org/
+[clang]:  http://clang.llvm.org/
 

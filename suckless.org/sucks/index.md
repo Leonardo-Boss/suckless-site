@@ -4,7 +4,7 @@ See the [philosophy](http://suckless.org/philosophy) page about what
 applies to this page.
 
 Bigger topics that suck:
-[systemd](http://suckless.org/http://suckless.org/sucks/systemd), [the
+[systemd](http://suckless.org/sucks/systemd), [the
 web](http://suckless.org/sucks/web)
 
 Libraries

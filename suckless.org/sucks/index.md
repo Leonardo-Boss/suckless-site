@@ -102,10 +102,10 @@ than finding 'q' to quit it.
 
 Look at GNU tools how to not handle documentation.
 
-Talking about the suck in enforced HTML documentation which forces you to open
-up a 1 Gb of RAM wasting web browser just to see some eye-candy which could
+Talking about the suck in enforced HTML documentation, which forces you to open
+up a 1 Gb of RAM wasting web browser, just to see some eye-candy, which could
 have been described in the source with some easy way to jump to that line in
-the source code is not worth the time.
+the source code, is not worth the time.
 
 The suckless way is to have a short usage and a descriptive manpage. The
 complete details are in the source.
@@ -119,5 +119,5 @@ The [list of harmful software](http://harmful.cat-v.org/software/) at [cat-v.org
 [st]:     http://st.suckless.org/
 [uuterm]: http://etalabs.net/uuterm.html
 [icccm]:  http://tronche.com/gui/x/icccm/
-[textinfo]: https://www.gnu.org/software/texinfo/
+[texinfo]: https://www.gnu.org/software/texinfo/
 

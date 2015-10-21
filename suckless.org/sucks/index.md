@@ -115,7 +115,7 @@ C Compilers
 * [GCC][gcc] is the virus which has spread into nearly every Linux
   distribution and has added its language extensions to be not easily
   replacable. As of 2015 it is now written in C++ and so complete suck. Why
-  can't a compiler just be a simple binary doing its work, instead it adds
+  can't a compiler just be a simple binary doing its work instead of adding
   path dependencies deep into the system?
 * [Clang][clang] is written in C++. If you don't believe that it sucks, try to
   build clang by hand.

@@ -154,5 +154,5 @@ If you prepare to work on this project, plan ahead in recruting more
 developers. You will need them.
 
 ***Requirements:*** Very good C knowledge, a very good knowledge in web
-standards and how to strop them down to the suckless level.
+standards and how to strip them down to the suckless level.
 

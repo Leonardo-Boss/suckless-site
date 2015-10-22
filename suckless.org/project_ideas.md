@@ -132,7 +132,7 @@ abstraction of a mass of information in a filesystem. The goal of this meta
 project is to find ideas how to implement gopher services to easily access the
 web and new information.
 
-See the [protocol](https://en.wikipedia.org/wiki/Gopher_(protocol)#Protocol)
+See the [protocol](https://en.wikipedia.org/wiki/Gopher_%28protocol%29#Protocol)
 for how easy it is to write a `menu`, which can be seen as a directory.
 
 * [gopherproject.org](http://www.gopherproject.org)

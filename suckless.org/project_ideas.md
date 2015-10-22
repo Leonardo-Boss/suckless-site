@@ -15,7 +15,7 @@ student's progress, as well as of the mentor's.
 General ideas
 -------------
 Our project ideas in general intend to focus on our innovative development
-environment, including graphical user interfaces and development tools.
+environment from bare hardware to the graphical interface.
 
 * Graphical user interfaces for developers (such as more advanced
   concepts for mail clients, messaging clients, music players, text editors)
@@ -27,12 +27,26 @@ environment, including graphical user interfaces and development tools.
   GNU/Linux
 * Foundations of a new windowing system for Unix-like operating systems
 * Improvements to our existing software projects
+* Replacements of bloated existing software in a suckless way.
 
 Concrete ideas
 --------------
 The listed ideas generally require good knowledge of C and experience with
 Unix-like operating systems. The difficulty ranges from medium to high.
 An academic background in computer science is desirable but not essential.
+
+### Suckless font rendering library
+
+There is libdrw in suckless now, which still uses xft and fontconfig.
+Fontconfig and xft are ugly and require too much internal knowledge to be
+useful. The next logical layer in Linux evolved as pango and cairo. Both of
+course added HTML formatting and vector drawing. This is not needed to simply
+draw some text somewhere. And this is what a suckless font rendering library
+should do: Give it a font string and render at some position the given font
+without having to care about font specifics.
+
+***Requirements:*** C knowledge, some X11 knowledge and of course knowledge
+about the font formats and how to handle them.
 
 ### Write ld wrapper or replacement for static linking
 
@@ -55,20 +69,6 @@ general case.
 
 ***Requirements:*** Good C/Unix knowledge is essential, knowledge about linking/linker internals are desirable..
 
-### goblin
-
-Write the most useful unix userland commands in the new [Go
-language](http://golang.org) created by Google to form a robust base for future
-Unix-like userlands that do not suffer from the vulnerabilities that are common
-in C or C++ code. The minimum of commands that need to be implemented in Go are
-those found in [9base](http://tools.suckless.org/9base), with the exception of
-rc and awk which could be separated into a second project for another student.
-
-Having goblin would allow to migrate decent web frameworks like
-[werc](http://werc.cat-v.org) on a proper foundation.
-
-***Requirements:*** Good C/Unix and Go knowledge is essential.
-
 ### Write a decent bug and issue tracking system
 
 We a need a decent ticket management system, as this is a common task in
@@ -78,7 +78,8 @@ problems of TTS (Trouble Ticket System), ARS (Action Request System) and IRS
 (Incident Response System) all together. It also must be usable as a bug
 tracking system.
 
-* <https://github.com/blog/411-github-issue-tracker>
+For now suckless is using a mailinglist which fits all needs. Beware when you
+find the new and innovative way to report bugs that this is reality.
 
 ***Requirements:*** Good C/Shell/web technology/HTML knowledge would be desirable, knowledge of bug tracking and issue tracking in practice is essential.
 
@@ -123,3 +124,16 @@ This task requires writing a new cookie handler in surf which:
 
 ***Requirements:*** Good knowledge of C and POSIX file locking. Basic knowledge
 of GTK and its other evil friends.
+
+### A sane backend for surf
+
+There is dillo, netsurf and abaco which implement HTML. The problem is
+Javascript and extension to replace webkit as the big dependency hell for web
+rendering in surf.
+
+If you prepare to work on this project, plan ahead in recruting more
+developers. You will need them.
+
+***Requirements:*** Very good C knowledge, a very good knowledge in web
+standards and how to strop them down to the suckless level.
+

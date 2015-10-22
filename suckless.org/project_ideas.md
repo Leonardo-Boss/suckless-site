@@ -141,6 +141,9 @@ for how easy it is to write a `menu`, which can be seen as a directory.
 
 Anyone creating a gopher interface to suckless.org will get a bonus.
 
+***Requirements:*** Just some shell scripting and a way to setup a gopher
+daemon is required. Everyone can do this.
+
 ### A sane backend for surf
 
 There is dillo, netsurf and abaco which implement HTML. The problem is

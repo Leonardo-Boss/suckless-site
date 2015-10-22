@@ -127,7 +127,7 @@ of GTK and its other evil friends.
 
 ### Gopher services
 
-Gopher is a sane prorotocol which has hierarchy in its design. It allows the
+Gopher is a sane protocol which has hierarchy in its design. It allows the
 abstraction of a mass of information in a filesystem. The goal of this meta
 project is to find ideas how to implement gopher services to easily access the
 web and new information.

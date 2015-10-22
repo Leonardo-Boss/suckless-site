@@ -137,7 +137,7 @@ for how easy it is to write a `menu`, which can be seen as a directory.
 
 * [gopherproject.org](http://www.gopherproject.org)
 * [gopher proxy](http://gopher.floodgap.com/gopher/)
-* [Gopher wikipedia article](https://en.wikipedia.org/wiki/Gopher_(protocol))
+* [Gopher wikipedia article](https://en.wikipedia.org/wiki/Gopher_%28protocol%29)
 
 Anyone creating a gopher interface to suckless.org will get a bonus.
 

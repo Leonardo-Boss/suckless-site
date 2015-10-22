@@ -125,6 +125,22 @@ This task requires writing a new cookie handler in surf which:
 ***Requirements:*** Good knowledge of C and POSIX file locking. Basic knowledge
 of GTK and its other evil friends.
 
+### Gopher services
+
+Gopher is a sane prorotocol which has hierarchy in its design. It allows the
+abstraction of a mass of information in a filesystem. The goal of this meta
+project is to find ideas how to implement gopher services to easily access the
+web and new information.
+
+See the [protocol](https://en.wikipedia.org/wiki/Gopher_(protocol)#Protocol)
+for how easy it is to write a `menu`, which can be seen as a directory.
+
+* [gopherproject.org](http://www.gopherproject.org)
+* [gopher proxy](http://gopher.floodgap.com/gopher/)
+* [Gopher wikipedia article](https://en.wikipedia.org/wiki/Gopher_(protocol))
+
+Anyone creating a gopher interface to suckless.org will get a bonus.
+
 ### A sane backend for surf
 
 There is dillo, netsurf and abaco which implement HTML. The problem is

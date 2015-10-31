@@ -5,7 +5,7 @@ slcon2 will be held in Budapest on 2015-10-(30-31).
 
 This time it'll be a conference for invited participants *only*.
 
-Preliminary schedule (as of 2015-09-01)
+Preliminary Schedule (as of 2015-10-30)
 =======================================
 
 Friday, 2015-10-30
@@ -14,17 +14,11 @@ Friday, 2015-10-30
 Talks
 -----
 
-(10:30-10:45) *Welcome*, Anselm R Garbe
+(11:00-11:15) *Welcome*, Anselm R Garbe
 
         Anselm will open slcon2 and give an overview on the final conference schedule.
 
-(10:45-11.00) Coffee/tea break
-
-(11:00-12:00) *stali 2015*, Anselm R Garbe
-
-(12:00-13:00) Lunch break
-
-(13:00-14:00) *suckless core - A suckless userspace foundation*, Laslo Hunhold
+(11:15-12:00) *suckless core - A suckless userspace foundation*, Laslo Hunhold
 
         This talk will focus on recent developments in the suckless core
         programs, the design and motivation behind them and which issues were
@@ -32,61 +26,13 @@ Talks
         suckless design principles and consistency.
         Current issues and future plans will be discussed in the last part.
 
-(14:00-14:30) *new suckless tools / dwmutil/d\**, Anselm R Garbe
+(12.00-12:45) *stali 2015*, Anselm R Garbe
 
-(14:30-15:00) *An overview on what happened with suckless since 2013 (slcon1)*, Christoph Lohmann, presented by Anselm R Garbe
+(12:45-13:45) Lunch
 
-        It has been a long time since 2013 and the last conference. This is a talk
-        to show Christoph's perspective on suckless's historical documentation.
-        What has changed? Who are the new persons involved? What has changed internally?
+(13:45-14:30) *new suckless tools/ideas*, Anselm R Garbe
 
-(15:00-15:30) Coffee/tea break
-
-(15:30-16:30) *suckless.org e.V. foundation*, Anselm R Garbe
-
-        Anselm will present the idea of suckless.org e.V. and ask attendees
-        to join, followed by a foundation ceremony.
-
-Hacking
--------
-
-(16:30-18:00) Hack session on suckless/stali tools with the brain power of all attendees
-
-(18:00-19:00) Refresh break / check your rooms
-
-Social Event
-------------
-
-(19:00-) Late night social event in Budapest (nsz/et.al. will propose what to do/where to go)
-
-
-Saturday, 2015-10-31
-====================
-
-Talks
------
-
-(10:30-10:45) *The latest developments*, Anselm R Garbe
-
-        Anselm will also charge the conference fees (presumably we can provide invoices
-        as foundation on this day already)
-
-(10:45-11:00) Coffee/tea break
-
-(11:00-11:30) *dvtm - dynamic virtual terminal manager*, Marc André Tanner
-
-(11:30-12:00) *Simple Jabber - Divide And Conquer XMPP*, Jan Klemkow
-
-        The Extensible Messaging and Presence Protocol (XMPP)1 is like the web. It is
-        far too complex to be implemented in one program with the Unix philosophy in mind.
-        But like the web, you have to deal with it. It is the only open
-        and widely used instant messaging protocol on the internet.
-        Its extensibility is the main reason that an implementation in a single
-        program is nearly impossible. This talk describes an approach to master this problem.
-
-(12:00-13:00) Lunch break
-
-(13:00-14:00) *Farbfeld - Rethinking image-formats*, Laslo Hunhold
+(14:30-15:30) *Farbfeld - Rethinking image-formats*, Laslo Hunhold
 
         This talk will discuss the deficiencies of the RGBA color space and
         present the Farbfeld format to store images in a device independent
@@ -95,16 +41,49 @@ Talks
         compression is discussed, evaluating the advantages over other image
         formats using different kinds of images.
 
-(14:00-14:30) *Finite state document processing*, Manu Raster
+(15:30-16:00) Coffee/Tea break
+
+(16:00-16:30) *suckless.org e.V.*, Anselm R Garbe
+
+        Anselm will present the idea of suckless.org e.V. and ask attendees
+        to join.
+
+(16:30-17:30) *suckless.org foundation*, All
+
+(17:30-19:00) Refresh break / check your rooms
+
+(19:00-) Late night social event in Budapest
+
+
+Saturday, 2015-10-31
+====================
+
+Talks
+-----
+
+(10:30-10:45) *Opening of day 2*, Anselm R Garbe
+
+(11:45-11:30) *Simple Jabber - Divide And Conquer XMPP*, Jan Klemkow
+
+        The Extensible Messaging and Presence Protocol (XMPP)1 is like the web. It is
+        far too complex to be implemented in one program with the Unix philosophy in mind.
+        But like the web, you have to deal with it. It is the only open
+        and widely used instant messaging protocol on the internet.
+        Its extensibility is the main reason that an implementation in a single
+        program is nearly impossible. This talk describes an approach to master this problem.
+
+(11:30-12:00) *Finite state document processing*, Manu Raster
 
         Mainstream XML processing techniques wastefully consume time
         and memory for example in file format conversions popularly
         known as 'save as …'. In this talk we present a less
         wasteful method based on finite-state transducers.
 
-(14:30-15:00) Coffee/tea break
+(12:00-13:00) Lunch
 
-(15:00-16:00) *UTF-8 everywhere? Writing Unicode compliant software that sucks less*, Laslo Hunhold
+(13:00-13:15) Conference fee collection
+
+(13:15-14:15) *UTF-8 everywhere? Writing Unicode compliant software that sucks less*, Laslo Hunhold
 
         This talk will discuss UTF-8 and its history, how and when you have to
         deal with it and which challenges are faced along the way, evaluating
@@ -117,21 +96,13 @@ Talks
         and a midway drawn between total localization and minimalism,
         presenting possible solutions.
 
-Hacking
--------
+(14:15-14:45) Coffee/Tea break
 
-(16:00-17:45) Working on the projects with all brain power
+(14:45-15:00) *Formal conference talk closing*, Anselm R Garbe
 
-End
----
-(17:45-18:00) *Closing*, Anselm R Garbe
+(15:00-17:00) Hacking
 
-        Anselm will close the conference and all attendees will decide on the next conference location.
-
-
-Social Event 2
---------------
-(19:00-) Those who can stay until 2015-11-01 will celebrate another social hacking event
+(17:00-) TBD
 
 
 Previous conferences

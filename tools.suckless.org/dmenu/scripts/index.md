@@ -6,6 +6,7 @@ dmenu's user, feel free to add your own scripts, or comment existents.
 Download
 --------
 
+* [clipmenu](https://github.com/cdown/clipmenu): Clipboard management using dmenu
 * [passmenu](http://git.zx2c4.com/password-store/tree/contrib/dmenu)
   : get password from pass.
 * [passmenu2](passmenu2): "pass" browser, vertical display and recursive "pass" folder support

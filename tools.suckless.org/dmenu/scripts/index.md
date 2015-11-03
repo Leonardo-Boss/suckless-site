@@ -6,6 +6,7 @@ dmenu's user, feel free to add your own scripts, or comment existents.
 Download
 --------
 
+* [clipmenu](https://github.com/cdown/clipmenu): Clipboard management using dmenu
 * [passmenu](http://git.zx2c4.com/password-store/tree/contrib/dmenu)
   : get password from pass.
 * [passmenu2](passmenu2): "pass" browser, vertical display and recursive "pass" folder support
@@ -19,5 +20,5 @@ Download
  [run-recent](run-recent), but it uses atime to find recently executed commands
  rather than a cache. As such, it also takes into account programs executed from
  the terminal.
-* [browse](https://github.com/clamiax/scripts/blob/master/browse):
+* [browse](https://github.com/clamiax/scripts/blob/master/src/browse):
   little files navigator

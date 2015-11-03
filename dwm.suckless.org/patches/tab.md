@@ -125,12 +125,12 @@ Download
 
  * Tab patch alone
    * For dwm 6.0: [dwm-6.0-tab-v2b.diff](dwm-6.0-tab-v2b.diff)
-   * For dwm from the git master branch: [dwm-master\_2015-03-05\_14343e-tab-v2b.diff](dwm-master\_2015-03-05\_14343e-tab-v2b.diff)
+   * For dwm from the git master branch: [dwm-7e1182c-tab.diff](dwm-7e1182c-tab.diff)
 
  * Combined patch of tab and the [pertag](pertag) patch from Jan Christoph Ebersbach. 
    * Follow the [link](pertag) for the description of this patch and the credits. The possibility to define the default layout per view has been added.
    * For dwm 6.0: [dwm-6.0-pertag-tab-v2b.diff](dwm-6.0-pertag-tab-v2b.diff)
-   * For dwm from the git master branch: [dwm-master\_2015-03-05\_14343e-pertag-tab-v2b.diff](dwm-master\_2015-03-05\_14343e-pertag-tab-v2b.diff)
+   * For dwm from the git master branch: [dwm-7e1182c-pertag-tab.diff](dwm-7e1182c-pertag-tab.diff)
 
 Old versions
 

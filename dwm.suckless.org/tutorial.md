@@ -40,7 +40,7 @@ To **move to another terminal**, press `[Alt]+[j]` or `[Alt]+[k]`.
 
 To **move a terminal to another _tag_**, hover to the terminal and press `[Shift]+[Alt]+[2]`.
 
-To **focus on another _tag_**, press `[Shift]+[2]`.
+To **focus on another _tag_**, press `[Alt]+[tag number]`.
 
 To **move a terminal to master or stack**, press `[Alt]+[d]` or `[Alt]+[i]`.
 

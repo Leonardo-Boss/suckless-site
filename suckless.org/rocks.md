@@ -46,10 +46,6 @@ for judging a programs as usable are:
 
 This covers most console-based programs and programs from [plan9port][].
 
-Accounting
-----------
-* [Ledger](http://ledger-cli.org/)
-
 Audio Players
 -------------
 * [C* Music Player](http://cmus.sourceforge.net/)

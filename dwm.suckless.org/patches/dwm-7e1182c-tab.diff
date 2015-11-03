@@ -1,8 +1,8 @@
 diff --git a/config.def.h b/config.def.h
-index eaae8f3..9161486 100644
+index 3fde3cf..6a7ad0f 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -17,6 +17,13 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
+@@ -15,6 +15,13 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
  static const unsigned int snap      = 32;       /* snap pixel */
  static const Bool showbar           = True;     /* False means no bar */
  static const Bool topbar            = True;     /* False means bottom bar */
@@ -16,7 +16,7 @@ index eaae8f3..9161486 100644
  
  /* tagging */
  static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-@@ -34,7 +41,7 @@ static const Rule rules[] = {
+@@ -32,7 +39,7 @@ static const Rule rules[] = {
  /* layout(s) */
  static const float mfact      = 0.55; /* factor of master area size [0.05..0.95] */
  static const int nmaster      = 1;    /* number of clients in master area */
@@ -25,7 +25,7 @@ index eaae8f3..9161486 100644
  
  static const Layout layouts[] = {
  	/* symbol     arrange function */
-@@ -64,6 +71,7 @@ static Key keys[] = {
+@@ -62,6 +69,7 @@ static Key keys[] = {
  	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
  	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
  	{ MODKEY,                       XK_b,      togglebar,      {0} },
@@ -33,7 +33,7 @@ index eaae8f3..9161486 100644
  	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
  	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
  	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
-@@ -111,5 +119,6 @@ static Button buttons[] = {
+@@ -109,5 +117,6 @@ static Button buttons[] = {
  	{ ClkTagBar,            0,              Button3,        toggleview,     {0} },
  	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
  	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
@@ -41,7 +41,7 @@ index eaae8f3..9161486 100644
  };
  
 diff --git a/dwm.1 b/dwm.1
-index 6687011..9f5c274 100644
+index 6687011..f736591 100644
 --- a/dwm.1
 +++ b/dwm.1
 @@ -19,14 +19,22 @@ layout applied.
@@ -56,22 +56,22 @@ index 6687011..9f5c274 100644
 -color. The tags of the focused window are indicated with a filled square in the
 -top left corner.  The tags which are applied to one or more windows are
 -indicated with an empty square in the top left corner.
-+Each screen contains two small status bars. 
++Each screen contains two small status bars.
 +.P
 +One bar displays all available tags, the layout, the title of the focused
 +window, and the text read from the root window name property, if the screen is
 +focused. A floating window is indicated with an empty square and a maximised
-+floating window is indicated with a filled square before the windows title.  The
-+selected tags are indicated with a different color. The tags of the focused
++floating window is indicated with a filled square before the windows title.
++The selected tags are indicated with a different color. The tags of the focused
 +window are indicated with a filled square in the top left corner.  The tags
 +which are applied to one or more windows are indicated with an empty square in
-+the top left corner. 
++the top left corner.
 +.P
 +Another bar contains a tab for each window of the current view and allows
 +navigation between windows, especially in the monocle mode. The different
 +display modes of this bar are described under the Mod1\-w Keybord command
-+section.  When a single tag is selected, that tag is indicated in the left corner
-+of the tab bar.
++section.  When a single tag is selected, that tag is indicated in the left
++corner of the tab bar.
  .P
  dwm draws a small border around windows to indicate the focus state.
  .SH OPTIONS
@@ -99,7 +99,7 @@ index 6687011..9f5c274 100644
  Zooms/cycles focused window to/from master area (tiled layouts only).
  .TP
 diff --git a/dwm.c b/dwm.c
-index 169adcb..4ec61fb 100644
+index 96b43f7..585dd7b 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -64,7 +64,7 @@ enum { NetSupported, NetWMName, NetWMState,
@@ -221,7 +221,7 @@ index 169adcb..4ec61fb 100644
  }
  
  void
-@@ -498,6 +532,8 @@ cleanupmon(Monitor *mon) {
+@@ -497,6 +531,8 @@ cleanupmon(Monitor *mon) {
  	}
  	XUnmapWindow(dpy, mon->barwin);
  	XDestroyWindow(dpy, mon->barwin);
@@ -230,7 +230,7 @@ index 169adcb..4ec61fb 100644
  	free(mon);
  }
  
-@@ -566,8 +602,11 @@ configurenotify(XEvent *e) {
+@@ -565,8 +601,11 @@ configurenotify(XEvent *e) {
  		if(updategeom() || dirty) {
  			drw_resize(drw, sw, bh);
  			updatebars();
@@ -243,7 +243,7 @@ index 169adcb..4ec61fb 100644
  			focus(NULL);
  			arrange(NULL);
  		}
-@@ -637,7 +676,10 @@ createmon(void) {
+@@ -635,7 +674,10 @@ createmon(void) {
  	m->mfact = mfact;
  	m->nmaster = nmaster;
  	m->showbar = showbar;
@@ -399,7 +399,7 @@ index 169adcb..4ec61fb 100644
  Atom
  getatomprop(Client *c, Atom prop) {
  	int di;
-@@ -1216,12 +1372,14 @@ propertynotify(XEvent *e) {
+@@ -1215,12 +1371,14 @@ propertynotify(XEvent *e) {
  		case XA_WM_HINTS:
  			updatewmhints(c);
  			drawbars();
@@ -414,7 +414,7 @@ index 169adcb..4ec61fb 100644
  		}
  		if(ev->atom == netatom[NetWMWindowType])
  			updatewindowtype(c);
-@@ -1329,6 +1487,7 @@ restack(Monitor *m) {
+@@ -1328,6 +1486,7 @@ restack(Monitor *m) {
  	XWindowChanges wc;
  
  	drawbar(m);
@@ -422,16 +422,16 @@ index 169adcb..4ec61fb 100644
  	if(!m->sel)
  		return;
  	if(m->sel->isfloating || !m->lt[m->sellt]->arrange)
-@@ -1512,6 +1671,8 @@ setup(void) {
+@@ -1511,6 +1670,8 @@ setup(void) {
  	if (!drw->fontcount)
- 		die("No fonts could be loaded.\n");
+ 		die("no fonts could be loaded.\n");
  	bh = drw->fonts[0]->h + 2;
 +	th = bh;
 +
  	updategeom();
  	/* init atoms */
  	wmatom[WMProtocols] = XInternAtom(dpy, "WM_PROTOCOLS", False);
-@@ -1643,6 +1804,16 @@ togglebar(const Arg *arg) {
+@@ -1642,6 +1803,16 @@ togglebar(const Arg *arg) {
  }
  
  void
@@ -448,7 +448,7 @@ index 169adcb..4ec61fb 100644
  togglefloating(const Arg *arg) {
  	if(!selmon->sel)
  		return;
-@@ -1746,20 +1917,43 @@ updatebars(void) {
+@@ -1745,20 +1916,43 @@ updatebars(void) {
  		                          CWOverrideRedirect|CWBackPixmap|CWEventMask, &wa);
  		XDefineCursor(dpy, m->barwin, cursor[CurNormal]->cursor);
  		XMapRaised(dpy, m->barwin);
@@ -495,7 +495,7 @@ index 169adcb..4ec61fb 100644
  }
  
  void
-@@ -1999,7 +2193,7 @@ wintomon(Window w) {
+@@ -1997,7 +2191,7 @@ wintomon(Window w) {
  	if(w == root && getrootptr(&x, &y))
  		return recttomon(x, y, 1, 1);
  	for(m = mons; m; m = m->next)

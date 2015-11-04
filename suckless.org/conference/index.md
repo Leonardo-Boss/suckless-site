@@ -1,12 +1,7 @@
 suckless conference 2015, Budapest
 ==================================
 
-slcon2 will be held in Budapest on 2015-10-(30-31).
-
-This time it'll be a conference for invited participants *only*.
-
-Preliminary Schedule (as of 2015-10-30)
-=======================================
+->[![slcon2015 group photo](slcon2015-s.png)](slcon2015.png)<-
 
 Friday, 2015-10-30
 ==================
@@ -14,11 +9,11 @@ Friday, 2015-10-30
 Talks
 -----
 
-(11:00-11:15) *Welcome*, Anselm R Garbe
+(11:00-11:15) *Welcome*, Anselm R Garbe, ([video](http://dl.sta.li/slcon/2015/slcon-2015-00-arg-welcome.mts))
 
-        Anselm will open slcon2 and give an overview on the final conference schedule.
+        Anselm opened slcon2 and gave an overview on the final conference schedule.
 
-(11:15-12:00) *suckless core - A suckless userspace foundation*, Laslo Hunhold
+(11:15-12:00) *suckless core - A suckless userspace foundation*, Laslo Hunhold, ([video](http://dl.sta.li/slcon/2015/slcon-2015-01-frign-suckless_core.mts))
 
         This talk will focus on recent developments in the suckless core
         programs, the design and motivation behind them and which issues were
@@ -26,13 +21,13 @@ Talks
         suckless design principles and consistency.
         Current issues and future plans will be discussed in the last part.
 
-(12.00-12:45) *stali 2015*, Anselm R Garbe
+(12.00-12:45) *stali 2015*, Anselm R Garbe, ([video](http://dl.sta.li/slcon/2015/slcon-2015-02-arg-stali_2015.mts))
 
 (12:45-13:45) Lunch
 
-(13:45-14:30) *new suckless tools/ideas*, Anselm R Garbe
+(13:45-14:30) *new suckless tools*, Anselm R Garbe, ([video](http://dl.sta.li/slcon/2015/slcon-2015-03-arg-new_suckless_tools.mts))
 
-(14:30-15:30) *Farbfeld - Rethinking image-formats*, Laslo Hunhold
+(14:30-15:30) *Farbfeld - Rethinking image-formats*, Laslo Hunhold, ([video](http://dl.sta.li/slcon/2015/slcon-2015-04-frign-farbfeld.mts))
 
         This talk will discuss the deficiencies of the RGBA color space and
         present the Farbfeld format to store images in a device independent
@@ -61,9 +56,9 @@ Saturday, 2015-10-31
 Talks
 -----
 
-(10:30-10:45) *Opening of day 2*, Anselm R Garbe
+(10:30-10:45) *Opening of day 2*, Anselm R Garbe, ([video](http://dl.sta.li/slcon/2015/slcon-2015-06-arg-opening_of_day_2.mts))
 
-(10:45-11:30) *Simple Jabber - Divide And Conquer XMPP*, Jan Klemkow
+(10:45-11:30) *Simple Jabber - Divide And Conquer XMPP*, Jan Klemkow, ([video](http://dl.sta.li/slcon/2015/slcon-2015-07-klenkow-simple_jabber.mts))
 
         The Extensible Messaging and Presence Protocol (XMPP)1 is like the web. It is
         far too complex to be implemented in one program with the Unix philosophy in mind.
@@ -72,7 +67,7 @@ Talks
         Its extensibility is the main reason that an implementation in a single
         program is nearly impossible. This talk describes an approach to master this problem.
 
-(11:30-12:00) *Finite state document processing*, Manu Raster
+(11:30-12:00) *Finite state document processing*, Manu Raster, ([video](http://dl.sta.li/slcon/2015/slcon-2015-08-raster-finite_state_document_processing.mts))
 
         Mainstream XML processing techniques wastefully consume time
         and memory for example in file format conversions popularly
@@ -83,7 +78,7 @@ Talks
 
 (13:00-13:15) Conference fee collection
 
-(13:15-14:15) *UTF-8 everywhere? Writing Unicode compliant software that sucks less*, Laslo Hunhold
+(13:15-14:15) *UTF-8 everywhere? Writing Unicode compliant software that sucks less*, Laslo Hunhold, ([video](http://dl.sta.li/slcon/2015/slcon-2015-09-frign-utf-8_everywhere.mts))
 
         This talk will discuss UTF-8 and its history, how and when you have to
         deal with it and which challenges are faced along the way, evaluating

@@ -9,9 +9,15 @@ Friday, 2015-10-30
 Talks
 -----
 
-(11:00-11:15) *Welcome*, Anselm R Garbe, ([video](http://dl.sta.li/slcon/2015/slcon-2015-00-arg-welcome.mts))
+(11:00-11:15) *Welcome*, Anselm R Garbe
 
 > Anselm opened slcon2 and gave an overview on the final conference schedule.
+
+<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="http://dl.sta.li/slcon/2015/slcon-2015-00-arg-welcome.png">
+        <source src="http://dl.sta.li/slcon/2015/slcon-2015-00-arg-welcome.webm" type="video/webm">
+	<a href="http://dl.sta.li/slcon/2015/slcon-2015-00-arg-welcome.webm">slcon-2015-00-arg-welcome.webm</a>
+</video>
+
 
 (11:15-12:00) *suckless core - A suckless userspace foundation*, Laslo Hunhold, ([video](http://dl.sta.li/slcon/2015/slcon-2015-01-frign-suckless_core.mts))
 

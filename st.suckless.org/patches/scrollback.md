@@ -14,12 +14,12 @@ Download
 Apply the following patch on top of the previous to allow scrolling
 using Shift+MouseWheel.
 
-* [st-git-20151006-scrollback-mouse.diff](st-git-20151006-scrollback-mouse.diff)
+* [st-git-20151104-scrollback-mouse.diff](st-git-20151104-scrollback-mouse.diff)
 
 Authors
 -------
 
  * Jochen Sprickerhof - dwm@jochen.sprickerhof.de
  * M Farkas-Dyck - strake888@gmail.com
- * Ivan Tham - pickfire@riseup.net (mouse scrolling, st-git-20150920 port)
+ * Ivan Tham - pickfire@riseup.net (mouse scrolling, st-git-2015\* port)
  * Laslo Hunhold - dev@frign.de (unscrambling, st-git-20150917 port)

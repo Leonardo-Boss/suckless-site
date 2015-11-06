@@ -14,7 +14,7 @@ Download
 Apply the following patch on top of the previous to allow scrolling
 using Shift+MouseWheel.
 
-* [st-git-20151104-scrollback-mouse.diff](st-git-20151104-scrollback-mouse.diff)
+* [st-git-20151106-scrollback-mouse.diff](st-git-20151106-scrollback-mouse.diff)
 
 Authors
 -------

@@ -105,6 +105,8 @@ Talks
 
 (17:00-) TBD
 
+Acknowledgment
+--------------
 We kindly thank [![genua mbh](/genua.png)](http://www.genua.eu) for borrowing us the equipment to record the conference videos of slcon2.
 
 Previous conferences

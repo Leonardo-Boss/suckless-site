@@ -112,6 +112,7 @@ Mail Clients
 * [Mail][plan9port] - A mail client for [acme][acme]. Included with plan9port.
 * [dmc](http://git.suckless.org/dmc/) - A minimalistic approach to a commandline mail client (WIP)
 * [fdm](http://fdm.sourceforge.net/) - MDA
+* [isync](http://isync.sourceforge.net/) - MDA that can work better for IMAP
 * [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
 * [mutt](http://www.mutt.org/)
 * [nmh](http://www.nongnu.org/nmh/)

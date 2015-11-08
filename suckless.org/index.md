@@ -5,6 +5,11 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2015-11-09
+----------
+[dwm 6.1](http://dwm.suckless.org) released: [download](http://dl.suckless.org/dwm/dwm-6.1.tar.gz)
+[dmenu 4.6](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.6.tar.gz)
+
 2015-09-23
 ----------
 Kai and Anselm gave an interview about suckless.org on Randal Schwartz' [FLOSS Weekly show](https://twit.tv/shows/floss-weekly/episodes/355?autostart=false)

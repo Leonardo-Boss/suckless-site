@@ -9,7 +9,7 @@ items efficiently.
 Download
 --------
 
-* [dmenu-4.5](http://dl.suckless.org/tools/dmenu-4.5.tar.gz) (20120108)
+* [dmenu-4.6](http://dl.suckless.org/tools/dmenu-4.6.tar.gz) (20151109)
 
 
 Mailing list

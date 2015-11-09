@@ -33,7 +33,13 @@ Talks
 </video>
 
 
-(12.00-12:45) *stali 2015*, Anselm R Garbe, ([video](http://dl.sta.li/slcon/2015/slcon-2015-02-arg-stali_2015.mts))
+(12.00-12:45) *stali 2015*, Anselm R Garbe
+
+<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="http://dl.sta.li/slcon/2015/slcon-2015-02-arg-stali_2015.png">
+        <source src="http://dl.sta.li/slcon/2015/slcon-2015-02-arg-stali_2015.webm" type="video/webm">
+	<a href="http://dl.sta.li/slcon/2015/slcon-2015-02-arg-stali_2015.webm">slcon-2015-02-arg-stali_2015.webm</a>
+</video>
+
 
 (12:45-13:45) Lunch
 

@@ -43,7 +43,13 @@ Talks
 
 (12:45-13:45) Lunch
 
-(13:45-14:30) *new suckless tools*, Anselm R Garbe, ([video](http://dl.sta.li/slcon/2015/slcon-2015-03-arg-new_suckless_tools.mts))
+(13:45-14:30) *new suckless tools*, Anselm R Garbe
+
+<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="http://dl.sta.li/slcon/2015/slcon-2015-03-arg-new_suckless_tools.png">
+        <source src="http://dl.sta.li/slcon/2015/slcon-2015-03-arg-new_suckless_tools.webm" type="video/webm">
+	<a href="http://dl.sta.li/slcon/2015/slcon-2015-03-arg-new_suckless_tools.webm">slcon-2015-03-arg-new_suckless_tools.webm</a>
+</video>
+
 
 (14:30-15:30) *Farbfeld - Rethinking image-formats*, Laslo Hunhold, ([video](http://dl.sta.li/slcon/2015/slcon-2015-04-frign-farbfeld.mts))
 

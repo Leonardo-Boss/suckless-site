@@ -113,7 +113,8 @@ Talks
 
 Acknowledgment
 --------------
-We kindly thank [![genua mbh](/genua.png)](http://www.genua.eu) for borrowing us the equipment to record the conference videos of slcon2.
+We kindly thank [![genua GmbH](genua.png)](http://www.genua.eu) for
+borrowing us the equipment to record the slcon2 conference videos.
 
 Previous conferences
 --------------------

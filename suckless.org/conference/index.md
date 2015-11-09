@@ -19,13 +19,19 @@ Talks
 </video>
 
 
-(11:15-12:00) *suckless core - A suckless userspace foundation*, Laslo Hunhold, ([video](http://dl.sta.li/slcon/2015/slcon-2015-01-frign-suckless_core.mts))
+(11:15-12:00) *suckless core - A suckless userspace foundation*, Laslo Hunhold
 
 > This talk will focus on recent developments in the suckless core
   programs, the design and motivation behind them and which issues were
   faced along the way, including ditching POSIX in some places in favor of
   suckless design principles and consistency.
   Current issues and future plans will be discussed in the last part.
+
+<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="http://dl.sta.li/slcon/2015/slcon-2015-01-frign-suckless_core.png">
+        <source src="http://dl.sta.li/slcon/2015/slcon-2015-01-frign-suckless_core.webm" type="video/webm">
+	<a href="http://dl.sta.li/slcon/2015/slcon-2015-01-frign-suckless_core.webm">slcon-2015-01-frign-suckless_core.webm</a>
+</video>
+
 
 (12.00-12:45) *stali 2015*, Anselm R Garbe, ([video](http://dl.sta.li/slcon/2015/slcon-2015-02-arg-stali_2015.mts))
 

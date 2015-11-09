@@ -21,11 +21,11 @@ Talks
 
 (11:15-12:00) *suckless core - A suckless userspace foundation*, Laslo Hunhold
 
-> This talk will focus on recent developments in the suckless core
-  programs, the design and motivation behind them and which issues were
+> This talk focused on recent developments in the suckless core
+  programs, the design and motivation behind them and which issues had been
   faced along the way, including ditching POSIX in some places in favor of
   suckless design principles and consistency.
-  Current issues and future plans will be discussed in the last part.
+  Current issues and future plans were discussed in the last part.
 
 <video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="http://dl.sta.li/slcon/2015/slcon-2015-01-frign-suckless_core.png">
         <source src="http://dl.sta.li/slcon/2015/slcon-2015-01-frign-suckless_core.webm" type="video/webm">
@@ -41,19 +41,19 @@ Talks
 
 (14:30-15:30) *Farbfeld - Rethinking image-formats*, Laslo Hunhold, ([video](http://dl.sta.li/slcon/2015/slcon-2015-04-frign-farbfeld.mts))
 
-> This talk will discuss the deficiencies of the RGBA color space and
-  present the Farbfeld format to store images in a device independent
+> This talk discussed the deficiencies of the RGBA color space and
+  presented the Farbfeld format to store images in a device independent
   way using the Lab color space.
   Additionally, an alternative to incorporated, namely imposed, image
-  compression is discussed, evaluating the advantages over other image
+  compression was discussed, evaluating the advantages over other image
   formats using different kinds of images.
 
 (15:30-16:00) Coffee/Tea break
 
 (16:00-16:30) *suckless.org e.V.*, Anselm R Garbe
 
-> Anselm will present the idea of suckless.org e.V.[<sup>1</sup>][1] and ask attendees
-  to join.
+> Anselm presented the idea of suckless.org e.V.[<sup>1</sup>][1] and asked
+  attendees to join.
 
 (16:30-17:30) *suckless.org foundation*, All
 
@@ -77,13 +77,13 @@ Talks
   But like the web, you have to deal with it. It is the only open
   and widely used instant messaging protocol on the internet.
   Its extensibility is the main reason that an implementation in a single
-  program is nearly impossible. This talk describes an approach to master this problem.
+  program is nearly impossible. This talk described an approach to master this problem.
 
 (11:30-12:00) *Finite state document processing*, Manu Raster, ([video](http://dl.sta.li/slcon/2015/slcon-2015-08-raster-finite_state_document_processing.mts))
 
 > Mainstream XML processing techniques wastefully consume time
   and memory for example in file format conversions popularly
-  known as 'save as …'. In this talk we present a less
+  known as 'save as...'. This talk presented a less
   wasteful method based on finite-state transducers.
 
 (12:00-13:00) Lunch
@@ -92,14 +92,14 @@ Talks
 
 (13:15-14:15) *UTF-8 everywhere? Writing Unicode compliant software that sucks less*, Laslo Hunhold, ([video](http://dl.sta.li/slcon/2015/slcon-2015-09-frign-utf-8_everywhere.mts))
 
-> This talk will discuss UTF-8 and its history, how and when you have to
-  deal with it and which challenges are faced along the way, evaluating
+> This talk discussed UTF-8 and its history, how and when you have to
+  deal with it and which challenges had been faced along the way, evaluating
   its advantages over other character encodings.
   Besides more trivial problems like decoding and encoding, advanced
-  issues like string comparison, case conversion and normalization are
+  issues like string comparison, case conversion and normalization were
   discussed, leading to the conclusion that the POSIX wchar-interfaces
   are broken by design.
-  Using suckless principles, problems with the ICU libraries are discussed
+  Using suckless principles, problems with the ICU libraries were discussed
   and a midway drawn between total localization and minimalism,
   presenting possible solutions.
 

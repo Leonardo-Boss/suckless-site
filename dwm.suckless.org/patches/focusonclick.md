@@ -7,8 +7,8 @@
 ## Download
 
  * [dwm-6.0-focusonclick.diff](dwm-6.0-focusonclick.diff) (2012-11-24)
- * [dwm-r1508-focusonclick.diff](dwm-r1508-focusonclick.diff) (dwm r1508) (20100321)
- * [dwm-5.8.2-focusonclick.diff](dwm-5.8.2-focusonclick.diff) (dwm 2010604)
+ * [dwm-git-20100321-focusonclick.diff](historical/dwm-git-20100321-focusonclick.diff)
+ * [dwm-5.8.2-focusonclick.diff](historical/dwm-5.8.2-focusonclick.diff) (dwm 2010604)
 
 ## Author
 

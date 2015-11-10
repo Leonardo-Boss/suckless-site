@@ -12,7 +12,7 @@ Patches against different versions of dwm are available at
 [dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
 
  * [dwm-6.1-systray.diff](dwm-6.1-systray.diff) (22K) (20151109)
- * [dwm-c794a9f5ae5e-systray.diff](dwm-c794a9f5ae5e-systray.diff) (19946b) (20130119)
+ * [dwm-git-20130119-systray.diff](dwm-git-20130119-systray.diff]) (19946b)
  * [dwm-6.0-systray.diff](dwm-6.0-systray.diff) (19788b) (20130119)
 
 Author

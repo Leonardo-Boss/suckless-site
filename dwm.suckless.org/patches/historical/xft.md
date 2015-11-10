@@ -32,11 +32,11 @@ fonts can be used.
 
 Download
 --------
-* [dwm-6.0-xft.diff](dwm-6.0-xft.diff) (6.6k) (16 May 2012)
+* [dwm-6.0-xft.diff](historical/dwm-6.0-xft.diff) (6.6k) (16 May 2012)
 	* memory leak fixed and improved implementation.
 	* include config.def.h and config.mk changes.
 
-* [dwm-6.1-xft-with-fallback-font.diff](dwm-6.1-xft-with-fallback-font.diff) (20k) (2015-02-28)
+* [dwm-6.1-xft-with-fallback-font.diff](historical/dwm-git-20150228-xft-with-fallback-font.diff) (20k)
 
 Author
 ------

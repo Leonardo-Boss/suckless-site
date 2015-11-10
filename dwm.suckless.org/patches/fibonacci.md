@@ -18,10 +18,6 @@ arrangement can be seen below.
     +-----------+-----+-----+  +-----------+-----+-----+
              spiral                     dwindle
 
-[![dwm in spiral layout.][1]][2]
-
-*Links2, sic, xterm & xclock in spiral layout.*
-
 ## Usage
 
  1. Download the patch and apply according to the [general instructions](.).
@@ -50,6 +46,4 @@ Joe Thornber's spiral tiling for [Xmonad][3] formed the inspiration for this
 patch. Thanks to Jan Christoph Ebersbach for updating this patch for versions
 4.5 to 4.9.
 
-[1]: http://schot.a-eskwadraat.nl/images/dwm-spiral_small.png
-[2]: http://schot.a-eskwadraat.nl/images/dwm-spiral.png
-[3]: http://www.xmonad.org
+[1]: http://www.xmonad.org

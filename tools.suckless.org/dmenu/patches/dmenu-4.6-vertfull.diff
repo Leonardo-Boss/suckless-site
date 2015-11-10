@@ -1,8 +1,15 @@
-diff --git a/dmenu.c b/dmenu.c
-index 4f22ffe..c9b51e3 100644
---- a/dmenu.c
-+++ b/dmenu.c
-@@ -152,7 +152,7 @@ drawmenu(void)
+diff -wu a/dmenu.c b/dmenu.c
+--- a/dmenu.c	2015-11-08 23:42:21.000000000 +0100
++++ b/dmenu.c	2015-11-10 18:13:43.937450512 +0100
+@@ -141,7 +141,6 @@
+ 
+ 	if (lines > 0) {
+ 		/* draw vertical list */
+-		w = mw - x;
+ 		for (item = curr; item != next; item = item->right) {
+ 			y += h;
+ 			if (item == sel)
+@@ -151,7 +150,7 @@
  			else
  				drw_setscheme(drw, &scheme[SchemeNorm]);
  

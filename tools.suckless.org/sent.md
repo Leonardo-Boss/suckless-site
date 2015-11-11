@@ -4,8 +4,8 @@ sent
 Simple plaintext presentation tool.
 
 sent does not need latex, libreoffice or any other fancy file format, it uses
-plaintext files and png images. Currently every line represents a slide in the
-presentation. This may limit the use, but for presentations using the [Takahashi
+plaintext files and png images. Currently every paragraph represents a slide in
+the presentation. Especially for presentations using the [Takahashi
 method](https://en.wikipedia.org/wiki/Takahashi_method) this is very nice and
 allows you to write down the presentation for a quick lightning talk within a
 few minutes.
@@ -25,6 +25,19 @@ To get a little demo, just type
 
 You can navigate with the arrow keys and quit with `q`.
 
+(Non-)Features
+--------------
+
+* A presentation is just a simple text file
+* Each paragraph represents one slide
+* Content is automatically scaled to fit the screen
+* UTF-8 is supported
+* PNG images can be displayed (no text on the same slide)
+* Just around 1000 lines of C.
+* No different font styles (bold, italic, underline)
+* No fancy layout options (different font sizes, different colors, …)
+* No animations
+
 Usage
 -----
 
@@ -37,17 +50,20 @@ before the filename. Lines starting with `#` will be ignored. A presentation
 file could look like this:
 
 	sent
-	why?
+	
 	@nyan.png
-	easy to use
-	depends on Xlib, libpng
-	no bloat
-	how?
+	
+	depends on
+	- Xlib
+	- libpng
+	
 	sent FILENAME
-	one slide per line
+	one slide per paragraph
 	# This is a comment and will not be part of the presentation
-	# The next line starts with a whitespace, it will not produce an image slide
-	 @FILE.png
+	\# This and the next line start with backslashes
+	
+	\@FILE.png
+	
 	thanks / questions?
 
 Development

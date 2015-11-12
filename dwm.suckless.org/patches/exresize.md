@@ -16,7 +16,7 @@ description.
 Download
 --------
 
- * [dwm-r1606-exresize.dif](dwm-r1606-exresize.diff) (20121117)
+ * [dwm-r1606-exresize.diff](dwm-r1606-exresize.diff) (20121117)
 
 Authors
 -------

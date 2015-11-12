@@ -30,5 +30,5 @@ Download xmms (legacy)
 
 * [dmenu-4.1.1-xmms.diff](dmenu-4.1.1-xmms.diff)
 
-* [dmenu_xmms.diff](dmenu_xmms.diff) (for **dmenu_3.9** - the original patch submitted by Julien Steinhauser <[julien.steinhauser@orange.fr](mailto:julien.steinhauser@orange.fr)>, taken from [https://bbs.archlinux.org/viewtopic.php?pid=429090#p429090](fresch's patch))
+* [dmenu_xmms.diff](dmenu_xmms.diff) (for **dmenu_3.9** - the original patch submitted by Julien Steinhauser <[julien.steinhauser@orange.fr](mailto:julien.steinhauser@orange.fr)>, taken from [fresch's patch](https://bbs.archlinux.org/viewtopic.php?pid=429090#p429090))
 

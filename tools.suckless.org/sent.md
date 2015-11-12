@@ -73,3 +73,7 @@ You can [browse](http://git.suckless.org/sent) its source code repository
 or get a copy using the following command:
 
 	git clone http://git.suckless.org/sent
+
+Download
+--------
+* [sent-0.1](http://dl.suckless.org/tools/sent-0.1.tar.gz) (20151111)

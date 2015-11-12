@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2015-11-11
+----------
+[sent 0.1](http://tools.suckless.org/sent) released: [download](http://dl.suckless.org/tools/sent-0.1.tar.gz)
+
 2015-11-09
 ----------
 [dwm 6.1](http://dwm.suckless.org) released: [download](http://dl.suckless.org/dwm/dwm-6.1.tar.gz)

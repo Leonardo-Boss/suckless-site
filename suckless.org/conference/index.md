@@ -51,7 +51,7 @@ Talks
 </video>
 
 
-(14:30-15:30) *Farbfeld - Rethinking image-formats*, Laslo Hunhold, ([video](http://dl.sta.li/slcon/2015/slcon-2015-04-frign-farbfeld.mts))
+(14:30-15:30) *Farbfeld - Rethinking image-formats*, Laslo Hunhold
 
 > This talk discussed the deficiencies of the RGBA color space and
   presented the Farbfeld format to store images in a device independent
@@ -59,6 +59,12 @@ Talks
   Additionally, an alternative to incorporated, namely imposed, image
   compression was discussed, evaluating the advantages over other image
   formats using different kinds of images.
+
+<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="http://dl.sta.li/slcon/2015/slcon-2015-04-frign-farbfeld.png">
+        <source src="http://dl.sta.li/slcon/2015/slcon-2015-04-frign-farbfeld.webm" type="video/webm">
+	<a href="http://dl.sta.li/slcon/2015/slcon-2015-04-frign-farbfeld.webm">slcon-2015-04-frign-farbfeld.webm</a>
+</video>
+
 
 (15:30-16:00) Coffee/Tea break
 
@@ -80,9 +86,15 @@ Saturday, 2015-10-31
 Talks
 -----
 
-(10:30-10:45) *Opening of day 2*, Anselm R Garbe, ([video](http://dl.sta.li/slcon/2015/slcon-2015-06-arg-opening_of_day_2.mts))
+(10:30-10:45) *Opening of day 2*, Anselm R Garbe
 
-(10:45-11:30) *Simple Jabber - Divide And Conquer XMPP*, Jan Klemkow, ([video](http://dl.sta.li/slcon/2015/slcon-2015-07-klenkow-simple_jabber.mts))
+<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="http://dl.sta.li/slcon/2015/slcon-2015-06-arg-opening_of_day_2.png">
+        <source src="http://dl.sta.li/slcon/2015/slcon-2015-06-arg-opening_of_day_2.webm" type="video/webm">
+	<a href="http://dl.sta.li/slcon/2015/slcon-2015-06-arg-opening_of_day_2.webm">slcon-2015-06-arg-opening_of_day_2.webm</a>
+</video>
+
+
+(10:45-11:30) *Simple Jabber - Divide And Conquer XMPP*, Jan Klemkow
 
 > The Extensible Messaging and Presence Protocol ([XMPP][2]) is like the web. It is
   far too complex to be implemented in one program with the Unix philosophy in mind.
@@ -91,18 +103,29 @@ Talks
   Its extensibility is the main reason that an implementation in a single
   program is nearly impossible. This talk described an approach to master this problem.
 
-(11:30-12:00) *Finite state document processing*, Manu Raster, ([video](http://dl.sta.li/slcon/2015/slcon-2015-08-raster-finite_state_document_processing.mts))
+<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="http://dl.sta.li/slcon/2015/slcon-2015-07-klenkow-simple_jabber.png">
+        <source src="http://dl.sta.li/slcon/2015/slcon-2015-07-klenkow-simple_jabber.webm" type="video/webm">
+	<a href="http://dl.sta.li/slcon/2015/slcon-2015-07-klenkow-simple_jabber.webm">slcon-2015-07-klenkow-simple_jabber.webm</a>
+</video>
+
+
+(11:30-12:00) *Finite state document processing*, Manu Raster
 
 > Mainstream XML processing techniques wastefully consume time
   and memory for example in file format conversions popularly
   known as 'save as...'. This talk presented a less
   wasteful method based on finite-state transducers.
 
+<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="http://dl.sta.li/slcon/2015/slcon-2015-08-raster-finite_state_document_processing.png">
+        <source src="http://dl.sta.li/slcon/2015/slcon-2015-08-raster-finite_state_document_processing.webm" type="video/webm">
+	<a href="http://dl.sta.li/slcon/2015/slcon-2015-08-raster-finite_state_document_processing.webm">slcon-2015-08-raster-finite_state_document_processing.webm</a>
+</video>
+
 (12:00-13:00) Lunch
 
 (13:00-13:15) Conference fee collection
 
-(13:15-14:15) *UTF-8 everywhere? Writing Unicode compliant software that sucks less*, Laslo Hunhold, ([video](http://dl.sta.li/slcon/2015/slcon-2015-09-frign-utf-8_everywhere.mts))
+(13:15-14:15) *UTF-8 everywhere? Writing Unicode compliant software that sucks less*, Laslo Hunhold
 
 > This talk discussed UTF-8 and its history, how and when you have to
   deal with it and which challenges had been faced along the way, evaluating
@@ -115,13 +138,19 @@ Talks
   and a midway drawn between total localization and minimalism,
   presenting possible solutions.
 
+<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="http://dl.sta.li/slcon/2015/slcon-2015-09-frign-utf-8_everywhere.png">
+        <source src="http://dl.sta.li/slcon/2015/slcon-2015-09-frign-utf-8_everywhere.webm" type="video/webm">
+	<a href="http://dl.sta.li/slcon/2015/slcon-2015-09-frign-utf-8_everywhere.webm">slcon-2015-09-frign-utf-8_everywhere.webm</a>
+</video>
+
+
 (14:15-14:45) Coffee/Tea break
 
 (14:45-15:00) *Formal conference talk closing*, Anselm R Garbe
 
 (15:00-17:00) Hacking
 
-(17:00-) TBD
+(17:00-) Social event in Budapest
 
 Acknowledgment
 --------------

@@ -4,8 +4,8 @@ sent
 Simple plaintext presentation tool.
 
 sent does not need latex, libreoffice or any other fancy file format, it uses
-plaintext files and png images. Currently every paragraph represents a slide in
-the presentation. Especially for presentations using the [Takahashi
+plaintext files and png images. Every paragraph represents a slide in the
+presentation. Especially for presentations using the [Takahashi
 method](https://en.wikipedia.org/wiki/Takahashi_method) this is very nice and
 allows you to write down the presentation for a quick lightning talk within a
 few minutes.
@@ -45,9 +45,10 @@ Edit config.h to fit your needs then build again.
 
 	sent FILE1 [FILE2 ...]
 
-If one FILE equals `-`, stdin will be read. Use png images by prepending a `@`
-before the filename. Lines starting with `#` will be ignored. A presentation
-file could look like this:
+If one FILE equals `-`, stdin will be read. Produce image slides by prepending a
+`@` in front of the filename as a single paragraph. Lines starting with `#` will
+be ignored. A `\` at the beginning of the line escapes `@` and `#`. A
+presentation file could look like this:
 
 	sent
 	

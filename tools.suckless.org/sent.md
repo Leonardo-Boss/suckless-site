@@ -37,6 +37,9 @@ You can navigate with the arrow keys and quit with `q`.
 * No different font styles (bold, italic, underline)
 * No fancy layout options (different font sizes, different colors, …)
 * No animations
+* No support for automatic layouting paragraphs
+* Slides with exuberant amount of lines or characters produce rendering glitches
+  intentionally to prevent you from holding bad presentations
 
 Usage
 -----

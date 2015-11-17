@@ -3,6 +3,8 @@ sent
 
 Simple plaintext presentation tool.
 
+->[![Screenshot of sent](sent-bullets-s.png)](sent-bullets.png)<-
+
 sent does not need latex, libreoffice or any other fancy file format, it uses
 plaintext files and png images. Every paragraph represents a slide in the
 presentation. Especially for presentations using the [Takahashi

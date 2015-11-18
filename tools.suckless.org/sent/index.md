@@ -40,6 +40,8 @@ You can navigate with the arrow keys and quit with `q`.
 * No fancy layout options (different font sizes, different colors, …)
 * No animations
 * No support for automatic layouting paragraphs
+* No export function. If you really need one, just use a shell script with
+  `xdotool` and your favorite screenshot application.
 * Slides with exuberant amount of lines or characters produce rendering glitches
   intentionally to prevent you from holding bad presentations
 

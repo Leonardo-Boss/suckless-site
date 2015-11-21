@@ -9,8 +9,8 @@ in the meanwhile ruined our climate: the web.
 For short: There is an industry which is specialized on extending the resource
 usage to display just some characters on your display. Millions of jobs are
 based on outputting HTML in an inefficient way. Look at PHP and all the
-techniques to extend it's "scalability". It is not scalable, it's a
-prototyping language. Not to mention all it's syntactic irregulatories.
+techniques to extend its "scalability". It is not scalable, it's a
+prototyping language. Not to mention all its syntactic irregulatories.
 Nowadays classes on classes on classes with getter and setter functions define
 buttons which can be stripped down to just a simple character string. The web
 is the practical example why corporate software development does not work and

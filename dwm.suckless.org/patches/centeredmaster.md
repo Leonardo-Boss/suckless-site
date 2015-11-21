@@ -48,17 +48,7 @@ With two clients in master:
 
 ## Links
 
-* [dwm-6.1-centeredmaster.diff](dwm-6.1-centeredmaster.diff) - 4K, 2015/10/17
+* [dwm-6.1-centeredmaster.diff](dwm-6.1-centeredmaster.diff) - 2015/11/21
 
 
 [jerome](http://blog.jardinmagique.info) <jerome@gcu.info>
-
-
-
-
-
-
-
-
-
-

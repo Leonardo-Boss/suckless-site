@@ -1,5 +1,5 @@
 diff --git a/config.def.h b/config.def.h
-index b6adc5e..c3636fc 100644
+index fd09d72..35060d7 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -7,6 +7,7 @@
@@ -10,7 +10,7 @@ index b6adc5e..c3636fc 100644
  
  /*
   * What program is execed by st depends of these precedence rules:
-@@ -155,6 +156,8 @@ static Shortcut shortcuts[] = {
+@@ -157,6 +158,8 @@ static Shortcut shortcuts[] = {
  	{ MODKEY|ShiftMask,     XK_C,           clipcopy,       {.i =  0} },
  	{ MODKEY|ShiftMask,     XK_V,           clippaste,      {.i =  0} },
  	{ MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
@@ -20,7 +20,7 @@ index b6adc5e..c3636fc 100644
  
  /*
 diff --git a/st.c b/st.c
-index bd8b815..01fae89 100644
+index c5d62c1..824daf5 100644
 --- a/st.c
 +++ b/st.c
 @@ -85,6 +85,8 @@ char *argv0;
@@ -62,7 +62,7 @@ index bd8b815..01fae89 100644
  static void tsetattr(int *, int);
  static void tsetchar(Rune, Glyph *, int, int);
  static void tsetscroll(int, int);
-@@ -729,10 +736,10 @@ tlinelen(int y)
+@@ -730,10 +737,10 @@ tlinelen(int y)
  {
  	int i = term.col;
  
@@ -75,7 +75,7 @@ index bd8b815..01fae89 100644
  		--i;
  
  	return i;
-@@ -794,7 +801,7 @@ selsnap(int *x, int *y, int direction)
+@@ -795,7 +802,7 @@ selsnap(int *x, int *y, int direction)
  		 * Snap around if the word wraps around at the end or
  		 * beginning of a line.
  		 */
@@ -84,7 +84,7 @@ index bd8b815..01fae89 100644
  		prevdelim = ISDELIM(prevgp->u);
  		for (;;) {
  			newx = *x + direction;
-@@ -809,14 +816,14 @@ selsnap(int *x, int *y, int direction)
+@@ -810,14 +817,14 @@ selsnap(int *x, int *y, int direction)
  					yt = *y, xt = *x;
  				else
  					yt = newy, xt = newx;
@@ -101,7 +101,7 @@ index bd8b815..01fae89 100644
  			delim = ISDELIM(gp->u);
  			if (!(gp->mode & ATTR_WDUMMY) && (delim != prevdelim
  					|| (delim && gp->u != prevgp->u)))
-@@ -837,14 +844,14 @@ selsnap(int *x, int *y, int direction)
+@@ -838,14 +845,14 @@ selsnap(int *x, int *y, int direction)
  		*x = (direction < 0) ? 0 : term.col - 1;
  		if (direction < 0) {
  			for (; *y > 0; *y += direction) {
@@ -118,7 +118,7 @@ index bd8b815..01fae89 100644
  						& ATTR_WRAP)) {
  					break;
  				}
-@@ -1010,13 +1017,13 @@ getsel(void)
+@@ -1011,13 +1018,13 @@ getsel(void)
  		}
  
  		if (sel.type == SEL_RECTANGULAR) {
@@ -135,26 +135,26 @@ index bd8b815..01fae89 100644
  		while (last >= gp && last->u == ' ')
  			--last;
  
-@@ -1489,6 +1496,8 @@ ttyread(void)
- 
+@@ -1490,6 +1497,8 @@ ttyread(void)
  	/* keep any uncomplete utf8 char for the next call */
  	memmove(buf, ptr, buflen);
+ 
 +	if (term.scr > 0 && term.scr < histsize-1)
 +		term.scr++;
+ 	return ret;
  }
  
- void
-@@ -1497,6 +1506,9 @@ ttywrite(const char *s, size_t n)
- 	fd_set wfd;
- 	struct timespec tv;
+@@ -1499,6 +1508,9 @@ ttywrite(const char *s, size_t n)
+ 	fd_set wfd, rfd;
  	ssize_t r;
+ 	size_t lim = 256;
 +	Arg arg = (Arg){ .i = term.scr };
 +
 +	kscrolldown(&arg);
  
  	/*
  	 * Remember that we are using a pty, which might be a modem line.
-@@ -1688,13 +1700,53 @@ tswapscreen(void)
+@@ -1690,13 +1702,53 @@ tswapscreen(void)
  }
  
  void
@@ -209,7 +209,7 @@ index bd8b815..01fae89 100644
  	tsetdirt(orig, term.bot-n);
  	tclearregion(0, term.bot-n+1, term.col-1, term.bot);
  
-@@ -1708,13 +1760,20 @@ tscrolldown(int orig, int n)
+@@ -1710,13 +1762,20 @@ tscrolldown(int orig, int n)
  }
  
  void
@@ -231,7 +231,7 @@ index bd8b815..01fae89 100644
  	tclearregion(0, orig, term.col-1, orig+n-1);
  	tsetdirt(orig+n, term.bot);
  
-@@ -1763,7 +1822,7 @@ tnewline(int first_col)
+@@ -1765,7 +1824,7 @@ tnewline(int first_col)
  	int y = term.c.y;
  
  	if (y == term.bot) {
@@ -240,7 +240,7 @@ index bd8b815..01fae89 100644
  	} else {
  		y++;
  	}
-@@ -1928,14 +1987,14 @@ void
+@@ -1930,14 +1989,14 @@ void
  tinsertblankline(int n)
  {
  	if (BETWEEN(term.c.y, term.top, term.bot))
@@ -257,7 +257,7 @@ index bd8b815..01fae89 100644
  }
  
  int32_t
-@@ -2369,11 +2428,11 @@ csihandle(void)
+@@ -2371,11 +2430,11 @@ csihandle(void)
  		break;
  	case 'S': /* SU -- Scroll <n> line up */
  		DEFAULT(csiescseq.arg[0], 1);
@@ -271,7 +271,7 @@ index bd8b815..01fae89 100644
  		break;
  	case 'L': /* IL -- Insert <n> blank lines */
  		DEFAULT(csiescseq.arg[0], 1);
-@@ -2869,7 +2928,7 @@ eschandle(uchar ascii)
+@@ -2871,7 +2930,7 @@ eschandle(uchar ascii)
  		return 0;
  	case 'D': /* IND -- Linefeed */
  		if (term.c.y == term.bot) {
@@ -280,7 +280,7 @@ index bd8b815..01fae89 100644
  		} else {
  			tmoveto(term.c.x, term.c.y+1);
  		}
-@@ -2882,7 +2941,7 @@ eschandle(uchar ascii)
+@@ -2884,7 +2943,7 @@ eschandle(uchar ascii)
  		break;
  	case 'M': /* RI -- Reverse index */
  		if (term.c.y == term.top) {
@@ -289,7 +289,7 @@ index bd8b815..01fae89 100644
  		} else {
  			tmoveto(term.c.x, term.c.y-1);
  		}
-@@ -3045,7 +3104,7 @@ tputc(Rune u)
+@@ -3047,7 +3106,7 @@ tputc(Rune u)
  void
  tresize(int col, int row)
  {
@@ -298,7 +298,7 @@ index bd8b815..01fae89 100644
  	int minrow = MIN(row, term.row);
  	int mincol = MIN(col, term.col);
  	int *bp;
-@@ -3082,9 +3141,18 @@ tresize(int col, int row)
+@@ -3084,9 +3143,18 @@ tresize(int col, int row)
  	/* resize to new height */
  	term.line = xrealloc(term.line, row * sizeof(Line));
  	term.alt  = xrealloc(term.alt,  row * sizeof(Line));
@@ -317,7 +317,7 @@ index bd8b815..01fae89 100644
  	/* resize each row to new width, zero-pad if needed */
  	for (i = 0; i < minrow; i++) {
  		term.line[i] = xrealloc(term.line[i], col * sizeof(Glyph));
-@@ -3956,11 +4024,11 @@ drawregion(int x1, int y1, int x2, int y2)
+@@ -3984,11 +4052,11 @@ drawregion(int x1, int y1, int x2, int y2)
  		term.dirty[y] = 0;
  
  		specs = term.specbuf;
@@ -331,7 +331,7 @@ index bd8b815..01fae89 100644
  			if (new.mode == ATTR_WDUMMY)
  				continue;
  			if (ena_sel && selected(x, y))
-@@ -3980,7 +4048,8 @@ drawregion(int x1, int y1, int x2, int y2)
+@@ -4008,7 +4076,8 @@ drawregion(int x1, int y1, int x2, int y2)
  		if (i > 0)
  			xdrawglyphfontspecs(specs, base, i, ox, y);
  	}

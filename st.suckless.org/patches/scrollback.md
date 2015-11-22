@@ -21,5 +21,5 @@ Authors
 
  * Jochen Sprickerhof - dwm@jochen.sprickerhof.de
  * M Farkas-Dyck - strake888@gmail.com
- * Ivan Tham - pickfire@riseup.net (mouse scrolling, st-git-2015\* port)
- * Laslo Hunhold - dev@frign.de (unscrambling, st-git-20150917 port)
+ * Ivan Tham - pickfire@riseup.net (mouse scrolling, st-git-20151122 port)
+ * Laslo Hunhold - dev@frign.de (unscrambling, st-git-20151106 port)

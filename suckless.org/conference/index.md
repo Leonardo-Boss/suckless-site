@@ -94,7 +94,7 @@ Talks
 </video>
 
 
-(10:45-11:30) *Simple Jabber - Divide And Conquer XMPP*, Jan Klemkow
+(10:45-11:30) *Simple Jabber - Divide And Conquer XMPP*, Jan Klemkow ([paper](/jan_on_sj.pdf))
 
 > The Extensible Messaging and Presence Protocol ([XMPP][2]) is like the web. It is
   far too complex to be implemented in one program with the Unix philosophy in mind.

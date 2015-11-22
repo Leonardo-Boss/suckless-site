@@ -15,7 +15,6 @@ There are several other projects which are inspired by the spirit of suckless.
 * [cross-chroot](https://github.com/radare/cross-chroot) - cross platform qemu-powered chroot utilities (based on the ideas of the maemo sdk)
 * [oboeta](https://github.com/joodan-van-github/oboeta) - minimalistic plain-text flashcard system
 * [honden](https://github.com/joodan-van-github/honden) - system built on top of oboeta
-* [passman](http://nibble.develsec.org/hg/toys/file/) - password manager + other nibble suckless toys
 * [pcw](https://bitbucket.org/emg/pcw) - popup chat windows (ii front end)
 * [ptar](https://github.com/joodan-van-github/ptar) - plain-text archives: like tar, but better
 * [sdhcp](http://git.2f30.org/sdhcp) - tiny dhcp client
@@ -26,9 +25,9 @@ There are several other projects which are inspired by the spirit of suckless.
 * [spp](https://github.com/radare/spp) - simple pre processor
 * [tiv](https://github.com/radare/tiv) - terminal image viewer
 * [srw](https://bitbucket.org/emg/srw) - simple read wrapper
-* [ssg](http://nibble.develsec.org/projects/ssg.html) - slide generation system with markdown-like syntax
+* [ssg](https://github.com/jroimartin/ssg) - slide generation system with markdown-like syntax
 * [sup](http://git.suckless.org/sup) - minimalistic sudo replacement
-* [sw](http://nibble.develsec.org/projects/sw.html) - minimalistic web framework
+* [sw](https://github.com/jroimartin/sw) - minimalistic web framework
 * [swx](http://yeuxdelibad.net/Programmation/swx_en.html) - static site
   generator (inspired from sw) 
 * [xicon](http://hg.youterm.com/xicon/) (dead link) - small icon-based dzen-like utility

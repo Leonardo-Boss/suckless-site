@@ -56,6 +56,7 @@ Audio Players
 * [mpg123](http://www.mpg123.de/) - A console mpg player which doesn't use auto*hell, or extra libraries.
 * [mpg321](http://mpg321.sourceforge.net)
 * [vorbis-tools](http://www.xiph.org/) (Ogg/FLAC) - Command-line tools to play Ogg and FLAC files.
+* [RSound](https://github.com/Themaister/RSound/) - Simple PCM audio server and client
 
 BitTorrent Clients
 ------------------

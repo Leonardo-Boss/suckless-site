@@ -84,4 +84,5 @@ or get a copy using the following command:
 
 Download
 --------
-* [sent-0.1](http://dl.suckless.org/tools/sent-0.1.tar.gz) (20151111)
+
+* [sent-0.2](http://dl.suckless.org/tools/sent-0.2.tar.gz) (20151125)

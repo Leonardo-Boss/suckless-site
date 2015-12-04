@@ -97,6 +97,7 @@ Image Viewers
 * [xli](http://web.aanet.com.au/gwg/xli.html)
 * [xzgv](http://sourceforge.net/projects/xzgv/)
 * [lel](http://git.2f30.org/lel/) - Suckless imagefile viewer (WIP)
+* [imv](https://github.com/exec64/imv) - Simple X11/Wayland Image Viewer. Depends on SDL2 and FreeImage.
 
 Instant Messaging Clients
 -------------------------

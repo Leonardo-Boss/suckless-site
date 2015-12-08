@@ -6,8 +6,9 @@ Simple plaintext presentation tool.
 ->[![Screenshot of sent](sent-bullets-s.png)](sent-bullets.png)<-
 
 sent does not need latex, libreoffice or any other fancy file format, it uses
-plaintext files and png images. Every paragraph represents a slide in the
-presentation. Especially for presentations using the [Takahashi
+plaintext files to describe the slides and can include images via
+[farbfeld](http://git.2f30.org/farbfeld/about/). Every paragraph represents a
+slide in the presentation. Especially for presentations using the [Takahashi
 method](https://en.wikipedia.org/wiki/Takahashi_method) this is very nice and
 allows you to write down the presentation for a quick lightning talk within a
 few minutes.
@@ -17,6 +18,15 @@ maximum contrast even if the sun shines directly onto the projected image. The
 content of each slide is automatically scaled to fit the window so you don't
 have to worry about alignment. Instead you can really concentrate on the
 content.
+
+Dependencies
+------------
+
+* Xlib for building
+* farbfeld tools to use images in the presentations (if you don't want to use
+  farbfeld, [sent-0.2](http://dl.suckless.org/tools/sent-0.2.tar.gz) was the
+  last version with png support, but may lack fixes and further improvements
+  since its release)
 
 Demo
 ----
@@ -34,7 +44,8 @@ You can navigate with the arrow keys and quit with `q`.
 * Each paragraph represents one slide
 * Content is automatically scaled to fit the screen
 * UTF-8 is supported
-* PNG images can be displayed (no text on the same slide)
+* (transparent) images can be displayed (no text on the same slide), farbfeld
+  required
 * Just around 1000 lines of C.
 * No different font styles (bold, italic, underline)
 * No fancy layout options (different font sizes, different colors, …)
@@ -63,7 +74,7 @@ presentation file could look like this:
 	
 	depends on
 	- Xlib
-	- libpng
+	- farbfeld
 	
 	sent FILENAME
 	one slide per paragraph
@@ -73,6 +84,9 @@ presentation file could look like this:
 	\@FILE.png
 	
 	thanks / questions?
+
+A deeper example can be found in [this
+file](http://git.suckless.org/sent/tree/example) from the repository root.
 
 Development
 -----------

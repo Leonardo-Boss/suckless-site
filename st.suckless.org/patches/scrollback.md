@@ -23,3 +23,4 @@ Authors
  * M Farkas-Dyck - strake888@gmail.com
  * Ivan Tham - pickfire@riseup.net (mouse scrolling, st-git-20151122 port)
  * Laslo Hunhold - dev@frign.de (unscrambling, st-git-20151106 port)
+ * Ori Bernstein - ori@eigenstate.org (fix memory bug, st-git-20151216 port)

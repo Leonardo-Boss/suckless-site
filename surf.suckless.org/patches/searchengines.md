@@ -38,3 +38,4 @@ Author
 * Nils Schweinsberg (McManiaC) <[mail@n-sch.de](mailto:mail@n-sch.de)>
 * Samuel Baldwin (shardz) <[recursive.forest@gmail.com](mailto:recursive.forest@gmail.com)>
 * Alex Puterbaugh (zombine) <[puterbaugh0@gmail.com](mailto:puterbaugh0@gmail.com)>
+* Ivan Tham (pickfire) <[pickfire@riseup.net](mailto:pickfire@riseup.net)>

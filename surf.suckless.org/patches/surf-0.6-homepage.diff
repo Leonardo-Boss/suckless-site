@@ -1,5 +1,5 @@
 diff --git a/config.def.h b/config.def.h
-index 1eb9566..8dbd96b 100644
+index 93a3d49..41bb067 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -35,6 +35,7 @@ static Bool loadimages            = TRUE;
@@ -9,18 +9,18 @@ index 1eb9566..8dbd96b 100644
 +#define HOMEPAGE "https://www.duckduckgo.com/"
  #define SETPROP(p, q) { \
  	.v = (char *[]){ "/bin/sh", "-c", \
- 		"prop=\"`xprop -id $2 $0 | cut -d '\"' -f 2 | xargs -0 printf %b | dmenu`\" &&" \
+ 	     "prop=\"`xprop -id $2 $0 " \
 diff --git a/surf.c b/surf.c
-index 02656ec..c6a6806 100644
+index fdfaab1..7a71bf2 100644
 --- a/surf.c
 +++ b/surf.c
-@@ -1645,6 +1645,9 @@ main(int argc, char *argv[]) {
+@@ -1759,6 +1759,9 @@ main(int argc, char *argv[])
  	default:
  		usage();
  	} ARGEND;
 +	#ifdef HOMEPAGE
 +		arg.v = HOMEPAGE;
 +	#endif
- 	if(argc > 0)
+ 	if (argc > 0)
  		arg.v = argv[0];
  

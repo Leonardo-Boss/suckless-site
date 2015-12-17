@@ -1,12 +1,12 @@
 diff --git a/config.def.h b/config.def.h
-index fd09d72..35060d7 100644
+index fd09d72..96892f1 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -7,6 +7,7 @@
   */
  static char font[] = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
  static int borderpx = 2;
-+static int histsize = 2000;
++#define histsize 2000
  
  /*
   * What program is execed by st depends of these precedence rules:
@@ -20,7 +20,7 @@ index fd09d72..35060d7 100644
  
  /*
 diff --git a/st.c b/st.c
-index c5d62c1..3dc8d77 100644
+index c5d62c1..c58c8c5 100644
 --- a/st.c
 +++ b/st.c
 @@ -85,6 +85,8 @@ char *argv0;
@@ -32,25 +32,72 @@ index c5d62c1..3dc8d77 100644
  
  
  enum glyph_attribute {
-@@ -233,6 +235,9 @@ typedef struct {
- 	int col;      /* nb col */
- 	Line *line;   /* screen */
- 	Line *alt;    /* alternate screen */
-+	Line *hist;   /* history buffer */
-+	int histi;    /* history index */
-+	int scr;      /* scroll back */
- 	int *dirty;  /* dirtyness of lines */
- 	XftGlyphFontSpec *specbuf; /* font spec buffer used for rendering */
- 	TCursor c;    /* cursor */
-@@ -324,6 +329,8 @@ typedef struct {
- } Shortcut;
+@@ -227,26 +229,6 @@ typedef struct {
+ 	int narg;              /* nb of args */
+ } STREscape;
  
+-/* Internal representation of the screen */
+-typedef struct {
+-	int row;      /* nb row */
+-	int col;      /* nb col */
+-	Line *line;   /* screen */
+-	Line *alt;    /* alternate screen */
+-	int *dirty;  /* dirtyness of lines */
+-	XftGlyphFontSpec *specbuf; /* font spec buffer used for rendering */
+-	TCursor c;    /* cursor */
+-	int top;      /* top    scroll limit */
+-	int bot;      /* bottom scroll limit */
+-	int mode;     /* terminal mode flags */
+-	int esc;      /* escape state flags */
+-	char trantbl[4]; /* charset table translation */
+-	int charset;  /* current charset */
+-	int icharset; /* selected charset for sequence */
+-	int numlock; /* lock numbers in keyboard */
+-	int *tabs;
+-} Term;
+-
+ /* Purely graphic info */
+ typedef struct {
+ 	Display *dpy;
+@@ -326,6 +308,8 @@ typedef struct {
  /* function definitions used in config.h */
-+static void kscrolldown(const Arg *);
-+static void kscrollup(const Arg *);
  static void clipcopy(const Arg *);
  static void clippaste(const Arg *);
++static void kscrolldown(const Arg *);
++static void kscrollup(const Arg *);
  static void numlock(const Arg *);
+ static void selpaste(const Arg *);
+ static void xzoom(const Arg *);
+@@ -359,6 +343,29 @@ typedef struct {
+ 	GC gc;
+ } DC;
+ 
++/* Internal representation of the screen */
++typedef struct {
++	int row;      /* nb row */
++	int col;      /* nb col */
++	Line *line;   /* screen */
++	Line *alt;    /* alternate screen */
++	Line hist[histsize]; /* history buffer */
++	int histi;    /* history index */
++	int scr;      /* scroll back */
++	int *dirty;  /* dirtyness of lines */
++	XftGlyphFontSpec *specbuf; /* font spec buffer used for rendering */
++	TCursor c;    /* cursor */
++	int top;      /* top    scroll limit */
++	int bot;      /* bottom scroll limit */
++	int mode;     /* terminal mode flags */
++	int esc;      /* escape state flags */
++	char trantbl[4]; /* charset table translation */
++	int charset;  /* current charset */
++	int icharset; /* selected charset for sequence */
++	int numlock; /* lock numbers in keyboard */
++	int *tabs;
++} Term;
++
+ static void die(const char *, ...);
+ static void draw(void);
+ static void redraw(void);
 @@ -398,8 +405,8 @@ static void tputtab(int);
  static void tputc(Rune);
  static void treset(void);
@@ -135,16 +182,17 @@ index c5d62c1..3dc8d77 100644
  		while (last >= gp && last->u == ' ')
  			--last;
  
-@@ -1490,6 +1497,8 @@ ttyread(void)
+@@ -1490,6 +1497,9 @@ ttyread(void)
  	/* keep any uncomplete utf8 char for the next call */
  	memmove(buf, ptr, buflen);
  
 +	if (term.scr > 0 && term.scr < histsize-1)
 +		term.scr++;
++
  	return ret;
  }
  
-@@ -1499,6 +1508,9 @@ ttywrite(const char *s, size_t n)
+@@ -1499,6 +1509,9 @@ ttywrite(const char *s, size_t n)
  	fd_set wfd, rfd;
  	ssize_t r;
  	size_t lim = 256;
@@ -154,14 +202,6 @@ index c5d62c1..3dc8d77 100644
  
  	/*
  	 * Remember that we are using a pty, which might be a modem line.
-@@ -1672,6 +1684,7 @@ void
- tnew(int col, int row)
- {
- 	term = (Term){ .c = { .attr = { .fg = defaultfg, .bg = defaultbg } } };
-+	term.hist  = calloc(term.hist,  histsize, sizeof(Line));
- 	tresize(col, row);
- 	term.numlock = 1;
- 
 @@ -1690,13 +1703,53 @@ tswapscreen(void)
  }
  

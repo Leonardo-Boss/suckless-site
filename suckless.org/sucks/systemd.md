@@ -230,3 +230,8 @@ plain file.)
 
 ---- Führerbunker, 2015-07-31
 
+Further Reading
+---------------
+* [Without Systemd](http://without-systemd.org/wiki/index.php/Main_Page)
+* [Arguments Against Systemd](http://without-systemd.org/wiki/index.php/Arguments_against_systemd)
+

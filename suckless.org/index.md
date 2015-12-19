@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2015-12-29
+----------
+[surf 0.7](http://surf.suckless.org) released: [download](http://dl.suckless.org/surf/surf-0.7.tar.gz)
+
 2015-11-25
 ----------
 [sent 0.2](http://tools.suckless.org/sent) released: [download](http://dl.suckless.org/tools/sent-0.2.tar.gz)

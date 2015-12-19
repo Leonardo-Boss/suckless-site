@@ -27,7 +27,7 @@ source code repository or get a copy with the following command:
 Download
 --------
 * [MIT/X Consortium license](http://git.suckless.org/surf/plain/LICENSE)
-* [surf 0.6](http://dl.suckless.org/surf/surf-0.6.tar.gz) (20130210)
+* [surf 0.7](http://dl.suckless.org/surf/surf-0.7.tar.gz) (2015-12-19)
 * See also [dmenu](http://tools.suckless.org/dmenu),
   [tabbed](http://tools.suckless.org/tabbed)
 

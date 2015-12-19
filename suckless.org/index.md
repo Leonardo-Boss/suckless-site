@@ -5,7 +5,7 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
-2015-12-29
+2015-12-19
 ----------
 [surf 0.7](http://surf.suckless.org) released: [download](http://dl.suckless.org/surf/surf-0.7.tar.gz)
 

@@ -12,10 +12,13 @@ as the monitor and marks them full-screen even if their X properties indicate
 otherwise. This eliminates nuisance borders that appear with some games and
 applications while in full-screen mode.
 
+Thanks to Alesandar Metodiev for reporting a bug that lead to the patch being
+rewritten.
+
 Download
 --------
 
- * [dwm-6.1-better-borders.diff](dwm-6.1-better-borders.diff) (2014-07-13)
+ * [dwm-6.1-better-borders.diff](dwm-6.1-better-borders.diff) (2015-12-27)
 
 Author
 ------

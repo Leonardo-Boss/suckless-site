@@ -64,3 +64,13 @@ index 0362114..03fddb6 100644
  }
  
  void
+@@ -2003,7 +2050,8 @@ updatewindowtype(Client *c)
+ 	Atom state = getatomprop(c, netatom[NetWMState]);
+ 	Atom wtype = getatomprop(c, netatom[NetWMWindowType]);
+ 
+-	if (state == netatom[NetWMFullscreen])
++	if(state == netatom[NetWMFullscreen] ||
++			(WIDTH(c) >= (c->mon->mx + c->mon->mw) && (HEIGHT(c) >= (c->mon->my + c->mon->mh))))
+ 		setfullscreen(c, 1);
+ 	if (wtype == netatom[NetWMWindowTypeDialog])
+ 		c->isfloating = 1;

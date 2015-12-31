@@ -64,7 +64,22 @@ index 0362114..03fddb6 100644
  }
  
  void
-@@ -2003,7 +2050,8 @@ updatewindowtype(Client *c)
+@@ -1706,9 +1730,11 @@ togglefloating(const Arg *arg)
+ 	if (selmon->sel->isfullscreen) /* no support for fullscreen windows */
+ 		return;
+ 	selmon->sel->isfloating = !selmon->sel->isfloating || selmon->sel->isfixed;
+-	if (selmon->sel->isfloating)
+-		resize(selmon->sel, selmon->sel->x, selmon->sel->y,
+-		       selmon->sel->w, selmon->sel->h, 0);
++	if (selmon->sel->isfloating) {
++		selmon->sel->oldbw = selmon->sel->bw;
++		selmon->sel->bw = borderpx;
++		resizeclient(selmon->sel, selmon->wx, selmon->wy, selmon->ww - (2 * selmon->sel->bw), selmon->wh - (2 * selmon->sel->bw));
++	}
+ 	arrange(selmon);
+ }
+ 
+@@ -2003,7 +2029,8 @@ updatewindowtype(Client *c)
  	Atom state = getatomprop(c, netatom[NetWMState]);
  	Atom wtype = getatomprop(c, netatom[NetWMWindowType]);
  

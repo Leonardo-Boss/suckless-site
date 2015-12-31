@@ -114,7 +114,7 @@ int main(void) {
 		cpu1 = getfreq("/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq");
 		datetime = getdatetime();
 		bat0 = getbattery();
-		snprintf(status, 200, "%0.2f, %0.2f | %d%% | %s", cpu0, cpu1, bat0, datetime);
+		snprintf(status, 200, "%0.2f, %0.2f | %.2lf%% | %s", cpu0, cpu1, bat0, datetime);
 
 		free(datetime);
 		setstatus(status);

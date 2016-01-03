@@ -15,9 +15,12 @@ one can point surf to another URI by setting its XProperties.
 Getting Started
 ---------------
 Start the browser with
-	surf *url*
+
+>surf *url*
+
 You can navigate by clicking on links on the displayed page. Hit *Ctrl-g* to enter a new URL. For more commands consult
-	man surf
+
+>man surf
 
 Links
 -----

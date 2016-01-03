@@ -31,8 +31,8 @@ use:
 The review of your changes might take one day, due to the different timezones
 we all live in.
 
-Please make sure to pull for incoming changes before you push your changes, to
-minimize problems.
+__Please make sure to update for incoming changes using »git pull«, before you
+push changes, to minimize merge problems.__
 
 The wiki repository above is world-writable.
 

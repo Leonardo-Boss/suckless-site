@@ -9,6 +9,20 @@ or
 
 	git clone http://git.suckless.org/sites
 
+Then edit the wiki as you like. The markdown interpreter that is currently
+used on the suckless.org werc instance is
+[discount 2.1.3](http://www.pell.portland.or.us/~orc/Code/discount/).
+
+For adding new files, after you created them, use:
+
+	git add $filename
+
+When you are finished, commit your changes with:
+
+	git commit -a
+
+There you enter some meaningful commit message and end the editor.
+
 To push your changes to the queue for the review by the suckless moderators,
 use:
 

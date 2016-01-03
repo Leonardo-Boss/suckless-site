@@ -156,3 +156,14 @@ developers. You will need them.
 ***Requirements:*** Very good C knowledge, a very good knowledge in web
 standards and how to strip them down to the suckless level.
 
+### A VGA/DVI/Displayport-to-TTY cable
+
+The emerging graphical revolution has removed the smallest denominator which
+combines efficiency in byte transfer and possibilities: vt100.
+
+The goal of this project is to have some combination of hardware and software
+which allows old vt100/etc. devices to use modern display ports.
+
+***Requirements:*** Hardware, software and converter knowledge. This will
+require much hardware work.
+

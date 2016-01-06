@@ -13,13 +13,7 @@ For tarballs:
     cd modified-dwm-directory/..
     diff -up original-dwm-directory modified-dwm-directory > dwm-X.Y-yourpatchname.diff
 
-To send the last commit to the mailing lists (@hackers):
-
-    cd dwm-directory
-    git send-email --subject-prefix="$(basename $PWD)][PATCH" -1
-
 where `X.Y` is a dwm tag name or version number.
-
 
 patch application
 -----------------

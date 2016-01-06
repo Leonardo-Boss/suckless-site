@@ -37,6 +37,20 @@ following addresses to perform the described action.
 
 ### `hackers@suckless.org`
 
+When sending a patch use the following commands:
+
+	cd $project
+	git send-email --subject-prefix="$(basename $(pwd))][PATCH" \
+		--to hackers@suckless.org -1
+
+This will send the last commit of the repository to the mailinglist adding a
+prefix to the subject which includes the appropriate project name. This allows
+easier referencing and filtering of the e-mails for the maintainers subscribed
+to hackers@.
+
+Be sure to have setup your sender address in git and be subscribed to the
+mailinglist so you can see eventual comments on your patches.
+
 * `hackers+subscribe@MAILHOST` - subscribe to the mailing list (read/write)
 * `hackers+subscribe-digest@MAILHOST` - subscribe to the digest version of the mailing list (read/write)
 * `hackers+subscribe-nomail@MAILHOST` - subscribe without receiving e-mails from the mailing list (write)

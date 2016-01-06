@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2016-01-06
+----------
+[farbfeld 1](http://git.suckless.org/farbfeld) released: [download](http://dl.suckless.org/farbfeld/farbfeld-1.tar.gz)
+
 2015-12-19
 ----------
 [surf 0.7](http://surf.suckless.org) released: [download](http://dl.suckless.org/surf/surf-0.7.tar.gz)

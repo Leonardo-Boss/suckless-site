@@ -11,9 +11,19 @@ Mailing lists
 
 ### Best practice
 
-When beginning a new discussion on the `dev@suckless.org` mailing
-list, please mention `dwm` or `dmenu` in the subject *only* if your
-email is strictly `dwm` or `dmenu` related.
+When beginning a new discussion on the mailinglists, except for the wiki@
+mailinglist, prepend your subject with the project name you are referring to.
+This makes it easier for project maintainers to answer your questions.
+
+
+Here is an example:
+
+	Subject: [st] X not working
+
+
+If you are not referring to any project of course use whatever subject you
+like.
+
 
 ### Mailing list commands
 

@@ -32,6 +32,7 @@ Download
 * [surf-0.5-searchengines.diff](surf-0.5-searchengines.diff) (1611) (20101028)
 * [surf-0.6-searchengines.diff](surf-0.6-searchengines.diff) (20130514)
 * [surf-0.7-searchengines.diff](surf-0.7-searchengines.diff) (20151219)
+* [surf-0.7-webkit2-searchengines.diff](surf-0.7-webkit2-searchengines.diff) (20160108)
 
 Author
 ------
@@ -40,3 +41,4 @@ Author
 * Samuel Baldwin (shardz) <[recursive.forest@gmail.com](mailto:recursive.forest@gmail.com)>
 * Alex Puterbaugh (zombine) <[puterbaugh0@gmail.com](mailto:puterbaugh0@gmail.com)>
 * Ivan Tham (pickfire) <[pickfire@riseup.net](mailto:pickfire@riseup.net)>
+* Juan Aguilar Santillana (botika) <[aritmeeul@gmail.com](mailto:aritmeeul@gmail.com)>

@@ -5,6 +5,7 @@ social control, allowed revolutions, made a fortune for many billionaires and
 in the meanwhile ruined our climate: the web.
 
 [This is a motherfucking website.](http://motherfuckingwebsite.com/)
+[This is a better motherfucking website.](http://bettermotherfuckingwebsite.com/)
 
 For short: There is an industry which is specialized on extending the resource
 usage to display just some characters on your display. Millions of jobs are

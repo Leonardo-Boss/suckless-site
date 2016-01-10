@@ -28,8 +28,8 @@ Now you can use the following key (don't forget to remove the old one):
 
 Download
 --------
-* [surf-0.6-omnibar.diff](surf-0.6-omnibar.diff) (20151006)
-* [omnibar-3477b69](https://github.com/clamiax/.surf/blob/3477b69c5b00ad0129b163b22c84b8ed560abbb3/omnibar)
+* [surf-0.7-omnibar.diff](surf-0.7-omnibar.diff)
+* [omnibar](https://raw.githubusercontent.com/clamiax/.surf/374e101748093215e8ecbf00a24a764932b60ed7/omnibar)
 
 Author
 ------

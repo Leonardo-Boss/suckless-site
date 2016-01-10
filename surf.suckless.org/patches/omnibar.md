@@ -2,16 +2,12 @@ Omnibar
 =======
 Run a command each time an URI is loaded. Since the URI may be passed as
 argument, this patch along with a proper script allows to manage browsing
-history in many convenient ways. If the default omnibar script (see below)
-don't fit your needs it's easy to refine the ONLOAD and GOTO constants in the
-config.h file.
+history in many convenient ways.
 
-URIs visited by clicking on links will be stored as well.
+The omnibar script store all URIs, including ones visited by clicking on links,
+and use them to auto-complete when you type on dmenu. The items are sorted by
+number of views.
 
-Note: the patch also changes the config.def.h file.
-
-Tabbed integration
-------------------
 For [tabbed](http://tools.suckless.org/tabbed/) users, you may also want to add
 the following to your tabbed config.h:
 

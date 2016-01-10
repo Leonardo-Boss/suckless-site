@@ -7,7 +7,7 @@ This section is for small, usable development libraries, which can be used for
 writing software that sucks less.
 These should preferrably be under the MIT/X consortium or BSD licenses, WTFPL,
 or public domain, or alternatively LGPL, because it makes them legally
-compatible with other suckless projects. 
+compatible with other suckless projects.
 
 libc implementations
 --------------------
@@ -69,7 +69,7 @@ Feed aggregators
 File browsers
 -------------
 * [noice](http://git.2f30.org/noice/) - Small and portable file browser
-* [rover](https://github.com/lecram/rover) - Simple file browser for the terminal 
+* [rover](https://github.com/lecram/rover) - Simple file browser for the terminal
 
 File managers
 -------------
@@ -159,6 +159,7 @@ Utilities
 * [slmenu](https://bitbucket.org/rafaelgg/slmenu) - Dmenu spinoff for the console
 * [dvtm](http://www.brain-dump.org/projects/dvtm/) - dynamic virtual terminal manager
 * [abduco](http://www.brain-dump.org/projects/abduco/) - session {at,de}tach support
+* [nq](https://github.com/chneukirchen/nq) - unix command line queue utility
 
 Web Browsers
 ------------

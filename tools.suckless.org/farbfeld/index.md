@@ -9,7 +9,7 @@ It has the following format:
 | 8      | "farbfeld" magic value                                     |
 | 4      | 32-Bit BE unsigned integer (width)                         |
 | 4      | 32-Bit BE unsigned integer (height)                        |
-| [2222] | 4\*16-Bit BE unsigned integers [RGBA] / pixel, row-aligned |
+| [2222] | 4⋅16-Bit BE unsigned integers [RGBA] / pixel, row-aligned  |
 
 The RGB-data should be sRGB for best interoperability.
 
@@ -121,8 +121,8 @@ the near future.
 Dependencies
 ------------
 
-* libpng
-* libjpeg-turbo
+* [libpng](http://www.libpng.org/pub/png/libpng.html)
+* [libjpeg-turbo](http://libjpeg-turbo.virtualgl.org/)
 
 Development
 -----------

@@ -24,7 +24,7 @@ environment from bare hardware to the graphical interface.
 * Mobile applications for developers that integrate well into our general
   development environment
 * General userland enhancements to Unix-like operating systems, in particular
-  GNU/Linux
+  Linux
 * Foundations of a new windowing system for Unix-like operating systems
 * Improvements to our existing software projects
 * Replacements of bloated existing software in a suckless way.

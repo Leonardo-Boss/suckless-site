@@ -15,8 +15,8 @@ The RGB-data should be sRGB for best interoperability.
 Dependencies
 ------------
 
-	* libpng
-	* libjpeg-turbo
+* libpng
+* libjpeg-turbo
 
 Development
 -----------

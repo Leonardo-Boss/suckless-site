@@ -160,6 +160,7 @@ Utilities
 * [dvtm](http://www.brain-dump.org/projects/dvtm/) - dynamic virtual terminal manager
 * [abduco](http://www.brain-dump.org/projects/abduco/) - session {at,de}tach support
 * [nq](https://github.com/chneukirchen/nq) - unix command line queue utility
+* [entr](http://entrproject.org/) - Run arbitrary commands when files change
 
 Web Browsers
 ------------

@@ -1,6 +1,7 @@
 ![farbfeld](farbfeld.svg)
 
-is a lossless image format which is easy to parse, pipe and compress.
+farbfeld is a lossless image format which is easy to parse, pipe and
+compress.
 It has the following format:
 
 | Bytes  | Description                                                |
@@ -49,11 +50,13 @@ pattern that every 48 bits the 16 bits store the
 same information.
 And the compression-algorithms get better and better
 at this.
+
 Same applies to the idea of having 16 bits per channel.
 It sounds excessive, but if you for instance only have
 a greyscale image, the R, G and B channels will store
 the same value, which is recognized by the compression
 algorithm easily.
+
 This effectively leads to filesizes you'd normally only
 reach with paletted images, and in some cases bz2 even
 beats png's compression, for instance when you're dealing

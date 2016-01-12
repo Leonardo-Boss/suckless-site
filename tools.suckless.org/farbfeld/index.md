@@ -21,7 +21,7 @@ result to image-filtered.png:
 
     $ png2ff < image.png | filter | ff2png > image-filtered.png
 
-[Here](invert.c) you can find an example for such a filter which inverts
+[invert.c](invert.c) is an example for such a filter which inverts
 the colors. Notice that there are no dependencies on external libraries.
 A hypothetical farbfeld-library would hardly exceed the size of
 the given filter example.

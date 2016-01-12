@@ -40,6 +40,8 @@ back to imagemagick's convert(1) for unknown image types:
 
     $ 2ff < image | filter | ff2png > image-filtered.png
 
+Refer to the manpages for more information. farbfeld(5) is a good start.
+
 FAQ
 ---
 

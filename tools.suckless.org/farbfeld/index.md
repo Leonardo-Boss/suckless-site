@@ -19,7 +19,7 @@ Examples
 Convert image.png to a farbfeld, run it through a filter and write the
 result to image-filtered.png:
 
-   png2ff < image.png | filter | ff2png > image-filtered.png
+    $ png2ff < image.png | filter | ff2png > image-filtered.png
 
 [Here](invert.c) you can find an example for such a filter which inverts
 the colors. Notice that there are no dependencies on external libraries.
@@ -29,16 +29,16 @@ the given filter example.
 
 Store image.png as a compressed farbfeld:
 
-   png2ff < image.png | bzip2 > image.ff.bz2
+    $ png2ff < image.png | bzip2 > image.ff.bz2
 
 Access a compressed farbfeld as a png:
 
-   bunzip2 < image.ff.bz2 | ff2png {> image.png, | feh -, ...}
+    $ bunzip2 < image.ff.bz2 | ff2png {> image.png, | feh -, ...}
 
 Handle arbitrary image data using 2ff(1), which falls
 back to imagemagick's convert(1) for unknown image types:
 
-   2ff < image | filter | ff2png > image-filtered.png
+    $ 2ff < image | filter | ff2png > image-filtered.png
 
 FAQ
 ---

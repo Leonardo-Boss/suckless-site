@@ -26,7 +26,7 @@ the colors. Notice that there are no dependencies on external libraries.
 A hypothetical farbfeld-library would hardly exceed invert.c's size.
 
 
-Store image.png as a compressed farbfeld:
+Store a png as a compressed farbfeld:
 
         $ png2ff < image.png | bzip2 > image.ff.bz2
 
@@ -172,12 +172,16 @@ provide packages:
 * Arch Linux (AUR)
 * Void Linux
 
-Please let me know (dev@frign.de) when the list can be extended.
-
 Implementations
 ---------------
 
 * [sent](http://tools.suckless.org/sent/) presentation tool
 * [Go encoder/decoder](https://github.com/mehlon/farbfeld)
 
-Please let me know (dev@frign.de) when the list can be extended.
+Author
+------
+
+* Laslo Hunhold (dev@frign.de)
+
+Please contact me when you find information that could be added to this
+page.

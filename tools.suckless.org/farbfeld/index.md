@@ -65,6 +65,18 @@ libraries. The tools are just a toolbox
 to make it easy to convert between common image formats
 and farbfeld.
 
+### What about NetPBM?
+
+NetPBM is considered to be the most simple format around,
+however, there's much room for improvement.
+Functionality like alpha channels and 16-Bit color depth
+can only be achieved via extensions.
+Due to it being a textual format it also lacks the desired
+compression characteristics.
+The question you have to ask yourself is: Can I read in a
+format without consulting the manpages? If your answer is
+yes, then the format is simple enough.
+
 ### How does it work?
 
 In Farbfeld, pattern resolution is not done while

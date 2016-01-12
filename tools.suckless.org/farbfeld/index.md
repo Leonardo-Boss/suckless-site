@@ -74,8 +74,15 @@ Portable BitMaps, Portable GrayMaps and Portable PixMaps.
 It's not helpful when a manpage can't give a simple overview
 of a format in a few sentences.
 
+NetPBM's big vice is that it has originally been developed
+to be hand-written and passed around as plain text.
+Handling optional comments in the header, base 10 ASCII
+width and height values, arbitrary whitespace inside the
+data and out-of-band image size and color depth is too
+painful for the sane user.
+
 Judging from the usage of the format considering how long
-it's been around, it's no surprise it never took off.
+it's been around, it's no surprise it never really took off.
 Additionally, functionality like alpha channels and 16-Bit
 color depth can only be achieved via extensions.
 Due to it being a textual format it also lacks the desired

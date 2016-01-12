@@ -163,3 +163,20 @@ Download
 --------
 
 * [farbfeld-1](http://dl.suckless.org/farbfeld/farbfeld-1.tar.gz) (2016-01-06)
+
+Also make sure to check your package manager. The following distributions
+provide packages:
+
+* Gentoo (Portage)
+* Arch Linux (AUR)
+* Void Linux
+
+Please let me know (dev@frign.de) when the list can be extended.
+
+Implementations
+---------------
+
+* [sent](http://tools.suckless.org/sent/) presentation tool
+* [Go encoder/decoder](https://github.com/mehlon/farbfeld)
+
+Please let me know (dev@frign.de) when the list can be extended.

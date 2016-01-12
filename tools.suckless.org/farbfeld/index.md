@@ -69,13 +69,20 @@ and farbfeld.
 
 NetPBM is considered to be the most simple format around,
 however, there's much room for improvement.
-Functionality like alpha channels and 16-Bit color depth
-can only be achieved via extensions.
+In fact, it doesn't help that the format is subdivided into
+Portable BitMaps, Portable GrayMaps and Portable PixMaps.
+It's not helpful when a manpage can't give a simple overview
+of a format in a few sentences.
+Judging from the usage of the format considering how long
+it's been around, it's no surprise it never took off.
+Additionally, functionality like alpha channels and 16-Bit
+color depth can only be achieved via extensions.
 Due to it being a textual format it also lacks the desired
 compression characteristics.
 The question you have to ask yourself is: Can I read in a
 format without consulting the manpages? If your answer is
 yes, then the format is simple enough.
+In this regard, NetPBM can be considered to be a failed format.
 
 ### How does it work?
 

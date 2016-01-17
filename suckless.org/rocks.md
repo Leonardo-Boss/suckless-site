@@ -195,6 +195,8 @@ X11
 * [ffcast](https://github.com/lolilolicon/FFcast2) – Simple screencasting.
 * [swm](https://github.com/dcat/swm) - A simple window manager called Simple Window Manager. Floating but keyboard-accessible.
 * [wmutils](https://github.com/wmutils/core) - A set of utilities for managing windows. Can be used on their own or to augment a WM itself. Support for tiling present.
+* [grabc](http://www.muquit.com/muquit/software/grabc/grabc.html) - Grab the
+  color of some pixel in X11.
 
 [plan9port]: http://swtch.com/plan9port/
 [acme]: http://acme.cat-v.org

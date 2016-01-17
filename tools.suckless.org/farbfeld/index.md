@@ -149,11 +149,13 @@ and other technologies allowing to display many more colors than sRGB
 (which has been designed for CRT displays of the 90's), it is time to
 go ahead and be prepared for a paradigm shift which will come sooner than
 many will probably expect.
+
 Nowadays, anything beyond sRGB (AdobeRGB, ProPhoto RGB,...) is only
 relevant in professional sectors (layouting, printing,...). Based on the
 feedback the author received on version 1 of farbfeld, it became clear to
 him that there definitely are many cases were the loss of colors converting
 from any large-gamut color space to sRGB is strongly visible.
+
 The obvious option was to switch to AdobeRGB, but if you look at the
 CIELUV-representation, you'll see that the differences aren't that big.
 ProPhoto RGB basically allows us to lean back and relax, coming very very

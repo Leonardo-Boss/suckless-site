@@ -4,15 +4,13 @@ farbfeld is a lossless image format which is easy to parse, pipe and
 compress.
 It has the following format:
 
-| Bytes  | Description                                                |
-|--------|------------------------------------------------------------|
-| 8      | "farbfeld" magic value                                     |
-| 4      | 32-Bit BE unsigned integer (width)                         |
-| 4      | 32-Bit BE unsigned integer (height)                        |
-| [2222] | 4⋅16-Bit BE unsigned integers [RGBA] / pixel, row-aligned  |
-
-The RGB-data should be sRGB for best interoperability and not
-alpha-premultiplied.
+| Bytes  | Description                                           |
+|--------|-------------------------------------------------------|
+| 8      | "farbfeld" magic value                                |
+| 4      | 32-Bit BE unsigned integer (width)                    |
+| 4      | 32-Bit BE unsigned integer (height)                   |
+| [2222] | 4⋅16-Bit BE unsigned integers [RGBA] / pixel          |
+|        | pixels in rows, ProPhoto RGB, not alpha-premultiplied |
 
 Examples
 --------
@@ -76,11 +74,11 @@ It's not helpful when a manpage can't give a simple overview
 of a format in a few sentences.
 
 NetPBM's big vice is that it has originally been developed
-to be hand-written and passed around as plain text.
-Handling optional comments in the header, base 10 ASCII
-width and height values, arbitrary whitespace inside the
-data and out-of-band image size and color depth is too
-painful for the sane user.
+to be hand-written and passed around as plain text. A binary
+format exists, but still handling optional comments 
+in the header, base 10 ASCII width and height values,
+arbitrary whitespace inside the data and out-of-band
+image size and color depth is too painful for the sane user.
 
 Judging from the usage of the format considering how long
 it's been around, it's no surprise it never really took off.
@@ -142,44 +140,31 @@ There is no need for special grayscale, palette, RGB, 1-, 2-,
 Just use 16-Bit RGBA all the time and let compression take
 care of the rest.
 
-### Why is there no support for color spaces (Adobe RGB, ...)?
+### Why ProPhoto RGB as the mandated color space?
 
-The most widely-used color space is sRGB. It has its
-drawbacks, but there are
-[excellent](http://www.kenrockwell.com/tech/adobe-rgb.htm)
-[ressources](http://www.kenrockwell.com/tech/color-management/is-for-wimps.htm)
-explaining why you probably won't need Adobe RGB and other color spaces
-anyway. Additionally, AdobeRGB is very difficult to process and if you
-make one tiny mistake in your pipeline, you'll end up with very
-dull colors (which is because Adobe RGB just stretches the RGB
-values non-linearily).
-
-Most displays and printers are calibrated for sRGB. The author has yet
-to see an example of an image which looked any different in the
-print depending on if it had been processed in a sRGB or Adobe RGB
-pipeline. Also, for smoother gradients, sRGB actually is better
-because for the same color depth the sRGB colors lie closer to
-each other. However, this is minor due to the fact that you can
-easily ramp up bit-depth. However, it helps you realize that
-Adobe RGB is just a tool like any other and it has no magic
-properties.
-
-Given most people don't even know what this stuff is all about
-anyway and unknowingly use sRGB, why not appease the 99%?
-The 1% wanting to use AdobeRGB is not forbidden to use it in
-farbfeld, nobody is stopping you. You just have to make it clear
-in your data interchange, which is not problematic given that
-you have to be very careful building your AdobeRGB-pipeline in
-the first place anyway.
-There are exotic color spaces which try to fix some limitations of the
-sRGB color space, but it doesn't look like they'll catch on in
-the near future.
+Over the last few years, the situation on the web has changed. People
+don't just publish their images in sRGB any more. Even with mobile cameras
+catching on, able to detect colors beyond sRGB and with upcoming OLED
+and other technologies allowing to display many more colors than sRGB
+(which has been designed for CRT displays of the 90's), it is time to
+go ahead and be prepared for a paradigm shift which will come sooner than
+many will probably expect.
+Nowadays, anything beyond sRGB (AdobeRGB, ProPhoto RGB,...) is only
+relevant in professional sectors (layouting, printing,...). Based on the
+feedback the author received on version 1 of farbfeld, it became clear to
+him that there definitely are many cases were the loss of colors converting
+from any large-gamut color space to sRGB is strongly visible.
+The obvious option was to switch to AdobeRGB, but if you look at the
+CIELUV-representation, you'll see that the differences aren't that big.
+ProPhoto RGB basically allows us to lean back and relax, coming very very
+close to a full coverage of the LAB color space of possible colors.
 
 Dependencies
 ------------
 
-* [libpng](http://www.libpng.org/pub/png/libpng.html)
-* [libjpeg-turbo](http://libjpeg-turbo.virtualgl.org/)
+* [libpng](http://www.libpng.org/pub/png/libpng.html) - for png conversions
+* [libjpeg-turbo](http://libjpeg-turbo.virtualgl.org/) - for jpg conversions
+* [lcms2](http://www.littlecms.com/) - for ICC and color space handling
 
 Development
 -----------

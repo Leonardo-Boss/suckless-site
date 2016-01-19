@@ -7,7 +7,7 @@ News
 
 2016-01-19
 ----------
-suckless.org will be moved to a different server host until 2016-01-23. We
+suckless.org will be moved to a different host until 2016-01-23. We
 intend to do this as smooth as possible.
 
 2016-01-06

@@ -5,6 +5,11 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2016-01-19
+----------
+suckless.org will be moved to a different server host until 2016-01-23. We
+intend to do this as smooth as possible.
+
 2016-01-06
 ----------
 [farbfeld 1](http://git.suckless.org/farbfeld) released: [download](http://dl.suckless.org/farbfeld/farbfeld-1.tar.gz)
@@ -20,10 +25,6 @@ News
 2015-11-13
 ----------
 Videos of the [slcon2 talks](http://suckless.org/conference/) are now available.
-
-2015-11-11
-----------
-[sent 0.1](http://tools.suckless.org/sent) released: [download](http://dl.suckless.org/tools/sent-0.1.tar.gz)
 
 2015-11-09
 ----------
@@ -68,10 +69,6 @@ community is invited to come, meet and hack!
 ----------
 [ubase 0.1](http://tools.suckless.org/ubase) released: [download](http://dl.suckless.org/ubase/ubase-0.1.tar.gz)
 
-2014-04-05
-----------
-[st 0.5](http://st.suckless.org) released: [download](http://dl.suckless.org/st/st-0.5.tar.gz)
-
 2014-01-21
 ----------
 [tabbed 0.6](http://tools.suckless.org/tabbed) released: [download](http://dl.suckless.org/tools/tabbed-0.6.tar.gz)
@@ -92,10 +89,6 @@ community is invited to come, meet and hack!
 ----------
 We are glad to announce the [slcon 2013](/conference) programme.
 
-2013-02-10
-----------
-[surf 0.6](http://surf.suckless.org) released: [download](http://dl.suckless.org/surf/surf-0.6.tar.gz)
-
 2012-11-29
 ----------
 We are glad to announce the switch to git from mercurial in all of our
@@ -114,14 +107,6 @@ We will miss him a lot.
 ![uriel](/uriel.png)
 
 RIP
-
-2012-01-08
-----------
-[dmenu 4.5](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.5.tar.gz)
-
-2011-12-19
-----------
-[dwm 6.0](http://dwm.suckless.org) released: [download](http://dl.suckless.org/dwm/dwm-6.0.tar.gz)
 
 2011-05-14
 ----------

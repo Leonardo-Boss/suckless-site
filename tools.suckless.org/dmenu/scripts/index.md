@@ -22,3 +22,5 @@ Download
  the terminal.
 * [browse](https://github.com/clamiax/scripts/blob/master/src/browse):
   little files navigator
+* [dmenu_run_history](http://tools.suckless.org/dmenu/scripts/dmenu_run_with_command_history) :
+  dmenu_run alternative with command history

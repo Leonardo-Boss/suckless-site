@@ -101,7 +101,7 @@ transparency. So the data is only a set of regular chunks
 Compression algorithms have been designed to recognize those
 chunks and can even look at how these chunks interact.
 
-Local tests has shown that farbfeld easily beats paletted
+Local tests have shown that farbfeld easily beats paletted
 PNG-images. Try for yourself and look at the bzipped results!
 There is no need for special grayscale, palette, RGB, 1-, 2-,
 4-, 8-, 16-Bit subformats.
@@ -186,6 +186,9 @@ Another point is color spaces. NetPBM offers no good way to
 specify which color space your data is in. This will become more
 and more problematic as time moves on and more and more devices
 hit the market which can display more than the sRGB color space.
+Specifying color profiles is not easy to integrate into a sane format,
+so the farbfeld solution is to ramp up the bit-depth and use the
+largest color space around.
 
 Dependencies
 ------------

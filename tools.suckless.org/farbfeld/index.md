@@ -11,8 +11,7 @@ It has the following format:
 | 4      | 32-Bit BE unsigned integer (height)           |
 | [2222] | 4⋅16-Bit BE unsigned integers [RGBA] / pixel  |
 |        |    - pixels in rows                           |
-|        |    - linear ROMM RGB (ISO 22028-2:2013)       |
-|        |         (= linear ProPhoto RGB = Melissa RGB) |
+|        |    - linear ROMM RGB (ISO 22028-2:2013) (= linear ProPhoto RGB = Melissa RGB) |
 |        |    - no alpha premultiplication               |
 
 Examples
@@ -116,8 +115,7 @@ in ISO 22028-2:2013 and is better known as ProPhoto RGB.
 As an intermediate format, farbfeld should be easy to work with, so the
 RGB data has to be linear.
 This is what is meant as Linear ROMM RGB and is already used
-[internally in Adobe Lightroom, known as Melissa RGB]
-(http://ptgmedia.pearsoncmg.com/imprint_downloads/peachpit/peachpit/lightroom4/pdf_files/LightroomRGB_Space.pdf).
+[internally in Adobe Lightroom, known as Melissa RGB](http://ptgmedia.pearsoncmg.com/imprint_downloads/peachpit/peachpit/lightroom4/pdf_files/LightroomRGB_Space.pdf).
 
 The reason why not all RGB data is linear is because our eye can differentiate
 darker colors better than lighter colors. To best work with the limits of

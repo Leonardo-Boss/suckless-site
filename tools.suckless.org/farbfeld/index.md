@@ -4,13 +4,16 @@ farbfeld is a lossless image format which is easy to parse, pipe and
 compress.
 It has the following format:
 
-| Bytes  | Description                                           |
-|--------|-------------------------------------------------------|
-| 8      | "farbfeld" magic value                                |
-| 4      | 32-Bit BE unsigned integer (width)                    |
-| 4      | 32-Bit BE unsigned integer (height)                   |
-| [2222] | 4⋅16-Bit BE unsigned integers [RGBA] / pixel          |
-|        | pixels in rows, ProPhoto RGB, not alpha-premultiplied |
+| Bytes  | Description                                   |
+|--------|-----------------------------------------------|
+| 8      | "farbfeld" magic value                        |
+| 4      | 32-Bit BE unsigned integer (width)            |
+| 4      | 32-Bit BE unsigned integer (height)           |
+| [2222] | 4⋅16-Bit BE unsigned integers [RGBA] / pixel  |
+|        |    - pixels in rows                           |
+|        |    - linear ROMM RGB (ISO 22028-2:2013)       |
+|        |         (= linear ProPhoto RGB = Melissa RGB) |
+|        |    - no alpha premultiplication               |
 
 Examples
 --------
@@ -64,34 +67,6 @@ libraries. The tools are just a toolbox
 to make it easy to convert between common image formats
 and farbfeld.
 
-### What about NetPBM?
-
-NetPBM is considered to be the most simple format around,
-however, there's much room for improvement.
-In fact, it doesn't help that the format is subdivided into
-Portable BitMaps, Portable GrayMaps and Portable PixMaps.
-It's not helpful when a manpage can't give a simple overview
-of a format in a few sentences.
-
-NetPBM's big vice is that it has originally been developed
-to be hand-written and passed around as plain text. A binary
-format exists, but still handling optional comments 
-in the header, base 10 ASCII width and height values,
-arbitrary whitespace inside the data and out-of-band
-image size and color depth is too painful for the sane user.
-
-Judging from the usage of the format considering how long
-it's been around, it's no surprise it never really took off.
-Additionally, functionality like alpha channels and 16-Bit
-color depth can only be achieved via extensions.
-Due to it being a textual format it also lacks the desired
-compression characteristics.
-
-The question you have to ask yourself is: Can I read in a
-format without consulting the manpages? If your answer is
-yes, then the format is simple enough.
-In this regard, NetPBM can be considered to be a failed format.
-
 ### How does it work?
 
 In Farbfeld, pattern resolution is not done while
@@ -118,12 +93,6 @@ beats png's compression, for instance when you're dealing
 with grayscale data, line drawings, decals and even
 photographs.
 
-### Which compression should I use?
-
-bzip2 is recommended, which is widely available (anybody has it)
-and gives good results. As time will move forward and new
-algorithms hit the market, this recommendation might be rethought.
-
 ### Why use 16-Bits-per-channel all the time? Isn't this a total waste?
 
 Not when you take compression into account. To make this
@@ -140,7 +109,28 @@ There is no need for special grayscale, palette, RGB, 1-, 2-,
 Just use 16-Bit RGBA all the time and let compression take
 care of the rest.
 
-### Why ProPhoto RGB as the mandated color space?
+### What is linear ROMM RGB?
+
+[ROMM RGB](http://www.color.org/chardata/rgb/rommrgb.xalter) is specified
+in ISO 22028-2:2013 and is better known as ProPhoto RGB.
+As an intermediate format, farbfeld should be easy to work with, so the
+RGB data has to be linear.
+This is what is meant as Linear ROMM RGB and is already used
+[internally in Adobe Lightroom, known as Melissa RGB]
+(http://ptgmedia.pearsoncmg.com/imprint_downloads/peachpit/peachpit/lightroom4/pdf_files/LightroomRGB_Space.pdf).
+
+The reason why not all RGB data is linear is because our eye can differentiate
+darker colors better than lighter colors. To best work with the limits of
+the usual 8-Bit color depth, color profiles come with gamma functions which
+specify a non-linear distribution of shades, allowing more darker color
+shades to be represented than lighter ones. After all, the eye is "blind"
+to those lighter shades anyway and it was a great idea to not waste depth
+there.
+
+This is no problem for farbfeld though, as 16-Bit color depth is the default and
+already gives plenty of room for a linear distribution with negligible losses.
+
+### Why Linear ROMM RGB as the mandated color space?
 
 Over the last few years, the situation on the web has changed. People
 don't just publish their images in sRGB any more. Even with mobile cameras
@@ -151,15 +141,53 @@ go ahead and be prepared for a paradigm shift which will come sooner than
 many will probably expect.
 
 Nowadays, anything beyond sRGB (AdobeRGB, ProPhoto RGB,...) is only
-relevant in professional sectors (layouting, printing,...). Based on the
-feedback the author received on version 1 of farbfeld, it became clear to
-him that there definitely are many cases were the loss of colors converting
-from any large-gamut color space to sRGB is strongly visible.
+relevant in professional sectors (layouting, printing,...).
+Throwing away data by converting pictures from a large gamut into sRGB
+shouldn't be the norm.
 
 The obvious option was to switch to AdobeRGB, but if you look at the
 CIELUV-representation, you'll see that the differences aren't that big.
-ProPhoto RGB basically allows us to lean back and relax, coming very very
+ROMM RGB basically allows us to lean back and relax, coming very very
 close to a full coverage of the LAB color space of possible colors.
+
+### Which compression should I use?
+
+bzip2 is recommended, which is widely available (anybody has it)
+and gives good results. As time will move forward and new
+algorithms hit the market, this recommendation might be rethought.
+
+### What about NetPBM?
+
+NetPBM is considered to be the most simple format around,
+however, there's much room for improvement.
+In fact, it doesn't help that the format is subdivided into
+Portable BitMaps, Portable GrayMaps and Portable PixMaps.
+It's not helpful when a manpage can't give a simple overview
+of a format in a few sentences.
+
+NetPBM's big vice is that it has originally been developed
+to be hand-written and passed around as plain text. A binary
+format exists, but still handling optional comments
+in the header, base 10 ASCII width and height values,
+arbitrary whitespace inside the data and out-of-band
+image size and color depth is too painful for the sane user.
+
+Judging from the usage of the format considering how long
+it's been around, it's no surprise it never really took off.
+Additionally, functionality like alpha channels and 16-Bit
+color depth can only be achieved via extensions.
+Due to it being a textual format it also lacks the desired
+compression characteristics.
+
+The question you have to ask yourself is: Can I read in a
+format without consulting the manpages? If your answer is
+yes, then the format is simple enough.
+In this regard, NetPBM can be considered to be a failed format.
+
+Another point is color spaces. NetPBM offers no good way to
+specify which color space your data is in. This will become more
+and more problematic as time moves on and more and more devices
+hit the market which can display more than the sRGB color space.
 
 Dependencies
 ------------

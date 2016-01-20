@@ -192,7 +192,7 @@ Implementations
 ---------------
 
 * [sent](http://tools.suckless.org/sent/) presentation tool
-* [Go encoder/decoder](https://github.com/mehlon/farbfeld)
+* [Go encoder/decoder](https://github.com/hullerob/go.farbfeld)
 
 Author
 ------

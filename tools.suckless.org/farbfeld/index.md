@@ -10,9 +10,9 @@ It has the following format:
 | 4      | 32-Bit BE unsigned integer (width)            |
 | 4      | 32-Bit BE unsigned integer (height)           |
 | [2222] | 4⋅16-Bit BE unsigned integers [RGBA] / pixel  |
-|        |    - pixels in rows                           |
-|        |    - linear ROMM RGB (ISO 22028-2:2013) (= linear ProPhoto RGB = Melissa RGB) |
-|        |    - no alpha premultiplication               |
+|        | pixels in rows, not alpha-premultiplied       |
+
+The RGB-data should be in sRGB.
 
 Examples
 --------
@@ -108,46 +108,6 @@ There is no need for special grayscale, palette, RGB, 1-, 2-,
 Just use 16-Bit RGBA all the time and let compression take
 care of the rest.
 
-### What is linear ROMM RGB?
-
-[ROMM RGB](http://www.color.org/chardata/rgb/rommrgb.xalter) is specified
-in ISO 22028-2:2013 and is better known as ProPhoto RGB.
-As an intermediate format, farbfeld should be easy to work with, so the
-RGB data has to be linear.
-This is what is meant as Linear ROMM RGB and is already used
-[internally in Adobe Lightroom, known as Melissa RGB](http://ptgmedia.pearsoncmg.com/imprint_downloads/peachpit/peachpit/lightroom4/pdf_files/LightroomRGB_Space.pdf).
-
-The reason why not all RGB data is linear is because our eye can differentiate
-darker colors better than lighter colors. To best work with the limits of
-the usual 8-Bit color depth, color profiles come with gamma functions which
-specify a non-linear distribution of shades, allowing more darker color
-shades to be represented than lighter ones. After all, the eye is "blind"
-to those lighter shades anyway and it was a great idea to not waste depth
-there.
-
-This is no problem for farbfeld though, as 16-Bit color depth is the default and
-already gives plenty of room for a linear distribution with negligible losses.
-
-### Why Linear ROMM RGB as the mandated color space?
-
-Over the last few years, the situation on the web has changed. People
-don't just publish their images in sRGB any more. Even with mobile cameras
-catching on, able to detect colors beyond sRGB and with upcoming OLED
-and other technologies allowing to display many more colors than sRGB
-(which has been designed for CRT displays of the 90's), it is time to
-go ahead and be prepared for a paradigm shift which will come sooner than
-many will probably expect.
-
-Nowadays, anything beyond sRGB (AdobeRGB, ProPhoto RGB,...) is only
-relevant in professional sectors (layouting, printing,...).
-Throwing away data by converting pictures from a large gamut into sRGB
-shouldn't be the norm.
-
-The obvious option was to switch to AdobeRGB, but if you look at the
-CIELUV-representation, you'll see that the differences aren't that big.
-ROMM RGB basically allows us to lean back and relax, coming very very
-close to a full coverage of the LAB color space of possible colors.
-
 ### Which compression should I use?
 
 bzip2 is recommended, which is widely available (anybody has it)
@@ -182,20 +142,11 @@ format without consulting the manpages? If your answer is
 yes, then the format is simple enough.
 In this regard, NetPBM can be considered to be a failed format.
 
-Another point is color spaces. NetPBM offers no good way to
-specify which color space your data is in. This will become more
-and more problematic as time moves on and more and more devices
-hit the market which can display more than the sRGB color space.
-Specifying color profiles is not easy to integrate into a sane format,
-so the farbfeld solution is to ramp up the bit-depth and use the
-largest color space around.
-
 Dependencies
 ------------
 
 * [libpng](http://www.libpng.org/pub/png/libpng.html) - for png conversions
 * [libjpeg-turbo](http://libjpeg-turbo.virtualgl.org/) - for jpg conversions
-* [lcms2](http://www.littlecms.com/) - for ICC and color space handling
 
 Development
 -----------

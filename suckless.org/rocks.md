@@ -34,6 +34,7 @@ Miscellaneous
 * [morpheus](http://morpheus.2f30.org) - a statically linked musl based Linux distro
 * [pjsip](http://www.pjsip.org/) - open source SIP stack (GPL)
 * [sdhcp](http://git.2f30.org/sdhcp/) - IPV4 DHCP client
+* [snore](https://github.com/clamiax/snore) - Sleep with feedback
 * [termbox](https://github.com/nsf/termbox) - simple ncurses-like library for creating TUIs
 
 Programs

@@ -20,4 +20,4 @@ Authors
 -------
 
 * Andrew Hills <[ahills@ednos.net](mailto:ahills@ednos.net)>
-* Klemens Nanni <[kl3@posteo.org](mailto:ahills@ednos.net)> (20160130 version)
+* Klemens Nanni <[kl3@posteo.org](mailto:kl3@posteo.org)> (20160130 version)

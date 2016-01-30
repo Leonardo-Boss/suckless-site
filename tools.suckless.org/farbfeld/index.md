@@ -173,6 +173,7 @@ Implementations
 
 * [sent](http://tools.suckless.org/sent/) presentation tool
 * [Go encoder/decoder](https://github.com/hullerob/go.farbfeld)
+* [resize](https://github.com/ender672/farbfeld-resize) image filter
 
 Author
 ------

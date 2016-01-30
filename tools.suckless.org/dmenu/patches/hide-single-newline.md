@@ -10,8 +10,10 @@ Download
 --------
 
 * [dmenu-4.5-hide-single-newline.diff](dmenu-4.5-hide-single-newline.diff) (0.1k) (18 Sep 2015)
+* [dmenu-git-20160111-hide-single-newline.diff](dmenu-git-20160111-hide-single-newline.diff)
 
-Author
-------
+Authors
+-------
 
 * Danil Semelenov - `<mail at danil dot mobi>`
+* Klemens Nanni <[kl3@posteo.org](mailto:kl3@posteo.org)> (20160111 version)

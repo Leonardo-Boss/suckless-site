@@ -5,7 +5,7 @@ There are two types of patches: The ones that fit to your personal taste and
 the ones you think should be included in mainline dwm.
 
 For patches that should be included in mainline dwm see the
-[community](//suckless.org/community) page and the hackers@ mailinglist.
+[community](//suckless.org/community) page and the hackers@ mailing list.
 
 
 You can use the following instructions to generate and apply patches posted on

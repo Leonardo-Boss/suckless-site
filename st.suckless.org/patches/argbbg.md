@@ -17,10 +17,10 @@ make this patch effective.
  * [st-0.4.1-argbbg.diff](st-0.4.1-argbbg.diff)
  * [st-0.5-argbbg.diff](st-0.5-argbbg.diff)
  * [st-0.6-argbbg.diff](st-0.6-argbbg.diff)
- * [st-git-20151129-argbbg.diff](st-git-20151129-argbbg.diff)
+ * [st-git-20160131-argbbg.diff](st-git-20160131-argbbg.diff)
 
 ## Authors ##
  * Eon S. Jeon - esjeon@hyunmu.am
  * pr - protodev@gmx.net (st-0.5 port)
  * Laslo Hunhold - dev@frign.de (st-0.6 port)
- * David Phillips - dbphillipsnz@gmail.com (st-git-20151129 port)
+ * David Phillips - dbphillipsnz@gmail.com (st-git-20160131 port)

@@ -12,14 +12,15 @@ Download
 * [st-git-20151217-scrollback.diff](st-git-20151217-scrollback.diff)
 
 Apply the following patch on top of the previous to allow scrolling
-using Shift+MouseWheel.
+using `Shift+MouseWheel`.
 
 * [st-git-20151106-scrollback-mouse.diff](st-git-20151106-scrollback-mouse.diff)
 
-Apply the following patch on top of the previous two to allow scrolling
-the backbuffer using MouseWheel only when not in MODE_ALTSCREEN.
-This way when e.g. viweing files in less the content is being scrolled instead of the 
-scrollback buffer. Consequently the Shift modifier for scrolling is not needed anymore.
+Apply the following patch on top of the previous two to allow scrollback using
+mouse wheel only when not in `MODE_ALTSCREEN`. eg. The content is being
+scrolled instead of the scrollback buffer in `less`. Consequently the Shift
+modifier for scrolling is not needed anymore.  **Note: It might break other
+mkeys excluding scrolling functions.**
 
 * [st-git-20160203-scrollback-mouse-altscreen.diff](st-git-20160203-scrollback-mouse-altscreen.diff)
 

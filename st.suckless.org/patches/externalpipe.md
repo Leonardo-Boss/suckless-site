@@ -27,7 +27,7 @@ Download
 * [st-0.4.1-externalpipe.diff](st-0.4.1-externalpipe.diff)
 * [st-0.5-externalpipe.diff](st-0.5-externalpipe.diff)
 * [st-0.6-externalpipe.diff](st-0.6-externalpipe.diff)
-* [st-git-20150917-externalpipe.diff](st-git-20150917-externalpipe.diff)
+* [st-git-20160204-externalpipe.diff](st-git-20160204-externalpipe.diff)
 
 Authors
 -------

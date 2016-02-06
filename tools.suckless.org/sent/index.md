@@ -44,8 +44,7 @@ You can navigate with the arrow keys and quit with `q`.
 * Each paragraph represents one slide
 * Content is automatically scaled to fit the screen
 * UTF-8 is supported
-* (transparent) images can be displayed (no text on the same slide), farbfeld
-  required
+* Images can be displayed (no text on the same slide), farbfeld required
 * Just around 1000 lines of C.
 * No different font styles (bold, italic, underline)
 * No fancy layout options (different font sizes, different colors, …)
@@ -61,9 +60,9 @@ Usage
 
 Edit config.h to fit your needs then build again.
 
-	sent FILE1 [FILE2 ...]
+	sent FILE
 
-If one FILE equals `-`, stdin will be read. Produce image slides by prepending a
+If FILE equals `-`, stdin will be read. Produce image slides by prepending a
 `@` in front of the filename as a single paragraph. Lines starting with `#` will
 be ignored. A `\` at the beginning of the line escapes `@` and `#`. A
 presentation file could look like this:

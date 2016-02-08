@@ -5,9 +5,9 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
-2016-01-24
+2016-02-08
 ----------
-suckless.org is currently moved to a different host. All remaining work will be finished until 2016-01-31.
+suckless.org is being moved to a different host. All remaining work is postponed until *2016-02-15*.
 
 2016-01-06
 ----------

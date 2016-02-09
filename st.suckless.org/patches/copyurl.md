@@ -17,10 +17,11 @@ Download
 --------
 
  * [st-0.6-copyurl.diff](st-0.6-copyurl.diff)
- * [st-git-20150917-copyurl.diff](st-git-20150917-copyurl.diff)
+ * [st-git-20160210-copyurl.diff](st-git-20160210-copyurl.diff)
 
 Authors
 -------
 
  * Brandon Mulcahy - brandon@jangler.info
- * Laslo Hunhold - dev@frign.de (st-0.6, st-git-20150917 port)
+ * Laslo Hunhold - dev@frign.de (st-0.6 port)
+ * David Phillips - dbphillipsnz@gmail.com (st-git-20160210 port)

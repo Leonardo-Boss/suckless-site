@@ -5,13 +5,13 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2016-02-16
+----------
+suckless.org servers renewal almost done. Final switch *2016-02-(27-28)*.
+
 2016-02-12
 ----------
 [slock 1.3](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-1.3.tar.gz)
-
-2016-02-08
-----------
-suckless.org is being moved to a different host. All remaining work is postponed until *2016-02-15*.
 
 2016-01-06
 ----------

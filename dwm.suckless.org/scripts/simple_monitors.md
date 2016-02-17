@@ -33,7 +33,7 @@ Returns the temperature of the cpu, in celcius.
 Volume
 ---
 
-	amixer get Front | tail -1 | sed 's/.*\[\([0-9]*%\)\].*/\1/'
+	amixer get Front | tail -n1 | awk '{ print $5 }' | tr -d []
 
 Change "Front" to your audio device
 

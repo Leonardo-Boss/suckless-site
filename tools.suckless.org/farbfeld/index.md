@@ -4,12 +4,12 @@ farbfeld is a lossless image format which is easy to parse, pipe and
 compress.
 It has the following format:
 
-| Bytes  | Description                                               |
-|--------|-----------------------------------------------------------|
-| 8      | "farbfeld" magic value                                    |
-| 4      | 32-Bit BE unsigned integer (width)                        |
-| 4      | 32-Bit BE unsigned integer (height)                       |
-| [2222] | 4⋅16-Bit BE unsigned integers [RGBA] / pixel, row-aligned |
+| Bytes  | Description                                             |
+|--------|---------------------------------------------------------|
+| 8      | "farbfeld" magic value                                  |
+| 4      | 32-Bit BE unsigned integer (width)                      |
+| 4      | 32-Bit BE unsigned integer (height)                     |
+| [2222] | 4⋅16-Bit BE unsigned integers [RGBA] / pixel, row-major |
 
 The RGB-data should be sRGB for best interoperability and not
 alpha-premultiplied.
@@ -171,6 +171,7 @@ provide packages:
 Implementations
 ---------------
 
+* [lel](http://git.2f30.org/lel) farbfeld image viewer
 * [sent](http://tools.suckless.org/sent/) presentation tool
 * [Go encoder/decoder](https://github.com/hullerob/go.farbfeld)
 * [resize](https://github.com/ender672/farbfeld-resize) image filter

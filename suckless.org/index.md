@@ -5,9 +5,15 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
-2016-02-16
-----------
-suckless.org servers renewal almost done. Final switch *2016-02-(27-28)*.
+2016-02-29
+Final suckless.org server renewal will happen this week:
+
+Heads up for the developers:
+
+	Old fingerprint:  a7:35:1c:f2:8e:69:08:85:80:2c:9a:d2:81:a1:23:cb.
+	New fingerprint:  80:bc:bb:29:a5:21:b7:12:ed:50:40:58:cf:71:54:7c
+
+The switch itself should be smooth to everyone else.
 
 2016-02-12
 ----------

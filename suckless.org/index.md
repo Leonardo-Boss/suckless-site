@@ -6,6 +6,7 @@ News
 ====
 
 2016-02-29
+----------
 Final suckless.org server renewal will happen this week:
 
 Heads up for the developers:

@@ -26,6 +26,7 @@ Please add your own version of dwmstatus here.
 * [gods](https://github.com/schachmat/gods) - implemented in Go. prints network speed, cpu, ram, date/time
 * [go-dwmstatus](https://github.com/oniichaNj/go-dwmstatus) - A Go bar that prints current MPD song, load averages, time/date and battery percentage.
 * [barM](barM.c) - can display all, time/date, ram usage, output of commands (the New BarMonitor).
+* [slstatus](https://github.com/drkh5h/slstatus) - *s*uck*l*ess *s*tatus - written in pure c without any system() - includes wifi percentage, battery, cpu usage and temperature, ram usage, alsa volume and time / date
 
 Helper functions
 ----------------

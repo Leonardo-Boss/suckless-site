@@ -8,8 +8,8 @@
 	
 	static Key keys[] = {
 		...
-		{ MODKEY|ControlMask,           XK_j,           pushdown,       {0} },
-		{ MODKEY|ControlMask,           XK_k,           pushup,         {0} },
+		{ MODKEY|ControlMask,           XK_j,      pushdown,       {0} },
+		{ MODKEY|ControlMask,           XK_k,      pushup,         {0} },
 
 `push_no_master` is the same as the regular `push` patch, but it does not push up nor push down into the master area. We have zoom() for that.
 
@@ -17,13 +17,10 @@
 Patches against different versions of dwm are available at
 [dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
 
- * [dwm-6.1-push.diff](dwm-6.1-push.diff) (1402b) (20140209)
- * [dwm-10e232f9ace7-push.diff](dwm-10e232f9ace7-push.diff) (1332b) (20120406)
- * [dwm-6.0-push.diff](dwm-6.0-push.diff) (1332b) (20120406)
+ * [dwm-6.0-push.diff](dwm-6.0-push.diff) (1332b) - 2012/4/6
  * [dwm-6.0-push_no_master.diff](dwm-6.0-push_no_master.diff)
- * [push.c](push.c) (dwm 5.7.1) (20090927)
- * [push-5.6.c](historical/push-5.6.c) (1K) (20090709)
- * [push-5.3.c](historical/push-5.3.c) (1K) (20090124)
+ * [dwm-6.1-push.diff](dwm-6.1-push.diff) (1402b) - 2014/2/9
+ * [dwm-6.1-push_no_master.diff](dwm-6.1-push_no_master.diff) - 2015/11/21
 
 ## Note
 This patch seems to be equivalent to the [movestack](movestack) patch.

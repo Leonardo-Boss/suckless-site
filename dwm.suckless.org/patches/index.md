@@ -1,6 +1,18 @@
 Patches
 =======
 
+There are two types of patches: The ones that fit to your personal taste and
+the ones you think should be included in mainline dwm.
+
+For patches that should be included in mainline dwm see the
+[community](//suckless.org/community) page and the hackers@ mailing list.
+
+
+You can use the following instructions to generate and apply patches posted on
+this wiki. On how to upload patches which fit your personal taste and you want
+to show the community, see the [wiki](//suckless.org/wiki) page on how to edit
+the pages you see here.
+
 diff generation
 ---------------
 For git users:
@@ -15,10 +27,9 @@ For tarballs:
 
 where `X.Y` is a dwm tag name or version number.
 
-
 patch application
 -----------------
-For git users:
+For git users, use `-3` to fix the conflict easily:
 
     cd dwm-directory
     git apply path/to/patch.diff

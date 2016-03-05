@@ -4,17 +4,24 @@ copyurl
 Description
 -----------
 
-Select and copy the last URL in the display. Multiple invocations cycle through
-the available URLs.
+Select and copy the last URL displayed with Mod1+l.
+Multiple invocations cycle through the available URLs.
+
+Notes
+-----
+
+URLs spanning multiple lines are not handled and only the first
+URL on each line is selected.
 
 Download
 --------
 
-* [st-git-20141017-copyurl.diff](st-git-20141017-copyurl.diff)
-* [st-git-20150601-copyurl.diff](st-git-20150601-copyurl.diff)
+ * [st-0.6-copyurl.diff](st-0.6-copyurl.diff)
+ * [st-git-20160210-copyurl.diff](st-git-20160210-copyurl.diff)
 
-Author
-------
+Authors
+-------
 
  * Brandon Mulcahy - brandon@jangler.info
- * FRIGN - dev@frign.de (git port)
+ * Laslo Hunhold - dev@frign.de (st-0.6 port)
+ * David Phillips - dbphillipsnz@gmail.com (st-git-20160210 port)

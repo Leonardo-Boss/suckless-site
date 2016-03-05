@@ -12,9 +12,15 @@ Battery
 Your battery may be called something different, so check /proc/acpi for its name. Also, change 89000 to whatever the capacity is for your battery.
 This returns the remaining battery power as a percentage.
 
-        $(echo $(awk '/rem/ { print $3/89000 }' /proc/acpi/battery/BAT0/state| hoc| cut -c3,4)%
+	$(echo $(awk '/rem/ { print $3/89000 }' /proc/acpi/battery/BAT0/state| hoc| cut -c3,4)%
 
 hoc comes from plan9port or 9base.
+
+Depending on your system, you can also use
+
+	cat /sys/class/power_supply/BAT0/capacity
+
+to get your battery status in percentage.
 
 Ram used
 ---
@@ -33,7 +39,7 @@ Returns the temperature of the cpu, in celcius.
 Volume
 ---
 
-	amixer get Front | tail -1 | sed 's/.*\[\([0-9]*%\)\].*/\1/'
+	amixer get Front | tail -n1 | awk '{ print $5 }' | tr -d []
 
 Change "Front" to your audio device
 

@@ -12,6 +12,16 @@ one can point surf to another URI by setting its XProperties.
 > until I forced myself to use surf for a week. I am now much less distracted
 > and more focused when browsing the web. dwm + surf <3
 
+Getting Started
+---------------
+Start the browser with
+
+	surf http://your-url
+
+You can navigate by clicking on links on the displayed page. Hit *Ctrl-g* to enter a new URL. For more commands consult
+
+	man surf
+
 Links
 -----
 * Mailing List: `dev+subscribe@suckless.org` ([Archives](http://lists.suckless.org/dev))
@@ -27,7 +37,6 @@ source code repository or get a copy with the following command:
 Download
 --------
 * [MIT/X Consortium license](http://git.suckless.org/surf/plain/LICENSE)
-* [surf 0.6](http://dl.suckless.org/surf/surf-0.6.tar.gz) (20130210)
+* [surf 0.7](http://dl.suckless.org/surf/surf-0.7.tar.gz) (2015-12-19)
 * See also [dmenu](http://tools.suckless.org/dmenu),
   [tabbed](http://tools.suckless.org/tabbed)
-

@@ -19,7 +19,7 @@ Add code to your status script to output the raw characters '\x03' to switch to 
 The following definition in 'config.h':
 
     #define NUMCOLORS         4
-    static const char colors[NUMCOLORS][ColLast][8] = {
+    static const char colors[NUMCOLORS][MAXCOLORS][8] = {
       // border   foreground background
       { "#000033", "#dddddd", "#000033" },  // normal
       { "#000088", "#ffffff", "#000088" },  // selected

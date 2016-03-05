@@ -1,3 +1,8 @@
+Launching
+---------
+
+To launch dwm, ideally you should setup a `~/.xinitrc` with at least `exec dwm`.
+
 Introduction
 ------------
 
@@ -14,21 +19,40 @@ By default there are 9 tags.
 Window model
 ------------
 
-Launch a few terminals `[Shift]+[Alt]+[Enter]` and dwm will _tile_ the windows
+Launch a few terminals with `[Shift]+[Alt]+[Enter]` and dwm will _tile_ the windows
 between the **master** and **stack**. A new terminal appears on the **master**
 window. Existing windows are pushed upon a **stack** to the right of the
 screen. `[Alt]+[Enter]` toggles windows between master and stack.
 
-To move a terminal pane/tile/window to another tag you select the window by
-hovering over the window. Then execute the bind `[Shift]+[Alt]+[2]` to move the
-window to the 2 tag. `[Alt]+[2]` moves your focus to tag 2.
+        +------+----------------------------------+--------+
+        | tags | title                            | status +
+        +------+---------------------+------------+--------+
+        |                            |                     |
+        |                            |                     |
+        |                            |                     |
+        |                            |                     |
+        |          master            |        stack        |
+        |                            |                     |
+        |                            |                     |
+        |                            |                     |
+        |                            |                     |
+        +----------------------------+---------------------+
+
+Moving Around
+-------------
+
+To **move to another terminal**, press `[Alt]+[j]` or `[Alt]+[k]`.
+
+To **move a terminal to another _tag_**, hover to the terminal and press `[Shift]+[Alt]+[2]`.
+
+To **focus on another _tag_**, press `[Alt]+[tag number]`.
+
+To **move a terminal to master or stack**, press `[Alt]+[d]` or `[Alt]+[i]`.
 
 As stated in the dwm manpage, you can click tags with the left mouse button and simulating `[Alt]+[tag number]`, but you can also click another tag with the right mouse button in order to bring those windows additionally
 into your current focus.
 
-To kill a window:
-
-	[Shift]+[Alt]+[c]
+To **kill a window**, press `[Shift]+[Alt]+[c]`.
 
 Layouts
 -------
@@ -82,14 +106,7 @@ Using the tools of X.org, this can be set using:
 	% xsetroot -name "Some Text"
 
 There are various tools and methods to populate this text with useful
-information from your system or services running on your system. A barebone
-for doing this in C is [dwmstatus](http://dwm.suckless.org/dwmstatus/).
-See the [xinitrc](http://dwm.suckless.org/xinitrc.example)
-example for how to do it using a script.
-
-Launching
----------
-
-To launch dwm, ideally you should setup an
-[xinitrc](http://dwm.suckless.org/xinitrc.example).
-
+information from your system or services running on your system. A barebone for
+doing this in C is [dwmstatus](http://dwm.suckless.org/dwmstatus/).  See the
+[xinitrc](http://dwm.suckless.org/xinitrc.example) example for how to do it
+using a script.

@@ -3,6 +3,10 @@ Stuff that sucks
 See the [philosophy](http://suckless.org/philosophy) page about what
 applies to this page.
 
+Bigger topics that suck:
+[systemd](http://suckless.org/sucks/systemd), [the
+web](http://suckless.org/sucks/web)
+
 Libraries
 ---------
 These libraries are broken/considered harmful and should not be used if it's
@@ -92,6 +96,34 @@ The following programs are broken (see [rocking stuff](/rocks) for saner alterna
 If you still need some program which expects a floating WM, use it in
 floating mode.
 
+Documentation
+-------------
+Somewhen GNU tried to make the world a bit more miserable by inventing
+[texinfo][texinfo]. The result is that in 2015 man pages are still used and
+the documentation of GNU tools requires you to run `info $application`. The
+info browser is awkward and unintuitive and the reason why noone gets further
+than finding 'q' to quit it.
+
+Look at GNU tools how to not handle documentation.
+
+Talking about the suck in enforced HTML documentation, which forces you to open
+up a 1 Gb of RAM wasting web browser, just to see some eye-candy, which could
+have been described in the source with some easy way to jump to that line in
+the source code, is not worth the time.
+
+The suckless way is to have a short usage and a descriptive manpage. The
+complete details are in the source.
+
+C Compilers
+---------
+* [GCC][gcc] is the virus which has spread into nearly every Linux
+  distribution and has added its language extensions to be not easily
+  replacable. As of 2015 it is now written in C++ and so complete suck. Why
+  can't a compiler just be a simple binary doing its work instead of adding
+  path dependencies deep into the system?
+* [Clang][clang] is written in C++. If you don't believe that it sucks, try to
+  build clang by hand.
+
 See also
 --------
 
@@ -101,3 +133,7 @@ The [list of harmful software](http://harmful.cat-v.org/software/) at [cat-v.org
 [st]:     http://st.suckless.org/
 [uuterm]: http://etalabs.net/uuterm.html
 [icccm]:  http://tronche.com/gui/x/icccm/
+[texinfo]: https://www.gnu.org/software/texinfo/
+[gcc]:    http://gcc.gnu.org/
+[clang]:  http://clang.llvm.org/
+

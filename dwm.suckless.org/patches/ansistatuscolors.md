@@ -2,7 +2,7 @@
 
 ## Description ##
 
-Lets you put colored text in your status bar, but you don''t have define them in your config.h. Instead, just put the ansi escape sequence in the output of your status bar script to print in color, as you would in a terminal. 
+Lets you put colored text in your status bar, but you don't have define them in your config.h. Instead, just put the ansi escape sequence in the output of your status bar script to print in color, as you would in a terminal.
 
 ## Configuration ##
 
@@ -14,7 +14,7 @@ apply it to dwm.c like so:
 
 ## Usage ##
 
-Just like you''d use them for colorizing a shell script. 
+Just like you'd use them for colorizing a shell script.
 
 more info is here: [http://www.frexx.de/xterm-256-notes/](http://www.frexx.de/xterm-256-notes/)
 
@@ -55,8 +55,8 @@ the code is one of the following:
             16-231 - xterm 256-color rgb color
             232-255 - grayscale
 
-in vim, to create a literal 'escape' character, type ctrl-v, esc. 
-in perl/python/c, within a string literal, it''s "\x1b". 
+in vim, to create a literal 'escape' character, type ctrl-v, esc.
+in perl/python/c, within a string literal, it's "\x1b".
 
 ### Example ###
     #!/usr/bin/env python

@@ -7,7 +7,7 @@ This section is for small, usable development libraries, which can be used for
 writing software that sucks less.
 These should preferrably be under the MIT/X consortium or BSD licenses, WTFPL,
 or public domain, or alternatively LGPL, because it makes them legally
-compatible with other suckless projects. 
+compatible with other suckless projects.
 
 libc implementations
 --------------------
@@ -32,8 +32,10 @@ Miscellaneous
 * [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modeled after libevent but much smaller (dual licensed under 2-clause BSD and GPL)
 * [mdocml](http://mdocml.bsd.lv/) - The mandoc UNIX manpage compiler toolset
 * [morpheus](http://morpheus.2f30.org) - a statically linked musl based Linux distro
+* [bare](http://git.uggedal.com/bare/) - simple distro using suckless software
 * [pjsip](http://www.pjsip.org/) - open source SIP stack (GPL)
 * [sdhcp](http://git.2f30.org/sdhcp/) - IPV4 DHCP client
+* [snore](https://github.com/clamiax/snore) - Sleep with feedback
 * [termbox](https://github.com/nsf/termbox) - simple ncurses-like library for creating TUIs
 
 Programs
@@ -46,10 +48,6 @@ for judging a programs as usable are:
 
 This covers most console-based programs and programs from [plan9port][].
 
-Accounting
-----------
-* [Ledger](http://ledger-cli.org/)
-
 Audio Players
 -------------
 * [C* Music Player](http://cmus.sourceforge.net/)
@@ -60,6 +58,7 @@ Audio Players
 * [mpg123](http://www.mpg123.de/) - A console mpg player which doesn't use auto*hell, or extra libraries.
 * [mpg321](http://mpg321.sourceforge.net)
 * [vorbis-tools](http://www.xiph.org/) (Ogg/FLAC) - Command-line tools to play Ogg and FLAC files.
+* [RSound](https://github.com/Themaister/RSound/) - Simple PCM audio server and client
 
 BitTorrent Clients
 ------------------
@@ -72,7 +71,7 @@ Feed aggregators
 File browsers
 -------------
 * [noice](http://git.2f30.org/noice/) - Small and portable file browser
-* [rover](https://github.com/lecram/rover) - Simple file browser for the terminal 
+* [rover](https://github.com/lecram/rover) - Simple file browser for the terminal
 
 File managers
 -------------
@@ -100,6 +99,7 @@ Image Viewers
 * [xli](http://web.aanet.com.au/gwg/xli.html)
 * [xzgv](http://sourceforge.net/projects/xzgv/)
 * [lel](http://git.2f30.org/lel/) - Suckless imagefile viewer (WIP)
+* [imv](https://github.com/exec64/imv) - Simple X11/Wayland Image Viewer. Depends on SDL2 and FreeImage.
 
 Instant Messaging Clients
 -------------------------
@@ -116,9 +116,12 @@ Mail Clients
 * [Mail][plan9port] - A mail client for [acme][acme]. Included with plan9port.
 * [dmc](http://git.suckless.org/dmc/) - A minimalistic approach to a commandline mail client (WIP)
 * [fdm](http://fdm.sourceforge.net/) - MDA
+* [isync](http://isync.sourceforge.net/) - MDA that can work better for IMAP
 * [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
+* [s-nail](http://sourceforge.net/projects/s-nail/) - An improved heirloom-mailx.
 * [mutt](http://www.mutt.org/)
 * [nmh](http://www.nongnu.org/nmh/)
+* [mmh](http://marmaro.de/prog/mmh/)
 * [Prayer](http://www-uxsup.csx.cam.ac.uk/~dpc22/prayer/) - Webmail interface for IMAP servers. Doesn't use javascript or frames and doesn't need cookies. 100% C code.
 
 Media Players
@@ -159,6 +162,8 @@ Utilities
 * [slmenu](https://bitbucket.org/rafaelgg/slmenu) - Dmenu spinoff for the console
 * [dvtm](http://www.brain-dump.org/projects/dvtm/) - dynamic virtual terminal manager
 * [abduco](http://www.brain-dump.org/projects/abduco/) - session {at,de}tach support
+* [nq](https://github.com/chneukirchen/nq) - unix command line queue utility
+* [entr](http://entrproject.org/) - Run arbitrary commands when files change
 
 Web Browsers
 ------------
@@ -193,6 +198,8 @@ X11
 * [ffcast](https://github.com/lolilolicon/FFcast2) – Simple screencasting.
 * [swm](https://github.com/dcat/swm) - A simple window manager called Simple Window Manager. Floating but keyboard-accessible.
 * [wmutils](https://github.com/wmutils/core) - A set of utilities for managing windows. Can be used on their own or to augment a WM itself. Support for tiling present.
+* [grabc](http://www.muquit.com/muquit/software/grabc/grabc.html) - Grab the
+  color of some pixel in X11.
 
 [plan9port]: http://swtch.com/plan9port/
 [acme]: http://acme.cat-v.org

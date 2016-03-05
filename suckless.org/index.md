@@ -5,15 +5,56 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2016-02-29
+----------
+Final suckless.org server renewal will happen this week:
+
+Heads up for the developers:
+
+	Old fingerprint:  a7:35:1c:f2:8e:69:08:85:80:2c:9a:d2:81:a1:23:cb.
+	New fingerprint:  80:bc:bb:29:a5:21:b7:12:ed:50:40:58:cf:71:54:7c
+
+The switch itself should be smooth to everyone else.
+
+2016-02-12
+----------
+[slock 1.3](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-1.3.tar.gz)
+
+2016-01-06
+----------
+[farbfeld 1](http://git.suckless.org/farbfeld) released: [download](http://dl.suckless.org/farbfeld/farbfeld-1.tar.gz)
+
+2015-12-19
+----------
+[surf 0.7](http://surf.suckless.org) released: [download](http://dl.suckless.org/surf/surf-0.7.tar.gz)
+
+2015-11-25
+----------
+[sent 0.2](http://tools.suckless.org/sent) released: [download](http://dl.suckless.org/tools/sent-0.2.tar.gz)
+
+2015-11-13
+----------
+Videos of the [slcon2 talks](http://suckless.org/conference/) are now available.
+
+2015-11-09
+----------
+[dwm 6.1](http://dwm.suckless.org) released: [download](http://dl.suckless.org/dwm/dwm-6.1.tar.gz)
+
+[dmenu 4.6](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.6.tar.gz)
+
+2015-09-23
+----------
+Kai and Anselm gave an interview about suckless.org on Randal Schwartz' [FLOSS Weekly show](https://twit.tv/shows/floss-weekly/episodes/355?autostart=false)
+
 2015-07-07
 ----------
 [st 0.6](http://st.suckless.org) released: [download](http://dl.suckless.org/st/st-0.6.tar.gz)
 
 2015-02-14
 ----------
-There will be [slcon2](http://suckless.org/conference/) held in Budpast end of Oct 2015.
+[slcon2](http://suckless.org/conference/) will be held in Budapest on 2015-10-(30-31).
 
-The CfP for interested participants is now open and will end *30 April 2015*.
+The CfP for interested participants is now open and will end on 2015-04-30.
 
 2014-12-22
 ----------
@@ -38,10 +79,6 @@ community is invited to come, meet and hack!
 ----------
 [ubase 0.1](http://tools.suckless.org/ubase) released: [download](http://dl.suckless.org/ubase/ubase-0.1.tar.gz)
 
-2014-04-05
-----------
-[st 0.5](http://st.suckless.org) released: [download](http://dl.suckless.org/st/st-0.5.tar.gz)
-
 2014-01-21
 ----------
 [tabbed 0.6](http://tools.suckless.org/tabbed) released: [download](http://dl.suckless.org/tools/tabbed-0.6.tar.gz)
@@ -62,10 +99,6 @@ community is invited to come, meet and hack!
 ----------
 We are glad to announce the [slcon 2013](/conference) programme.
 
-2013-02-10
-----------
-[surf 0.6](http://surf.suckless.org) released: [download](http://dl.suckless.org/surf/surf-0.6.tar.gz)
-
 2012-11-29
 ----------
 We are glad to announce the switch to git from mercurial in all of our
@@ -85,14 +118,6 @@ We will miss him a lot.
 
 RIP
 
-2012-01-08
-----------
-[dmenu 4.5](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.5.tar.gz)
-
-2011-12-19
-----------
-[dwm 6.0](http://dwm.suckless.org) released: [download](http://dl.suckless.org/dwm/dwm-6.0.tar.gz)
-
 2011-05-14
 ----------
 Anselm gave a talk about **The 'suckless.org' universe** at the [LinuxTag 2011](http://www.linuxtag.org)
@@ -109,9 +134,9 @@ conference in Berlin.
 2010-03-28
 ----------
 We learned today that the previous wmii maintainer, who wasn't actively
-involved since 2007, Denis Grelich, [died on 12 March
-2010](http://www.lmt.uni-saarland.de/de/aktuelles/grelich.html). We offer him our
-condolences and thank him for his work. Rest in peace.
+involved since 2007, Denis Grelich,
+[died on 2010-03-12](https://web.archive.org/web/20140208043925/http://www.lmt.uni-saarland.de/de/aktuelles/grelich.html).
+We offer him our condolences and thank him for his work. Rest in peace.
 
 2010-03-07
 ----------
@@ -119,11 +144,11 @@ We applied as a mentoring organisation for GSoC 2010. See our [project ideas for
 
 2010-02-13
 ----------
-Some of us will visit [CLT2010](http://chemnitzer.linux-tage.de/2010/). Anselm will give a [talk](http://chemnitzer.linux-tage.de/2010/vortraege/detail.html?idx=308) about [stali](http://sta.li) on the second day of CLT2010 at 5pm.
+Some of us will visit [CLT2010](http://chemnitzer.linux-tage.de/2010/). Anselm will give a [talk](http://chemnitzer.linux-tage.de/2010/vortraege/detail.html?idx=308) about [stali](http://sta.li) on the second day of CLT2010 at 17:00.
 
 2009-12-28
 ----------
-There was a small community meeting in Berlin! Thanks to all attenders.
+There was a small community meeting in Berlin! Thanks to all attendees.
 
 2008-08-02
 ----------

@@ -18,7 +18,7 @@ void setstatus(char *str) {
 
 float getfreq(char *file) {
 	FILE *fd;
-	char *freq; 
+	char *freq;
 	float ret;
 
 	freq = malloc(10);
@@ -55,11 +55,11 @@ char *getdatetime() {
 		fprintf(stderr, "strftime is 0.\n");
 		exit(1);
 	}
-	
+
 	return buf;
 }
 
-int getbattery() {
+float getbattery() {
 	FILE *fd;
 	int energy_now, energy_full, voltage_now;
 
@@ -107,14 +107,14 @@ int main(void) {
 
 	if((status = malloc(200)) == NULL)
 		exit(1);
-	
+
 
 	for (;;sleep(1)) {
 		cpu0 = getfreq("/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq");
 		cpu1 = getfreq("/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq");
 		datetime = getdatetime();
 		bat0 = getbattery();
-		snprintf(status, 200, "%0.2f, %0.2f | %d%% | %s", cpu0, cpu1, bat0, datetime);
+		snprintf(status, 200, "%0.2f, %0.2f | %.2lf%% | %s", cpu0, cpu1, bat0, datetime);
 
 		free(datetime);
 		setstatus(status);

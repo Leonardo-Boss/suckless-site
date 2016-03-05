@@ -11,9 +11,19 @@ Mailing lists
 
 ### Best practice
 
-When beginning a new discussion on the `dev@suckless.org` mailing
-list, please mention `dwm` or `dmenu` in the subject *only* if your
-email is strictly `dwm` or `dmenu` related.
+When beginning a new discussion on the mailinglists, except for the wiki@
+mailinglist, prepend your subject with the project name you are referring to.
+This makes it easier for project maintainers to answer your questions.
+
+
+Here is an example:
+
+	Subject: [st] X not working
+
+
+If you are not referring to any project of course use whatever subject you
+like.
+
 
 ### Mailing list commands
 
@@ -36,6 +46,20 @@ following addresses to perform the described action.
 * `dev+help@MAILHOST` - receive detailed description of the mailing list commands
 
 ### `hackers@suckless.org`
+
+When sending a patch use the following commands:
+
+	cd $project
+	git send-email --subject-prefix="$(basename $(pwd))][PATCH" \
+		--to hackers@suckless.org -1
+
+This will send the last commit of the repository to the mailinglist adding a
+prefix to the subject which includes the appropriate project name. This allows
+easier referencing and filtering of the e-mails for the maintainers subscribed
+to hackers@.
+
+Be sure to have setup your sender address in git and be subscribed to the
+mailinglist so you can see eventual comments on your patches.
 
 * `hackers+subscribe@MAILHOST` - subscribe to the mailing list (read/write)
 * `hackers+subscribe-digest@MAILHOST` - subscribe to the digest version of the mailing list (read/write)
@@ -110,7 +134,7 @@ Other popular channels:
 [devarchive]: http://lists.suckless.org/dev/
 [dwmarchive]: http://lists.suckless.org/dwm/
 [hackersarchive]: http://lists.suckless.org/hackers/
-[newsarchive]: http://lists.suckless.org/hackers/
+[newsarchive]: http://lists.suckless.org/news/
 [wikiarchive]: http://lists.suckless.org/wiki/
 [wmiiarchive]: http://lists.suckless.org/wmii/
 

@@ -11,12 +11,13 @@ Download
 Patches against different versions of dwm are available at
 [dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
 
- * [dwm-14343e69cc59-systray.diff](dwm-14343e69cc59-systray.diff) () (20150808)
- * [dwm-6.1-systray.diff](dwm-6.1-systray.diff) (21630b) (20140209)
- * [dwm-c794a9f5ae5e-systray.diff](dwm-c794a9f5ae5e-systray.diff) (19946b) (20130119)
+ * [dwm-git-20160103-systray.diff](dwm-git-20160103-systray.diff) (3465bed)
+ * [dwm-6.1-systray.diff](dwm-6.1-systray.diff) (22K) (20151109)
+ * [dwm-git-20130119-systray.diff](dwm-git-20130119-systray.diff]) (19946b)
  * [dwm-6.0-systray.diff](dwm-6.0-systray.diff) (19788b) (20130119)
 
 Author
 ------
  * Jan Christoph Ebersbach <jceb@e-jc.de>
  * Eon S. Jeon <esjeon@hyunmu.am> (14343e69cc59)
+ * David Phillips (5ed9c48 (6.1), and 20160103)

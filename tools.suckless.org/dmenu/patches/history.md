@@ -22,3 +22,11 @@ Author
 ------
 
 * Peter John Hartman (wart_) <[http://antiopus.trilidun.org/durandus/](http://antiopus.trilidun.org/durandus/)>
+
+Note
+----
+
+As an alternative to the patch above, the following script is meant to replace
+`dmenu_run` : it handles the command history in a similar way as the patch and
+can be used with an unpatched dmenu 4.6.
+[dmenu_run_history](http://tools.suckless.org/dmenu/scripts/dmenu_run_with_command_history) 

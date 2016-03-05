@@ -18,11 +18,13 @@ and view so you could replace all usages if you wanted.
 Download
 --------
 
- * [dwm-5.9-combo.diff](dwm-5.9-combo.diff) (2010-10-30)
- * [dwm-6.0-combo.diff](dwm-6.0-combo.diff) (2012-10-09)
+ * [dwm-5.9-combo.diff](dwm-5.9-combo.diff) - 2010-10-30
+ * [dwm-6.0-combo.diff](dwm-6.0-combo.diff) - 2012-10-09
+ * [dwm-6.1-combo.diff](dwm-6.1-combo.diff) - 2016-01-22
 
 Author
 ------
 
  * Wolf Tivy - wolf at tivy dot com.
  * Dan McNair - cosfx at h0v3 dot net (mechanical update to 6.0)
+ * Matthew Boswell - mordervomubel+suckless at lockmail dot us (mechanical update to 6.1)

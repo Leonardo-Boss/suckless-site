@@ -18,9 +18,10 @@ filled/empty rectangles.
 Download
 --------
 
-* [dwm-6.1-hide_vacant_tags.diff](dwm-6.1-hide_vacant_tags.diff)  (1169b) (20140607)
+* [dwm-6.1-hide_vacant_tags.diff](dwm-6.1-hide_vacant_tags.diff) - 2016-01-22
 
 Author
 ------
 
 * [Ondřej Grover](mailto:ondrej.grover@gmail.com)
+* Matthew Boswell - mordervomubel+suckless at lockmail dot us (mechanical update for dwm 6.1 release)

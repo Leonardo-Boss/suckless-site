@@ -9,8 +9,8 @@ Below is the script to do this:
 
 	#!/bin/sh
 
-	xprop -root -f WM_NAME "8u" \
-		| sed -n -r 's/WM_NAME\(STRING\) = \"(.*)\"/\1/p'
+	xprop -root -notype -f WM_NAME "8u" \
+		| sed -n -r 's/WM_NAME = \"(.*)\"/\1/p'
 
 Link: [dwmgetstatus.sh](http://dwm.suckless.org/dwmgetstatus.sh)
 

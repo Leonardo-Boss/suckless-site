@@ -6,8 +6,10 @@ dmenu's user, feel free to add your own scripts, or comment existents.
 Download
 --------
 
+* [clipmenu](https://github.com/cdown/clipmenu): Clipboard management using dmenu
 * [passmenu](http://git.zx2c4.com/password-store/tree/contrib/dmenu)
   : get password from pass.
+* [passmenu2](passmenu2): "pass" browser, vertical display and recursive "pass" folder support
 * [run-recent](run-recent) : List recent commands first. End a command
   with ";" to run it in e terminal.
   [source](https://bbs.archlinux.org/viewtopic.php?id=56646&p=12)
@@ -18,3 +20,7 @@ Download
  [run-recent](run-recent), but it uses atime to find recently executed commands
  rather than a cache. As such, it also takes into account programs executed from
  the terminal.
+* [browse](https://github.com/clamiax/scripts/blob/master/src/browse):
+  little files navigator
+* [dmenu_run_history](http://tools.suckless.org/dmenu/scripts/dmenu_run_with_command_history) :
+  dmenu_run alternative with command history

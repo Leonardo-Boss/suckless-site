@@ -176,6 +176,7 @@ Implementations
 * [Go encoder/decoder](https://github.com/hullerob/go.farbfeld)
 * [resize](https://github.com/ender672/farbfeld-resize) image filter
 * [gamut](https://github.com/erik/gamut) image filter collection
+* [gimp-farbfeld](https://github.com/ids1024/gimp-farbfeld) gimp plug-in
 
 Author
 ------

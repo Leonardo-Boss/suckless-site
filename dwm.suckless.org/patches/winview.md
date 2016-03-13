@@ -4,19 +4,20 @@ Winview
 Description
 -----------
 
-Adds a command to select the view of a window. The list of tags to be displayed
-is matched to the window tag list. This command is typically used from the
-all-window view.
+Dwm tags are a powerfull feature that allows organizing windows in
+workspaces. Sometime it can be difficult to remember the tag to activate to
+unhide a window. With the winview patch the window to unhide can be selected
+from the all-window view. The user switches to the all-window view (`Mod1-0`),
+selects the window (`Mod1-j`/`k` or using the mouse) and press `Mod1-o`. The key
+`Mod1-o` switches the view to the selected window tag.
 
-Usage
------
+Recommend patches
+-----------------
 
-The winview command is assigned by default to the key `Mod1-o`.  To select the
-view of a window which is not currently displayed, move to the all-window view
-with `Mod1-0` key, give focus to this window (using the mouse or `Mod1-j`/`k`
-keys) and switch to the window view with `Mod1-o`. We recommend [grid](grid)
-layout for the all-window view, this layout is well adapted to display many
-windows in a limited space.
+The [grid](gridmode) layout is well adapted to display many windows in a limited
+space. Using both [grid](gridmode) and [pertag](pertag) patches you will be able to
+select this layout for the all-window view while keeping your preferred
+layout for the other views.
 
 Configuration and Installation
 ------------------------------
@@ -44,7 +45,8 @@ template, config.def.h.
 Download
 --------
 
- * [dwm-6.0-winview.diff](dwm-6.0-winview.diff)
+ * [dwm-6.1-winview.diff](dwm-6.1-winview.diff)
+ * [dwm-6.0-winview.diff](historical/dwm-6.0-winview.diff)
 
 Author
 ------

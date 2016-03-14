@@ -160,6 +160,7 @@ Download
 --------
 
 * [farbfeld-1](http://dl.suckless.org/farbfeld/farbfeld-1.tar.gz) (2016-01-06)
+* [farbfeld-2](http://dl.suckless.org/farbfeld/farbfeld-2.tar.gz) (2016-03-14)
 
 Also make sure to check your package manager. The following distributions
 provide packages:

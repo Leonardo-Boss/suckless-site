@@ -17,15 +17,15 @@ This is a barebone project you can use for changing it to your needs.
 User submitted versions
 -----------------------
 
-Please add your own version of dwmstatus here.
+Please add your own version of dwmstatus here (keeping the list sorted).
 
+* [barM](barM.c) - can display all, time/date, ram usage, output of commands (the New BarMonitor).
 * [dwm-bar.c](https://github.com/wifiextender/dwm-bar) - Display overall usage about: cpu and cpu temperature, ram, disk, installed packages, kernel, motherboard voltage, system fans and their speed in RPM, motherboard (name, vendor, temperature), volume and time. I've wrote the code myself, so it is unique.
 * [dwmsd](https://github.com/johnko/dwmsd) - a daemon that listens on localhost tcp (may be useful as a base for asynchronous updates)
+* [go-dwmstatus](https://github.com/oniichaNj/go-dwmstatus) - A Go bar that prints current MPD song, load averages, time/date and battery percentage.
+* [gods](https://github.com/schachmat/gods) - implemented in Go. prints network speed, cpu, ram, date/time
 * [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent and date/time
 * [suspend-statusbar.c](https://github.com/akozadaev/dwm-statusbar) - loadavg, wifi, battery and date. If battery goes below threshold - run suspend command
-* [gods](https://github.com/schachmat/gods) - implemented in Go. prints network speed, cpu, ram, date/time
-* [go-dwmstatus](https://github.com/oniichaNj/go-dwmstatus) - A Go bar that prints current MPD song, load averages, time/date and battery percentage.
-* [barM](barM.c) - can display all, time/date, ram usage, output of commands (the New BarMonitor).
 * slstatus - suckless statusbar - written in pure c without any system() - includes wifi percentage, battery, cpu usage and temperature, ram usage, alsa volume and time / date - [GitHub](https://github.com/drkh5h/slstatus), [Download](slstatus.tar.gz)
 
 Helper functions

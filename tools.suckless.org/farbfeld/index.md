@@ -165,9 +165,10 @@ Download
 Also make sure to check your package manager. The following distributions
 provide packages:
 
-* Gentoo (Portage)
-* Arch Linux (AUR)
-* Void Linux
+* [Arch Linux (AUR)](https://aur.archlinux.org/packages/farbfeld)
+* [FreeBSD](https://svnweb.freebsd.org/ports/head/graphics/farbfeld/)
+* [Gentoo](https://packages.gentoo.org/packages/media-gfx/farbfeld)
+* [Void Linux](https://github.com/voidlinux/void-packages/tree/master/srcpkgs/farbfeld)
 
 Implementations
 ---------------

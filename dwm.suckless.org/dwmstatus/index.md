@@ -19,6 +19,7 @@ User submitted versions
 
 Please add your own version of dwmstatus here (keeping the list sorted).
 
+* [slstatus](https://github.com/drkh5h/slstatus) - suckless alternative to Bash scripts (inefficient) and Conky (bloated for this use) - it displays various system information and can be customized via config.h
 * [barM](barM.c) - can display all, time/date, ram usage, output of commands (the New BarMonitor).
 * [dstat](https://www.umaxx.net/dl) [Screenshot](https://www.umaxx.net/dstat.png) - displays the current network throughput, CPU usage, performance settings, battery status, temperature, volume settings, as well as the current date and time (OpenBSD only, no support for Linux).
 * [dwm-bar.c](https://github.com/wifiextender/dwm-bar) - Display overall usage about: cpu and cpu temperature, ram, disk, installed packages, kernel, motherboard voltage, system fans and their speed in RPM, motherboard (name, vendor, temperature), volume and time. I've wrote the code myself, so it is unique.
@@ -27,7 +28,6 @@ Please add your own version of dwmstatus here (keeping the list sorted).
 * [gods](https://github.com/schachmat/gods) - implemented in Go. prints network speed, cpu, ram, date/time
 * [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent and date/time
 * [suspend-statusbar.c](https://github.com/akozadaev/dwm-statusbar) - loadavg, wifi, battery and date. If battery goes below threshold - run suspend command
-* slstatus - suckless statusbar - written in pure c without any system() - includes wifi percentage, battery, cpu usage and temperature, ram usage, alsa volume and time / date - [GitHub](https://github.com/drkh5h/slstatus), [Download](slstatus.tar.gz)
 
 Helper functions
 ----------------

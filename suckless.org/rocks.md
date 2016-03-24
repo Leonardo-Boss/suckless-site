@@ -217,6 +217,7 @@ Web Servers
 * [thttpd](http://acme.com/software/thttpd/) - Outperforms many bigger httpds. Old, still works very well!
 * [mini_httpd](http://acme.com/software/mini_httpd/) - By the thttpd developers. Even smaller subset of thttpd with support for .htpasswd, CGI, dirlisting, HTTP errors and SSL, nothing more or less than that.
 * [darkhttpd](https://unix4lyfe.org/darkhttpd/) - Darkhttpd is a simple, fast HTTP 1.1 web server for static content.
+* [Lwan](https://lwan.ws/) - Lwan is a high-performance & scalable web server that serves both static and dynamic content.
 * [quark](http://git.suckless.org/quark/) - suckless httpd, not released yet
 
 Gopher Servers

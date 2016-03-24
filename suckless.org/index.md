@@ -5,9 +5,13 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2016-03-24
+----------
+[stali-0.0 ISO](http://dl.sta.li/stali.iso) pre-release. See [stali](http://sta.li) for more details.
+
 2016-02-29
 ----------
-Final suckless.org server renewal will happen this week:
+suckless.org server renewal will happen this spring:
 
 Heads up for the developers:
 

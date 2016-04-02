@@ -5,9 +5,9 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
-2016-03-24
+2016-04-02
 ----------
-[stali-0.0 ISO](http://dl.sta.li/stali.iso) pre-release. See [stali](http://sta.li) for more details.
+[stali ISO](http://dl.sta.li/stali.iso) pre-release. See [stali](http://sta.li) for more details.
 
 2016-02-29
 ----------

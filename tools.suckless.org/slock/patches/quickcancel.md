@@ -7,7 +7,7 @@ Description
 Allow slock to be cancelled by simple mouse movement within the
 first 3 seconds after starting.
 
-This is usefull if you forgot to disable `xautolock` during
+This is useful if you forgot to disable `xautolock` during
 an activity that requires no input (e.g. reading text, watching video).
 
 Notes

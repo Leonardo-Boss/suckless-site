@@ -179,6 +179,7 @@ Implementations
 * [resize](https://github.com/ender672/farbfeld-resize) image filter
 * [gamut](https://github.com/erik/gamut) image filter collection
 * [gimp-farbfeld](https://github.com/ids1024/gimp-farbfeld) gimp plug-in
+* [farbfeld utilities](http://zzo38computer.org/fossil/farbfeld.ui/) huge collection of image filters
 
 Author
 ------

@@ -219,6 +219,7 @@ Web Servers
 * [mini_httpd](http://acme.com/software/mini_httpd/) - By the thttpd developers. Even smaller subset of thttpd with support for .htpasswd, CGI, dirlisting, HTTP errors and SSL, nothing more or less than that.
 * [darkhttpd](https://unix4lyfe.org/darkhttpd/) - Darkhttpd is a simple, fast HTTP 1.1 web server for static content.
 * [quark](http://git.suckless.org/quark/) - suckless httpd, not released yet
+* [shus](https://github.com/dimkr/shus) - A tiny HTTP server for static sites
 
 Gopher Servers
 --------------

@@ -27,6 +27,11 @@ Links
 * Mailing List: `dev+subscribe@suckless.org` ([Archives](http://lists.suckless.org/dev))
 * IRC channel: #suckless at irc.oftc.net
 
+Note On Webkit Versions
+-----------------------
+Compile your own webkit or expect hell. The packaging of webkit is pure
+insane.
+
 Development
 -----------
 surf is actively developed. You can [browse](http://git.suckless.org/surf) its

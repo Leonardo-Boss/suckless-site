@@ -8,7 +8,7 @@ The following contain good information, some of which is repeated below, some of
 
 * <http://doc.cat-v.org/bell_labs/pikestyle>
 * <https://www.kernel.org/doc/Documentation/CodingStyle>
-* <http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man9/style.9?query=style&sec=9>
+* <http://man.openbsd.org/OpenBSD-current/man9/style.9>
 
 File Layout
 -----------

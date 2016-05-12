@@ -71,7 +71,7 @@ Code
 	fid=$2
 	xid=$3
 
-	dmenu="dmenu -e $xid -nb $normbgcolor -nf $normfgcolor \
+	dmenu="dmenu -nb $normbgcolor -nf $normfgcolor \
 		   -sb $selbgcolor -sf $selfgcolor"
 
 	s_get_prop() { # xprop

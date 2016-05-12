@@ -57,7 +57,7 @@ Code
 	p=$2
 	uri=`xprop -id $xid _SURF_URI | cut -d '"' -f 2`
 	kw=`xprop -id $xid _SURF_FIND | cut -d '"' -f 2`
-	dmenu="dmenu -e $xid -fn $font -nb $normbgcolor -nf $normfgcolor \
+	dmenu="dmenu -fn $font -nb $normbgcolor -nf $normfgcolor \
 		   -sb $selbgcolor -sf $selfgcolor"
 
 	s_xprop() {

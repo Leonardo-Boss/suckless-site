@@ -64,3 +64,4 @@ Related links
 * [Facebook's code quality problem](http://www.darkcoding.net/software/facebooks-code-quality-problem/)
 * [Minimal Viable Programs](http://joearms.github.io/2014/06/25/minimal-viable-program.html)
 * [Why I Write Games in C](http://jonathanwhiting.com/writing/blog/games_in_c/)
+* [Use of command-line tools for effective data processing](http://aadrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html)

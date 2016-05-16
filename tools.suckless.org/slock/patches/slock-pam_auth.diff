@@ -30,7 +30,7 @@ index f93879e..e054879 100644
  # flags
  CPPFLAGS = -DVERSION=\"${VERSION}\" -DHAVE_SHADOW_H
 diff --git a/slock.c b/slock.c
-index c9cdee2..2abf467 100644
+index c9cdee2..6fdfe2f 100644
 --- a/slock.c
 +++ b/slock.c
 @@ -17,6 +17,8 @@
@@ -123,3 +123,15 @@ index c9cdee2..2abf467 100644
  #endif
  				if (running) {
  					XBell(dpy, 100);
+@@ -299,10 +344,10 @@ main(int argc, char **argv) {
+ 	dontkillme();
+ #endif
+ 
++#ifndef HAVE_BSD_AUTH
+ 	if (!getpwuid(getuid()))
+ 		die("no passwd entry for you\n");
+ 
+-#ifndef HAVE_BSD_AUTH
+ 	pws = getpw();
+ #endif
+ 

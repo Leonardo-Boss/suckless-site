@@ -134,7 +134,7 @@ Password managers
 -----------------
 * [pass](http://www.passwordstore.org/) - The standard unix password manager
 * [tpm](https://github.com/nmeum/tpm/) - Tiny password manager
-* [tpm](https://notabug.org/kl3/tpm/) - Tiny password manager (actively maintained fork of nmeum's tpm)
+* [spm](https://notabug.org/kl3/spm/) - Simple password manager (actively maintained fork of nmeum's tpm)
 
 PDF Viewers
 -----------

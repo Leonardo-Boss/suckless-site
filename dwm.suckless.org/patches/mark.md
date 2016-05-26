@@ -48,4 +48,4 @@ old behaviours of the patch(dwm-6.1-mark.diff):
 * [dwm-6.1-mark.diff](dwm-6.1-mark.diff) (7161b) (20160220)
 
 ## Author ##
-* phi <crispyforg@163.com>
+* phi <crispyfrog@163.com>

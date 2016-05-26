@@ -17,5 +17,4 @@ the most recent client in the other column).
 * [dwm-6.1-switchcol.diff](dwm-6.1-switchcol.diff) (1126b) (20160325)
 
 ## Author
-* phi <crispyforg@163.com>
-
+* phi <crispyfrog@163.com>

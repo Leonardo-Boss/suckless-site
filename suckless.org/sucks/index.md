@@ -26,7 +26,7 @@ possible to avoid them. If you use them, consider looking for alternatives.
 * [GMP][3] - GNU's bignum/arbitrary precision library. Quite bloated, slow and
   [calls abort() on failed malloc][4]
 
-  Alternatives: [libtommath][5], [TomsFastMath][6], [MPI][7]
+  Alternatives: [libtommath][5], [TomsFastMath][6], [MPI][7], [libzahl][11] (WIP), [hebimath][12] (WIP)
 
 
 [1]: http://library.gnome.org/devel/glib/
@@ -39,16 +39,18 @@ possible to avoid them. If you use them, consider looking for alternatives.
 [8]: https://bugzilla.gnome.org/show_bug.cgi?id=674446
 [9]: https://github.com/atheme/libmowgli-2
 [10]: https://github.com/rofl0r/libulz
+[11]: http://git.suckless.org/libzahl
+[12]: https://github.com/suiginsoft/hebimath
 
 Build Systems
 -------------
 
-* [cmake][11] (written in C++) - so huge and bloated, compilation takes longer
+* [cmake][13] (written in C++) - so huge and bloated, compilation takes longer
   than compiling GCC (!).
   It's not even possible to create freestanding Makefiles, since the generated
   Makefiles call back into the cmake binary itself.
 
-* [waf][12] and [scons][13] (both written in Python) - waf code is dropped
+* [waf][14] and [scons][15] (both written in Python) - waf code is dropped
   into the compilee's build tree, so it does not benefit from updated versions
   and bugfixes.
 
@@ -56,13 +58,13 @@ As these build systems are often used to compile C programs, one has to set up a
 C++ compiler or Python interpreter respectively just in order to be able to build
 some C code.
 
-Alternatives: [mk][14], [gnu make][15]
+Alternatives: [mk][16], [gnu make][17]
 
-[11]: http://www.cmake.org/
-[12]: https://code.google.com/p/waf/
-[13]: http://www.scons.org/
-[14]: http://doc.cat-v.org/plan_9/4th_edition/papers/mk
-[15]: https://www.gnu.org/software/make/
+[13]: http://www.cmake.org/
+[14]: https://code.google.com/p/waf/
+[15]: http://www.scons.org/
+[16]: http://doc.cat-v.org/plan_9/4th_edition/papers/mk
+[17]: https://www.gnu.org/software/make/
 
 Programs
 --------

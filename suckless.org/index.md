@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2016-06-03
+----------
+[slcon3](http://suckless.org/conference) Call for papers opened. Submission deadline: 2016-07-20
+
 2016-04-02
 ----------
 [stali ISO](http://dl.sta.li/stali.iso) pre-release. See [stali](http://sta.li) for more details.

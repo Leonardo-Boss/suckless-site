@@ -13,6 +13,7 @@ We expect talk proposals between 30-60 minutes each covering either
 technical or philosophical topics (rants are welcome as well).
 
 Each proposal should contain
+
 * the name of the author
 * an abstract written in English
 * presumably a couple of reference links to related ideas or topics

@@ -30,6 +30,10 @@ The list is exceeding the life-time of a philosopher to discuss all
 implications on the sanity of a system design. That's why the comments are
 kept short.
 
+Part 2
+------
+* [System now does your DNS](https://lists.dns-oarc.net/pipermail/dns-operations/2016-June/014964.html)
+
 Part 1
 ------
 (If you are adding more parts, link to the right revision and not just the

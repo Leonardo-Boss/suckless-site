@@ -45,6 +45,9 @@ draw some text somewhere. And this is what a suckless font rendering library
 should do: Give it a font string and render at some position the given font
 without having to care about font specifics.
 
+[Some work](https://git.ekleog.org/dtext) has already been done to replace
+libXft and Fontconfig. Real-world testing is however still needed.
+
 ***Requirements:*** C knowledge, some X11 knowledge and of course knowledge
 about the font formats and how to handle them.
 

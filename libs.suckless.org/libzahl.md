@@ -1,6 +1,6 @@
 libzahl
 =======
-`libzahl` is a library for arbitrary size integers, bitint.
+`libzahl` is a library for arbitrary size integers, bigint.
 
 Download
 --------

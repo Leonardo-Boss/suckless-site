@@ -17,7 +17,7 @@ or get a copy using git with the following command:
 Support
 -------
 If you cannot find what you need in the man pages, the
-reference sheet, or the reference manual, the best why
+reference sheet, or the reference manual, the best way
 to get support is to contact
 [the author](http://suckless.org/people/maandree) via
 e-mail.

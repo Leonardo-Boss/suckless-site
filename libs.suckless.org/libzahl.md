@@ -12,7 +12,7 @@ Development
 You can browse its [source code repository](http://git.suckless.org/libzahl)
 or get a copy using git with the following command:
 
-git clone http://git.suckless.org/libzahl
+	git clone http://git.suckless.org/libzahl
 
 Support
 -------

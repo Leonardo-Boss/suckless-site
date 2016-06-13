@@ -15,5 +15,4 @@ LIBIXP
 Download
 --------
 * [libixp-0.5](http://dl.suckless.org/libs/libixp-0.5.tar.gz)
-* <code>git clone [http://git.suckless.org/libixp](http://git.suckless.org/libixp)</code>
 

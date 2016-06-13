@@ -39,7 +39,7 @@ possible to avoid them. If you use them, consider looking for alternatives.
 [8]: https://bugzilla.gnome.org/show_bug.cgi?id=674446
 [9]: https://github.com/atheme/libmowgli-2
 [10]: https://github.com/rofl0r/libulz
-[11]: http://git.suckless.org/libzahl
+[11]: http://libs.suckless.org/libzahl
 [12]: https://github.com/suiginsoft/hebimath
 
 Build Systems

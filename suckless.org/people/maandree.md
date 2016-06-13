@@ -1,7 +1,7 @@
 Mattias Andrée (maandree)
 =========================
 
-I'm the maintainer of [libzahl](http://git.suckless.org/libzahl/)
+I'm the maintainer of [libzahl](http://libs.suckless.org/libzahl/)
 and a contibutor to [sbase](http://core.suckless.org/sbase) and
 [ubase](http://core.suckless.org/ubase).
 

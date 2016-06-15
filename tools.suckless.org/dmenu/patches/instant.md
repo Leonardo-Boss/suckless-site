@@ -6,6 +6,7 @@ Adds an flag which will cause dmenu to select an item immediately if theres one 
 Download
 --------
 * [dmenu-instant.diff](dmenu-instant.diff)
+* [dmenu-git-instant.diff](dmenu-git-instant.diff)
 
 Author
 ------

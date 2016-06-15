@@ -17,13 +17,13 @@ config.h example:
 
 Download
 --------
-* [st-0.3-wordbreak.diff](st-0.3-wordbreak.diff)
-* [st-0.4-wordbreak.diff](st-0.4-wordbreak.diff)
-* [st-0.4.1-wordbreak.diff](st-0.4.1-wordbreak.diff)
-* [st-0.5-wordbreak.diff](st-0.5-wordbreak.diff)
+* [st-wordbreak-0.3.diff](st-wordbreak-0.3.diff)
+* [st-wordbreak-0.4.diff](st-wordbreak-0.4.diff)
+* [st-wordbreak-0.4.1.diff](st-wordbreak-0.4.1.diff)
+* [st-wordbreak-0.5.diff](st-wordbreak-0.5.diff)
 
 Authors
 -------
 
  * Stephen Paul Weber - singpolyma@singpolyma.net
- * Laslo Hunhold - dev@frign.de (st-0.4, st-0.4.1, st-0.5 ports)
+ * Laslo Hunhold - dev@frign.de (0.4, 0.4.1, 0.5 ports)

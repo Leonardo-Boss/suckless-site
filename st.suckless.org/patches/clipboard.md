@@ -12,10 +12,10 @@ CLIPBOARD.
 
 ## Download
 
-* [st-0.6-clipboard.diff](st-0.6-clipboard.diff)
-* [st-git-20150917-clipboard.diff](st-git-20150917-clipboard.diff)
+* [st-clipboard-0.6.diff](st-clipboard-0.6.diff)
+* [st-clipboard-git-20150917.diff](st-clipboard-git-20150917.diff)
 
 ## Authors
 
  * Kai Hendry - hendry@iki.fi
- * Laslo Hunhold - dev@frign.de (st-git-20150917 port)
+ * Laslo Hunhold - dev@frign.de (git-20150917 port)

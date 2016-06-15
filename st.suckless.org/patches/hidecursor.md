@@ -10,12 +10,12 @@ is moved in the terminal window.
 Download
 --------
 
-* [st-0.5-hidecursor.diff](st-0.5-hidecursor.diff)
-* [st-0.6-hidecursor.diff](st-0.6-hidecursor.diff)
-* [st-git-20150917-hidecursor.diff](st-git-20150917-hidecursor.diff)
+* [st-hidecursor-0.5.diff](st-hidecursor-0.5.diff)
+* [st-hidecursor-0.6.diff](st-hidecursor-0.6.diff)
+* [st-hidecursor-git-20150917.diff](st-hidecursor-git-20150917.diff)
 
-Author
-------
+Authors
+-------
 
  * Ivan Delalande - colona@ycc.fr
- * Laslo Hunhold - dev@frign.de (st-git-20150917 port)
+ * Laslo Hunhold - dev@frign.de (git-20150917 port)

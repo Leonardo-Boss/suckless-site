@@ -14,14 +14,14 @@ make this patch effective.
  - Embedding might fail after applying this patch.
 
 ## Download ##
- * [st-0.4.1-argbbg.diff](st-0.4.1-argbbg.diff)
- * [st-0.5-argbbg.diff](st-0.5-argbbg.diff)
- * [st-0.6-argbbg.diff](st-0.6-argbbg.diff)
- * [st-git-20160131-argbbg.diff](st-git-20160131-argbbg.diff)
- * [st-git-20160425-argbbg.diff](st-git-20160425-argbbg.diff)
+ * [st-argbbg-0.4.1.diff](st-argbbg-0.4.1.diff)
+ * [st-argbbg-0.5.diff](st-argbbg-0.5.diff)
+ * [st-argbbg-0.6.diff](st-argbbg-0.6.diff)
+ * [st-argbbg-git-20160131.diff](st-argbbg-git-20160131.diff)
+ * [st-argbbg-git-20160425.diff](st-argbbg-git-20160425.diff)
 
 ## Authors ##
  * Eon S. Jeon - esjeon@hyunmu.am
- * pr - protodev@gmx.net (st-0.5 port)
- * Laslo Hunhold - dev@frign.de (st-0.6 port)
- * David Phillips - dbphillipsnz@gmail.com (st-git-20160131 port)
+ * pr - protodev@gmx.net (0.5 port)
+ * Laslo Hunhold - dev@frign.de (0.6 port)
+ * David Phillips - dbphillipsnz@gmail.com (git-20160425 port)

@@ -16,7 +16,7 @@ monitor.
 Download
 --------
 
- * [st-git-20160209-visualbell.diff](st-git-20160209-visualbell.diff)
+ * [st-visualbell-git-20160209.diff](st-visualbell-git-20160209.diff)
 
 Authors
 -------

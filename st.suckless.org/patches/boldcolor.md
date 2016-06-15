@@ -39,7 +39,7 @@ config.h example:
 
 Download
 --------
-* [st-0.3-boldcolor.diff](st-0.3-boldcolor.diff)
+* [st-boldcolor-0.3.diff](st-boldcolor-0.3.diff)
 
 Author
 ------

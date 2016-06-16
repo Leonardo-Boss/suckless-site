@@ -20,9 +20,10 @@ Download
 --------
 
  * [st-spoiler-0.6.diff](st-spoiler-0.6.diff)
- * [st-spoiler-git-20150922.diff](st-spoiler-git-20150922.diff)
+ * [st-spoiler-git-20160616.diff](st-spoiler-git-20160616.diff)
 
 Author
 ------
 
  * dequis - dx@dxzone.com.ar
+ * Laslo Hunhold - dev@frign.de (git port)

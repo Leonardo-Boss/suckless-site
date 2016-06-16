@@ -20,7 +20,7 @@ index 9e61010..0bfa5aa 100644
  
  /*
 diff --git a/st.c b/st.c
-index 27536d2..5bfdb21 100644
+index 2594c65..233d301 100644
 --- a/st.c
 +++ b/st.c
 @@ -86,6 +86,8 @@ char *argv0;
@@ -182,7 +182,7 @@ index 27536d2..5bfdb21 100644
  		while (last >= gp && last->u == ' ')
  			--last;
  
-@@ -1491,6 +1498,9 @@ ttyread(void)
+@@ -1490,6 +1497,9 @@ ttyread(void)
  	/* keep any uncomplete utf8 char for the next call */
  	memmove(buf, ptr, buflen);
  
@@ -192,7 +192,7 @@ index 27536d2..5bfdb21 100644
  	return ret;
  }
  
-@@ -1500,6 +1510,9 @@ ttywrite(const char *s, size_t n)
+@@ -1499,6 +1509,9 @@ ttywrite(const char *s, size_t n)
  	fd_set wfd, rfd;
  	ssize_t r;
  	size_t lim = 256;
@@ -202,7 +202,7 @@ index 27536d2..5bfdb21 100644
  
  	/*
  	 * Remember that we are using a pty, which might be a modem line.
-@@ -1691,13 +1704,53 @@ tswapscreen(void)
+@@ -1690,13 +1703,53 @@ tswapscreen(void)
  }
  
  void
@@ -257,7 +257,7 @@ index 27536d2..5bfdb21 100644
  	tsetdirt(orig, term.bot-n);
  	tclearregion(0, term.bot-n+1, term.col-1, term.bot);
  
-@@ -1711,13 +1764,20 @@ tscrolldown(int orig, int n)
+@@ -1710,13 +1763,20 @@ tscrolldown(int orig, int n)
  }
  
  void
@@ -279,7 +279,7 @@ index 27536d2..5bfdb21 100644
  	tclearregion(0, orig, term.col-1, orig+n-1);
  	tsetdirt(orig+n, term.bot);
  
-@@ -1766,7 +1826,7 @@ tnewline(int first_col)
+@@ -1765,7 +1825,7 @@ tnewline(int first_col)
  	int y = term.c.y;
  
  	if (y == term.bot) {
@@ -288,7 +288,7 @@ index 27536d2..5bfdb21 100644
  	} else {
  		y++;
  	}
-@@ -1931,14 +1991,14 @@ void
+@@ -1930,14 +1990,14 @@ void
  tinsertblankline(int n)
  {
  	if (BETWEEN(term.c.y, term.top, term.bot))
@@ -305,7 +305,7 @@ index 27536d2..5bfdb21 100644
  }
  
  int32_t
-@@ -2372,11 +2432,11 @@ csihandle(void)
+@@ -2371,11 +2431,11 @@ csihandle(void)
  		break;
  	case 'S': /* SU -- Scroll <n> line up */
  		DEFAULT(csiescseq.arg[0], 1);
@@ -319,7 +319,7 @@ index 27536d2..5bfdb21 100644
  		break;
  	case 'L': /* IL -- Insert <n> blank lines */
  		DEFAULT(csiescseq.arg[0], 1);
-@@ -2872,7 +2932,7 @@ eschandle(uchar ascii)
+@@ -2871,7 +2931,7 @@ eschandle(uchar ascii)
  		return 0;
  	case 'D': /* IND -- Linefeed */
  		if (term.c.y == term.bot) {
@@ -328,7 +328,7 @@ index 27536d2..5bfdb21 100644
  		} else {
  			tmoveto(term.c.x, term.c.y+1);
  		}
-@@ -2885,7 +2945,7 @@ eschandle(uchar ascii)
+@@ -2884,7 +2944,7 @@ eschandle(uchar ascii)
  		break;
  	case 'M': /* RI -- Reverse index */
  		if (term.c.y == term.top) {
@@ -337,7 +337,7 @@ index 27536d2..5bfdb21 100644
  		} else {
  			tmoveto(term.c.x, term.c.y-1);
  		}
-@@ -3048,7 +3108,7 @@ tputc(Rune u)
+@@ -3047,7 +3107,7 @@ tputc(Rune u)
  void
  tresize(int col, int row)
  {
@@ -346,7 +346,7 @@ index 27536d2..5bfdb21 100644
  	int minrow = MIN(row, term.row);
  	int mincol = MIN(col, term.col);
  	int *bp;
-@@ -3088,6 +3148,14 @@ tresize(int col, int row)
+@@ -3087,6 +3147,14 @@ tresize(int col, int row)
  	term.dirty = xrealloc(term.dirty, row * sizeof(*term.dirty));
  	term.tabs = xrealloc(term.tabs, col * sizeof(*term.tabs));
  
@@ -361,7 +361,7 @@ index 27536d2..5bfdb21 100644
  	/* resize each row to new width, zero-pad if needed */
  	for (i = 0; i < minrow; i++) {
  		term.line[i] = xrealloc(term.line[i], col * sizeof(Glyph));
-@@ -3980,11 +4048,11 @@ drawregion(int x1, int y1, int x2, int y2)
+@@ -3976,11 +4044,11 @@ drawregion(int x1, int y1, int x2, int y2)
  		term.dirty[y] = 0;
  
  		specs = term.specbuf;
@@ -375,7 +375,7 @@ index 27536d2..5bfdb21 100644
  			if (new.mode == ATTR_WDUMMY)
  				continue;
  			if (ena_sel && selected(x, y))
-@@ -4004,7 +4072,8 @@ drawregion(int x1, int y1, int x2, int y2)
+@@ -4000,7 +4068,8 @@ drawregion(int x1, int y1, int x2, int y2)
  		if (i > 0)
  			xdrawglyphfontspecs(specs, base, i, ox, y);
  	}

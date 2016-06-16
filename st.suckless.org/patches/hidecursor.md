@@ -12,10 +12,10 @@ Download
 
 * [st-hidecursor-0.5.diff](st-hidecursor-0.5.diff)
 * [st-hidecursor-0.6.diff](st-hidecursor-0.6.diff)
-* [st-hidecursor-git-20150917.diff](st-hidecursor-git-20150917.diff)
+* [st-hidecursor-git-20160616.diff](st-hidecursor-git-20160616.diff)
 
 Authors
 -------
 
  * Ivan Delalande - colona@ycc.fr
- * Laslo Hunhold - dev@frign.de (git-20150917 port)
+ * Laslo Hunhold - dev@frign.de (git port)

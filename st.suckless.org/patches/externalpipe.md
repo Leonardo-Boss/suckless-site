@@ -27,10 +27,10 @@ Download
 * [st-externalpipe-0.4.1.diff](st-externalpipe-0.4.1.diff)
 * [st-externalpipe-0.5.diff](st-externalpipe-0.5.diff)
 * [st-externalpipe-0.6.diff](st-externalpipe-0.6.diff)
-* [st-externalpipe-git-20160204.diff](st-externalpipe-git-20160204.diff)
+* [st-externalpipe-git-20160616.diff](st-externalpipe-git-20160616.diff)
 
 Authors
 -------
 
  * Rob Pilling - robpilling@gmail.com
- * Laslo Hunhold - dev@frign.de (0.4.1, 0.5, 0.6, git-20150917 ports)
+ * Laslo Hunhold - dev@frign.de (0.4.1, 0.5, 0.6, git ports)

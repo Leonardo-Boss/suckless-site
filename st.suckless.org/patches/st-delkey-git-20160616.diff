@@ -1,8 +1,8 @@
 diff --git a/config.def.h b/config.def.h
-index b6adc5e..ceaafa0 100644
+index 9e61010..458f397 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -238,7 +238,7 @@ static Key key[] = {
+@@ -246,7 +246,7 @@ static Key key[] = {
  	{ XK_KP_Delete,     ShiftMask,      "\033[2K",      -1,    0,    0},
  	{ XK_KP_Delete,     ShiftMask,      "\033[3;2~",    +1,    0,    0},
  	{ XK_KP_Delete,     XK_ANY_MOD,     "\033[P",       -1,    0,    0},
@@ -11,7 +11,7 @@ index b6adc5e..ceaafa0 100644
  	{ XK_KP_Multiply,   XK_ANY_MOD,     "\033Oj",       +2,    0,    0},
  	{ XK_KP_Add,        XK_ANY_MOD,     "\033Ok",       +2,    0,    0},
  	{ XK_KP_Enter,      XK_ANY_MOD,     "\033OM",       +2,    0,    0},
-@@ -293,8 +293,7 @@ static Key key[] = {
+@@ -301,8 +301,7 @@ static Key key[] = {
  	{ XK_Delete,        ShiftMask,      "\033[2K",      -1,    0,    0},
  	{ XK_Delete,        ShiftMask,      "\033[3;2~",    +1,    0,    0},
  	{ XK_Delete,        XK_ANY_MOD,     "\033[P",       -1,    0,    0},

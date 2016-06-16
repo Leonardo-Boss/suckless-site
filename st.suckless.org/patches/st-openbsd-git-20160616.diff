@@ -13,13 +13,13 @@ index 6158ab2..9b81f88 100644
  uninstall:
  	@echo removing executable file from ${DESTDIR}${PREFIX}/bin
 diff --git a/config.def.h b/config.def.h
-index b6adc5e..ffc2e74 100644
+index 9e61010..9c33167 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -63,7 +63,7 @@ static unsigned int cursorthickness = 2;
  static int bellvolume = 0;
  
- /* TERM value */
+ /* default TERM value */
 -static char termname[] = "st-256color";
 +static char termname[] = "st-git-256color";
  

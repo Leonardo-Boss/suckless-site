@@ -16,9 +16,10 @@ monitor.
 Download
 --------
 
- * [st-visualbell-git-20160209.diff](st-visualbell-git-20160209.diff)
+ * [st-visualbell-git-20160616.diff](st-visualbell-git-20160616.diff)
 
 Authors
 -------
 
  * Matthias Schoth - mschoth@gmail.com
+ * Laslo Hunhold - dev@frign.de (git port)

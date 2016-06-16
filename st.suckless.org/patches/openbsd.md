@@ -27,11 +27,11 @@ More information on this issue can be found in this
 Download
 --------
 
-* [st-openbsd-git-20150920.diff](st-openbsd-git-20150920.diff)
+* [st-openbsd-git-20160616.diff](st-openbsd-git-20160616.diff)
 
 
 Authors
 -------
 
  * Nils Reuße - nilsreusse@gmail.com
- * Laslo Hunhold - dev@frign.de (git-20150920 port)
+ * Laslo Hunhold - dev@frign.de (git port)

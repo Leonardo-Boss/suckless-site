@@ -26,27 +26,59 @@ If you encounter freezes (no crash at all) of the program, you can debug as foll
 Send the output of that command to the mailing list along with the output of
 `program -v`! Thank you!
 
-
 Patches
 -------
+There are two types of patches: The ones that fit to your personal taste and
+the ones you think should be included in mainline.
+
+For patches that should be included in mainline see the
+[community](//suckless.org/community) page and the hackers@ mailing list.
+
+You can use the following instructions to generate and apply patches posted on
+this wiki. On how to upload patches which fit your personal taste and you want
+to show the community, see the [wiki](//suckless.org/wiki) page on how to edit
+the pages you see here.
+
+patch filename format
+---------------------
+The expected format for patches is
+
+For git revisions:
+
+    toolname-patchname-YYYYMMDD-SHORTHASH.diff
+    dwm-allyourbase-20160617-3465bed.diff
+
+The YYYYMMDD date should correspond to the last time the patch has been modified.  
+The SHORTHASH here is the seven chars git commit short hash corresponding to the
+last commit of the tool on which the patch can be applied correctly and
+is working with.
+You can get it by taking the first seven chars of the full hash or for example:
+
+    git rev-parse --short <commit-id> (with commit-id: HEAD, commit hash, etc.)
+
+For release versions:
+
+    toolname-patchname-RELEASE.diff
+    dwm-allyourbase-6.1.diff
+
+The RELEASE should correspond to the tool release version, ie 6.1 for dwm-6.1.
 
 diff generation
 ---------------
 For git users:
 
     cd program-directory
-    git diff > program-X.Y-yourpatchname.diff
+    git diff > toolname-patchname-YYYYMMDD-SHORTHASH.diff
 
 For tarballs:
 
     cd modified-program-directory/..
-    diff -up original-program-directory modified-program-directory > program-X.Y-yourpatchname.diff
-
-where `X.Y` is a dwm tag name or version number.
+    diff -up original-program-directory modified-program-directory > \
+               toolname-patchname-RELEASE.diff
 
 patch program
 -------------
-For git users:
+For git users, use -3 to fix the conflict easily:
 
     cd program-directory
     git apply path/to/patch.diff

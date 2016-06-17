@@ -20,11 +20,11 @@ Mouse actions supported:
     * In horizontal mode: same as left-clicking on right arrow.
     * In vertical mode: show items below.
 
-The attached patch applies cleanly to latest dmenu 4.5 tip (dec9a28863f388072be105e0950deb72ac719d48).
+The attached patch applies cleanly to latest dmenu 4.6.
 
 Download
 --------
-* [dmenu-4.5-mouse-support.diff](dmenu-4.5-mouse-support.diff)
+* [dmenu-4.6-mouse-support.diff](dmenu-4.6-mouse-support.diff)
 
 Author
 ------

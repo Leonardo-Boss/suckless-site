@@ -12,7 +12,6 @@ patch, so that you can use stdout to feed stdin.
 Download
 --------
 
-* [dmenu-tip-non-blocking-stdin.diff](dmenu-tip-non-blocking-stdin.diff)
 * [dmenu-git-non-blocking-stdin.diff](dmenu-git-non-blocking-stdin.diff)
 
 Author

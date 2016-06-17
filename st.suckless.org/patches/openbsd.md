@@ -27,7 +27,7 @@ More information on this issue can be found in this
 Download
 --------
 
-* [st-openbsd-git-20160616.diff](st-openbsd-git-20160616.diff)
+* [st-openbsd-git-20160617-528241aa.diff](st-openbsd-git-20160617-528241aa.diff)
 
 
 Authors

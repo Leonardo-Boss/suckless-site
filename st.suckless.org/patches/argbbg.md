@@ -17,7 +17,7 @@ make this patch effective.
  * [st-argbbg-0.4.1.diff](st-argbbg-0.4.1.diff)
  * [st-argbbg-0.5.diff](st-argbbg-0.5.diff)
  * [st-argbbg-0.6.diff](st-argbbg-0.6.diff)
- * [st-argbbg-git-20160616.diff](st-argbbg-git-20160616.diff)
+ * [st-argbbg-git-20160617-528241aa.diff](st-argbbg-git-20160617-528241aa.diff)
 
 ## Authors ##
  * Eon S. Jeon - esjeon@hyunmu.am

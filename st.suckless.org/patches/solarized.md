@@ -34,7 +34,7 @@ to disable lighting up bold colors.
 
  * [st-no_bold_colors-0.5.diff](st-no_bold_colors-0.5.diff)
  * [st-no_bold_colors-0.6.diff](st-no_bold_colors-0.6.diff)
- * [st-no_bold_colors-git-20160616.diff](st-no_bold_colors-git-20160616.diff)
+ * [st-no_bold_colors-git-20160617-528241aa.diff](st-no_bold_colors-git-20160617-528241aa.diff)
 
 Choose one of the following patches to get either the light
 or the dark color scheme:
@@ -43,13 +43,13 @@ or the dark color scheme:
 
  * [st-solarized-light-0.5.diff](st-solarized-light-0.5.diff)
  * [st-solarized-light-0.6.diff](st-solarized-light-0.6.diff)
- * [st-solarized-light-git-20160616.diff](st-solarized-light-git-20160616.diff)
+ * [st-solarized-light-git-20160617-528241aa.diff](st-solarized-light-git-20160617-528241aa.diff)
 
 *Dark*:
 
  * [st-solarized-dark-0.5.diff](st-solarized-dark-0.5.diff)
  * [st-solarized-dark-0.6.diff](st-solarized-dark-0.6.diff)
- * [st-solarized-dark-git-20160616.diff](st-solarized-dark-git-20160616.diff)
+ * [st-solarized-dark-git-20160617-528241aa.diff](st-solarized-dark-git-20160617-528241aa.diff)
 
 Authors
 -------

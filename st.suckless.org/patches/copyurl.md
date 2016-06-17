@@ -17,7 +17,7 @@ Download
 --------
 
  * [st-copyurl-0.6.diff](st-copyurl-0.6.diff)
- * [st-copyurl-git-20160616.diff](st-copyurl-git-20160616.diff)
+ * [st-copyurl-git-20160617-528241aa.diff](st-copyurl-git-20160617-528241aa.diff)
 
 Authors
 -------

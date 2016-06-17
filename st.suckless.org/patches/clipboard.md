@@ -13,7 +13,7 @@ CLIPBOARD.
 ## Download
 
 * [st-clipboard-0.6.diff](st-clipboard-0.6.diff)
-* [st-clipboard-git-20160616.diff](st-clipboard-git-20160616.diff)
+* [st-clipboard-git-20160617-528241aa.diff](st-clipboard-git-20160617-528241aa.diff)
 
 ## Authors
 

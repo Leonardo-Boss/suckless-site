@@ -4,13 +4,18 @@ terminalkeys
 Description
 -----------
 
-Use key commands that are commonly used in terminal applications
-(e.g. bash, login) in slock.
+Add key commands that are commonly used in terminal applications
+(e.g. bash, login) to slock.
 
 Mappings:
-* Ctrl-u: delete until beginning of line, mapped to `Esc`
-* Ctrl-h: Backspace, mapped to `Backspace`
-* Ctrl-j or Ctrl-m: Newline / Carriage return, mapped to `Return`
+
+|Key| | |Function| | | Mapped to|
+|:---|-|-|:---|-|-|:---|
+|Ctrl-u| | |Delete until beginning of line| | |Esc|
+|Ctrl-h| | |Backspace| | |Backspace|
+|Ctrl-j| | |Line feed| | |Return|
+|Ctrl-m| | |Carriage feed| | |Return|
+
 
 Download
 --------

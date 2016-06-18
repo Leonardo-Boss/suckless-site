@@ -4,8 +4,8 @@ terminalkeys
 Description
 -----------
 
-Add key commands that are commonly used in terminal applications
-(e.g. bash, login) to slock.
+Add key commands that are commonly used in terminal applications 
+(in particular the login prompt) to slock.
 
 Mappings:
 
@@ -20,7 +20,7 @@ Mappings:
 Download
 --------
 
- * [slock-20160618-terminalkeys.diff](slock-20160618-terminalkeys.diff)
+ * [slock-terminalkeys-20160618-65b8d52.diff](slock-terminalkeys-20160618-65b8d52.diff)
 
 Authors
 -------

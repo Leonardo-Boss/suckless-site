@@ -1,1 +1,1 @@
-../../../suckless.org/hacking.md
+../../suckless.org/hacking.md

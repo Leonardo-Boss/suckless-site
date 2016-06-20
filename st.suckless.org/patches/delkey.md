@@ -10,7 +10,7 @@ Download
 --------
 
  * [st-delkey-0.6.diff](st-delkey-0.6.diff)
- * [st-delkey-git-20160617-528241aa.diff](st-delkey-git-20160617-528241aa.diff)
+ * [st-delkey-git-20160620-528241a.diff](st-delkey-git-20160620-528241a.diff)
 
 Authors
 -------

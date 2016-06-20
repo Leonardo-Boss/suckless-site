@@ -20,7 +20,7 @@ Download
 --------
 
  * [st-spoiler-0.6.diff](st-spoiler-0.6.diff)
- * [st-spoiler-git-20160617-528241aa.diff](st-spoiler-git-20160617-528241aa.diff)
+ * [st-spoiler-git-20160620-528241a.diff](st-spoiler-git-20160620-528241a.diff)
 
 Author
 ------

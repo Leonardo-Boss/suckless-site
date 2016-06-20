@@ -17,7 +17,7 @@ make this patch effective.
  * [st-alpha-0.4.1.diff](st-alpha-0.4.1.diff)
  * [st-alpha-0.5.diff](st-alpha-0.5.diff)
  * [st-alpha-0.6.diff](st-alpha-0.6.diff)
- * [st-alpha-git-20160617-528241aa.diff](st-alpha-git-20160617-528241aa.diff)
+ * [st-alpha-git-20160620-528241a.diff](st-alpha-git-20160620-528241a.diff)
 
 ## Authors ##
  * Eon S. Jeon - esjeon@hyunmu.am

@@ -12,7 +12,7 @@ Download
 
 * [st-hidecursor-0.5.diff](st-hidecursor-0.5.diff)
 * [st-hidecursor-0.6.diff](st-hidecursor-0.6.diff)
-* [st-hidecursor-git-20160617-528241aa.diff](st-hidecursor-git-20160617-528241aa.diff)
+* [st-hidecursor-git-20160620-528241a.diff](st-hidecursor-git-20160620-528241a.diff)
 
 Authors
 -------

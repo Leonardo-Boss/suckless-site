@@ -21,6 +21,7 @@ Compression
 * [miniz](http://code.google.com/p/miniz/) - single C-file reimplementation of zlib, public domain.
 * [xz embedded](http://tukaani.org/xz/embedded.html) - lightweight decompressor for the xz LZMA compressor (public domain)
 * [zlib](http://zlib.net/) - the "standard" compression/decompression library, quite small, used in many applications ([zlib license](http://zlib.net/zlib_license.html))
+* [libz](https://sortix.org/libz/) - ABI and API compatible zlib fork with focus on correctness, proper portability, auditability, simplification and opportunities to optimize ([zlib license](http://zlib.net/zlib_license.html))
 
 Cryptography
 ------------

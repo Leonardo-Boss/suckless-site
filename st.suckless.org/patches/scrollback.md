@@ -27,7 +27,7 @@ mkeys excluding scrolling functions.**
 Authors
 -------
 
- * Jochen Sprickerhof - dwm@jochen.sprickerhof.de
+ * [Jochen Sprickerhof](project@firstname.lastname.de)
  * M Farkas-Dyck - strake888@gmail.com
  * Ivan Tham - pickfire@riseup.net (mouse scrolling)
  * Laslo Hunhold - dev@frign.de (unscrambling, git port)

@@ -46,7 +46,7 @@ The expected format for patches is
 For git revisions:
 
     toolname-patchname-YYYYMMDD-SHORTHASH.diff
-    dwm-allyourbase-20160617-3465bed.diff
+    dwm-allyourbase-git-20160617-3465bed.diff
 
 The YYYYMMDD date should correspond to the last time the patch has been modified.  
 The SHORTHASH here is the seven chars git commit short hash corresponding to the

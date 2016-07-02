@@ -10,7 +10,7 @@ non-consecutive portions of the string to be matched.
 Download
 --------
 
-* [dmenu-4.6-fuzzymatch.diff](dmenu-4.6-fuzzymatch.diff)
+* [dmenu-fuzzymatch-4.6.diff](dmenu-fuzzymatch-4.6.diff)
 
 Authors
 ------

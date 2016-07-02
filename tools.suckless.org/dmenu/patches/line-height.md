@@ -25,11 +25,9 @@ thus completely covering the panel, as shown below:
 
 The line height value is also used when dmenu is used in 'vertical' mode ('-l' option).
 
-The patch applies cleanly against 4.6 (32f2564dbbbf5aeafb7190a3d35066142f34448f).
-
 Download
 --------
-* [dmenu-4.6-line-height.diff](dmenu-4.6-line-height.diff)
+* [dmenu-lineheight-4.6.diff](dmenu-lineheight-4.6.diff)
 
 Author
 ------

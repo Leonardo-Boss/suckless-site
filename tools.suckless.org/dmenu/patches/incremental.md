@@ -14,4 +14,4 @@ This is useful as an incremental search feature, for example in surf's config.h:
 Download
 --------
 
-* [dmenu-git-incremental.diff](dmenu-git-incremental.diff)
+* [dmenu-incremental-20160702-3c91eed.diff](dmenu-incremental-20160702-3c91eed.diff)

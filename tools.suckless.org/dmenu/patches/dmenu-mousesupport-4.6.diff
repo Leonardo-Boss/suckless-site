@@ -1,23 +1,22 @@
-From cb154e0e93819cba9fee70f108dc95a168ab664e Mon Sep 17 00:00:00 2001
+From 66df5f738c17ba5cf23ba99ce18313a39fdfd291 Mon Sep 17 00:00:00 2001
 From: Hiltjo Posthuma <hiltjo@codemadness.org>
 Date: Fri, 17 Jun 2016 14:44:16 +0200
 Subject: [PATCH] dmenu mouse support
 
 ---
- dmenu.c | 106 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
- 1 file changed, 105 insertions(+), 1 deletion(-)
+ dmenu.c | 119 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 118 insertions(+), 1 deletion(-)
 
 diff --git a/dmenu.c b/dmenu.c
-index e0c2f80..7907ae9 100644
+index a07f8e3..b60037f 100644
 --- a/dmenu.c
 +++ b/dmenu.c
-@@ -451,6 +451,106 @@ keypress(XKeyEvent *ev)
+@@ -449,6 +449,119 @@ keypress(XKeyEvent *ev)
  }
  
  static void
 +buttonpress(XEvent *e)
 +{
-+	int curpos;
 +	struct item *item;
 +	XButtonPressedEvent *ev = &e->xbutton;
 +	int x = 0, y = 0, h = bh, w;
@@ -34,8 +33,6 @@ index e0c2f80..7907ae9 100644
 +
 +	/* input field */
 +	w = (lines > 0 || !matches) ? mw - x : inputw;
-+	if ((curpos = TEXTNW(text, cursor) + bh / 2 - 2) < w)
-+		;
 +
 +	/* left-click on input: clear input,
 +	 * NOTE: if there is no left-arrow the space for < is reserved so
@@ -50,7 +47,7 @@ index e0c2f80..7907ae9 100644
 +	}
 +	/* middle-mouse click: paste selection */
 +	if (ev->button == Button2) {
-+		XConvertSelection(drw->dpy, (ev->state & ShiftMask) ? clip : XA_PRIMARY,
++		XConvertSelection(dpy, (ev->state & ShiftMask) ? clip : XA_PRIMARY,
 +		                  utf8, utf8, win, CurrentTime);
 +		drawmenu();
 +		return;
@@ -71,14 +68,23 @@ index e0c2f80..7907ae9 100644
 +	}
 +	if (ev->button != Button1)
 +		return;
++	if (ev->state & ~ControlMask)
++		return;
 +	if (lines > 0) {
-+		/* vertical list: left-click on item */
++		/* vertical list: (ctrl)left-click on item */
 +		w = mw - x;
 +		for (item = curr; item != next; item = item->right) {
 +			y += h;
-+			if (ev->y >= y && ev->y <= y + h) {
++			if (ev->y >= y && ev->y <= (y + h)) {
 +				puts(item->text);
-+				exit(0);
++				if (!(ev->state & ControlMask))
++					exit(0);
++				sel = item;
++				if (sel) {
++					sel->out = 1;
++					drawmenu();
++				}
++				return;
 +			}
 +		}
 +	} else if (matches) {
@@ -93,13 +99,20 @@ index e0c2f80..7907ae9 100644
 +				return;
 +			}
 +		}
-+		/* horizontal list: left-click on item */
++		/* horizontal list: (ctrl)left-click on item */
 +		for (item = curr; item != next; item = item->right) {
 +			x += w;
 +			w = MIN(TEXTW(item->text), mw - x - TEXTW(">"));
 +			if (ev->x >= x && ev->x <= x + w) {
 +				puts(item->text);
-+				exit(0);
++				if (!(ev->state & ControlMask))
++					exit(0);
++				sel = item;
++				if (sel) {
++					sel->out = 1;
++					drawmenu();
++				}
++				return;
 +			}
 +		}
 +		/* left-click on right arrow */
@@ -118,7 +131,7 @@ index e0c2f80..7907ae9 100644
  paste(void)
  {
  	char *p, *q;
-@@ -500,6 +600,9 @@ run(void)
+@@ -498,6 +611,9 @@ run(void)
  		if (XFilterEvent(&ev, win))
  			continue;
  		switch(ev.type) {
@@ -128,7 +141,7 @@ index e0c2f80..7907ae9 100644
  		case Expose:
  			if (ev.xexpose.count == 0)
  				drw_map(drw, win, 0, 0, mw, mh);
-@@ -591,7 +694,8 @@ setup(void)
+@@ -589,7 +705,8 @@ setup(void)
  	/* create menu window */
  	swa.override_redirect = True;
  	swa.background_pixel = scheme[SchemeNorm].bg->pix;
@@ -139,5 +152,5 @@ index e0c2f80..7907ae9 100644
  	                    DefaultDepth(dpy, screen), CopyFromParent,
  	                    DefaultVisual(dpy, screen),
 -- 
-2.8.3
+2.8.4
 

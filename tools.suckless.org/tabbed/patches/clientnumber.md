@@ -5,8 +5,8 @@ window title.
 
 Download
 --------
+* [tabbed-clientnumber-0.6.diff](tabbed-clientnumber-0.6.diff)
 * [tabbed-clientnumber-20160702-bc23614.diff](tabbed-clientnumber-20160702-bc23614.diff)
-  (works with 0.6).
 
 Author
 ------

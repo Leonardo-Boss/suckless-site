@@ -12,7 +12,7 @@ patch, so that you can use stdout to feed stdin.
 Download
 --------
 
-* [dmenu-git-non-blocking-stdin.diff](dmenu-git-non-blocking-stdin.diff)
+* [dmenu-nonblockingstdin-20160702-3c91eed.diff](dmenu-nonblockingstdin-20160702-3c91eed.diff)
 
 Author
 ------

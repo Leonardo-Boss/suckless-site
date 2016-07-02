@@ -5,7 +5,7 @@ window title.
 
 Download
 --------
-* [tabbed-clientnumber-20160103-eb0ff62.patch](tabbed-clientnumber-20160103-eb0ff62.patch)
+* [tabbed-clientnumber-20160702-bc23614.diff](tabbed-clientnumber-20160702-bc23614.diff)
   (works with 0.6).
 
 Author

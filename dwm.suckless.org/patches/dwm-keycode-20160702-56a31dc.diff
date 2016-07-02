@@ -1,18 +1,8 @@
-From 6a9c5bc422a68a40d5eb2b873fa01d59d6c5bd50 Mon Sep 17 00:00:00 2001
-From: Quentin Rameau <quinq@fifth.space>
-Date: Tue, 10 Nov 2015 19:09:20 +0100
-Subject: [PATCH] Use keycodes instead of keysyms
-
----
- config.def.h | 68 ++++++++++++++++++++++++++++++------------------------------
- dwm.c        | 15 +++++---------
- 2 files changed, 39 insertions(+), 44 deletions(-)
-
 diff --git a/config.def.h b/config.def.h
-index 7054c06..f59d1eb 100644
+index fd77a07..7a568df 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -58,40 +58,40 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
+@@ -60,40 +60,40 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
  static const char *termcmd[]  = { "st", NULL };
  
  static Key keys[] = {
@@ -88,7 +78,7 @@ index 7054c06..f59d1eb 100644
  
  /* button definitions */
 diff --git a/dwm.c b/dwm.c
-index 0362114..60dd817 100644
+index b2bc9bd..f36285a 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -31,7 +31,6 @@
@@ -99,7 +89,7 @@ index 0362114..60dd817 100644
  #include <X11/Xatom.h>
  #include <X11/Xlib.h>
  #include <X11/Xproto.h>
-@@ -101,7 +100,7 @@ struct Client {
+@@ -102,7 +101,7 @@ struct Client {
  
  typedef struct {
  	unsigned int mod;
@@ -108,7 +98,7 @@ index 0362114..60dd817 100644
  	void (*func)(const Arg *);
  	const Arg arg;
  } Key;
-@@ -967,14 +966,12 @@ grabkeys(void)
+@@ -969,14 +968,12 @@ grabkeys(void)
  	{
  		unsigned int i, j;
  		unsigned int modifiers[] = { 0, LockMask, numlockmask, numlockmask|LockMask };
@@ -126,7 +116,7 @@ index 0362114..60dd817 100644
  	}
  }
  
-@@ -1001,13 +998,11 @@ void
+@@ -1003,13 +1000,11 @@ void
  keypress(XEvent *e)
  {
  	unsigned int i;
@@ -141,6 +131,3 @@ index 0362114..60dd817 100644
  		&& CLEANMASK(keys[i].mod) == CLEANMASK(ev->state)
  		&& keys[i].func)
  			keys[i].func(&(keys[i].arg));
--- 
-2.6.2
-

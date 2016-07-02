@@ -14,7 +14,7 @@ Set the variable 'startpipe' in config.h to any character.
 Download
 --------
 
-* [dmenu-pipeout-20160701-bd9cc9c.diff](dmenu-pipeout-20160701-bd9cc9c.diff)
+* [dmenu-pipeout-20160701-3c91eed.diff](dmenu-pipeout-20160701-3c91eed.diff)
 
 Author
 ------

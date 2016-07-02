@@ -22,7 +22,7 @@ index d3ab805..00958cf 100644
  dmenu matches menu items case insensitively.
  .TP
 diff --git a/dmenu.c b/dmenu.c
-index e0c2f80..f819d67 100644
+index e926eca..dc81ef2 100644
 --- a/dmenu.c
 +++ b/dmenu.c
 @@ -1,12 +1,15 @@
@@ -41,7 +41,7 @@ index e0c2f80..f819d67 100644
  #include <X11/Xlib.h>
  #include <X11/Xatom.h>
  #include <X11/Xutil.h>
-@@ -31,6 +34,7 @@ enum { SchemeNorm, SchemeSel, SchemeOut, SchemeLast }; /* color schemes */
+@@ -30,6 +33,7 @@ enum { SchemeNorm, SchemeSel, SchemeOut, SchemeLast }; /* color schemes */
  struct item {
  	char *text;
  	struct item *left, *right;
@@ -49,7 +49,7 @@ index e0c2f80..f819d67 100644
  	int out;
  };
  
-@@ -181,6 +185,7 @@ drawmenu(void)
+@@ -172,6 +176,7 @@ drawmenu(void)
  		}
  	}
  	drw_map(drw, win, 0, 0, mw, mh);
@@ -57,7 +57,7 @@ index e0c2f80..f819d67 100644
  }
  
  static void
-@@ -209,6 +214,7 @@ match(void)
+@@ -200,6 +205,7 @@ match(void)
  	int i, tokc = 0;
  	size_t len, textsize;
  	struct item *item, *lprefix, *lsubstr, *prefixend, *substrend;
@@ -65,7 +65,7 @@ index e0c2f80..f819d67 100644
  
  	strcpy(buf, text);
  	/* separate input text into tokens to be matched individually */
-@@ -219,19 +225,24 @@ match(void)
+@@ -210,19 +216,24 @@ match(void)
  
  	matches = lprefix = lsubstr = matchend = prefixend = substrend = NULL;
  	textsize = strlen(text);
@@ -94,7 +94,7 @@ index e0c2f80..f819d67 100644
  	}
  	if (lprefix) {
  		if (matches) {
-@@ -249,7 +260,9 @@ match(void)
+@@ -240,7 +251,9 @@ match(void)
  			matches = lsubstr;
  		matchend = substrend;
  	}
@@ -105,14 +105,15 @@ index e0c2f80..f819d67 100644
  	calcoffsets();
  }
  
-@@ -467,36 +480,11 @@ paste(void)
+@@ -456,36 +469,7 @@ paste(void)
  }
  
  static void
 -readstdin(void)
 -{
--	char buf[sizeof text], *p, *maxstr = NULL;
--	size_t i, max = 0, size = 0;
+-	char buf[sizeof text], *p;
+-	size_t i, imax = 0, size = 0;
+-	unsigned int tmpmax = 0;
 -
 -	/* read each line from stdin and add it to the item list */
 -	for (i = 0; fgets(buf, sizeof buf, stdin); i++) {
@@ -124,12 +125,15 @@ index e0c2f80..f819d67 100644
 -		if (!(items[i].text = strdup(buf)))
 -			die("cannot strdup %u bytes:", strlen(buf) + 1);
 -		items[i].out = 0;
--		if (strlen(items[i].text) > max)
--			max = strlen(maxstr = items[i].text);
+-		drw_font_getexts(drw->fonts, buf, strlen(buf), &tmpmax, NULL);
+-		if (tmpmax > inputw) {
+-			inputw = tmpmax;
+-			imax = i;
+-		}
 -	}
 -	if (items)
 -		items[i].text = NULL;
--	inputw = maxstr ? TEXTW(maxstr) : 0;
+-	inputw = items ? TEXTW(items[imax].text) : 0;
 -	lines = MIN(lines, i);
 -}
 -
@@ -139,16 +143,12 @@ index e0c2f80..f819d67 100644
  {
  	XEvent ev;
  
--	while (!XNextEvent(dpy, &ev)) {
-+	while(XPending(dpy) && !XNextEvent(dpy, &ev)) {
- 		if (XFilterEvent(&ev, win))
- 			continue;
- 		switch(ev.type) {
-@@ -520,6 +508,58 @@ run(void)
+@@ -513,6 +497,60 @@ run(void)
  }
  
  static void
-+readstdin(void) {
++readstdin(void)
++{
 +	static size_t max = 0;
 +	static struct item **end = &items;
 +
@@ -156,16 +156,16 @@ index e0c2f80..f819d67 100644
 +	struct item *item;
 +
 +	/* read each line from stdin and add it to the item list */
-+	while(fgets(buf, sizeof buf, stdin)) {
-+		if(!(item = malloc(sizeof *item)))
++	while (fgets(buf, sizeof buf, stdin)) {
++		if (!(item = malloc(sizeof *item)))
 +			die("cannot malloc %u bytes:", sizeof *item);
-+		if((p = strchr(buf, '\n')))
++		if ((p = strchr(buf, '\n')))
 +			*p = '\0';
-+		if(!(item->text = strdup(buf)))
++		if (!(item->text = strdup(buf)))
 +			die("cannot strdup %u bytes:", strlen(buf)+1);
-+		if(strlen(item->text) > max) {
++		if (strlen(item->text) > max) {
 +			max = strlen(maxstr = item->text);
-+      inputw = maxstr ? TEXTW(maxstr) : 0;
++			inputw = maxstr ? TEXTW(maxstr) : 0;
 +		}
 +		*end = item;
 +		end = &item->next;
@@ -177,24 +177,25 @@ index e0c2f80..f819d67 100644
 +}
 +
 +static void
-+run(void) {
++run(void)
++{
 +	fd_set fds;
 +	int flags, xfd = XConnectionNumber(dpy);
 +
-+	if((flags = fcntl(STDIN_FILENO, F_GETFL)) == -1)
++	if ((flags = fcntl(0, F_GETFL)) == -1)
 +		die("cannot get stdin control flags:");
-+	if(fcntl(STDIN_FILENO, F_SETFL, flags | O_NONBLOCK) == -1)
++	if (fcntl(0, F_SETFL, flags | O_NONBLOCK) == -1)
 +		die("cannot set stdin control flags:");
-+	for(;;) {
++	for (;;) {
 +		FD_ZERO(&fds);
 +		FD_SET(xfd, &fds);
-+		if(!feof(stdin))
-+			FD_SET(STDIN_FILENO, &fds);
-+		if(select(MAX(STDIN_FILENO, xfd) + 1, &fds, NULL, NULL, NULL) == -1)
++		if (!feof(stdin))
++			FD_SET(0, &fds);
++		if (select(xfd + 1, &fds, NULL, NULL, NULL) == -1)
 +			die("cannot multiplex input:");
-+		if(FD_ISSET(xfd, &fds))
++		if (FD_ISSET(xfd, &fds))
 +			readevent();
-+		if(FD_ISSET(STDIN_FILENO, &fds))
++		if (FD_ISSET(0, &fds))
 +			readstdin();
 +	}
 +}
@@ -203,7 +204,7 @@ index e0c2f80..f819d67 100644
  setup(void)
  {
  	int x, y;
-@@ -610,7 +650,7 @@ setup(void)
+@@ -600,7 +638,7 @@ setup(void)
  static void
  usage(void)
  {
@@ -212,7 +213,7 @@ index e0c2f80..f819d67 100644
  	      "             [-nb color] [-nf color] [-sb color] [-sf color] [-v]\n", stderr);
  	exit(1);
  }
-@@ -618,7 +658,7 @@ usage(void)
+@@ -608,7 +646,7 @@ usage(void)
  int
  main(int argc, char *argv[])
  {
@@ -221,7 +222,7 @@ index e0c2f80..f819d67 100644
  
  	for (i = 1; i < argc; i++)
  		/* these options take no arguments */
-@@ -627,8 +667,6 @@ main(int argc, char *argv[])
+@@ -617,8 +655,6 @@ main(int argc, char *argv[])
  			exit(0);
  		} else if (!strcmp(argv[i], "-b")) /* appears at the bottom of the screen */
  			topbar = 0;
@@ -230,9 +231,9 @@ index e0c2f80..f819d67 100644
  		else if (!strcmp(argv[i], "-i")) { /* case-insensitive item matching */
  			fstrncmp = strncasecmp;
  			fstrstr = cistrstr;
-@@ -668,13 +706,7 @@ main(int argc, char *argv[])
+@@ -657,13 +693,7 @@ main(int argc, char *argv[])
  		die("no fonts could be loaded.\n");
- 	drw_setscheme(drw, &scheme[SchemeNorm]);
+ 	lrpad = drw->fonts->h;
  
 -	if (fast) {
 -		grabkeyboard();

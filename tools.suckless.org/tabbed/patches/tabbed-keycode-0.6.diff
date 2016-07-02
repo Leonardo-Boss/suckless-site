@@ -1,5 +1,5 @@
 diff --git a/config.def.h b/config.def.h
-index ceda9f7..088201a 100644
+index ceda9f7..272074a 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -29,30 +29,30 @@ static Bool npisrelative  = False;
@@ -41,7 +41,7 @@ index ceda9f7..088201a 100644
 +	{ MODKEY|ShiftMask,          44,   movetab,        { .i = -1 } }, // j
 +	{ MODKEY|ShiftMask,          45,   movetab,        { .i = +1 } }, // k
 +	{ MODKEY,                    23,   rotate,         { .i = 0 } },  // Tab
-+ 
++
 +	{ MODKEY,                    10,   move,           { .i = 0 } },  // 1
 +	{ MODKEY,                    11,   move,           { .i = 1 } },  // 2
 +	{ MODKEY,                    12,   move,           { .i = 2 } },  // 3
@@ -59,7 +59,7 @@ index ceda9f7..088201a 100644
  };
  
 diff --git a/tabbed.c b/tabbed.c
-index 93a213a..744fe4e 100644
+index d30206b..15d6572 100644
 --- a/tabbed.c
 +++ b/tabbed.c
 @@ -57,7 +57,7 @@ typedef union {

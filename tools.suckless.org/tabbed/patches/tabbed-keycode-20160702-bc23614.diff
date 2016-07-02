@@ -1,8 +1,8 @@
 diff --git a/config.def.h b/config.def.h
-index 587ce73..7d7e67f 100644
+index 989992c..821f481 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -35,31 +35,32 @@ static Bool npisrelative  = False;
+@@ -36,31 +36,32 @@ static Bool npisrelative  = False;
  #define MODKEY ControlMask
  static Key keys[] = {
  	/* modifier             key        function     argument */
@@ -58,10 +58,10 @@ index 587ce73..7d7e67f 100644
 +	{ 0,                    95,        fullscreen,  { 0 } },
  };
 diff --git a/tabbed.c b/tabbed.c
-index 5f035c0..c5ed4a3 100644
+index 9a44795..5e2b416 100644
 --- a/tabbed.c
 +++ b/tabbed.c
-@@ -57,7 +57,7 @@ typedef union {
+@@ -58,7 +58,7 @@ typedef union {
  
  typedef struct {
  	unsigned int mod;
@@ -70,7 +70,7 @@ index 5f035c0..c5ed4a3 100644
  	void (*func)(const Arg *);
  	const Arg arg;
  } Key;
-@@ -680,11 +680,9 @@ keypress(const XEvent *e)
+@@ -651,11 +651,9 @@ keypress(const XEvent *e)
  {
  	const XKeyEvent *ev = &e->xkey;
  	unsigned int i;
@@ -83,7 +83,7 @@ index 5f035c0..c5ed4a3 100644
  		    CLEANMASK(keys[i].mod) == CLEANMASK(ev->state) &&
  		    keys[i].func)
  			keys[i].func(&(keys[i].arg));
-@@ -721,7 +719,6 @@ manage(Window w)
+@@ -692,7 +690,6 @@ manage(Window w)
  		int i, j, nextpos;
  		unsigned int modifiers[] = { 0, LockMask, numlockmask,
  		                             numlockmask | LockMask };
@@ -91,7 +91,7 @@ index 5f035c0..c5ed4a3 100644
  		Client *c;
  		XEvent e;
  
-@@ -732,12 +729,10 @@ manage(Window w)
+@@ -703,12 +700,10 @@ manage(Window w)
  		XSync(dpy, False);
  
  		for (i = 0; i < LENGTH(keys); i++) {

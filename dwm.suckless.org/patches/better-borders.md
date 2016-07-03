@@ -6,11 +6,8 @@ Description
 
 Like [Ebersbach's patch](http://dwm.suckless.org/patches/noborder), this patch
 removes the border when there is only one window visible, but this patch does
-not depend on layout-specific changes and should automatically work with most
-layouts. The patch also removes borders from any windows that are the same size
-as the monitor and marks them full-screen even if their X properties indicate
-otherwise. This eliminates nuisance borders that appear with some games and
-applications while in full-screen mode.
+should automatically work with most other custom layouts with no additiona
+layout-specific changes.
 
 Thanks to Alesandar Metodiev for reporting a bug that lead to the patch being
 rewritten.
@@ -18,7 +15,7 @@ rewritten.
 Download
 --------
 
- * [dwm-6.1-better-borders.diff](dwm-6.1-better-borders.diff) (2015-12-27)
+ * [dwm-better-borders-git-20160702-56a31dc.diff](dwm-better-borders-git-20160702-56a31dc.diff)
 
 Author
 ------

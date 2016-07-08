@@ -11,7 +11,7 @@ Patches against different versions of dwm are available at
 
  * [dwm-6.1-save_floats.diff](dwm-6.1-save_floats.diff) (1605b) (20140209)
  * [dwm-10e232f9ace7-save_floats.diff](dwm-10e232f9ace7-save_floats.diff) (1604b) (20120406)
- * [dwm-6.0-save_floats.diff](dwm-6.0-save_floats.diff) (1528b) (20120406)
+ * [dwm-save_floats-6.0.diff](dwm-save_floats-6.0.diff) (1528b) (20120406)
 
 ## Author ##
  * http://nymu.net/patches

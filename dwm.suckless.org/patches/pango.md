@@ -32,7 +32,7 @@ not possible under barebone xft:
 Download
 --------
 
-* [dwm-6.0-pango.diff](dwm-6.0-pango.diff)
+* [dwm-pango-6.0.diff](dwm-pango-6.0.diff)
 
 Author
 ------

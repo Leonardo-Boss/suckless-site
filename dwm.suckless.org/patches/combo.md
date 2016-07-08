@@ -18,9 +18,9 @@ and view so you could replace all usages if you wanted.
 Download
 --------
 
- * [dwm-5.9-combo.diff](dwm-5.9-combo.diff) - 2010-10-30
- * [dwm-6.0-combo.diff](dwm-6.0-combo.diff) - 2012-10-09
- * [dwm-6.1-combo.diff](dwm-6.1-combo.diff) - 2016-01-22
+ * [dwm-combo-5.9.diff](dwm-combo-5.9.diff) - 2010-10-30
+ * [dwm-combo-6.0.diff](dwm-combo-6.0.diff) - 2012-10-09
+ * [dwm-combo-6.1.diff](dwm-combo-6.1.diff) - 2016-01-22
 
 Author
 ------

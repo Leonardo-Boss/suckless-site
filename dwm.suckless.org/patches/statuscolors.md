@@ -58,5 +58,5 @@ An example status script snippet to take advantage of the colors:
 
  * [dwm-5.7.2-statuscolors.diff](historical/dwm-5.7.2-statuscolors.diff)
  * [dwm-5.8.2-statuscolors.diff](historical/dwm-5.8.2-statuscolors.diff)
- * [dwm-5.9-statuscolors.diff](dwm-5.9-statuscolors.diff)
- * [dwm-6.1-statuscolors.diff](dwm-6.1-statuscolors.diff)
+ * [dwm-statuscolors-5.9.diff](dwm-statuscolors-5.9.diff)
+ * [dwm-statuscolors-6.1.diff](dwm-statuscolors-6.1.diff)

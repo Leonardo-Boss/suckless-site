@@ -10,7 +10,7 @@ focusstack().
 Download
 --------
 
-* [dwm-cdec978-alwaysfullscreen.diff](dwm-cdec978-alwaysfullscreen.diff) (323b) (20140220)
+* [dwm-alwaysfullscreen-git-20130827-cdec978.diff](dwm-alwaysfullscreen-git-20130827-cdec978.diff) (323b) (20140220)
 
 Author
 ------

@@ -29,7 +29,7 @@ Horizontal Grid Layout
 Download
 --------
 
- * [dwm-6.1-horizgrid.diff](dwm-6.1-horizgrid.diff) (20160108)
+ * [dwm-horizgrid-6.1.diff](dwm-horizgrid-6.1.diff) (20160108)
 
 Authors
 -------

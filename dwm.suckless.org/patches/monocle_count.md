@@ -9,7 +9,7 @@ current release prints only the number of total clients within the symbol.
 
 Download
 --------
-* [dwm-5.8.2-monocle_count.diff](dwm-5.8.2-monocle_count.diff)
+* [dwm-monocle_count-5.8.2.diff](dwm-monocle_count-5.8.2.diff)
 
 Author
 ------

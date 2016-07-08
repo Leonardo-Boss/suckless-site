@@ -13,7 +13,7 @@ just like [ARGB patch for st][1].
 Download
 --------
 
- * [dwm-3465bed-argbcolor.diff](dwm-3465bed-argbcolor.diff) (20160307)
+ * [dwm-argbcolor-git-20151219-3465bed.diff](dwm-argbcolor-git-20151219-3465bed.diff) (20160307)
 
 
 Author

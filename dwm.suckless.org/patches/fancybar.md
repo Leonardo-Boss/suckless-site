@@ -13,7 +13,7 @@ fit, they're cropped. The title of the selected window is inverted.
 ## Download
 
  * [fancybar-5.6.1.diff](historical/fancybar-5.6.1.diff) (dwm 5.6.1) (20090824)
- * [dwm-6.1-fancybar.diff](dwm-6.1-fancybar.diff) (20151109)
+ * [dwm-fancybar-6.1.diff](dwm-fancybar-6.1.diff) (20151109)
  * [dwm-fancybar-git-20160626-7af4d43.diff](dwm-fancybar-git-20160626-7af4d43.diff)
 
 ## Author

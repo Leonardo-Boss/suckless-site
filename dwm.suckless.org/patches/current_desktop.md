@@ -23,7 +23,7 @@
 
 ## Download
 
- * [dwm-5.8.2-current_desktop.diff](dwm-5.8.2-current_desktop.diff) (dwm 2010604)
+ * [dwm-current_desktop-5.8.2.diff](dwm-current_desktop-5.8.2.diff) (dwm 2010604)
 
 ## Author
 

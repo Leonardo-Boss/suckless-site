@@ -12,9 +12,9 @@ Patches against different versions of dwm are available at
 [dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
 
  * [dwm-pertag-20160626-7af4d43.diff](dwm-pertag-20160626-7af4d43.diff)
- * [dwm-6.1-pertag.diff](dwm-6.1-pertag.diff) (6.4K) (20151109)
+ * [dwm-pertag-6.1.diff](dwm-pertag-6.1.diff) (6.4K) (20151109)
  * [dwm-git-20120406-pertag.diff](dwm-git-20120406-pertag.diff) (5955b)
- * [dwm-6.0-pertag.diff](dwm-6.0-pertag.diff) (5955b) (20120406)
+ * [dwm-pertag-6.0.diff](dwm-pertag-6.0.diff) (5955b) (20120406)
  * [dwm-r1578-pertag.diff][9] (nmaster included in mainline)
  * [dwm-5.8.2-pertag.diff][7]
  * [dwm-5.7.2-pertag.diff][6]

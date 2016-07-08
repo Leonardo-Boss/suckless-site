@@ -88,7 +88,7 @@ behind (logs, tests, ...).
 ## Links
 
 * [centeredmaster.c](centeredmaster.c) - 2015/11/22
-* [dwm-6.1-centeredmaster.diff](dwm-6.1-centeredmaster.diff) - 2015/11/21
+* [dwm-centeredmaster-6.1.diff](dwm-centeredmaster-6.1.diff) - 2015/11/21
 
 
 [jerome](http://blog.jardinmagique.info) <jerome@gcu.info>

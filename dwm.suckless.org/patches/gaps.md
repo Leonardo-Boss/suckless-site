@@ -17,7 +17,7 @@ There is a variation of the patch for the [xtile](xtile) layout also.
 Download
 --------
 
-* For vanilla tile: [dwm-6.0-gaps.diff](dwm-6.0-gaps.diff)
+* For vanilla tile: [dwm-gaps-6.0.diff](dwm-gaps-6.0.diff)
 
 * For xtile tile: [dwm-6.0-xtile-gaps.diff](dwm-6.0-xtile-gaps.diff)
 

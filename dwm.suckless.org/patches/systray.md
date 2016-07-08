@@ -15,7 +15,7 @@ Patches against different versions of dwm are available at
  * [dwm-git-20160103-systray.diff](dwm-git-20160103-systray.diff) (3465bed)
  * [dwm-6.1-systray.diff](dwm-6.1-systray.diff) (22K) (20151109)
  * [dwm-git-20130119-systray.diff](dwm-git-20130119-systray.diff]) (19946b)
- * [dwm-6.0-systray.diff](dwm-6.0-systray.diff) (19788b) (20130119)
+ * [dwm-systray-6.0.diff](dwm-systray-6.0.diff) (19788b) (20130119)
 
 Author
 ------

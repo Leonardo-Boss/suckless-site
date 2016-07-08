@@ -14,7 +14,7 @@ the most recent client in the other column).
 
 ## Download
 
-* [dwm-6.1-switchcol.diff](dwm-6.1-switchcol.diff) (1126b) (20160325)
+* [dwm-switchcol-6.1.diff](dwm-switchcol-6.1.diff) (1126b) (20160325)
 
 ## Author
 * phi <crispyfrog@163.com>

@@ -49,8 +49,8 @@ tile mode...
 
 ## Download
 
- * [dwm-6.1-uselessgap.diff](dwm-6.1-uselessgap.diff) (4K) (20150815), now supports nmaster.
- * [dwm-5.9-uselessgap.diff](dwm-5.9-uselessgap.diff) (1.8k) (20110107 updated. Thanks Jordan for your bug report)
+ * [dwm-uselessgap-6.1.diff](dwm-uselessgap-6.1.diff) (4K) (20150815), now supports nmaster.
+ * [dwm-uselessgap-5.9.diff](dwm-uselessgap-5.9.diff) (1.8k) (20110107 updated. Thanks Jordan for your bug report)
 
 	Updated to use the new resizeclient() function instead of resize()
 

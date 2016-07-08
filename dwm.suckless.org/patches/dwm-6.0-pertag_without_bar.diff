@@ -1,7 +1,7 @@
 Author: Jan Christoph Ebersbach <jceb@e-jc.de>,
         Troy Sankey <sankeytms@gmail.com>
 This modified pertag patch keeps the bar static.  It is based on Jan
-Christoph Ebersbach's dwm-6.0-pertag.diff.
+Christoph Ebersbach's dwm-pertag-6.0.diff.
 
 diff --git a/dwm.c b/dwm.c
 index 1d78655..bd0a7d9 100644

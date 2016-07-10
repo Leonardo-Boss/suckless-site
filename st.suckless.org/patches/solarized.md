@@ -51,9 +51,9 @@ or the dark color scheme:
  * [st-solarized-dark-0.6.diff](st-solarized-dark-0.6.diff)
  * [st-solarized-dark-git-20160620-528241a.diff](st-solarized-dark-git-20160620-528241a.diff)
 
-*Both (Swap between light/dark with F6)*:
+*Both (swap between light/dark with F6)*:
 
- * [st-solarswap-20160709-528241a.diff](st-solarswap-20160709-528241a.diff)
+ * [st-solarized-both-git-20160709-528241a.diff](st-solarized-both-git-20160710-528241a.diff)
 
 
 Authors
@@ -61,4 +61,4 @@ Authors
 
  * Nils Reuße - nilsreusse@gmail.com
  * Laslo Hunhold - dev@frign.de (0.5, 0.6, git ports)
- * Ryan Roden-Corrent - ryan@rcorre.net (solarswap)
+ * Ryan Roden-Corrent - ryan@rcorre.net (both)

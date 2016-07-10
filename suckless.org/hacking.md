@@ -45,7 +45,7 @@ The expected format for patches is
 
 For git revisions:
 
-    toolname-patchname-YYYYMMDD-SHORTHASH.diff
+    toolname-patchname-git-YYYYMMDD-SHORTHASH.diff
     dwm-allyourbase-git-20160617-3465bed.diff
 
 The YYYYMMDD date should correspond to the last time the patch has been modified.  

@@ -1,5 +1,5 @@
-ARGBColor
-==========
+alpha
+=====
 
 ->[![Screenshot](dwm-alpha.png)](dwm-alpha.png)<-
 

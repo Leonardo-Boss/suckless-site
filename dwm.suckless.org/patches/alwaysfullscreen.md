@@ -10,9 +10,11 @@ using focusstack().
 Download
 --------
 
-* [dwm-alwaysfullscreen-20130827-cdec978.diff](dwm-alwaysfullscreen-20130827-cdec978.diff)
+* [dwm-alwaysfullscreen-6.1.diff](dwm-alwaysfullscreen-6.1.diff)
+* [dwm-alwaysfullscreen-20160713-56a31dc.diff](dwm-alwaysfullscreen-20160713-56a31dc.diff)
 
 Authors
 -------
 
 * Chris Down - chris@chrisdown.name
+* Laslo Hunhold - dev@frign.de (6.1, git ports)

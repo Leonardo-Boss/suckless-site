@@ -13,10 +13,12 @@ just like the [alpha-patch for st](http://st.suckless.org/patches/alpha).
 Download
 --------
 
- * [dwm-alpha-20151219-3465bed.diff](dwm-alpha-20151219-3465bed.diff)
+ * [dwm-alpha-6.1.diff](dwm-alpha-6.1.diff)
+ * [TODO] git port
 
 
 Authors
 -------
 
  * Eon S. Jeon - esjeon@hyunmu.am
+ * Laslo Hunhold - dev@frign.de (6.1 port)

@@ -20,5 +20,5 @@ Download
 Authors
 -------
 
- * Eon S. Jeon - esjeon@hyunmu.am
- * Laslo Hunhold - dev@frign.de (6.1 port)
+ * Eon S. Jeon - <esjeon@hyunmu.am>
+ * Laslo Hunhold - <dev@frign.de> (6.1 port)

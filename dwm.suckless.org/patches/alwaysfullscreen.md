@@ -16,5 +16,5 @@ Download
 Authors
 -------
 
-* Chris Down - chris@chrisdown.name
-* Laslo Hunhold - dev@frign.de (6.1, git ports)
+* Chris Down - <chris@chrisdown.name>
+* Laslo Hunhold - <dev@frign.de> (6.1, git ports)

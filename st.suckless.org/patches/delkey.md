@@ -15,5 +15,5 @@ Download
 Authors
 -------
 
- * Roberto E. Vargas Caballero - k0ga@shike2.com
- * Laslo Hunhold - dev@frign.de (0.6, git ports)
+ * Roberto E. Vargas Caballero - <k0ga@shike2.com>
+ * Laslo Hunhold - <dev@frign.de> (0.6, git ports)

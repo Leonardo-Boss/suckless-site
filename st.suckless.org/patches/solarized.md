@@ -59,6 +59,6 @@ or the dark color scheme:
 Authors
 -------
 
- * Nils Reuße - nilsreusse@gmail.com
- * Laslo Hunhold - dev@frign.de (0.5, 0.6, git ports)
- * Ryan Roden-Corrent - ryan@rcorre.net (both)
+ * Nils Reuße - <nilsreusse@gmail.com>
+ * Laslo Hunhold - <dev@frign.de> (0.5, 0.6, git ports)
+ * Ryan Roden-Corrent - <ryan@rcorre.net> (both)

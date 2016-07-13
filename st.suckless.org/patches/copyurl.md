@@ -22,5 +22,5 @@ Download
 Authors
 -------
 
- * Brandon Mulcahy - brandon@jangler.info
- * Laslo Hunhold - dev@frign.de (0.6, git ports)
+ * Brandon Mulcahy - <brandon@jangler.info>
+ * Laslo Hunhold - <dev@frign.de> (0.6, git ports)

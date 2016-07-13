@@ -32,5 +32,5 @@ Download
 Authors
 -------
 
- * Rob Pilling - robpilling@gmail.com
- * Laslo Hunhold - dev@frign.de (0.4.1, 0.5, 0.6, git ports)
+ * Rob Pilling - <robpilling@gmail.com>
+ * Laslo Hunhold - <dev@frign.de> (0.4.1, 0.5, 0.6, git ports)

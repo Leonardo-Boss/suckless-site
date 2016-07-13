@@ -21,5 +21,5 @@ Download
 Authors
 -------
 
- * Matthias Schoth - mschoth@gmail.com
- * Laslo Hunhold - dev@frign.de (git port)
+ * Matthias Schoth - <mschoth@gmail.com>
+ * Laslo Hunhold - <dev@frign.de> (git port)

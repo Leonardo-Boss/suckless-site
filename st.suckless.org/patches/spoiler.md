@@ -25,5 +25,5 @@ Download
 Author
 ------
 
- * dequis - dx@dxzone.com.ar
- * Laslo Hunhold - dev@frign.de (git port)
+ * dequis - <dx@dxzone.com.ar>
+ * Laslo Hunhold - <dev@frign.de> (git port)

@@ -33,5 +33,5 @@ Download
 Authors
 -------
 
- * Nils Reuße - nilsreusse@gmail.com
- * Laslo Hunhold - dev@frign.de (git port)
+ * Nils Reuße - <nilsreusse@gmail.com>
+ * Laslo Hunhold - <dev@frign.de> (git port)

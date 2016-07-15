@@ -30,7 +30,7 @@ that you may want to execute (like tabbed-surf or similar).
 Download
 --------
 
- * [dwm-6.1-dwmfifo.diff](dwm-6.1-dwmfifo.diff) (6.9k) (29.01.2014)
+ * [dwm-dwmfifo-6.1.diff](dwm-dwmfifo-6.1.diff) (6.9k) (29.01.2014)
 
 Author
 ------

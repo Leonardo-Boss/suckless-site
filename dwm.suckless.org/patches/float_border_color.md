@@ -7,7 +7,7 @@ This patch allows you to specify a different border color for floating windows.
 Patches against different versions of dwm are available at
 [dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
 
- * [dwm-6.1-float_border_color2.diff](dwm-6.1-float_border_color2.diff) (Unclean patch)
+ * [dwm-float_border_color-6.1.diff](dwm-float_border_color-6.1.diff) (Unclean patch)
  * [dwm-6.0-float_border_color2.diff](dwm-6.0-float_border_color2.diff)
 
 ## Author ##

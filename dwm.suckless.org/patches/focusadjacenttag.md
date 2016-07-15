@@ -21,7 +21,7 @@ Default key bindings
 Download
 --------
 
- * [dwm-6.0-focusadjacenttag.diff](dwm-6.0-focusadjacenttag.diff)
+ * [dwm-6.0-focusadjacenttag.diff](dwm-6.0-focusadjacenttag.diff) (Unclean patch)
 
 Authors
 -------

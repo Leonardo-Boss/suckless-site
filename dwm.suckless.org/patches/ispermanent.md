@@ -10,7 +10,7 @@ windows.
 Download
 --------
 
-* [dwm-6.1-ispermanent.diff](dwm-6.1-ispermanent.diff)
+* [dwm-6.1-ispermanent.diff](dwm-6.1-ispermanent.diff) (Unclean patch)
 
 Author
 ------

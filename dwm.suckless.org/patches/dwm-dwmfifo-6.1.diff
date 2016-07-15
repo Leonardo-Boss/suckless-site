@@ -69,7 +69,7 @@ index 7054c06..9f4ef79 100644
 +	{ "toggletag9",      toggletag,      {.ui = 1 << 8} },
 +};
 diff --git a/dwm.c b/dwm.c
-index 0362114..194c3e9 100644
+index 0362114..5c45d2a 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -21,6 +21,7 @@
@@ -142,7 +142,7 @@ index 0362114..194c3e9 100644
 +
 +       n = read(fifofd, buf, sizeof(buf) - 1);
 +       if (n == -1)
-+               die("Failed to read from DWM fifo\n");
++               die("Failed to read() from DWM fifo %s:", dwmfifo);
 +       buf[n] = '\0';
 +       for (i = 0; i < LENGTH(commands); i++) {
 +               if (strcmp(commands[i].name, buf) == 0) {
@@ -211,7 +211,7 @@ index 0362114..194c3e9 100644
  	focus(NULL);
 +	fifofd = open(dwmfifo, O_RDWR | O_NONBLOCK);
 +	if (fifofd < 0)
-+		die("Failed to open DWM fifo\n");
++		die("Failed to open() DWM fifo %s:", dwmfifo);
  }
  
  void

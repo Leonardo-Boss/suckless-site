@@ -1,5 +1,5 @@
 diff --git a/config.def.h b/config.def.h
-index 7054c06..d1140ff 100644
+index 7054c06..2bfd607 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -24,9 +24,10 @@ static const Rule rules[] = {
@@ -12,26 +12,37 @@ index 7054c06..d1140ff 100644
 +	/* class      instance    title       tags mask     isfloating   isterminal noswallow monitor */
 +	{ "Gimp",     NULL,       NULL,       0,            1,           0,         0,        -1 },
 +	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           0,         0,        -1 },
-+	{ "st-",      NULL,       NULL,       0,            0,           1,         1,        -1 },
++	{ "st",       NULL,       NULL,       0,            0,           1,         1,        -1 },
  };
  
  /* layout(s) */
+diff --git a/config.mk b/config.mk
+index 4eefb71..34ea872 100644
+--- a/config.mk
++++ b/config.mk
+@@ -22,7 +22,7 @@ FREETYPEINC = /usr/include/freetype2
+ 
+ # includes and libs
+ INCS = -I${X11INC} -I${FREETYPEINC}
+-LIBS = -L${X11LIB} -lX11 ${XINERAMALIBS} ${FREETYPELIBS}
++LIBS = -L${X11LIB} -lX11 ${XINERAMALIBS} ${FREETYPELIBS} -lX11-xcb -lxcb -lxcb-res
+ 
+ # flags
+ CPPFLAGS = -D_BSD_SOURCE -D_POSIX_C_SOURCE=2 -DVERSION=\"${VERSION}\" ${XINERAMAFLAGS}
 diff --git a/dwm.c b/dwm.c
-index 0362114..273cc32 100644
+index 0362114..566491a 100644
 --- a/dwm.c
 +++ b/dwm.c
-@@ -40,6 +40,10 @@
+@@ -40,6 +40,8 @@
  #include <X11/extensions/Xinerama.h>
  #endif /* XINERAMA */
  #include <X11/Xft/Xft.h>
-+#ifdef SWALLOWING
 +#include <X11/Xlib-xcb.h>
 +#include <xcb/res.h>
-+#endif
  
  #include "drw.h"
  #include "util.h"
-@@ -92,9 +96,11 @@ struct Client {
+@@ -92,9 +94,11 @@ struct Client {
  	int basew, baseh, incw, inch, maxw, maxh, minw, minh;
  	int bw, oldbw;
  	unsigned int tags;
@@ -44,7 +55,7 @@ index 0362114..273cc32 100644
  	Monitor *mon;
  	Window win;
  };
-@@ -138,6 +144,8 @@ typedef struct {
+@@ -138,6 +142,8 @@ typedef struct {
  	const char *title;
  	unsigned int tags;
  	int isfloating;
@@ -53,7 +64,7 @@ index 0362114..273cc32 100644
  	int monitor;
  } Rule;
  
-@@ -170,12 +178,14 @@ static void focus(Client *c);
+@@ -170,12 +176,14 @@ static void focus(Client *c);
  static void focusin(XEvent *e);
  static void focusmon(const Arg *arg);
  static void focusstack(const Arg *arg);
@@ -68,7 +79,7 @@ index 0362114..273cc32 100644
  static void keypress(XEvent *e);
  static void killclient(const Arg *arg);
  static void manage(Window w, XWindowAttributes *wa);
-@@ -206,8 +216,10 @@ static void setup(void);
+@@ -206,8 +214,10 @@ static void setup(void);
  static void showhide(Client *c);
  static void sigchld(int unused);
  static void spawn(const Arg *arg);
@@ -79,7 +90,7 @@ index 0362114..273cc32 100644
  static void tile(Monitor *);
  static void togglebar(const Arg *arg);
  static void togglefloating(const Arg *arg);
-@@ -227,6 +239,7 @@ static void updatewindowtype(Client *c);
+@@ -227,6 +237,7 @@ static void updatewindowtype(Client *c);
  static void updatetitle(Client *c);
  static void updatewmhints(Client *c);
  static void view(const Arg *arg);
@@ -87,18 +98,16 @@ index 0362114..273cc32 100644
  static Client *wintoclient(Window w);
  static Monitor *wintomon(Window w);
  static int xerror(Display *dpy, XErrorEvent *ee);
-@@ -267,6 +280,10 @@ static Drw *drw;
+@@ -267,6 +278,8 @@ static Drw *drw;
  static Monitor *mons, *selmon;
  static Window root;
  
-+#ifdef SWALLOWING
 +static xcb_connection_t *xcon;
-+#endif /* SWALLOWING */
 +
  /* configuration, allows nested code to access above variables */
  #include "config.h"
  
-@@ -296,6 +313,7 @@ applyrules(Client *c)
+@@ -296,6 +309,7 @@ applyrules(Client *c)
  		&& (!r->class || strstr(class, r->class))
  		&& (!r->instance || strstr(instance, r->instance)))
  		{
@@ -106,7 +115,7 @@ index 0362114..273cc32 100644
  			c->isfloating = r->isfloating;
  			c->tags |= r->tags;
  			for (m = mons; m && m->num != r->monitor; m = m->next);
-@@ -413,6 +431,46 @@ attachstack(Client *c)
+@@ -413,6 +427,46 @@ attachstack(Client *c)
  }
  
  void
@@ -153,7 +162,7 @@ index 0362114..273cc32 100644
  buttonpress(XEvent *e)
  {
  	unsigned int i, x, click;
-@@ -475,7 +533,7 @@ cleanup(void)
+@@ -475,7 +529,7 @@ cleanup(void)
  	selmon->lt[selmon->sellt] = &foo;
  	for (m = mons; m; m = m->next)
  		while (m->stack)
@@ -162,7 +171,7 @@ index 0362114..273cc32 100644
  	XUngrabKey(dpy, AnyKey, AnyModifier, root);
  	while (mons)
  		cleanupmon(mons);
-@@ -661,6 +719,9 @@ destroynotify(XEvent *e)
+@@ -661,6 +715,9 @@ destroynotify(XEvent *e)
  
  	if ((c = wintoclient(ev->window)))
  		unmanage(c, 1);
@@ -172,7 +181,7 @@ index 0362114..273cc32 100644
  }
  
  void
-@@ -1032,12 +1093,13 @@ killclient(const Arg *arg)
+@@ -1032,12 +1089,13 @@ killclient(const Arg *arg)
  void
  manage(Window w, XWindowAttributes *wa)
  {
@@ -187,7 +196,7 @@ index 0362114..273cc32 100644
  	updatetitle(c);
  	if (XGetTransientForHint(dpy, w, &trans) && (t = wintoclient(trans))) {
  		c->mon = t->mon;
-@@ -1045,7 +1107,9 @@ manage(Window w, XWindowAttributes *wa)
+@@ -1045,7 +1103,9 @@ manage(Window w, XWindowAttributes *wa)
  	} else {
  		c->mon = selmon;
  		applyrules(c);
@@ -197,7 +206,7 @@ index 0362114..273cc32 100644
  	/* geometry */
  	c->x = c->oldx = wa->x;
  	c->y = c->oldy = wa->y;
-@@ -1087,6 +1151,8 @@ manage(Window w, XWindowAttributes *wa)
+@@ -1087,6 +1147,8 @@ manage(Window w, XWindowAttributes *wa)
  	c->mon->sel = c;
  	arrange(c->mon);
  	XMapWindow(dpy, c->win);
@@ -206,7 +215,7 @@ index 0362114..273cc32 100644
  	focus(NULL);
  }
  
-@@ -1758,6 +1824,20 @@ unmanage(Client *c, int destroyed)
+@@ -1758,6 +1820,20 @@ unmanage(Client *c, int destroyed)
  	Monitor *m = c->mon;
  	XWindowChanges wc;
  
@@ -227,7 +236,7 @@ index 0362114..273cc32 100644
  	/* The server grab construct avoids race conditions. */
  	detach(c);
  	detachstack(c);
-@@ -1773,9 +1853,12 @@ unmanage(Client *c, int destroyed)
+@@ -1773,9 +1849,12 @@ unmanage(Client *c, int destroyed)
  		XUngrabServer(dpy);
  	}
  	free(c);
@@ -243,7 +252,7 @@ index 0362114..273cc32 100644
  }
  
  void
-@@ -2040,16 +2123,118 @@ view(const Arg *arg)
+@@ -2040,16 +2119,116 @@ view(const Arg *arg)
  	arrange(selmon);
  }
  
@@ -252,7 +261,6 @@ index 0362114..273cc32 100644
 +{
 +	pid_t result = 0;
 +
-+#ifdef SWALLOWING
 +	xcb_res_client_id_spec_t spec = {0};
 +	spec.client = w;
 +	spec.mask = XCB_RES_CLIENT_ID_MASK_LOCAL_CLIENT_PID;
@@ -275,7 +283,6 @@ index 0362114..273cc32 100644
 +	}
 +
 +	free(r);
-+#endif /* SWALLOWING */
 +
 +	if (result == (pid_t)-1)
 +		result = 0;
@@ -364,14 +371,12 @@ index 0362114..273cc32 100644
  	return NULL;
  }
  
-@@ -2131,6 +2316,10 @@ main(int argc, char *argv[])
+@@ -2131,6 +2310,8 @@ main(int argc, char *argv[])
  		fputs("warning: no locale support\n", stderr);
  	if (!(dpy = XOpenDisplay(NULL)))
  		die("dwm: cannot open display\n");
-+#ifdef SWALLOWING
 +	if (!(xcon = XGetXCBConnection(dpy)))
 +		die("dwm: cannot get xcb connection\n");
-+#endif
  	checkotherwm();
  	setup();
  	scan();

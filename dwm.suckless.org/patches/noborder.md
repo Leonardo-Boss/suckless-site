@@ -14,7 +14,6 @@ Patches against different versions of dwm are available at
 [dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
 
  * [dwm-noborder-6.1.diff](dwm-noborder-6.1.diff)
- * [dwm-10e232f9ace7-statusallmons.diff](dwm-10e232f9ace7-statusallmons.diff) (982b) (20120406)
  * [dwm-noborder-6.0.diff](dwm-noborder-6.0.diff)
 
 Author

@@ -23,8 +23,8 @@ movestack(-1) will swap the client with the current focus with the previous clie
 
 ## Download
 
- * [dwm-movestack-6.1.diff](dwm-movestack-6.1.diff) (2.6k) (20160604)
- * [dwm-movestack-5.8.2.diff](historical/dwm-movestack-5.8.2.diff) (2.6k) (20101102)
+ * [dwm-movestack-6.1.diff](dwm-movestack-6.1.diff)
+ * [dwm-movestack-5.8.2.diff](historical/dwm-movestack-5.8.2.diff)
 
 ## Author
 

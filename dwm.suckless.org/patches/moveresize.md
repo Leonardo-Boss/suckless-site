@@ -63,9 +63,7 @@ Patches against different versions of dwm are available at
 
  * [dwm-moveresize-6.1.diff](dwm-moveresize-6.1.diff) (2095b) (20140209)
  * [dwm-10e232f9ace7-moveresize.diff](dwm-10e232f9ace7-moveresize.diff) (2025b) (20120406)
- * [dwm-10e232f9ace7-maximize_vert_horz.diff](dwm-10e232f9ace7-maximize_vert_horz.diff) (2385b) (20120406)
  * [dwm-moveresize-6.0.diff](dwm-moveresize-6.0.diff) (2025b) (20120406)
- * [dwm-6.0-maximize_vert_horz.diff](dwm-6.0-maximize_vert_horz.diff) (2385b) (20120406)
 
 Authors
 -------

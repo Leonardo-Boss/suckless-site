@@ -10,6 +10,8 @@ windows.
 Download
 --------
 
+<!-- Author has indicated this unclean patch will not be fixed but says it
+     would be trivial to forward port, fixes are welcome. -->
 * [dwm-6.1-ispermanent.diff](dwm-6.1-ispermanent.diff) (Unclean patch)
 
 Author

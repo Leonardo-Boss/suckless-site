@@ -44,8 +44,8 @@ old behaviours of the patch(dwm-mark-6.1.diff):
  4. swapfocus does not activate tags for the marked client
  5. swapfocus does not focus monitors correctly
 
-* [dwm-6.1-mark-new.diff](dwm-6.1-mark-new.diff) (5815b) (20160309)
-* [dwm-mark-6.1.diff](dwm-mark-6.1.diff) (7161b) (20160220)
+* [dwm-mark-new-6.1.diff](dwm-mark-new-6.1.diff)
+* [dwm-mark-6.1.diff](dwm-mark-6.1.diff)
 
 ## Author ##
 * phi <crispyfrog@163.com>

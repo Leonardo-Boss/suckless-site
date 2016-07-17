@@ -21,7 +21,6 @@ Patches against different versions of dwm are available at
  * [dwm-pertag-5.6.1.diff][5]
  * [dwm-pertag-5.4.diff][4]
  * [dwm-pertag-5.2.diff][3]
- * [dwm-5.1-pertag.diff][2]
 
  * Using pertag but with the same barpos
    * [dwm-6.1-pertag_without_bar.diff](dwm-6.1-pertag_without_bar.diff) (5.2K) (20151109)
@@ -40,7 +39,6 @@ Authors
  * [Jochen Sprickerhof](mailto:project@firstname.lastname.de) (Updated to current git)
 
 [1]: historical/taglayouts
-[2]: http://v4hn.de/patches/dwm-5.1-pertag.diff
 [3]: historical/dwm-pertag-5.2.diff
 [4]: historical/dwm-pertag-5.4.diff
 [5]: historical/dwm-pertag-5.6.1.diff

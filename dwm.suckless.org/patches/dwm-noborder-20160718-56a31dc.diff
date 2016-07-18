@@ -1,7 +1,3 @@
-Author: Eric Pruitt, https://github.com/ericpruitt/
-Description: This patch disables borders on tiled windows when only one,
-non-floating window is visible.
-
 diff --git a/dwm.c b/dwm.c
 index b2bc9bd..d3e1970 100644
 --- a/dwm.c

@@ -3,19 +3,17 @@ noborder
 
 Description
 -----------
-This patch removes the border when there is just one window visible in tiled or monocle layout.
 
-For an alternative that works with most layouts without any layout-specific
-changes, check out [better borders](http://dwm.suckless.org/patches/better-borders).
+Remove the border when there is only one window visible.
 
 Download
 --------
-Patches against different versions of dwm are available at
-[dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
 
  * [dwm-noborder-6.1.diff](dwm-noborder-6.1.diff)
- * [dwm-noborder-6.0.diff](dwm-noborder-6.0.diff)
+ * [dwm-noborder-20160718-56a31dc.diff](dwm-noborder-20160718-56a31dc.diff)
 
-Author
-------
- * Jan Christoph Ebersbach - `<jceb at e-jc dot de>`
+Authors
+-------
+
+ * Eric Pruitt - <eric.pruitt@gmail.com>
+ * Laslo Hunhold - <dev@frign.de> (6.1, git port)

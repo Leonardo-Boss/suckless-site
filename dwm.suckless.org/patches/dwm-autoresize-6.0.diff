@@ -1,8 +1,8 @@
 diff --git a/dwm.c b/dwm.c
-index e3bf6f4..8a2c646 100644
+index 1d78655..6c61aab 100644
 --- a/dwm.c
 +++ b/dwm.c
-@@ -91,7 +91,7 @@ struct Client {
+@@ -90,7 +90,7 @@ struct Client {
  	int basew, baseh, incw, inch, maxw, maxh, minw, minh;
  	int bw, oldbw;
  	unsigned int tags;
@@ -11,7 +11,7 @@ index e3bf6f4..8a2c646 100644
  	Client *next;
  	Client *snext;
  	Monitor *mon;
-@@ -633,6 +633,8 @@ configurerequest(XEvent *e) {
+@@ -626,6 +626,8 @@ configurerequest(XEvent *e) {
  				configure(c);
  			if(ISVISIBLE(c))
  				XMoveResizeWindow(dpy, c->win, c->x, c->y, c->w, c->h);
@@ -20,7 +20,7 @@ index e3bf6f4..8a2c646 100644
  		}
  		else
  			configure(c);
-@@ -1663,6 +1665,12 @@ showhide(Client *c) {
+@@ -1644,6 +1646,12 @@ showhide(Client *c) {
  		return;
  	if(ISVISIBLE(c)) { /* show clients top down */
  		XMoveWindow(dpy, c->win, c->x, c->y);

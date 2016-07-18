@@ -4,8 +4,8 @@ attachabove
 Description
 -----------
 
-`attachabove` makes new clients attach above the selected client (instead of
-always becoming the new master) - basically how Xmonad does it.
+Make new clients attach above the selected client, instead of
+always becoming the new master. This behaviour is known from Xmonad.
 
 Download
 --------

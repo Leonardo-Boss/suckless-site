@@ -1,94 +1,63 @@
-# centeredmaster
+centeredmaster
+==============
 
-## `centeredmaster` 
+Description
+-----------
 
-makes the nmaster area centered
-on screen, using `mfact * monitor width & height`, with the stacked windows
-distributed on left and right.
+`centeredmaster` and `centeredfloatingmaster` are two stack layouts for dwm.
 
-With one client in master:
+`centeredmaster` centers the nmaster area on screen, using
+`mfact * monitor width & height`, with the stacked windows
+distributed to the left and right.
 
-    +------------------------------+
-    |+--------++--------++--------+|
-    ||        ||        ||        ||
-    ||        ||        ||        ||
-    ||        ||        ||        ||
-    ||  S2    ||   M    ||   S1   ||
-    ||        ||        ||        ||
-    ||        ||        ||        ||
-    ||        ||        ||        ||
-    ||        ||        ||        ||
-    |+--------++--------++--------+|
-    +------------------------------+
+With one and two clients in master respectively this results in:
 
-With two clients in master:
+    +------------------------------+       +------------------------------+
+    |+--------++--------++--------+|       |+--------++--------++--------+|
+    ||        ||        ||        ||       ||        ||        ||        ||
+    ||        ||        ||        ||       ||        ||   M1   ||        ||
+    ||        ||        ||        ||       ||        ||        ||        ||
+    ||  S2    ||   M    ||   S1   ||       ||        |+--------+|        ||
+    ||        ||        ||        ||       ||        |+--------+|        ||
+    ||        ||        ||        ||       ||        ||        ||        ||
+    ||        ||        ||        ||       ||        ||   M2   ||        ||
+    ||        ||        ||        ||       ||        ||        ||        ||
+    |+--------++--------++--------+|       |+--------++--------++--------+|
+    +------------------------------+       +------------------------------+
 
-    +------------------------------+
-    |+--------++--------++--------+|
-    ||        ||        ||        ||
-    ||        ||   M1   ||        ||
-    ||        ||        ||        ||
-    ||        |+--------+|        ||
-    ||        |+--------+|        ||
-    ||        ||        ||        ||
-    ||        ||   M2   ||        ||
-    ||        ||        ||        ||
-    |+--------++--------++--------+|
-    +------------------------------+
+`centeredfloatingmaster` centers the nmaster area on screen, using
+`mfact * monitor width & height` over a horizontally tiled `stack` area,
+comparable to a scratchpad.
 
-## `centeredfloatingmaster` 
+With one and two clients in master respectively this results in:
 
-makes the nmaster area centered
-on screen, using `mfact * monitor width & height`, over an
-horizontally tiled `stack` area, pretty much like
-a "scratchpad".
+    +------------------------------+       +------------------------------+
+    |+--------++--------++--------+|       |+--------++--------++--------+|
+    ||        ||        ||        ||       ||        ||        ||        ||
+    ||    +------------------+    ||       ||    +--------++--------+    ||
+    ||    |                  |    ||       ||    |        ||        |    ||
+    ||    |                  |    ||       ||    |        ||        |    ||
+    ||    |        M         |    ||       ||    |   M1   ||   M2   |    ||
+    ||    |                  |    ||       ||    |        ||        |    ||
+    ||    +------------------+    ||       ||    +--------++--------+    ||
+    ||        ||        ||        ||       ||        ||        ||        ||
+    |+--------++--------++--------+|       |+--------++--------++--------+|
+    +------------------------------+       +------------------------------+
 
-With one client in master:
+These stack layouts can be useful on large screens, where `monocle` or
+`htile` might be either too large or forcing the user to type in a corner
+of the screen.
+They allow for instance to center the editor while being able to keep an
+eye on background processes (logs, tests,...)
 
-    +------------------------------+
-    |+--------++--------++--------+|
-    ||        ||        ||        ||
-    ||    +------------------+    ||
-    ||    |                  |    ||
-    ||    |                  |    ||
-    ||    |        M         |    ||
-    ||    |                  |    ||
-    ||    +------------------+    ||
-    ||        ||        ||        ||
-    |+--------++--------++--------+|
-    +------------------------------+
+Download
+--------
 
-With two clients in master:
+ * [dwm-centeredmaster-6.1.diff](dwm-centeredmaster-6.1.diff)
+ * [dwm-centeredmaster-20160719-56a31dc.diff](dwm-centeredmaster-20160719-56a31dc.diff)
 
-    +------------------------------+
-    |+--------++--------++--------+|
-    ||        ||        ||        ||
-    ||    +--------++--------+    ||
-    ||    |        ||        |    ||
-    ||    |        ||        |    ||
-    ||    |   M1   ||   M2   |    ||
-    ||    |        ||        |    ||
-    ||    +--------++--------+    ||
-    ||        ||        ||        ||
-    |+--------++--------++--------+|
-    +------------------------------+
+Authors
+-------
 
-
-I find it useful on large screens (say 1920px wide), where
-`monocle` or `htile` feels either too large or makes me type in
-a corner of the screen.
-
-With `centeredmaster`, for instance, I can set my editor in the
-center, while keeping an eye on what's happening in the windows
-behind (logs, tests, ...).
-
-
-
-
-## Links
-
-* [centeredmaster.c](centeredmaster.c) - 2015/11/22
-* [dwm-centeredmaster-6.1.diff](dwm-centeredmaster-6.1.diff) - 2015/11/21
-
-
-[jerome](http://blog.jardinmagique.info) <jerome@gcu.info>
+ * [Jérôme Andrieux](http://blog.jardinmagique.info) - <jerome@gcu.info>
+ * Laslo Hunhold - <dev@frign.de> (6.1, git ports)

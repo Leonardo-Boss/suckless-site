@@ -16,10 +16,11 @@ Description
 	|     |     |     |       +-----------------+
 	+-----+-----+-----+       +-----------------+
 
+`bstack` can be selected with [Alt]+[u], `bstackhoriz` with [Alt]+[o].
+
 Download
 --------
 
- * [dwm-bottomstack-6.0.diff](dwm-bottomstack-6.0.diff)
  * [dwm-bottomstack-6.1.diff](dwm-bottomstack-6.1.diff)
  * [dwm-bottomstack-20160719-56a31dc.diff](dwm-bottomstack-20160719-56a31dc.diff)
 
@@ -27,4 +28,4 @@ Authors
 -------
 
  * Anselm R Garbe - <anselm@garbe.us>
- * Laslo Hunhold - <dev@frign.de> (6.0, 6.1, git ports)
+ * Laslo Hunhold - <dev@frign.de> (6.1, git ports)

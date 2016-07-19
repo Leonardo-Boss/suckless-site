@@ -8,7 +8,7 @@ Description
 
 `centeredmaster` centers the nmaster area on screen, using
 `mfact * monitor width & height`, with the stacked windows
-distributed to the left and right.
+distributed to the left and right. It can be selected with [Alt]+[u].
 
 With one and two clients in master respectively this results in:
 
@@ -27,7 +27,7 @@ With one and two clients in master respectively this results in:
 
 `centeredfloatingmaster` centers the nmaster area on screen, using
 `mfact * monitor width & height` over a horizontally tiled `stack` area,
-comparable to a scratchpad.
+comparable to a scratchpad. It can be selected with [Alt]+[o].
 
 With one and two clients in master respectively this results in:
 

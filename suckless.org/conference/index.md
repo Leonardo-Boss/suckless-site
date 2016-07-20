@@ -5,7 +5,7 @@ slcon3 will be held near Frankfurt/Main on 2016-09-(23-25).
 
 At the same occasion the Mitgliederversammlung (annual member meeting) of suckless.org e.V. will be held.
 
-The CfP is open for proposals from 2016-06-03 to 2016-07-20.
+The CfP is open for proposals from 2016-06-03 to 2016-08-20.
 
 Proposals
 ---------

@@ -5,9 +5,9 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
-2016-06-03
+2016-07-20
 ----------
-[slcon3](http://suckless.org/conference) Call for papers opened. Submission deadline: 2016-07-20
+[slcon3](http://suckless.org/conference) Call for papers opened. Submission deadline: 2016-08-20
 
 2016-04-02
 ----------

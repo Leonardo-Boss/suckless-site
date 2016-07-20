@@ -32,7 +32,7 @@ proposal. We then are able to fine-tune the schedule.
 
 Acceptance and final schedule presentation
 ------------------------------------------
-We expect to publish the accepted talks and schedule around early August 2016.
+We expect to publish the accepted talks and schedule around late August 2016.
 
 Previous conferences
 --------------------

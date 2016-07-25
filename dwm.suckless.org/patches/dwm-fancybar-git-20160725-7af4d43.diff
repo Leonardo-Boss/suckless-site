@@ -1,5 +1,5 @@
 diff --git a/dwm.c b/dwm.c
-index b2bc9bd..7552358 100644
+index b2bc9bd..32e94a7 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -708,10 +708,10 @@ dirtomon(int dir)
@@ -24,7 +24,7 @@ index b2bc9bd..7552358 100644
  		occ |= c->tags;
  		if (c->isurgent)
  			urg |= c->tags;
-@@ -742,15 +744,38 @@ drawbar(Monitor *m)
+@@ -742,15 +744,39 @@ drawbar(Monitor *m)
  	x = drw_text(drw, x, 0, w, bh, lrpad / 2, m->ltsymbol, 0);
  
  	if ((w = m->ww - sw - x) > bh) {
@@ -56,10 +56,11 @@ index b2bc9bd..7552358 100644
 +			for (c = m->clients; c; c = c->next) {
 +				if (!ISVISIBLE(c))
 +					continue;
-+				tw = m->sel == c ? TEXTW(c->name) : MIN(mw, TEXTW(c->name));
++				tw = MIN(m->sel == c ? w : mw, TEXTW(c->name));
 +
 +				drw_setscheme(drw, scheme[m->sel == c ? SchemeSel : SchemeNorm]);
-+				drw_text(drw, x, 0, tw, bh, lrpad / 2, c->name, 0);
++				if (tw > 0) /* trap special handling of 0 in drw_text */
++					drw_text(drw, x, 0, tw, bh, lrpad / 2, c->name, 0);
 +				if (c->isfloating)
 +					drw_rect(drw, x + boxs, boxs, boxw, boxw, c->isfixed, 0);
 +				x += tw;

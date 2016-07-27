@@ -20,7 +20,7 @@ Download
 --------
 
  * [st-spoiler-0.6.diff](st-spoiler-0.6.diff)
- * [st-spoiler-20160710-528241a.diff](st-spoiler-20160710-528241a.diff)
+ * [st-spoiler-20160727-308bfbf.diff](st-spoiler-20160727-308bfbf.diff)
 
 Author
 ------

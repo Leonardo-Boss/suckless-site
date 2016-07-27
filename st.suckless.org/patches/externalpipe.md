@@ -27,7 +27,7 @@ Download
 * [st-externalpipe-0.4.1.diff](st-externalpipe-0.4.1.diff)
 * [st-externalpipe-0.5.diff](st-externalpipe-0.5.diff)
 * [st-externalpipe-0.6.diff](st-externalpipe-0.6.diff)
-* [st-externalpipe-20160710-528241a.diff](st-externalpipe-20160710-528241a.diff)
+* [st-externalpipe-20160727-308bfbf.diff](st-externalpipe-20160727-308bfbf.diff)
 
 Authors
 -------

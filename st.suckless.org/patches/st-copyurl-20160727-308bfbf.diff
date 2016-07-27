@@ -1,8 +1,8 @@
 diff --git a/config.def.h b/config.def.h
-index 9e61010..c88bb0b 100644
+index b41747f..50321db 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -157,6 +157,7 @@ static Shortcut shortcuts[] = {
+@@ -172,6 +172,7 @@ static Shortcut shortcuts[] = {
  	{ MODKEY|ShiftMask,     XK_C,           clipcopy,       {.i =  0} },
  	{ MODKEY|ShiftMask,     XK_V,           clippaste,      {.i =  0} },
  	{ MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },

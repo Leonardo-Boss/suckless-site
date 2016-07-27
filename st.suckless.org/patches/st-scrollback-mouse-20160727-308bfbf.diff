@@ -1,8 +1,8 @@
 diff --git a/config.def.h b/config.def.h
-index 9e61010..f69b7d1 100644
+index b41747f..5ab8d2e 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -136,8 +136,14 @@ static unsigned int defaultunderline = 7;
+@@ -151,8 +151,14 @@ static unsigned int defaultunderline = 7;
   */
  static MouseShortcut mshortcuts[] = {
  	/* button               mask            string */

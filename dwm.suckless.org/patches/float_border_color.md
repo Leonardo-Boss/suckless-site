@@ -8,6 +8,7 @@ Patches against different versions of dwm are available at
 [dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
 
 <!-- Author emailed about this patch not applying cleanly  -->
+ * [dwm-float_border_color2-20160731-56a31dc.diff](dwm-float_border_color2-20160731-56a31dc.diff)
  * [dwm-float_border_color-6.1.diff](dwm-float_border_color-6.1.diff) (Unclean patch)
  * [dwm-float_border_color-6.0.diff](dwm-float_border_color-6.0.diff)
 

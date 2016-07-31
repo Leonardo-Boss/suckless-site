@@ -17,6 +17,7 @@
 Patches against different versions of dwm are available at
 [dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
 
+ * [dwm-push-20160731-56a31dc.diff](dwm-push-20160731-56a31dc.diff)
  * [dwm-push-6.0.diff](dwm-push-6.0.diff) (1332b) - 2012/4/6
  * [dwm-6.0-push_no_master.diff](dwm-6.0-push_no_master.diff)
  * [dwm-push-6.1.diff](dwm-push-6.1.diff) (1402b) - 2014/2/9

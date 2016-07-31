@@ -21,7 +21,7 @@ Please add your own version of dwmstatus here (keeping the list sorted).
 
 * [barM](barM.c) - can display all, time/date, ram usage, output of commands (the New BarMonitor).
 * [dstat](https://www.umaxx.net/dl) [Screenshot](https://www.umaxx.net/dstat.png) - displays the current network throughput, CPU usage, performance settings, battery status, temperature, volume settings, as well as the current date and time (OpenBSD only, no support for Linux).
-* [pinky-bar](https://github.com/wifiextender/pinky-bar) - Display overall usage about: cpu, cpu temperature and maximum clock speed regardless of the used cpu frequency governor, ram, disk, installed packages, kernel, voltage, system fans and their speed in RPM, motherboard (name, vendor, temperature), volume, time, the name of currently played song, network throughput, upload and download speed, disk I/O.
+* [pinky-bar](https://github.com/wifiextender/pinky-bar) - Display overall usage about: cpu (vendor, stepping, family, temperature) and maximum clock speed regardless of the used cpu frequency governor, ram, disk, installed packages, kernel, voltage, system fans and their speed in RPM, motherboard (name, vendor, temperature), volume, time, the name of currently played song, consumed internet bandwidth, upload and download speeds, disk I/O.
 * [dwmsd](https://github.com/johnko/dwmsd) - a daemon that listens on localhost tcp (may be useful as a base for asynchronous updates)
 * [go-dwmstatus](https://github.com/oniichaNj/go-dwmstatus) - A Go bar that prints current MPD song, load averages, time/date and battery percentage.
 * [gods](https://github.com/schachmat/gods) - implemented in Go. prints network speed, cpu, ram, date/time

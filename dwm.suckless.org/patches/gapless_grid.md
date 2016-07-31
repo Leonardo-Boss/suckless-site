@@ -26,6 +26,7 @@ Download `gaplessgrid.c` and add the gapless layout to your `config.h`:
 
 ## Download
 
+* [dwm-gaplessgrid-20160731-56a31dc.diff](dwm-gaplessgrid-20160731-56a31dc.diff)
 * [dwm-gaplessgrid-6.1.diff](dwm-gaplessgrid-6.1.diff) (1180b) (20140209)
 * [gaplessgrid.c](gaplessgrid.c) (dwm 5.6.1) (20090908)
 * [dwm-r1437-gaplessgrid.diff](historical/dwm-r1437-gaplessgrid.diff) (1.9k) (20090704)

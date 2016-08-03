@@ -15,5 +15,5 @@ Download
 Author
 ------
 
-* Hunter Haugen (Hunner) <[h.haugen@gmail.com](mailto:h.haugen@gmail.com)>
+* Written for 1.6 by Hunter Haugen
 * Ported to ii 1.7 by Nik Unger

@@ -36,7 +36,7 @@ jump to mark and clear the mark
 
 ## Download ##
 this patch has been revised, it's recommended to use dwm-6.1-mark-new.diff
-old behaviours of the patch(dwm-6.1-mark.diff):
+old behaviours of the patch(dwm-mark-6.1.diff):
 
  1. crashes when using mark features while the marked client has been killed.
  2. swapclient clears the mark.
@@ -44,8 +44,8 @@ old behaviours of the patch(dwm-6.1-mark.diff):
  4. swapfocus does not activate tags for the marked client
  5. swapfocus does not focus monitors correctly
 
-* [dwm-6.1-mark-new.diff](dwm-6.1-mark-new.diff) (5815b) (20160309)
-* [dwm-6.1-mark.diff](dwm-6.1-mark.diff) (7161b) (20160220)
+* [dwm-mark-new-6.1.diff](dwm-mark-new-6.1.diff)
+* [dwm-mark-6.1.diff](dwm-mark-6.1.diff)
 
 ## Author ##
-* phi <crispyforg@163.com>
+* phi <crispyfrog@163.com>

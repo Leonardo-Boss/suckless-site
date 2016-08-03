@@ -53,7 +53,7 @@ stacker changes to `MODKEY|ShiftMask+BackSpace`.
 Download
 --------
 
-* [dwm-6.0-stacker.diff](dwm-6.0-stacker.diff)
+* [dwm-stacker-6.0.diff](dwm-stacker-6.0.diff)
 
 Author
 ------

@@ -1,6 +1,8 @@
-# clipboard
+clipboard
+=========
 
-## Description
+Description
+-----------
 
 st only sets PRIMARY on selection since
 [March 2015](http://git.suckless.org/st/commit/?id=28259f5750f0dc7f52bbaf8b746ec3dc576a58ee)
@@ -10,12 +12,14 @@ according to the
 This patch brings back the old behaviour, namely additionally setting
 CLIPBOARD.
 
-## Download
+Download
+--------
 
-* [st-0.6-clipboard.diff](st-0.6-clipboard.diff)
-* [st-git-20150917-clipboard.diff](st-git-20150917-clipboard.diff)
+* [st-clipboard-0.6.diff](st-clipboard-0.6.diff)
+* [st-clipboard-20160727-308bfbf.diff](st-clipboard-20160727-308bfbf.diff)
 
-## Authors
+Authors
+-------
 
- * Kai Hendry - hendry@iki.fi
- * Laslo Hunhold - dev@frign.de (st-git-20150917 port)
+ * Kai Hendry - <hendry@iki.fi>
+ * Laslo Hunhold - <dev@frign.de> (git port)

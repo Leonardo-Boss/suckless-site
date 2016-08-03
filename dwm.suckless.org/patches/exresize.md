@@ -15,8 +15,10 @@ description.
 
 Download
 --------
-
- * [dwm-r1606-exresize.diff](dwm-r1606-exresize.diff) (20121117)
+ 
+<!-- This patch used to say (20121117), but it doesn't build against commits
+     from that date.  Author emailed.  -->
+ * [dwm-r1606-exresize.diff](dwm-r1606-exresize.diff) (Old patch, unknown version)
 
 Authors
 -------

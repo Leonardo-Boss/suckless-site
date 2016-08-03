@@ -16,12 +16,11 @@ URL on each line is selected.
 Download
 --------
 
- * [st-0.6-copyurl.diff](st-0.6-copyurl.diff)
- * [st-git-20160210-copyurl.diff](st-git-20160210-copyurl.diff)
+ * [st-copyurl-0.6.diff](st-copyurl-0.6.diff)
+ * [st-copyurl-20160727-308bfbf.diff](st-copyurl-20160727-308bfbf.diff)
 
 Authors
 -------
 
- * Brandon Mulcahy - brandon@jangler.info
- * Laslo Hunhold - dev@frign.de (st-0.6 port)
- * David Phillips - dbphillipsnz@gmail.com (st-git-20160210 port)
+ * Brandon Mulcahy - <brandon@jangler.info>
+ * Laslo Hunhold - <dev@frign.de> (0.6, git ports)

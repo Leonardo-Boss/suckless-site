@@ -4,16 +4,17 @@ center
 Description
 -----------
 
-Adds an "iscentered" rule to automatically center clients on the current
+Add an `iscentered` rule to automatically center clients on the current
 monitor.
 
 Download
 --------
 
-* [dwm-6.1-center.diff](dwm-6.1-center.diff) (2k) (20151114)
-* [dwm-cdec978-center.diff](historical/dwm-cdec978-center.diff) (2k) (20140123)
+ * [dwm-center-6.1.diff](dwm-center-6.1.diff)
+ * [dwm-center-20160719-56a31dc.diff](dwm-center-20160719-56a31dc.diff)
 
-Author
-------
+Authors
+-------
 
-* [Chris Down](https://chrisdown.name) (cdown) <chris@chrisdown.name>
+ * Chris Down - <chris@chrisdown.name>
+ * Laslo Hunhold - <dev@frign.de> (git port)

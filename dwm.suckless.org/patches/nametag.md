@@ -11,9 +11,9 @@ The `prepend` version prepends the tag name with a short string which is used as
 Download
 --------
 
-* [dwm-6.1-nametag.diff](dwm-6.1-nametag.diff) (2.3k) (20131002)
-* [dwm-6.1-nametag-prepend.diff](dwm-6.1-nametag-prepend.diff) (2525b) (20140607)
-* [dwm-5.7.2-nametag.diff](dwm-5.7.2-nametag.diff) (2.5k) (20091029)
+* [dwm-nametag-6.1.diff](dwm-nametag-6.1.diff)
+* [dwm-nametag-prepend-6.1.diff](dwm-nametag-prepend-6.1.diff)
+* [dwm-nametag-5.7.2.diff](dwm-nametag-5.7.2.diff)
 
 Author
 ------

@@ -6,27 +6,26 @@ Simple plaintext presentation tool.
 ->[![Screenshot of sent](sent-bullets-s.png)](sent-bullets.png)<-
 
 sent does not need latex, libreoffice or any other fancy file format, it uses
-plaintext files to describe the slides and can include images via
-[farbfeld](http://git.2f30.org/farbfeld/about/). Every paragraph represents a
-slide in the presentation. Especially for presentations using the [Takahashi
-method](https://en.wikipedia.org/wiki/Takahashi_method) this is very nice and
-allows you to write down the presentation for a quick lightning talk within a
-few minutes.
+plaintext files to describe the slides and can also display images. Every
+paragraph represents a slide in the presentation. Especially for presentations
+using the [Takahashi method](https://en.wikipedia.org/wiki/Takahashi_method)
+this is very nice and allows you to write down the presentation for a quick
+lightning talk within a few minutes.
 
 The presentation is displayed in a simple X11 window colored black on white for
 maximum contrast even if the sun shines directly onto the projected image. The
 content of each slide is automatically scaled to fit the window so you don't
-have to worry about alignment. Instead you can really concentrate on the
-content.
+have to worry about alignment. Instead you can really focus on the content.
 
 Dependencies
 ------------
 
-* Xlib for building
-* farbfeld tools to use images in the presentations (if you don't want to use
-  farbfeld, [sent-0.2](http://dl.suckless.org/tools/sent-0.2.tar.gz) was the
-  last version with png support, but may lack fixes and further improvements
-  since its release)
+* Xlib and Xft for building
+* [farbfeld](http://git.2f30.org/farbfeld/about/) tools to use images in the
+  presentations (if you don't want to use farbfeld,
+  [sent-0.2](http://dl.suckless.org/tools/sent-0.2.tar.gz) was the last version
+  with just png support, but may lack fixes and further improvements since its
+  release)
 
 Demo
 ----
@@ -40,12 +39,12 @@ You can navigate with the arrow keys and quit with `q`.
 (Non-)Features
 --------------
 
-* A presentation is just a simple text file
-* Each paragraph represents one slide
-* Content is automatically scaled to fit the screen
-* UTF-8 is supported
-* Images can be displayed (no text on the same slide), farbfeld required
-* Just around 1000 lines of C.
+* A presentation is just a simple text file.
+* Each paragraph represents one slide.
+* Content is automatically scaled to fit the screen.
+* UTF-8 is supported.
+* Images can be displayed (no text on the same slide).
+* Just around 1000 lines of C
 * No different font styles (bold, italic, underline)
 * No fancy layout options (different font sizes, different colors, …)
 * No animations
@@ -53,7 +52,7 @@ You can navigate with the arrow keys and quit with `q`.
 * No export function. If you really need one, just use a shell script with
   `xdotool` and your favorite screenshot application.
 * Slides with exuberant amount of lines or characters produce rendering glitches
-  intentionally to prevent you from holding bad presentations
+  intentionally to prevent you from holding bad presentations.
 
 Usage
 -----

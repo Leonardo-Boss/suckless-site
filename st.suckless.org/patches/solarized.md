@@ -32,27 +32,33 @@ Download
 To get correct colors, you first need to apply the following patch
 to disable lighting up bold colors.
 
- * [st-0.5-no-bold-colors.diff](st-0.5-no-bold-colors.diff)
- * [st-0.6-no-bold-colors.diff](st-0.6-no-bold-colors.diff)
- * [st-git-20150917-no-bold-colors.diff](st-git-20150917-no-bold-colors.diff)
+ * [st-no_bold_colors-0.5.diff](st-no_bold_colors-0.5.diff)
+ * [st-no_bold_colors-0.6.diff](st-no_bold_colors-0.6.diff)
+ * [st-no_bold_colors-20160727-308bfbf.diff](st-no_bold_colors-20160727-308bfbf.diff)
 
 Choose one of the following patches to get either the light
 or the dark color scheme:
 
 *Light*:
 
- * [st-0.5-solarized-light.diff](st-0.5-solarized-light.diff)
- * [st-0.6-solarized-light.diff](st-0.6-solarized-light.diff)
- * [st-git-20151119-solarized-light.diff](st-git-20151119-solarized-light.diff)
+ * [st-solarized-light-0.5.diff](st-solarized-light-0.5.diff)
+ * [st-solarized-light-0.6.diff](st-solarized-light-0.6.diff)
+ * [st-solarized-light-20160727-308bfbf.diff](st-solarized-light-20160727-308bfbf.diff)
 
 *Dark*:
 
- * [st-0.5-solarized-dark.diff](st-0.5-solarized-dark.diff)
- * [st-0.6-solarized-dark.diff](st-0.6-solarized-dark.diff)
- * [st-git-20151119-solarized-dark.diff](st-git-20151119-solarized-dark.diff)
+ * [st-solarized-dark-0.5.diff](st-solarized-dark-0.5.diff)
+ * [st-solarized-dark-0.6.diff](st-solarized-dark-0.6.diff)
+ * [st-solarized-dark-20160727-308bfbf.diff](st-solarized-dark-20160727-308bfbf.diff)
+
+*Both (swap between light/dark with F6)*:
+
+ * [st-solarized-both-20160709-528241a.diff](st-solarized-both-20160727-308bfbf.diff)
+
 
 Authors
 -------
 
- * Nils Reuße - nilsreusse@gmail.com
- * Laslo Hunhold - dev@frign.de (st-0.5, st-0.6, st-git-20150917 ports)
+ * Nils Reuße - <nilsreusse@gmail.com>
+ * Laslo Hunhold - <dev@frign.de> (0.5, 0.6, git ports)
+ * Ryan Roden-Corrent - <ryan@rcorre.net> (both)

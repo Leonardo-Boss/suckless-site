@@ -1,8 +1,8 @@
 diff --git a/config.def.h b/config.def.h
-index 875885b..809788b 100644
+index 7054c06..9878dbf 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -65,6 +65,9 @@ static Key keys[] = {
+@@ -68,6 +68,9 @@ static Key keys[] = {
  	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
  	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
  	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
@@ -13,10 +13,10 @@ index 875885b..809788b 100644
  	{ MODKEY,                       XK_Tab,    view,           {0} },
  	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
 diff --git a/dwm.c b/dwm.c
-index 1bbb4b3..4ff74cc 100644
+index 0362114..881afe6 100644
 --- a/dwm.c
 +++ b/dwm.c
-@@ -86,6 +86,7 @@ typedef struct Client Client;
+@@ -87,6 +87,7 @@ typedef struct Client Client;
  struct Client {
  	char name[256];
  	float mina, maxa;
@@ -24,23 +24,23 @@ index 1bbb4b3..4ff74cc 100644
  	int x, y, w, h;
  	int oldx, oldy, oldw, oldh;
  	int basew, baseh, incw, inch, maxw, maxh, minw, minh;
-@@ -200,6 +201,7 @@ static void setclientstate(Client *c, long state);
+@@ -201,6 +202,7 @@ static void setclientstate(Client *c, long state);
  static void setfocus(Client *c);
- static void setfullscreen(Client *c, Bool fullscreen);
+ static void setfullscreen(Client *c, int fullscreen);
  static void setlayout(const Arg *arg);
 +static void setcfact(const Arg *arg);
  static void setmfact(const Arg *arg);
  static void setup(void);
  static void showhide(Client *c);
-@@ -1027,6 +1029,7 @@ manage(Window w, XWindowAttributes *wa) {
+@@ -1052,6 +1054,7 @@ manage(Window w, XWindowAttributes *wa)
  	c->w = c->oldw = wa->width;
  	c->h = c->oldh = wa->height;
  	c->oldbw = wa->border_width;
 +	c->cfact = 1.0;
  
- 	if(c->x + WIDTH(c) > c->mon->mx + c->mon->mw)
+ 	if (c->x + WIDTH(c) > c->mon->mx + c->mon->mw)
  		c->x = c->mon->mx + c->mon->mw - WIDTH(c);
-@@ -1473,6 +1476,23 @@ setlayout(const Arg *arg) {
+@@ -1528,6 +1531,23 @@ setlayout(const Arg *arg)
  		drawbar(selmon);
  }
  
@@ -63,38 +63,37 @@ index 1bbb4b3..4ff74cc 100644
 +
  /* arg > 1.0 will set mfact absolutly */
  void
- setmfact(const Arg *arg) {
-@@ -1602,9 +1622,15 @@ tagmon(const Arg *arg) {
- void
- tile(Monitor *m) {
+ setmfact(const Arg *arg)
+@@ -1667,9 +1687,15 @@ void
+ tile(Monitor *m)
+ {
  	unsigned int i, n, h, mw, my, ty;
 +	float mfacts = 0, sfacts = 0;
  	Client *c;
  
--	for(n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++);
-+	for(n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++) {
-+		if(n < m->nmaster)
+-	for (n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++);
++	for (n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++) {
++		if (n < m->nmaster)
 +			mfacts += c->cfact;
 +		else
 +			sfacts += c->cfact;
 +	}
- 	if(n == 0)
+ 	if (n == 0)
  		return;
  
-@@ -1614,14 +1640,16 @@ tile(Monitor *m) {
+@@ -1679,13 +1705,15 @@ tile(Monitor *m)
  		mw = m->ww;
- 	for(i = my = ty = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)
- 		if(i < m->nmaster) {
+ 	for (i = my = ty = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)
+ 		if (i < m->nmaster) {
 -			h = (m->wh - my) / (MIN(n, m->nmaster) - i);
 +			h = (m->wh - my) * (c->cfact / mfacts);
- 			resize(c, m->wx, m->wy + my, mw - (2*c->bw), h - (2*c->bw), False);
+ 			resize(c, m->wx, m->wy + my, mw - (2*c->bw), h - (2*c->bw), 0);
  			my += HEIGHT(c);
 +			mfacts -= c->cfact;
- 		}
- 		else {
+ 		} else {
 -			h = (m->wh - ty) / (n - i);
-+			h = (m->wh - ty) * (c->cfact / sfacts);
- 			resize(c, m->wx + mw, m->wy + ty, m->ww - mw - (2*c->bw), h - (2*c->bw), False);
++			h = (m->wh - ty) / (c->cfact / sfacts);
+ 			resize(c, m->wx + mw, m->wy + ty, m->ww - mw - (2*c->bw), h - (2*c->bw), 0);
  			ty += HEIGHT(c);
 +			sfacts -= c->cfact;
  		}

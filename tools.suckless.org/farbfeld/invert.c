@@ -12,40 +12,44 @@
 int
 main(int argc, char *argv[])
 {
-	uint32_t width, height, i, j, k;
-	uint16_t rgba[4];
-	uint8_t hdr[strlen("farbfeld") + 2 * sizeof(uint32_t)];
+	uint64_t rowlen;
+	uint32_t hdr[4], width, height, i, j;
+	uint16_t *row, *rgba;
 
 	if (argc > 1) {
 		fprintf(stderr, "usage: %s\n", argv[0]);
 		return 1;
 	}
 
-	if (fread(hdr, 1, sizeof(hdr), stdin) != sizeof(hdr)) {
-		fprintf(stderr, "incomplete header\n");
+	if (fread(hdr, sizeof(uint32_t), 4, stdin) != 4) {
+		fprintf(stderr, "%s: fread error\n", argv[0]);
 		return 1;
 	}
-	if (memcmp("farbfeld", hdr, strlen("farbfeld"))) {
-		fprintf(stderr, "invalid magic\n");
+	if (memcmp("farbfeld", hdr, sizeof("farbfeld") - 1)) {
+		fprintf(stderr, "%s: invalid magic value\n", argv[0]);
 		return 1;
 	}
-	width = ntohl(*((uint32_t *)(hdr + 8)));
-	height = ntohl(*((uint32_t *)(hdr + 12)));
+	width = ntohl(hdr[2]);
+	height = ntohl(hdr[3]);
 
-	if (fwrite(hdr, 1, sizeof(hdr), stdout) != sizeof(hdr)) {
-		fprintf(stderr, "write error\n");
+	if (fwrite(hdr, sizeof(uint32_t), 4, stdout) != 4) {
+		fprintf(stderr, "%s: fwrite error\n", argv[0]);
 		return 1;
 	}
 
+	rowlen = (sizeof("RGBA") - 1) * width;
+	if (!(row = malloc(rowlen * sizeof(uint16_t)))) {
+		fprintf(stderr, "%s: malloc: out of memory\n", argv[0]);
+		return 1;
+	}
 	for (i = 0; i < height; i++) {
-		for (j = 0; j < width; j++) {
-			if (fread(rgba, sizeof(uint16_t), 4,
-			          stdin) != 4) {
-				fprintf(stderr, "unexpected EOF\n");
-				return 1;
-			}
-			for (k = 0; k < 4; k++) {
-				rgba[k] = ntohs(rgba[k]);
+		if (fread(row, sizeof(uint16_t), rowlen, stdin) != rowlen) {
+			fprintf(stderr, "%s: fread error\n", argv[0]);
+			return 1;
+		}
+		for (rgba = row; (rgba - row) < rowlen; rgba += 4) {
+			for (j = 0; j < 4; j++) {
+				rgba[j] = ntohs(rgba[j]);
 			}
 
 			/* invert colors */
@@ -53,14 +57,13 @@ main(int argc, char *argv[])
 			rgba[1] = 65535 - rgba[1];
 			rgba[2] = 65535 - rgba[2];
 
-			for (k = 0; k < 4; k++) {
-				rgba[k] = htons(rgba[k]);
+			for (j = 0; j < 4; j++) {
+				rgba[j] = htons(rgba[j]);
 			}
-			if (fwrite(rgba, sizeof(uint16_t), 4,
-			           stdout) != 4) {
-				fprintf(stderr, "write error\n");
-				return 1;
-			}
+		}
+		if (fwrite(row, sizeof(uint16_t), rowlen, stdout) != rowlen) {
+			fprintf(stderr, "%s: fwrite error\n", argv[0]);
+			return 1;
 		}
 	}
 

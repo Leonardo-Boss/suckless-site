@@ -15,7 +15,7 @@ this: [see ml](http://lists.suckless.org/dev/1010/6195.html).
 
 Download
 --------
-* [dwm-5.9-pwkl.diff](dwm-5.9-pwkl.diff) (1.4K) (20101013)
+* [dwm-pwkl-5.9.diff](dwm-pwkl-5.9.diff) (1.4K) (20101013)
 
 Author
 ------

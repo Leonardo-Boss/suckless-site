@@ -17,16 +17,17 @@ This is a barebone project you can use for changing it to your needs.
 User submitted versions
 -----------------------
 
-Please add your own version of dwmstatus here.
+Please add your own version of dwmstatus here (keeping the list sorted).
 
-* [dwm-bar.c](https://github.com/wifiextender/dwm-bar) - Display overall usage about: cpu and cpu temperature, ram, disk, installed packages, kernel, motherboard voltage, system fans and their speed in RPM, motherboard (name, vendor, temperature), volume and time. I've wrote the code myself, so it is unique.
-* [dwmsd](https://github.com/johnko/dwmsd) - a daemon that listens on localhost tcp (may be useful as a base for asynchronous updates)
-* [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent and date/time
-* [suspend-statusbar.c](https://github.com/akozadaev/dwm-statusbar) - loadavg, wifi, battery and date. If battery goes below threshold - run suspend command
-* [gods](https://github.com/schachmat/gods) - implemented in Go. prints network speed, cpu, ram, date/time
-* [go-dwmstatus](https://github.com/oniichaNj/go-dwmstatus) - A Go bar that prints current MPD song, load averages, time/date and battery percentage.
 * [barM](barM.c) - can display all, time/date, ram usage, output of commands (the New BarMonitor).
-* slstatus - suckless statusbar - written in pure c without any system() - includes wifi percentage, battery, cpu usage and temperature, ram usage, alsa volume and time / date - [GitHub](https://github.com/drkh5h/slstatus), [Download](slstatus.tar.gz)
+* [dstat](https://www.umaxx.net/dl) [Screenshot](https://www.umaxx.net/dstat.png) - displays the current network throughput, CPU usage, performance settings, battery status, temperature, volume settings, as well as the current date and time (OpenBSD only, no support for Linux).
+* [pinky-bar](https://github.com/wifiextender/pinky-bar) - Display overall usage about: cpu (vendor, stepping, family, temperature) and maximum clock speed regardless of the used cpu frequency governor, ram, disk, installed packages, kernel, voltage, system fans and their speed in RPM, motherboard (name, vendor, temperature), volume, time, the name of currently played song, consumed internet bandwidth, upload and download speeds, disk I/O.
+* [dwmsd](https://github.com/johnko/dwmsd) - a daemon that listens on localhost tcp (may be useful as a base for asynchronous updates)
+* [go-dwmstatus](https://github.com/oniichaNj/go-dwmstatus) - A Go bar that prints current MPD song, load averages, time/date and battery percentage.
+* [gods](https://github.com/schachmat/gods) - implemented in Go. prints network speed, cpu, ram, date/time
+* [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent and date/time
+* **slstatus** - suckless alternative to Bash scripts (inefficient) and Conky (bloated for this use) - it displays various system information and can be customized via config.h - [cgit](https://git.nulltime.net/slstatus), [GitHub](https://github.com/drkh5h/slstatus)
+* [suspend-statusbar.c](https://github.com/akozadaev/dwm-statusbar) - loadavg, wifi, battery and date. If battery goes below threshold - run suspend command
 
 Helper functions
 ----------------
@@ -34,6 +35,7 @@ Helper functions
 If you have simple C functions for gathering system information, please
 add them here as file or as code example.
 
+* [Basic ALSA Volume API example with error checks and handling](volume.c)
 * [Support for ACPI battery status Linux](new-acpi-battery.c)
 * [Reading out a temperature from /sys](dwmstatus-temperature.c)
 * [Reading up-, and downspeeds of all network interfaces from /proc/net](dwmstatus-netusage.c)

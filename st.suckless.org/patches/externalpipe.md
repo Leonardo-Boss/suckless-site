@@ -24,13 +24,13 @@ dmenu to select and open one:
 Download
 --------
 
-* [st-0.4.1-externalpipe.diff](st-0.4.1-externalpipe.diff)
-* [st-0.5-externalpipe.diff](st-0.5-externalpipe.diff)
-* [st-0.6-externalpipe.diff](st-0.6-externalpipe.diff)
-* [st-git-20160204-externalpipe.diff](st-git-20160204-externalpipe.diff)
+* [st-externalpipe-0.4.1.diff](st-externalpipe-0.4.1.diff)
+* [st-externalpipe-0.5.diff](st-externalpipe-0.5.diff)
+* [st-externalpipe-0.6.diff](st-externalpipe-0.6.diff)
+* [st-externalpipe-20160727-308bfbf.diff](st-externalpipe-20160727-308bfbf.diff)
 
 Authors
 -------
 
- * Rob Pilling - robpilling@gmail.com
- * Laslo Hunhold - dev@frign.de (st-0.4.1, st-0.5, st-0.6, st-git-20150917 ports)
+ * Rob Pilling - <robpilling@gmail.com>
+ * Laslo Hunhold - <dev@frign.de> (0.4.1, 0.5, 0.6, git ports)

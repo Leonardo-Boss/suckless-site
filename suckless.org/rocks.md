@@ -20,7 +20,9 @@ Compression
 * [liblzf](http://oldhome.schmorp.de/marc/liblzf.html) - very fast, legally unencumbered compression library (dual licensed: 2-clause BSD or GPL License)
 * [miniz](http://code.google.com/p/miniz/) - single C-file reimplementation of zlib, public domain.
 * [xz embedded](http://tukaani.org/xz/embedded.html) - lightweight decompressor for the xz LZMA compressor (public domain)
+* [Lzip](http://lzip.nongnu.org) - Properly designed data compressor outperforming gzip and bzip2 (GPLv2+)
 * [zlib](http://zlib.net/) - the "standard" compression/decompression library, quite small, used in many applications ([zlib license](http://zlib.net/zlib_license.html))
+* [libz](https://sortix.org/libz/) - ABI and API compatible zlib fork with focus on correctness, proper portability, auditability, simplification and opportunities to optimize ([zlib license](http://zlib.net/zlib_license.html))
 
 Cryptography
 ------------
@@ -81,6 +83,7 @@ File managers
 IRC Clients
 -----------
 * [Irc](http://swtch.com/irc/)
+* [irc.c from mpu](http://c9x.me/irc/) - A Minimal Curses IRC Client.
 * [ii](http://tools.suckless.org/ii/) - A FIFO based IRC client which is part of the suckless.org project.
 * [ircc](http://www.r-36.net/src/Various/ircc.tgz) - A no-frills, ncurses free, console-based IRC client.
 * [ircrc](http://plan9.bell-labs.com/sources/contrib/fgb/rc/ircrc) - An rc-based IRC client similar to ircc. Needs minor modification to run on UNIX.
@@ -134,6 +137,7 @@ Password managers
 -----------------
 * [pass](http://www.passwordstore.org/) - The standard unix password manager
 * [tpm](https://github.com/nmeum/tpm/) - Tiny password manager
+* [spm](https://notabug.org/kl3/spm/) - Simple password manager (actively maintained fork of nmeum's tpm)
 
 PDF Viewers
 -----------
@@ -143,6 +147,7 @@ PDF Viewers
 Shells
 ------
 * [mksh](https://www.mirbsd.org/mksh.htm) - MirBSD Korn Shell, an actively developed free implementation of the Korn Shell programming language and a successor to the Public Domain Korn Shell (pdksh)
+* [dash](http://gondor.apana.org.au/~herbert/dash/) - DASH is a POSIX-compliant implementation of /bin/sh that aims to be as small as possible. It does this without sacrificing speed where possible.
 
 Text Editors
 ------------
@@ -218,6 +223,7 @@ Web Servers
 * [mini_httpd](http://acme.com/software/mini_httpd/) - By the thttpd developers. Even smaller subset of thttpd with support for .htpasswd, CGI, dirlisting, HTTP errors and SSL, nothing more or less than that.
 * [darkhttpd](https://unix4lyfe.org/darkhttpd/) - Darkhttpd is a simple, fast HTTP 1.1 web server for static content.
 * [quark](http://git.suckless.org/quark/) - suckless httpd, not released yet
+* [shus](https://github.com/dimkr/shus) - A tiny HTTP server for static sites
 
 Gopher Servers
 --------------

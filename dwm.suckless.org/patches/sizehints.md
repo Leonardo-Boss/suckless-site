@@ -12,7 +12,7 @@ There is no configuration for this patch.
 
 ## Download
 
- * [dwm-5.7.2-sizehints.diff](dwm-5.7.2-sizehints.diff) (695B) (20091221)
+ * [dwm-sizehints-5.7.2.diff](dwm-sizehints-5.7.2.diff) (695B) (20091221)
 
 ## Author
 

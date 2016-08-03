@@ -18,10 +18,12 @@ filled/empty rectangles.
 Download
 --------
 
-* [dwm-6.1-hide_vacant_tags.diff](dwm-6.1-hide_vacant_tags.diff) - 2016-01-22
+* [dwm-hide_vacant_tags-6.1.diff](dwm-hide_vacant_tags-6.1.diff) - 2016-01-22
+* [dwm-hide_vacant_tags-git-20160626-7af4d43.diff](dwm-hide_vacant_tags-git-20160626-7af4d43.diff)
 
 Author
 ------
 
 * [Ondřej Grover](mailto:ondrej.grover@gmail.com)
 * Matthew Boswell - mordervomubel+suckless at lockmail dot us (mechanical update for dwm 6.1 release)
+* [Jochen Sprickerhof](mailto:project@firstname.lastname.de) (hide 0 tagged clients)

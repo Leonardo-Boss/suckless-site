@@ -24,8 +24,8 @@ Or to only display the bar while the toggle key is held down (requires that it i
 Download
 ---
 
- * [dwm-6.0-keypressrelease.diff](dwm-6.0-keypressrelease.diff)
- * [dwm-6.0-keypressrelease.diff on GitHub](https://github.com/Ceryn/patches/blob/master/dwm/dwm-6.0-keypressrelease.diff)
+ * [dwm-keypressrelease-6.0.diff](dwm-keypressrelease-6.0.diff)
+ * [dwm-keypressrelease-6.0.diff on GitHub](https://github.com/Ceryn/patches/blob/master/dwm/dwm-keypressrelease-6.0.diff)
 
 Author
 ------

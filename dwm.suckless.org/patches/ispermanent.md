@@ -10,7 +10,7 @@ windows.
 Download
 --------
 
-* [dwm-6.1-ispermanent.diff](dwm-6.1-ispermanent.diff) (1.8k) (20150803)
+* [dwm-6.0-ispermanent.diff](dwm-6.0-ispermanent.diff)
 
 Author
 ------

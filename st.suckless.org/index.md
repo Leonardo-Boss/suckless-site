@@ -2,10 +2,10 @@
 
 st is a simple terminal implementation for X.
 
-->[![Screenshot of dwm & st](screenshots/20h-2012-s.png)](screenshots/20h-2012.png)<-
+->[![Screenshot of dwm & st](screenshots/frign-2016-s.png)](screenshots/frign-2016.png)<-
 
-What is wrong with xterm?
--------------------------
+Motivation
+----------
 xterm is bloated and unmaintainable. Here's an excerpt from the README:
 
 					Abandon All Hope, Ye Who Enter Here
@@ -20,62 +20,55 @@ xterm is bloated and unmaintainable. Here's an excerpt from the README:
 Needless to say things have *not* changed, it's still ugly.
 It has over 65K lines of code and emulates obscure and obsolete terminals
 you will [never need](http://www.science.uva.nl/museum/tek4014.php).
+
 The popular alternative, rxvt has *only* 32K lines of code. This is just
 too much for something as simple as a terminal emulator; it's yet another
 example of code complexity.
 
-Current state
--------------
-See the [TODO](http://git.suckless.org/st/plain/TODO) file for what needs to
-be implemented or fixed.
+Terminal emulation doesn't need to be so complex.
 
-What has been implemented:
+Status
+------
+Things that have already been implemented are
 
-* 256 colors and [true colors](https://gist.github.com/XVilka/8346728)
 * most VT10X escape sequences
-* utf8
-* X11 copy/paste
-* antialiased fonts (using fontconfig)
-* fallback fonts
-* resize
-* shortcuts via config.h
-* line drawing
-* wide-character support
 * serial line support
 * XIM support
-* clipboard handling
 * utmp via utmp(1)
+* clipboard handling
+* mouse and keyboard shortcuts (via config.h)
+* UTF-8
+* wide-character support
+* resize
+* 256 colors and [true colors](https://gist.github.com/XVilka/8346728)
+* antialiased fonts (using fontconfig)
+* fallback fonts
+* line drawing
 
-See the [goals](http://st.suckless.org/goals) section for more details.
+See the [goals](http://st.suckless.org/goals) for more details and the
+[TODO](http://git.suckless.org/st/plain/TODO) for what still needs to be
+implemented or fixed.
 
 Configuration
 -------------
 
-The configuration is done in `config.h` (like in dwm). See the comments in the
-generated `config.h` to edit it to your needs.
+Configuration is done with `config.h`. Read the comments in the
+generated `config.h` to edit it according to your needs.
+Defaults are stored in `config.def.h`.
 
 FAQ
 ---
-The FAQ is maintained in the st git repository and can be read
-[here](http://git.suckless.org/st/tree/FAQ).
+The [FAQ](http://git.suckless.org/st/plain/FAQ) is maintained in the st
+source code repository.
 
-Links
------
-* Mailing List: `dev+subscribe@suckless.org` [(Archives)](http://lists.suckless.org/dev)
-* IRC channel: #suckless at irc.oftc.net
+Development
+-----------
+st is actively developed. You can [browse](http://git.suckless.org/st) its
+source code repository or get a copy using git with the following command:
+
+	git clone git://git.suckless.org/st
 
 Download
 --------
 * [st 0.6](http://dl.suckless.org/st/st-0.6.tar.gz) (2015-07-07)
-* [MIT/X Consortium license](http://git.suckless.org/st/plain/LICENSE)
-
-Development
------------
-st is actively developed. You can [browse](http://git.suckless.org/st) its source code repository or get a copy using git with the following command:
-
-	git clone http://git.suckless.org/st
-
-Contributors
-------------
-* see the LICENSE file
-
+* [LICENSE](http://git.suckless.org/st/plain/LICENSE)

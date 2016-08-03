@@ -36,7 +36,7 @@ arrangement can be seen below.
 
 ## Download
 
- * [dwm-5.8.2-fibonacci.diff](dwm-5.8.2-fibonacci.diff)
+ * [dwm-fibonacci-5.8.2.diff](dwm-fibonacci-5.8.2.diff)
 
 ## Maintainer
 

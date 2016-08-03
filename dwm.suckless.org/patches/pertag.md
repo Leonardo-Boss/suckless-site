@@ -11,16 +11,18 @@ Download
 Patches against different versions of dwm are available at
 [dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
 
- * [dwm-6.1-pertag.diff](dwm-6.1-pertag.diff) (6.4K) (20151109)
+ * [dwm-pertag-20160731-56a31dc.diff](dwm-pertag-20160731-56a31dc.diff)
+ * [dwm-pertag-20160626-7af4d43.diff](dwm-pertag-20160626-7af4d43.diff)
+ * [dwm-pertag-6.1.diff](dwm-pertag-6.1.diff) (6.4K) (20151109)
  * [dwm-git-20120406-pertag.diff](dwm-git-20120406-pertag.diff) (5955b)
- * [dwm-6.0-pertag.diff](dwm-6.0-pertag.diff) (5955b) (20120406)
+ * [dwm-pertag-6.0.diff](dwm-pertag-6.0.diff) (5955b) (20120406)
  * [dwm-r1578-pertag.diff][9] (nmaster included in mainline)
- * [dwm-5.8.2-pertag.diff][7]
- * [dwm-5.7.2-pertag.diff][6]
+ * [dwm-pertag-5.8.2.diff][7]
+ * [dwm-pertag-5.7.2.diff][6]
  * [dwm-pertag-5.6.1.diff][5]
- * [dwm-5.4-pertag.diff][4]
- * [dwm-5.2-pertag.diff][3]
- * [dwm-5.1-pertag.diff][2]
+ * [dwm-pertag-5.4.diff][4]
+ * [dwm-pertag-5.2.diff][3]
+ * [dwm-pertag-5.1.diff][2]
 
  * Using pertag but with the same barpos
    * [dwm-6.1-pertag_without_bar.diff](dwm-6.1-pertag_without_bar.diff) (5.2K) (20151109)
@@ -36,13 +38,14 @@ Authors
  * Updated by William Light - `<wrl at illest dot net>`
  * Updated by termac - `<terror.macbeth.I at gmail dot com>`
  * Updated by Ivan Tham - `pickfire at riseup dot net`
+ * [Jochen Sprickerhof](mailto:project@firstname.lastname.de) (Updated to current git)
 
 [1]: historical/taglayouts
-[2]: http://v4hn.de/patches/dwm-5.1-pertag.diff
-[3]: historical/dwm-5.2-pertag.diff
-[4]: historical/dwm-5.4-pertag.diff
+[2]: historical/dwm-pertag-5.1.diff
+[3]: historical/dwm-pertag-5.2.diff
+[4]: historical/dwm-pertag-5.4.diff
 [5]: historical/dwm-pertag-5.6.1.diff
-[6]: historical/dwm-5.7.2-pertag.diff
-[7]: historical/dwm-5.8.2-pertag.diff
+[6]: historical/dwm-pertag-5.7.2.diff
+[7]: historical/dwm-pertag-5.8.2.diff
 [8]: historical/dwm-5.8.2-pertag_without_bar.diff
 [9]: historical/dwm-r1578-pertag.diff

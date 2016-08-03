@@ -3,9 +3,10 @@ attachaside
 
 Description
 -----------
-`attachaside` makes the new client get attached and focused in the stacking
+
+Make new clients get attached and focused in the stacking
 area instead of always becoming the new master. It's basically an
-[attachabove](attachabove) mod.
+[attachabove](attachabove) modification.
 
 	Original behaviour :
 	+-----------------+-------+
@@ -44,23 +45,12 @@ area instead of always becoming the new master. It's basically an
 Download
 --------
 
-### Version updated to work with tags
-
-The original version of attachaside does does not attach to the stack when
-windows are spawned on a tag that is not currently focused. This version is
-improved to also attach to the stack on unfocused tags.
-
-* [dwm-6.1-attachaside-tagfix.diff](dwm-6.1-attachaside-tagfix.diff) (2.9K) (20150729)
-
-### Original
-
-* [dwm-6.0-attachaside.diff](dwm-6.0-attachaside.diff) (1,6K) (20140412)
-* [dwm-5.7.2-attachaside.diff](historical/dwm-5.7.2-attachaside.diff) (1.1K) (20091215)
-* [dwm-5.6.1-attachaside.diff](historical/dwm-5.6.1-attachaside.diff) (1.1K) (20090915)
+* [dwm-attachaside-6.1.diff](dwm-attachaside-6.1.diff)
+* [dwm-attachaside-20160718-56a31dc.diff](dwm-attachaside-20160718-56a31dc.diff)
 
 Authors
 -------
-* Jerome Andrieux - `<jerome at gcu dot info>`
-* Version updated to work with tags by [Chris Down](https://chrisdown.name)
-  (cdown) <chris@chrisdown.name>
-* Update to 6.0 by Vladimir Seleznev - `<me at wladmis dot org>`
+
+* Jerome Andrieux - <jerome@gcu.info>
+* Chris Down - <chris@chrisdown.name> (6.1 port and fixes)
+* Laslo Hunhold - <dev@frign.de> (git port)

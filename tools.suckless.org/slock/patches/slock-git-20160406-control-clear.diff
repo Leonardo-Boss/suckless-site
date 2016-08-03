@@ -1,0 +1,26 @@
+diff --git a/config.def.h b/config.def.h
+index eae2d9a..c81908a 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -6,3 +6,6 @@ static const char *colorname[NUMCOLS] = {
+ 
+ /* treat a cleared input like a wrong password */
+ static const int failonclear = 1;
++
++/* allow control key to trigger fail on clear */
++static const int controlkeyclear = 0;
+diff --git a/slock.c b/slock.c
+index c9cdee2..43f6e97 100644
+--- a/slock.c
++++ b/slock.c
+@@ -171,7 +171,9 @@ readpw(Display *dpy, const char *pws)
+ 					--len;
+ 				break;
+ 			default:
+-				if (num && !iscntrl((int)buf[0]) && (len + num < sizeof(passwd))) {
++				if (controlkeyclear && iscntrl((int)buf[0]))
++					continue;
++				if (num && (len + num < sizeof(passwd))) {
+ 					memcpy(passwd + len, buf, num);
+ 					len += num;
+ 				}

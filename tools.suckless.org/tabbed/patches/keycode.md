@@ -5,8 +5,8 @@ This way, input is keyboard layout independant (adapt config.h to your keyboard 
 
 Download
 --------
-* [tabbed-0.6-keycode.diff](tabbed-0.6-keycode.diff)
-* [tabbed-keycode-20160103-eb0ff62.patch](tabbed-keycode-20160103-eb0ff62.patch)
+* [tabbed-keycode-0.6.diff](tabbed-keycode-0.6.diff)
+* [tabbed-keycode-20160702-bc23614.diff](tabbed-keycode-20160702-bc23614.diff)
 
 Author
 ------

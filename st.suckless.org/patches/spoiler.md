@@ -19,10 +19,11 @@ just like most normal unformatted text when selected.
 Download
 --------
 
- * [st-0.6-spoiler.diff](st-0.6-spoiler.diff)
- * [st-git-20150922-spoiler.diff](st-git-20150922-spoiler.diff)
+ * [st-spoiler-0.6.diff](st-spoiler-0.6.diff)
+ * [st-spoiler-20160727-308bfbf.diff](st-spoiler-20160727-308bfbf.diff)
 
 Author
 ------
 
- * dequis - dx@dxzone.com.ar
+ * dequis - <dx@dxzone.com.ar>
+ * Laslo Hunhold - <dev@frign.de> (git port)

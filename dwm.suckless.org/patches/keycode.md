@@ -6,8 +6,8 @@ using for exemple xev).
 
 Download
 --------
-* [dwm-6.0-keycode.diff](dwm-6.0-keycode.diff)
-* [dwm-20151110-5ed9c48-keycode.patch](dwm-20151110-5ed9c48-keycode.patch)
+* [dwm-keycode-6.1.diff](dwm-keycode-6.1.diff)
+* [dwm-keycode-20160702-56a31dc.diff](dwm-keycode-20160702-56a31dc.diff)
 
 Author
 ------

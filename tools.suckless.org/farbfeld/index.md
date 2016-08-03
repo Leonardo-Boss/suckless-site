@@ -160,13 +160,15 @@ Download
 --------
 
 * [farbfeld-1](http://dl.suckless.org/farbfeld/farbfeld-1.tar.gz) (2016-01-06)
+* [farbfeld-2](http://dl.suckless.org/farbfeld/farbfeld-2.tar.gz) (2016-03-14)
 
 Also make sure to check your package manager. The following distributions
 provide packages:
 
-* Gentoo (Portage)
-* Arch Linux (AUR)
-* Void Linux
+* [Arch Linux (AUR)](https://aur.archlinux.org/packages/farbfeld)
+* [FreeBSD](https://svnweb.freebsd.org/ports/head/graphics/farbfeld/)
+* [Gentoo](https://packages.gentoo.org/packages/media-gfx/farbfeld)
+* [Void Linux](https://github.com/voidlinux/void-packages/tree/master/srcpkgs/farbfeld)
 
 Implementations
 ---------------
@@ -177,6 +179,7 @@ Implementations
 * [resize](https://github.com/ender672/farbfeld-resize) image filter
 * [gamut](https://github.com/erik/gamut) image filter collection
 * [gimp-farbfeld](https://github.com/ids1024/gimp-farbfeld) gimp plug-in
+* [farbfeld utilities](http://zzo38computer.org/fossil/farbfeld.ui/) huge collection of image filters
 
 Author
 ------

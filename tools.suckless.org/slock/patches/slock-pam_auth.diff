@@ -1,0 +1,137 @@
+Author: Jan Christoph Ebersbach <jceb@e-jc.de>
+URL: http://tools.suckless.org/slock/patches/pam_auth
+Replaces shadow support with PAM authentication support.
+
+Change variable `pam_service` in `config.def.h` to the corresponding PAM
+service.  The default configuration is for ArchLinux's `login` service.
+
+diff --git a/config.def.h b/config.def.h
+index eae2d9a..085968d 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -6,3 +6,6 @@ static const char *colorname[NUMCOLS] = {
+ 
+ /* treat a cleared input like a wrong password */
+ static const int failonclear = 1;
++
++/* PAM service that's used for authentication */
++static const char* pam_service = "login";
+diff --git a/config.mk b/config.mk
+index f93879e..e054879 100644
+--- a/config.mk
++++ b/config.mk
+@@ -12,7 +12,7 @@ X11LIB = /usr/X11R6/lib
+ 
+ # includes and libs
+ INCS = -I. -I/usr/include -I${X11INC}
+-LIBS = -L/usr/lib -lc -lcrypt -L${X11LIB} -lX11 -lXext -lXrandr
++LIBS = -L/usr/lib -lc -lcrypt -L${X11LIB} -lX11 -lXext -lXrandr -lpam
+ 
+ # flags
+ CPPFLAGS = -DVERSION=\"${VERSION}\" -DHAVE_SHADOW_H
+diff --git a/slock.c b/slock.c
+index c9cdee2..6fdfe2f 100644
+--- a/slock.c
++++ b/slock.c
+@@ -17,6 +17,8 @@
+ #include <X11/keysym.h>
+ #include <X11/Xlib.h>
+ #include <X11/Xutil.h>
++#include <security/pam_appl.h>
++#include <security/pam_misc.h>
+ 
+ #if HAVE_BSD_AUTH
+ #include <login_cap.h>
+@@ -39,6 +41,9 @@ typedef struct {
+ 	unsigned long colors[NUMCOLS];
+ } Lock;
+ 
++static int pam_conv(int num_msg, const struct pam_message **msg, struct pam_response **resp, void *appdata_ptr);
++struct pam_conv pamc = {pam_conv, NULL};
++char passwd[256];
+ static Lock **locks;
+ static int nscreens;
+ static Bool running = True;
+@@ -112,6 +117,31 @@ getpw(void)
+ }
+ #endif
+ 
++static int
++pam_conv(int num_msg, const struct pam_message **msg,
++		struct pam_response **resp, void *appdata_ptr)
++{
++	int retval = PAM_CONV_ERR;
++	for(int i=0; i<num_msg; i++) {
++		if (msg[i]->msg_style == PAM_PROMPT_ECHO_OFF &&
++				strncmp(msg[i]->msg, "Password: ", 10) == 0) {
++			struct pam_response *resp_msg = malloc(sizeof(struct pam_response));
++			if (!resp_msg)
++				die("malloc failed");
++			char *password = malloc(strlen(passwd) + 1);
++			if (!password)
++				die("malloc failed");
++			memset(password, 0, strlen(passwd) + 1);
++			strcpy(password, passwd);
++			resp_msg->resp_retcode = 0;
++			resp_msg->resp = password;
++			resp[i] = resp_msg;
++			retval = PAM_SUCCESS;
++		}
++	}
++	return retval;
++}
++
+ static void
+ #ifdef HAVE_BSD_AUTH
+ readpw(Display *dpy)
+@@ -119,12 +149,15 @@ readpw(Display *dpy)
+ readpw(Display *dpy, const char *pws)
+ #endif
+ {
+-	char buf[32], passwd[256];
+-	int num, screen;
++	char buf[32];
++	struct passwd* pw;
++	int num, screen, retval;
+ 	unsigned int len, color;
+ 	KeySym ksym;
+ 	XEvent ev;
+ 	static int oldc = INIT;
++	pam_handle_t *pamh;
++
+ 
+ 	len = 0;
+ 	running = True;
+@@ -155,7 +188,19 @@ readpw(Display *dpy, const char *pws)
+ #ifdef HAVE_BSD_AUTH
+ 				running = !auth_userokay(getlogin(), NULL, "auth-xlock", passwd);
+ #else
+-				running = !!strcmp(crypt(passwd, pws), pws);
++				pw = getpwuid(getuid());
++				retval = pam_start(pam_service, pw->pw_name, &pamc, &pamh);
++				if (retval == PAM_SUCCESS)
++					retval = pam_authenticate(pamh, 0);
++				if (retval == PAM_SUCCESS)
++					retval = pam_acct_mgmt(pamh, 0);
++
++				running = 1;
++				if (retval == PAM_SUCCESS)
++					running = 0;
++				else
++					fprintf(stderr, "slock: %s\n", pam_strerror(pamh, retval));
++				pam_end(pamh, retval);
+ #endif
+ 				if (running) {
+ 					XBell(dpy, 100);
+@@ -299,10 +344,10 @@ main(int argc, char **argv) {
+ 	dontkillme();
+ #endif
+ 
++#ifndef HAVE_BSD_AUTH
+ 	if (!getpwuid(getuid()))
+ 		die("no passwd entry for you\n");
+ 
+-#ifndef HAVE_BSD_AUTH
+ 	pws = getpw();
+ #endif
+ 

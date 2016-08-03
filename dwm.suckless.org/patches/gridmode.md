@@ -9,7 +9,7 @@ tools that operate on multiple windows at once; e.g. Cluster SSH.
 
 Download
 --------
-* [dwm-5.8.2-gridmode.diff](dwm-5.8.2-gridmode.diff)
+* [dwm-gridmode-5.8.2.diff](dwm-gridmode-5.8.2.diff)
 * See older versions in [historical](historical/gridmode).
 
 Authors

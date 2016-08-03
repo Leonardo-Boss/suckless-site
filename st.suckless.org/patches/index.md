@@ -1,4 +1,5 @@
-Patches
--------
-Much like the [dwm patches](http://dwm.suckless.org/patches/) but for st.
+patches
+=======
 
+For instructions on how to submit and format patches, take a look at
+the [hacking guidelines](http://suckless.org/hacking).

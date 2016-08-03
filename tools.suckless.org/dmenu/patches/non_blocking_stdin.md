@@ -12,12 +12,10 @@ patch, so that you can use stdout to feed stdin.
 Download
 --------
 
-This patch should apply on git version 2b9683c50723 (the latest -
-2010-12-08)
-
-* [dmenu-tip-non-blocking-stdin.diff](dmenu-tip-non-blocking-stdin.diff)
+* [dmenu-nonblockingstdin-20160702-3c91eed.diff](dmenu-nonblockingstdin-20160702-3c91eed.diff)
 
 Author
 ------
 
 * Christophe-Marie Duquesne <chm.duquesne@gmail.com>
+* koniu at riseup.net (update for 20160615 git master)

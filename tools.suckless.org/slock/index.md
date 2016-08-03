@@ -5,6 +5,14 @@ aware of. It is stable and quite a lot of people in our community are using it
 every day when they are out with friends or fetching some food from the local
 pub.
 
+Configuration
+-------------
+
+Slock is configured via `config.h` like most other suckless.org software. Per
+default it will turn the screen red on any keyboard press, if you are less
+paranoid and turning red on failed login attempts suffices for you, set
+`failonclear = 0` in `config.h`.
+
 Development
 -----------
 You can [browse](http://git.suckless.org/slock) its source code repository

@@ -5,9 +5,17 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2016-07-20
+----------
+[slcon3](http://suckless.org/conference) Call for papers opened. Submission deadline: 2016-08-20
+
+2016-04-02
+----------
+[stali ISO](http://dl.sta.li/stali.iso) pre-release. See [stali](http://sta.li) for more details.
+
 2016-02-29
 ----------
-Final suckless.org server renewal will happen this week:
+suckless.org server renewal will happen this spring:
 
 Heads up for the developers:
 
@@ -73,11 +81,11 @@ community is invited to come, meet and hack!
 
 2014-08-05
 ----------
-[sinit 0.9.1](http://tools.suckless.org/sinit) released: [download](http://dl.suckless.org/sinit/sinit-0.9.1.tar.gz)
+[sinit 0.9.1](http://core.suckless.org/sinit) released: [download](http://dl.suckless.org/sinit/sinit-0.9.1.tar.gz)
 
 2014-05-01
 ----------
-[ubase 0.1](http://tools.suckless.org/ubase) released: [download](http://dl.suckless.org/ubase/ubase-0.1.tar.gz)
+[ubase 0.1](http://core.suckless.org/ubase) released: [download](http://dl.suckless.org/ubase/ubase-0.1.tar.gz)
 
 2014-01-21
 ----------

@@ -1,0 +1,24 @@
+alpha
+=====
+
+->[![Screenshot](dwm-alpha.png)](dwm-alpha.png)<-
+
+Description
+-----------
+
+Allow dwm to have translucent bars, while keeping all the text on it opaque,
+just like the [alpha-patch for st](http://st.suckless.org/patches/alpha).
+
+
+Download
+--------
+
+ * [dwm-alpha-6.1.diff](dwm-alpha-6.1.diff)
+ * [TODO] git port
+
+
+Authors
+-------
+
+ * Eon S. Jeon - <esjeon@hyunmu.am>
+ * Laslo Hunhold - <dev@frign.de> (6.1 port)

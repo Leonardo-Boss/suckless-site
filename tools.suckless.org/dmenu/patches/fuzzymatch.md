@@ -10,11 +10,10 @@ non-consecutive portions of the string to be matched.
 Download
 --------
 
-* [dmenu-4.5-fuzzymatch.diff](dmenu-4.5-fuzzymatch.diff)
-* [dmenu-git-20151020-fuzzymatch.diff](dmenu-git-20151020-fuzzymatch.diff)
+* [dmenu-fuzzymatch-4.6.diff](dmenu-fuzzymatch-4.6.diff)
 
 Authors
 ------
 
 * Jan Christoph Ebersbach - jceb@e-jc.de
-* Laslo Hunhold - dev@frign.de (dmenu-4.5, dmenu-git-20151020 ports)
+* Laslo Hunhold - dev@frign.de (dmenu-4.6)

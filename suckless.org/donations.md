@@ -6,7 +6,13 @@ a contribution, no matter the size, it will go towards ensuring that we are
 able to continue to write, support and host the high quality software that
 makes all of our lives easier.
 
-You can donate through [PayPal](https://paypal.com/) using Anselm's gmail address: garbeam@gmail.com
+You can donate through [PayPal](https://paypal.com/) using our treasurer's address: finance@suckless.org
+
+Or direct through a bank transfer:
+
+	payee: suckless.org e.V.
+	IBAN: DE80 7002 2200 0020 1481 28
+	BIC: FDDODEMMXXX
 
 We'd like to thank all people who have donated or are donating in one way or
 another to a suckless.org related project. Your generosity of time and/or money
@@ -24,6 +30,8 @@ Following people have donated to the suckless.org project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
+* Ryan Roden-Corrent <b>20 USD</b>
+* Sebastian Eiser <b>10 EUR</b>
 * Jakub Jirutka donated <b>20 USD</b>
 * Surin Anton donated <b>20 USD</b>
 * Eero Molkoselkä donated <b>10 EUR</b>

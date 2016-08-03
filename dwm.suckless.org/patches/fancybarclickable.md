@@ -12,7 +12,7 @@ selecting their title in the dwm bar.
 
 Download
 --------
-* [dwm-6.1-fancybarclickable.diff](dwm-6.1-fancybarclickable.diff)
+* [dwm-6.1-fancybarclickable.diff](dwm-6.1-fancybarclickable.diff) (Unclean patch)
 
 Authors
 -------

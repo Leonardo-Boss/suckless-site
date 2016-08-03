@@ -6,6 +6,7 @@ There are several other projects which are inspired by the spirit of suckless.
 * [autonet](https://github.com/mrdomino/autonet) - automatic wifi network chooser for OpenBSD
 * [bgs](https://github.com/Gottox/bgs) - background setter
 * [bug](http://vicerveza.homeunix.net/~viric/soft/bug/) - commandline todo-tracking system
+* [bus](https://github.com/maandree/bus) - daemonless message broadcasting IPC
 * [cross-chroot](https://github.com/radare/cross-chroot) - cross platform qemu-powered chroot utilities (based on the ideas of the maemo sdk)
 * [dietline](https://github.com/radare/radare2/blob/master/libr/cons/dietline.c) - minimalist implementation of a readline-like library
 * [dmc](http://git.suckless.org/dmc/) - dynamic mail client
@@ -14,10 +15,12 @@ There are several other projects which are inspired by the spirit of suckless.
 * [honden](https://github.com/joodan-van-github/honden) - system built on top of oboeta
 * [ired](https://github.com/radare/ired) - minimalistic hexadecimal editor inspired in radare
 * [kelp](http://kelp.sf.net) - source code annotation framework
+* [librarian](https://github.com/maandree/librarian) - less sucky alternative to pkg-config
 * [micy](https://github.com/radare/toys/tree/master/micy) - minimalistic mouse handler (depends on driver)
 * [oboeta](https://github.com/joodan-van-github/oboeta) - minimalistic plain-text flashcard system
 * [pcw](https://bitbucket.org/emg/pcw) - popup chat windows (ii front end)
 * [ptar](https://github.com/joodan-van-github/ptar) - plain-text archives: like tar, but better
+* [sat](https://github.com/maandree/sat) - simple incompatible alternative to at
 * [sdhcp](http://git.2f30.org/sdhcp) - tiny dhcp client
 * [sj](https://github.com/younix/sj) - simple jabber: modular FIFO-based XMPP client
 * [slpm](https://github.com/radare/slpm) - suckless package manager

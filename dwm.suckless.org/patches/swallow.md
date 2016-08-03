@@ -1,34 +1,51 @@
-# terminals swallow windows
+swallow
+=======
 
-## Description
+Description
+-----------
 
-This patch adds "window swallowing" to dwm, a la `rio` from Plan 9.
+This patch adds "window swallowing" to dwm as known from Plan 9's windowing
+system `rio`.
 
-Windows that are marked with the `isterminal` flag (settable using rules in `config.h`) will swallow a window opened by any descendant processes.
-For example, if you open a terminal and then in that terminal type `xclock`, the `xclock` window takes the place of that terminal window.
-Closing the `xclock` window restores the terminal window in the current position.
+Clients marked with `isterminal` in config.h swallow a window opened by
+any child process, e.g. running `xclock` in a terminal.
+Closing the `xclock` window restores the terminal window in the current
+position.
 
-This patch is useful for users who tend to do most or all of their work from the command line, but sometimes need to use a graphical program.
-This patch avoids cluttering the desktop with unused terminals.
+This patch helps users spawning a lot of graphical programs from their
+command line by avoiding cluttering the screen with many unusable terminals.
+Being deep down in a directory hierarchy just does not make the use of
+dmenu feasible.
 
-(`dmenu` could be used, but if you are deep in a directory hierarchy and want to, say, view a PDF, cutting and pasting the path to `dmenu` takes longer than just running `mupdf`.)
+Dependencies
+------------
 
-## Download
-Please see [deadpixi-dwm](https://github.com/deadpixi/deadpixi-dwm) for the development site.
+ * libxcb
+ * Xlib-libxcb
+ * xcb-res
 
-Patches are also available here:
+These dependencies are needed due to the use of the latest revision of the X
+Resource Extension which is unsupported in vanilla Xlib.
 
- * [dwm-6.1-swallowing.diff](dwm-6.1-swallowing.diff) (9319b) - 2016/1/27
+Download
+--------
 
-## Note
-The window swallowing functionality requires `dwm` to walk the process tree, which is an inherently OS-specific task.
-Only Linux is supported at this time.
-Please contact the author (jking@deadpixi.com) if you would like to help expand the list of supported operating systems.
+ * [dwm-swallow-6.1.diff](dwm-swallow-6.1.diff)
+ * [dwm-swallow-20160717-56a31dc.diff](dwm-swallow-20160717-56a31dc.diff)
 
-Also please note that building with this patch requires `libxcb`, `Xlib-libxcb`, and `xcb-res`.
-This is due to the use of the latest revision of the X Resource Extension, which is unsupported in vanilla Xlib.
+Notes
+-----
 
-Only terminals created by local processes can swallow windows, and only windows created by local processes can be swallowed.
+The window swallowing functionality requires `dwm` to walk the process tree,
+which is an inherently OS-specific task. Only Linux is supported at this time.
+Please contact one of the authors if you would like to help expand the list
+of supported operating systems.
 
-## Author
- * Rob King <jking@deadpixi.com>
+Only terminals created by local processes can swallow windows, and only
+windows created by local processes can be swallowed.
+
+Authors
+-------
+
+ * Rob King - <jking@deadpixi.com>
+ * Laslo Hunhold - <dev@frign.de> (6.1, git port)

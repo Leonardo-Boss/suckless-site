@@ -78,12 +78,9 @@ Miscellaneous
 
 Related discussion
 ------------------
-* <http://hashfire.com/?p=29>
 * <https://www.ghcif.de/tag/dynamic-window-manager/> (German)
-* <http://musicmatze.wordpress.com/2012/02/04/mein-dwm-dynamic-window-manager/> (German)
 * [dwm blog post in Persian](http://efazati.blog.ir/post/DWM-%D8%B1%D8%A7%D9%87%DA%A9%D8%A7%D8%B1-%D9%85%D9%86%D8%A7%D8%B3%D8%A8%DB%8C-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D9%BE%D9%86%D8%AC%D8%B1%D9%87-%D9%87%D8%A7-%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3)
 * <http://www.gambaru.de/blog/2011/12/10/elitare-fenstermanager-sind-vielleicht-doch-einfacher-zu-bedienen-als-gedacht/>
-* <http://fsk141.com/dwm-colors>
 * <http://www.linuxjournal.com/content/going-fast-dwm>
 * <http://www.linuxgoodies.com/review_dwm.html>
 * <http://www.iyiz.com/20-most-simple-and-cool-x-window-managers-for-linux/>
@@ -91,14 +88,38 @@ Related discussion
 * <http://danielkaes.wordpress.com/2009/12/03/adding-a-pidgin-trayicon-to-dwm/>
 * <http://openmindlifestyle.wordpress.com/2009/11/28/howto-compile-and-configure-dwm-tiling-window-manager-on-ubuntu/>
 * <http://lsetc.wordpress.com/2009/11/27/gno-more-gnome/>
-* <http://steveno.wordpress.com/2007/05/30/dwm-and-slim/>
 * <http://www.youtube.com/watch?v=F2sYPwuRPvc>
 * <http://houst0n.wordpress.com/2009/12/20/dwm-the-dynamic-window-manager-for-solaris/>
 * <http://the-monkeymind.blogspot.com/2007/03/dwm-dynamic-window-manager-home-page-at.html>
 * <http://tonytraductor.livejournal.com/120674.html>
-* <http://www.halbmoendli.ch/blog/archive/2007/03/31/dwm-dynamic-window-manager.html>
-* <http://peterstuifzand.nl/20060816212719.html>
 * <http://forums.debian.net/viewtopic.php?f=16&t=65110>
 * <http://wongdev.com/blog/dwm-tags-are-not-workspaces/>
 * [dwm usage and configuration page (french)](http://yeuxdelibad.net/Logiciel-libre/Suckless/dwm/index.html)
+* <http://www.youtube.com/watch?v=GQ5s6T25jCc>
+* <https://srobb.net/dwm.html>
+* <http://rhunter.org/blog/2012/04/17/dwm-a-tutorial-for-beginners/>
+* <https://cannibalcandy.wordpress.com/2012/04/26/installing-and-configuring-dwm-under-ubuntu/>
+* <http://blog.yjl.im/2011/07/two-weeks-with-dwm.html>
+* <http://www.murga-linux.com/puppy/viewtopic.php?p=258224>
+* <http://opensourceforu.com/2012/03/tiling-window-managers-getting-started-with-dwm/>
 
+related projects
+----------------
+* [awesome](http://awesome.naquadah.org/) -- dwm fork with XCB, EWMH, Lua script, Xft, D-Bus, multihead.. support
+* [awm](http://www.freaknet.org/alpt/src/alpt-wm/readme) -- (old) modified dwm with workspaces and /proc like interface
+* [bwm](http://lists.suckless.org/dwm/0708/3085.html) -- (old) modified dwm with extensive mouse support
+* [cons-wm](http://github.com/dharmatech/psilab/tree/master/cons-wm) -- minimalist wm in scheme (not tiled)
+* [bug.n](https://github.com/fuhsjr00/bug.n) -- dwm for Windows written in AutoHotkey
+* [dvtm](http://www.brain-dump.org/projects/dvtm/) -- virtual terminal manager (dwm on the console)
+* [dwm-gtx](http://s01.de/~gottox/index.cgi/proj_dwm) -- dwm branch with Xinerama support, pointer movement, different layout
+* [dwm-sprinkles](http://0mark.unserver.de/dwm-sprinkles/) -- dwm with colorfull bar, transparency, pre-configured pertag and more
+* [dwm-win32](http://www.brain-dump.org/projects/dwm-win32/) -- dwm ported to windows
+* [echinus](http://www.rootshell.be/~polachok/code/) -- dwm fork with EWMH, Xft support
+* [gemini](http://gemini.digitalmediaplanet.net) -- terminal manager
+* [i3](http://i3.zekjur.net/) -- wmii fork with XCB, multihead, vertical column, command mode
+* [musca](http://aerosuidae.net/musca.html) -- inspired by dwm, more complex layout, configurable with commands, EWMH support
+* [qtile](http://www.qtile.org/) -- pure python wm, used ideas from dwm
+* [scrotwm](http://www.peereboom.us/scrotwm/html/scrotwm.html) -- dwm clone with multihead, config file, restart.. support
+* [TAL/wm](http://talwm.sourceforge.net/) -- minimal tiled wm based on dwm (discontinued)
+* [teslawm](http://teslawm.org/) -- dwm fork with multihead, mouse, stdin commands support (was dwm-rfigura)
+* [xmonad](http://www.xmonad.org/) -- dwm clone in haskell

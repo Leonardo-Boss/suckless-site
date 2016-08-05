@@ -241,6 +241,7 @@ plain file.)
 	  new features.
 
 ---- Führerbunker, 2015-07-31
+(You can guess who's the Führer.)
 
 Further Reading
 ---------------

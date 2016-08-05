@@ -1,7 +1,7 @@
 Systemd is the best example of Suck.
 ====================================
 There is a menace which is spreading like a disease throughout the Linux
-world, it is called [systemd](https://github.com/systemd/systemd).
+world, it is called [Systemd](https://github.com/systemd/systemd).
 
 Short Historical Summary
 ------------------------
@@ -25,7 +25,7 @@ and run some other init scripts.
 
 The Systemd Chronicles
 ----------------------
-Now follows a collection of links related to all the features systemd tries to
+Now follows a collection of links related to all the features Systemd tries to
 enforce upon you as a Linux user, because »they know better«.
 
 Please add all the links you can find! Generations after us have to know how
@@ -39,8 +39,8 @@ The Never Ending Part
 
 Part 2
 ------
-* [systemd locks down /etc and makes it read-only](http://bugzilla.redhat.com/show_bug.cgi?id=1350450)
-* [System now does your DNS](https://lists.dns-oarc.net/pipermail/dns-operations/2016-June/014964.html)
+* [Systemd locks down /etc and makes it read-only](http://bugzilla.redhat.com/show_bug.cgi?id=1350450)
+* [Systemd now does your DNS](https://lists.dns-oarc.net/pipermail/dns-operations/2016-June/014964.html)
 
 Part 1
 ------
@@ -75,18 +75,18 @@ plain file.)
 	  against the UNIX infidels: »You can patch it out.« It is no more
 	  there.
 * [abnormal processes](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1627)
-	* Now systemd is getting deep into philosophy. What is »abnormal«?
+	* Now Systemd is getting deep into philosophy. What is »abnormal«?
 	  Well, let us just define it. There is no technical merit to accept
 	  this.
 * [systemd-resolved](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1578)
 	* Every configuration file needs its own process and service.
 	* Symlinks are a good way to solve all world problems.
 * [new is better](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1571)
-	* The systemd development process is flawed by always assuming »new is
+	* The Systemd development process is flawed by always assuming »new is
 	  best«.
 	* Network configuration should be in my init process.
 * [remote pid 1](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1500)
-	* »Everything will end up having a remote API.« I wonder when systemd
+	* »Everything will end up having a remote API.« I wonder when Systemd
 	  will understand MIME and e-mail.
 * [init does man](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1465)
 	* My init process is too big, it needs its own file hierarchy and an
@@ -98,7 +98,7 @@ plain file.)
 	* Exactly. The predisposition of being able to call such a complex
 	  command does not imply the running system. Let's check it again.
 * [clean up directories](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1306)
-	* There is another monster in systemd, it handles tmp files.
+	* There is another monster in Systemd, it handles tmp files.
 	  There are just some cases before it was introduced to have to clean up
 	  a directory in the file tree. Now there are hundreds. And easily
 	  another case can be added! Of course your init process does that.
@@ -106,14 +106,14 @@ plain file.)
 	* »Interactive queries« pulls in many dependencies. Let us have it in
 	  every installation out there on by default. Of course in pid 1.
 * [journald](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1234)
-	* This is a bit longer. Because the systemd developers were not able
+	* This is a bit longer. Because the Systemd developers were not able
 	  to contribute to any syslog daemon they had to write their own with
 	  some binary format so the principle of being able to read your log
 	  files after a critical crash was violated. To be nice invaders the old
 	  systems were allowed to order the system log through the specified
 	  mechanism. Now that they implemented our specifics, turn off the
 	  neutral syslog delivery. You will see this pattern of »now that we
-	  conquered your culture, obey« more often in systemd.
+	  conquered your culture, obey« more often in Systemd.
 * [systemd-terminal](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1224)
 	* Why does the kernel have tty handling? So in serious situations you
 	  will be able to debug it over the last standing PIN on your
@@ -121,7 +121,7 @@ plain file.)
 * [networkd is your oppressor](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1216)
 	* Premature optimisation of IP configurations always leads to misery.
 * [We do not understand broadcast](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1211)
-	* With the growth of systemd in complexity and the new depending
+	* With the growth of Systemd in complexity and the new depending
 	  software the implications of the added hacks are increasing.
 * [Timezone hack](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1193)
 	* Systemd is too complex for such a simple transaction with the
@@ -137,12 +137,12 @@ plain file.)
 	  in other points.
 * [pid 1 does DNS](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1128)
 	* This change adds another open door to your pid 1, adds caches, new
-	  APIs and of course it will never fail and break systemd on your
+	  APIs and of course it will never fail and break Systemd on your
 	  initial boot.
 	* They are planning (2015-07) to add multicast DNS to your pid 1.
 	  Multicast DNS implies an enforced timeout to know if someone answered.
 	  Systemd was about speed, you know. Look at avahi in how to ruin this
-	  concept for Linux. It has the same developer flaws as systemd: Too
+	  concept for Linux. It has the same developer flaws as Systemd: Too
 	  many forced dependencies, you need to implement its API and when it is
 	  taking over you are doomed.
 * [policykit](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n1113)
@@ -161,13 +161,13 @@ plain file.)
 	  too.
 * [utmp should go](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n994)
 	* We have taken over your culture, now die! Another flaw in the
-	  systemd small world theory: When something is getting optional it
+	  Systemd small world theory: When something is getting optional it
 	  will be removed.
 * [password agent](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n964)
 	* »Interactive authentication«
 * [udev timeout](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n944)
 	* Instead of patching the kernel to add a simple solution, add a hack.
-	  Only the systemd developers tell you when it is allowed to wait or
+	  Only the Systemd developers tell you when it is allowed to wait or
 	  sleep in userspace. The rest obey our orders!
 * [systemd-pm](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n924)
 	* Power management is required on boot up.
@@ -175,13 +175,13 @@ plain file.)
 	* What can go wrong when you are adding more paths that are read,
 	  parsed and executed?
 * [hack the reload](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n888)
-	* First systemd was adding »better features« like socket activation to
+	* First Systemd was adding »better features« like socket activation to
 	  make developers use their mechanism for daemons. They hit the
 	  proprietary wall of disgust with this changelog entry. Systemd is
 	  too big and you will lose your face if you change the misdesign. Now
 	  add another hack because we can do it. Big empires fall too and
 	  sadly have too many casualties when they are falling. :(
-* [X11 in systemd](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n783)
+* [X11 in Systemd](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n783)
 	* Of course graphics were missing in pid 1.
 * [complexity is purity](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n738)
 	* You will of course need PPPoE when you do parallel bootup. Every
@@ -193,7 +193,7 @@ plain file.)
 	* This one is a setback. Why is there no default editor in systemd in
 	  case of factory reset?
 * [8x ctrl + alt + del](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n610)
-	* In systemd you press eight times Ctrl+Alt+Del to trigger reboot.
+	* In Systemd you press eight times Ctrl+Alt+Del to trigger reboot.
 * [privacy policy](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n594)
 	* For the next generations: In 2015 privacy was a big issue because of
 	  the mentioned hard-wiring between the web and software.
@@ -212,7 +212,7 @@ plain file.)
 * [libudev will be orphaned](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n291)
 	* With the advent of udevd there was a compatibility to its complexity
 	  called libudev. X11 uses it to query the changing devices. And of
-	  course make it a non-independent API in systemd. Why? You can guess
+	  course make it a non-independent API in Systemd. Why? You can guess
 	  why: Defeating the infidels.
 * [fsck indirections](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n281)
 	* When there was syslog fsck did output errors to your display as
@@ -221,22 +221,22 @@ plain file.)
 	* This is pure evil. Your pid 1 is now able to import complete system
 	  images over the network and show them to you as your running system.
 	  There is nothing that can go wrong.
-* [CGI for systemd](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n166)
+* [CGI for Systemd](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n166)
 	* The web thing has been discussed before.
 * [kdbus](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n57)
 	* As of 2015-07-31 kdbus is not in the mainline Linux kernel. Systemd
 	  made kdbus non-optional in its release. The kernel maintainers are
 	  still debating the kdbus ABI or possible alternatives, but if
-	  systemd depends on the current state of kdbus the kernel maintainers
+	  Systemd depends on the current state of kdbus the kernel maintainers
 	  are faced with the hard decision to either break Fedora userspace or
 	  accept the current kdbus proposal into the kernel with its security
 	  and maintainability issues. This is the best example how
-	  systemd is forcing you into decisions. Of course if you are  a mindless
+	  Systemd is forcing you into decisions. Of course if you are  a mindless
 	  bureaucrat it helps you to keep your job.
 * [readahead removed](http://cgit.freedesktop.org/systemd/systemd/tree/NEWS?id=2d1ca11270e66777c90a449096203afebc37ec9c#n950)
 	* The first thing swallowed in on Fedora was readahead. Now that (of
 	  course!) everyone is using an SSD (at least the developers of
-	  systemd do that) it can be removed. Why was it there? Is it possible
+	  Systemd do that) it can be removed. Why was it there? Is it possible
 	  to make it a separate tool again?  There's no time for that, we are implementing
 	  new features.
 

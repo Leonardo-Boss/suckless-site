@@ -25,10 +25,17 @@ and run some other init scripts.
 
 The Systemd Chronicles
 ----------------------
-Now follows a list of unsorted links to the Systemd changelog with comments.
-The list is exceeding the life-time of a philosopher to discuss all
-implications on the sanity of a system design. That's why the comments are
-kept short.
+Now follows a collection of links related to all the features systemd tries to
+enforce upon you as a Linux user, because »they know better«.
+
+Please add all the links you can find! Generations after us have to know how
+to not do software and system development! See the
+[wiki instructions](http://suckless.org/wiki) in how to contribute to this
+page.
+
+The Never Ending Part
+---------------------
+* Your link here.
 
 Part 2
 ------

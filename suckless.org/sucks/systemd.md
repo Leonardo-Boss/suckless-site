@@ -37,6 +37,38 @@ The Never Ending Part
 ---------------------
 * Your link here.
 
+Part 3
+------
+[NEWS revision 76153ad45f09b6ae45464f2e03d3afefbb4b2afe](https://github.com/systemd/systemd/blob/76153ad45f09b6ae45464f2e03d3afefbb4b2afe/NEWS)
+
+* [systemd does {,U}EFI bootload](https://github.com/systemd/systemd/blob/76153ad45f09b6ae45464f2e03d3afefbb4b2afe/NEWS#L1306)
+	* Should systemd's PID be changed from 1 to a negative, or imaginary,
+	  number? It now exists before the kernel itself, during a bootup. 
+	  See also [systemd-boot](https://wiki.archlinux.org/index.php/systemd-boot).
+* [systemd replaces sudo and su](https://github.com/systemd/systemd/blob/76153ad45f09b6ae45464f2e03d3afefbb4b2afe/NEWS#L1233)
+	* Please note the command name, machinectl and 
+	  its [features at the manpage](https://www.freedesktop.org/software/systemd/man/machinectl.html). 
+	  In exchange for a program which contains sudo, su and kill 
+	  (and does some functions which historically ssh/telnet did), bare metal
+	  users have a tons of bloat and a lot of things to disable, if even 
+	  possible, useful only to people which deal with virtual machines.
+* [systemd-journald can do log-rotate](https://github.com/systemd/systemd/blob/76153ad45f09b6ae45464f2e03d3afefbb4b2afe/NEWS#L1073)
+	* Being journal files binaries written with easily corruptable
+	  transactions, does this feature make the log unreadable at times?
+* [Transient units](https://github.com/systemd/systemd/blob/76153ad45f09b6ae45464f2e03d3afefbb4b2afe/NEWS#L708)
+	* Temporary services, because we love to reinvent procps, forking, 
+	  nohup and lsof.
+* [systemd does socat/netcat](https://github.com/systemd/systemd/blob/76153ad45f09b6ae45464f2e03d3afefbb4b2afe/NEWS#L546)
+* [systemd-logind does sighup and nohup](https://github.com/systemd/systemd/blob/76153ad45f09b6ae45464f2e03d3afefbb4b2afe/NEWS#L274)
+	* Logout is equivalent to shutting off the machine, so you will NOT 
+	  have any running program after logout, unless you inform your init system.
+* [systemd-nspawn can patch at will any kind of file in a container](https://github.com/systemd/systemd/blob/76153ad45f09b6ae45464f2e03d3afefbb4b2afe/NEWS#L391)
+	* Paired with transient units and user escalation performable remotely,
+	  this can mean that if you house VPS instances somewhere, your 
+	  hosting provider has means and tools to spy, modify, delete any 
+	  kind of content you store there. Encrypt everything, read your TOS.
+* [systemd does UNIX nice](https://github.com/systemd/systemd/blob/76153ad45f09b6ae45464f2e03d3afefbb4b2afe/NEWS#L425)
+* 
 Part 2
 ------
 * [systemd locks down /etc and makes it read-only](http://bugzilla.redhat.com/show_bug.cgi?id=1350450)

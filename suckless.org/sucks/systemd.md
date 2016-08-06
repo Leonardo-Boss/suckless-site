@@ -68,7 +68,9 @@ Part 3
 	  hosting provider has means and tools to spy, modify, delete any 
 	  kind of content you store there. Encrypt everything, read your TOS.
 * [systemd does UNIX nice](https://github.com/systemd/systemd/blob/76153ad45f09b6ae45464f2e03d3afefbb4b2afe/NEWS#L425)
-* 
+
+---- Führerbunker, 2016-08-06
+
 Part 2
 ------
 * [systemd locks down /etc and makes it read-only](http://bugzilla.redhat.com/show_bug.cgi?id=1350450)

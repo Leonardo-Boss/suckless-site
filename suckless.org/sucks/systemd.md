@@ -75,6 +75,7 @@ Part 2
 ------
 * [systemd locks down /etc and makes it read-only](http://bugzilla.redhat.com/show_bug.cgi?id=1350450)
 * [systemd now does your DNS](https://lists.dns-oarc.net/pipermail/dns-operations/2016-June/014964.html)
+* [systemd hates when you adapt your system (graphics on other than vt1)](https://bugzilla.redhat.com/show_bug.cgi?id=817186)
 
 Part 1
 ------

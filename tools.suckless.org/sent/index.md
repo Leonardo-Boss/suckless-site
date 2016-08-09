@@ -21,7 +21,7 @@ Dependencies
 ------------
 
 * Xlib and Xft for building
-* [farbfeld](http://git.2f30.org/farbfeld/about/) tools to use images in the
+* [farbfeld](http://tools.suckless.org/farbfeld/) tools to use images in the
   presentations (if you don't want to use farbfeld,
   [sent-0.2](http://dl.suckless.org/tools/sent-0.2.tar.gz) was the last version
   with just png support, but may lack fixes and further improvements since its

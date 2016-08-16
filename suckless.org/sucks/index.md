@@ -66,6 +66,19 @@ Alternatives: [mk][16], [gnu make][17]
 [16]: http://doc.cat-v.org/plan_9/4th_edition/papers/mk
 [17]: https://www.gnu.org/software/make/
 
+Version Control Systems
+-----------------------
+* [subversion][18] (Teaches developers to think of version control in a harmful
+  and terrible way, centralized, ugly code, conceptionally broken in a lot of
+  terms. "Centralized" is said to be one of the main benefits for "enterprise"
+  applications, however, there is no benefit at all compared to decentralized
+  version control systems like git. There is no copy-on-write, branching
+  essentially will create a 1:1 copy of the full tree you have under version
+  control, making feature-branches and temporary changes to your code a painful
+  mess. It is slow, encourages people to come up with weird workarounds just to
+  get their work done, and the only thing enterprisey about it is that it just
+  sucks.
+
 Programs
 --------
 There are many broken X programs. Go bug the developers of these broken

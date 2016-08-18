@@ -9,7 +9,7 @@ The CfP is open for proposals from 2016-06-03 to 2016-08-20.
 
 Venue
 -----
-You can arrange your booking at the venue if you like:
+You can arrange your booking at the [venue](http://www.hotelamrosenberg.de) if you like:
 
 	Hotel am Rosenberg
 	Wielandstraße 24

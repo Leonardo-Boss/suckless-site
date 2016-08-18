@@ -7,6 +7,19 @@ At the same occasion the Mitgliederversammlung (annual member meeting) of suckle
 
 The CfP is open for proposals from 2016-06-03 to 2016-08-20.
 
+Venue
+-----
+You can arrange your booking at the venue if you like:
+
+	Hotel am Rosenberg
+	Wielandstraße 24
+	65719 Hofheim am Taunus
+	Germany
+	+49 (0) 6192 292-0
+	hotel@hotelamrosenberg.de
+
+When booking a room, use the booking code: slcon or refer to the suckless.org e.V. event.
+
 Proposals
 ---------
 We expect talk proposals between 30-60 minutes each covering either

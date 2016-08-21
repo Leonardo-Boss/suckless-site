@@ -21,7 +21,6 @@ Please add your own version of dwmstatus here (keeping the list sorted).
 
 * [barM](barM.c) - can display all, time/date, ram usage, output of commands (the New BarMonitor).
 * [dstat](https://www.umaxx.net/dl) [Screenshot](https://www.umaxx.net/dstat.png) - displays the current network throughput, CPU usage, performance settings, battery status, temperature, volume settings, as well as the current date and time (OpenBSD only, no support for Linux).
-* [pinky-bar](https://github.com/wifiextender/pinky-bar) - 50+ different actions, Linux and FreeBSD support.
 * [dwmsd](https://github.com/johnko/dwmsd) - a daemon that listens on localhost tcp (may be useful as a base for asynchronous updates)
 * [go-dwmstatus](https://github.com/oniichaNj/go-dwmstatus) - A Go bar that prints current MPD song, load averages, time/date and battery percentage.
 * [gods](https://github.com/schachmat/gods) - implemented in Go. prints network speed, cpu, ram, date/time
@@ -35,7 +34,6 @@ Helper functions
 If you have simple C functions for gathering system information, please
 add them here as file or as code example.
 
-* [Basic ALSA Volume API example with error checks and handling](volume.c)
 * [Support for ACPI battery status Linux](new-acpi-battery.c)
 * [Reading out a temperature from /sys](dwmstatus-temperature.c)
 * [Reading up-, and downspeeds of all network interfaces from /proc/net](dwmstatus-netusage.c)

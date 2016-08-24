@@ -30,6 +30,7 @@ Following people have donated to the suckless.org project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
+* Chandrashekhara Rao <b>20 USD</b>
 * Ryan Roden-Corrent <b>20 USD</b>
 * Sebastian Eiser <b>10 EUR</b>
 * Jakub Jirutka donated <b>20 USD</b>

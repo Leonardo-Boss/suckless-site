@@ -8,10 +8,12 @@ Vertically center lines in the space available if you have set a larger
 chscale in config.h.
 
 Before:
-->[![Before](st-vertcenter-before-s.png)](st-vertcenter-before.png)<-
+
+[![Before](st-vertcenter-before-s.png)](st-vertcenter-before.png)
 
 After:
-->[![After](st-vertcenter-after-s.png)](st-vertcenter-after.png)<-
+
+[![After](st-vertcenter-after-s.png)](st-vertcenter-after.png)
 
 Download
 --------

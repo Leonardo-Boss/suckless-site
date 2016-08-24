@@ -5,9 +5,9 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
-2016-07-20
+2016-09-24
 ----------
-[slcon3](http://suckless.org/conference) Call for papers opened. Submission deadline: 2016-08-20
+[slcon3](http://suckless.org/conference) Preliminary schedule now published. If you want to attend please register until: **2016-09-01**.
 
 2016-04-02
 ----------
@@ -15,7 +15,7 @@ News
 
 2016-02-29
 ----------
-suckless.org server renewal will happen this spring:
+suckless.org server renewal will happen this year:
 
 Heads up for the developers:
 

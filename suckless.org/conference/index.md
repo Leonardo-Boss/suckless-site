@@ -129,15 +129,15 @@ Saturday, 2016-09-24
 
 (16:35-17:15) Lightning talk session (please announce until Sep 23 for easier planning).
 
-(17:15-17:30) stali learnings Anselm R Garbe
+(17:15-17:30) stali learnings, Anselm R Garbe
 
 	Anselm will present his learnings with stali since last slcon2. In
 	particular he will discuss his new goals with stali and reasoning
 	behind why making stali self-bootstrappable is a bad idea.
 
-(17:30-17:55) stapi - stali for Pi as bee hive observation platform, Anselm R Garbe
+(17:30-17:55) stapi - stali for Pi as beehive observation platform, Anselm R Garbe
 
-	Anselm will demonstrate his stali porting efforts for the Raspberr Pi
+	Anselm will demonstrate his stali porting efforts for the Raspberry Pi
 	in order to have a nice platform for observing his beehives. He will
 	discuss temperature and moisture sensor equipment and his IR camera
 	usage.

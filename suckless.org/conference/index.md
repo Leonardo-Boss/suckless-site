@@ -83,11 +83,10 @@ Saturday, 2016-09-24
 
 (14:00-14:25)  ii-like chatting improvements, Jan Klemkow
 
-	Since slcon2 I have made several improvements in my ii-like
-	chatting infrastructure.  In this talk I will show the hole
-	picture of my different activities in this area.  I will show
-	new features in my UCSPI tool chain, a new modular front end
-	'lchat' and me idea of an runit integration.
+	Since slcon2 I have made several improvements in my ii-like chat
+	infrastructure.  In this talk I will give an overview of my various
+	activities in this area.  I will present new features in my UCSPI tool
+	chain, a new modular front end 'lchat' and the idea of runit integration.
 
 (14:30-15:15) text engine, Francesc Hervada-Sala
 
@@ -118,14 +117,13 @@ Saturday, 2016-09-24
 
 (16:10-16:30) shared farbfeld, Jan Klemkow
 
-	Farbfeld is a very good base for general purpose image
-	processing.  The Tools which were made so far demonstrate how
-	easy image processing could be divided into cooperative
-	programs.  This talk will show an interface to speedup
-	the usage of different farbfeld tools with shared memory.
-	I will show and discuss an idea for an simple architecture of a
-	suckless like photoshop based on my interface, is first
-	implementation and some benchmarks i made.
+	Farbfeld is a good base for general purpose image processing.  The
+	tools that have been made so far demonstrate that sophisticated image
+	processing can be achieved using cooperative programs.  In this talk I
+	will present a shared memory interface that speeds up the usage of
+	farbfeld tools.  Furthermore, I will sketch the architecture of a
+	suckless-style Photoshop-like graphical image editor, and present a PoC
+	implementation together with some benchmarks.
 
 (16:35-17:15) Lightning talk session (please announce until Sep 23 for easier planning).
 

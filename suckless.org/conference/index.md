@@ -61,9 +61,9 @@ Saturday, 2016-09-24
 	most sensible XML libraries and to the discussion of possible alternative
 	parsing approaches as well as their implementation.
 
-(11:20-11:50) Stali Pie B+, Manu Raster
+(11:20-11:50) Stali Pi B+, Manu Raster
 
-	Report on readying Stali for the Raspberry Pie B+ (32 bit). It is
+	Report on readying Stali for the Raspberry Pi B+ (32 bit). It is
 	also a story about monsters and maiden when we take into comparison
 	other piles of code (kernels, distros etc.) and their build
 	systems. Portability conceptions encountered en route are
@@ -81,18 +81,51 @@ Saturday, 2016-09-24
 	(as advocated by the "boring crypto" movement) and allow bootstrapping
 	new systems more easily.
 
-(14:00-14:25)  ii-like chatting improvements, Jan Klemkow
+(14:00-15:00) The Myrddin Programming Language, Ori Bernstein
+
+	Myrddin is a programming language that was written for a saner, easier to
+	use programming environment that I find more pleasant than C. The language
+	lives somewhere between C and ML in design, with parametric polymorphism,
+	type inference, closures, and pattern matching. In some ways, it can be
+	thought of as a suckless rust.
+
+	It also comes with a complete replacement for many standard libraries on a
+	number of popular (and less popular) platforms.
+
+(15:05-15:25)  ii-like chatting improvements, Jan Klemkow
 
 	Since slcon2 I have made several improvements in my ii-like chat
 	infrastructure.  In this talk I will give an overview of my various
 	activities in this area.  I will present new features in my UCSPI tool
 	chain, a new modular front end 'lchat' and the idea of runit integration.
 
-(14:30-15:15) text engine, Francesc Hervada-Sala
+(15:30-16:10) text engine, Francesc Hervada-Sala
 
-	Francesc will introduce his text engine experiment.
+	The right approach to software systems was introduced by the Unix programming
+	environment over forty years ago with a file system that opened access to data
+	across all applications and with a universal interface model based on strings.
+	This approach must be deepened. Let us define "text" as the semantic data
+	structure that results from parsing strings. Imagine that a software system has
+	a "text engine" at its kernel. When you edit a run control file and save it,
+	  the text engine parses it and stores its parse tree into the central
+	  repository. When you execute an instruction at the shell, the text engine
+	  parses the command line and sets all parameters in the repository before
+	  executing the command. An application retrieves a configuration parameter by
+	  querying the text engine. In such a system parsers for particular formats or
+	  languages would not be embedded into particular applications or commands,
+	  they would be stand-alone software units with the sole purpose of converting
+	  a string into a semantic representation in the text engine's repository.
+	  Applications would not have to deal with and not be tied to particular file
+	  formats and languages, and the user would be able to choose the format or
+	  language to use for any configuration statement. The user would change the
+	  name of a file and would not need to adjust all references to it inside
+	  scripts and other files, because the reference in the repository (say as
+	  inode) would remain unchanged. To experiment with this new
+	  approach I am beginning to develop a text engine
 
-(15:20-15:55) Suckless Image Processing,  Enric Meinhardt-Llopis
+(16:10-16:20) Coffee break
+
+(16:20-16:55) Suckless Image Processing,  Enric Meinhardt-Llopis
 
 	An image is an array of numbers.  Since arrays of numbers are
 	natively represented in C, this language is well-suited for image
@@ -113,9 +146,7 @@ Saturday, 2016-09-24
 	general, because of the need to represent negative and floating-point
 	pixel values.
 
-(15:55-16:10) Coffee break
-
-(16:10-16:30) shared farbfeld, Jan Klemkow
+(17:00-17:20) shared farbfeld, Jan Klemkow
 
 	Farbfeld is a good base for general purpose image processing.  The
 	tools that have been made so far demonstrate that sophisticated image
@@ -125,15 +156,15 @@ Saturday, 2016-09-24
 	suckless-style Photoshop-like graphical image editor, and present a PoC
 	implementation together with some benchmarks.
 
-(16:35-17:15) Lightning talk session (please announce until Sep 23 for easier planning).
+(17:20-17:45) Lightning talk session (please announce until Sep 23 for easier planning).
 
-(17:15-17:30) stali learnings, Anselm R Garbe
+(17:50-18:05) stali learnings, Anselm R Garbe
 
 	Anselm will present his learnings with stali since last slcon2. In
 	particular he will discuss his new goals with stali and reasoning
 	behind why making stali self-bootstrappable is a bad idea.
 
-(17:30-17:55) stapi - stali for Pi as beehive observation platform, Anselm R Garbe
+(18:05-18:25) stapi - stali for Pi as beehive observation platform, Anselm R Garbe
 
 	Anselm will demonstrate his stali porting efforts for the Raspberry Pi
 	in order to have a nice platform for observing his beehives. He will
@@ -142,7 +173,7 @@ Saturday, 2016-09-24
 
 Official slcon3 talk session end.
 
-(18:00-19:00) suckless.org e.V. Mitgliederversammlung (yearly suckless.org e.V. member meeting)
+(18:30-19:15) suckless.org e.V. Mitgliederversammlung (yearly suckless.org e.V. member meeting)
 
 	- Report of the chairs, Anselm R Garbe, Laslo Hunhold
 	- Report of the treasurer, Jan Klemkow

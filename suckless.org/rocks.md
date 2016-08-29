@@ -69,6 +69,7 @@ BitTorrent Clients
 Feed aggregators
 ----------------
 * [newsbeuter](http://www.newsbeuter.org/)
+* [snownews](https://kiza.eu/software/snownews/) - Text mode RSS newsreader for Linux and Unix
 
 File browsers
 -------------

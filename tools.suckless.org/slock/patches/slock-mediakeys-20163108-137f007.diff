@@ -1,0 +1,41 @@
+From c03df76eb95b4e5657432211c6c4572a767db787 Mon Sep 17 00:00:00 2001
+From: Klemens Nanni <kl3@posteo.org>
+Date: Tue, 30 Aug 2016 22:25:47 +0200
+Subject: [PATCH] Apply slock-mediakeys-20163008-137f007.diff
+
+This allows media hotkeys to be used while the screen is locked.
+---
+ slock.c | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
+diff --git a/slock.c b/slock.c
+index 9ec2f71..da3bb2a 100644
+--- a/slock.c
++++ b/slock.c
+@@ -17,6 +17,7 @@
+ #include <X11/keysym.h>
+ #include <X11/Xlib.h>
+ #include <X11/Xutil.h>
++#include <X11/XF86keysym.h>
+ 
+ #if HAVE_BSD_AUTH
+ #include <login_cap.h>
+@@ -188,6 +189,15 @@ readpw(Display *dpy, const char *pws)
+ 				if (len)
+ 					passwd[len--] = 0;
+ 				break;
++			case XF86XK_AudioLowerVolume:
++			case XF86XK_AudioMute:
++			case XF86XK_AudioRaiseVolume:
++			case XF86XK_AudioPlay:
++			case XF86XK_AudioStop:
++			case XF86XK_AudioPrev:
++			case XF86XK_AudioNext:
++				XSendEvent(dpy, locks[0]->root, True, KeyPressMask, &ev);
++				break;
+ 			default:
+ 				if (num && !iscntrl((int)buf[0]) && (len + num < sizeof(passwd))) {
+ 					memcpy(passwd + len, buf, num);
+-- 
+2.8.3
+

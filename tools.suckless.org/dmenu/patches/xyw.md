@@ -11,6 +11,7 @@ The patch adds options for setting window position and width.
 Download
 --------
 * [dmenu-xyw-4.6.diff](dmenu-xyw-4.6.diff)
+* [dmenu-xyw-20160903-026827f.diff](dmenu-xyw-20160903-026827f.diff)
 
 Author
 ------

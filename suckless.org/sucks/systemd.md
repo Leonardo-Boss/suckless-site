@@ -278,6 +278,26 @@ plain file.)
 ---- Führerbunker, 2015-07-31
 (You can guess who's the Führer.)
 
+Practical systemd
+-----------------
+
+Here is what happens on a stock Arch Linux system, powered by systemd,
+when a non-root user tries to restart the system:
+
+    $ reboot
+    Failed to set wall message, ignoring: The name org.freedesktop.PolicyKit1 was not provided by any .service files
+    Failed to reboot system via logind: The name org.freedesktop.PolicyKit1 was not provided by any .service files
+    Failed to talk to init daemon.
+
+In contrast, here is the equivalent error message on a system powered by
+runit:
+
+    $ reboot
+    init: fatal: unable to create /etc/runit/stopit: access denied
+
+systemd is driving "just google the problem" attitude, because how the
+hell are you expected to troubleshoot this kind of error otherwise?
+
 Further Reading
 ---------------
 * [Without systemd](http://without-systemd.org/wiki/index.php/Main_Page)

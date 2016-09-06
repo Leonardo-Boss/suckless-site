@@ -5,7 +5,7 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
-2016-09-24
+2016-08-24
 ----------
 [slcon3](http://suckless.org/conference) Preliminary schedule now published. If you want to attend please register until: **2016-09-01**.
 

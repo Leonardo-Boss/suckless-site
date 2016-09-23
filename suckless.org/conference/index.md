@@ -8,12 +8,6 @@ The CfP is closed now. See the schedule below for details.
 Registration
 ------------
 
-Speakers are already registered. All other participants need to register until
-**Sep 1 2016** to enable us to negotiate the best conditions in terms of the
-conference room registration.
-
-Please register by direct mail to [Anselm](mailto:anselm@garbe.us)
-
 Please note that we will collect a conference fee for the conference room and
 lunch/drink package. If the preliminary schedule sticks to Saturday being the
 only day when we book the conference room, we need to expect around *45 EUR*
@@ -27,9 +21,16 @@ Friday, 2016-09-23
 
 Arrival day.
 
-(20:00) *Welcome* in the bar, Anselm R Garbe
+(19:30) *Welcome* in the Biergarten "XXL Waldgeist", Anselm R Garbe
 
-> We will gather together and check
+> We will gather together and check out the XXL Waldgeist.
+
+	Waldgeist Hofheim
+	Schlossstr. 70
+	65719 Hofheim
+
+	www.derwaldgeist.de
+
 
 Saturday, 2016-09-24
 ====================

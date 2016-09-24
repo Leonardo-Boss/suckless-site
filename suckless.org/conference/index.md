@@ -159,24 +159,18 @@ Saturday, 2016-09-24
 	suckless-style Photoshop-like graphical image editor, and present a PoC
 	implementation together with some benchmarks.
 
-(17:20-17:45) Lightning talk session (please announce until Sep 23 for easier planning).
+(17:20-17:30) Display servers, Mattias Andrée
 
-(17:50-18:05) stali learnings, Anselm R Garbe
+(17:35-18:00) stali learnings and beehive observation, Anselm R Garbe
 
 	Anselm will present his learnings with stali since last slcon2. In
-	particular he will discuss his new goals with stali and reasoning
-	behind why making stali self-bootstrappable is a bad idea.
-
-(18:05-18:25) stapi - stali for Pi as beehive observation platform, Anselm R Garbe
-
-	Anselm will demonstrate his stali porting efforts for the Raspberry Pi
-	in order to have a nice platform for observing his beehives. He will
-	discuss temperature and moisture sensor equipment and his IR camera
-	usage.
+	particular he will discuss his new goals with stali and reasoning behind why
+	making stali self-bootstrappable is a bad idea.  He will also
+	demonstrate stali as platform for observing his beehives.
 
 Official slcon3 talk session end.
 
-(18:30-19:15) suckless.org e.V. Mitgliederversammlung (yearly suckless.org e.V. member meeting)
+(18:10-19:00) suckless.org e.V. Mitgliederversammlung (yearly suckless.org e.V. member meeting)
 
 	- Report of the chairs, Anselm R Garbe, Laslo Hunhold
 	- Report of the treasurer, Jan Klemkow

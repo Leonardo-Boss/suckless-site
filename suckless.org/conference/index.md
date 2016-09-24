@@ -13,8 +13,8 @@ lunch/drink package. If the preliminary schedule sticks to Saturday being the
 only day when we book the conference room, we need to expect around *45 EUR*
 conference fee per person.
 
-Preliminary schedule
---------------------
+Schedule
+-------------------
 
 Friday, 2016-09-23
 ==================
@@ -62,7 +62,7 @@ Saturday, 2016-09-24
 	most sensible XML libraries and to the discussion of possible alternative
 	parsing approaches as well as their implementation.
 
-(11:20-11:50) Stali Pi B+, Manu Raster
+(11:20-11:40) Stali Pi B+, Manu Raster
 
 	Report on readying Stali for the Raspberry Pi B+ (32 bit). It is
 	also a story about monsters and maiden when we take into comparison
@@ -70,9 +70,11 @@ Saturday, 2016-09-24
 	systems. Portability conceptions encountered en route are
 	reviewed and ranked from 1 to 3 (depraved, naive and not too bad).
 
+(11:40-12:00) sRGB and colorspace lightening talk, Laslo Hunhold
+
 (12:00-13:00) Lunch break
 
-(13:00-13:50) SCC and QBE for practical compilation, Roberto E. Vargas Caballero
+(13:15-14:10) SCC and QBE for practical compilation, Roberto E. Vargas Caballero
 
 	For now decades, we have witnessed a dramatic increase in the complexity
 	of compilers. Mainstream compilers have become huge C++ programs that try
@@ -82,7 +84,7 @@ Saturday, 2016-09-24
 	(as advocated by the "boring crypto" movement) and allow bootstrapping
 	new systems more easily.
 
-(14:00-15:00) The Myrddin Programming Language, Ori Bernstein
+(14:15-15:15) The Myrddin Programming Language, Ori Bernstein
 
 	Myrddin is a programming language that was written for a saner, easier to
 	use programming environment that I find more pleasant than C. The language
@@ -93,14 +95,14 @@ Saturday, 2016-09-24
 	It also comes with a complete replacement for many standard libraries on a
 	number of popular (and less popular) platforms.
 
-(15:05-15:25)  ii-like chatting improvements, Jan Klemkow
+(15:20-15:35)  ii-like chatting improvements, Jan Klemkow
 
 	Since slcon2 I have made several improvements in my ii-like chat
 	infrastructure.  In this talk I will give an overview of my various
 	activities in this area.  I will present new features in my UCSPI tool
 	chain, a new modular front end 'lchat' and the idea of runit integration.
 
-(15:30-16:10) text engine, Francesc Hervada-Sala
+(15:40-16:10) text engine, Francesc Hervada-Sala
 
 	The right approach to software systems was introduced by the Unix programming
 	environment over forty years ago with a file system that opened access to data
@@ -108,21 +110,21 @@ Saturday, 2016-09-24
 	This approach must be deepened. Let us define "text" as the semantic data
 	structure that results from parsing strings. Imagine that a software system has
 	a "text engine" at its kernel. When you edit a run control file and save it,
-	  the text engine parses it and stores its parse tree into the central
-	  repository. When you execute an instruction at the shell, the text engine
-	  parses the command line and sets all parameters in the repository before
-	  executing the command. An application retrieves a configuration parameter by
-	  querying the text engine. In such a system parsers for particular formats or
-	  languages would not be embedded into particular applications or commands,
-	  they would be stand-alone software units with the sole purpose of converting
-	  a string into a semantic representation in the text engine's repository.
-	  Applications would not have to deal with and not be tied to particular file
-	  formats and languages, and the user would be able to choose the format or
-	  language to use for any configuration statement. The user would change the
-	  name of a file and would not need to adjust all references to it inside
-	  scripts and other files, because the reference in the repository (say as
-	  inode) would remain unchanged. To experiment with this new
-	  approach I am beginning to develop a text engine
+	the text engine parses it and stores its parse tree into the central
+	repository. When you execute an instruction at the shell, the text engine
+	parses the command line and sets all parameters in the repository before
+	executing the command. An application retrieves a configuration parameter by
+	querying the text engine. In such a system parsers for particular formats or
+	languages would not be embedded into particular applications or commands,
+	they would be stand-alone software units with the sole purpose of converting
+	a string into a semantic representation in the text engine's repository.
+	Applications would not have to deal with and not be tied to particular file
+	formats and languages, and the user would be able to choose the format or
+	language to use for any configuration statement. The user would change the
+	name of a file and would not need to adjust all references to it inside
+	scripts and other files, because the reference in the repository (say as
+	inode) would remain unchanged. To experiment with this new
+	approach I am beginning to develop a text engine
 
 (16:10-16:20) Coffee break
 

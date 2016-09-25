@@ -44,6 +44,14 @@ Moving Around
 To **move to another terminal**, press `[Alt]+[j]` or `[Alt]+[k]`.
 
 To **move a terminal to another _tag_**, hover to the terminal and press `[Shift]+[Alt]+[2]`.
+  Note!  If you are a frequent user of the text editor 'nano' the key sequence [Shift]+[Alt]+[4]
+  will stomp on nano's softwrap M-$.  To get around this you can unbind nano's M-$ in .nanorc thus:
+
+  unbind M-$ all
+
+  and rebind it to a new sequence thus (here bind it to 'Meta Key' + ';'):
+
+  bind M-; softwrap all
 
 To **focus on another _tag_**, press `[Alt]+[tag number]`.
 

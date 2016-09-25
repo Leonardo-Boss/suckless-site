@@ -53,6 +53,8 @@ To **move a terminal to another _tag_**, hover to the terminal and press `[Shift
 
   bind M-; softwrap all
 
+  There are several other nano key sequences that dwm will stomp on - use the above example to fix nano up.
+
 To **focus on another _tag_**, press `[Alt]+[tag number]`.
 
 To **move a terminal to master or stack**, press `[Alt]+[d]` or `[Alt]+[i]`.

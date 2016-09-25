@@ -160,6 +160,7 @@ Text Editors
 * [vim](http://www.vim.org) (With the GUI, use `:set go+=c` to kill popup dialogs)
 * [vis](https://github.com/martanne/vis) - A modern, legacy free, simple yet efficient vim-like editor.
 * [wily](http://www.cse.yorku.ca/~oz/wily/) - An acme clone for POSIX.
+* [nano](https://www.nano-editor.org/) - A pico clone - this is small simple code and easy to use.
 * [ed](http://swtch.com/plan9port/man/man1/ed.html) - [ED IS THE STANDARD TEXT EDITOR!](http://www.gnu.org/fun/jokes/ed-msg.html)
 
 Utilities

@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2016-09-26
+----------
+Videos of the [slcon 2016 talks](conferences/2016) are now available.
+
 2016-08-24
 ----------
 [slcon3](conferences/2016) Preliminary schedule now published. If you want to attend please register until: **2016-09-01**.

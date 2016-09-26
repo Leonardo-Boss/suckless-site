@@ -7,7 +7,7 @@ News
 
 2016-08-24
 ----------
-[slcon3](http://suckless.org/conference) Preliminary schedule now published. If you want to attend please register until: **2016-09-01**.
+[slcon3](conferences/2016) Preliminary schedule now published. If you want to attend please register until: **2016-09-01**.
 
 2016-04-02
 ----------
@@ -42,7 +42,7 @@ The switch itself should be smooth to everyone else.
 
 2015-11-13
 ----------
-Videos of the [slcon2 talks](http://suckless.org/conference/) are now available.
+Videos of the [slcon2 talks](conferences/2015) are now available.
 
 2015-11-09
 ----------
@@ -60,7 +60,7 @@ Kai and Anselm gave an interview about suckless.org on Randal Schwartz' [FLOSS W
 
 2015-02-14
 ----------
-[slcon2](http://suckless.org/conference/) will be held in Budapest on 2015-10-(30-31).
+[slcon2](conferences/2015) will be held in Budapest on 2015-10-(30-31).
 
 The CfP for interested participants is now open and will end on 2015-04-30.
 
@@ -105,7 +105,7 @@ community is invited to come, meet and hack!
 
 2013-04-21
 ----------
-We are glad to announce the [slcon 2013](/conference) programme.
+We are glad to announce the [slcon 2013](/conferences/2013) programme.
 
 2012-11-29
 ----------

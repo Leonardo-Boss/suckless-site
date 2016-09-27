@@ -26,16 +26,16 @@ possible to avoid them. If you use them, consider looking for alternatives.
 * [GMP][3] - GNU's bignum/arbitrary precision library. Quite bloated, slow and
   [calls abort() on failed malloc][4]
 
-  Alternatives: [libtommath][5], [TomsFastMath][6], [MPI][7], [libzahl][11] (WIP), [hebimath][12] (WIP)
+  Alternatives: [libtommath][5], [TomsFastMath][6], [imath][7], [libzahl][11] (WIP), [hebimath][12] (WIP)
 
 
 [1]: http://library.gnome.org/devel/glib/
 [2]: http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html (glib Basic Types)
 [3]: http://gmplib.org/ (The GNU Multiple Precision Arithmetic Library)
-[4]: http://gmplib.org:8000/gmp/file/14cd74efb9de/memory.c#l44 "GMP calls abort() on failed malloc()"
-[5]: http://libtom.org/?page=features&newsitems=5&whatfile=ltm
-[6]: http://libtom.org/?page=features&newsitems=5&whatfile=tfm
-[7]: http://spinning-yarns.org/michael/mpi/
+[4]: https://gmplib.org/repo/gmp/file/tip/memory.c#l105 "GMP calls abort() on failed malloc()"
+[5]: http://www.libtom.org/LibTomMath/
+[6]: http://www.libtom.org/TomsFastMath/
+[7]: https://github.com/creachadair/imath
 [8]: https://bugzilla.gnome.org/show_bug.cgi?id=674446
 [9]: https://github.com/atheme/libmowgli-2
 [10]: https://github.com/rofl0r/libulz

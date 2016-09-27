@@ -112,14 +112,13 @@ Instant Messaging Clients
 * [climm](http://www.climm.org/)
 * [irssi-xmpp](http://cybione.org/~irssi-xmpp/)
 * [mcabber](http://www.lilotux.net/~mikael/mcabber/) - A console jabber client.
-* [ratox](http://ratox.2f30.org/) - a FIFO based tox client
 * [ysm](http://ysmv7.sourceforge.net/)
 
 Mail Clients
 ------------
 * [Mail][plan9port] - A mail client for [acme][acme]. Included with plan9port.
 * [dmc](http://git.suckless.org/dmc/) - A minimalistic approach to a commandline mail client (WIP)
-* [fdm](http://fdm.sourceforge.net/) - MDA
+* [fdm](https://github.com/nicm/fdm) - fetch and deliver mail
 * [isync](http://isync.sourceforge.net/) - MDA that can work better for IMAP
 * [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
 * [s-nail](http://sourceforge.net/projects/s-nail/) - An improved heirloom-mailx.
@@ -192,7 +191,7 @@ Web Browsers
   Another extension to make Firefox Vim-like. Less invasive than
   Vimperator
 * [w3m](http://w3m.sourceforge.net/)
-* [xombrero](https://opensource.conformal.com/wiki/xombrero) - A minimalist web browser with sophisticated security features designed-in. Formerly known as [xxxterm](https://opensource.conformal.com/wiki/xxxterm)
+* [xombrero](https://github.com/conformal/xombrero) - A minimalist web browser with sophisticated security features designed-in. Formerly known as "xxxterm".
 
 X11
 ---

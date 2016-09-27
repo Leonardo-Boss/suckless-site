@@ -21,7 +21,7 @@ All of these scripts are written in rc, and require plan9port to run.
 * plastfm - An rc script which connects to Last.FM and plays its stream with
    a command-line mp3 player. Commands are read from the standard input and song info is
    printed to the standard error. Requires: mpg123 or similar client. *This has been replaced
-   by [last](/hg.rc/last).*
+   by "last".*
 
 * eris.rc - This is an IRC bot, written in rc, of course, which prints mercurial
    commits to channels. The name comes from George Neis' python version. Requires: sic or similar.

@@ -35,5 +35,4 @@ There are several other projects which are inspired by the spirit of suckless.
 * [swx](http://yeuxdelibad.net/Programmation/swx_en.html) - static site generator (inspired from sw)
 * [tiv](https://github.com/radare/tiv) - terminal image viewer
 * [xbmouse](https://github.com/vlaadbrain/xbmouse) - simply bind a mouse button to a command
-* [xicon](http://hg.youterm.com/xicon/) (dead link) - small icon-based dzen-like utility
 * [xkev](https://github.com/vlaadbrain/xkev) - simply simulate KeyPress/KeyRelease

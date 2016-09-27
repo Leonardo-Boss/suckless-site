@@ -74,12 +74,12 @@ The CfP for interested participants is now open and will end on 2015-04-30.
 
 2014-11-29
 ----------
-[lsw 0.3](http://tools.suckless.org/lsw) released: [download](http://dl.suckless.org/tools/lsw-0.3.tar.gz)
+[lsw 0.3](http://tools.suckless.org/x/lsw) released: [download](http://dl.suckless.org/tools/lsw-0.3.tar.gz)
 
 2014-11-24
 ----------
 There will be a
-[suckless assembly](https://events.ccc.de/congress/2014/wiki/Assembly:Suckless)
+[suckless assembly](https://events.ccc.de/congress/2014/wiki/Assembly%3ASuckless)
 at the [31C3](https://events.ccc.de/congress/2014).  The whole suckless
 community is invited to come, meet and hack!
 
@@ -101,7 +101,7 @@ community is invited to come, meet and hack!
 
 2013-05-07
 ----------
-[xssstate 1.1](http://tools.suckless.org/xssstate) released: [download](http://dl.suckless.org/tools/xssstate-1.1.tar.gz)
+[xssstate 1.1](http://tools.suckless.org/x/xssstate) released: [download](http://dl.suckless.org/tools/xssstate-1.1.tar.gz)
 
 2013-05-06
 ----------
@@ -119,7 +119,7 @@ repositories. You can find them at <http://git.suckless.org>. Many thanks to
 
 2012-10-28
 ----------
-[sprop 0.1](http://tools.suckless.org/sprop) released: [download](http://dl.suckless.org/tools/sprop-0.1.tar.gz)
+[sprop 0.1](http://tools.suckless.org/x/sprop) released: [download](http://dl.suckless.org/tools/sprop-0.1.tar.gz)
 
 2012-10-14
 ----------
@@ -164,8 +164,8 @@ There was a small community meeting in Berlin! Thanks to all attendees.
 
 2008-08-02
 ----------
-[wmname 0.1](http://tools.suckless.org/wmname) released: [download](http://dl.suckless.org/tools/wmname-0.1.tar.gz)
+[wmname 0.1](http://tools.suckless.org/x/wmname) released: [download](http://dl.suckless.org/tools/wmname-0.1.tar.gz)
 
 2008-07-29
 ----------
-[sselp 0.2](http://tools.suckless.org/sselp) released: [download](http://dl.suckless.org/tools/sselp-0.2.tar.gz)
+[sselp 0.2](http://tools.suckless.org/x/sselp) released: [download](http://dl.suckless.org/tools/sselp-0.2.tar.gz)

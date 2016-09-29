@@ -1,3 +1,5 @@
 siteTitle='suckless.org'
 siteSubtitle='software that sucks less'
 menuTitle='news'
+
+conf_perm_redirect 'http://suckless.org/conference/?$' http://suckless.org/conferences/

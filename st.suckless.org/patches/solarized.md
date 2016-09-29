@@ -53,7 +53,7 @@ or the dark color scheme:
 
 *Both (swap between light/dark with F6)*:
 
- * [st-solarized-both-20160709-528241a.diff](st-solarized-both-20160727-308bfbf.diff)
+ * [st-solarized-both-20160727-308bfbf.diff](st-solarized-both-20160727-308bfbf.diff)
 
 
 Authors

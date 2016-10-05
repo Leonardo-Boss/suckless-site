@@ -116,7 +116,7 @@ floating mode.
 Documentation
 -------------
 Somewhen GNU tried to make the world a bit more miserable by inventing
-[texinfo][texinfo]. The result is that in 2015 man pages are still used and
+[texinfo][texinfo]. The result is that in 2016 man pages are still used and
 the documentation of GNU tools requires you to run `info $application`. The
 info browser is awkward and unintuitive and the reason why noone gets further
 than finding 'q' to quit it.
@@ -135,7 +135,7 @@ C Compilers
 ---------
 * [GCC][gcc] is the virus which has spread into nearly every Linux
   distribution and has added its language extensions to be not easily
-  replacable. As of 2015 it is now written in C++ and so complete suck. Why
+  replacable. As of 2016 it is now written in C++ and so complete suck. Why
   can't a compiler just be a simple binary doing its work instead of adding
   path dependencies deep into the system?
 * [Clang][clang] is written in C++. If you don't believe that it sucks, try to

@@ -12,7 +12,7 @@ failed unlocking attempts.
 Download
 --------
 
-* [slock-git-20160406-control-clear.diff](slock-git-20160406-control-clear.diff)
+* [slock-git-20161012-control-clear.diff](slock-git-20161012-control-clear.diff)
 
 Author
 ------

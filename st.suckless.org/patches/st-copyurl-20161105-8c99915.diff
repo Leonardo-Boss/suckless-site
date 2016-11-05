@@ -1,28 +1,28 @@
 diff --git a/config.def.h b/config.def.h
-index b41747f..50321db 100644
+index 7f465d1..faf6b54 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -172,6 +172,7 @@ static Shortcut shortcuts[] = {
- 	{ MODKEY|ShiftMask,     XK_C,           clipcopy,       {.i =  0} },
+@@ -171,6 +171,7 @@ static Shortcut shortcuts[] = {
  	{ MODKEY|ShiftMask,     XK_V,           clippaste,      {.i =  0} },
  	{ MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
+ 	{ MODKEY,               XK_Control_L,   iso14755,       {.i =  0} },
 +	{ MODKEY,               XK_l,           copyurl,        {.i =  0} },
  };
  
  /*
 diff --git a/st.c b/st.c
-index 2594c65..78201ff 100644
+index 4d44388..029c214 100644
 --- a/st.c
 +++ b/st.c
-@@ -336,6 +336,7 @@ static void printsel(const Arg *);
- static void printscreen(const Arg *) ;
+@@ -344,6 +344,7 @@ static void printscreen(const Arg *) ;
+ static void iso14755(const Arg *);
  static void toggleprinter(const Arg *);
  static void sendbreak(const Arg *);
 +static void copyurl(const Arg *);
  
  /* Config.h for applying patches and the configuration. */
  #include "config.h"
-@@ -4402,3 +4403,63 @@ run:
+@@ -4521,3 +4522,63 @@ run:
  	return 0;
  }
  

@@ -54,7 +54,7 @@ Window manager
 --------------
 
 The window manager 'i3' is locked down to just start web browser 'surf'
-with parameter '-k' in fullscreen mode. All key strokes are disallowed,
+with parameter '-K' in fullscreen mode. All key strokes are disallowed,
 except Ctrl+Shift+C to poweroff the system (via 'systemd'). Save the
 following file to '/home/kiosk/.i3/config':
 
@@ -67,7 +67,7 @@ following file to '/home/kiosk/.i3/config':
         for_window [class="Surf"] fullscreen
 
 	# execute surf
-        exec /usr/bin/surf -k http://surf.suckless.org/
+        exec /usr/bin/surf -K http://surf.suckless.org/
 
 Now reboot your system and have fun. ;)
 

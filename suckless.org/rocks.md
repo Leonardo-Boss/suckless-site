@@ -34,7 +34,7 @@ Miscellaneous
 * [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modeled after libevent but much smaller (dual licensed under 2-clause BSD and GPL)
 * [mdocml](http://mdocml.bsd.lv/) - The mandoc UNIX manpage compiler toolset
 * [morpheus](http://morpheus.2f30.org) - a statically linked musl based Linux distro
-* [bare](http://git.uggedal.com/bare/) - simple distro using suckless software
+* [bare](https://git.uggedal.com/unmaintained/bare/) - simple distro using suckless software
 * [pjsip](http://www.pjsip.org/) - open source SIP stack (GPL)
 * [sdhcp](http://git.2f30.org/sdhcp/) - IPV4 DHCP client
 * [snore](https://github.com/clamiax/snore) - Sleep with feedback

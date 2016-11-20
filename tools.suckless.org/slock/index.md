@@ -7,8 +7,7 @@ pub.
 
 Configuration
 -------------
-
-Slock is configured via `config.h` like most other suckless.org software. Per
+slock is configured via `config.h` like most other suckless.org software. Per
 default it will turn the screen red on any keyboard press, if you are less
 paranoid and turning red on failed login attempts suffices for you, set
 `failonclear = 0` in `config.h`.
@@ -22,11 +21,11 @@ or get a copy using the following command:
 
 Download
 --------
-* [slock-1.3](http://dl.suckless.org/tools/slock-1.3.tar.gz) (20160212)
+* [slock-1.4](http://dl.suckless.org/tools/slock-1.4.tar.gz) (20160212)
 
 Xautolock
 ---------
-Slock can be started after a specific period of user inactivity using
+slock can be started after a specific period of user inactivity using
 [xautolock](http://www.ibiblio.org/pub/linux/X11/screensavers/). The
 command syntax is:
 

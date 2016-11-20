@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2016-11-20
+----------
+[slock 1.4](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-1.4.tar.gz)
+
 2016-09-26
 ----------
 Videos of the [slcon 2016 talks](conferences/2016) are now available.

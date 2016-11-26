@@ -12,6 +12,7 @@ service.  The default configuration is for ArchLinux's `login` service.
 Download
 --------
 
+* [slock-pam_auth-20161126-9909280.diff](slock-pam_auth-20161126-9909280.diff)
 * [slock-pam_auth-20161026-5974695.diff](slock-pam_auth-20161026-5974695.diff)
 * [slock-pam_auth-20160909-a7619f7.diff](slock-pam_auth-20160909-a7619f7.diff)
 * [slock-pam_auth.diff](slock-pam_auth.diff)

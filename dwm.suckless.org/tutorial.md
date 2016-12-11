@@ -83,7 +83,7 @@ Floating
 
 Floating layout will be familiar to Windows users. Use `[Alt]+[right mouse
 button]` to resize the floating window and `[Alt]+[left mouse button]` to move
-it around.
+it around. This can also be used to raise a floating window.
 
 There are several ways to get specific windows into being managed as a
 floating window, despite the tiled layout being activated. First there is

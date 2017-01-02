@@ -10,7 +10,7 @@ Download
 --------
 
 * [st-scrollback-0.7.diff](st-scrollback-0.7.diff)
-* [st-scrollback-20160924-f739843.diff](st-scrollback-20160924-f739843.diff)
+* [st-scrollback-20170102-a719e36.diff](st-scrollback-20170102-a719e36.diff)
 
 Apply the following patch on top of the previous to allow scrolling
 using `Shift+MouseWheel`.
@@ -35,3 +35,4 @@ Authors
  * Matthias Schoth - <mschoth@gmail.com> (auto altscreen scrolling)
  * Laslo Hunhold - <dev@frign.de> (unscrambling, git port)
  * Paride Legovini - <pl@ninthfloor.org> (don't require the Shift modifier when using the auto altscreen scrolling)
+ * Lorenzo Bracco - <devtry@riseup.net> (update base patch, use static variable for config)

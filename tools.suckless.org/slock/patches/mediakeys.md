@@ -19,7 +19,7 @@ or raise the volume, that's all there is to it.
 Download
 --------
 
-* [slock-mediakeys-20170106-2d2a21a.diff](slock-mediakeys-20170106-2d2a21a.diff)
+* [slock-mediakeys-20170111-2d2a21a.diff](slock-mediakeys-20170111-2d2a21a.diff)
 
 Authors
 -------

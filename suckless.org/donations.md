@@ -30,6 +30,12 @@ Following people have donated to the suckless.org project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
+* Silvan Jegen <b>50 EUR</b>
+* Paul Bains <b>46,06 EUR</b>
+* Antipenko Iven <b>305,95 RUB</b>
+* Travis Witt <b>15,00 USD</b>
+* Maximilian Braeutigam <b>50 EUR</b>
+* Sascha Tebben <b>11 EUR</b>
 * Chandrashekhara Rao <b>20 USD</b>
 * Ryan Roden-Corrent <b>20 USD</b>
 * Sebastian Eiser <b>10 EUR</b>

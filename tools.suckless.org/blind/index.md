@@ -94,7 +94,7 @@ the colours.
 Because Y'UV, which most videos use (for legacy
 reasons, namely that of black-and-white television)
 is not linear it has the same disadvantages as
-CIE L*a*b*. Y'UV does not have its transfer-function
+CIE L\*a\*b\*. Y'UV does not have its transfer-function
 applied directly to it's parameters, instead it is a
 linear transformation if the sRGB with its
 transfer-function applied. This means that no performance

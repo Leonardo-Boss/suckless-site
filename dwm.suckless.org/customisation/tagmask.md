@@ -66,7 +66,7 @@ It means that the current tagmask should be selected for this window: if more th
 What does tagmask 1 << 8 mean?
 ------------------------------
 
-1 shifted to the left by eight positions generates mask 10000000, selecting tag '9' (ninth from the right) in the the tags array.
+1 shifted to the left by eight positions generates mask 100000000, selecting tag '9' (ninth from the right) in the the tags array.
 
 What does ~0 mean?
 ------------------

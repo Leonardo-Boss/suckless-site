@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2017-01-22
+----------
+[blind 1.0](http://tools.suckless.org/blind) released: [download](http://dl.suckless.org/tools/blind-1.0.tar.gz)
+
 2016-11-20
 ----------
 [slock 1.4](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-1.4.tar.gz)

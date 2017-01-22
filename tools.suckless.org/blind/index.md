@@ -143,6 +143,11 @@ or get a copy using git with the following command:
 
 	git clone http://git.suckless.org/blind
 
+Download
+--------
+
+* [blind-1.0](http://dl.suckless.org/tools/blind-1.0.tar.gz) (2017-01-22)
+
 Dependencies
 ------------
 

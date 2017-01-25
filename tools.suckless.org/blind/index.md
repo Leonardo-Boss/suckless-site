@@ -123,6 +123,12 @@ Rationale
   the user can use Make to only rerender parts that have
   been changes.
 
+* It's possible to distribute the rendering to multiple
+  computers, without any built in functionality for this,
+  for example using a distributed Make.
+
+* Parallelism is added for free.
+
 * No room for buggy GUIs, which currently is a problem on
   the large video editors for Linux.
 

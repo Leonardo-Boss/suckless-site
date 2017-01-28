@@ -4,8 +4,8 @@ Per-window keyboard layout
 Description
 -----------
 Basically, this patch implements per-window keyboard layout support in dwm.
-It makes dwm remember current keyboard layout when a window is unfocued,
-and restore it back when that window is focused again. 
+It makes dwm remember current keyboard layout when a window is unfocused,
+and restore it back when that window is focused again.
 
 Notes
 -----------

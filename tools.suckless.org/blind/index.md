@@ -60,7 +60,7 @@ or from farbfeld without using `convert(1)`.
 
 ### For what kind of video editing is blind designed?
 
-It is designed for composing new videos. It it not
+It is designed for composing new videos. It is not
 designed for making small changes as this can probably
 be done faster with a graphical video editor or with
 ffmpeg which would also be much faster.

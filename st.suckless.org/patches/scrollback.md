@@ -23,7 +23,7 @@ scrolled instead of the scrollback buffer in `less`. Consequently the Shift
 modifier for scrolling is not needed anymore.  **Note: It might break other
 mkeys excluding scrolling functions.**
 
-* [st-scrollback-mouse-altscreen-20161020-6e79e83.diff](st-scrollback-mouse-altscreen-20161020-6e79e83.diff)
+* [st-scrollback-mouse-altscreen-20170213-c63a87c.diff](st-scrollback-mouse-altscreen-20170213-c63a87c.diff)
 
 Authors
 -------

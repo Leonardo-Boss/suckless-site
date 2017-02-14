@@ -1,8 +1,8 @@
 diff --git a/st.c b/st.c
-index 2594c65..bf5dc3e 100644
+index f13b540..523f4ce 100644
 --- a/st.c
 +++ b/st.c
-@@ -952,13 +952,14 @@ bpress(XEvent *e)
+@@ -979,13 +979,14 @@ bpress(XEvent *e)
  		return;
  	}
  
@@ -21,5 +21,5 @@ index 2594c65..bf5dc3e 100644
  		}
 -	}
  
- 	if (e->xbutton.button == Button1) {
- 		clock_gettime(CLOCK_MONOTONIC, &now);
+ 	for (mk = mkeys; mk < mkeys + LEN(mkeys); mk++) {
+ 		if (e->xbutton.button == mk->b

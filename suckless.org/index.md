@@ -5,6 +5,12 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2017-03-22
+----------
+[surf](http://surf.suckless.org/) will “officially” make the switch from webkit1 to webkit2 soon.
+Current [master](http://git.suckless.org/surf/log/) will be pushed to surf-webkit1, and [surf-webkit2](http://git.suckless.org/surf/log/?h=surf-webkit2) to master.
+The move should be done during the coming weekend or sometime next week.
+
 2017-01-22
 ----------
 [blind 1.0](http://tools.suckless.org/blind) released: [download](http://dl.suckless.org/tools/blind-1.0.tar.gz)

@@ -34,6 +34,7 @@ Download
 * [surf-0.7-searchengines.diff](surf-0.7-searchengines.diff) (20151219)
 * [surf-git-20160127-searchengines.diff](surf-git-20160127-searchengines.diff)
 * [surf-0.7-webkit2-searchengines.diff](surf-0.7-webkit2-searchengines.diff) (20160108)
+* [surf-git-20170323-webkit2-searchengines.diff](surf-git-20170323-webkit2-searchengines.diff)
 
 Author
 ------

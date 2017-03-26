@@ -126,6 +126,7 @@ Mail Clients
 * [nmh](http://www.nongnu.org/nmh/)
 * [mmh](http://marmaro.de/prog/mmh/)
 * [Prayer](http://www-uxsup.csx.cam.ac.uk/~dpc22/prayer/) - Webmail interface for IMAP servers. Doesn't use javascript or frames and doesn't need cookies. 100% C code.
+* [mblaze](https://github.com/chneukirchen/mblaze) - Unix utilities to deal with Maildir
 
 Media Players
 -------------

@@ -1,15 +1,8 @@
-Author: Jan Christoph Ebersbach <jceb@e-jc.de>
-URL: http://tools.suckless.org/slock/patches/pam_auth
-Replaces shadow support with PAM authentication support.
-
-Change variable `pam_service` in `config.def.h` to the corresponding PAM
-service.  The default configuration is for ArchLinux's `login` service.
-
-Index: slock-patches/slock/config.def.h
-===================================================================
---- slock-patches.orig/slock/config.def.h
-+++ slock-patches/slock/config.def.h
-@@ -6,7 +6,11 @@ static const char *colorname[NUMCOLS] =
+diff --git a/config.def.h b/config.def.h
+index 9855e21..19e7f62 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -6,7 +6,11 @@ static const char *colorname[NUMCOLS] = {
  	[INIT] =   "black",     /* after initialization */
  	[INPUT] =  "#005577",   /* during input */
  	[FAILED] = "#CC3333",   /* wrong password */
@@ -21,10 +14,10 @@ Index: slock-patches/slock/config.def.h
 +
 +/* PAM service that's used for authentication */
 +static const char* pam_service = "login";
-Index: slock-patches/slock/config.mk
-===================================================================
---- slock-patches.orig/slock/config.mk
-+++ slock-patches/slock/config.mk
+diff --git a/config.mk b/config.mk
+index 74429ae..6e82074 100644
+--- a/config.mk
++++ b/config.mk
 @@ -12,7 +12,7 @@ X11LIB = /usr/X11R6/lib
  
  # includes and libs
@@ -34,10 +27,10 @@ Index: slock-patches/slock/config.mk
  
  # flags
  CPPFLAGS = -DVERSION=\"${VERSION}\" -D_DEFAULT_SOURCE -DHAVE_SHADOW_H
-Index: slock-patches/slock/slock.c
-===================================================================
---- slock-patches.orig/slock/slock.c
-+++ slock-patches/slock/slock.c
+diff --git a/slock.c b/slock.c
+index 5ae738c..3a8da42 100644
+--- a/slock.c
++++ b/slock.c
 @@ -18,16 +18,22 @@
  #include <X11/keysym.h>
  #include <X11/Xlib.h>
@@ -102,7 +95,7 @@ Index: slock-patches/slock/slock.c
  	return hash;
  }
  
-@@ -129,11 +162,12 @@ readpw(Display *dpy, struct xrandr *rr,
+@@ -129,11 +162,12 @@ readpw(Display *dpy, struct xrandr *rr, struct lock **locks, int nscreens,
         const char *hash)
  {
  	XRRScreenChangeNotifyEvent *rre;
@@ -117,7 +110,7 @@ Index: slock-patches/slock/slock.c
  
  	len = 0;
  	running = 1;
-@@ -160,10 +194,26 @@ readpw(Display *dpy, struct xrandr *rr,
+@@ -160,10 +194,26 @@ readpw(Display *dpy, struct xrandr *rr, struct lock **locks, int nscreens,
  			case XK_Return:
  				passwd[len] = '\0';
  				errno = 0;

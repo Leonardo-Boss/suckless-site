@@ -1,6 +1,6 @@
 ![surf](surf.svg)
 
-surf is a simple web browser based on WebKit/GTK+. It is able
+surf is a simple web browser based on WebKit2/GTK+. It is able
 to display websites and follow links. It supports the XEmbed protocol
 which makes it possible to embed it in another application. Furthermore,
 one can point surf to another URI by setting its XProperties.
@@ -31,6 +31,8 @@ Note On Webkit Versions
 -----------------------
 Compile your own webkit or expect hell. The packaging of webkit is pure
 insane.
+Surf uses upstream stable webkit2gtk by default, but the previous
+version based on webkit1gtk is still available as a branch.
 
 Development
 -----------
@@ -42,6 +44,6 @@ source code repository or get a copy with the following command:
 Download
 --------
 * [MIT/X Consortium license](http://git.suckless.org/surf/plain/LICENSE)
-* [surf 0.7](http://dl.suckless.org/surf/surf-0.7.tar.gz) (2015-12-19)
+* [surf 2.0](http://dl.suckless.org/surf/surf-2.0.tar.gz) (2017-03-28)
 * See also [dmenu](http://tools.suckless.org/dmenu),
   [tabbed](http://tools.suckless.org/tabbed)

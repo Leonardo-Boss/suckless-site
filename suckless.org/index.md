@@ -5,11 +5,12 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
-2017-03-22
+2017-03-28
 ----------
-[surf](http://surf.suckless.org/) will “officially” make the switch from webkit1 to webkit2 soon.
-Current [master](http://git.suckless.org/surf/log/) will be pushed to surf-webkit1, and [surf-webkit2](http://git.suckless.org/surf/log/?h=surf-webkit2) to master.
-The move should be done during the coming weekend or sometime next week.
+[surf](http://surf.suckless.org/) now uses webkit2 by default.
+The webkit1 version is kept in the [surf-webkit1](http://git.suckless.org/surf/log/?h=surf-webkit1) branch.
+The “master” branch doesn't exist anymore, HEAD is now [surf-webkit2](http://git.suckless.org/surf/log/),
+so be sure to rebase your local master commits onto surf-webkit1.
 
 2017-01-22
 ----------

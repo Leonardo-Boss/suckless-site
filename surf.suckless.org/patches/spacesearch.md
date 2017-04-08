@@ -15,8 +15,10 @@ Download
 --------
 
 * [surf-0.6-spacesearch.diff](surf-0.6-spacesearch.diff) (701) (20131110)
+* [surf-spacesearch-20170408-b814567.diff](surf-spacesearch-20170408-b814567.diff) (832) (20170408)
 
 Author
 ------
 
 * Dmitrij D. Czarkoff <[czarkoff@gmail.com](mailto:czarkoff@gmail.com)>
+* Alexis Ben Miloud--Josselin (panpo) <[alexis.bmj@protonmail.com](alexis.bmj@protonmail.com)>

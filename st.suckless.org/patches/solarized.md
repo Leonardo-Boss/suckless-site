@@ -54,6 +54,7 @@ or the dark color scheme:
 *Both (swap between light/dark with F6)*:
 
  * [st-solarized-both-20160727-308bfbf.diff](st-solarized-both-20160727-308bfbf.diff)
+ * [st-solarized-both-20170408-745c40f.diff](st-solarized-both-20170408-745c40f.diff)
 
 
 Authors
@@ -62,3 +63,4 @@ Authors
  * Nils Reuße - <nilsreusse@gmail.com>
  * Laslo Hunhold - <dev@frign.de> (0.5, 0.6, git ports)
  * Ryan Roden-Corrent - <ryan@rcorre.net> (both)
+ * Marcel Krüger - <zauguin@gmail.com> (both git port)

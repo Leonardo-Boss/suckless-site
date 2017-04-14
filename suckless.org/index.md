@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2017-04-14
+----------
+[farbfeld 3](http://tools.suckless.org/farbfeld/) released: [download](http://dl.suckless.org/farbfeld/farbfeld-3.tar.gz)
+
 2017-03-28
 ----------
 [surf](http://surf.suckless.org/) now uses webkit2 by default.

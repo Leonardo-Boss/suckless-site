@@ -320,7 +320,7 @@ index 44d4938..2d9b028 100644
  	GlyphFontSpec *specbuf; /* font spec buffer used for rendering */
  	TCursor c;    /* cursor */
 diff --git a/x.c b/x.c
-index b7339e9..0a2d951 100644
+index b7339e9..2ae8b17 100644
 --- a/x.c
 +++ b/x.c
 @@ -1413,11 +1413,11 @@ drawregion(int x1, int y1, int x2, int y2)
@@ -337,7 +337,7 @@ index b7339e9..0a2d951 100644
  			if (new.mode == ATTR_WDUMMY)
  				continue;
  			if (ena_sel && selected(x, y))
-@@ -1437,7 +1437,8 @@ drawregion(int x1, int y1, int x2, int y2)
+@@ -1437,7 +1437,9 @@ drawregion(int x1, int y1, int x2, int y2)
  		if (i > 0)
  			xdrawglyphfontspecs(specs, base, i, ox, y);
  	}

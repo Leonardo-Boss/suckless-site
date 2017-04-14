@@ -165,9 +165,11 @@ Download
 Also make sure to check your package manager. The following distributions
 provide packages:
 
+* [Alpine Linux](https://pkgs.alpinelinux.org/package/edge/testing/x86_64/farbfeld)
 * [Arch Linux (AUR)](https://aur.archlinux.org/packages/farbfeld)
 * [FreeBSD](https://svnweb.freebsd.org/ports/head/graphics/farbfeld/)
 * [Gentoo](https://packages.gentoo.org/packages/media-gfx/farbfeld)
+* [NixOS](https://github.com/NixOS/nixpkgs/tree/master/pkgs/development/libraries/farbfeld)
 * [Void Linux](https://github.com/voidlinux/void-packages/tree/master/srcpkgs/farbfeld)
 
 Implementations

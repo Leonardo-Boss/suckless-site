@@ -1,0 +1,17 @@
+fakefullscreen
+==============
+
+Description
+-----------
+
+Only allow clients to "fullscreen" into space currently given to them. As an example, this will allow you to view a fullscreen video in your browser on one half of the screen, while having the other half available for other tasks.
+
+Download
+--------
+
+* [dwm-fakefullscreen-20170425-5b238c8.diff](dwm-fakefullscreen-20170425-5b238c8.diff)
+
+Author
+------
+
+* Jan Hendrik Farr - <janhendrik.farr@gmail.com>

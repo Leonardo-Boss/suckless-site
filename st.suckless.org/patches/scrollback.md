@@ -15,7 +15,7 @@ Download
 Apply the following patch on top of the previous to allow scrolling
 using `Shift+MouseWheel`.
 
-* [st-scrollback-mouse-20161020-6e79e83.diff](st-scrollback-mouse-20161020-6e79e83.diff)
+* [st-scrollback-mouse-20170427-5a10aca.diff](st-scrollback-mouse-20170427-5a10aca.diff)
 
 Apply the following patch on top of the previous two to allow scrollback using
 mouse wheel only when not in `MODE_ALTSCREEN`. For example the content is being
@@ -23,7 +23,7 @@ scrolled instead of the scrollback buffer in `less`. Consequently the Shift
 modifier for scrolling is not needed anymore.  **Note: It might break other
 mkeys excluding scrolling functions.**
 
-* [st-scrollback-mouse-altscreen-20170213-c63a87c.diff](st-scrollback-mouse-altscreen-20170213-c63a87c.diff)
+* [st-scrollback-mouse-altscreen-20170427-5a10aca.diff](st-scrollback-mouse-altscreen-20170427-5a10aca.diff)
 
 Authors
 -------

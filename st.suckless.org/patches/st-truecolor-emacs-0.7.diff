@@ -1,0 +1,14 @@
+diff --git a/st.info b/st.info
+index b70fefa..adfbc5c 100644
+--- a/st.info
++++ b/st.info
+@@ -187,6 +187,9 @@ st| simpleterm,
+ 	xenl,
+ 	vpa=\E[%i%p1%dd,
+ 
++# truecolor Emacs
++	setb24=\E[48;2;%p1%{65536}%/%d;%p1%{256}%/%{255}%&%d;%p1%{255}%&%dm,
++	setf24=\E[38;2;%p1%{65536}%/%d;%p1%{256}%/%{255}%&%d;%p1%{255}%&%dm,
+ 
+ st-256color| simpleterm with 256 colors,
+ 	use=st,

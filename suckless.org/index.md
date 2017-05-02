@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2017-05-02
+----------
+[dmenu 4.7](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.7.tar.gz)
+
 2017-04-14
 ----------
 [farbfeld 3](http://tools.suckless.org/farbfeld/) released: [download](http://dl.suckless.org/farbfeld/farbfeld-3.tar.gz)

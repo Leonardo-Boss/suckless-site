@@ -30,6 +30,8 @@ Following people have donated to the suckless.org project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
+* John Jago <b>18.08 EUR</b>
+* Anton Suneson <b>10 EUR</b>
 * Silvan Jegen <b>50 EUR</b>
 * Paul Bains <b>46,06 EUR</b>
 * Antipenko Iven <b>305,95 RUB</b>

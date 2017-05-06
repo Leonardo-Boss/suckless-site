@@ -154,6 +154,8 @@ Download
 
 * [blind-1.0](http://dl.suckless.org/tools/blind-1.0.tar.gz) (2017-01-22)
 
+* [blind-1.1](http://dl.suckless.org/tools/blind-1.1.tar.gz) (2017-05-06)
+
 Dependencies
 ------------
 

@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2017-05-06
+----------
+[blind 1.1](http://tools.suckless.org/blind) released: [download](http://dl.suckless.org/tools/blind-1.1.tar.gz)
+
 2017-05-02
 ----------
 [dmenu 4.7](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.7.tar.gz)

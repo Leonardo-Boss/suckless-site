@@ -1,17 +1,15 @@
 diff --git a/config.def.h b/config.def.h
-index 989992c..821f481 100644
+index 2d23049..b1384e4 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -36,31 +36,32 @@ static Bool npisrelative  = False;
+@@ -36,31 +36,31 @@ static Bool npisrelative  = False;
  #define MODKEY ControlMask
  static Key keys[] = {
  	/* modifier             key        function     argument */
 -	{ MODKEY|ShiftMask,     XK_Return, focusonce,   { 0 } },
 -	{ MODKEY|ShiftMask,     XK_Return, spawn,       { 0 } },
--	{ MODKEY,               XK_t,      spawn,       SETPROP("_TABBED_SELECT_TAB") },
 +	{ MODKEY|ShiftMask,     36,        focusonce,   { 0 } },
 +	{ MODKEY|ShiftMask,     36,        spawn,       { 0 } },
-+	{ MODKEY,               28,        spawn,       SETPROP("_TABBED_SELECT_TAB") },
  
 -	{ MODKEY|ShiftMask,     XK_l,      rotate,      { .i = +1 } },
 -	{ MODKEY|ShiftMask,     XK_h,      rotate,      { .i = -1 } },
@@ -24,6 +22,7 @@ index 989992c..821f481 100644
 +	{ MODKEY|ShiftMask,     45,        movetab,     { .i = +1 } },
 +	{ MODKEY,               23,        rotate,      { .i = 0 } },
  
+-	{ MODKEY,               XK_grave,  spawn,       SETPROP("_TABBED_SELECT_TAB") },
 -	{ MODKEY,               XK_1,      move,        { .i = 0 } },
 -	{ MODKEY,               XK_2,      move,        { .i = 1 } },
 -	{ MODKEY,               XK_3,      move,        { .i = 2 } },
@@ -34,8 +33,7 @@ index 989992c..821f481 100644
 -	{ MODKEY,               XK_8,      move,        { .i = 7 } },
 -	{ MODKEY,               XK_9,      move,        { .i = 8 } },
 -	{ MODKEY,               XK_0,      move,        { .i = 9 } },
- 
--	{ MODKEY,               XK_q,      killclient,  { 0 } },
++	{ MODKEY,               49,        spawn,       SETPROP("_TABBED_SELECT_TAB") },
 +	{ MODKEY,               10,        move,        { .i = 0 } },
 +	{ MODKEY,               11,        move,        { .i = 1 } },
 +	{ MODKEY,               12,        move,        { .i = 2 } },
@@ -47,18 +45,19 @@ index 989992c..821f481 100644
 +	{ MODKEY,               18,        move,        { .i = 8 } },
 +	{ MODKEY,               19,        move,        { .i = 9 } },
  
--	{ MODKEY,               XK_u,      focusurgent, { 0 } },
--	{ MODKEY|ShiftMask,     XK_u,      toggle,      { .v = (void*) &urgentswitch } },
+-	{ MODKEY,               XK_q,      killclient,  { 0 } },
 +	{ MODKEY,               24,        killclient,  { 0 } },
  
--	{ 0,                    XK_F11,    fullscreen,  { 0 } },
+-	{ MODKEY,               XK_u,      focusurgent, { 0 } },
+-	{ MODKEY|ShiftMask,     XK_u,      toggle,      { .v = (void*) &urgentswitch } },
 +	{ MODKEY,               30,        focusurgent, { .v = NULL } },
 +	{ MODKEY|ShiftMask,     30,        toggle,      { .v = (void*) &urgentswitch } },
-+
+ 
+-	{ 0,                    XK_F11,    fullscreen,  { 0 } },
 +	{ 0,                    95,        fullscreen,  { 0 } },
  };
 diff --git a/tabbed.c b/tabbed.c
-index 9a44795..5e2b416 100644
+index ff3ada0..e30b4e2 100644
 --- a/tabbed.c
 +++ b/tabbed.c
 @@ -58,7 +58,7 @@ typedef union {
@@ -70,7 +69,7 @@ index 9a44795..5e2b416 100644
  	void (*func)(const Arg *);
  	const Arg arg;
  } Key;
-@@ -651,11 +651,9 @@ keypress(const XEvent *e)
+@@ -653,11 +653,9 @@ keypress(const XEvent *e)
  {
  	const XKeyEvent *ev = &e->xkey;
  	unsigned int i;
@@ -83,7 +82,7 @@ index 9a44795..5e2b416 100644
  		    CLEANMASK(keys[i].mod) == CLEANMASK(ev->state) &&
  		    keys[i].func)
  			keys[i].func(&(keys[i].arg));
-@@ -692,7 +690,6 @@ manage(Window w)
+@@ -694,7 +692,6 @@ manage(Window w)
  		int i, j, nextpos;
  		unsigned int modifiers[] = { 0, LockMask, numlockmask,
  		                             numlockmask | LockMask };
@@ -91,7 +90,7 @@ index 9a44795..5e2b416 100644
  		Client *c;
  		XEvent e;
  
-@@ -703,12 +700,10 @@ manage(Window w)
+@@ -705,12 +702,10 @@ manage(Window w)
  		XSync(dpy, False);
  
  		for (i = 0; i < LENGTH(keys); i++) {

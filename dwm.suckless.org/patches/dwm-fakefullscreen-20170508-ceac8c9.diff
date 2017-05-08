@@ -1,15 +1,13 @@
 diff --git a/dwm.c b/dwm.c
-index 7861512..d52a1bf 100644
+index a5ce993..42d2049 100644
 --- a/dwm.c
 +++ b/dwm.c
-@@ -521,8 +521,8 @@ clientmessage(XEvent *e)
- 	if (cme->message_type == netatom[NetWMState]) {
+@@ -522,7 +522,7 @@ clientmessage(XEvent *e)
  		if (cme->data.l[1] == netatom[NetWMFullscreen]
  		|| cme->data.l[2] == netatom[NetWMFullscreen])
--			setfullscreen(c, (cme->data.l[0] == 1 /* _NET_WM_STATE_ADD    */
--			              || (cme->data.l[0] == 2 /* _NET_WM_STATE_TOGGLE */ && !c->isfullscreen)));
-+			setfullscreen(c, cme->data.l[0] == 1 /* _NET_WM_STATE_ADD    */
-+			              || (cme->data.l[0] == 2 /* _NET_WM_STATE_TOGGLE */));
+ 			setfullscreen(c, (cme->data.l[0] == 1 /* _NET_WM_STATE_ADD    */
+-				|| (cme->data.l[0] == 2 /* _NET_WM_STATE_TOGGLE */ && !c->isfullscreen)));
++				|| cme->data.l[0] == 2 /* _NET_WM_STATE_TOGGLE */));
  	} else if (cme->message_type == netatom[NetActiveWindow]) {
  		if (c != selmon->sel && !c->isurgent)
  			seturgent(c, 1);
@@ -51,7 +49,7 @@ index 7861512..d52a1bf 100644
  	ocy = c->y;
 @@ -1478,24 +1470,10 @@ setfullscreen(Client *c, int fullscreen)
  		XChangeProperty(dpy, c->win, netatom[NetWMState], XA_ATOM, 32,
- 		                PropModeReplace, (unsigned char*)&netatom[NetWMFullscreen], 1);
+ 			PropModeReplace, (unsigned char*)&netatom[NetWMFullscreen], 1);
  		c->isfullscreen = 1;
 -		c->oldstate = c->isfloating;
 -		c->oldbw = c->bw;
@@ -61,7 +59,7 @@ index 7861512..d52a1bf 100644
 -		XRaiseWindow(dpy, c->win);
  	} else if (!fullscreen && c->isfullscreen){
  		XChangeProperty(dpy, c->win, netatom[NetWMState], XA_ATOM, 32,
- 		                PropModeReplace, (unsigned char*)0, 0);
+ 			PropModeReplace, (unsigned char*)0, 0);
  		c->isfullscreen = 0;
 -		c->isfloating = c->oldstate;
 -		c->bw = c->oldbw;

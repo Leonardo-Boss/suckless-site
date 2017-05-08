@@ -9,7 +9,7 @@ Only allow clients to "fullscreen" into space currently given to them. As an exa
 Download
 --------
 
-* [dwm-fakefullscreen-20170425-5b238c8.diff](dwm-fakefullscreen-20170425-5b238c8.diff)
+* [dwm-fakefullscreen-20170508-ceac8c9.diff](dwm-fakefullscreen-20170508-ceac8c9.diff)
 
 Author
 ------

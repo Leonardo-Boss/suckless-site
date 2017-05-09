@@ -24,6 +24,7 @@ Download
  * [st-alpha-0.5.diff](st-alpha-0.5.diff)
  * [st-alpha-0.6.diff](st-alpha-0.6.diff)
  * [st-alpha-20160727-308bfbf.diff](st-alpha-20160727-308bfbf.diff)
+ * [st-alpha-20170509-5a10aca.diff](st-alpha-20170509-5a10aca.diff)
 
 Authors
 -------
@@ -31,3 +32,4 @@ Authors
  * Eon S. Jeon - <esjeon@hyunmu.am>
  * pr - <protodev@gmx.net> (0.5 port)
  * Laslo Hunhold - <dev@frign.de> (0.6, git ports)
+ * Ivan J. - <parazyd@dyne.org> (git port)

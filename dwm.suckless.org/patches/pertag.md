@@ -11,7 +11,7 @@ Download
 Patches against different versions of dwm are available at
 [dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
 
- * [dwm-pertag-20170329-5b238c8.diff](dwm-pertag-20170329-5b238c8.diff)
+ * [dwm-pertag-20170513-ceac8c9.diff](dwm-pertag-20170513-ceac8c9.diff)
  * [dwm-pertag-6.1.diff](dwm-pertag-6.1.diff) (6.4K) (20151109)
  * [dwm-git-20120406-pertag.diff](dwm-git-20120406-pertag.diff) (5955b)
  * [dwm-pertag-6.0.diff](dwm-pertag-6.0.diff) (5955b) (20120406)
@@ -38,6 +38,7 @@ Authors
  * Updated by termac - `<terror.macbeth.I at gmail dot com>`
  * Updated by Ivan Tham - `pickfire at riseup dot net`
  * [Jochen Sprickerhof](mailto:project@firstname.lastname.de) (Updated to current git)
+ * Lucas Gabriel Vuotto - <lvuotto92@gmail.com> (git ports)
 
 [1]: historical/taglayouts
 [2]: historical/dwm-pertag-5.1.diff

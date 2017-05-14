@@ -1,5 +1,5 @@
 diff --git a/config.def.h b/config.def.h
-index fd77a07..7a568df 100644
+index a9ac303..0568db2 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -60,40 +60,40 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
@@ -78,7 +78,7 @@ index fd77a07..7a568df 100644
  
  /* button definitions */
 diff --git a/dwm.c b/dwm.c
-index b2bc9bd..f36285a 100644
+index a5ce993..e0f043e 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -31,7 +31,6 @@
@@ -98,7 +98,7 @@ index b2bc9bd..f36285a 100644
  	void (*func)(const Arg *);
  	const Arg arg;
  } Key;
-@@ -969,14 +968,12 @@ grabkeys(void)
+@@ -954,14 +953,13 @@ grabkeys(void)
  	{
  		unsigned int i, j;
  		unsigned int modifiers[] = { 0, LockMask, numlockmask, numlockmask|LockMask };
@@ -109,14 +109,15 @@ index b2bc9bd..f36285a 100644
 -			if ((code = XKeysymToKeycode(dpy, keys[i].keysym)))
 -				for (j = 0; j < LENGTH(modifiers); j++)
 -					XGrabKey(dpy, code, keys[i].mod | modifiers[j], root,
--						 True, GrabModeAsync, GrabModeAsync);
-+			for (j = 0; j < LENGTH(modifiers); j++)
-+				XGrabKey(dpy, keys[i].keycode, keys[i].mod | modifiers[j], root,
-+					 True, GrabModeAsync, GrabModeAsync);
+-						True, GrabModeAsync, GrabModeAsync);
++			for (j = 0; j < LENGTH(modifiers); ++j)
++				XGrabKey(dpy, keys[i].keycode,
++				         keys[i].mod | modifiers[j], root, True,
++				         GrabModeAsync, GrabModeAsync);
  	}
  }
  
-@@ -1003,13 +1000,11 @@ void
+@@ -988,13 +986,11 @@ void
  keypress(XEvent *e)
  {
  	unsigned int i;

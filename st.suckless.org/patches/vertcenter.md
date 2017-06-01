@@ -20,6 +20,7 @@ Download
 
  * [st-vertcenter-0.7.diff](st-vertcenter-0.7.diff)
  * [st-vertcenter-20160819-023225e.diff](st-vertcenter-20160819-023225e.diff)
+ * [st-vertcenter-20170601-5a10aca.diff](st-vertcenter-20170601-5a10aca.diff)
 
 Authors
 -------

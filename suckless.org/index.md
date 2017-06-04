@@ -5,9 +5,9 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
-slcon4 hackathon
-----------------
-Don't forget to register for [slcon4 hackathon](/conferences/2017) Sep 1-3 in Wuerzburg, Germany.
+suckless hackathon
+------------------
+Don't forget to register for [suckless hackathon](/conferences/2017) Sep 1-3 in Würzburg, Germany.
 
 2017-05-06
 ----------
@@ -28,10 +28,6 @@ The webkit1 version is kept in the [surf-webkit1](http://git.suckless.org/surf/l
 The “master” branch doesn't exist anymore, HEAD is now [surf-webkit2](http://git.suckless.org/surf/log/),
 so be sure to rebase your local master commits onto surf-webkit1.
 
-2017-01-22
-----------
-[blind 1.0](http://tools.suckless.org/blind) released: [download](http://dl.suckless.org/tools/blind-1.0.tar.gz)
-
 2016-11-20
 ----------
 [slock 1.4](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-1.4.tar.gz)
@@ -47,25 +43,6 @@ Videos of the [slcon 2016 talks](conferences/2016) are now available.
 2016-04-02
 ----------
 [stali ISO](http://dl.sta.li/stali.iso) pre-release. See [stali](http://sta.li) for more details.
-
-2016-02-29
-----------
-suckless.org server renewal will happen this year:
-
-Heads up for the developers:
-
-	Old fingerprint:  a7:35:1c:f2:8e:69:08:85:80:2c:9a:d2:81:a1:23:cb.
-	New fingerprint:  80:bc:bb:29:a5:21:b7:12:ed:50:40:58:cf:71:54:7c
-
-The switch itself should be smooth to everyone else.
-
-2016-02-12
-----------
-[slock 1.3](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-1.3.tar.gz)
-
-2016-01-06
-----------
-[farbfeld 1](http://git.suckless.org/farbfeld) released: [download](http://dl.suckless.org/farbfeld/farbfeld-1.tar.gz)
 
 2015-12-19
 ----------
@@ -83,8 +60,6 @@ Videos of the [slcon2 talks](conferences/2015) are now available.
 ----------
 [dwm 6.1](http://dwm.suckless.org) released: [download](http://dl.suckless.org/dwm/dwm-6.1.tar.gz)
 
-[dmenu 4.6](http://tools.suckless.org/dmenu) released: [download](http://dl.suckless.org/tools/dmenu-4.6.tar.gz)
-
 2015-09-23
 ----------
 Kai and Anselm gave an interview about suckless.org on Randal Schwartz' [FLOSS Weekly show](https://twit.tv/shows/floss-weekly/episodes/355?autostart=false)
@@ -98,10 +73,6 @@ Kai and Anselm gave an interview about suckless.org on Randal Schwartz' [FLOSS W
 [slcon2](conferences/2015) will be held in Budapest on 2015-10-(30-31).
 
 The CfP for interested participants is now open and will end on 2015-04-30.
-
-2014-12-22
-----------
-[slock 1.2](http://tools.suckless.org/slock) released: [download](http://dl.suckless.org/tools/slock-1.2.tar.gz)
 
 2014-11-29
 ----------

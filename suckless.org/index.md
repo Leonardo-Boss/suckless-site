@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+slcon4 hackathon
+----------------
+Don't forget to register for [slcon4 hackathon](/conferences/2017) Sep 1-3 in Wuerzburg, Germany.
+
 2017-05-06
 ----------
 [blind 1.1](http://tools.suckless.org/blind) released: [download](http://dl.suckless.org/tools/blind-1.1.tar.gz)

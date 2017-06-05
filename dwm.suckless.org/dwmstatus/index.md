@@ -27,7 +27,7 @@ Please add your own version of dwmstatus here (keeping the list sorted).
 * [go-dwmstatus](https://github.com/oniichaNj/go-dwmstatus) - A Go bar that prints current MPD song, load averages, time/date and battery percentage.
 * [gods](https://github.com/schachmat/gods) - implemented in Go. prints network speed, cpu, ram, date/time
 * [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent and date/time
-* **slstatus** - suckless alternative to Bash scripts (inefficient) and Conky (bloated for this use) - it displays various system information and can be customized via config.h - [cgit](https://git.nulltime.net/slstatus), [GitHub](https://github.com/drkh5h/slstatus)
+* **slstatus** - suckless alternative to bash scripts (inefficient) and conky (bloated for this use) - it displays various system information and can be customized via config.h - [git mirror](https://git.drkhsh.at/slstatus), [github](https://github.com/drkhsh/slstatus)
 * [suspend-statusbar.c](https://github.com/snobb/dwm-statusbar) - date, loadavg, battery and more. If battery goes below threshold - run suspend command
 
 Helper functions

@@ -9,12 +9,15 @@ Reading and writing st's screen through a pipe.
 Example
 -------
 
-config.h example, binding Mod1+u to extract all visible URLs and present
+config.h example, binding `TERMMOD + U` to extract all visible URLs and present
 dmenu to select and open one:
 
+	static char *openurlcmd[] = { "/bin/sh", "-c",
+		"xurls | dmenu -l 10 -w $1 | xargs -r open",
+		"externalpipe", winid, NULL };
 	static Shortcut shortcuts[] = {
 		...
-		{ MODKEY, 'u', externalpipe, { .v = "xurls | dmenu -l 10 | xargs -r open" } },
+		{ TERMMOD, XK_U, externalpipe, { .v = openurlcmd } },
 	};
 
 ([xurls](https://raw.github.com/bobrippling/perlbin/master/xurls) and

@@ -12,7 +12,7 @@ With key modes you can use any key binding for window management without risking
 There are two different patches:
 
  * keymodes: the minimal patch
- * vim-keymodes: This patch tries to emulate the key bindings of Vim. Therefor it includes additional functions, which depend on the [flextile patch](./flextile).
+ * vim-keymodes: This patch tries to emulate the key bindings of Vim. Therefor it includes additional functions, which depend on the [flextile patch](flextile).
 
 
 ## Configuration ##

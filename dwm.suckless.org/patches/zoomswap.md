@@ -45,7 +45,6 @@ Patches against different versions of dwm are available at
 
  * [dwm-zoomswap-20160731-56a31dc.diff](dwm-zoomswap-20160731-56a31dc.diff)
  * [dwm-6.1-zoomswap.diff](dwm-6.1-zoomswap.diff) (2585b) (20120406)
- * [dwm-10e232f9ace7-attachabove.diff](dwm-10e232f9ace7-attachabove.diff) (1.7K) (20120406)
  * [dwm-zoomswap-6.0.diff](dwm-zoomswap-6.0.diff) (1.6K) (20120406)
 
 Author

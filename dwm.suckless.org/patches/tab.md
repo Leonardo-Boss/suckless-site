@@ -134,12 +134,12 @@ Download
 
 Old versions
 
- * [dwm-master\_2015-12-19\_3465be-tab-v2b.diff](historical/dwm-master\_2015-12-19\_3465be-tab-v2b.diff)
- * [dwm-master\_2015-12-19\_3465be-pertag-tab-v2b.diff](historical/dwm-master\_2015-12-19\_3465be-pertag-tab-v2b.diff)
- * [dwm-master\_2015-10-20\_7e1182c-tab-v2b.diff](historical/dwm-master\_2015-10-20\_7e1182c-tab-v2b.diff), [dwm-master\_2015-10-20\_7e1182c-pertag-tab-v2b.diff](historical/dwm-master\_2015-10-20\_7e1182c-pertag-tab-v2b.diff)
- * [dwm-master\_2015-03-05\_14343e-tab-v2b.diff](historical/dwm-master\_2015-03-05\_14343e-tab-v2b.diff), [dwm-master\_2015-03-05\_14343e-pertag-tab-v2b.diff](historical/dwm-master\_2015-03-05\_14343e-pertag-tab-v2b.diff)
+ * [dwm-master_2015-12-19_3465be-tab-v2b.diff](historical/dwm-master_2015-12-19_3465be-tab-v2b.diff)
+ * [dwm-master_2015-12-19_3465be-pertag-tab-v2b.diff](historical/dwm-master_2015-12-19_3465be-pertag-tab-v2b.diff)
+ * [dwm-master_2015-10-20_7e1182c-tab-v2b.diff](historical/dwm-master_2015-10-20_7e1182c-tab-v2b.diff), [dwm-master_2015-10-20_7e1182c-pertag-tab-v2b.diff](historical/dwm-master_2015-10-20_7e1182c-pertag-tab-v2b.diff)
+ * [dwm-master_2015-03-05_14343e-tab-v2b.diff](historical/dwm-master_2015-03-05_14343e-tab-v2b.diff), [dwm-master_2015-03-05_14343e-pertag-tab-v2b.diff](historical/dwm-master_2015-03-05_14343e-pertag-tab-v2b.diff)
  * [dwm-6.0-tab-v2b.diff](historical/dwm-6.0-tab-v2b.diff), [dwm-6.0-pertag-tab-v2b.diff](historical/dwm-6.0-pertag-tab-v2b.diff)
- * [dwm-master\_2013-08-27\_cdec978-tab-v2a.diff](historical/dwm-master_2013-08-27_cdec978-tab-v2a.diff),  [dwm-master\_2013-08-27\_cdec978-pertag-tab-v2a.diff](historical/dwm-master_2013-08-27_cdec978-pertag-tab-v2a.diff)
+ * [dwm-master_2013-08-27_cdec978-tab-v2a.diff](historical/dwm-master_2013-08-27_cdec978-tab-v2a.diff),  [dwm-master_2013-08-27_cdec978-pertag-tab-v2a.diff](historical/dwm-master_2013-08-27_cdec978-pertag-tab-v2a.diff)
  * [dwm-6.0-tab-v2a.diff](historical/dwm-6.0-tab-v2a.diff), [dwm-6.0-pertag-tab-v2a.diff](historical/dwm-6.0-pertag-tab-v2a.diff)
  * [dwm-6.0-tab-v2.diff](historical/dwm-6.0-tab-v2.diff), [dwm-6.0-pertag-tab-v2.diff](historical/dwm-6.0-pertag-tab-v2.diff)
 

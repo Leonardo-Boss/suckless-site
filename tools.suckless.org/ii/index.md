@@ -41,5 +41,5 @@ a copy using the following command:
 
 Contact
 -------
-send mail to [ii@modprobe.de]( mailto:ii@modprobe.de) or feel free to join #ii on irc.oftc.net
+send mail to [dev@suckless.org](mailto:dev@suckless.org) or feel free to join #suckless on irc.oftc.net
 

@@ -155,7 +155,7 @@ Mandatory dependencies:
 
 * [pertag](pertag): we all know this one.
 
-Related patches: [bottom stack](bottom_stack), [flextile](flextile), cfacts,
+Related patches: [bottom stack](bottomstack), [flextile](flextile), cfacts,
 [stackmfact](stackmfact).
 
 Download

@@ -20,7 +20,7 @@ Download
  [run-recent](run-recent), but it uses atime to find recently executed commands
  rather than a cache. As such, it also takes into account programs executed from
  the terminal.
-* [browse](https://github.com/clamiax/scripts/blob/master/src/browse):
+* [dbrowse](https://github.com/clamiax/scripts/blob/master/src/dbrowse):
   little files navigator
 * [dmenu_run_history](http://tools.suckless.org/dmenu/scripts/dmenu_run_with_command_history) :
   dmenu_run alternative with command history

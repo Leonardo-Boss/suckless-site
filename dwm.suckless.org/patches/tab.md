@@ -13,15 +13,6 @@ time, auto display, permanent display and no display. In permanent mode the tab
 bar is always display independently of the layout, while in the auto mode it is
 displayed only with the monocle layout and in presence of several windows.
 
-<center>
-<table>
-<caption align="bottom" style="font-size: 80%;"><b>Tab in action.</b> Monocle view with the tab extension.</caption>
-<tr><td><img alt="Screenshot" src="http://philippe.gras.free.fr/img/tab-screenshot-1.png"></td></tr>
-</table>
-</center>
-
-<!--![Screen shot](http://philippe.gras.free.fr/img/tab-screenshot-1.png "") -->
-
 This patch can be used as an alternative to the
 [tabbed](http://tools.suckless.org/tabbed/) tool. It differs in two ways: the
 ''tab'' feature is limited to the monocle mode; it works with any application

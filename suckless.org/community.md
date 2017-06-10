@@ -112,8 +112,8 @@ Related lists
 
 * [9fans](http://plan9.bell-labs.com/wiki/plan9/mailing_lists/#9fans) - fans of the [Plan 9 from Bell Labs](http://9fans.net) operating system
 * [inferno-list](http://plan9.bell-labs.com/wiki/plan9/mailing_lists/#INFERNO-LIST) - Inferno users and developers
-* [9front](http://9front.org) - 9front users and hackers
-* [cat-v](https://cat-v.org) - cat-v.org trolling
+* [9front](http://9front.org/) - 9front users and hackers
+* [cat-v](http://cat-v.org/) - cat-v.org trolling
 
 IRC
 ---

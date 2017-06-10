@@ -106,7 +106,7 @@ Related discussion
 related projects
 ----------------
 * [awesome](http://awesome.naquadah.org/) -- dwm fork with XCB, EWMH, Lua script, Xft, D-Bus, multihead.. support
-* [awm](http://www.freaknet.org/alpt/src/alpt-wm/readme) -- (old) modified dwm with workspaces and /proc like interface
+* [awm](https://github.com/Alpt/awm/blob/master/README) -- (old) modified dwm with workspaces and /proc like interface
 * [bwm](http://lists.suckless.org/dwm/0708/3085.html) -- (old) modified dwm with extensive mouse support
 * [cons-wm](http://github.com/dharmatech/psilab/tree/master/cons-wm) -- minimalist wm in scheme (not tiled)
 * [bug.n](https://github.com/fuhsjr00/bug.n) -- dwm for Windows written in AutoHotkey
@@ -117,7 +117,6 @@ related projects
 * [echinus](http://www.rootshell.be/~polachok/code/) -- dwm fork with EWMH, Xft support
 * [gemini](http://gemini.digitalmediaplanet.net) -- terminal manager
 * [i3](http://i3.zekjur.net/) -- wmii fork with XCB, multihead, vertical column, command mode
-* [musca](http://aerosuidae.net/musca.html) -- inspired by dwm, more complex layout, configurable with commands, EWMH support
 * [qtile](http://www.qtile.org/) -- pure python wm, used ideas from dwm
 * [scrotwm](http://www.peereboom.us/scrotwm/html/scrotwm.html) -- dwm clone with multihead, config file, restart.. support
 * [TAL/wm](http://talwm.sourceforge.net/) -- minimal tiled wm based on dwm (discontinued)

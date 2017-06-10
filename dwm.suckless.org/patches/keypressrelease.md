@@ -25,7 +25,7 @@ Download
 ---
 
  * [dwm-keypressrelease-6.0.diff](dwm-keypressrelease-6.0.diff)
- * [dwm-keypressrelease-6.0.diff on GitHub](https://github.com/Ceryn/patches/blob/master/dwm/dwm-keypressrelease-6.0.diff)
+ * [dwm-keypressrelease-6.0.diff on GitHub](https://github.com/Ceryn/patches/blob/master/dwm/dwm-6.0-keypressrelease.diff)
 
 Author
 ------

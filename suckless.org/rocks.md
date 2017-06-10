@@ -18,7 +18,7 @@ libc implementations
 Compression
 -----------
 * [liblzf](http://oldhome.schmorp.de/marc/liblzf.html) - very fast, legally unencumbered compression library (dual licensed: 2-clause BSD or GPL License)
-* [miniz](http://code.google.com/p/miniz/) - single C-file reimplementation of zlib, public domain.
+* [miniz](https://github.com/richgel999/miniz) - single C-file reimplementation of zlib, public domain.
 * [xz embedded](http://tukaani.org/xz/embedded.html) - lightweight decompressor for the xz LZMA compressor (public domain)
 * [Lzip](http://lzip.nongnu.org) - Properly designed data compressor outperforming gzip and bzip2 (GPLv2+)
 * [zlib](http://zlib.net/) - the "standard" compression/decompression library, quite small, used in many applications ([zlib license](http://zlib.net/zlib_license.html))
@@ -109,7 +109,6 @@ Instant Messaging Clients
 -------------------------
 * [bitlbee](http://www.bitlbee.org/main.php/news.r.html) - A program to translate IM protocols to IRC. You can now IM from your IRC client, and you don't even need to install anything.
 * [CenterIM](http://www.centerim.org/index.php/Main_Page) - A centericq fork.
-* [climm](http://www.climm.org/)
 * [irssi-xmpp](http://cybione.org/~irssi-xmpp/)
 * [mcabber](http://www.lilotux.net/~mikael/mcabber/) - A console jabber client.
 * [ysm](http://ysmv7.sourceforge.net/)
@@ -125,7 +124,6 @@ Mail Clients
 * [mutt](http://www.mutt.org/)
 * [nmh](http://www.nongnu.org/nmh/)
 * [mmh](http://marmaro.de/prog/mmh/)
-* [Prayer](http://www-uxsup.csx.cam.ac.uk/~dpc22/prayer/) - Webmail interface for IMAP servers. Doesn't use javascript or frames and doesn't need cookies. 100% C code.
 * [mblaze](https://github.com/chneukirchen/mblaze) - Unix utilities to deal with Maildir
 
 Media Players
@@ -183,7 +181,7 @@ Web Browsers
 * [ELinks](http://elinks.or.cz/)
 * [jumanji](http://pwmt.org/projects/jumanji/) - A highly customizable and functional web browser based on the libwebkit.
 * [Links](http://links.twibright.com/)
-* [Lynx](http://lynx.isc.org/)
+* [Lynx](http://lynx.browser.org/)
 * [netsurf](http://www.netsurf-browser.org/)
 * [surf](http://surf.suckless.org/)
 * [uzbl](http://uzbl.org/) - Web interface tools which adhere to the unix philosophy.
@@ -230,7 +228,7 @@ Web Servers
 
 Gopher Servers
 --------------
-* [geomyidae](http://www.r-36.net/src/geomyidae/) - small gopher-daemon written by 20h
+* [geomyidae](http://git.r-36.net/geomyidae/) - small gopher-daemon written by 20h
 
 Misc Daemons
 ------------

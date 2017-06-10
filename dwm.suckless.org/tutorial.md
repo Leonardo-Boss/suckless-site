@@ -95,7 +95,7 @@ used to force certain window sizes, when some application requires this for
 aesthetics or simply to being usable.
 
 If you want to set some type of window to be always floating, look at the
-[config.def.h](http://hg.suckless.org/dwm/file/tip/config.def.h) and the
+[config.def.h](http://git.suckless.org/dwm/plain/config.def.h) and the
 `rules` array, where the last but one element defines this behaviour.
 
 Quitting

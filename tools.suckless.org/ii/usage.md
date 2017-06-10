@@ -30,10 +30,6 @@ iil
 ---
 The [iil](http://chiselapp.com/user/onys/repository/iil/home) (short for iiless) is fast viewer/reader for ii irc client, using your shell and less.
 
-iiii
-----
-[iiii](https://github.com/tb01110100/iiii) (irc it immensely improved) is yet another bash script that wraps `ii`, `tmux`, `tail`, and `read` and offers easy configuration (including colors), highlighting, autojoining, and a plethora of convoluted sed expressions to make output more pleasing to the eye. Still a WIP. Expect and report bugs, please!
-
 uii
 ---
 [uii](https://github.com/erlehmann/uii) (usable irc it) is a set of shell scripts that provides readline support, uses inotify to monitor channels and pops up notifications.

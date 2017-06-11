@@ -1,0 +1,17 @@
+Password 
+========
+By applying this patch, dmenu will not directly display 
+the keyboard input, but instead replace it with dots. 
+All data from stdin will be ignored.
+
+Use `-P` to activate.
+
+Download
+--------
+* [dmenu-password-4.7.diff](dmenu-pasword-4.7.diff)
+
+Authors
+-------
+* Philip K. - philippija (at) gmail (dot) com
+
+

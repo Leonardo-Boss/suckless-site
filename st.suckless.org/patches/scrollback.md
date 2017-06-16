@@ -25,6 +25,12 @@ mkeys excluding scrolling functions.**
 
 * [st-scrollback-mouse-altscreen-20170427-5a10aca.diff](st-scrollback-mouse-altscreen-20170427-5a10aca.diff)
 
+Notes
+-----
+
+* Patches modify config.def.h, you need to add mkeys to your own config.h
+* You can not have an mshortcut for the same mkey so remove Button4 and Button5 from mshortcuts in config.h
+
 Authors
 -------
 

@@ -34,7 +34,7 @@ to disable lighting up bold colors.
 
  * [st-no_bold_colors-0.5.diff](st-no_bold_colors-0.5.diff)
  * [st-no_bold_colors-0.6.diff](st-no_bold_colors-0.6.diff)
- * [st-no_bold_colors-20160727-308bfbf.diff](st-no_bold_colors-20160727-308bfbf.diff)
+ * [st-no_bold_colors-20170623-b331da5.diff](st-no_bold_colors-20170623-b331da5.diff)
 
 Choose one of the following patches to get either the light
 or the dark color scheme:
@@ -43,13 +43,13 @@ or the dark color scheme:
 
  * [st-solarized-light-0.5.diff](st-solarized-light-0.5.diff)
  * [st-solarized-light-0.6.diff](st-solarized-light-0.6.diff)
- * [st-solarized-light-20160727-308bfbf.diff](st-solarized-light-20160727-308bfbf.diff)
+ * [st-solarized-light-20170623-b331da5.diff](st-solarized-light-20170623-b331da5.diff)
 
 *Dark*:
 
  * [st-solarized-dark-0.5.diff](st-solarized-dark-0.5.diff)
  * [st-solarized-dark-0.6.diff](st-solarized-dark-0.6.diff)
- * [st-solarized-dark-20160727-308bfbf.diff](st-solarized-dark-20160727-308bfbf.diff)
+ * [st-solarized-dark-20170623-b331da5.diff](st-solarized-dark-20170623-b331da5.diff)
 
 *Both (swap between light/dark with F6)*:
 

@@ -53,14 +53,13 @@ or the dark color scheme:
 
 *Both (swap between light/dark with F6)*:
 
- * [st-solarized-both-20160727-308bfbf.diff](st-solarized-both-20160727-308bfbf.diff)
- * [st-solarized-both-20160727-745c40f.diff](st-solarized-both-20160727-745c40f.diff)
+ * [st-solarized-both-20170626-b331da5.diff](st-solarized-both-20170626-b331da5.diff)
 
 
 Authors
 -------
-
  * Nils Reuße - <nilsreusse@gmail.com>
- * Laslo Hunhold - <dev@frign.de> (0.5, 0.6, git ports)
+ * Laslo Hunhold - <dev@frign.de> (0.5, 0.6)
  * Ryan Roden-Corrent - <ryan@rcorre.net> (both)
- * Marcel Krüger - <zauguin@gmail.com> (both git port)
+ * Marcel Krüger - <zauguin@gmail.com> (oudated git ports)
+ * Harry Gindi - <harry.gindi@live.com> (git ports for light, dark, and swap versions)

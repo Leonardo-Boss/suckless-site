@@ -1,17 +1,5 @@
-From d76c18a7214d47b64ace4a23893de3dde23cb1d1 Mon Sep 17 00:00:00 2001
-From: =?UTF-8?q?Marcel=20Kr=C3=BCger?= <zauguin@gmail.com>
-Date: Sat, 8 Apr 2017 18:57:22 +0200
-Subject: [PATCH] Solarized
-
----
- config.def.h | 71 +++++++++++++++++++++++++++++++++++-------------------------
- st.c         | 13 ++++++++++-
- st.h         |  3 +++
- x.c          | 15 ++++++++-----
- 4 files changed, 67 insertions(+), 35 deletions(-)
-
 diff --git a/config.def.h b/config.def.h
-index 877afab..7ad0b44 100644
+index 877afab..7305ec9 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -84,42 +84,54 @@ static unsigned int tabspaces = 8;
@@ -61,7 +49,8 @@ index 877afab..7ad0b44 100644
 +	"#93a1a1",  /* 14: brcyan   */
 +	"#fdf6e3",  /* 15: brwhite  */
  };
- 
+-
++ 
 +/* Terminal colors for alternate (light) palette */
 +const char *altcolorname[] = {
 +	/* solarized light */
@@ -81,7 +70,7 @@ index 877afab..7ad0b44 100644
 +	"#6c71c4",  /* 13: brmagenta*/
 +	"#586e75",  /* 14: brcyan   */
 +	"#002b36",  /* 15: brwhite  */
-+};
++ };
  
  /*
   * Default colors (colorname index)
@@ -107,7 +96,7 @@ index 877afab..7ad0b44 100644
  
  /*
 diff --git a/st.c b/st.c
-index ae93ade..31e383b 100644
+index 8d4a9f2..fc7d9a6 100644
 --- a/st.c
 +++ b/st.c
 @@ -129,6 +129,7 @@ typedef struct {
@@ -136,7 +125,7 @@ index ae93ade..31e383b 100644
  size_t mshortcutslen = LEN(mshortcuts);
  size_t shortcutslen = LEN(shortcuts);
  size_t selmaskslen = LEN(selmasks);
-@@ -2628,6 +2631,14 @@ numlock(const Arg *dummy)
+@@ -2631,6 +2634,14 @@ numlock(const Arg *dummy)
  	term.numlock ^= 1;
  }
  
@@ -152,43 +141,44 @@ index ae93ade..31e383b 100644
  kmap(KeySym k, uint state)
  {
 diff --git a/st.h b/st.h
-index 44d4938..ff74cc6 100644
+index 44d4938..c464dd3 100644
 --- a/st.h
 +++ b/st.h
-@@ -232,6 +232,8 @@ extern char *opt_name;
- extern char *opt_title;
- extern int oldbutton;
- 
-+extern int usealtcolors;
-+
- extern char *usedfont;
- extern double usedfontsize;
- extern double defaultfontsize;
-@@ -250,6 +252,7 @@ extern unsigned int cursorthickness;
+@@ -250,7 +250,9 @@ extern unsigned int cursorthickness;
  extern unsigned int blinktimeout;
  extern char termname[];
  extern const char *colorname[];
 +extern const char *altcolorname[];
  extern size_t colornamelen;
++extern int usealtcolors;
  extern unsigned int defaultfg;
  extern unsigned int defaultbg;
+ extern unsigned int defaultcs;
 diff --git a/x.c b/x.c
-index fbfd350..123131c 100644
+index fbfd350..886918b 100644
 --- a/x.c
 +++ b/x.c
-@@ -573,6 +573,11 @@ sixd_to_16bit(int x)
+@@ -138,6 +138,7 @@ static void (*handler[LASTEvent])(XEvent *) = {
+ /* Globals */
+ static DC dc;
+ static XWindow xw;
++
+ static XSelection xsel;
+ 
+ /* Font Ring Cache */
+@@ -573,6 +574,11 @@ sixd_to_16bit(int x)
  	return x == 0 ? 0 : 0x3737 + 0x2828 * x;
  }
  
 +const char* getcolorname(int i)
 +{
-+	return (usealtcolors) ?  altcolorname[i] : colorname[i];
++    return (usealtcolors) ?  altcolorname[i] : colorname[i];
 +}
 +
  int
  xloadcolor(int i, const char *name, Color *ncolor)
  {
-@@ -591,7 +596,7 @@ xloadcolor(int i, const char *name, Color *ncolor)
+@@ -591,7 +597,7 @@ xloadcolor(int i, const char *name, Color *ncolor)
  			return XftColorAllocValue(xw.dpy, xw.vis,
  			                          xw.cmap, &color, ncolor);
  		} else
@@ -197,7 +187,7 @@ index fbfd350..123131c 100644
  	}
  
  	return XftColorAllocName(xw.dpy, xw.vis, xw.cmap, name, ncolor);
-@@ -614,8 +619,8 @@ xloadcols(void)
+@@ -614,8 +620,8 @@ xloadcols(void)
  
  	for (i = 0; i < dc.collen; i++)
  		if (!xloadcolor(i, NULL, &dc.col[i])) {
@@ -208,7 +198,7 @@ index fbfd350..123131c 100644
  			else
  				die("Could not allocate color %d\n", i);
  		}
-@@ -950,13 +955,13 @@ xinit(void)
+@@ -950,13 +956,13 @@ xinit(void)
  	cursor = XCreateFontCursor(xw.dpy, mouseshape);
  	XDefineCursor(xw.dpy, xw.win, cursor);
  

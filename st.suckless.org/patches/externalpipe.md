@@ -15,7 +15,7 @@ dmenu to select and open one:
 	static char *openurlcmd[] = { "/bin/sh", "-c",
 		"xurls | dmenu -l 10 -w $1 | xargs -r open",
 		"externalpipe", winid, NULL };
-	static Shortcut shortcuts[] = {
+	Shortcut shortcuts[] = {
 		...
 		{ TERMMOD, XK_U, externalpipe, { .v = openurlcmd } },
 	};

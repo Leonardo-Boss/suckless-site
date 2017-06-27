@@ -59,7 +59,7 @@ or the dark color scheme:
 Authors
 -------
  * Nils Reuße - <nilsreusse@gmail.com>
- * Laslo Hunhold - <dev@frign.de> (0.5, 0.6)
+ * Laslo Hunhold - <dev@frign.de> (0.5, 0.6, git ports)
  * Ryan Roden-Corrent - <ryan@rcorre.net> (both)
  * Marcel Krüger - <zauguin@gmail.com> (older git ports)
  * Harry Gindi - <harry.gindi@live.com> (git ports for light, dark, and swap versions)

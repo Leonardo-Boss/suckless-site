@@ -5,9 +5,13 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2017-07-02
+----------
+*Server maintenance is performed today, expect outages and problems with our mail system*
+
 suckless hackathon
 ------------------
-Don't forget to register for [suckless hackathon](/conferences/2017) Sep 1-3 in Würzburg, Germany.
+[suckless hackathon](/conferences/2017) Sep 1-3 in Würzburg, Germany.
 
 2017-05-06
 ----------

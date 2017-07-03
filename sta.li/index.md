@@ -19,6 +19,10 @@ stali goals
 * Include a hand selected collection of the best tools for each task (including [sbase](http://core.suckless.org/sbase), [ubase](http://core.suckless.org), ...)
 * Upgrade/install using git, no package manager needed
 
+Source
+------
+Check out all repositories at [git.sta.li](http://git.sta.li).
+
 Download
 --------
 * 20160825 stali for RPi [stapi.img.gz](http://dl.sta.li/stapi.img.gz) available for download.

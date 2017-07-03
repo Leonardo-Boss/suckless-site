@@ -44,7 +44,5 @@ letter or email at any time. There is no refund of the membership fee, though.
 
 Donations
 ---------
-Our treasurer is currently working on setting up an infrastruture to collect
-donations. As registered association we can issue invoices (under German law)
-for your donation, that you can use in your (German) tax declaration.
+Please check out our [donations](http://suckless.org/donations) page for further advise.
 

@@ -5,9 +5,11 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
-2017-07-02
+2017-07-03
 ----------
-*Server maintenance is performed today, expect outages and problems with our mail system*
+The suckless.org project is now hosted on a new server. All inactive accounts have been removed during the relocation.
+
+Please note that the new ECDSA key fingerprint is SHA256:7DBXcYScmsxbv7rMJUJoJsY5peOrngD4QagiXX6MiQU.
 
 suckless hackathon
 ------------------

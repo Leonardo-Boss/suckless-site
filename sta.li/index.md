@@ -1,3 +1,5 @@
+![sta.li](logo.svg)
+
 About
 =====
 stali is a brand new **sta**tic **li**nux distribution based on the original pre-2010

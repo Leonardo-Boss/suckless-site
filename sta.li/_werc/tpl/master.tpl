@@ -61,6 +61,12 @@
 % if not {
 		<a href="http://libs.suckless.org">libs</a>
 % }
+% if(~ $site 'ev.suckless.org') {
+		<a class="thisSite" href="http://ev.suckless.org">e.V.</a>
+% }
+% if not {
+		<a href="http://ev.suckless.org">e.V.</a>
+% }
 		</span>
 		<span class="right">
 			<a href="http://dl.sta.li">download</a>
@@ -91,7 +97,7 @@
 
 	<div id="footer">
 	<span class="right">
-	&copy; 2010-2016 stali project @ suckless.org| <a href="http://garbe.us/Contact">Impressum</a>
+	&copy; 2010-2017 stali project @ suckless.org| <a href="http://garbe.us/Contact">Impressum</a>
 	</span>
 	</div>
 </body>

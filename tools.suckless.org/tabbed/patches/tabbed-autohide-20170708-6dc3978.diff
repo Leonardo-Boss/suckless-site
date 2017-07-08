@@ -1,0 +1,18 @@
+diff --git a/tabbed.c b/tabbed.c
+index ff3ada0..7414797 100644
+--- a/tabbed.c
++++ b/tabbed.c
+@@ -329,6 +329,13 @@ drawbar(void)
+ 		return;
+ 	}
+ 
++	if (nclients == 1) {
++		XMoveResizeWindow(dpy, clients[0]->win, 0, 0, ww, wh - 0);
++		return;
++	} else if (nclients == 2) {
++		XMoveResizeWindow(dpy, clients[1]->win, 0, bh, ww, wh - bh);
++	}
++
+ 	width = ww;
+ 	cc = ww / tabwidth;
+ 	if (nclients > cc)

@@ -37,7 +37,6 @@ Miscellaneous
 * [bare](https://git.uggedal.com/unmaintained/bare/) - simple distro using suckless software
 * [pjsip](http://www.pjsip.org/) - open source SIP stack (GPL)
 * [sdhcp](http://git.2f30.org/sdhcp/) - IPV4 DHCP client
-* [snore](https://github.com/clamiax/snore) - Sleep with feedback
 * [termbox](https://github.com/nsf/termbox) - simple ncurses-like library for creating TUIs
 
 Programs
@@ -170,6 +169,7 @@ Utilities
 * [abduco](http://www.brain-dump.org/projects/abduco/) - session {at,de}tach support
 * [nq](https://github.com/chneukirchen/nq) - unix command line queue utility
 * [entr](http://entrproject.org/) - Run arbitrary commands when files change
+* [snore](https://github.com/clamiax/snore) - Sleep with feedback
 
 Web Browsers
 ------------

@@ -7,8 +7,8 @@ Download
 --------
 
 * [clipmenu](https://github.com/cdown/clipmenu): Clipboard management using dmenu
-* [passmenu](http://git.zx2c4.com/password-store/tree/contrib/dmenu)
-  : get password from pass.
+* [passmenu](http://git.zx2c4.com/password-store/tree/contrib/dmenu): get password from pass.
+* [mpdmenu](https://github.com/cdown/mpdmenu): Music management using dmenu
 * [passmenu2](passmenu2): "pass" browser, vertical display and recursive "pass" folder support
 * [run-recent](run-recent) : List recent commands first. End a command
   with ";" to run it in e terminal.

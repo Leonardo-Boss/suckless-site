@@ -15,7 +15,7 @@ and ii creates a new #wmii (channel) directory with in and out files.
     |-- #ii
     |   |-- in
     |   `-- out
-    |-- #wmii
+    |-- #suckless
     |   |-- in
     |   `-- out
     |-- chanserv

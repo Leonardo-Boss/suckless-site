@@ -69,6 +69,7 @@ Feed aggregators
 ----------------
 * [newsbeuter](http://www.newsbeuter.org/)
 * [snownews](https://kiza.eu/software/snownews/) - Text mode RSS newsreader for Linux and Unix
+* [sfeed](https://git.codemadness.org/sfeed/) - RSS and Atom parser + CLI programs
 
 File browsers
 -------------
@@ -79,6 +80,11 @@ File managers
 -------------
 * [mc](https://www.midnight-commander.org/) - Midnight Commander is a free cross-platform orthodox file manager
 * [ranger](http://ranger.nongnu.org/) - ranger is a file manager with vi key bindings written in python but with an interface that rocks
+
+Git
+---
+* [stagit](https://git.codemadness.org/stagit/) - static git page generator (HTML)
+* [stagit-gopher](https://git.codemadness.org/stagit-gopher/) - static git page generator for gopher (geomyidae .gph pages)
 
 IRC Clients
 -----------

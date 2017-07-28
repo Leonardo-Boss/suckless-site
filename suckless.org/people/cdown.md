@@ -8,6 +8,7 @@ stuff for dmenu, although I'm not as active in the community as I used to be.
 - [attachaside (unfocused tag version)](http://dwm.suckless.org/patches/attachaside)
 - [center](http://dwm.suckless.org/patches/center)
 - [ispermanent](http://dwm.suckless.org/patches/ispermanent)
+- [killunsel](http://dwm.suckless.org/patches/killunsel)
 
 Most of my projects are hosted on [my Github](https://github.com/cdown), or on
 [my website](https://chrisdown.name).

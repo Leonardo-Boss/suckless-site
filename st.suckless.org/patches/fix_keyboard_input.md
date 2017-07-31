@@ -17,16 +17,16 @@ Notes
    it in real world settings.  I tried to encode as many key combinations as
    possible according to the new scheme.  This might cause issues with existing
    applications if they're not aware of it.  Please report any issues that you
-   come accross.
+   come across.
  - If you use `<C-[>` for `<Esc>`, I suggest that you remove the following line
-   from this patch to reenable the behavior:
+   from this patch to re-enable the behavior:
 
 ```
 	{ XK_bracketleft,  ControlMask,                    "\033[91;5u",  0,  0,  0},
 ```
 
  - If you use `<C-6>` for changing to the alternative file, I suggest that you
-   remove the following line from this patch to reenable the behavior:
+   remove the following line from this patch to re-enable the behavior:
 
 ```
 	{ XK_6,            ControlMask,                    "\033[54;5u",  0,  0,  0},
@@ -55,11 +55,11 @@ Notes
 - Leonard suggests to bind the CSI sequence that starts an escape sequence to
   `0x9b` instead of `0x1b` (Esc) followed by `0x5b` (left bracket, [).  This
   removes the double use of the Esc key in terminals.  Programs that run in
-  terminals always have to work around the doulbe use of the Esc key by
+  terminals always have to work around the double use of the Esc key by
   introducing a timeout that has to pass before a press of the plain Esc key is
   acted upon.  For example in vim the timeout is set by the `ttimeout` and
   `ttimeoutlen` setting.  If you want to get rid of the double use and the
-  timeout, replace all occurences of `\033[` with `\233` in the key defition.
+  timeout, replace all occurrences of `\033[` with `\233` in the key definition.
   In addition, settings in your CLI programs have to be adjusted to disable the
   timeout.
 

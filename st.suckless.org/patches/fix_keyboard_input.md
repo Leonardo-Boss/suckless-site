@@ -52,6 +52,29 @@ Notes
 	nmap <M-Tab> :echo "<M-Tab>"<CR>
 ```
 
+- Leonard suggests to bind the CSI sequence that starts an escape sequence to
+  `0x9b` instead of `0x1b` (Esc) followed by `0x5b` (left bracket, [).  This
+  removes the double use of the Esc key in terminals.  Programs that run in
+  terminals always have to work around the doulbe use of the Esc key by
+  introducing a timeout that has to pass before a press of the plain Esc key is
+  acted upon.  For example in vim the timeout is set by the `ttimeout` and
+  `ttimeoutlen` setting.  If you want to get rid of the double use and the
+  timeout, replace all occurences of `\033[` with `\233` in the key defition.
+  In addition, settings in your CLI programs have to be adjusted to disable the
+  timeout.
+
+Here is an example.  This entry
+
+```
+	{ XK_underscore,   ControlMask,                    "\033[95;5u",  0,  0,  0},
+```
+
+becomes the following:
+
+```
+	{ XK_underscore,   ControlMask,                    "\23395;5u",  0,  0,  0},
+```
+
 Download
 --------
 

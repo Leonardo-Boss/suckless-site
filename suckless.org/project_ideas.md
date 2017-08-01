@@ -105,15 +105,6 @@ structure:
 
 ***Requirements:*** Good C/Shell/HTML knowledge would be desirable.
 
-### Improve sltar
-
-[sltar](https://github.com/Gottox/sltar) is a simplified tar
-implementation which lacks gzip and bzip2 integration. The task requires
-extending sltar with support for these compression applications and writing a
-test suite for it.
-
-***Requirements:*** Good C knowledge would be desirable.
-
 ### Write cookie handler for surf
 
 The biggest disadvantage of [surf](http://surf.suckless.org) is sloppy
@@ -158,15 +149,3 @@ developers. You will need them.
 
 ***Requirements:*** Very good C knowledge, a very good knowledge in web
 standards and how to strip them down to the suckless level.
-
-### A VGA/DVI/Displayport-to-TTY cable
-
-The emerging graphical revolution has removed the smallest denominator which
-combines efficiency in byte transfer and possibilities: vt100.
-
-The goal of this project is to have some combination of hardware and software
-which allows old vt100/etc. devices to use modern display ports.
-
-***Requirements:*** Hardware, software and converter knowledge. This will
-require much hardware work.
-

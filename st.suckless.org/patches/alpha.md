@@ -23,6 +23,7 @@ Download
  * [st-alpha-0.4.1.diff](st-alpha-0.4.1.diff)
  * [st-alpha-0.5.diff](st-alpha-0.5.diff)
  * [st-alpha-0.6.diff](st-alpha-0.6.diff)
+ * [st-alpha-0.7.diff](st-alpha-0.7.diff)
  * [st-alpha-20160727-308bfbf.diff](st-alpha-20160727-308bfbf.diff)
  * [st-alpha-20170509-5a10aca.diff](st-alpha-20170509-5a10aca.diff)
 
@@ -33,3 +34,4 @@ Authors
  * pr - <protodev@gmx.net> (0.5 port)
  * Laslo Hunhold - <dev@frign.de> (0.6, git ports)
  * Ivan J. - <parazyd@dyne.org> (git port)
+ * Matthew Parnell - <matt@parnmatt.co.uk> (0.7 port)

@@ -41,7 +41,7 @@ index a9ac303..b047735 100644
  	TAGKEYS(                        XK_2,                      1)
  	TAGKEYS(                        XK_3,                      2)
 diff --git a/dwm.c b/dwm.c
-index a5ce993..511f2d6 100644
+index a5ce993..3935efc 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -60,7 +60,6 @@
@@ -69,14 +69,13 @@ index a5ce993..511f2d6 100644
  static Display *dpy;
  static Drw *drw;
  static Monitor *mons, *selmon;
-@@ -1410,6 +1412,43 @@ scan(void)
+@@ -1410,6 +1412,42 @@ scan(void)
  }
  
  void
 +schemeCycle(const Arg *arg) {
 +
-+	if ((SchemeSel < LENGTH(colors) -1) &&
-+	    ((SchemeSel + 2) < LENGTH(colors)))
++	if ((SchemeSel + 2) < LENGTH(colors))
 +	{
 +		SchemeNorm += 2;
 +		SchemeSel += 2;

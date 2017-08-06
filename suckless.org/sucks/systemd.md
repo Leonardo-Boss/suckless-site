@@ -37,6 +37,10 @@ The Never Ending Part
 ---------------------
 * Your link here.
 
+Part 4
+------
+[systemd-logind deletes your message queues](https://knzl.de/systemd-removeipc)
+
 Part 3
 ------
 [NEWS revision 76153ad45f09b6ae45464f2e03d3afefbb4b2afe](https://github.com/systemd/systemd/blob/76153ad45f09b6ae45464f2e03d3afefbb4b2afe/NEWS)
@@ -68,8 +72,6 @@ Part 3
 	  hosting provider has means and tools to spy, modify, delete any 
 	  kind of content you store there. Encrypt everything, read your TOS.
 * [systemd does UNIX nice](https://github.com/systemd/systemd/blob/76153ad45f09b6ae45464f2e03d3afefbb4b2afe/NEWS#L425)
-
----- Führerbunker, 2016-08-06
 
 Part 2
 ------
@@ -274,9 +276,6 @@ plain file.)
 	  systemd do that) it can be removed. Why was it there? Is it possible
 	  to make it a separate tool again?  There's no time for that, we are implementing
 	  new features.
-
----- Führerbunker, 2015-07-31
-(You can guess who's the Führer.)
 
 Practical systemd
 -----------------

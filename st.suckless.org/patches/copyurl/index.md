@@ -17,7 +17,9 @@ Download
 --------
 
  * [st-copyurl-0.6.diff](st-copyurl-0.6.diff)
+ * [st-copyurl-0.7.diff](st-copyurl-0.7.diff)
  * [st-copyurl-20161105-8c99915.diff](st-copyurl-20161105-8c99915.diff)
+ * [st-copyurl-20170802-e2ee5ee.diff](st-copyurl-20170802-e2ee5ee.diff)
 
 Authors
 -------

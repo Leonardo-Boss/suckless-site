@@ -1,0 +1,26 @@
+diff --git a/tabbed.c b/tabbed.c
+index ff3ada0..952c177 100644
+--- a/tabbed.c
++++ b/tabbed.c
+@@ -329,6 +329,11 @@ drawbar(void)
+ 		return;
+ 	}
+ 
++	if (nclients == 1) {
++		XMoveResizeWindow(dpy, clients[0]->win, 0, 0, ww, wh);
++		return;
++	}
++
+ 	width = ww;
+ 	cc = ww / tabwidth;
+ 	if (nclients > cc)
+@@ -698,6 +703,9 @@ manage(Window w)
+ 		Client *c;
+ 		XEvent e;
+ 
++		if (nclients == 1)
++			XMoveResizeWindow(dpy, clients[0]->win, 0, bh, ww, wh - bh);
++
+ 		XWithdrawWindow(dpy, w, 0);
+ 		XReparentWindow(dpy, w, win, 0, bh);
+ 		XSelectInput(dpy, w, PropertyChangeMask |

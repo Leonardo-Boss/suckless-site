@@ -8,7 +8,7 @@ Use `-P` to activate.
 
 Download
 --------
-* [dmenu-password-4.7.diff](dmenu-pasword-4.7.diff)
+* [dmenu-password-4.7.diff](dmenu-password-4.7.diff)
 
 Authors
 -------

@@ -95,7 +95,7 @@ mailinglist so you can see eventual comments on your patches.
 Mailing lists web archive
 -------------------------
 
-An archive of all mails posted to the mailing lists is accessible via [http://lists.suckless.org/](http://lists.suckless.org/)
+An archive of all mails posted to the mailing lists is accessible via [//lists.suckless.org/](//lists.suckless.org/)
 
 * [dev mailing list archive][devarchive] [gmane.comp.misc.suckless](http://dir.gmane.org/gmane.comp.misc.suckless)
 * [hackers mailing list archive][hackersarchive]
@@ -131,10 +131,10 @@ Other popular channels:
 * [#2f30](irc://irc.freenode.net/#2f30)
 
 
-[devarchive]: http://lists.suckless.org/dev/
-[dwmarchive]: http://lists.suckless.org/dwm/
-[hackersarchive]: http://lists.suckless.org/hackers/
-[newsarchive]: http://lists.suckless.org/news/
-[wikiarchive]: http://lists.suckless.org/wiki/
-[wmiiarchive]: http://lists.suckless.org/wmii/
+[devarchive]: //lists.suckless.org/dev/
+[dwmarchive]: //lists.suckless.org/dwm/
+[hackersarchive]: //lists.suckless.org/hackers/
+[newsarchive]: //lists.suckless.org/news/
+[wikiarchive]: //lists.suckless.org/wiki/
+[wmiiarchive]: //lists.suckless.org/wmii/
 

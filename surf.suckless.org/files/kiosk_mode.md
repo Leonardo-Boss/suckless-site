@@ -67,7 +67,7 @@ following file to '/home/kiosk/.i3/config':
         for_window [class="Surf"] fullscreen
 
 	# execute surf
-        exec /usr/bin/surf -K http://surf.suckless.org/
+        exec /usr/bin/surf -K //surf.suckless.org/
 
 Now reboot your system and have fun. ;)
 

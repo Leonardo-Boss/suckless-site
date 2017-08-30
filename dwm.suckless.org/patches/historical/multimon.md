@@ -19,7 +19,7 @@ These patches provide enhancements for working in a multi-monitor environment.
     * Per-monitor default settings for nmaster and tags.
   * status all
     * Show/update the status on all bars.
-    * Based on [statusbar on all monitors](http://dwm.suckless.org/patches/statusallmons), but uses a configurable boolean.
+    * Based on [statusbar on all monitors](//dwm.suckless.org/patches/statusallmons), but uses a configurable boolean.
 
 Each can be applied independently, if desired, except for "reset view" which references "ClkMonNum" from "unified view" in "config.def.h".  Simply remove the reference to get it to apply and compile.
 
@@ -43,7 +43,7 @@ There are default settings and bindings in "config.def.h" which you will likely 
 Download
 --------
 
-Each of the patches was created by "format-patch" based on commit: [cdec9782a1789bd5c3a84772fd59abb9da288597](http://git.suckless.org/dwm/commit/?id=cdec9782a1789bd5c3a84772fd59abb9da288597)
+Each of the patches was created by "format-patch" based on commit: [cdec9782a1789bd5c3a84772fd59abb9da288597](//git.suckless.org/dwm/commit/?id=cdec9782a1789bd5c3a84772fd59abb9da288597)
 
   * monitor marker (6228b): [multimon-1-added-monitor-marker-to-bar.diff](multimon-1-added-monitor-marker-to-bar.diff) ([GitHub](https://github.com/garybgenett/.dwm/commit/143e7f2f3caa047469c7219cd6b0cb704466683f))
   * unified view   (6558b): [multimon-2-added-n-view-wrappers-for-unified-multi-monitor.diff](multimon-2-added-n-view-wrappers-for-unified-multi-monitor.diff) ([GitHub](https://github.com/garybgenett/.dwm/commit/2521a74714bb7c4b8787f30584f1565cc582928b))
@@ -58,4 +58,4 @@ Author
  * Gary B. Genett - [me@garybgenett.net](mailto:me@garybgenett.net)
 
 ---
-Original Submission: [http://lists.suckless.org/dev/1403/20488.html](http://lists.suckless.org/dev/1403/20488.html)
+Original Submission: [//lists.suckless.org/dev/1403/20488.html](//lists.suckless.org/dev/1403/20488.html)

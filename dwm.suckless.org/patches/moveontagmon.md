@@ -10,4 +10,4 @@ This patch moves floating windows if their monitor gets changed.
 ## Author ##
  * Apo - a-p@0au.de
 
-[1]: http://dwm.suckless.org/patches/dwm-r1437-moveontagmon.diff
+[1]: //dwm.suckless.org/patches/dwm-r1437-moveontagmon.diff

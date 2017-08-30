@@ -14,7 +14,7 @@ floating it. Reordering windows this way is fun.
 
 Download
 --------
-[tilemovemouse](http://lists.suckless.org/dwm/0903/7773.html)
+[tilemovemouse](//lists.suckless.org/dwm/0903/7773.html)
 
 
 Last update: 2009-03-20

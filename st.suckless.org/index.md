@@ -45,8 +45,8 @@ Things that have already been implemented are
 * fallback fonts
 * line drawing
 
-See the [goals](http://st.suckless.org/goals) for more details and the
-[TODO](http://git.suckless.org/st/plain/TODO) for what still needs to be
+See the [goals](//st.suckless.org/goals) for more details and the
+[TODO](//git.suckless.org/st/plain/TODO) for what still needs to be
 implemented or fixed.
 
 Configuration
@@ -58,18 +58,18 @@ Defaults are stored in `config.def.h`.
 
 FAQ
 ---
-The [FAQ](http://git.suckless.org/st/plain/FAQ) is maintained in the st
+The [FAQ](//git.suckless.org/st/plain/FAQ) is maintained in the st
 source code repository.
 
 Development
 -----------
-st is actively developed. You can [browse](http://git.suckless.org/st) its
+st is actively developed. You can [browse](//git.suckless.org/st) its
 source code repository or get a copy using git with the following command:
 
 	git clone git://git.suckless.org/st
 
 Download
 --------
-* [st 0.7](http://dl.suckless.org/st/st-0.7.tar.gz) (2016-08-11)
-* [LICENSE](http://git.suckless.org/st/plain/LICENSE)
+* [st 0.7](//dl.suckless.org/st/st-0.7.tar.gz) (2016-08-11)
+* [LICENSE](//git.suckless.org/st/plain/LICENSE)
 

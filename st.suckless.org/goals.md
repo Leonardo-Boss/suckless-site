@@ -5,7 +5,7 @@ This page is to discuss and maybe add comments on the future of st.
 
 TODO
 ----
-* see the TODO file in the [repository](http://git.suckless.org/st/plain/TODO)
+* see the TODO file in the [repository](//git.suckless.org/st/plain/TODO)
 
 Theoretical features
 --------------------
@@ -33,5 +33,5 @@ Non-goals
 
 Links
 -----
-* [Repository](http://git.suckless.org/st)
+* [Repository](//git.suckless.org/st)
 

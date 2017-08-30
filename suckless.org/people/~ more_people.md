@@ -47,7 +47,7 @@ developers and contributors.  If you are missing, feel free to add yourself.
 * Mathieu L (contributed various feedback)
 * Matthew Allen (contributed several themes and great art assets, works on the WMI mascot)
 * Michael Ihde (provided several fixes to the container.h class and documentation)
-* [Nico Golde (nion)](http://www.ngolde.de) (testing, fixes, wmii-2 blue theme, [ii developer](http://tools.suckless.org/ii/))
+* [Nico Golde (nion)](http://www.ngolde.de) (testing, fixes, wmii-2 blue theme, [ii developer](//tools.suckless.org/ii/))
 * [Norman Golisz](http://www.zcat.de) (documentation)
 * Norman K&ouml;hring (pSy) (developer of szs)
 * Oliver Kopp (contributed various feedback)

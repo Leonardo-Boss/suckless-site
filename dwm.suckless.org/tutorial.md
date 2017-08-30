@@ -8,7 +8,7 @@ Introduction
 
 Using dwm can be done in pure keyboard control or through some extra mouse
 handling. See the
-[config.def.h](http://git.suckless.org/dwm/plain/config.def.h) for what
+[config.def.h](//git.suckless.org/dwm/plain/config.def.h) for what
 are the default bindings. They are used in this tutorial.
 
 	[Shift]+[Alt]+[Enter] - launch terminal
@@ -76,7 +76,7 @@ You should also notice the `[]=` symbol between the tag numbers and the title ba
 dwm has two further layout modes, **floating** `><>` `[Alt]+[f]` and
 **monocle** `[M]` `[Alt]+[m]`. Monocle is good for ensuring a window is kept
 maximized and focused. This is useful in web kiosk environments and watching
-flash videos. Further layout modes can be included through [patches](http://dwm.suckless.org/patches/).
+flash videos. Further layout modes can be included through [patches](//dwm.suckless.org/patches/).
 
 Floating
 --------
@@ -95,7 +95,7 @@ used to force certain window sizes, when some application requires this for
 aesthetics or simply to being usable.
 
 If you want to set some type of window to be always floating, look at the
-[config.def.h](http://git.suckless.org/dwm/plain/config.def.h) and the
+[config.def.h](//git.suckless.org/dwm/plain/config.def.h) and the
 `rules` array, where the last but one element defines this behaviour.
 
 Quitting
@@ -117,6 +117,6 @@ Using the tools of X.org, this can be set using:
 
 There are various tools and methods to populate this text with useful
 information from your system or services running on your system. A barebone for
-doing this in C is [dwmstatus](http://dwm.suckless.org/dwmstatus/).  See the
-[xinitrc](http://dwm.suckless.org/xinitrc.example) example for how to do it
+doing this in C is [dwmstatus](//dwm.suckless.org/dwmstatus/).  See the
+[xinitrc](//dwm.suckless.org/xinitrc.example) example for how to do it
 using a script.

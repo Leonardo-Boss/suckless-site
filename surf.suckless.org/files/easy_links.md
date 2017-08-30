@@ -14,7 +14,7 @@ link, only with left hand.
 ## Author
 Christian hahn <ch radamanthys de>
 
-[dev mailing list](http://lists.suckless.org/dev/1009/5996.html)
+[dev mailing list](//lists.suckless.org/dev/1009/5996.html)
 
 
 ## Code

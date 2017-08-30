@@ -9,7 +9,7 @@ character set. Look at the patch below which is more advance.
 
 The `xft-with-fallback-font` patch adds Xft and fallback-font support to dwm.
 This patch was built on top of the [Xft patch written by
-Quentin](http://lists.suckless.org/dev/1311/18279.html).  With fallback font
+Quentin](//lists.suckless.org/dev/1311/18279.html).  With fallback font
 support, multiple fonts can now be specified in config.h which are used to
 render characters not present in the first font. If none of the user-specified
 fonts contains a given character, this patch attempts to automatically fallback

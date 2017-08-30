@@ -161,17 +161,17 @@ Rationale
 Development
 -----------
 
-You can browse its [source code repository](http://git.suckless.org/blind)
+You can browse its [source code repository](//git.suckless.org/blind)
 or get a copy using git with the following command:
 
-	git clone http://git.suckless.org/blind
+	git clone https://git.suckless.org/blind
 
 Download
 --------
 
-* [blind-1.0](http://dl.suckless.org/tools/blind-1.0.tar.gz) (2017-01-22)
+* [blind-1.0](//dl.suckless.org/tools/blind-1.0.tar.gz) (2017-01-22)
 
-* [blind-1.1](http://dl.suckless.org/tools/blind-1.1.tar.gz) (2017-05-06)
+* [blind-1.1](//dl.suckless.org/tools/blind-1.1.tar.gz) (2017-05-06)
 
 Also make sure to check your package manager. The following distributions provide packages:
 

@@ -14,14 +14,14 @@ paranoid and turning red on failed login attempts suffices for you, set
 
 Development
 -----------
-You can [browse](http://git.suckless.org/slock) its source code repository
+You can [browse](//git.suckless.org/slock) its source code repository
 or get a copy using the following command:
 
-	git clone http://git.suckless.org/slock
+	git clone https://git.suckless.org/slock
 
 Download
 --------
-* [slock-1.4](http://dl.suckless.org/tools/slock-1.4.tar.gz) (20161120)
+* [slock-1.4](//dl.suckless.org/tools/slock-1.4.tar.gz) (20161120)
 
 Xautolock
 ---------
@@ -32,6 +32,6 @@ command syntax is:
 	xautolock -time 10 -locker slock
 
 Simpler alternatives to xautolock might be
-[xssstate](http://git.suckless.org/xssstate/) or
+[xssstate](//git.suckless.org/xssstate/) or
 [xss](http://woozle.org/~neale/src/xss.html).
 

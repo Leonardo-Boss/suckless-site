@@ -7,7 +7,7 @@ local host using the following command:
 
 or
 
-	git clone http://git.suckless.org/sites
+	git clone https://git.suckless.org/sites
 
 Then edit the wiki as you like. The markdown interpreter that is currently
 used on the suckless.org werc instance is
@@ -52,7 +52,7 @@ Rules
 Changes
 -------
 The incoming changes to the wiki are all sent to the wiki@
-mailinglist. See [community](http://suckless.org/community) for how to
+mailinglist. See [community](//suckless.org/community) for how to
 subscribe to this list.
 
 Moderators

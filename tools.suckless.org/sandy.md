@@ -11,12 +11,12 @@ Features / Non-features
 * Very simple commands read from a named pipe
 * Very basic, regex-based syntax colouring
 * Xterm-like mouse support
-* X11 integration is achieved through external tools such as [xsel](http://www.kfish.org/software/xsel/) and [dmenu](http://tools.suckless.org/dmenu/)
+* X11 integration is achieved through external tools such as [xsel](http://www.kfish.org/software/xsel/) and [dmenu](//tools.suckless.org/dmenu/)
 * Lacks many text processing facilities that can be easily achieved by piping text through an external command
 
 Development
 -----------
-You can [browse](http://git.suckless.org/sandy) the source code repository or get a copy with the following command:
+You can [browse](//git.suckless.org/sandy) the source code repository or get a copy with the following command:
 
-        git clone http://git.suckless.org/sandy
+        git clone https://git.suckless.org/sandy
 

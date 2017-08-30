@@ -2,7 +2,7 @@
 
 Since suckless.org has migrated to git, customizations can now be be
 managed directly in git as an alternative to the
-[patch queue in Mercurial tutorial](http://dwm.suckless.org/customisation/patch_queue).
+[patch queue in Mercurial tutorial](//dwm.suckless.org/customisation/patch_queue).
 
 ## The concept ##
 
@@ -30,7 +30,7 @@ the branches are the same.
 	git checkout my_dwm
 
 Now make your changes. If you want to apply one of the
-[contributed patches](http://dwm.suckless.org/patches/) you can use
+[contributed patches](//dwm.suckless.org/patches/) you can use
 the `git apply` command
 
 	git apply some_patch.diff

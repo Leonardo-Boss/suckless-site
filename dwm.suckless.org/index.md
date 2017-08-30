@@ -45,35 +45,35 @@ In contrast to ion, larswm, and wmii, dwm is much smaller, faster and simpler.
 
 Links
 -----
-* Mailing List: `dev+subscribe@suckless.org` ([Archives](http://lists.suckless.org/dev/)) ([Old Archives](http://lists.suckless.org/dwm/)) (see [community](http://suckless.org/community/) for details)
+* Mailing List: `dev+subscribe@suckless.org` ([Archives](//lists.suckless.org/dev/)) ([Old Archives](//lists.suckless.org/dwm/)) (see [community](//suckless.org/community/) for details)
 * IRC channel: #suckless at irc.oftc.net
 
 Download
 --------
-* [MIT/X Consortium license](http://git.suckless.org/dwm/plain/LICENSE)
-* [dwm 6.1](http://dl.suckless.org/dwm/dwm-6.1.tar.gz) (25kb) (20151109)
-* See also [dmenu](http://tools.suckless.org/dmenu)
+* [MIT/X Consortium license](//git.suckless.org/dwm/plain/LICENSE)
+* [dwm 6.1](//dl.suckless.org/dwm/dwm-6.1.tar.gz) (25kb) (20151109)
+* See also [dmenu](//tools.suckless.org/dmenu)
 
 Support
 -------
-See the [faq](http://dwm.suckless.org/faq) for the frequent problems that
+See the [faq](//dwm.suckless.org/faq) for the frequent problems that
 arise. The next step is to look at the sourcecode and the config.h for obvious
 names, which could be related to the problem that arose. If that does not help
 to fix the problem, then there is the #suckless IRC channel and the
 mailinglist.
 
 If it is your first time using dwm, start with reading the
-[tutorial](http://dwm.suckless.org/tutorial).
+[tutorial](//dwm.suckless.org/tutorial).
 
 Development
 -----------
-You can [browse](http://git.suckless.org/dwm) its source code repository or get a copy using git  with the following command:
+You can [browse](//git.suckless.org/dwm) its source code repository or get a copy using git  with the following command:
 
-	git clone http://git.suckless.org/dwm
+	git clone https://git.suckless.org/dwm
 
 Miscellaneous
 -------------
-* Optionally you can install [dmenu](http://tools.suckless.org/dmenu) to extend dwm with a wmii-like menu.
+* Optionally you can install [dmenu](//tools.suckless.org/dmenu) to extend dwm with a wmii-like menu.
 * Wikipedia [article about dwm](http://en.wikipedia.org/wiki/Dwm)
 
 Related discussion
@@ -107,7 +107,7 @@ related projects
 ----------------
 * [awesome](http://awesome.naquadah.org/) -- dwm fork with XCB, EWMH, Lua script, Xft, D-Bus, multihead.. support
 * [awm](https://github.com/Alpt/awm/blob/master/README) -- (old) modified dwm with workspaces and /proc like interface
-* [bwm](http://lists.suckless.org/dwm/0708/3085.html) -- (old) modified dwm with extensive mouse support
+* [bwm](//lists.suckless.org/dwm/0708/3085.html) -- (old) modified dwm with extensive mouse support
 * [cons-wm](http://github.com/dharmatech/psilab/tree/master/cons-wm) -- minimalist wm in scheme (not tiled)
 * [bug.n](https://github.com/fuhsjr00/bug.n) -- dwm for Windows written in AutoHotkey
 * [dvtm](http://www.brain-dump.org/projects/dvtm/) -- virtual terminal manager (dwm on the console)

@@ -15,7 +15,7 @@ It is based on the transparency patch of Stefan Mark.
 
 ## Download
 
- * [dwm.defaultopacity.patch](http://dwm.suckless.org/patches/dwm.defaultopacity.patch)
+ * [dwm.defaultopacity.patch](//dwm.suckless.org/patches/dwm.defaultopacity.patch)
    latest patch (against r1521)
 
 ## Author

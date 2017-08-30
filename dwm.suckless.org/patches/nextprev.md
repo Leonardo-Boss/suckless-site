@@ -30,4 +30,4 @@
 
  * Rob Pilling - robpilling gmail com
 
-[shiftview]: http://lists.suckless.org/dev/1104/7590.html
+[shiftview]: //lists.suckless.org/dev/1104/7590.html

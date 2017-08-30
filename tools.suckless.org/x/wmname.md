@@ -8,14 +8,14 @@ programs assuming a reparenting window manager for instance.
 
 Download
 --------
-* [wmname-0.1](http://dl.suckless.org/tools/wmname-0.1.tar.gz)
+* [wmname-0.1](//dl.suckless.org/tools/wmname-0.1.tar.gz)
 
 Repository
 ----------
-You can [browse](http://git.suckless.org/wmname) the source code or get a
+You can [browse](//git.suckless.org/wmname) the source code or get a
 copy using the following command:
 
-	git clone http://git.suckless.org/wmname
+	git clone https://git.suckless.org/wmname
 
 Usage
 -----

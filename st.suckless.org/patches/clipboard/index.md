@@ -5,7 +5,7 @@ Description
 -----------
 
 st only sets PRIMARY on selection since
-[March 2015](http://git.suckless.org/st/commit/?id=28259f5750f0dc7f52bbaf8b746ec3dc576a58ee)
+[March 2015](//git.suckless.org/st/commit/?id=28259f5750f0dc7f52bbaf8b746ec3dc576a58ee)
 according to the
 [Freedesktop standard](http://standards.freedesktop.org/clipboards-spec/clipboards-latest.txt).
 

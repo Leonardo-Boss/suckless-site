@@ -60,8 +60,8 @@ The overall SLOC is about 66kSLOC, so this userland + all libs is much smaller t
 
 Download
 --------
-* [9base-6](http://dl.suckless.org/tools/9base-6.tar.gz) (20100604)
-* <code>git clone [http://git.suckless.org/9base](http://git.suckless.org/9base)</code>
+* [9base-6](//dl.suckless.org/tools/9base-6.tar.gz) (20100604)
+* <code>git clone [//git.suckless.org/9base](//git.suckless.org/9base)</code>
 
 Usage
 -----

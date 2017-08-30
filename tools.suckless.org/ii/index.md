@@ -30,14 +30,14 @@ It consists of <= 500 lines of code and is the big brother of [sic](/sic)
 
 Download
 --------
-* [ii 1.7](http://dl.suckless.org/tools/ii-1.7.tar.gz) (10kb) (20130105)
+* [ii 1.7](//dl.suckless.org/tools/ii-1.7.tar.gz) (10kb) (20130105)
 
 Development
 -----------
-You can [browse](http://git.suckless.org/ii) its source code repository or get
+You can [browse](//git.suckless.org/ii) its source code repository or get
 a copy using the following command:
 
-`git clone http://git.suckless.org/ii`
+`git clone https://git.suckless.org/ii`
 
 Contact
 -------

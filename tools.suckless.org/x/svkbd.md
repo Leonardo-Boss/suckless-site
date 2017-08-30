@@ -40,5 +40,5 @@ window corner.
 Repository
 ----------
 
-	git clone http://git.suckless.org/svkbd
+	git clone https://git.suckless.org/svkbd
 

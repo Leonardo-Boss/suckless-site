@@ -1,11 +1,11 @@
 Stuff that sucks
 ================
-See the [philosophy](http://suckless.org/philosophy) page about what
+See the [philosophy](//suckless.org/philosophy) page about what
 applies to this page.
 
 Bigger topics that suck:
-[systemd](http://suckless.org/sucks/systemd), [the
-web](http://suckless.org/sucks/web)
+[systemd](//suckless.org/sucks/systemd), [the
+web](//suckless.org/sucks/web)
 
 Libraries
 ---------
@@ -39,7 +39,7 @@ possible to avoid them. If you use them, consider looking for alternatives.
 [8]: https://bugzilla.gnome.org/show_bug.cgi?id=674446
 [9]: https://github.com/atheme/libmowgli-2
 [10]: https://github.com/rofl0r/libulz
-[11]: http://libs.suckless.org/libzahl
+[11]: //libs.suckless.org/libzahl
 [12]: https://github.com/suiginsoft/hebimath
 
 Build Systems
@@ -146,8 +146,8 @@ See also
 
 The [list of harmful software](http://harmful.cat-v.org/software/) at [cat-v.org](http://cat-v.org).
 
-[aterm-ml-post]: http://lists.suckless.org/dev/1102/7141.html
-[st]:     http://st.suckless.org/
+[aterm-ml-post]: //lists.suckless.org/dev/1102/7141.html
+[st]:     //st.suckless.org/
 [uuterm]: http://etalabs.net/uuterm.html
 [icccm]:  http://tronche.com/gui/x/icccm/
 [texinfo]: https://www.gnu.org/software/texinfo/

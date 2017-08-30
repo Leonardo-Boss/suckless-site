@@ -107,7 +107,7 @@ structure:
 
 ### Write cookie handler for surf
 
-The biggest disadvantage of [surf](http://surf.suckless.org) is sloppy
+The biggest disadvantage of [surf](//surf.suckless.org) is sloppy
 cookie handling. libwebkit and libsoup (which are used for HTTP) were never
 designed to run in multiple processes simultaneously.
 

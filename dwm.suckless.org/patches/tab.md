@@ -14,7 +14,7 @@ bar is always display independently of the layout, while in the auto mode it is
 displayed only with the monocle layout and in presence of several windows.
 
 This patch can be used as an alternative to the
-[tabbed](http://tools.suckless.org/tabbed/) tool. It differs in two ways: the
+[tabbed](//tools.suckless.org/tabbed/) tool. It differs in two ways: the
 ''tab'' feature is limited to the monocle mode; it works with any application
 without requiring to support the XEmbed protocol nor to define in advance the
 set of applications to be supported.

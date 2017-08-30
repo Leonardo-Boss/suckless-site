@@ -9,7 +9,7 @@ There are several other projects which are inspired by the spirit of suckless.
 * [bus](https://github.com/maandree/bus) - daemonless message broadcasting IPC
 * [cross-chroot](https://github.com/radare/cross-chroot) - cross platform qemu-powered chroot utilities (based on the ideas of the maemo sdk)
 * [dietline](https://github.com/radare/radare2/blob/master/libr/cons/dietline.c) - minimalist implementation of a readline-like library
-* [dmc](http://git.suckless.org/dmc/) - dynamic mail client
+* [dmc](//git.suckless.org/dmc/) - dynamic mail client
 * [dvtm](http://www.brain-dump.org/projects/dvtm/) - screen-like dwm (curses)
 * [dzen](https://github.com/robm/dzen) - display status/notification/menu windows
 * [honden](https://github.com/joodan-van-github/honden) - system built on top of oboeta
@@ -30,7 +30,7 @@ There are several other projects which are inspired by the spirit of suckless.
 * [spt](https://github.com/pickfire/spt) - simple pomodoro timer
 * [srw](https://bitbucket.org/emg/srw) - simple read wrapper
 * [ssg](https://github.com/jroimartin/ssg) - slide generation system with markdown-like syntax
-* [sup](http://git.suckless.org/sup) - minimalistic sudo replacement
+* [sup](//git.suckless.org/sup) - minimalistic sudo replacement
 * [sw](https://github.com/jroimartin/sw) - minimalistic web framework
 * [swx](http://yeuxdelibad.net/Programmation/swx_en.html) - static site generator (inspired from sw)
 * [tiv](https://github.com/radare/tiv) - terminal image viewer

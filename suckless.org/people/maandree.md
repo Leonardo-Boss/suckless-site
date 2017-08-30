@@ -1,10 +1,10 @@
 Mattias Andrée (maandree)
 =========================
 
-I'm the maintainer of [libzahl](http://libs.suckless.org/libzahl/)
-and [blind](http://tools.suckless.org/blind/), and a contibutor
-to [sbase](http://core.suckless.org/sbase) and
-[ubase](http://core.suckless.org/ubase).
+I'm the maintainer of [libzahl](//libs.suckless.org/libzahl/)
+and [blind](//tools.suckless.org/blind/), and a contibutor
+to [sbase](//core.suckless.org/sbase) and
+[ubase](//core.suckless.org/ubase).
 
 You can find my PGP key on
 [MIT's keyserver](http://pgp.mit.edu:11371/pks/lookup?op=get&search=0xBF2236A2678A6A76) and on

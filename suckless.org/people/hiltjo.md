@@ -3,8 +3,8 @@ hiltjo
 
 Greetings traveler,
 
-I'm the current developer and maintainer of [dmenu](http://tools.suckless.org/dmenu) and
-[ii](http://tools.suckless.org/ii).
+I'm the current developer and maintainer of [dmenu](//tools.suckless.org/dmenu) and
+[ii](//tools.suckless.org/ii).
 
 I have contributed some patches to various suckless projects.
 

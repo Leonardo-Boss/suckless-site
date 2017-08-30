@@ -34,4 +34,4 @@ Author
 ---
 
 [1] Error produced: "giblib error: couldn't grab keyboard: Resource temporarily unavailable"  
-[2] Old discussion thread: [http://lists.suckless.org/dev/1108/9185.html](http://lists.suckless.org/dev/1108/9185.html)
+[2] Old discussion thread: [//lists.suckless.org/dev/1108/9185.html](//lists.suckless.org/dev/1108/9185.html)

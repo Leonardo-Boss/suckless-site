@@ -50,6 +50,6 @@ With this patch dwm starts in `COMMANDMODE` and you can use the key bindings as 
  * [keymodes-5.8.2-vim.diff][2] (22k, +446 SLOC) (20100611, joten (at) freenet (dot) de)
 
 
-[1]: http://dwm.suckless.org/patches/keymodes-5.8.2.diff
-[2]: http://dwm.suckless.org/patches/keymodes-5.8.2-vim.diff
-[3]: http://dwm.suckless.org/patches/keymodes-5.8.2-vim-config.h
+[1]: //dwm.suckless.org/patches/keymodes-5.8.2.diff
+[2]: //dwm.suckless.org/patches/keymodes-5.8.2-vim.diff
+[3]: //dwm.suckless.org/patches/keymodes-5.8.2-vim-config.h

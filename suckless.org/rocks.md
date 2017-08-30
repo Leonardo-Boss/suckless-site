@@ -90,11 +90,11 @@ IRC Clients
 -----------
 * [Irc](http://swtch.com/irc/)
 * [irc.c from mpu](http://c9x.me/irc/) - A Minimal Curses IRC Client.
-* [ii](http://tools.suckless.org/ii/) - A FIFO based IRC client which is part of the suckless.org project.
+* [ii](//tools.suckless.org/ii/) - A FIFO based IRC client which is part of the suckless.org project.
 * [ircc](http://www.r-36.net/src/Various/ircc.tgz) - A no-frills, ncurses free, console-based IRC client.
 * [ircrc](http://plan9.bell-labs.com/sources/contrib/fgb/rc/ircrc) - An rc-based IRC client similar to ircc. Needs minor modification to run on UNIX.
 * [irssi](http://www.irssi.org/)
-* [sic](http://tools.suckless.org/sic) - Another suckless.org IRC client. Similar to ircc.
+* [sic](//tools.suckless.org/sic) - Another suckless.org IRC client. Similar to ircc.
 * [quIRC](https://github.com/ec429/quIRC) - a lightweight console IRC client
 
 Image Viewers
@@ -121,7 +121,7 @@ Instant Messaging Clients
 Mail Clients
 ------------
 * [Mail][plan9port] - A mail client for [acme][acme]. Included with plan9port.
-* [dmc](http://git.suckless.org/dmc/) - A minimalistic approach to a commandline mail client (WIP)
+* [dmc](//git.suckless.org/dmc/) - A minimalistic approach to a commandline mail client (WIP)
 * [fdm](https://github.com/nicm/fdm) - fetch and deliver mail
 * [isync](http://isync.sourceforge.net/) - MDA that can work better for IMAP
 * [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
@@ -169,7 +169,7 @@ Text Editors
 Utilities
 ---------
 * [9menu](http://www.freshports.org/x11/9menu/) - A menu program based on the Blit-style menus so prevalent in Plan 9.  A take on it is included with wmii.
-* [dmenu](http://tools.suckless.org/dmenu/) - dmenu is a dynamic menu for X
+* [dmenu](//tools.suckless.org/dmenu/) - dmenu is a dynamic menu for X
 * [slmenu](https://bitbucket.org/rafaelgg/slmenu) - Dmenu spinoff for the console
 * [dvtm](http://www.brain-dump.org/projects/dvtm/) - dynamic virtual terminal manager
 * [abduco](http://www.brain-dump.org/projects/abduco/) - session {at,de}tach support
@@ -189,7 +189,7 @@ Web Browsers
 * [Links](http://links.twibright.com/)
 * [Lynx](http://lynx.browser.org/)
 * [netsurf](http://www.netsurf-browser.org/)
-* [surf](http://surf.suckless.org/)
+* [surf](//surf.suckless.org/)
 * [uzbl](http://uzbl.org/) - Web interface tools which adhere to the unix philosophy.
 * [Vimperator](http://www.vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like.
 * [VimFX](https://addons.mozilla.org/en-US/firefox/addon/vimfx/) -
@@ -229,7 +229,7 @@ Web Servers
 * [thttpd](http://acme.com/software/thttpd/) - Outperforms many bigger httpds. Old, still works very well!
 * [mini_httpd](http://acme.com/software/mini_httpd/) - By the thttpd developers. Even smaller subset of thttpd with support for .htpasswd, CGI, dirlisting, HTTP errors and SSL, nothing more or less than that.
 * [darkhttpd](https://unix4lyfe.org/darkhttpd/) - Darkhttpd is a simple, fast HTTP 1.1 web server for static content.
-* [quark](http://git.suckless.org/quark/) - suckless httpd, not released yet
+* [quark](//git.suckless.org/quark/) - suckless httpd, not released yet
 * [shus](https://github.com/dimkr/shus) - A tiny HTTP server for static sites
 
 Gopher Servers

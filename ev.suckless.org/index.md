@@ -1,6 +1,6 @@
 suckless.org e.V.
 =================
-At [slcon 2](http://suckless.org/conference/2015) eight conference attendees
+At [slcon 2](//suckless.org/conference/2015) eight conference attendees
 founded a legal entity for suckless.org, the "suckless.org e.V.".
 
 suckless.org e.V. is a registered association in Landshut, Germany, with its
@@ -44,5 +44,5 @@ letter or email at any time. There is no refund of the membership fee, though.
 
 Donations
 ---------
-Please check out our [donations](http://suckless.org/donations) page for further advise.
+Please check out our [donations](//suckless.org/donations) page for further advise.
 

@@ -12,7 +12,7 @@ Below is the script to do this:
 	xprop -root -notype -f WM_NAME "8u" \
 		| sed -n -r 's/WM_NAME = \"(.*)\"/\1/p'
 
-Link: [dwmgetstatus.sh](http://dwm.suckless.org/dwmgetstatus.sh)
+Link: [dwmgetstatus.sh](//dwm.suckless.org/dwmgetstatus.sh)
 
 Questions
 ---------

@@ -8,7 +8,7 @@ The omnibar script store all URIs, including ones visited by clicking on links,
 and use them to auto-complete when you type on dmenu. The items are sorted by
 number of views.
 
-For [tabbed](http://tools.suckless.org/tabbed/) users, you may also want to add
+For [tabbed](//tools.suckless.org/tabbed/) users, you may also want to add
 the following to your tabbed config.h:
 
 	#define GOTO { \

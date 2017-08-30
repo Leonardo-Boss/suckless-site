@@ -20,7 +20,7 @@ What PID 1 Should Do
 When your system boots up the kernel is executing a given binary in its known
 namespace. To
 see what are the only tasks the application running as pid 1 has to do, see
-[sinit](http://git.suckless.org/sinit/). Just wait for child process to reap
+[sinit](//git.suckless.org/sinit/). Just wait for child process to reap
 and run some other init scripts.
 
 The systemd Chronicles
@@ -30,7 +30,7 @@ enforce upon you as a Linux user, because »they know better«.
 
 Please add all the links you can find! Generations after us have to know how
 to not do software and system development! See the
-[wiki instructions](http://suckless.org/wiki) in how to contribute to this
+[wiki instructions](//suckless.org/wiki) in how to contribute to this
 page.
 
 The Never Ending Part

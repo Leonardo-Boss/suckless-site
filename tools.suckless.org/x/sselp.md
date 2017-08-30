@@ -6,4 +6,4 @@ query the X selection without pressing mouse Button2 in cumbersome ways.
 
 Download
 --------
-* [sselp-0.2](http://dl.suckless.org/tools/sselp-0.2.tar.gz) (20080729)
+* [sselp-0.2](//dl.suckless.org/tools/sselp-0.2.tar.gz) (20080729)

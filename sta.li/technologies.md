@@ -2,10 +2,10 @@ Software that stali might adopt
 ===============================
 
 * base system
-	* [sbase](http://git.suckless.org/sbase/)
-	* [ubase](http://git.suckless.org/ubase/)
+	* [sbase](//git.suckless.org/sbase/)
+	* [ubase](//git.suckless.org/ubase/)
 * init
-	* [sinit](http://git.suckless.org/sinit/)
+	* [sinit](//git.suckless.org/sinit/)
 * services
 	* [runit](http://smarden.org/runit/)
 	* [svc](http://git.r-36.net/svc/)
@@ -18,7 +18,7 @@ Software that stali might adopt
 	* [nldev](http://git.r-36.net/nldev/)
 	* [smdev](http://git.2f30.org/smdev/)
 * wm
-	* [dwm](http://dwm.suckless.org)
+	* [dwm](//dwm.suckless.org)
 	* [nowm](https://github.com/patrickhaller/no-wm)
 * dyndns
 	* [tinydyndns](http://smarden.org/tinydyndns/)

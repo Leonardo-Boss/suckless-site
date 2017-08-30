@@ -28,17 +28,17 @@ Dependencies
 Development
 -----------
 
-You can [browse](http://git.suckless.org/farbfeld) its source code repository
+You can [browse](//git.suckless.org/farbfeld) its source code repository
 or get a copy using the following command:
 
-        git clone http://git.suckless.org/farbfeld
+        git clone https://git.suckless.org/farbfeld
 
 Download
 --------
 
-* [farbfeld-1](http://dl.suckless.org/farbfeld/farbfeld-1.tar.gz) (2016-01-06)
-* [farbfeld-2](http://dl.suckless.org/farbfeld/farbfeld-2.tar.gz) (2016-03-14)
-* [farbfeld-3](http://dl.suckless.org/farbfeld/farbfeld-3.tar.gz) (2017-04-14)
+* [farbfeld-1](//dl.suckless.org/farbfeld/farbfeld-1.tar.gz) (2016-01-06)
+* [farbfeld-2](//dl.suckless.org/farbfeld/farbfeld-2.tar.gz) (2016-03-14)
+* [farbfeld-3](//dl.suckless.org/farbfeld/farbfeld-3.tar.gz) (2017-04-14)
 
 Also make sure to check your package manager. The following distributions
 provide packages:
@@ -55,7 +55,7 @@ Implementations
 ---------------
 
 * [lel](http://git.2f30.org/lel) farbfeld image viewer
-* [sent](http://tools.suckless.org/sent/) presentation tool
+* [sent](//tools.suckless.org/sent/) presentation tool
 * [Go encoder/decoder](https://github.com/hullerob/go.farbfeld)
 * [resize](https://github.com/ender672/farbfeld-resize) image filter
 * [gamut](https://github.com/erik/gamut) image filter collection

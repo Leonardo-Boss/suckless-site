@@ -21,9 +21,9 @@ Dependencies
 ------------
 
 * Xlib and Xft for building
-* [farbfeld](http://tools.suckless.org/farbfeld/) tools to use images in the
+* [farbfeld](//tools.suckless.org/farbfeld/) tools to use images in the
   presentations (if you don't want to use farbfeld,
-  [sent-0.2](http://dl.suckless.org/tools/sent-0.2.tar.gz) was the last version
+  [sent-0.2](//dl.suckless.org/tools/sent-0.2.tar.gz) was the last version
   with just png support, but may lack fixes and further improvements since its
   release)
 
@@ -84,17 +84,17 @@ with `#` will be ignored. A `\` at the beginning of the line escapes `@` and
 	thanks / questions?
 
 A deeper example can be found in [this
-file](http://git.suckless.org/sent/tree/example) from the repository root.
+file](//git.suckless.org/sent/tree/example) from the repository root.
 
 Development
 -----------
 
-You can [browse](http://git.suckless.org/sent) its source code repository
+You can [browse](//git.suckless.org/sent) its source code repository
 or get a copy using the following command:
 
-	git clone http://git.suckless.org/sent
+	git clone https://git.suckless.org/sent
 
 Download
 --------
 
-* [sent-0.2](http://dl.suckless.org/tools/sent-0.2.tar.gz) (20151125)
+* [sent-0.2](//dl.suckless.org/tools/sent-0.2.tar.gz) (20151125)

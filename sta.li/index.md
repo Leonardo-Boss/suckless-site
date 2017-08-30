@@ -3,22 +3,22 @@
 About
 =====
 stali is a brand new **sta**tic **li**nux distribution based on the original pre-2010
-plans of the [suckless.org](http://suckless.org) project, but with a couple of revised goals:
+plans of the [suckless.org](//suckless.org) project, but with a couple of revised goals:
 
 stali goals
 -----------
-* Follow the suckless [philosophy](http://suckless.org/philosophy)
+* Follow the suckless [philosophy](//suckless.org/philosophy)
 * Target x86\_64 and arm (RPi) support 
 * Use custom stali.mk Makefile's for the base system (except Linux kernel so far)
 * Ignore FHS of Linux, it simply sucks. Use a decent [filesystem](/filesystem) structure instead
-* Don't use systemd (read [more](http://uselessd.darknedgy.net/ProSystemdAntiSystemd/)  about why it [sucks](http://suckless.org/sucks/systemd))
+* Don't use systemd (read [more](http://uselessd.darknedgy.net/ProSystemdAntiSystemd/)  about why it [sucks](//suckless.org/sucks/systemd))
 * Make everything [musl libc](http://www.musl-libc.org/) based
 * Achieve binary size reduction (through the avoidance of glibc and other bloated GNU libraries)
 * Achieve better performance than any other x86\_64 or arm distribution, as only statically linked binaries are used
 * Achieve better memory footprint than heavyweight distros using dynamic linking and all its problems
 * Achieve better ABI stability and long-term maintenability of the static binaries (compared to their dynamic counterparts)
 * Minimize security threat vector - potential flaws only on a per static binary basis (say good bye to the famous LD\_PRELOAD and .so dependency resolver problems)
-* Include a hand selected collection of the best tools for each task (including [sbase](http://core.suckless.org/sbase), [ubase](http://core.suckless.org), ...)
+* Include a hand selected collection of the best tools for each task (including [sbase](//core.suckless.org/sbase), [ubase](//core.suckless.org), ...)
 * Upgrade/install using git, no package manager needed
 
 Source
@@ -32,7 +32,7 @@ Download
 
 Contributing
 ------------
-Join the [suckless community](http://suckless.org/community) to
+Join the [suckless community](//suckless.org/community) to
 discuss further development of stali.
 
 Some related links

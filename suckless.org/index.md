@@ -5,6 +5,21 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2017-08-30
+----------
+suckless.org now supports TLS using LetsEncrypt. Cloning git repos over
+HTTPS works now. Some links on the page have been changed to allow both
+HTTP and HTTPS.
+
+HSTS is not fully working yet. This will be fixed.
+
+The IPv6 AAAA record was added and IPv6 is fully working now.
+
+suckless has many subdomains, these should hopefully all work via TLS
+If you see a subdomain without a signed certificate please report it.
+If you find any broken links on the wiki pages, these can be fixed
+by anyone.
+
 2017-07-03
 ----------
 The suckless.org project is now hosted on a new server. All inactive accounts have been removed during the relocation.

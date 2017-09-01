@@ -52,3 +52,7 @@ hysteria
 --------
 [hysteria](http://git.2f30.org/hysteria/) is another set of scripts
 (mostly shell) which provide support for highlighting, autojoining, etc.
+
+lchat
+-----
+[lchat](https://github.com/younix/lchat) is a line oriented terminal font-end.

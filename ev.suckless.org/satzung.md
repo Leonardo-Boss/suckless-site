@@ -3,10 +3,9 @@ Satzung
 
 §1 — Name und Sitz
 ------------------
-(1) Der Verein führt den Namen "suckless.org". Er soll in das Vereinsregister
-eingetragen werden und danach den Namen "suckless.org e.V." führen.
+(1) Der Verein führt den Namen "suckless.org e.V."
 
-(2) Der Verein hat seinen Sitz in Landshut.
+(2) Der Verein hat seinen Sitz in München¹.
 
 §2 — Zweck
 -----------
@@ -46,18 +45,18 @@ Organe des Vereins sind Vorstand und Mitgliederversammlung.
 
 §7 — Vorstand
 -------------
-(1) Der Vorstand des Vereins besteht aus dem 1. Vorsitzenden, dem 2. Vorsitzenden
-und dem Schatzmeister. Der Verein wird gerichtlich und außergerichtlich durch
-den 1. und 2.  Vorsitzenden je allein vertreten.
+(1) Der Vorstand des Vereins besteht aus dem 1. Vorsitzenden, dem 2.
+Vorsitzenden und dem 3. Vorsitzenden. Der Verein wird gerichtlich und
+außergerichtlich durch den 1. oder 2. oder 3. Vorsitzenden je allein vertreten.
 
 §8 — Amtsdauer und Beschlussfassung des Vorstandes
 --------------------------------------------------
-Der Vorstand wird von der Mitgliederversammlung auf die Dauer von zwei Jahren,
+Der Vorstand wird von der Mitgliederversammlung auf die Dauer von drei Jahren,
 vom Tag der Wahl an gerechnet, gewählt. Der Vorstand bleibt jedoch auch
 nach Ablauf seiner Amtszeit bis zur Neuwahl des neuen Vorstandes im Amt.
-Der Vorstand fasst seine Beschlüsse in Vorstandssitzungen, die vom
-1. Vorsitzenden oder 2. Vorsitzenden schriftlich, telefonisch oder per E-Mail
-einberufen werden.
+Der Vorstand fasst seine Beschlüsse in Vorstandssitzungen, die vom 
+1. Vorsitzenden oder 2. Vorsitzenden oder 3. Vorsitzenden schriftlich,
+telefonisch oder per E-Mail einberufen werden.
 
 §9 — Mitgliederversammlung
 --------------------------
@@ -76,8 +75,9 @@ ungültige Stimmen bleiben außer Betracht.
 §10 — Beurkundung der Beschlüsse der Vereinsorgane
 --------------------------------------------------
 Über die Beschlüsse des Vorstandes und der Mitgliederversammlung ist eine
-Niederschrift aufzunehmen, die vom 1. Vorsitzenden oder dem 2. Vorsitzenden und
-einem von der Versammlung gewählten Protokollführer zu unterzeichnen ist.
+Niederschrift aufzunehmen, die vom 1. Vorsitzenden oder dem 2. Vorsitzenden
+oder dem 3. Vorsitzenden und einem von der Versammlung gewählten
+Protokollführer zu unterzeichnen ist.
 
 §11 — Auflösung
 ---------------
@@ -89,3 +89,7 @@ Verwertung des verbleibenden Vermögens.
 
 Vorstehende Satzung wurde am 30. Oktober 2015 errichtet.
 Sowie am 21. Dezember 2015 geändert.
+Sowie am 01. September 2017 geändert.
+
+
+¹ Der Vereinssitz wird von Landshut nach München verlegt.

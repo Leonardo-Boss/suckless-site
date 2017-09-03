@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+suckless hackathon
+------------------
+[suckless hackathon](/conferences/2017) We met at the suckless hackathon during Sep 1-3 in Würzburg, Germany.
+
 2017-09-04
 ----------
 [sent 1](//tools.suckless.org/sent) released: [download](//dl.suckless.org/tools/sent-1.tar.gz)
@@ -29,10 +33,6 @@ by anyone.
 The suckless.org project is now hosted on a new server. All inactive accounts have been removed during the relocation.
 
 Please note that the new ECDSA key fingerprint is SHA256:7DBXcYScmsxbv7rMJUJoJsY5peOrngD4QagiXX6MiQU.
-
-suckless hackathon
-------------------
-[suckless hackathon](/conferences/2017) Sep 1-3 in Würzburg, Germany.
 
 2017-05-06
 ----------

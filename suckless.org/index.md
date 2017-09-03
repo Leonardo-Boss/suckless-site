@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2017-09-04
+----------
+[sent 1](//tools.suckless.org/sent) released: [download](//dl.suckless.org/tools/sent-1.tar.gz)
+
 2017-08-30
 ----------
 suckless.org now supports TLS using LetsEncrypt. Cloning git repos over

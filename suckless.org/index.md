@@ -5,9 +5,9 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
-suckless hackathon
-------------------
-[suckless hackathon](/conferences/2017) We met at the suckless hackathon during Sep 1-3 in Würzburg, Germany.
+2017-09-04
+----------
+[suckless hackathon](/conferences/2017): we met from Sep 1-3 2017 in Würzburg, Germany.
 
 2017-09-04
 ----------

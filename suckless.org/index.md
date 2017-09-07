@@ -7,7 +7,7 @@ News
 
 2017-09-04
 ----------
-[suckless hackathon](/conferences/2017): we met from Sep 1-3 2017 in Würzburg, Germany.
+[suckless hackathon](/conferences/2017): we met on Sep 1-3 2017 in Würzburg, Germany.
 
 2017-09-04
 ----------

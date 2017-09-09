@@ -30,6 +30,7 @@ Resource Extension which is unsupported in vanilla Xlib.
 Download
 --------
 
+ * [dwm-swallow-20170909-ceac8c9.diff](dwm-swallow-20170909-ceac8c9.diff)
  * [dwm-swallow-6.1.diff](dwm-swallow-6.1.diff)
  * [dwm-swallow-20160717-56a31dc.diff](dwm-swallow-20160717-56a31dc.diff)
 

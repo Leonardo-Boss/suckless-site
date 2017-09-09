@@ -32,6 +32,8 @@ Description
 Download
 --------
 * [dwm-6.0-deck.diff](dwm-6.0-deck.diff)
+* [dwm-deck-20170909-ceac8c9.diff](dwm-deck-20170909-ceac8c9.diff)
+
 
 Author
 ------

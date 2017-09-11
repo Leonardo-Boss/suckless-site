@@ -107,7 +107,7 @@ Headers
 User Defined Types
 ------------------
 * Do not use `type_t` naming (it is reserved for POSIX and less readable)
-* Typedef structs
+* Typedef opaque structs
 * Do not typedef builtin types
 * Capitalize the type name
 * Typedef the type name, if possible without first naming the struct

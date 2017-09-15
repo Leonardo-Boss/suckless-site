@@ -34,6 +34,8 @@ the ones you think should be included in mainline.
 For patches that should be included in mainline see the
 [community](//suckless.org/community) page and the hackers@ mailing list.
 
+Please provide a clear concise "commit message" for your patches.
+
 You can use the following instructions to generate and apply patches posted on
 this wiki. On how to upload patches which fit your personal taste and you want
 to show the community, see the [wiki](//suckless.org/wiki) page on how to edit

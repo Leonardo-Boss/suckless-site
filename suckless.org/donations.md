@@ -64,7 +64,7 @@ in the past:
 * Darryl Jamieson donated <b>15 EUR</b>
 * Kay Smarczewski donated <b>25 EUR</b>
 * Sergey Matveev donated <b>40 EUR</b>
-* Hiltjo Posthuma donated <b>20 EUR</b>
+* Hiltjo Posthuma donated <b>40 EUR</b>
 * Pascal Wittmann donated <b>50 EUR</b>
 * Joshua Lawrence donated <b>30 USD</b>
 * James Erickson donated <b>10 USD</b>

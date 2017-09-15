@@ -33,7 +33,7 @@ in the past:
 * Mattias Andrée donated <b>50 EUR</b>
 * John Jago donated <b>18.08 EUR</b>
 * Anton Suneson donated <b>10 EUR</b>
-* Silvan Jegen donated <b>50 EUR</b>
+* Silvan Jegen donated <b>125 EUR</b>
 * Paul Bains donated <b>46,06 EUR</b>
 * Antipenko Iven donated <b>305.95 RUB</b>
 * Travis Witt donated <b>15.00 USD</b>
@@ -53,7 +53,6 @@ in the past:
 * Ashley Kesling donated <b>10 USD</b>
 * Patrick Bucher donated <b>50 CHF</b>
 * Raphael Proust donated <b>50 GBP</b>
-* Silvan Jegen donated <b>75 EUR</b>
 * Sebastian Lacombe donated <b>25 CAD</b>
 * Robert Halbert donated <b>5 GBP</b>
 * Gordon Celesta donated <b>25 CAD</b>
@@ -72,14 +71,12 @@ in the past:
 * Xavier Cartron donated <b>35 EUR</b>
 * Jason Thigpen donated a slicehost server, which hosted the source code and the tarballs from 2007-2010 of our projects.
 * Donald Allen donated <b>50 USD</b>
-* Markus Schnalke donated <b>10 EUR</b>
+* Markus Schnalke donated <b>40 EUR</b>
 * John V. Turek donated <b>10 EUR</b>
 * Filippo Negroni donated <b>10 GBP</b>
-* Markus Schnalke donated <b>10 EUR</b>
 * Jason Ryan donated <b>30 EUR</b>
 * Sebastian Noack donated <b>50 EUR</b>
 * Jason Thigpen donated <b>100 USD</b>
-* Markus Schnalke donated <b>20 EUR</b>
 * Enno 'Gottox' Boland donated <b>50 EUR</b>
 * Ivan F. Villanueva B. donated <b>20 EUR</b>
 * Alexandre Dulaunoy donated <b>100 EUR</b>

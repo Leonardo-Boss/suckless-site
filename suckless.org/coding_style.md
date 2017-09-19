@@ -7,7 +7,7 @@ Recommended Reading
 The following contain good information, some of which is repeated below, some of which is contradicted below.
 
 * <http://doc.cat-v.org/bell_labs/pikestyle>
-* <https://www.kernel.org/doc/Documentation/CodingStyle>
+* <https://www.kernel.org/doc/Documentation/process/coding-style.rst>
 * <http://man.openbsd.org/style>
 
 File Layout

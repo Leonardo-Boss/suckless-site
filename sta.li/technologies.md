@@ -23,7 +23,7 @@ Software that stali might adopt
 * dyndns
 	* [tinydyndns](http://smarden.org/tinydyndns/)
 * dhcp
-	* [sdhcp](http://galos.no-ip.org/sdhcp)
+	* [sdhcp](https://core.suckless.org/sdhcp)
 * shell
 	* [loksh](https://github.com/dimkr/loksh)
 	* [mksh](https://www.mirbsd.org/mksh.htm)

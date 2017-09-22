@@ -62,6 +62,6 @@ Related links
 * [Why should I have written ZeroMQ in C, not C++](http://www.250bpm.com/blog:4)
 * [Best practices in application architecture: Use layers to decouple](http://geekandpoke.typepad.com/.a/6a00d8341d3df553ef014e5f920093970c-pi)
 * [Facebook's code quality problem](http://www.darkcoding.net/software/facebooks-code-quality-problem/)
-* [Minimal Viable Programs](http://joearms.github.io/2014/06/25/minimal-viable-program.html)
+* [Minimal Viable Programs](http://joearms.github.io/published/2014-06-25-minimal-viable-program.html)
 * [Why I Write Games in C](http://jonathanwhiting.com/writing/blog/games_in_c/)
 * [Use of command-line tools for effective data processing](http://aadrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html)

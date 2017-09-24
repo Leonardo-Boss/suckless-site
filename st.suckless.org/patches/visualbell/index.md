@@ -17,9 +17,11 @@ Download
 --------
 
  * [st-visualbell-20160727-308bfbf.diff](st-visualbell-20160727-308bfbf.diff)
+ * [st-visualbell-20170924-b1338e9.diff](st-visualbell-20170924-b1338e9.diff)
 
 Authors
 -------
 
  * Matthias Schoth - <mschoth@gmail.com>
  * Laslo Hunhold - <dev@frign.de> (git port)
+ * Alexis Ben Miloud--Josselin - <alexis.bmj@protonmail.com> (update)

@@ -19,6 +19,7 @@ Download
 * [st-clipboard-0.7.diff](st-clipboard-0.7.diff)
 * [st-clipboard-20160727-308bfbf.diff](st-clipboard-20160727-308bfbf.diff)
 * [st-clipboard-20170802-e2ee5ee.diff](st-clipboard-20170802-e2ee5ee.diff)
+* [st-clipboard-20170925-b1338e9.diff](st-clipboard-20170925-b1338e9.diff)
 
 Authors
 -------

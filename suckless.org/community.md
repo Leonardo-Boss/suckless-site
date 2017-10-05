@@ -128,7 +128,7 @@ Other popular channels:
 
 * [#cat-v](irc://irc.freenode.net/#cat-v)
 * [#plan9](irc://irc.freenode.net/#plan9)
-* [#2f30](irc://irc.freenode.net/#2f30)
+* [#2f30](irc://irc.2f30.org/#2f30)
 
 
 [devarchive]: //lists.suckless.org/dev/

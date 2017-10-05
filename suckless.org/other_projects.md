@@ -21,7 +21,7 @@ There are several other projects which are inspired by the spirit of suckless.
 * [pcw](https://bitbucket.org/emg/pcw) - popup chat windows (ii front end)
 * [ptar](https://github.com/joodan-van-github/ptar) - plain-text archives: like tar, but better
 * [sat](https://github.com/maandree/sat) - simple incompatible alternative to at
-* [sdhcp](http://git.2f30.org/sdhcp) - tiny dhcp client
+* [sdhcp](https://git.2f30.org/sdhcp) - tiny dhcp client
 * [sj](https://github.com/younix/sj) - simple jabber: modular FIFO-based XMPP client
 * [slpm](https://github.com/radare/slpm) - suckless package manager
 * [sltar](https://github.com/Gottox/sltar) - suckless tar

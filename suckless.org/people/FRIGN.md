@@ -6,4 +6,4 @@ work on the [suckless core](//core.suckless.org/), foremost
 [sbase](//core.suckless.org/sbase) and
 [ubase](//core.suckless.org/ubase).
 
-Some of my projects are hosted at [2f30](http://git.2f30.org).
+Some of my projects are hosted at [2f30](https://git.2f30.org).

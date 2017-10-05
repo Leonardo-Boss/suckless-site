@@ -33,10 +33,10 @@ Miscellaneous
 * [ccv](https://github.com/liuliu/ccv) - C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library
 * [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modeled after libevent but much smaller (dual licensed under 2-clause BSD and GPL)
 * [mdocml](http://mdocml.bsd.lv/) - The mandoc UNIX manpage compiler toolset
-* [morpheus](http://morpheus.2f30.org) - a statically linked musl based Linux distro
+* [morpheus](https://morpheus.2f30.org) - a statically linked musl based Linux distro
 * [bare](https://git.uggedal.com/unmaintained/bare/) - simple distro using suckless software
 * [pjsip](http://www.pjsip.org/) - open source SIP stack (GPL)
-* [sdhcp](http://git.2f30.org/sdhcp/) - IPV4 DHCP client
+* [sdhcp](https://git.2f30.org/sdhcp/) - IPV4 DHCP client
 * [termbox](https://github.com/nsf/termbox) - simple ncurses-like library for creating TUIs
 
 Programs
@@ -73,7 +73,7 @@ Feed aggregators
 
 File browsers
 -------------
-* [noice](http://git.2f30.org/noice/) - Small and portable file browser
+* [noice](https://git.2f30.org/noice/) - Small and portable file browser
 * [rover](https://github.com/lecram/rover) - Simple file browser for the terminal
 
 File managers
@@ -107,7 +107,7 @@ Image Viewers
 * [sxiv](https://github.com/muennich/sxiv) - Simple (or small or suckless) X Image Viewer. Depends on xlib and imlib2.
 * [xli](http://web.aanet.com.au/gwg/xli.html)
 * [xzgv](http://sourceforge.net/projects/xzgv/)
-* [lel](http://git.2f30.org/lel/) - Suckless imagefile viewer (WIP)
+* [lel](https://git.2f30.org/lel/) - Suckless imagefile viewer (WIP)
 * [imv](https://github.com/exec64/imv) - Simple X11/Wayland Image Viewer. Depends on SDL2 and FreeImage.
 
 Instant Messaging Clients
@@ -238,4 +238,4 @@ Gopher Servers
 
 Misc Daemons
 ------------
-* [scron](http://git.2f30.org/scron/) - simple crond.
+* [scron](https://git.2f30.org/scron/) - simple crond.

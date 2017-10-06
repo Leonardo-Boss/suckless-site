@@ -18,7 +18,7 @@ libc implementations
 Compression
 -----------
 * [liblzf](http://oldhome.schmorp.de/marc/liblzf.html) - very fast, legally unencumbered compression library (dual licensed: 2-clause BSD or GPL License)
-* [miniz](https://github.com/richgel999/miniz) - single C-file reimplementation of zlib, public domain.
+* [miniz](https://github.com/richgel999/miniz) - single C-file reimplementation of zlib (MIT License).
 * [xz embedded](http://tukaani.org/xz/embedded.html) - lightweight decompressor for the xz LZMA compressor (public domain)
 * [Lzip](http://lzip.nongnu.org) - Properly designed data compressor outperforming gzip and bzip2 (GPLv2+)
 * [zlib](http://zlib.net/) - the "standard" compression/decompression library, quite small, used in many applications ([zlib license](http://zlib.net/zlib_license.html))

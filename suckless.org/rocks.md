@@ -231,6 +231,7 @@ Web Servers
 * [darkhttpd](https://unix4lyfe.org/darkhttpd/) - Darkhttpd is a simple, fast HTTP 1.1 web server for static content.
 * [quark](//git.suckless.org/quark/) - suckless httpd, not released yet
 * [shus](https://github.com/dimkr/shus) - A tiny HTTP server for static sites
+* [OpenBSD httpd/relayd](https://bsd.plumbing/about.html) - Designed to combat the feature creep of modern webservers. Boasts extremely concise configuration, with sane default behavior.
 
 Gopher Servers
 --------------

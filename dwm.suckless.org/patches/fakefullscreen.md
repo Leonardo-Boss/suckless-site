@@ -14,4 +14,4 @@ Download
 Author
 ------
 
-* Jan Hendrik Farr - <janhendrik.farr@gmail.com>
+* Jan Hendrik Farr - <farrjanhendrik@aol.de>

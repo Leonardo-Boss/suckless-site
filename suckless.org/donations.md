@@ -30,6 +30,10 @@ Following people have donated to the suckless.org project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
+* Ville Johan Witt <b>512 DKK</b>
+* Anonymous <b>10 EUR</b>
+* Lars Petter Mathiassen <b>1,000.00 EUR</b>
+* Hiltjo Posthuma donated <b>20 EUR</b>
 * Mattias Andrée donated <b>50 EUR</b>
 * John Jago donated <b>18.08 EUR</b>
 * Anton Suneson donated <b>10 EUR</b>

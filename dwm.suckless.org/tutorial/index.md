@@ -117,6 +117,6 @@ Using the tools of X.org, this can be set using:
 
 There are various tools and methods to populate this text with useful
 information from your system or services running on your system. A barebone for
-doing this in C is [dwmstatus](//dwm.suckless.org/dwmstatus/).  See the
-[xinitrc](//dwm.suckless.org/xinitrc.example) example for how to do it
+doing this in C is [dwmstatus](../dwmstatus/).  See the
+[xinitrc](xinitrc.example) example for how to do it
 using a script.

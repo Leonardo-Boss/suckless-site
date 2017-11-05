@@ -1,3 +1,0 @@
-Once you finish a new version of a patch, please move the older patch into the
-historical directory and update the links to link inside historical, in order
-to keep the patches directory free from clutter.

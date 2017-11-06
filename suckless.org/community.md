@@ -5,7 +5,7 @@ Mailing lists
 -------------
 
 * `dev@suckless.org` - for dwm/dmenu/st/... users, development discussion, bug reports and general discussion
-* `hackers@suckless.org` - for patches and patch discussion. Commit messages and diffs from all suckless projects are posted here and can be replied to.
+* `hackers@suckless.org` - for patches and patch discussion. Commit messages and diffs from all suckless projects are posted here and can be replied to. [//suckless.org/hacking](See patch/hacking guidelines here).
 * `news@suckless.org` - for release and other news. Please send release news to dev@ too.
 * `wiki@suckless.org` - for discussion about the wiki, also automatic wiki commit messages are posted here.
 
@@ -20,9 +20,12 @@ Here is an example:
 
 	Subject: [st] X not working
 
+	When sending patches use the following form:
 
-If you are not referring to any project of course use whatever subject you
-like.
+	Subject: [st][patch] subject here
+
+
+In both cases describe the problem or the fix clearly.
 
 
 ### Mailing list commands

@@ -1,6 +1,11 @@
 Hacking
 =======
 
+Copying/license
+---------------
+We only accept contributions from individuals, not corporate entities. See
+the project LICENSE file you're contributing to.
+
 Debugging
 ---------
 If you find any crashes, please send a full backtrace to the dedicated mailing list.
@@ -50,7 +55,7 @@ For git revisions:
     toolname-patchname-YYYYMMDD-SHORTHASH.diff
     dwm-allyourbase-20160617-3465bed.diff
 
-The YYYYMMDD date should correspond to the last time the patch has been modified.  
+The YYYYMMDD date should correspond to the last time the patch has been modified.
 The SHORTHASH here is the seven chars git commit short hash corresponding to the
 last commit of the tool on which the patch can be applied correctly and
 is working with.
@@ -70,7 +75,9 @@ diff generation
 For git users:
 
     cd program-directory
-    git diff > toolname-patchname-YYYYMMDD-SHORTHASH.diff
+    git add filechanges...
+    git commit (write a clear patch description)
+    git format-patch --stdout HEAD^ > toolname-patchname-YYYYMMDD-SHORTHASH.patch
 
 For tarballs:
 
@@ -84,6 +91,11 @@ For git users, use -3 to fix the conflict easily:
 
     cd program-directory
     git apply path/to/patch.diff
+
+For patches formatted with git format-patch:
+
+    cd program-directory
+    git am path/to/patch.patch
 
 For tarballs:
 

@@ -157,13 +157,14 @@ Text Editors
 ------------
 * [acme][acme] - Rob Pike's framing text editor for Plan 9. Included in [plan9port][].
 * [ired](http://www.radare.org/y/) (Minimalist hexadecimal editor and bindiffer for p9, w32 and *nix)
+* [mg](https://homepage.boetes.org/software/mg/) (portable version of mg maintained by the OpenBSD team)
+* [nano](https://www.nano-editor.org/) - A pico clone - this is small simple code and easy to use.
 * [nvi](https://sites.google.com/a/bostic.com/keithbostic/vi) - A small, multiple file vi-alike.
 * [sam](http://sam.cat-v.org/) - An editor by Rob Pike with inspiration from ed.
 * [traditional vi](http://ex-vi.sourceforge.net/) - A fixed version of the original vi.
 * [vim](http://www.vim.org) (With the GUI, use `:set go+=c` to kill popup dialogs)
 * [vis](https://github.com/martanne/vis) - A modern, legacy free, simple yet efficient vim-like editor.
 * [wily](http://www.cse.yorku.ca/~oz/wily/) - An acme clone for POSIX.
-* [nano](https://www.nano-editor.org/) - A pico clone - this is small simple code and easy to use.
 * [ed](http://swtch.com/plan9port/man/man1/ed.html) - [ED IS THE STANDARD TEXT EDITOR!](http://www.gnu.org/fun/jokes/ed-msg.html)
 
 Utilities
@@ -200,11 +201,11 @@ Web Browsers
 
 X11
 ---
+* [xclip](http://sourceforge.net/projects/xclip/) – A tool for controlling the
+  X11 clipboard.
 * [xdotool](http://www.semicomplete.com/projects/xdotool/) – A tool for
   scripting X11 actions.
 * [xzoom](http://git.r-36.net/xzoom/) – A simple zoom application.
-* [xclip](http://sourceforge.net/projects/xclip/) – A tool for controlling the
-  X11 clipboard.
 * [keynav](http://www.semicomplete.com/projects/keynav/) – A new way for
   keyboard selection.
 * [ffcast](https://github.com/lolilolicon/FFcast2) – Simple screencasting.

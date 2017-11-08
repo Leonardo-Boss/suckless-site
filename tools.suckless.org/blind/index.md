@@ -18,7 +18,7 @@ independently encoded, and are encoded unscaled CIE XYZ
 with non-premultiplied alpha and without any
 transfer-function, with values stored in native `double`s
 or optionally in native `float`s. These two configurations
-are the only options, but but the container format is
+are the only options, but the container format is
 designed so this can be changed arbitrarily in the future.
 
 FAQ

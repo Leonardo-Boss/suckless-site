@@ -6,7 +6,7 @@ This patch enables colored text in the status bar.  It changes the way colors ar
 
 ## Configuration ##
 
-Download the patch and apply it according to the [general instructions](.).
+Download the patch and apply it according to the [general instructions](../).
 
 Modify the colors definition in 'config.h' to suit your needs.  Make sure to define at least 3 colors as they will be used for 'normal', 'selected', and 'urgent' windows, respectively.
 
@@ -29,7 +29,7 @@ The following definition in 'config.h':
     };
 
 Coupled with a matching status script produces the following:
-  ![Example Colored Status Text](dwm-5.7.2-statuscolors.png)
+  ![Example Colored Status Text](statuscolors.png)
 
 A really silly example:
 

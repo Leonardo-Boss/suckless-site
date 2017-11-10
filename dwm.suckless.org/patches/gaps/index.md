@@ -11,7 +11,7 @@ client and the screen frame in order to reduce the waste of screen space.
 
 To configure the gap size just set the configuration variable `gappx`.
 
-There is a variation of the patch for the [xtile](xtile) layout also.
+There is a variation of the patch for the [xtile](../xtile/) layout also.
 
 Download
 --------

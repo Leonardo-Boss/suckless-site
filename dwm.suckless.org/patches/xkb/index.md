@@ -8,7 +8,7 @@ client's xkb status and restores it when client became focused.
 Applying
 --------
 Firstly you have to configure xkb as you need as described 
-[here](http://www.x.org/archive/X11R7.5/doc/input/XKB-Config.html).
+[here](https://www.x.org/archive/X11R7.5/doc/input/XKB-Config.html).
 The patch depends on two variables:
 
  * `showxkb` flag defines, should patch show current xkb group on 

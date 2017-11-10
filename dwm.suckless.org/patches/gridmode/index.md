@@ -9,9 +9,9 @@ tools that operate on multiple windows at once; e.g. Cluster SSH.
 
 Download
 --------
-* [dwm-gridmode-20170909-ceac8c9.diff](dwm-grid-20170909-ceac8c9.diff)
+* [dwm-gridmode-20170909-ceac8c9.diff](dwm-gridmode-20170909-ceac8c9.diff)
 * [dwm-gridmode-5.8.2.diff](dwm-gridmode-5.8.2.diff)
-* See older versions in [historical](historical/gridmode).
+* See older versions in [historical](../historical/gridmode/).
 
 Authors
 -------

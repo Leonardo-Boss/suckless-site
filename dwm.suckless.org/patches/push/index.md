@@ -5,7 +5,7 @@
 `pushup` and `pushdown` provide a way to move clients inside the clients list.
 
 	#include "push.c"
-	
+
 	static Key keys[] = {
 		...
 		{ MODKEY|ControlMask,           XK_j,      pushdown,       {0} },
@@ -24,7 +24,7 @@ Patches against different versions of dwm are available at
  * [dwm-6.1-push_no_master.diff](dwm-6.1-push_no_master.diff) - 2015/11/21
 
 ## Note
-This patch seems to be equivalent to the [movestack](movestack) patch.
+This patch seems to be equivalent to the [movestack](../movestack/) patch.
 
 ## Author
  * Unknown?

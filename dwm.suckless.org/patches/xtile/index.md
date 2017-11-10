@@ -145,18 +145,18 @@ Other patches
 
 Recommended complementary patches:
 
-* [gaps](gaps): to add mostly useless gaps that nevertheless make more apparent which
+* [gaps](../gaps/): to add mostly useless gaps that nevertheless make more apparent which
   client has the focus.
 
-* [stacker](stacker): to better accommodate the clients to the more elaborate layouts
+* [stacker](../stacker/): to better accommodate the clients to the more elaborate layouts
   allowed by xtile. But I would add: subject to the caveats that I've expressed above.
 
 Mandatory dependencies:
 
-* [pertag](pertag): we all know this one.
+* [pertag](../pertag/): we all know this one.
 
-Related patches: [bottom stack](bottomstack), [flextile](flextile), cfacts,
-[stackmfact](stackmfact).
+Related patches: [bottom stack](../bottomstack/), [flextile](../flextile/), cfacts,
+[stackmfact](../stackmfact/).
 
 Download
 --------

@@ -16,7 +16,5 @@
  * Wolfgang S. - ezzieyguywuf at gmail . com (added 6aa8e37 patch fix)
  * Markus P. - peters_mops at arcor . de
  * Eric Pruitt - added option to disable focus changing with the scroll wheel
- * [Alessandro Di Martino][1] - Maintainer of the 6.0 version.
+ * [Alessandro Di Martino][http://alessandrodimartino.com/] - Maintainer of the 6.0 version.
  * Markus Teich - Update and fix
-
-[1]: http://www.alessandrodimartino.com

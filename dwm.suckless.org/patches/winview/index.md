@@ -14,8 +14,8 @@ selects the window (`Mod1-j`/`k` or using the mouse) and press `Mod1-o`. The key
 Recommend patches
 -----------------
 
-The [grid](gridmode) layout is well adapted to display many windows in a limited
-space. Using both [grid](gridmode) and [pertag](pertag) patches you will be able to
+The [grid](../gridmode/) layout is well adapted to display many windows in a limited
+space. Using both [grid](../gridmode/) and [pertag](../pertag/) patches you will be able to
 select this layout for the all-window view while keeping your preferred
 layout for the other views.
 

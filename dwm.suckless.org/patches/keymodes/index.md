@@ -12,12 +12,12 @@ With key modes you can use any key binding for window management without risking
 There are two different patches:
 
  * keymodes: the minimal patch
- * vim-keymodes: This patch tries to emulate the key bindings of Vim. Therefor it includes additional functions, which depend on the [flextile patch](flextile).
+ * vim-keymodes: This patch tries to emulate the key bindings of Vim. Therefor it includes additional functions, which depend on the [flextile patch](../flextile/).
 
 
 ## Configuration ##
 
- (1) Download the favoured patch and apply it according to the [general instructions](.). If you choose vim-keymodes you will have to apply the [flextile patch](./flextile) first.
+ (1) Download the favoured patch and apply it according to the [general instructions](.). If you choose vim-keymodes you will have to apply the [flextile patch](../flextile/) first.
 
  (2) Transfer the changes made by the patch in `config.def.h` to your `config.h`, if needed; please see the patch file for details.
 

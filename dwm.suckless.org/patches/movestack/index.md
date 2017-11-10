@@ -9,7 +9,7 @@ movestack(-1) will swap the client with the current focus with the previous clie
 
 ## Usage
 
- 1. Download the patch and apply according to the [general instructions](.).
+ 1. Download the patch and apply according to the [general instructions](../).
  2. Include the `movestack.c` source file and add keys that call movestack.
     Example from `config.default.h`:
 
@@ -36,4 +36,4 @@ movestack(-1) will swap the client with the current focus with the previous clie
 
 ## Note
 
-This patch seems to be equivalent to the [push](push) patch.
+This patch seems to be equivalent to the [push](../push/) patch.

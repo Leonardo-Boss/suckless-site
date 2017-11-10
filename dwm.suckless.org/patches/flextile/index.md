@@ -22,7 +22,7 @@ The patch incorporates and expands the following patches:
 
 ## Configuration ##
 
- (1) Download the patch and apply it according to the [general instructions](.).
+ (1) Download the patch and apply it according to the [general instructions](../).
 
  (2) Transfer the changes made by the patch in `config.def.h` to your `config.h`, if needed.
 
@@ -47,8 +47,8 @@ The patch incorporates and expands the following patches:
          { MODKEY|ControlMask,           XK_Return, mirrorlayout,     {0} },
          { MODKEY|ControlMask,           XK_j,      shiftmastersplit, {.i = -1} },   /* reduce the number of tiled clients in the master area */
          { MODKEY|ControlMask,           XK_k,      shiftmastersplit, {.i = +1} },   /* increase the number of tiled clients in the master area */
- 
- 
+
+
 ## Usage ##
 
 With the default configuration (see above) the original tile layout is emulated. You can change the layout by adjusting the four parameters `layout axis`, `master axis`, `stack axis` and `master split` (description see above) by pressing the appropriate keys.
@@ -57,12 +57,8 @@ The original `tile` layout is only available by setting the above parameters, bu
 
 ## Download ##
 
- * [dwm-flextile-5.8.2.diff][5.8.2]
- * [dwm-flextile-5.8.1.diff][5.8.1]
-
-
-[5.8.2]: dwm-flextile-5.8.2.diff
-[5.8.1]: historical/dwm-flextile-5.8.1.diff
+ * [dwm-flextile-5.8.2.diff][dwm-flextile-5.8.2.diff]
+ * [dwm-flextile-5.8.1.diff][dwm-flextile-5.8.1.diff]
 
 ## Authors ##
 

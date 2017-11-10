@@ -40,15 +40,15 @@ The figures show how tiling will work when the patch is applied.
 ## Example
 
 	static const int nmaster = 2;  /* default number of clients in the master area */
-	
+
 	#include "nmaster.c"
-	
+
 	static const Layout layouts[] = {
 		/* symbol     arrange function */
 		{ "-|=",      ntile },
 		{ "-|-",      nbstack },
 	...
-	
+
 	static Key keys[] = {
 		/* modifier                     key        function        argument */
 		{ MODKEY,                       XK_a,      incnmaster,     {.i = +1 } },
@@ -63,4 +63,4 @@ The figures show how tiling will work when the patch is applied.
 * [nmaster-ncol.c](nmaster-ncol.c) (dwm 5.9) (20101210) - additional ncol layout (multiple masters side by side)
 * [nmaster-sym.c](nmaster-sym.c) (dwm 5.7.1) (20090927) - layout symbol shows the number of masters: `n]=`, `TnT`
 * [nmaster.c](nmaster.c) (dwm 5.6.1) (20090908)
-* see older versions in [historical patches](historical)
+* see older versions in [historical patches](../historical/)

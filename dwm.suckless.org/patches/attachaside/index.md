@@ -6,7 +6,7 @@ Description
 
 Make new clients get attached and focused in the stacking
 area instead of always becoming the new master. It's basically an
-[attachabove](attachabove) modification.
+[attachabove](../attachabove/) modification.
 
 	Original behaviour :
 	+-----------------+-------+

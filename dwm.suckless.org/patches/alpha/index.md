@@ -7,7 +7,7 @@ Description
 -----------
 
 Allow dwm to have translucent bars, while keeping all the text on it opaque,
-just like the [alpha-patch for st](//st.suckless.org/patches/alpha).
+just like the [alpha-patch for st](//st.suckless.org/patches/alpha/).
 
 
 Download

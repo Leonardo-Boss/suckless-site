@@ -121,7 +121,7 @@ this. There are good tools for editing audio, and
 ffmpeg can be used be used to extract the audio streams
 from a video or add it to a video.
 
-### Is it really feasible to exit video without a GUI?
+### Is it really feasible to edit video without a GUI?
 
 Depends on what you are doing. Many things can be done
 without a going, and some thing are easier to do without

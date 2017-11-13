@@ -31,7 +31,7 @@ Development
 You can [browse](//git.suckless.org/farbfeld) its source code repository
 or get a copy using the following command:
 
-        git clone https://git.suckless.org/farbfeld
+        git clone git://git.suckless.org/farbfeld
 
 Download
 --------
@@ -45,10 +45,12 @@ provide packages:
 
 * [Alpine Linux](https://pkgs.alpinelinux.org/package/edge/testing/x86_64/farbfeld)
 * [Arch Linux (AUR)](https://aur.archlinux.org/packages/farbfeld)
-* [Debian](https://packages.debian.org/unstable/farbfeld)
+* [Debian](https://packages.debian.org/farbfeld)
 * [FreeBSD](https://svnweb.freebsd.org/ports/head/graphics/farbfeld/)
 * [Gentoo](https://packages.gentoo.org/packages/media-gfx/farbfeld)
 * [NixOS](https://github.com/NixOS/nixpkgs/tree/master/pkgs/development/libraries/farbfeld)
+* [OpenBSD](http://ports.su/graphics/farbfeld)
+* [Ubuntu](https://packages.ubuntu.com/farbfeld)
 * [Void Linux](https://github.com/voidlinux/void-packages/tree/master/srcpkgs/farbfeld)
 
 Implementations

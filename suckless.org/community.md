@@ -24,8 +24,10 @@ Here is an example:
 
 	Subject: [st][patch] subject here
 
-
 In both cases describe the problem or the fix clearly.
+
+* Don't use HTML mail: use plain-text UTF8.
+* Don't top-post: bottom-post.
 
 
 ### Mailing list commands

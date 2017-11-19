@@ -1,7 +1,7 @@
 Impressum
 =========
-Verantwortlich für diese Seiten gemäß §10 MDStV ist der suckless.org e.V. mit Sitz in Landshut¹, Deutschland.
-Der suckless.org e.V. wurde im Vereinsregister vom Registergericht des Amtsgericht Landshut unter der VR-Nr. 200753 eingetragen.
+Verantwortlich für diese Seiten gemäß §10 MDStV ist der suckless.org e.V. mit Sitz in München, Deutschland.
+Der suckless.org e.V. wurde im Vereinsregister der Stadt München mit der VR-Nr. 207405 eingetragen.
 
 Anschrift
 ---------
@@ -15,5 +15,3 @@ E-Mail
 ------
 * Vorstand (Chairs): <chairs@suckless.org>
 
-
-¹Der Vereinssitz wird aktuell nach München verlegt.

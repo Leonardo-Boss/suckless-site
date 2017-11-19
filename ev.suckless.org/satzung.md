@@ -5,7 +5,7 @@ Satzung
 ------------------
 (1) Der Verein führt den Namen "suckless.org e.V."
 
-(2) Der Verein hat seinen Sitz in München¹.
+(2) Der Verein hat seinen Sitz in München.
 
 §2 — Zweck
 -----------
@@ -91,5 +91,3 @@ Vorstehende Satzung wurde am 30. Oktober 2015 errichtet.
 Sowie am 21. Dezember 2015 geändert.
 Sowie am 01. September 2017 geändert.
 
-
-¹ Der Vereinssitz wird von Landshut nach München verlegt.

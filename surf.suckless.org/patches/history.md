@@ -11,9 +11,9 @@ add the following:
 
 Here are some ways of using it.
 
-(1) Write a small shell script.
+(1) Write a small shell script (dmenu.uri.sh)
 
-	cat ~/.surf/history | sort -ru | dmenu -l 10 -b -i | xprop -id `cat ~/.surf/id` -f SURF_URI 8s -set _SURF_URI
+	tac ~/.surf/history | dmenu -l 10 -b -i | cut -d ' ' -f 3
 
 (2) Modify config.h and add the following.
 
@@ -24,7 +24,7 @@ Here are some ways of using it.
 
 and in static Key keys[] add:
 
-	{ MODKEY,               GDK_Return, spawn,      SETURI("_SURF_URI") },
+	{ MODKEY,               GDK_Return, spawn,      SETURI("_SURF_GO") },
 
 Here are some tips on using it.
 
@@ -49,6 +49,7 @@ Download
 * [surf-0.3-history.diff](surf-0.3-history.diff) (1475) (20091203)
 * [surf-tip-history.diff](surf-tip-history.diff) (2952) (20091215)
 * [surf-0.4.1-history.diff](surf-0.4.1-history.diff) (1346) (20101225)
+* [surf-history-2.0.diff](surf-history-2.0.diff) (3405) (20171126)
 
 Authors
 -------
@@ -56,3 +57,4 @@ Authors
 * Jason Thigpen (cdarwin) <[darwin@senet.us](mailto:darwin@senet.us)>
 * Peter John Hartman (wart_) <[http://durandus.trilidun.org/durandus/](http://durandus.trilidun.org/durandus/)>
 * Samuel Baldwin (shardz) <[recursive.forest@gmail.com](mailto:recursive.forest@gmail.com)>
+* Marcin sZpak <[szpak@reakcja.org](mailto:szpak@reakcja.org)>

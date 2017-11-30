@@ -15,6 +15,10 @@ libc implementations
 * [uClibc](http://www.uclibc.org/) - strives to be a minimalist C library suitable for embedded computing
 * See also: [embedded libc comparison](http://www.etalabs.net/compare_libcs.html)
 
+Compilers
+---------
+* [tcc](https://bellard.org/tcc/) - Tiny C Compiler [git repo](http://repo.or.cz/w/tinycc.git)
+
 Compression
 -----------
 * [liblzf](http://oldhome.schmorp.de/marc/liblzf.html) - very fast, legally unencumbered compression library (dual licensed: 2-clause BSD or GPL License)

@@ -12,6 +12,7 @@ Download
 --------
 * [dmenu-xyw-4.6.diff](dmenu-xyw-4.6.diff)
 * [dmenu-xyw-20160903-026827f.diff](dmenu-xyw-20160903-026827f.diff)
+* [dmenu-xyw-20171207-f0a5b75.diff](dmenu-xyw-20171207-f0a5b75.diff)
 
 Author
 ------

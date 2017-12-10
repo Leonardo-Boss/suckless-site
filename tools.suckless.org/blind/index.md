@@ -188,6 +188,12 @@ Dependencies
 
 * [imagemagick](https://www.imagemagick.org/) - for converting regular images to frames.
 
+Links
+-----
+
+* [Video tutorials](https://www.youtube.com/channel/UCg_nJOURt3guLtp4dQLIvQw)
+
+
 Author
 ------
 

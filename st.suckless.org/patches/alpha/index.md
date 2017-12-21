@@ -26,6 +26,7 @@ Download
  * [st-alpha-0.7.diff](st-alpha-0.7.diff)
  * [st-alpha-20160727-308bfbf.diff](st-alpha-20160727-308bfbf.diff)
  * [st-alpha-20170509-5a10aca.diff](st-alpha-20170509-5a10aca.diff)
+ * [st-alpha-20171221-0ac685f.diff](st-alpha-20171221-0ac685f.diff)
 
 Authors
 -------

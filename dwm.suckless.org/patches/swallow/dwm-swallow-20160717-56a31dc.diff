@@ -115,7 +115,7 @@ index b2bc9bd..528df2f 100644
  			c->isfloating = r->isfloating;
  			c->tags |= r->tags;
  			for (m = mons; m && m->num != r->monitor; m = m->next);
-@@ -415,6 +429,46 @@ attachstack(Client *c)
+@@ -415,6 +429,47 @@ attachstack(Client *c)
  }
  
  void
@@ -138,6 +138,7 @@ index b2bc9bd..528df2f 100644
 +	c->win = w;
 +	updatetitle(p);
 +	arrange(p->mon);
++	XMoveResizeWindow(dpy, p->win, p->x, p->y, p->w, p->h);
 +	configure(p);
 +	updateclientlist();
 +}

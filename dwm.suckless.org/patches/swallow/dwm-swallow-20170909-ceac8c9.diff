@@ -6,8 +6,8 @@ Subject: [PATCH] Apply swallow patch.
 ---
  config.def.h |   7 ++-
  config.mk    |   2 +-
- dwm.c        | 189 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++--
- 3 files changed, 189 insertions(+), 9 deletions(-)
+ dwm.c        | 190 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ 3 files changed, 190 insertions(+), 9 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
 index a9ac303..2d26a23 100644
@@ -106,7 +106,7 @@ index a5ce993..20b635b 100644
  			c->isfloating = r->isfloating;
  			c->tags |= r->tags;
  			for (m = mons; m && m->num != r->monitor; m = m->next);
-@@ -414,6 +430,46 @@ attachstack(Client *c)
+@@ -414,6 +430,47 @@ attachstack(Client *c)
  	c->mon->stack = c;
  }
  
@@ -130,6 +130,7 @@ index a5ce993..20b635b 100644
 +	c->win = w;
 +	updatetitle(p);
 +	arrange(p->mon);
++	XMoveResizeWindow(dpy, p->win, p->x, p->y, p->w, p->h);
 +	configure(p);
 +	updateclientlist();
 +}

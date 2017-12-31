@@ -195,11 +195,12 @@ Web Browsers
 * [Lynx](http://lynx.browser.org/)
 * [netsurf](http://www.netsurf-browser.org/)
 * [surf](//surf.suckless.org/)
+* [Tridactyl](https://github.com/cmcaine/tridactyl) - A WebExtension that tries to make Firefox Vim like. Unlike many similar extensions it works with firefox 57+
 * [uzbl](http://uzbl.org/) - Web interface tools which adhere to the unix philosophy.
-* [Vimperator](http://www.vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like.
+* [Vimperator](http://www.vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like. (Doesn't work with firefox 57+)
 * [VimFX](https://addons.mozilla.org/en-US/firefox/addon/vimfx/) -
   Another extension to make Firefox Vim-like. Less invasive than
-  Vimperator
+  Vimperator (Doesn't work with firefox 57+)
 * [w3m](http://w3m.sourceforge.net/)
 * [xombrero](https://github.com/conformal/xombrero) - A minimalist web browser with sophisticated security features designed-in. Formerly known as "xxxterm".
 

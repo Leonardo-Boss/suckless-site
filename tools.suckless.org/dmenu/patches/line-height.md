@@ -33,4 +33,4 @@ Download
 Author
 ------
 * Xarchus
-* Jonathon Fernyhough <jonathon at manjaro_dot_org> (4.7)
+* Jonathon Fernyhough (jonathon at manjaro-dot-org) (4.7 rewrite)

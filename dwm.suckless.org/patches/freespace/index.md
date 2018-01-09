@@ -18,6 +18,11 @@ New variable panel[4] saves space at the borders of the screen for the external 
 
 In tiled and monocle layouts this space becomes borders of the windows; in floating layout windows attach to these borders
 
+Issue
+-----
+
+When there is only one master window in tiled layout with panel[2] set not to zero its right border gets out of the screen
+
 Download
 --------
 

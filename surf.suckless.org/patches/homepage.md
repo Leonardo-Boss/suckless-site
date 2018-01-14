@@ -19,3 +19,5 @@ Author
 * Matthew Bauer <[mjbauer95@gmail.com](mailto:mjbauer95@gmail.com)>
 * Henrique Lengler <[henriqueleng@openmailbox.org](mailto:henriqueleng@openmailbox.org)>
 * Ivan Tham <[pickfire@riseup.net](mailto:pickfire@riseup.net)>
+* thatlittlegit <[thatlittlegit@protonmail.com](mailto:thatlittlegit@protonmail.com)>
+

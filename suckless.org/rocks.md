@@ -163,6 +163,7 @@ Text Editors
 * [ired](http://www.radare.org/y/) (Minimalist hexadecimal editor and bindiffer for p9, w32 and *nix)
 * [mg](https://homepage.boetes.org/software/mg/) (portable version of mg maintained by the OpenBSD team)
 * [nano](https://www.nano-editor.org/) - A pico clone - this is small simple code and easy to use.
+* [mle](https://github.com/adsr/mle) - A small, flexible console text editor.
 * [nvi](https://sites.google.com/a/bostic.com/keithbostic/vi) - A small, multiple file vi-alike.
 * [sam](http://sam.cat-v.org/) - An editor by Rob Pike with inspiration from ed.
 * [traditional vi](http://ex-vi.sourceforge.net/) - A fixed version of the original vi.

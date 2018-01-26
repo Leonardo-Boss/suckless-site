@@ -13,6 +13,7 @@ Download
  * [dwm-attachabove-6.0.diff](dwm-attachabove-6.0.diff)
  * [dwm-attachabove-6.1.diff](dwm-attachabove-6.1.diff)
  * [dwm-attachabove-20160713-56a31dc.diff](dwm-attachabove-20160713-56a31dc.diff)
+ * [dwm-attachabove-20180126-db22360.diff](dwm-attachabove-20180126-db22360.diff)
 
 Authors
 -------

@@ -47,6 +47,8 @@ Download
 
 * [dwm-attachaside-6.1.diff](dwm-attachaside-6.1.diff)
 * [dwm-attachaside-20160718-56a31dc.diff](dwm-attachaside-20160718-56a31dc.diff)
+* [dwm-attachaside-20180126-db22360.diff](dwm-attachaside-20180126-db22360.diff)
+
 
 Authors
 -------

@@ -49,7 +49,7 @@ non-chroot'ed cross-compile environments and often completely fail to produce
 statically linked libraries or executables.  Also they are
 extremely slow and bloated.
 
-The [stali](http://sta.li/) build system is not using autotools for good
+The stali build system is not using autotools for good
 reason, however many UNIX/Linux open source packages do. To create statically
 linked libraries out of the ld arguments we need an ld wrapper or
 re-implementation that creates static libraries or executables. This would

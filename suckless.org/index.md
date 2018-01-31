@@ -65,10 +65,6 @@ Videos of the [slcon 2016 talks](conferences/2016) are now available.
 ----------
 [slcon3](conferences/2016) Preliminary schedule now published. If you want to attend please register until: **2016-09-01**.
 
-2016-04-02
-----------
-[stali ISO](http://dl.sta.li/stali.iso) pre-release. See [stali](http://sta.li) for more details.
-
 2015-12-19
 ----------
 [surf 0.7](//surf.suckless.org) released: [download](//dl.suckless.org/surf/surf-0.7.tar.gz)
@@ -183,7 +179,7 @@ We applied as a mentoring organisation for GSoC 2010. See our [project ideas for
 
 2010-02-13
 ----------
-Some of us will visit [CLT2010](http://chemnitzer.linux-tage.de/2010/). Anselm will give a [talk](http://chemnitzer.linux-tage.de/2010/vortraege/detail.html?idx=308) about [stali](http://sta.li) on the second day of CLT2010 at 17:00.
+Some of us will visit [CLT2010](http://chemnitzer.linux-tage.de/2010/). Anselm will give a [talk](http://chemnitzer.linux-tage.de/2010/vortraege/detail.html?idx=308) about stali on the second day of CLT2010 at 17:00.
 
 2009-12-28
 ----------

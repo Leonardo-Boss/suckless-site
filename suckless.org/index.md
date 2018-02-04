@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2018-02-04
+----------
+[ii 1.8](//tools.suckless.org/ii) released: [download](//dl.suckless.org/tools/ii-1.8.tar.gz)
+
 2017-09-04
 ----------
 [suckless hackathon](/conferences/2017): we met on Sep 1-3 2017 in Würzburg, Germany.

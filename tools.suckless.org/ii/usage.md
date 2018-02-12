@@ -72,14 +72,10 @@ In `/etc/stunnel/stunnel.conf`:
 [inetd](http://man.openbsd.org/inetd) listens on multiple TCP ports and can connect a program standard input and output to a TCP socket.
 This enables it to act as a simple proxy using any command line TLS client, such as [openssl s_client](http://man.openbsd.org/openssl#S_CLIENT), [brssl client](https://bearssl.org/gitweb/?p=BearSSL;a=blob;f=tools/brssl.c;h=91372b09f42149a503f9d13db0b78cf0a123611e;hb=HEAD#l43), nc -ssl, socat... or any other:
 
-In `/etc/services`:
-
-	irc-oftc	<your port>/tcp
-
 In `/etc/inetd.conf`:
 
-	irc-oftc	stream	tcp	nowait	nobody	/usr/bin/openssl	openssl s_client -quiet -connect irc.oftc.net:6697
+	/tmp/irc.oftc.net	stream	unix	nowait	nobody	/usr/bin/openssl	openssl s_client -quiet -connect irc.oftc.net:6697
 
-Then a proxy should be available at localhost:<your port> for ii to connect to:
+Then a proxy should be available as an unix socket for ii to connect to:
 
-	ii -s 127.0.0.1 -p <your port>
+	ii -s irc.oftc.net -u /tmp/irc.oftc.net

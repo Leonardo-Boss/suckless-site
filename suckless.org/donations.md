@@ -30,6 +30,7 @@ Following people have donated to the suckless.org project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
+* Aaron Kirkman <b>19.47 EUR</b>
 * Jeff Carr donated <b>500 EUR</b>
 * Silvan Jegen donated <b>175 EUR</b>
 * Ville Johan Witt donated <b>512 DKK</b>

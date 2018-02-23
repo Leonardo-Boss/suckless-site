@@ -90,6 +90,11 @@ Code
 	}
 
 	function setHintRules() {
+		 if (document.styleSheets.length < 1) {
+		    var style = document.createElement("style");
+		    style.appendChild(document.createTextNode(""));
+		    document.head.appendChild(style);
+		}
 		var ss = document.styleSheets[0];
 		ss.insertRule('a[highlight=hint_elem] {background-color: yellow}', 0);
 		ss.insertRule('a[highlight=hint_active] {background-color: lime}', 0);

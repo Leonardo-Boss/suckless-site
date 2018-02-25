@@ -49,8 +49,8 @@ DoS the form handler, the serving of content is still unaffected.
 Solutions
 ---------
 
-* [saait](http://git.codemadness.nl/saait/log.html) site generator
-* [stagit](http://git.codemadness.nl/stagit/log.html) git page generator
+* [saait](https://git.codemadness.org/saait/file/README.html) site generator
+* [stagit](https://git.codemadness.org/stagit/file/README.html) git page generator
 
 Development
 -----------

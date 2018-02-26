@@ -12,6 +12,7 @@ to other tools like [tcpclient](https://cr.yp.to/ucspi-tcp.html),
 Download
 --------
 
+* [ii-1.8-ucspi.diff](ii-1.8-ucspi.diff)
 * [ii-1.7-ucspi.diff](ii-1.7-ucspi.diff)
 
 Author

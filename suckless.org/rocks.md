@@ -232,13 +232,12 @@ which work well with dwm).
 
 Web Servers
 -----------
-* [Nostromo](http://www.nazgul.ch/dev_nostromo.html) - nhttpd is a simple, fast and secure HTTP server
+* [quark](https://tools.suckless.org/quark/) - suckless simple static web server
+* [OpenBSD httpd/relayd](https://bsd.plumbing/about.html) - Designed to combat the feature creep of modern webservers. Boasts extremely concise configuration, with sane default behavior.
+* [darkhttpd](https://unix4lyfe.org/darkhttpd/) - Darkhttpd is a simple, fast HTTP 1.1 web server for static content.
 * [thttpd](http://acme.com/software/thttpd/) - Outperforms many bigger httpds. Old, still works very well!
 * [mini_httpd](http://acme.com/software/mini_httpd/) - By the thttpd developers. Even smaller subset of thttpd with support for .htpasswd, CGI, dirlisting, HTTP errors and SSL, nothing more or less than that.
-* [darkhttpd](https://unix4lyfe.org/darkhttpd/) - Darkhttpd is a simple, fast HTTP 1.1 web server for static content.
-* [quark](//git.suckless.org/quark/) - suckless httpd, not released yet
 * [shus](https://github.com/dimkr/shus) - A tiny HTTP server for static sites
-* [OpenBSD httpd/relayd](https://bsd.plumbing/about.html) - Designed to combat the feature creep of modern webservers. Boasts extremely concise configuration, with sane default behavior.
 
 Gopher Servers
 --------------

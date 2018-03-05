@@ -95,7 +95,7 @@ IRC Clients
 * [Irc](http://swtch.com/irc/)
 * [irc.c from mpu](http://c9x.me/irc/) - A Minimal Curses IRC Client.
 * [ii](//tools.suckless.org/ii/) - A FIFO based IRC client which is part of the suckless.org project.
-* [ircc](http://www.r-36.net/src/Various/ircc.tgz) - A no-frills, ncurses free, console-based IRC client.
+* [ircc](http://git.r-36.net/ircc) - A no-frills, ncurses free, console-based IRC client.
 * [ircrc](http://plan9.bell-labs.com/sources/contrib/fgb/rc/ircrc) - An rc-based IRC client similar to ircc. Needs minor modification to run on UNIX.
 * [irssi](http://www.irssi.org/)
 * [sic](//tools.suckless.org/sic) - Another suckless.org IRC client. Similar to ircc.

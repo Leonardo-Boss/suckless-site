@@ -1,6 +1,7 @@
 ![quark](quark.svg)
 
-quark is an extremely small and simple HTTP GET/HEAD-only web server.
+quark is an extremely small and simple HTTP GET/HEAD-only web server for
+static content.
 
 The goal of this project is to do one thing and do it well, namely serving
 static web directories and doing that right. Most other solutions either

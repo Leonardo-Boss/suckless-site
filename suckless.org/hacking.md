@@ -77,7 +77,7 @@ For git users:
     cd program-directory
     git add filechanges...
     git commit (write a clear patch description)
-    git format-patch --stdout HEAD^ > toolname-patchname-YYYYMMDD-SHORTHASH.patch
+    git format-patch --stdout HEAD^ > toolname-patchname-YYYYMMDD-SHORTHASH.diff
 
 For tarballs:
 
@@ -95,7 +95,7 @@ For git users, use -3 to fix the conflict easily:
 For patches formatted with git format-patch:
 
     cd program-directory
-    git am path/to/patch.patch
+    git am path/to/patch.diff
 
 For tarballs:
 

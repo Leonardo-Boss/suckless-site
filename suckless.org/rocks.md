@@ -5,7 +5,7 @@ Libraries
 =========
 This section is for small, usable development libraries, which can be used for
 writing software that sucks less.
-These should preferrably be under the MIT/X consortium or BSD licenses, WTFPL,
+These should preferably be under the MIT/X consortium or BSD licenses, WTFPL,
 or public domain, or alternatively LGPL, because it makes them legally
 compatible with other suckless projects.
 
@@ -35,7 +35,7 @@ Cryptography
 Miscellaneous
 -------------
 * [ccv](https://github.com/liuliu/ccv) - C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library
-* [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modeled after libevent but much smaller (dual licensed under 2-clause BSD and GPL)
+* [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modelled after libevent but much smaller (dual licensed under 2-clause BSD and GPL)
 * [mdocml](http://mdocml.bsd.lv/) - The mandoc UNIX manpage compiler toolset
 * [morpheus](https://morpheus.2f30.org) - a statically linked musl based Linux distro
 * [bare](https://git.uggedal.com/unmaintained/bare/) - simple distro using suckless software
@@ -125,7 +125,7 @@ Instant Messaging Clients
 Mail Clients
 ------------
 * [Mail][plan9port] - A mail client for [acme][acme]. Included with plan9port.
-* [dmc](//git.suckless.org/dmc/) - A minimalistic approach to a commandline mail client (WIP)
+* [dmc](//git.suckless.org/dmc/) - A minimalistic approach to a command-line mail client (WIP)
 * [fdm](https://github.com/nicm/fdm) - fetch and deliver mail
 * [isync](http://isync.sourceforge.net/) - MDA that can work better for IMAP
 * [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.

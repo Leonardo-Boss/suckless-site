@@ -55,7 +55,7 @@ following addresses to perform the described action.
 When sending a patch use the following commands:
 
 	cd $project
-	git send-email --subject-prefix="$(basename $(pwd))][PATCH" \
+	git send-email --subject-prefix="[${PWD##*/}][PATCH]" \
 		--to hackers@suckless.org -1
 
 This will send the last commit of the repository to the mailing list adding a

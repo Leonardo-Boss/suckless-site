@@ -207,14 +207,14 @@ Web Browsers
 
 X11
 ---
-* [xclip](http://sourceforge.net/projects/xclip/) – A tool for controlling the
+* [xclip](http://sourceforge.net/projects/xclip/) - A tool for controlling the
   X11 clipboard.
-* [xdotool](http://www.semicomplete.com/projects/xdotool/) – A tool for
+* [xdotool](http://www.semicomplete.com/projects/xdotool/) - A tool for
   scripting X11 actions.
-* [xzoom](http://git.r-36.net/xzoom/) – A simple zoom application.
-* [keynav](http://www.semicomplete.com/projects/keynav/) – A new way for
+* [xzoom](http://git.r-36.net/xzoom/) - A simple zoom application.
+* [keynav](http://www.semicomplete.com/projects/keynav/) - A new way for
   keyboard selection.
-* [ffcast](https://github.com/lolilolicon/FFcast2) – Simple screencasting.
+* [ffcast](https://github.com/lolilolicon/FFcast2) - Simple screencasting.
 * [swm](https://github.com/dcat/swm) - A simple window manager called Simple Window Manager. Floating but keyboard-accessible.
 * [wmutils](https://github.com/wmutils/core) - A set of utilities for managing windows. Can be used on their own or to augment a WM itself. Support for tiling present.
 * [grabc](http://www.muquit.com/muquit/software/grabc/grabc.html) - Grab the

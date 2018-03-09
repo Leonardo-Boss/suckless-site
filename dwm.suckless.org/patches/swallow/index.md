@@ -50,3 +50,4 @@ Authors
 
  * Rob King - <jking@deadpixi.com>
  * Laslo Hunhold - <dev@frign.de> (6.1, git port)
+ * Petr Šabata - <contyk@redhat.com> (bugfixes)

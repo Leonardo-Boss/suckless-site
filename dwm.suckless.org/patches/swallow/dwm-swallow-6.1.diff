@@ -30,7 +30,7 @@ index 4eefb71..34ea872 100644
  # flags
  CPPFLAGS = -D_BSD_SOURCE -D_POSIX_C_SOURCE=2 -DVERSION=\"${VERSION}\" ${XINERAMAFLAGS}
 diff --git a/dwm.c b/dwm.c
-index 0362114..566491a 100644
+index 0362114..1d38293 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -40,6 +40,8 @@
@@ -115,10 +115,11 @@ index 0362114..566491a 100644
  			c->isfloating = r->isfloating;
  			c->tags |= r->tags;
  			for (m = mons; m && m->num != r->monitor; m = m->next);
-@@ -413,6 +427,47 @@ attachstack(Client *c)
+@@ -412,6 +426,48 @@ attachstack(Client *c)
+ 	c->mon->stack = c;
  }
  
- void
++void
 +swallow(Client *p, Client *c)
 +{
 +	if (c->noswallow || c->isterminal)
@@ -157,13 +158,13 @@ index 0362114..566491a 100644
 +	XMoveResizeWindow(dpy, c->win, c->x, c->y, c->w, c->h);
 +	configure(c);
 +	setclientstate(c, NormalState);
++	focus(c);
 +}
 +
-+void
+ void
  buttonpress(XEvent *e)
  {
- 	unsigned int i, x, click;
-@@ -475,7 +529,7 @@ cleanup(void)
+@@ -475,7 +531,7 @@ cleanup(void)
  	selmon->lt[selmon->sellt] = &foo;
  	for (m = mons; m; m = m->next)
  		while (m->stack)
@@ -172,7 +173,7 @@ index 0362114..566491a 100644
  	XUngrabKey(dpy, AnyKey, AnyModifier, root);
  	while (mons)
  		cleanupmon(mons);
-@@ -661,6 +715,9 @@ destroynotify(XEvent *e)
+@@ -661,6 +717,9 @@ destroynotify(XEvent *e)
  
  	if ((c = wintoclient(ev->window)))
  		unmanage(c, 1);
@@ -182,7 +183,7 @@ index 0362114..566491a 100644
  }
  
  void
-@@ -1032,12 +1089,13 @@ killclient(const Arg *arg)
+@@ -1032,12 +1091,13 @@ killclient(const Arg *arg)
  void
  manage(Window w, XWindowAttributes *wa)
  {
@@ -197,7 +198,7 @@ index 0362114..566491a 100644
  	updatetitle(c);
  	if (XGetTransientForHint(dpy, w, &trans) && (t = wintoclient(trans))) {
  		c->mon = t->mon;
-@@ -1045,7 +1103,9 @@ manage(Window w, XWindowAttributes *wa)
+@@ -1045,7 +1105,9 @@ manage(Window w, XWindowAttributes *wa)
  	} else {
  		c->mon = selmon;
  		applyrules(c);
@@ -207,16 +208,20 @@ index 0362114..566491a 100644
  	/* geometry */
  	c->x = c->oldx = wa->x;
  	c->y = c->oldy = wa->y;
-@@ -1087,6 +1147,8 @@ manage(Window w, XWindowAttributes *wa)
+@@ -1085,8 +1147,11 @@ manage(Window w, XWindowAttributes *wa)
+ 	if (c->mon == selmon)
+ 		unfocus(selmon->sel, 0);
  	c->mon->sel = c;
- 	arrange(c->mon);
+-	arrange(c->mon);
++	if (!term)
++		arrange(c->mon);
  	XMapWindow(dpy, c->win);
 +	if (term)
 +		swallow(term, c);
  	focus(NULL);
  }
  
-@@ -1758,6 +1820,20 @@ unmanage(Client *c, int destroyed)
+@@ -1758,6 +1823,20 @@ unmanage(Client *c, int destroyed)
  	Monitor *m = c->mon;
  	XWindowChanges wc;
  
@@ -237,7 +242,7 @@ index 0362114..566491a 100644
  	/* The server grab construct avoids race conditions. */
  	detach(c);
  	detachstack(c);
-@@ -1773,9 +1849,12 @@ unmanage(Client *c, int destroyed)
+@@ -1773,9 +1852,12 @@ unmanage(Client *c, int destroyed)
  		XUngrabServer(dpy);
  	}
  	free(c);
@@ -253,7 +258,7 @@ index 0362114..566491a 100644
  }
  
  void
-@@ -2040,16 +2119,116 @@ view(const Arg *arg)
+@@ -2040,16 +2122,116 @@ view(const Arg *arg)
  	arrange(selmon);
  }
  
@@ -372,7 +377,7 @@ index 0362114..566491a 100644
  	return NULL;
  }
  
-@@ -2131,6 +2310,8 @@ main(int argc, char *argv[])
+@@ -2131,6 +2313,8 @@ main(int argc, char *argv[])
  		fputs("warning: no locale support\n", stderr);
  	if (!(dpy = XOpenDisplay(NULL)))
  		die("dwm: cannot open display\n");

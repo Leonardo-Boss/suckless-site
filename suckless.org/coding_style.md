@@ -8,7 +8,7 @@ The following contain good information, some of which is repeated below, some of
 
 * <http://doc.cat-v.org/bell_labs/pikestyle>
 * <https://www.kernel.org/doc/Documentation/process/coding-style.rst>
-* <http://man.openbsd.org/style>
+* <https://man.openbsd.org/style>
 
 File Layout
 -----------
@@ -43,7 +43,7 @@ Blocks
 * All variable declarations at top of block
 * `{` on same line preceded by single space (except functions)
 * `}` on own line unless continuing statement (`if else`, `do while`, ...)
-* Use block for single statements iff
+* Use block for single statement ifs
 	* Inner statement needs a block
 
 			for (;;) {
@@ -52,7 +52,7 @@ Blocks
 					baz;
 				}
 			}
-	* Another branch of same statement needs a block
+	* Another branch of the same statement needs a block
 
 			if (foo) {
 				bar;
@@ -149,7 +149,7 @@ Handling Errors
 
 Enums vs #define
 ----------------
-* Use enums for values that are grouped semantically and #define otherwise.
+* Use enums for values that are grouped semantically and #define otherwise
 
 		#define MAXSZ  4096
 		#define MAGIC1 0xdeadbeef

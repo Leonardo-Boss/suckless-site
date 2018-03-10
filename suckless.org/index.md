@@ -19,15 +19,15 @@ News
 
 2017-08-30
 ----------
-suckless.org now supports TLS using LetsEncrypt. Cloning git repos over
-HTTPS works now. Some links on the page have been changed to allow both
+suckless.org now supports TLS using [Let's Encrypt](https://letsencrypt.org/). Cloning git repos over
+HTTPS now works. Some links on the page have been changed to allow both
 HTTP and HTTPS.
 
 HSTS is not fully working yet. This will be fixed.
 
 The IPv6 AAAA record was added and IPv6 is fully working now.
 
-suckless has many subdomains, these should hopefully all work via TLS
+suckless has many subdomains, these should hopefully all work via TLS.
 If you see a subdomain without a signed certificate please report it.
 If you find any broken links on the wiki pages, these can be fixed
 by anyone.
@@ -67,7 +67,7 @@ Videos of the [slcon 2016 talks](conferences/2016) are now available.
 
 2016-08-24
 ----------
-[slcon3](conferences/2016) Preliminary schedule now published. If you want to attend please register until: **2016-09-01**.
+[slcon3](conferences/2016) preliminary schedule now published. If you want to attend please register before: **2016-09-01**.
 
 2015-12-19
 ----------
@@ -87,7 +87,7 @@ Videos of the [slcon2 talks](conferences/2015) are now available.
 
 2015-09-23
 ----------
-Kai and Anselm gave an interview about suckless.org on Randal Schwartz' [FLOSS Weekly show](https://twit.tv/shows/floss-weekly/episodes/355?autostart=false)
+Kai and Anselm gave an interview about suckless.org on Randal Schwartz's [FLOSS Weekly show](https://twit.tv/shows/floss-weekly/episodes/355?autostart=false)
 
 2015-07-07
 ----------
@@ -141,7 +141,7 @@ We are glad to announce the [slcon 2013](/conferences/2013) programme.
 2012-11-29
 ----------
 We are glad to announce the switch to git from mercurial in all of our
-repositories. You can find them at <//git.suckless.org>. Many thanks to
+repositories. You can find them at [git.suckless.org](//git.suckless.org) Many thanks to
 20h for his contribution!
 
 2012-10-28
@@ -150,7 +150,7 @@ repositories. You can find them at <//git.suckless.org>. Many thanks to
 
 2012-10-14
 ----------
-Today we heard the very sad news that our friend, contributor and philosophical advisor Uriel has passed away peacefully.
+Today we heard a very sad news that our friend, contributor and philosophical advisor Uriel has passed away peacefully.
 We will miss him a lot.
 
 ![uriel](/uriel.png)
@@ -175,7 +175,7 @@ conference in Berlin.
 We learned today that the previous wmii maintainer, who wasn't actively
 involved since 2007, Denis Grelich,
 [died on 2010-03-12](https://web.archive.org/web/20140208043925/http://www.lmt.uni-saarland.de/de/aktuelles/grelich.html).
-We offer him our condolences and thank him for his work. Rest in peace.
+We thank him for his work. Rest in peace.
 
 2010-03-07
 ----------

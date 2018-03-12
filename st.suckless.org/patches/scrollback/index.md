@@ -11,11 +11,13 @@ Download
 
 * [st-scrollback-0.7.diff](st-scrollback-0.7.diff)
 * [st-scrollback-20170329-149c0d3.diff](st-scrollback-20170329-149c0d3.diff)
+* [st-scrollback-20180311-c5ba9c0.diff](st-scrollback-20180311-c5ba9c0.diff)
 
 Apply the following patch on top of the previous to allow scrolling
 using `Shift+MouseWheel`.
 
 * [st-scrollback-mouse-20170427-5a10aca.diff](st-scrollback-mouse-20170427-5a10aca.diff)
+* [st-scrollback-mouse-20180311-c5ba9c0.diff](st-scrollback-mouse-20180311-c5ba9c0.diff)
 
 Apply the following patch on top of the previous two to allow scrollback using
 mouse wheel only when not in `MODE_ALTSCREEN`. For example the content is being

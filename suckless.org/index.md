@@ -8,6 +8,7 @@ News
 2018-03-14
 ----------
 [dmenu 4.8](//tools.suckless.org/dmenu/) released: [download](//dl.suckless.org/tools/dmenu-4.8.tar.gz)
+
 [st 0.8](//st.suckless.org/) released: [download](//dl.suckless.org/st/st-0.8.tar.gz)
 
 2018-02-04

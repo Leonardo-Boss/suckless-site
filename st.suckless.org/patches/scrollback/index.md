@@ -26,6 +26,7 @@ modifier for scrolling is not needed anymore.  **Note: It might break other
 mkeys excluding scrolling functions.**
 
 * [st-scrollback-mouse-altscreen-20170427-5a10aca.diff](st-scrollback-mouse-altscreen-20170427-5a10aca.diff)
+* [st-scrollback-mouse-altscreen-0.8.diff](st-scrollback-mouse-altscreen-0.8.diff)
 
 Notes
 -----

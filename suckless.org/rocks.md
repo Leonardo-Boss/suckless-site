@@ -188,10 +188,8 @@ Web Browsers
 * [Abaco](http://lab-fgb.com/abaco/)
 * [Conkeror](http://www.conkeror.org/) - A Gecko based browser, imparting it Emacs style key bindings, appearances, and behaviors.
 * [Dillo](http://www.dillo.org/)
-* [dwb](http://portix.bitbucket.org/dwb/) - A lightweight web browser based on WebKitGTK.
 * [edbrowse](http://edbrowse.sourceforge.net/)
 * [ELinks](http://elinks.or.cz/)
-* [jumanji](http://pwmt.org/projects/jumanji/) - A highly customizable and functional web browser based on the libwebkit.
 * [Links](http://links.twibright.com/)
 * [Lynx](http://lynx.browser.org/)
 * [netsurf](http://www.netsurf-browser.org/)
@@ -203,7 +201,6 @@ Web Browsers
   Another extension to make Firefox Vim-like. Less invasive than
   Vimperator (Doesn't work with firefox 57+)
 * [w3m](http://w3m.sourceforge.net/)
-* [xombrero](https://github.com/conformal/xombrero) - A minimalist web browser with sophisticated security features designed-in. Formerly known as "xxxterm".
 
 X11
 ---

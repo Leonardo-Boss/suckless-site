@@ -11,11 +11,11 @@ Saturday, 2013-06-22
         Room A027 / Raum A027
 
 
-->[![slcon2013 group photo](/slcon2013-s.png)](/slcon2013.png)<-
+->[![slcon2013 group photo](slcon2013-s.png)](slcon2013.png)<-
 
 Talks
 -----
-(10:00-10:40) *Welcome the future of dwm*, Anselm R Garbe ([slides](/slcon13.pdf))
+(10:00-10:40) *Welcome the future of dwm*, Anselm R Garbe ([slides](slcon13.pdf))
 
         Anselm presented his plan about the next steps of the dwm
         development.
@@ -26,7 +26,7 @@ Talks
 </video>
 
 
-(10:40-11:20) *st - the past and future*, Christoph Lohmann ([slides](/20h_on_st.pdf))
+(10:40-11:20) *st - the past and future*, Christoph Lohmann ([slides](20h_on_st.pdf))
 
         Christoph presented his plan about the next steps of st development.
 
@@ -68,7 +68,7 @@ Talks
 </video>
 
 
-(16:20-16:50) *The suckless web ideas*, Christoph Lohmann ([slides](/20h_on_surf.pdf))
+(16:20-16:50) *The suckless web ideas*, Christoph Lohmann ([slides](20h_on_surf.pdf))
 
         Christoph discussed suckless web ideas.
 
@@ -78,7 +78,7 @@ Talks
 </video>
 
 
-(16:50-17:15) *stali and other stuff*, Anselm R Garbe ([slides](/slcon13.pdf))
+(16:50-17:15) *stali and other stuff*, Anselm R Garbe ([slides](slcon13.pdf))
 
 <video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="https://s3.eu-central-1.amazonaws.com/suckless-videos/slcon/2013/slcon-2013-6-arg-stali_and_other_stuff.png">
         <source src="https://s3.eu-central-1.amazonaws.com/suckless-videos/slcon/2013/slcon-2013-6-arg-stali_and_other_stuff.webm" type="video/webm">

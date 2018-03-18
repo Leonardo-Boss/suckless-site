@@ -255,10 +255,10 @@ No talk session plans, hack sessions and departure day.
 Acknowledgment
 ==============
 
-We kindly thank [![genua GmbH](genua.png)](http://www.genua.eu) for
+We kindly thank [![genua GmbH](../genua.png)](http://www.genua.eu) for
 lending us the equipment to record the slcon 2016 conference videos.
 
 Previous conferences
 ====================
-* [slcon 2015](2015)
-* [slcon 2013](2013)
+* [slcon 2015](../2015/)
+* [slcon 2013](../2013/)

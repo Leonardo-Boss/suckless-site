@@ -100,7 +100,7 @@ Talks
 </video>
 
 
-(10:45-11:30) *Simple Jabber - Divide And Conquer XMPP*, Jan Klemkow ([paper](/jan_on_sj.pdf))
+(10:45-11:30) *Simple Jabber - Divide And Conquer XMPP*, Jan Klemkow ([paper](jan_on_sj.pdf))
 
 > The Extensible Messaging and Presence Protocol ([XMPP][2]) is like the web. It is
   far too complex to be implemented in one program with the Unix philosophy in mind.
@@ -169,12 +169,12 @@ Talks
 
 Acknowledgment
 --------------
-We kindly thank [![genua GmbH](genua.png)](http://www.genua.eu) for
+We kindly thank [![genua GmbH](../genua.png)](http://www.genua.eu) for
 lending us the equipment to record the slcon2 conference videos.
 
 Previous conferences
 --------------------
-* [slcon 2013](2013)
+* [slcon 2013](../2013/)
 
 [1]: https://en.wikipedia.org/wiki/Eingetragener_Verein
 [2]: http://xmpp.org/

@@ -14,6 +14,6 @@ We also introduced the annual suckless torchlight hike for the first time.
 
 Previous conferences
 ====================
-* [slcon 2016](2016)
-* [slcon 2015](2015)
-* [slcon 2013](2013)
+* [slcon 2016](../2016/)
+* [slcon 2015](../2015/)
+* [slcon 2013](../2013/)

@@ -71,7 +71,7 @@ BitTorrent Clients
 
 Feed aggregators
 ----------------
-* [newsbeuter](http://www.newsbeuter.org/)
+* [newsboat](https://newsboat.org/) - RSS/ATOM feed reader for text terminals (updated fork of [newsbeuter](https://www.newsbeuter.org/))
 * [snownews](https://kiza.eu/software/snownews/) - Text mode RSS newsreader for Linux and Unix
 * [sfeed](https://git.codemadness.org/sfeed/) - RSS and Atom parser + CLI programs
 

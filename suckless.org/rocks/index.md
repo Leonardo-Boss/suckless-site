@@ -12,7 +12,7 @@ compatible with other suckless projects.
 Libc Implementations
 --------------------
 * [musl](http://www.musl-libc.org/) - standard C library that attempts to be even smaller than uClibc
-* [uClibc](http://www.uclibc.org/) - strives to be a minimalist C library suitable for embedded computing
+* [uClibc](https://uclibc.org/) - strives to be a minimalist C library suitable for embedded computing
 * See also: [embedded libc comparison](http://www.etalabs.net/compare_libcs.html)
 
 Compilers
@@ -23,14 +23,14 @@ Compression
 -----------
 * [liblzf](http://oldhome.schmorp.de/marc/liblzf.html) - very fast, legally unencumbered compression library
 * [miniz](https://github.com/richgel999/miniz) - single C-file reimplementation of zlib (MIT License).
-* [xz embedded](http://tukaani.org/xz/embedded.html) - lightweight decompressor for the xz LZMA compressor (public domain)
+* [xz embedded](https://tukaani.org/xz/embedded.html) - lightweight decompressor for the xz LZMA compressor (public domain)
 * [Lzip](http://lzip.nongnu.org) - Properly designed data compressor outperforming gzip and bzip2 (GPLv2+)
 * [zlib](http://zlib.net/) - the "standard" compression/decompression library, quite small, used in many applications ([zlib license](http://zlib.net/zlib_license.html))
 * [libz](https://sortix.org/libz/) - ABI and API compatible zlib fork with focus on correctness, proper portability, auditability, simplification and opportunities to optimize ([zlib license](http://zlib.net/zlib_license.html))
 
 Cryptography
 ------------
-* [libressl](http://www.libressl.org/) - LibreSSL is a version of the TLS/crypto stack forked from OpenSSL in 2014
+* [libressl](https://www.libressl.org/) - LibreSSL is a version of the TLS/crypto stack forked from OpenSSL in 2014
 
 Miscellaneous
 -------------
@@ -62,7 +62,7 @@ Audio Players
 * [mpd](https://www.musicpd.org/) - A client/server based music player with console and graphical front-ends.
 * [mpg123](http://www.mpg123.de/) - A console mpg player which doesn't use auto*hell, or extra libraries.
 * [mpg321](http://mpg321.sourceforge.net)
-* [vorbis-tools](http://www.xiph.org/) (Ogg/FLAC) - Command-line tools to play Ogg and FLAC files.
+* [vorbis-tools](https://www.xiph.org/) (Ogg/FLAC) - Command-line tools to play Ogg and FLAC files.
 * [RSound](https://github.com/Themaister/RSound/) - Simple PCM audio server and client
 
 BitTorrent Clients
@@ -92,19 +92,19 @@ Git
 
 IRC Clients
 -----------
-* [Irc](http://swtch.com/irc/)
-* [irc.c from mpu](http://c9x.me/irc/) - A Minimal Curses IRC Client.
+* [Irc](https://swtch.com/irc/)
+* [irc.c from mpu](https://c9x.me/irc/) - A Minimal Curses IRC Client.
 * [ii](//tools.suckless.org/ii/) - A FIFO based IRC client which is part of the suckless.org project.
 * [ircrc](http://plan9.bell-labs.com/sources/contrib/fgb/rc/ircrc) - An rc-based IRC client similar to ircc. Needs minor modification to run on UNIX.
-* [irssi](http://www.irssi.org/)
+* [irssi](https://irssi.org/)
 * [sic](//tools.suckless.org/sic/) - Another suckless.org IRC client. Similar to ircc.
 * [quIRC](https://github.com/ec429/quIRC) - a lightweight console IRC client
 
 Image Viewers
 -------------
-* [feh](http://feh.finalrewind.org/)
+* [feh](https://feh.finalrewind.org/)
 * [jpg/gif/bmp/png][plan9port] - Simple programs from Plan 9 to display images in no-frills windows. Included with plan9port.
-* [meh](http://www.johnhawthorn.com/meh/) - image viewer using raw XLib, libjpeg, libpng and libgif
+* [meh](https://www.johnhawthorn.com/meh/) - image viewer using raw XLib, libjpeg, libpng and libgif
 * [page][plan9port] - Plan 9's image/document viewer program. Included with plan9port.
 * [qiv](http://spiegl.de/qiv/)
 * [sxiv](https://github.com/muennich/sxiv) - Simple (or small or suckless) X Image Viewer. Depends on xlib and imlib2.
@@ -115,7 +115,7 @@ Image Viewers
 
 Instant Messaging Clients
 -------------------------
-* [bitlbee](http://www.bitlbee.org/main.php/news.r.html) - A program to translate IM protocols to IRC. You can now IM from your IRC client, and you don't even need to install anything.
+* [bitlbee](https://www.bitlbee.org/main.php/news.r.html) - A program to translate IM protocols to IRC. You can now IM from your IRC client, and you don't even need to install anything.
 * [CenterIM](http://www.centerim.org/index.php/Main_Page) - A centericq fork.
 * [irssi-xmpp](http://cybione.org/~irssi-xmpp/)
 * [mcabber](http://mcabber.com/) - A console jabber client.
@@ -137,19 +137,19 @@ Mail Clients
 Media Players
 -------------
 * [mplayer](http://www.mplayerhq.hu/design7/news.html) (without GUI) - You know mplayer, but you may not know that it works well without the GUI.
-* [mpv](http://mpv.io/) - a free, open source, and cross-platform media player
+* [mpv](https://mpv.io/) - a free, open source, and cross-platform media player
 * [ffplay](https://www.ffmpeg.org/ffplay.html) - FFplay is a very simple and portable media player. It came with ffmpeg which is a mplayer dependence.
 
 Password Managers
 -----------------
-* [pass](http://www.passwordstore.org/) - The standard unix password manager
+* [pass](https://www.passwordstore.org/) - The standard unix password manager
 * [tpm](https://github.com/nmeum/tpm/) - Tiny password manager
 * [spm](https://notabug.org/kl3/spm/) - Simple password manager (actively maintained fork of nmeum's tpm)
 
 PDF Viewers
 -----------
-* [mupdf](http://mupdf.com/)
-* [zathura](http://pwmt.org/projects/zathura/)
+* [mupdf](https://mupdf.com/)
+* [zathura](https://pwmt.org/projects/zathura/)
 
 Shells
 ------
@@ -166,10 +166,10 @@ Text Editors
 * [nvi](https://sites.google.com/a/bostic.com/keithbostic/vi) - A small, multiple file vi-alike.
 * [sam](http://sam.cat-v.org/) - An editor by Rob Pike with inspiration from ed.
 * [traditional vi](http://ex-vi.sourceforge.net/) - A fixed version of the original vi.
-* [vim](http://www.vim.org) (With the GUI, use `:set go+=c` to kill popup dialogs)
+* [vim](https://www.vim.org) (With the GUI, use `:set go+=c` to kill popup dialogs)
 * [vis](https://github.com/martanne/vis) - A modern, legacy free, simple yet efficient vim-like editor.
 * [wily](http://www.cse.yorku.ca/~oz/wily/) - An acme clone for POSIX.
-* [ed](https://9fans.github.io/plan9port/man/man1/ed.html) - [ED IS THE STANDARD TEXT EDITOR!](http://www.gnu.org/fun/jokes/ed-msg.html)
+* [ed](https://9fans.github.io/plan9port/man/man1/ed.html) - [ED IS THE STANDARD TEXT EDITOR!](https://www.gnu.org/fun/jokes/ed-msg.html)
 
 Utilities
 ---------
@@ -186,7 +186,7 @@ Web Browsers
 ------------
 * [Abaco](http://lab-fgb.com/abaco/)
 * [Conkeror](http://www.conkeror.org/) - A Gecko based browser, imparting it Emacs style key bindings, appearances, and behaviors.
-* [Dillo](http://www.dillo.org/)
+* [Dillo](https://www.dillo.org/)
 * [edbrowse](http://edbrowse.org/)
 * [ELinks](http://elinks.or.cz/)
 * [Links](http://links.twibright.com/)
@@ -194,7 +194,7 @@ Web Browsers
 * [netsurf](http://www.netsurf-browser.org/)
 * [surf](//surf.suckless.org/)
 * [Tridactyl](https://github.com/cmcaine/tridactyl) - A WebExtension that tries to make Firefox Vim like. Unlike many similar extensions it works with firefox 57+
-* [uzbl](http://uzbl.org/) - Web interface tools which adhere to the unix philosophy.
+* [uzbl](https://www.uzbl.org/) - Web interface tools which adhere to the unix philosophy.
 * [Vimperator](http://vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like. (Doesn't work with firefox 57+)
 * [VimFX](https://addons.mozilla.org/en-US/firefox/addon/vimfx/) -
   Another extension to make Firefox Vim-like. Less invasive than

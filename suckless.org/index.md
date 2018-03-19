@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2018-03-19
+----------
+Registrations for [slcon5](/conferences/2018/) are now open.
+
 2018-03-14
 ----------
 [dmenu 4.8](//tools.suckless.org/dmenu/) released: [download](//dl.suckless.org/tools/dmenu-4.8.tar.gz)

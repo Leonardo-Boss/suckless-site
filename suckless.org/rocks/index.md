@@ -59,7 +59,7 @@ Audio Players
 * [cplay](http://cplay.sourceforge.net/)
 * [DeaDBeeF](http://deadbeef.sourceforge.net/)
 * [moc](http://moc.daper.net/)
-* [mpd](http://mpd.wikia.com/wiki/Music_Player_Daemon_Wiki) - A client/server based music player with console and graphical front-ends.
+* [mpd](https://www.musicpd.org/) - A client/server based music player with console and graphical front-ends.
 * [mpg123](http://www.mpg123.de/) - A console mpg player which doesn't use auto*hell, or extra libraries.
 * [mpg321](http://mpg321.sourceforge.net)
 * [vorbis-tools](http://www.xiph.org/) (Ogg/FLAC) - Command-line tools to play Ogg and FLAC files.
@@ -83,7 +83,7 @@ File Browsers
 File Managers
 -------------
 * [mc](https://www.midnight-commander.org/) - Midnight Commander is a free cross-platform orthodox file manager
-* [ranger](http://ranger.nongnu.org/) - ranger is a file manager with vi key bindings written in python but with an interface that rocks
+* [ranger](https://ranger.github.io/) - ranger is a file manager with vi key bindings written in python but with an interface that rocks
 
 Git
 ---
@@ -173,7 +173,7 @@ Text Editors
 
 Utilities
 ---------
-* [9menu](http://www.freshports.org/x11/9menu/) - A menu program based on the Blit-style menus so prevalent in Plan 9.  A take on it is included with wmii.
+* [9menu](https://github.com/arnoldrobbins/9menu/) - A menu program based on the Blit-style menus so prevalent in Plan 9.  A take on it is included with wmii.
 * [dmenu](//tools.suckless.org/dmenu/) - dmenu is a dynamic menu for X
 * [slmenu](https://bitbucket.org/rafaelgg/slmenu) - Dmenu spinoff for the console
 * [dvtm](http://www.brain-dump.org/projects/dvtm/) - dynamic virtual terminal manager
@@ -187,10 +187,10 @@ Web Browsers
 * [Abaco](http://lab-fgb.com/abaco/)
 * [Conkeror](http://www.conkeror.org/) - A Gecko based browser, imparting it Emacs style key bindings, appearances, and behaviors.
 * [Dillo](http://www.dillo.org/)
-* [edbrowse](http://edbrowse.sourceforge.net/)
+* [edbrowse](http://edbrowse.org/)
 * [ELinks](http://elinks.or.cz/)
 * [Links](http://links.twibright.com/)
-* [Lynx](http://lynx.browser.org/)
+* [Lynx](http://lynx.invisible-island.net/)
 * [netsurf](http://www.netsurf-browser.org/)
 * [surf](//surf.suckless.org/)
 * [Tridactyl](https://github.com/cmcaine/tridactyl) - A WebExtension that tries to make Firefox Vim like. Unlike many similar extensions it works with firefox 57+
@@ -203,7 +203,7 @@ Web Browsers
 
 X11
 ---
-* [xclip](http://sourceforge.net/projects/xclip/) - A tool for controlling the
+* [xclip](https://github.com/astrand/xclip) - A tool for controlling the
   X11 clipboard.
 * [xdotool](http://www.semicomplete.com/projects/xdotool/) - A tool for
   scripting X11 actions.

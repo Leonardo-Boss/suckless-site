@@ -9,7 +9,7 @@ These should preferably be under the MIT/X consortium or BSD licenses, WTFPL,
 or public domain, or alternatively LGPL, because it makes them legally
 compatible with other suckless projects.
 
-libc implementations
+Libc Implementations
 --------------------
 * [musl](http://www.musl-libc.org/) - standard C library that attempts to be even smaller than uClibc
 * [uClibc](http://www.uclibc.org/) - strives to be a minimalist C library suitable for embedded computing
@@ -69,18 +69,18 @@ BitTorrent Clients
 ------------------
 * [btpd](https://github.com/btpd/btpd) - The BitTorrent Protocol Daemon
 
-Feed aggregators
+Feed Aggregators
 ----------------
 * [newsboat](https://newsboat.org/) - RSS/ATOM feed reader for text terminals (updated fork of [newsbeuter](https://www.newsbeuter.org/))
 * [snownews](https://kiza.eu/software/snownews/) - Text mode RSS newsreader for Linux and Unix
 * [sfeed](https://git.codemadness.org/sfeed/) - RSS and Atom parser + CLI programs
 
-File browsers
+File Browsers
 -------------
 * [noice](https://git.2f30.org/noice/) - Small and portable file browser
 * [rover](https://github.com/lecram/rover) - Simple file browser for the terminal
 
-File managers
+File Managers
 -------------
 * [mc](https://www.midnight-commander.org/) - Midnight Commander is a free cross-platform orthodox file manager
 * [ranger](http://ranger.nongnu.org/) - ranger is a file manager with vi key bindings written in python but with an interface that rocks
@@ -141,7 +141,7 @@ Media Players
 * [mpv](http://mpv.io/) - a free, open source, and cross-platform media player
 * [ffplay](https://www.ffmpeg.org/ffplay.html) - FFplay is a very simple and portable media player. It came with ffmpeg which is a mplayer dependence.
 
-Password managers
+Password Managers
 -----------------
 * [pass](http://www.passwordstore.org/) - The standard unix password manager
 * [tpm](https://github.com/nmeum/tpm/) - Tiny password manager

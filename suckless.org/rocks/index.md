@@ -78,11 +78,12 @@ Feed Aggregators
 File Browsers
 -------------
 * [noice](https://git.2f30.org/noice/) - Small and portable file browser
+* [nnn](https://github.com/jarun/nnn) - Noice is Not Noice, a noicer fork...
 * [rover](https://lecram.github.io/p/rover/) - Simple file browser for the terminal
 
 File Managers
 -------------
-* [mc](https://www.midnight-commander.org/) - Midnight Commander is a free cross-platform orthodox file manager
+* [mc](https://midnight-commander.org/) - Midnight Commander is a free cross-platform orthodox file manager
 * [ranger](https://ranger.github.io/) - ranger is a file manager with vi key bindings written in python but with an interface that rocks
 
 Git

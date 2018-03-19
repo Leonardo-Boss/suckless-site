@@ -78,7 +78,7 @@ Feed Aggregators
 File Browsers
 -------------
 * [noice](https://git.2f30.org/noice/) - Small and portable file browser
-* [rover](https://github.com/lecram/rover) - Simple file browser for the terminal
+* [rover](https://lecram.github.io/p/rover/) - Simple file browser for the terminal
 
 File Managers
 -------------

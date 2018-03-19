@@ -34,7 +34,7 @@ Cryptography
 
 Miscellaneous
 -------------
-* [ccv](https://github.com/liuliu/ccv) - C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library
+* [ccv](http://libccv.org/) - C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library
 * [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modelled after libevent but much smaller (dual licensed under 2-clause BSD and GPL)
 * [mandoc](http://mandoc.bsd.lv/) - The mandoc UNIX manpage compiler toolset
 * [morpheus](https://morpheus.2f30.org) - a statically linked musl based Linux distro
@@ -55,7 +55,7 @@ This covers most console-based programs and programs from [plan9port][].
 
 Audio Players
 -------------
-* [C* Music Player](http://cmus.sourceforge.net/)
+* [C* Music Player](https://cmus.github.io/)
 * [cplay](http://cplay.sourceforge.net/)
 * [DeaDBeeF](http://deadbeef.sourceforge.net/)
 * [moc](http://moc.daper.net/)
@@ -97,7 +97,7 @@ IRC Clients
 * [ii](//tools.suckless.org/ii/) - A FIFO based IRC client which is part of the suckless.org project.
 * [ircrc](http://plan9.bell-labs.com/sources/contrib/fgb/rc/ircrc) - An rc-based IRC client similar to ircc. Needs minor modification to run on UNIX.
 * [irssi](http://www.irssi.org/)
-* [sic](//tools.suckless.org/sic) - Another suckless.org IRC client. Similar to ircc.
+* [sic](//tools.suckless.org/sic/) - Another suckless.org IRC client. Similar to ircc.
 * [quIRC](https://github.com/ec429/quIRC) - a lightweight console IRC client
 
 Image Viewers
@@ -118,17 +118,17 @@ Instant Messaging Clients
 * [bitlbee](http://www.bitlbee.org/main.php/news.r.html) - A program to translate IM protocols to IRC. You can now IM from your IRC client, and you don't even need to install anything.
 * [CenterIM](http://www.centerim.org/index.php/Main_Page) - A centericq fork.
 * [irssi-xmpp](http://cybione.org/~irssi-xmpp/)
-* [mcabber](http://www.lilotux.net/~mikael/mcabber/) - A console jabber client.
+* [mcabber](http://mcabber.com/) - A console jabber client.
 * [ysm](http://ysmv7.sourceforge.net/)
 
 Mail Clients
 ------------
-* [Mail][plan9port] - A mail client for [acme][acme]. Included with plan9port.
+* [Mail][plan9port] - A mail client for [acme][]. Included with plan9port.
 * [dmc](//git.suckless.org/dmc/) - A minimalistic approach to a command-line mail client (WIP)
 * [fdm](https://github.com/nicm/fdm) - fetch and deliver mail
 * [isync](http://isync.sourceforge.net/) - MDA that can work better for IMAP
 * [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
-* [s-nail](http://sourceforge.net/projects/s-nail/) - An improved heirloom-mailx.
+* [s-nail](https://www.sdaoden.eu/code.html) - An improved heirloom-mailx.
 * [mutt](http://www.mutt.org/)
 * [nmh](http://www.nongnu.org/nmh/)
 * [mmh](http://marmaro.de/prog/mmh/)
@@ -136,7 +136,7 @@ Mail Clients
 
 Media Players
 -------------
-* [mplayer](http://www.mplayerhq.hu/) (without GUI) - You know mplayer, but you may not know that it works well without the GUI.
+* [mplayer](http://www.mplayerhq.hu/design7/news.html) (without GUI) - You know mplayer, but you may not know that it works well without the GUI.
 * [mpv](http://mpv.io/) - a free, open source, and cross-platform media player
 * [ffplay](https://www.ffmpeg.org/ffplay.html) - FFplay is a very simple and portable media player. It came with ffmpeg which is a mplayer dependence.
 
@@ -158,8 +158,8 @@ Shells
 
 Text Editors
 ------------
-* [acme][acme] - Rob Pike's framing text editor for Plan 9. Included in [plan9port][].
-* [ired](http://www.radare.org/y/) (Minimalist hexadecimal editor and bindiffer for p9, w32 and *nix)
+* [acme][] - Rob Pike's framing text editor for Plan 9. Included in [plan9port][].
+* [ired](http://www.radare.org/r/) (Minimalist hexadecimal editor and bindiffer for p9, w32 and *nix)
 * [mg](https://homepage.boetes.org/software/mg/) (portable version of mg maintained by the OpenBSD team)
 * [nano](https://www.nano-editor.org/) - A pico clone - this is small simple code and easy to use.
 * [mle](https://github.com/adsr/mle) - A small, flexible console text editor.
@@ -169,7 +169,7 @@ Text Editors
 * [vim](http://www.vim.org) (With the GUI, use `:set go+=c` to kill popup dialogs)
 * [vis](https://github.com/martanne/vis) - A modern, legacy free, simple yet efficient vim-like editor.
 * [wily](http://www.cse.yorku.ca/~oz/wily/) - An acme clone for POSIX.
-* [ed](http://swtch.com/plan9port/man/man1/ed.html) - [ED IS THE STANDARD TEXT EDITOR!](http://www.gnu.org/fun/jokes/ed-msg.html)
+* [ed](https://9fans.github.io/plan9port/man/man1/ed.html) - [ED IS THE STANDARD TEXT EDITOR!](http://www.gnu.org/fun/jokes/ed-msg.html)
 
 Utilities
 ---------
@@ -195,7 +195,7 @@ Web Browsers
 * [surf](//surf.suckless.org/)
 * [Tridactyl](https://github.com/cmcaine/tridactyl) - A WebExtension that tries to make Firefox Vim like. Unlike many similar extensions it works with firefox 57+
 * [uzbl](http://uzbl.org/) - Web interface tools which adhere to the unix philosophy.
-* [Vimperator](http://www.vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like. (Doesn't work with firefox 57+)
+* [Vimperator](http://vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like. (Doesn't work with firefox 57+)
 * [VimFX](https://addons.mozilla.org/en-US/firefox/addon/vimfx/) -
   Another extension to make Firefox Vim-like. Less invasive than
   Vimperator (Doesn't work with firefox 57+)
@@ -210,12 +210,12 @@ X11
 * [xzoom](http://git.r-36.net/xzoom/) - A simple zoom application.
 * [keynav](http://www.semicomplete.com/projects/keynav/) - A new way for
   keyboard selection.
-* [ffcast](https://github.com/lolilolicon/FFcast2) - Simple screencasting.
+* [ffcast](https://github.com/lolilolicon/FFcast) - Simple screencasting.
 * [wmutils](https://github.com/wmutils/core) - A set of utilities for managing windows. Can be used on their own or to augment a WM itself. Support for tiling present.
 * [grabc](http://www.muquit.com/muquit/software/grabc/grabc.html) - Grab the
   color of some pixel in X11.
 
-[plan9port]: http://swtch.com/plan9port/
+[plan9port]: https://9fans.github.io/plan9port/
 [acme]: http://acme.cat-v.org
 
 Daemons
@@ -227,8 +227,8 @@ which work well with dwm).
 
 Web Servers
 -----------
-* [quark](https://tools.suckless.org/quark/) - suckless simple static web server
-* [OpenBSD httpd/relayd](https://bsd.plumbing/about.html) - Designed to combat the feature creep of modern webservers. Boasts extremely concise configuration, with sane default behavior.
+* [quark](//tools.suckless.org/quark/) - suckless simple static web server
+* [OpenBSD httpd/relayd](https://bsd.plumbing/) - Designed to combat the feature creep of modern webservers. Boasts extremely concise configuration, with sane default behavior.
 * [darkhttpd](https://unix4lyfe.org/darkhttpd/) - Darkhttpd is a simple, fast HTTP 1.1 web server for static content.
 * [thttpd](http://acme.com/software/thttpd/) - Outperforms many bigger httpds. Old, still works very well!
 * [mini_httpd](http://acme.com/software/mini_httpd/) - By the thttpd developers. Even smaller subset of thttpd with support for .htpasswd, CGI, dirlisting, HTTP errors and SSL, nothing more or less than that.

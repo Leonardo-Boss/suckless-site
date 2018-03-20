@@ -8,6 +8,7 @@ News
 2018-03-20
 ----------
 [st 0.8.1](//st.suckless.org/) released: [download](//dl.suckless.org/st/st-0.8.1.tar.gz)
+
 This release fixes some regressions introduced in the 0.8 release.
 
 2018-03-19

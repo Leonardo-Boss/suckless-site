@@ -70,6 +70,6 @@ source code repository or get a copy using git with the following command:
 
 Download
 --------
-* [st 0.8](//dl.suckless.org/st/st-0.8.tar.gz) (2018-03-14)
+* [st 0.8.1](//dl.suckless.org/st/st-0.8.1.tar.gz) (2018-03-20)
 * [LICENSE](//git.suckless.org/st/plain/LICENSE)
 

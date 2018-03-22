@@ -1,5 +1,5 @@
 diff --git a/x.c b/x.c
-index d43a529..9c9bcbd 100644
+index d43a529..599696f 100644
 --- a/x.c
 +++ b/x.c
 @@ -96,6 +96,11 @@ typedef struct {
@@ -14,10 +14,10 @@ index d43a529..9c9bcbd 100644
  	int scr;
  	int isfixed; /* is fixed geometry? */
  	int l, t; /* left and top offset */
-@@ -411,6 +416,13 @@ bpress(XEvent *e)
- 	MouseShortcut *ms;
- 	int snap;
- 
+@@ -649,6 +654,13 @@ brelease(XEvent *e)
+ void
+ bmotion(XEvent *e)
+ {
 +	if (!xw.pointerisvisible) {
 +		XDefineCursor(xw.dpy, xw.win, xw.vpointer);
 +		xw.pointerisvisible = 1;

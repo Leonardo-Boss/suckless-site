@@ -35,6 +35,7 @@ to disable lighting up bold colors.
  * [st-no_bold_colors-0.5.diff](st-no_bold_colors-0.5.diff)
  * [st-no_bold_colors-0.6.diff](st-no_bold_colors-0.6.diff)
  * [st-no_bold_colors-0.7.diff](st-no_bold_colors-0.7.diff)
+ * [st-no_bold_colors-0.8.1.diff](st-no_bold_colors-0.8.1.diff)
  * [st-no_bold_colors-20170623-b331da5.diff](st-no_bold_colors-20170623-b331da5.diff)
 
 Choose one of the following patches to get either the light
@@ -56,6 +57,7 @@ or the dark color scheme:
 
 *Both (swap between light/dark with F6)*:
 
+ * [st-solarized-both-0.8.1.diff](st-solarized-both-0.8.1.diff)
  * [st-solarized-both-20170626-b331da5.diff](st-solarized-both-20170626-b331da5.diff)
 
 
@@ -67,3 +69,4 @@ Authors
  * Marcel Krüger - <zauguin@gmail.com> (older git ports)
  * Harry Gindi - <harry.gindi@live.com> (git ports for light, dark, and swap versions)
  * Matthew Parnell - <matt@parnmatt.co.uk> (0.7 port)
+ * Linh Nguyen - <linhvng.2212@gmail.com> (0.8.1 port for no_bold_colors and swap versions)

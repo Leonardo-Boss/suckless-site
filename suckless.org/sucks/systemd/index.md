@@ -39,7 +39,8 @@ The Never Ending Part
 
 Part 4
 ------
-[systemd-logind deletes your message queues](https://knzl.de/systemd-removeipc)
+* [systemd-logind deletes your message queues](https://knzl.de/systemd-removeipc)
+* [systemd breaks the mouse(again)](https://github.com/systemd/systemd/issues/8579)
 
 Part 3
 ------

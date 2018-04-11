@@ -54,6 +54,7 @@ or the dark color scheme:
  * [st-solarized-dark-0.6.diff](st-solarized-dark-0.6.diff)
  * [st-solarized-dark-0.7.diff](st-solarized-dark-0.7.diff)
  * [st-solarized-dark-20170623-b331da5.diff](st-solarized-dark-20170623-b331da5.diff)
+ * [st-solarized-dark-20180411-041912a.diff](st-solarized-dark-20180411-041912a.diff)
 
 *Both (swap between light/dark with F6)*:
 

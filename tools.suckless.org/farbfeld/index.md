@@ -39,6 +39,7 @@ Download
 * [farbfeld-1](//dl.suckless.org/farbfeld/farbfeld-1.tar.gz) (2016-01-06)
 * [farbfeld-2](//dl.suckless.org/farbfeld/farbfeld-2.tar.gz) (2016-03-14)
 * [farbfeld-3](//dl.suckless.org/farbfeld/farbfeld-3.tar.gz) (2017-04-14)
+* [farbfeld-4](//dl.suckless.org/farbfeld/farbfeld-4.tar.gz) (2018-04-11)
 
 Also make sure to check your package manager. The following distributions
 provide packages:

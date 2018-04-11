@@ -5,6 +5,10 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2018-04-11
+----------
+[farbfeld 4](//tools.suckless.org/farbfeld/) released: [download](//dl.suckless.org/farbfeld/farbfeld-4.tar.gz)
+
 2018-03-20
 ----------
 [st 0.8.1](//st.suckless.org/) released: [download](//dl.suckless.org/st/st-0.8.1.tar.gz)

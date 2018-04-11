@@ -44,7 +44,7 @@ Download
 Also make sure to check your package manager. The following distributions
 provide packages:
 
-* [Alpine Linux](https://pkgs.alpinelinux.org/package/edge/testing/x86_64/farbfeld)
+* [Alpine Linux](https://pkgs.alpinelinux.org/package/edge/community/x86_64/farbfeld)
 * [Arch Linux (AUR)](https://aur.archlinux.org/packages/farbfeld)
 * [Debian](https://packages.debian.org/farbfeld)
 * [FreeBSD](https://svnweb.freebsd.org/ports/head/graphics/farbfeld/)

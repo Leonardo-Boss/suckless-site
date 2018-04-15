@@ -18,6 +18,7 @@ Download
 
  * [st-visualbell-20160727-308bfbf.diff](st-visualbell-20160727-308bfbf.diff)
  * [st-visualbell-20180101-1f24bde.diff](st-visualbell-20180101-1f24bde.diff)
+ * [st-visualbell-0.8.1.diff](st-visualbell-0.8.1.diff)
 
 Authors
 -------

@@ -20,6 +20,7 @@ Download
  * [st-copyurl-0.7.diff](st-copyurl-0.7.diff)
  * [st-copyurl-20161105-8c99915.diff](st-copyurl-20161105-8c99915.diff)
  * [st-copyurl-20170802-e2ee5ee.diff](st-copyurl-20170802-e2ee5ee.diff)
+ * [st-copyurl-20180418-7e810b5.diff](st-copyurl-20180418-7e810b5.diff)
 
 Authors
 -------
@@ -28,3 +29,4 @@ Authors
  * Laslo Hunhold - <dev@frign.de> (0.6 port)
  * David Phillips - <david@sighup.nz> (git port)
  * Matthew Parnell - <matt@parnmatt.co.uk> (0.7, git ports)
+ * Michael Buch - <michaelbuch12@gmail.com> (0.8+ git port)

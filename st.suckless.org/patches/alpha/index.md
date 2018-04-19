@@ -27,6 +27,7 @@ Download
  * [st-alpha-20160727-308bfbf.diff](st-alpha-20160727-308bfbf.diff)
  * [st-alpha-20170509-5a10aca.diff](st-alpha-20170509-5a10aca.diff)
  * [st-alpha-20171221-0ac685f.diff](st-alpha-20171221-0ac685f.diff)
+ * [st-alpha-0.8.1.diff](st-alpha-0.8.1.diff)
 
 Authors
 -------
@@ -36,3 +37,4 @@ Authors
  * Laslo Hunhold - <dev@frign.de> (0.6, git ports)
  * Ivan J. - <parazyd@dyne.org> (git port)
  * Matthew Parnell - <matt@parnmatt.co.uk> (0.7 port)
+ * Johannes Mayrhofer - <jm.spam@gmx.net> (0.8.1 port)

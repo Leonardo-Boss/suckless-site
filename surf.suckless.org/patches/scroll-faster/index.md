@@ -13,7 +13,7 @@ At the moment it's hardcoded to factor 7. Change it per your needs.
 Download
 --------
 
-* [surf-scrollmultiply-2.0.diff](surf-scrollmultiply-2.0.diff) (3405) (20180413)
+* [surf-scrollmultiply-2.0.diff](surf-scrollmultiply-2.0.diff) (1304) (20180413)
 
 Authors
 -------

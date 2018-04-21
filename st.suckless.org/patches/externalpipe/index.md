@@ -13,8 +13,8 @@ config.h example, binding `TERMMOD + U` to extract all visible URLs and present
 dmenu to select and open one:
 
 	static char *openurlcmd[] = { "/bin/sh", "-c",
-		"xurls | dmenu -l 10 -w $1 | xargs -r open",
-		"externalpipe", winid, NULL };
+		"xurls | dmenu -l 10 -w $WINDOWID | xargs -r open",
+		"externalpipe", NULL };
 	Shortcut shortcuts[] = {
 		...
 		{ TERMMOD, XK_U, externalpipe, { .v = openurlcmd } },

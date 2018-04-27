@@ -22,6 +22,10 @@ Download
  * [st-copyurl-20170802-e2ee5ee.diff](st-copyurl-20170802-e2ee5ee.diff)
  * [st-copyurl-20180418-7e810b5.diff](st-copyurl-20180418-7e810b5.diff)
 
+Following is the first patch that highlights selected urls:
+
+ * [st-copyurl-20180427-70b7059.diff](st-copyurl-20180427-70b7059.diff)
+
 Authors
 -------
 
@@ -29,4 +33,4 @@ Authors
  * Laslo Hunhold - <dev@frign.de> (0.6 port)
  * David Phillips - <david@sighup.nz> (git port)
  * Matthew Parnell - <matt@parnmatt.co.uk> (0.7, git ports)
- * Michael Buch - <michaelbuch12@gmail.com> (0.8+ git port)
+ * Michael Buch - <michaelbuch12@gmail.com> (0.8+ git port, url highlighting)

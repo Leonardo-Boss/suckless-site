@@ -16,4 +16,4 @@ Download
 Author
 ------
 
-* thatlittlegit - <thatlittlegit@protonmail.com>
+* thatlittlegit - <personal@thatlittlegit.tk>

@@ -22,9 +22,9 @@ Download
  * [st-copyurl-20170802-e2ee5ee.diff](st-copyurl-20170802-e2ee5ee.diff)
  * [st-copyurl-20180418-7e810b5.diff](st-copyurl-20180418-7e810b5.diff)
 
-Following is the first patch that highlights selected urls:
+Following patches also highlight the selected urls:
 
- * [st-copyurl-20180427-70b7059.diff](st-copyurl-20180427-70b7059.diff)
+ * [st-copyurl-20180514-a7bd977.diff](st-copyurl-20180514-a7bd977.diff)
 
 Authors
 -------

@@ -15,6 +15,7 @@ CLIPBOARD.
 Download
 --------
 
+* [st-clipboard-0.8.1.diff](st-clipboard-0.8.1.diff)
 * [st-clipboard-0.6.diff](st-clipboard-0.6.diff)
 * [st-clipboard-0.7.diff](st-clipboard-0.7.diff)
 * [st-clipboard-20160727-308bfbf.diff](st-clipboard-20160727-308bfbf.diff)

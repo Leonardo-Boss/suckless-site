@@ -42,21 +42,20 @@ Helper functions
 ----------------
 
 If you have simple C functions for gathering system information, please
-add them here as file or as code example.
+add them here (keeping the list sorted).
 
-* [Support for ACPI battery status Linux](new-acpi-battery.c)
-* [Reading out a temperature from /sys](dwmstatus-temperature.c)
-* [Reading up-, and downspeeds of all network interfaces from /proc/net](dwmstatus-netusage.c)
-* [Counting number of mails in a Maildir/new](mail_counter.c)
-* [Get disk usage and execute some check at different moments](diskspace_timechk.c) : Because you don't want to check new mails every second
+* [ACPI battery status on Linux](new-acpi-battery.c)
+* [Battery on Linux](batterystatus.c): Battery percentage and status. + if
+  charging, - if discharging, = if full.
 * [Detecting Man-In-The-Middle](dwmstatus-mitm.c)
-* [Show line per line the content of a file](dynamic_info.c) : See
+* [Disk usage and execute some check at different moments](diskspace_timechk.c)
+* [FIFO info](fifo.c): Replaces dynamic_info.
+* [Line per line the content of a file](dynamic_info.c): See
   tmpinfo function. It prints line after line the content of
   /tmp/dwmbuf.
-* [Simple function to have uptime](uptime.c)
-* [Simple function to have mpd title/artist info](mpdstatus.c)
-* [Print any info in dwm status bar via fifo](fifo.c). Replaces
-  dynamic_info.
-* [Battery function](batterystatus.c) : Battery percentage and status. + if
-  charging, - if discharging, = if full.
-* [Alsa Volume API](getvol.c) : Alsa Volume via the Alsa API
+* [MPD title/artist](mpdstatus.c)
+* [Number of new mails in a Maildir](mail_counter.c)
+* [Temperature from /sys on Linux](dwmstatus-temperature.c)
+* [Uptime](uptime.c)
+* [Up-, and downspeeds of all network interfaces from /proc/net on Linux](dwmstatus-netusage.c)
+* [Volume via ALSA API](getvol.c)

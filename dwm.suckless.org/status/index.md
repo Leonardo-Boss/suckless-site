@@ -1,8 +1,17 @@
-dwmstatus
-=========
+status
+======
 
-**dwm**'s status bar text can be set using the `xsetroot -name $status`
-notion. This very well leads to big scripts, which pull in unneeded
+The status bar text of **dwm** is stored in the WM_NAME X11 property of the
+root window, which is managed by dwm.
+
+It can be easily set and retrieved using standard Unix tools.
+
+	xsetroot -name $status
+
+	xprop -root -notype -f WM_NAME "8u" \
+		| sed -n -r 's/WM_NAME = \"(.*)\"/\1/p'
+
+Using shell scripts very well leads to big scripts, which pull in unneeded
 dependencies. One solution for this is to write everything in C, which is much
 more efficient.
 

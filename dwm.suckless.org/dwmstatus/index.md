@@ -3,16 +3,16 @@ dwmstatus
 
 **dwm**'s status bar text can be set using the `xsetroot -name $status`
 notion. This very well leads to big scripts, which pull in unneeded
-dependencies. One solution for this is to write everything in C. C is much
-more efficient. This page will give you a barebone dwmstatus project and
-show examples on how to extend it to your needs.
+dependencies. One solution for this is to write everything in C, which is much
+more efficient.
 
-The Barebone
-------------
+slstatus - suckless status
+--------------------------
 
-	git clone git://git.suckless.org/dwmstatus
+General purpose status monitor for dwm and other window managers for Linux and
+OpenBSD written in C for maxium efficiency.
 
-This is a barebone project you can use for changing it to your needs.
+You can read more [on the project page](https://tools.suckless.org/slstatus/).
 
 User submitted versions
 -----------------------
@@ -27,7 +27,6 @@ Please add your own version of dwmstatus here (keeping the list sorted).
 * [go-dwmstatus](https://github.com/oniichaNj/go-dwmstatus) - A Go bar that prints current MPD song, load averages, time/date and battery percentage.
 * [gods](https://github.com/schachmat/gods) - implemented in Go. prints network speed, cpu, ram, date/time
 * [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent and date/time
-* **slstatus** - suckless alternative to bash scripts (inefficient) and conky (bloated for this use) - it displays various system information and can be customized via config.h - [git mirror](https://git.drkhsh.at/slstatus), [github](https://github.com/drkhsh/slstatus)
 * [suspend-statusbar.c](https://github.com/snobb/dwm-statusbar) - date, loadavg, battery and more. If battery goes below threshold - run suspend command
 
 Helper functions
@@ -52,10 +51,3 @@ add them here as file or as code example.
 * [Battery function](batterystatus.c) : Battery percentage and status. + if
   charging, - if discharging, = if full.
 * [Alsa Volume API](getvol.c) : Alsa Volume via the Alsa API
-
-Questions
----------
-
-If you have any questions regarding dwmstatus, contact Christoph Lohmann
-(<20h@r-36.net>).
-

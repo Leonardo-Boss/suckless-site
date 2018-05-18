@@ -1,5 +1,5 @@
-status
-======
+status monitor
+==============
 
 The status bar text of **dwm** is stored in the WM_NAME X11 property of the
 root window, which is managed by dwm.

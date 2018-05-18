@@ -1,5 +1,5 @@
-email notifier script
-=====================
+email notifications
+===================
 
 Description
 -----------

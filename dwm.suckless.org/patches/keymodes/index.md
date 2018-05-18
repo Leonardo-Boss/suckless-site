@@ -46,5 +46,5 @@ With this patch dwm starts in `COMMANDMODE` and you can use the key bindings as 
 
 ## Download ##
 
- * [dwm-keymodes-5.8.2.diff][dwm-keymodes-5.8.2] (20100611, joten (at) freenet (dot) de)
- * [dwm-keymodes-vim-5.8.2.diff][dwm-keymodes-vim-5.8.2 (20100611, joten (at) freenet (dot) de)
+ * [dwm-keymodes-5.8.2.diff](dwm-keymodes-5.8.2.diff) (20100611, joten (at) freenet (dot) de)
+ * [dwm-keymodes-vim-5.8.2.diff](dwm-keymodes-vim-5.8.2.diff) (20100611, joten (at) freenet (dot) de)

@@ -25,7 +25,7 @@ Download
 Following patches also highlight the selected urls:
 
  * [st-copyurl-20180514-a7bd977.diff](st-copyurl-20180514-a7bd977.diff)
- * [st-copyurl-20180520-53d59ef.diff](st-copyurl-20180520-53d59ef.diff)
+ * [st-copyurl-20180520-0fe819f.diff](st-copyurl-20180520-0fe819f.diff)
 
 Authors
 -------

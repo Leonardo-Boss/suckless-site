@@ -53,6 +53,15 @@ OpenBSD written in C for maxium efficiency.
 
 You can read more [on the project page](https://tools.suckless.org/slstatus/).
 
+dwmstatus
+---------
+
+Barebone status monitor with basic functions written in C. It can be used
+instead of slstatus if only very basic functions are needed. Extension is
+possible too using code from below.
+
+You can read more on [r-36](http://git.r-36.net/dwmstatus/).
+
 User submitted versions
 -----------------------
 

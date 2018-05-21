@@ -73,15 +73,6 @@ index ec6a27c..7b6ce67 100644
  Client *
  nexttiled(Client *c)
  {
-@@ -1204,7 +1229,7 @@ void
- pop(Client *c)
- {
- 	detach(c);
--	attach(c);
-+	attachaside(c);
- 	focus(c);
- 	arrange(c->mon);
- }
 @@ -1418,7 +1443,7 @@ sendmon(Client *c, Monitor *m)
  	detachstack(c);
  	c->mon = m;

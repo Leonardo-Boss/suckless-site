@@ -43,7 +43,7 @@ Blocks
 * All variable declarations at top of block
 * `{` on same line preceded by single space (except functions)
 * `}` on own line unless continuing statement (`if else`, `do while`, ...)
-* Use block for single statement ifs
+* Use block for single statement iff
 	* Inner statement needs a block
 
 			for (;;) {

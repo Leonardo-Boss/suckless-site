@@ -2,7 +2,7 @@ diff --git a/config.def.h b/config.def.h
 index 7054c06..9f4ef79 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -111,3 +111,65 @@ static Button buttons[] = {
+@@ -111,3 +111,66 @@ static Button buttons[] = {
  	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
  };
  
@@ -10,6 +10,7 @@ index 7054c06..9f4ef79 100644
 +static Command commands[] = {
 +	{ "dmenu",           spawn,          {.v = dmenucmd} },
 +	{ "term",            spawn,          {.v = termcmd} },
++	{ "quit",            quit,           {0} },
 +	{ "togglebar",       togglebar,      {0} },
 +	{ "focusstack+",     focusstack,     {.i = +1} },
 +	{ "focusstack-",     focusstack,     {.i = -1} },
@@ -80,12 +81,11 @@ index 0362114..5c45d2a 100644
  #include <locale.h>
  #include <signal.h>
  #include <stdarg.h>
-@@ -28,6 +29,8 @@
+@@ -28,6 +29,7 @@
  #include <stdlib.h>
  #include <string.h>
  #include <unistd.h>
 +#include <sys/select.h>
-+#include <sys/stat.h>
  #include <sys/types.h>
  #include <sys/wait.h>
  #include <X11/cursorfont.h>
@@ -130,32 +130,33 @@ index 0362114..5c45d2a 100644
  }
  
  void
-@@ -702,6 +715,25 @@ dirtomon(int dir)
+@@ -701,6 +714,26 @@ dirtomon(int dir)
+ 	return m;
  }
  
- void
++void
 +dispatchcmd(void)
 +{
-+       int i;
-+       char buf[BUFSIZ];
-+       ssize_t n;
++	int i;
++	char buf[BUFSIZ];
++	ssize_t n;
 +
-+       n = read(fifofd, buf, sizeof(buf) - 1);
-+       if (n == -1)
-+               die("Failed to read() from DWM fifo %s:", dwmfifo);
-+       buf[n] = '\0';
-+       for (i = 0; i < LENGTH(commands); i++) {
-+               if (strcmp(commands[i].name, buf) == 0) {
-+                       commands[i].func(&commands[i].arg);
-+                       break;
-+               }
-+       }
++	n = read(fifofd, buf, sizeof(buf) - 1);
++	if (n == -1)
++		die("Failed to read() from DWM fifo %s:", dwmfifo);
++	buf[n] = '\0';
++	buf[strcspn(buf, "\n")] = '\0';
++	for (i = 0; i < LENGTH(commands); i++) {
++		if (strcmp(commands[i].name, buf) == 0) {
++			commands[i].func(&commands[i].arg);
++			break;
++		}
++	}
 +}
 +
-+void
+ void
  drawbar(Monitor *m)
  {
- 	int x, xx, w, dx;
 @@ -781,6 +813,12 @@ enternotify(XEvent *e)
  	focus(c);
  }
@@ -173,35 +174,33 @@ index 0362114..5c45d2a 100644
  run(void)
  {
  	XEvent ev;
--	/* main event loop */
--	XSync(dpy, False);
++	fd_set rfds;
++	int n;
++	int dpyfd, maxfd;
+ 	/* main event loop */
+ 	XSync(dpy, False);
 -	while (running && !XNextEvent(dpy, &ev))
 -		if (handler[ev.type])
 -			handler[ev.type](&ev); /* call handler */
-+        fd_set rfds;
-+        int n;
-+        int dpyfd, maxfd;
-+        /* main event loop */
-+        XSync(dpy, False);
-+        dpyfd = ConnectionNumber(dpy);
-+        maxfd = fifofd;
-+        if (dpyfd > maxfd)
-+                maxfd = dpyfd;
-+        maxfd++;
-+        while (running) {
-+                FD_ZERO(&rfds);
-+                FD_SET(fifofd, &rfds);
-+                FD_SET(dpyfd, &rfds);
-+                n = select(maxfd, &rfds, NULL, NULL, NULL);
-+                if (n > 0) {
-+                        if (FD_ISSET(fifofd, &rfds))
-+                                dispatchcmd();
-+                        if (FD_ISSET(dpyfd, &rfds))
-+                                while (XCheckIfEvent(dpy, &ev, evpredicate, NULL))
-+                                        if (handler[ev.type])
-+                                                handler[ev.type](&ev); /* call handler */
-+                }
-+        }
++	dpyfd = ConnectionNumber(dpy);
++	maxfd = fifofd;
++	if (dpyfd > maxfd)
++		maxfd = dpyfd;
++	maxfd++;
++	while (running) {
++		FD_ZERO(&rfds);
++		FD_SET(fifofd, &rfds);
++		FD_SET(dpyfd, &rfds);
++		n = select(maxfd, &rfds, NULL, NULL, NULL);
++		if (n > 0) {
++			if (FD_ISSET(fifofd, &rfds))
++				dispatchcmd();
++			if (FD_ISSET(dpyfd, &rfds))
++				while (XCheckIfEvent(dpy, &ev, evpredicate, NULL))
++					if (handler[ev.type])
++						handler[ev.type](&ev); /* call handler */
++		}
++	}
  }
  
  void

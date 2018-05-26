@@ -71,6 +71,7 @@ Feel free to add your own status monitors here (keeping the list sorted).
 * [dstat](https://www.umaxx.net/dl) [Screenshot](https://www.umaxx.net/dstat.png) - displays the current network throughput, CPU usage, performance settings, battery status, temperature, volume settings, as well as the current date and time (OpenBSD only, no support for Linux).
 * [dwms](https://github.com/ianremmler/dwms) - displays time, network, audio, and battery status, written in Go using XGB.
 * [dwmsd](https://github.com/johnko/dwmsd) - a daemon that listens on localhost tcp (may be useful as a base for asynchronous updates)
+* [dwm-sss](https://github.com/roadkillcat/dwm_sss) - shell script providing date, time and CPU temperature
 * [dwmstat](https://notabug.org/kl3/dwmstat) - small and simple | IP, CPU temperature, system volume, current local time (and more) | config.h | OpenBSD
 * [go-dwmstatus](https://github.com/oniichaNj/go-dwmstatus) - A Go bar that prints current MPD song, load averages, time/date and battery percentage.
 * [gods](https://github.com/schachmat/gods) - implemented in Go. prints network speed, cpu, ram, date/time

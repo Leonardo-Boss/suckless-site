@@ -7,8 +7,10 @@ News
 
 2018-05-27
 ----------
-Scheduled maintainance on Friday 1 and Saturday 2 of June 2018. Migration to the new server will happen on these days.
-The git repositories and mailinglist will be frozen on the old (now current) server.
+There will be a scheduled server maintenance next Friday and Saturday, 2018-06-(01-02).
+The migration to the new server will happen on these days and the git
+repositories and mailing list will be frozen on the old (now current)
+server.
 
 2018-04-11
 ----------

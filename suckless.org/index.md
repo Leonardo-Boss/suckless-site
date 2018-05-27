@@ -5,6 +5,11 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2018-05-27
+----------
+Scheduled maintainance on Friday 1 and Saturday 2 of June 2018. Migration to the new server will happen on these days.
+The git repositories and mailinglist will be frozen on the old (now current) server.
+
 2018-04-11
 ----------
 [farbfeld 4](//tools.suckless.org/farbfeld/) released: [download](//dl.suckless.org/farbfeld/farbfeld-4.tar.gz)

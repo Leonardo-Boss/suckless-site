@@ -7,7 +7,7 @@ News
 
 2018-06-01
 ----------
-The maintainance is completed. Let me know of any important things that broken.
+The maintainance is completed. Let me know of any important things that are broken.
 Internally we will keep tweaking the server configuration over the course of
 time.
 

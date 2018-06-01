@@ -5,6 +5,12 @@ Read more about our [philosophy](/philosophy) and join us on the [mailing list](
 News
 ====
 
+2018-06-01
+----------
+The maintainance is completed. Let me know of any important things that broken.
+Internally we will keep tweaking the server configuration over the course of
+time.
+
 2018-05-27
 ----------
 There will be a scheduled server maintenance next Friday and Saturday, 2018-06-(01-02).

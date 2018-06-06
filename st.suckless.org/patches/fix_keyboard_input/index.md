@@ -22,14 +22,14 @@ Notes
    from this patch to re-enable the behavior:
 
 ```
-	{ XK_bracketleft,  ControlMask,                    "\033[91;5u",  0,  0,  0},
+	{ XK_bracketleft,  ControlMask,                    "\033[91;5u",  0,  0},
 ```
 
  - If you use `<C-6>` for changing to the alternative file, I suggest that you
    remove the following line from this patch to re-enable the behavior:
 
 ```
-	{ XK_6,            ControlMask,                    "\033[54;5u",  0,  0,  0},
+	{ XK_6,            ControlMask,                    "\033[54;5u",  0,  0},
 ```
 
  - I managed to bind the new mappings to actions in neovim.  If you're using
@@ -66,13 +66,13 @@ Notes
 Here is an example.  This entry
 
 ```
-	{ XK_underscore,   ControlMask,                    "\033[95;5u",  0,  0,  0},
+	{ XK_underscore,   ControlMask,                    "\033[95;5u",  0,  0},
 ```
 
 becomes the following:
 
 ```
-	{ XK_underscore,   ControlMask,                    "\23395;5u",  0,  0,  0},
+	{ XK_underscore,   ControlMask,                    "\23395;5u",   0,  0},
 ```
 
 Download
@@ -80,6 +80,7 @@ Download
 
  * [st-fix-keyboard-input-20170603-5a10aca.diff](st-fix-keyboard-input-20170603-5a10aca.diff)
  * [st-fix-keyboard-input-20170621-b331da5.diff](st-fix-keyboard-input-20170621-b331da5.diff)
+ * [st-fix-keyboard-input-20180605-dc3b5ba.diff](st-fix-keyboard-input-20180605-dc3b5ba.diff)
 
 Authors
 -------

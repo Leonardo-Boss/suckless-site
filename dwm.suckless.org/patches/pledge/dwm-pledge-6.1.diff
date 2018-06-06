@@ -5,7 +5,7 @@ Index: dwm.c
  		die("dwm: cannot open display\n");
  	checkotherwm();
  	setup();
-+	if (pledge("stdio proc exec", NULL) == -1)
++	if (pledge("stdio rpath proc exec", NULL) == -1)
 +		die("pledge\n");
  	scan();
  	run();

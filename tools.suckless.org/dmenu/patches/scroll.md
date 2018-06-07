@@ -7,7 +7,7 @@ in surf, after having inserted a long url via tab-completion.
 
 Download
 --------
-* [dmenu-scroll-20180224-8895128.diff](dmenu-scroll-20180224-8895128.diff)
+* [dmenu-scroll-20180607-a314412.diff](dmenu-scroll-20180607-a314412.diff)
 
 Author
 ------

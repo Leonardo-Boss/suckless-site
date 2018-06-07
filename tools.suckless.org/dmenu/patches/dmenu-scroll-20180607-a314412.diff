@@ -1,22 +1,8 @@
-From 32ae6bfb5f3a840443c52c9a53c27b126c3b59d0 Mon Sep 17 00:00:00 2001
-From: nzl <uruabi@gmail.com>
-Date: Sat, 24 Feb 2018 13:47:59 +0800
-Subject: [PATCH] Implement text scrolling
-
-a new function drw_text_align is added, it is different from drw_text in that
-it doesn't append '...' for long text, and it allows drawing text right
-justified.
----
- dmenu.c |  28 ++++++++---
- drw.c   | 169 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
- drw.h   |   2 +
- 3 files changed, 191 insertions(+), 8 deletions(-)
-
 diff --git a/dmenu.c b/dmenu.c
-index a246111..d51b404 100644
+index 5c835dd..71efe52 100644
 --- a/dmenu.c
 +++ b/dmenu.c
-@@ -128,9 +128,11 @@ drawitem(struct item *item, int x, int y, int w)
+@@ -131,9 +131,10 @@ drawitem(struct item *item, int x, int y, int w)
  static void
  drawmenu(void)
  {
@@ -25,11 +11,10 @@ index a246111..d51b404 100644
  	struct item *item;
  	int x = 0, y = 0, w;
 +	int curlen, rcurlen;
-+	char ch;
  
  	drw_setscheme(drw, scheme[SchemeNorm]);
  	drw_rect(drw, 0, 0, mw, mh, 1, 1);
-@@ -141,14 +143,24 @@ drawmenu(void)
+@@ -144,14 +145,21 @@ drawmenu(void)
  	}
  	/* draw input field */
  	w = (lines > 0 || !matches) ? mw - x : inputw;
@@ -37,23 +22,20 @@ index a246111..d51b404 100644
 -	drw_text(drw, x, 0, w, bh, lrpad / 2, text, 0);
 +	w -= lrpad / 2;
 +	x += lrpad / 2;
-+
-+	ch = text[cursor];
-+	text[cursor] = '\0';
-+	curlen = drw_fontset_getwidth(drw, text);
-+	text[cursor] = ch;
+ 
+-	curpos = TEXTW(text) - TEXTW(&text[cursor]);
+-	if ((curpos += lrpad / 2 - 1) < w) {
+-		drw_setscheme(drw, scheme[SchemeNorm]);
+-		drw_rect(drw, x + curpos, 2, 2, bh - 4, 1, 0);
+-	}
 +	rcurlen = drw_fontset_getwidth(drw, text + cursor);
++	curlen = drw_fontset_getwidth(drw, text) - rcurlen;
 +	curpos += curlen - oldcurlen;
 +	curpos = MIN(w, MAX(0, curpos));
 +	curpos = MAX(curpos, w - rcurlen);
 +	curpos = MIN(curpos, curlen);
 +	oldcurlen = curlen;
- 
--	drw_font_getexts(drw->fonts, text, cursor, &curpos, NULL);
--	if ((curpos += lrpad / 2 - 1) < w) {
--		drw_setscheme(drw, scheme[SchemeNorm]);
--		drw_rect(drw, x + curpos, 2, 2, bh - 4, 1, 0);
--	}
++
 +	drw_setscheme(drw, scheme[SchemeNorm]);
 +	drw_text_align(drw, x, 0, curpos, bh, text, cursor, AlignR);
 +	drw_text_align(drw, x + curpos, 0, w - curpos, bh, text + cursor, strlen(text) - cursor, AlignL);
@@ -261,6 +243,3 @@ index 4c67419..b66a83e 100644
  
  /* Map functions */
  void drw_map(Drw *drw, Window win, int x, int y, unsigned int w, unsigned int h);
--- 
-2.15.1
-

@@ -14,6 +14,7 @@ Download
 * [st-hidecursor-0.6.diff](st-hidecursor-0.6.diff)
 * [st-hidecursor-0.7.diff](st-hidecursor-0.7.diff)
 * [st-hidecursor-0.8.diff](st-hidecursor-0.8.diff)
+* [st-hidecursor-0.8.1.diff](st-hidecursor-0.8.1.diff)
 
 Authors
 -------

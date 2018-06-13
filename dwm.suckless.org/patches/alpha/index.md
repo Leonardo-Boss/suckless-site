@@ -14,7 +14,7 @@ Download
 --------
 
  * [dwm-alpha-6.1.diff](dwm-alpha-6.1.diff)
- * [TODO] git port
+ * [dwm-alpha-20180613-b69c870.diff](dwm-alpha-20180613-b69c870.diff)
 
 
 Authors
@@ -22,3 +22,4 @@ Authors
 
  * Eon S. Jeon - <esjeon@hyunmu.am>
  * Laslo Hunhold - <dev@frign.de> (6.1 port)
+ * Thomas Oltmann - <thomas.oltmann.hhg@gmail.com> (20180613-b69c870 port)

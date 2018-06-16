@@ -51,6 +51,9 @@ Build Systems
   than compiling GCC (!).
   It's not even possible to create freestanding Makefiles, since the generated
   Makefiles call back into the cmake binary itself.
+  Usage of cmake requires learning a new custom scripting language with very
+  limited expressiveness. Its major selling point is the existence of a
+  clicky-click GUI for windows users.
 
 * [waf][14] and [scons][15] (both written in Python) - waf code is dropped
   into the compilee's build tree, so it does not benefit from updated versions

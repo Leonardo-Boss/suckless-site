@@ -19,7 +19,8 @@ possible to avoid them. If you use them, consider looking for alternatives.
   since it [aborts in out-of-memory situations][8].
   glib usage is required to write gtk+ and gnome applications, but is also used
   when common functionality is needed (e.g. hashlists, base64 decoder, etc).
-  it is not suited at all for static linking due to its huge size.
+  it is not suited at all for static linking due to its huge size and the
+  authors explicitly state that ["static linking is not supported"][19].
 
   Alternatives: [libmowgli][9], [libulz][10]
 
@@ -41,6 +42,7 @@ possible to avoid them. If you use them, consider looking for alternatives.
 [10]: https://github.com/rofl0r/libulz
 [11]: //libs.suckless.org/libzahl
 [12]: https://github.com/suiginsoft/hebimath
+[19]: https://bugzilla.gnome.org/show_bug.cgi?id=768215#c16
 
 Build Systems
 -------------

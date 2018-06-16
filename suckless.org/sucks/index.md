@@ -63,14 +63,13 @@ As these build systems are often used to compile C programs, one has to set up a
 C++ compiler or Python interpreter respectively just in order to be able to build
 some C code.
 
-Alternatives: [mk][16], [make][17], [gnu make][20]
+Alternatives: [mk][16], [make][17]
 
 [13]: http://www.cmake.org/
 [14]: https://code.google.com/p/waf/
 [15]: http://www.scons.org/
 [16]: http://doc.cat-v.org/plan_9/4th_edition/papers/mk
 [17]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/make.html
-[20]: https://www.gnu.org/software/make/
 
 Version Control Systems
 -----------------------

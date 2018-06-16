@@ -28,6 +28,7 @@ Download
  * [st-alpha-20170509-5a10aca.diff](st-alpha-20170509-5a10aca.diff)
  * [st-alpha-20171221-0ac685f.diff](st-alpha-20171221-0ac685f.diff)
  * [st-alpha-0.8.1.diff](st-alpha-0.8.1.diff)
+ * [st-alpha-20180616-0.8.1.diff](st-alpha-20180616-0.8.1.diff)
 
 Authors
 -------
@@ -38,3 +39,4 @@ Authors
  * Ivan J. - <parazyd@dyne.org> (git port)
  * Matthew Parnell - <matt@parnmatt.co.uk> (0.7 port)
  * Johannes Mayrhofer - <jm.spam@gmx.net> (0.8.1 port)
+ * Àlex Ramírez <aramirez@posteo.net> (0.8.1 pre-multiplication fix).

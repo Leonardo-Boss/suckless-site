@@ -2,7 +2,7 @@ No default chan
 ===============
 This patch will prevent `sic` from setting the first chan you want to
 join as the default one. You will have to manually set a default chan
-with the `j` command if you want one.
+with the `s` command if you want one.
 
 
 Download

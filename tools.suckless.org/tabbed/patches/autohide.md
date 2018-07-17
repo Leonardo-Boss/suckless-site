@@ -7,8 +7,8 @@ Download
 --------
 * [tabbed-0.4.1-autohide.diff](tabbed-0.4.1-autohide.diff)
 * [tabbed-0.5-autohide.diff](tabbed-0.5-autohide.diff)
+* [tabbed-autohide-0.6.diff](tabbed-autohide-0.6.diff)
 * [tabbed-autohide-20170824-6dc3978.diff](tabbed-autohide-20170824-6dc3978.diff)
-* [tabbed-autohide-20180716.diff](tabbed-autohide-20180716.diff)
 
 Author
 ------
@@ -17,4 +17,4 @@ Author
 * 0.5    Maximilian Dietrich - <dxm_AT_lavabit.com>
 * 20170708  Alexis Ben Miloud--Josselin - <alexis.bmj@protonmail.com>
 * 20170824  Audun Sutterud - <audunsu_AT_protonmail.com>
-* 20180716  Filip Ivetić - <filip.ivetic_AT_gmail.com>
+* 0.6    Filip Ivetić - <filip.ivetic_AT_gmail.com>

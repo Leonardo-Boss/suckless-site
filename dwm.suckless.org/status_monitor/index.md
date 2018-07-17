@@ -11,8 +11,60 @@ It can be easily set and retrieved using standard Unix tools.
 	xprop -root -notype -f WM_NAME "8u" \
 		| sed -n -r 's/WM_NAME = \"(.*)\"/\1/p'
 
-Example shell scripts
----------------------
+Set The Status Using A Shell Script
+-----------------------------------
+
+	while true;
+	do
+		xsetroot -name "$(date)"
+		sleep 2
+	done
+
+Set The Status Using Other Methods
+----------------------------------
+
+There are two status monitors maintained at suckless:
+
+slstatus - suckless status
+--------------------------
+
+A somewhat complex status monitor which includes all batteries.
+
+You can read more [on the project page](https://tools.suckless.org/slstatus/).
+
+dwmstatus
+---------
+
+Barebone status monitor with basic functions written in C. This follows the
+suckless philosophy, to give you an easy way to extend the source code to your
+needs. See the helper functions for C below, to extend it to your needs. Just
+check it out and keep on hacking.
+
+	git clone git://git.suckless.org/dwmstatus
+	cd dwmstatus
+	make
+	make PREFIX=/usr install
+	# add »dwmstatus 2>&1 >/dev/null &« to your .xinitrc
+
+Status Monitors Submitted By Others
+-----------------------------------
+
+Feel free to add your own status monitors here (keeping the list sorted).
+
+* [barM](barM.c) - can display all, time/date, ram usage, output of commands (the New BarMonitor).
+* [dstat](https://www.umaxx.net/dl) [Screenshot](https://www.umaxx.net/dstat.png) - displays the current network throughput, CPU usage, performance settings, battery status, temperature, volume settings, as well as the current date and time (OpenBSD only, no support for Linux).
+* [dwms](https://github.com/ianremmler/dwms) - displays time, network, audio, and battery status, written in Go using XGB.
+* [dwmsd](https://github.com/johnko/dwmsd) - a daemon that listens on localhost tcp (may be useful as a base for asynchronous updates)
+* [dwm-sss](https://github.com/roadkillcat/dwm_sss) - shell script providing date, time and CPU temperature
+* [dwmstat](https://notabug.org/kl3/dwmstat) - small and simple | IP, CPU temperature, system volume, current local time (and more) | config.h | OpenBSD
+* [go-dwmstatus](https://github.com/oniichaNj/go-dwmstatus) - A Go bar that prints current MPD song, load averages, time/date and battery percentage.
+* [gods](https://github.com/schachmat/gods) - implemented in Go. prints network speed, cpu, ram, date/time
+* [posix scripts](https://notabug.org/kl3/scripts) - basic collection of simple, fully POSIX sh compliant scripts to get various system information
+* [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent and date/time
+* [suspend-statusbar.c](https://github.com/snobb/dwm-statusbar) - date, loadavg, battery and more. If battery goes below threshold - run suspend command
+
+Helper Functions In The Shell
+-----------------------------
 
 Return battery capacity percentage:
 
@@ -45,42 +97,8 @@ Using shell scripts very well leads to big scripts, which pull in unneeded
 dependencies. One solution for this is to write everything in C, which is much
 more efficient.
 
-slstatus - suckless status
---------------------------
-
-General purpose status monitor for dwm and other window managers for Linux and
-OpenBSD written in C for maxium efficiency.
-
-You can read more [on the project page](https://tools.suckless.org/slstatus/).
-
-dwmstatus
----------
-
-Barebone status monitor with basic functions written in C. It can be used
-instead of slstatus if only very basic functions are needed. Extension is
-possible too using code from below.
-
-You can read more on [r-36](http://git.r-36.net/dwmstatus/).
-
-User submitted versions
------------------------
-
-Feel free to add your own status monitors here (keeping the list sorted).
-
-* [barM](barM.c) - can display all, time/date, ram usage, output of commands (the New BarMonitor).
-* [dstat](https://www.umaxx.net/dl) [Screenshot](https://www.umaxx.net/dstat.png) - displays the current network throughput, CPU usage, performance settings, battery status, temperature, volume settings, as well as the current date and time (OpenBSD only, no support for Linux).
-* [dwms](https://github.com/ianremmler/dwms) - displays time, network, audio, and battery status, written in Go using XGB.
-* [dwmsd](https://github.com/johnko/dwmsd) - a daemon that listens on localhost tcp (may be useful as a base for asynchronous updates)
-* [dwm-sss](https://github.com/roadkillcat/dwm_sss) - shell script providing date, time and CPU temperature
-* [dwmstat](https://notabug.org/kl3/dwmstat) - small and simple | IP, CPU temperature, system volume, current local time (and more) | config.h | OpenBSD
-* [go-dwmstatus](https://github.com/oniichaNj/go-dwmstatus) - A Go bar that prints current MPD song, load averages, time/date and battery percentage.
-* [gods](https://github.com/schachmat/gods) - implemented in Go. prints network speed, cpu, ram, date/time
-* [posix scripts](https://notabug.org/kl3/scripts) - basic collection of simple, fully POSIX sh compliant scripts to get various system information
-* [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent and date/time
-* [suspend-statusbar.c](https://github.com/snobb/dwm-statusbar) - date, loadavg, battery and more. If battery goes below threshold - run suspend command
-
-Helper functions
-----------------
+Helper Functions In C (for dwmstatus or slstatus etc.)
+------------------------------------------------------
 
 If you have simple C functions for gathering system information, feel free to
 add them here (keeping the list sorted).

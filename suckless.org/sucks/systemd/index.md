@@ -74,6 +74,8 @@ Part 3
 	  kind of content you store there. Encrypt everything, read your TOS.
 * [systemd does UNIX nice](https://github.com/systemd/systemd/blob/76153ad45f09b6ae45464f2e03d3afefbb4b2afe/NEWS#L425)
 
+---- Führerbunker, 2016-08-06
+
 Part 2
 ------
 * [systemd locks down /etc and makes it read-only](http://bugzilla.redhat.com/show_bug.cgi?id=1350450)
@@ -277,6 +279,11 @@ plain file.)
 	  systemd do that) it can be removed. Why was it there? Is it possible
 	  to make it a separate tool again?  There's no time for that, we are implementing
 	  new features.
+
+---- Führerbunker, 2015-07-31
+(You can guess who's the Führer.)
+
+
 
 Practical systemd
 -----------------

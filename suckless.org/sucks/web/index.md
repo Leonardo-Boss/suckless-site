@@ -23,4 +23,12 @@ resource waste. There were optimisations for compiling PHP to C++(!). But this
 is just a way to allow the mass of programmer sheep to go on and sleep calm at
 night.
 
+Gopher
+------
+
+For seeing a counter example in how to not suck, see the gopher. You can read
+more about it at the
+[gopherproject (http)](http://gopherproject.org) or [gopherproject
+(gopher)](gopher://gopherproject.org).
+
 

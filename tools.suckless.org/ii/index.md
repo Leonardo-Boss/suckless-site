@@ -26,7 +26,7 @@ and ii creates a new #wmii (channel) directory with in and out files.
     |-- out
     `-- in
 
-It consists of <= 500 lines of code and is the big brother of [sic](/sic)
+It consists of <= 1000 lines of code and is the big brother of [sic](/sic)
 
 Download
 --------

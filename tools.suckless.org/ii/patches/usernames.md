@@ -18,8 +18,10 @@ Download
 --------
 
 * [ii-1.4-usernames.diff](ii-1.4-usernames.diff)
+* [ii-1.8-usernames.diff](ii-1.8-usernames.diff)
 
 Author
 ------
 
 * Robert Lowry (bobertlo) <[robertwlowry@gmail.com](mailto:robertwlowry@gmail.com)>
+* Ported to 1.8 by hicsfield

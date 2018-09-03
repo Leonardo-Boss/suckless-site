@@ -25,13 +25,13 @@ Automatic reconnects
 
 If you want some kind of automatic reconnects in ii you can make a something like this in a shell script:
 
-    while true; do  
+    while true; do
         ii -s irc.oftc.net -n iifoo -f "John Doe" &
-        iipid="$!"  
-        sleep 5  
-        printf "/j %s\n" "#ii" > ~/irc/irc.oftc.net/in  
+        iipid="$!"
+        sleep 5
+        printf "/j %s\n" "#ii" > ~/irc/irc.oftc.net/in
         wait "$iipid"
-    done  
+    done
 
 bots for irc it (ii)
 ====================
@@ -92,7 +92,7 @@ The appropriate Nagios configuration looks like this:
     # 'notify-by-irc' command definition
     define command{
             command_name    notify-by-irc
-            command_line    /usr/bin/printf "%b" "$TIME$ $NOTIFICATIONTYPE$ $HOSTNAME$/$SERVICEDESC$ $SERVICESTATE$ $SERVICEOUTPUT$\n" | /home/nagios/bin/nagios_post.pl 
+            command_line    /usr/bin/printf "%b" "$TIME$ $NOTIFICATIONTYPE$ $HOSTNAME$/$SERVICEDESC$ $SERVICESTATE$ $SERVICEOUTPUT$\n" | /home/nagios/bin/nagios_post.pl
            }
 
     # 'host-notify-by-irc' command-notification

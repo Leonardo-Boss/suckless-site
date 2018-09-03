@@ -5,12 +5,12 @@ Description
 -----------
 
 This patch create 32bit window in tabbed. This allows to handle windows with
-transparency 
+transparency.
 
 Note that *you need an X composite manager* (e.g. compton, xcompmgr) to make
 this patch effective.
 
-If you want to use transparency in st with this patch, you also need to replace 
+If you want to use transparency in st with this patch, you also need to replace
 
 
 ```C

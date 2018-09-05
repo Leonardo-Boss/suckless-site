@@ -16,9 +16,8 @@ nav() {
 	do
 		test -d "$2/$dir" || continue
 		test -z "${1##$2/$dir/*?}" && match=' class="thisPage"' || match=
-		printf '<li><a%s href="%s">' "$match" "$2/$dir"
-		printf %s "$dir" | tr _- '  '
-		printf '/</a>'
+		printf '<li><a%s href="%s">' "$match" "//$2/$dir/"
+		printf '%s/</a>' "$dir" | tr _- '  '
 		if test "$match"
 		then
 			printf '<ul>\n'
@@ -29,14 +28,20 @@ nav() {
 	done
 }
 
-find * -name '*.md' | while IFS='' read -r page
+find * -type d | while IFS='' read -r page
 do
+	exec >$page/index.html
+	page="$page/index.md"
 	this_domain="${page%%/*}"
 	printf 'Generating %s\n' "$page" 1>&2
-	exec >${page%.md}.html
 
 	# header
-	title=$(sed 's,^#* *,,; q' "$page")
+	if test -f "$page"
+	then
+		title=$(sed 's,^#* *,,; q' "$page")
+	else
+		title=$(basename "$(dirname "$page")")
+	fi
 	awk -v title="$title" -v subtitle="$(cat "$this_domain/title")" \
 		'{ gsub("%t", title); gsub("%s", subtitle); print; }' head.html
 
@@ -44,7 +49,7 @@ do
 	printf '<div id="menu">\n'
 	while IFS='' read -r domain
 	do
-		printf '<a href="%s"' "//${page%.md}.html"
+		printf '<a href="%s"' "//$domain"
 		test "$this_domain" = "$domain" && printf ' class="thisSite"'
 		printf '">%s</a>\n' "${domain%%.*}"
 	done <domains
@@ -62,7 +67,20 @@ do
 
 	# main
 	printf '<div id="main">\n'
-	smu "$page"
+	if test -f "$page"
+	then
+		smu "$page"
+	else
+		printf '<ul>\n'
+		ls "${page%/index.md}" | while IFS='' read -r dir
+		do
+			path=${page%/index.md}/$dir/
+			test -d "$path" || continue
+			printf '<li><a href="%s">' "//$path"
+			printf '%s</a></li>\n' "$dir" | tr _- '  '
+		done
+		printf '</ul>\n'
+	fi
 	printf '</div>\n\n'
 
 	printf '</div>\n\n' # end of id="content"

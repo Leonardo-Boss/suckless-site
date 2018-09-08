@@ -27,11 +27,11 @@ Three Column Layout (tcl) is a new layout with a wide master panel centered on t
 
 ## Download
 
- * [tcl.c layout](tcl.c)
+* [tcl.c layout](tcl.c)
 
 ## Maintainer
 
- * Chris Truett - <chris.truett@gmail.com>
+* Chris Truett - <chris.truett@gmail.com>
 
 ## Note
 

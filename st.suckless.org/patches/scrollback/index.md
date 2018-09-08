@@ -37,11 +37,11 @@ Notes
 Authors
 -------
 
- * Jochen Sprickerhof - <st@jochen.sprickerhof.de>
- * M Farkas-Dyck - <strake888@gmail.com>
- * Ivan Tham - <pickfire@riseup.net> (mouse scrolling)
- * Ori Bernstein - <ori@eigenstate.org> (fix memory bug)
- * Matthias Schoth - <mschoth@gmail.com> (auto altscreen scrolling)
- * Laslo Hunhold - <dev@frign.de> (unscrambling, git port)
- * Paride Legovini - <pl@ninthfloor.org> (don't require the Shift modifier when using the auto altscreen scrolling)
- * Lorenzo Bracco - <devtry@riseup.net> (update base patch, use static variable for config)
+* Jochen Sprickerhof - <st@jochen.sprickerhof.de>
+* M Farkas-Dyck - <strake888@gmail.com>
+* Ivan Tham - <pickfire@riseup.net> (mouse scrolling)
+* Ori Bernstein - <ori@eigenstate.org> (fix memory bug)
+* Matthias Schoth - <mschoth@gmail.com> (auto altscreen scrolling)
+* Laslo Hunhold - <dev@frign.de> (unscrambling, git port)
+* Paride Legovini - <pl@ninthfloor.org> (don't require the Shift modifier when using the auto altscreen scrolling)
+* Lorenzo Bracco - <devtry@riseup.net> (update base patch, use static variable for config)

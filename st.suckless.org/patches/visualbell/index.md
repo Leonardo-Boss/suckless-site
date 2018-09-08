@@ -16,13 +16,13 @@ monitor.
 Download
 --------
 
- * [st-visualbell-20160727-308bfbf.diff](st-visualbell-20160727-308bfbf.diff)
- * [st-visualbell-20180101-1f24bde.diff](st-visualbell-20180101-1f24bde.diff)
- * [st-visualbell-0.8.1.diff](st-visualbell-0.8.1.diff)
+* [st-visualbell-20160727-308bfbf.diff](st-visualbell-20160727-308bfbf.diff)
+* [st-visualbell-20180101-1f24bde.diff](st-visualbell-20180101-1f24bde.diff)
+* [st-visualbell-0.8.1.diff](st-visualbell-0.8.1.diff)
 
 Authors
 -------
 
- * Matthias Schoth - <mschoth@gmail.com>
- * Laslo Hunhold - <dev@frign.de> (git port)
- * Alexis Ben Miloud--Josselin - <alexis.bmj@protonmail.com> (update)
+* Matthias Schoth - <mschoth@gmail.com>
+* Laslo Hunhold - <dev@frign.de> (git port)
+* Alexis Ben Miloud--Josselin - <alexis.bmj@protonmail.com> (update)

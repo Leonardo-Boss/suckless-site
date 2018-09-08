@@ -17,16 +17,16 @@
 Patches against different versions of dwm are available at
 [dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
 
- * [dwm-push-20160731-56a31dc.diff](dwm-push-20160731-56a31dc.diff)
- * [dwm-push-6.0.diff](dwm-push-6.0.diff) (1332b) - 2012/4/6
- * [dwm-6.0-push_no_master.diff](dwm-6.0-push_no_master.diff)
- * [dwm-push-6.1.diff](dwm-push-6.1.diff) (1402b) - 2014/2/9
- * [dwm-6.1-push_no_master.diff](dwm-6.1-push_no_master.diff) - 2015/11/21
+* [dwm-push-20160731-56a31dc.diff](dwm-push-20160731-56a31dc.diff)
+* [dwm-push-6.0.diff](dwm-push-6.0.diff) (1332b) - 2012/4/6
+* [dwm-6.0-push_no_master.diff](dwm-6.0-push_no_master.diff)
+* [dwm-push-6.1.diff](dwm-push-6.1.diff) (1402b) - 2014/2/9
+* [dwm-6.1-push_no_master.diff](dwm-6.1-push_no_master.diff) - 2015/11/21
 
 ## Note
 This patch seems to be equivalent to the [movestack](../movestack/) patch.
 
 ## Author
- * Unknown?
- * Updated by Jan Christoph Ebersbach <jceb@e-jc.de>
- * push_no_master by Jente Hidskes <jthidskes@outlook.com>
+* Unknown?
+* Updated by Jan Christoph Ebersbach <jceb@e-jc.de>
+* push_no_master by Jente Hidskes <jthidskes@outlook.com>

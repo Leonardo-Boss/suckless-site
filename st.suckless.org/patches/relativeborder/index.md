@@ -12,8 +12,8 @@ of a cell in the terminal.
 
 ## Download
 
- * [st-relativeborder-20171207-0ac685f.diff](st-relativeborder-20171207-0ac685f.diff)
+* [st-relativeborder-20171207-0ac685f.diff](st-relativeborder-20171207-0ac685f.diff)
 
 ## Authors
 
- * Doug Whiteley - <dougwhiteley@gmail.com>
+* Doug Whiteley - <dougwhiteley@gmail.com>

@@ -11,10 +11,10 @@ Be aware that dwm will not startup as long as autostart_blocking.sh is running a
 Download
 --------
 
- * [dwm-autostart-20161205-bb3bd6f.diff](dwm-autostart-20161205-bb3bd6f.diff)
+* [dwm-autostart-20161205-bb3bd6f.diff](dwm-autostart-20161205-bb3bd6f.diff)
 
 Authors
 -------
 
- * Pulled from: [https://github.com/axelGschaider/dwm-patch-autostart.sh/](https://github.com/axelGschaider/dwm-patch-autostart.sh/)
- * Adapted to recent version Simon Bremer <simon.bremer@sys24.org>
+* Pulled from: [https://github.com/axelGschaider/dwm-patch-autostart.sh/](https://github.com/axelGschaider/dwm-patch-autostart.sh/)
+* Adapted to recent version Simon Bremer <simon.bremer@sys24.org>

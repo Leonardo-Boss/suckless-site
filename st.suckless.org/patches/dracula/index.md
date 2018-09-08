@@ -26,8 +26,8 @@ Running zsh and tmux.
 Download
 --------
 
- * [st-dracula-20170803-7f99032.diff](st-dracula-20170803-7f99032.diff)
+* [st-dracula-20170803-7f99032.diff](st-dracula-20170803-7f99032.diff)
 
 Authors
 -------
- * Jesús López - <jsus90@gmail.com>
+* Jesús López - <jsus90@gmail.com>

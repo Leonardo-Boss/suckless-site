@@ -56,10 +56,10 @@ Shortcuts for input mode :
 Download
 --------
 
- * [git-st-keyboard_select-20180619-937e367.diff](git-st-keyboard_select-20180619-937e367.diff)   
- * [st-keyboard_select-0.8.1.diff](st-keyboard_select-0.8.1.diff)
+* [git-st-keyboard_select-20180619-937e367.diff](git-st-keyboard_select-20180619-937e367.diff)   
+* [st-keyboard_select-0.8.1.diff](st-keyboard_select-0.8.1.diff)
 
 
 Authors
 -------
- * Tonton Couillon - &lt;la dot luge at free dot fr>
+* Tonton Couillon - &lt;la dot luge at free dot fr>

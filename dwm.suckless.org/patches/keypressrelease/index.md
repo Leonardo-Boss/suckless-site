@@ -24,11 +24,11 @@ Or to only display the bar while the toggle key is held down (requires that it i
 Download
 ---
 
- * [dwm-keypressrelease-6.0.diff](dwm-keypressrelease-6.0.diff)
+* [dwm-keypressrelease-6.0.diff](dwm-keypressrelease-6.0.diff)
 
 Author
 ------
- * Niklas Høj - `<niklas at hoej dot me>`
+* Niklas Høj - `<niklas at hoej dot me>`
 
 ---
 

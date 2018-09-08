@@ -19,15 +19,15 @@ just like most normal unformatted text when selected.
 Download
 --------
 
- * [st-spoiler-0.6.diff](st-spoiler-0.6.diff)
- * [st-spoiler-0.7.diff](st-spoiler-0.7.diff)
- * [st-spoiler-20160727-308bfbf.diff](st-spoiler-20160727-308bfbf.diff)
- * [st-spoiler-20170802-e2ee5ee.diff](st-spoiler-20170802-e2ee5ee.diff)
- * [st-spoiler-20180309-c5ba9c0.diff](st-spoiler-20180309-c5ba9c0.diff)
+* [st-spoiler-0.6.diff](st-spoiler-0.6.diff)
+* [st-spoiler-0.7.diff](st-spoiler-0.7.diff)
+* [st-spoiler-20160727-308bfbf.diff](st-spoiler-20160727-308bfbf.diff)
+* [st-spoiler-20170802-e2ee5ee.diff](st-spoiler-20170802-e2ee5ee.diff)
+* [st-spoiler-20180309-c5ba9c0.diff](st-spoiler-20180309-c5ba9c0.diff)
 
 Author
 ------
 
- * dequis - <dx@dxzone.com.ar>
- * Laslo Hunhold - <dev@frign.de> (git port)
- * Matthew Parnell - <matt@parnmatt.co.uk> (0.7, git ports)
+* dequis - <dx@dxzone.com.ar>
+* Laslo Hunhold - <dev@frign.de> (git port)
+* Matthew Parnell - <matt@parnmatt.co.uk> (0.7, git ports)

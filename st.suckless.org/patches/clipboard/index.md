@@ -26,6 +26,6 @@ Download
 Authors
 -------
 
- * Kai Hendry - <hendry@iki.fi>
- * Laslo Hunhold - <dev@frign.de> (git port)
- * Matthew Parnell - <matt@parnmatt.co.uk> (0.7, git ports)
+* Kai Hendry - <hendry@iki.fi>
+* Laslo Hunhold - <dev@frign.de> (git port)
+* Matthew Parnell - <matt@parnmatt.co.uk> (0.7, git ports)

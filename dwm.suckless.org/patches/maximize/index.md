@@ -24,4 +24,4 @@ Download
 
 Author
 ------
- * Jan Christoph Ebersbach - <jceb@e-jc.de>
+* Jan Christoph Ebersbach - <jceb@e-jc.de>

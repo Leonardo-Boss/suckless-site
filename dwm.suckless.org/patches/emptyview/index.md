@@ -10,8 +10,8 @@ With this patch, dwm will start with no tag selected. When you start a client wi
 Download
 --------
 
- * [dwm-emptyview-6.0.diff](dwm-emptyview-6.0.diff) (1753b) (20130330)
+* [dwm-emptyview-6.0.diff](dwm-emptyview-6.0.diff) (1753b) (20130330)
 
 Authors
 -------
- * Markus Teich - `<teichm at in dot tum dot de>`
+* Markus Teich - `<teichm at in dot tum dot de>`

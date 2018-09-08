@@ -19,9 +19,9 @@ Notes
 
 This adds three items to `config.h`: 
 
- * `message` - the default message 
- * `text_color` - which can be a hex color or a colorname (like "black")
- * `text-size` - which must be some valid X11 dimension like "6x10" 
+* `message` - the default message 
+* `text_color` - which can be a hex color or a colorname (like "black")
+* `text-size` - which must be some valid X11 dimension like "6x10" 
 
 
 *A list of font sizes might be in* `/usr/share/fonts/X11/misc/`
@@ -30,9 +30,9 @@ This adds three items to `config.h`:
 Download
 --------
 
- * [slock-message-20180626-8384a86.diff](slock-message-20180626-8384a86.diff)
+* [slock-message-20180626-8384a86.diff](slock-message-20180626-8384a86.diff)
 
 Authors
 -------
 
- * Blair Drummond - blair.robert.drummond@gmail.com
+* Blair Drummond - blair.robert.drummond@gmail.com

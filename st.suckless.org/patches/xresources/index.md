@@ -15,5 +15,5 @@ Download
 Authors
 -------
 
- * @dcat on [Github](https://github.com/dcat/st-xresources)
- * Devin J. Pohly - <djpohly@gmail.com> (git port)
+* @dcat on [Github](https://github.com/dcat/st-xresources)
+* Devin J. Pohly - <djpohly@gmail.com> (git port)

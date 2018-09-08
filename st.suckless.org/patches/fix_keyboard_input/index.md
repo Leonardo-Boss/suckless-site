@@ -78,11 +78,11 @@ becomes the following:
 Download
 --------
 
- * [st-fix-keyboard-input-20170603-5a10aca.diff](st-fix-keyboard-input-20170603-5a10aca.diff)
- * [st-fix-keyboard-input-20170621-b331da5.diff](st-fix-keyboard-input-20170621-b331da5.diff)
- * [st-fix-keyboard-input-20180605-dc3b5ba.diff](st-fix-keyboard-input-20180605-dc3b5ba.diff)
+* [st-fix-keyboard-input-20170603-5a10aca.diff](st-fix-keyboard-input-20170603-5a10aca.diff)
+* [st-fix-keyboard-input-20170621-b331da5.diff](st-fix-keyboard-input-20170621-b331da5.diff)
+* [st-fix-keyboard-input-20180605-dc3b5ba.diff](st-fix-keyboard-input-20180605-dc3b5ba.diff)
 
 Authors
 -------
 
- * Jan Christoph Ebersbach - <jceb@e-jc.de>
+* Jan Christoph Ebersbach - <jceb@e-jc.de>

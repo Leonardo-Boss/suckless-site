@@ -22,10 +22,10 @@ scheme, then schemeToggle() would toggle between original and the consecutive.
 
 Download
 --------
- * [dwm-scheme_switch-20170804-ceac8c9.diff](dwm-scheme_switch-20170804-ceac8c9.diff)
+* [dwm-scheme_switch-20170804-ceac8c9.diff](dwm-scheme_switch-20170804-ceac8c9.diff)
 
 
 Authors
 -------
 
- * Aaron Strahlberger - <aaron.strahlberger@posteo.de> 
+* Aaron Strahlberger - <aaron.strahlberger@posteo.de> 

@@ -19,5 +19,5 @@ Download
 Authors
 -------
 
- * Ivan Delalande - <colona@ycc.fr>
- * Laslo Hunhold - <dev@frign.de> (git port)
+* Ivan Delalande - <colona@ycc.fr>
+* Laslo Hunhold - <dev@frign.de> (git port)

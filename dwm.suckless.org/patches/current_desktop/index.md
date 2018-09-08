@@ -23,8 +23,8 @@
 
 ## Download
 
- * [dwm-current_desktop-5.8.2.diff](dwm-current_desktop-5.8.2.diff) (dwm 2010604)
+* [dwm-current_desktop-5.8.2.diff](dwm-current_desktop-5.8.2.diff) (dwm 2010604)
 
 ## Author
 
- * Wolfgang S. - ezzieyguywuf at gmail period com
+* Wolfgang S. - ezzieyguywuf at gmail period com

@@ -19,8 +19,8 @@ management utilities.
 
 ## Download
 
- * [dwm-focusonnetactive-2017-12-24-3756f7f.diff](dwm-focusonnetactive-2017-12-24-3756f7f.diff)
+* [dwm-focusonnetactive-2017-12-24-3756f7f.diff](dwm-focusonnetactive-2017-12-24-3756f7f.diff)
 
 ## Author
 
- * [Danny O'Brien](http://www.spesh.com/danny/) <danny@spesh.com>
+* [Danny O'Brien](http://www.spesh.com/danny/) <danny@spesh.com>

@@ -22,8 +22,8 @@ Download
 --------
 
 <!-- Author emailed about this issue already -->
- * [dwm-focusadjacenttag-6.0.diff](dwm-focusadjacenttag-6.0.diff) (Unclean patch)
+* [dwm-focusadjacenttag-6.0.diff](dwm-focusadjacenttag-6.0.diff) (Unclean patch)
 
 Authors
 -------
- * Fabio Banfi - `<fbanfi90 at gmail dot com>`
+* Fabio Banfi - `<fbanfi90 at gmail dot com>`

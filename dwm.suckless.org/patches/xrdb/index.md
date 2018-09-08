@@ -22,9 +22,9 @@ Default key to reload is `Mod+F5`.
 Download
 --------
 
- * [dwm-xrdb-6.1.diff](dwm-xrdb-6.1.diff)
+* [dwm-xrdb-6.1.diff](dwm-xrdb-6.1.diff)
 
 Authors
 -------
 
- * Petr Schmied - <https://github.com/JBlackN/dwm-xrdb>
+* Petr Schmied - <https://github.com/JBlackN/dwm-xrdb>

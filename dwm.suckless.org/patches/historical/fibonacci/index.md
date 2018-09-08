@@ -40,12 +40,12 @@ arrangement can be seen below.
 
 ## Download
 
- * [dwm-5.2-fibonacci.diff][5] (1.9k) (20081003)
- * [dwm-5.1-fibonacci.diff][3] (1.9k) (20080731)
+* [dwm-5.2-fibonacci.diff][5] (1.9k) (20081003)
+* [dwm-5.1-fibonacci.diff][3] (1.9k) (20080731)
 
 ## Author
 
- * Jeroen Schot - <schot@a-eskwadraat.nl>
+* Jeroen Schot - <schot@a-eskwadraat.nl>
 
 Joe Thornber's spiral tiling for [Xmonad][4] formed the inspiration for this
 patch. Thanks to Jan Christoph Ebersbach for updating this patch for versions

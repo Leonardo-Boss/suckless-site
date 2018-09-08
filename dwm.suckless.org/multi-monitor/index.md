@@ -1,11 +1,11 @@
-# Multi-monitor setup #
+# Multi-monitor setup
 
 If configured to use Xinerama libraries in `config.mk`, dwm can
 automatically detect configured screen outputs (monitor, overhead
 projector, etc.) and their resolutions and draw the windows in the
 output area accordingly.
 
-## Configuring monitors ##
+## Configuring monitors
 
 One of the easiest ways to configure screen outputs is via the *RandR*
 X server extension using the `xrandr` tool. Without arguments it will
@@ -16,7 +16,7 @@ list the current configuration of screen outputs.
 For each connected output the supported resolution modes will be
 printed.
 
-## Mirroring two outputs ##
+## Mirroring two outputs
 
 dwm will assume that two outputs should display identical windows and
 tags if
@@ -32,7 +32,7 @@ setup
 
 The `--auto` switch enables the output after it was connected.
 
-## Two independent outputs ##
+## Two independent outputs
 
 If two screen outputs have different resolutions, dwm assumes that
 they should display different windows and tag sets. It may therefore

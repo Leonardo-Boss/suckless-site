@@ -1,6 +1,6 @@
-# mark #
+# mark
 
-## Description ##
+## Description
 
 This patch provides an mechanism to easily jump between any 2 clients, or to
 swap any 2 clients through shortcuts by introcuding mark. The mark is global,
@@ -9,11 +9,11 @@ distinguished from other clients by having a different border color.
 
 This patch adds 3 functions to dwm:
 
- * togglemark - mark/unmark current focused client.
- * swapclient - swap focused client with marked client
- * swapfocus - swap focus with mark.
+* togglemark - mark/unmark current focused client.
+* swapclient - swap focused client with marked client
+* swapfocus - swap focus with mark.
 
-## Configuration ##
+## Configuration
 
 	static const char normmarkcolor[]   = "#775500";	/*border color for marked client*/
 	static const char selmarkcolor[]    = "#775577";	/*border color for marked client on focus*/
@@ -25,16 +25,16 @@ This patch adds 3 functions to dwm:
 
 Some ideas for combinations of key mappings:
 
- * togglemark x2  
+* togglemark x2  
 clear the mark
- * swapclient, swapfocus  
+* swapclient, swapfocus  
 shift the client to another client frame without losing focus
- * swapclient, togglemark x2  
+* swapclient, togglemark x2  
 swap 2 clients and clear the mark
- * swapfocus, togglemark x2  
+* swapfocus, togglemark x2  
 jump to mark and clear the mark
 
-## Download ##
+## Download
 this patch has been revised, it's recommended to use dwm-6.1-mark-new.diff
 old behaviours of the patch(dwm-mark-6.1.diff):
 
@@ -47,5 +47,5 @@ old behaviours of the patch(dwm-mark-6.1.diff):
 * [dwm-mark-new-6.1.diff](dwm-mark-new-6.1.diff)
 * [dwm-mark-6.1.diff](dwm-mark-6.1.diff)
 
-## Author ##
+## Author
 * phi <crispyfrog@163.com>

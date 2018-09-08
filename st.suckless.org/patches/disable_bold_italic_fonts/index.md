@@ -9,9 +9,9 @@ Some terminals allow disabling bold/italic fonts globally. So this patch adds su
 Download
 --------
 
- * [st-disable-bold-italic-fonts.diff](st-disable-bold-italic-fonts.diff)
+* [st-disable-bold-italic-fonts.diff](st-disable-bold-italic-fonts.diff)
 
 Author
 ------
 
- * Alex Kozadaev - <snobb@gmx at com>
+* Alex Kozadaev - <snobb@gmx at com>

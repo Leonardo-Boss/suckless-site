@@ -23,10 +23,10 @@ the Ctrl key everytime :
 // ==/UserScript==
 
 /*
- * If you're a vim addict, and you always find yourself typing j or k in a web
- * page, then wondering why it just does not go up and down like any good
- * software, that user script is what you have been looking for.
- */
+* If you're a vim addict, and you always find yourself typing j or k in a web
+* page, then wondering why it just does not go up and down like any good
+* software, that user script is what you have been looking for.
+*/
 
 
 function up() {

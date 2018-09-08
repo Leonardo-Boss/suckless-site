@@ -1,6 +1,6 @@
-# keymodes #
+# keymodes
 
-## Description ##
+## Description
 
 This patch provides key modes (like in Vim). There are two key modes:
 
@@ -11,11 +11,11 @@ With key modes you can use any key binding for window management without risking
 
 There are two different patches:
 
- * keymodes: the minimal patch
- * vim-keymodes: This patch tries to emulate the key bindings of Vim. Therefor it includes additional functions, which depend on the [flextile patch](../flextile/).
+* keymodes: the minimal patch
+* vim-keymodes: This patch tries to emulate the key bindings of Vim. Therefor it includes additional functions, which depend on the [flextile patch](../flextile/).
 
 
-## Configuration ##
+## Configuration
 
  (1) Download the favoured patch and apply it according to the [general instructions](.). If you choose vim-keymodes you will have to apply the [flextile patch](../flextile/) first.
 
@@ -39,12 +39,12 @@ There are two different patches:
      };
 
 
-## Usage ##
+## Usage
 
 With this patch dwm starts in `COMMANDMODE` and you can use the key bindings as defined in the `commands` array in `config.h`. Press `Escape` or `CTRL+c` to abort a command input and press `i` (in the default configuration) to enter `INSERTMODE` and use dwm normally with the key bindings defined in the `keys` array, navigate in applications and insert text. To get from `INSERTMODE` to `COMMANDMODE` press `ALT+Escape` (in the default configuration).
 
 
-## Download ##
+## Download
 
- * [dwm-keymodes-5.8.2.diff](dwm-keymodes-5.8.2.diff) (20100611, joten (at) freenet (dot) de)
- * [dwm-keymodes-vim-5.8.2.diff](dwm-keymodes-vim-5.8.2.diff) (20100611, joten (at) freenet (dot) de)
+* [dwm-keymodes-5.8.2.diff](dwm-keymodes-5.8.2.diff) (20100611, joten (at) freenet (dot) de)
+* [dwm-keymodes-vim-5.8.2.diff](dwm-keymodes-vim-5.8.2.diff) (20100611, joten (at) freenet (dot) de)

@@ -20,9 +20,9 @@ dmenu feasible.
 Dependencies
 ------------
 
- * libxcb
- * Xlib-libxcb
- * xcb-res
+* libxcb
+* Xlib-libxcb
+* xcb-res
 
 These dependencies are needed due to the use of the latest revision of the X
 Resource Extension which is unsupported in vanilla Xlib.
@@ -30,9 +30,9 @@ Resource Extension which is unsupported in vanilla Xlib.
 Download
 --------
 
- * [dwm-swallow-20170909-ceac8c9.diff](dwm-swallow-20170909-ceac8c9.diff)
- * [dwm-swallow-6.1.diff](dwm-swallow-6.1.diff)
- * [dwm-swallow-20160717-56a31dc.diff](dwm-swallow-20160717-56a31dc.diff)
+* [dwm-swallow-20170909-ceac8c9.diff](dwm-swallow-20170909-ceac8c9.diff)
+* [dwm-swallow-6.1.diff](dwm-swallow-6.1.diff)
+* [dwm-swallow-20160717-56a31dc.diff](dwm-swallow-20160717-56a31dc.diff)
 
 Notes
 -----
@@ -48,6 +48,6 @@ windows created by local processes can be swallowed.
 Authors
 -------
 
- * Rob King - <jking@deadpixi.com>
- * Laslo Hunhold - <dev@frign.de> (6.1, git port)
- * Petr Šabata - <contyk@redhat.com> (bugfixes)
+* Rob King - <jking@deadpixi.com>
+* Laslo Hunhold - <dev@frign.de> (6.1, git port)
+* Petr Šabata - <contyk@redhat.com> (bugfixes)

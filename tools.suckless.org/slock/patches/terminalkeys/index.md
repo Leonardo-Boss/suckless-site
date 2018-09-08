@@ -20,10 +20,10 @@ Mappings:
 Download
 --------
 
- * [slock-terminalkeys-20160618-65b8d52.diff](slock-terminalkeys-20160618-65b8d52.diff)
+* [slock-terminalkeys-20160618-65b8d52.diff](slock-terminalkeys-20160618-65b8d52.diff)
 
 Authors
 -------
 
- * Matthias Schoth - mschoth@gmail.com
+* Matthias Schoth - mschoth@gmail.com
 

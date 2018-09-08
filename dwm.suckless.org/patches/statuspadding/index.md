@@ -19,8 +19,8 @@ except StatusText now has left padding in addition to right padding.
 
 ## Download
 
- * [dwm-statuspadding-20150524-c8e9479.diff](dwm-statuspadding-20150524-c8e9479.diff) (24.05.2018)
+* [dwm-statuspadding-20150524-c8e9479.diff](dwm-statuspadding-20150524-c8e9479.diff) (24.05.2018)
 
 ## Author
 
- * cd
+* cd

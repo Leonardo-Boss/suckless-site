@@ -10,12 +10,12 @@ for example, [polybar's][2] xworkspaces module
 
 Download
 --------
-   * [dwm-ewmhtags-6.1.diff](dwm-ewmhtags-6.1.diff)
-   * [dwm-ewmhtags-20180101-db22360.diff](dwm-ewmhtags-20180101-db22360.diff)
+  * [dwm-ewmhtags-6.1.diff](dwm-ewmhtags-6.1.diff)
+  * [dwm-ewmhtags-20180101-db22360.diff](dwm-ewmhtags-20180101-db22360.diff)
 
 Authors
 -------
- * Hank Latham - `<hank at hanklatham dot net>`
+* Hank Latham - `<hank at hanklatham dot net>`
 
 [1]: ../current_desktop
 [2]: http://github.com/jaagr/polybar

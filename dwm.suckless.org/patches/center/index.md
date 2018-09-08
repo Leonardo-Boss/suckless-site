@@ -10,11 +10,11 @@ monitor.
 Download
 --------
 
- * [dwm-center-6.1.diff](dwm-center-6.1.diff)
- * [dwm-center-20160719-56a31dc.diff](dwm-center-20160719-56a31dc.diff)
+* [dwm-center-6.1.diff](dwm-center-6.1.diff)
+* [dwm-center-20160719-56a31dc.diff](dwm-center-20160719-56a31dc.diff)
 
 Authors
 -------
 
- * Chris Down - <chris@chrisdown.name>
- * Laslo Hunhold - <dev@frign.de> (git port)
+* Chris Down - <chris@chrisdown.name>
+* Laslo Hunhold - <dev@frign.de> (git port)

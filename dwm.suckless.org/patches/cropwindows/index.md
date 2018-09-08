@@ -24,19 +24,19 @@ its original size and state.
 Download
 --------
 
- * [dwm-cropwindows-20170709-ceac8c9.diff](dwm-cropwindows-20170709-ceac8c9.diff)
+* [dwm-cropwindows-20170709-ceac8c9.diff](dwm-cropwindows-20170709-ceac8c9.diff)
 
 Notes
 -----
 
- * tested with a limited set of clients and use-cases, some X11 events are
+* tested with a limited set of clients and use-cases, some X11 events are
    probably not passed or handled correctly, report bugs if you see any,
- * known bug: if you crop a window at the same time another window is unmapped,
+* known bug: if you crop a window at the same time another window is unmapped,
    there is a chance that dwm will lose control of the window you are cropping
    and your only option will be to kill it (this is a pain to fix properly),
- * improvements: investigate `xextproto/shape` for non-rectangular crops!
+* improvements: investigate `xextproto/shape` for non-rectangular crops!
 
 Authors
 -------
 
- * Ivan Delalande <colona@ycc.fr>
+* Ivan Delalande <colona@ycc.fr>

@@ -53,11 +53,11 @@ eye on background processes (logs, tests,...)
 Download
 --------
 
- * [dwm-centeredmaster-6.1.diff](dwm-centeredmaster-6.1.diff)
- * [dwm-centeredmaster-20160719-56a31dc.diff](dwm-centeredmaster-20160719-56a31dc.diff)
+* [dwm-centeredmaster-6.1.diff](dwm-centeredmaster-6.1.diff)
+* [dwm-centeredmaster-20160719-56a31dc.diff](dwm-centeredmaster-20160719-56a31dc.diff)
 
 Authors
 -------
 
- * [Jérôme Andrieux](http://blog.jardinmagique.info) - <jerome@gcu.info>
- * Laslo Hunhold - <dev@frign.de> (6.1, git ports)
+* [Jérôme Andrieux](http://blog.jardinmagique.info) - <jerome@gcu.info>
+* Laslo Hunhold - <dev@frign.de> (6.1, git ports)

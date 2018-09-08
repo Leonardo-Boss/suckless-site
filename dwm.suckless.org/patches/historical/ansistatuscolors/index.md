@@ -1,10 +1,10 @@
 # AnsiStatusColors - colorize your status bar using ansi escape sequences#
 
-## Description ##
+## Description
 
 Lets you put colored text in your status bar, but you don't have define them in your config.h. Instead, just put the ansi escape sequence in the output of your status bar script to print in color, as you would in a terminal.
 
-## Configuration ##
+## Configuration
 
 get the patch from github: [https://gist.github.com/4054818](https://gist.github.com/4054818)
 
@@ -12,7 +12,7 @@ apply it to dwm.c like so:
 
     patch -p1 dwm.c < ansistatuscolors.diff
 
-## Usage ##
+## Usage
 
 Just like you'd use them for colorizing a shell script.
 
@@ -58,7 +58,7 @@ the code is one of the following:
 in vim, to create a literal 'escape' character, type ctrl-v, esc.
 in perl/python/c, within a string literal, it's "\x1b".
 
-### Example ###
+### Example
     #!/usr/bin/env python
     ##testcoloredstatus.py
 

@@ -16,4 +16,4 @@ Download
 Authors
 -------
 
- * Augusto Born de Oliveira - <augustoborn@gmail.com>
+* Augusto Born de Oliveira - <augustoborn@gmail.com>

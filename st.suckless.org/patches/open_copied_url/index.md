@@ -27,9 +27,9 @@ to open the contents of the clipboard in the default browser.
 Download
 --------
 
- * [st-openclipboard-20180525-2c2500c.diff](st-openclipboard-20180525-2c2500c.diff)
+* [st-openclipboard-20180525-2c2500c.diff](st-openclipboard-20180525-2c2500c.diff)
 
 Authors
 -------
 
- * Michael Buch - <michaelbuch12@gmail.com>
+* Michael Buch - <michaelbuch12@gmail.com>

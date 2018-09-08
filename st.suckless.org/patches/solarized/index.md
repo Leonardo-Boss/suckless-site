@@ -32,42 +32,42 @@ Download
 To get correct colors, you first need to apply the following patch
 to disable lighting up bold colors.
 
- * [st-no_bold_colors-0.5.diff](st-no_bold_colors-0.5.diff)
- * [st-no_bold_colors-0.6.diff](st-no_bold_colors-0.6.diff)
- * [st-no_bold_colors-0.7.diff](st-no_bold_colors-0.7.diff)
- * [st-no_bold_colors-0.8.1.diff](st-no_bold_colors-0.8.1.diff)
- * [st-no_bold_colors-20170623-b331da5.diff](st-no_bold_colors-20170623-b331da5.diff)
+* [st-no_bold_colors-0.5.diff](st-no_bold_colors-0.5.diff)
+* [st-no_bold_colors-0.6.diff](st-no_bold_colors-0.6.diff)
+* [st-no_bold_colors-0.7.diff](st-no_bold_colors-0.7.diff)
+* [st-no_bold_colors-0.8.1.diff](st-no_bold_colors-0.8.1.diff)
+* [st-no_bold_colors-20170623-b331da5.diff](st-no_bold_colors-20170623-b331da5.diff)
 
 Choose one of the following patches to get either the light
 or the dark color scheme:
 
 *Light*:
 
- * [st-solarized-light-0.5.diff](st-solarized-light-0.5.diff)
- * [st-solarized-light-0.6.diff](st-solarized-light-0.6.diff)
- * [st-solarized-light-0.7.diff](st-solarized-light-0.7.diff)
- * [st-solarized-light-20170623-b331da5.diff](st-solarized-light-20170623-b331da5.diff)
+* [st-solarized-light-0.5.diff](st-solarized-light-0.5.diff)
+* [st-solarized-light-0.6.diff](st-solarized-light-0.6.diff)
+* [st-solarized-light-0.7.diff](st-solarized-light-0.7.diff)
+* [st-solarized-light-20170623-b331da5.diff](st-solarized-light-20170623-b331da5.diff)
 
 *Dark*:
 
- * [st-solarized-dark-0.5.diff](st-solarized-dark-0.5.diff)
- * [st-solarized-dark-0.6.diff](st-solarized-dark-0.6.diff)
- * [st-solarized-dark-0.7.diff](st-solarized-dark-0.7.diff)
- * [st-solarized-dark-20170623-b331da5.diff](st-solarized-dark-20170623-b331da5.diff)
- * [st-solarized-dark-20180411-041912a.diff](st-solarized-dark-20180411-041912a.diff)
+* [st-solarized-dark-0.5.diff](st-solarized-dark-0.5.diff)
+* [st-solarized-dark-0.6.diff](st-solarized-dark-0.6.diff)
+* [st-solarized-dark-0.7.diff](st-solarized-dark-0.7.diff)
+* [st-solarized-dark-20170623-b331da5.diff](st-solarized-dark-20170623-b331da5.diff)
+* [st-solarized-dark-20180411-041912a.diff](st-solarized-dark-20180411-041912a.diff)
 
 *Both (swap between light/dark with F6)*:
 
- * [st-solarized-both-0.8.1.diff](st-solarized-both-0.8.1.diff)
- * [st-solarized-both-20170626-b331da5.diff](st-solarized-both-20170626-b331da5.diff)
+* [st-solarized-both-0.8.1.diff](st-solarized-both-0.8.1.diff)
+* [st-solarized-both-20170626-b331da5.diff](st-solarized-both-20170626-b331da5.diff)
 
 
 Authors
 -------
- * Nils Reuße - <nilsreusse@gmail.com>
- * Laslo Hunhold - <dev@frign.de> (0.5, 0.6, git ports)
- * Ryan Roden-Corrent - <ryan@rcorre.net> (both)
- * Marcel Krüger - <zauguin@gmail.com> (older git ports)
- * Harry Gindi - <harry.gindi@live.com> (git ports for light, dark, and swap versions)
- * Matthew Parnell - <matt@parnmatt.co.uk> (0.7 port)
- * Linh Nguyen - <linhvng.2212@gmail.com> (0.8.1 port for no_bold_colors and swap versions)
+* Nils Reuße - <nilsreusse@gmail.com>
+* Laslo Hunhold - <dev@frign.de> (0.5, 0.6, git ports)
+* Ryan Roden-Corrent - <ryan@rcorre.net> (both)
+* Marcel Krüger - <zauguin@gmail.com> (older git ports)
+* Harry Gindi - <harry.gindi@live.com> (git ports for light, dark, and swap versions)
+* Matthew Parnell - <matt@parnmatt.co.uk> (0.7 port)
+* Linh Nguyen - <linhvng.2212@gmail.com> (0.8.1 port for no_bold_colors and swap versions)

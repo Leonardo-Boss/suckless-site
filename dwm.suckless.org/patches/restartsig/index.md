@@ -9,8 +9,8 @@ In addition, a signal handler was added so that dwm cleanly quits by kill -TERM 
 
 ## Download
 
- * [dwm-restartsig-20180523-2991f37.diff](dwm-restartsig-20180523-2991f37.diff) (23.05.2018)
+* [dwm-restartsig-20180523-2991f37.diff](dwm-restartsig-20180523-2991f37.diff) (23.05.2018)
 
 ## Author
 
- * cd
+* cd

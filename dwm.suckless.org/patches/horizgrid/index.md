@@ -29,9 +29,9 @@ Horizontal Grid Layout
 Download
 --------
 
- * [dwm-horizgrid-6.1.diff](dwm-horizgrid-6.1.diff) (20160108)
+* [dwm-horizgrid-6.1.diff](dwm-horizgrid-6.1.diff) (20160108)
 
 Authors
 -------
 
- * Marshall Mason - `<marshallmason2@gmail.com>`
+* Marshall Mason - `<marshallmason2@gmail.com>`

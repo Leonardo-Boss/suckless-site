@@ -17,8 +17,8 @@ pause on a stream doesn't make sense.
 
 Download
 --------
- * [dwm-r1615-mpdcontrol.diff](dwm-r1615-mpdcontrol.diff)
+* [dwm-r1615-mpdcontrol.diff](dwm-r1615-mpdcontrol.diff)
 
 Author
 ------
- * Barbu Paul - Gheorghe <barbu.paul.gheorghe@gmail.com>
+* Barbu Paul - Gheorghe <barbu.paul.gheorghe@gmail.com>

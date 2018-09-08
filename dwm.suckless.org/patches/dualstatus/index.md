@@ -11,8 +11,8 @@ xsetroot -name "top text;bottom text"
 Download
 --------
 
- * [dwm-dualstatus-6.1.diff](dwm-dualstatus-6.1.diff) (4683b) (20151110)
- * [dwm-dualstatus-6.0.diff](dwm-dualstatus-6.0.diff) (4794b) (20130908)
+* [dwm-dualstatus-6.1.diff](dwm-dualstatus-6.1.diff) (4683b) (20151110)
+* [dwm-dualstatus-6.0.diff](dwm-dualstatus-6.0.diff) (4794b) (20130908)
 
 Screenshot
 ----------
@@ -23,4 +23,4 @@ a simple dual status bar
 
 Authors
 -------
- * Andrew Milkovich - `<amilkovich at gmail dot com>`
+* Andrew Milkovich - `<amilkovich at gmail dot com>`

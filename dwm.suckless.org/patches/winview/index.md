@@ -45,10 +45,10 @@ template, config.def.h.
 Download
 --------
 
- * [dwm-6.1-winview.diff](dwm-6.1-winview.diff)
- * [dwm-6.0-winview.diff](dwm-6.0-winview.diff)
+* [dwm-6.1-winview.diff](dwm-6.1-winview.diff)
+* [dwm-6.0-winview.diff](dwm-6.0-winview.diff)
 
 Author
 ------
- * Philippe Gras - `<philippe dot gras at free dot fr>`
+* Philippe Gras - `<philippe dot gras at free dot fr>`
 

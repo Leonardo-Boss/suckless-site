@@ -9,8 +9,8 @@ for more information.
 
 ## Download
 
- * [dwm-5.9.1-spawn_cwd.diff](dwm-5.9.1-spawn_cwd.diff)
+* [dwm-5.9.1-spawn_cwd.diff](dwm-5.9.1-spawn_cwd.diff)
 
 ## Author
 
- * Suraj N. Kurapati - <sunaku@gmail.com>
+* Suraj N. Kurapati - <sunaku@gmail.com>

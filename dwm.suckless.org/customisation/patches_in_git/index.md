@@ -1,22 +1,22 @@
-# How to maintain dwm configuration and customization in git #
+# How to maintain dwm configuration and customization in git
 
 Since suckless.org has migrated to git, customizations can now be be
 managed directly in git as an alternative to the
 [patch queue in Mercurial tutorial](//dwm.suckless.org/customisation/patch_queue).
 
-## The concept ##
+## The concept
 
 By recording changes and applied patches as commits in a special
 branch they can be rebased on top of the master branch when required.
 
-## Cloning the repository ##
+## Cloning the repository
 
 You need to have the [Git VCS](http://git-scm.com/) installed first.
 Then clone the upstream repository locally
 
 	git clone git://git.suckless.org/dwm
 
-## Recording customizations ##
+## Recording customizations
 
 Create a special branch where all the customizations will be kept. It
 doesn't matter what the name is, it just needs to be something
@@ -46,7 +46,7 @@ Then record the changes as commits
 	# git will ask you to provide a message	describing your changes
 	git commit
 
-### Experimenting with different combinations of customizations ###
+### Experimenting with different combinations of customizations
 
 If you plan on experimenting with different combinations of
 customizations it might be easier to record the commits in separate
@@ -64,7 +64,7 @@ If you some conflicts occur, resolve them and then record the changes
 and commit the result. `git mergetool` can help with resolving the
 conflicts.
 
-## Updating customizations after new release ##
+## Updating customizations after new release
 
 When the time comes to update your customizations after a new
 release of dwm or when the dwm repository contains a commit fixing
@@ -93,6 +93,6 @@ If you want to give up, you can always abort the rebase
 
 	git rebase --abort
 
-## Author ##
+## Author
 
 * [Ondřej Grover](mailto:ondrej.grover@gmail.com)

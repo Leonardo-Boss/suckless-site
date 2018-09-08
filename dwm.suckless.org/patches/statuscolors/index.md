@@ -1,20 +1,20 @@
-# colored status text #
+# colored status text
 
-## Description ##
+## Description
 
 This patch enables colored text in the status bar.  It changes the way colors are defined in config.h, allowing the user to define multiple color combinations for use in their status script.
 
-## Configuration ##
+## Configuration
 
 Download the patch and apply it according to the [general instructions](../).
 
 Modify the colors definition in 'config.h' to suit your needs.  Make sure to define at least 3 colors as they will be used for 'normal', 'selected', and 'urgent' windows, respectively.
 
-## Usage ##
+## Usage
 
 Add code to your status script to output the raw characters '\x03' to switch to the 'urgent' color, or '\x04' to switch to the 4th defined color, etc.  Note that the color indices in the status text are +1 from the definition in 'config.h' (because '\0' is the string terminator).  To switch back to the normal text color use '\x01'. To enter the raw character '\x01' in vim, press ctrl+v followed by x, 0, and 1 in that order. '\x01' gives the first character, which appears as a bold "A" on the screen to distinguish it from the regular character A.
 
-### Example ###
+### Example
 
 The following definition in 'config.h':
 
@@ -54,9 +54,9 @@ An example status script snippet to take advantage of the colors:
 
     echo -e $status
 
-## Download ##
+## Download
 
- * [dwm-5.7.2-statuscolors.diff](dwm-5.7.2-statuscolors.diff)
- * [dwm-5.8.2-statuscolors.diff](dwm-5.8.2-statuscolors.diff)
- * [dwm-statuscolors-5.9.diff](dwm-statuscolors-5.9.diff)
- * [dwm-statuscolors-6.1.diff](dwm-statuscolors-6.1.diff)
+* [dwm-5.7.2-statuscolors.diff](dwm-5.7.2-statuscolors.diff)
+* [dwm-5.8.2-statuscolors.diff](dwm-5.8.2-statuscolors.diff)
+* [dwm-statuscolors-5.9.diff](dwm-statuscolors-5.9.diff)
+* [dwm-statuscolors-6.1.diff](dwm-statuscolors-6.1.diff)

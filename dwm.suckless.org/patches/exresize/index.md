@@ -16,9 +16,9 @@ Download
  
 <!-- This patch used to say (20121117), but it doesn't build against commits
      from that date.  Author emailed.  -->
- * [dwm-exresize-r1606.diff](dwm-exresize-r1606.diff) (Old patch, unknown version)
+* [dwm-exresize-r1606.diff](dwm-exresize-r1606.diff) (Old patch, unknown version)
 
 Authors
 -------
 
- * Krister Svanlund - `<krister.svanlund@gmail.com>`
+* Krister Svanlund - `<krister.svanlund@gmail.com>`

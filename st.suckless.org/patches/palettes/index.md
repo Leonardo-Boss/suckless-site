@@ -34,9 +34,9 @@ It uses the following shortcuts :
 Download
 --------
 
- * [st-color_schemes-0.8.1.diff](st-color_schemes-0.8.1.diff)
+* [st-color_schemes-0.8.1.diff](st-color_schemes-0.8.1.diff)
 
 
 Authors
 -------
- * Tonton Couillon - &lt;la dot luge at free dot fr>
+* Tonton Couillon - &lt;la dot luge at free dot fr>

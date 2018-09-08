@@ -1,26 +1,26 @@
-# flextile layout #
+# flextile layout
 
-## Description ##
+## Description
 
 This patch replaces the `tile` layout with a more flexible version. The features include the following:
 
- * tile like the original version (left single master, right stack)
- * left/right/top/bottom n-master, right/left/bottom/top/no stack/deck (deck is like `monocle` in the stack area)
- * per-tag configuration
+* tile like the original version (left single master, right stack)
+* left/right/top/bottom n-master, right/left/bottom/top/no stack/deck (deck is like `monocle` in the stack area)
+* per-tag configuration
 
 It therefore provides the following additional possibilities:
 
- * `tile` for left-handed people
- * compare multiple files with one other each at a time without switching between views
+* `tile` for left-handed people
+* compare multiple files with one other each at a time without switching between views
 
 The patch incorporates and expands the following patches:
 
- * bottom stack (`bstack` and `bstackhoriz`)
- * nmaster
- * pertag
+* bottom stack (`bstack` and `bstackhoriz`)
+* nmaster
+* pertag
 
 
-## Configuration ##
+## Configuration
 
  (1) Download the patch and apply it according to the [general instructions](../).
 
@@ -49,18 +49,18 @@ The patch incorporates and expands the following patches:
          { MODKEY|ControlMask,           XK_k,      shiftmastersplit, {.i = +1} },   /* increase the number of tiled clients in the master area */
 
 
-## Usage ##
+## Usage
 
 With the default configuration (see above) the original tile layout is emulated. You can change the layout by adjusting the four parameters `layout axis`, `master axis`, `stack axis` and `master split` (description see above) by pressing the appropriate keys.
 The original `tile` layout is only available by setting the above parameters, but not as a discrete layout; the `monocle` layout is still available by pressing `ALT+m` (in the default configuration).
 
 
-## Download ##
+## Download
 
- * [dwm-flextile-5.8.2.diff][dwm-flextile-5.8.2.diff]
- * [dwm-flextile-5.8.1.diff][dwm-flextile-5.8.1.diff]
+* [dwm-flextile-5.8.2.diff][dwm-flextile-5.8.2.diff]
+* [dwm-flextile-5.8.1.diff][dwm-flextile-5.8.1.diff]
 
-## Authors ##
+## Authors
 
 joten (at) freenet (dot) de
 

@@ -16,8 +16,8 @@ Hopefully whoever wanted this sees it and no longer has to duplicate functions.
 
 ## Download
 
- * [dwm-cyclelayouts-20180524-a09e766.diff](dwm-cyclelayouts-20180524-a09e766.diff) (24.05.2018)
+* [dwm-cyclelayouts-20180524-a09e766.diff](dwm-cyclelayouts-20180524-a09e766.diff) (24.05.2018)
 
 ## Author
 
- * cd
+* cd

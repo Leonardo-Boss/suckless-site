@@ -19,10 +19,10 @@ in `config.h` via the `timetocancel` option.
 Download
 --------
 
- * [slock-quickcancel-20160619-65b8d52.diff](slock-quickcancel-20160619-65b8d52.diff)
+* [slock-quickcancel-20160619-65b8d52.diff](slock-quickcancel-20160619-65b8d52.diff)
 
 Authors
 -------
 
- * Matthias Schoth - mschoth@gmail.com
+* Matthias Schoth - mschoth@gmail.com
 

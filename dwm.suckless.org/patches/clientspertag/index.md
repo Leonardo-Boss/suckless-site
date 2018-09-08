@@ -28,9 +28,9 @@ in the slave area.
 If the argument to 'clientspertag' starts with '^' pressing twice the key
 will result on swapping between the defined value and -1.
 
-  * To show all windows put "-1" as argument value.
-  * To only display floating windows put "0" as argument.
-  * For a toggling pair put "^2".
+ * To show all windows put "-1" as argument value.
+ * To only display floating windows put "0" as argument.
+ * For a toggling pair put "^2".
 
   static Key keys[] = {
         /* modifier      key        function        argument */
@@ -41,8 +41,8 @@ will result on swapping between the defined value and -1.
 
 ## Download
 
- * [dwm-clientspertag-5.6.1.diff](dwm-clientspertag-5.6.1.diff)
+* [dwm-clientspertag-5.6.1.diff](dwm-clientspertag-5.6.1.diff)
 
 ## Maintainer
 
- * pancake - <pancake@nopcode.org>
+* pancake - <pancake@nopcode.org>

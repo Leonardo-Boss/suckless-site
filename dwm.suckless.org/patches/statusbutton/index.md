@@ -12,8 +12,8 @@ It has been configured for now in config.def.h to spawn dmenucmd when clicked wi
 
 ## Download
 
- * [dwm-statusbutton-20180524-c8e9479.diff](dwm-statusbutton-20180524-c8e9479.diff) (24.05.2018)
+* [dwm-statusbutton-20180524-c8e9479.diff](dwm-statusbutton-20180524-c8e9479.diff) (24.05.2018)
 
 ## Author
 
- * cd
+* cd

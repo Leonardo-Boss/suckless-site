@@ -36,11 +36,11 @@ arrangement can be seen below.
 
 ## Download
 
- * [dwm-fibonacci-5.8.2.diff](dwm-fibonacci-5.8.2.diff)
+* [dwm-fibonacci-5.8.2.diff](dwm-fibonacci-5.8.2.diff)
 
 ## Maintainer
 
- * Niki Yoshiuchi - <aplusbi@gmail.com>
+* Niki Yoshiuchi - <aplusbi@gmail.com>
 
 Joe Thornber's spiral tiling for [Xmonad][3] formed the inspiration for this
 patch. Thanks to Jan Christoph Ebersbach for updating this patch for versions

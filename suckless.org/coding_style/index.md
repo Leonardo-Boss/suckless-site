@@ -44,30 +44,30 @@ Blocks
 * `{` on same line preceded by single space (except functions)
 * `}` on own line unless continuing statement (`if else`, `do while`, ...)
 * Use block for single statement iff
-	* Inner statement needs a block
-
-			for (;;) {
-				if (foo) {
-					bar;
-					baz;
-				}
-			}
-	* Another branch of the same statement needs a block
-
-			if (foo) {
-				bar;
-			} else {
-				baz;
-				qux;
-			}
+  * Inner statement needs a block
+  
+  	for (;;) {
+  		if (foo) {
+  			bar;
+  			baz;
+  		}
+  	}
+  * Another branch of the same statement needs a block
+  
+  	if (foo) {
+  		bar;
+  	} else {
+  		baz;
+  		qux;
+  	}
 
 Leading Whitespace
 ------------------
 * Use tabs for indentation
 * Use spaces for alignment
-	* This means no tabs except beginning of line
-	* Everything will line up independent of tab size
-	* Use spaces not tabs for multiline macros as the indentation level is 0, where the `#define` began
+  * This means no tabs except beginning of line
+  * Everything will line up independent of tab size
+  * Use spaces not tabs for multiline macros as the indentation level is 0, where the `#define` began
 
 Functions
 ---------
@@ -96,13 +96,13 @@ Switch
 Headers
 -------
 * Place system/libc headers first in alphabetical order
-	* If headers must be included in a specific order comment to explain
+  * If headers must be included in a specific order comment to explain
 * Place local headers after an empty line
 * When writing and using local headers
-	* Do not use `#ifndef` guards
-	* Instead ensure they are included where and when they are needed
-	* Read <https://talks.golang.org/2012/splash.article#TOC_5.>
-	* Read <http://plan9.bell-labs.com/sys/doc/comp.html>
+  * Do not use `#ifndef` guards
+  * Instead ensure they are included where and when they are needed
+  * Read <https://talks.golang.org/2012/splash.article#TOC_5.>
+  * Read <http://plan9.bell-labs.com/sys/doc/comp.html>
 
 User Defined Types
 ------------------
@@ -112,9 +112,9 @@ User Defined Types
 * Capitalize the type name
 * Typedef the type name, if possible without first naming the struct
 
-		typedef struct {
-			double x, y, z;
-		} Point;
+  	typedef struct {
+  		double x, y, z;
+  	} Point;
 
 Line Length
 -----------
@@ -128,19 +128,19 @@ Tests and Boolean Values
 * Do not use `bool` types (stick to integer types)
 * Assign at declaration when possible
 
-		Type *p = malloc(sizeof(*p));
-		if (!p)
+  	Type *p = malloc(sizeof(*p));
+  	if (!p)
 			hcf();
 * Otherwise use compound assignment and tests unless the line grows too long
 
-		if (!(p = malloc(sizeof(*p))))
-			hcf();
+  	if (!(p = malloc(sizeof(*p))))
+  		hcf();
 
 Handling Errors
 ---------------
 * When functions `return -1` for error test against `0` not `-1`
 
-		if (func() < 0)
+  	if (func() < 0)
 			hcf();
 * Use `goto` to unwind and cleanup when necessary instead of multiple nested levels
 * `return` or `exit` early on failures instead of multiple nested levels
@@ -151,11 +151,11 @@ Enums vs #define
 ----------------
 * Use enums for values that are grouped semantically and #define otherwise
 
-		#define MAXSZ  4096
-		#define MAGIC1 0xdeadbeef
-
-		enum {
-			DIRECTION_X,
-			DIRECTION_Y,
-			DIRECTION_Z
-		};
+  	#define MAXSZ  4096
+  	#define MAGIC1 0xdeadbeef
+  
+  	enum {
+  		DIRECTION_X,
+  		DIRECTION_Y,
+  		DIRECTION_Z
+  	};

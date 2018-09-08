@@ -20,11 +20,11 @@ With this patch, the "font" variable in config.h is superseded by the "fonts"
 variable which is a priority-ordered list of fonts that should be used to
 render text. Here's an example "fonts" definition:
 
-    static const char *fonts[] = {
-        "Sans:size=10.5",
-        "VL Gothic:size=10.5",
-        "WenQuanYi Micro Hei:size=10.5",
-    };
+	static const char *fonts[] = {
+		"Sans:size=10.5",
+		"VL Gothic:size=10.5",
+		"WenQuanYi Micro Hei:size=10.5",
+	};
 
 At least one font must be specified, and a maximum of `DRW_FONT_CACHE_SIZE`
 fonts can be used.
@@ -33,8 +33,8 @@ fonts can be used.
 Download
 --------
 * [dwm-6.0-xft.diff](dwm-6.0-xft.diff) (6.6k) (16 May 2012)
-	* memory leak fixed and improved implementation.
-	* include config.def.h and config.mk changes.
+  * memory leak fixed and improved implementation.
+  * include config.def.h and config.mk changes.
 
 * [dwm-6.1-xft-with-fallback-font.diff](dwm-6.1-xft-with-fallback-font.diff) (20k)
 

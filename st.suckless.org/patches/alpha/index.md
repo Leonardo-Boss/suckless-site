@@ -1,7 +1,7 @@
 alpha
 =====
 
-->[![Screenshot](st-alpha-s.png)](st-alpha.png)<-
+[![Screenshot](st-alpha-s.png)](st-alpha.png)
 
 Description
 -----------
@@ -13,9 +13,9 @@ make this patch effective.
 Notes
 -----
 
- - The alpha value affects the default background only.
- - The color designated by 'defaultbg' should not be used elsewhere.
- - Embedding might fail after applying this patch.
+* The alpha value affects the default background only.
+* The color designated by 'defaultbg' should not be used elsewhere.
+* Embedding might fail after applying this patch.
 
 Download
 --------

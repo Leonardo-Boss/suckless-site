@@ -30,15 +30,15 @@ There are two parallel sets of bindings: one for the `focus*` family and the oth
 `push*` family. The keys are the same for both sets but they do differ in the modifiers:
 simply `MODKEY` for the `focus*` family and `MODKEY|ShiftMask` for the `push*` family.
 
-  Key   |  Argument   |   Description
-:------:|:-----------:|-----------------------
-  \`    |   `PREVSEL` |  Previously selected
-  `j`   |   `INC(+1)` |  Next to selected
-  `k`   |   `INC(-1)` |  Previous to selected
-  `q`   |     `0`     |  First position
-  `a`   |     `1`     |  Second position
-  `z`   |     `2`     |  Third position
-  `x`   |    `-1`     |  Last position
+	 Key   Argument   Description
+	---------------------------------------
+	 \     PREVSEL    Previously selected
+	 j     INC(+1)    Next to selected
+	 k     INC(-1)    Previous to selected
+	 q       0        First position
+	 a       1        Second position
+	 z       2        Third position
+	 x      -1        Last position
 
 The `q`, `a`, `z` keys are aligned more or less vertically in the us keyboard layout. They
 are intended to be used as quick positional shortcuts to specific applications. So if you

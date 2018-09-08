@@ -13,13 +13,13 @@ Usage
 
 1 In your config.h:
 
-    static const char *emacs[] = { "emacsclient", "-c", NULL, NULL, "Emacs" };
-    static const char *browser[] = { "firefox", NULL, NULL, NULL, "Firefox" };
+	static const char *emacs[] = { "emacsclient", "-c", NULL, NULL, "Emacs" };
+	static const char *browser[] = { "firefox", NULL, NULL, NULL, "Firefox" };
 
 2 In your keybindings add something like:
 
-    { Modkey,                       XK_e,      runorraise,     {.v = emacs } },
-    { Modkey,                       XK_f,      runorraise,     {.v = firefox } },
+	{ Modkey,                       XK_e,      runorraise,     {.v = emacs } },
+	{ Modkey,                       XK_f,      runorraise,     {.v = firefox } },
 
 Download
 --------

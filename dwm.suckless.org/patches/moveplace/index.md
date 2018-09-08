@@ -15,11 +15,11 @@ depending on which key is pressed.
 
 MOD+
 
-  qwe
-  asd
-  zxc
+	qwe
+	asd
+	zxc
 
-with 's' being the center.
+with `s` being the center.
 
 ## Download
 

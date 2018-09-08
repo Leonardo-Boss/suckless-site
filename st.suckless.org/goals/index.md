@@ -16,22 +16,21 @@ Theoretical features
 
 Goals
 -----
-- have a working graphical terminal for terminal applications
-- do no reimplement tmux and his comrades
+* have a working graphical terminal for terminal applications
+* do no reimplement tmux and his comrades
 
 Non-goals
 ---------
-- filters that change colour (should be done by tmux or something doing the
+* filters that change colour (should be done by tmux or something doing the
   higher layers *in* st)
-- server to save sessions in case of X crash (should be done by dtach)
-- unlimited scrollback buffer (done by dvtm) 
-- URL selecting/launching in browser similiar to vimperator's mark mode and the
+* server to save sessions in case of X crash (should be done by dtach)
+* unlimited scrollback buffer (done by dvtm) 
+* URL selecting/launching in browser similiar to vimperator's mark mode and the
   urxvt script (patch?) (possibly piped through something like plumb to
-  	- This one is done by a simple shortcut in dwm which will launch your
-	  plumber on the current select buffer. St has easy select through
-	  double-click. This keeps the complex logic out of the st context.
+  * This one is done by a simple shortcut in dwm which will launch your
+    plumber on the current select buffer. St has easy select through
+    double-click. This keeps the complex logic out of the st context.
 
 Links
 -----
 * [Repository](//git.suckless.org/st)
-

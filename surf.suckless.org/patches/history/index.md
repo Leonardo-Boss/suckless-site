@@ -11,30 +11,30 @@ add the following:
 
 Here are some ways of using it.
 
-(1) Write a small shell script (dmenu.uri.sh)
+1. Write a small shell script (dmenu.uri.sh)
 
-	tac ~/.surf/history | dmenu -l 10 -b -i | cut -d ' ' -f 3
+   	tac ~/.surf/history | dmenu -l 10 -b -i | cut -d ' ' -f 3
 
-(2) Modify config.h and add the following.
+2. Modify config.h and add the following.
 
-	#define SETURI(p)       { .v = (char *[]){ "/bin/sh", "-c", \
-	"prop=\"`dmenu.uri.sh`\" &&" \
-	"xprop -id $1 -f $0 8s -set $0 \"$prop\"", \
-	p, winid, NULL } }
+   	#define SETURI(p)       { .v = (char *[]){ "/bin/sh", "-c", \
+   	"prop=\"`dmenu.uri.sh`\" &&" \
+   	"xprop -id $1 -f $0 8s -set $0 \"$prop\"", \
+   	p, winid, NULL } }
 
-and in static Key keys[] add:
+   and in static Key keys[] add:
 
-	{ MODKEY,               GDK_Return, spawn,      SETURI("_SURF_GO") },
+   	{ MODKEY,               GDK_Return, spawn,      SETURI("_SURF_GO") },
 
 Here are some tips on using it.
 
-(1) Remove duplicates periodically:
+1. Remove duplicates periodically:
 
 	cat ~/.surf/history > ~/.surf/history.$$
 	cat ~/.surf/history.$$ | sort | uniq >~/.surf/history
 	rm -f ~/.surf/history.$$
 
-(2) Import history:
+2. Import history:
 
 Firefox:
 	sqlite3 -list $HOME/.mozilla/firefox/*.default/places.sqlite 'select url from moz_places ;' | grep ^http >> ~/.surf/history

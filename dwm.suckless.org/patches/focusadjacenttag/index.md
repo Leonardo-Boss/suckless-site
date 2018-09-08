@@ -11,12 +11,12 @@ on the left or the right tag.
 Default key bindings
 --------------------
 
-  Key                |  Description
-:-------------------:|:--------------------------------------------------
-  `Mod-Left`         |  Focus tag on the left, if any.
-  `Mod-Right`        |  Focus tag on the right, if any.
-  `Mod-Shift-Left`   |  Send focused window to tag on the left, if any.
-  `Mod-Shift-Right`  |  Send focused window to tag on the right, if any.
+	 Key               Description
+	--------------------------------------------------------------------
+	 Mod-Left          Focus tag on the left, if any.
+	 Mod-Right         Focus tag on the right, if any.
+	 Mod-Shift-Left    Send focused window to tag on the left, if any.
+	 Mod-Shift-Right   Send focused window to tag on the right, if any.
 
 Download
 --------

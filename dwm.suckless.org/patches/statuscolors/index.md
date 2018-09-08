@@ -18,41 +18,41 @@ Add code to your status script to output the raw characters '\x03' to switch to 
 
 The following definition in 'config.h':
 
-    #define NUMCOLORS         4
-    static const char colors[NUMCOLORS][MAXCOLORS][8] = {
-      // border   foreground background
-      { "#000033", "#dddddd", "#000033" },  // normal
-      { "#000088", "#ffffff", "#000088" },  // selected
-      { "#ff0000", "#000000", "#ffff00" },  // urgent/warning  (black on yellow)
-      { "#ff0000", "#ffffff", "#ff0000" },  // error (white on red)
-      // add more here
-    };
+	#define NUMCOLORS         4
+	static const char colors[NUMCOLORS][MAXCOLORS][8] = {
+		// border   foreground background
+		{ "#000033", "#dddddd", "#000033" },  // normal
+		{ "#000088", "#ffffff", "#000088" },  // selected
+		{ "#ff0000", "#000000", "#ffff00" },  // urgent/warning  (black on yellow)
+		{ "#ff0000", "#ffffff", "#ff0000" },  // error (white on red)
+		// add more here
+	};
 
 Coupled with a matching status script produces the following:
   ![Example Colored Status Text](statuscolors.png)
 
 A really silly example:
 
-    echo -e "normal \x01 selected \x03 warning/urgent \x04 error \x01 back to normal text" | dwm
+	echo -e "normal \x01 selected \x03 warning/urgent \x04 error \x01 back to normal text" | dwm
 
 An example status script snippet to take advantage of the colors:
 
-    status=""
-    if [$batperc -le 10]; then
-      # use "warning" color
-      status+="\x03 BAT: $batperc"
-    elif [$batperc -le 5]; then
-      # use "error" color
-      status+="\x04 BAT: $batperc"
-    else
-      # default is normal color
-      status+="BAT: $batperc"
-    fi
+	status=""
+	if [$batperc -le 10]; then
+		# use "warning" color
+		status+="\x03 BAT: $batperc"
+	elif [$batperc -le 5]; then
+		# use "error" color
+		status+="\x04 BAT: $batperc"
+	else
+		# default is normal color
+		status+="BAT: $batperc"
+	fi
 
-    # switch back to normal color for date
-    status+="\x01| "+$(date)
+	# switch back to normal color for date
+	status+="\x01| "+$(date)
 
-    echo -e $status
+	echo -e $status
 
 ## Download
 

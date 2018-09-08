@@ -4,11 +4,11 @@ instapaper
 Description
 -------
 
-(1) Add this to static Key keys[]:
+1. Add this to static Key keys[]:
 
 	{ MODKEY,	GDK_i,	spawn,	{ .v = (char *[]){ "/bin/sh", "-c", "curl -s -d username=\"$(cat ~/.surf/instapaper | sed -n '1p')\" -d password=\"$(cat ~/.surf/instapaper | sed -n '2p')\" -d url=\"$(xprop -id $0 _SURF_URI | cut -d '\"' -f 2)\" https://www.instapaper.com/api/add > /dev/null", winid, NULL } } },
 
-(2) Save instapaper login:
+2. Save instapaper login:
 
 Your instapaper login should go to ~/.surf/instapaper. Email first line; password second line.
 

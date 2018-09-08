@@ -9,12 +9,12 @@ Add key commands that are commonly used in terminal applications
 
 Mappings:
 
-|Key| | |Function| | | Mapped to|
-|:---|-|-|:---|-|-|:---|
-|Ctrl-u| | |Delete until beginning of line| | |Esc|
-|Ctrl-h| | |Backspace| | |Backspace|
-|Ctrl-j| | |Line feed| | |Return|
-|Ctrl-m| | |Carriage feed| | |Return|
+	 Key      Function                         Mapped to
+	-----------------------------------------------------
+	 Ctrl-u   Delete until beginning of line   Esc
+	 Ctrl-h   Backspace                        Backspace
+	 Ctrl-j   Line feed                        Return
+	 Ctrl-m   Carriage feed                    Return
 
 
 Download

@@ -17,7 +17,7 @@ Configuring inputs
 One way to configure input devices is via the `xinput` tool. Without any
 arguments given, it should list all the input devices in short format.
 
-    xinput
+	xinput
 
 It will print all the master device (cursors on screen) and the slave device
 (physical device). Master device comes in pair, which is pointer and keyboard.
@@ -27,7 +27,7 @@ Adding master device
 
 To create another pointer for a new user. First, we add a master device.
 
-    xinput create-master Name
+	xinput create-master Name
 
 Another pointer should appear in the center of the screen by now.
 
@@ -37,7 +37,7 @@ Assigning slave device
 We will then require to assign a slave device to the master device. The *id* of
 the **master** and **slave** device can be found by using `xinput`.
 
-    xinput reattach <slave> <master>
+	xinput reattach <slave> <master>
 
 By the end of this, both pointer can move simultaneously but keyboard cannot
 type in different application simultaneously, this is normal for window manager
@@ -52,7 +52,7 @@ pointer and keyboard master device (not sure if specifying one works).
 The **window** is the PID of window which can be checked with either `xprop`
 (useless sometimes) or `xdotool selectwindow`.
 
-    xinput set-cp <window> <master>
+	xinput set-cp <window> <master>
 
 If the setup is successful, the other keyboard should be able to input only in
 the window. In which multiple user can play different games at the same time.
@@ -62,17 +62,17 @@ Cleaning up
 
 Remove all the master device that was created.
 
-    xinput remove-master <master>
+	xinput remove-master <master>
 
 And `reattach` the pointer or keyboard back to the main master device.
 
 Ideas
 -----
 
-- The other could have used Xephyr or Xnest to have his own session instead.
+* The other could have used Xephyr or Xnest to have his own session instead.
 
 See also
 --------
 
-- https://ao2.it/en/blog/2010/01/19/poor-mans-multi-touch-using-multiple-mice-xorg
-- https://www.x.org/wiki/Development/Documentation/MPX/
+* https://ao2.it/en/blog/2010/01/19/poor-mans-multi-touch-using-multiple-mice-xorg
+* https://www.x.org/wiki/Development/Documentation/MPX/

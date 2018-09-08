@@ -2,10 +2,10 @@
 
 Pretty much like plan9's acme and plumber: right-click some selected text to send it to the plumbing program of your choosing:
 
-- open an URL in a browser
-- view an image, PDF, ...
-- jump from logs to editor, at the specified line/col
-- etc
+* open an URL in a browser
+* view an image, PDF, ...
+* jump from logs to editor, at the specified line/col
+* etc
 
 The shell current working directory is set by the shell via `OSC 7` (borrowed from vte, see `/etc/profile.d/vte.sh` if you have it installed).
 

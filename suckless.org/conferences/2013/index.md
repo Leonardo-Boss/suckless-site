@@ -11,7 +11,7 @@ Saturday, 2013-06-22
         Room A027 / Raum A027
 
 
-->[![slcon2013 group photo](slcon2013-s.png)](slcon2013.png)<-
+[![slcon2013 group photo](slcon2013-s.png)](slcon2013.png)
 
 Talks
 -----

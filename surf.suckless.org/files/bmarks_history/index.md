@@ -23,11 +23,12 @@ URL handlers
 	"g word .." (google for given word)
 	"y word .." (search in youtube)
 	"x word .." (remove an entry from the bookmarks file)
+
 Author
 ------
 
-- The code was originally from Peter John Hartman, then filtered through pancake and nibble (see their bmarks) 
-and now back to Peter John Hartman.  You can get the latest version at http://durandus.trilidun.org/durandus/code/surf/.
+* The code was originally from Peter John Hartman, then filtered through pancake and nibble (see their bmarks) 
+  and now back to Peter John Hartman.  You can get the latest version at http://durandus.trilidun.org/durandus/code/surf/.
 
 Installation
 ------------

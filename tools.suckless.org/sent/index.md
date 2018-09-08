@@ -3,7 +3,7 @@ sent
 
 Simple plaintext presentation tool.
 
-->[![Screenshot of sent](sent-bullets-s.png)](sent-bullets.png)<-
+[![Screenshot of sent](sent-bullets-s.png)](sent-bullets.png)
 
 sent does not need latex, libreoffice or any other fancy file format, it uses
 plaintext files to describe the slides and can also display images. Every

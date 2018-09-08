@@ -7,27 +7,27 @@ This feature was dropped from vanilla dwm in version 4.4.
 
 See [nmaster.c][1] header documentation for installing this patch with tilecols and clientspertag for dwm 4.6.
 
-    ntile         (-|=)
-    +----------+------+
-    |          |      |
-    |          +------+
-    |----------|      |
-    |          +------+
-    |          |      |
-    +----------+------+
+	ntile         (-|=)
+	+----------+------+
+	|          |      |
+	|          +------+
+	|----------|      |
+	|          +------+
+	|          |      |
+	+----------+------+
 
 NOTE: The nmaster.c (patch for dwm 4.6) mixes the clientspertag patch together with another layout called tilecols. 
 
 ## Usage
 
- 1. Download the patch and apply according to the [general instructions](.).
- 2. Add the `NMASTER` value to your `config.h`.
-    Example from `config.default.h`:
+1. Download the patch and apply according to the [general instructions](.).
+2. Add the `NMASTER` value to your `config.h`.
+   Example from `config.default.h`:
 
         #define NMASTER          2 /* clients in master area*/
 
- 3. Add keybindings to `incmaster()` to your `config.h`.
-    Example from `config.default.h`:
+3. Add keybindings to `incmaster()` to your `config.h`.
+   Example from `config.default.h`:
 
         { MODKEY|ShiftMask,       XK_k,       incnmaster,    "-1" }, \
         { MODKEY|ShiftMask,       XK_j,       incnmaster,    "1" }, \

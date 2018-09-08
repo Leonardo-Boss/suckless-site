@@ -16,7 +16,7 @@ Download
 Author
 ------
 stolen from 
-- Julien Steinhauser <[julien.steinhauser@orange.fr](mailto:julien.steinhauser@orange.fr)>
-written into a patch
-- blut
-- Alexis Ben Miloud--Josselin (panpo) <[alexis.bmj@protonmail.com](mailto:alexis.bmj@protonmail.com)>
+* Julien Steinhauser <[julien.steinhauser@orange.fr](mailto:julien.steinhauser@orange.fr)>
+  written into a patch
+* blut
+* Alexis Ben Miloud--Josselin (panpo) <[alexis.bmj@protonmail.com](mailto:alexis.bmj@protonmail.com)>

@@ -18,4 +18,5 @@ made to other custom layouts, like 'deck'.
 * [dwm-rmaster-6.1.diff](dwm-rmaster-6.1.diff) (1836b) (20170213)
 
 ## Author
+
 * phi <crispyfrog@163.com>

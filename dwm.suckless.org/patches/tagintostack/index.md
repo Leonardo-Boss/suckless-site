@@ -1,5 +1,5 @@
 tagintostack
-===============
+============
 
 Description
 -----------
@@ -7,9 +7,9 @@ Description
 a new tag into view.  This means your master area will remain unchanged when
 toggling views.
 * the `allmaster` patch will cause all clients in the master area to be left
-alone
+  alone
 * the `onemaster` patch will cause the first client in the master area to be left
-alone (this is a much simpler piece of code)
+  alone (this is a much simpler piece of code)
 
 Download
 --------

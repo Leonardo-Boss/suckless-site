@@ -8,6 +8,7 @@ This patch allows the selected text to be piped back out with dmenu. This is use
 
 Configuration
 -------------
+
 Set the variable 'startpipe' in config.h to any character.
 
 

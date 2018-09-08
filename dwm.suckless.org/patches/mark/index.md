@@ -26,23 +26,23 @@ This patch adds 3 functions to dwm:
 Some ideas for combinations of key mappings:
 
 * togglemark x2  
-clear the mark
+  clear the mark
 * swapclient, swapfocus  
-shift the client to another client frame without losing focus
+  shift the client to another client frame without losing focus
 * swapclient, togglemark x2  
-swap 2 clients and clear the mark
+  swap 2 clients and clear the mark
 * swapfocus, togglemark x2  
-jump to mark and clear the mark
+  jump to mark and clear the mark
 
 ## Download
 this patch has been revised, it's recommended to use dwm-6.1-mark-new.diff
 old behaviours of the patch(dwm-mark-6.1.diff):
 
- 1. crashes when using mark features while the marked client has been killed.
- 2. swapclient clears the mark.
- 3. swapclient falls back to zoom() if the mark is not set.
- 4. swapfocus does not activate tags for the marked client
- 5. swapfocus does not focus monitors correctly
+1. crashes when using mark features while the marked client has been killed.
+2. swapclient clears the mark.
+3. swapclient falls back to zoom() if the mark is not set.
+4. swapfocus does not activate tags for the marked client
+5. swapfocus does not focus monitors correctly
 
 * [dwm-mark-new-6.1.diff](dwm-mark-new-6.1.diff)
 * [dwm-mark-6.1.diff](dwm-mark-6.1.diff)

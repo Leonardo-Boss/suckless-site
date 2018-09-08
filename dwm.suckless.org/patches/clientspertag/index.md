@@ -7,18 +7,18 @@ clients per tag. Out-of-limit windows are arranged behind the visible ones
 in the slave area.
 
 
-    +-----------------------+  +-----------------------+
-    | -1/3                  |  |  2/3                  |
-    +-----------+-----------+  +-----------+-----------+
-    |           |           |  |           |           |
-    |           |     2     |  |           |           |
-    |           |           |  |           |           |
-    |     1     +-----------+  |     1     |     2     |
-    |           |           |  |           |           |
-    |           |     3     |  |           |           |
-    |           |           |  |           |           |
-    +-----------+-----------+  +-----------+-----------+
-              cpt=-1                     cpt=2
+	+-----------------------+  +-----------------------+
+	| -1/3                  |  |  2/3                  |
+	+-----------+-----------+  +-----------+-----------+
+	|           |           |  |           |           |
+	|           |     2     |  |           |           |
+	|           |           |  |           |           |
+	|     1     +-----------+  |     1     |     2     |
+	|           |           |  |           |           |
+	|           |     3     |  |           |           |
+	|           |           |  |           |           |
+	+-----------+-----------+  +-----------+-----------+
+	          cpt=-1                     cpt=2
 
 ## Usage
 
@@ -32,12 +32,12 @@ will result on swapping between the defined value and -1.
  * To only display floating windows put "0" as argument.
  * For a toggling pair put "^2".
 
-  static Key keys[] = {
-        /* modifier      key        function        argument */
-        ...
-        { MODKEY,        XK_q,      clientspertag,  {.v="^2"} },
-        { MODKEY,        XK_a,      clientspertag,  {.v="^3"} },
-  };
+	static Key keys[] = {
+		/* modifier      key        function        argument */
+		...
+		{ MODKEY,        XK_q,      clientspertag,  {.v="^2"} },
+		{ MODKEY,        XK_a,      clientspertag,  {.v="^3"} },
+	};
 
 ## Download
 

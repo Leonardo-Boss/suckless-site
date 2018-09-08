@@ -71,4 +71,3 @@ developers and contributors.  If you are missing, feel free to add yourself.
 * Uwe Zeisberger (code review, bug fixings)
 * Wilson Oliveira (contributed the wmizer tool)
 * yiyus || Jesus Galan (dwm patches a go-go)
-

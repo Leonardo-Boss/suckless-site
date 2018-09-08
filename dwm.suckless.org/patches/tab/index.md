@@ -47,26 +47,23 @@ one window. The section "More Options" explains how to add more display options.
 
 #### Using an existing customised configuration file
 
-<ul>
-<li>Apply the patch;
-<li>Add the following lines to your config.h dwm configuration file:
-</ul>
-	       /*   Display modes of the tab bar: never shown, always shown, shown only in  */
-	       /*   monocle mode in presence of several windows.                            */
-	       /*   A mode can be disabled by moving it after the showtab_nmodes end marker */
-	       enum showtab_modes { showtab_never, showtab_auto, showtab_nmodes, showtab_always};
-	       static const int showtab            = showtab_auto; /* Default tab bar show mode  */
+* Apply the patch;
+* Add the following lines to your config.h dwm configuration file:
+
+       /*   Display modes of the tab bar: never shown, always shown, shown only in  */
+       /*   monocle mode in presence of several windows.                            */
+       /*   A mode can be disabled by moving it after the showtab_nmodes end marker */
+       enum showtab_modes { showtab_never, showtab_auto, showtab_nmodes, showtab_always};
+       static const int showtab            = showtab_auto; /* Default tab bar show mode  */
 	       static const Bool toptab            = True;         /* False means bottom tab bar */
 
 If you use the combined pertag+tab patch, include also (adapt the number of '0' to your `tags` array configuration):
 
-	       /* default layout per tags */
-	       /* The first element is for all-tag view, following i-th element corresponds to */
-	       /* tags[i]. Layout is referred using the layouts array index.*/
-	       static int def_layouts[1 + LENGTH(tags)]  = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-<ul>
-<li>Run make and make install.
-</ul>
+	/* default layout per tags */
+	/* The first element is for all-tag view, following i-th element corresponds to */
+	/* tags[i]. Layout is referred using the layouts array index.*/
+	static int def_layouts[1 + LENGTH(tags)]  = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+* Run make and make install.
 
 The tab bar is displayed only with the monocle layout when the view contains
 more than one window. The Mod1-w key and the mouse support are not included in
@@ -126,11 +123,12 @@ Download
 Change log
 ----------
 
-<dl>
- <dt>v2b </dt><dl>Fixed in the pertag-tab patch the support for per-tag default layout specification. No change in the tab only patch.</dl>
- <dt>v2a </dt><dl>Typo corrected in the man page. For the combined pertag-tab patch, specification of a default layout per-tag layout was added in the config.h configuration file, but it was not taken into account properly. The version v2b fixed this issue.</dl>
- <dt>v2  </dt><dl>First public version.</dl>
-</dl>
+* **v2b**
+  Fixed in the pertag-tab patch the support for per-tag default layout specification. No change in the tab only patch.
+* **v2a**
+  Typo corrected in the man page. For the combined pertag-tab patch, specification of a default layout per-tag layout was added in the config.h configuration file, but it was not taken into account properly. The version v2b fixed this issue.
+* **v2**
+  First public version.
 
 Author
 ------

@@ -13,13 +13,13 @@ Usage
 ---
 A working `scrot -s` key binding:
 
-    static const char *scrot[] = { "scrot", "-s", NULL };
-    ...
-    { KeyRelease, 0,                XK_Print,  spawn,          {.v = scrot } },
+	static const char *scrot[] = { "scrot", "-s", NULL };
+	...
+	{ KeyRelease, 0,                XK_Print,  spawn,          {.v = scrot } },
 
 Or to only display the bar while the toggle key is held down (requires that it is hidden to start with), add:
 
-    { KeyRelease, MODKEY,           XK_b,      togglebar,      {0} },
+	{ KeyRelease, MODKEY,           XK_b,      togglebar,      {0} },
 
 Download
 ---

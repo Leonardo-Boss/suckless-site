@@ -41,28 +41,28 @@ Default key bindings
 
 The areas are selected by modifiers as follows:
 
-  Modifier            |  Area
-----------------------|:-------------------------------:
-`MODKEY`              |  Global
-`MODKEY+Shift`        |  Master
-`MODKEY+Control`      |  Stack
-`MODKEY+Shift+Control`|  All three areas simultaneously
+	 Modifier                Area
+	--------------------------------------------------------
+	 MODKEY                  Global
+	 MODKEY+Shift            Master
+	 MODKEY+Control          Stack
+	 MODKEY+Shift+Control    All three areas simultaneously
 
 Each of the modifiers then combines with each of the following keys up to a total of
 4\*3=12 key bindings:
 
-  Key   |      Function
-:------:|:-----------------------:
- `r`    |  Rotate direction
- `h`    |  Decrement fact by 10%.
- `l`    |  Increment fact by 10%.
+	 Key   Function
+	------------------------------
+	  r    Rotate direction
+	  h    Decrement fact by 10%.
+	  l    Increment fact by 10%.
 
 There are two provided default "presets" or "schemas" also:
 
-  Modifier        |  Key   |  Preset
-------------------|:------:|:-------------:
-`MODKEY+Shift`    | `t`    |  Right stack
-`MODKEY+Control`  | `t`    |  Bottom stack
+	 Modifier          Key   Preset
+	--------------------------------------:
+	 MODKEY+Shift       t    Right stack
+	 MODKEY+Control     t    Bottom stack
 
 These presets allow to quickly switch between different no-nonsense tilings avoiding the
 need to rotate through all the nonsense combinations in-between. But notice that
@@ -72,8 +72,8 @@ sensible layouts (due to the way directions were designed to rotate).
 You can also easily define your own presets by calling `setdir` and `setfact` as needed.
 For example, here is the configuration code for the default presets described above:
 
-    { MODKEY|ShiftMask,   XK_t, setdirs, {.v = (int[]){ DirHor, DirVer, DirVer } } },
-    { MODKEY|ControlMask, XK_t, setdirs, {.v = (int[]){ DirVer, DirHor, DirHor } } },
+	{ MODKEY|ShiftMask,   XK_t, setdirs, {.v = (int[]){ DirHor, DirVer, DirVer } } },
+	{ MODKEY|ControlMask, XK_t, setdirs, {.v = (int[]){ DirVer, DirHor, DirHor } } },
 
 Layout symbol
 -------------

@@ -19,7 +19,7 @@ much more at [https://draculatheme.com/](https://draculatheme.com/).
 Example
 -------
 
-->[![Screenshot](st-dracula.png)](st-dracula.png)<-
+[![Screenshot](st-dracula.png)](st-dracula.png)
 
 Running zsh and tmux.
 

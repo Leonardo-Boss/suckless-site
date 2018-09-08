@@ -45,4 +45,4 @@ and in the keys section:
  
 Author
 ------
-- Maximilian Dietrich - <dxm_at_lavabit_dot_com>
+* Maximilian Dietrich - <dxm_at_lavabit_dot_com>

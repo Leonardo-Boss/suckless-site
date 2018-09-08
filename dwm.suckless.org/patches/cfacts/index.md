@@ -39,11 +39,11 @@ are represented by floats inside the clients rectangles.
 Default key bindings
 --------------------
 
-  Key      |  Argument  |  Description
-:---------:|:----------:|:----------------
-  `Mod-H`  |  `+0.25`   |  Increase cfact
-  `Mod-L`  |  `-0.25`   |  Decrease cfact
-  `Mod-O`  |  ` 0.00`   |  Reset cfact
+	 Key     Argument   Description
+	-----------------------------------
+	 Mod-H   +0.25      Increase cfact
+	 Mod-L   -0.25      Decrease cfact
+	 Mod-O    0.00      Reset cfact
 
 Download
 --------

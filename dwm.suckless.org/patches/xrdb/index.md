@@ -10,12 +10,12 @@ After applying the patch, don't forget to update your `config.h` file and fill i
 
 X resources used:
 
-    dwm.normbordercolor
-    dwm.normbgcolor
-    dwm.normfgcolor
-    dwm.selbordercolor
-    dwm.selbgcolor
-    dwm.selfgcolor
+	dwm.normbordercolor
+	dwm.normbgcolor
+	dwm.normfgcolor
+	dwm.selbordercolor
+	dwm.selbgcolor
+	dwm.selfgcolor
 
 Default key to reload is `Mod+F5`.
 

@@ -13,15 +13,11 @@ this patch effective.
 If you want to use transparency in st with this patch, you also need to replace
 
 
-```C
-#define USE_ARGB (alpha != OPAQUE && opt_embed == NULL)
-```
+	#define USE_ARGB (alpha != OPAQUE && opt_embed == NULL)
 
 by
 
-```C
-#define USE_ARGB (alpha != OPAQUE)
-```
+	#define USE_ARGB (alpha != OPAQUE)
 
 in st.c
 

@@ -59,7 +59,7 @@ Development
 You can [browse](//git.suckless.org/quark) the source code repository or
 get a copy with the following command:
 
-        git clone git://git.suckless.org/quark
+	git clone git://git.suckless.org/quark
 
 Author
 ------

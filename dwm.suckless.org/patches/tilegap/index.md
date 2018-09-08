@@ -9,8 +9,8 @@ and screen edge. Size configurable in config.h.
 
 Download
 --------
-- [dwm-tilegap-6.0.diff](dwm-tilegap-6.0.diff) (948b) (20150707)
+* [dwm-tilegap-6.0.diff](dwm-tilegap-6.0.diff) (948b) (20150707)
 
 Author
 ------
-- Brandon Mulcahy - <brandon@jangler.info>
+* Brandon Mulcahy - <brandon@jangler.info>

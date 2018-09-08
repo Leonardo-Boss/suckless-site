@@ -16,7 +16,7 @@ It is based on the transparency patch of Stefan Mark.
 ## Download
 
 * [dwm-defaulttransparency-r1521.diff](dwm-defaulttransparency-r1521.diff)
-   latest patch (against r1521)
+  latest patch (against r1521)
 
 ## Author
 

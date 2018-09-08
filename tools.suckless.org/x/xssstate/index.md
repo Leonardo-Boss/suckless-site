@@ -14,4 +14,3 @@ You can [browse](//git.suckless.org/xssstate) its source code repository
 or get a copy using the following command:
 
 	git clone https://git.suckless.org/xssstate
-

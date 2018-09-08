@@ -12,12 +12,12 @@ immediately on `Ctrl-Return` (multiselect).
 The script can be used with the 4.6 version of dmenu.
 
 Download
-========
+--------
 
 [dmenu_run_history](dmenu_run_history) (20151217)
 
 Authors
-=======
+-------
 
 * Xarchus
 * Silvan Jegen (initial idea, code contributor, feedback)

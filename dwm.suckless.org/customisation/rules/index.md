@@ -14,9 +14,9 @@ means the currently viewed tags, and the default mode is tiled so isfloating is
 Example from the default config:
 
 	static Rule rules[] = {
-	    /* class      instance    title       tags mask     isfloating   monitor */
-	    { "Gimp",     NULL,       NULL,       0,            True,        -1 },
-	    { "Firefox",  NULL,       NULL,       1 << 8,       True,        -1 },
+		/* class      instance    title       tags mask     isfloating   monitor */
+		{ "Gimp",     NULL,       NULL,       0,            True,        -1 },
+		{ "Firefox",  NULL,       NULL,       1 << 8,       True,        -1 },
 	};
 
 These rules make every Gimp and Firefox window floating and makes Firefox
@@ -37,7 +37,7 @@ The `xprop` utility can be used to get this information:
 For example this shell script prints the relevant properties of the selected
 client (if the properties does not contain '`=`' or '`,`'):
 
-	xprop |awk '
+	xprop | awk '
 		/^WM_CLASS/{sub(/.* =/, "instance:"); sub(/,/, "\nclass:"); print}
 		/^WM_NAME/{sub(/.* =/, "title:"); print}'
 

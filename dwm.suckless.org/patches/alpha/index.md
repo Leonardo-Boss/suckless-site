@@ -1,7 +1,7 @@
 alpha
 =====
 
-->[![Screenshot](dwm-alpha.png)](dwm-alpha.png)<-
+[![Screenshot](dwm-alpha.png)](dwm-alpha.png)
 
 Description
 -----------

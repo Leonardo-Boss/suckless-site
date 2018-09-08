@@ -24,7 +24,7 @@ URL handlers
 Author
 ------
 
-- The code was originally from Peter John Hartman, but hardly simplified by pancake and nibble.
+* The code was originally from Peter John Hartman, but hardly simplified by pancake and nibble.
 
 Installation
 ------------

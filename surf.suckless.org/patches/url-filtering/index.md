@@ -16,8 +16,8 @@ Example
 
 An example list of filters looks like this:
 
-    /favicon\.ico$
-    eviladvertismentcompany\.{net,com}/ads
+	/favicon\.ico$
+	eviladvertismentcompany\.{net,com}/ads
 
 Download
 --------

@@ -2,25 +2,25 @@ Stuff that rocks
 ================
 
 Libraries
-=========
+---------
 This section is for small, usable development libraries, which can be used for
 writing software that sucks less.
 These should preferably be under the MIT/X consortium or BSD licenses, WTFPL,
 or public domain, or alternatively LGPL, because it makes them legally
 compatible with other suckless projects.
 
-Libc Implementations
---------------------
+### Libc Implementations
+
 * [musl](http://www.musl-libc.org/) - standard C library that attempts to be even smaller than uClibc
 * [uClibc](https://uclibc.org/) - strives to be a minimalist C library suitable for embedded computing
 * See also: [embedded libc comparison](http://www.etalabs.net/compare_libcs.html)
 
-Compilers
----------
+### Compilers
+
 * [tcc](https://bellard.org/tcc/) - Tiny C Compiler [git repo](http://repo.or.cz/w/tinycc.git)
 
-Compression
------------
+### Compression
+
 * [liblzf](http://oldhome.schmorp.de/marc/liblzf.html) - very fast, legally unencumbered compression library
 * [miniz](https://github.com/richgel999/miniz) - single C-file reimplementation of zlib (MIT License).
 * [xz embedded](https://tukaani.org/xz/embedded.html) - lightweight decompressor for the xz LZMA compressor (public domain)
@@ -28,12 +28,12 @@ Compression
 * [zlib](http://zlib.net/) - the "standard" compression/decompression library, quite small, used in many applications ([zlib license](http://zlib.net/zlib_license.html))
 * [libz](https://sortix.org/libz/) - ABI and API compatible zlib fork with focus on correctness, proper portability, auditability, simplification and opportunities to optimize ([zlib license](http://zlib.net/zlib_license.html))
 
-Cryptography
-------------
+### Cryptography
+
 * [libressl](https://www.libressl.org/) - LibreSSL is a version of the TLS/crypto stack forked from OpenSSL in 2014
 
-Miscellaneous
--------------
+### Miscellaneous
+
 * [ccv](http://libccv.org/) - C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library
 * [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modelled after libevent but much smaller (dual licensed under 2-clause BSD and GPL)
 * [mandoc](http://mandoc.bsd.lv/) - The mandoc UNIX manpage compiler toolset
@@ -44,7 +44,7 @@ Miscellaneous
 * [termbox](https://github.com/nsf/termbox) - simple ncurses-like library for creating TUIs
 
 Programs
-========
+--------
 Some programs work well with dwm. Some general rules of thumb
 for judging a programs as usable are:
 
@@ -53,8 +53,8 @@ for judging a programs as usable are:
 
 This covers most console-based programs and programs from [plan9port][].
 
-Audio Players
--------------
+### Audio Players
+
 * [C* Music Player](https://cmus.github.io/)
 * [cplay](http://cplay.sourceforge.net/)
 * [DeaDBeeF](http://deadbeef.sourceforge.net/)
@@ -65,34 +65,34 @@ Audio Players
 * [vorbis-tools](https://www.xiph.org/) (Ogg/FLAC) - Command-line tools to play Ogg and FLAC files.
 * [RSound](https://github.com/Themaister/RSound/) - Simple PCM audio server and client
 
-BitTorrent Clients
-------------------
+### BitTorrent Clients
+
 * [btpd](https://github.com/btpd/btpd) - The BitTorrent Protocol Daemon
 
-Feed Aggregators
-----------------
+### Feed Aggregators
+
 * [newsboat](https://newsboat.org/) - RSS/Atom feed reader for text terminals (updated fork of [newsbeuter](https://www.newsbeuter.org/))
 * [snownews](https://github.com/kouya/snownews/) - Text mode RSS newsreader for Linux and Unix
 * [sfeed](https://git.codemadness.org/sfeed/) - RSS and Atom parser + CLI programs
 
-File Browsers
--------------
+### File Browsers
+
 * [noice](https://git.2f30.org/noice/) - Small and portable file browser
 * [nnn](https://github.com/jarun/nnn) - Noice is Not Noice, a noicer fork...
 * [rover](https://lecram.github.io/p/rover/) - Simple file browser for the terminal
 
-File Managers
--------------
+### File Managers
+
 * [mc](https://midnight-commander.org/) - Midnight Commander is a free cross-platform orthodox file manager
 * [ranger](https://ranger.github.io/) - ranger is a file manager with vi key bindings written in python but with an interface that rocks
 
-Git
----
+### Git
+
 * [stagit](https://git.codemadness.org/stagit/) - static git page generator (HTML)
 * [stagit-gopher](https://git.codemadness.org/stagit-gopher/) - static git page generator for gopher (geomyidae .gph pages)
 
-IRC Clients
------------
+### IRC Clients
+
 * [Irc](https://swtch.com/irc/)
 * [irc.c from mpu](https://c9x.me/irc/) - A Minimal Curses IRC Client.
 * [ii](//tools.suckless.org/ii/) - A FIFO based IRC client which is part of the suckless.org project.
@@ -101,8 +101,8 @@ IRC Clients
 * [sic](//tools.suckless.org/sic/) - Another suckless.org IRC client. Similar to ircc.
 * [quIRC](https://github.com/ec429/quIRC) - a lightweight console IRC client
 
-Image Viewers
--------------
+### Image Viewers
+
 * [feh](https://feh.finalrewind.org/)
 * [jpg/gif/bmp/png][plan9port] - Simple programs from Plan 9 to display images in no-frills windows. Included with plan9port.
 * [meh](https://www.johnhawthorn.com/meh/) - image viewer using raw XLib, libjpeg, libpng and libgif
@@ -114,16 +114,16 @@ Image Viewers
 * [lel](https://git.2f30.org/lel/) - Suckless imagefile viewer (WIP)
 * [imv](https://github.com/exec64/imv) - Simple X11/Wayland Image Viewer. Depends on SDL2 and FreeImage.
 
-Instant Messaging Clients
--------------------------
+### Instant Messaging Clients
+
 * [bitlbee](https://www.bitlbee.org/main.php/news.r.html) - A program to translate IM protocols to IRC. You can now IM from your IRC client, and you don't even need to install anything.
 * [CenterIM](http://www.centerim.org/index.php/Main_Page) - A centericq fork.
 * [irssi-xmpp](http://cybione.org/~irssi-xmpp/)
 * [mcabber](http://mcabber.com/) - A console jabber client.
 * [ysm](http://ysmv7.sourceforge.net/)
 
-Mail Clients
-------------
+### Mail Clients
+
 * [Mail][plan9port] - A mail client for [acme][]. Included with plan9port.
 * [dmc](//git.suckless.org/dmc/) - A minimalistic approach to a command-line mail client (WIP)
 * [fdm](https://github.com/nicm/fdm) - fetch and deliver mail
@@ -135,30 +135,30 @@ Mail Clients
 * [mmh](http://marmaro.de/prog/mmh/)
 * [mblaze](https://github.com/chneukirchen/mblaze) - Unix utilities to deal with Maildir
 
-Media Players
--------------
+### Media Players
+
 * [mplayer](http://www.mplayerhq.hu/design7/news.html) (without GUI) - You know mplayer, but you may not know that it works well without the GUI.
 * [mpv](https://mpv.io/) - a free, open source, and cross-platform media player
 * [ffplay](https://www.ffmpeg.org/ffplay.html) - FFplay is a very simple and portable media player. It came with ffmpeg which is a mplayer dependence.
 
-Password Managers
------------------
+### Password Managers
+
 * [pass](https://www.passwordstore.org/) - The standard unix password manager
 * [tpm](https://github.com/nmeum/tpm/) - Tiny password manager
 * [spm](https://notabug.org/kl3/spm/) - Simple password manager (actively maintained fork of nmeum's tpm)
 
-PDF Viewers
------------
+### PDF Viewers
+
 * [mupdf](https://mupdf.com/)
 * [zathura](https://pwmt.org/projects/zathura/)
 
-Shells
-------
+### Shells
+
 * [mksh](https://www.mirbsd.org/mksh.htm) - MirBSD Korn Shell, an actively developed free implementation of the Korn Shell programming language and a successor to the Public Domain Korn Shell (pdksh)
 * [dash](http://gondor.apana.org.au/~herbert/dash/) - DASH is a POSIX-compliant implementation of /bin/sh that aims to be as small as possible. It does this without sacrificing speed where possible.
 
-Text Editors
-------------
+### Text Editors
+
 * [acme][] - Rob Pike's framing text editor for Plan 9. Included in [plan9port][].
 * [ired](http://www.radare.org/r/) (Minimalist hexadecimal editor and bindiffer for p9, w32 and *nix)
 * [mg](https://homepage.boetes.org/software/mg/) (portable version of mg maintained by the OpenBSD team)
@@ -172,8 +172,8 @@ Text Editors
 * [wily](http://www.cse.yorku.ca/~oz/wily/) - An acme clone for POSIX.
 * [ed](https://9fans.github.io/plan9port/man/man1/ed.html) - [ED IS THE STANDARD TEXT EDITOR!](https://www.gnu.org/fun/jokes/ed-msg.html)
 
-Utilities
----------
+### Utilities
+
 * [9menu](https://github.com/arnoldrobbins/9menu/) - A menu program based on the Blit-style menus so prevalent in Plan 9.  A take on it is included with wmii.
 * [dmenu](//tools.suckless.org/dmenu/) - dmenu is a dynamic menu for X
 * [slmenu](https://bitbucket.org/rafaelgg/slmenu) - Dmenu spinoff for the console
@@ -183,8 +183,8 @@ Utilities
 * [entr](http://entrproject.org/) - Run arbitrary commands when files change
 * [snore](https://github.com/clamiax/snore) - Sleep with feedback
 
-Web Browsers
-------------
+### Web Browsers
+
 * [Abaco](http://lab-fgb.com/abaco/)
 * [Conkeror](http://www.conkeror.org/) - A Gecko based browser, imparting it Emacs style key bindings, appearances, and behaviors.
 * [Dillo](https://www.dillo.org/)
@@ -202,8 +202,8 @@ Web Browsers
   Vimperator (Doesn't work with firefox 57+)
 * [w3m](http://w3m.sourceforge.net/)
 
-X11
----
+### X11
+
 * [xclip](https://github.com/astrand/xclip) - A tool for controlling the
   X11 clipboard.
 * [xdotool](http://www.semicomplete.com/projects/xdotool/) - A tool for
@@ -220,14 +220,14 @@ X11
 [acme]: http://acme.cat-v.org
 
 Daemons
-=======
+-------
 
 This section is dedicated to Daemons that are related to the UNIX philosophy (but
 don't really belong into the cool programs section which is about programs
 which work well with dwm).
 
-Web Servers
------------
+### Web Servers
+
 * [quark](//tools.suckless.org/quark/) - suckless simple static web server
 * [OpenBSD httpd/relayd](https://bsd.plumbing/) - Designed to combat the feature creep of modern webservers. Boasts extremely concise configuration, with sane default behavior.
 * [darkhttpd](https://unix4lyfe.org/darkhttpd/) - Darkhttpd is a simple, fast HTTP 1.1 web server for static content.
@@ -235,10 +235,10 @@ Web Servers
 * [mini_httpd](http://acme.com/software/mini_httpd/) - By the thttpd developers. Even smaller subset of thttpd with support for .htpasswd, CGI, dirlisting, HTTP errors and SSL, nothing more or less than that.
 * [shus](https://github.com/dimkr/shus) - A tiny HTTP server for static sites
 
-Gopher Servers
---------------
+### Gopher Servers
+
 * [geomyidae](http://git.r-36.net/geomyidae/) - small gopher-daemon written by 20h
 
-Misc Daemons
-------------
+### Misc Daemons
+
 * [scron](https://git.2f30.org/scron/) - simple crond.

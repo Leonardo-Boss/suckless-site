@@ -16,10 +16,10 @@ Download
 * [todo](todo): one task per line. Write a new task, or valid an old
   task to remove it.
 * [dmenu_path_recent](https://github.com/ema/dotfiles/blob/master/bin/dmenu_path)
- : dmenu_path implementation listing recent commands first. Similar to
- [run-recent](run-recent), but it uses atime to find recently executed commands
- rather than a cache. As such, it also takes into account programs executed from
- the terminal.
+  : dmenu_path implementation listing recent commands first. Similar to
+  [run-recent](run-recent), but it uses atime to find recently executed commands
+  rather than a cache. As such, it also takes into account programs executed from
+  the terminal.
 * [dbrowse](https://github.com/clamiax/scripts/blob/master/src/dbrowse):
   little files navigator
 * [dmenu_run_history](//tools.suckless.org/dmenu/scripts/dmenu_run_with_command_history) :

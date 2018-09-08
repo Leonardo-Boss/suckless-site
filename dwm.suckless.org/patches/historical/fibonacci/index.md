@@ -24,10 +24,10 @@ arrangement can be seen below.
 
 ## Usage
 
- 1. Download the patch and apply according to the [general instructions](.).
- 2. Include the `fibonacci.c` source file and add `spiral` and/or `dwindle` to
-    the `Layout` section of your `config.h` file.
-    Example from `config.default.h`:
+1. Download the patch and apply according to the [general instructions](.).
+2. Include the `fibonacci.c` source file and add `spiral` and/or `dwindle` to
+   the `Layout` section of your `config.h` file.
+   Example from `config.default.h`:
 
         #include "fibonacci.c"
         static Layout layout[] = { \

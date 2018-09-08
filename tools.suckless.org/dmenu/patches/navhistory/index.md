@@ -16,4 +16,5 @@ To change this behaviour, set 'histnodup' to 0 in config.h.
 * [dmenu-navhistory-4.6.diff](dmenu-navhistory-4.6.diff)
 
 ## Author
+
 * phi <crispyfrog@163.com>

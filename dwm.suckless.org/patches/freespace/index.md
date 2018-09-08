@@ -6,15 +6,15 @@ Description
 
 New variable panel[4] saves space at the borders of the screen for the external panel.
 
-+----------------+-+
-| |   panel[0]   | |
-+-+--------------+-+
-| |              | |
-|2|              |3|
-| |              | |
-+-+--------------+-+
-| |   panel[1]   | |
-+----------------+-+
+	+----------------+-+
+	| |   panel[0]   | |
+	+-+--------------+-+
+	| |              | |
+	|2|              |3|
+	| |              | |
+	+-+--------------+-+
+	| |   panel[1]   | |
+	+----------------+-+
 
 In tiled and monocle layouts this space becomes borders of the windows; in floating layout windows attach to these borders
 

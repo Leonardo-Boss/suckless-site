@@ -10,7 +10,7 @@ get the patch from github: [https://gist.github.com/4054818](https://gist.github
 
 apply it to dwm.c like so:
 
-    patch -p1 dwm.c < ansistatuscolors.diff
+	patch -p1 dwm.c < ansistatuscolors.diff
 
 ## Usage
 
@@ -20,81 +20,82 @@ more info is here: [http://www.frexx.de/xterm-256-notes/](http://www.frexx.de/xt
 
 an ansi escape sequence is in the form:
 
-    \e[<code>m
+	\e[<code>m
 
 where:
 
-    \e - escape - ascii 27 / hex 1b / octal 033
-    [ - literal bracket
-    m - literal 'm'
+	\e - escape - ascii 27 / hex 1b / octal 033
+	[ - literal bracket
+	m - literal 'm'
 
 the code is one of the following:
 
-    0 
-        - reset colors to default
+	0 
+	    - reset colors to default
 
-    n;m
+	n;m
 
-        n -
-            o - normal color
-            1 - 'bright' color
+	    n -
+	        o - normal color
+	        1 - 'bright' color
 
-        m -
-            30-37 - foreground
-            40-47 - background
+	    m -
+	        30-37 - foreground
+	        40-47 - background
 
-    n;5;m
-        
-        n - 
-            38 - foreground
-            48 - background
-        5 - 
-            literal '5'
-        m - 
-            0-15 - classic ansi color
-            16-231 - xterm 256-color rgb color
-            232-255 - grayscale
+	n;5;m
+	    
+	    n - 
+	        38 - foreground
+	        48 - background
+	    5 - 
+	        literal '5'
+	    m - 
+	        0-15 - classic ansi color
+	        16-231 - xterm 256-color rgb color
+	        232-255 - grayscale
 
 in vim, to create a literal 'escape' character, type ctrl-v, esc.
 in perl/python/c, within a string literal, it's "\x1b".
 
 ### Example
-    #!/usr/bin/env python
-    ##testcoloredstatus.py
+	#!/usr/bin/env python
+	##testcoloredstatus.py
 
-    from subprocess import call,check_output
+	from subprocess import call,check_output
 
-    redfg = '\x1b[38;5;196m' #hex
-    redbg = '\033[48;5;196m'  #octal
-    blackbg = '\x1b[48;5;16m'
-    reset = '\x1b[0m'
+	redfg = '\x1b[38;5;196m' #hex
+	redbg = '\033[48;5;196m'  #octal
+	blackbg = '\x1b[48;5;16m'
+	reset = '\x1b[0m'
 
-    call(['xsetroot','-name',''.join(
-        [
-            redfg,
-            'hello ',
-            reset,
-            redbg,
-            'world',
-            reset,
-            '! bar graph: 50% ',
-            redbg,
-            ' '*5,
-            blackbg,
-            ' '*5,
-            reset,
-            '  ',
-            check_output("date").strip()
-        ]
-    )], shell=False)
-###Screenshot###
+	call(['xsetroot','-name',''.join(
+	    [
+	        redfg,
+	        'hello ',
+	        reset,
+	        redbg,
+	        'world',
+	        reset,
+	        '! bar graph: 50% ',
+	        redbg,
+	        ' '*5,
+	        blackbg,
+	        ' '*5,
+	        reset,
+	        '  ',
+	        check_output("date").strip()
+	    ]
+	)], shell=False)
+
+### Screenshot
 my battery is discharging and my wifi signal is iffy ...
 
 ![alt text](ansistatuscolors.png)
 
-###Author###
-Brandon Dowell <brandon DOT dowell AT gmail>
+### Author
+# Brandon Dowell <brandon DOT dowell AT gmail>
 
 github.com/la11111
 
-holler if you find a bug, or fork it on github and fix it!
+holler if you find a bug, or make a patch to fix it!

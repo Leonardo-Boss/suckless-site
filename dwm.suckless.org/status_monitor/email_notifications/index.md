@@ -59,4 +59,4 @@ notification is shown.
 Author
 ------
 
-- Ricardo Catalinas Jiménez <[jimenezrick@gmail.com](mailto:jimenezrick@gmail.com)>
+* Ricardo Catalinas Jiménez <[jimenezrick@gmail.com](mailto:jimenezrick@gmail.com)>

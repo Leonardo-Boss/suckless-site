@@ -17,15 +17,15 @@ Patches against different versions of dwm are available at
 
 * MODKEY+Shift+F1 moves all floating windows of the current tag to tag 1
 
-    { MODKEY|ShiftMask,     XK_F1,      tagall,        {.v = "F1"} }, \
-    ...
-    { MODKEY|ShiftMask,     XK_F9,      tagall,        {.v = "F9"} }, \
+	{ MODKEY|ShiftMask,     XK_F1,      tagall,        {.v = "F1"} }, \
+	...
+	{ MODKEY|ShiftMask,     XK_F9,      tagall,        {.v = "F9"} }, \
 
 * MODKEY+Shift+F1 moves all windows of the current tag to tag 1
 
-    { MODKEY|ShiftMask,     XK_F1,      tagall,        {.v = "1"} }, \
-    ...
-    { MODKEY|ShiftMask,     XK_F9,      tagall,        {.v = "9"} }, \
+	{ MODKEY|ShiftMask,     XK_F1,      tagall,        {.v = "1"} }, \
+	...
+	{ MODKEY|ShiftMask,     XK_F9,      tagall,        {.v = "9"} }, \
 
 ## Author
 * Jan Christoph Ebersbach - <jceb@e-jc.de>

@@ -26,4 +26,4 @@ This script must be deployed into the ~/.surf/user.js and it will hide all the j
 Author
 ------
 
-- Enno Boland (Gottox) <g s01 de>
+* Enno Boland (Gottox) <g s01 de>

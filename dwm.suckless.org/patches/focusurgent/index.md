@@ -4,7 +4,7 @@
 
 * Selects the next window having the urgent flag regardless of the tag it is on
 * The urgent flag can be artificially set with the following xdotool command on
-   any window: `xdotool selectwindow -- set_window --urgency 1`
+  any window: `xdotool selectwindow -- set_window --urgency 1`
 
 ## Download
 

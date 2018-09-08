@@ -12,10 +12,10 @@ Firstly you have to configure xkb as you need as described
 The patch depends on two variables:
 
 * `showxkb` flag defines, should patch show current xkb group on 
-   the bar or not; 
+  the bar or not; 
 
 * `xkb_layouts` array defines the text, which will appear on the 
-    bar according to current group if `showxkb` set to `TRUE`.
+  bar according to current group if `showxkb` set to `TRUE`.
 
 There is new field in Rule struckture, by witch you can specify
 default xkb layout for window (see config.def.h for details). 

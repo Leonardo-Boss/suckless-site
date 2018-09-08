@@ -19,9 +19,9 @@ send the signal '1'.
 Signal handlers are defined in config.h as:
 
 	static Signal signals[] = {
-	/* signum               function        argument*/
-	{ 1,                    setlayout,      {.v = 0} },
-	...
+		/* signum               function        argument*/
+		{ 1,                    setlayout,      {.v = 0} },
+		...
 	};
 
 This can then be triggered through dmenu with this script:

@@ -107,7 +107,7 @@ printf '</ul>\n</div>\n\n'
 printf '<div id="main">\n'
 if test -f "$page"
 then
-	smu "$page"
+	smu < "$page"
 else
 	printf '<ul>\n'
 	ls "${page%/index.md}" | while IFS= read -r dir

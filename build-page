@@ -75,9 +75,9 @@ EOF
 printf '<div id="menu">\n'
 for domain in $domain_list
 do
-	printf '<a href="%s"' "//$domain"
-	test "$this_domain" = "$domain" && printf ' class="thisSite"'
-	printf '">%s</a>\n' "${domain%%.*}"
+	printf '<a '
+	test "$this_domain" = "$domain" && printf 'class="thisSite" '
+	printf 'href="%s">%s</a>\n' "//$domain" "${domain%%.*}"
 done
 
 cat <<EOF

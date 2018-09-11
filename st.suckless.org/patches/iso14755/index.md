@@ -1,0 +1,19 @@
+ISO 14755
+=========
+
+Description
+-----------
+
+Pressing the default binding Ctrl+Shift-i will popup dmenu, asking
+you to enter a unicode codepoint that will be converted to a glyph
+and then pushed to st.
+
+Download
+--------
+
+* [st-iso14755-20180911-5b850e0.diff](st-iso14755-20180911-5b850e0.diff)
+
+Authors
+-------
+
+* Quentin Rameau <quinq@fifth.space>

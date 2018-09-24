@@ -15,6 +15,6 @@ Author
 * original author  Carlos Pita - <carlosjosepita_AT_gmail.com>
 * 0.4.1  Maximilian Dietrich - <dxm_AT_lavabit.com>
 * 0.5    Maximilian Dietrich - <dxm_AT_lavabit.com>
-* 20170708  Alexis Ben Miloud--Josselin - <alexis.bmj@protonmail.com>
+* 20170708  Alexis Ben Miloud--Josselin; panpo; alexisbmj+code at protonmail dot com.
 * 20170824  Audun Sutterud - <audunsu_AT_protonmail.com>
 * 0.6    Filip Ivetić - <filip.ivetic_AT_gmail.com>

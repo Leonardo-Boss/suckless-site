@@ -21,4 +21,4 @@ Author
 ------
 
 * Dmitrij D. Czarkoff <[czarkoff@gmail.com](mailto:czarkoff@gmail.com)>
-* Alexis Ben Miloud--Josselin (panpo) <[alexis.bmj@protonmail.com](mailto:alexis.bmj@protonmail.com)>
+* Alexis Ben Miloud--Josselin; panpo; alexisbmj+code at protonmail dot com.

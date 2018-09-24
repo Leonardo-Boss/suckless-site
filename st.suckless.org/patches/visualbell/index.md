@@ -25,4 +25,4 @@ Authors
 
 * Matthias Schoth - <mschoth@gmail.com>
 * Laslo Hunhold - <dev@frign.de> (git port)
-* Alexis Ben Miloud--Josselin - <alexis.bmj@protonmail.com> (update)
+* Alexis Ben Miloud--Josselin; panpo; alexisbmj+code at protonmail dot com.

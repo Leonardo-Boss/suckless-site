@@ -11,4 +11,4 @@ Download
 
 Author
 ------
-* Alexis Ben Miloud--Josselin (panpo) <[alexis.bmj@protonmail.com](mailto:alexis.bmj@protonmail.com)>
+* Alexis Ben Miloud--Josselin; panpo; alexisbmj+code at protonmail dot com.

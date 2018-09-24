@@ -30,6 +30,8 @@ Following people have donated to the suckless.org project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
+* Mikko Nyman donated <b>100 EUR</b>
+* Benedikt Brenner donated <b>50 EUR</b>
 * Alexander Bluhm donated <b>3 EUR</b>
 * Aaron Kirkman donated <b>19.47 EUR</b>
 * Jeff Carr donated <b>500 EUR</b>

@@ -1,0 +1,6 @@
+siteTitle='suckless.org'
+siteSubtitle='tools'
+
+conf_perm_redirect 'http://tools.suckless.org/sbase/?$' http://core.suckless.org/sbase
+conf_perm_redirect 'http://tools.suckless.org/sinit/?$' http://core.suckless.org/sinit
+conf_perm_redirect 'http://tools.suckless.org/ubase/?$' http://core.suckless.org/ubase

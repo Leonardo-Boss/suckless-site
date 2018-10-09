@@ -60,6 +60,6 @@ An example status script snippet to take advantage of the colors:
 * [dwm-5.8.2-statuscolors.diff](dwm-5.8.2-statuscolors.diff)
 * [dwm-statuscolors-5.9.diff](dwm-statuscolors-5.9.diff)
 * [dwm-statuscolors-6.1.diff](dwm-statuscolors-6.1.diff)
-* [dwm-add-colors-to-status-message-2018-10-08.diff](dwm-add-colors-to-status-message-2018-10-08.diff)
+* [dwm-statuscolors-20181008-b69c870.diff](dwm-statuscolors-20181008-b69c870.diff)
   : This patch applies cleanly on mainline dwm from Jan 7 2017 to at least Oct
   8 2018. It includes additional config.def.h color entries.

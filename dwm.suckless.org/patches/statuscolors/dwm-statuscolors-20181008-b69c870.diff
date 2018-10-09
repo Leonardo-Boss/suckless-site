@@ -14,7 +14,7 @@ More can be added, but don't have more than 32, or you'll start hitting
 real ASCII.
 
 This applies cleanly on mainline dwm from commit 022d076 (Sat Jan 7
-17:21:29 2017 +0100) until at least 03b2610 (Sat Jun 2 17:15:42 2018
+17:21:29 2017 +0100) until at least b69c870 (Sat Jun 2 17:15:42 2018
 +020).
 
 ---

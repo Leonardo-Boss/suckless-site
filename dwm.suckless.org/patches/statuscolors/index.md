@@ -63,3 +63,11 @@ An example status script snippet to take advantage of the colors:
 * [dwm-statuscolors-20181008-b69c870.diff](dwm-statuscolors-20181008-b69c870.diff)
   : This patch applies cleanly on mainline dwm from Jan 7 2017 to at least Oct
   8 2018. It includes additional config.def.h color entries.
+
+## Authors
+* Jeremy Jay - [(original patch)](https://lists.suckless.org/dwm/0812/7023.html)
+* Axel Bayerl - (update to 5.7.2)
+* Voltaic - (update to 5.8.2, 5.9)
+* Daniel Raloff (update to 6.1)
+* Dave Kennedy (fixes to 6.1)
+* Danny O'Brien - [danny@spesh.com](mailto:danny@spesh.com) (20181008 patch)

@@ -34,6 +34,7 @@ Download
 * [st-externalpipe-20170608-b331da5.diff](st-externalpipe-20170608-b331da5.diff)
 * [st-externalpipe-0.8.diff](st-externalpipe-0.8.diff)
 * [st-externalpipe-0.8.1.diff](st-externalpipe-0.8.1.diff)
+* [st-externalpipe-20181016-c19e14b.diff](st-externalpipe-20181016-c19e14b.diff)
 
 Authors
 -------
@@ -41,3 +42,4 @@ Authors
 * Rob Pilling - <robpilling@gmail.com>
 * Laslo Hunhold - <dev@frign.de> (0.4.1, 0.5, 0.6, git ports)
 * Lucas Gabriel Vuotto - <lvuotto92@gmail.com> (0.7, git ports)
+* Parker Ellertson - <parkerellertson@airmail.cc> (git ports)

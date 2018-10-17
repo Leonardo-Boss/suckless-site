@@ -235,6 +235,10 @@ which work well with dwm).
 * [mini_httpd](http://acme.com/software/mini_httpd/) - By the thttpd developers. Even smaller subset of thttpd with support for .htpasswd, CGI, dirlisting, HTTP errors and SSL, nothing more or less than that.
 * [shus](https://github.com/dimkr/shus) - A tiny HTTP server for static sites
 
+### Gopher clients
+
+* [sacc](gopher://bitreich.org/1/releases/sacc) - terminal gopher client by quinq
+
 ### Gopher Servers
 
 * [geomyidae](http://git.r-36.net/geomyidae/) - small gopher-daemon written by 20h

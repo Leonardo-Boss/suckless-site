@@ -2,7 +2,7 @@ visualbell
 ==========
 
 This page contains two unrelated implementations of visual bell which are not
-compatible with eachother. If you have one of them applied, remove it before
+compatible with each other. If you have one of them applied, remove it before
 trying the other.
 
 # === Visual bell 1 ===

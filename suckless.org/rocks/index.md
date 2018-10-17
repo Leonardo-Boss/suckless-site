@@ -45,11 +45,11 @@ compatible with other suckless projects.
 
 Programs
 --------
-Some programs work well with dwm. Some general rules of thumb
-for judging a programs as usable are:
+Some programs work well with dwm. Some general rule of thumb for judging if a
+program is usable are:
 
-* The program will accept any window size
-* The program consists of a single window (there are no nested windows, such as in Xpdf)
+* The program will accept any window size.
+* The program consists of a single window (there are no nested windows, such as in Xpdf).
 
 This covers most console-based programs and programs from [plan9port][].
 

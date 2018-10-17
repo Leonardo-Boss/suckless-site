@@ -1,4 +1,4 @@
-# these files are ignored by git
+# these files are ignored by git.
 *.html
 !/*.html
 test

@@ -1,10 +1,10 @@
 #!/bin/sh -e
 
 # Given a directory name, generate a static page out of:
-# - ./**/index.md - the markdown files
-# - ./title - the title of the website
+# - ./**/index.md - the markdown files.
+# - ./title - the title of the website.
 # - ./domains - file with one domain per line (corresponding to ./<domain>/)
-# - ./*/title - one file per subdirectory with the subtitle
+# - ./*/title - one file per subdirectory with the subtitle.
 
 
 ## setup ##

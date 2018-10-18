@@ -11,6 +11,7 @@ Download
 --------
 
 * [st-xresources-20180309-c5ba9c0.diff](st-xresources-20180309-c5ba9c0.diff)
+* [st-xresources-20181018-g30ec9a3.diff](st-xresources-20181018-g30ec9a3.diff)
 
 Authors
 -------

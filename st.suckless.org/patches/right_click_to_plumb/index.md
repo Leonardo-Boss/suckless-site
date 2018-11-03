@@ -47,3 +47,21 @@ The plumbing program can be defined via `config.h`:
 
 * [jerome](http://blog.jardinmagique.info) <jerome@gcu.info>
 
+
+# A simpler plumb patch
+
+The plumbing command is run in the working directory of the shell, with as parameter the text selected with the mouse.
+
+Configuration is done in config.h and an example is supplied in config.def.h:
+
+                static char *plumb_cmd = "plumb";
+
+I made this version since I had a hard time understanding how the OSC 7 stuff works and I preferred a full C implementation of a plumbing patch.
+
+## Download
+
+* [plumb_without_shell_OSC.diff](plumb_without_shell_OSC.diff) (2018-11-03)
+
+## Authors
+
+* [john](http://roxor.me) <j@roxor.me>

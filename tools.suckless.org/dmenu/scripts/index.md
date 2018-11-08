@@ -26,3 +26,4 @@ Download
   dmenu_run alternative with command history
 * [dbdb.sh](dbdb.sh): dmenu-based directory browser
 * [via](https://github.com/xalexalex/via): simple dmenu-based launcher for apps, files, folders and shell commands
+* [dmenu_websearch](dmenu_websearch): browser independent address bar

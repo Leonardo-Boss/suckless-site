@@ -1,4 +1,5 @@
 # these files are ignored by git.
 *.html
 !/*.html
+build-page
 test

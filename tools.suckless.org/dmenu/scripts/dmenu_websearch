@@ -3,102 +3,69 @@
 # title: dmenu_websearch
 # license: CC0
 # author: Sunur Efe Vural <efe@efe.kim>
+# version: 28/11/2018
+# some dependencies: dmenu, xdotool, hexdump, xprop, pstree, setxkbmap
 
-# This  is a  simple  shell script  which  spawns a  browser-independent
-# address bar. The dmenu_websearch bar can follow a URL, search the web,
-# and read bookmarks from a bookmarks file. If the cursor is not focused
-# to a  web browser, it will  open the URL  or the search term  with the
-# default browser. If the cursor is focused to a browser, be it terminal
-# or graphical, it will act as the address bar of that browser.
-
-# The reason of me  writing this script is to have  the same address bar
-# for all browsers which allows me to have one simple bookmarks file and
-# same address bar settings and  behaviour for all browsers. w3m, links,
-# lynx, dillo, etc.  don't allow you to perform web  searches with their
-# built-in address  bar. With  dmenu_websearch bar I  don't have  to use
-# their built-in address bars. Also having to enter a URL or search term
-# without first openning a browser is convenient and faster.
-
-
-# DEFINITIONS
+# dmenu_websearch  is a  browser-independent address  bar with  bookmark
+# support. If  the cursor  is focused on  a web browser  it acts  as the
+# address bar of that browser.
 
 browser="$TERMINAL -e $BROWSERCLI"
 homepage=$WWW_HOME
-bookmarks_file=$HOME/.bookmarks
-# The  first line  of the  bookmarks file  should have  the monkey  head
-# (🐵).  Following the  monkey head  it should  have a  URL per  line.
-# Bookmarks can be  commented with `#`. Also, bookmarks  can have names.
-# If a bookmark has a name it should follow this format: `URL, "NAME"`.
+bookmarks_file=$HOME/.bookmarks #url per line
 search_engine="https://duckduckgo.com/lite/?q=%s"
-# Alternative search engines:
-# "https://duckduckgo.com/?q=%s"
-# "https://duckduckgo.com/html/?q=%s"
-# "https://www.startpage.com/do/search?query=%s"
-# "https://google.com/search?q=%s"
-
-
-# BODY OF THE SCRIPT
 
 openchoice() {
 	if [ "$windowid" != "notabrowser" ]
-	then xdotool key $keysequence type --delay 2 "$choice" ;\
-	 sleep 0.1 ; xdotool key Return
+	then
+		#change layout to us cuz xdotool spasms with non-latin layouts
+		layout=`setxkbmap -query | awk '/^layout:/{ print $2 }'`
+		setxkbmap -layout us
+		xdotool key --clearmodifiers $shortcut\
+		type --clearmodifiers --delay 2 "$choice"
+		xdotool key --clearmodifiers Return
+		setxkbmap -layout $layout
 	else $browser $choice
 	fi
 }
 
 searchweb() {
-	choice=`echo $choice | sed 's/\ /+/g'`
-	choice=`echo $search_engine | sed "s/%s/$choice/"`
+	#convert search term to percent encoding
+	choice=`echo $choice | hexdump -v -e '/1 " %02x"' | sed 's/ 0a$//'`
+	#insert search term into the search engine url
+	choice=`echo $search_engine | sed "s/%s/$choice/;y/ /%/"`
 	openchoice
 }
 
-openhome() {
-	if [ "$homepage" = "" ]
-	then choice="https://duckduckgo.com"
-	else choice=$homepage
-	fi
-	openchoice
-}
-
+#get termprocess for text browsers and windowclass for gui browsers.
 windowid=`xprop -root _NET_ACTIVE_WINDOW | awk '{print $5}'`
-
 if [ "$windowid" != "" ]
 then
-processid=`xprop -id "$windowid" _NET_WM_PID | awk '{print $3}'`
-termprocess=`pstree -Al "$processid" | awk -F "---" '{print $NF}'`
-windowclass=`xprop -id "$windowid" WM_CLASS | grep -o '".*"'`
+	processid=`xprop -id "$windowid" _NET_WM_PID | awk '{print $3}'`
+	termprocess=`pstree -Al "$processid" | awk -F "---" '{print $NF}'`
+	windowclass=`xprop -id "$windowid" WM_CLASS | grep -o '".*"'`
 fi
 
-if echo "$windowclass $termprocess" | grep -i \
+#get the shortcut to open address bar for each browser
+if echo "$windowclass" | grep -i \
 "firefox\|chromium\|vivaldi\|opera\|chrome\|netsurf\|arora\|epiphany\
 \|midori\|dillo\|konqueror\|brave\|palemoon\|iceweasel\|icecat"
-then keysequence="ctrl+l"
-elif echo "$windowclass $termprocess" | grep -i "luakit\|qutebrowser\|uzbl"
-then keysequence="o"
+then shortcut="ctrl+l"
+elif echo "$windowclass" | grep -i "luakit\|qutebrowser\|uzbl"
+then shortcut="o"
 elif echo "$windowclass $termprocess" | grep -i "links\|lynx\|conkeror"
-then keysequence="g"
-elif echo "$windowclass $termprocess" | grep -i "w3m"
-then keysequence="U"
+then shortcut="g"
+elif echo "$termprocess" | grep -i "w3m"
+then shortcut="U"
 else windowid=notabrowser
 fi
 
-if [ "$browser" = "" ]
-then browser="xdg-open"
-fi
-
-pgrep -x dmenu && exit
 choice=`grep -v "^#" $bookmarks_file\
  | dmenu -i -w $windowid -p "Enter URL or search term:"` || exit 1
-choice=`echo $choice | awk -F ", \"" '{ print $1 }'`
 
-if [ "$choice" = "🐵" ]
-then openhome
-elif echo "$choice" | grep -EZ\
- "^(ht|f)tp(s?)\:\/\/[0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*\.onion"
-then torsocks $browser $choice
-elif echo "$choice" | grep -EZ\
+if echo "$choice" | grep -EZ\
  "^(ht|f)tp(s?)\:\/\/[0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*"
-then openchoice
+then choice=`echo $choice | awk -F" " '{ print $1 }'`
+	openchoice
 else searchweb
 fi

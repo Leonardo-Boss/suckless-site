@@ -55,7 +55,7 @@ This covers most console-based programs and programs from [plan9port][].
 
 ### Audio Players
 
-* [C* Music Player](https://cmus.github.io/)
+* [C* Music Player](https://cmus.github.io/) - An ncurses music player that can be controlled with an UNIX socket.
 * [cplay](http://cplay.sourceforge.net/)
 * [DeaDBeeF](http://deadbeef.sourceforge.net/)
 * [moc](http://moc.daper.net/)
@@ -103,7 +103,7 @@ This covers most console-based programs and programs from [plan9port][].
 
 ### Image Viewers
 
-* [feh](https://feh.finalrewind.org/)
+* [feh](https://feh.finalrewind.org/) - A highly customizable image viewer that can also set desktop background image.
 * [jpg/gif/bmp/png][plan9port] - Simple programs from Plan 9 to display images in no-frills windows. Included with plan9port.
 * [meh](https://www.johnhawthorn.com/meh/) - image viewer using raw XLib, libjpeg, libpng and libgif
 * [page][plan9port] - Plan 9's image/document viewer program. Included with plan9port.
@@ -130,10 +130,11 @@ This covers most console-based programs and programs from [plan9port][].
 * [isync](http://isync.sourceforge.net/) - MDA that can work better for IMAP
 * [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
 * [s-nail](https://www.sdaoden.eu/code.html) - An improved heirloom-mailx.
-* [mutt](http://www.mutt.org/)
+* [mutt](http://www.mutt.org/) - An ncurses mail client for fetching, reading and sending email.
 * [nmh](http://www.nongnu.org/nmh/)
 * [mmh](http://marmaro.de/prog/mmh/)
 * [mblaze](https://github.com/chneukirchen/mblaze) - Unix utilities to deal with Maildir
+* [mpop](https://marlam.de/mpop/) - a POP3 mail client. It is much [faster and simpler than fetchmail](https://marlam.de/mpop/documentation).
 
 ### Media Players
 
@@ -149,8 +150,8 @@ This covers most console-based programs and programs from [plan9port][].
 
 ### PDF Viewers
 
-* [mupdf](https://mupdf.com/)
-* [zathura](https://pwmt.org/projects/zathura/)
+* [mupdf](https://mupdf.com/) - a lightweight PDF viewer written in C. It supports PDF, XPS, EPUB, XHTML, CBZ, PNG, JPEG, GIF, and TIFF.
+* [zathura](https://pwmt.org/projects/zathura/) - an extensible document viewer/shell which can support CBZ, DJVU, PS, EPUB (with mupdf), and PDF (with mupdf or poppler).
 
 ### Shells
 
@@ -167,7 +168,7 @@ This covers most console-based programs and programs from [plan9port][].
 * [nvi](https://sites.google.com/a/bostic.com/keithbostic/vi) - A small, multiple file vi-alike.
 * [sam](http://sam.cat-v.org/) - An editor by Rob Pike with inspiration from ed.
 * [traditional vi](http://ex-vi.sourceforge.net/) - A fixed version of the original vi.
-* [vim](https://www.vim.org) (With the GUI, use `:set go+=c` to kill popup dialogs)
+* [vim](https://www.vim.org) (With the GUI, use `:set go+=c` to kill popup dialogs). It can be compiled to be as minimal as possible (see vim-tiny in Debian repos).
 * [vis](https://github.com/martanne/vis) - A modern, legacy free, simple yet efficient vim-like editor.
 * [wily](http://www.cse.yorku.ca/~oz/wily/) - An acme clone for POSIX.
 * [ed](https://9fans.github.io/plan9port/man/man1/ed.html) - [ED IS THE STANDARD TEXT EDITOR!](https://www.gnu.org/fun/jokes/ed-msg.html)
@@ -187,20 +188,20 @@ This covers most console-based programs and programs from [plan9port][].
 
 * [Abaco](http://lab-fgb.com/abaco/)
 * [Conkeror](http://www.conkeror.org/) - A Gecko based browser, imparting it Emacs style key bindings, appearances, and behaviors.
-* [Dillo](https://www.dillo.org/)
-* [edbrowse](http://edbrowse.org/)
-* [ELinks](http://elinks.or.cz/)
-* [Links](http://links.twibright.com/)
-* [Lynx](http://lynx.invisible-island.net/)
-* [netsurf](http://www.netsurf-browser.org/)
-* [surf](//surf.suckless.org/)
+* [Dillo](https://www.dillo.org/) - Blazingly fast graphical browser with incomplete CSS support.
+* [edbrowse](http://edbrowse.org/) - ed-alike webbrowser. Unfortunately it is not the standard web browser.
+* [ELinks](http://elinks.or.cz/) -  Feature-rich fork of Links, but without the graphical mode.
+* [Links](http://links.twibright.com/) - A text-based browser that also has a simple graphical mode.
+* [Lynx](http://lynx.invisible-island.net/) - Lynx sets the stardard for text-mode web clients since 1992. It even supports Gopher protocol.
+* [netsurf](http://www.netsurf-browser.org/) - Very fast graphical browser with custom engine that has near-perfect CSS support.
+* [surf](//surf.suckless.org/) - WebKit2 browser that can be embedded into other applications and uses dmenu as the address bar.
 * [Tridactyl](https://github.com/cmcaine/tridactyl) - A WebExtension that tries to make Firefox Vim like. Unlike many similar extensions it works with firefox 57+
 * [uzbl](https://www.uzbl.org/) - Web interface tools which adhere to the unix philosophy.
 * [Vimperator](http://vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like. (Doesn't work with firefox 57+)
 * [VimFX](https://addons.mozilla.org/en-US/firefox/addon/vimfx/) -
   Another extension to make Firefox Vim-like. Less invasive than
   Vimperator (Doesn't work with firefox 57+)
-* [w3m](http://w3m.sourceforge.net/)
+* [w3m](http://w3m.sourceforge.net/) - Text-based browser which can view images in terminal.
 
 ### X11
 

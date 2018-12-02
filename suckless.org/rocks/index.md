@@ -77,7 +77,6 @@ This covers most console-based programs and programs from [plan9port][].
 
 ### Feed aggregators
 
-* [newsboat](https://newsboat.org/) - RSS/Atom feed reader for text terminals (updated fork of [newsbeuter](https://www.newsbeuter.org/)).
 * [snownews](https://github.com/kouya/snownews/) - Text mode RSS newsreader for Linux and Unix.
 * [sfeed](https://git.codemadness.org/sfeed/) - RSS and Atom parser + CLI programs.
 
@@ -117,7 +116,6 @@ This covers most console-based programs and programs from [plan9port][].
 * [sxiv](https://github.com/muennich/sxiv) - Simple (or small or suckless) X Image Viewer. Depends on xlib and imlib2.
 * [xli](http://web.aanet.com.au/gwg/xli.html)
 * [xzgv](http://sourceforge.net/projects/xzgv/)
-* [lel](https://git.2f30.org/lel/) - Suckless imagefile viewer (WIP)
 * [imv](https://github.com/exec64/imv) - Simple X11/Wayland Image Viewer. Depends on SDL2 and FreeImage.
 
 ### Instant-Messaging clients

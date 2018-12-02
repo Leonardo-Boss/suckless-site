@@ -66,32 +66,40 @@ Feel free to add your own status monitors here (keeping the list sorted).
 Helper Functions In The Shell
 -----------------------------
 
-Return battery capacity percentage:
-
-	$(echo $(awk '/rem/ { print $3/89000 }' /proc/acpi/battery/BAT0/state| hoc| cut -c3,4)%
-
-Your battery may be called something different, so check /proc/acpi for its name. Also, change 89000 to whatever the capacity is for your battery. This returns the remaining battery power as a percentage.
-hoc comes from plan9port or 9base.
-
-Depending on your system, you can also use
+Return the battery capacity percentage:
 
 	cat /sys/class/power_supply/BAT0/capacity
 
-to get your battery status in percentage.
+Alternatively you can use `acpi -b`. For older systems you can get
+the battery capacity from `/proc/acpi/battery/BAT0/state`.
 
-Return the amount of ram used, in megabytes:
+Return the amount of ram used:
 
-    $(free -m |awk '/cache:/ { print $3"M" }')
+	free -h | awk '(NR==2){ print $3 }'
 
-Return the temperature of the cpu, in degree celcius:
+Return the temperature of the cpu:
 
-	$(awk '{ print $2 }' /proc/acpi/thermal_zone/THM0/temperature)C
+	sed 's/000$/°C/' /sys/class/thermal/thermal_zone0/temp
 
-Return volume:
+Alternatively you can use `acpi -t` or `sensors` from lm-sensors
+package. For older systems you can get the cpu temperature from
+`/proc/acpi/thermal_zone/THM0/temperature`
 
-	amixer get Front | tail -n1 | awk '{ print $5 }' | tr -d []
+Return the volume for Master audio device:
 
-Change “Front” to your audio device
+	amixer get Master | awk -F'[][]' 'END{ print $4":"$2 }'
+
+Return the keyboard layout:
+
+	setxkbmap -query | awk '/layout/{ print $2 }'
+
+Return the empty disk space at /home mount point: 
+
+	df -h | awk '{ if ($6 == "/home") print $4 }'
+
+Return the wifi status for interface wlp3s0:
+
+	cat /sys/class/net/wlp3s0/opestate
 
 Using shell scripts very well leads to big scripts, which pull in unneeded
 dependencies. One solution for this is to write everything in C, which is much

@@ -8,7 +8,7 @@ minus the [statuscolors](../statuscolors/). It uses the dwm bar to show you the
 titles of all the windows in the current tag and lets you select windows by
 selecting their title in the dwm bar.
 
-[![Screenshot][fancybarclickable.png]][fancybarclickable.png]
+[![Screenshot](fancybarclickable.png)](fancybarclickable.png)
 
 Download
 --------

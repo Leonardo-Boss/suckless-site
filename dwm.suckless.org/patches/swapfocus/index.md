@@ -4,9 +4,6 @@
 This patch makes it possible to switch focus with one single shortcut (alt-s) instead of having to think if you should use alt-j or alt-k for reaching the last used window.
 
 ## Download
-Patches against different versions of dwm are available at
-[dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
-
 * [dwm-swapfocus-20160731-56a31dc.diff](dwm-swapfocus-20160731-56a31dc.diff)
 * [dwm-6.1-swapfocus.diff](dwm-6.1-swapfocus.diff) (1807b) (20140209)
 * [dwm-10e232f9ace7-swapfocus.diff](dwm-10e232f9ace7-swapfocus.diff) (1484b) (20120406)

@@ -14,9 +14,6 @@
 `push_no_master` is the same as the regular `push` patch, but it does not push up nor push down into the master area. We have zoom() for that.
 
 ## Download
-Patches against different versions of dwm are available at
-[dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
-
 * [dwm-push-20160731-56a31dc.diff](dwm-push-20160731-56a31dc.diff)
 * [dwm-push-6.0.diff](dwm-push-6.0.diff) (1332b) - 2012/4/6
 * [dwm-6.0-push_no_master.diff](dwm-6.0-push_no_master.diff)

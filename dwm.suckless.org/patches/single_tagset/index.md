@@ -21,9 +21,6 @@ Download
 --------
 Please be aware that this patch probably breaks any other patch!
 
-Patches against different versions of dwm are available at
-[dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
-
 * [dwm-single_tagset-20160731-56a31dc.diff](dwm-single_tagset-20160731-56a31dc.diff)
 * [dwm-6.1-single_tagset.diff](dwm-6.1-single_tagset.diff) (16634b) (20140209)
 * [dwm-10e232f9ace7-single_tagset.diff](dwm-10e232f9ace7-single_tagset.diff) (14748b) (20120406)

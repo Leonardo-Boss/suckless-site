@@ -8,9 +8,6 @@ is following the selected monitor.
 
 Download
 --------
-Patches against different versions of dwm are available at
-[dwm-clean-patches](https://github.com/jceb/dwm-clean-patches).
-
 * [dwm-systray-20180314-3bd8466.diff](dwm-systray-20180314-3bd8466.diff) (23K)
 * [dwm-6.1-systray.diff](dwm-6.1-systray.diff) (22K) (20151109)
 * [dwm-git-20130119-systray.diff](dwm-git-20130119-systray.diff) (19946b)

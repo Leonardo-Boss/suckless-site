@@ -11,7 +11,7 @@ I find this to be the least obtrusive attachment behavior, since no existing cli
 Download
 --------
 
-* [dwm-attachbottom-6.1.diff](dwm-attachbottm-6.1.diff)
+* [dwm-attachbottom-6.1.diff](dwm-attachbottom-6.1.diff)
 
 Authors
 -------

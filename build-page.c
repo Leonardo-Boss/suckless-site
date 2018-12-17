@@ -252,7 +252,7 @@ menu_panel(char *domain, char *page, char *this)
 			fputs(" class=\"thisPage\"", stdout);
 		printf(" href=\"//%s/%s\">", domain, newdir);
 		print_name(*d);
-		puts("/</a>");
+		fputs("/</a>", stdout);
 		if (page && !strncmp(newdir, page, strlen(newdir))) {
 			puts("\t<ul>");
 			menu_panel(domain, page, newdir);

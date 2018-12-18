@@ -67,6 +67,7 @@ die_perror(char *msg, ...)
 	va_start(ap, msg);
 	while ((s = va_arg(ap, char *)))
 		fputs(s, stdout);
+	va_end(ap);
 	fputs(": ", stdout);
 	perror(NULL);
 	exit(1);
@@ -81,6 +82,7 @@ die(char *msg, ...)
 	va_start(ap, msg);
 	while ((s = va_arg(ap, char *)))
 		fputs(s, stdout);
+	va_end(ap);
 	fputc('\n', stdout);
 	exit(1);
 }
@@ -140,17 +142,6 @@ oneline(char *value, size_t len, char const *path)
 	return !!r;
 }
 
-int
-dirname(char *path)
-{
-	char *s;
-
-	if (!(s = strrchr(path, '/')))
-		return -1;
-	*s = '\0';
-	return 0;
-}
-
 void
 print_name(char *name)
 {
@@ -178,9 +169,9 @@ subdir(char *newdir, size_t len, char *base, char *add)
 void
 print_header(char *domain, char *page)
 {
-	char title_file[PATH_MAX];
 	char title[TITLE_MAX];
 	(void)domain;
+	(void)page;
 
 	if (oneline(title, sizeof title, ".title") <= 0)
 		printf(html_header, TITLE_DEFAULT, TITLE_DEFAULT);
@@ -230,7 +221,7 @@ menu_panel(char *domain, char *page, char *this)
 	size_t d_len = 0;
 
 	if ((dp = opendir(this ? this : ".")) == NULL)
-		die_perror("opendir ", this ? this : ".", NULL);
+		die_perror("opendir ", this ? this : ".");
 
 	while (d_len < LEN(d_list) && (de = readdir(dp)))
 		d_list[d_len++] = de->d_name;
@@ -240,7 +231,6 @@ menu_panel(char *domain, char *page, char *this)
 		&qsort_strcmp);
 
 	for (d = d_list; *d != NULL; ++d) {
-		int match;
 		char newdir[PATH_MAX];
 
 		if (**d == '.') continue;
@@ -260,13 +250,12 @@ menu_panel(char *domain, char *page, char *this)
 		}
 		puts("</li>");
 	}
+	closedir(dp);
 }
 
 void
 print_menu_panel(char *domain, char *page)
 {
-	char *s;
-
 	fputs("<div id=\"nav\">\n\t<ul>\n\t<li><a", stdout);
 	if (!page)
 		fputs(" class=\"thisPage\"", stdout);
@@ -290,7 +279,7 @@ print_content(char *domain, char *page)
 		char *argv[] = { CONVERTER, index, NULL };
 		fflush(stdout);
 		if (spawn_wait(argv) == -1)
-			die_perror(CONVERTER, domain, "/", page, "/", index, NULL);
+			die_perror(CONVERTER, domain, "/", page, "/", index);
 	}
 	puts("</div>\n");
 }

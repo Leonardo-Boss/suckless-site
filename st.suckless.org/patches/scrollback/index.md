@@ -10,8 +10,8 @@ Download
 --------
 
 * [st-scrollback-0.7.diff](st-scrollback-0.7.diff)
-* [st-scrollback-20170329-149c0d3.diff](st-scrollback-20170329-149c0d3.diff)
 * [st-scrollback-0.8.diff](st-scrollback-0.8.diff)
+* [st-scrollback-20181224-096b125.diff](st-scrollback-20181224-096b125.diff)
 
 Apply the following patch on top of the previous to allow scrolling
 using `Shift+MouseWheel`.

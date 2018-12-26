@@ -108,6 +108,7 @@ This covers most console-based programs and programs from [plan9port][].
 * [Irc](https://swtch.com/irc/) - IRC client for ACME.
 * [irc.c from mpu](https://c9x.me/irc/) - A minimal curses IRC client.
 * [ii](//tools.suckless.org/ii/) - A FIFO based IRC client which is part of the suckless.org project.
+* [hii](https://github.com/nmeum/hii) - A file-based IRC client, inspired by ii, with a focus on easing [frontend development](https://github.com/nmeum/insomnia)
 * [ircrc](http://plan9.bell-labs.com/sources/contrib/fgb/rc/ircrc) - An rc-based IRC client similar to ircc. Needs minor modification to run on UNIX.
 * [irssi](https://irssi.org/) - Text-mode IRC client.
 * [sic](//tools.suckless.org/sic/) - Another suckless.org IRC client. Similar to ircc.

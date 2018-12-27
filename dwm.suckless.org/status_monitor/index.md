@@ -59,47 +59,29 @@ Feel free to add your own status monitors here (keeping the list sorted).
 * [dwmstat](https://notabug.org/kl3/dwmstat) - small and simple | IP, CPU temperature, system volume, current local time (and more) | config.h | OpenBSD
 * [go-dwmstatus](https://github.com/oniichaNj/go-dwmstatus) - A Go bar that prints current MPD song, load averages, time/date and battery percentage.
 * [gods](https://github.com/schachmat/gods) - implemented in Go. prints network speed, cpu, ram, date/time
-* [posix scripts](https://notabug.org/kl3/scripts) - basic collection of simple, fully POSIX sh compliant scripts to get various system information
 * [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent and date/time
 * [suspend-statusbar.c](https://github.com/snobb/dwm-statusbar) - date, loadavg, battery and more. If battery goes below threshold - run suspend command
 
 Helper Functions In The Shell
 -----------------------------
 
-Return the battery capacity percentage:
+* [posix scripts](https://notabug.org/kl3/scripts) - basic collection of simple, fully POSIX sh compliant scripts to get various system information
+* [i3blocks-contrib](https://github.com/vivien/i3blocks-contrib) - collection of python, perl and shell scripts
+* Free memory: `free -h | awk '(NR==2){ print $3 }'`
+* Volume (device Master): `amixer get Master | awk -F'[][]' 'END{ print $4":"$2 }'`
+* Keyboard layout: `setxkbmap -query | awk '/layout/{ print $2 }'`
+* Empty disk space (mountpoint /home): `df -h | awk '{ if ($6 == "/home") print $4 }'`
+* wifi status (interface wlp3s0): `cat /sys/class/net/wlp3s0/opestate`
+* CPU temperature: `sed 's/000$/°C/' /sys/class/thermal/thermal_zone0/temp`
 
-	cat /sys/class/power_supply/BAT0/capacity
+	Alternatively you can use `acpi -t` or `sensors` from lm-sensors
+	package. For older systems you can get the cpu temperature from
+	`/proc/acpi/thermal_zone/THM0/temperature`
 
-Alternatively you can use `acpi -b`. For older systems you can get
-the battery capacity from `/proc/acpi/battery/BAT0/state`.
+* Remaining battery: `cat /sys/class/power_supply/BAT0/capacity`
 
-Return the amount of ram used:
-
-	free -h | awk '(NR==2){ print $3 }'
-
-Return the temperature of the cpu:
-
-	sed 's/000$/°C/' /sys/class/thermal/thermal_zone0/temp
-
-Alternatively you can use `acpi -t` or `sensors` from lm-sensors
-package. For older systems you can get the cpu temperature from
-`/proc/acpi/thermal_zone/THM0/temperature`
-
-Return the volume for Master audio device:
-
-	amixer get Master | awk -F'[][]' 'END{ print $4":"$2 }'
-
-Return the keyboard layout:
-
-	setxkbmap -query | awk '/layout/{ print $2 }'
-
-Return the empty disk space at /home mount point: 
-
-	df -h | awk '{ if ($6 == "/home") print $4 }'
-
-Return the wifi status for interface wlp3s0:
-
-	cat /sys/class/net/wlp3s0/opestate
+	Alternatively you can use `acpi -b`. For older systems you can get
+	the battery capacity from `/proc/acpi/battery/BAT0/state`.
 
 Using shell scripts very well leads to big scripts, which pull in unneeded
 dependencies. One solution for this is to write everything in C, which is much

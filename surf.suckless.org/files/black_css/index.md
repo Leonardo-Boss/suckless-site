@@ -4,7 +4,8 @@ Black css theme
 Description
 -----------
 
-This file must be deployed into ~/.surf/style.css to get a black themed surf
+This file must be deployed into ~/.surf/styles/default.css to get a
+black themed surf
 
 	pre,textarea,body,input,td,tr,p {
 		background-color: black !important;

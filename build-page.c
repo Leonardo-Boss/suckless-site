@@ -22,9 +22,9 @@ char *html_header =
 	"<!doctype html>\n"
 	"<html>\n"
 	"<head>\n"
-	"	<meta charset=\"utf-8\">\n"
+	"	<meta charset=\"utf-8\"/>\n"
 	"	<title>%s | suckless.org software that sucks less</title>\n"
-	"	<link rel=\"stylesheet\" type=\"text/css\" href=\"//suckless.org/pub/style.css\">\n" \
+	"	<link rel=\"stylesheet\" type=\"text/css\" href=\"//suckless.org/pub/style.css\"/>\n"
 	"</head>\n"
 	"\n"
 	"<div id=\"header\">\n"
@@ -41,7 +41,7 @@ char *html_nav_bar =
 
 char *html_footer = "<div id=\"footer\">\n"
 	"<span class=\"right\">\n"
-	"&copy; 2006-2018 suckless.org community\n"
+	"&copy; 2006-2019 suckless.org community\n"
 	"| <a href=\"//ev.suckless.org/impressum\">Impressum</a>\n"
 	"| <a href=\"//ev.suckless.org\">e.V.</a>\n"
 	"</span>\n"
@@ -59,36 +59,32 @@ char *domain_list[] = {
 };
 
 void
-die_perror(char *msg, ...)
+die_perror(char *fmt, ...)
 {
 	va_list ap;
-	char *s;
 
-	va_start(ap, msg);
-	while ((s = va_arg(ap, char *)))
-		fputs(s, stdout);
+	va_start(ap, fmt);
+	vfprintf(stderr, fmt, ap);
 	va_end(ap);
-	fputs(": ", stdout);
+	fputs(": ", stderr);
 	perror(NULL);
 	exit(1);
 }
 
 void
-die(char *msg, ...)
+die(char *fmt, ...)
 {
 	va_list ap;
-	char *s;
 
-	va_start(ap, msg);
-	while ((s = va_arg(ap, char *)))
-		fputs(s, stdout);
+	va_start(ap, fmt);
+	vfprintf(stderr, fmt, ap);
 	va_end(ap);
-	fputc('\n', stdout);
+	fputc('\n', stderr);
 	exit(1);
 }
 
 int
-stat_isdir(char *f)
+stat_isdir(const char *f)
 {
 	struct stat s;
 
@@ -100,7 +96,7 @@ stat_isdir(char *f)
 }
 
 int
-stat_isfile(char *f)
+stat_isfile(const char *f)
 {
 	struct stat s;
 
@@ -130,24 +126,30 @@ spawn_wait(char **argv)
 }
 
 int
-oneline(char *value, size_t len, char const *path)
+oneline(char *buf, size_t bufsiz, char const *path)
 {
-	char *r = 0;
+	char *r;
 	FILE *fp;
 
-	if (!(fp = fopen(path, "r"))) return perror(path), -1;
-	r = fgets(value, len, fp);
+	if (!(fp = fopen(path, "r"))) {
+		perror(path);
+		return -1;
+	}
+	r = fgets(buf, bufsiz, fp);
 	fclose(fp);
+
+	if (r)
+		buf[strcspn(buf, "\n")] = '\0';
 
 	return !!r;
 }
 
 void
-print_name(char *name)
+print_name(const char *name)
 {
-	char *from = "_-", *to = "  ", *s;
+	const char *from = "_-", *to = "  ", *s;
 
-	for (;*name; ++name) {
+	for (; *name; ++name) {
 		if ((s = strchr(from, *name)) != NULL)
 			putchar(to[s - from]);
 		else
@@ -156,14 +158,14 @@ print_name(char *name)
 }
 
 void
-subdir(char *newdir, size_t len, char *base, char *add)
+subdir(char *newdir, size_t siz, char *base, char *add)
 {
 	*newdir = '\0';
 	if (base) {
-		strncat(newdir, base, len - 1); newdir[len - 1] = '\0';
-		strncat(newdir, "/", len - 1); newdir[len - 1] = '\0';
+		strncat(newdir, base, siz - 1); newdir[siz - 1] = '\0';
+		strncat(newdir, "/", siz - 1); newdir[siz - 1] = '\0';
 	}
-	strncat(newdir, add, len - 1); newdir[len - 1] = '\0';
+	strncat(newdir, add, siz - 1); newdir[siz - 1] = '\0';
 }
 
 void
@@ -201,7 +203,7 @@ print_nav_bar(char *domain, char *page)
 		}
 		fputs("</a>\n", stdout);
 	}
-
+	fputs(html_nav_bar, stdout);
 	puts("</div>");
 }
 
@@ -216,26 +218,26 @@ menu_panel(char *domain, char *page, char *this)
 {
 	DIR *dp;
 	struct dirent *de;
+	char newdir[PATH_MAX];
 	char *d_list[DIR_MAX];
 	char **d;
 	size_t d_len = 0;
 
 	if ((dp = opendir(this ? this : ".")) == NULL)
-		die_perror("opendir ", this ? this : ".");
+		die_perror("opendir: %s", this ? this : ".");
 
 	while (d_len < LEN(d_list) && (de = readdir(dp)))
 		d_list[d_len++] = de->d_name;
 	d_list[d_len] = NULL;
 
-	qsort(d_list, d_len, sizeof *d_list,
-		&qsort_strcmp);
+	qsort(d_list, d_len, sizeof *d_list, qsort_strcmp);
 
 	for (d = d_list; *d != NULL; ++d) {
-		char newdir[PATH_MAX];
-
-		if (**d == '.') continue;
+		if (**d == '.')
+			continue;
 		subdir(newdir, sizeof newdir, this, *d);
-		if (!stat_isdir(newdir)) continue;
+		if (!stat_isdir(newdir))
+			continue;
 
 		fputs("\t<li><a", stdout);
 		if (page && !strncmp(newdir, page, strlen(newdir)))
@@ -270,16 +272,16 @@ void
 print_content(char *domain, char *page)
 {
 	char index[PATH_MAX];
+	char *argv[] = { CONVERTER, index, NULL };
 
 	subdir(index, sizeof index, page, "index.md");
 
 	puts("<div id=\"main\">\n");
 
 	if (stat_isfile(index)) {
-		char *argv[] = { CONVERTER, index, NULL };
 		fflush(stdout);
 		if (spawn_wait(argv) == -1)
-			die_perror(CONVERTER, domain, "/", page, "/", index);
+			die_perror("spawn: %s %s/%s/%s", CONVERTER, domain, page, index);
 	}
 	puts("</div>\n");
 }
@@ -295,20 +297,21 @@ print_footer(char *domain, char *page)
 int
 main(int argc, char *argv[])
 {
-	char *domain;
-	char *page;
+	char *domain, *page;
 
 	if (argc != 2)
-		die("usage: ", argv[0], " directory");
+		die("usage: %s directory", argv[0]);
 	if ((page = strchr(argv[1], '/')))
 		*page++ = '\0';
 	domain = argv[1];
-	if (chdir(domain) == -1)
-		return perror(domain), 1;
+	if (chdir(domain) == -1) {
+		perror(domain);
+		return 1;
+	}
 
 	print_header(domain, page);
-	puts("<div id=\"content\">");
 	print_nav_bar(domain, page);
+	puts("<div id=\"content\">");
 	print_menu_panel(domain, page);
 	print_content(domain, page);
 	puts("</div>\n");

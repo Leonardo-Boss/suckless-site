@@ -136,6 +136,9 @@ oneline(char *buf, size_t bufsiz, char const *path)
 		return -1;
 	}
 	r = fgets(buf, bufsiz, fp);
+	if (ferror(fp))
+		die_perror("fgets: %s", path);
+
 	fclose(fp);
 
 	if (r)
@@ -304,10 +307,8 @@ main(int argc, char *argv[])
 	if ((page = strchr(argv[1], '/')))
 		*page++ = '\0';
 	domain = argv[1];
-	if (chdir(domain) == -1) {
-		perror(domain);
-		return 1;
-	}
+	if (chdir(domain) == -1)
+		die_perror("chdir: %s", domain);
 
 	print_header(domain, page);
 	print_nav_bar(domain, page);

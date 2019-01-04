@@ -22,22 +22,22 @@ char *html_header =
 	"<!doctype html>\n"
 	"<html>\n"
 	"<head>\n"
-	"	<meta charset=\"utf-8\"/>\n"
-	"	<title>%s | suckless.org software that sucks less</title>\n"
-	"	<link rel=\"stylesheet\" type=\"text/css\" href=\"//suckless.org/pub/style.css\"/>\n"
+	"\t<meta charset=\"utf-8\"/>\n"
+	"\t<title>%s | suckless.org software that sucks less</title>\n"
+	"\t<link rel=\"stylesheet\" type=\"text/css\" href=\"//suckless.org/pub/style.css\"/>\n"
 	"</head>\n"
 	"\n"
 	"<div id=\"header\">\n"
-	"	<a href=\"//suckless.org/\"><img src=\"//suckless.org/logo.svg\"/></a>\n"
-	"	<a id=\"headerLink\" href=\"//suckless.org/\">suckless.org</a>\n"
-	"	<span id=\"headerSubtitle\">%s</span>\n"
+	"\t<a href=\"//suckless.org/\"><img src=\"//suckless.org/logo.svg\"/></a>\n"
+	"\t<a id=\"headerLink\" href=\"//suckless.org/\">suckless.org</a>\n"
+	"\t<span id=\"headerSubtitle\">%s</span>\n"
 	"</div>\n";
 
 char *html_nav_bar =
-	"<span class=\"right\">\n"
-	"	<a href=\"//dl.suckless.org\">download</a>\n"
-	"	<a href=\"//git.suckless.org\">source</a>\n"
-	"</span>\n";
+	"\t<span class=\"right\">\n"
+	"\t\t<a href=\"//dl.suckless.org\">download</a>\n"
+	"\t\t<a href=\"//git.suckless.org\">source</a>\n"
+	"\t</span>\n";
 
 char *html_footer = "<div id=\"footer\">\n"
 	"<span class=\"right\">\n"
@@ -217,19 +217,21 @@ qsort_strcmp(const void *a, const void *b)
 }
 
 void
-menu_panel(char *domain, char *page, char *this)
+menu_panel(char *domain, char *page, char *this, int depth)
 {
 	DIR *dp;
 	struct dirent *de;
 	char newdir[PATH_MAX];
 	char *d_list[DIR_MAX];
 	char **d;
-	size_t d_len = 0;
+	size_t d_len;
+	int i;
 
 	if ((dp = opendir(this ? this : ".")) == NULL)
 		die_perror("opendir: %s", this ? this : ".");
 
-	while (d_len < LEN(d_list) && (de = readdir(dp)))
+	d_len = 0;
+	while (d_len + 1 < LEN(d_list) && (de = readdir(dp)))
 		d_list[d_len++] = de->d_name;
 	d_list[d_len] = NULL;
 
@@ -242,16 +244,26 @@ menu_panel(char *domain, char *page, char *this)
 		if (!stat_isdir(newdir))
 			continue;
 
-		fputs("\t<li><a", stdout);
+		for (i = 0; i < depth + 1; ++i)
+			fputs("\t", stdout);
+		fputs("<li><a", stdout);
 		if (page && !strncmp(newdir, page, strlen(newdir)))
 			fputs(" class=\"thisPage\"", stdout);
 		printf(" href=\"//%s/%s\">", domain, newdir);
 		print_name(*d);
 		fputs("/</a>", stdout);
 		if (page && !strncmp(newdir, page, strlen(newdir))) {
-			puts("\t<ul>");
-			menu_panel(domain, page, newdir);
-			puts("\t</ul>");
+			fputs("\n", stdout);
+			for (i = 0; i < depth + 2; ++i)
+				fputs("\t", stdout);
+			/* TODO: empty <ul></ul> is printed for subitems */
+			puts("<ul>");
+			menu_panel(domain, page, newdir, depth + 1);
+			for (i = 0; i < depth + 2; ++i)
+				fputs("\t", stdout);
+			fputs("</ul>\n", stdout);
+			for (i = 0; i < depth + 1; ++i)
+				fputs("\t", stdout);
 		}
 		puts("</li>");
 	}
@@ -265,8 +277,7 @@ print_menu_panel(char *domain, char *page)
 	if (!page)
 		fputs(" class=\"thisPage\"", stdout);
 	puts(" href=\"/\">about</a></li>");
-	menu_panel(domain, page, NULL);
-
+	menu_panel(domain, page, NULL, 0);
 	puts("\t</ul>");
 	puts("</div>");
 }

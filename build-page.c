@@ -180,17 +180,6 @@ print_name(const char *name)
 }
 
 void
-subdir(char *newdir, size_t siz, char *base, char *add)
-{
-	*newdir = '\0';
-	if (base) {
-		strncat(newdir, base, siz - 1); newdir[siz - 1] = '\0';
-		strncat(newdir, "/", siz - 1); newdir[siz - 1] = '\0';
-	}
-	strncat(newdir, add, siz - 1); newdir[siz - 1] = '\0';
-}
-
-void
 print_header(void)
 {
 	char title[TITLE_MAX];
@@ -245,7 +234,8 @@ menu_panel(char *domain, char *page, char *this, int depth)
 		d = d_list[l];
 		if (*d == '.')
 			continue;
-		subdir(newdir, sizeof(newdir), this, d);
+		snprintf(newdir, sizeof(newdir), this ? "%s/%s" : "%2$s",
+		         this, d);
 		if (!stat_isdir(newdir))
 			continue;
 
@@ -292,7 +282,8 @@ print_content(char *domain, char *page)
 	char index[PATH_MAX];
 	char *argv[] = { CONVERTER, index, NULL };
 
-	subdir(index, sizeof index, page, "index.md");
+	snprintf(index, sizeof(index), page ? "%s/%s" : "%2$s",
+	         page, "index.md");
 
 	puts("<div id=\"main\">\n");
 

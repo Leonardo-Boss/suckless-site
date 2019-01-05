@@ -21,6 +21,7 @@ Talks
         development.
 
 Video:
+
 [![slcon-2013-0-arg-welcome_to_the_future_of_dwm.webm](//dl.suckless.org/slcon/2013/slcon-2013-0-arg-welcome_to_the_future_of_dwm.png)](//dl.suckless.org/slcon/2013/slcon-2013-0-arg-welcome_to_the_future_of_dwm.webm)
 
 
@@ -29,6 +30,7 @@ Video:
         Christoph presented his plan about the next steps of st development.
 
 Video:
+
 [![slcon-2013-1-20h-st-the_past_and_future.webm](//dl.suckless.org/slcon/2013/slcon-2013-1-20h-st-the_past_and_future.png)](//dl.suckless.org/slcon/2013/slcon-2013-1-20h-st-the_past_and_future.webm)
 
 
@@ -38,6 +40,7 @@ Video:
         (and is) beneficial.
 
 Video:
+
 [![slcon-2013-2-nsz-bugs_found_by_musl.webm](//dl.suckless.org/slcon/2013/slcon-2013-2-nsz-bugs_found_by_musl.png)](//dl.suckless.org/slcon/2013/slcon-2013-2-nsz-bugs_found_by_musl.webm)
 
 
@@ -47,6 +50,7 @@ Video:
         are in line with the suckless philosophy.
 
 Video:
+
 [![slcon-2013-3-chneukirchen-runit_and_ignite.webm](//dl.suckless.org/slcon/2013/slcon-2013-3-chneukirchen-runit_and_ignite.png)](//dl.suckless.org/slcon/2013/slcon-2013-3-chneukirchen-runit_and_ignite.webm)
 
 
@@ -55,6 +59,7 @@ Video:
         Szabolcs discussed why C is still the only serious programming language.
 
 Video:
+
 [![slcon-2013-4-nsz-the_costs_of_abstraction.webm](//dl.suckless.org/slcon/2013/slcon-2013-4-nsz-the_costs_of_abstraction.png)](//dl.suckless.org/slcon/2013/slcon-2013-4-nsz-the_costs_of_abstraction.webm)
 
 
@@ -63,10 +68,12 @@ Video:
         Christoph discussed suckless web ideas.
 
 Video:
+
 [![slcon-2013-5-20h-the_suckless_web_ideas.webm](//dl.suckless.org/slcon/2013/slcon-2013-5-20h-the_suckless_web_ideas.png)](//dl.suckless.org/slcon/2013/slcon-2013-5-20h-the_suckless_web_ideas.webm)
 
 
 (16:50-17:15) *stali and other stuff*, Anselm R Garbe ([slides](slcon13.pdf))
 
 Video:
+
 [![slcon-2013-6-arg-stali_and_other_stuff.webm](//dl.suckless.org/slcon/2013/slcon-2013-6-arg-stali_and_other_stuff.png)](//dl.suckless.org/slcon/2013/slcon-2013-6-arg-stali_and_other_stuff.webm)

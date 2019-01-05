@@ -61,7 +61,7 @@ program is usable are:
 * The program will accept any window size.
 * The program consists of a single window (there are no nested windows, such as in Xpdf).
 
-This covers most console-based programs and programs from [plan9port][].
+This covers most console-based programs and programs from [plan9port](https://9fans.github.io/plan9port/).
 
 ### Audio Players
 
@@ -229,7 +229,7 @@ This covers most console-based programs and programs from [plan9port][].
 * [grabc](http://www.muquit.com/muquit/software/grabc/grabc.html) - Grab the
   color of some pixel in X11.
 
-[plan9port]: <https://9fans.github.io/plan9port/>
+[plan9port]: <https://9fans.github.io/plan9port/>  
 [acme]: <http://acme.cat-v.org>
 
 Daemons

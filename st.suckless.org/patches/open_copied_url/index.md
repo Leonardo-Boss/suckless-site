@@ -33,3 +33,4 @@ Authors
 -------
 
 * Michael Buch - <michaelbuch12@gmail.com>
+* Sai Praneeth Reddy - <spr.mora04@gmail.com> (0.8.1, open external programs independently)

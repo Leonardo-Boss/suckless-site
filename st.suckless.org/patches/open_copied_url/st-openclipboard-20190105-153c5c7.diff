@@ -1,0 +1,71 @@
+From 153c5c7667faa273af681efc9a7012b0c09d0e04 Mon Sep 17 00:00:00 2001
+From: Sai Praneeth Reddy <spr.mora04@gmail.com>
+Date: Sat, 5 Jan 2019 18:01:04 +0530
+Subject: [PATCH] Update base patch
+
+to open the external program independently. Otherwise, the terminal
+is rendered unusable until the external program is closed.
+---
+ config.def.h |  1 +
+ st.h         |  1 +
+ x.c          | 23 +++++++++++++++++++++++
+ 3 files changed, 25 insertions(+)
+
+diff --git a/config.def.h b/config.def.h
+index 823e79f..fcd0101 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -177,6 +177,7 @@ static Shortcut shortcuts[] = {
+ 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
+ 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
+ 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
++	{ MODKEY,               XK_o,           opencopied,     {.v = "xdg-open"} },
+ };
+ 
+ /*
+diff --git a/st.h b/st.h
+index 38c61c4..a0d7a83 100644
+--- a/st.h
++++ b/st.h
+@@ -80,6 +80,7 @@ void die(const char *, ...);
+ void redraw(void);
+ void draw(void);
+ 
++void opencopied(const Arg *);
+ void printscreen(const Arg *);
+ void printsel(const Arg *);
+ void sendbreak(const Arg *);
+diff --git a/x.c b/x.c
+index 0422421..6a5ef48 100644
+--- a/x.c
++++ b/x.c
+@@ -1953,3 +1953,26 @@ run:
+ 
+ 	return 0;
+ }
++
++void
++opencopied(const Arg *arg)
++{
++	const size_t max_cmd = 2048;
++	const char *clip = xsel.clipboard;
++	if(!clip) {
++		fprintf(stderr, "Warning: nothing copied to clipboard\n");
++		return;
++	}
++
++	/* account for space/quote (3) and \0 (1) */
++	char cmd[max_cmd + strlen(clip) + 4];
++	strncpy(cmd, (char *)arg->v, max_cmd);
++	cmd[max_cmd] = '\0';
++
++	strcat(cmd, " \"");
++	strcat(cmd, clip);
++	strcat(cmd, "\"");
++	strcat(cmd, " &");
++
++	system(cmd);
++}
+-- 
+2.20.1
+

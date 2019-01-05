@@ -39,7 +39,8 @@ char *html_nav_bar =
 	"\t\t<a href=\"//git.suckless.org\">source</a>\n"
 	"\t</span>\n";
 
-char *html_footer = "<div id=\"footer\">\n"
+char *html_footer =
+	"<div id=\"footer\">\n"
 	"<span class=\"right\">\n"
 	"&copy; 2006-2019 suckless.org community\n"
 	"| <a href=\"//ev.suckless.org/impressum\">Impressum</a>\n"
@@ -47,15 +48,18 @@ char *html_footer = "<div id=\"footer\">\n"
 	"</span>\n"
 	"</div>\n";
 
-char *domain_list[] = {
-	"home.suckless.org",
-	"dwm.suckless.org",
-	"st.suckless.org",
-	"core.suckless.org",
-	"surf.suckless.org",
-	"tools.suckless.org",
-	"libs.suckless.org",
-	NULL
+struct domain {
+	char *label;
+	char *dir;
+} domain_list[] = {
+	{ "home",  "suckless.org" },
+	{ "dwm",   "dwm.suckless.org", },
+	{ "st",    "st.suckless.org", },
+	{ "core",  "core.suckless.org", },
+	{ "surf",  "surf.suckless.org", },
+	{ "tools", "tools.suckless.org", },
+	{ "libs",  "libs.suckless.org", },
+	{ NULL, NULL }
 };
 
 void
@@ -187,24 +191,15 @@ print_header(char *domain, char *page)
 void
 print_nav_bar(char *domain, char *page)
 {
-	char name[1024];
-	char *s;
-	char **d;
+	struct domain *d;
 	(void)page;
 
 	puts("<div id=\"menu\">");
-	for (d = domain_list; *d; ++d) {
+	for (d = domain_list; d->dir; ++d) {
 		fputs("\t<a ", stdout);
-		if (strcmp(domain, *d) == 0)
+		if (strcmp(domain, d->dir) == 0)
 			fputs("class=\"thisSite\" ", stdout);
-
-		printf("href=\"//%s\">", *d);
-		strncpy(name, *d, sizeof name - 1); name[sizeof name - 1] = '\0';
-		if ((s = strchr(name, '.'))) {
-			*s = '\0';
-			fputs(name, stdout);
-		}
-		fputs("</a>\n", stdout);
+		printf("href=\"//%s/\">%s</a>\n", d->dir, d->label);
 	}
 	fputs(html_nav_bar, stdout);
 	puts("</div>");

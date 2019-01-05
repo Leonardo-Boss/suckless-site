@@ -1,5 +1,5 @@
 open_copied_url
-=======
+===============
 
 Description
 -----------
@@ -10,7 +10,7 @@ The clipboard in this case refers to the CLIPBOARD selection which gets
 populated when pressing e.g. C-c.
 
 Instructions
------------
+------------
 
 Add a keybinding like the following example to "shortcuts" in config.h:
 

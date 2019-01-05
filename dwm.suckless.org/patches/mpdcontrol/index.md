@@ -1,5 +1,5 @@
 mpdcontrol
-=======
+==========
 
 Description
 -----------

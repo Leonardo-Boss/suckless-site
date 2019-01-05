@@ -1,5 +1,5 @@
 centeredwindowname
-=====
+==================
 
 [![Screenshot](dwm-centeredwindowname.png)](dwm-centeredwindowname.png)
 

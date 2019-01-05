@@ -2,7 +2,7 @@ instapaper
 ==========
 
 Description
--------
+-----------
 
 1. Add this to static Key keys[]:
 

@@ -16,18 +16,18 @@ not possible under barebone xft:
   over which you have direct control.
 
 * **Fallback fonts**, so you can use -for example- some set of iconic fonts as your second
-  family: "DejaVu Sans, Icons 8" [1]. There are tons of monochromatic nice looking TTF
-  icons around the web these days as webfonts are becoming more and more popular. Notice
-  that you can also use the more powerful font switching enabled by pango markup to
+  family: "DejaVu Sans, Icons 8" (see below). There are tons of monochromatic nice looking
+  TTF icons around the web these days as webfonts are becoming more and more popular.
+  Notice that you can also use the more powerful font switching enabled by pango markup to
   achieve the same goal.  Also don't be mislead by the fact that fontconfig understands
   descriptors like "DejaVu Sans, Icons-8" or even font sequences defined as alias in your
   fonts.conf. xft will pick one font once and for all, not on a char-by-char basis.
 
-[1] The [Icons family](https://aur.archlinux.org/packages/ttf-font-icons/) is a
-  non-overlapping merge of Awesome and Ionicons fonts I've made for my statusbar. In case
-  you want to take a look at it, there is a
-  [cheatsheet](https://www.dropbox.com/s/9iysh2i0gadi4ic/icons.pdf) listing the icons and
-  their unicode points.
+The [Icons family](https://aur.archlinux.org/packages/ttf-font-icons/) is a
+non-overlapping merge of Awesome and Ionicons fonts I've made for my statusbar. In case
+you want to take a look at it, there is a
+[cheatsheet](https://www.dropbox.com/s/9iysh2i0gadi4ic/icons.pdf) listing the icons and
+their unicode points.
 
 Download
 --------

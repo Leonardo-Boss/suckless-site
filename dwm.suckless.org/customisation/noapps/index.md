@@ -1,10 +1,10 @@
 Remove application defaults from config.h
 =========================================
 
-The rules array is initialized, by default, to treat windows of class `Gimp`
-and `Firefox` in a special way.  If, like me, you don't want any application to
-be treated in a special way, you must be careful when editing the rules array
-initialization code.
+*blame [Filippo Erik Negroni](mailto:f dot e dot negroni at googlemail dot com>) about this document*
+
+The rules array is initialized, by default, to treat windows of class `Gimp` and `Firefox` in a special way.
+If, like me, you don't want any application to be treated in a special way, you must be careful when editing the rules array initialization code.
 
 The original code describes what each value represents within the Rule structure.
 
@@ -14,20 +14,17 @@ The original code describes what each value represents within the Rule structure
 		{ "Firefox",  NULL,       NULL,       1 << 8,       True,        -1 },
 	};
 
-For instance, Gimp and Firefox will be labeled as floating windows, even if the
-layout selected is Monocle or Tiled.  In particular, the tag mask will attach
-Firefox to tag '9'.
+For instance, Gimp and Firefox will be labeled as floating windows, even if the layout selected is Monocle or Tiled.
+In particular, the tag mask will attach Firefox to tag '9'.
 
-If we don't want any window class to be treated in a special way, we need to
-initialize rules with at least one element:
+If we don't want any window class to be treated in a special way, we need to initialize rules with at least one element:
 
 	static Rule rules[] = {
 		/* class      instance    title       tags mask     isfloating   monitor */
 		{ NULL,       NULL,       NULL,       0,            False,       -1 },
 	};
 
-The code in dwm.c will check that the `class` element is not NULL before any
-matching is done.
+The code in dwm.c will check that the `class` element is not NULL before any matching is done.
 
 	/* rule matching */
 	XGetClassHint(dpy, c->win, &ch);
@@ -41,7 +38,5 @@ matching is done.
 		}
 	}
 
-This code assumes the rules array has at least one element, and that the first
-rule that does not match will apply to all window classes.  Therefore, the rule
-we just made, is the default rule for all new windows and therefore it is
-important you set the `tags mask` and `isfloating` elements correctly.
+This code assumes the rules array has at least one element, and that the first rule that does not match will apply to all window classes.
+Therefore, the rule we just made, is the default rule for all new windows and therefore it is important you set the `tags mask` and `isfloating` elements correctly.

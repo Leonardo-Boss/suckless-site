@@ -1,8 +1,8 @@
-# TAGLAYOUTS
+# taglayouts
 
 ## Description
 
-This patch enables one layout per tag in contrast of one layout for all tags. - A more general approach is the [pertag patch][1].
+This patch enables one layout per tag in contrast of one layout for all tags. - A more general approach is the [pertag patch](/patches/pertag).
 
 ## Download
 * None anymore
@@ -18,4 +18,4 @@ This patch enables one layout per tag in contrast of one layout for all tags. - 
 * http://na.srck.net/dwm
 * Updated by Jan Christoph Ebersbach - <jceb@e-jc.de>
 
-[1]: /patches/pertag
+

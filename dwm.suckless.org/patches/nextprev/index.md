@@ -3,7 +3,8 @@
 ## Description
 
 * Increment or decrement the selected tag
-* [shiftview][].c is a better implementation of this, allowing you to rotate the selected tags
+* [shiftview](//lists.suckless.org/dev/1104/7590.html).c is a better
+  implementation of this, allowing you to rotate the selected tags
 
 ## Download
 
@@ -29,5 +30,3 @@
 ## Author
 
 * Rob Pilling - robpilling gmail com
-
-[shiftview]: //lists.suckless.org/dev/1104/7590.html

@@ -1,5 +1,5 @@
 Custom functions in config.h
-==============================================
+============================
 
 *by [Jesus Galan (yiyus)](mailto:yiyu dot jgl at gmail>) (vie ago 22 19:53:32 CEST 2008)*
 
@@ -224,11 +224,11 @@ This example is for people who prefer to control dwm with the mouse (for dwm 5.1
 	}
 
 Usage of the above configuration
-*-------------------------
+--------------------------------
 
 In case you want to try this configuration there are some differences with the default dwm config to be taken into account. Mouse actions will be explained later, keys have similar behaviour. There are other small changes, but the config.h file should be pretty straightforward.
 
-###Tagging
+### Tagging
 
 In the tag buttons:
 
@@ -237,7 +237,7 @@ In the tag buttons:
 * B2+B1: assign tag to the sel client.
 * B2+B3: toggle tag for the sel client, trying to toggle the last tag will result in assigning all tags.
 
-###Layouts
+### Layouts
 
 In the layout symbol:
 
@@ -245,7 +245,7 @@ In the layout symbol:
 * B3: toggle between monocle and floating layout.
 * Wheel: set master factor (B2 to go back to the default value).
 
-###Focusing/Moving/Resizing
+### Focusing/Moving/Resizing
 
 in the status bar, the root window, or the selected window (with Mod pressed)
 
@@ -254,6 +254,6 @@ in the status bar, the root window, or the selected window (with Mod pressed)
 * B3 to resize (the pointer will be wrapped to the bottom-right corner).
 * B2 to zoom or toggle floating status if zooming is not possible.
 
-###Closing windows
+### Closing windows
 
 * B3+B1 in the status message.

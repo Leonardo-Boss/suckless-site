@@ -3,8 +3,8 @@ pertag
 
 Description
 -----------
-More general approach to [taglayouts patch][1]. This patch keeps layout,
-mwfact, barpos and nmaster per tag.
+More general approach to [taglayouts patch](../historical/taglayouts).
+This patch keeps layout, mwfact, barpos and nmaster per tag.
 
 Download
 --------
@@ -12,18 +12,18 @@ Download
 * [dwm-pertag-6.1.diff](dwm-pertag-6.1.diff) (6.4K) (20151109)
 * [dwm-git-20120406-pertag.diff](dwm-git-20120406-pertag.diff) (5955b)
 * [dwm-pertag-6.0.diff](dwm-pertag-6.0.diff) (5955b) (20120406)
-* [dwm-r1578-pertag.diff][9] (nmaster included in mainline)
-* [dwm-pertag-5.8.2.diff][7]
-* [dwm-pertag-5.7.2.diff][6]
-* [dwm-pertag-5.6.1.diff][5]
-* [dwm-pertag-5.4.diff][4]
-* [dwm-pertag-5.2.diff][3]
-* [dwm-pertag-5.1.diff][2]
+* [dwm-r1578-pertag.diff](dwm-r1578-pertag.diff) (nmaster included in mainline)
+* [dwm-pertag-5.8.2.diff](dwm-pertag-5.8.2.diff)
+* [dwm-pertag-5.7.2.diff](dwm-pertag-5.7.2.diff)
+* [dwm-pertag-5.6.1.diff](dwm-pertag-5.6.1.diff)
+* [dwm-pertag-5.4.diff](dwm-pertag-5.4.diff)
+* [dwm-pertag-5.2.diff](dwm-pertag-5.2.diff)
+* [dwm-pertag-5.1.diff](dwm-pertag-5.1.diff)
 
 * Using pertag but with the same barpos
   * [dwm-6.1-pertag_without_bar.diff](dwm-6.1-pertag_without_bar.diff) (5.2K) (20151109)
   * [dwm-6.0-pertag_without_bar.diff](dwm-6.0-pertag_without_bar.diff) (5578b) (20140530)
-  * [dwm-5.8.2-pertag\_without\_bar.diff][8]
+  * [dwm-5.8.2-pertag\_without\_bar.diff](dwm-5.8.2-pertag_without_bar.diff)
 
 Authors
 -------
@@ -36,13 +36,3 @@ Authors
 * Updated by Ivan Tham - `pickfire at riseup dot net`
 * [Jochen Sprickerhof](mailto:project@firstname.lastname.de) (Updated to current git)
 * Lucas Gabriel Vuotto - <lvuotto92@gmail.com> (git ports)
-
-[1]: ../historical/taglayouts
-[2]: dwm-pertag-5.1.diff
-[3]: dwm-pertag-5.2.diff
-[4]: dwm-pertag-5.4.diff
-[5]: dwm-pertag-5.6.1.diff
-[6]: dwm-pertag-5.7.2.diff
-[7]: dwm-pertag-5.8.2.diff
-[8]: dwm-5.8.2-pertag_without_bar.diff
-[9]: dwm-r1578-pertag.diff

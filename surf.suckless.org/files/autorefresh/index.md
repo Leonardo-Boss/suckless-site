@@ -1,5 +1,5 @@
 autorefresh
-=========
+===========
 
 Simple script to auto refresh surf pages.
 Launch the script again to stop auto reloading (easy to use with dmenu)

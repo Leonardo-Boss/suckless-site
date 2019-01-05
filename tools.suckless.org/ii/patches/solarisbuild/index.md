@@ -1,5 +1,5 @@
 Solaris Build
-======
+=============
 
 Description
 -----------

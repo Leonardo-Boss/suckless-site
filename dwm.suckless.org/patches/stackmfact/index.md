@@ -1,5 +1,5 @@
-\stackmfact
-===========
+stackmfact
+==========
 
 Description
 -----------

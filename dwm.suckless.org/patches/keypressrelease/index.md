@@ -1,16 +1,17 @@
 keypressrelease
-===
+===============
 
 Description
----
+-----------
 
 This patch lets you specify whether a key binding should be executed at the _KeyPress_ or _KeyRelease_ event.  
-Executing on _KeyRelease_ fixes bugs such as `scrot -s` failing to execute from a key binding due to keys not being released in time[1][2].
+Executing on _KeyRelease_ fixes bugs such as `scrot -s` failing to execute from a key binding due to keys not being released in time [1][2].
 
 Note that the new parameter must be added to all non-standard key bindings manually after patching.
 
 Usage
----
+-----
+
 A working `scrot -s` key binding:
 
 	static const char *scrot[] = { "scrot", "-s", NULL };
@@ -22,12 +23,13 @@ Or to only display the bar while the toggle key is held down (requires that it i
 	{ KeyRelease, MODKEY,           XK_b,      togglebar,      {0} },
 
 Download
----
+--------
 
 * [dwm-keypressrelease-6.0.diff](dwm-keypressrelease-6.0.diff)
 
 Author
 ------
+
 * Niklas Høj - `<niklas at hoej dot me>`
 
 ---

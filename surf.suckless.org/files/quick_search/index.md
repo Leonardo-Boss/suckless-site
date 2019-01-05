@@ -1,5 +1,5 @@
 Quick searching with dmenu
-==================
+==========================
 
 Description
 -----------

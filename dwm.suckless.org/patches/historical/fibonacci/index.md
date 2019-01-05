@@ -18,7 +18,7 @@ arrangement can be seen below.
     +-----------+-----+-----+  +-----------+-----+-----+
              spiral                     dwindle
 
-[![dwm in spiral layout.][1]][2]
+[![dwm in spiral layout.](http://schot.a-eskwadraat.nl/images/dwm-spiral_small.png1)](http://schot.a-eskwadraat.nl/images/dwm-spiral.png)
 
 *Links2, sic, xterm & xclock in spiral layout.*
 
@@ -40,19 +40,14 @@ arrangement can be seen below.
 
 ## Download
 
-* [dwm-5.2-fibonacci.diff][5] (1.9k) (20081003)
-* [dwm-5.1-fibonacci.diff][3] (1.9k) (20080731)
+* [dwm-5.2-fibonacci.diff](http://www.aplusbi.com/dwm/dwm-5.2-fibonacci.diff) (1.9k) (20081003)
+* [dwm-5.1-fibonacci.diff](http://schot.a-eskwadraat.nl/files/dwm-5.1-fibonacci.diff) (1.9k) (20080731)
 
 ## Author
 
 * Jeroen Schot - <schot@a-eskwadraat.nl>
 
-Joe Thornber's spiral tiling for [Xmonad][4] formed the inspiration for this
-patch. Thanks to Jan Christoph Ebersbach for updating this patch for versions
+Joe Thornber's spiral tiling for [Xmonad](http://www.xmonad.org)
+formed the inspiration for this patch. Thanks to Jan Christoph
+Ebersbach for updating this patch for versions
 4.5 to 4.9.
-
-[1]: http://schot.a-eskwadraat.nl/images/dwm-spiral_small.png
-[2]: http://schot.a-eskwadraat.nl/images/dwm-spiral.png
-[3]: http://schot.a-eskwadraat.nl/files/dwm-5.1-fibonacci.diff
-[4]: http://www.xmonad.org
-[5]: http://www.aplusbi.com/dwm/dwm-5.2-fibonacci.diff

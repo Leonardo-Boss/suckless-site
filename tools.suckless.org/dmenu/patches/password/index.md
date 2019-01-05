@@ -1,5 +1,6 @@
-Password 
+Password
 ========
+
 By applying this patch, dmenu will not directly display 
 the keyboard input, but instead replace it with dots. 
 All data from stdin will be ignored.

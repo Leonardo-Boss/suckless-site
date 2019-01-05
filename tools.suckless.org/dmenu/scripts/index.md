@@ -1,5 +1,5 @@
 Scripts using dmenu
-=====
+===================
 
 dmenu's user, feel free to add your own scripts, or comment existents.
 

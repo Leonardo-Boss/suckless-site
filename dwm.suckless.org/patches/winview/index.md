@@ -13,7 +13,6 @@ selects the window (`Mod1-j`/`k` or using the mouse) and press `Mod1-o`. The key
 
 Recommend patches
 -----------------
-
 The [grid](../gridmode/) layout is well adapted to display many windows in a limited
 space. Using both [grid](../gridmode/) and [pertag](../pertag/) patches you will be able to
 select this layout for the all-window view while keeping your preferred
@@ -30,14 +29,13 @@ Configuration and Installation
 
 #### Using an existing customised configuration file
 
-<ul>
-<li>Apply the patch;
-<li>Add the following element in the keys array:
-</ul>
-	        { MODKEY, XK_o, winview, {0} },
-<ul>
-<li>Run make and make install.
-</ul>
+Apply the patch;
+Add the following element in the keys array:
+
+	{ MODKEY, XK_o, winview, {0} },
+
+Run make and make install.
+
 
 An example of how to insert this line can be found in the default config file
 template, config.def.h.

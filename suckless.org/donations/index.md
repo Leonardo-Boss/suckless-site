@@ -7,11 +7,11 @@ able to continue to write, support and host the high quality software that
 makes all of our lives easier.
 
 You can donate through [PayPal](https://paypal.com/) using our treasurer's address:
-finance@suckless.org
+<finance@suckless.org>
 
 Or direct through a bank transfer:
 
-	payee: suckless.org e.V.
+	Payee: suckless.org e.V.
 	IBAN: DE80 7002 2200 0020 1481 28
 	BIC: FDDODEMMXXX
 

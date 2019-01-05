@@ -11,13 +11,13 @@ Download
 * [dbrowse](https://github.com/clamiax/scripts/blob/master/src/dbrowse):
   little files navigator
 * [dmenu_pass](http://efe.kim/files/scripts/dmenu_pass): A simpler pass menu
-  implementation (ignores subfolders).
-* [dmenu_path_recent](https://github.com/ema/dotfiles/blob/master/bin/dmenu_path):
+  implementation.
+* [dmenu\_path\_recent](https://github.com/ema/dotfiles/blob/master/bin/dmenu_path):
   dmenu_path implementation listing recent commands first. Similar to
   [run-recent](run-recent), but it uses atime to find recently executed commands
   rather than a cache. As such, it also takes into account programs executed from
   the terminal.
-* [dmenu_run_history](dmenu_run_with_command_history):
+* [dmenu\_run\_history](dmenu_run_with_command_history):
   dmenu_run alternative with command history
 * [dmenu_websearch](http://efe.kim/files/scripts/dmenu_websearch):
   browser independent address bar

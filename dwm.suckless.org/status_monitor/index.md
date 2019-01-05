@@ -74,14 +74,14 @@ Helper Functions In The Shell
 * wifi status (interface wlp3s0): `cat /sys/class/net/wlp3s0/opestate`
 * CPU temperature: `sed 's/000$/°C/' /sys/class/thermal/thermal_zone0/temp`
 
-	Alternatively you can use `acpi -t` or `sensors` from lm-sensors
-	package. For older systems you can get the cpu temperature from
-	`/proc/acpi/thermal_zone/THM0/temperature`
+  Alternatively you can use `acpi -t` or `sensors` from lm-sensors
+  package. For older systems you can get the cpu temperature from
+  `/proc/acpi/thermal_zone/THM0/temperature`
 
 * Remaining battery: `cat /sys/class/power_supply/BAT0/capacity`
 
-	Alternatively you can use `acpi -b`. For older systems you can get
-	the battery capacity from `/proc/acpi/battery/BAT0/state`.
+  Alternatively you can use `acpi -b`. For older systems you can get
+  the battery capacity from `/proc/acpi/battery/BAT0/state`.
 
 Using shell scripts very well leads to big scripts, which pull in unneeded
 dependencies. One solution for this is to write everything in C, which is much

@@ -12,7 +12,7 @@
 #include <string.h>
 #include <unistd.h>
 
-#define CONVERTER "smu"
+#define CONVERTER "smu","-n"
 #define LEN(x) (sizeof(x) / sizeof *(x))
 #define TITLE_MAX 1024
 #define TITLE_DEFAULT "suckless.org"
@@ -290,7 +290,7 @@ print_content(char *domain, char *page)
 	if (stat_isfile(index)) {
 		fflush(stdout);
 		if (spawn_wait(argv) == -1)
-			die_perror("spawn: %s %s/%s/%s", CONVERTER, domain, page, index);
+			die_perror("spawn: %s/%s/%s", domain, page, index);
 	}
 	puts("</div>\n");
 }

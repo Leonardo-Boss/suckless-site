@@ -24,10 +24,9 @@ Saturday, 2016-09-24
 
 > Anselm opened the slcon 2016 talk session
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2016/slcon-2016-00-agarbe-welcome.png">
-        <source src="//dl.suckless.org/slcon/2016/slcon-2016-00-agarbe-welcome.webm" type="video/webm">
-        <a href="//dl.suckless.org/slcon/2016/slcon-2016-00-agarbe-welcome.webm">slcon-2016-00-agarbe-welcome.webm</a>
-</video>
+Video:
+
+[![slcon-2016-00-agarbe-welcome.webm](//dl.suckless.org/slcon/2016/slcon-2016-00-agarbe-welcome.png)](//dl.suckless.org/slcon/2016/slcon-2016-00-agarbe-welcome.webm)
 
 
 (10:10-10:40) libzahl -- simple bignum arithmetic, Mattias Andrée
@@ -37,10 +36,9 @@ Saturday, 2016-09-24
 > and still provide suckless solution? This talk discussed libzahl's
 > design and future.
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2016/slcon-2016-01-mandree-libzahl.png">
-        <source src="//dl.suckless.org/slcon/2016/slcon-2016-01-mandree-libzahl.webm" type="video/webm">
-        <a href="//dl.suckless.org/slcon/2016/slcon-2016-01-mandree-libzahl.webm">slcon-2016-01-mandree-libzahl.webm</a>
-</video>
+Video:
+
+[![slcon-2016-01-mandree-libzahl.webm](//dl.suckless.org/slcon/2016/slcon-2016-01-mandree-libzahl.png)](//dl.suckless.org/slcon/2016/slcon-2016-01-mandree-libzahl.webm)
 
 
 (10:50-11:15) XML damage control, Silvan Jegen ([slides](//dl.suckless.org/slcon/2016/slcon-2016-02-sjegen-xml_damage_control.pdf))
@@ -55,10 +53,9 @@ Saturday, 2016-09-24
 > most sensible XML libraries and discussed alternative parsing approaches
 > as well as their implementation.
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2016/slcon-2016-02-sjegen-xml_damage_control.png">
-        <source src="//dl.suckless.org/slcon/2016/slcon-2016-02-sjegen-xml_damage_control.webm" type="video/webm">
-        <a href="//dl.suckless.org/slcon/2016/slcon-2016-02-sjegen-xml_damage_control.webm">slcon-2016-02-sjegen-xml_damage_control.webm</a>
-</video>
+Video:
+
+[![slcon-2016-02-sjegen-xml_damage_control.webm](//dl.suckless.org/slcon/2016/slcon-2016-02-sjegen-xml_damage_control.png)](//dl.suckless.org/slcon/2016/slcon-2016-02-sjegen-xml_damage_control.webm)
 
 
 (11:20-11:35) Stali Pi B+, Manu Raster ([slides](//dl.suckless.org/slcon/2016/slcon-2016-03-mraster-stali_pi_bplus.pdf))
@@ -69,10 +66,9 @@ Saturday, 2016-09-24
 > build systems, evaluating portability concerns encountered along the way
 > on a scale from "depraved" over "naive" to "not too bad".
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2016/slcon-2016-03-mraster-stali_pi_bplus.png">
-        <source src="//dl.suckless.org/slcon/2016/slcon-2016-03-mraster-stali_pi_bplus.webm" type="video/webm">
-        <a href="//dl.suckless.org/slcon/2016/slcon-2016-03-mraster-stali_pi_bplus.webm">slcon-2016-03-mraster-stali_pi_bplus.webm</a>
-</video>
+Video:
+
+[![slcon-2016-03-mraster-stali_pi_bplus.webm](//dl.suckless.org/slcon/2016/slcon-2016-03-mraster-stali_pi_bplus.png)](//dl.suckless.org/slcon/2016/slcon-2016-03-mraster-stali_pi_bplus.webm)
 
 
 (11:40-12:05) farbfeld and color spaces, Laslo Hunhold
@@ -91,10 +87,9 @@ Saturday, 2016-09-24
 
 ![saturated RGB in sRGB and that of your monitor](cs-demo.png)
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2016/slcon-2016-04-lhunhold-farbfeld_and_color_spaces.png">
-        <source src="//dl.suckless.org/slcon/2016/slcon-2016-04-lhunhold-farbfeld_and_color_spaces.webm" type="video/webm">
-        <a href="//dl.suckless.org/slcon/2016/slcon-2016-04-lhunhold-farbfeld_and_color_spaces.webm">slcon-2016-04-lhunhold-farbfeld_and_color_spaces.webm</a>
-</video>
+Video:
+
+[![slcon-2016-04-lhunhold-farbfeld_and_color_spaces.webm](//dl.suckless.org/slcon/2016/slcon-2016-04-lhunhold-farbfeld_and_color_spaces.png)](//dl.suckless.org/slcon/2016/slcon-2016-04-lhunhold-farbfeld_and_color_spaces.webm)
 
 
 (12:05-13:25) Lunch break
@@ -112,10 +107,9 @@ Saturday, 2016-09-24
 > approach, that is also advocated by the "boring crypto" movement, and
 > demonstrated how it allows easier bootstrapping of new systems.
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2016/slcon-2016-05-rvargasc-scc_and_qbe_for_practical_compilation.png">
-        <source src="//dl.suckless.org/slcon/2016/slcon-2016-05-rvargasc-scc_and_qbe_for_practical_compilation.webm" type="video/webm">
-        <a href="//dl.suckless.org/slcon/2016/slcon-2016-05-rvargasc-scc_and_qbe_for_practical_compilation.webm">slcon-2016-05-rvargasc-scc_and_qbe_for_practical_compilation.webm</a>
-</video>
+Video:
+
+[![slcon-2016-05-rvargasc-scc_and_qbe_for_practical_compilation.webm](//dl.suckless.org/slcon/2016/slcon-2016-05-rvargasc-scc_and_qbe_for_practical_compilation.png)](//dl.suckless.org/slcon/2016/slcon-2016-05-rvargasc-scc_and_qbe_for_practical_compilation.webm)
 
 
 (14:10-15:15) The Myrddin Programming Language, Ori Bernstein ([slides](//dl.suckless.org/slcon/2016/slcon-2016-06-obernstein-the_myrddin_programming_language.pdf))
@@ -130,10 +124,9 @@ Saturday, 2016-09-24
 > examples were presented using a replacement for many standard libraries
 > on a number of popular (and less popular) platforms.
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2016/slcon-2016-06-obernstein-the_myrddin_programming_language.png">
-        <source src="//dl.suckless.org/slcon/2016/slcon-2016-06-obernstein-the_myrddin_programming_language.webm" type="video/webm">
-        <a href="//dl.suckless.org/slcon/2016/slcon-2016-06-obernstein-the_myrddin_programming_language.webm">slcon-2016-06-obernstein-the_myrddin_programming_language.webm</a>
-</video>
+Video:
+
+[![slcon-2016-06-obernstein-the_myrddin_programming_language.webm](//dl.suckless.org/slcon/2016/slcon-2016-06-obernstein-the_myrddin_programming_language.png)](//dl.suckless.org/slcon/2016/slcon-2016-06-obernstein-the_myrddin_programming_language.webm)
 
 
 (15:20-15:50) ii-like chatting improvements, Jan Klemkow
@@ -145,10 +138,9 @@ Saturday, 2016-09-24
 > [lchat](https://github.com/younix/lchat) and the idea of runit
 > integration.
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2016/slcon-2016-07-jklemkow-ii-like_chatting_improved.png">
-        <source src="//dl.suckless.org/slcon/2016/slcon-2016-07-jklemkow-ii-like_chatting_improved.webm" type="video/webm">
-        <a href="//dl.suckless.org/slcon/2016/slcon-2016-07-jklemkow-ii-like_chatting_improved.webm">slcon-2016-07-jklemkow-ii-like_chatting_improved.webm</a>
-</video>
+Video:
+
+[![slcon-2016-07-jklemkow-ii-like_chatting_improved.webm](//dl.suckless.org/slcon/2016/slcon-2016-07-jklemkow-ii-like_chatting_improved.png)](//dl.suckless.org/slcon/2016/slcon-2016-07-jklemkow-ii-like_chatting_improved.webm)
 
 
 (15:50-16:25) text engine, Francesc Hervada-Sala
@@ -163,10 +155,9 @@ Saturday, 2016-09-24
 > kernel and discussing improvements it can bring to modern data
 > processing and user experience.
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2016/slcon-2016-08-fhervadas-text_engine.png">
-        <source src="//dl.suckless.org/slcon/2016/slcon-2016-08-fhervadas-text_engine.webm" type="video/webm">
-        <a href="//dl.suckless.org/slcon/2016/slcon-2016-08-fhervadas-text_engine.webm">slcon-2016-08-fhervadas-text_engine.webm</a>
-</video>
+Video:
+
+[![slcon-2016-08-fhervadas-text_engine.webm](//dl.suckless.org/slcon/2016/slcon-2016-08-fhervadas-text_engine.png)](//dl.suckless.org/slcon/2016/slcon-2016-08-fhervadas-text_engine.webm)
 
 
 (16:25-16:35) Coffee break
@@ -187,10 +178,9 @@ Saturday, 2016-09-24
 > pipe interchange is discussed and claimed that the farbfeld image
 > format is not suitable for this task and general image processing.
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2016/slcon-2016-09-emeinhardtl-suckless_image_processing.png">
-        <source src="//dl.suckless.org/slcon/2016/slcon-2016-09-emeinhardtl-suckless_image_processing.webm" type="video/webm">
-        <a href="//dl.suckless.org/slcon/2016/slcon-2016-09-emeinhardtl-suckless_image_processing.webm">slcon-2016-09-emeinhardtl-suckless_image_processing.webm</a>
-</video>
+Video:
+
+[![slcon-2016-09-emeinhardtl-suckless_image_processing.webm](//dl.suckless.org/slcon/2016/slcon-2016-09-emeinhardtl-suckless_image_processing.png)](//dl.suckless.org/slcon/2016/slcon-2016-09-emeinhardtl-suckless_image_processing.webm)
 
 
 (17:20-17:45) shared farbfeld, Jan Klemkow
@@ -203,18 +193,16 @@ Saturday, 2016-09-24
 > implementation [shmff](https://github.com/younix/shmff) and benchmarks
 > supporting this idea.
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2016/slcon-2016-10-jklemkow-shared_farbfeld.png">
-        <source src="//dl.suckless.org/slcon/2016/slcon-2016-10-jklemkow-shared_farbfeld.webm" type="video/webm">
-        <a href="//dl.suckless.org/slcon/2016/slcon-2016-10-jklemkow-shared_farbfeld.webm">slcon-2016-10-jklemkow-shared_farbfeld.webm</a>
-</video>
+Video:
+
+[![slcon-2016-10-jklemkow-shared_farbfeld.webm](//dl.suckless.org/slcon/2016/slcon-2016-10-jklemkow-shared_farbfeld.png)](//dl.suckless.org/slcon/2016/slcon-2016-10-jklemkow-shared_farbfeld.webm)
 
 
 (17:45-17:50) Display servers, Mattias Andrée
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2016/slcon-2016-11-mandree-display_servers.png">
-        <source src="//dl.suckless.org/slcon/2016/slcon-2016-11-mandree-display_servers.webm" type="video/webm">
-        <a href="//dl.suckless.org/slcon/2016/slcon-2016-11-mandree-display_servers.webm">slcon-2016-11-mandree-display_servers.webm</a>
-</video>
+Video:
+
+[![slcon-2016-11-mandree-display_servers.webm](//dl.suckless.org/slcon/2016/slcon-2016-11-mandree-display_servers.png)](//dl.suckless.org/slcon/2016/slcon-2016-11-mandree-display_servers.webm)
 
 
 (17:50-18:30) stali learnings and beehive observation, Anselm R Garbe
@@ -224,10 +212,9 @@ Saturday, 2016-09-24
 > idea in particular. As a proof of concept, the presenter demonstrated
 > stali as a platform for observing his beehives.
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2016/slcon-2016-12-agarbe-stali_learnings_and_beehive_observation.png">
-        <source src="//dl.suckless.org/slcon/2016/slcon-2016-12-agarbe-stali_learnings_and_beehive_observation.webm" type="video/webm">
-        <a href="//dl.suckless.org/slcon/2016/slcon-2016-12-agarbe-stali_learnings_and_beehive_observation.webm">slcon-2016-12-agarbe-stali_learnings_and_beehive_observation.webm</a>
-</video>
+Video:
+
+[![slcon-2016-12-agarbe-stali_learnings_and_beehive_observation.webm](//dl.suckless.org/slcon/2016/slcon-2016-12-agarbe-stali_learnings_and_beehive_observation.png)](//dl.suckless.org/slcon/2016/slcon-2016-12-agarbe-stali_learnings_and_beehive_observation.webm)
 
 
 Official slcon 2016 talk session end.
@@ -239,10 +226,9 @@ Official slcon 2016 talk session end.
 > Anselm R Garbe and Laslo Hunhold, the report of the treasurer,
 > Jan Klemkow, and the discussion of topics raised by members.
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2016/slcon-2016-13-all-vote.png">
-        <source src="//dl.suckless.org/slcon/2016/slcon-2016-13-all-vote.webm" type="video/webm">
-        <a href="//dl.suckless.org/slcon/2016/slcon-2016-13-all-vote.webm">slcon-2016-13-all-vote.webm</a>
-</video>
+Video:
+
+[![slcon-2016-13-all-vote.webm](//dl.suckless.org/slcon/2016/slcon-2016-13-all-vote.png)](//dl.suckless.org/slcon/2016/slcon-2016-13-all-vote.webm)
 
 
 (19:30-) Social event in Frankfurt am Main City

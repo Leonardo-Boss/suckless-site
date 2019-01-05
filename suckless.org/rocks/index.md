@@ -136,7 +136,7 @@ This covers most console-based programs and programs from [plan9port][].
 
 ### Mail clients
 
-* [Mail][plan9port] - A mail client for [acme][]. Included with plan9port.
+* plan9port/Mail - A mail client for acme. Included with plan9port.
 * [fdm](https://github.com/nicm/fdm) - fetch and deliver mail.
 * [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
 * [isync](http://isync.sourceforge.net/) - MDA that can work better for IMAP, also known as mbsync.
@@ -172,7 +172,7 @@ This covers most console-based programs and programs from [plan9port][].
 
 ### Text editors
 
-* [acme][] - Rob Pike's framing text editor for Plan 9. Included in [plan9port][].
+* plan9port/acme - Rob Pike's framing text editor for Plan 9. Included in plan9port.
 * [ired](http://www.radare.org/r/) - A minimalist hexadecimal editor and bindiffer for p9, w32 and *nix.
 * [mg](https://homepage.boetes.org/software/mg/) - A portable version of mg maintained by the OpenBSD team.
 * [nano](https://www.nano-editor.org/) - A pico clone - this is small simple code and easy to use.
@@ -229,8 +229,8 @@ This covers most console-based programs and programs from [plan9port][].
 * [grabc](http://www.muquit.com/muquit/software/grabc/grabc.html) - Grab the
   color of some pixel in X11.
 
-[plan9port]: https://9fans.github.io/plan9port/
-[acme]: http://acme.cat-v.org
+[plan9port]: <https://9fans.github.io/plan9port/>
+[acme]: <http://acme.cat-v.org>
 
 Daemons
 -------

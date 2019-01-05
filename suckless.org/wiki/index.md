@@ -11,7 +11,7 @@ or
 
 Then edit the wiki as you like. The markdown interpreter that is currently
 used on the suckless.org werc instance is
-[discount](http://www.pell.portland.or.us/~orc/Code/discount/).
+[smu](https://github.com/Gottox/smu).
 
 For adding new files, after you created them, use:
 

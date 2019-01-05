@@ -1,18 +1,18 @@
 Change Mod1 key to the Windows key in config.h
 ==============================================
 
-*blame [Filippo Erik Negroni](mailto:f dot e dot negroni at googlemail dot com>) about this document*
-
-dwm's documentation refers to Mod1 as the modifier key that you must press to issue commands to it.
-On most keyboards, Mod1 is mapped to the left Alt key.
-Most new keyboards now come equipped with the *Windows* key.
-Since no known UNIX/X applications are known to use the Windows key, it is an excellent alternative mapping to issue commands to dwm.
+dwm's documentation refers to Mod1 as the modifier key that you must press to
+issue commands to it.  On most keyboards, Mod1 is mapped to the left Alt key.
+Most new keyboards now come equipped with the *Windows* key.  Since no known
+UNIX/X applications are known to use the Windows key, it is an excellent
+alternative mapping to issue commands to dwm.
 
 In config.h, under the comment `/* key definitions */`, you can find the line
 
 	#define MODKEY Mod1Mask
 
-In order to change dwm's modifier key to the Windows key, you can simply change its value definition to Mod4Mask.
+In order to change dwm's modifier key to the Windows key, you can simply change
+its value definition to Mod4Mask.
 
 	#define MODKEY Mod4Mask
 
@@ -51,4 +51,6 @@ It will show something like:
 	mod4        Super_L (0x7f),  Hyper_L (0x80)
 	mod5        Mode_switch (0x5d),  ISO_Level3_Shift (0x7c)
 
-Using `xev`, a utility to show X events, such as key presses, we can quickly identify which keysym (keycode) combination a particular key has, and associate that to a modifier using `xmodmap`.
+Using `xev`, a utility to show X events, such as key presses, we can quickly
+identify which keysym (keycode) combination a particular key has, and associate
+that to a modifier using `xmodmap`.

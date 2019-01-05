@@ -23,14 +23,14 @@ char *html_header =
 	"<html>\n"
 	"<head>\n"
 	"\t<meta charset=\"utf-8\"/>\n"
-	"\t<title>%s | suckless.org software that sucks less</title>\n"
+	"\t<title>%1$s | suckless.org software that sucks less</title>\n"
 	"\t<link rel=\"stylesheet\" type=\"text/css\" href=\"//suckless.org/pub/style.css\"/>\n"
 	"</head>\n"
 	"\n"
 	"<div id=\"header\">\n"
 	"\t<a href=\"//suckless.org/\"><img src=\"//suckless.org/logo.svg\"/></a>\n"
 	"\t<a id=\"headerLink\" href=\"//suckless.org/\">suckless.org</a>\n"
-	"\t<span id=\"headerSubtitle\">%s</span>\n"
+	"\t<span id=\"headerSubtitle\">%1$s</span>\n"
 	"</div>\n";
 
 char *html_nav_bar =
@@ -184,10 +184,8 @@ print_header(void)
 {
 	char title[TITLE_MAX];
 
-	if (oneline(title, sizeof title, ".title"))
-		printf(html_header, title, title);
-	else
-		printf(html_header, TITLE_DEFAULT, TITLE_DEFAULT);
+	printf(html_header, oneline(title, sizeof(title), ".title") ?
+	       title : TITLE_DEFAULT);
 }
 
 void

@@ -13,10 +13,9 @@ Talks
 
 > Anselm opened slcon2 and gave an overview on the final conference schedule.
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2015/slcon-2015-00-arg-welcome.png">
-        <source src="//dl.suckless.org/slcon/2015/slcon-2015-00-arg-welcome.webm" type="video/webm">
-	<a href="//dl.suckless.org/slcon/2015/slcon-2015-00-arg-welcome.webm">slcon-2015-00-arg-welcome.webm</a>
-</video>
+Video:
+
+[![slcon-2015-00-arg-welcome.webm](//dl.suckless.org/slcon/2015/slcon-2015-00-arg-welcome.png)](//dl.suckless.org/slcon/2015/slcon-2015-00-arg-welcome.webm)
 
 
 (11:15-12:00) *suckless core - A suckless userspace foundation*, Laslo Hunhold
@@ -27,28 +26,25 @@ Talks
 > suckless design principles and consistency.
 > Current issues and future plans were discussed in the last part.
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2015/slcon-2015-01-frign-suckless_core.png">
-        <source src="//dl.suckless.org/slcon/2015/slcon-2015-01-frign-suckless_core.webm" type="video/webm">
-	<a href="//dl.suckless.org/slcon/2015/slcon-2015-01-frign-suckless_core.webm">slcon-2015-01-frign-suckless_core.webm</a>
-</video>
+Video:
+
+[![slcon-2015-01-frign-suckless_core.webm](//dl.suckless.org/slcon/2015/slcon-2015-01-frign-suckless_core.png)](//dl.suckless.org/slcon/2015/slcon-2015-01-frign-suckless_core.webm)
 
 
 (12.00-12:45) *stali 2015*, Anselm R Garbe
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2015/slcon-2015-02-arg-stali_2015.png">
-        <source src="//dl.suckless.org/slcon/2015/slcon-2015-02-arg-stali_2015.webm" type="video/webm">
-	<a href="//dl.suckless.org/slcon/2015/slcon-2015-02-arg-stali_2015.webm">slcon-2015-02-arg-stali_2015.webm</a>
-</video>
+Video:
+
+[![slcon-2015-02-arg-stali_2015.webm](//dl.suckless.org/slcon/2015/slcon-2015-02-arg-stali_2015.png)](//dl.suckless.org/slcon/2015/slcon-2015-02-arg-stali_2015.webm)
 
 
 (12:45-13:45) Lunch
 
 (13:45-14:30) *new suckless tools*, Anselm R Garbe
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2015/slcon-2015-03-arg-new_suckless_tools.png">
-        <source src="//dl.suckless.org/slcon/2015/slcon-2015-03-arg-new_suckless_tools.webm" type="video/webm">
-	<a href="//dl.suckless.org/slcon/2015/slcon-2015-03-arg-new_suckless_tools.webm">slcon-2015-03-arg-new_suckless_tools.webm</a>
-</video>
+Video:
+
+[![slcon-2015-03-arg-new_suckless_tools.webm](//dl.suckless.org/slcon/2015/slcon-2015-03-arg-new_suckless_tools.png)](//dl.suckless.org/slcon/2015/slcon-2015-03-arg-new_suckless_tools.webm)
 
 
 (14:30-15:30) *Farbfeld - Rethinking image-formats*, Laslo Hunhold
@@ -60,10 +56,9 @@ Talks
 > compression was discussed, evaluating the advantages over other image
 > formats using different kinds of images.
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2015/slcon-2015-04-frign-farbfeld.png">
-        <source src="//dl.suckless.org/slcon/2015/slcon-2015-04-frign-farbfeld.webm" type="video/webm">
-	<a href="//dl.suckless.org/slcon/2015/slcon-2015-04-frign-farbfeld.webm">slcon-2015-04-frign-farbfeld.webm</a>
-</video>
+Video:
+
+[![slcon-2015-04-frign-farbfeld.webm](//dl.suckless.org/slcon/2015/slcon-2015-04-frign-farbfeld.png)](//dl.suckless.org/slcon/2015/slcon-2015-04-frign-farbfeld.webm)
 
 
 (15:30-16:00) Coffee/Tea break
@@ -73,10 +68,9 @@ Talks
 > Anselm presented the idea of suckless.org e.V.[<sup>1</sup>][1] and asked
 > attendees to join.
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2015/slcon-2015-05-all-suckless_ev.png">
-        <source src="//dl.suckless.org/slcon/2015/slcon-2015-05-all-suckless_ev.webm" type="video/webm">
-	<a href="//dl.suckless.org/slcon/2015/slcon-2015-05-all-suckless_ev.webm">slcon-2015-05-all-suckless_ev.webm</a>
-</video>
+Video:
+
+[![slcon-2015-05-all-suckless_ev.webm](//dl.suckless.org/slcon/2015/slcon-2015-05-all-suckless_ev.png)](//dl.suckless.org/slcon/2015/slcon-2015-05-all-suckless_ev.webm)
 
 
 (16:30-17:30) *suckless.org foundation*, All
@@ -94,10 +88,9 @@ Talks
 
 (10:30-10:45) *Opening of day 2*, Anselm R Garbe
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2015/slcon-2015-06-arg-opening_of_day_2.png">
-        <source src="//dl.suckless.org/slcon/2015/slcon-2015-06-arg-opening_of_day_2.webm" type="video/webm">
-	<a href="//dl.suckless.org/slcon/2015/slcon-2015-06-arg-opening_of_day_2.webm">slcon-2015-06-arg-opening_of_day_2.webm</a>
-</video>
+Video:
+
+[![slcon-2015-06-arg-opening_of_day_2.webm](//dl.suckless.org/slcon/2015/slcon-2015-06-arg-opening_of_day_2.png)](//dl.suckless.org/slcon/2015/slcon-2015-06-arg-opening_of_day_2.webm)
 
 
 (10:45-11:30) *Simple Jabber - Divide And Conquer XMPP*, Jan Klemkow ([paper](jan_on_sj.pdf))
@@ -109,10 +102,9 @@ Talks
 > Its extensibility is the main reason that an implementation in a single
 > program is nearly impossible. This talk described an approach to master this problem.
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2015/slcon-2015-07-klenkow-simple_jabber.png">
-        <source src="//dl.suckless.org/slcon/2015/slcon-2015-07-klenkow-simple_jabber.webm" type="video/webm">
-	<a href="//dl.suckless.org/slcon/2015/slcon-2015-07-klenkow-simple_jabber.webm">slcon-2015-07-klenkow-simple_jabber.webm</a>
-</video>
+Video:
+
+[![slcon-2015-07-klenkow-simple_jabber.webm](//dl.suckless.org/slcon/2015/slcon-2015-07-klenkow-simple_jabber.png)](//dl.suckless.org/slcon/2015/slcon-2015-07-klenkow-simple_jabber.webm)
 
 
 (11:30-12:00) *Finite state document processing*, Manu Raster
@@ -122,10 +114,10 @@ Talks
 > known as 'save as...'. This talk presented a less
 > wasteful method based on finite-state transducers.
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2015/slcon-2015-08-raster-finite_state_document_processing.png">
-        <source src="//dl.suckless.org/slcon/2015/slcon-2015-08-raster-finite_state_document_processing.webm" type="video/webm">
-	<a href="//dl.suckless.org/slcon/2015/slcon-2015-08-raster-finite_state_document_processing.webm">slcon-2015-08-raster-finite_state_document_processing.webm</a>
-</video>
+Video:
+
+[![slcon-2015-08-raster-finite_state_document_processing.webm](//dl.suckless.org/slcon/2015/slcon-2015-08-raster-finite_state_document_processing.png)](//dl.suckless.org/slcon/2015/slcon-2015-08-raster-finite_state_document_processing.webm)
+
 
 (12:00-13:00) Lunch
 
@@ -144,10 +136,9 @@ Talks
 > and a midway drawn between total localization and minimalism,
 > presenting possible solutions.
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2015/slcon-2015-09-frign-utf-8_everywhere.png">
-        <source src="//dl.suckless.org/slcon/2015/slcon-2015-09-frign-utf-8_everywhere.webm" type="video/webm">
-	<a href="//dl.suckless.org/slcon/2015/slcon-2015-09-frign-utf-8_everywhere.webm">slcon-2015-09-frign-utf-8_everywhere.webm</a>
-</video>
+Video:
+
+[![slcon-2015-09-frign-utf-8_everywhere.webm](//dl.suckless.org/slcon/2015/slcon-2015-09-frign-utf-8_everywhere.png)](//dl.suckless.org/slcon/2015/slcon-2015-09-frign-utf-8_everywhere.webm)
 
 
 (14:15-14:45) Coffee/Tea break
@@ -157,10 +148,9 @@ Talks
 > Anselm formally closed the conference and it was decided upon the location
 > for the upcoming slcon3.
 
-<video width="600" height="338" controls="" style="display:block;margin:0 auto" poster="//dl.suckless.org/slcon/2015/slcon-2015-10-all-vote.png">
-        <source src="//dl.suckless.org/slcon/2015/slcon-2015-10-all-vote.webm" type="video/webm">
-	<a href="//dl.suckless.org/slcon/2015/slcon-2015-10-all-vote.webm">slcon-2015-10-all-vote.webm</a>
-</video>
+Video:
+
+[![slcon-2015-10-all-vote.webm](//dl.suckless.org/slcon/2015/slcon-2015-10-all-vote.png)](//dl.suckless.org/slcon/2015/slcon-2015-10-all-vote.webm)
 
 
 (15:00-17:00) Hacking

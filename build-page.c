@@ -13,7 +13,7 @@
 #include <unistd.h>
 
 #define CONVERTER "smu","-n"
-#define LEN(x) (sizeof(x) / sizeof *(x))
+#define LEN(x) (sizeof(x) / sizeof(x[0]))
 #define TITLE_MAX 1024
 #define TITLE_DEFAULT "suckless.org"
 #define DIR_MAX 1024
@@ -85,6 +85,17 @@ die(char *fmt, ...)
 	va_end(ap);
 	fputc('\n', stderr);
 	exit(1);
+}
+
+char *
+xstrdup(const char *s)
+{
+	char *p = strdup(s);
+
+	if (!p)
+		die_perror("strdup");
+
+	return p;
 }
 
 int
@@ -226,12 +237,12 @@ menu_panel(char *domain, char *page, char *this, int depth)
 
 	d_len = 0;
 	while (d_len + 1 < LEN(d_list) && (de = readdir(dp)))
-		d_list[d_len++] = de->d_name;
+		d_list[d_len++] = xstrdup(de->d_name);
 	d_list[d_len] = NULL;
 
 	qsort(d_list, d_len, sizeof *d_list, qsort_strcmp);
 
-	for (d = d_list; *d != NULL; ++d) {
+	for (d = d_list; *d != NULL; free(*d++)) {
 		if (**d == '.')
 			continue;
 		subdir(newdir, sizeof newdir, this, *d);

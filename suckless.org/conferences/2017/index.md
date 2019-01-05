@@ -1,5 +1,4 @@
-suckless hackathon 2017, Würzburg, Germany
-==========================================
+# suckless hackathon 2017, Würzburg, Germany
 
 slcon hackathon 2017 was held in Würzburg on 2017-09-(01-03).
 
@@ -12,8 +11,9 @@ We also introduced the annual suckless torchlight hike for the first time.
 
 [![hike 2017 photo](hike2017-s.png)](hike2017.png)
 
-Previous conferences
-====================
+
+## Previous conferences
+
 * [slcon 2016](../2016/)
 * [slcon 2015](../2015/)
 * [slcon 2013](../2013/)

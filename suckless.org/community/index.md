@@ -4,10 +4,16 @@ Community
 Mailing lists
 -------------
 
-* `dev@suckless.org` - for dwm/dmenu/st/... users, development discussion, bug reports and general discussion
-* `hackers@suckless.org` - for patches and patch discussion. Commit messages and diffs from all suckless projects are posted here and can be replied to. [See patch/hacking guidelines here](//suckless.org/hacking).
-* `news@suckless.org` - for release and other news. Please send release news to dev@ too.
-* `wiki@suckless.org` - for discussion about the wiki, also automatic wiki commit messages are posted here.
+* `dev@suckless.org` - for dwm/dmenu/st/... users, development discussion, bug
+  reports and general discussion
+* `hackers@suckless.org` - for patches and patch discussion. Commit messages
+  and diffs from all suckless projects are posted here and can be replied to.
+  [See patch/hacking guidelines here](//suckless.org/hacking).
+* `news@suckless.org` - for release and other news. Please send release news to
+  dev@ too.
+* `wiki@suckless.org` - for discussion about the wiki, also automatic wiki
+  commit messages are posted here.
+
 
 ### Best practice
 
@@ -100,30 +106,24 @@ mailing list so you can see eventual comments on your patches.
 Mailing lists web archive
 -------------------------
 
-An archive of all mails posted to the mailing lists is accessible via [lists.suckless.org](//lists.suckless.org/)
-
-* [dev mailing list archive][devarchive] [gmane.comp.misc.suckless](http://dir.gmane.org/gmane.comp.misc.suckless)
-* [hackers mailing list archive][hackersarchive]
-* [news mailing list archive][newsarchive]
-* [wiki mailing list archive][wikiarchive]
-
-Old
----
-* [dwm mailing list archive][dwmarchive]
-* [wmii mailing list archive][wmiiarchive]
+An archive of all mails posted to the mailing lists is accessible via
+[lists.suckless.org](//lists.suckless.org/).
 
 Related lists
 -------------
 
-* [9fans](http://plan9.bell-labs.com/wiki/plan9/mailing_lists/#9fans) - fans of the [Plan 9 from Bell Labs](http://9fans.net) operating system
-* [inferno-list](http://plan9.bell-labs.com/wiki/plan9/mailing_lists/#INFERNO-LIST) - Inferno users and developers
+* [9fans](http://plan9.bell-labs.com/wiki/plan9/mailing_lists/#9fans) - fans of
+  the [Plan 9 from Bell Labs](http://9fans.net) operating system
+* [inferno-list](http://plan9.bell-labs.com/wiki/plan9/mailing_lists/#INFERNO-LIST)
+  - Inferno users and developers
 * [9front](http://9front.org/) - 9front users and hackers
 * [cat-v](http://cat-v.org/) - cat-v.org trolling
 
 IRC
 ---
 
-The channels are in the [OFTC](http://www.oftc.net) IRC network: [irc.oftc.net](irc://irc.oftc.net/)
+The channels are in the [OFTC](http://www.oftc.net) IRC network:
+[irc.oftc.net](irc://irc.oftc.net/)
 
 Official channel of suckless.org projects:
 
@@ -134,12 +134,3 @@ Other popular channels:
 * [#cat-v](irc://irc.freenode.net/#cat-v)
 * [#plan9](irc://irc.freenode.net/#plan9)
 * [#2f30](irc://irc.2f30.org/#2f30)
-
-
-[devarchive]: //lists.suckless.org/dev/
-[dwmarchive]: //lists.suckless.org/dwm/
-[hackersarchive]: //lists.suckless.org/hackers/
-[newsarchive]: //lists.suckless.org/news/
-[wikiarchive]: //lists.suckless.org/wiki/
-[wmiiarchive]: //lists.suckless.org/wmii/
-

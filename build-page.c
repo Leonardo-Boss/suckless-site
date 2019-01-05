@@ -135,20 +135,24 @@ oneline(char *buf, size_t bufsiz, char const *path)
 	char *r;
 	FILE *fp;
 
+	if (!buf || bufsiz == 0)
+		return 0;
 	if (!(fp = fopen(path, "r"))) {
 		perror(path);
-		return -1;
+		return 0;
 	}
-	r = fgets(buf, bufsiz, fp);
+
+	fgets(buf, bufsiz, fp);
 	if (ferror(fp))
 		die_perror("fgets: %s", path);
 
 	fclose(fp);
 
-	if (r)
-		buf[strcspn(buf, "\n")] = '\0';
+	for (r = buf; *r && *r != '\n'; ++r)
+		;
+	*r = '\0';
 
-	return !!r;
+	return 1;
 }
 
 void
@@ -180,10 +184,10 @@ print_header(void)
 {
 	char title[TITLE_MAX];
 
-	if (oneline(title, sizeof title, ".title") <= 0)
-		printf(html_header, TITLE_DEFAULT, TITLE_DEFAULT);
-	else
+	if (oneline(title, sizeof title, ".title"))
 		printf(html_header, title, title);
+	else
+		printf(html_header, TITLE_DEFAULT, TITLE_DEFAULT);
 }
 
 void

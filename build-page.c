@@ -244,7 +244,7 @@ menu_panel(char *domain, char *page, char *this, int depth)
 		fputs("<li><a", stdout);
 		if (page && !strncmp(newdir, page, strlen(newdir)))
 			fputs(" class=\"thisPage\"", stdout);
-		printf(" href=\"//%s/%s\">", domain, newdir);
+		printf(" href=\"//%s/%s/\">", domain, newdir);
 		print_name(*d);
 		fputs("/</a>", stdout);
 		if (page && !strncmp(newdir, page, strlen(newdir))) {

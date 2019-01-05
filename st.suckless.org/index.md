@@ -8,9 +8,8 @@ Motivation
 ----------
 xterm is bloated and unmaintainable. Here's an excerpt from the README:
 
-					Abandon All Hope, Ye Who Enter Here
-
-
+	Abandon All Hope, Ye Who Enter Here
+	
 	This is undoubtedly the most ugly program in the distribution.	It was one of
 	the first "serious" programs ported, and still has a lot of historical baggage.
 	Ideally, there would be a general tty widget and then vt102 and tek4014
@@ -29,7 +28,7 @@ Terminal emulation doesn't need to be so complex.
 
 Status
 ------
-Things that have already been implemented are
+Things that have already been implemented are:
 
 * most VT10X escape sequences
 * serial line support

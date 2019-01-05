@@ -227,25 +227,25 @@ menu_panel(char *domain, char *page, char *this, int depth)
 	DIR *dp;
 	struct dirent *de;
 	char newdir[PATH_MAX];
-	char *d_list[DIR_MAX];
-	char **d;
-	size_t d_len;
+	char *d_list[DIR_MAX], *d;
+	size_t d_len, l;
 	int i;
 
 	if ((dp = opendir(this ? this : ".")) == NULL)
 		die_perror("opendir: %s", this ? this : ".");
 
 	d_len = 0;
-	while (d_len + 1 < LEN(d_list) && (de = readdir(dp)))
-		d_list[d_len++] = xstrdup(de->d_name);
-	d_list[d_len] = NULL;
+	while(d_len < LEN(d_list) && (de = readdir(dp)))
+	     d_list[d_len++] = xstrdup(de->d_name);
+	closedir(dp);
 
 	qsort(d_list, d_len, sizeof *d_list, qsort_strcmp);
 
-	for (d = d_list; *d != NULL; free(*d++)) {
-		if (**d == '.')
+	for (l = 0; l < d_len; free(d_list[l++])) {
+		d = d_list[l];
+		if (*d == '.')
 			continue;
-		subdir(newdir, sizeof newdir, this, *d);
+		subdir(newdir, sizeof(newdir), this, d);
 		if (!stat_isdir(newdir))
 			continue;
 
@@ -255,7 +255,7 @@ menu_panel(char *domain, char *page, char *this, int depth)
 		if (page && !strncmp(newdir, page, strlen(newdir)))
 			fputs(" class=\"thisPage\"", stdout);
 		printf(" href=\"//%s/%s/\">", domain, newdir);
-		print_name(*d);
+		print_name(d);
 		fputs("/</a>", stdout);
 		if (page && !strncmp(newdir, page, strlen(newdir))) {
 			fputs("\n", stdout);
@@ -272,7 +272,6 @@ menu_panel(char *domain, char *page, char *this, int depth)
 		}
 		puts("</li>");
 	}
-	closedir(dp);
 }
 
 void

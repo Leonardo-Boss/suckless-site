@@ -1,7 +1,7 @@
-# aria2c 
+# aria2c
 
 To use aria2 instead of curl as default download manager, just replace
-the DOWNLOAD function like this in config.h: 
+the DOWNLOAD function like this in config.h:
 
 	/* DOWNLOAD(URI, referer) */
 	#define DOWNLOAD(d, r) { \

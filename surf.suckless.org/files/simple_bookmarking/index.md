@@ -6,19 +6,19 @@ Description
 
 change this script to fit your needs.
 
-bookmarkurl :
+bookmarkurl:
 
 	#!/bin/sh
 	file=~/.surf/bookmarks
 	url=`xprop -id $1 | grep URI | awk '{print $3}' | sed 's/\"//g'`
 	title=`xprop -id $1 | grep WM_ICON_NAME\(STRING\) | cut -c 40- | sed 's/.$//g`
 	echo $url $title | dmenu -p 'Add Bookmark' -b -w $1 >> $file
- 
+
 to add tags, when dmenu displays, simply tab, space and write your tag.
   
-  
 
-loadbookmark :
+loadbookmark:
+
 (needs a vertical patch on dmenu for convenience, choose the one you like,
 Meillo's is the lightweight, Fresch's is the full featured)
 
@@ -28,8 +28,8 @@ Meillo's is the lightweight, Fresch's is the full featured)
 To make dmenu display bookmark with a tag only, add a grep part in the
 first line and launch this script with the tag as argument.
 
-bookmarkurl and loadbookmark can be launched with the following in config.h above the  
-"static Key keys[] = {" line :
+bookmarkurl and loadbookmark can be launched with the following in config.h above the
+"static Key keys[] = {" line:
 
 	#define ADDBMK { \
 		.v = (char *[]){ "/bin/sh", "-c", \
@@ -50,7 +50,6 @@ and
 
 in the "static Key keys[] = {" part.
 
- 
 Author
 ------
 - Julien Steinhauser <[julien.steinhauser@orange.fr](mailto:julien.steinhauser@orange.fr)>

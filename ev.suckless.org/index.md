@@ -9,7 +9,7 @@ legal entity. Please refer to the [statutes](/satzung) (German only) for further
 suckless.org e.V. organizes a yearly membership meeting, which will regularly
 take place during the suckless conference or hackathon.
 
-Board 
+Board
 -----
 The board of suckless.org e.V. was elected at the general assembly meeting on
 Sep 1 2017 in Würzburg, Germany. It consists of:

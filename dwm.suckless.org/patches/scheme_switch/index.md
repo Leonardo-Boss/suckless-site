@@ -3,7 +3,6 @@ schemeSwitch
 
 Description
 -----------
-
 [Solarized](http://ethanschoonover.com/solarized) is a color scheme by Ethan
 Schoonover which exists in a dark and a light variant.
 
@@ -19,13 +18,10 @@ shemeToggle() will do nothing, but one can cycle to the dark scheme (or the ligh
 and then toggle between light and dark. If there where colors defined after the original
 scheme, then schemeToggle() would toggle between original and the consecutive.
 
-
 Download
 --------
 * [dwm-scheme_switch-20170804-ceac8c9.diff](dwm-scheme_switch-20170804-ceac8c9.diff)
 
-
 Authors
 -------
-
-* Aaron Strahlberger - <aaron.strahlberger@posteo.de> 
+* Aaron Strahlberger - <aaron.strahlberger@posteo.de>

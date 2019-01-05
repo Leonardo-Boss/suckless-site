@@ -30,7 +30,7 @@ slstatus - suckless status
 
 A somewhat complex status monitor which includes all batteries.
 
-You can read more [on the project page](https://tools.suckless.org/slstatus/).
+You can read more [on the project page](//tools.suckless.org/slstatus/).
 
 dwmstatus
 ---------

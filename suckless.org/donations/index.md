@@ -6,7 +6,8 @@ a contribution, no matter the size, it will go towards ensuring that we are
 able to continue to write, support and host the high quality software that
 makes all of our lives easier.
 
-You can donate through [PayPal](https://paypal.com/) using our treasurer's address: finance@suckless.org
+You can donate through [PayPal](https://paypal.com/) using our treasurer's address:
+finance@suckless.org
 
 Or direct through a bank transfer:
 
@@ -30,64 +31,64 @@ Following people have donated to the suckless.org project
 certain amounts of money, which have been used for the dedicated server rent
 in the past:
 
-* Mikko Nyman donated <b>100 EUR</b>
-* Benedikt Brenner donated <b>50 EUR</b>
-* Alexander Bluhm donated <b>3 EUR</b>
-* Aaron Kirkman donated <b>19.47 EUR</b>
-* Jeff Carr donated <b>500 EUR</b>
-* Silvan Jegen donated <b>175 EUR</b>
-* Ville Johan Witt donated <b>512 DKK</b>
-* Anonymous donated <b>10 EUR</b>
-* Lars Petter Mathiassen donated <b>1,000.00 EUR</b>
-* Mattias Andrée donated <b>50 EUR</b>
-* John Jago donated <b>18.08 EUR</b>
-* Anton Suneson donated <b>10 EUR</b>
-* Paul Bains donated <b>46,06 EUR</b>
-* Antipenko Iven donated <b>305.95 RUB</b>
-* Travis Witt donated <b>15.00 USD</b>
-* Maximilian Braeutigam donated <b>50 EUR</b>
-* Sascha Tebben donated <b>11 EUR</b>
-* Chandrashekhara Rao donated <b>20 USD</b>
-* Ryan Roden-Corrent donated <b>20 USD</b>
-* Sebastian Eiser donated <b>10 EUR</b>
-* Jakub Jirutka donated <b>20 USD</b>
-* Surin Anton donated <b>20 USD</b>
-* Eero Molkoselkä donated <b>10 EUR</b>
-* Dimitrios Papastamos donated <b>30 GBP</b>
-* Azer Koculu donated <b>30 UDS</b>
-* Wolfgang Corcoran-Mathe donated <b>10 USD</b>
-* Moritz Lotze donated <b>10 EUR</b>
-* Variable Scope Solutions donated <b>25 CAD</b>
-* Ashley Kesling donated <b>10 USD</b>
-* Patrick Bucher donated <b>50 CHF</b>
-* Raphael Proust donated <b>50 GBP</b>
-* Sebastian Lacombe donated <b>25 CAD</b>
-* Robert Halbert donated <b>5 GBP</b>
-* Gordon Celesta donated <b>25 CAD</b>
-* Thomas Hilber donated <b>50 EUR</b>
-* Kirill Sapelkin donated <b>10 US</b>
-* Xavier Alvelo donated <b>20 USD</b>
-* Brandon Mulcahy donated <b>10 USD</b>
-* Ryan Nabinger donated <b>100 USD</b>
-* Darryl Jamieson donated <b>15 EUR</b>
-* Kay Smarczewski donated <b>25 EUR</b>
-* Sergey Matveev donated <b>40 EUR</b>
-* Hiltjo Posthuma donated <b>40 EUR</b>
-* Pascal Wittmann donated <b>50 EUR</b>
-* Joshua Lawrence donated <b>30 USD</b>
-* James Erickson donated <b>10 USD</b>
-* Xavier Cartron donated <b>35 EUR</b>
+* Mikko Nyman donated **100 EUR**
+* Benedikt Brenner donated **50 EUR**
+* Alexander Bluhm donated **3 EUR**
+* Aaron Kirkman donated **19.47 EUR**
+* Jeff Carr donated **500 EUR**
+* Silvan Jegen donated **175 EUR**
+* Ville Johan Witt donated **512 DKK**
+* Anonymous donated **10 EUR**
+* Lars Petter Mathiassen donated **1,000.00 EUR**
+* Mattias Andrée donated **50 EUR**
+* John Jago donated **18.08 EUR**
+* Anton Suneson donated **10 EUR**
+* Paul Bains donated **46,06 EUR**
+* Antipenko Iven donated **305.95 RUB**
+* Travis Witt donated **15.00 USD**
+* Maximilian Braeutigam donated **50 EUR**
+* Sascha Tebben donated **11 EUR**
+* Chandrashekhara Rao donated **20 USD**
+* Ryan Roden-Corrent donated **20 USD**
+* Sebastian Eiser donated **10 EUR**
+* Jakub Jirutka donated **20 USD**
+* Surin Anton donated **20 USD**
+* Eero Molkoselkä donated **10 EUR**
+* Dimitrios Papastamos donated **30 GBP**
+* Azer Koculu donated **30 UDS**
+* Wolfgang Corcoran-Mathe donated **10 USD**
+* Moritz Lotze donated **10 EUR**
+* Variable Scope Solutions donated **25 CAD**
+* Ashley Kesling donated **10 USD**
+* Patrick Bucher donated **50 CHF**
+* Raphael Proust donated **50 GBP**
+* Sebastian Lacombe donated **25 CAD**
+* Robert Halbert donated **5 GBP**
+* Gordon Celesta donated **25 CAD**
+* Thomas Hilber donated **50 EUR**
+* Kirill Sapelkin donated **10 US**
+* Xavier Alvelo donated **20 USD**
+* Brandon Mulcahy donated **10 USD**
+* Ryan Nabinger donated **100 USD**
+* Darryl Jamieson donated **15 EUR**
+* Kay Smarczewski donated **25 EUR**
+* Sergey Matveev donated **40 EUR**
+* Hiltjo Posthuma donated **40 EUR**
+* Pascal Wittmann donated **50 EUR**
+* Joshua Lawrence donated **30 USD**
+* James Erickson donated **10 USD**
+* Xavier Cartron donated **35 EUR**
 * Jason Thigpen donated a slicehost server, which hosted the source code and the tarballs from 2007-2010 of our projects.
-* Donald Allen donated <b>50 USD</b>
-* Markus Schnalke donated <b>40 EUR</b>
-* John V. Turek donated <b>10 EUR</b>
-* Filippo Negroni donated <b>10 GBP</b>
-* Jason Ryan donated <b>30 EUR</b>
-* Sebastian Noack donated <b>50 EUR</b>
-* Jason Thigpen donated <b>100 USD</b>
-* Enno 'Gottox' Boland donated <b>50 EUR</b>
-* Ivan F. Villanueva B. donated <b>20 EUR</b>
-* Alexandre Dulaunoy donated <b>100 EUR</b>
-* Alexis Hildebrandt donated <b>100 EUR</b>
-* Al Wong (aka alvin) donated <b>100 USD</b>
-* Heiko Schlichting (aka rundstutzen) donated <b>100 EUR</b>
+* Donald Allen donated **50 USD**
+* Markus Schnalke donated **40 EUR**
+* John V. Turek donated **10 EUR**
+* Filippo Negroni donated **10 GBP**
+* Jason Ryan donated **30 EUR**
+* Sebastian Noack donated **50 EUR**
+* Jason Thigpen donated **100 USD**
+* Enno 'Gottox' Boland donated **50 EUR**
+* Ivan F. Villanueva B. donated **20 EUR**
+* Alexandre Dulaunoy donated **100 EUR**
+* Alexis Hildebrandt donated **100 EUR**
+* Al Wong (aka alvin) donated **100 USD**
+* Heiko Schlichting (aka rundstutzen) donated **100 EUR**

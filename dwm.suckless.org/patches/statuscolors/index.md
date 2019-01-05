@@ -65,7 +65,7 @@ An example status script snippet to take advantage of the colors:
   8 2018. It includes additional config.def.h color entries.
 
 ## Authors
-* Jeremy Jay - [(original patch)](https://lists.suckless.org/dwm/0812/7023.html)
+* Jeremy Jay - [(original patch)](//lists.suckless.org/dwm/0812/7023.html)
 * Axel Bayerl - (update to 5.7.2)
 * Voltaic - (update to 5.8.2, 5.9)
 * Daniel Raloff (update to 6.1)

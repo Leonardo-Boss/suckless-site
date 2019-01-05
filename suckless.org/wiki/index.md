@@ -11,7 +11,7 @@ or
 
 Then edit the wiki as you like. The markdown interpreter that is currently
 used on the suckless.org werc instance is
-[discount 2.1.3](http://www.pell.portland.or.us/~orc/Code/discount/).
+[discount](http://www.pell.portland.or.us/~orc/Code/discount/).
 
 For adding new files, after you created them, use:
 
@@ -42,12 +42,13 @@ Rules
   We kindly ask you to not destroy the way we like to collaborate
   with the community.
 * Please do not add files bigger than *100kb*.
-* Please do not add any binary files except screenshots or images related to our software.
-  You are allowed to add your code patches to the wiki if you do not have an
-  external web server to serve them to the community. The extension of patches
-  should be `.diff`.
+* Please do not add any binary files except screenshots or images related to
+  our software. You are allowed to add your code patches to the wiki if you do
+  not have an external web server to serve them to the community. The extension
+  of patches should be `.diff`.
 * The extension of newly created Markdown files has to be `.md`.
-* Please do not add HTML files or inline JavaScript.
+* Please do not add inline HTML, HTML files or inline JavaScript.
+* There are some dialects of Markdown, please don't use too "advanced" features.
 
 Changes
 -------
@@ -60,26 +61,14 @@ Moderators
 If you are a moderator, you will likely need the following procedure to pull
 the changes into the main repository:
 
-	cd /var/www/sites
-	sudo -u www-data git checkout .
-	sudo -u www-data git pull
+	see /git/scripts/updatewiki.sh
 
-These commands can be found at /usr/local/bin/updatewiki for your convenience.
-
-The checkout is needed to prevent local atime changes to stop the pull. Please
-keep on using www-data, so the webserver can access everything.
-
-For managing the patches (reject/modify etc.) of course the other git commands
-apply too.
+This script makes sure the changes are pulled in with the correct permissions.
 
 Repositories
 ------------
 
 This is for moderators.
 
-There is a script in /usr/local/bin/newrepo with the usage
-
-	newrepo $reponame
-
-It should be used to create new git repositories.
-
+To create a new repository just git init --bare and symlink the git hooks (see
+the hooks/ directory in other projects).

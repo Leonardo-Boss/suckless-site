@@ -107,7 +107,7 @@ stat_isdir(const char *f)
 		perror(f);
 		return 0;
 	}
-	return (s.st_mode & S_IFMT) == S_IFDIR;
+	return S_ISDIR(s.st_mode);
 }
 
 int
@@ -119,7 +119,7 @@ stat_isfile(const char *f)
 		perror(f);
 		return 0;
 	}
-	return (s.st_mode & S_IFMT) == S_IFREG;
+	return S_ISREG(s.st_mode);
 }
 
 int

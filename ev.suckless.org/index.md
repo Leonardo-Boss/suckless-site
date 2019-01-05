@@ -1,6 +1,6 @@
 suckless.org e.V.
 =================
-At [slcon 2](//suckless.org/conference/2015) eight conference attendees
+At [slcon 2](//suckless.org/conferences/2015) eight conference attendees
 founded a legal entity for suckless.org, the "suckless.org e.V.".
 
 suckless.org e.V. is a registered association in München, Germany, with its own

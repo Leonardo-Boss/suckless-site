@@ -176,11 +176,9 @@ subdir(char *newdir, size_t siz, char *base, char *add)
 }
 
 void
-print_header(char *domain, char *page)
+print_header(void)
 {
 	char title[TITLE_MAX];
-	(void)domain;
-	(void)page;
 
 	if (oneline(title, sizeof title, ".title") <= 0)
 		printf(html_header, TITLE_DEFAULT, TITLE_DEFAULT);
@@ -189,10 +187,9 @@ print_header(char *domain, char *page)
 }
 
 void
-print_nav_bar(char *domain, char *page)
+print_nav_bar(char *domain)
 {
 	struct domain *d;
-	(void)page;
 
 	puts("<div id=\"menu\">");
 	for (d = domain_list; d->dir; ++d) {
@@ -208,7 +205,7 @@ print_nav_bar(char *domain, char *page)
 int
 qsort_strcmp(const void *a, const void *b)
 {
-	return strcmp(*(char **)a, *(char **)b);
+	return strcmp((const char *)a, (const char *)b);
 }
 
 void
@@ -296,10 +293,8 @@ print_content(char *domain, char *page)
 }
 
 void
-print_footer(char *domain, char *page)
+print_footer(void)
 {
-	(void)domain;
-	(void)page;
 	fputs(html_footer, stdout);
 }
 
@@ -316,13 +311,13 @@ main(int argc, char *argv[])
 	if (chdir(domain) == -1)
 		die_perror("chdir: %s", domain);
 
-	print_header(domain, page);
-	print_nav_bar(domain, page);
+	print_header();
+	print_nav_bar(domain);
 	puts("<div id=\"content\">");
 	print_menu_panel(domain, page);
 	print_content(domain, page);
 	puts("</div>\n");
-	print_footer(domain, page);
+	print_footer();
 
 	return 0;
 }

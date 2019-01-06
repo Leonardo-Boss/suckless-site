@@ -223,8 +223,8 @@ menu_panel(char *domain, char *page, char *this, int depth)
 		d = d_list[l];
 		if (*d == '.')
 			continue;
-		snprintf(newdir, sizeof(newdir), this ? "%s/%s" : "%2$s",
-		         this, d);
+		snprintf(newdir, sizeof(newdir), this ? "%2$s/%1$s" : "%s",
+		         d, this);
 		if (!stat_isdir(newdir))
 			continue;
 
@@ -271,8 +271,8 @@ print_content(char *domain, char *page)
 	char index[PATH_MAX];
 	char *argv[] = { CONVERTER, index, NULL };
 
-	snprintf(index, sizeof(index), page ? "%s/%s" : "%2$s",
-	         page, "index.md");
+	snprintf(index, sizeof(index), page ? "%2$s/%1$s" : "%s",
+	         "index.md", page);
 
 	puts("<div id=\"main\">\n");
 

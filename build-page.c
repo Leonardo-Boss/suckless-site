@@ -196,7 +196,7 @@ print_nav_bar(char *domain)
 int
 qsort_strcmp(const void *a, const void *b)
 {
-	return strcmp((const char *)a, (const char *)b);
+	return strcmp(*(const char **)a, *(const char **)b);
 }
 
 void

@@ -1,10 +1,13 @@
 Style
 =====
-Note that the following are guidelines and the most important aspect of style is consistency. Strive to keep your style consistent with the project on which you are working.
+Note that the following are guidelines and the most important aspect of style
+is consistency. Strive to keep your style consistent with the project on which
+you are working.
 
 Recommended Reading
 -------------------
-The following contain good information, some of which is repeated below, some of which is contradicted below.
+The following contain good information, some of which is repeated below, some
+of which is contradicted below.
 
 * <http://doc.cat-v.org/bell_labs/pikestyle>
 * <https://www.kernel.org/doc/Documentation/process/coding-style.rst>
@@ -45,7 +48,6 @@ Blocks
 * `}` on own line unless continuing statement (`if else`, `do while`, ...)
 * Use block for single statement iff
   * Inner statement needs a block
-  
   	for (;;) {
   		if (foo) {
   			bar;
@@ -53,7 +55,6 @@ Blocks
   		}
   	}
   * Another branch of the same statement needs a block
-  
   	if (foo) {
   		bar;
   	} else {
@@ -139,7 +140,6 @@ Tests and Boolean Values
 Handling Errors
 ---------------
 * When functions `return -1` for error test against `0` not `-1`
-
   	if (func() < 0)
 			hcf();
 * Use `goto` to unwind and cleanup when necessary instead of multiple nested levels
@@ -150,7 +150,6 @@ Handling Errors
 Enums vs #define
 ----------------
 * Use enums for values that are grouped semantically and #define otherwise
-
   	#define MAXSZ  4096
   	#define MAGIC1 0xdeadbeef
   

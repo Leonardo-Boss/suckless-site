@@ -3,7 +3,8 @@ stackmfact
 
 Description
 -----------
-`stackmfact` enables you to vertically resize clients in the stack, like the regular mfact enables you to horizontally resize the master client(s).
+`stackmfact` enables you to vertically resize clients in the stack, like the
+regular mfact enables you to horizontally resize the master client(s).
 
 
 	smfact 0.00 (original behaviour):

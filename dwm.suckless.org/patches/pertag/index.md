@@ -21,8 +21,8 @@ Download
 * [dwm-pertag-5.1.diff](dwm-pertag-5.1.diff)
 
 * Using pertag but with the same barpos
-  * [dwm-6.1-pertag_without_bar.diff](dwm-6.1-pertag_without_bar.diff) (5.2K) (20151109)
-  * [dwm-6.0-pertag_without_bar.diff](dwm-6.0-pertag_without_bar.diff) (5578b) (20140530)
+  * [dwm-6.1-pertag\_without\_bar.diff](dwm-6.1-pertag_without_bar.diff) (5.2K) (20151109)
+  * [dwm-6.0-pertag\_without\_bar.diff](dwm-6.0-pertag_without_bar.diff) (5578b) (20140530)
   * [dwm-5.8.2-pertag\_without\_bar.diff](dwm-5.8.2-pertag_without_bar.diff)
 
 Authors

@@ -1,13 +1,12 @@
 Dynamic window management
 =========================
-
 We think that static window management as seen in Ion or wmi-10 is a far too
 rigid and inflexible working environment. In [acme](http://acme.cat-v.org),
 larswm, and oberon, dynamic window management frees the user from these
 limitations. The user can start as many applications and windows as he likes,
 and easily arrange them in a useful way, helped by the window manager - the
 working environment changes with the tasks the user is performing. The
-experience is very fluid and natural.  Similar concepts have been introduced in
+experience is very fluid and natural. Similar concepts have been introduced in
 wmii and dwm.
 
 Dynamic window management states that it is the window manager's job to manage

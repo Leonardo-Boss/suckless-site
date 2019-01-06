@@ -3,9 +3,9 @@ tilegap
 
 Description
 -----------
-Window gaps for the tile layout done right (in my humble opinion). The
-same size gap between master and stack, window and window, and window
-and screen edge. Size configurable in config.h.
+Window gaps for the tile layout done right (in my humble opinion). The same
+size gap between master and stack, window and window, and window and screen
+edge. Size configurable in config.h.
 
 Download
 --------

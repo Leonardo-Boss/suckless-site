@@ -1,7 +1,7 @@
 Instant Mode
 ============
-
-Adds an flag which will cause dmenu to select an item immediately if theres one matching option left.
+Adds an flag which will cause dmenu to select an item immediately if theres one
+matching option left.
 
 Download
 --------

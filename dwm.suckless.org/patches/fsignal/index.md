@@ -1,9 +1,8 @@
 fsignal
-================
+=======
 
 Description
 -----------
-
 Send "fake signals" to dwm for handling, using xsetroot. This will not conflict
 with the status bar, which also is managed using xsetroot.
 
@@ -12,7 +11,6 @@ applications.
 
 Usage
 -----
-
 A signal can be sent for example in this way `xsetroot -name "fsignal:1"` to
 send the signal '1'.
 
@@ -37,10 +35,8 @@ This can then be triggered through dmenu with this script:
 
 Download
 --------
-
 * [dwm-fsignal-6.1.diff](dwm-fsignal-6.1.diff)
 
 Authors
 -------
-
 * Chris Noxz - <chris@noxz.tech>

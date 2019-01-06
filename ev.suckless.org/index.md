@@ -3,8 +3,9 @@ suckless.org e.V.
 At [slcon 2](//suckless.org/conferences/2015) eight conference attendees
 founded a legal entity for suckless.org, the "suckless.org e.V.".
 
-suckless.org e.V. is a registered association in München, Germany, with its own
-legal entity. Please refer to the [statutes](/satzung) (German only) for further info.
+suckless.org e.V. is a registered association in München, Germany, with its
+own legal entity. Please refer to the [statutes](/satzung) (German only) for
+further info.
 
 suckless.org e.V. organizes a yearly membership meeting, which will regularly
 take place during the suckless conference or hackathon.
@@ -58,4 +59,3 @@ letter or email at any time. There is no refund of the membership fee, though.
 Donations
 ---------
 Please check out our [donations](//suckless.org/donations) page for further advise.
-

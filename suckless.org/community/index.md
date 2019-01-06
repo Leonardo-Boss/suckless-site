@@ -3,7 +3,6 @@ Community
 
 Mailing lists
 -------------
-
 * `dev@suckless.org` - for dwm/dmenu/st/... users, development discussion, bug
   reports and general discussion
 * `hackers@suckless.org` - for patches and patch discussion. Commit messages
@@ -13,7 +12,6 @@ Mailing lists
   dev@ too.
 * `wiki@suckless.org` - for discussion about the wiki, also automatic wiki
   commit messages are posted here.
-
 
 ### Best practice
 
@@ -34,7 +32,6 @@ In both cases describe the problem or the fix clearly.
 
 * Don't use HTML mail: use plain-text UTF8.
 * Don't top-post: bottom-post.
-
 
 ### Mailing list commands
 
@@ -105,13 +102,11 @@ mailing list so you can see eventual comments on your patches.
 
 Mailing lists web archive
 -------------------------
-
 An archive of all mails posted to the mailing lists is accessible via
 [lists.suckless.org](//lists.suckless.org/).
 
 Related lists
 -------------
-
 * [9fans](http://plan9.bell-labs.com/wiki/plan9/mailing_lists/#9fans) - fans of
   the [Plan 9 from Bell Labs](http://9fans.net) operating system
 * [inferno-list](http://plan9.bell-labs.com/wiki/plan9/mailing_lists/#INFERNO-LIST)
@@ -121,7 +116,6 @@ Related lists
 
 IRC
 ---
-
 The channels are in the [OFTC](http://www.oftc.net) IRC network:
 [irc.oftc.net](irc://irc.oftc.net/)
 

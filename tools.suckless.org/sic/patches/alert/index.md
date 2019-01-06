@@ -3,7 +3,8 @@ Alert
 
 Description
 -----------
-This patch make sic produce an alert by printing a bell character to stdout when the nick is found in an incoming message.
+This patch make sic produce an alert by printing a bell character to stdout
+when the nick is found in an incoming message.
 
 Download
 --------

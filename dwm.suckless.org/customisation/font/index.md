@@ -1,6 +1,5 @@
 Change font in config.h
 =======================
-
 Towards the beginning of **config.h**, you will find a line defining the
 variable
 

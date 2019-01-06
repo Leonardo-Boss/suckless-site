@@ -1,7 +1,8 @@
-# defaulttransparency
+defaulttransparency
+===================
 
-## Description
-
+Description
+-----------
 This patch adds a default transparency parameter to config.h, which specifies the
 transparency, all windows are started with.
 
@@ -13,12 +14,12 @@ Additionally it adds some shortcuts:
 
 It is based on the transparency patch of Stefan Mark.
 
-## Download
-
+Download
+--------
 * [dwm-defaulttransparency-r1521.diff](dwm-defaulttransparency-r1521.diff)
   latest patch (against r1521)
 
-## Author
-
+Author
+------
 * Christoph Lohmann - <20h@r-36.net>
 

@@ -3,9 +3,8 @@ Stuff that sucks
 See the [philosophy](//suckless.org/philosophy) page about what
 applies to this page.
 
-Bigger topics that suck:
-[systemd](//suckless.org/sucks/systemd), [the
-web](//suckless.org/sucks/web)
+Bigger topics that suck: [systemd](//suckless.org/sucks/systemd),
+[the web](//suckless.org/sucks/web)
 
 Libraries
 ---------
@@ -46,7 +45,6 @@ possible to avoid them. If you use them, consider looking for alternatives.
 
 Build Systems
 -------------
-
 * [cmake][13] (written in C++) - so huge and bloated, compilation takes longer
   than compiling GCC (!).
   It's not even possible to create freestanding Makefiles, since the generated
@@ -148,7 +146,6 @@ C Compilers
 
 See also
 --------
-
 The [list of harmful software](http://harmful.cat-v.org/software/) at [cat-v.org](http://cat-v.org).
 
 [aterm-ml-post]: //lists.suckless.org/dev/1102/7141.html

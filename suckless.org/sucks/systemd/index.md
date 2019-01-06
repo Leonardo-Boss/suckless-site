@@ -305,8 +305,8 @@ And on the oldest and best, Slackware:
     $ reboot
     reboot: must be superuser.
 
-systemd is driving "just google the problem" attitude, because how the
-hell are you expected to troubleshoot this kind of error otherwise?
+systemd is driving "just google the problem" attitude, because how the hell are
+you expected to troubleshoot this kind of error otherwise?
 
 Further Reading
 ---------------

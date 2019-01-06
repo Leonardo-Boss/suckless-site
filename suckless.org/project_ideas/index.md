@@ -1,6 +1,5 @@
 Project ideas
 =============
-
 Please read our [philosophy](/philosophy) for background information.
 
 Peer review
@@ -30,11 +29,11 @@ UNIX-like operating systems. The difficulty ranges from medium to high.
 
 There is libdrw in suckless now, which still uses xft and fontconfig.
 Fontconfig and xft are ugly and require too much internal knowledge to be
-useful. The next logical layer evolved as pango and cairo. Both of course
-added HTML formatting and vector drawing. This is not needed to simply draw
-some text somewhere. And this is what a suckless font rendering library
-should do: Give it a font string and render at some position the given font
-without having to care about font specifics.
+useful. The next logical layer evolved as pango and cairo. Both of course added
+HTML formatting and vector drawing. This is not needed to simply draw some text
+somewhere. And this is what a suckless font rendering library should do: Give
+it a font string and render at some position the given font without having to
+care about font specifics.
 
 [Some work](https://git.ekleog.org/leo/dtext) has already been done to replace
 libXft and Fontconfig. Real-world testing is however still needed.
@@ -46,16 +45,15 @@ about the font formats and how to handle them.
 
 The GNU autotools such as automake and autoconf are completely unusable in
 non-chroot'ed cross-compile environments and often completely fail to produce
-statically linked libraries or executables.  Also they are
-extremely slow and bloated.
+statically linked libraries or executables. Also they are extremely slow and
+bloated.
 
-The stali build system is not using autotools for good
-reason, however many UNIX/Linux open source packages do. To create statically
-linked libraries out of the ld arguments we need an ld wrapper or
-re-implementation that creates static libraries or executables. This would
-enable us to build static libraries and executables out of any automake
-generated makefiles without the need to write make replacements or patching the
-build system of a particular package.
+The stali build system is not using autotools for good reason, however many
+UNIX/Linux open source packages do. To create statically linked libraries out
+of the ld arguments we need an ld wrapper or re-implementation that creates
+static libraries or executables. This would enable us to build static libraries
+and executables out of any automake generated makefiles without the need to
+write make replacements or patching the build system of a particular package.
 
 The ld wrapper needs to be extended to also link against uclibc first and if
 that fails to fallback to glibc, in order to produce smaller executables in the
@@ -85,9 +83,9 @@ structure:
 
 ### Write cookie handler for surf
 
-The biggest disadvantage of [surf](//surf.suckless.org) is sloppy
-cookie handling. libwebkit and libsoup (which are used for HTTP) were never
-designed to run in multiple processes simultaneously.
+The biggest disadvantage of [surf](//surf.suckless.org) is sloppy cookie
+handling. libwebkit and libsoup (which are used for HTTP) were never designed
+to run in multiple processes simultaneously.
 
 This task requires writing a new cookie handler in surf which:
 
@@ -104,8 +102,9 @@ abstraction of a mass of information in a filesystem. The goal of this meta
 project is to find ideas how to implement gopher services to easily access the
 web and new information.
 
-See the [protocol](https://en.wikipedia.org/wiki/Gopher_%28protocol%29#Protocol)
-for how easy it is to write a `menu`, which can be seen as a directory.
+See the
+[protocol](https://en.wikipedia.org/wiki/Gopher_%28protocol%29#Protocol) for
+how easy it is to write a `menu`, which can be seen as a directory.
 
 * [gopherproject.org](http://www.gopherproject.org)
 * [gopher proxy](http://gopher.floodgap.com/gopher/)
@@ -127,5 +126,5 @@ If you prepare to work on this project, plan ahead in recruiting more
 developers. You will need them.
 
 ***Requirements:*** Very good C knowledge, a very good knowledge in web
-standards and how to strip them down to the suckless level.
-***Difficulty level:*** Probably impossible.
+standards and how to strip them down to the suckless level. ***Difficulty
+level:*** Probably impossible.

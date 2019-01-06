@@ -14,15 +14,13 @@ locked:
 - XF86AudioPrev
 - XF86AudioNext
 
-I don't want to unlock the screen just in order to skip the current song
-or raise the volume, that's all there is to it.
+I don't want to unlock the screen just in order to skip the current song or
+raise the volume, that's all there is to it.
 
 Download
 --------
-
 * [slock-mediakeys-20170111-2d2a21a.diff](slock-mediakeys-20170111-2d2a21a.diff)
 
 Authors
 -------
-
 * Klemens Nanni <[kl3@posteo.org](mailto:kl3@posteo.org)>

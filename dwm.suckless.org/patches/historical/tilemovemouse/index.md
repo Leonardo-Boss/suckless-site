@@ -1,4 +1,4 @@
-MOVE TILED WINDOW WITH MOUSE
+Move tiled window with mouse
 ============================
 
 Description
@@ -11,10 +11,6 @@ floating it. Reordering windows this way is fun.
 		{ ClkClientWin,   MODKEY,         Button1,    tilemovemouse,  {0} },
 	};
 
-
 Download
 --------
-[tilemovemouse](//lists.suckless.org/dwm/0903/7773.html)
-
-
-Last update: 2009-03-20
+* [tilemovemouse](//lists.suckless.org/dwm/0903/7773.html)

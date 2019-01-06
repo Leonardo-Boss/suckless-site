@@ -1,6 +1,5 @@
 Line height
 ===========
-
 The patch adds a '-h' option, which sets the minimum height of a dmenu line.
 This helps integrate dmenu with other UI elements that require a particular
 vertical size.

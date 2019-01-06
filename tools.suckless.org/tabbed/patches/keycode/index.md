@@ -1,7 +1,8 @@
 Keycode
 =======
 With this patch, handling key input is done with keycodes instead of keysyms.
-This way, input is keyboard layout independant (adapt config.h to your keyboard using for example xev).
+This way, input is keyboard layout independant (adapt config.h to your keyboard
+using for example xev).
 
 Download
 --------

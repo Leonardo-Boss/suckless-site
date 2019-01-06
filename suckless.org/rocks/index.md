@@ -1,17 +1,15 @@
 Stuff that rocks
 ================
-
-Software on this page should have ideas similar to the suckless [philosophy](//suckless.org/philosophy/).
-The software must be FOSS licensed.
+Software on this page should have ideas similar to the suckless
+[philosophy](//suckless.org/philosophy/). The software must be FOSS licensed.
 
 
 Libraries
 ---------
 This section is for small, usable development libraries, which can be used for
-writing software that sucks less.
-These should preferably be under the MIT/X consortium or BSD licenses, WTFPL,
-or public domain, or alternatively LGPL, because it makes them legally
-compatible with other suckless projects.
+writing software that sucks less. These should preferably be under the MIT/X
+consortium or BSD licenses, WTFPL, or public domain, or alternatively LGPL,
+because it makes them legally compatible with other suckless projects.
 
 ### Libc Implementations
 
@@ -61,7 +59,8 @@ program is usable are:
 * The program will accept any window size.
 * The program consists of a single window (there are no nested windows, such as in Xpdf).
 
-This covers most console-based programs and programs from [plan9port](https://9fans.github.io/plan9port/).
+This covers most console-based programs and programs from
+[plan9port](https://9fans.github.io/plan9port/).
 
 ### Audio Players
 

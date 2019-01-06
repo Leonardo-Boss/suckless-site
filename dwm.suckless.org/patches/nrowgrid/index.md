@@ -3,7 +3,6 @@ nrowgrid
 
 Description
 -----------
-
 This grid layout gives you the option of determining the row count, which is
 set by `nmaster + 1`. So except for giving you a customizable grid, you also
 get the ability to show everything in one row, or in one column (`row = 1` and
@@ -17,14 +16,12 @@ Example: splitting 2560 pixels into 6 cells gives you 2 cells with a width of
 an off trade I believe many would be comfortable with.
 
 I personally want the presence of only 2 clients to always result in a vertical
-split. If you don't like this feature set the FORCE_VSPLIT to 0 in `config.h`.
+split. If you don't like this feature set the FORCE\_VSPLIT to 0 in `config.h`.
 
 Download
 --------
-
 * [dwm-nrowgrid-6.1.diff](dwm-nrowgrid-6.1.diff)
 
 Authors
 -------
-
 * Chris Noxz - <chris@noxz.tech>

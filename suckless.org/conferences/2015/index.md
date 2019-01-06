@@ -8,7 +8,6 @@ Friday, 2015-10-30
 
 Talks
 -----
-
 (11:00-11:15) *Welcome*, Anselm R Garbe
 
 > Anselm opened slcon2 and gave an overview on the final conference schedule.

@@ -1,6 +1,5 @@
 Autohide
 ========
-
 This patch hides the tab bar if only one tab is open.
 
 Download

@@ -3,14 +3,12 @@ cropwindows
 
 Description
 -----------
-
-Create cropped views of existing windows to display only part of them, typically
-to reclaim screen space from badly framed videos or programs and websites with
-terrible designs.
+Create cropped views of existing windows to display only part of them,
+typically to reclaim screen space from badly framed videos or programs and
+websites with terrible designs.
 
 Usage
 -----
-
 Look at the changes made to `config.def.h`: pass `1` to `resizemouse` to create
 a cropped window and to `movemouse` to move the underlying window in the crop.
 
@@ -23,12 +21,10 @@ its original size and state.
 
 Download
 --------
-
 * [dwm-cropwindows-20170709-ceac8c9.diff](dwm-cropwindows-20170709-ceac8c9.diff)
 
 Notes
 -----
-
 * tested with a limited set of clients and use-cases, some X11 events are
   probably not passed or handled correctly, report bugs if you see any,
 * known bug: if you crop a window at the same time another window is unmapped,
@@ -38,5 +34,4 @@ Notes
 
 Authors
 -------
-
 * Ivan Delalande <colona@ycc.fr>

@@ -3,12 +3,11 @@ single tagset
 
 Description
 -----------
-
 This patch addresses the multi-monitor setup. Instead of having separate tags
 for every monitor there is just one list of tags for all monitors. Instead of
-moving windows from one monitor to the other, the desired tag from the
-other monitor can just be selected and all windows will be drawn on the
-current monitor.
+moving windows from one monitor to the other, the desired tag from the other
+monitor can just be selected and all windows will be drawn on the current
+monitor.
 
 Several deep changes needed to be made:
 1. Macro ISVISIBLE expects a second parameter, the monitor
@@ -19,12 +18,10 @@ Several deep changes needed to be made:
 
 Download
 --------
-Please be aware that this patch probably breaks any other patch!
-
-* [dwm-single_tagset-20160731-56a31dc.diff](dwm-single_tagset-20160731-56a31dc.diff)
-* [dwm-6.1-single_tagset.diff](dwm-6.1-single_tagset.diff) (16634b) (20140209)
-* [dwm-10e232f9ace7-single_tagset.diff](dwm-10e232f9ace7-single_tagset.diff) (14748b) (20120406)
-* [dwm-single_tagset-6.0.diff](dwm-single_tagset-6.0.diff) (14417b) (20120406)
+* [dwm-single\_tagset-20160731-56a31dc.diff](dwm-single_tagset-20160731-56a31dc.diff)
+* [dwm-6.1-single\_tagset.diff](dwm-6.1-single_tagset.diff) (16634b) (20140209)
+* [dwm-10e232f9ace7-single\_tagset.diff](dwm-10e232f9ace7-single_tagset.diff) (14748b) (20120406)
+* [dwm-single\_tagset-6.0.diff](dwm-single_tagset-6.0.diff) (14417b) (20120406)
 
 Authors
 -------

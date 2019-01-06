@@ -8,7 +8,6 @@ slcon 2016 was held in Hofheim am Taunus near Frankfurt am Main on
 
 Friday, 2016-09-23
 ==================
-
 Arrival day.
 
 (19:30) *Gathering in the "Waldgeist"*
@@ -19,7 +18,6 @@ Arrival day.
 
 Saturday, 2016-09-24
 ====================
-
 (10:00-10:05) *Welcome*, Anselm R Garbe
 
 > Anselm opened the slcon 2016 talk session
@@ -235,12 +233,10 @@ Video:
 
 Sunday, 2016-09-25
 ==================
-
 No talk session plans, hack sessions and departure day.
 
 Acknowledgment
 ==============
-
 We kindly thank [![genua GmbH](../genua.png)](http://www.genua.eu) for
 lending us the equipment to record the slcon 2016 conference videos.
 

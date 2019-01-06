@@ -1,4 +1,4 @@
-BOTTOM STACK
+Bottom stack
 ============
 
 Description
@@ -20,7 +20,6 @@ and update the layouts and key bindings.
 
 Bottom Stack Tiling
 -------------------
-
 	bstack        (TTT)
 	+-----------------+
 	|                 |

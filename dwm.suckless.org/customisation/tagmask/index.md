@@ -1,6 +1,5 @@
 How does a tag-mask work?
 =========================
-
 There exists extensive documentation in this wiki about tags in dwm.
 
 This article will concentrate on how to manage bit masks in default rules.
@@ -38,7 +37,7 @@ mask.
 		}
 	}
 
-The client's tags value is therefore built sequentially through the rules.  If
+The client's tags value is therefore built sequentially through the rules. If
 the tagmask in rules is 0, the currently selected tag becomes the client's tags
 value.
 
@@ -46,7 +45,7 @@ value.
 		c->tags = tagset[seltags];
 
 TAGMASK is the all-one bit mask, setting to 1 all the bits corresponding to a
-tag in the tags array.  TAGMASK is defined in dwm.c as:
+tag in the tags array. TAGMASK is defined in dwm.c as:
 
 	#define TAGMASK ((int)((1LL << LENGTH(tags)) - 1))
 
@@ -61,7 +60,6 @@ regarding tags using bit-wise operators.
 
 When are tagmasks used?
 -----------------------
-
 Please note that dwm always uses tagmasks: even when one tag is selected as the
 visible tag, it is actually internally managed as a tagmask.
 
@@ -74,27 +72,23 @@ A very powerful feature.
 
 What does tagmask 0 mean?
 -------------------------
-
 It means that the current tagmask should be selected for this window: if more
 than one tag are currently visible, all the currently visible tags are going to
 be associated to that window.
 
-What does tagmask 1 << 8 mean?
-------------------------------
-
+What does tagmask 1 &lt;&lt; 8 mean?
+------------------------------------
 1 shifted to the left by eight positions generates mask 100000000, selecting
 tag '9' (ninth from the right) in the the tags array.
 
 What does ~0 mean?
 ------------------
-
-Complement of 0 is all 1's. This indicates all tags should be selected.  The
-tag mask in rules is then filtered using the TAGMASK macro to adapt the mask to
+Complement of 0 is all 1's. This indicates all tags should be selected. The tag
+mask in rules is then filtered using the TAGMASK macro to adapt the mask to
 just the available tags.
 
-What does (1 << 8) - 1 mean?
-----------------------------
-
-1 << 8 selects tag '9' only (100000000). Subtracting 1 to that bitmask
+What does (1 &lt;&lt; 8) - 1 mean?
+----------------------------------
+1 &lt;&lt; 8 selects tag '9' only (100000000). Subtracting 1 to that bitmask
 transforms all the 0's to the right of that tagmask into 1's (011111111),
 effectively selecting all tags except '9'.

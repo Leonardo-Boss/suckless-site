@@ -3,7 +3,6 @@ terminalkeys
 
 Description
 -----------
-
 Add key commands that are commonly used in terminal applications 
 (in particular the login prompt) to slock.
 
@@ -19,11 +18,9 @@ Mappings:
 
 Download
 --------
-
 * [slock-terminalkeys-20160618-65b8d52.diff](slock-terminalkeys-20160618-65b8d52.diff)
 
 Authors
 -------
-
 * Matthias Schoth - mschoth@gmail.com
 

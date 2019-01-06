@@ -1,8 +1,7 @@
 Remove application defaults from config.h
 =========================================
-
 The rules array is initialized, by default, to treat windows of class `Gimp`
-and `Firefox` in a special way.  If, like me, you don't want any application to
+and `Firefox` in a special way. If, like me, you don't want any application to
 be treated in a special way, you must be careful when editing the rules array
 initialization code.
 
@@ -16,7 +15,7 @@ structure.
 	};
 
 For instance, Gimp and Firefox will be labeled as floating windows, even if the
-layout selected is Monocle or Tiled.  In particular, the tag mask will attach
+layout selected is Monocle or Tiled. In particular, the tag mask will attach
 Firefox to tag '9'.
 
 If we don't want any window class to be treated in a special way, we need to
@@ -43,6 +42,6 @@ matching is done.
 	}
 
 This code assumes the rules array has at least one element, and that the first
-rule that does not match will apply to all window classes.  Therefore, the rule
+rule that does not match will apply to all window classes. Therefore, the rule
 we just made, is the default rule for all new windows and therefore it is
 important you set the `tags mask` and `isfloating` elements correctly.

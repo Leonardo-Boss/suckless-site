@@ -3,7 +3,6 @@ clipboard
 
 Description
 -----------
-
 st only sets PRIMARY on selection since
 [March 2015](//git.suckless.org/st/commit/?id=28259f5750f0dc7f52bbaf8b746ec3dc576a58ee)
 according to the
@@ -14,7 +13,6 @@ CLIPBOARD.
 
 Download
 --------
-
 * [st-clipboard-0.8.1.diff](st-clipboard-0.8.1.diff)
 * [st-clipboard-0.6.diff](st-clipboard-0.6.diff)
 * [st-clipboard-0.7.diff](st-clipboard-0.7.diff)
@@ -25,7 +23,6 @@ Download
 
 Authors
 -------
-
 * Kai Hendry - <hendry@iki.fi>
 * Laslo Hunhold - <dev@frign.de> (git port)
 * Matthew Parnell - <matt@parnmatt.co.uk> (0.7, git ports)

@@ -3,8 +3,8 @@ customise dwm through command line
 
 Description
 -----------
-
-Rebuilding dwm to change font or color can become annoying. This patch solves this problem allowing to set these parameters through command line
+Rebuilding dwm to change font or color can become annoying. This patch solves
+this problem allowing to set these parameters through command line
 
 New command line options look like the same in dmenu:
 
@@ -21,10 +21,8 @@ New command line options look like the same in dmenu:
 
 Download
 --------
-
 * [dwm-cmdcustomize-20180504-3bd8466.diff](dwm-cmdcustomize-20180504-3bd8466.diff)
 
 Author
 ------
-
 * Platon Ryzhikov - <ihummer63@yandex.ru>

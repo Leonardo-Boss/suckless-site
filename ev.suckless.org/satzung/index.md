@@ -90,4 +90,3 @@ Verwertung des verbleibenden Vermögens.
 Vorstehende Satzung wurde am 30. Oktober 2015 errichtet.
 Sowie am 21. Dezember 2015 geändert.
 Sowie am 01. September 2017 geändert.
-

@@ -3,12 +3,10 @@ externalpipe
 
 Description
 -----------
-
 Reading and writing st's screen through a pipe.
 
 Example
 -------
-
 config.h example, binding `TERMMOD + U` to extract all visible URLs and present
 dmenu to select and open one:
 
@@ -25,12 +23,12 @@ dmenu to select and open one:
 
 ### Example Shell Scripts
 
-* [link grabber](linkgrabber.sh) - similar to the function above, but without xurls dependency
+* [link grabber](linkgrabber.sh) - similar to the function above, but without
+  xurls dependency
 * [edit screen](editscreen.sh) - open screen in an editor for copying text
 
 Download
 --------
-
 * [st-externalpipe-0.4.1.diff](st-externalpipe-0.4.1.diff)
 * [st-externalpipe-0.5.diff](st-externalpipe-0.5.diff)
 * [st-externalpipe-0.6.diff](st-externalpipe-0.6.diff)
@@ -42,7 +40,6 @@ Download
 
 Authors
 -------
-
 * Rob Pilling - <robpilling@gmail.com>
 * Laslo Hunhold - <dev@frign.de> (0.4.1, 0.5, 0.6, git ports)
 * Lucas Gabriel Vuotto - <lvuotto92@gmail.com> (0.7, git ports)

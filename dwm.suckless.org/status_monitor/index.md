@@ -1,7 +1,6 @@
 status monitor
 ==============
-
-The status bar text of **dwm** is stored in the WM_NAME X11 property of the
+The status bar text of dwm is stored in the WM\_NAME X11 property of the
 root window, which is managed by dwm.
 
 It can be easily set and retrieved using standard Unix tools.
@@ -13,28 +12,23 @@ It can be easily set and retrieved using standard Unix tools.
 
 Set The Status Using A Shell Script
 -----------------------------------
-
-	while true;
-	do
+	while true; do
 		xsetroot -name "$(date)"
 		sleep 2
 	done
 
 Set The Status Using Other Methods
 ----------------------------------
-
 There are two status monitors maintained at suckless:
 
 slstatus - suckless status
 --------------------------
-
 A somewhat complex status monitor which includes all batteries.
 
 You can read more [on the project page](//tools.suckless.org/slstatus/).
 
 dwmstatus
 ---------
-
 Barebone status monitor with basic functions written in C. This follows the
 suckless philosophy, to give you an easy way to extend the source code to your
 needs. See the helper functions for C below, to extend it to your needs. Just
@@ -48,23 +42,34 @@ check it out and keep on hacking.
 
 Status Monitors Submitted By Others
 -----------------------------------
-
 Feel free to add your own status monitors here (keeping the list sorted).
 
 * [barM](barM.c) - can display all, time/date, ram usage, output of commands (the New BarMonitor).
-* [dstat](https://www.umaxx.net/dl) [Screenshot](https://www.umaxx.net/dstat.png) - displays the current network throughput, CPU usage, performance settings, battery status, temperature, volume settings, as well as the current date and time (OpenBSD only, no support for Linux).
-* [dwms](https://github.com/ianremmler/dwms) - displays time, network, audio, and battery status, written in Go using XGB.
-* [dwmsd](https://github.com/johnko/dwmsd) - a daemon that listens on localhost tcp (may be useful as a base for asynchronous updates)
-* [dwm-sss](https://github.com/roadkillcat/dwm_sss) - shell script providing date, time and CPU temperature
-* [dwmstat](https://notabug.org/kl3/dwmstat) - small and simple | IP, CPU temperature, system volume, current local time (and more) | config.h | OpenBSD
-* [go-dwmstatus](https://github.com/oniichaNj/go-dwmstatus) - A Go bar that prints current MPD song, load averages, time/date and battery percentage.
-* [gods](https://github.com/schachmat/gods) - implemented in Go. prints network speed, cpu, ram, date/time
-* [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent and date/time
-* [suspend-statusbar.c](https://github.com/snobb/dwm-statusbar) - date, loadavg, battery and more. If battery goes below threshold - run suspend command
+* [dstat](https://www.umaxx.net/dl)
+  [Screenshot](https://www.umaxx.net/dstat.png) - displays the current network
+  throughput, CPU usage, performance settings, battery status, temperature,
+  volume settings, as well as the current date and time (OpenBSD only, no support
+  for Linux).
+* [dwms](https://github.com/ianremmler/dwms) - displays time, network, audio,
+  and battery status, written in Go using XGB.
+* [dwmsd](https://github.com/johnko/dwmsd) - a daemon that listens on localhost
+  tcp (may be useful as a base for asynchronous updates)
+* [dwm-sss](https://github.com/roadkillcat/dwm_sss) - shell script providing
+  date, time and CPU temperature
+* [dwmstat](https://notabug.org/kl3/dwmstat) - small and simple | IP, CPU
+  temperature, system volume, current local time (and more) | config.h | OpenBSD
+* [go-dwmstatus](https://github.com/oniichaNj/go-dwmstatus) - A Go bar that
+  prints current MPD song, load averages, time/date and battery percentage.
+* [gods](https://github.com/schachmat/gods) - implemented in Go. prints network
+  speed, cpu, ram, date/time
+* [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent
+  and date/time
+* [suspend-statusbar.c](https://github.com/snobb/dwm-statusbar) - date,
+  loadavg, battery and more. If battery goes below threshold - run suspend
+  command
 
 Helper Functions In The Shell
 -----------------------------
-
 * [posix scripts](https://notabug.org/kl3/scripts) - basic collection of simple, fully POSIX sh compliant scripts to get various system information
 * [i3blocks-contrib](https://github.com/vivien/i3blocks-contrib) - collection of python, perl and shell scripts
 * Free memory: `free -h | awk '(NR==2){ print $3 }'`
@@ -72,16 +77,13 @@ Helper Functions In The Shell
 * Keyboard layout: `setxkbmap -query | awk '/layout/{ print $2 }'`
 * Empty disk space (mountpoint /home): `df -h | awk '{ if ($6 == "/home") print $4 }'`
 * wifi status (interface wlp3s0): `cat /sys/class/net/wlp3s0/opestate`
-* CPU temperature: `sed 's/000$/°C/' /sys/class/thermal/thermal_zone0/temp`
-
-  Alternatively you can use `acpi -t` or `sensors` from lm-sensors
-  package. For older systems you can get the cpu temperature from
+* CPU temperature: `sed 's/000$/°C/' /sys/class/thermal/thermal_zone0/temp`.
+  Alternatively you can use `acpi -t` or `sensors` from lm-sensors package. For
+  older systems you can get the cpu temperature from
   `/proc/acpi/thermal_zone/THM0/temperature`
-
-* Remaining battery: `cat /sys/class/power_supply/BAT0/capacity`
-
-  Alternatively you can use `acpi -b`. For older systems you can get
-  the battery capacity from `/proc/acpi/battery/BAT0/state`.
+* Remaining battery: `cat /sys/class/power_supply/BAT0/capacity`. Alternatively
+  you can use `acpi -b`. For older systems you can get the battery capacity from
+  `/proc/acpi/battery/BAT0/state`.
 
 Using shell scripts very well leads to big scripts, which pull in unneeded
 dependencies. One solution for this is to write everything in C, which is much
@@ -89,7 +91,6 @@ more efficient.
 
 Helper Functions In C (for dwmstatus or slstatus etc.)
 ------------------------------------------------------
-
 If you have simple C functions for gathering system information, feel free to
 add them here (keeping the list sorted).
 

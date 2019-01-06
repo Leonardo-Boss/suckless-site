@@ -3,7 +3,6 @@ onlyquitonempty
 
 Description
 -----------
-
 On the default keybinding of Alt-Shift-Q, it is possible to press it by
 accident, closing all your work. This patch makes it so dwm will only exit via
 quit() if no windows are open.
@@ -13,12 +12,8 @@ count considered to be 'empty' via `EMPTY_WINDOW_COUNT`.
 
 Download
 --------
-
 * [dwm-onlyquitonempty-20180428-ba1a2cb.diff](dwm-onlyquitonempty-20180428-ba1a2cb.diff)
 
 Author
 ------
-
 * thatlittlegit - <personal@thatlittlegit.tk>
-
-index.md

@@ -1,6 +1,5 @@
 Initial Text
 ============
-
 Adds an option to provide preselected text.
 
 Download

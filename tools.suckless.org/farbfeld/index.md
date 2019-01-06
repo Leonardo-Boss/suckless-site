@@ -1,7 +1,6 @@
 ![farbfeld](farbfeld.svg)
 
-farbfeld is a lossless image format which is easy to parse, pipe and
-compress.
+farbfeld is a lossless image format which is easy to parse, pipe and compress.
 It has the following format:
 
 	╔════════╤═════════════════════════════════════════════════════════╗
@@ -21,21 +20,18 @@ alpha-premultiplied.
 
 Dependencies
 ------------
-
 * [libpng](http://www.libpng.org/pub/png/libpng.html) - for png conversions
 * [libjpeg-turbo](http://libjpeg-turbo.virtualgl.org/) - for jpg conversions
 
 Development
 -----------
-
-You can [browse](//git.suckless.org/farbfeld) its source code repository
-or get a copy using the following command:
+You can [browse](//git.suckless.org/farbfeld) its source code repository or get
+a copy using the following command:
 
 	git clone git://git.suckless.org/farbfeld
 
 Download
 --------
-
 * [farbfeld-1](//dl.suckless.org/farbfeld/farbfeld-1.tar.gz) (2016-01-06)
 * [farbfeld-2](//dl.suckless.org/farbfeld/farbfeld-2.tar.gz) (2016-03-14)
 * [farbfeld-3](//dl.suckless.org/farbfeld/farbfeld-3.tar.gz) (2017-04-14)
@@ -56,7 +52,6 @@ provide packages:
 
 Implementations
 ---------------
-
 * [lel](http://git.2f30.org/lel) farbfeld image viewer
 * [sent](//tools.suckless.org/sent/) presentation tool
 * [Go encoder/decoder](https://github.com/hullerob/go.farbfeld)
@@ -68,8 +63,6 @@ Implementations
 
 Author
 ------
-
 * Laslo Hunhold (dev@frign.de)
 
-Please contact me when you find information that could be added to this
-page.
+Please contact me when you find information that could be added to this page.

@@ -1,14 +1,12 @@
 Workspaces
 ==========
-
-*by [Jesus Galan (yiyus)](mailto:yiyu dot jgl at gmail>) (aug 30 21:41:42 CEST 2008)*
-
-Adds to dwm the functionality of remembering tagset, layout and mfact for a given number of workspaces. You can also define preconfigured workspaces.
+Adds to dwm the functionality of remembering tagset, layout and mfact for a
+given number of workspaces. You can also define preconfigured workspaces.
 
 Code
 ----
-
-Insert this code before your keys definitions in config.h or in an included .c file:
+Insert this code before your keys definitions in config.h or in an included .c
+file:
 
 	typedef struct Workspace Workspace;
 	struct Workspace {
@@ -65,12 +63,15 @@ Or mouse buttons:
 
 Comments
 --------
+It is so easy to change the viewed tags, layout and mfact in dwm than having
+artifacts to remember them are not necessary, this patch is just an example of
+how it could be implemented, but it won't be updated for future releases.
 
-It is so easy to change the viewed tags, layout and mfact in dwm than having artifacts to remember them are not necessary, this patch is just an example of how it could be implemented, but it won't be updated for future releases.
+It should be easy to add to the workspaces the possibility to remember bar
+position too.
 
-It should be easy to add to the workspaces the possibility to remember bar position too.
-
-It is not necessary to define all your workspaces (or any of them). You can perfectly do:
+It is not necessary to define all your workspaces (or any of them). You can
+perfectly do:
 
 	static Workspace workspaces[16] = {
 		/* tagset						layout			fact */
@@ -82,3 +83,6 @@ or:
 
 	static Workspace workspaces[16];
 
+Authors
+-------
+* [Jesus Galan (yiyus)](mailto:yiyu dot jgl at gmail>) (aug 30 21:41:42 CEST 2008)*

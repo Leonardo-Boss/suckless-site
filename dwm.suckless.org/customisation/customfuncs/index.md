@@ -1,14 +1,13 @@
 Custom functions in config.h
 ============================
-
-*by [Jesus Galan (yiyus)](mailto:yiyu dot jgl at gmail>) (vie ago 22 19:53:32 CEST 2008)*
-
-You don't need to write complex patches to config dwm, some custom functions and sensible key and button definitions in config.h let you turn dwm into whatever you want without messing with dwm.c.
+You don't need to write complex patches to config dwm, some custom functions
+and sensible key and button definitions in config.h let you turn dwm into
+whatever you want without messing with dwm.c.
 
 Example of config.h
 -------------------
-
-This example is for people who prefer to control dwm with the mouse (for dwm 5.1):
+This example is for people who prefer to control dwm with the mouse (for dwm
+5.1):
 
 	/* See LICENSE file for copyright and license details. */
 	
@@ -225,17 +224,22 @@ This example is for people who prefer to control dwm with the mouse (for dwm 5.1
 
 Usage of the above configuration
 --------------------------------
-
-In case you want to try this configuration there are some differences with the default dwm config to be taken into account. Mouse actions will be explained later, keys have similar behaviour. There are other small changes, but the config.h file should be pretty straightforward.
+In case you want to try this configuration there are some differences with the
+default dwm config to be taken into account. Mouse actions will be explained
+later, keys have similar behaviour. There are other small changes, but the
+config.h file should be pretty straightforward.
 
 ### Tagging
 
 In the tag buttons:
 
-* B1: view a tag, trying to view the selected tagset will result in a change to the previous one.
-* B3: toggle a tag, trying to toggle the last selected tag will result in viewing all tags.
+* B1: view a tag, trying to view the selected tagset will result in a change to
+  the previous one.
+* B3: toggle a tag, trying to toggle the last selected tag will result in
+  viewing all tags.
 * B2+B1: assign tag to the sel client.
-* B2+B3: toggle tag for the sel client, trying to toggle the last tag will result in assigning all tags.
+* B2+B3: toggle tag for the sel client, trying to toggle the last tag will
+  result in assigning all tags.
 
 ### Layouts
 
@@ -249,11 +253,17 @@ In the layout symbol:
 
 in the status bar, the root window, or the selected window (with Mod pressed)
 
-* Wheel to focus prev/next client. Floating clients will just be focused after the tiled ones.
-* B1  to move (the pointer will be wrapped to the upper-left corner if necessary).
+* Wheel to focus prev/next client. Floating clients will just be focused after
+  the tiled ones.
+* B1 to move (the pointer will be wrapped to the upper-left corner if
+  necessary).
 * B3 to resize (the pointer will be wrapped to the bottom-right corner).
 * B2 to zoom or toggle floating status if zooming is not possible.
 
 ### Closing windows
 
 * B3+B1 in the status message.
+
+Author
+------
+* [Jesus Galan (yiyus)](mailto:yiyu dot jgl at gmail>) (vie ago 22 19:53:32 CEST 2008)

@@ -1,7 +1,8 @@
-# fibonacci layouts
+fibonacci layouts
+=================
 
-## Description
-
+Description
+-----------
 This patch adds two new layouts (`spiral` and `dwindle`) that arranges all
 windows in Fibonacci tiles: The first window uses half the screen, the second
 the half of the remainder, etc. ASCII art and a real screenshot of the spiral
@@ -18,12 +19,12 @@ arrangement can be seen below.
 	+-----------+-----+-----+  +-----------+-----+-----+
 		 spiral                     dwindle
 
-## Usage
-
+Usage
+-----
 1. Download the patch and apply according to the [general instructions](.).
 2. Include the `fibonacci.c` source file and add `spiral` and/or `dwindle` to
-   the `Layout` section of your `config.h` file.
-   Example from `config.default.h`:
+   the `Layout` section of your `config.h` file. Example from
+  `config.default.h`:
 
    	#include "fibonacci.c"
    	static Layout layout[] = {
@@ -34,16 +35,14 @@ arrangement can be seen below.
    		{ "[\\]",               dwindle },
    	};
 
-## Download
-
+Download
+--------
 * [dwm-fibonacci-5.8.2.diff](dwm-fibonacci-5.8.2.diff)
 
-## Maintainer
-
+Maintainer
+----------
 * Niki Yoshiuchi - <aplusbi@gmail.com>
 
-Joe Thornber's spiral tiling for [Xmonad][3] formed the inspiration for this
-patch. Thanks to Jan Christoph Ebersbach for updating this patch for versions
-4.5 to 4.9.
-
-[1]: http://www.xmonad.org
+Joe Thornber's spiral tiling for [Xmonad](http://www.xmonad.org) formed the
+inspiration for this patch. Thanks to Jan Christoph Ebersbach for updating this
+patch for versions 4.5 to 4.9.

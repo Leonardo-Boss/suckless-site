@@ -3,7 +3,8 @@ zoomswap
 
 Description
 -----------
-This patch swaps the current window (C) with the previous master (P) when zooming.
+This patch swaps the current window (C) with the previous master (P) when
+zooming.
 
 	Original behaviour :
 	+-----------------+-------+

@@ -21,15 +21,15 @@ is appreciated by the entire suckless community.
 
 Present
 -------
-Following people are currently donating in one or another way to the suckless.org project:
+Following people are currently donating in one or another way to the
+suckless.org project:
 
 * Anselm R Garbe donates domains and servers.
 
 Past
 ----
-Following people have donated to the suckless.org project
-certain amounts of money, which have been used for the dedicated server rent
-in the past:
+Following people have donated to the suckless.org project certain amounts of
+money, which have been used for the dedicated server rent in the past:
 
 * Mikko Nyman donated **100 EUR**
 * Benedikt Brenner donated **50 EUR**

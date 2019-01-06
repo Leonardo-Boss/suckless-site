@@ -1,7 +1,8 @@
-# statuspadding
+statuspadding
+=============
 
-## Description
-
+Description
+-----------
 This makes the amount of horizontal and vertical padding in the status bar
 into configurable options.
 
@@ -17,10 +18,10 @@ vertpadbar
 The defaults in config.def.h leave dwm with the same appearance as pre-patch
 except StatusText now has left padding in addition to right padding.
 
-## Download
-
+Download
+--------
 * [dwm-statuspadding-20150524-c8e9479.diff](dwm-statuspadding-20150524-c8e9479.diff) (24.05.2018)
 
-## Author
-
+Author
+------
 * cd

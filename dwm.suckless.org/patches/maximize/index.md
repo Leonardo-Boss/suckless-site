@@ -18,9 +18,9 @@ Insert the bindings into the keys list. Here is an example:
 
 Download
 --------
-* [dwm-maximize_vert_horz-20160731-56a31dc.diff](dwm-maximize_vert_horz-20160731-56a31dc.diff)
-* [dwm-maximize_vert_horz-6.1.diff](dwm-maximize_vert_horz-6.1.diff) (Unclean patch)
-* [dwm-maximize_vert_horz-6.0.diff](dwm-maximize_vert_horz-6.0.diff)
+* [dwm-maximize\_vert\_horz-20160731-56a31dc.diff](dwm-maximize_vert_horz-20160731-56a31dc.diff)
+* [dwm-maximize\_vert\_horz-6.1.diff](dwm-maximize_vert_horz-6.1.diff) (Unclean patch)
+* [dwm-maximize\_vert\_horz-6.0.diff](dwm-maximize_vert_horz-6.0.diff)
 
 Author
 ------

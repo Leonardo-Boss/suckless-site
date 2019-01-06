@@ -1,24 +1,21 @@
-# AnsiStatusColors - colorize your status bar using ansi escape sequences#
+AnsiStatusColors
+================
+Colorize your status bar using ansi escape sequences.
 
-## Description
+Description
+-----------
+Lets you put colored text in your status bar, but you don't have define them in
+your config.h. Instead, just put the ansi escape sequence in the output of your
+status bar script to print in color, as you would in a terminal.
 
-Lets you put colored text in your status bar, but you don't have define them in your config.h. Instead, just put the ansi escape sequence in the output of your status bar script to print in color, as you would in a terminal.
-
-## Configuration
-
-get the patch from github: [https://gist.github.com/4054818](https://gist.github.com/4054818)
-
-apply it to dwm.c like so:
-
-	patch -p1 dwm.c < ansistatuscolors.diff
-
-## Usage
-
+Usage
+-----
 Just like you'd use them for colorizing a shell script.
 
-more info is here: [http://www.frexx.de/xterm-256-notes/](http://www.frexx.de/xterm-256-notes/)
+More info is here:
+[http://www.frexx.de/xterm-256-notes/](http://www.frexx.de/xterm-256-notes/)
 
-an ansi escape sequence is in the form:
+An ansi escape sequence is in the form:
 
 	\e[<code>m
 
@@ -28,7 +25,7 @@ where:
 	[ - literal bracket
 	m - literal 'm'
 
-the code is one of the following:
+The code is one of the following:
 
 	0 
 	    - reset colors to default
@@ -55,10 +52,11 @@ the code is one of the following:
 	        16-231 - xterm 256-color rgb color
 	        232-255 - grayscale
 
-in vim, to create a literal 'escape' character, type ctrl-v, esc.
+In vim, to create a literal 'escape' character, type ctrl-v, esc.
 in perl/python/c, within a string literal, it's "\x1b".
 
-### Example
+Example
+-------
 	#!/usr/bin/env python
 	##testcoloredstatus.py
 
@@ -88,14 +86,16 @@ in perl/python/c, within a string literal, it's "\x1b".
 	    ]
 	)], shell=False)
 
-### Screenshot
-my battery is discharging and my wifi signal is iffy ...
+Screenshot
+----------
+My battery is discharging and my wifi signal is iffy...
 
 ![alt text](ansistatuscolors.png)
 
-### Author
-# Brandon Dowell <brandon DOT dowell AT gmail>
+Download
+--------
+* [
 
-github.com/la11111
-
-holler if you find a bug, or make a patch to fix it!
+Author
+------
+* Brandon Dowell &lt;brandon DOT dowell AT gmail>

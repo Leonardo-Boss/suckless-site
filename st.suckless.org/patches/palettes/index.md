@@ -1,18 +1,15 @@
-color_schemes
+color\_schemes
 =============
 
 Description
 -----------
-
 This patch allows you to work with 16 color palettes and change them on the
 fly.
-
 
 Instructions
 ------------
 The patch changes the &ldquo;config.def.h&rdquo;.
 Delete your &ldquo;config.h&rdquo; or change it manually if you use a custom one.
-
 
 Notes
 -----
@@ -33,8 +30,7 @@ It uses the following shortcuts :
 
 Download
 --------
-
-* [st-color_schemes-0.8.1.diff](st-color_schemes-0.8.1.diff)
+* [st-color\_schemes-0.8.1.diff](st-color_schemes-0.8.1.diff)
 
 
 Authors

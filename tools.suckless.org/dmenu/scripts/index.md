@@ -1,11 +1,9 @@
 Scripts using dmenu
 ===================
-
 dmenu's user, feel free to add your own scripts, or comment existents.
 
 Download
 --------
-
 * [clipmenu](https://github.com/cdown/clipmenu): Clipboard management using dmenu
 * [dbdb.sh](dbdb.sh): dmenu-based directory browser
 * [dbrowse](https://github.com/clamiax/scripts/blob/master/src/dbrowse):

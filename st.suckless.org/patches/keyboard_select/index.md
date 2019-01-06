@@ -1,27 +1,24 @@
-keyboard_select
-===============
+keyboard\_select
+================
 
 Description
 -----------
-
 This patch allows you to select and copy text to primary buffer with keyboard
-shortcuts like the perl extension &ldquo;keyboard-select&rdquo; for urxvt.
+shortcuts like the perl extension keyboard-select for urxvt.
 
 Instructions
 ------------
-The patch changes the &ldquo;config.def.h&rdquo;. Delete your
-&ldquo;config.h&rdquo; or add the shortcut below if you use a custom one.
+The patch changes the config.def.h. Delete your config.h or add the shortcut
+below if you use a custom one.
 
 	Shortcut shortcuts[] = {
 		...
 		{ TERMMOD, XK_Escape, keyboard_select, { 0 } },
 	};
 
-
 Notes
 -----
-
-When you run "keyboard_select", you have 3 modes available :
+When you run "keyboard\_select", you have 3 modes available :
 
 * move mode :   to set the start of the selection;
 * select mode : to activate and set the end of the selection;
@@ -41,21 +38,18 @@ Shortcuts for move and select modes :
 	 Return:        quit keyboard_select, keeping the highlight of the selection
 	 Escape:        quit keyboard_select
 
-With h,j,k,l (also with arrow keys), you can use a quantifier. Enter a number before hitting the appropriate key.
+With h,j,k,l (also with arrow keys), you can use a quantifier. Enter a number
+before hitting the appropriate key.
 
 Shortcuts for input mode :
 
 	 Return:       Return to the previous mode
 
-
-
 Download
 --------
-
-* [git-st-keyboard_select-20180619-937e367.diff](git-st-keyboard_select-20180619-937e367.diff)   
-* [st-keyboard_select-0.8.1.diff](st-keyboard_select-0.8.1.diff)
-
+* [git-st-keyboard\_select-20180619-937e367.diff](git-st-keyboard_select-20180619-937e367.diff)   
+* [st-keyboard\_select-0.8.1.diff](st-keyboard_select-0.8.1.diff)
 
 Authors
 -------
-* Tonton Couillon - &lt;la dot luge at free dot fr>
+* Tonton Couillon - <la dot luge at free dot fr>

@@ -1,11 +1,11 @@
-# clients per tag
+clients per tag
+===============
 
-## Description
-
+Description
+-----------
 This patch modifies the tile() layout to limit the maximum number of visible
 clients per tag. Out-of-limit windows are arranged behind the visible ones
 in the slave area.
-
 
 	+-----------------------+  +-----------------------+
 	| -1/3                  |  |  2/3                  |
@@ -20,8 +20,8 @@ in the slave area.
 	+-----------+-----------+  +-----------+-----------+
 	          cpt=-1                     cpt=2
 
-## Usage
-
+Usage
+-----
 1. Download the patch and apply according to the [general instructions](.).
 2. The patch adds two new keybindings (META-q/a) which set cpt to ^2 and ^3:
 
@@ -39,10 +39,10 @@ will result on swapping between the defined value and -1.
 		{ MODKEY,        XK_a,      clientspertag,  {.v="^3"} },
 	};
 
-## Download
-
+Download
+--------
 * [dwm-clientspertag-5.6.1.diff](dwm-clientspertag-5.6.1.diff)
 
-## Maintainer
-
+Maintainer
+----------
 * pancake - <pancake@nopcode.org>

@@ -1,6 +1,5 @@
 Multi-pointer
--------------
-
+=============
 Multi-pointer can be an alternative to multi-seat. Compared to multi-seat,
 multi-pointer is easier to setup (because no multi-seat experience), allows
 hardware acceleration and at least one monitor is required. Bad news? Both
@@ -13,7 +12,6 @@ through keyboard since there is only one active window at a time.
 
 Configuring inputs
 ------------------
-
 One way to configure input devices is via the `xinput` tool. Without any
 arguments given, it should list all the input devices in short format.
 
@@ -24,7 +22,6 @@ It will print all the master device (cursors on screen) and the slave device
 
 Adding master device
 --------------------
-
 To create another pointer for a new user. First, we add a master device.
 
 	xinput create-master Name
@@ -33,7 +30,6 @@ Another pointer should appear in the center of the screen by now.
 
 Assigning slave device
 ----------------------
-
 We will then require to assign a slave device to the master device. The *id* of
 the **master** and **slave** device can be found by using `xinput`.
 
@@ -45,7 +41,6 @@ without multi-pointer support.
 
 Point master device to window
 -----------------------------
-
 Time to point the master device to the respective window, do this for both
 pointer and keyboard master device (not sure if specifying one works).
 
@@ -59,7 +54,6 @@ the window. In which multiple user can play different games at the same time.
 
 Cleaning up
 -----------
-
 Remove all the master device that was created.
 
 	xinput remove-master <master>
@@ -74,5 +68,5 @@ Ideas
 See also
 --------
 
-* https://ao2.it/en/blog/2010/01/19/poor-mans-multi-touch-using-multiple-mice-xorg
-* https://www.x.org/wiki/Development/Documentation/MPX/
+* [https://ao2.it/en/blog/2010/01/19/poor-mans-multi-touch-using-multiple-mice-xorg](https://ao2.it/en/blog/2010/01/19/poor-mans-multi-touch-using-multiple-mice-xorg)
+* [https://www.x.org/wiki/Development/Documentation/MPX/](https://www.x.org/wiki/Development/Documentation/MPX/)

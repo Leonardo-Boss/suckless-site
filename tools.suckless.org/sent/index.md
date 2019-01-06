@@ -1,6 +1,5 @@
 sent
 ====
-
 Simple plaintext presentation tool.
 
 [![Screenshot of sent](sent-bullets-s.png)](sent-bullets.png)
@@ -19,17 +18,15 @@ have to worry about alignment. Instead you can really focus on the content.
 
 Dependencies
 ------------
-
 * Xlib and Xft for building
 * [farbfeld](//tools.suckless.org/farbfeld/) tools to use images in the
   presentations (if you don't want to use farbfeld,
-  [sent-0.2](//dl.suckless.org/tools/sent-0.2.tar.gz) was the last version
-  with just png support, but may lack fixes and further improvements since its
+  [sent-0.2](//dl.suckless.org/tools/sent-0.2.tar.gz) was the last version with
+  just png support, but may lack fixes and further improvements since its
   release)
 
 Demo
 ----
-
 To get a little demo, just type
 
 	make && ./sent example
@@ -38,7 +35,6 @@ You can navigate with the arrow keys and quit with `q`.
 
 (Non-)Features
 --------------
-
 * A presentation is just a simple text file.
 * Each paragraph represents one slide.
 * Content is automatically scaled to fit the screen.
@@ -56,7 +52,6 @@ You can navigate with the arrow keys and quit with `q`.
 
 Usage
 -----
-
 Edit config.h to fit your needs then build again.
 
 	sent [FILE]
@@ -83,18 +78,16 @@ with `#` will be ignored. A `\` at the beginning of the line escapes `@` and
 	
 	thanks / questions?
 
-A deeper example can be found in [this
-file](//git.suckless.org/sent/tree/example) from the repository root.
+A deeper example can be found in
+[this file](//git.suckless.org/sent/tree/example) from the repository root.
 
 Development
 -----------
-
-You can [browse](//git.suckless.org/sent) its source code repository
-or get a copy using the following command:
+You can [browse](//git.suckless.org/sent) its source code repository or get a
+copy using the following command:
 
 	git clone https://git.suckless.org/sent
 
 Download
 --------
-
 * [sent-1](//dl.suckless.org/tools/sent-1.tar.gz) (20170904)

@@ -3,7 +3,6 @@ email notifications
 
 Description
 -----------
-
 This init script is based on some ideas taken from the dwm ML. It adds email
 notification using `fetchmail`. It also adds the functionality of showing the
 content of the file `$HOME/.message` when it exists. This can be used for
@@ -21,15 +20,13 @@ This config works with GMail over IMAP with the IDLE extension for low bandwidth
 
 Init script
 -----------
-
 The notification is flashing during 60 seconds, then it is removed. Lines
 written to `.message` are displayed during a second in the status bar. If
 `.message` is deleted, the normal status message (date and uptime) returns.
 
 A pipe must be used with `fetchmail` when using IDLE extension because this way
-it waits for updates from the inbox not doing polling.
-If the `.message` file exists with some content, it is preserved and no email
-notification is shown.
+it waits for updates from the inbox not doing polling. If the `.message` file
+exists with some content, it is preserved and no email notification is shown.
 
 	fetchmail --check 2>/dev/null | while read line; do
 		new=`echo $line | sed 's/(//' | awk '{print $1-$3}'`
@@ -58,5 +55,4 @@ notification is shown.
 
 Author
 ------
-
 * Ricardo Catalinas Jiménez <[jimenezrick@gmail.com](mailto:jimenezrick@gmail.com)>

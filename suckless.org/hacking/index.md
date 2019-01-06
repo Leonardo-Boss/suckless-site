@@ -3,13 +3,13 @@ Hacking
 
 Copying/license
 ---------------
-We only accept contributions from individuals, not corporate entities. See
-the project LICENSE file you're contributing to.
+We only accept contributions from individuals, not corporate entities. See the
+project LICENSE file you're contributing to.
 
 Debugging
 ---------
-If you find any crashes, please send a full backtrace to the dedicated mailing list.
-You can create backtraces with `gdb`:
+If you find any crashes, please send a full backtrace to the dedicated mailing
+list. You can create backtraces with `gdb`:
 
 Before starting a program, you may have to allow core file creation. It is
 recommended that you put this in your profile:
@@ -23,7 +23,8 @@ After the program crashes, do the following:
 	$ gdb -q `which program` /path/to/core
 	gdb> bt full
 
-If you encounter freezes (no crash at all) of the program, you can debug as follows:
+If you encounter freezes (no crash at all) of the program, you can debug as
+follows:
 
 	$ gdb -q `which program` --attach `pgrep -o  program`
 	gdb> bt full
@@ -48,18 +49,18 @@ the pages you see here.
 
 patch filename format
 ---------------------
-The expected format for patches is
+The expected format for patches is:
 
 For git revisions:
 
 	toolname-patchname-YYYYMMDD-SHORTHASH.diff
 	dwm-allyourbase-20160617-3465bed.diff
 
-The YYYYMMDD date should correspond to the last time the patch has been modified.
-The SHORTHASH here is the seven chars git commit short hash corresponding to the
-last commit of the tool on which the patch can be applied correctly and
-is working with.
-You can get it by taking the first seven chars of the full hash or for example:
+The YYYYMMDD date should correspond to the last time the patch has been
+modified. The SHORTHASH here is the seven chars git commit short hash
+corresponding to the last commit of the tool on which the patch can be applied
+correctly and is working with. You can get it by taking the first seven chars
+of the full hash or for example:
 
 	git rev-parse --short <commit-id> (with commit-id: HEAD, commit hash, etc.)
 

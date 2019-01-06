@@ -1,9 +1,8 @@
 Change Mod1 key to the Windows key in config.h
 ==============================================
-
 dwm's documentation refers to Mod1 as the modifier key that you must press to
-issue commands to it.  On most keyboards, Mod1 is mapped to the left Alt key.
-Most new keyboards now come equipped with the *Windows* key.  Since no known
+issue commands to it. On most keyboards, Mod1 is mapped to the left Alt key.
+Most new keyboards now come equipped with the *Windows* key. Since no known
 UNIX/X applications are known to use the Windows key, it is an excellent
 alternative mapping to issue commands to dwm.
 
@@ -32,12 +31,10 @@ The following patch also produces the same result:
 
 Can I use any other modifier key?
 ---------------------------------
-
-Yes.
-There are 5 modifiers, Mod1Mask to Mod5Mask.
-They are associated to up-to three keysyms (keycodes) from the X window server.
-To show the current association on your keyboard, run `xmodmap` with no arguments.
-It will show something like:
+Yes. There are 5 modifiers, Mod1Mask to Mod5Mask. They are associated to up-to
+three keysyms (keycodes) from the X window server. To show the current
+association on your keyboard, run `xmodmap` with no arguments. It will show
+something like:
 
 	$ xmodmap 
 	xmodmap:  up to 3 keys per modifier, (keycodes in parentheses):

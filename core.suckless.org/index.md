@@ -1,7 +1,8 @@
 ![core](core.svg)
 
-The suckless core is a collection of programs making up a suckless userspace foundation, aiming
-to replace bloated and complex solutions with simple and concise ones.
+The suckless core is a collection of programs making up a suckless userspace
+foundation, aiming to replace bloated and complex solutions with simple and
+concise ones.
 
 Useful external components
 --------------------------

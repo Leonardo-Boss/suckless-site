@@ -1,17 +1,18 @@
-# next prev tag
+next prev tag
+=============
 
-## Description
-
+Description
+-----------
 * Increment or decrement the selected tag
 * [shiftview](//lists.suckless.org/dev/1104/7590.html).c is a better
   implementation of this, allowing you to rotate the selected tags
 
-## Download
-
+Download
+--------
 * [nextprevtag.c](nextprevtag.c)
 
-## Example Usage
-
+Example
+-------
 	static Key keys[] = {
 		/* ... */
 		{ MODKEY,              XK_i,           view_adjacent,  { .i = +1 } },
@@ -27,6 +28,6 @@
 	};
 
 
-## Author
-
+Author
+------
 * Rob Pilling - robpilling gmail com

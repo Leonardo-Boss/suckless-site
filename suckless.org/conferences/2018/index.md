@@ -1,6 +1,5 @@
 suckless hackathon 2018, Würzburg, Germany
 ===========================================
-
 slcon hackathon 2018 was held in Würzburg on 2018-07-(06-09).
 
 [![slcon2018 group photo 0](slcon2018-0-s.jpg)](slcon2018-0.jpg)

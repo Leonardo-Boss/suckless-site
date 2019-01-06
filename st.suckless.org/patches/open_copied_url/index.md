@@ -24,9 +24,10 @@ to open the contents of the clipboard in the default browser.
 Download
 --------
 * [st-openclipboard-20180525-2c2500c.diff](st-openclipboard-20180525-2c2500c.diff)
+* [st-openclipboard-20190105-153c5c7.diff](st-openclipboard-20190105-153c5c7.diff)
 
 Authors
 -------
-* Michael Buch - &lt;michaelbuch12@gmail.com>
-* Sai Praneeth Reddy - &lt;spr.mora04@gmail.com> (0.8.1, open external programs
+* Michael Buch - <michaelbuch12@gmail.com>
+* Sai Praneeth Reddy - <spr.mora04@gmail.com> (0.8.1, open external programs
   independently)

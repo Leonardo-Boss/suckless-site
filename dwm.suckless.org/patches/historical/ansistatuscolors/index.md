@@ -94,7 +94,8 @@ My battery is discharging and my wifi signal is iffy...
 
 Download
 --------
-* [
+* [dwm-ansistatuscolors-5.9.diff][dwm-ansistatuscolors-5.9.diff]
+* [dwm-ansistatuscolors-6.0.diff][dwm-ansistatuscolors-6.0.diff]
 
 Author
 ------

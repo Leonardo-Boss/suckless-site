@@ -169,14 +169,9 @@ oneline(char *buf, size_t bufsiz, char const *path)
 void
 print_name(const char *name)
 {
-	const char *from = "_-", *to = "  ", *s;
-
-	for (; *name; ++name) {
-		if ((s = strchr(from, *name)) != NULL)
-			putchar(to[s - from]);
-		else
-			putchar(*name);
-	}
+	char c;
+	for (; c = *name; ++name)
+		putchar((c == '_' || c == '-') ? ' ' : c);
 }
 
 void

@@ -235,7 +235,7 @@ menu_panel(char *domain, char *page, char *this, int depth)
 			continue;
 
 		for (i = 0; i < depth + 1; ++i)
-			fputs("\t", stdout);
+			putchar('\t');
 		fputs("<li><a", stdout);
 		if (page && !strncmp(newdir, page, strlen(newdir)))
 			fputs(" class=\"thisPage\"", stdout);
@@ -243,17 +243,17 @@ menu_panel(char *domain, char *page, char *this, int depth)
 		print_name(d);
 		fputs("/</a>", stdout);
 		if (page && !strncmp(newdir, page, strlen(newdir))) {
-			fputs("\n", stdout);
+			putchar('\n');
 			for (i = 0; i < depth + 2; ++i)
-				fputs("\t", stdout);
+				putchar('\t');
 			/* TODO: empty <ul></ul> is printed for subitems */
 			puts("<ul>");
 			menu_panel(domain, page, newdir, depth + 1);
 			for (i = 0; i < depth + 2; ++i)
-				fputs("\t", stdout);
-			fputs("</ul>\n", stdout);
+				putchar('\t');
+			puts("</ul>");
 			for (i = 0; i < depth + 1; ++i)
-				fputs("\t", stdout);
+				putchar('\t');
 		}
 		puts("</li>");
 	}

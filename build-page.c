@@ -28,10 +28,12 @@ char *html_header =
 	"</head>\n"
 	"\n"
 	"<div id=\"header\">\n"
-	"\t<a href=\"//suckless.org/\"><img src=\"//suckless.org/logo.svg\" alt=\"\"/></a>\n"
+	"\t<a href=\"//suckless.org/\"><img src=\"//suckless.org/logo.svg\" alt=\"\"/></a>&nbsp;\n"
 	"\t<a id=\"headerLink\" href=\"//suckless.org/\">suckless.org</a>\n"
+	"\t<span class=\"hidden\"> - </span>\n"
 	"\t<span id=\"headerSubtitle\">%1$s</span>\n"
-	"</div>\n";
+	"</div>\n"
+	"<hr class=\"hidden\"/>\n";
 
 char *html_nav_bar =
 	"\t<span class=\"right\">\n"
@@ -184,13 +186,17 @@ print_nav_bar(char *domain)
 
 	puts("<div id=\"menu\">");
 	for (d = domain_list; d->dir; ++d) {
-		fputs("\t<a ", stdout);
 		if (strcmp(domain, d->dir) == 0)
-			fputs("class=\"thisSite\" ", stdout);
-		printf("href=\"//%s/\">%s</a>\n", d->dir, d->label);
+			printf("\t<a href=\"//%s/\"><b>%s</b></a>\n",
+			       d->dir, d->label);
+		else
+			printf("\t<a href=\"//%s/\">%s</a>\n",
+			       d->dir, d->label);
+
 	}
 	fputs(html_nav_bar, stdout);
 	puts("</div>");
+	puts("<hr class=\"hidden\"/>");
 }
 
 int
@@ -231,11 +237,16 @@ menu_panel(char *domain, char *page, char *this, int depth)
 		for (i = 0; i < depth + 1; ++i)
 			putchar('\t');
 		fputs("<li><a", stdout);
-		if (page && !strncmp(newdir, page, strlen(newdir)))
-			fputs(" class=\"thisPage\"", stdout);
-		printf(" href=\"//%s/%s/\">", domain, newdir);
-		print_name(d);
-		fputs("/</a>", stdout);
+		if (page && !strncmp(newdir, page, strlen(newdir))) {
+			printf("<a href=\"//%s/%s/\"><b>", domain, newdir);
+			print_name(d);
+			fputs("/</b></a>", stdout);
+		} else {
+			printf("<a href=\"//%s/%s/\">", domain, newdir);
+			print_name(d);
+			fputs("/</a>", stdout);
+		}
+
 		if (page && !strncmp(newdir, page, strlen(newdir))) {
 			putchar('\n');
 			for (i = 0; i < depth + 2; ++i)
@@ -256,13 +267,15 @@ menu_panel(char *domain, char *page, char *this, int depth)
 void
 print_menu_panel(char *domain, char *page)
 {
-	fputs("<div id=\"nav\">\n\t<ul>\n\t<li><a", stdout);
+	fputs("<div id=\"nav\">\n\t<ul>\n\t<li>", stdout);
 	if (!page)
-		fputs(" class=\"thisPage\"", stdout);
-	puts(" href=\"/\">about</a></li>");
+		puts("<a href=\"/\"><b>about</b></a></li>");
+	else
+		puts("<a href=\"/\">about</a></li>");
 	menu_panel(domain, page, NULL, 0);
 	puts("\t</ul>");
 	puts("</div>");
+	puts("<hr class=\"hidden\"/>");
 }
 
 void

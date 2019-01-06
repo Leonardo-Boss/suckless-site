@@ -34,19 +34,13 @@ char *html_header =
 	"</div>\n";
 
 char *html_nav_bar =
+	"<a href=\"//ev.suckless.org\">e.V.</a>\n"
 	"\t<span class=\"right\">\n"
 	"\t\t<a href=\"//dl.suckless.org\">download</a>\n"
 	"\t\t<a href=\"//git.suckless.org\">source</a>\n"
 	"\t</span>\n";
 
-char *html_footer =
-	"<div id=\"footer\">\n"
-	"<span class=\"right\">\n"
-	"&copy; 2006-2019 suckless.org community\n"
-	"| <a href=\"//ev.suckless.org/impressum\">Impressum</a>\n"
-	"| <a href=\"//ev.suckless.org\">e.V.</a>\n"
-	"</span>\n"
-	"</div>\n";
+char *html_footer = "</html>\n";
 
 struct domain {
 	char *label;

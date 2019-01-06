@@ -28,7 +28,7 @@ char *html_header =
 	"</head>\n"
 	"\n"
 	"<div id=\"header\">\n"
-	"\t<a href=\"//suckless.org/\"><img src=\"//suckless.org/logo.svg\"/></a>\n"
+	"\t<a href=\"//suckless.org/\"><img src=\"//suckless.org/logo.svg\" alt=\"\"/></a>\n"
 	"\t<a id=\"headerLink\" href=\"//suckless.org/\">suckless.org</a>\n"
 	"\t<span id=\"headerSubtitle\">%1$s</span>\n"
 	"</div>\n";

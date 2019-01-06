@@ -15,6 +15,6 @@ Download
 
 Authors
 -------
-* Eon S. Jeon - &lt;esjeon@hyunmu.am>
-* Laslo Hunhold - &lt;dev@frign.de> (6.1 port)
-* Thomas Oltmann - &lt;thomas.oltmann.hhg@gmail.com> (20180613-b69c870 port)
+* Eon S. Jeon - <esjeon@hyunmu.am>
+* Laslo Hunhold - <dev@frign.de> (6.1 port)
+* Thomas Oltmann - <thomas.oltmann.hhg@gmail.com> (20180613-b69c870 port)

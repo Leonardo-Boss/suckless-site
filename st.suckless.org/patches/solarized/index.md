@@ -57,10 +57,10 @@ or the dark color scheme:
 
 Authors
 -------
-* Nils Reuße - &lt;nilsreusse@gmail.com>
-* Laslo Hunhold - &lt;dev@frign.de> (0.5, 0.6, git ports)
-* Ryan Roden-Corrent - &lt;ryan@rcorre.net> (both)
-* Marcel Krüger - &lt;zauguin@gmail.com> (older git ports)
-* Harry Gindi - &lt;harry.gindi@live.com> (git ports for light, dark, and swap versions)
-* Matthew Parnell - &lt;matt@parnmatt.co.uk> (0.7 port)
-* Linh Nguyen - &lt;linhvng.2212@gmail.com> (0.8.1 port for no\_bold\_colors and swap versions)
+* Nils Reuße - <nilsreusse@gmail.com>
+* Laslo Hunhold - <dev@frign.de> (0.5, 0.6, git ports)
+* Ryan Roden-Corrent - <ryan@rcorre.net> (both)
+* Marcel Krüger - <zauguin@gmail.com> (older git ports)
+* Harry Gindi - <harry.gindi@live.com> (git ports for light, dark, and swap versions)
+* Matthew Parnell - <matt@parnmatt.co.uk> (0.7 port)
+* Linh Nguyen - <linhvng.2212@gmail.com> (0.8.1 port for no\_bold\_colors and swap versions)

@@ -25,4 +25,4 @@ Download
 
 Author
 ------
-* [Danny O'Brien](http://www.spesh.com/danny/) &lt;danny@spesh.com>
+* [Danny O'Brien](http://www.spesh.com/danny/) <danny@spesh.com>

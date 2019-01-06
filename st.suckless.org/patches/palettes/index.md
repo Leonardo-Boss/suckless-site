@@ -35,4 +35,4 @@ Download
 
 Authors
 -------
-* Tonton Couillon - &lt;la dot luge at free dot fr>
+* Tonton Couillon - <la dot luge at free dot fr>

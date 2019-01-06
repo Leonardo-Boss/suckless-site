@@ -99,4 +99,4 @@ Download
 
 Author
 ------
-* Brandon Dowell &lt;brandon DOT dowell AT gmail>
+* Brandon Dowell <brandon DOT dowell AT gmail>

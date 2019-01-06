@@ -39,6 +39,15 @@ char *html_nav_bar =
 	"\t\t<a href=\"//git.suckless.org\">source</a>\n"
 	"\t</span>\n";
 
+char *html_footer =
+	"<div id=\"footer\">\n"
+	"<span class=\"right\">\n"
+	"&copy; 2006-2019 suckless.org community\n"
+	"| <a href=\"//ev.suckless.org/impressum\">Impressum</a>\n"
+	"| <a href=\"//ev.suckless.org\">e.V.</a>\n"
+	"</span>\n"
+	"</div>\n";
+
 struct domain {
 	char *label;
 	char *dir;
@@ -161,7 +170,6 @@ void
 print_name(const char *name)
 {
 	char c;
-
 	for (; c = *name; ++name)
 		putchar((c == '_' || c == '-') ? ' ' : c);
 }
@@ -282,6 +290,12 @@ print_content(char *domain, char *page)
 	puts("</div>\n");
 }
 
+void
+print_footer(void)
+{
+	fputs(html_footer, stdout);
+}
+
 int
 main(int argc, char *argv[])
 {
@@ -301,6 +315,7 @@ main(int argc, char *argv[])
 	print_menu_panel(domain, page);
 	print_content(domain, page);
 	puts("</div>\n");
+	print_footer();
 
 	return 0;
 }

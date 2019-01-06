@@ -31,4 +31,4 @@ black themed surf
 Author
 ------
 
-* pancake <[pancake@nopcode.org](mailto:pancake@nopcode.org)>
+* pancake <pancake@nopcode.org>

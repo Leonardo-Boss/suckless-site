@@ -17,4 +17,4 @@ Download
 
 Authors
 -------
-* Jan Christoph Ebersbach <[jceb@e-jc.de](mailto:jceb@e-jc.de)>
+* Jan Christoph Ebersbach <jceb@e-jc.de>

@@ -21,4 +21,4 @@ Download
 
 Authors
 -------
-* Alvar Penning <[post@0x21.biz](mailto:post@0x21.biz)>
+* Alvar Penning <post@0x21.biz>

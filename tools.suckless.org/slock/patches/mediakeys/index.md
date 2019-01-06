@@ -23,4 +23,4 @@ Download
 
 Authors
 -------
-* Klemens Nanni <[kl3@posteo.org](mailto:kl3@posteo.org)>
+* Klemens Nanni <kl3@posteo.org>

@@ -14,4 +14,4 @@ Download
 Author
 ------
 * dusty - <dusty@teknik.io>
-* Klemens Nanni <[kl3@posteo.org](mailto:kl3@posteo.org)> (6.1 version)
+* Klemens Nanni <kl3@posteo.org> (6.1 version)

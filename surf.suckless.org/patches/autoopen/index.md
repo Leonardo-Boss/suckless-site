@@ -25,4 +25,4 @@ Download
 Author
 ------
 
-* Matthew Bauer <[mjbauer95@gmail.com](mailto:mjbauer95@gmail.com)>
+* Matthew Bauer <mjbauer95@gmail.com>

@@ -15,4 +15,4 @@ Download
 Author
 ------
 
-* Marcin sZpak <[szpak@reakcja.org](mailto:szpak@reakcja.org)>
+* Marcin sZpak <szpak@reakcja.org>

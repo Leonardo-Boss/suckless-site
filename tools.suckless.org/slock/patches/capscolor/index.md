@@ -13,5 +13,5 @@ Download
 
 Authors
 -------
-* Andrew Hills <[ahills@ednos.net](mailto:ahills@ednos.net)>
-* Klemens Nanni <[kl3@posteo.org](mailto:kl3@posteo.org)> (20170106 version)
+* Andrew Hills <ahills@ednos.net>
+* Klemens Nanni <kl3@posteo.org> (20170106 version)

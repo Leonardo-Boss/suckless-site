@@ -22,5 +22,5 @@ Download
 
 Author
 ------
-* Evan Gates (emg) <[evan.gates@gmail.com](mailto:evan.gates@gmail.com)>
+* Evan Gates (emg) <evan.gates@gmail.com>
 * prepend version by [Ondřej Grover](mailto:ondrej.grover@gmail.com)

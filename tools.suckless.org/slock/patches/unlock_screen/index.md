@@ -13,4 +13,4 @@ Download
 
 Authors
 -------
-* Arif Roktim <[aroktim@stuy.edu](mailto:aroktim@stuy.edu)>
+* Arif Roktim <aroktim@stuy.edu>

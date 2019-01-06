@@ -30,4 +30,4 @@ Download
 Author
 ------
 
-* Marcin Szamotulski (coot) <[mszamot@gmail.com](mailto:mszamot@gmail.com)>
+* Marcin Szamotulski (coot) <mszamot@gmail.com>

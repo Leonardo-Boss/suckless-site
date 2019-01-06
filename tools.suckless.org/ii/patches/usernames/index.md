@@ -20,5 +20,5 @@ Download
 
 Author
 ------
-* Robert Lowry (bobertlo) <[robertwlowry@gmail.com](mailto:robertwlowry@gmail.com)>
+* Robert Lowry (bobertlo) <robertwlowry@gmail.com>
 * Ported to 1.8 by hicsfield

@@ -21,4 +21,4 @@ Download
 
 Author
 ------
-* Claudio Alessi <[smoppy@gmail.com](mailto:smoppy@gmail.com)>
+* Claudio Alessi <smoppy@gmail.com>

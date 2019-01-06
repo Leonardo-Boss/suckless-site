@@ -55,4 +55,4 @@ exists with some content, it is preserved and no email notification is shown.
 
 Author
 ------
-* Ricardo Catalinas Jiménez <[jimenezrick@gmail.com](mailto:jimenezrick@gmail.com)>
+* Ricardo Catalinas Jiménez <jimenezrick@gmail.com>

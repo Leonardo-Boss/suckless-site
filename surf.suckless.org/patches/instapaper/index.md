@@ -24,4 +24,4 @@ Now running you can press MODKEY+i (usually Ctrl+i) and your current page will b
 Author
 ------
 
-* Matthew Bauer <[mjbauer95@gmail.com](mailto:mjbauer95@gmail.com)>
+* Matthew Bauer <mjbauer95@gmail.com>

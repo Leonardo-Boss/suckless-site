@@ -14,4 +14,4 @@ Download
 
 Author
 ------
-* Dr Owl <[mail@catsnest.co.uk](mailto:mail@catsnest.co.uk)>
+* Dr Owl <mail@catsnest.co.uk>

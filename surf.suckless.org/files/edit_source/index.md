@@ -30,4 +30,4 @@ The three required keystrokes are :
 Author
 ------
 
-- Julien Steinhauser <[julien.steinhauser@orange.fr](mailto:julien.steinhauser@orange.fr)>
+- Julien Steinhauser <julien.steinhauser@orange.fr>

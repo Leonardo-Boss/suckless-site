@@ -16,4 +16,4 @@ Download
 
 Author
 ------
-* Jan Klemkow (younix) <[j.klemkow@wemelug.de](mailto:j.klemkow@wemelug.de)>
+* Jan Klemkow (younix) <j.klemkow@wemelug.de>

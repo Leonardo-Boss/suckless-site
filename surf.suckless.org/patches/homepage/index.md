@@ -16,8 +16,8 @@ Download
 Author
 ------
 
-* Matthew Bauer <[mjbauer95@gmail.com](mailto:mjbauer95@gmail.com)>
-* Henrique Lengler <[henriqueleng@openmailbox.org](mailto:henriqueleng@openmailbox.org)>
-* Ivan Tham <[pickfire@riseup.net](mailto:pickfire@riseup.net)>
-* thatlittlegit <[personal@thatlittlegit.tk](mailto:personal@thatlittlegit.tk)>
+* Matthew Bauer <mjbauer95@gmail.com>
+* Henrique Lengler <henriqueleng@openmailbox.org>
+* Ivan Tham <pickfire@riseup.net>
+* thatlittlegit <personal@thatlittlegit.tk>
 

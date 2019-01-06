@@ -52,4 +52,4 @@ in the "static Key keys[] = {" part.
 
 Author
 ------
-- Julien Steinhauser <[julien.steinhauser@orange.fr](mailto:julien.steinhauser@orange.fr)>
+- Julien Steinhauser <julien.steinhauser@orange.fr>

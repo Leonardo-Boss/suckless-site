@@ -20,5 +20,5 @@ Download
 Author
 ------
 
-* Dmitrij D. Czarkoff <[czarkoff@gmail.com](mailto:czarkoff@gmail.com)>
+* Dmitrij D. Czarkoff <czarkoff@gmail.com>
 * Alexis Ben Miloud--Josselin; panpo; alexisbmj+code at protonmail dot com.

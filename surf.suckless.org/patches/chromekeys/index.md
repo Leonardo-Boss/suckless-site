@@ -18,4 +18,4 @@ Download
 Author
 ------
 
-* Steven Dee (mrdomino) <[steve@smartercode.net](mailto:steve@smartercode.net)>
+* Steven Dee (mrdomino) <steve@smartercode.net>

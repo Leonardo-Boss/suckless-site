@@ -28,7 +28,7 @@ Development
 You can [browse](//git.suckless.org/farbfeld) its source code repository or get
 a copy using the following command:
 
-	git clone git://git.suckless.org/farbfeld
+	git clone https://git.suckless.org/farbfeld
 
 Download
 --------

@@ -64,7 +64,7 @@ Development
 st is actively developed. You can [browse](//git.suckless.org/st) its source
 code repository or get a copy using git with the following command:
 
-	git clone git://git.suckless.org/st
+	git clone https://git.suckless.org/st
 
 Download
 --------

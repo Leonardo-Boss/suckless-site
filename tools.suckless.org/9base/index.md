@@ -63,7 +63,7 @@ than, e.g. bash (duh!).
 Download
 --------
 * [9base-6](//dl.suckless.org/tools/9base-6.tar.gz) (20100604)
-* <code>git clone [//git.suckless.org/9base](//git.suckless.org/9base)</code>
+* git clone https://git.suckless.org/9base
 
 Usage
 -----

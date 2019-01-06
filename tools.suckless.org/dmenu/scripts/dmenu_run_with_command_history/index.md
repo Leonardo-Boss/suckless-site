@@ -1,5 +1,6 @@
 dmenu\_run with command history
 ==============================
+
 A self-contained alternative to dmenu\_run which also handles history.
 
 History is saved in a file in `$XDG_CACHE_HOME`, with fallback to a dot

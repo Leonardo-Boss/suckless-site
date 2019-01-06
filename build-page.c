@@ -236,7 +236,7 @@ menu_panel(char *domain, char *page, char *this, int depth)
 
 		for (i = 0; i < depth + 1; ++i)
 			putchar('\t');
-		fputs("<li><a", stdout);
+		fputs("<li>", stdout);
 		if (page && !strncmp(newdir, page, strlen(newdir))) {
 			printf("<a href=\"//%s/%s/\"><b>", domain, newdir);
 			print_name(d);

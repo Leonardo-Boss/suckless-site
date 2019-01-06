@@ -34,7 +34,6 @@ char *html_header =
 	"</div>\n";
 
 char *html_nav_bar =
-	"\t<a href=\"//ev.suckless.org\">e.V.</a>\n"
 	"\t<span class=\"right\">\n"
 	"\t\t<a href=\"//dl.suckless.org\">download</a>\n"
 	"\t\t<a href=\"//git.suckless.org\">source</a>\n"
@@ -53,6 +52,7 @@ struct domain {
 	{ "surf",  "surf.suckless.org", },
 	{ "tools", "tools.suckless.org", },
 	{ "libs",  "libs.suckless.org", },
+	{ "e.V.",  "ev.suckless.org" },
 	{ NULL, NULL }
 };
 

@@ -31,6 +31,7 @@ Past
 Following people have donated to the suckless.org project certain amounts of
 money, which have been used for the dedicated server rent in the past:
 
+* Daniel Loebenberger donated **5 EUR**
 * Martin Sander donated **4 EUR**
 * Mikko Nyman donated **100 EUR**
 * Benedikt Brenner donated **50 EUR**

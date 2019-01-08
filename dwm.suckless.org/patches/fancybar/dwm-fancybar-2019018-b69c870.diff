@@ -1,8 +1,8 @@
 diff --git a/dwm.c b/dwm.c
-index b2bc9bd..32e94a7 100644
+index 4465af1..eff2da6 100644
 --- a/dwm.c
 +++ b/dwm.c
-@@ -708,10 +708,10 @@ dirtomon(int dir)
+@@ -695,10 +695,10 @@ dirtomon(int dir)
  void
  drawbar(Monitor *m)
  {
@@ -15,7 +15,7 @@ index b2bc9bd..32e94a7 100644
  	Client *c;
  
  	/* draw status first so it can be overdrawn by tags later */
-@@ -722,6 +722,8 @@ drawbar(Monitor *m)
+@@ -709,6 +709,8 @@ drawbar(Monitor *m)
  	}
  
  	for (c = m->clients; c; c = c->next) {
@@ -24,7 +24,7 @@ index b2bc9bd..32e94a7 100644
  		occ |= c->tags;
  		if (c->isurgent)
  			urg |= c->tags;
-@@ -742,15 +744,39 @@ drawbar(Monitor *m)
+@@ -729,15 +731,39 @@ drawbar(Monitor *m)
  	x = drw_text(drw, x, 0, w, bh, lrpad / 2, m->ltsymbol, 0);
  
  	if ((w = m->ww - sw - x) > bh) {
@@ -37,7 +37,7 @@ index b2bc9bd..32e94a7 100644
 -			drw_setscheme(drw, scheme[SchemeNorm]);
 -			drw_rect(drw, x, 0, w, bh, 1, 1);
 +		if (n > 0) {
-+			tw = TEXTW(m->sel->name);
++			tw = TEXTW(m->sel->name) + lrpad;
 +			mw = (tw >= w || n == 1) ? 0 : (w - tw) / (n - 1);
 +
 +			i = 0;

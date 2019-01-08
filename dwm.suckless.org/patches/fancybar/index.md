@@ -11,7 +11,7 @@ Download
 --------
 * [dwm-fancybar-5.6.1.diff](dwm-fancybar-5.6.1.diff)
 * [dwm-fancybar-6.1.diff](dwm-fancybar-6.1.diff)
-* [dwm-fancybar-git-20160725-7af4d43.diff](dwm-fancybar-git-20160725-7af4d43.diff)
+* [dwm-fancybar-2019018-b69c870.diff](dwm-fancybar-2019018-b69c870.diff)
 
 Author
 ------

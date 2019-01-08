@@ -1,4 +1,4 @@
-Mouse events on titlE
+Mouse events on title
 =====================
 Last update: 2009-12-11
 

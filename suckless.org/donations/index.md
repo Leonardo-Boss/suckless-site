@@ -31,11 +31,14 @@ Past
 Following people have donated to the suckless.org project certain amounts of
 money, which have been used for the dedicated server rent in the past:
 
+* Alexander Bluhm donated **3.01 EUR**
+* Anonymous donated **0.10 EUR**
+* Christoph Moder donated **1 EUR**
+* Patrick Wildt donated **10 EUR**
 * Benedikt Brenner donated **150 EUR**
 * Daniel Loebenberger donated **5 EUR**
 * Martin Sander donated **4 EUR**
 * Mikko Nyman donated **100 EUR**
-* Alexander Bluhm donated **3 EUR**
 * Aaron Kirkman donated **19.47 EUR**
 * Jeff Carr donated **500 EUR**
 * Silvan Jegen donated **175 EUR**

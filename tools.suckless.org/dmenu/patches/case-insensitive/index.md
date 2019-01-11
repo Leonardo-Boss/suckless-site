@@ -3,8 +3,9 @@ case-insensitive
 
 Description
 -----------
-This patch adds support for case-insensitive searching to dmenu. This patch
-works on top of fuzzymatch.
+This patch adds support for case-insensitive matching the fuzzymatch patch.
+
+dmenu already comes with the `-i` switch for regular case-insensitive matching.
 
 Download
 --------

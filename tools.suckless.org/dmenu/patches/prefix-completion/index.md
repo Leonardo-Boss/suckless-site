@@ -15,7 +15,7 @@ Download
 --------
 * For 4.6: [dmenu-prefixcompletion-20161019-7ef1d5e.diff](dmenu-prefixcompletion-20161019-7ef1d5e.diff)
 * For 4.7: [dmenu-prefixcompletion-4.7.diff](dmenu-prefixcompletion-4.7.diff)
-* For 4.8: [dmenu-prefixcompletion-4.8.diff](dmenu-prefixcompletion-4.7.diff)
+* For 4.8: [dmenu-prefixcompletion-4.8.diff](dmenu-prefixcompletion-4.8.diff)
 
 Authors
 -------

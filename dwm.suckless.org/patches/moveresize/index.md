@@ -29,7 +29,12 @@ Usage
 		while(XCheckMaskEvent(dpy, EnterWindowMask, &ev));
 	}
 
-2. Insert the bindings into the keys list. Here is an example which uses the
+2. Add a moveresize() function definition in dwm.c below the line:
+	static void movemouse(const Arg *arg);
+	
+	static void moveresize(const Arg *arg);
+
+3. Insert the bindings into the keys list. Here is an example which uses the
    arrow keys to move (mod+arrow) or resize (mod+shift+arrow) the selected
    client:
 

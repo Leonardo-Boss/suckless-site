@@ -17,7 +17,7 @@ developers and contributors.  If you are missing, feel free to add yourself.
 * [Christoph Wegscheider](http://www.wegi.net) (python bindings of old libixp, former irc logging)
 * Daniel Baumann (Debian packaging)
 * Daniel W&auml;ber (wabu) (fixes and patches)
-* &dagger; Denis Grelich (ex-maintainer)
+* † Denis Grelich (ex-maintainer)
 * Fabian Braennstroem (contributed archlinux packages)
 * Fernan Bolando (one of the most active WMI testers, contributed various ideas and feedback concerning the slot)
 * Fernando T. C. Lemos (contributed several themes)

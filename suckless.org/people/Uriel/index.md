@@ -1,5 +1,5 @@
-&dagger; Uriel
-==============
+† Uriel
+=======
 
 Chief philosophical adviser, rambler and critic.
 

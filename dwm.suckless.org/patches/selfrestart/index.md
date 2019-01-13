@@ -22,4 +22,4 @@ Download
 Implementation & idea
 ---------------------
 * Idea belongs to: [Yu-Jie Lin](https://sites.google.com/site/yjlnotes/notes/dwm)
-* The simplified implementation: Barbu Paul - Gheorghe &lt;barbu.paul.gheorghe@gmail.com>
+* The simplified implementation: Barbu Paul - Gheorghe <barbu.paul.gheorghe@gmail.com>

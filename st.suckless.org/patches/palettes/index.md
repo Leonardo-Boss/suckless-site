@@ -8,8 +8,8 @@ fly.
 
 Instructions
 ------------
-The patch changes the &ldquo;config.def.h&rdquo;.
-Delete your &ldquo;config.h&rdquo; or change it manually if you use a custom one.
+The patch changes the “config.def.h”.
+Delete your “config.h” or change it manually if you use a custom one.
 
 Notes
 -----

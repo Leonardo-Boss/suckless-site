@@ -87,7 +87,7 @@ lchat
 TLS/SSL
 -------
 To connect to a TLS/SSL encrypted channel, it is possible to use the [SSL
-patch](patches/ssl) or a proxy:
+patch](/ii/patches/ssl) or a proxy:
 
 [stunnel](https://www.stunnel.org/) is a proxy for an unencrypted TCP
 connection to TLS:

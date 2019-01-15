@@ -55,6 +55,6 @@ Authors
 -------
 
 * Jason Thigpen (cdarwin) <darwin@senet.us>
-* Peter John Hartman (wart_) <[http://durandus.trilidun.org/durandus/](http://durandus.trilidun.org/durandus/)>
+* Peter John Hartman (wart_) <http://durandus.trilidun.org/durandus/>
 * Samuel Baldwin (shardz) <recursive.forest@gmail.com>
 * Marcin sZpak <szpak@reakcja.org>

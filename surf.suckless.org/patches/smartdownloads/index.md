@@ -34,4 +34,5 @@ There's almost certainly better ways of doing this, but this is an example.  Cal
 Authors
 -------
 
-* Peter John Hartman (wart_) <[http://durandus.trilidun.org/durandus/](http://durandus.trilidun.org/durandus/)>
+* Peter John Hartman (wart_) <http://durandus.trilidun.org/durandus/>
+

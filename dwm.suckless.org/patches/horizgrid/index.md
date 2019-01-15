@@ -3,7 +3,7 @@ horizontal grid
 
 Description
 -----------
-This patch is a variant of [gapless\_grid](../gapless_grid/). It arranges
+This patch is a variant of [gaplessgrid](../gaplessgrid/). It arranges
 windows in a grid pattern in which every window is roughly the same size,
 adjusted such that there are no gaps. However, this layout arranges the windows
 in a horizontal grid, rather than a vertical grid.

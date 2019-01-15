@@ -20,4 +20,4 @@ Download
 Author
 ------
 
-* Nick White <[http://njw.me.uk](http://njw.me.uk)>
+* Nick White <http://njw.me.uk/>

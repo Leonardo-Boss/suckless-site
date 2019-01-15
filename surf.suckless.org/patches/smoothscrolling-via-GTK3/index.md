@@ -15,4 +15,4 @@ Download
 Author
 ------
 
-* Charles Lehner <<http://celehner.com>>
+* Charles Lehner <http://celehner.com>

@@ -1,104 +1,95 @@
 Stuff that sucks
 ================
-See the [philosophy](//suckless.org/philosophy) page about what
-applies to this page.
+See the [philosophy](//suckless.org/philosophy) page about what applies
+to this page.
 
-Bigger topics that suck: [systemd](//suckless.org/sucks/systemd),
-[the web](//suckless.org/sucks/web)
+Bigger topics that suck: [systemd](//suckless.org/sucks/systemd), [the
+web](//suckless.org/sucks/web)
 
 Libraries
 ---------
-These libraries are broken/considered harmful and should not be used if it's
-possible to avoid them. If you use them, consider looking for alternatives.
+These libraries are broken/considered harmful and should not be used
+if it's possible to avoid them. If you use them, consider looking for
+alternatives.
 
-* [glib][1] - implements C++ STL on top of C (because C++ sucks so much, let's
-  reinvent it!), adding lots of useless data types for
-  ["portability" and "readability" reasons][2].
-  even worse, it is not possible to write robust applications using glib,
-  since it [aborts in out-of-memory situations][8].
-  glib usage is required to write gtk+ and gnome applications, but is also used
-  when common functionality is needed (e.g. hashlists, base64 decoder, etc).
-  it is not suited at all for static linking due to its huge size and the
-  authors explicitly state that ["static linking is not supported"][19].
+* [glib](http://library.gnome.org/devel/glib/) - implements C++ STL
+  on top of C (because C++ sucks so much, let's reinvent it!), adding
+  lots of useless data types for ["portability" and "readability"
+  reasons](http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.h
+  tml). even worse, it is not possible to write robust
+  applications using glib, since it [aborts in out-of-memory
+  situations](https://bugzilla.gnome.org/show_bug.cgi?id=674446). glib
+  usage is required to write gtk+ and gnome applications, but is also
+  used when common functionality is needed (e.g. hashlists, base64
+  decoder, etc). it is not suited at all for static linking due to its
+  huge size and the authors explicitly state that ["static linking is not
+  supported"](https://bugzilla.gnome.org/show_bug.cgi?id=768215#c16).
 
-  Alternatives: [libmowgli][9], [libulz][10]
+  Alternatives: [libmowgli](https://github.com/atheme/libmowgli-2),
+  [libulz](https://github.com/rofl0r/libulz)
 
-* [GMP][3] - GNU's bignum/arbitrary precision library. Quite bloated, slow and
-  [calls abort() on failed malloc][4]
+* [GMP](http://gmplib.org/) - GNU's bignum/arbitrary precision
+  library. Quite bloated, slow and [calls abort() on failed
+  malloc](https://gmplib.org/repo/gmp/file/tip/memory.c#l105)
 
-  Alternatives: [libtommath][5], [TomsFastMath][6], [imath][7], [libzahl][11] (WIP), [hebimath][12] (WIP)
-
-
-[1]: http://library.gnome.org/devel/glib/
-[2]: http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html (glib Basic Types)
-[3]: http://gmplib.org/ (The GNU Multiple Precision Arithmetic Library)
-[4]: https://gmplib.org/repo/gmp/file/tip/memory.c#l105 "GMP calls abort() on failed malloc()"
-[5]: http://www.libtom.org/LibTomMath/
-[6]: http://www.libtom.org/TomsFastMath/
-[7]: https://github.com/creachadair/imath
-[8]: https://bugzilla.gnome.org/show_bug.cgi?id=674446
-[9]: https://github.com/atheme/libmowgli-2
-[10]: https://github.com/rofl0r/libulz
-[11]: //libs.suckless.org/libzahl
-[12]: https://github.com/suiginsoft/hebimath
-[19]: https://bugzilla.gnome.org/show_bug.cgi?id=768215#c16
+  Alternatives: [libtommath](http://www.libtom.org/LibTomMath/),
+  [TomsFastMath](http://www.libtom.org/TomsFastMath/),
+  [imath](https://github.com/creachadair/imath),
+  [libzahl](//libs.suckless.org/libzahl) (WIP),
+  [hebimath](https://github.com/suiginsoft/hebimath) (WIP)
 
 Build Systems
 -------------
-* [cmake][13] (written in C++) - so huge and bloated, compilation takes longer
-  than compiling GCC (!).
-  It's not even possible to create freestanding Makefiles, since the generated
-  Makefiles call back into the cmake binary itself.
-  Usage of cmake requires learning a new custom scripting language with very
-  limited expressiveness. Its major selling point is the existence of a
-  clicky-click GUI for windows users.
+* [cmake](http://www.cmake.org/) (written in C++) - so huge and bloated,
+  compilation takes longer than compiling GCC (!). It's not even possible
+  to create freestanding Makefiles, since the generated Makefiles call
+  back into the cmake binary itself. Usage of cmake requires learning a
+  new custom scripting language with very limited expressiveness. Its
+  major selling point is the existence of a clicky-click GUI for windows
+  users.
+* [waf](https://code.google.com/p/waf/) and
+  [scons](http://www.scons.org/) (both written in Python) - waf code is
+  dropped into the compilee's build tree, so it does not benefit from
+  updated versions and bugfixes.
 
-* [waf][14] and [scons][15] (both written in Python) - waf code is dropped
-  into the compilee's build tree, so it does not benefit from updated versions
-  and bugfixes.
+As these build systems are often used to compile C programs, one has to
+set up a C++ compiler or Python interpreter respectively just in order
+to be able to build some C code.
 
-As these build systems are often used to compile C programs, one has to set up a
-C++ compiler or Python interpreter respectively just in order to be able to build
-some C code.
-
-Alternatives: [mk][16], [make][17]
-
-[13]: http://www.cmake.org/
-[14]: https://code.google.com/p/waf/
-[15]: http://www.scons.org/
-[16]: http://doc.cat-v.org/plan_9/4th_edition/papers/mk
-[17]: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/make.html
+Alternatives: [mk](http://doc.cat-v.org/plan_9/4th_edition/papers/mk),
+[make](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/make.ht
+ml)
 
 Version Control Systems
 -----------------------
-* [subversion][18] (Teaches developers to think of version control in a harmful
-  and terrible way, centralized, ugly code, conceptionally broken in a lot of
-  terms. "Centralized" is said to be one of the main benefits for "enterprise"
-  applications, however, there is no benefit at all compared to decentralized
-  version control systems like git. There is no copy-on-write, branching
-  essentially will create a 1:1 copy of the full tree you have under version
-  control, making feature-branches and temporary changes to your code a painful
-  mess. It is slow, encourages people to come up with weird workarounds just to
-  get their work done, and the only thing enterprisey about it is that it just
-  sucks.
-
-[18]: https://subversion.apache.org/
+* [subversion](https://subversion.apache.org/) - Teaches developers to
+  think of version control in a harmful and terrible way, centralized,
+  ugly code, conceptionally broken in a lot of terms. "Centralized" is
+  said to be one of the main benefits for "enterprise" applications,
+  however, there is no benefit at all compared to decentralized version
+  control systems like git. There is no copy-on-write, branching
+  essentially will create a 1:1 copy of the full tree you have under
+  version control, making feature-branches and temporary changes to your
+  code a painful mess. It is slow, encourages people to come up with weird
+  workarounds just to get their work done, and the only thing enterprisey
+  about it is that it just sucks.
 
 Programs
 --------
-There are many broken X programs. Go bug the developers of these broken
-programs to fix them. Here are some of the main causes of this brokenness:
+There are many broken X programs. Go bug the developers of these
+broken programs to fix them. Here are some of the main causes of this
+brokenness:
 
-* The program **assumes a specific window management model**, e.g.
-  assumes you are using a WIMP-window manager like those
-  found in KDE or Gnome. This assumption breaks the
-  [ICCCM conventions][icccm].
+* The program **assumes a specific window management model**,
+  e.g. assumes you are using a WIMP-window manager like those
+  found in KDE or Gnome. This assumption breaks the [ICCCM
+  conventions](http://tronche.com/gui/x/icccm/).
 * The application uses a **fixed size** - this limitation does not fit
-  into the world of tiling window managers very well, and can also be
-  seen as breaking the ICCCM conventions, because a fixed sized window
-  assumes a specific window management model as well (though the ICCCM
-  does not forbid fixed-size windows). In any case, the ICCCM requests
-  that clients accept any size the window manager proposes to them.
+  into the world of tiling window managers very well, and can also be seen
+  as breaking the ICCCM conventions, because a fixed sized window assumes
+  a specific window management model as well (though the ICCCM does not
+  forbid fixed-size windows). In any case, the ICCCM requests that clients
+  accept any size the window manager proposes to them.
 * The program is based on strange **non-standard window manager
   hints** that only work properly with a window manager supporting these
   extensions - this simply breaks the ICCCM as well. E.g. trash icon
@@ -106,11 +97,13 @@ programs to fix them. Here are some of the main causes of this brokenness:
 * The program does not conform to ICCCM due to some **missing or
   improperly set hints**.
 
-The following programs are broken (see [rocking stuff](/rocks) for saner alternatives):
+The following programs are broken (see [rocking stuff](/rocks) for saner
+alternatives):
 
-* [Firefox](http://www.mozilla.org/products/firefox) (doesn't set the TRANSIENT\_FOR
-  hint correctly on its download dialog)
-* mplayer with GUI (assumes special window management model. It works without the GUI)
+* [Firefox](http://www.mozilla.org/products/firefox) (doesn't set the
+  TRANSIENT\_FOR hint correctly on its download dialog)
+* mplayer with GUI (assumes special window management model. It works
+  without the GUI)
 * xine (assumes fixed size, doesn't set TRANSIENT\_FOR hint properly)
 
 If you still need some program which expects a floating WM, use it in
@@ -119,40 +112,33 @@ floating mode.
 Documentation
 -------------
 Somewhen GNU tried to make the world a bit more miserable by inventing
-[texinfo][texinfo]. The result is that in 2016 man pages are still used and
-the documentation of GNU tools requires you to run `info $application`. The
-info browser is awkward and unintuitive and the reason why noone gets further
-than finding 'q' to quit it.
+[texinfo](https://www.gnu.org/software/texinfo/). The result is that
+in 2019 man pages are still used and the documentation of GNU tools
+requires you to run `info $application`. The info browser is awkward and
+unintuitive and the reason why noone gets further than finding 'q' to
+quit it.
 
 Look at GNU tools how to not handle documentation.
 
-Talking about the suck in enforced HTML documentation, which forces you to open
-up a 1 Gb of RAM wasting web browser, just to see some eye-candy, which could
-have been described in the source with some easy way to jump to that line in
-the source code, is not worth the time.
+Talking about the suck in enforced HTML documentation, which forces
+you to open up a 1 Gb of RAM wasting web browser, just to see some
+eye-candy, which could have been described in the source with some easy
+way to jump to that line in the source code, is not worth the time.
 
 The suckless way is to have a short usage and a descriptive manpage. The
 complete details are in the source.
 
 C Compilers
----------
-* [GCC][gcc] is the virus which has spread into nearly every Linux
-  distribution and has added its language extensions to be not easily
-  replacable. As of 2016 it is now written in C++ and so complete suck. Why
-  can't a compiler just be a simple binary doing its work instead of adding
-  path dependencies deep into the system?
-* [Clang][clang] is written in C++. If you don't believe that it sucks, try to
-  build clang by hand.
+-----------
+* [GCC](http://gcc.gnu.org/) is the virus which has spread into nearly
+  every Linux distribution and has added its language extensions to be not
+  easily replacable. As of 2016 it is now written in C++ and so complete
+  suck. Why can't a compiler just be a simple binary doing its work
+  instead of adding path dependencies deep into the system?
+* [Clang](http://clang.llvm.org/) is written in C++. If you don't
+  believe that it sucks, try to build clang by hand.
 
 See also
 --------
-The [list of harmful software](http://harmful.cat-v.org/software/) at [cat-v.org](http://cat-v.org).
-
-[aterm-ml-post]: //lists.suckless.org/dev/1102/7141.html
-[st]:     //st.suckless.org/
-[uuterm]: http://etalabs.net/uuterm.html
-[icccm]:  http://tronche.com/gui/x/icccm/
-[texinfo]: https://www.gnu.org/software/texinfo/
-[gcc]:    http://gcc.gnu.org/
-[clang]:  http://clang.llvm.org/
-
+The [list of harmful software](http://harmful.cat-v.org/software/) at
+[cat-v.org](http://cat-v.org).

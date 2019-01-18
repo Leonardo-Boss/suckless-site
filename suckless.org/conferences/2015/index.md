@@ -64,7 +64,7 @@ Video:
 
 (16:00-16:30) *suckless.org e.V.*, Anselm R Garbe
 
-> Anselm presented the idea of suckless.org e.V.[<sup>1</sup>][1] and asked
+> Anselm presented the idea of [suckless.org e.V.](//ev.suckless.org/) and asked
 > attendees to join.
 
 Video:

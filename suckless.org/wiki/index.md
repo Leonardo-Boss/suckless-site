@@ -38,17 +38,23 @@ The wiki repository above is world-writable.
 
 Rules
 -----
-* If any abuse happens, we will disable world-writable access. Keep this in mind!
-  We kindly ask you to not destroy the way we like to collaborate
-  with the community.
+* If any abuse happens, we will disable world-writable access. Keep this in
+  mind! We kindly ask you to not destroy the way we like to collaborate with
+  the community.
 * Please do not add files bigger than *100kb*.
 * Please do not add any binary files except screenshots or images related to
   our software. You are allowed to add your code patches to the wiki if you do
   not have an external web server to serve them to the community. The extension
   of patches should be `.diff`.
 * The extension of newly created Markdown files has to be `.md`.
-* Please do not add inline HTML, HTML files or inline JavaScript.
+* Inline HTML, HTML files or inline JavaScript is not allowed and not supported.
 * There are some dialects of Markdown, please don't use too "advanced" features.
+
+Review markdown
+---------------
+A quick way to check what output will be generated on the site is to do:
+
+	smu -n < index.md | lynx -stdin
 
 Changes
 -------

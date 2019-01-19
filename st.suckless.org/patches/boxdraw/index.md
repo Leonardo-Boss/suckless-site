@@ -3,41 +3,54 @@ boxdraw
 
 Summary
 -------
-Custom-draw most of the lines/blocks characters for gapless alignment.
+Custom rendering of lines/blocks/braille characters for gapless alignment.
+
+Example
+-------
+Lines/blocks, tmux splitter, braille "graphics". The top one is with boxdraw:
+[![Screenshot](st-boxdraw_v2.png)](st-boxdraw_v2.png)
+
 
 Description
 -----------
-Line drawing characters such as those used by `tree`, `tmux` pane splitters,
-`mc` frames/menus etc, sometimes align with gaps - which looks suboptimal. This
-can depend on font, size, scaling, and other factors.
+Graphic lines and blocks characters such as those used by `dialog`, `tree`,
+`tmux` etc sometimes align with gaps - which doesn't look very nice. This can
+depend on font, size, scaling, and other factors.
 
-Block drawing characters, such as lower-half-block which is sometimes used as a
-terminal "pixel" to display images, can also suffer from this issue.
+Braille is also increasingly used for graphics (`mapscii`, `vtop`, `gnuplot`,
+etc), and may look or align nicer when rendered as "pixels" instead of dots.
 
-This patch adds an option to custom-draw most of the lines/blocks characters
-using internal data (without using the font) so that they align perfectly with
-any font, at any size, and with any `chscale`/`cwscale` configuration values.
+This patch adds options to render most of the lines/blocks characters and/or the
+the braille ones without using the font so that they align perfectly regardless
+of font, size or other configuration values.
 
-138 shapes are supported - all the codepoints at U+2500 - U+259F except dashes,
-diagonals and shades. The unsupported shapes render normally using the font.
+Supported codepoints are U2500 - U259F except dashes and diagonals, and U28XX.
 
 See also: unicode references
-[U2500.pdf](http://www.unicode.org/charts/PDF/U2500.pdf) and
-[U2580.pdf](http://www.unicode.org/charts/PDF/U2580.pdf), libvte [test
-page](https://github.com/GNOME/vte/blob/master/doc/boxes.txt).
-
+[U2500.pdf](http://www.unicode.org/charts/PDF/U2500.pdf),
+[U2580.pdf](http://www.unicode.org/charts/PDF/U2580.pdf),
+[U2800.pdf](http://www.unicode.org/charts/PDF/U2800.pdf),
+and example pages
+[utf8demo.txt](https://salsa.debian.org/printing-team/cups/raw/debian/master/cups/utf8demo.txt)
+and
+[libvte test page](https://github.com/GNOME/vte/blob/master/doc/boxes.txt).
 
 Notes:
 ------
 * The download is a `git --format-patch` file. It can be applied either with
-  `git` (`am`/`apply`) or normally with `patch`. It also applies and works
-  correctly with st 0.8.1 and/or the [vertcenter](../vertcenter/) patch.
-* boxdraw is disabled by default and controlled via `config.h`. If you already
-  have this file, you'll need to copy the boxdraw line from `config.def.h`.
+  `git am ...`, or with `patch -p1 < ...`.
+* boxdraw/braille are disabled by default and configured via `config.h`.
+  You may need to copy the boxdraw lines from `config.def.h` to `config.h`.
 
 Download
 --------
-* [st-boxdraw-20181101-30ec9a3.diff](st-boxdraw-20181101-30ec9a3.diff)
+[st-boxdraw_v2-0.8.2.diff](st-boxdraw_v2-0.8.2.diff)
+
+Changelog
+---------
+* boxdraw v2: adds shades, braille (U28XX), configurable bold.
+* boxdraw (v1): U2500-U259F except dashes/diagonals/shades. Bold is thicker.
+  * [st-boxdraw-20181101-30ec9a3.diff](st-boxdraw-20181101-30ec9a3.diff)
 
 Author
 ------

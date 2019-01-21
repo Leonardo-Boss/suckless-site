@@ -64,15 +64,12 @@ This covers most console-based programs and programs from
 
 ### Audio Players
 
-* [C* Music Player](https://cmus.github.io/) - A ncurses music player that can be controlled with an UNIX socket.
-* [cplay](http://cplay.sourceforge.net/) - music player written in bash using mplayer.
-* [DeaDBeeF](http://deadbeef.sourceforge.net/)
+* [C* Music Player](https://cmus.github.io/) - aka cmus, a ncurses music player that can be controlled with an UNIX socket.
 * [moc](https://moc.daper.net/) - console audio player for Linux/UNIX.
 * [mpd](https://www.musicpd.org/) - A client/server based music player with console and graphical front-ends.
 * [mpg123](http://www.mpg123.de/) - A console MPG player which doesn't use auto*hell or extra libraries.
 * [mpg321](http://mpg321.sourceforge.net) - A command-line MP3 player.
 * [vorbis-tools](https://www.xiph.org/) (Ogg/FLAC) - Command-line tools to play Ogg and FLAC files.
-* [RSound](https://github.com/Themaister/RSound/) - Simple PCM audio server and client.
 
 ### BitTorrent clients
 
@@ -149,13 +146,13 @@ This covers most console-based programs and programs from
 
 ### Media players
 
-* [mplayer](http://www.mplayerhq.hu/design7/news.html) (without GUI) - You know mplayer, but you may not know that it works well without the GUI.
+* [mplayer](http://www.mplayerhq.hu/design7/news.html)
 * [mpv](https://mpv.io/) - a free, open-source and cross-platform media player.
 * [ffplay](https://www.ffmpeg.org/ffplay.html) - FFplay is a very simple and portable media player. It came with ffmpeg which depends on mplayer.
 
 ### Password managers
 
-* [pass](https://www.passwordstore.org/) - The standard unix password manager.
+* [pass](https://www.passwordstore.org/) - "The standard unix password manager".
 * [tpm](https://github.com/nmeum/tpm/) - Tiny password manager.
 * [spm](https://notabug.org/kl3/spm/) - Simple password manager (actively maintained fork of nmeum's tpm).
 
@@ -245,7 +242,6 @@ This section is dedicated to daemons that are related to the UNIX philosophy.
 * [thttpd](http://acme.com/software/thttpd/) - Outperforms many bigger httpds. Old, still works very well!
 * [mini_httpd](http://acme.com/software/mini_httpd/) - By the thttpd developers.
   Even smaller subset of thttpd with support for .htpasswd, CGI, dirlisting, HTTP errors and SSL, nothing more or less than that.
-* [shus](https://github.com/dimkr/shus) - A tiny HTTP server for static sites.
 
 ### Gopher servers
 

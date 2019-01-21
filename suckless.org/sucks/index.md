@@ -97,15 +97,6 @@ brokenness:
 * The program does not conform to ICCCM due to some **missing or
   improperly set hints**.
 
-The following programs are broken (see [rocking stuff](/rocks) for saner
-alternatives):
-
-* [Firefox](http://www.mozilla.org/products/firefox) (doesn't set the
-  TRANSIENT\_FOR hint correctly on its download dialog)
-* mplayer with GUI (assumes special window management model. It works
-  without the GUI)
-* xine (assumes fixed size, doesn't set TRANSIENT\_FOR hint properly)
-
 If you still need some program which expects a floating WM, use it in
 floating mode.
 

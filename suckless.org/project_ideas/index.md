@@ -11,10 +11,9 @@ General ideas
 Our project ideas in general intend to focus on our innovative development
 environment from bare hardware to the graphical interface.
 
-* Graphical user interfaces for developers (such as more advanced
-  concepts for mail clients, messaging clients, music players, text editors).
-* Web applications for developers following our GUI concepts (issue and bug
-  tracking).
+* Idiomatic interfaces for developers (such as more advanced concepts for mail
+  clients, messaging clients, music players, text editors).
+* Simple protocol interfaces for developers.
 * General userland enhancements to UNIX-like operating systems.
 * Foundations of a new windowing system for UNIX-like operating systems.
 * Improvements to our existing software projects and infrastructure.

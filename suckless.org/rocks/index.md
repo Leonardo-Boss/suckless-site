@@ -224,6 +224,7 @@ This covers most console-based programs and programs from
 * [wmutils](https://github.com/wmutils/core) - A set of utilities for managing windows. Can be used on their own or to augment a WM itself. Support for tiling present.
 * [grabc](http://www.muquit.com/muquit/software/grabc/grabc.html) - Grab the
   color of some pixel in X11.
+* [xbanish](https://github.com/jcs/xbanish) - Hide the cursor while typing.
 
 [plan9port]: <https://9fans.github.io/plan9port/>  
 [acme]: <http://acme.cat-v.org>

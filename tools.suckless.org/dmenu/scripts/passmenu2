@@ -24,10 +24,10 @@ while [ "$DONE" -eq 0 ] ; do
   if [ "$LEVEL" -ne 0 ] ; then
     password_files=(".." "${password_files[@]}") 
   fi
-  entry=$(printf '%s\n' "${password_files[@]}" | dmenu "$@" -fn "-*-terminus-*-*-*-24-*-*-*-*-*-*-*" -nb "#00ff00" -nf "#000000" -l 15)
+  entry=$(printf '%s\n' "${password_files[@]}" | dmenu "$@" -l 15)
   
   echo "entry: $entry"
-  if [ -z $entry ] ; then
+  if [ -z "$entry" ] ; then
     DONE=1
     exit
   fi

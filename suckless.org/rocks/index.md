@@ -146,8 +146,7 @@ This covers most console-based programs and programs from
 
 ### Media players
 
-* [mplayer](http://www.mplayerhq.hu/design7/news.html)
-* [mpv](https://mpv.io/) - a free, open-source and cross-platform media player.
+* [mpv](https://mpv.io/) - a free, open-source and cross-platform media player; most [mplayer](http://www.mplayerhq.hu/design7/news.html) development moved to this fork.
 * [ffplay](https://www.ffmpeg.org/ffplay.html) - FFplay is a very simple and portable media player. It came with ffmpeg which depends on mplayer.
 
 ### Password managers

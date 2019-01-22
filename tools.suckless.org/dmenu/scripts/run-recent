@@ -1,24 +1,18 @@
 #!/bin/sh
 # end a command with ; to run in a terminal
 
-SB="#336699"
-SF="#ccc"
-NB="#111"
-NF="#ccc"
-FN="-*-fixed-medium-r-semicondensed-*-13-*-*-*-*-*-iso10646-*"
-OPTIONS="-fn $FN -nb $NB -nf $NF -sb $SB -sf $SF -i"
+term="st -e"
+cachedir=${XDG_CACHE_HOME:-"$HOME/.cache"}
+cache="$cachedir/dmenu_recent"
 
-DMENU="dmenu -i $OPTIONS"
-TERMI="st -e"
-CACHE="$HOME/.dmenu_cache_recent"
+touch "$cache"
 
-touch $CACHE
-MOST_USED=`sort $CACHE | uniq -c | sort -r | colrm 1 8`
-RUN=`(echo "$MOST_USED"; dmenu_path | grep -vxF "$MOST_USED") | $DMENU $@` &&
-(echo $RUN; head -n 99 $CACHE) > $CACHE.$$ &&
-mv $CACHE.$$ $CACHE
+most_used=$(sort "$cache" | uniq -c | sort -r | awk '{print $2}')
+run=$((echo "$most_used"; dmenu_path | grep -vxF "$most_used") | dmenu -i "$@")
+(echo "$run"; head -n 99 "$cache") > "$cache.$$"
+mv "$cache.$$" "$cache"
 
-case $RUN in
-    *\;) exec `echo $TERMI $RUN | sed -e 's/;$//'`;;
-    *)   exec $RUN;;
+case "$run" in
+	*\;) exec $(echo $term "$run" | sed -e 's/;$//') ;;
+    *)   exec "$run" ;;
 esac

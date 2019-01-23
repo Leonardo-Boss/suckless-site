@@ -3,7 +3,6 @@ Stuff that rocks
 Software on this page should have ideas similar to the suckless
 [philosophy](//suckless.org/philosophy/). The software must be FOSS licensed.
 
-
 Libraries
 ---------
 This section is for small, usable development libraries, which can be used for
@@ -16,7 +15,6 @@ because it makes them legally compatible with other suckless projects.
 * [musl](http://www.musl-libc.org/) - standard C library that attempts to be even smaller than uClibc.
   See also: [embedded libc comparison](http://www.etalabs.net/compare_libcs.html)
 * [uClibc](https://uclibc.org/) - strives to be a minimalist C library suitable for embedded computing.
-
 
 ### Compilers
 
@@ -115,9 +113,9 @@ This covers most console-based programs and programs from
 
 * [feh](https://feh.finalrewind.org/) - A highly customizable image viewer that can also set a desktop background image.
 * [imv](https://github.com/exec64/imv) - Simple X11/Wayland Image Viewer. Depends on SDL2 and FreeImage.
-* [jpg/gif/bmp/png][plan9port] - Simple programs from Plan 9 to display images in no-frills windows. Included with plan9port.
+* [jpg/gif/bmp/png][plan9port](https://9fans.github.io/plan9port/) - Simple programs from Plan 9 to display images in no-frills windows. Included with plan9port.
 * [meh](https://www.johnhawthorn.com/meh/) - image viewer using raw XLib, libjpeg, libpng and libgif.
-* [page][plan9port] - Plan 9's image/document viewer program. Included with plan9port.
+* [page][plan9port] - Plan 9's image/document viewer program. Included with [plan9port](https://9fans.github.io/plan9port/).
 * [qiv](http://spiegl.de/qiv/) - Quick Image Viewer.
 * [sxiv](https://github.com/muennich/sxiv) - Simple (or small or suckless) X Image Viewer. Depends on xlib and imlib2.
 * [xli](http://web.aanet.com.au/gwg/xli.html)
@@ -133,7 +131,7 @@ This covers most console-based programs and programs from
 
 ### Mail clients
 
-* plan9port/Mail - A mail client for acme. Included with plan9port.
+* plan9port/Mail - A mail client for acme. Included with [plan9port](https://9fans.github.io/plan9port/).
 * [fdm](https://github.com/nicm/fdm) - fetch and deliver mail.
 * [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
 * [isync](http://isync.sourceforge.net/) - MDA that can work better for IMAP, also known as mbsync.
@@ -169,7 +167,7 @@ This covers most console-based programs and programs from
 
 ### Text editors
 
-* plan9port/acme - Rob Pike's framing text editor for Plan 9. Included in plan9port.
+* [acme](http://acme.cat-v.org) - Rob Pike's framing text editor for Plan 9. Included in [plan9port](https://9fans.github.io/plan9port/).
 * [ired](http://www.radare.org/r/) - A minimalist hexadecimal editor and bindiffer for p9, w32 and *nix.
 * [mg](https://homepage.boetes.org/software/mg/) - A portable version of mg maintained by the OpenBSD team.
 * [nano](https://www.nano-editor.org/) - A pico clone - this is small simple code and easy to use.
@@ -227,12 +225,8 @@ This covers most console-based programs and programs from
   color of some pixel in X11.
 * [xbanish](https://github.com/jcs/xbanish) - Hide the cursor while typing.
 
-[plan9port]: <https://9fans.github.io/plan9port/>  
-[acme]: <http://acme.cat-v.org>
-
 Daemons
 -------
-
 This section is dedicated to daemons that are related to the UNIX philosophy.
 
 ### Web Servers

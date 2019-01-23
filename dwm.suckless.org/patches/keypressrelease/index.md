@@ -5,8 +5,8 @@ Description
 -----------
 This patch lets you specify whether a key binding should be executed at the
 _KeyPress_ or _KeyRelease_ event. Executing on _KeyRelease_ fixes bugs such as
-`scrot -s` failing to execute from a key binding due to keys not being released
-in time [1], [2].
+`scrot -s` [failing to execute from a key binding](//lists.suckless.org/dev/1108/9185.html)
+due to keys not being released in time.
 
 Note that the new parameter must be added to all non-standard key bindings
 manually after patching.
@@ -31,8 +31,3 @@ Download
 Author
 ------
 * Niklas Høj - `<niklas at hoej dot me>`
-
----
-
-[1]: Error produced: "giblib error: couldn't grab keyboard: Resource temporarily unavailable"  
-[2]: Old discussion thread: [//lists.suckless.org/dev/1108/9185.html](//lists.suckless.org/dev/1108/9185.html)

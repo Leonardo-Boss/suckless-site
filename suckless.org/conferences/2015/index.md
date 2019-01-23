@@ -62,7 +62,7 @@ Video:
 
 (15:30-16:00) Coffee/Tea break
 
-(16:00-16:30) *suckless.org e.V.*, Anselm R Garbe
+(16:00-16:30) *suckless.org [e.V.](https://en.wikipedia.org/wiki/Eingetragener_Verein)*, Anselm R Garbe
 
 > Anselm presented the idea of [suckless.org e.V.](//ev.suckless.org/) and asked
 > attendees to join.
@@ -94,7 +94,7 @@ Video:
 
 (10:45-11:30) *Simple Jabber - Divide And Conquer XMPP*, Jan Klemkow ([paper](jan_on_sj.pdf))
 
-> The Extensible Messaging and Presence Protocol ([XMPP][2]) is like the web. It is
+> The Extensible Messaging and Presence Protocol [XMPP](http://xmpp.org/) is like the web. It is
 > far too complex to be implemented in one program with the Unix philosophy in mind.
 > But like the web, you have to deal with it. It is the only open
 > and widely used instant messaging protocol on the internet.
@@ -164,6 +164,3 @@ lending us the equipment to record the slcon2 conference videos.
 Previous conferences
 --------------------
 * [slcon 2013](../2013/)
-
-[1]: https://en.wikipedia.org/wiki/Eingetragener_Verein
-[2]: http://xmpp.org/

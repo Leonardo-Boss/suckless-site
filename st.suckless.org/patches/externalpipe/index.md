@@ -25,7 +25,7 @@ dmenu to select and open one:
 
 * [link grabber](linkgrabber.sh) - similar to the function above, but without
   xurls dependency
-* [edit screen](editscreen.sh) - open screen in an editor for copying text
+* [edit screen](editscreen.sh) - open screen in `$EDITOR`  for copying text
 
 Download
 --------

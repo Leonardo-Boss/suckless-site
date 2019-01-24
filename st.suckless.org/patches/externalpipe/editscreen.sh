@@ -1,8 +1,5 @@
 #!/bin/sh
-# Open screen content in an editor to copy text. This is alternative to
-# keyboard_select st patch. Set $EDITOR to whatever you want.
-
 tmpfile=$(mktemp /tmp/st-edit.XXXXXX)
-sed -n p > "$tmpfile"
+trap  'rm "$tmpfile"' 0 1 15
+cat > "$tmpfile"
 st -e "$EDITOR" "$tmpfile"
-rm "$tmpfile"

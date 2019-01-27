@@ -19,10 +19,28 @@ environment from bare hardware to the graphical interface.
 * Improvements to our existing software projects and infrastructure.
 * Replacements of bloated existing software and libraries in a suckless way.
 
+
+Current small tasks
+-------------------
+* Write a gopher back-end using build-page.c:
+  <https://git.suckless.org/sites/file/build-page.c.html>
+  This should use the geomyidae gopher server and the gph output format.
+  Difficulty: medium-rare.
+* Improve the Markdown parser used by the suckless wiki called "smu" to
+  conform more to Markdown.
+  for example for nested codeblocks. Difficulty: trivial-medium.
+  * Specs: <http://daringfireball.net/projects/markdown/syntax.text> and
+    <http://commonmark.org/>.
+  * smu: <https://github.com/Gottox/smu>
+* Fix broken patches on the wiki. Difficulty: trivial-medium.
+* Fix typos and formatting errors on the wiki. Difficulty: trivial.
+
+
 Concrete ideas
 --------------
 The listed ideas generally require good knowledge of C and experience with
 UNIX-like operating systems. The difficulty ranges from medium to high.
+
 
 ### Suckless font rendering library
 
@@ -39,6 +57,7 @@ libXft and Fontconfig. Real-world testing is however still needed.
 
 ***Requirements:*** C knowledge, some X11 knowledge and of course knowledge
 about the font formats and how to handle them.
+
 
 ### Write ld wrapper or replacement for static linking
 
@@ -61,6 +80,7 @@ general case.
 ***Requirements:*** Good C/UNIX knowledge is essential, knowledge about
 linking/linker internals are desirable.
 
+
 ### Write a decent mailing list Web archive system
 
 All web archive systems such as hypermail, pipermail, etc. have plenty
@@ -78,7 +98,9 @@ structure:
 
 * <http://www.codinghorror.com/blog/2012/12/web-discussions-flat-by-design.html>
 
-***Requirements:*** Good C/Shell/HTML knowledge would be desirable.
+***Requirements:*** Good C/Shell/HTML knowledge would be desirable. Must not
+use Javascript.
+
 
 ### Write cookie handler for surf
 
@@ -93,6 +115,7 @@ This task requires writing a new cookie handler in surf which:
 
 ***Requirements:*** Good knowledge of C and POSIX file locking. Basic knowledge
 of GTK and its other evil friends.
+
 
 ### Gopher services
 
@@ -114,6 +137,7 @@ Anyone creating a gopher interface to suckless.org will get a bonus.
 
 ***Requirements:*** Just some shell scripting and a way to setup a gopher
 daemon is required. Everyone can do this.
+
 
 ### A sane backend for surf
 

@@ -1,7 +1,7 @@
-diff --git a/a/config.def.h b/b/config.def.h
+diff --git a/config.def.h b/config.def.h
 index 82b1b09..cdfbdc9 100644
---- a/a/config.def.h
-+++ b/b/config.def.h
+--- a/config.def.h
++++ b/config.def.h
 @@ -178,6 +178,7 @@ static Shortcut shortcuts[] = {
  	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
  	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
@@ -10,10 +10,10 @@ index 82b1b09..cdfbdc9 100644
  };
  
  /*
-diff --git a/a/st.c b/b/st.c
+diff --git a/st.c b/st.c
 index 46c954b..1c07288 100644
---- a/a/st.c
-+++ b/b/st.c
+--- a/st.c
++++ b/st.c
 @@ -16,6 +16,8 @@
  #include <termios.h>
  #include <unistd.h>
@@ -254,10 +254,10 @@ index 46c954b..1c07288 100644
 +    quant = 0;
 +    return 0;
 +}
-diff --git a/a/st.h b/b/st.h
+diff --git a/st.h b/st.h
 index dac64d8..d6693bf 100644
---- a/a/st.h
-+++ b/b/st.h
+--- a/st.h
++++ b/st.h
 @@ -110,6 +110,7 @@ size_t utf8encode(Rune, char *);
  void *xmalloc(size_t);
  void *xrealloc(void *, size_t);
@@ -266,10 +266,10 @@ index dac64d8..d6693bf 100644
  
  /* config.h globals */
  extern char *utmp;
-diff --git a/a/win.h b/b/win.h
+diff --git a/win.h b/win.h
 index 31f327d..75a2756 100644
---- a/a/win.h
-+++ b/b/win.h
+--- a/win.h
++++ b/win.h
 @@ -21,6 +21,7 @@ enum win_mode {
  	MODE_NUMLOCK     = 1 << 17,
  	MODE_MOUSE       = MODE_MOUSEBTN|MODE_MOUSEMOTION|MODE_MOUSEX10\
@@ -284,10 +284,10 @@ index 31f327d..75a2756 100644
  int xstartdraw(void);
 +void toggle_winmode(int);
 +void keyboard_select(const Arg *);
-diff --git a/a/x.c b/b/x.c
+diff --git a/x.c b/x.c
 index c343ba2..14279de 100644
---- a/a/x.c
-+++ b/b/x.c
+--- a/x.c
++++ b/x.c
 @@ -1696,6 +1696,13 @@ kpress(XEvent *ev)
  		return;
  

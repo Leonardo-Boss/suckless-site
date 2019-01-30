@@ -17,7 +17,7 @@ Note: the patch also changes the config.def.h file.
 
 Download
 --------
-* [sic-1.3-lineprint.diff](sic-1.3-lineprint.diff) (1,3K) (20151009)
+* [sic-lineprint-9bb34de.diff](sic-lineprint-9bb34de.diff) (1,3K) (20151009)
 
 Author
 ------

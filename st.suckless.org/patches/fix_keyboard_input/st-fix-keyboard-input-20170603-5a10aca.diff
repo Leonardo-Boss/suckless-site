@@ -4,8 +4,8 @@ Fix keyboard input on terminal
 
 Index: st-patches/st/config.def.h
 ===================================================================
---- st-patches.orig/st/config.def.h
-+++ st-patches/st/config.def.h
+--- a/config.def.h
++++ b/config.def.h
 @@ -209,7 +209,80 @@ Shortcut shortcuts[] = {
   * If you want keys other than the X11 function keys (0xFD00 - 0xFFFF)
   * to be mapped below, add them to this array.

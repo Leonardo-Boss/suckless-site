@@ -16,7 +16,7 @@ fill the entire space allocated to it.
 
 Download
 --------
-* [st-anysize-20180817.diff](st-anysize-20180817.diff)
+* [st-anysize-0.8.1.diff](st-anysize-0.8.1.diff)
 
 Authors
 -------

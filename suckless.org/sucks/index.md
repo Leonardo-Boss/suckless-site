@@ -12,18 +12,16 @@ These libraries are broken/considered harmful and should not be used
 if it's possible to avoid them. If you use them, consider looking for
 alternatives.
 
-* [glib](http://library.gnome.org/devel/glib/) - implements C++ STL
-  on top of C (because C++ sucks so much, let's reinvent it!), adding
-  lots of useless data types for ["portability" and "readability"
-  reasons](http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.h
-  tml). even worse, it is not possible to write robust
-  applications using glib, since it [aborts in out-of-memory
-  situations](https://bugzilla.gnome.org/show_bug.cgi?id=674446). glib
-  usage is required to write gtk+ and gnome applications, but is also
-  used when common functionality is needed (e.g. hashlists, base64
-  decoder, etc). it is not suited at all for static linking due to its
-  huge size and the authors explicitly state that ["static linking is not
-  supported"](https://bugzilla.gnome.org/show_bug.cgi?id=768215#c16).
+* [glib](http://library.gnome.org/devel/glib/) - implements C++ STL on top of C
+  (because C++ sucks so much, let's reinvent it!), adding lots of useless data
+  types for ["portability" and "readability"
+  reasons](http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html).
+  even worse, it is not possible to write robust applications using glib, since
+  it [aborts in out-of-memory situations](https://bugzilla.gnome.org/show_bug.cgi?id=674446).
+  glib usage is required to write gtk+ and gnome applications, but is also used when common
+  functionality is needed (e.g. hashlists, base64 decoder, etc). it is not suited
+  at all for static linking due to its huge size and the authors explicitly state
+  that ["static linking is not supported"](https://bugzilla.gnome.org/show_bug.cgi?id=768215#c16).
 
   Alternatives: [libmowgli](https://github.com/atheme/libmowgli-2),
   [libulz](https://github.com/rofl0r/libulz)
@@ -57,8 +55,7 @@ set up a C++ compiler or Python interpreter respectively just in order
 to be able to build some C code.
 
 Alternatives: [mk](http://doc.cat-v.org/plan_9/4th_edition/papers/mk),
-[make](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/make.ht
-ml)
+[make](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/make.html)
 
 Version Control Systems
 -----------------------

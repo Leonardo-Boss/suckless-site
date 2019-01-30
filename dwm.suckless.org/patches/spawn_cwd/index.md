@@ -15,7 +15,7 @@ certain depth using ellipses (.../path/to/long/dir/name).
 
 Download
 --------
-* [dwm-5.9.1-spawn\_cwd.diff](dwm-5.9.1-spawn_cwd.diff)
+* [dwm-6.0-spawn\_cwd.diff](dwm-6.0-spawn_cwd.diff)
 
 Author
 ------

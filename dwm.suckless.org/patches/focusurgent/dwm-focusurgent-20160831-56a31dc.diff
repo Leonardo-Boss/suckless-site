@@ -6,8 +6,8 @@ command on any window: xdotool selectwindow -- set_window --urgency 1
 
 Index: clean/dwm/config.def.h
 ===================================================================
---- clean.orig/dwm/config.def.h
-+++ clean/dwm/config.def.h
+--- a/config.def.h
++++ b/config.def.h
 @@ -59,6 +59,7 @@ static char dmenumon[2] = "0"; /* compon
  static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
  static const char *termcmd[]  = { "st", NULL };
@@ -27,7 +27,7 @@ Index: clean/dwm/config.def.h
 Index: clean/dwm/focusurgent.c
 ===================================================================
 --- /dev/null
-+++ clean/dwm/focusurgent.c
++++ b/focusurgent.c
 @@ -0,0 +1,14 @@
 +static void
 +focusurgent(const Arg *arg) {

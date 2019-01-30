@@ -4,8 +4,8 @@ Add add fuzzy matching to dmenu
 
 Index: dmenu-patches/dmenu/dmenu.c
 ===================================================================
---- dmenu-patches.orig/dmenu/dmenu.c
-+++ dmenu-patches/dmenu/dmenu.c
+--- a/dmenu.c
++++ b/dmenu.c
 @@ -1,6 +1,7 @@
  /* See LICENSE file for copyright and license details. */
  #include <ctype.h>
@@ -128,8 +128,8 @@ Index: dmenu-patches/dmenu/dmenu.c
  			fstrstr = cistrstr;
 Index: dmenu-patches/dmenu/config.def.h
 ===================================================================
---- dmenu-patches.orig/dmenu/config.def.h
-+++ dmenu-patches/dmenu/config.def.h
+--- a/config.def.h
++++ b/config.def.h
 @@ -2,6 +2,7 @@
  /* Default settings; can be overriden by command line. */
  
@@ -140,8 +140,8 @@ Index: dmenu-patches/dmenu/config.def.h
  	"monospace:size=10"
 Index: dmenu-patches/dmenu/config.mk
 ===================================================================
---- dmenu-patches.orig/dmenu/config.mk
-+++ dmenu-patches/dmenu/config.mk
+--- a/config.mk
++++ b/config.mk
 @@ -20,7 +20,7 @@ FREETYPEINC = /usr/include/freetype2
  
  # includes and libs

@@ -9,7 +9,7 @@ error. This simple patch fixed the issue for me on ii version 1.8.
 Download
 --------
 * [ii-1.8-solarisbuild.diff](ii-1.8-solarisbuild.diff)
-* [ii-solarisbuild-20180912-b25423f.patch](ii-solarisbuild-20180912-b25423f.patch)
+* [ii-solarisbuild-20180912-b25423f.diff](ii-solarisbuild-20180912-b25423f.diff)
 
 Author
 ------

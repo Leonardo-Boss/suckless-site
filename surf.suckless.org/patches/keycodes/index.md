@@ -6,8 +6,8 @@ You can adapt config.h to your keyboard by looking up keycodes, for example, wit
 
 Download
 --------
-* [surf-webkit2-keycodes-20170424-5c52733.patch](surf-webkit2-keycodes-20170424-5c52733.patch)
-* [surf-webkit1-keycodes-20170424-9ba143b.patch](surf-webkit1-keycodes-20170424-9ba143b.patch)
+* [surf-webkit2-keycodes-20170424-5c52733.diff](surf-webkit2-keycodes-20170424-5c52733.diff)
+* [surf-webkit1-keycodes-20170424-9ba143b.diff](surf-webkit1-keycodes-20170424-9ba143b.diff)
 
 Author
 ------

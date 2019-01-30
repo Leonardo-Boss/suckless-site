@@ -64,8 +64,8 @@ at the side/middle of a top/bottom bar, etc.
 
 Download
 --------
-* [st-visualbell2-basic-2018-10-16-30ec9a3.patch](st-visualbell2-basic-2018-10-16-30ec9a3.patch)
-* [st-visualbell2-enhanced-2018-10-16-30ec9a3.patch](st-visualbell2-enhanced-2018-10-16-30ec9a3.patch)
+* [st-visualbell2-basic-2018-10-16-30ec9a3.diff](st-visualbell2-basic-2018-10-16-30ec9a3.diff)
+* [st-visualbell2-enhanced-2018-10-16-30ec9a3.diff](st-visualbell2-enhanced-2018-10-16-30ec9a3.diff)
 
 Author
 ------

@@ -26,7 +26,7 @@ other than scrolling functions.**
 
 * [st-scrollback-mouse-altscreen-20170427-5a10aca.diff](st-scrollback-mouse-altscreen-20170427-5a10aca.diff)
 * [st-scrollback-mouse-altscreen-0.8.diff](st-scrollback-mouse-altscreen-0.8.diff)
-* [st-scrollback-mouse-altscreen-20190106-e23acb9.diff](st-scrollback-mouse-altscreen-20190106-e23acb9.diff)
+* [st-scrollback-mouse-altscreen-20190131-e23acb9.diff](st-scrollback-mouse-altscreen-20190131-e23acb9.diff)
 
 Notes
 -----
@@ -46,3 +46,4 @@ Authors
   when using the auto altscreen scrolling)
 * Lorenzo Bracco - <devtry@riseup.net> (update base patch, use static
   variable for config)
+* Kamil Kleban - <funmaker95@gmail.com> (fix altscreen detection)

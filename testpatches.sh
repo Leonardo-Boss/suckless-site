@@ -158,9 +158,11 @@ preparebuilds() {
 
 # cleanbuild(project, version, build)
 cleanbuild() {
-	if test -d "$builddir/$project/$b"; then
-		rm -rf "$builddir/$project/$b"
-	fi
+	project="$1"
+	v="$2"
+	b="$3"
+
+	test -d "$builddir/$project/$b" && rm -rf "$builddir/$project/$b"
 
 	mkdir -p "$builddir/$project"
 	cp -r "$revdir/$project/$v" "$builddir/$project/$b"

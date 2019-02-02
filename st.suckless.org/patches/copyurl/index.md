@@ -8,8 +8,7 @@ Multiple invocations cycle through the available URLs.
 
 Notes
 -----
-URLs spanning multiple lines are not handled and only the first
-URL on each line is selected.
+* URLs spanning multiple lines are not handled
 
 Download
 --------
@@ -17,12 +16,11 @@ Download
 * [st-copyurl-0.7.diff](st-copyurl-0.7.diff)
 * [st-copyurl-20161105-8c99915.diff](st-copyurl-20161105-8c99915.diff)
 * [st-copyurl-20170802-e2ee5ee.diff](st-copyurl-20170802-e2ee5ee.diff)
-* [st-copyurl-20180418-7e810b5.diff](st-copyurl-20180418-7e810b5.diff)
+* [st-copyurl-20190202-3be4cf1.diff](st-copyurl-20190202-3be4cf1.diff)
 
 Following patches also highlight the selected urls:
 
-* [st-copyurl-20180514-a7bd977.diff](st-copyurl-20180514-a7bd977.diff)
-* [st-copyurl-20180520-73f375a.diff](st-copyurl-20180520-73f375a.diff)
+* [st-copyurl-20190202-0.8.1.diff](st-copyurl-20190202-0.8.1.diff)
 
 Authors
 -------

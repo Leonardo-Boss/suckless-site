@@ -1,7 +1,7 @@
-From 7e810b5d11e16aa8b79e6057cc4b9fa55df1fc57 Mon Sep 17 00:00:00 2001
+From be408247f1c1ff8ccf7ab128b126f54d19bd4392 Mon Sep 17 00:00:00 2001
 From: Michael Buch <michaelbuch12@gmail.com>
-Date: Wed, 18 Apr 2018 01:12:09 +0100
-Subject: [PATCH] Port the copyurl patch to the 0.8.1 st release. Mainly fix
+Date: Sat, 2 Feb 2019 14:20:52 +0000
+Subject: [PATCH] Port the copyurl patch to the 0.8.1 st release. Mainly fix 
  usage of depracted selcopy
 
 ---
@@ -23,10 +23,10 @@ index 82b1b09..cbe923e 100644
  
  /*
 diff --git a/st.c b/st.c
-index 0628707..3df99d9 100644
+index 46c954b..476eb31 100644
 --- a/st.c
 +++ b/st.c
-@@ -2617,3 +2617,65 @@ redraw(void)
+@@ -2616,3 +2616,65 @@ redraw(void)
  	tfulldirt();
  	draw();
  }
@@ -105,5 +105,5 @@ index dac64d8..5a58f8f 100644
  int tattrset(int);
  void tnew(int, int);
 -- 
-2.17.0
+2.20.1
 

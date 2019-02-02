@@ -37,8 +37,10 @@ Notes:
 
 Download
 --------
-* [st-boxdraw-2018-11-01-30ec9a3.diff](st-boxdraw-2018-11-01-30ec9a3.diff)
+* [st-boxdraw-20181101-30ec9a3.diff](st-boxdraw-20181101-30ec9a3.diff)
+* [st-boxdraw-20190202-3be4cf1.diff](st-boxdraw-20190202-3be4cf1.diff)
 
 Author
 ------
 * Avi Halachmi (:avih) - [https://github.com/avih](https://github.com/avih)
+* Ivan Tham - <pickfire@riseup.net> (update patch)

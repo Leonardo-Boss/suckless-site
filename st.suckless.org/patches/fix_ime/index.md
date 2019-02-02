@@ -5,12 +5,12 @@ Description
 -----------
 Better Input Method Editor (IME) support. Features:
 
+* Allow input methods swap with hotkey (E.g. left ctrl + left shift)
 * Over-the-spot pre-editing style, pre-edit data placed over insertion point
-* Restart IME without breaking st
+* Restart IME without segmentation fault
 
 TODO:
 
-* Allow swapping input methods (E.g. ctrl + alt)
 * Automatically pickup IME if st started before IME
 
 Download

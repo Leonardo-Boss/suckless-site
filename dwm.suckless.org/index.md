@@ -68,7 +68,7 @@ Links
 Download
 --------
 * [MIT/X Consortium license](//git.suckless.org/dwm/plain/LICENSE)
-* [dwm 6.1](//dl.suckless.org/dwm/dwm-6.1.tar.gz) (25kb) (20151109)
+* [dwm 6.2](//dl.suckless.org/dwm/dwm-6.2.tar.gz) (26kb) (20190203)
 * See also [dmenu](//tools.suckless.org/dmenu)
 
 Support

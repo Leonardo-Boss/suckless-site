@@ -23,8 +23,8 @@ to open the contents of the clipboard in the default browser.
 
 Download
 --------
-* [st-openclipboard-20180525-2c2500c.diff](st-openclipboard-20180525-2c2500c.diff)
-* [st-openclipboard-20190105-153c5c7.diff](st-openclipboard-20190105-153c5c7.diff)
+* [st-openclipboard-20190202-0.8.1.diff](st-openclipboard-20190202-0.8.1.diff)
+* [st-openclipboard-20190202-3be4cf1.diff](st-openclipboard-20190202-3be4cf1.diff)
 
 Authors
 -------

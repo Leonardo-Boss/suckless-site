@@ -11,15 +11,19 @@ Changes the behaviour of the matched items and the Tab key.
   all matches. E.g. completing "f" with matches "foobar" and "fool" will become
   "foo".
 
+The `-flag` variant adds a `use_prefix` setting and `-x` flag; useful if you
+only want some instances of dmenu to do prefix matching.
+
 Download
 --------
 * For 4.6: [dmenu-prefixcompletion-4.6.diff](dmenu-prefixcompletion-4.6.diff)
 * For 4.7: [dmenu-prefixcompletion-4.7.diff](dmenu-prefixcompletion-4.7.diff)
 * For 4.8: [dmenu-prefixcompletion-4.8.diff](dmenu-prefixcompletion-4.8.diff)
 
+* [dmenu-prefixcompletion-flag-4.9.diff](dmenu-prefixcompletion-flag-4.9.diff)
+
 Authors
 -------
 
 * noctua
-
-
+* Martin Tournoij <martin@arp242.net> – `-x` patch.

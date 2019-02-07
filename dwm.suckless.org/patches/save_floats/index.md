@@ -11,7 +11,6 @@ Download
 --------
 * [dwm-savefloats-20181212-b69c870.diff](dwm-savefloats-20181212-b69c870.diff)
 * [dwm-savefloats-20160723-56a31dc.diff](dwm-savefloats-20160723-56a31dc.diff)
-* [dwm-savefloats-20120406-10e232f.diff](dwm-savefloats-20120406-10e232f.diff)
 * [dwm-savefloats-6.1.diff](dwm-savefloats-6.1.diff)
 * [dwm-savefloats-6.0.diff](dwm-savefloats-6.0.diff)
 

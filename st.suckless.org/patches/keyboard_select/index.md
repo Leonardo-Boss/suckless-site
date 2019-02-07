@@ -47,7 +47,7 @@ Shortcuts for input mode :
 
 Download
 --------
-* [git-st-keyboard\_select-20180619-937e367.diff](git-st-keyboard_select-20180619-937e367.diff)   
+* [st-keyboard\_select-20190207-3be4cf1.diff](st-keyboard_select-20190207-3be4cf1.diff)
 * [st-keyboard\_select-0.8.1.diff](st-keyboard_select-0.8.1.diff)
 
 Authors

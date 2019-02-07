@@ -20,7 +20,7 @@ And then just quit/kill `dwm`.
 
 Download
 --------
-* [dwm-restartsig-20180523-2991f37.diff](dwm-restartsig-20180523-2991f37.diff) (23.05.2018)
+* [dwm-restartsig-20180523-6.2.diff](dwm-restartsig-20180523-6.2.diff) (2018-05-23)
 
 Author
 ------

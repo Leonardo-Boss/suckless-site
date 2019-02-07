@@ -12,7 +12,7 @@ count considered to be 'empty' via `EMPTY_WINDOW_COUNT`.
 
 Download
 --------
-* [dwm-onlyquitonempty-20180428-ba1a2cb.diff](dwm-onlyquitonempty-20180428-ba1a2cb.diff)
+* [dwm-onlyquitonempty-20180428-6.2.diff](dwm-onlyquitonempty-20180428-6.2.diff)
 
 Author
 ------

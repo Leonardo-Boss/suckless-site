@@ -54,7 +54,7 @@ or the dark color scheme:
 
 * [st-solarized-both-0.8.1.diff](st-solarized-both-0.8.1.diff)
 * [st-solarized-both-20170626-b331da5.diff](st-solarized-both-20170626-b331da5.diff)
-* [st-solarized-both-20190128-f506464.diff](st-solarized-both-20190128-f506464.diff)
+* [st-solarized-both-20190128-3be4cf1.diff](st-solarized-both-20190128-3be4cf1.diff)
 
 Authors
 -------

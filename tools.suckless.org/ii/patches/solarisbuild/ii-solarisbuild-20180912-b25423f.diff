@@ -1,18 +1,7 @@
 From d5b8f78857f62247f6efbccfb9382549d56ccf3e Mon Sep 17 00:00:00 2001
 From: drowl <mail@catsnest.co.uk>
 Date: Wed, 12 Sep 2018 16:56:16 +0100
-Subject: [PATCH] =?UTF-8?q?Compiling=20ii.c=20on=20Solaris=20generated=20a?=
- =?UTF-8?q?n=20error=20as=20per=20http://paste.debian.net/1041906/=20"ii.c?=
- =?UTF-8?q?:341:21:=20error:=20expected=20identifier=20or=20=E2=80=98(?=
- =?UTF-8?q?=E2=80=99=20before=20numeric=20constant"=20=20This=20seems=20to?=
- =?UTF-8?q?=20be=20as=20"sun"=20is=20used=20else=20where,=20a=20simple=20f?=
- =?UTF-8?q?ix=20was=20to=20rename=20it=20to=20"sunn"=20Also=20On=20Solaris?=
- =?UTF-8?q?=20systems=20we=20still=20need=20to=20include=20some=20extra=20?=
- =?UTF-8?q?librarys=20namely=20"sockets"=20so=20i=20added=20this=20to=20co?=
- =?UTF-8?q?nfig.mk?=
-MIME-Version: 1.0
-Content-Type: text/plain; charset=UTF-8
-Content-Transfer-Encoding: 8bit
+Subject: [PATCH] Compiling on solaris
 
 ---
  config.mk |  6 +++++-

@@ -36,7 +36,7 @@ Download
 * [st-externalpipe-20170608-b331da5.diff](st-externalpipe-20170608-b331da5.diff)
 * [st-externalpipe-0.8.diff](st-externalpipe-0.8.diff)
 * [st-externalpipe-0.8.1.diff](st-externalpipe-0.8.1.diff)
-* [st-externalpipe-20181016-c19e14b.diff](st-externalpipe-20181016-c19e14b.diff)
+* [st-externalpipe-20181016-3be4cf1.diff](st-externalpipe-20181016-3be4cf1.diff)
 
 Authors
 -------

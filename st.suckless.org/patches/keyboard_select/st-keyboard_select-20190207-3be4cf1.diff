@@ -1,19 +1,19 @@
-diff --git a/a/config.def.h b/b/config.def.h
-index 82b1b09..cdfbdc9 100644
---- a/a/config.def.h
-+++ b/b/config.def.h
+diff --git a/config.def.h b/config.def.h
+index 0e01717..021bcdd 100644
+--- a/config.def.h
++++ b/config.def.h
 @@ -178,6 +178,7 @@ static Shortcut shortcuts[] = {
  	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
+ 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
  	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
- 	{ TERMMOD,              XK_I,           iso14755,       {.i =  0} },
 +	{ TERMMOD,              XK_Escape,      keyboard_select,{ 0 } },
  };
  
  /*
-diff --git a/a/st.c b/b/st.c
-index 76bb3ea..8a0d448 100644
---- a/a/st.c
-+++ b/b/st.c
+diff --git a/st.c b/st.c
+index b8e6077..1ad0f22 100644
+--- a/st.c
++++ b/st.c
 @@ -16,6 +16,8 @@
  #include <termios.h>
  #include <unistd.h>
@@ -23,7 +23,7 @@ index 76bb3ea..8a0d448 100644
  
  #include "st.h"
  #include "win.h"
-@@ -2504,6 +2506,9 @@ tresize(int col, int row)
+@@ -2481,6 +2483,9 @@ tresize(int col, int row)
  	int *bp;
  	TCursor c;
  
@@ -33,7 +33,7 @@ index 76bb3ea..8a0d448 100644
  	if (col < 1 || row < 1) {
  		fprintf(stderr,
  		        "tresize: error resizing to %dx%d\n", col, row);
-@@ -2625,3 +2630,220 @@ redraw(void)
+@@ -2602,3 +2607,220 @@ redraw(void)
  	tfulldirt();
  	draw();
  }
@@ -254,11 +254,11 @@ index 76bb3ea..8a0d448 100644
 +    quant = 0;
 +    return 0;
 +}
-diff --git a/a/st.h b/b/st.h
-index dac64d8..d6693bf 100644
---- a/a/st.h
-+++ b/b/st.h
-@@ -110,6 +110,7 @@ size_t utf8encode(Rune, char *);
+diff --git a/st.h b/st.h
+index 38c61c4..a76419e 100644
+--- a/st.h
++++ b/st.h
+@@ -109,6 +109,7 @@ size_t utf8encode(Rune, char *);
  void *xmalloc(size_t);
  void *xrealloc(void *, size_t);
  char *xstrdup(char *);
@@ -266,10 +266,10 @@ index dac64d8..d6693bf 100644
  
  /* config.h globals */
  extern char *utmp;
-diff --git a/a/win.h b/b/win.h
+diff --git a/win.h b/win.h
 index 31f327d..75a2756 100644
---- a/a/win.h
-+++ b/b/win.h
+--- a/win.h
++++ b/win.h
 @@ -21,6 +21,7 @@ enum win_mode {
  	MODE_NUMLOCK     = 1 << 17,
  	MODE_MOUSE       = MODE_MOUSEBTN|MODE_MOUSEMOTION|MODE_MOUSEX10\
@@ -284,11 +284,11 @@ index 31f327d..75a2756 100644
  int xstartdraw(void);
 +void toggle_winmode(int);
 +void keyboard_select(const Arg *);
-diff --git a/a/x.c b/b/x.c
-index c0bd890..39e2984 100644
---- a/a/x.c
-+++ b/b/x.c
-@@ -1695,6 +1695,13 @@ kpress(XEvent *ev)
+diff --git a/x.c b/x.c
+index 0422421..f5fa3e2 100644
+--- a/x.c
++++ b/x.c
+@@ -1699,6 +1699,13 @@ kpress(XEvent *ev)
  		return;
  
  	len = XmbLookupString(xw.xic, e, buf, sizeof buf, &ksym, &status);
@@ -302,7 +302,7 @@ index c0bd890..39e2984 100644
  	/* 1. shortcuts */
  	for (bp = shortcuts; bp < shortcuts + LEN(shortcuts); bp++) {
  		if (ksym == bp->keysym && match(bp->mod, e->state)) {
-@@ -1879,6 +1886,14 @@ usage(void)
+@@ -1883,6 +1890,14 @@ usage(void)
  	    " [stty_args ...]\n", argv0, argv0);
  }
  

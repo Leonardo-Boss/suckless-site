@@ -8,9 +8,9 @@ Description
 Download
 --------
 * [dwm-focusonclick-20171030-6aa8e37.diff](dwm-focusonclick-20171030-6aa8e37.diff) (2017-10-17)
-* [dwm-focusonclick-bb3bd6f.diff](dwm-focusonclick-bb3bd6f.diff) (2017-01-04)
+* [dwm-focusonclick-20170104-bb3bd6f.diff](dwm-focusonclick-20170104-bb3bd6f.diff) (2017-01-04)
 * [dwm-focusonclick-6.0.diff](dwm-focusonclick-6.0.diff) (2012-11-24)
-* [dwm-focusonclick-git-20100321.diff](dwm-focusonclick-git-20100321.diff)
+* [dwm-focusonclick-5.8.diff](dwm-focusonclick-5.8.diff) (2010-03-21)
 
 Author
 ------

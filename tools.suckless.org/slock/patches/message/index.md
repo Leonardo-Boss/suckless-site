@@ -26,7 +26,7 @@ This adds three items to `config.h`:
 
 Download
 --------
-* [slock-message-20180626-8384a86.diff](slock-message-20180626-8384a86.diff)
+* [slock-message-20180626-35633d4.diff](slock-message-20180626-35633d4.diff)
 
 Authors
 -------

@@ -1,8 +1,6 @@
 How to maintain dwm configuration and customization in git
 ==========================================================
-Since suckless.org has migrated to git, customizations can now be be managed
-directly in git as an alternative to the [patch queue in Mercurial
-tutorial](//dwm.suckless.org/customisation/patch_queue).
+Customizations can be managed directly in git.
 
 The concept
 -----------

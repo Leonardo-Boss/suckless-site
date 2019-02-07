@@ -11,7 +11,7 @@ client.
 
 Usage
 -----
-1. Download the patch and apply according to the [general instructions](//hacking/).
+1. Download the patch and apply according to the [general instructions](//suckless.org/hacking/).
 2. Include the `movestack.c` source file and add keys that call movestack.
    Example from `config.default.h`:
 

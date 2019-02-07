@@ -1,6 +1,5 @@
 #!/bin/sh
 # TODO:
-# ? git clone --bare for project repos.
 # ? build:
 #   - set flags per project? (per version too?).
 #   - add build status (OK, FAIL, unknown), must be secure though.
@@ -19,7 +18,7 @@ tabbed	tools.suckless.org/tabbed/patches
 !__EOF__
 }
 
-wikidir="$HOME/tmp/sites"
+wikidir="$(pwd)/sites"
 repodir="$(pwd)/repos"
 revdir="$(pwd)/rev"
 resultsdir="$(pwd)/results"
@@ -52,7 +51,7 @@ clone() {
 	getprojects | while read -r -- project dir; do
 		test -d "$repodir/$project" && continue
 
-		git clone "git://git.suckless.org/$project" "$repodir/$project"
+		git clone --bare "git://git.suckless.org/$project" "$repodir/$project"
 	done
 }
 
@@ -61,14 +60,14 @@ pull() {
 	getprojects | while read -r -- project dir; do
 		test -d "$repodir/$project" || continue
 
-		GIT_DIR="$repodir/$project/.git" git pull "git://git.suckless.org/$project"
+		GIT_DIR="$repodir/$project" git fetch "git://git.suckless.org/$project"
 	done
 }
 
 # listpatches()
 listpatches() {
 	getprojects | while read -r -- project dir; do
-		find "$wikidir/$dir" -iname "*.diff" | while read -r p; do
+		find "$wikidir/$dir" -name "*.diff" | while read -r p; do
 			test -f "$p" || continue
 
 			b=$(basename "$p")
@@ -104,10 +103,13 @@ checkoutrev() {
 	test -d "$revdir/$project/$v" && return 0
 
 	cur=$(pwd)
-	mkdir -p "$revdir/$project/$v"
-	cd "$revdir/$project/$v" || return 1
+	d="$revdir/$project/$v"
+	mkdir -p "$d"
+	cd "$d" || return 1
 
-	GIT_DIR="$repodir/$project/.git" git checkout -f "$v" -- . 2> "$revdir/$project/$v/fail"
+	GIT_DIR="$repodir/$project" \
+		git archive "$v" 2> "$revdir/$project/$v/fail" | \
+		tar xf - 2>/dev/null
 	status=$?
 	if test x"$status" != x"0"; then
 		status=1

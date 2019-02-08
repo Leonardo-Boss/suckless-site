@@ -37,6 +37,8 @@ The Never Ending Part
 ---------------------
 * Your link here.
 
+* [The SystemD Platform: an Unbiased Critique](http://soggywizards.com/tips/code/os/initialization/systemd/good-bad-ugly/)
+
 Part 4
 ------
 * [systemd-logind deletes your message queues](https://knzl.de/systemd-removeipc)

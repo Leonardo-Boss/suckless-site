@@ -8,7 +8,7 @@ FAQ
 	   way. The terminal can't use the "wasted space" anyway, so this is purely
 	   aesthetics.
 
-	   You can change `static const Bool resizehints = True;` to `False` in
+	   You can change `static const int resizehints = 1;` to `0` in
 	   config.h to turn resizehints off. This wastes the same amount of  space
 	   inside the terminal window that would otherwise be wasted outside.
 

@@ -86,6 +86,9 @@ For tarballs:
 	diff -up original-program-directory modified-program-directory > \
 	           toolname-patchname-RELEASE.diff
 
+Don't push multiple commits patchsets. A single patch should apply all changes
+using `patch -p1`.
+
 patch program
 -------------
 For git users, use -3 to fix the conflict easily:

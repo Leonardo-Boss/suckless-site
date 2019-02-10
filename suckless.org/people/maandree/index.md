@@ -1,6 +1,5 @@
 Mattias Andrée (maandree)
-=========================
-
+==========================
 I'm the maintainer of [libzahl](//libs.suckless.org/libzahl/)
 and [blind](//tools.suckless.org/blind/), and a contibutor
 to [sbase](//core.suckless.org/sbase) and

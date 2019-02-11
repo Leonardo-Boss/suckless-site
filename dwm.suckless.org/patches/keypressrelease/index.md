@@ -15,14 +15,19 @@ Usage
 -----
 A working `scrot -s` key binding:
 
-	static const char *scrot[] = { "scrot", "-s", NULL };
-	...
-	{ KeyRelease, 0,                XK_Print,  spawn,          {.v = scrot } },
+	{ KeyRelease, 0,                XK_Print,  spawn,          SHCMD("scrot -s") },
 
 Or to only display the bar while the toggle key is held down (requires that it
 is hidden to start with), add:
 
-	{ KeyRelease, MODKEY,           XK_b,      togglebar,      {0} },
+    { KeyRelease, MODKEY,           XK_b,      togglebar,      {0} },
+
+Alternatives
+------------
+
+An alternative is to put a tiny sleep right before executing scrot.
+
+    { ControlMask,                  XK_Print,  spawn,          SHCMD("sleep 0.2; scrot -s") },
 
 Download
 --------

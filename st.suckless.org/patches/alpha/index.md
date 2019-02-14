@@ -15,6 +15,13 @@ Notes
 * The color designated by 'defaultbg' should not be used elsewhere.
 * Embedding might fail after applying this patch.
 
+Changes in 0.8.2
+----------------
+* The internal method for querying X visual is changed. St will respect the
+  visual of its parent window, allowing it to be embedded easily.
+* Opacity value is now typed in float.
+* `-A` option is added to allow changing the opacity value without compiling.
+
 Download
 --------
 * [st-alpha-0.4.1.diff](st-alpha-0.4.1.diff)
@@ -27,6 +34,7 @@ Download
 * [st-alpha-0.8.1.diff](st-alpha-0.8.1.diff)
 * [st-alpha-20180616-0.8.1.diff](st-alpha-20180616-0.8.1.diff)
 * [st-alpha-20190116-3be4cf1.diff](st-alpha-20190116-3be4cf1.diff)
+* [st-alpha-0.8.2.diff](st-alpha-0.8.2.diff)
 
 Authors
 -------

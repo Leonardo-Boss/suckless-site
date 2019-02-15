@@ -40,3 +40,11 @@ Are there any example customisations to get me started?
 Various customisation options are illustrated in the sub-directories of this
 wiki page. Under each of the categories (customfuncs, fonts, etc.,) you will
 find example modifications that will get you started.
+
+How do I keep my customized dwm config up to date?
+--------------------------------------------------
+git clone the dwm repo and store all patches as git commits. If there are
+changes in origin/master, simply git rebase your patches. For this it is
+convenient to use the config.def.h directly. To do so you have to change
+${OBJ}: config.h config.mk to ${OBJ}: config.def.h config.mk in the Makefile
+and change #include "config.h" to #include "config.def.h" in dwm.c.

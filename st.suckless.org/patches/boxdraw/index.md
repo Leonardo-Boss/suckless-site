@@ -37,7 +37,7 @@ Notes:
 
 Download
 --------
-* [st-boxdraw-2018-11-01-30ec9a3.diff](st-boxdraw-2018-11-01-30ec9a3.diff)
+* [st-boxdraw-20181101-30ec9a3.diff](st-boxdraw-20181101-30ec9a3.diff)
 
 Author
 ------

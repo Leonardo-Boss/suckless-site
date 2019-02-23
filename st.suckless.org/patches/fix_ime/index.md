@@ -1,6 +1,8 @@
 Fix IME
 =======
 
+This patch is now applied in st master e85b6b6 right after release 0.8.2.
+
 Description
 -----------
 Better Input Method Editor (IME) support. Features:

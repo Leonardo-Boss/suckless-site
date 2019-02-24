@@ -13,9 +13,10 @@ and the top of the bar.
 
 Download
 --------
-* [dwm-activetagindicatorbar-6.1.diff](dwm-activetagindicatorbar-6.1.diff) (15.1.2019)
+* [dwm-activetagindicatorbar-6.1.diff](dwm-activetagindicatorbar-6.1.diff) (15.01.2019)
+* [dwm-activetagindicatorbar-6.2.diff](dwm-activetagindicatorbar-6.2.diff) (24.01.2019)
 
-Author
-------
-* Leon Plickat <leonhenrik[dot]plickat[at]stud[dot]uni-goettingen[dot]de>
-
+Authors
+-------
+* Leon Plickat <leonhenrik.plickat[at]stud.uni-goettingen.de> (6.1)
+* Griffin Bruno <griffinbruno[at]disroot.org> (6.2)

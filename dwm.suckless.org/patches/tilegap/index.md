@@ -10,7 +10,12 @@ edge. Size configurable in config.h.
 Download
 --------
 * [dwm-tilegap-6.0.diff](dwm-tilegap-6.0.diff) (948b) (20150707)
+* [dwm-tilegap-6.2.diff](dwm-tilegap-6.2.diff) (20190227)
 
 Author
 ------
 * Brandon Mulcahy - <brandon@jangler.info>
+
+Contributors
+------------
+* Aleksandrs Stier - <aleks.stier@icloud.com> (6.2)

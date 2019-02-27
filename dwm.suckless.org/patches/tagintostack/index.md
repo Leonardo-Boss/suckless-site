@@ -20,3 +20,7 @@ Download
 Author
 ------
 * Aaron Burrow - <burrows.labs@gmail.com>
+
+Contributors
+------------
+* Aleks Stier - <aleks.stier@icloud.com

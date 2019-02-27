@@ -16,11 +16,9 @@ Download
 --------
 * [dwm-6.1-tagintostack-allmaster.diff](dwm-6.1-tagintostack-allmaster.diff) (568b) (20140306)
 * [dwm-6.1-tagintostack-onemaster.diff](dwm-6.1-tagintostack-onemaster.diff) (1138b) (20140306)
+* [dwm-6.2-tagintostack-onemaster.diff](dwm-6.2-tagintostack-onemaster.diff)
 
 Author
 ------
 * Aaron Burrow - <burrows.labs@gmail.com>
-
-Contributors
-------------
-* Aleks Stier - <aleks.stier@icloud.com
+* Aleks Stier (onemaster-6.2 port)

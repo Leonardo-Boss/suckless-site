@@ -16,4 +16,4 @@ Download
 
 Author
 ------
-* Aleksandrs Stier - aleks.stier@icloud.com
+* Aleksandrs Stier (6.2)

@@ -34,7 +34,4 @@ Author
 ------
 * Xarchus
 * Jonathon Fernyhough (jonathon at manjaro-dot-org) (4.7 rewrite)
-
-Contributors
-------------
-* Aleksandrs Stier - <aleks.stier@icloud.com> (4.9)
+* Aleksandrs Stier (4.9 port)

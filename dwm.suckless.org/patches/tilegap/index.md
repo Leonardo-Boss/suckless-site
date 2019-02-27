@@ -15,7 +15,4 @@ Download
 Author
 ------
 * Brandon Mulcahy - <brandon@jangler.info>
-
-Contributors
-------------
-* Aleksandrs Stier - <aleks.stier@icloud.com> (6.2)
+* Aleksandrs Stier (6.2 port)

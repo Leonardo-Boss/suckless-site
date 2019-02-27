@@ -30,8 +30,8 @@ alternatives.
   library. Quite bloated, slow and [calls abort() on failed
   malloc](https://gmplib.org/repo/gmp/file/tip/memory.c#l105)
 
-  Alternatives: [libtommath](http://www.libtom.org/LibTomMath/),
-  [TomsFastMath](http://www.libtom.org/TomsFastMath/),
+  Alternatives: [libtommath](http://www.libtom.net/LibTomMath/),
+  [TomsFastMath](http://www.libtom.net/TomsFastMath/),
   [imath](https://github.com/creachadair/imath),
   [libzahl](//libs.suckless.org/libzahl) (WIP),
   [hebimath](https://github.com/suiginsoft/hebimath) (WIP)

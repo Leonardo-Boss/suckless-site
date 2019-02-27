@@ -28,8 +28,13 @@ Download
 --------
 * [dmenu-lineheight-4.7.diff](dmenu-lineheight-4.7.diff)
 * [dmenu-lineheight-4.6.diff](dmenu-lineheight-4.6.diff)
+* [dmenu-lineheight-4.9.diff](dmenu-lineheight-4.9.diff)
 
 Author
 ------
 * Xarchus
 * Jonathon Fernyhough (jonathon at manjaro-dot-org) (4.7 rewrite)
+
+Contributors
+------------
+* Aleksandrs Stier - <aleks.stier@icloud.com> (4.9)

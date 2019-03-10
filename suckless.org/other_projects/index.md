@@ -32,6 +32,8 @@ There are several other projects which are inspired by the spirit of suckless.
 * [ssg](https://github.com/jroimartin/ssg) - slide generation system with markdown-like syntax
 * [sup](//git.suckless.org/sup) - minimalistic sudo replacement
 * [sw](https://github.com/jroimartin/sw) - minimalistic web framework
+* [lgbt](https://dev.yeuxdelibad.net/lgbt.tgz) - Lets go blog this. A
+  static blog generator 
 * [tiv](https://github.com/radare/tiv) - terminal image viewer
 * [wjt](https://github.com/ianremmler/wjt) - slider widget for X
 * [xbmouse](https://github.com/vlaadbrain/xbmouse) - simply bind a mouse button to a command

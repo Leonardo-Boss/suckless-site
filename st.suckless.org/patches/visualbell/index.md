@@ -4,7 +4,8 @@ This page contains two unrelated implementations of visual bell which are not
 compatible with each other. If you have one of them applied, remove it before
 trying the other.
 
-# === Visual bell 1 ===
+
+# Visual bell 1
 
 Description
 -----------
@@ -27,7 +28,8 @@ Authors
 * Laslo Hunhold - <dev@frign.de> (git port)
 * Alexis Ben Miloud--Josselin; panpo; alexisbmj+code at protonmail dot com.
 
-# === Visual bell 2 ===
+
+# Visual bell 2
 
 Description
 -----------

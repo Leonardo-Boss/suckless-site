@@ -121,19 +121,19 @@ stat_isfile(const char *f)
 int
 spawn_wait(char **argv)
 {
-        int status;
+	int status;
 
-        switch (fork()) {
+	switch (fork()) {
 	case 0:
 		execvp(argv[0], argv);
 		exit(126);
 	case -1:
 		return -1;
-        }
+	}
 	if (wait(&status) == -1)
 		return -1;
 
-        return WIFEXITED(status) ? 0 : -1;
+	return WIFEXITED(status) ? 0 : -1;
 }
 
 int
@@ -219,8 +219,8 @@ menu_panel(char *domain, char *page, char *this, int depth)
 		die_perror("opendir: %s", this ? this : ".");
 
 	d_len = 0;
-	while(d_len < LEN(d_list) && (de = readdir(dp)))
-	     d_list[d_len++] = xstrdup(de->d_name);
+	while (d_len < LEN(d_list) && (de = readdir(dp)))
+		d_list[d_len++] = xstrdup(de->d_name);
 	closedir(dp);
 
 	qsort(d_list, d_len, sizeof *d_list, qsort_strcmp);

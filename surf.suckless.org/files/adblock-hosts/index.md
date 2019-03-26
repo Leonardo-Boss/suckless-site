@@ -48,12 +48,9 @@ They are written in `/etc/hosts` file to disable DNS resolution.
 Get the script from here :
 [zerohosts](https://dev.yeuxdelibad.net/OpenBSD-stuff/zerohosts).
 
-Edit the script to add you own entries if necessary : 
+Include your own `/etc/hosts` rules by including a file as an argument
 
-	MYHOSTS="
-	127.0.0.1 localhost
-	::1 localhost
-	"
+	zerohosts /etc/myhosts.txt
 
 Run the script each time you want to update the lists using a cronjob, or
 `/etc/rc.local` : 

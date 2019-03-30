@@ -7,6 +7,18 @@ list](/community).
 News
 ====
 
+2019-03-30
+----------
+There is now a [patch overview](//gunther.suckless.org/patches/) tool to have a
+quick overview of the patch status list. This list is generated each day from
+the (sites](//git.suckless.org/sites/) repository. It checks if patches apply
+cleanly in a normal patching manner. Of course it does not check patch
+combinations.
+
+[Hacking patches guidelines](//suckless.org/hacking/)
+
+Please keep the patches tidy and maintain or remove them.
+
 2019-02-09
 ----------
 [st 0.8.2](//st.suckless.org/) released: [download](//dl.suckless.org/st/st-0.8.2.tar.gz)

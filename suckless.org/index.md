@@ -11,7 +11,7 @@ News
 ----------
 There is now a [patch overview](//gunther.suckless.org/patches/) tool to have a
 quick overview of the patch status list. This list is generated each day from
-the (sites](//git.suckless.org/sites/) repository. It checks if patches apply
+the [sites](//git.suckless.org/sites/) repository. It checks if patches apply
 cleanly in a normal patching manner. Of course it does not check patch
 combinations.
 

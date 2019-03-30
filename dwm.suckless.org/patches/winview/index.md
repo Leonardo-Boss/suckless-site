@@ -40,7 +40,6 @@ template, config.def.h.
 
 Download
 --------
-* [dwm-6.1-winview.diff](dwm-6.1-winview.diff)
 * [dwm-6.0-winview.diff](dwm-6.0-winview.diff)
 
 Author

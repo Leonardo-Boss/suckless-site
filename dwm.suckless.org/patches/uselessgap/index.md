@@ -52,7 +52,6 @@ Download
   Updated to use the new resizeclient() function instead of resize()
 * [dwm-uselessgap-5.8.diff](dwm-uselessgap-5.8.diff) (1.7k) (20100225 updated. Thanks Guillaume for your bug report)
   Fix floating clients bug and remove all borders in monocle mode.
-* [dwm-gap-5.7.2.diff](dwm-gap-5.7.2.diff) (0.7k) (20091215)
 
 Author
 ------

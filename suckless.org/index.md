@@ -15,7 +15,8 @@ the [sites](//git.suckless.org/sites/) repository. It checks if patches apply
 cleanly in a normal patching manner. Of course it does not check patch
 combinations.
 
-[Hacking patches guidelines](//suckless.org/hacking/)
+* [Hacking patches guidelines](//suckless.org/hacking/)
+* [Tool source-code](//git.suckless.org/sites/file/testpatches.sh.html)
 
 Please keep the patches tidy and maintain or remove them.
 

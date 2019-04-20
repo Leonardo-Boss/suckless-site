@@ -5,7 +5,7 @@ index 877afab..6a1699f 100644
 @@ -84,44 +84,49 @@ static unsigned int tabspaces = 8;
  
  /* Terminal colors (16 first used in escape sequence) */
- const char *colorname[] = {
+ static const char *colorname[] = {
 -	/* 8 normal colors */
 -	"black",
 -	"red3",
@@ -65,11 +65,11 @@ index 877afab..6a1699f 100644
   */
 -unsigned int defaultfg = 7;
 -unsigned int defaultbg = 0;
--unsigned int defaultcs = 256;
+-static unsigned int defaultcs = 256;
 +unsigned int defaultfg = 257;
 +unsigned int defaultbg = 256;
-+unsigned int defaultcs = 257;
- unsigned int defaultrcs = 257;
++static unsigned int defaultcs = 257;
+ static unsigned int defaultrcs = 257;
  
  /*
 + * Colors used, when the specific fg == defaultfg. So in reverse mode this

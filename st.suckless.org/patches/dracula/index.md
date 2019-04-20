@@ -21,7 +21,7 @@ Running zsh and tmux.
 
 Download
 --------
-* [st-dracula-20170803-7f99032.diff](st-dracula-20170803-7f99032.diff)
+* [st-dracula-0.8.2.diff](st-dracula-0.8.2.diff)
 
 Authors
 -------

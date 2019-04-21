@@ -139,7 +139,7 @@ This covers most console-based programs and programs from
 * [mpop](https://marlam.de/mpop/) - a POP3 mail client. It is much [faster and simpler than fetchmail](https://marlam.de/mpop/documentation).
 * [mutt](http://www.mutt.org/) - A ncurses mail client for fetching, reading and sending email.
 * [nmh](http://www.nongnu.org/nmh/) - Message Handling System.
-* plan9port/Mail - A mail client for acme. Included with [plan9port](https://9fans.github.io/plan9port/).
+* [plan9port/Mail](https://9fans.github.io/usr/local/plan9/mail/) - A mail client for acme. Included with [plan9port](https://9fans.github.io/plan9port/).
 * [s-nail](https://www.sdaoden.eu/code.html) - An improved heirloom-mailx.
 
 

@@ -15,6 +15,7 @@ There are several other projects which are inspired by the spirit of suckless.
 * [honden](https://github.com/joodan-van-github/honden) - flashcard system built on top of oboeta
 * [ired](https://github.com/radare/ired) - minimalistic hexadecimal editor inspired in radare
 * [kelp](http://kelp.sf.net) - source code annotation framework
+* [lgbt](https://dev.yeuxdelibad.net/lgbt.tgz) - Lets go blog this. A static blog generator 
 * [librarian](https://github.com/maandree/librarian) - less sucky alternative to pkg-config
 * [micy](https://github.com/radare/toys/tree/master/micy) - minimalistic mouse handler (depends on driver)
 * [oboeta](https://github.com/joodan-van-github/oboeta) - minimalistic plain-text flashcard system
@@ -30,10 +31,9 @@ There are several other projects which are inspired by the spirit of suckless.
 * [spt](https://github.com/pickfire/spt) - simple pomodoro timer
 * [srw](https://bitbucket.org/emg/srw) - simple read wrapper
 * [ssg](https://github.com/jroimartin/ssg) - slide generation system with markdown-like syntax
+* [ssg](https://www.romanzolotarev.com/ssg.html) - Static site generator 180 LoC
 * [sup](//git.suckless.org/sup) - minimalistic sudo replacement
 * [sw](https://github.com/jroimartin/sw) - minimalistic web framework
-* [lgbt](https://dev.yeuxdelibad.net/lgbt.tgz) - Lets go blog this. A static blog generator 
-* [ssg](https://www.romanzolotarev.com/ssg.html) - Static site generator 180 LoC
 * [tiv](https://github.com/radare/tiv) - terminal image viewer
 * [wjt](https://github.com/ianremmler/wjt) - slider widget for X
 * [xbmouse](https://github.com/vlaadbrain/xbmouse) - simply bind a mouse button to a command

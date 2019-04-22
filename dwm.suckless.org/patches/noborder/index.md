@@ -7,9 +7,8 @@ Remove the border when there is only one window visible.
 
 Download
 --------
-* [dwm-noborder-20170207-bb3bd6f.diff](dwm-noborder-20170207-bb3bd6f.diff)
 * [dwm-noborder-6.1.diff](dwm-noborder-6.1.diff)
-* [dwm-noborder-20160718-56a31dc.diff](dwm-noborder-20160718-56a31dc.diff)
+* [dwm-noborder-6.2.diff](dwm-noborder-6.2.diff)
 
 Authors
 -------

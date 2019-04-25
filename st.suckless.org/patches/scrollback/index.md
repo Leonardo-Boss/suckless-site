@@ -10,6 +10,7 @@ Download
 * [st-scrollback-0.7.diff](st-scrollback-0.7.diff)
 * [st-scrollback-0.8.diff](st-scrollback-0.8.diff)
 * [st-scrollback-0.8.1.diff](st-scrollback-0.8.1.diff)
+* [st-scrollback-0.8.2.diff](st-scrollback-0.8.2.diff)
 * [st-scrollback-20190331-21367a0.diff](st-scrollback-20190331-21367a0.diff)
 
 Apply the following patch on top of the previous to allow scrolling

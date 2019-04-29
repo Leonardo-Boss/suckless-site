@@ -21,9 +21,9 @@ Highlighting
 If you want to receive an alert in case someone mention your username, you can
 use awk(1):
 
-	$ sic | awk '/username/ ~ {printf "\a"}1'
+	$ sic | awk '/username/ {printf "\a"}1'
 
 Using a tool like awk(1) would allow you to be highlighted on specific channels
 for example. You can of course combine it with the tee(1) command above:
 
-	$ sic | tee -a sic_history | awk '/username/ ~ {printf "\a"}1'
+	$ sic | tee -a sic_history | awk '/username/ {printf "\a"}1'

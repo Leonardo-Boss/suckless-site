@@ -8,6 +8,8 @@ It applies the monocle-layout only to the clients in the stack.
 The master-client is still visible. The stacked clients are like
 a deck of cards, hence the name.
 
+WARNING: Doesn't respect patches which add gaps (ex. tilegap).
+
 	Tile :
 	+-----------------+--------+
 	|                 |        |

@@ -8,8 +8,9 @@ It applies the monocle-layout to the clients in the stack.
 The master-client is still visible. The stacked clients are like
 a deck of cards, hence the name.
 
-NOTE: Doesn't respect patches which add gaps (ex. tilegap).
+The vanilla patch doesn't respect patches which add gaps (ex. tilegap).
 This means that when the deck-layout is activated gaps are omitted.
+To make it work with the tilegap-patch use the dwm-deck-tilegap patch.
 
 	Tile :
 	+-----------------+--------+
@@ -36,6 +37,7 @@ This means that when the deck-layout is activated gaps are omitted.
 Download
 --------
 * [dwm-deck-6.0.diff](dwm-deck-6.0.diff)
+* [dwm-deck-tilegap-6.2.diff](dwm-deck-tilegap-6.2.diff)
 
 Author
 ------

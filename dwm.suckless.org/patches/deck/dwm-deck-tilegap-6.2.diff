@@ -1,26 +1,25 @@
-From cb3cac91db32403bb581aecbc2957b00bb49c898 Mon Sep 17 00:00:00 2001
+From 0da1bf76c63fa285abcb9241babc4a33ed11cca7 Mon Sep 17 00:00:00 2001
 From: aleks <aleks.stier@icloud.com>
-Date: Mon, 6 May 2019 16:34:58 +0200
-Subject: [PATCH] Add deck-layout
+Date: Mon, 6 May 2019 16:21:02 +0200
+Subject: [PATCH] Add deck-tilegap-layout
 
 deck is a dwm-layout which is inspired by the TTWM window manager.
 It applies the monocle-layout to the clients in the stack.
 The master-client is still visible. The stacked clients are like
 a deck of cards, hence the name.
 
-The vanilla patch doesn't respect patches which add gaps (ex. tilegap).
-This means that when the deck-layout is activated gaps are omitted.
-To make it work with the tilegap-patch use the dwm-deck-tilegap patch.
+This patch is ment to be used in combination with the tilegap-patch
+to preserve the gaps when the deck-layout is activated.
 ---
  config.def.h |  2 ++
- dwm.c        | 26 ++++++++++++++++++++++++++
- 2 files changed, 28 insertions(+)
+ dwm.c        | 29 +++++++++++++++++++++++++++++
+ 2 files changed, 31 insertions(+)
 
 diff --git a/config.def.h b/config.def.h
-index 77ff358..55d8a07 100644
+index 2ca9e56..3606a2e 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -32,6 +32,7 @@ static const Layout layouts[] = {
+@@ -42,6 +42,7 @@ static const Layout layouts[] = {
  	{ "[]=",      tile },    /* first entry is default */
  	{ "><>",      NULL },    /* no layout function means floating behavior */
  	{ "[M]",      monocle },
@@ -28,7 +27,7 @@ index 77ff358..55d8a07 100644
  };
  
  /* key definitions */
-@@ -66,6 +67,7 @@ static Key keys[] = {
+@@ -77,6 +78,7 @@ static Key keys[] = {
  	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
  	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
  	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
@@ -37,10 +36,10 @@ index 77ff358..55d8a07 100644
  	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
  	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 diff --git a/dwm.c b/dwm.c
-index 1d78655..356ab44 100644
+index c556a2d..c5b96dd 100644
 --- a/dwm.c
 +++ b/dwm.c
-@@ -171,6 +171,7 @@ static void configure(Client *c);
+@@ -157,6 +157,7 @@ static void configure(Client *c);
  static void configurenotify(XEvent *e);
  static void configurerequest(XEvent *e);
  static Monitor *createmon(void);
@@ -48,13 +47,14 @@ index 1d78655..356ab44 100644
  static void destroynotify(XEvent *e);
  static void detach(Client *c);
  static void detachstack(Client *c);
-@@ -669,6 +670,31 @@ destroynotify(XEvent *e) {
- 		unmanage(c, True);
+@@ -654,6 +655,34 @@ destroynotify(XEvent *e)
+ 		unmanage(c, 1);
  }
  
 +void
-+deck(Monitor *m) {
-+	unsigned int i, n, h, mw, my;
++deck(Monitor *m)
++{
++	unsigned int i, n, h, mw, my, ns;
 +	Client *c;
 +
 +	for(n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++);
@@ -63,23 +63,25 @@ index 1d78655..356ab44 100644
 +
 +	if(n > m->nmaster) {
 +		mw = m->nmaster ? m->ww * m->mfact : 0;
++		ns = m->nmaster > 0 ? 2 : 1;
 +		snprintf(m->ltsymbol, sizeof m->ltsymbol, "[%d]", n - m->nmaster);
-+	}
-+	else
++	} else {
 +		mw = m->ww;
-+	for(i = my = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)
++		ns = 1;
++	}
++	for(i = 0, my = gappx, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)
 +		if(i < m->nmaster) {
-+			h = (m->wh - my) / (MIN(n, m->nmaster) - i);
-+			resize(c, m->wx, m->wy + my, mw - (2*c->bw), h - (2*c->bw), False);
-+			my += HEIGHT(c);
++			h = (m->wh - my) / (MIN(n, m->nmaster) - i) - gappx;
++			resize(c, m->wx + gappx, m->wy + my, mw - (2*c->bw) - gappx*(5-ns)/2, h - (2*c->bw), False);
++			my += HEIGHT(c) + gappx;
 +		}
 +		else
-+			resize(c, m->wx + mw, m->wy, m->ww - mw - (2*c->bw), m->wh - (2*c->bw), False);
++			resize(c, m->wx + mw + gappx/ns, m->wy + gappx, m->ww - mw - (2*c->bw) - gappx*(5-ns)/2, m->wh - (2*c->bw) - 2*gappx, False);
 +}
 +
  void
- detach(Client *c) {
- 	Client **tc;
+ detach(Client *c)
+ {
 -- 
 2.21.0
 

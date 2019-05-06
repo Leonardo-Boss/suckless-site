@@ -1,19 +1,55 @@
---- dwm.c.orig	2013-03-26 23:50:10.044576455 +0100
-+++ dwm.c	2013-03-26 23:50:27.494576161 +0100
-@@ -171,6 +171,7 @@
- static void configurenotify(XEvent *e);
+From b9bbda20e4ef34f603485e43d1f3664020845122 Mon Sep 17 00:00:00 2001
+From: aleks <aleks.stier@icloud.com>
+Date: Mon, 6 May 2019 14:49:20 +0200
+Subject: [PATCH] Add deck-layout
+
+deck is a dwm-layout which is inspired by the TTWM window manager.
+It applies the monocle-layout to the clients in the stack.
+The master-client is still visible. The stacked clients are like
+a deck of cards, hence the name.
+---
+ config.def.h |  2 ++
+ dwm.c        | 26 ++++++++++++++++++++++++++
+ 2 files changed, 28 insertions(+)
+
+diff --git a/config.def.h b/config.def.h
+index 77ff358..55d8a07 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -32,6 +32,7 @@ static const Layout layouts[] = {
+ 	{ "[]=",      tile },    /* first entry is default */
+ 	{ "><>",      NULL },    /* no layout function means floating behavior */
+ 	{ "[M]",      monocle },
++	{ "[D]",      deck },
+ };
+ 
+ /* key definitions */
+@@ -66,6 +67,7 @@ static Key keys[] = {
+ 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
+ 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
+ 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
++	{ MODKEY,                       XK_c,      setlayout,      {.v = &layouts[3]} },
+ 	{ MODKEY,                       XK_space,  setlayout,      {0} },
+ 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+ 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
+diff --git a/dwm.c b/dwm.c
+index 1d78655..d699a7f 100644
+--- a/dwm.c
++++ b/dwm.c
+@@ -172,6 +172,7 @@ static void configurenotify(XEvent *e);
  static void configurerequest(XEvent *e);
  static Monitor *createmon(void);
-+static void deck(Monitor *m);
  static void destroynotify(XEvent *e);
++static void deck(Monitor *m);
  static void detach(Client *c);
  static void detachstack(Client *c);
-@@ -661,6 +662,34 @@
+ static void die(const char *errstr, ...);
+@@ -669,6 +670,31 @@ destroynotify(XEvent *e) {
+ 		unmanage(c, True);
  }
  
- void
++void
 +deck(Monitor *m) {
-+	int dn;
 +	unsigned int i, n, h, mw, my;
 +	Client *c;
 +
@@ -21,12 +57,10 @@
 +	if(n == 0)
 +		return;
 +
-+	dn = n - m->nmaster;
-+	if(dn > 0) /* override layout symbol */
-+		snprintf(m->ltsymbol, sizeof m->ltsymbol, "D %d", dn);
-+
-+	if(n > m->nmaster)
++	if(n > m->nmaster) {
 +		mw = m->nmaster ? m->ww * m->mfact : 0;
++		snprintf(m->ltsymbol, sizeof m->ltsymbol, "[%d]", n - m->nmaster);
++	}
 +	else
 +		mw = m->ww;
 +	for(i = my = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)
@@ -39,7 +73,9 @@
 +			resize(c, m->wx + mw, m->wy, m->ww - mw - (2*c->bw), m->wh - (2*c->bw), False);
 +}
 +
-+void
- destroynotify(XEvent *e) {
- 	Client *c;
- 	XDestroyWindowEvent *ev = &e->xdestroywindow;
+ void
+ detach(Client *c) {
+ 	Client **tc;
+-- 
+2.21.0
+

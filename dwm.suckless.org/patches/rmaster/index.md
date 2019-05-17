@@ -3,21 +3,24 @@ rmaster
 
 Description
 -----------
-Toggling between left-master (original behaviour) and right-master for the
-current monitor.
-
-This patch only modifies the deafult layout 'tile', similar modifications can
-be made to other custom layouts, like 'deck'.
+Enables swapping the master- and stack area such that the master-client
+appears on the right and the stack-clients appear on the left.
 
 Configuration
 -------------
-	/*config.h*/
-	{ MODKEY,                       XK_i,   togglermaster,   {0} },
+A variable and a toggle-function are introduced to achieve this
+behaviour which are set in the config.h:
+
+* The rmaster-variable can be set to 1 to make the right area the
+default master-area
+* The togglemaster-function can be used to swap the master- and
+stack-areas dynamically.
 
 Download
 --------
-* [dwm-rmaster-6.1.diff](dwm-rmaster-6.1.diff) (1836b) (20170213)
+* [dwm-rmaster-6.1.diff](dwm-rmaster-6.1.diff) (20190418)
 
 Author
 ------
 * phi <crispyfrog@163.com>
+* Aleksandrs Stier (Contributor)

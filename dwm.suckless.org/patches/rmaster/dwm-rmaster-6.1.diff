@@ -1,14 +1,55 @@
-diff -urp dwm-6.1/dwm.c dwm-6.1-patched/dwm.c
---- dwm-6.1/dwm.c	2015-11-09 06:39:37.000000000 +0800
-+++ dwm-6.1-patched/dwm.c	2017-02-13 13:21:52.327153646 +0800
-@@ -130,6 +130,7 @@ struct Monitor {
- 	Monitor *next;
- 	Window barwin;
- 	const Layout *lt[2];
-+	int rmaster;
- };
+From ba354f04cba4e0244888029c659fdb357aa8cae6 Mon Sep 17 00:00:00 2001
+From: aleks <aleks.stier@icloud.com>
+Date: Sat, 18 May 2019 00:22:54 +0200
+Subject: [PATCH] Enable swapping master- and stack-area
+
+Enables swapping the master- and stack area such that the master-client
+appears on the right and the stack-clients appear on the left.
+
+A variable and a toggle-function are introduced to achieve this
+behaviour which are set in the config.h:
+
+* The rmaster-variable can be set to 1 to make the right area the
+default master-area
+* The togglemaster-function can be used to swap the master- and
+stack-areas dynamically.
+---
+ config.def.h |  2 ++
+ dwm.c        | 23 ++++++++++++++++++++---
+ 2 files changed, 22 insertions(+), 3 deletions(-)
+
+diff --git a/config.def.h b/config.def.h
+index 7054c06..b747282 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -13,6 +13,7 @@ static const char selbgcolor[]      = "#005577";
+ static const char selfgcolor[]      = "#eeeeee";
+ static const unsigned int borderpx  = 1;        /* border pixel of windows */
+ static const unsigned int snap      = 32;       /* snap pixel */
++static const int rmaster            = 1;        /* 1 means master-area is initially on the right */
+ static const int showbar            = 1;        /* 0 means no bar */
+ static const int topbar             = 1;        /* 0 means bottom bar */
  
- typedef struct {
+@@ -74,6 +75,7 @@ static Key keys[] = {
+ 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
+ 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
+ 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
++	{ MODKEY,                       XK_r,      togglermaster,  {0} },
+ 	{ MODKEY,                       XK_space,  setlayout,      {0} },
+ 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+ 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
+diff --git a/dwm.c b/dwm.c
+index 0362114..e11bd8b 100644
+--- a/dwm.c
++++ b/dwm.c
+@@ -122,6 +122,7 @@ struct Monitor {
+ 	unsigned int seltags;
+ 	unsigned int sellt;
+ 	unsigned int tagset[2];
++	int rmaster;
+ 	int showbar;
+ 	int topbar;
+ 	Client *clients;
 @@ -211,6 +212,7 @@ static void tagmon(const Arg *arg);
  static void tile(Monitor *);
  static void togglebar(const Arg *arg);
@@ -17,7 +58,15 @@ diff -urp dwm-6.1/dwm.c dwm-6.1-patched/dwm.c
  static void toggletag(const Arg *arg);
  static void toggleview(const Arg *arg);
  static void unfocus(Client *c, int setfocus);
-@@ -1674,17 +1676,21 @@ tile(Monitor *m)
+@@ -645,6 +647,7 @@ createmon(void)
+ 	m->tagset[0] = m->tagset[1] = 1;
+ 	m->mfact = mfact;
+ 	m->nmaster = nmaster;
++	m->rmaster = rmaster;
+ 	m->showbar = showbar;
+ 	m->topbar = topbar;
+ 	m->lt[0] = &layouts[0];
+@@ -1674,17 +1677,21 @@ tile(Monitor *m)
  		return;
  
  	if (n > m->nmaster)
@@ -42,10 +91,11 @@ diff -urp dwm-6.1/dwm.c dwm-6.1-patched/dwm.c
  			ty += HEIGHT(c);
  		}
  }
-@@ -1713,6 +1719,16 @@ togglefloating(const Arg *arg)
+@@ -1712,6 +1719,16 @@ togglefloating(const Arg *arg)
+ 	arrange(selmon);
  }
  
- void
++void
 +togglermaster(const Arg *arg)
 +{
 +	selmon->rmaster = !selmon->rmaster;
@@ -55,7 +105,9 @@ diff -urp dwm-6.1/dwm.c dwm-6.1-patched/dwm.c
 +		arrange(selmon);
 +}
 +
-+void
+ void
  toggletag(const Arg *arg)
  {
- 	unsigned int newtags;
+-- 
+2.21.0
+

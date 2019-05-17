@@ -1,0 +1,93 @@
+From c3de13b090e7eb805bae3d6060ada193c58ae5d3 Mon Sep 17 00:00:00 2001
+From: aleks <aleks.stier@icloud.com>
+Date: Sat, 18 May 2019 01:06:57 +0200
+Subject: [PATCH] Add deck-rmaster-layout
+
+deck is a dwm-layout which is inspired by the TTWM window manager.
+It applies the monocle-layout to the clients in the stack.
+The master-client is still visible. The stacked clients are like
+a deck of cards, hence the name.
+
+This patch is ment to be used in combination with the rmaster-patch to
+preserve the side of the master-area which is defined by the
+rmaster-patch.
+
+NOTE: This patch doesn't respect patches which add gaps (ex. tilegap).
+This means that when the deck-layout is activated gaps are omitted.
+To make it work with the tilegap-patch use the dwm-deck-tilegap patch.
+---
+ config.def.h |  2 ++
+ dwm.c        | 30 ++++++++++++++++++++++++++++++
+ 2 files changed, 32 insertions(+)
+
+diff --git a/config.def.h b/config.def.h
+index b747282..3ae1309 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -40,6 +40,7 @@ static const Layout layouts[] = {
+ 	{ "[]=",      tile },    /* first entry is default */
+ 	{ "><>",      NULL },    /* no layout function means floating behavior */
+ 	{ "[M]",      monocle },
++	{ "[D]",      deck },
+ };
+ 
+ /* key definitions */
+@@ -75,6 +76,7 @@ static Key keys[] = {
+ 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
+ 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
+ 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
++	{ MODKEY,                       XK_c,      setlayout,      {.v = &layouts[3]} },
+ 	{ MODKEY,                       XK_r,      togglermaster,  {0} },
+ 	{ MODKEY,                       XK_space,  setlayout,      {0} },
+ 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+diff --git a/dwm.c b/dwm.c
+index e11bd8b..441a99a 100644
+--- a/dwm.c
++++ b/dwm.c
+@@ -159,6 +159,7 @@ static void configure(Client *c);
+ static void configurenotify(XEvent *e);
+ static void configurerequest(XEvent *e);
+ static Monitor *createmon(void);
++static void deck(Monitor *m);
+ static void destroynotify(XEvent *e);
+ static void detach(Client *c);
+ static void detachstack(Client *c);
+@@ -656,6 +657,35 @@ createmon(void)
+ 	return m;
+ }
+ 
++void
++deck(Monitor *m) {
++	unsigned int i, n, h, mw, my;
++	Client *c;
++
++	for(n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++);
++	if(n == 0)
++		return;
++
++	if(n > m->nmaster) {
++		mw = m->nmaster
++			? m->ww * (m->rmaster ? 1.0 - m->mfact : m->mfact)
++			: 0;
++		snprintf(m->ltsymbol, sizeof m->ltsymbol, "[%d]", n - m->nmaster);
++	}
++	else
++		mw = m->ww;
++	for(i = my = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)
++		if(i < m->nmaster) {
++			h = (m->wh - my) / (MIN(n, m->nmaster) - i);
++			resize(c, m->rmaster ? m->wx + m->ww - mw : m->wx,
++					m->wy + my, mw - (2*c->bw), h - (2*c->bw), 0);
++			my += HEIGHT(c);
++		}
++		else
++			resize(c, m->rmaster ? m->wx : m->wx + mw, m->wy,
++					m->ww - mw - (2*c->bw), m->wh - (2*c->bw), 0);
++}
++
+ void
+ destroynotify(XEvent *e)
+ {
+-- 
+2.21.0
+

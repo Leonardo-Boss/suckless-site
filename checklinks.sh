@@ -8,7 +8,7 @@ find "$t" -name "*.md" -type f | while read -r f; do
 
 	./md-printlinks < "$f" | \
 		grep -vE '^(http|https|gopher|irc|ircs|git)://' | \
-		grep -vE '^\/\/(lists|dl|git)\.' | \
+		grep -vE '^\/\/(lists|dl|git|gunther)\.' | \
 		grep -vE '^mailto:' | \
 		while read -r -- l; do
 

@@ -5,7 +5,7 @@ Description
 -----------
 Make new clients attach below the selected client, instead of
 always becoming the new master. Inspired heavily from the 
-[attachabove](/patches/attachabove/) patch.
+[attachabove](../attachabove/) patch.
 
 Download
 --------

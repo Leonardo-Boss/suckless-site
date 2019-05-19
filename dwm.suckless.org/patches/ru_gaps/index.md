@@ -3,8 +3,8 @@ ru\_gaps
 
 Description
 -----------
-This patch is basically a copy of[fullgaps](../fullgaps/),
-but like [uselessgaps](../uselessgaps/) it removes gaps and borders when in monocle mode. 
+This patch is basically a copy of [fullgaps](../fullgaps/),
+but like [uselessgap](../uselessgap/) it removes gaps and borders when in monocle mode. 
 
 Download
 --------

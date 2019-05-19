@@ -18,6 +18,7 @@ using `Shift+MouseWheel`.
 
 * [st-scrollback-mouse-20170427-5a10aca.diff](st-scrollback-mouse-20170427-5a10aca.diff)
 * [st-scrollback-mouse-0.8.diff](st-scrollback-mouse-0.8.diff)
+* [st-scrollback-mouse-0.8.2.diff](st-scrollback-mouse-0.8.2.diff)
 
 Apply the following patch on top of the previous two to allow scrollback using
 mouse wheel only when not in `MODE_ALTSCREEN`. For example the content is being
@@ -27,7 +28,6 @@ other than scrolling functions.**
 
 * [st-scrollback-mouse-altscreen-20170427-5a10aca.diff](st-scrollback-mouse-altscreen-20170427-5a10aca.diff)
 * [st-scrollback-mouse-altscreen-0.8.diff](st-scrollback-mouse-altscreen-0.8.diff)
-* [st-scrollback-mouse-altscreen-0.8.2.diff](st-scrollback-mouse-altscreen-0.8.2.diff)
 * [st-scrollback-mouse-altscreen-20190131-e23acb9.diff](st-scrollback-mouse-altscreen-20190131-e23acb9.diff)
 
 Notes

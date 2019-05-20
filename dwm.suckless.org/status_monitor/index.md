@@ -50,6 +50,9 @@ Feel free to add your own status monitors here (keeping the list sorted).
   throughput, CPU usage, performance settings, battery status, temperature,
   volume settings, as well as the current date and time (OpenBSD only, no support
   for Linux).
+* [dwm-bar](https://github.com/joestandring/dwm-bar) - modular status bar.
+  modules for date/time, alsa volume, cmus track, countdown timer,
+  current keyboard layout, mail count, system resources, and weather. 
 * [dwms](https://github.com/ianremmler/dwms) - displays time, network, audio,
   and battery status, written in Go using XGB.
 * [dwmsd](https://github.com/johnko/dwmsd) - a daemon that listens on localhost

@@ -6,11 +6,11 @@ Description
 `unfloatvisible` resets isfloating on any visible windows that have it set.
 Optionally also applies a layout.
 
-	#include "push.c"
+	#include "unfloat.c"
 	static Key keys[] = {
 		...
 		{ MODKEY|ShiftMask,             XK_space,  unfloatvisible, {0} },
-		{ MODKEY|ShiftMask,             XK_t,      unfloatvisible, {.v = &layouts[1]} },
+		{ MODKEY|ShiftMask,             XK_t,      unfloatvisible, {.v = &layouts[0]} },
 
 Download
 --------

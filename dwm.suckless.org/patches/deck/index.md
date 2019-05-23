@@ -11,14 +11,15 @@ a deck of cards, hence the name.
 deck-rmaster
 ------------
 The vanilla patch doesn't respect the master-area which is defined by
-the rmaster-patch. To make it work with the rmaster-patch use the
-dwm-deck-rmaster version.
+the rmaster-patch. To make it work with the rmaster-patch apply the
+dwm-deck-rmaster patch on top of the dwm-deck patch.
 
 deck-tilegap
 ------------
-The vanilla patch doesn't respect patches which add gaps (ex. tilegap).
+The vanilla patch doesn't work properly with patches which add gaps.
 This means that when the deck-layout is activated gaps are omitted.
-To make it work with the tilegap-patch use the dwm-deck-tilegap version.
+To make it work with the tilegap-patch apply the dwm-deck-tilegap patch
+on top of the dwm-deck patch.
 
 Showcase
 --------
@@ -49,12 +50,7 @@ Download
 --------
 * [dwm-deck-6.0.diff](dwm-deck-6.0.diff)
 * [dwm-deck-rmaster-6.1.diff](dwm-deck-rmaster-6.1.diff)
-* [dwm-deck-tilegap-6.2.diff](dwm-deck-tilegap-6.2.diff)
-
-TODO
-----
-Make deck-rmaster and -tilegap simpler by pulling out the deck-logic.
-They should be used on top of the vanilla deck-patch and not separately.
+* [dwm-deck-tilegap-6.1.diff](dwm-deck-tilegap-6.2.diff)
 
 Author
 ------

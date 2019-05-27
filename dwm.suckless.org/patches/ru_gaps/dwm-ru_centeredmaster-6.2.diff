@@ -68,7 +68,7 @@ diff -up a/dwm.c b/dwm.c
 +		/* nmaster clients are stacked vertically, in the center
 +		 * of the screen */
 +		h = (m->wh - my) / (MIN(n, m->nmaster) - i) - m->gappx;
-+		resize(c, m->wx + mx + m->gappx, m->wy + my + m->gappx, mw - 2*(c->bw + m->gappx),
++		resize(c, m->wx + mx + m->gappx/2, m->wy + my + m->gappx, mw - 2*(c->bw + m->gappx/2),
 +		       h - (2*c->bw) - m->gappx, 0);
 +		my += HEIGHT(c) + m->gappx;
 +	} else {

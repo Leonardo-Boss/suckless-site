@@ -53,7 +53,7 @@ diff -up a/dwm.c b/dwm.c
 +	for (i = mx = 0, tx = m->wx, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++) {
 +		if (i < m->nmaster) {
 +			w = (m->ww - mx) / (MIN(n, m->nmaster) - i);
-+			resize(c, m->wx + mx + m->gappx, m->wy + m->gappx, w - 2 * (c->bw + m->gappx), mh - 2 *(c->bw + m->gappx), 0);
++			resize(c, m->wx + mx + m->gappx, m->wy + m->gappx, w - 2 * (c->bw + m->gappx), mh - 2 *(c->bw) - m->gappx, 0);
 +			mx += WIDTH(c) + m->gappx;
 +		} else {
 +			h = m->wh - mh;
@@ -89,7 +89,7 @@ diff -up a/dwm.c b/dwm.c
 +	for (i = mx = 0, tx = m->wx, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++) {
 +		if (i < m->nmaster) {
 +			w = (m->ww - mx) / (MIN(n, m->nmaster) - i);
-+			resize(c, m->wx + mx + m->gappx, m->wy + m->gappx, w - 2 * (c->bw + m->gappx), mh - 2 * (c->bw + m->gappx), 0);
++			resize(c, m->wx + mx + m->gappx, m->wy + m->gappx, w - 2 * (c->bw + m->gappx), mh - 2 * (c->bw) - m->gappx, 0);
 +			mx += WIDTH(c) + m->gappx;
 +		} else {
 +			resize(c, tx + m->gappx, ty + m->gappx, m->ww - 2 * (c->bw + m->gappx), th - 2 * (c->bw + m->gappx), 0);

@@ -74,7 +74,7 @@ diff -upN a/fibonacci.c b/fibonacci.c
 +				nw = mon->ww - nw - mon->gappx;
 +			i++;
 +		}
-+		if(i <= 4 && (i!=2 || n==2))
++		if((s == 0 && i <= 4 && (i!=2 || n==2)) || (s==1 && (i%2==1 || i==n)))
 +			resize(c, nx + mon->gappx, ny, nw - 2 * (c->bw) - mon->gappx, nh - 2 * (c->bw) - 2*mon->gappx, False);
 +		else
 +			resize(c, nx + mon->gappx, ny, nw - 2 * (c->bw) - mon->gappx, nh - 2 * (c->bw) - mon->gappx, False);

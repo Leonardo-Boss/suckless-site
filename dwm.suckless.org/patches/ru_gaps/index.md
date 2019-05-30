@@ -38,3 +38,4 @@ A copy of the [centeredmaster](../centeredmaster/), but with resizeable gaps.
 Author
 ------
 * Aaron Duxler <aaron.duxler@gmail.com>
+* Rob Livesey <rlives6789@gmail.com>

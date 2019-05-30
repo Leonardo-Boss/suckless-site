@@ -52,7 +52,7 @@ diff -up ru_applied/dwm.c ru_bottom_stack/dwm.c
 +	}
 +
 +	if (n > m->nmaster)
-+		mh = m->nmaster ? m->wh * m->mfact : 0;
++		mh = m->nmaster ? m->wh * m->mfact : m->gappx;
 +	else
 +		mh = m->wh;
 +	for (i = 0, mx = tx = m->gappx, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)
@@ -83,7 +83,7 @@ diff -up ru_applied/dwm.c ru_bottom_stack/dwm.c
 +	}
 +
 +	if (n > m->nmaster)
-+		mh = m->nmaster ? m->wh * m->mfact : 0;
++		mh = m->nmaster ? m->wh * m->mfact : m->gappx;
 +	else
 +		mh = m->wh;
 +	mw = m->ww;

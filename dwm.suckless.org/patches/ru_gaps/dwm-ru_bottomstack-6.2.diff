@@ -1,6 +1,6 @@
-diff -up ru_applied/config.def.h ru_bottom_stack/config.def.h
---- a/config.def.h	2019-05-30 09:14:31.833371475 +0100
-+++ b/config.def.h	2019-05-30 08:52:36.890032508 +0100
+diff -up a/config.def.h b/config.def.h
+--- a/config.def.h	2019-05-30 19:58:06.479975849 +0200
++++ b/config.def.h	2019-05-30 19:57:13.153310194 +0200
 @@ -42,6 +42,8 @@ static const Layout layouts[] = {
  	{ "[]=",      tile },    /* first entry is default */
  	{ "><>",      NULL },    /* no layout function means floating behavior */
@@ -19,9 +19,9 @@ diff -up ru_applied/config.def.h ru_bottom_stack/config.def.h
  	{ MODKEY,                       XK_space,  setlayout,      {0} },
  	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
  	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
-diff -up ru_applied/dwm.c ru_bottom_stack/dwm.c
---- a/dwm.c	2019-05-30 09:14:31.836704807 +0100
-+++ b/dwm.c	2019-05-30 09:19:46.360039517 +0100
+diff -up a/dwm.c b/dwm.c
+--- a/dwm.c	2019-05-30 19:58:06.483309183 +0200
++++ b/dwm.c	2019-05-30 19:57:13.153310194 +0200
 @@ -211,6 +211,8 @@ static void spawn(const Arg *arg);
  static void tag(const Arg *arg);
  static void tagmon(const Arg *arg);
@@ -31,7 +31,7 @@ diff -up ru_applied/dwm.c ru_bottom_stack/dwm.c
  static void togglebar(const Arg *arg);
  static void togglefloating(const Arg *arg);
  static void toggletag(const Arg *arg);
-@@ -2173,3 +2175,67 @@ main(int argc, char *argv[])
+@@ -2172,3 +2174,67 @@ main(int argc, char *argv[])
  	XCloseDisplay(dpy);
  	return EXIT_SUCCESS;
  }
@@ -99,4 +99,3 @@ diff -up ru_applied/dwm.c ru_bottom_stack/dwm.c
 +			ty += HEIGHT(c) + m->gappx;
 +		}
 +}
-

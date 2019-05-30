@@ -1,6 +1,6 @@
 diff -up ru_applied/config.def.h ru_bottom_stack/config.def.h
---- ru_applied/config.def.h	2019-05-30 09:14:31.833371475 +0100
-+++ ru_bottom_stack/config.def.h	2019-05-30 08:52:36.890032508 +0100
+--- a/config.def.h	2019-05-30 09:14:31.833371475 +0100
++++ b/config.def.h	2019-05-30 08:52:36.890032508 +0100
 @@ -42,6 +42,8 @@ static const Layout layouts[] = {
  	{ "[]=",      tile },    /* first entry is default */
  	{ "><>",      NULL },    /* no layout function means floating behavior */
@@ -14,14 +14,14 @@ diff -up ru_applied/config.def.h ru_bottom_stack/config.def.h
  	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
  	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
  	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
-+        { MODKEY,                       XK_u,      setlayout,      {.v = &layouts[3]} },
-+        { MODKEY|ShiftMask,             XK_u,      setlayout,      {.v = &layouts[4]} },
++   { MODKEY,                       XK_u,      setlayout,      {.v = &layouts[3]} },
++   { MODKEY|ShiftMask,             XK_u,      setlayout,      {.v = &layouts[4]} },
  	{ MODKEY,                       XK_space,  setlayout,      {0} },
  	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
  	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 diff -up ru_applied/dwm.c ru_bottom_stack/dwm.c
---- ru_applied/dwm.c	2019-05-30 09:14:31.836704807 +0100
-+++ ru_bottom_stack/dwm.c	2019-05-30 09:19:46.360039517 +0100
+--- a/dwm.c	2019-05-30 09:14:31.836704807 +0100
++++ b/dwm.c	2019-05-30 09:19:46.360039517 +0100
 @@ -211,6 +211,8 @@ static void spawn(const Arg *arg);
  static void tag(const Arg *arg);
  static void tagmon(const Arg *arg);

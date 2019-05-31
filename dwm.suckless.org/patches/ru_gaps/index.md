@@ -21,7 +21,7 @@ Download
 
 Apply the following patches on top of the previous patch to add 
 additional layouts with resizeable gap support.
-These patches do not set any keybindigs in config.def.h.
+Most of these patches do not set any keybindigs in config.def.h.
 
 A copy of the [fibonacci](../fibonacci/), but with resizeable gaps.
 * [dwm-ru\_fibonacci-6.2.diff](dwm-ru_fibonacci-6.2.diff)

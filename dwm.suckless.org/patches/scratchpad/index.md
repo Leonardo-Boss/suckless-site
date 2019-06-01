@@ -18,7 +18,7 @@ Download
 * [dwm-scratchpad-20190601-cb3f58a.diff](dwm-scratchpad-20190601-cb3f58a.diff)
 * [dwm-scratchpad-20170207-bb3bd6f.diff](dwm-scratchpad-20170207-bb3bd6f.diff)
 
-Author
+Authors
 ------
 * Ivan J. <parazyd@dyne.org>
 * Aaron D. <aaron.duxler@gmail.com> (mechanical update to 6.2 and bugfixes)

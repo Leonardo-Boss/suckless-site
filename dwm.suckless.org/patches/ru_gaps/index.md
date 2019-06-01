@@ -35,7 +35,7 @@ A copy of the [bottomstack](../bottomstack/), but with resizeable gaps.
 A copy of the [centeredmaster](../centeredmaster/), but with resizeable gaps.
 * [dwm-ru\_centeredmaster-6.2.diff](dwm-ru_centeredmaster-6.2.diff)
 
-Author
+Authors
 ------
 * Aaron Duxler <aaron.duxler@gmail.com>
 * Rob Livesey <rlives6789@gmail.com>

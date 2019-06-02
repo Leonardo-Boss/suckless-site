@@ -16,7 +16,7 @@ Example Configuration
 
 Add the following to your keys array to bind mod+tab to toggle attach below.
 
-	{ MODKEY,                       XK_Tab,           toggleattachbelow,           {0} },
+	{ MODKEY,                       XK_Tab,           toggleAttachBelow,           {0} },
 
 
 Download

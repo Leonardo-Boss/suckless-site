@@ -44,6 +44,14 @@ Download
 --------
 * [dwm-cfacts-6.1.diff](dwm-cfacts-6.1.diff)
 
+Additional layouts with cfact support
+-------------------------------------
+Just patch these on top of the original cfacts patch.
+
+* [dwm-cfacts\_bottomstack-6.2.diff](dwm-cfacts_bottomstack-6.2.diff)
+* [dwm-cfacts\_centeredmaster-6.2.diff](dwm-cfacts_centeredmaster-6.2.diff)
+
 Author
 ------
 * Patrick Steinhardt (pks) <ps@pks.im>
+* Aaron Duxler <aaron.duxler@gmail.com> - Additional layouts bottomstack + centeredmaster

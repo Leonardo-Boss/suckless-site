@@ -85,11 +85,11 @@ it around. This can also be used to raise a floating window.
 There are several ways to get specific windows into being managed as a floating
 window, despite the tiled layout being activated. First there is
 `[Alt]+[Shift]+[space]`, which will toggle floating mode on the active window.
-Then there is the possible to simply resize the window using `[Alt]+[right
-mouse button]`. The last method is to `[Alt]+[middle mouse button]` onto the
-window, to toggle it in being floating. These floating windows then can be used
-to force certain window sizes, when some application requires this for
-aesthetics or simply to being usable.
+Second method is to simply resize the window using `[Alt]+[right mouse button]`.
+The last method is to `[Alt]+[middle mouse button]` onto the window, to toggle
+it in being floating. These floating windows then can be used to force certain
+window sizes, when some application requires this for aesthetics or simply to
+being usable.
 
 If you want to set some type of window to be always floating, look at the
 [config.def.h](//git.suckless.org/dwm/plain/config.def.h) and the `rules`

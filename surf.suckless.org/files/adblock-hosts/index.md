@@ -61,3 +61,10 @@ Run the script each time you want to update the lists using a cronjob, or
 * Main page : <https://yeuxdelibad.net/Logiciel-libre/Code/zerohosts.html>
 * Author : < thuban (at) yeuxdelibad (dot) net > (feel free to suggest
 improvements)
+
+firejail
+--------
+
+If you don't want to use your /etc/hosts file, you can use firejail:
+    
+    firejail --noprofile --hosts-file="~/adblockhosts" surf "example.com"

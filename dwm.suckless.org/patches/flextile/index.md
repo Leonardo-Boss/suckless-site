@@ -67,8 +67,8 @@ pressing `ALT+m` (in the default configuration).
 
 Download
 --------
-* [dwm-flextile-5.8.2.diff][dwm-flextile-5.8.2.diff]
-* [dwm-flextile-5.8.1.diff][dwm-flextile-5.8.1.diff]
+* [dwm-flextile-5.8.2.diff](dwm-flextile-5.8.2.diff)
+* [dwm-flextile-5.8.1.diff](dwm-flextile-5.8.1.diff)
 
 Authors
 -------

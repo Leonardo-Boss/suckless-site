@@ -14,8 +14,8 @@ By default your terminal (st) is used, and the default key binding is
 
 Download
 --------
-* [dwm-scratchpad-6.2.diff](dwm-scratchpad-6.2.diff) - 2019-06-01
-* [dwm-scratchpad-20190601-cb3f58a.diff](dwm-scratchpad-20190601-cb3f58a.diff)
+* [dwm-scratchpad-6.2.diff](dwm-scratchpad-6.2.diff) - 2019-06-20
+* [dwm-scratchpad-20190620-cb3f58a.diff](dwm-scratchpad-20190620-cb3f58a.diff)
 * [dwm-scratchpad-20170207-bb3bd6f.diff](dwm-scratchpad-20170207-bb3bd6f.diff)
 
 Authors

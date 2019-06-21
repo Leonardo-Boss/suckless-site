@@ -26,9 +26,6 @@ pick one font once and for all, not on a char-by-char basis.
 
 The [Icons family](https://aur.archlinux.org/packages/ttf-font-icons/) is a
 non-overlapping merge of Awesome and Ionicons fonts I've made for my statusbar.
-In case you want to take a look at it, there is a
-[cheatsheet](https://www.dropbox.com/s/9iysh2i0gadi4ic/icons.pdf) listing the
-icons and their unicode points.
 
 Download
 --------

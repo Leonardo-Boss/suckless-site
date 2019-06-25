@@ -14,8 +14,8 @@ diff -upN a/config.def.h b/config.def.h
  	{ "[M]",      monocle },
 diff -upN a/gaplessgrid.c b/gaplessgrid.c
 --- a/gaplessgrid.c	1970-01-01 01:00:00.000000000 +0100
-+++ b/gaplessgrid.c	2019-05-29 00:26:33.779968246 +0200
-@@ -0,0 +1,47 @@
++++ b/gaplessgrid.c	2019-06-25 00:26:33.779968246 +0200
+@@ -0,0 +1,40 @@
 +void
 +gaplessgrid(Monitor *m) {
 +	unsigned int n, cols, rows, cn, rn, i, cx, cy, cw, ch;
@@ -45,17 +45,10 @@ diff -upN a/gaplessgrid.c b/gaplessgrid.c
 +	for(i = 0, c = nexttiled(m->clients); c; i++, c = nexttiled(c->next)) {
 +		if(i/rows + 1 > cols - n%cols)
 +			rows = n/cols + 1;
-+		ch = rows ? m->wh / rows : m->wh;
-+		cx = m->wx + cn*cw;
-+		cy = m->wy + rn*ch;
-+		if(cn+1 == cols && rn+1 == rows)
-+			resize(c, cx + m->gappx, cy + m->gappx, cw - 2 * (c->bw + m->gappx), ch - 2 * (c->bw + m->gappx), False);
-+		else if(cn+1 == cols)
-+			resize(c, cx + m->gappx, cy + m->gappx, cw - 2 * (c->bw + m->gappx), ch - 2 * (c->bw) - m->gappx, False);
-+		else if(rn+1 == rows)
-+			resize(c, cx + m->gappx, cy + m->gappx, cw - 2 * (c->bw) - m->gappx, ch - 2 * (c->bw + m->gappx), False);
-+		else
-+			resize(c, cx + m->gappx, cy + m->gappx, cw - 2 * (c->bw) - m->gappx, ch - 2 * (c->bw) - m->gappx, False);
++		ch = rows ? (m->wh-m->gappx) / rows : m->wh;
++		cx = m->wx + m->gappx + cn*cw;
++		cy = m->wy + m->gappx + rn*ch;
++		resize(c, cx - cn*m->gappx/cols, cy, cw - 2 * (c->bw) - m->gappx - m->gappx/cols, ch - 2 * c->bw - m->gappx, False);
 +		rn++;
 +		if(rn >= rows) {
 +			rn = 0;

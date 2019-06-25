@@ -27,7 +27,7 @@ A copy of the [fibonacci](../fibonacci/), but with resizeable gaps.
 * [dwm-ru\_fibonacci-6.2.diff](dwm-ru_fibonacci-6.2.diff)
 
 A copy of the [gaplessgrid](../gaplessgrid/), but with resizeable gaps.
-* [dwm-ru\_gaplessgrid-6.2.diff](dwm-ru_gaplessgrid-6.2.diff)
+* [dwm-ru\_gaplessgrid-6.2.diff](dwm-ru_gaplessgrid-6.2.diff) - 25-06-2019
 
 A copy of the [bottomstack](../bottomstack/), but with resizeable gaps.
 * [dwm-ru\_bottomstack-6.2.diff](dwm-ru_bottomstack-6.2.diff)

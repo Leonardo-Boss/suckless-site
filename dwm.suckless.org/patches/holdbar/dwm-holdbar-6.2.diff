@@ -1,0 +1,76 @@
+From bf92ad15a2732993dc9543386ccedac12363cc05 Mon Sep 17 00:00:00 2001
+From: hsszyman <hsszyman@gmail.com>
+Date: Wed, 26 Jun 2019 01:41:23 -0400
+Subject: [PATCH] This patch enables the status bar only when holding down the
+ mod key
+
+This can be fairly nifty if you want to save as much room as possible, while still having quick ( and frequent ) access to the status bar.
+
+---
+ config.def.h |  3 ++-
+ dwm.c        | 17 +++++++++++++++++
+ 2 files changed, 19 insertions(+), 1 deletion(-)
+
+diff --git a/config.def.h b/config.def.h
+index e084020..b455f82 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -3,7 +3,7 @@
+ /* appearance */
+ static const unsigned int borderpx  = 1;        /* border pixel of windows */
+ static const unsigned int snap      = 32;       /* snap pixel */
+-static const int showbar            = 1;        /* 0 means no bar */
++static const int showbar            = 0;        /* 0 means no bar */
+ static const int topbar             = 1;        /* 0 means bottom bar */
+ static const char *fonts[]          = { "monospace:size=10" };
+ static const char dmenufont[]       = "monospace:size=10";
+@@ -64,6 +64,7 @@ static Key keys[] = {
+ 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
+ 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+ 	{ MODKEY,                       XK_b,      togglebar,      {0} },
++	{ 0,                            XK_Super_L,     holdbar,      {0} },
+ 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
+ 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
+ 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
+diff --git a/dwm.c b/dwm.c
+index 2097259..1795abe 100644
+--- a/dwm.c
++++ b/dwm.c
+@@ -239,6 +239,7 @@ static void zoom(const Arg *arg);
+ static void keyrelease(XEvent *e);
+ static void combotag(const Arg *arg);
+ static void comboview(const Arg *arg);
++static void holdbar(const Arg *arg);
+ 
+ 
+ /* variables */
+@@ -286,10 +287,26 @@ struct NumTags { char limitexceeded[LENGTH(tags) > 31 ? -1 : 1]; };
+ 
+ /* function implementations */
+ static int combo = 0;
++static int hold = 0;
++
+ 
+ void
+ keyrelease(XEvent *e) {
+ 	combo = 0;
++	if (e->xkey.keycode == XKeysymToKeycode(dpy, XK_Super_L)) {
++	    selmon->showbar = 0;
++	    updatebarpos(selmon);
++	    XMoveResizeWindow(dpy, selmon->barwin, selmon->wx, selmon->by, selmon->ww, bh);
++	    arrange(selmon);
++	} 
++}
++
++void
++holdbar(const Arg *arg)
++{
++	selmon->showbar = 1;
++	updatebarpos(selmon);
++	XMoveResizeWindow(dpy, selmon->barwin, selmon->wx, selmon->by, selmon->ww, bh);
+ }
+ 
+ void
+-- 
+2.22.0
+

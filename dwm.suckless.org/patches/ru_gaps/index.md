@@ -33,7 +33,7 @@ A copy of the [bottomstack](../bottomstack/), but with resizeable gaps.
 * [dwm-ru\_bottomstack-6.2.diff](dwm-ru_bottomstack-6.2.diff)
 
 A copy of the [centeredmaster](../centeredmaster/), but with resizeable gaps.
-* [dwm-ru\_centeredmaster-6.2.diff](dwm-ru_centeredmaster-6.2.diff)
+* [dwm-ru\_centeredmaster-6.2.diff](dwm-ru_centeredmaster-6.2.diff) - 26-06-2019
 
 Authors
 ------

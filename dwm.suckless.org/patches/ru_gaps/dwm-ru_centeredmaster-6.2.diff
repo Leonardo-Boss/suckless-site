@@ -125,7 +125,7 @@ diff -up a/dwm.c b/dwm.c
 +			mh = m->nmaster ? m->wh * m->mfact : 0;
 +			mw = m->nmaster ? m->ww * 0.9 : 0;
 +		}
-+		mx = mxo = (m->ww - mw) / 2;
++		mx = mxo = (m->ww - mw + m->gappx) / 2;
 +		my = myo = (m->wh - mh) / 2;
 +	} else {
 +		/* go fullscreen if all clients are in the master area */

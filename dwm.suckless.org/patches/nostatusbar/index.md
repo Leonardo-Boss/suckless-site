@@ -3,9 +3,12 @@ nostatusbar
 
 Description
 -----------
-Remove statusbar-related code from dwm (more than 500 lines).
+Remove statusbar and all related code from dwm (more than 500 lines).
+dwm is already very slim. But if you do not use the built-in statusbar
+this patch will make it even more minimal and efficient.
+
 If you find any code which I forgot to remove feel free to contact me
-and/or upload an updated version of this pactch.
+and/or upload an updated version of this patch.
 
 Download
 --------

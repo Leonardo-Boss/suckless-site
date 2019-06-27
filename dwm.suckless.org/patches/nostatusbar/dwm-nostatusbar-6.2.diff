@@ -1,23 +1,20 @@
-From 7825198bde9179fa7820c39a587fec3c015d70b1 Mon Sep 17 00:00:00 2001
+From 8e8d077d6aef1ed1969f30eb66931d56afba3599 Mon Sep 17 00:00:00 2001
 From: aleks <aleks.stier@icloud.com>
-Date: Sat, 6 Apr 2019 23:49:02 +0200
+Date: Thu, 27 Jun 2019 15:41:56 +0200
 Subject: [PATCH] Remove statusbar and all related code
 
-Remove statusbar-related code from dwm (more than 500 lines).
-If you find any code which I forgot to remove feel free to contact me
-and/or upload an updated version of this pactch.
 ---
- config.def.h |  32 ++----
+ config.def.h |  16 +--
  drw.c        | 304 ---------------------------------------------------
  drw.h        |   8 --
  dwm.c        | 207 +----------------------------------
- 4 files changed, 17 insertions(+), 534 deletions(-)
+ 4 files changed, 9 insertions(+), 526 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
-index 1c0b587..28534dc 100644
+index 1c0b587..a62df75 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -3,21 +3,19 @@
+@@ -3,9 +3,6 @@
  /* appearance */
  static const unsigned int borderpx  = 1;        /* border pixel of windows */
  static const unsigned int snap      = 32;       /* snap pixel */
@@ -25,22 +22,10 @@ index 1c0b587..28534dc 100644
 -static const int topbar             = 1;        /* 0 means bottom bar */
 -static const char *fonts[]          = { "monospace:size=10" };
  static const char dmenufont[]       = "monospace:size=10";
--static const char col_gray1[]       = "#222222";
--static const char col_gray2[]       = "#444444";
--static const char col_gray3[]       = "#bbbbbb";
--static const char col_gray4[]       = "#eeeeee";
--static const char col_cyan[]        = "#005577";
-+static const char border_color_norm[] = "#444444";
-+static const char border_color_sel[]  = "#005577";
-+
-+/* TODO remove dummy_color */
-+static const char dummy_color[]       = "#222222";
- static const char *colors[][3]      = {
- 	/*               fg         bg         border   */
--	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
--	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
-+	[SchemeNorm] = { dummy_color, dummy_color, border_color_norm },
-+	[SchemeSel]  = { dummy_color, dummy_color, border_color_sel },
+ static const char col_gray1[]       = "#222222";
+ static const char col_gray2[]       = "#444444";
+@@ -18,6 +15,7 @@ static const char *colors[][3]      = {
+ 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
  };
  
 +/* TODO replace array with int */
@@ -55,15 +40,7 @@ index 1c0b587..28534dc 100644
  static const Layout layouts[] = {
  	/* symbol     arrange function */
  	{ "[]=",      tile },    /* first entry is default */
-@@ -56,14 +55,13 @@ static const Layout layouts[] = {
- 
- /* commands */
- static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
--static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", NULL };
- static const char *termcmd[]  = { "st", NULL };
- 
- static Key keys[] = {
+@@ -63,7 +62,6 @@ static Key keys[] = {
  	/* modifier                     key        function        argument */
  	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
  	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
@@ -935,5 +912,5 @@ index 4465af1..2e41a5b 100644
  		return c->mon;
  	return selmon;
 -- 
-2.21.0
+2.22.0
 

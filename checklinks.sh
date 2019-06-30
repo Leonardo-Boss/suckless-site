@@ -26,9 +26,10 @@ find "$t" -name "*.md" -type f | while read -r f; do
 			p="${l#/}"
 			if test x"$l" != x"$p"; then
 				# prefix is "/", use topmost dir + path.
-				d="$t"
+				path="$t/$l"
+			else
+				path="$d/$l"
 			fi
-			path="$d/$l"
 		fi
 
 		test -e "$path" || echo "$f	$l	$path"

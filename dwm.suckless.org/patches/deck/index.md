@@ -50,7 +50,7 @@ Download
 --------
 * [dwm-deck-6.0.diff](dwm-deck-6.0.diff)
 * [dwm-deck-rmaster-6.1.diff](dwm-deck-rmaster-6.1.diff)
-* [dwm-deck-tilegap-6.1.diff](dwm-deck-tilegap-6.2.diff)
+* [dwm-deck-tilegap-6.1.diff](dwm-deck-tilegap-6.1.diff)
 
 Author
 ------

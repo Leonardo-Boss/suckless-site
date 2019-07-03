@@ -31,19 +31,34 @@ Past
 Following people have donated to the suckless.org project certain amounts of
 money, which have been used for the dedicated server rent in the past:
 
+* Benedikt Brenner donated **275 EUR**
+* Kuroljov Viktor donated **20 EUR**
+* Fabian Kirsch donated **11 EUR**
+* Matteo Durante donated **100 EUR**
+* Yoann le Touche donated **5 EUR**
+* Andrii Savchenko donated **20.19 AUD**
+* Christian Jost donated **10 EUR**
+* Christoph Bischko donated **50 EUR**
+* John Brooks donated **8 CAD**
+* Luke Jahnke donated **25 EUR**
+* Sven Franke donated **20 EUR**
+* Daniel Vartanov donated **1 EUR**
+* Elvin Aslanov donated **20 EUR**
+* Jay Scott donated **15 EUR**
+* Patrick Wildt donated **10.02 EUR**
+* Carsten Arzig donated **0.20 EUR**
+* Tobias Heider donated **0.01 EUR**
 * Moritz Buhl donated **13 EUR**
 * Silvan Jegen donated **225 EUR**
 * Alexander Bluhm donated **3.01 EUR**
 * Anonymous donated **0.10 EUR**
 * Christoph Moder donated **1 EUR**
-* Patrick Wildt donated **10 EUR**
-* Benedikt Brenner donated **150 EUR**
 * Daniel Loebenberger donated **5 EUR**
 * Martin Sander donated **4 EUR**
 * Mikko Nyman donated **100 EUR**
 * Aaron Kirkman donated **19.47 EUR**
 * Jeff Carr donated **500 EUR**
-* Ville Johan Witt donated **512 DKK**
+* Ville Johan Witt donated **1024 DKK**
 * Anonymous donated **10 EUR**
 * Lars Petter Mathiassen donated **1,000.00 EUR**
 * Mattias Andrée donated **50 EUR**

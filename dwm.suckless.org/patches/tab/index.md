@@ -112,6 +112,7 @@ Download
 * Tab patch alone
   * For dwm 6.1: [dwm-6.1-tab-v2b.diff](dwm-6.1-tab-v2b.diff)
   * For dwm from the git master branch: [dwm-tab-v2b-56a31dc.diff](dwm-tab-v2b-56a31dc.diff)
+  * For dwm 6.2: [dwm-6.2-tab-v2b.diff](dwm-6.2-tab-v2b.diff)
 * Combined patch of tab and the [pertag](../pertag/) patch from Jan Christoph
   Ebersbach.
   * Follow the [link](../pertag/) for the description of this patch and the
@@ -133,3 +134,4 @@ Change log
 Authors
 -------
 * Philippe Gras - `<philippe dot gras at free dot fr>`
+* Varun Iyer (6.2 ver) - `<varun_iyer@protonmail.com>`

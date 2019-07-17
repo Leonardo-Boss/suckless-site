@@ -9,6 +9,7 @@ Use `-P` to activate.
 Download
 --------
 * [dmenu-password-4.7.diff](dmenu-password-4.7.diff)
+* [dmenu-password-4.9.diff](dmenu-password-4.9.diff)
 
 Authors
 -------

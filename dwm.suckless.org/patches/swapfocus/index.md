@@ -15,7 +15,7 @@ Changes in 6.2
 
 Download
 --------
-* [dwm-swapfocus-6.2.diff](dwm-swapfocus-6.2.diff)
+* [dwm-swapfocus-6.2.diff](dwm-swapfocus-6.2.diff) (21.07.2019)
 * [dwm-swapfocus-20160731-56a31dc.diff](dwm-swapfocus-20160731-56a31dc.diff)
 * [dwm-6.1-swapfocus.diff](dwm-6.1-swapfocus.diff) (1807b) (20140209)
 * [dwm-swapfocus-6.0.diff](dwm-swapfocus-6.0.diff) (1482b) (20120406)

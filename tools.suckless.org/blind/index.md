@@ -30,7 +30,7 @@ Yes it does, a 4-channel pixel encoded with `double` takes 32 bytes. A
 can only fit almost 3391 frames in 100 GB, which is about 113 seconds or 1:53
 minutes with a framerate of 30 fps. Therefore, you probably do not want to
 store anything in this format unless you know you have room for it, or if it is
-very small segment of your video, which unfortunely becomes a bit of a problem
+very small segment of your video, which unfortunately becomes a bit of a problem
 when reversing a video. However, when possible, feed the resulting video
 directly to `blind-to-video` to convert it into a compressed, lossless video
 format, if the video is not too large, you can choose to compress it with bzip2
@@ -52,7 +52,7 @@ convert directly to or from farbfeld without using `convert(1)`.
 
 blind and farbfeld solve completely different problems. farbfeld solves to
 problem of storing pictures in a simply way that can easily be viewed and
-editored. blind does not try to solve the problem of storing videos, video
+edited. blind does not try to solve the problem of storing videos, video
 takes a lot of space and need compression designed especially for video or
 three-dimensional raster images. Compressed video cannot be efficiently edited
 because compression takes too long. Instead blind solves the problem of
@@ -86,7 +86,7 @@ quality, but it is not a good for editing. Y'UV is non-linear, so it has the
 same disadvantages as CIE L\*a\*b\*. Y'UV does not have its transfer-function
 applied directly to it's parameters, instead it is a linear transformation if
 the sRGB with its transfer-function applied. This means that no performance is
-gained during convertion to or from cooked video formats by using YUV. CIE XYZ
+gained during conversion to or from cooked video formats by using YUV. CIE XYZ
 also has the advantage that it is well-known and has a one-step conversion to
 almost all colour models. It also have the advantages that it's parameters are
 named X, Y, Z, which makes it very easy to choose parameter when storing points

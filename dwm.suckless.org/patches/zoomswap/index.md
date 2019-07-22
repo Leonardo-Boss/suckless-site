@@ -41,6 +41,7 @@ zooming.
 
 Download
 --------
+* [dwm-zoomswap-6.2.diff](dwm-zoomswap-6.2.diff)
 * [dwm-zoomswap-20160731-56a31dc.diff](dwm-zoomswap-20160731-56a31dc.diff)
 * [dwm-6.1-zoomswap.diff](dwm-6.1-zoomswap.diff) (2585b) (20120406)
 * [dwm-zoomswap-6.0.diff](dwm-zoomswap-6.0.diff) (1.6K) (20120406)
@@ -48,3 +49,4 @@ Download
 Author
 ------
 * Jan Christoph Ebersbach - `<jceb at e-jc dot de>`
+* Aleksandrs Stier (6.2)

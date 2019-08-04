@@ -1,6 +1,6 @@
-From 6f1f9c9cd2d32024adfc5e3db1136c3e44560dc2 Mon Sep 17 00:00:00 2001
+From 3e8f83d40c6fdd89653ef547aa16cffe1f3c1793 Mon Sep 17 00:00:00 2001
 From: aleks <aleks.stier@icloud.com>
-Date: Sun, 4 Aug 2019 13:07:24 +0200
+Date: Sun, 4 Aug 2019 13:23:10 +0200
 Subject: [PATCH] Apply nord-theme
 
 "Inspired by the beauty of the arctic, the colors reflect the cold, yet
@@ -15,11 +15,11 @@ arc-theme for gtk (fits perfectly).
 
 TODO: Make selection-colors not simply reverse colors but use nord-colors.
 ---
- config.def.h | 40 ++++++++++++++++++++--------------------
- 1 file changed, 20 insertions(+), 20 deletions(-)
+ config.def.h | 44 ++++++++++++++++++++++----------------------
+ 1 file changed, 22 insertions(+), 22 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
-index 0e01717..3cd49bf 100644
+index 0e01717..fb504d4 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -85,30 +85,30 @@ unsigned int tabspaces = 8;
@@ -71,12 +71,16 @@ index 0e01717..3cd49bf 100644
  };
  
  
-@@ -118,8 +118,8 @@ static const char *colorname[] = {
+@@ -116,10 +116,10 @@ static const char *colorname[] = {
+  * Default colors (colorname index)
+  * foreground, background, cursor, reverse cursor
   */
- unsigned int defaultfg = 7;
- unsigned int defaultbg = 0;
+-unsigned int defaultfg = 7;
+-unsigned int defaultbg = 0;
 -static unsigned int defaultcs = 256;
 -static unsigned int defaultrcs = 257;
++unsigned int defaultfg = 257;
++unsigned int defaultbg = 256;
 +static unsigned int defaultcs = 257;
 +static unsigned int defaultrcs = 256;
  

@@ -63,7 +63,7 @@ function link_normalize() {
 }
 
 function link_select() {
-  tr -d '\n\r' |
+  tr '\n\r' ' ' |
     xmllint --html --xpath "//a" - |
     dump_links_with_titles |
     awk '!x[$0]++' |

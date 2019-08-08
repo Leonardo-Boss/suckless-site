@@ -9,9 +9,9 @@ This patch allows you to change border pixels at runtime.
 Default key bindings
 --------------------
 	 Key                    Argument   Description
-	-------------------------------------------------
+	----------------------------------------------------
 	 Mod-Shift-minus        +0.25      Increase borderpx
-	 Mod-Shift-plusL        -0.25      Decrease borderpx
+	 Mod-Shift-plus         -0.25      Decrease borderpx
 	 Mod-Shift-numbersign    0.00      Reset borderpx
 
 Notes

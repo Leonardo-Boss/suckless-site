@@ -26,11 +26,8 @@ or:
 Download
 --------
 
-* [surf-0.1-searchengines.diff](surf-0.1-searchengines.diff) (1964) (20090923)
 * [surf-0.3-searchengines.diff](surf-0.3-searchengines.diff) (2107) (20091204)
 * [surf-0.4-searchengines.diff](surf-0.4-searchengines.diff) (2107) (20091204)
-* [surf-0.5-searchengines.diff](surf-0.5-searchengines.diff) (1611) (20101028)
-* [surf-0.6-searchengines.diff](surf-0.6-searchengines.diff) (20130514)
 * [surf-0.7-searchengines.diff](surf-0.7-searchengines.diff) (20151219)
 * [surf-git-20160127-searchengines.diff](surf-git-20160127-searchengines.diff)
 * [surf-0.7-webkit2-searchengines.diff](surf-0.7-webkit2-searchengines.diff) (20160108)

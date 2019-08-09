@@ -1,5 +1,5 @@
-static-monocle-symbol
-=====================
+monoclesymbol
+=============
 
 Description
 -----------
@@ -9,8 +9,8 @@ in the current tag.
 
 Download
 --------
-* [dwm-staticmonoclesymbol-6.2.diff](dwm-staticmonoclesymbol-6.2.diff) (20190413)
+* [dwm-monoclesymbol-6.2.diff](dwm-monoclesymbol-6.2.diff)
 
 Authors
 -------
-* Aleksandrs Stier - `<aleks dot stier at icloud dot com>`
+* Aleksandrs Stier

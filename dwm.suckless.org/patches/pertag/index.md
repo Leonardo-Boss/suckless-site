@@ -15,7 +15,6 @@ Download
 * [dwm-r1578-pertag.diff](dwm-r1578-pertag.diff) (nmaster included in mainline)
 * [dwm-pertag-5.8.2.diff](dwm-pertag-5.8.2.diff)
 * [dwm-pertag-5.7.2.diff](dwm-pertag-5.7.2.diff)
-* [dwm-pertag-5.6.1.diff](dwm-pertag-5.6.1.diff)
 * [dwm-pertag-5.4.diff](dwm-pertag-5.4.diff)
 * [dwm-pertag-5.2.diff](dwm-pertag-5.2.diff)
 * [dwm-pertag-5.1.diff](dwm-pertag-5.1.diff)

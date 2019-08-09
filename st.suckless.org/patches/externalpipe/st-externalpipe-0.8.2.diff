@@ -1,8 +1,8 @@
 diff --git a/st.c b/st.c
-index 46c954b..35cd7de 100644
+index ede7ae6..f55d30f 100644
 --- a/st.c
 +++ b/st.c
-@@ -1974,6 +1974,59 @@ tprinter(char *s, size_t len)
+@@ -1914,6 +1914,59 @@ strparse(void)
  	}
  }
  
@@ -63,7 +63,7 @@ index 46c954b..35cd7de 100644
  strdump(void)
  {
 diff --git a/st.h b/st.h
-index dac64d8..86cd646 100644
+index 4da3051..cb7101f 100644
 --- a/st.h
 +++ b/st.h
 @@ -80,6 +80,7 @@ void die(const char *, ...);
@@ -71,7 +71,6 @@ index dac64d8..86cd646 100644
  void draw(void);
  
 +void externalpipe(const Arg *);
- void kscrolldown(const Arg *);
- void kscrollup(const Arg *);
  void printscreen(const Arg *);
  void printsel(const Arg *);
+ void sendbreak(const Arg *);

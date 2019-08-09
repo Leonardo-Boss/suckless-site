@@ -20,7 +20,7 @@ Download
 * [dmenu-fuzzymatch-4.6.diff](dmenu-fuzzymatch-4.6.diff)
 
 Authors
-------
+-------
 * Jan Christoph Ebersbach - jceb@e-jc.de
 * Laslo Hunhold - dev@frign.de (dmenu-4.6)
 * Aleksandrs Stier (4.9)

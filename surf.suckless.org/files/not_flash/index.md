@@ -42,7 +42,7 @@ and in the keys section:
 
 	{ MODKEY,               GDK_w,      spawn,      WATCH },
 
- 
+
 Author
 ------
 * Maximilian Dietrich - <dxm_at_lavabit_dot_com>

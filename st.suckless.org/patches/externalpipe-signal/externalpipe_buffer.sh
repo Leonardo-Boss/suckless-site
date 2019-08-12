@@ -39,21 +39,19 @@ function write_to_buffer() {
 function dedupe_and_sort() {
   sort | uniq | grep . | awk '{ print length, $0 }' | sort -n -s | cut -d" " -f2-
 }
-function trigger_sigusr1_and_read_buffer() {
-  if [ $BUFFER_FILE_FIFO == "true" ]
+function trigger_sigusr1() {
+  rm -f $BUFFER_FILE
+  if [ $BUFFER_FILE_FIFO == true ]
   then
     test ! -p $BUFFER_FILE && rm -f $BUFFER_FILE && mkfifo $BUFFER_FILE
-    pkill -USR1 surf
-    pkill -USR1 st
+    pkill -USR1 surf &
+    pkill -USR1 st &
   else
     test ! -f $BUFFER_FILE && rm -f $BUFFER_FILE && touch $BUFFER_FILE
     pkill -USR1 surf
     pkill -USR1 st
     echo $BUFFER_FILE_R_DELAY | xargs -IN echo N/1000 | bc -l | xargs sleep
   fi
-
-  cat $BUFFER_FILE
-  rm $BUFFER_FILE
 }
 function dm() { dmenu "$@" -l 10 -i -w $(xdotool getactivewindow); }
 
@@ -79,7 +77,13 @@ function surf_strings_read() {
     dedupe_and_sort |
     write_to_buffer
 }
-function dmenu_copy() { trigger_sigusr1_and_read_buffer | dm -p 'Screen Copy' | sed 's/↵/\n/g' | xclip -i; }
-function dmenu_type() { trigger_sigusr1_and_read_buffer | dm -p 'Screen Type' | sed 's/↵/\n/g' | xargs -IC xdotool type --delay 0 "C"; }
+function dmenu_copy() {
+  trigger_sigusr1
+  cat $BUFFER_FILE | dm -p 'Screen Copy' | sed 's/↵/\n/g' | xclip -i
+}
+function dmenu_type() {
+  trigger_sigusr1
+  cat $BUFFER_FILE | dm -p 'Screen Type' | sed 's/↵/\n/g' | xargs -IC xdotool type --delay 0 "C"
+}
 
 $1

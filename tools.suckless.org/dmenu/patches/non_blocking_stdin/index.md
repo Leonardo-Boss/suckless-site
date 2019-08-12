@@ -10,9 +10,11 @@ patch, so that you can use stdout to feed stdin.
 
 Download
 --------
+* [dmenu-nonblockingstdin-4.9.diff](dmenu-nonblockingstdin-4.9.diff)
 * [dmenu-nonblockingstdin-20160702-3c91eed.diff](dmenu-nonblockingstdin-20160702-3c91eed.diff)
 
 Author
 ------
 * Christophe-Marie Duquesne <chm.duquesne@gmail.com>
 * koniu at riseup.net (update for 20160615 git master)
+* Miles Alan - m@milesalan.com (update for 4.9)

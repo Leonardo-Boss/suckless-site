@@ -40,9 +40,10 @@ because it makes them legally compatible with other suckless projects.
 * [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modelled after libevent but much smaller (dual licensed under 2-clause BSD and GPL).
 * [mandoc](http://mandoc.bsd.lv/) - The mandoc UNIX manpage compiler toolset.
 * [pjsip](http://www.pjsip.org/) - open-source SIP stack (GPL).
+* [raycastlib](https://gitlab.com/drummyfish/raycastlib) - Single-header public domain C raycasting renderer with no dependencies, using only integer math.
 * [sdhcp](https://git.2f30.org/sdhcp/) - IPv4 DHCP client.
+* [small3dlib](https://gitlab.com/drummyfish/small3dlib) - Single-header public domain C software 3D renderer with no dependencies, using only integer math.
 * [termbox](https://github.com/nsf/termbox) - simple ncurses-like library for creating TUIs.
-
 
 ### Distros
 

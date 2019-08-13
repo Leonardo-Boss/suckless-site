@@ -59,7 +59,9 @@ this will move active window in specified direction and perform the action, desc
 Download
 --------
 * [dwm-6.1-taggrid.diff](dwm-6.1-taggrid.diff) (2014-02-16)
+* [dwm-6.2-taggrid.diff](dwm-6.2-taggrid.diff) (2019-08-13)
 
 Author
 ------
 * Yury Shvedov - [shved AT lvk DOT cs DOT msu DOT su](mailto:shved@lvk.cs.msu.su) (or [mestofel13 AT gmail DOT com](mailto:mestofel13@gmail.com)).
+* Miles Alan - m@milesalan.com (6.2 port)

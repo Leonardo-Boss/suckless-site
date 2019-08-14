@@ -68,7 +68,7 @@ diff -up a/dwm.c b/dwm.c
 +		else
 +			c->bw = mons->borderpx;	
 +
-+	arrange(selmon);
++	arrange(mons);
 +}
 +
 +void

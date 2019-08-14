@@ -56,19 +56,19 @@ diff -up a/dwm.c b/dwm.c
 +	Client *c;
 +
 +	if (arg->i == 0)
-+		mons->borderpx = borderpx;	
-+	else if (mons->borderpx + arg->i < 0)
-+		mons->borderpx = 0;	
++		selmon->borderpx = borderpx;	
++	else if (selmon->borderpx + arg->i < 0)
++		selmon->borderpx = 0;	
 +	else
-+		mons->borderpx += arg->i;	
++		selmon->borderpx += arg->i;	
 +	
-+	for (c = mons->clients; c; c = c->next)
++	for (c = selmon->clients; c; c = c->next)
 +		if (c->bw + arg->i < 0)
-+			c->bw = mons->borderpx = 0;	
++			c->bw = selmon->borderpx = 0;	
 +		else
-+			c->bw = mons->borderpx;	
++			c->bw = selmon->borderpx;	
 +
-+	arrange(mons);
++	arrange(selmon);
 +}
 +
 +void

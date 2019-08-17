@@ -3,12 +3,7 @@ desktopentry
 
 Description
 -----------
-Enable to find st in a graphical menu and to display it with a nice icon.
-
-After applying this patch you need to run `sudo make install` to
-install the desktop-entry. The Makefile is modified such that a symlink
-to */usr/share/applications/st.desktop* is created during install and
-removed during uninstall.
+Creates a desktop-entry for st. This enables to find st in a graphical menu and to display it with a nice icon. After applying this patch reinstall st. The st.desktop file should be copied automatically to */usr/share/applications* during install and removed during uninstall.
 
 Download
 --------

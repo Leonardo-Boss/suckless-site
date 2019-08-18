@@ -18,7 +18,7 @@ index 470ac86..0a58d61 100644
  	chmod 644 $(DESTDIR)$(MANPREFIX)/man1/st.1
  	tic -sx st.info
  	@echo Please see the README file regarding the terminfo entry of st.
-+	sudo cp -f st.desktop /usr/share/applications
++	cp -f st.desktop /usr/share/applications
  
  uninstall:
  	rm -f $(DESTDIR)$(PREFIX)/bin/st
@@ -35,7 +35,7 @@ index 0000000..0663e37
 +[Desktop Entry]
 +Type=Application
 +Name=st
-+Comment=suckless terminal-emulator for X
++Comment=simple-terminal emulator for X
 +Icon=utilities-terminal
 +Exec=st
 +Categories=System;TerminalEmulator

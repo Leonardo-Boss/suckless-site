@@ -32,3 +32,5 @@ Download
   remove it.
 * [via](https://github.com/xalexalex/via): simple dmenu-based launcher for apps,
   files, folders and shell commands
+* [dmenu_run_i](./dmenu_run_i): When dmenu_path input end with "!", the
+command is started in a terminal. i.e. "top!".

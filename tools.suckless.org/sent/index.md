@@ -58,7 +58,7 @@ Edit config.h to fit your needs then build again.
 
 If FILE is omitted or equals `-`, stdin will be read. Produce image slides by
 prepending a `@` in front of the filename as a single paragraph. Lines starting
-with `#` will be ignored. A `\` at the beginning of the line escapes `@` and
+with `#` will be ignored. A `\\` at the beginning of the line escapes `@` and
 `#`. A presentation file could look like this:
 
 	sent

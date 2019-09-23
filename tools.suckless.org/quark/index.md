@@ -10,7 +10,7 @@ features you expect (TLS, virtual hosts, partial content, not modified since,
 ...). quark tries to find a midway and just restrict itself to being static
 while still offering functions you only find in more bloated solutions and
 being as secure as possible (chroot, privilege dropping, strict parsers, no
-malloc at runtime, pledge, ...).
+malloc at runtime, pledge, unveil, ...).
 
 Static web
 ----------

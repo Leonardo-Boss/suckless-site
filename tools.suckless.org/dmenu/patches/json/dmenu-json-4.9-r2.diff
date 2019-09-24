@@ -1,14 +1,16 @@
 diff --git a/config.mk b/config.mk
-index 0929b4a..6cb79e2 100644
+index 0929b4a..4627988 100644
 --- a/config.mk
 +++ b/config.mk
-@@ -18,13 +18,17 @@ FREETYPEINC = /usr/include/freetype2
+@@ -18,13 +18,19 @@ FREETYPEINC = /usr/include/freetype2
  # OpenBSD (uncomment)
  #FREETYPEINC = $(X11INC)/freetype2
  
 +# jansson
 +JANSSONINC = `pkg-config --cflags jansson`
 +JANSSONLIBS = `pkg-config --libs jansson`
++# uncomment on RHEL for strcasecmp
++#EXTRAFLAGS=-D_GNU_SOURCE
 +
  # includes and libs
 -INCS = -I$(X11INC) -I$(FREETYPEINC)
@@ -17,14 +19,15 @@ index 0929b4a..6cb79e2 100644
 +LIBS = -L$(X11LIB) -lX11 $(XINERAMALIBS) $(FREETYPELIBS) $(JANSSONLIBS)
  
  # flags
- CPPFLAGS = -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"$(VERSION)\" $(XINERAMAFLAGS)
+-CPPFLAGS = -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"$(VERSION)\" $(XINERAMAFLAGS)
 -CFLAGS   = -std=c99 -pedantic -Wall -Os $(INCS) $(CPPFLAGS)
++CPPFLAGS = -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"$(VERSION)\" $(XINERAMAFLAGS) $(EXTRAFLAGS)
 +CFLAGS  = -std=c99 -pedantic -Wall -Os $(INCS) $(CPPFLAGS)
  LDFLAGS  = $(LIBS)
  
  # compiler and linker
 diff --git a/dmenu.c b/dmenu.c
-index 65f25ce..7b4cd66 100644
+index 65f25ce..58c1e23 100644
 --- a/dmenu.c
 +++ b/dmenu.c
 @@ -15,6 +15,7 @@
@@ -101,11 +104,10 @@ index 65f25ce..7b4cd66 100644
  		if (!(ev->state & ControlMask)) {
  			cleanup();
  			exit(0);
-@@ -518,33 +548,72 @@ paste(void)
- 	drawmenu();
+@@ -519,32 +549,71 @@ paste(void)
  }
  
-+static void
+ static void
 +readjson(const char *path)
 +{
 +	json_error_t jerr;
@@ -118,10 +120,9 @@ index 65f25ce..7b4cd66 100644
 +listjson(json_t *obj)
 +{
 +	void *iter;
++	unsigned imax = 0;
 +	unsigned tmpmax = 0;
 +	struct item *item;
-+	struct item *longest = items;
-+
 +
 +	items_ln = 0;
 +	iter = json_object_iter(obj);
@@ -134,24 +135,25 @@ index 65f25ce..7b4cd66 100644
 +				 &tmpmax, NULL);
 +		if (tmpmax > inputw) {
 +			inputw = tmpmax;
-+			longest = item;
++			imax = items_ln - 1;
 +		}
 +		iter = json_object_iter_next(obj, iter);
 +	}
 +	if (items)
 +		items[items_ln].text = NULL;
-+	inputw = items ? TEXTW(longest->text) : 0;
++	inputw = items ? TEXTW(items[imax].text) : 0;
 +	lines = MIN(lines, items_ln - 1);
 +}
 +
- static void
++static void
  readstdin(void)
  {
  	char buf[sizeof text], *p;
 -	size_t i, imax = 0, size = 0;
 +	size_t i;
++	unsigned int imax = 0;
  	unsigned int tmpmax = 0;
-+	struct item *item, *longest;
++	struct item *item;
  
  	/* read each line from stdin and add it to the item list */
  	for (i = 0; fgets(buf, sizeof buf, stdin); i++) {
@@ -171,15 +173,14 @@ index 65f25ce..7b4cd66 100644
  		if (tmpmax > inputw) {
  			inputw = tmpmax;
 -			imax = i;
-+			longest = item;
++			imax = items_ln - 1;
  		}
  	}
  	if (items)
 -		items[i].text = NULL;
--	inputw = items ? TEXTW(items[imax].text) : 0;
--	lines = MIN(lines, i);
 +		items[items_ln].text = NULL;
-+	inputw = items ? TEXTW(longest->text) : 0;
+ 	inputw = items ? TEXTW(items[imax].text) : 0;
+-	lines = MIN(lines, i);
 +	lines = MIN(lines, items_ln);
  }
  

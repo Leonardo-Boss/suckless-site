@@ -20,7 +20,7 @@ Usefull code for surf:
 
 Download
 --------
-* [dmenu-json-4.9.diff](dmenu-json-4.9.diff)
+* [dmenu-json-4.9-r2.diff](dmenu-json-4.9-r2.diff)
 
 Author
 ------

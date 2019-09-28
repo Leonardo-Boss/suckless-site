@@ -70,6 +70,10 @@ Feel free to add your own status monitors here (keeping the list sorted).
   speed, cpu, ram, date/time
 * [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent
   and date/time
+* [spoon](https://git.2f30.org/spoon/) - set dwm status. Supports battery,
+  cpu freq, date, file, load avg, keyboard layout, mpd, network speed,
+  screen brightness, temperature, wifi, volume mixer.
+  Works well on OpenBSD and Linux.
 * [suspend-statusbar.c](https://github.com/snobb/dwm-statusbar) - date,
   loadavg, battery and more. If battery goes below threshold - run suspend
   command

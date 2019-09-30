@@ -67,4 +67,4 @@ Authors
 * Matthew Parnell - <matt@parnmatt.co.uk> (0.7 port)
 * Linh Nguyen - <linhvng.2212@gmail.com> (0.8.1 port for no\_bold\_colors and swap versions)
 * Varun Iyer - <vi.mail@protonmail.ch> (20190129 port for swap version)
-* Paschalis Bizopoulos - <paschalis.bizopoulos@protonmail.com> (20190306 port for light version)
+* Paschalis Bizopoulos (20190306 port for light version)

@@ -15,8 +15,10 @@ Since this patch relies on knowing how big everything is in the taskbar, make su
 
 Download
 --------
+* [dwm-awesomebar-20191003-80e2a76.diff](dwm-awesomebar-20191003-80e2a76.diff) (10/03/2019)
 * [dwm-awesomebar-6.2.diff](dwm-awesomebar-6.2.diff) (06/27/2019)
 
 Authors
 -------
 * ornx <ornx[at]protonmail.com>
+* Yegor Bayev <kodxpub@gmail.com> - patch to prevent visual glitches from uneven tabs count

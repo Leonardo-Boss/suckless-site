@@ -5,24 +5,20 @@ slcon6 will be held in Bad Liebenzell, Baden-Württemberg in Germany on
 2019-10-(04-06).
 
 Friday, 2019-10-04
-==================
+------------------
 
-(14:00-18:00) Arrival at the venue
-----------------------------------
+### (14:00-18:00) Arrival at the venue
 
-(18:00) Dinner
---------------
+### (18:00) Dinner
 
-(20:00) suckless.org e.V. general assembly meeting
---------------------------------------------------
+### (20:00) suckless.org e.V. general assembly meeting
 
 Saturday, 2019-10-05
 ====================
 
-(09:00-18:00) Talk sessions
----------------------------
+### (09:00-18:00) Talk sessions
 
-### Machine Translation, Manu Raster
+#### Machine Translation, Manu Raster
 
 The topic I would like to present is "Machine Translation" and it is in
 the spirit of Douglas Hofstadters destructive critique¹ and my own
@@ -45,9 +41,9 @@ epigones fail systematically.
 [2]: https://www.youtube.com/watch?v=rThQedY-H4Q http://sylvester.bth.rwth-aachen.de/dissertationen/2003/059/03_059.pdf
 [3]: Nichols, E., Matsumoto, Y. 2007. Acme as an Interactive Translation Environment. in: Proceedings of the Second International Workshop on Plan 9, pp. 35–45, Murray Hill, USA, December 3-4, 2007
 
-### OpenBSD Supremacy, Laslo Hunhold
+#### OpenBSD Supremacy, Laslo Hunhold
 
-### Sierpinski on Flector, Gergely Bencsik, Tı́mea Fekete
+#### Sierpinski on Flector, Gergely Bencsik, Tı́mea Fekete
 
 168 hours long noise from sierpinski triangles
 
@@ -64,22 +60,19 @@ Ville-Matias Heikkilä, known as byte-beat.
 [2]: Ville-Matias Heikkilä, Discovering novel computer music techniques by exploring the space of short computer pro-
 grams, 2011: https://arxiv.org/abs/1112.1368
 
-### The Static Web, Laslo Hunhold
+#### The Static Web, Laslo Hunhold
 
-### Unicode Project, Laslo Hunhold
+#### Unicode Project, Laslo Hunhold
 
-### Lightning Talks
+#### Lightning Talks
 
 Every participant is invited to give a lightning talk on a topic they are working on.
 
-(18:00) Dinner
---------------
+### (18:00) Dinner
 
-(19:00-) Evening program
-------------------------
+### (19:00-) Evening program
 
 Sunday, 2019-10-06
-==================
+------------------
 
-(09:00-16:00) Hacking and Departure
------------------------------------
+### (09:00-16:00) Hacking and Departure

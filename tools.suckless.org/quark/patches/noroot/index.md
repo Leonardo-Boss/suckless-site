@@ -18,4 +18,4 @@ Download
 
 Author
 ------
-* Richard Ulmer <maillists.rulmer AT mailbox DOT org>
+* Richard Ulmer <codesoap AT mailbox DOT org>

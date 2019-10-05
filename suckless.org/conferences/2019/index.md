@@ -16,7 +16,15 @@ Friday, 2019-10-04
 Saturday, 2019-10-05
 ====================
 
-### (09:00-18:00) Talk sessions
+### (08:00-09:00) Breakfast
+
+### (11:00-12:00) Talk sessions
+
+#### Unicode Project, Laslo Hunhold
+
+### (12:00-13:00) Lunch
+
+### (13:00-18:00) Talk sessions
 
 #### Machine Translation, Manu Raster
 
@@ -41,38 +49,23 @@ epigones fail systematically.
 [2]: https://www.youtube.com/watch?v=rThQedY-H4Q http://sylvester.bth.rwth-aachen.de/dissertationen/2003/059/03_059.pdf
 [3]: Nichols, E., Matsumoto, Y. 2007. Acme as an Interactive Translation Environment. in: Proceedings of the Second International Workshop on Plan 9, pp. 35–45, Murray Hill, USA, December 3-4, 2007
 
-#### OpenBSD Supremacy, Laslo Hunhold
-
-#### Sierpinski on Flector, Gergely Bencsik, Tı́mea Fekete
-
-168 hours long noise from sierpinski triangles
-
-The topic of generative and low-complexity art is not new. Jürgen Schmidhuber identified low-complexity art as the
-computer age verson of minimalism[1] in 1997, and drew up basic goals and rules about this genre in visual art. The
-ideology of low-complexity art also usable in musical methodology with relevant rules and goals.
-
-In this work we will describe a structural noise-music genre album and the low-complexity background of it. This
-project is about a small C language stack that generates a 168 hours long music album into a large data blob that can be
-separated to smaller chunks. The album, Sierpinski on Flector also uses a generation method[2] that is been presented by
-Ville-Matias Heikkilä, known as byte-beat.
-
-[1]: Jürgen Schmidhuber, Low-Complexity art, 1997: Leonardo, MIT Press, Vol. 30, No. 2 (1997), pp. 97-103.
-[2]: Ville-Matias Heikkilä, Discovering novel computer music techniques by exploring the space of short computer pro-
-grams, 2011: https://arxiv.org/abs/1112.1368
-
 #### The Static Web, Laslo Hunhold
 
-#### Unicode Project, Laslo Hunhold
+#### OpenBSD Supremacy, Laslo Hunhold
 
-#### Lightning Talks
+#### Acme saved my life, Marc Chantreux
 
-Every participant is invited to give a lightning talk on a topic they are working on.
-
-### (18:00) Dinner
+### (18:00-19:00) Dinner
 
 ### (19:00-) Evening program
 
 Sunday, 2019-10-06
 ------------------
 
-### (09:00-16:00) Hacking and Departure
+### (08:00-09:00) Breakfast
+
+### (09:00-12:00) Hacking
+
+### (12:00-13:00) Lunch
+
+### (13:00-16:00) Hacking and departure

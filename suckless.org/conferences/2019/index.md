@@ -63,6 +63,19 @@ Acme is the editor of choice in plan9. I don't use it but when trying
 it, I realized that vim is much more than an editor: it's an open window
 to my whole digital world: A perfect multipurpose UI. Let me show you ...
 
+### (18:00-19:00) Dinner
+
+### (19:00-) Evening program
+
+Sunday, 2019-10-06
+------------------
+
+### (08:00-09:00) Breakfast
+
+### (09:00-10:00) Hacking
+
+### (10:00-12:00) Talk sessions
+
 #### Blind demonstration, Matthias Andrée
 
 A demonstration of the blind video editor.
@@ -73,17 +86,6 @@ Dealing with Unicode is a difficult balancing between correctness
 and complexity. This talk presents recent results of the author with
 regard to suckless Unicode handling in C at the level of grapheme
 clusters.
-
-### (18:00-19:00) Dinner
-
-### (19:00-) Evening program
-
-Sunday, 2019-10-06
-------------------
-
-### (08:00-09:00) Breakfast
-
-### (09:00-12:00) Hacking
 
 ### (12:00-13:00) Lunch
 

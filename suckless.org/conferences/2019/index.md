@@ -20,7 +20,10 @@ Saturday, 2019-10-05
 
 ### (11:00-12:00) Talk sessions
 
-#### Unicode Project, Laslo Hunhold
+#### OpenBSD supremacy, Laslo Hunhold
+
+A look at recent developments in OpenBSD and a discussion about how
+to include these advances in suckless tools.
 
 ### (12:00-13:00) Lunch
 
@@ -51,9 +54,23 @@ epigones fail systematically.
 
 #### The Static Web, Laslo Hunhold
 
-#### OpenBSD Supremacy, Laslo Hunhold
+A presentation of the concept of the 'static web', an approach to web
+development using static websites and special approaches to data integration.
 
 #### Acme saved my life, Marc Chantreux
+
+A small introduction to editor workflows.
+
+#### Blind demonstration, Matthias Andrée
+
+A demonstration of the blind video editor.
+
+#### Reflections on Unicode, Laslo Hunhold
+
+Dealing with Unicode is a difficult balancing between correctness
+and complexity. This talk presents recent results of the author with
+regard to suckless Unicode handling in C at the level of grapheme
+clusters.
 
 ### (18:00-19:00) Dinner
 

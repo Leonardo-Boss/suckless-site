@@ -59,7 +59,9 @@ development using static websites and special approaches to data integration.
 
 #### Acme saved my life, Marc Chantreux
 
-A small introduction to editor workflows.
+Acme is the editor of choice in plan9. I don't use it but when trying
+it, I realized that vim is much more than an editor: it's an open window
+to my whole digital world: A perfect multipurpose UI. Let me show you ...
 
 #### Blind demonstration, Matthias Andrée
 

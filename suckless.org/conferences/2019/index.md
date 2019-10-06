@@ -57,7 +57,7 @@ epigones fail systematically.
 A presentation of the concept of the 'static web', an approach to web
 development using static websites and special approaches to data integration.
 
-#### Acme saved my life, Marc Chantreux
+#### Acme changed my life, Marc Chantreux
 
 Acme is the editor of choice in plan9. I don't use it but when trying
 it, I realized that vim is much more than an editor: it's an open window

@@ -63,6 +63,8 @@ Acme is the editor of choice in plan9. I don't use it but when trying
 it, I realized that vim is much more than an editor: it's an open window
 to my whole digital world: A perfect multipurpose UI. Let me show you ...
 
+[slides](https://github.com/eiro/talk-acme-changed-my-life)
+
 ### (18:00-19:00) Dinner
 
 ### (19:00-) Evening program

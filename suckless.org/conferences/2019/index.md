@@ -78,7 +78,7 @@ Sunday, 2019-10-06
 
 ### (10:00-12:00) Talk sessions
 
-#### Blind demonstration, Matthias Andrée
+#### Blind demonstration, Mattias Andrée
 
 A demonstration of the blind video editor.
 

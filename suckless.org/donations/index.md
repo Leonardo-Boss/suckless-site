@@ -31,7 +31,7 @@ Past
 Following people have donated to the suckless.org project certain amounts of
 money, which have been used for the dedicated server rent in the past:
 
-* Carsten Arzig donated **4.20 EUR**
+* Carsten Arzig donated **27.40 EUR**
 * Moritz Buhl donated **26 EUR**
 * Sebastian Rassel donated **0.05 EUR**
 * Benedikt Brenner donated **275 EUR**

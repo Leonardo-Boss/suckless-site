@@ -15,8 +15,9 @@ The default behaviour of st is to reverse the fore- and background colors of eac
 ```
 static unsigned int defaultcs = 257;
 static unsigned int defaultrcs = 257;
-unsigned int selectionfg = 257;
 unsigned int selectionbg = 0;
+unsigned int selectionfg = 257;
+static int ignoreselfg = 1;
 ```
 
 Download

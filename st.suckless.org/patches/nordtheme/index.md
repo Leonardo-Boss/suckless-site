@@ -12,13 +12,11 @@ Selection-Colors
 
 The default behaviour of st is to reverse the fore- and background colors of each selected cell. If you want that the selection-colors are not reveresed but instead have fixed fore- and background colors apply on top of this patch the [selectioncolors](../selectioncolors/)-patch. Then set the following settings in your config.h:
 
-```
-static unsigned int defaultcs = 257;
-static unsigned int defaultrcs = 257;
-unsigned int selectionbg = 0;
-unsigned int selectionfg = 257;
-static int ignoreselfg = 1;
-```
+*static unsigned int defaultcs = 257;*
+*static unsigned int defaultrcs = 257;*
+*unsigned int selectionbg = 0;*
+*unsigned int selectionfg = 257;*
+*static int ignoreselfg = 1;*
 
 Download
 --------

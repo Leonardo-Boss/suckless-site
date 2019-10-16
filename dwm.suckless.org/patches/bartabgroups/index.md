@@ -9,7 +9,7 @@ This patch draws one or multiple tab groups in the bar aligned with the current 
 
 ## Notes
 - You should use this patch with a short statusline and ideally in conjunction with another tag area space saving patch such as [taggrid](/patches/taggrid) or [hidevacant](/patches/hide_vacant_tags).
-- This patch works out of out of the box / aligns with gaps patches, use the define `BARTABGROUPS_FUZZPX`.
+- This patch works out of the box / aligns with gaps patches, use the define `BARTABGROUPS_FUZZPX`.
 - This patch can optionally draw grid indicators on each tab similar to the taggrid patch indicating which tags each client is on, use the define `BARTABGROUPS_TAGSINDICATOR` to enable / disable this feature.
 - To ignore / use a single tab bar group for a non-column layout - add an exception in the calculation code as was done for the float layout.
 

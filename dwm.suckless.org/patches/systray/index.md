@@ -6,6 +6,9 @@ Description
 A simple system tray implementation. Multi-monitor is also supported. The tray
 is following the selected monitor.
 
+In case icons disappear when toggling the bar, try a different font size
+in dwm. This has helped at least in one case with pidgin.
+
 Download
 --------
 * [dwm-systray-20190208-cb3f58a.diff](dwm-systray-20190208-cb3f58a.diff) (24K)

@@ -9,7 +9,7 @@ There are several other projects which are inspired by the spirit of suckless.
 * [bus](https://github.com/maandree/bus) - daemonless message broadcasting IPC
 * [cross-chroot](https://github.com/radare/cross-chroot) - cross platform qemu-powered chroot utilities (based on the ideas of the maemo sdk)
 * [dietline](https://github.com/radare/radare2/blob/master/libr/cons/dietline.c) - minimalist implementation of a readline-like library
-* [dmc](//git.suckless.org/dmc/) - dynamic mail client
+* [dmc](https://github.com/theappleman/dmc) - dynamic mail client
 * [dvtm](http://www.brain-dump.org/projects/dvtm/) - screen-like dwm (curses)
 * [dzen](https://github.com/robm/dzen) - display status/notification/menu windows
 * [honden](https://github.com/joodan-van-github/honden) - flashcard system built on top of oboeta

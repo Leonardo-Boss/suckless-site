@@ -3,13 +3,13 @@ index d27cb67..464c9d6 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -163,6 +163,7 @@ static void detach(Client *c);
- static void detachstack(Client *c);
  static Monitor *dirtomon(int dir);
  static void drawbar(Monitor *m);
-+static int drawstatusbar(Monitor *m, int bh, char* text);
  static void drawbars(void);
++static int drawstatusbar(Monitor *m, int bh, char* text);
  static void enternotify(XEvent *e);
  static void expose(XEvent *e);
+ static void focus(Client *c);
 @@ -237,7 +238,7 @@ static void zoom(const Arg *arg);
  
  /* variables */
@@ -150,8 +150,8 @@ index d27cb67..464c9d6 100644
  	cursor[CurResize] = drw_cur_create(drw, XC_sizing);
  	cursor[CurMove] = drw_cur_create(drw, XC_fleur);
  	/* init appearance */
--	scheme = ecalloc(LENGTH(colors), sizeof(Scm));
-+	scheme = ecalloc(LENGTH(colors) + 1, sizeof(Scm));
+-	scheme = ecalloc(LENGTH(colors), sizeof(Clr *));
++	scheme = ecalloc(LENGTH(colors) + 1, sizeof(Clr *));
 +	scheme[LENGTH(colors)] = drw_scm_create(drw, colors[0], 3);
  	for (i = 0; i < LENGTH(colors); i++)
  		scheme[i] = drw_scm_create(drw, colors[i], 3);

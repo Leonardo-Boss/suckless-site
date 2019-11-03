@@ -11,7 +11,7 @@ an example of my status bar with multi-cpu and battery.
 Download
 --------
 
-* [dwm-status2d-20161231-bb3bd6f.diff](dwm-status2d-20161231-bb3bd6f.diff)
+* [dwm-status2d-6.2.diff](dwm-status2d-6.2.diff)
 
 
 Usage
@@ -32,5 +32,5 @@ xsetroot -name "dwmstatus ^c#FF0000^ in red with red rectangle
 Authors
 -------
 * [sipi](https://github.com/sipi)
-* lhark - <lhark@ntymail.com> (bb3bd6f port)
+* lhark - <lhark@ntymail.com> (6.2 port)
 

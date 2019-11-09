@@ -306,7 +306,7 @@ doshortlink(const char *begin, const char *end, int newblock)
 			if (ismail == 0)
 				return 0;
 			if (ismail != 1) {
-				fwrite(begin + 1, 1, p - begin + 1, stdout);
+				fwrite(begin + 1, 1, p - begin - 1, stdout);
 				fputs("\n", stdout);
 			}
 			return p - begin + 1;

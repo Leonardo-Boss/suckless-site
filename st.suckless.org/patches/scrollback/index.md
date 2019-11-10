@@ -32,6 +32,10 @@ modifier for scrolling is not needed anymore. **Note: patches before
 * [st-scrollback-mouse-altscreen-20190131-e23acb9.diff](st-scrollback-mouse-altscreen-20190131-e23acb9.diff)
 * [st-scrollback-mouse-altscreen-20191024-a2c479c.diff](st-scrollback-mouse-altscreen-20191024-a2c479c.diff)
 
+Apply the following patch on top of the first two to allow changing how fast the mouse scrolls.
+
+* [st-scrollback-mouse-increment-0.8.2.diff](st-scrollback-mouse-increment-0.8.2.diff)
+
 Notes
 -----
 * Patches modify config.def.h, you need to add mkeys to your own config.h
@@ -57,3 +61,4 @@ Authors
   variable for config)
 * Kamil Kleban - <funmaker95@gmail.com> (fix altscreen detection)
 * Avi Halachmi - <avihpit@yahoo.com> (mouse + altscreen rewrite after `a2c479c`)
+* Jacob Prosser - <geriatricjacob@cumallover.me>

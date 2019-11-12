@@ -85,7 +85,12 @@ Bugs
 
 Download
 --------
-* [st-vimBrowse-20191107-2b8333f.diff](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-vimBrowse-20191107-2b8333f.diff)
+**Most Recent**:
+* [st-vimBrowse-20191107-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-vimBrowse-20191107-2b8333f.diff)
+
+**All versions**:
+* [st-vimBrowse-20191107-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-vimBrowse-20191107-2b8333f.diff)
+* [st-vimBrowse-20191107-2b8333f.diff (attached)](st-vimBrowse-20191107-2b8333f.diff )
 
 Authors of the [Scrollback patch](https://st.suckless.org/patches/scrollback/)
 ------------------------------------------------------------------------------

@@ -182,6 +182,10 @@ This covers most console-based programs and programs from
 * [vis](https://github.com/martanne/vis) - A modern, legacy free, simple yet efficient vim-like editor.
 * [wily](http://www.cse.yorku.ca/~oz/wily/) - An acme clone for POSIX.
 
+### Text processing
+
+* [json2tsv](https://codemadness.org/json2tsv.html) - a JSON to TAB-Separated Value (TSV) converter (and parser code).
+
 ### Utilities / miscellaneous
 
 * [abduco](http://www.brain-dump.org/projects/abduco/) - session {at,de}tach support.

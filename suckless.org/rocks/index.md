@@ -52,6 +52,7 @@ because it makes them legally compatible with other suckless projects.
 
 Programs
 --------
+
 Some programs work well with dwm. Some general rule of thumb for judging if a
 program is usable are:
 
@@ -74,7 +75,7 @@ This covers most console-based programs and programs from
 
 * [btpd](https://github.com/btpd/btpd) - The BitTorrent Protocol Daemon.
 
-### Feed aggregators
+### Feed aggregators / newsreaders
 
 * [sfeed](https://git.codemadness.org/sfeed/) - RSS and Atom parser + CLI programs.
 * [snownews](https://github.com/kouya/snownews/) - Text mode RSS newsreader for Linux and Unix.
@@ -135,14 +136,13 @@ This covers most console-based programs and programs from
 * [fdm](https://github.com/nicm/fdm) - fetch and deliver mail.
 * [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
 * [isync](http://isync.sourceforge.net/) - MDA that can work better for IMAP, also known as mbsync.
-* [mblaze](https://github.com/chneukirchen/mblaze) - Unix utilities to deal with Maildir.
+* [mblaze](https://github.com/chneukirchen/mblaze) - UNIX utilities to deal with Maildir.
 * [mmh](http://marmaro.de/prog/mmh/) - Meillo's mail handler (mmh), a fork of nmh.
 * [mpop](https://marlam.de/mpop/) - a POP3 mail client. It is much [faster and simpler than fetchmail](https://marlam.de/mpop/documentation).
 * [mutt](http://www.mutt.org/) - A ncurses mail client for fetching, reading and sending email.
 * [nmh](http://www.nongnu.org/nmh/) - Message Handling System.
 * [plan9port/Mail](https://9fans.github.io/usr/local/plan9/mail/) - A mail client for acme. Included with [plan9port](https://9fans.github.io/plan9port/).
 * [s-nail](https://www.sdaoden.eu/code.html) - An improved heirloom-mailx.
-
 
 ### Media players
 
@@ -152,7 +152,7 @@ This covers most console-based programs and programs from
 
 ### Password managers
 
-* [pass](https://www.passwordstore.org/) - "The standard unix password manager".
+* [pass](https://www.passwordstore.org/) - "The standard UNIX password manager".
 * [tpm](https://github.com/nmeum/tpm/) - Tiny password manager.
 * [spm](https://notabug.org/kl3/spm/) - Simple password manager (actively maintained fork of nmeum's tpm).
 
@@ -182,18 +182,14 @@ This covers most console-based programs and programs from
 * [vis](https://github.com/martanne/vis) - A modern, legacy free, simple yet efficient vim-like editor.
 * [wily](http://www.cse.yorku.ca/~oz/wily/) - An acme clone for POSIX.
 
+### Utilities / miscellaneous
 
-### Utilities
-
-* [9menu](https://github.com/arnoldrobbins/9menu/) - A menu program based on the Blit-style menus so prevalent in Plan 9.
 * [abduco](http://www.brain-dump.org/projects/abduco/) - session {at,de}tach support.
-* [dmenu](//tools.suckless.org/dmenu/) - dmenu is a dynamic menu for X.
 * [dvtm](http://www.brain-dump.org/projects/dvtm/) - dynamic virtual terminal manager.
 * [entr](http://entrproject.org/) - Run arbitrary commands when files change.
-* [nq](https://github.com/chneukirchen/nq) - unix command line queue utility.
+* [nq](https://github.com/chneukirchen/nq) - UNIX command line queue utility.
 * [slmenu](https://bitbucket.org/rafaelgg/slmenu) - Dmenu spinoff for the console.
 * [snore](https://github.com/clamiax/snore) - Sleep with feedback.
-
 
 ### Web browsers
 
@@ -208,7 +204,7 @@ This covers most console-based programs and programs from
 * [netsurf](http://www.netsurf-browser.org/) - Very fast graphical browser with custom engine that has near-perfect CSS support.
 * [surf](//surf.suckless.org/) - WebKit2 browser that can be embedded into other applications and uses dmenu as the address bar.
 * [Tridactyl](https://github.com/cmcaine/tridactyl) - A WebExtension that tries to make Firefox Vim like. Unlike many similar extensions it works with firefox 57+.
-* [uzbl](https://www.uzbl.org/) - Web interface tools which adhere to the unix philosophy.
+* [uzbl](https://www.uzbl.org/) - Web interface tools which adhere to the UNIX philosophy.
 * [VimFX](https://addons.mozilla.org/en-US/firefox/addon/vimfx/) -
   Vimperator (Doesn't work with Firefox 57+)
 * [Vimperator](http://vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like. (Doesn't work with Firefox 57+).
@@ -216,6 +212,8 @@ This covers most console-based programs and programs from
 
 ### X11
 
+* [9menu](https://github.com/arnoldrobbins/9menu/) - A menu program based on the Blit-style menus so prevalent in Plan 9.
+* [dmenu](//tools.suckless.org/dmenu/) - dmenu is a dynamic menu for X.
 * [ffcast](https://github.com/lolilolicon/FFcast) - Simple screencasting.
 * [grabc](http://www.muquit.com/muquit/software/grabc/grabc.html) - Grab the color of some pixel in X11.
 * [keynav](http://www.semicomplete.com/projects/keynav/) - A new way for keyboard selection.
@@ -236,7 +234,6 @@ This section is dedicated to daemons that are related to the UNIX philosophy.
 * [OpenBSD httpd/relayd](https://bsd.plumbing/) - Designed to combat the feature creep of modern webservers. Boasts concise configuration, with sane defaults.
 * [quark](//tools.suckless.org/quark/) - suckless simple static web server.
 * [thttpd](http://acme.com/software/thttpd/) - Outperforms many bigger httpds. Old, still works very well!
-
 
 ### Gopher servers
 

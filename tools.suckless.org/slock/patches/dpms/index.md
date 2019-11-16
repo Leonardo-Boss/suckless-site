@@ -3,21 +3,18 @@ DPMS
 
 Description
 -----------
-This patch interacts with the Display Power Signaling and automatically shuts
-down the monitor after a configurable amount of seconds. The monitor will
-automatically be activated by pressing a key or moving the mouse and the
-password can be entered then.
+This patch interacts with the Display Power Management Signaling and
+automatically turns off the monitor after a configurable time. The monitor is
+reactivated by a keystroke or moving the mouse.
 
 Notes
 -----
-The number of seconds until the screen will be disabled is configured in
-`config.h` via the `monitortime` option.
-
-This patch was written against the `1.4`-tag.
+The time until the monitor is disabled is configurable as `monitortime` in the
+`config.h` file in seconds.
 
 Download
 --------
-* [slock-dpms-20170923-fa11589.diff](slock-dpms-20170923-fa11589.diff)
+* [slock-dpms-1.4.diff](slock-dpms-1.4.diff)
 
 Authors
 -------

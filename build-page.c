@@ -214,7 +214,7 @@ menu_panel(char *domain, char *page, char *this, int depth)
 	char newdir[PATH_MAX];
 	char *d_list[DIR_MAX], *d;
 	size_t d_len, l;
-	int i;
+	int i, highlight;
 
 	if ((dp = opendir(this ? this : ".")) == NULL)
 		die_perror("opendir: %s", this ? this : ".");
@@ -235,10 +235,13 @@ menu_panel(char *domain, char *page, char *this, int depth)
 		if (!stat_isdir(newdir))
 			continue;
 
+		highlight = page && !strncmp(newdir, page, strlen(newdir)) &&
+			strchr("/", page[strlen(newdir)]); /* / or NUL */
+
 		for (i = 0; i < depth + 1; ++i)
 			putchar('\t');
 		fputs("<li>", stdout);
-		if (page && !strncmp(newdir, page, strlen(newdir))) {
+		if (highlight) {
 			printf("<a href=\"//%s/%s/\"><b>", domain, newdir);
 			print_name(d);
 			fputs("/</b></a>", stdout);
@@ -248,7 +251,7 @@ menu_panel(char *domain, char *page, char *this, int depth)
 			fputs("/</a>", stdout);
 		}
 
-		if (page && !strncmp(newdir, page, strlen(newdir))) {
+		if (highlight) {
 			putchar('\n');
 			for (i = 0; i < depth + 2; ++i)
 				putchar('\t');

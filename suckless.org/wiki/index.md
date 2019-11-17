@@ -42,10 +42,9 @@ Rules
   mind! We kindly ask you to not destroy the way we like to collaborate with
   the community.
 * Please do not add files bigger than *100kb*.
+* Please do not add unscaled large images.
 * Please do not add any binary files except screenshots or images related to
-  our software. You are allowed to add your code patches to the wiki if you do
-  not have an external web server to serve them to the community. The extension
-  of patches should be `.diff`.
+  our software. The patches should be hosted in the repository itself.
 * The extension of newly created Markdown files has to be `.md`.
 * Inline HTML, HTML files or inline JavaScript is not allowed and not supported.
 * There are some dialects of Markdown, please don't use too "advanced" features.

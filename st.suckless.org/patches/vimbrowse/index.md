@@ -1,12 +1,8 @@
 Vim Browse
 ==========
 
-![Screenshot](https://user-images.githubusercontent.com/9212314/68340852-7d6d9380-00e7-11ea-9705-51ed098eba2a.gif)
-
-
 Description
 -----------
-
 This patch offers the possibility to move through the terminal history, search for strings and use
 VIM-like motions, operations and quantifiers.
 
@@ -66,6 +62,15 @@ All motions -- including the search mode -- are currently circular,  (hence if n
 found, the search is continued at the top or bottom of the history, depending on the search
 direction).
 
+Screenshot
+----------
+![Screenshot](https://user-images.githubusercontent.com/9212314/68340852-7d6d9380-00e7-11ea-9705-51ed098eba2a.gif =250x)
+
+Contributions + Bug Reports
+---------------------------
+* [Issues](https://github.com/juliusHuelsmann/st/issues?q=is%3Aissue+is%3Aopen+label%3AvimBrowse)
+
+
 Notes
 -----
 * Currently based on the [Scrollback patch](https://st.suckless.org/patches/scrollback/),
@@ -85,12 +90,14 @@ Bugs
 
 Download
 --------
+
+**All versions**:
+* [st-vimBrowse-20191107-2b8333f.diff (attached)](st-vimBrowse-20191107-2b8333f.diff )
+* [st-vimBrowse-20191107-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-vimBrowse-20191107-2b8333f.diff)
+
 **Most Recent**:
 * [st-vimBrowse-20191107-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-vimBrowse-20191107-2b8333f.diff)
 
-**All versions**:
-* [st-vimBrowse-20191107-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-vimBrowse-20191107-2b8333f.diff)
-* [st-vimBrowse-20191107-2b8333f.diff (attached)](st-vimBrowse-20191107-2b8333f.diff )
 
 Authors of the [Scrollback patch](https://st.suckless.org/patches/scrollback/)
 ------------------------------------------------------------------------------

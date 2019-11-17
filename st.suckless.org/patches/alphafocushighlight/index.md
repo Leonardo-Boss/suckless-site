@@ -3,7 +3,6 @@ Alpha Focus Highlight Patch
 
 Description
 -----------
-
 This patch allows the user to specify two distinct opacity values; one for the
 focused- and one for unfocused windows' background.  This enables the user to
 spot the focused window at a glance.
@@ -12,6 +11,14 @@ The *Alpha Highlight Focus Patch* patch is based on the
 [Alpha Patch](https://st.suckless.org/patches/alpha/),
 which is already applied in the patch file below. Most of the work has been performed by the
 original authors of the Alpha Patch.
+
+Screenshot
+----------
+![Screenshot](alphaFocus.gif)
+
+Contributions + Bug Reports
+---------------------------
+* [Issues](https://github.com/juliusHuelsmann/st/issues?q=is%3Aopen+is%3Aissue+label%3AalphaFocusHighlight)
 
 
 Notes Alpha Patch

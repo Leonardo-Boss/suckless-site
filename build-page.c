@@ -137,7 +137,7 @@ spawn_wait(char **argv)
 }
 
 int
-oneline(char *buf, size_t bufsiz, char const *path)
+oneline(char *buf, size_t bufsiz, const char *path)
 {
 	char *r;
 	FILE *fp;
@@ -165,8 +165,9 @@ oneline(char *buf, size_t bufsiz, char const *path)
 void
 print_name(const char *name)
 {
-	char c;
-	for (; c = *name; ++name)
+	int c;
+
+	for (; (c = *name); ++name)
 		putchar((c == '_' || c == '-') ? ' ' : c);
 }
 

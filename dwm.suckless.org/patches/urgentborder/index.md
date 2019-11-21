@@ -14,7 +14,7 @@ Download
 --------
 * [dwm-6.1-urg-border.diff](dwm-6.1-urg-border.diff) (2.2K) (20150307)
 * [dwm-6.1-min-border.diff](dwm-6.1-min-border.diff) (360) (20190924)
- 
+
 Author
 ------
 * Alexander Huemer - alexander dot huemer dot xx dot vu (Based on former work by Ray Kohler - ataraxia937 gmail com)

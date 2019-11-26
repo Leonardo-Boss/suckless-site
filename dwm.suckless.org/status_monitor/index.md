@@ -70,6 +70,8 @@ Feel free to add your own status monitors here (keeping the list sorted).
   speed, cpu, ram, date/time
 * [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent
   and date/time
+* [sb](https://git.ckyln.com/sb/log.html) - another modular bar written in POSIX
+  shell
 * [spoon](https://git.2f30.org/spoon/) - set dwm status. Supports battery,
   cpu freq, date, file, load avg, keyboard layout, mpd, network speed,
   screen brightness, temperature, wifi, volume mixer.

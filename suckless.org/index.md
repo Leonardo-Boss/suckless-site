@@ -7,6 +7,14 @@ list](/community).
 News
 ====
 
+2019-12-01
+----------
+On wednesday, 2019-12-04 there will be scheduled maintenance of the suckless
+servers. It's estimated this will take about 2-3 hours from about 19:00 to
+21:00 - 22:00 UTC+01:00.
+
+The mailinglist, website and source-code repositories will have some downtime.
+
 2019-04-04
 ----------
 Registrations are now open for [slcon6](conferences/2019) that will be held in

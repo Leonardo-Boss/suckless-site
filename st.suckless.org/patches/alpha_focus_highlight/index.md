@@ -38,11 +38,13 @@ Notes
   and can be tried out [here](https://github.com/juliusHuelsmann/st).
 
 
-Download
---------
+Download 
+-----------------------------------
+**All versions (from old to new)**:
 * [st-alphafocushighlight-20191107-2b8333f.diff (attached)](st-alphafocushighlight-20191107-2b8333f.diff)
+* [st-alphaFocusHighlight-20191107-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-alphaFocusHighlight-20191107-2b8333f.diff)
 
-**Most Recent (github)**:
+**Most Recent**:
 * [st-alphaFocusHighlight-20191107-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-alphaFocusHighlight-20191107-2b8333f.diff)
 
 

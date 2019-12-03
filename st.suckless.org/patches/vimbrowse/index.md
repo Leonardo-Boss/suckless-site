@@ -64,7 +64,7 @@ direction).
 
 Screenshot
 ----------
-![Screenshot](https://user-images.githubusercontent.com/9212314/68340852-7d6d9380-00e7-11ea-9705-51ed098eba2a.gif =250x)
+* [Gif which shows some of the features](https://user-images.githubusercontent.com/9212314/68340852-7d6d9380-00e7-11ea-9705-51ed098eba2a.gif)
 
 Contributions + Bug Reports
 ---------------------------
@@ -91,12 +91,13 @@ Bugs
 Download
 --------
 
-**All versions**:
-* [st-vimBrowse-20191107-2b8333f.diff (attached)](st-vimBrowse-20191107-2b8333f.diff )
-* [st-vimBrowse-20191107-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-vimBrowse-20191107-2b8333f.diff)
+**All versions (from old to new) **:
+* [st-vimBrowse-20191107-2b8333f.diff (attached)](st-vimBrowse-20191107-2b8333f.diff)
+* [st-vimBrowse-20191203-2b8333f.diff (attached)](st-vimBrowse-20191203-2b8333f.diff)
+* [st-vimBrowse-20191203-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-vimBrowse-20191203-2b8333f.diff)
 
 **Most Recent**:
-* [st-vimBrowse-20191107-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-vimBrowse-20191107-2b8333f.diff)
+* [st-vimBrowse-20191203-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-vimBrowse-20191203-2b8333f.diff)
 
 
 Authors of the [Scrollback patch](https://st.suckless.org/patches/scrollback/)
@@ -119,3 +120,5 @@ Authors of the [Scrollback patch](https://st.suckless.org/patches/scrollback/)
 Authors of the Vim-Browse Patch
 --------------------------------
 * Julius Hülsmann - <juliusHuelsmann [at] gmail [dot] com>
+* [Kevin Velghe](https://github.com/paretje): Fix: Underline highlight
+

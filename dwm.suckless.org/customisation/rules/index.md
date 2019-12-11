@@ -4,8 +4,8 @@ Setting rules in config.h
 What does '`rules`' do?
 -----------------------
 The `rules` array allows treating of certain applications (clients) uniquely.
-A rule has a matching and an action part. When a new client appears (sends
-a maprequest), it is matched against the rules based on its class, instance
+A rule has a matching and an action part. When a new client appears (sends a
+maprequest), it is matched against the rules based on its class, instance
 (`WM_CLASS`) and title (`WM_NAME`) properties and then the given tag and
 floating mode setting actions are performed. The default tag mask is `0`, which
 means the currently viewed tags and the default mode is tiled so isfloating is

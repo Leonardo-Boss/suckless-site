@@ -18,7 +18,7 @@ Screenshots:
 
 Download
 --------
-* [dwm-barpadding-6.2.diff](dwm-activetagindicatorbar-6.2.diff) (10.12.2019 - DD.MM.YYYY)
+* [dwm-barpadding-6.2.diff](dwm-barpadding-6.2.diff) (10.12.2019 - DD.MM.YYYY)
 
 Author
 ------

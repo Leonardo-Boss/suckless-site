@@ -8,7 +8,7 @@ For example usage see: hidetabs
 
 Download
 --------
-* [tabbed-keypress-20191213-b5f9ec6.diff](tabbed-keypress-20191213-b5f9ec6.diff)
+* [tabbed-keyrelease-20191216-b5f9ec6.diff](tabbed-keyrelease-20191216-b5f9ec6.diff)
 
 Author
 ------

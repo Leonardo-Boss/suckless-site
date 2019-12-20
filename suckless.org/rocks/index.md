@@ -238,6 +238,7 @@ This section is dedicated to daemons that are related to the UNIX philosophy.
 * [OpenBSD httpd/relayd](https://bsd.plumbing/) - Designed to combat the feature creep of modern webservers. Boasts concise configuration, with sane defaults.
 * [quark](//tools.suckless.org/quark/) - suckless simple static web server.
 * [thttpd](http://acme.com/software/thttpd/) - Outperforms many bigger httpds. Old, still works very well!
+* [merecat](https://github.com/troglobit/merecat/) - thttpd with vhost support.
 
 ### Gopher servers
 

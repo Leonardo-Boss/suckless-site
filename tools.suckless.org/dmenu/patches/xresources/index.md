@@ -16,6 +16,10 @@ that can be changed and what they change:
 - dmenu.selbackground : selected background color
 - dmenu.selforeground : selected foreground color
 
+Note: Just like how it is in config.h, this patch only changes the default font
+and colors. If you wish to explicitly change the values via
+command line arguements, see "man dmenu" for more details.
+
 Download
 --------
 * [dmenu-xresources-4.9.diff](dmenu-xresources-4.9.diff)

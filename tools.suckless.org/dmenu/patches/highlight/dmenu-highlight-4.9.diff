@@ -1,12 +1,12 @@
-From 14e68d5d546830714e37e99667a455162dcd0e04 Mon Sep 17 00:00:00 2001
+From 16abaf4bbea01234abab27fbfdfc921aad2fc364 Mon Sep 17 00:00:00 2001
 From: Miles Alan <m@milesalan.com>
 Date: Tue, 14 Jan 2020 21:50:04 -0600
 Subject: [PATCH] Highlight matched text in a different color scheme
 
 ---
  config.def.h |  2 ++
- dmenu.c      | 50 ++++++++++++++++++++++++++++++++++++++++++++++----
- 2 files changed, 48 insertions(+), 4 deletions(-)
+ dmenu.c      | 42 ++++++++++++++++++++++++++++++++++++++++--
+ 2 files changed, 42 insertions(+), 2 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
 index 1edb647..64eab2a 100644
@@ -22,7 +22,7 @@ index 1edb647..64eab2a 100644
  };
  /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 diff --git a/dmenu.c b/dmenu.c
-index 6b8f51b..84c902b 100644
+index 6b8f51b..c82bb6d 100644
 --- a/dmenu.c
 +++ b/dmenu.c
 @@ -26,7 +26,7 @@
@@ -77,40 +77,17 @@ index 6b8f51b..84c902b 100644
  static int
  drawitem(struct item *item, int x, int y, int w)
  {
-@@ -132,6 +168,7 @@ drawmenu(void)
- 	unsigned int curpos;
- 	struct item *item;
- 	int x = 0, y = 0, w;
-+	int savedx;
+@@ -123,7 +159,9 @@ drawitem(struct item *item, int x, int y, int w)
+ 	else
+ 		drw_setscheme(drw, scheme[SchemeNorm]);
  
- 	drw_setscheme(drw, scheme[SchemeNorm]);
- 	drw_rect(drw, 0, 0, mw, mh, 1, 1);
-@@ -153,8 +190,10 @@ drawmenu(void)
+-	return drw_text(drw, x, y, w, bh, lrpad / 2, item->text, 0);
++	int r = drw_text(drw, x, y, w, bh, lrpad / 2, item->text, 0);
++	drawhighlights(item, x, y, w);
++	return r;
+ }
  
- 	if (lines > 0) {
- 		/* draw vertical list */
--		for (item = curr; item != next; item = item->right)
-+		for (item = curr; item != next; item = item->right) {
- 			drawitem(item, x, y += bh, mw - x);
-+			drawhighlights(item, x, y, mw - x);
-+		}
- 	} else if (matches) {
- 		/* draw horizontal list */
- 		x += inputw;
-@@ -164,8 +203,11 @@ drawmenu(void)
- 			drw_text(drw, x, 0, w, bh, lrpad / 2, "<", 0);
- 		}
- 		x += w;
--		for (item = curr; item != next; item = item->right)
--			x = drawitem(item, x, 0, MIN(TEXTW(item->text), mw - x - TEXTW(">")));
-+		for (item = curr; item != next; item = item->right) {
-+			savedx = drawitem(item, x, 0, MIN(TEXTW(item->text), mw - x - TEXTW(">")));
-+			drawhighlights(item, x, 0, MIN(TEXTW(item->text), mw - x - TEXTW(">")));
-+			x = savedx;
-+		}
- 		if (next) {
- 			w = TEXTW(">");
- 			drw_setscheme(drw, scheme[SchemeNorm]);
+ static void
 -- 
 2.23.1
 

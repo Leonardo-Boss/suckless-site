@@ -24,4 +24,4 @@ Author
 ------
 * Lasse Engblom
 * Jan Christoph Ebersbach - <jceb@e-jc.de>
-* Aaron Duxler - <aaron.duxler@gmail.com> (6.2 port)
+* Aaron Duxler - <aaron@duxler.xyz> (6.2 port)

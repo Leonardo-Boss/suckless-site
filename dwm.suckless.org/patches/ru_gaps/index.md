@@ -42,5 +42,5 @@ A copy of the [deck](../deck/), but with resizeable gaps.
 
 Authors
 ------
-* Aaron Duxler <aaron.duxler@gmail.com>
+* Aaron Duxler <aaron@duxler.xyz>
 * Rob Livesey <rlives6789@gmail.com>

@@ -21,4 +21,4 @@ Download
 Authors
 -------
 * Ivan J. <parazyd@dyne.org>
-* Aaron D. <aaron.duxler@gmail.com> (mechanical update to 6.2 and bugfixes)
+* Aaron D. <aaron@duxler.xyz> (mechanical update to 6.2 and bugfixes)

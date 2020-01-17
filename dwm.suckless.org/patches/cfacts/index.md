@@ -54,4 +54,4 @@ Just patch these on top of the original cfacts patch.
 Author
 ------
 * Patrick Steinhardt (pks) <ps@pks.im>
-* Aaron Duxler <aaron.duxler@gmail.com> - Additional layouts bottomstack + centeredmaster
+* Aaron Duxler <aaron@duxler.xyz> - Additional layouts bottomstack + centeredmaster

@@ -1,8 +1,7 @@
 suckless conference 2019, Bad Liebenzell, Germany
 =================================================
 
-slcon6 will be held in Bad Liebenzell, Baden-Württemberg in Germany on
-2019-10-(04-06).
+[![slcon 2019 group photo](slcon2019-s.jpg)](slcon2019.jpg)
 
 Friday, 2019-10-04
 ------------------
@@ -84,6 +83,8 @@ Video:
 ### (18:00-19:00) Dinner
 
 ### (19:00-) Evening program
+
+[![forest hike](forest_hike-s.jpg)](forest_hike.jpg)
 
 Sunday, 2019-10-06
 ------------------

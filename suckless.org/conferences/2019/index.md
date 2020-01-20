@@ -90,6 +90,8 @@ Sunday, 2019-10-06
 
 A demonstration of the blind video editor.
 
+[![slcon-2019-04-mattias_andree-blind_demonstration.webm](//dl.suckless.org/slcon/2019/slcon-2019-04-mattias_andree-blind_demonstration.png)](//dl.suckless.org/slcon/2019/slcon-2019-04-mattias_andree-blind_demonstration.webm)
+
 #### Reflections on Unicode, Laslo Hunhold
 
 Dealing with Unicode is a difficult balancing between correctness

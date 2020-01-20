@@ -9,6 +9,7 @@ background color of every statusbar element.
 Simply change the RGB values in the config.def.h.
 
 ![colorbar_screenshot](colorbar.png)
+
 Download
 --------
 * [dwm-colorbar-6.2.diff](dwm-colorbar-6.2.diff)(13.01.2020)
@@ -16,4 +17,4 @@ Download
 Author
 ------
 
-* Lars Niesen <lars.niesen[at]gmx.de>
+* Lars Niesen - <lars.niesen@gmx.de>

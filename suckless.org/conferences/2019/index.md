@@ -48,7 +48,7 @@ Video:
 > - how translation fails on IL-level and surface level (destination language)
 > - what a good computer assisted translation tool for advanced users can
 >   achieve such as an Acme-based tool³
->
+> 
 > and present reproducable examples where Google Translate™ and its
 > epigones fail systematically.
 > 
@@ -74,7 +74,7 @@ Video:
 > Acme is the editor of choice in plan9. I don't use it but when trying
 > it, I realized that vim is much more than an editor: it's an open window
 > to my whole digital world: A perfect multipurpose UI. Let me show you ...
->
+> 
 > [slides](https://github.com/eiro/talk-acme-changed-my-life)
 
 Video:

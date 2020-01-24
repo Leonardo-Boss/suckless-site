@@ -48,11 +48,11 @@ DoS the form handler, the serving of content is still unaffected.
 TLS-support
 -----------
 quark does not natively support TLS. A more suckless approach than to
-implement TLS into it is to use a TLS reverse tunnel (e.g. [tlstunnel](https://github.com/hannesm/tlstunnel),
+implement TLS into it is to use a TLS reverse proxy (e.g. [tlstunnel](https://github.com/hannesm/tlstunnel),
 [hitch](https://hitch-tls.org/) or [stunnel](https://www.stunnel.org/)).
-A TLS-tunnel accepts encrypted TLS connections and forwards them as unencrypted
-TLS to a server. In this case, one can run stunnel on an intended IP
-address and forward the requests to a local port or UNIX-domain socket.
+It accepts encrypted TLS connections and forwards them as unencrypted
+requests to a server. In this case, one can run such a reverse proxy to listen
+on a public IP address and forward the requests to a local port or UNIX-domain socket.
 
 Solutions
 ---------

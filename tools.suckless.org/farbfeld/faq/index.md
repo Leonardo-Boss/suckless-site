@@ -54,6 +54,26 @@ bzip2 is recommended, which is widely available (anybody has it) and gives good
 results. As time will move forward and new algorithms hit the market, this
 recommendation might be rethought.
 
+Is metadata supported?
+----------------------
+
+Almost every image format out there has special offsets or locations
+where metadata is stored. In itself, there are several different metadata
+formats (Exif, XMP, etc.). For farbfeld, to keep it simple, there are
+no provisions within the file format for metadata. Instead, one can
+use so-called sidecar files (also known as buddy files or connected
+files). As an example, to provide metadata for an image.ff.bz2, one can
+add a file called image.xmp that contains XMP metadata for said image.
+
+An added advantage of this approach is that the metadata is independent
+of the image compression. As argued above, compression is vital for
+farbfeld to be used efficiently, but when thinking of an application
+that lists farbfeld-images in a folder, it might want to access
+metadata as fast as possible.
+
+The use of multiple files for one entity is a downside, but it wouldn't
+be a problem at all if modern file systems supported forks.
+
 What about NetPBM?
 ------------------
 NetPBM is considered to be the most simple format around, however, there's much

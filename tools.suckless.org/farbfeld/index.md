@@ -52,6 +52,8 @@ provide packages:
 
 Implementations
 ---------------
+* [imlib2](https://sourceforge.net/projects/enlightenment/files/imlib2-src/) library (implies support in feh,
+  w3m, giblib, sxiv, conky, magicpoint, scrot, libcaca, etc.)
 * [lel](http://git.2f30.org/lel) farbfeld image viewer
 * [sent](//tools.suckless.org/sent/) presentation tool
 * [Go encoder/decoder](https://github.com/hullerob/go.farbfeld)

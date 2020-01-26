@@ -1,24 +1,30 @@
 # bartabgroups
 
-This patch draws one or multiple tab groups in the bar aligned with the current layout's vertical splits. This is similar to using multiple tabbed instances but saves vertical space since the bar area itself is used. 
+This patch turns the titlebar area into a mfact-respecting tabbar showing each
+client's title. In tiling mode, the tabs are split into two groups (based on
+nmaster) at the mfact location. This maybe reminiscent of i3's tabbed layout
+or using the multiple instance of the tabbed program with the caveat that
+this patch reserves left and right hand space in the bar for dwm's tags and
+status area respectivly (so ideally minimize the amount of space you use for
+each). When you are not in tiling mode (float/monocole), a single tab bar just
+occupies the entire horizontal space available. Custom layouts are assumed
+to respect mfact and be similar to the tiling mode (and this works well
+with the deck patch for example), but if you need to add an exception
+refer to the provided config.def.h.
 
-## Layouts Functionality
-- Monocole / Float: Available width is divided equally in a single tab bar.
-- Tile / Deck: Available width is split into 2 tab bars seperated at master-stack split vertical.
-- Centeredmaster / Column and other layouts: N tab bars drawn divided at vertical splits. Layout patches will generally work if windows are rendered in columns (patch works via looking at clients' x positions).
+Clicking on each tab in the bar will focus that window.
 
-## Notes
-- You should use this patch with a short statusline and ideally in conjunction with another tag area space saving patch such as [taggrid](/patches/taggrid) or [hidevacant](/patches/hide_vacant_tags).
-- This patch works out of the box / aligns with gaps patches, use the define `BARTABGROUPS_FUZZPX`.
-- This patch can optionally draw grid indicators on each tab similar to the taggrid patch indicating which tags each client is on, use the define `BARTABGROUPS_TAGSINDICATOR` to enable / disable this feature.
-- To ignore / use a single tab bar group for a non-column layout - add an exception in the calculation code as was done for the float layout.
+This patch also incorporates a few optional niceties configurable in your
+config.h such as drawing a 1px border between tabs, adding an indicator to show
+which tags each client is on, and an option to add a bottom border to the bar.
 
 ## Screenshot
-Shown with [taggrid](/patches/taggrid) and gaps patch (both optional) in tile mode:
+Bartabgroups patch shown used in conjunction with the [taggrid](/patches/taggrid)
+and gaps patches in tile mode:
 ![screenshot](dwm-bartabgroups.png)
 
 ## Download
-* [dwm-bartabgroups-6.2.diff](dwm-bartabgroups-6.2.diff) (10/13/2019)
+* [dwm-bartabgroups-6.2.diff](dwm-bartabgroups-6.2.diff) (01/25/2020)
 
 ## Author
 - Miles Alan (m@milesalan.com)

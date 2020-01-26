@@ -1,55 +1,52 @@
-From 1eaa0500fc1baa4bcac3a9da94d12f5ce976aa36 Mon Sep 17 00:00:00 2001
+From bac0e7d5f91be0a6d919396540d4e1d1009c2e8e Mon Sep 17 00:00:00 2001
 From: Miles Alan <m@milesalan.com>
-Date: Sun, 13 Oct 2019 12:27:24 -0500
-Subject: [PATCH] bartabgroups: Show tabs in the bar divided at vertical splits
+Date: Sat, 25 Jan 2020 21:56:31 -0600
+Subject: [PATCH] bartabgroups: Splits the titlebar area into into an
+ mfact-respecting tabbar
 
-Designed to be used in conjunction with a small status line (and ideally also
-a space-saving tag patch like taggrid or hidevacant). Use the settings added to
-the config.def.h to customize the display of the tabs.
+In tiling mode, two tab groups are shown divided at the mfact location.
+In monocole mode, one tab group is shown (which excludes floating windows).
+In floating mode, one tab group is shown (which includes floating windows).
+Clicking on a tab will focus that window.
+
+Adjust the config.def.h to change functionality and to make exceptions for the
+tab bar for custom layouts.
 ---
- config.def.h |  17 ++++++
- dwm.c        | 152 ++++++++++++++++++++++++++++++++++++++++++++++-----
- 2 files changed, 156 insertions(+), 13 deletions(-)
+ config.def.h |  11 +++++
+ dwm.c        | 112 ++++++++++++++++++++++++++++++++++++++++++++++-----
+ 2 files changed, 112 insertions(+), 11 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
-index 1c0b587..be6af14 100644
+index 1c0b587..e61bb55 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -1,4 +1,13 @@
- /* See LICENSE file for copyright and license details. */
-+#define BARTABGROUPS_BORDERS 1         // 0 = disable, 1 = enable
-+#define BARTABGROUPS_BOTTOMBORDER 1    // 0 = disable, 1 = enable
-+#define BARTABGROUPS_FUZZPX 12         // # pixels cutoff between bartab groups to merge (e.g. max gaps px)
-+#define BARTABGROUPS_FLOATINDICATOR 1  // 0 = disable, 1 = enable
-+#define BARTABGROUPS_FLOATPX 5         // # pixels for float box indicator
-+#define BARTABGROUPS_TAGSINDICATOR 1   // 0 = disable, 1 = enable when >1 client or view tag, 2 = enable always
-+#define BARTABGROUPS_TAGSPX 5          // # pixels for tag grid boxes
-+#define BARTABGROUPS_TAGSROWS 2        // # rows in tag grid
-+#define BARTABGROUPS_INDICATORSPADPX 2 // # pixels from l/r to pad float/tags indicators
- 
- /* appearance */
- static const unsigned int borderpx  = 1;        /* border pixel of windows */
-@@ -12,10 +21,18 @@ static const char col_gray2[]       = "#444444";
- static const char col_gray3[]       = "#bbbbbb";
- static const char col_gray4[]       = "#eeeeee";
- static const char col_cyan[]        = "#005577";
-+
-+static const char col_lgray[]       = "#e8e8e8";
-+static const char col_mgray[]       = "#cfcfcf";
-+static const char col_dgray[]       = "#1a1a1a";
-+static const char col_black[]       = "#000000";
-+
- static const char *colors[][3]      = {
+@@ -16,6 +16,8 @@ static const char *colors[][3]      = {
  	/*               fg         bg         border   */
  	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
  	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
-+	[SchemeTabInactive] = { col_black, col_mgray, col_black},
-+	[SchemeTabActiveGroup] = { col_dgray, col_lgray, col_black}
++	[SchemeTabActive]  = { col_gray2, col_gray3,  col_gray2 },
++	[SchemeTabInactive]  = { col_gray1, col_gray3,  col_gray1 }
  };
  
  /* tagging */
+@@ -36,6 +38,15 @@ static const float mfact     = 0.55; /* factor of master area size [0.05..0.95]
+ static const int nmaster     = 1;    /* number of clients in master area */
+ static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
+ 
++/* Bartabgroups properties */
++#define BARTAB_BORDERS 1       // 0 = off, 1 = on
++#define BARTAB_BOTTOMBORDER 1  // 0 = off, 1 = on
++#define BARTAB_TAGSINDICATOR 1 // 0 = off, 1 = on if >1 client/view tag, 2 = always on
++#define BARTAB_TAGSPX 5        // # pixels for tag grid boxes
++#define BARTAB_TAGSROWS 3      // # rows in tag grid (9 tags, e.g. 3x3)
++static void (*bartabmonfns[])(Monitor *) = { monocle /* , customlayoutfn */ };
++static void (*bartabfloatfns[])(Monitor *) = { NULL /* , customlayoutfn */ };
++
+ static const Layout layouts[] = {
+ 	/* symbol     arrange function */
+ 	{ "[]=",      tile },    /* first entry is default */
 diff --git a/dwm.c b/dwm.c
-index 4465af1..f0fb39e 100644
+index 4465af1..d567978 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -59,7 +59,7 @@
@@ -57,44 +54,127 @@ index 4465af1..f0fb39e 100644
  /* enums */
  enum { CurNormal, CurResize, CurMove, CurLast }; /* cursor */
 -enum { SchemeNorm, SchemeSel }; /* color schemes */
-+enum { SchemeNorm, SchemeSel, SchemeTabInactive, SchemeTabActiveGroup }; /* color schemes */
++enum { SchemeNorm, SchemeSel, SchemeTabActive, SchemeTabInactive }; /* color schemes */
  enum { NetSupported, NetWMName, NetWMState, NetWMCheck,
         NetWMFullscreen, NetActiveWindow, NetWMWindowType,
         NetWMWindowTypeDialog, NetClientList, NetLast }; /* EWMH atoms */
-@@ -141,6 +141,17 @@ typedef struct {
- 	int monitor;
- } Rule;
+@@ -377,6 +377,98 @@ applysizehints(Client *c, int *x, int *y, int *w, int *h, int interact)
+ 	return *x != c->x || *y != c->y || *w != c->w || *h != c->h;
+ }
  
-+typedef struct TabGroup TabGroup;
-+struct TabGroup {
-+	int x;
-+	int n;
-+	int i;
-+	int active;
-+	int start;
-+	int end;
-+	struct TabGroup * next;
-+};
++void
++bartabdraw(Monitor *m, Client *c, int unused, int x, int w, int groupactive) {
++	if (!c) return;
++	int i, nclienttags = 0, nviewtags = 0;
 +
- /* function declarations */
- static void applyrules(Client *c);
- static int applysizehints(Client *c, int *x, int *y, int *w, int *h, int interact);
-@@ -163,6 +174,9 @@ static void detachstack(Client *c);
- static Monitor *dirtomon(int dir);
- static void drawbar(Monitor *m);
- static void drawbars(void);
-+static void drawbartabgroups(Monitor *m, int x, int sw);
-+static void drawbartab(Monitor *m, Client *c, int x, int w, int tabgroup_active);
-+static void drawbartaboptionals(Monitor *m, Client *c, int x, int w, int tabgroup_active);
- static void enternotify(XEvent *e);
- static void expose(XEvent *e);
- static void focus(Client *c);
-@@ -727,18 +741,7 @@ drawbar(Monitor *m)
- 	w = blw = TEXTW(m->ltsymbol);
++	drw_setscheme(drw, scheme[
++		m->sel == c ? SchemeSel : (groupactive ? SchemeTabActive: SchemeTabInactive)
++	]);
++	drw_text(drw, x, 0, w, bh, lrpad / 2, c->name, 0);
++
++	// Floating win indicator
++	if (c->isfloating) drw_rect(drw, x + 2, 2, 5, 5, 0, 0);
++
++	// Optional borders between tabs
++	if (BARTAB_BORDERS) {
++		XSetForeground(drw->dpy, drw->gc, drw->scheme[ColBorder].pixel);
++		XFillRectangle(drw->dpy, drw->drawable, drw->gc, x, 0, 1, bh);
++		XFillRectangle(drw->dpy, drw->drawable, drw->gc, x + w, 0, 1, bh);
++	}
++
++	// Optional tags icons
++	for (i = 0; i < LENGTH(tags); i++) {
++		if ((m->tagset[m->seltags] >> i) & 1) { nviewtags++; }
++		if ((c->tags >> i) & 1) { nclienttags++; }
++	}
++	if (BARTAB_TAGSINDICATOR == 2 || nclienttags > 1 || nviewtags > 1) {
++		for (i = 0; i < LENGTH(tags); i++) {
++			drw_rect(drw,
++				( x + w - 2 - ((LENGTH(tags) / BARTAB_TAGSROWS) * BARTAB_TAGSPX)
++					- (i % (LENGTH(tags)/BARTAB_TAGSROWS)) + ((i % (LENGTH(tags) / BARTAB_TAGSROWS)) * BARTAB_TAGSPX)
++				),
++				( 2 + ((i / (LENGTH(tags)/BARTAB_TAGSROWS)) * BARTAB_TAGSPX)
++					- ((i / (LENGTH(tags)/BARTAB_TAGSROWS)))
++				),
++				BARTAB_TAGSPX, BARTAB_TAGSPX, (c->tags >> i) & 1, 0
++			);
++		}
++	}
++}
++
++void
++battabclick(Monitor *m, Client *c, int passx, int x, int w, int unused) {
++	if (passx >= x && passx <= x + w) {
++		focus(c);
++		restack(selmon);
++	}
++}
++
++void
++bartabcalculate(
++	Monitor *m, int offx, int sw, int passx,
++	void(*tabfn)(Monitor *, Client *, int, int, int, int)
++) {
++	Client *c;
++	int
++		i, clientsnmaster = 0, clientsnstack = 0, clientsnfloating = 0,
++		masteractive = 0, fulllayout = 0, floatlayout = 0,
++		x, w, tgactive;
++
++	for (i = 0, c = m->clients; c; c = c->next) {
++		if (!ISVISIBLE(c)) continue;
++		if (c->isfloating) { clientsnfloating++; continue; }
++		if (m->sel == c) { masteractive = i < m->nmaster; }
++		if (i < m->nmaster) { clientsnmaster++; } else { clientsnstack++; }
++		i++;
++	}
++	for (i = 0; i < LENGTH(bartabfloatfns); i++) if (m ->lt[m->sellt]->arrange == bartabfloatfns[i]) { floatlayout = 1; break; }
++	for (i = 0; i < LENGTH(bartabmonfns); i++) if (m ->lt[m->sellt]->arrange == bartabmonfns[i]) { fulllayout = 1; break; }
++	for (c = m->clients, i = 0; c; c = c->next) {
++		if (!ISVISIBLE(c)) continue;
++		if (clientsnmaster + clientsnstack == 0 || floatlayout) {
++			 x = offx + (((m->mw - offx - sw) / (clientsnmaster + clientsnstack + clientsnfloating)) * i);
++			 w = (m->mw - offx - sw) / (clientsnmaster + clientsnstack + clientsnfloating);
++			 tgactive = 1;
++		} else if (!c->isfloating && (fulllayout || ((clientsnmaster == 0) ^ (clientsnstack == 0)))) {
++			 x = offx + (((m->mw - offx - sw) / (clientsnmaster + clientsnstack)) * i);
++			 w = (m->mw - offx - sw) / (clientsnmaster + clientsnstack);
++			 tgactive = 1;
++		} else if (i < m->nmaster && !c->isfloating) {
++			 x = offx + ((((m->mw * m->mfact) - offx) /clientsnmaster) * i);
++			 w = ((m->mw * m->mfact) - offx) / clientsnmaster;
++			 tgactive = masteractive;
++		} else if (!c->isfloating) {
++			 x = (m->mw * m->mfact) + ((((m->mw * (1 - m->mfact)) - sw) / clientsnstack) * (i - m->nmaster));
++			 w = ((m->mw * (1 - m->mfact)) - sw) / clientsnstack;
++			 tgactive = !masteractive;
++		} else continue;
++		tabfn(m, c, passx, x, w, tgactive);
++		i++;
++	}
++}
++
+ void
+ arrange(Monitor *m)
+ {
+@@ -441,8 +533,8 @@ buttonpress(XEvent *e)
+ 			click = ClkLtSymbol;
+ 		else if (ev->x > selmon->ww - TEXTW(stext))
+ 			click = ClkStatusText;
+-		else
+-			click = ClkWinTitle;
++		else // Focus clicked tab bar item
++			bartabcalculate(selmon, x, TEXTW(stext) - lrpad + 2, ev->x, battabclick);
+ 	} else if ((c = wintoclient(ev->window))) {
+ 		focus(c);
+ 		restack(selmon);
+@@ -728,15 +820,13 @@ drawbar(Monitor *m)
  	drw_setscheme(drw, scheme[SchemeNorm]);
  	x = drw_text(drw, x, 0, w, bh, lrpad / 2, m->ltsymbol, 0);
--
--	if ((w = m->ww - sw - x) > bh) {
+ 
++	// Draw bartabgroups
++	drw_rect(drw, x, 0, m->ww - sw - x, bh, 1, 1);
+ 	if ((w = m->ww - sw - x) > bh) {
 -		if (m->sel) {
 -			drw_setscheme(drw, scheme[m == selmon ? SchemeSel : SchemeNorm]);
 -			drw_text(drw, x, 0, w, bh, lrpad / 2, m->sel->name, 0);
@@ -103,142 +183,13 @@ index 4465af1..f0fb39e 100644
 -		} else {
 -			drw_setscheme(drw, scheme[SchemeNorm]);
 -			drw_rect(drw, x, 0, w, bh, 1, 1);
--		}
--	}
-+	drawbartabgroups(m, x, sw);
++		bartabcalculate(m, x, sw, -1, bartabdraw);
++		if (BARTAB_BOTTOMBORDER) {
++			drw_setscheme(drw, scheme[SchemeTabActive]);
++			drw_rect(drw, 0, bh - 1, m->ww, 1, 1, 0);
+ 		}
+ 	}
  	drw_map(drw, m->barwin, 0, 0, m->ww, bh);
- }
- 
-@@ -751,6 +754,129 @@ drawbars(void)
- 		drawbar(m);
- }
- 
-+void drawbartabgroups(Monitor *m, int x, int sw) {
-+	Client *c;
-+	TabGroup *tg_head = NULL, *tg, *tg2;
-+	int tabcolor, tabwidth, tabx, tabgroupwidth;
-+
-+	// Calculate
-+	if (NULL != m->lt[m->sellt]->arrange) {
-+		for (c = m->clients; c; c = c->next) {
-+			if (ISVISIBLE(c) && !c->isfloating) {
-+				for (tg = tg_head; tg && tg->x != c->x - m->mx && tg->next; tg = tg->next);
-+				if (!tg || (tg && tg->x != c->x - m->mx)) {
-+					tg2 = calloc(1, sizeof(TabGroup));
-+					tg2->start = tg2->end = tg2->x = c->x - m->mx;
-+					tg2->end += c->w;
-+					if (tg) { tg->next = tg2; } else { tg_head = tg2; }
-+				}
-+			}
-+		}
-+	}
-+	if (!tg_head) {
-+		tg_head = calloc(1, sizeof(TabGroup));
-+		tg_head->end = m->ww;
-+	}
-+	for (c = m->clients; c; c = c->next) {
-+		if (!ISVISIBLE(c) || (c->isfloating && tg_head->next != NULL)) continue;
-+		for (tg = tg_head; tg && tg->x != c->x - m->mx && tg->next; tg = tg->next);
-+		if (m->sel == c) { tg->active = True; }
-+		tg->n++;
-+	}
-+	for (tg = tg_head; tg; tg = tg->next) {
-+		if ((m->mx + m->ww) - tg->end < BARTABGROUPS_FUZZPX) {
-+			tg->end = m->mx + m->ww;
-+		} else {
-+			for (tg2 = tg_head; tg2; tg2 = tg2->next) {
-+				if (tg != tg2 && abs(tg->end - tg2->start) < BARTABGROUPS_FUZZPX) {
-+				  tg->end = (tg->end + tg2->start) / 2.0;
-+				  tg2->start = tg->end;
-+				}
-+			}
-+		}
-+	}
-+
-+	// Draw
-+	drw_setscheme(drw, scheme[SchemeNorm]);
-+	drw_rect(drw, x, 0, m->ww - sw - x, bh, 1, 1);
-+	for (c = m->clients; c; c = c->next) {
-+		if (!ISVISIBLE(c) || (c->isfloating && tg_head->next != NULL)) continue;
-+		for (tg = tg_head; tg && tg->x != c->x - m->mx && tg->next; tg = tg->next);
-+		tabgroupwidth = (MIN(tg->end, m->ww - sw) - MAX(x, tg->start));
-+		tabwidth = (tabgroupwidth / tg->n);
-+		tabx = MAX(x, tg->start) + (tabwidth * tg->i);
-+		tabwidth += (tg->n == tg->i + 1 ?  tabgroupwidth % tg->n : 0);
-+		drawbartab(m, c, tabx, tabwidth, tg->active);
-+		drawbartaboptionals(m, c, tabx, tabwidth, tg->active);
-+		tg->i++;
-+	}
-+	if (BARTABGROUPS_BOTTOMBORDER) {
-+		drw_setscheme(drw, scheme[SchemeNorm]);
-+		drw_rect(drw, x, bh - 1, m->ww - sw - x + 1, 1, 1, 1);
-+	}
-+
-+	while (tg_head != NULL) { tg = tg_head; tg_head = tg_head->next; free(tg); }
-+}
-+
-+
-+void drawbartab(Monitor *m, Client *c, int x, int w, int tabgroup_active) {
-+	if (!c) return;
-+	drw_setscheme(drw, scheme[
-+		m->sel == c ?
-+		SchemeSel : (tabgroup_active ? SchemeTabActiveGroup : SchemeTabInactive)
-+	]);
-+	drw_text(drw, x, 0, w, bh, lrpad / 2, c->name, 0);
-+}
-+
-+void drawbartaboptionals(Monitor *m, Client *c, int x, int w, int tabgroup_active) {
-+	int i, draw_grid, nclienttags, nviewtags;
-+
-+	if (!c) return;
-+
-+	// Box indicator for floating window flag
-+	if (BARTABGROUPS_FLOATINDICATOR && c->isfloating) {
-+		drw_rect(drw, x + BARTABGROUPS_INDICATORSPADPX,
-+			2, BARTABGROUPS_FLOATPX, BARTABGROUPS_FLOATPX, 0, 0);
-+	}
-+
-+	// Tag Grid indicators
-+	draw_grid = BARTABGROUPS_TAGSINDICATOR;
-+	if (BARTABGROUPS_TAGSINDICATOR == 1) {
-+		nclienttags = 0;
-+		nviewtags = 0;
-+		for (i = 0; i < LENGTH(tags); i++) {
-+			if ((m->tagset[m->seltags] >> i) & 1) { nviewtags++; }
-+			if ((c->tags >> i) & 1) { nclienttags++; }
-+		}
-+		draw_grid = nclienttags > 1 || nviewtags > 1;
-+	}
-+	if (draw_grid) {
-+		for (i = 0; i < LENGTH(tags); i++) {
-+			drw_rect(drw, (
-+					x + w
-+					- BARTABGROUPS_INDICATORSPADPX
-+					- ((LENGTH(tags) / BARTABGROUPS_TAGSROWS) * BARTABGROUPS_TAGSPX)
-+					- (i % (LENGTH(tags)/BARTABGROUPS_TAGSROWS))
-+					+ ((i % (LENGTH(tags) / BARTABGROUPS_TAGSROWS)) * BARTABGROUPS_TAGSPX)
-+				),
-+				(
-+					BARTABGROUPS_INDICATORSPADPX
-+					+ ((i / (LENGTH(tags)/BARTABGROUPS_TAGSROWS)) * BARTABGROUPS_TAGSPX)
-+					- ((i / (LENGTH(tags)/BARTABGROUPS_TAGSROWS)))
-+				),
-+				BARTABGROUPS_TAGSPX, BARTABGROUPS_TAGSPX, (c->tags >> i) & 1, 0
-+			);
-+		}
-+	}
-+
-+	// Borders between tabs
-+	if (BARTABGROUPS_BORDERS) {
-+		XSetForeground(drw->dpy, drw->gc, drw->scheme[ColBorder].pixel);
-+		XFillRectangle(drw->dpy, drw->drawable, drw->gc, x, 0, 1, bh);
-+		XFillRectangle(drw->dpy, drw->drawable, drw->gc, x + w, 0, 1, bh);
-+	}
-+}
-+
- void
- enternotify(XEvent *e)
- {
 -- 
-2.19.2
+2.23.1
 

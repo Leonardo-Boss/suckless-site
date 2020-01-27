@@ -110,6 +110,10 @@ Video:
 > regard to suckless Unicode handling in C at the level of grapheme
 > clusters.
 
+Video:
+
+[![slcon-2019-05-laslo_hunhold-reflections_on_unicode.webm](//dl.suckless.org/slcon/2019/slcon-2019-05-laslo_hunhold-reflections_on_unicode.png)](//dl.suckless.org/slcon/2019/slcon-2019-05-laslo_hunhold-reflections_on_unicode.webm)
+
 ### (12:00-13:00) Lunch
 
 ### (13:00-16:00) Hacking and departure

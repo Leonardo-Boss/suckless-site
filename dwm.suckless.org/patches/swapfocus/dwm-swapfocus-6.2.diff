@@ -1,6 +1,6 @@
 diff -up a/config.def.h b/config.def.h
---- a/config.def.h	2019-06-26 22:55:48.406595279 +0200
-+++ b/config.def.h	2019-07-21 21:50:32.649343232 +0200
+--- a/config.def.h	2020-01-29 00:06:12.415681126 +0100
++++ b/config.def.h	2020-01-29 00:08:59.832656153 +0100
 @@ -66,6 +66,7 @@ static Key keys[] = {
  	{ MODKEY,                       XK_b,      togglebar,      {0} },
  	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
@@ -10,8 +10,8 @@ diff -up a/config.def.h b/config.def.h
  	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
  	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 diff -up a/dwm.c b/dwm.c
---- a/dwm.c	2019-06-26 22:55:48.409928612 +0200
-+++ b/dwm.c	2019-07-21 22:29:17.400607398 +0200
+--- a/dwm.c	2020-01-29 00:06:12.419014466 +0100
++++ b/dwm.c	2020-01-29 00:10:58.149498015 +0100
 @@ -111,6 +111,7 @@ typedef struct {
  	void (*arrange)(Monitor *);
  } Layout;
@@ -65,7 +65,7 @@ diff -up a/dwm.c b/dwm.c
  }
  
  void
-@@ -1653,6 +1664,28 @@ spawn(const Arg *arg)
+@@ -1653,11 +1664,34 @@ spawn(const Arg *arg)
  }
  
  void
@@ -94,7 +94,13 @@ diff -up a/dwm.c b/dwm.c
  tag(const Arg *arg)
  {
  	if (selmon->sel && arg->ui & TAGMASK) {
-@@ -1738,9 +1771,22 @@ void
+ 		selmon->sel->tags = arg->ui & TAGMASK;
+ 		focus(NULL);
++		selmon->pertag->prevclient[selmon->pertag->curtag] = nexttiled(selmon->clients);
+ 		arrange(selmon);
+ 	}
+ }
+@@ -1738,9 +1772,22 @@ void
  toggleview(const Arg *arg)
  {
  	unsigned int newtagset = selmon->tagset[selmon->seltags] ^ (arg->ui & TAGMASK);
@@ -117,7 +123,7 @@ diff -up a/dwm.c b/dwm.c
  		focus(NULL);
  		arrange(selmon);
  	}
-@@ -1751,6 +1797,7 @@ unfocus(Client *c, int setfocus)
+@@ -1751,6 +1798,7 @@ unfocus(Client *c, int setfocus)
  {
  	if (!c)
  		return;
@@ -125,7 +131,7 @@ diff -up a/dwm.c b/dwm.c
  	grabbuttons(c, 0);
  	XSetWindowBorder(dpy, c->win, scheme[SchemeNorm][ColBorder].pixel);
  	if (setfocus) {
-@@ -2035,12 +2082,30 @@ updatewmhints(Client *c)
+@@ -2035,12 +2083,30 @@ updatewmhints(Client *c)
  void
  view(const Arg *arg)
  {
@@ -157,7 +163,7 @@ diff -up a/dwm.c b/dwm.c
  	arrange(selmon);
  }
  
-@@ -2114,12 +2179,13 @@ void
+@@ -2114,12 +2180,13 @@ void
  zoom(const Arg *arg)
  {
  	Client *c = selmon->sel;

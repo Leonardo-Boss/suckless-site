@@ -56,6 +56,8 @@ Implementations
   w3m, giblib, sxiv, conky, magicpoint, scrot, libcaca, etc.)
 * [lel](http://git.2f30.org/lel) farbfeld image viewer
 * [sent](//tools.suckless.org/sent/) presentation tool
+* [ff-tools](https://github.com/sirjofri/ff-tools) image filter/generator collection
+* [ffmk](https://github.com/sirjofri/ffmk) makefile-based farbfeld mixer
 * [Go encoder/decoder](https://github.com/hullerob/go.farbfeld)
 * [resize](https://github.com/ender672/farbfeld-resize) image filter
 * [gamut](https://github.com/erik/gamut) image filter collection

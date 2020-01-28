@@ -54,7 +54,7 @@ Implementations
 ---------------
 * [imlib2](https://sourceforge.net/projects/enlightenment/files/imlib2-src/) library (implies support in feh,
   w3m, giblib, sxiv, conky, magicpoint, scrot, libcaca, etc.)
-* [lel](http://git.2f30.org/lel) farbfeld image viewer
+* [lel](https://git.codemadness.org/lel/) farbfeld image viewer
 * [sent](//tools.suckless.org/sent/) presentation tool
 * [ff-tools](https://github.com/sirjofri/ff-tools) image filter/generator collection
 * [ffmk](https://github.com/sirjofri/ffmk) makefile-based farbfeld mixer
@@ -64,6 +64,8 @@ Implementations
 * [gimp-farbfeld](https://github.com/ids1024/gimp-farbfeld) gimp plug-in
 * [farbfeld utilities](http://zzo38computer.org/fossil/farbfeld.ui/) huge collection of image filters
 * [ff2sixel](https://gitlab.com/link2xt/ff2sixel) farbfeld image viewer for SIXEL terminals
+* [xscreenshot](https://git.codemadness.org/xscreenshot/file/README.html) screen capture tool
+
 
 Author
 ------

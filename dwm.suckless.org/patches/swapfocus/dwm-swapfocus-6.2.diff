@@ -96,7 +96,7 @@ diff -up a/dwm.c b/dwm.c
  	if (selmon->sel && arg->ui & TAGMASK) {
  		selmon->sel->tags = arg->ui & TAGMASK;
  		focus(NULL);
-+		selmon->pertag->prevclient[selmon->pertag->curtag] = nexttiled(selmon->clients);
++		selmon->pertag->prevclient[selmon->pertag->curtag] = NULL;
  		arrange(selmon);
  	}
  }

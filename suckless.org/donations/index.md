@@ -19,26 +19,28 @@ We'd like to thank all people who have donated or are donating in one way or
 another to a suckless.org related project. Your generosity of time and/or money
 is appreciated by the entire suckless community.
 
-Present
--------
-Following people are currently donating in one or another way to the
-suckless.org project:
-
-* Anselm R Garbe donates domains and servers.
-
-Past
-----
 Following people have donated to the suckless.org project certain amounts of
 money, which have been used for the dedicated server rent in the past:
 
+* Benedikt Brenner donated **375 EUR**
+* nxt donated **15 EUR**
+* Елена Филатова donated **10 EUR**
+* Anonymous donated **20.10 EUR**
+* Silvan Jegen donated **275 EUR**
+* Olivier Warin donated **110 EUR**
+* Andrew Mass donated **50 USD**
+* Łukasz Gruner donated **22.37 EUR**
+* Merlin Göttlinger donated **10 EUR**
+* Grant Ford donated **15 EUR**
+* Yoann le Touche donated **45 EUR**
+* Andreas Scharf donated **10 EUR**
+* Moritz Buhl donated **41 EUR**
+* Marc Chantreux **10 EUR**
 * Carsten Arzig donated **27.40 EUR**
-* Moritz Buhl donated **26 EUR**
 * Sebastian Rassel donated **0.05 EUR**
-* Benedikt Brenner donated **275 EUR**
 * Kuroljov Viktor donated **20 EUR**
 * Fabian Kirsch donated **11 EUR**
 * Matteo Durante donated **100 EUR**
-* Yoann le Touche donated **5 EUR**
 * Andrii Savchenko donated **20.19 AUD**
 * Christian Jost donated **10 EUR**
 * Christoph Bischko donated **50 EUR**
@@ -50,9 +52,7 @@ money, which have been used for the dedicated server rent in the past:
 * Jay Scott donated **15 EUR**
 * Patrick Wildt donated **10.02 EUR**
 * Tobias Heider donated **0.01 EUR**
-* Silvan Jegen donated **225 EUR**
 * Alexander Bluhm donated **3.01 EUR**
-* Anonymous donated **0.10 EUR**
 * Christoph Moder donated **1 EUR**
 * Daniel Loebenberger donated **5 EUR**
 * Martin Sander donated **4 EUR**
@@ -60,7 +60,6 @@ money, which have been used for the dedicated server rent in the past:
 * Aaron Kirkman donated **19.47 EUR**
 * Jeff Carr donated **500 EUR**
 * Ville Johan Witt donated **1024 DKK**
-* Anonymous donated **10 EUR**
 * Lars Petter Mathiassen donated **1,000.00 EUR**
 * Mattias Andrée donated **50 EUR**
 * John Jago donated **18.08 EUR**

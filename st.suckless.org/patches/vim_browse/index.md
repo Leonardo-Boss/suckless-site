@@ -25,6 +25,9 @@ The default behavior listed below can be adapted:
 * Jump to the cursor position prior to entering Vim Browse Mode: `G`
 * Repeat last command string: `.`
 * in Visual Mode `v`: use `t` to toggle block selection mode
+* Commands like `yiw` and `ya{` are implemented.
+* `<Ctrl>f`(one page 'down')  `<Ctrl>b` (one page up) `<Ctrl>u`, `<Ctrl>d` for half page up/down.
+* `.` (repeat) last set of motions, and `c` to clear the last motion.
 
 **Custom Commands**:
 Custom arrangements of the aforementioned commands can be defined in the configuration file:
@@ -92,12 +95,13 @@ Download
 --------
 
 **All versions (from old to new) **:
+Based on commmit `2b8333f` of `st`.
 * [st-vimBrowse-20191107-2b8333f.diff (attached)](st-vimBrowse-20191107-2b8333f.diff)
 * [st-vimBrowse-20191203-2b8333f.diff (attached)](st-vimBrowse-20191203-2b8333f.diff)
-* [st-vimBrowse-20191203-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-vimBrowse-20191203-2b8333f.diff)
+* [st-vimBrowse-20200212-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-vimBrowse-20200212-2b8333f.diff)
 
 **Most Recent**:
-* [st-vimBrowse-20191203-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-vimBrowse-20191203-2b8333f.diff)
+* [st-vimBrowse-20200212-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-vimBrowse-20200212-2b8333f.diff)
 
 
 Authors of the [Scrollback patch](https://st.suckless.org/patches/scrollback/)

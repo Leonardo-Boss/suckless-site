@@ -102,10 +102,10 @@ most recent version of the patch to other commits of `st` are listed below.
 **All versions based on `2b8333f` (from old to new)**:
 * [st-vimBrowse-20191107-2b8333f.diff (attached)](st-vimBrowse-20191107-2b8333f.diff)
 * [st-vimBrowse-20191203-2b8333f.diff (attached)](st-vimBrowse-20191203-2b8333f.diff)
-* [st-vimBrowse-20200212-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-vimBrowse-20200212-2b8333f.diff)
+* [st-vimBrowse-20200212-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV3/st-vimBrowse-20200212-2b8333f.diff)
 
 **Most Recent based on `2b8333f`**:
-* [st-vimBrowse-20200212-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-vimBrowse-20200212-2b8333f.diff)
+* [st-vimBrowse-20200212-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV3/st-vimBrowse-20200212-2b8333f.diff)
 
 ### Patch based on `26cdfeb` (02-2020)
 While porting to the current version is straight-forward, one vital change is overridden when
@@ -113,10 +113,10 @@ operating e.g. with the current head of master (`26cdfeb`, 02-2020).
 
 **All versions based on `26cdfeb` (from old to new) **:
 * [st-vimBrowse-20200212-26cdfeb.diff (attached)](st-vimBrowse-20200212-26cdfeb.diff)
-* [st-vimBrowse-20200212-26cdfeb.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-vimBrowse-20200212-26cdfeb.diff)
+* [st-vimBrowse-20200212-26cdfeb.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV3/st-vimBrowse-20200212-26cdfeb.diff)
 
 **Most Recent based on `26cdfeb` **:
-* [st-vimBrowse-20200212-26cdfeb.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-vimBrowse-20200212-26cdfeb.diff)
+* [st-vimBrowse-20200212-26cdfeb.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV3/st-vimBrowse-20200212-26cdfeb.diff)
 
 Authors of the [Scrollback patch](https://st.suckless.org/patches/scrollback/)
 ------------------------------------------------------------------------------

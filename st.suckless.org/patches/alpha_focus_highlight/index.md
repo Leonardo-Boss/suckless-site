@@ -43,14 +43,14 @@ Download
 **All versions (from old to new)**:
 Based on commit `2b8333f` of `st`.
 * [Version 1.0 (attached)](st-alphafocushighlight-20191107-2b8333f.diff)
-* [Version 1.0 (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-alphaFocusHighlight-20191107-2b8333f.diff)
+* [Version 1.0 (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV3/st-alphaFocusHighlight-20191107-2b8333f.diff)
 * [Version1.1 (attached)](st-alphaFocusHighlight-20191218-2b8333f.diff)
-* [Version1.1 (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-alphaFocusHighlight-20191218-2b8333f.diff)
+* [Version1.1 (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV3/st-alphaFocusHighlight-20191218-2b8333f.diff)
 * [Version1.2 (attached)](st-alphaFocusHighlight-20200212-2b8333f.diff)
-* [Version1.2 (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-alphaFocusHighlight-20200212-2b8333f.diff)
+* [Version1.2 (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV3/st-alphaFocusHighlight-20200212-2b8333f.diff)
 
 **Most Recent**:
-* [st-alphaFocusHighlight-20200212-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV1/st-alphaFocusHighlight-20200212-2b8333f.diff)
+* [st-alphaFocusHighlight-20200212-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV3/st-alphaFocusHighlight-20200212-2b8333f.diff)
 
 
 Authors of the Alpha Patch

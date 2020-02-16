@@ -40,8 +40,9 @@ Notes
 
 Download
 -----------------------------------
-**All versions (from old to new)**:
-Based on commit `2b8333f` of `st`.
+
+## Based on commit `2b8333f` of `st` (Okt 2019).
+*All versions (from old to new)*:
 * [Version 1.0 (attached)](st-alphafocushighlight-20191107-2b8333f.diff)
 * [Version 1.0 (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV3/st-alphaFocusHighlight-20191107-2b8333f.diff)
 * [Version1.1 (attached)](st-alphaFocusHighlight-20191218-2b8333f.diff)
@@ -49,9 +50,18 @@ Based on commit `2b8333f` of `st`.
 * [Version1.2 (attached)](st-alphaFocusHighlight-20200212-2b8333f.diff)
 * [Version1.2 (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV3/st-alphaFocusHighlight-20200212-2b8333f.diff)
 
-**Most Recent**:
+*Most Recent*:
 * [st-alphaFocusHighlight-20200212-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV3/st-alphaFocusHighlight-20200212-2b8333f.diff)
 
+## Based on commit `cd78575` of `st` (February 2020).
+*All versions (from old to new)*:
+* [Version 1.2 (attached)](st-alphaFocusHighlight-20200216-26cdfeb.diff)
+
+*Most Recent*:
+* [st-alphaFocusHighlight-20200216-26cdfeb.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV3/st-alphaFocusHighlight-20200216-26cdfeb.diff)
+
+Note that patch errors can occur when the code in the st repo is updated. Please report [an
+Issue](https://github.com/juliusHuelsmann/st/issues) or contribute a merged patch in that case.
 
 Authors of the Alpha Patch
 --------------------------

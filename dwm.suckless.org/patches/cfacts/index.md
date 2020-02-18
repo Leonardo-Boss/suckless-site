@@ -43,6 +43,7 @@ Default key bindings
 Download
 --------
 * [dwm-cfacts-6.1.diff](dwm-cfacts-6.1.diff)
+* [dwm-cfacts-6.2.diff](dwm-cfacts-6.2.diff)
 
 Additional layouts with cfact support
 -------------------------------------
@@ -55,3 +56,4 @@ Author
 ------
 * Patrick Steinhardt (pks) <ps@pks.im>
 * Aaron Duxler <aaron@duxler.xyz> - Additional layouts bottomstack + centeredmaster
+* mss <mss@waifu.club> - dwm-6.2 port. 

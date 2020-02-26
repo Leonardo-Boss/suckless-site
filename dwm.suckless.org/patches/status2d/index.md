@@ -20,17 +20,20 @@ Usage
 
 * ^c#FF0000^: set foreground color.
 
-* ^f11^: forward the x draawing cursor, only needed for drawings, not text.
+* ^b#55cdfc^: set background color, only applies to text, use the ^r^ command to add backgrounds to your drawings
 
-* ^d^: reset foreground color to SchemeNorm.
+* ^f11^: forward the x drawing cursor, only needed for drawings, not text.
+
+* ^d^: reset colors to SchemeNorm.
 
 Example
 -------
-xsetroot -name "dwmstatus ^c#FF0000^ in red with red rectangle
-^r0,0,10,10^^f10^^c#FFFFFF^ and white text"
+xsetroot -name "[status2d] ^c#FF0000^red text with blue
+rectangle^c#55cdfc^^r3,3,14,14^^f20^^c#FFFFFF^^b#f7a8b8^
+and white text on pink background "
 
 Authors
 -------
 * [sipi](https://github.com/sipi)
-* lhark - <lhark@ntymail.com> (6.2 port)
+* lhark - <lhark@ntymail.com> (6.2 port, ^b^ command)
 

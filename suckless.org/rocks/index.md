@@ -19,6 +19,9 @@ because it makes them legally compatible with other suckless projects.
 ### Compilers
 
 * [tcc](https://bellard.org/tcc/) - Tiny C Compiler [git repo](http://repo.or.cz/w/tinycc.git)
+* [scc](https://www.simple-cc.org/) - Simple C Compiler (WIP)
+* [qbe](https://c9x.me/compile/) - Compiler backend targetting x64
+* [cproc](https://git.sr.ht/~mcf/cproc) - Frontend for C11 for QBE.
 
 ### Compression
 

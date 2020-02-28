@@ -18,10 +18,10 @@ because it makes them legally compatible with other suckless projects.
 
 ### Compilers
 
+* [cproc](https://git.sr.ht/~mcf/cproc) - frontend for C11 for QBE.
+* [qbe](https://c9x.me/compile/) - compiler backend targetting x64.
+* [scc](https://www.simple-cc.org/) - Simple C Compiler.
 * [tcc](https://bellard.org/tcc/) - Tiny C Compiler [git repo](http://repo.or.cz/w/tinycc.git)
-* [scc](https://www.simple-cc.org/) - Simple C Compiler (WIP)
-* [qbe](https://c9x.me/compile/) - Compiler backend targetting x64
-* [cproc](https://git.sr.ht/~mcf/cproc) - Frontend for C11 for QBE.
 
 ### Compression
 
@@ -31,7 +31,6 @@ because it makes them legally compatible with other suckless projects.
 * [miniz](https://github.com/richgel999/miniz) - single C-file reimplementation of zlib (MIT License).
 * [xz embedded](https://tukaani.org/xz/embedded.html) - lightweight decompressor for the xz LZMA compressor (public domain).
 * [zlib](http://zlib.net/) - the "standard" compression/decompression library, quite small, used in many applications ([zlib license](http://zlib.net/zlib_license.html)).
-
 
 ### Cryptography
 
@@ -88,8 +87,8 @@ This covers most console-based programs and programs from
 
 * [lf](https://github.com/gokcehan/lf) - ranger-like file manager written in Go (WIP but usable).
 * [mc](https://midnight-commander.org/) - Midnight Commander is a free cross-platform orthodox file manager.
-* [noice](https://git.2f30.org/noice/) - Small and portable file browser.
 * [nnn](https://github.com/jarun/nnn) - Noice is Not Noice, a fork of noice with more features.
+* [noice](https://git.2f30.org/noice/) - Small and portable file browser.
 * [ranger](https://ranger.github.io/) - ranger is a file manager with vi key bindings written in python but with an interface that rocks.
 * [rover](https://lecram.github.io/p/rover/) - Simple file browser for the terminal.
 
@@ -107,11 +106,11 @@ This covers most console-based programs and programs from
 
 * [hii](https://github.com/nmeum/hii) - A file-based IRC client, inspired by ii, with a focus on easing [frontend development](https://github.com/nmeum/insomnia)
 * [ii](//tools.suckless.org/ii/) - A FIFO based IRC client which is part of the suckless.org project.
-* [jj](https://github.com/aaronNGi/jj) - A rework of ii that offloads all the IRC protocol parsing to an awk script, permitting triggers.
 * [irc.c from mpu](https://c9x.me/irc/) - A minimal curses IRC client.
 * [Irc](https://swtch.com/irc/) - IRC client for ACME.
 * [ircrc](http://plan9.bell-labs.com/sources/contrib/fgb/rc/ircrc) - An rc-based IRC client similar to ircc. Needs minor modification to run on UNIX.
 * [irssi](https://irssi.org/) - Text-mode IRC client.
+* [jj](https://github.com/aaronNGi/jj) - A rework of ii that offloads all the IRC protocol parsing to an awk script, permitting triggers.
 * [quIRC](https://github.com/ec429/quIRC) - a lightweight console IRC client.
 * [sic](//tools.suckless.org/sic/) - Another suckless.org IRC client. Similar to ircc.
 
@@ -157,8 +156,8 @@ This covers most console-based programs and programs from
 ### Password managers
 
 * [pass](https://www.passwordstore.org/) - "The standard UNIX password manager".
-* [tpm](https://github.com/nmeum/tpm/) - Tiny password manager.
 * [spm](https://notabug.org/kl3/spm/) - Simple password manager (actively maintained fork of nmeum's tpm).
+* [tpm](https://github.com/nmeum/tpm/) - Tiny password manager.
 
 ### PDF viewers
 
@@ -238,11 +237,11 @@ This section is dedicated to daemons that are related to the UNIX philosophy.
 ### Web Servers
 
 * [darkhttpd](https://unix4lyfe.org/darkhttpd/) - Darkhttpd is a simple, fast HTTP 1.1 web server for static content.
+* [merecat](https://github.com/troglobit/merecat/) - thttpd with vhost support.
 * [mini_httpd](http://acme.com/software/mini_httpd/) - By the thttpd developers.  Even smaller subset of thttpd with support for .htpasswd, CGI, dirlisting, HTTP errors and SSL, nothing more or less than that.
 * [OpenBSD httpd/relayd](https://bsd.plumbing/) - Designed to combat the feature creep of modern webservers. Boasts concise configuration, with sane defaults.
 * [quark](//tools.suckless.org/quark/) - suckless simple static web server.
 * [thttpd](http://acme.com/software/thttpd/) - Outperforms many bigger httpds. Old, still works very well!
-* [merecat](https://github.com/troglobit/merecat/) - thttpd with vhost support.
 
 ### Gopher servers
 

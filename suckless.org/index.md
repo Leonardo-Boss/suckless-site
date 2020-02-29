@@ -7,6 +7,8 @@ list](/community).
 News
 ====
 
+[Atom feed](//suckless.org/atom.xml)
+
 2019-12-01
 ----------
 On Wednesday, 2019-12-04 there will be scheduled maintenance of the suckless

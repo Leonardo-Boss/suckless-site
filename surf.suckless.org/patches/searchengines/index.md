@@ -8,8 +8,8 @@ This patch allows the simple use of search engines. Put something
 like this in your `config.h`:
 
 	static SearchEngine searchengines[] = {
-		{ "g",   "https://www.google.de/search?q=%s"   },
-		{ "leo", "https://dict.leo.org/ende?search=%s" },
+		{ "g",   "http://www.google.de/search?q=%s"   },
+		{ "leo", "http://dict.leo.org/ende?search=%s" },
 	};
 
 Then you can access each search engine by putting its prefix in front of your 

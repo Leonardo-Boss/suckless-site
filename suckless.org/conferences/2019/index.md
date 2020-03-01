@@ -52,7 +52,7 @@ Saturday, 2019-10-05
 > epigones fail systematically.
 > 
 > [1]: https://www.theatlantic.com/technology/archive/2018/01/the-shallowness-of-google-translate/551570/ https://www.youtube.com/watch?v=2xnr-ST6ITo&t=294s
-> [2]: https://www.youtube.com/watch?v=rThQedY-H4Q https://sylvester.bth.rwth-aachen.de/dissertationen/2003/059/03_059.pdf
+> [2]: https://www.youtube.com/watch?v=rThQedY-H4Q http://sylvester.bth.rwth-aachen.de/dissertationen/2003/059/03_059.pdf
 > [3]: Nichols, E., Matsumoto, Y. 2007. Acme as an Interactive Translation Environment. in: Proceedings of the Second International Workshop on Plan 9, pp. 35–45, Murray Hill, USA, December 3-4, 2007
 > 
 > Video:

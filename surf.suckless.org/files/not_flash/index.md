@@ -4,7 +4,7 @@ Watch flash videos with mpv
 Description
 -----------
 
-Save this script as ~/bin/yt and adjust it to your needs. (Requires [youtube-dl](https://rg3.github.io/youtube-dl/))
+Save this script as ~/bin/yt and adjust it to your needs. (Requires [youtube-dl](http://rg3.github.io/youtube-dl/))
 
 
 	#!/bin/sh

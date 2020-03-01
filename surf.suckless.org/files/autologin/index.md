@@ -15,10 +15,10 @@ remove your passwords from the script!!!__
 			-d "session[password]=$pass" \
 			-d "remember_me=1" \
 			-d "commit=Sign In" \
-			https://twitter.com/sessions > /dev/null
+			http://twitter.com/sessions > /dev/null
 		curl --cookie ~/.surf/cookies.txt --cookie-jar ~/.surf/cookies.txt \
-			https://twitter.com/ > /dev/null
-		surf https://mobile.twitter.com
+			http://twitter.com/ > /dev/null
+		surf http://mobile.twitter.com
 
 
 Author

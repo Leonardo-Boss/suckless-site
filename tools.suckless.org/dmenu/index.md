@@ -19,7 +19,7 @@ Mailing list
 
 Development
 -----------
-You can [browse](//git.suckless.org/dmenu/) its source code repository or get a
+You can [browse](//git.suckless.org/dmenu) its source code repository or get a
 copy using git with the following command:
 
 	git clone https://git.suckless.org/dmenu

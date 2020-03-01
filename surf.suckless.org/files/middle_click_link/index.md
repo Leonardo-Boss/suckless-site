@@ -29,5 +29,5 @@ Author
 * Original author n30n , actual revision chm.duquesne.
 
 The last version of this script is
-[here](https://www.uzbl.org/wiki/middle_click_links)
-under a [CC Attribution-Noncommercial-Share Alike 3.0 Unported license](https://creativecommons.org/licenses/by-nc-sa/3.0/).
+[here](http://www.uzbl.org/wiki/middle_click_links)
+under a [CC Attribution-Noncommercial-Share Alike 3.0 Unported license](http://creativecommons.org/licenses/by-nc-sa/3.0/).

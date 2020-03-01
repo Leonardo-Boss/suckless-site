@@ -12,8 +12,8 @@ because it makes them legally compatible with other suckless projects.
 
 ### Libc Implementations
 
-* [musl](https://www.musl-libc.org/) - standard C library that attempts to be even smaller than uClibc.
-  See also: [embedded libc comparison](https://www.etalabs.net/compare_libcs.html)
+* [musl](http://www.musl-libc.org/) - standard C library that attempts to be even smaller than uClibc.
+  See also: [embedded libc comparison](http://www.etalabs.net/compare_libcs.html)
 * [uClibc](https://uclibc.org/) - strives to be a minimalist C library suitable for embedded computing.
 
 ### Compilers
@@ -21,16 +21,16 @@ because it makes them legally compatible with other suckless projects.
 * [cproc](https://git.sr.ht/~mcf/cproc) - frontend for C11 for QBE.
 * [qbe](https://c9x.me/compile/) - compiler backend targetting x64.
 * [scc](https://www.simple-cc.org/) - Simple C Compiler.
-* [tcc](https://bellard.org/tcc/) - Tiny C Compiler [git repo](https://repo.or.cz/w/tinycc.git)
+* [tcc](https://bellard.org/tcc/) - Tiny C Compiler [git repo](http://repo.or.cz/w/tinycc.git)
 
 ### Compression
 
-* [liblzf](https://oldhome.schmorp.de/marc/liblzf.html) - very fast, legally unencumbered compression library.
-* [libz](http://sortix.org/libz/) - ABI and API compatible zlib fork with focus on correctness, proper portability, auditability, simplification and opportunities to optimize ([zlib license](https://zlib.net/zlib_license.html)).
-* [Lzip](http://lzip.nongnu.org/) - Properly designed data compressor outperforming gzip and bzip2 (GPLv2+).
+* [liblzf](http://oldhome.schmorp.de/marc/liblzf.html) - very fast, legally unencumbered compression library.
+* [libz](https://sortix.org/libz/) - ABI and API compatible zlib fork with focus on correctness, proper portability, auditability, simplification and opportunities to optimize ([zlib license](http://zlib.net/zlib_license.html)).
+* [Lzip](http://lzip.nongnu.org) - Properly designed data compressor outperforming gzip and bzip2 (GPLv2+).
 * [miniz](https://github.com/richgel999/miniz) - single C-file reimplementation of zlib (MIT License).
 * [xz embedded](https://tukaani.org/xz/embedded.html) - lightweight decompressor for the xz LZMA compressor (public domain).
-* [zlib](https://zlib.net/) - the "standard" compression/decompression library, quite small, used in many applications ([zlib license](https://zlib.net/zlib_license.html)).
+* [zlib](http://zlib.net/) - the "standard" compression/decompression library, quite small, used in many applications ([zlib license](http://zlib.net/zlib_license.html)).
 
 ### Cryptography
 
@@ -39,10 +39,10 @@ because it makes them legally compatible with other suckless projects.
 ### Miscellaneous
 
 * [baresip](https://github.com/alfredh/baresip) - barebone SIP stack (BSD licence).
-* [ccv](https://libccv.org/) - C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library.
-* [libev](https://software.schmorp.de/pkg/libev.html) - high performance event-loop modelled after libevent but much smaller (dual licensed under 2-clause BSD and GPL).
-* [mandoc](https://mandoc.bsd.lv/) - The mandoc UNIX manpage compiler toolset.
-* [pjsip](https://www.pjsip.org/) - open-source SIP stack (GPL).
+* [ccv](http://libccv.org/) - C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library.
+* [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modelled after libevent but much smaller (dual licensed under 2-clause BSD and GPL).
+* [mandoc](http://mandoc.bsd.lv/) - The mandoc UNIX manpage compiler toolset.
+* [pjsip](http://www.pjsip.org/) - open-source SIP stack (GPL).
 * [raycastlib](https://gitlab.com/drummyfish/raycastlib) - Single-header public domain C raycasting renderer with no dependencies, using only integer math.
 * [sdhcp](https://git.2f30.org/sdhcp/) - IPv4 DHCP client.
 * [small3dlib](https://gitlab.com/drummyfish/small3dlib) - Single-header public domain C software 3D renderer with no dependencies, using only integer math.
@@ -50,7 +50,7 @@ because it makes them legally compatible with other suckless projects.
 
 ### Distros
 
-* [bare](https://web.archive.org/web/20171022112729/https://git.uggedal.com/unmaintained/bare/) - A simple distro using suckless software.
+* [bare](https://git.uggedal.com/unmaintained/bare/) - A simple distro using suckless software.
 * [morpheus](https://morpheus.2f30.org) - A statically linked musl-based Linux distro. Unmaintained currently.
 
 Programs
@@ -70,8 +70,8 @@ This covers most console-based programs and programs from
 * [C* Music Player](https://cmus.github.io/) - aka cmus, a ncurses music player that can be controlled with an UNIX socket.
 * [moc](https://moc.daper.net/) - console audio player for Linux/UNIX.
 * [mpd](https://www.musicpd.org/) - A client/server based music player with console and graphical front-ends.
-* [mpg123](https://www.mpg123.de/) - A console MPG player which doesn't use auto*hell or extra libraries.
-* [mpg321](https://mpg321.sourceforge.net) - A command-line MP3 player.
+* [mpg123](http://www.mpg123.de/) - A console MPG player which doesn't use auto*hell or extra libraries.
+* [mpg321](http://mpg321.sourceforge.net) - A command-line MP3 player.
 * [vorbis-tools](https://www.xiph.org/) (Ogg/FLAC) - Command-line tools to play Ogg and FLAC files.
 
 ### BitTorrent clients
@@ -82,7 +82,7 @@ This covers most console-based programs and programs from
 
 * [sfeed](https://git.codemadness.org/sfeed/) - RSS and Atom parser + CLI programs.
 * [snownews](https://github.com/kouya/snownews/) - Text mode RSS newsreader for Linux and Unix.
-* [zs](https://r-36.net/scm/zs/) - Zeitungsschau RSS to email converter.
+* [zs](http://r-36.net/scm/zs/) - Zeitungsschau RSS to email converter.
 
 ### File managers
 
@@ -100,7 +100,7 @@ This covers most console-based programs and programs from
 
 ### Gopher clients
 
-* [Lynx](https://lynx.invisible-island.net/) - text-mode web browser, supports the Gopher protocol.
+* [Lynx](http://lynx.invisible-island.net/) - text-mode web browser, supports the Gopher protocol.
 * [sacc](gopher://bitreich.org/1/releases/sacc) - terminal gopher client by [quinq](//suckless.org/people/quinq/).
 
 ### IRC clients
@@ -122,17 +122,17 @@ This covers most console-based programs and programs from
 * [jpg/gif/bmp/png](https://9fans.github.io/plan9port/) - Simple programs from Plan 9 to display images in no-frills windows. Included with [plan9port](https://9fans.github.io/plan9port/).
 * [meh](https://www.johnhawthorn.com/meh/) - image viewer using raw XLib, libjpeg, libpng and libgif.
 * [page](https://9fans.github.io/plan9port/man/man1/page.html) - Plan 9's image/document viewer program. Included with [plan9port](https://9fans.github.io/plan9port/).
-* [qiv](https://spiegl.de/qiv/) - Quick Image Viewer.
+* [qiv](http://spiegl.de/qiv/) - Quick Image Viewer.
 * [sxiv](https://github.com/muennich/sxiv) - Simple (or small or suckless) X Image Viewer. Depends on xlib and imlib2.
 * [xli](http://web.aanet.com.au/gwg/xli.html)
-* [xzgv](https://sourceforge.net/projects/xzgv/)
+* [xzgv](http://sourceforge.net/projects/xzgv/)
 
 ### Instant-Messaging clients
 
 * [bitlbee](https://www.bitlbee.org/main.php/news.r.html) - A program to translate IM protocols to IRC.
-* [CenterIM](https://www.centerim.org/index.php/Main_Page) - A centericq fork.
-* [irssi-xmpp](https://github.com/cdidier/irssi-xmpp) - An irssi plugin to connect to the Jabber network.
-* [mcabber](https://mcabber.com/) - A console jabber client.
+* [CenterIM](http://www.centerim.org/index.php/Main_Page) - A centericq fork.
+* [irssi-xmpp](http://cybione.org/~irssi-xmpp/) - An irssi plugin to connect to the Jabber network.
+* [mcabber](http://mcabber.com/) - A console jabber client.
 * [ysm](http://ysmv7.sourceforge.net/) - A console-based ICQ client.
 
 ### Mail clients
@@ -140,18 +140,18 @@ This covers most console-based programs and programs from
 * [fdm](https://github.com/nicm/fdm) - fetch and deliver mail.
 * [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
 * [isync](http://isync.sourceforge.net/) - MDA that can work better for IMAP, also known as mbsync.
-* [mblaze](https://github.com/leahneukirchen/mblaze) - UNIX utilities to deal with Maildir.
-* [mmh](https://marmaro.de/prog/mmh/) - Meillo's mail handler (mmh), a fork of nmh.
-* [mpop](https://marlam.de/mpop/) - a POP3 mail client. It is much [faster and simpler than fetchmail](https://marlam.de/mpop/documentation/).
-* [mutt](https://www.mutt.org/) - A ncurses mail client for fetching, reading and sending email.
-* [nmh](https://www.nongnu.org/nmh/) - Message Handling System.
+* [mblaze](https://github.com/chneukirchen/mblaze) - UNIX utilities to deal with Maildir.
+* [mmh](http://marmaro.de/prog/mmh/) - Meillo's mail handler (mmh), a fork of nmh.
+* [mpop](https://marlam.de/mpop/) - a POP3 mail client. It is much [faster and simpler than fetchmail](https://marlam.de/mpop/documentation).
+* [mutt](http://www.mutt.org/) - A ncurses mail client for fetching, reading and sending email.
+* [nmh](http://www.nongnu.org/nmh/) - Message Handling System.
 * [plan9port/Mail](https://9fans.github.io/usr/local/plan9/mail/) - A mail client for acme. Included with [plan9port](https://9fans.github.io/plan9port/).
 * [s-nail](https://www.sdaoden.eu/code.html) - An improved heirloom-mailx.
 
 ### Media players
 
 * [ffplay](https://www.ffmpeg.org/ffplay.html) - FFplay is a very simple and portable media player. It came with ffmpeg which depends on mplayer.
-* [mplayer](https://www.mplayerhq.hu/design7/news.html)
+* [mplayer](http://www.mplayerhq.hu/design7/news.html)
 * [mpv](https://mpv.io/) - a free, open-source and cross-platform media player.
 
 ### Password managers
@@ -173,18 +173,18 @@ This covers most console-based programs and programs from
 
 ### Text editors
 
-* [acme](https://acme.cat-v.org) - Rob Pike's framing text editor for Plan 9. Included in [plan9port](https://9fans.github.io/plan9port/).
+* [acme](http://acme.cat-v.org) - Rob Pike's framing text editor for Plan 9. Included in [plan9port](https://9fans.github.io/plan9port/).
 * [ed](https://9fans.github.io/plan9port/man/man1/ed.html) - [ED IS THE STANDARD TEXT EDITOR!](https://www.gnu.org/fun/jokes/ed-msg.html)
-* [ired](https://www.radare.org/r/) - A minimalist hexadecimal editor and bindiffer for p9, w32 and *nix.
+* [ired](http://www.radare.org/r/) - A minimalist hexadecimal editor and bindiffer for p9, w32 and *nix.
 * [mg](https://homepage.boetes.org/software/mg/) - A portable version of mg maintained by the OpenBSD team.
 * [mle](https://github.com/adsr/mle) - A small, flexible console text editor.
 * [nano](https://www.nano-editor.org/) - A pico clone - this is small simple code and easy to use.
 * [nvi](https://sites.google.com/a/bostic.com/keithbostic/vi) - A small, multiple file vi-alike.
-* [sam](https://sam.cat-v.org/) - An editor by Rob Pike with inspiration from ed.
+* [sam](http://sam.cat-v.org/) - An editor by Rob Pike with inspiration from ed.
 * [traditional vi](http://ex-vi.sourceforge.net/) - A fixed version of the original vi.
 * [vim](https://www.vim.org) (With the GUI, use `:set go+=c` to kill popup dialogs). It can be compiled to be as minimal as possible (see vim-tiny in Debian repos).
 * [vis](https://github.com/martanne/vis) - A modern, legacy free, simple yet efficient vim-like editor.
-* [wily](https://www.cse.yorku.ca/~oz/wily/) - An acme clone for POSIX.
+* [wily](http://www.cse.yorku.ca/~oz/wily/) - An acme clone for POSIX.
 
 ### Text processing
 
@@ -192,11 +192,11 @@ This covers most console-based programs and programs from
 
 ### Utilities / miscellaneous
 
-* [abduco](https://www.brain-dump.org/projects/abduco/) - session {at,de}tach support.
-* [dvtm](https://www.brain-dump.org/projects/dvtm/) - dynamic virtual terminal manager.
-* [entr](https://entrproject.org/) - Run arbitrary commands when files change.
-* [nq](https://github.com/leahneukirchen/nq) - UNIX command line queue utility.
-* [slmenu](http://bitbucket.org/rafaelgg/slmenu) - Dmenu spinoff for the console.
+* [abduco](http://www.brain-dump.org/projects/abduco/) - session {at,de}tach support.
+* [dvtm](http://www.brain-dump.org/projects/dvtm/) - dynamic virtual terminal manager.
+* [entr](http://entrproject.org/) - Run arbitrary commands when files change.
+* [nq](https://github.com/chneukirchen/nq) - UNIX command line queue utility.
+* [slmenu](https://bitbucket.org/rafaelgg/slmenu) - Dmenu spinoff for the console.
 * [snore](https://github.com/clamiax/snore) - Sleep with feedback.
 
 ### Web browsers
@@ -205,31 +205,31 @@ This covers most console-based programs and programs from
   Another extension to make Firefox Vim-like. Less invasive than
 * [Conkeror](http://www.conkeror.org/) - A Gecko based browser, with Emacs-style key bindings, appearances and behaviors.
 * [Dillo](https://www.dillo.org/) - Blazingly fast graphical browser with basic CSS support.
-* [edbrowse](https://edbrowse.org/) - ed-alike webbrowser. Unfortunately it is not the standard web browser.
-* [ELinks](https://elinks.or.cz/) -  Feature-rich fork of Links, but without the graphical mode.
-* [Links](https://links.twibright.com/) - A text-based browser that also has a simple graphical mode.
-* [Lynx](https://lynx.invisible-island.net/) - text-mode web browser, supports the Gopher protocol.
-* [netsurf](https://www.netsurf-browser.org/) - Very fast graphical browser with custom engine that has near-perfect CSS support.
+* [edbrowse](http://edbrowse.org/) - ed-alike webbrowser. Unfortunately it is not the standard web browser.
+* [ELinks](http://elinks.or.cz/) -  Feature-rich fork of Links, but without the graphical mode.
+* [Links](http://links.twibright.com/) - A text-based browser that also has a simple graphical mode.
+* [Lynx](http://lynx.invisible-island.net/) - text-mode web browser, supports the Gopher protocol.
+* [netsurf](http://www.netsurf-browser.org/) - Very fast graphical browser with custom engine that has near-perfect CSS support.
 * [surf](//surf.suckless.org/) - WebKit2 browser that can be embedded into other applications and uses dmenu as the address bar.
-* [Tridactyl](https://github.com/tridactyl/tridactyl) - A WebExtension that tries to make Firefox Vim like. Unlike many similar extensions it works with firefox 57+.
+* [Tridactyl](https://github.com/cmcaine/tridactyl) - A WebExtension that tries to make Firefox Vim like. Unlike many similar extensions it works with firefox 57+.
 * [uzbl](https://www.uzbl.org/) - Web interface tools which adhere to the UNIX philosophy.
 * [VimFX](https://addons.mozilla.org/en-US/firefox/addon/vimfx/) -
   Vimperator (Doesn't work with Firefox 57+)
-* [Vimperator](https://vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like. (Doesn't work with Firefox 57+).
-* [w3m](https://w3m.sourceforge.net/) - Text-based browser which can view images in the terminal (X11 hack).
+* [Vimperator](http://vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like. (Doesn't work with Firefox 57+).
+* [w3m](http://w3m.sourceforge.net/) - Text-based browser which can view images in the terminal (X11 hack).
 
 ### X11
 
 * [9menu](https://github.com/arnoldrobbins/9menu/) - A menu program based on the Blit-style menus so prevalent in Plan 9.
 * [dmenu](//tools.suckless.org/dmenu/) - dmenu is a dynamic menu for X.
 * [ffcast](https://github.com/lolilolicon/FFcast) - Simple screencasting.
-* [grabc](https://www.muquit.com/muquit/software/grabc/grabc.html) - Grab the color of some pixel in X11.
-* [keynav](https://www.semicomplete.com/projects/keynav/) - A new way for keyboard selection.
+* [grabc](http://www.muquit.com/muquit/software/grabc/grabc.html) - Grab the color of some pixel in X11.
+* [keynav](http://www.semicomplete.com/projects/keynav/) - A new way for keyboard selection.
 * [wmutils](https://github.com/wmutils/core) - A set of utilities for managing windows. Can be used on their own or to augment a WM itself. Support for tiling present.
 * [xbanish](https://github.com/jcs/xbanish) - Hide the cursor while typing.
 * [xclip](https://github.com/astrand/xclip) - A tool for controlling the X11 clipboard.
-* [xdotool](https://www.semicomplete.com/projects/xdotool/) - A tool for scripting X11 actions.
-* [xzoom](https://r-36.net/scm/xzoom/) - A simple zoom application.
+* [xdotool](http://www.semicomplete.com/projects/xdotool/) - A tool for scripting X11 actions.
+* [xzoom](http://r-36.net/scm/xzoom/) - A simple zoom application.
 
 Daemons
 -------
@@ -239,14 +239,14 @@ This section is dedicated to daemons that are related to the UNIX philosophy.
 
 * [darkhttpd](https://unix4lyfe.org/darkhttpd/) - Darkhttpd is a simple, fast HTTP 1.1 web server for static content.
 * [merecat](https://github.com/troglobit/merecat/) - thttpd with vhost support.
-* [mini_httpd](https://acme.com/software/mini_httpd/) - By the thttpd developers.  Even smaller subset of thttpd with support for .htpasswd, CGI, dirlisting, HTTP errors and SSL, nothing more or less than that.
+* [mini_httpd](http://acme.com/software/mini_httpd/) - By the thttpd developers.  Even smaller subset of thttpd with support for .htpasswd, CGI, dirlisting, HTTP errors and SSL, nothing more or less than that.
 * [OpenBSD httpd/relayd](https://bsd.plumbing/) - Designed to combat the feature creep of modern webservers. Boasts concise configuration, with sane defaults.
 * [quark](//tools.suckless.org/quark/) - suckless simple static web server.
-* [thttpd](https://acme.com/software/thttpd/) - Outperforms many bigger httpds. Old, still works very well!
+* [thttpd](http://acme.com/software/thttpd/) - Outperforms many bigger httpds. Old, still works very well!
 
 ### Gopher servers
 
-* [geomyidae](https://r-36.net/scm/geomyidae/) - small gopher-daemon written by [20h](//suckless.org/people/20h/).
+* [geomyidae](http://r-36.net/scm/geomyidae/) - small gopher-daemon written by [20h](//suckless.org/people/20h/).
 
 ### Misc daemons
 

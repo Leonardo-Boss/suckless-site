@@ -1,10 +1,10 @@
 Stuff that sucks
 ================
-See the [philosophy](//suckless.org/philosophy/) page about what applies
+See the [philosophy](//suckless.org/philosophy) page about what applies
 to this page.
 
-Bigger topics that suck: [systemd](//suckless.org/sucks/systemd/), [the
-web](//suckless.org/sucks/web/)
+Bigger topics that suck: [systemd](//suckless.org/sucks/systemd), [the
+web](//suckless.org/sucks/web)
 
 Libraries
 ---------
@@ -12,10 +12,10 @@ These libraries are broken/considered harmful and should not be used
 if it's possible to avoid them. If you use them, consider looking for
 alternatives.
 
-* [glib](https://developer.gnome.org/glib/) - implements C++ STL on top of C
+* [glib](http://library.gnome.org/devel/glib/) - implements C++ STL on top of C
   (because C++ sucks so much, let's reinvent it!), adding lots of useless data
   types for ["portability" and "readability"
-  reasons](https://developer.gnome.org/glib/unstable/glib-Basic-Types.html).
+  reasons](http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html).
   even worse, it is not possible to write robust applications using glib, since
   it [aborts in out-of-memory situations](https://bugzilla.gnome.org/show_bug.cgi?id=674446).
   glib usage is required to write gtk+ and gnome applications, but is also used when common
@@ -26,27 +26,27 @@ alternatives.
   Alternatives: [libmowgli](https://github.com/atheme/libmowgli-2),
   [libulz](https://github.com/rofl0r/libulz)
 
-* [GMP](https://gmplib.org/) - GNU's bignum/arbitrary precision
+* [GMP](http://gmplib.org/) - GNU's bignum/arbitrary precision
   library. Quite bloated, slow and [calls abort() on failed
   malloc](https://gmplib.org/repo/gmp/file/tip/memory.c#l105)
 
-  Alternatives: [libtommath](https://www.libtom.net/LibTomMath/),
-  [TomsFastMath](https://www.libtom.net/TomsFastMath/),
+  Alternatives: [libtommath](http://www.libtom.net/LibTomMath/),
+  [TomsFastMath](http://www.libtom.net/TomsFastMath/),
   [imath](https://github.com/creachadair/imath),
-  [libzahl](//libs.suckless.org/libzahl/) (WIP),
+  [libzahl](//libs.suckless.org/libzahl) (WIP),
   [hebimath](https://github.com/suiginsoft/hebimath) (WIP)
 
 Build Systems
 -------------
-* [cmake](https://cmake.org/) (written in C++) - so huge and bloated,
+* [cmake](http://www.cmake.org/) (written in C++) - so huge and bloated,
   compilation takes longer than compiling GCC (!). It's not even possible
   to create freestanding Makefiles, since the generated Makefiles call
   back into the cmake binary itself. Usage of cmake requires learning a
   new custom scripting language with very limited expressiveness. Its
   major selling point is the existence of a clicky-click GUI for windows
   users.
-* [waf](https://github.com/waf-project/waf) and
-  [scons](https://www.scons.org/) (both written in Python) - waf code is
+* [waf](https://code.google.com/p/waf/) and
+  [scons](http://www.scons.org/) (both written in Python) - waf code is
   dropped into the compilee's build tree, so it does not benefit from
   updated versions and bugfixes.
 
@@ -54,8 +54,8 @@ As these build systems are often used to compile C programs, one has to
 set up a C++ compiler or Python interpreter respectively just in order
 to be able to build some C code.
 
-Alternatives: [mk](https://doc.cat-v.org/plan_9/4th_edition/papers/mk),
-[make](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/make.html)
+Alternatives: [mk](http://doc.cat-v.org/plan_9/4th_edition/papers/mk),
+[make](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/make.html)
 
 Version Control Systems
 -----------------------
@@ -80,7 +80,7 @@ brokenness:
 * The program **assumes a specific window management model**,
   e.g. assumes you are using a WIMP-window manager like those
   found in KDE or Gnome. This assumption breaks the [ICCCM
-  conventions](https://tronche.com/gui/x/icccm/).
+  conventions](http://tronche.com/gui/x/icccm/).
 * The application uses a **fixed size** - this limitation does not fit
   into the world of tiling window managers very well, and can also be seen
   as breaking the ICCCM conventions, because a fixed sized window assumes
@@ -118,15 +118,15 @@ complete details are in the source.
 
 C Compilers
 -----------
-* [GCC](https://gcc.gnu.org/) is the virus which has spread into nearly
+* [GCC](http://gcc.gnu.org/) is the virus which has spread into nearly
   every Linux distribution and has added its language extensions to be not
   easily replacable. As of 2016 it is now written in C++ and so complete
   suck. Why can't a compiler just be a simple binary doing its work
   instead of adding path dependencies deep into the system?
-* [Clang](https://clang.llvm.org/) is written in C++. If you don't
+* [Clang](http://clang.llvm.org/) is written in C++. If you don't
   believe that it sucks, try to build clang by hand.
 
 See also
 --------
-The [list of harmful software](https://harmful.cat-v.org/software/) at
-[cat-v.org](https://cat-v.org).
+The [list of harmful software](http://harmful.cat-v.org/software/) at
+[cat-v.org](http://cat-v.org).

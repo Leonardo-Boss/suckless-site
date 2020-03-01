@@ -21,11 +21,11 @@ alpha-premultiplied.
 Dependencies
 ------------
 * [libpng](http://www.libpng.org/pub/png/libpng.html) - for png conversions
-* [libjpeg-turbo](https://libjpeg-turbo.virtualgl.org/) - for jpg conversions
+* [libjpeg-turbo](http://libjpeg-turbo.virtualgl.org/) - for jpg conversions
 
 Development
 -----------
-You can [browse](//git.suckless.org/farbfeld/) its source code repository or get
+You can [browse](//git.suckless.org/farbfeld) its source code repository or get
 a copy using the following command:
 
 	git clone https://git.suckless.org/farbfeld
@@ -42,12 +42,12 @@ provide packages:
 
 * [Alpine Linux](https://pkgs.alpinelinux.org/package/edge/community/x86_64/farbfeld)
 * [Arch Linux (AUR)](https://aur.archlinux.org/packages/farbfeld)
-* [Debian](https://packages.debian.org/search?keywords=farbfeld)
+* [Debian](https://packages.debian.org/farbfeld)
 * [FreeBSD](https://svnweb.freebsd.org/ports/head/graphics/farbfeld/)
 * [Gentoo](https://packages.gentoo.org/packages/media-gfx/farbfeld)
 * [NixOS](https://github.com/NixOS/nixpkgs/tree/master/pkgs/development/libraries/farbfeld)
-* [OpenBSD](https://ports.su/graphics/farbfeld)
-* [Ubuntu](https://packages.ubuntu.com/focal/farbfeld)
+* [OpenBSD](http://ports.su/graphics/farbfeld)
+* [Ubuntu](https://packages.ubuntu.com/farbfeld)
 * [Void Linux](https://github.com/voidlinux/void-packages/tree/master/srcpkgs/farbfeld)
 
 Implementations
@@ -62,7 +62,7 @@ Implementations
 * [resize](https://github.com/ender672/farbfeld-resize) image filter
 * [gamut](https://github.com/erik/gamut) image filter collection
 * [gimp-farbfeld](https://github.com/ids1024/gimp-farbfeld) gimp plug-in
-* [farbfeld utilities](https://zzo38computer.org/fossil/farbfeld.ui/index) huge collection of image filters
+* [farbfeld utilities](http://zzo38computer.org/fossil/farbfeld.ui/) huge collection of image filters
 * [ff2sixel](https://gitlab.com/link2xt/ff2sixel) farbfeld image viewer for SIXEL terminals
 * [xscreenshot](https://git.codemadness.org/xscreenshot/file/README.html) screen capture tool
 

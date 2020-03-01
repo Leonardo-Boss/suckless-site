@@ -1,7 +1,7 @@
 9base
 =====
 9base is a port of various original Plan 9 tools for Unix, based on
-[plan9port](https://9fans.github.io/plan9port/).
+[plan9port](http://swtch.com/plan9port/).
 
 It currently contains the following original (no source changes) shell commands
 from Plan 9 for Unix:
@@ -67,5 +67,5 @@ Download
 
 Usage
 -----
-9base can be used to run [werc](https://werc.cat-v.org) instead of the full
-blown [plan9port](https://9fans.github.io/plan9port/).
+9base can be used to run [werc](http://werc.cat-v.org) instead of the full
+blown [plan9port](http://swtch.com/plan9port).

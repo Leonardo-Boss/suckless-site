@@ -22,7 +22,7 @@ this patch can be replaced by a proper config.h tweak.
 
 Patch
 -----
-Patch for [dwm 4.6](https://www.lolcathost.org/b/dwm/mouseontitle-4.6.diff) is
+Patch for [dwm 4.6](http://www.lolcathost.org/b/dwm/mouseontitle-4.6.diff) is
 here.
 
 See in event.c at function 'buttonpress()' to patch older dwm releases.

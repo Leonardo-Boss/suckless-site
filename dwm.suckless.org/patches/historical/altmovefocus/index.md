@@ -11,4 +11,4 @@ such behaviour.
 
 Download
 --------
-* [dwm-5.2-altmovefocus.diff](https://mkmks.org/files/patches/dwm-5.2-altmovefocus.diff)
+* [dwm-5.2-altmovefocus.diff](http://mkmks.org/files/patches/dwm-5.2-altmovefocus.diff)

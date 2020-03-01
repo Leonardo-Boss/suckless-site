@@ -4,4 +4,4 @@ sbase - suckless base
 portable across unix-systems.
 
 For a list of tools that are currently implemented, please refer to the
-[README](//git.suckless.org/sbase/file/README.html).
+[README](//git.suckless.org/sbase/tree/README).

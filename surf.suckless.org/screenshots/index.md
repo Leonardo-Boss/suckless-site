@@ -1,6 +1,6 @@
 [![Screenshot](surf+tabbed-20091028-thumb.jpg)](surf+tabbed-20091028.jpg)
 
-surf with [wmii](//dl.suckless.org/wmii/) using [tabbed](//tools.suckless.org/tabbed/)
+surf with [wmii](//dl.suckless.org/wmii/) using [tabbed](//tools.suckless.org/tabbed)
 
 [![Screenshot](20100423_surf_win-thumb.png)](20100423_surf_win.png)
 

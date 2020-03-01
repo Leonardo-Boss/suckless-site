@@ -13,7 +13,7 @@ paranoid and turning red on failed login attempts suffices for you, set
 
 Development
 -----------
-You can [browse](//git.suckless.org/slock/) its source code repository or get a
+You can [browse](//git.suckless.org/slock) its source code repository or get a
 copy using the following command:
 
 	git clone https://git.suckless.org/slock
@@ -25,12 +25,12 @@ Download
 Xautolock
 ---------
 slock can be started after a specific period of user inactivity using
-[xautolock](https://www.ibiblio.org/pub/linux/X11/screensavers/). The command
+[xautolock](http://www.ibiblio.org/pub/linux/X11/screensavers/). The command
 syntax is:
 
 	xautolock -time 10 -locker slock
 
 Simpler alternatives to xautolock might be
 [xssstate](//git.suckless.org/xssstate/) or
-[xss](https://woozle.org/~neale/src/xss.html).
+[xss](http://woozle.org/~neale/src/xss.html).
 

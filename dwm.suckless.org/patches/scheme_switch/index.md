@@ -3,7 +3,7 @@ schemeSwitch
 
 Description
 -----------
-[Solarized](https://ethanschoonover.com/solarized/) is a color scheme by Ethan
+[Solarized](http://ethanschoonover.com/solarized) is a color scheme by Ethan
 Schoonover which exists in a dark and a light variant.
 
 This patch allows you defining more then one color-Scheme in the colors array

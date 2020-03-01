@@ -26,5 +26,5 @@ Download
 
 Authors
 -------
-* Michał Lemke - @melek on [Bitbucket](http://bitbucket.org/melek/dmenu2/)
+* Michał Lemke - @melek on [Bitbucket](https://bitbucket.org/melek/dmenu2/)
 * Pratik Bhusal - dmenu-xresources-4.9 port

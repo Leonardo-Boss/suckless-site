@@ -13,7 +13,7 @@ Usage
 Just like you'd use them for colorizing a shell script.
 
 More info is here:
-[https://www.frexx.de/xterm-256-notes/](https://www.frexx.de/xterm-256-notes/)
+[http://www.frexx.de/xterm-256-notes/](http://www.frexx.de/xterm-256-notes/)
 
 An ansi escape sequence is in the form:
 

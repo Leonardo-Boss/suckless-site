@@ -56,5 +56,5 @@ Download
 
 Author
 ------
-* [jerome](https://blog.jardinmagique.info) -  <jerome@gcu.info>
+* [jerome](http://blog.jardinmagique.info) -  <jerome@gcu.info>
 * [Cyril Cressent](https://cressent.org) - <cyril@cressent.org> (6.2 port)

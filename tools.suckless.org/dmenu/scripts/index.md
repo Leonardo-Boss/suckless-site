@@ -8,7 +8,7 @@ Download
 * [dbdb.sh](dbdb.sh): dmenu-based directory browser
 * [dbrowse](https://github.com/clamiax/scripts/blob/master/src/dbrowse):
   little files navigator
-* [dmenu_pass](https://efe.kim/files/scripts/dmenu_pass): A simpler pass menu
+* [dmenu_pass](http://efe.kim/files/scripts/dmenu_pass): A simpler pass menu
   implementation.
 * [dmenu\_path\_recent](https://github.com/ema/dotfiles/blob/master/bin/dmenu_path):
   dmenu_path implementation listing recent commands first. Similar to
@@ -17,11 +17,11 @@ Download
   the terminal.
 * [dmenu\_run\_history](dmenu_run_with_command_history):
   dmenu_run alternative with command history
-* [dmenu_websearch](https://efe.kim/files/scripts/dmenu_websearch):
+* [dmenu_websearch](http://efe.kim/files/scripts/dmenu_websearch):
   browser independent address bar
 * [mpdmenu](https://github.com/cdown/mpdmenu): Music management using
   dmenu
-* [passmenu](https://git.zx2c4.com/password-store/tree/contrib/dmenu):
+* [passmenu](http://git.zx2c4.com/password-store/tree/contrib/dmenu):
   get password from pass.
 * [passmenu2](passmenu2): "pass" browser, vertical display and recursive
   "pass" folder support

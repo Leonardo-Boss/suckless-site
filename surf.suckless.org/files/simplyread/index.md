@@ -15,9 +15,9 @@ The default keybinding is ctrl-alt-r.
 Download
 --------
 
-* [project webpage](https://njw.name/simplyread/)
+* [project webpage](http://njw.me.uk/software/simplyread)
 
 Author
 ------
 
-* Nick White <https://njw.me.uk/>
+* Nick White <http://njw.me.uk/>

@@ -9,7 +9,7 @@ Download
 
 Development
 -----------
-You can [browse](//git.suckless.org/sic/) its source code repository or get a
+You can [browse](//git.suckless.org/sic) its source code repository or get a
 copy using the following command:
 
 	git clone https://git.suckless.org/sic

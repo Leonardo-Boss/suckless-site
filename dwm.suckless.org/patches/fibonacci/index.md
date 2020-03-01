@@ -43,6 +43,6 @@ Maintainer
 ----------
 * Niki Yoshiuchi - <aplusbi@gmail.com>
 
-Joe Thornber's spiral tiling for [Xmonad](https://xmonad.org) formed the
+Joe Thornber's spiral tiling for [Xmonad](http://www.xmonad.org) formed the
 inspiration for this patch. Thanks to Jan Christoph Ebersbach for updating this
 patch for versions 4.5 to 4.9.

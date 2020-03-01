@@ -61,7 +61,7 @@ Solutions
 
 Development
 -----------
-You can [browse](//git.suckless.org/quark/) the source code repository or get a
+You can [browse](//git.suckless.org/quark) the source code repository or get a
 copy with the following command:
 
 	git clone https://git.suckless.org/quark

@@ -2,5 +2,4 @@
 *.html
 !/*.html
 build-page
-md-printlinks
 test

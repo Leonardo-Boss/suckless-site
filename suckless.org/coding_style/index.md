@@ -12,7 +12,7 @@ The following contain good information, some of which is repeated below, some
 of which is contradicted below.
 
 * <https://man.openbsd.org/style>
-* <https://doc.cat-v.org/bell_labs/pikestyle>
+* <http://doc.cat-v.org/bell_labs/pikestyle>
 * <https://www.kernel.org/doc/Documentation/process/coding-style.rst>
 
 
@@ -139,7 +139,7 @@ Headers
   * Try to avoid cyclic header inclusion dependencies.
   * Instead ensure they are included where and when they are needed.
   * Read <https://talks.golang.org/2012/splash.article#TOC_5.>
-  * Read [https://plan9.bell-labs.com/sys/doc/comp.html](https://web.archive.org/web/20170401165424/https://plan9.bell-labs.com/sys/doc/comp.html)
+  * Read <http://plan9.bell-labs.com/sys/doc/comp.html>
 
 
 User Defined Types

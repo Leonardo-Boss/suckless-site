@@ -14,4 +14,4 @@ Download
 Author
 ------
 
-* Charles Lehner <https://celehner.com>
+* Charles Lehner <http://celehner.com>

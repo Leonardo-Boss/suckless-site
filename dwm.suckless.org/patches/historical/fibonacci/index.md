@@ -19,7 +19,7 @@ arrangement can be seen below.
     +-----------+-----+-----+  +-----------+-----+-----+
              spiral                     dwindle
 
-[![dwm in spiral layout.](http://schot.a-eskwadraat.nl/images/dwm-spiral_small.png1)](http://schot.a-eskwadraat.nl/images/dwm-spiral.png)
+[![dwm in spiral layout.](https://schot.a-eskwadraat.nl/images/dwm-spiral_small.png1)](https://schot.a-eskwadraat.nl/images/dwm-spiral.png)
 
 *Links2, sic, xterm & xclock in spiral layout.*
 
@@ -41,13 +41,13 @@ Usage
 
 Download
 --------
-* [dwm-5.2-fibonacci.diff](http://www.aplusbi.com/dwm/dwm-5.2-fibonacci.diff) (1.9k) (20081003)
-* [dwm-5.1-fibonacci.diff](http://schot.a-eskwadraat.nl/files/dwm-5.1-fibonacci.diff) (1.9k) (20080731)
+* [dwm-5.2-fibonacci.diff](https://www.aplusbi.com/dwm/dwm-5.2-fibonacci.diff) (1.9k) (20081003)
+* [dwm-5.1-fibonacci.diff](https://schot.a-eskwadraat.nl/files/dwm-5.1-fibonacci.diff) (1.9k) (20080731)
 
 Author
 ------
 * Jeroen Schot - <schot@a-eskwadraat.nl>
 
-Joe Thornber's spiral tiling for [Xmonad](http://www.xmonad.org) formed the
+Joe Thornber's spiral tiling for [Xmonad](https://xmonad.org) formed the
 inspiration for this patch. Thanks to Jan Christoph Ebersbach for updating this
 patch for versions 4.5 to 4.9.

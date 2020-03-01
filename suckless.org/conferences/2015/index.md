@@ -94,7 +94,7 @@ Video:
 
 (10:45-11:30) *Simple Jabber - Divide And Conquer XMPP*, Jan Klemkow ([paper](jan_on_sj.pdf))
 
-> The Extensible Messaging and Presence Protocol [XMPP](http://xmpp.org/) is like the web. It is
+> The Extensible Messaging and Presence Protocol [XMPP](https://xmpp.org/) is like the web. It is
 > far too complex to be implemented in one program with the Unix philosophy in mind.
 > But like the web, you have to deal with it. It is the only open
 > and widely used instant messaging protocol on the internet.
@@ -158,7 +158,7 @@ Video:
 
 Acknowledgment
 --------------
-We kindly thank [![genua GmbH](../genua.png)](http://www.genua.eu) for
+We kindly thank [![genua GmbH](../genua.png)](https://www.genua.de/en/) for
 lending us the equipment to record the slcon2 conference videos.
 
 Previous conferences

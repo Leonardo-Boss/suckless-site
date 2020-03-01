@@ -83,19 +83,19 @@ Code
 		arg=$(echo $sel | cut -d ' ' -f 2-)
 		case "$opt" in
 		"d") # del.icio.us
-			ret="http://del.icio.us/save?url=$uri"
+			ret="https://del.icio.us/save?url=$uri"
 			;;
 		"g") # google for it
-			ret="http://www.google.com/search?q=$arg"
+			ret="https://www.google.com/search?q=$arg"
 			;;
 		"t") # tinyurl
-			ret="http://tinyurl.com/create.php?url=$uri"
+			ret="https://tinyurl.com/create.php?url=$uri"
 			;;
 		"w") # wikipedia
-			ret="http://wikipedia.org/wiki/$arg"
+			ret="https://wikipedia.org/wiki/$arg"
 			;;
 		"y") # youtube
-			ret="http://www.youtube.com/results?search_query=$arg&aq=f"
+			ret="https://www.youtube.com/results?search_query=$arg&aq=f"
 			;;
 		*)
 			ret="$sel"

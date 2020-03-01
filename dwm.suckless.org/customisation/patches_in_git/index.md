@@ -9,7 +9,7 @@ can be rebased on top of the master branch when required.
 
 Cloning the repository
 ----------------------
-You need to have the [Git VCS](http://git-scm.com/) installed first. Then clone
+You need to have the [Git VCS](https://git-scm.com/) installed first. Then clone
 the upstream repository locally
 
 	git clone git://git.suckless.org/dwm

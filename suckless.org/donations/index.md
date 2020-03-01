@@ -6,7 +6,7 @@ a contribution, no matter the size, it will go towards ensuring that we are
 able to continue to write, support and host the high quality software that
 makes all of our lives easier.
 
-You can donate through [PayPal](https://paypal.com/) using our treasurer's address:
+You can donate through [PayPal](https://www.paypal.com/fr/home) using our treasurer's address:
 <finance@suckless.org>
 
 Or direct through a bank transfer:

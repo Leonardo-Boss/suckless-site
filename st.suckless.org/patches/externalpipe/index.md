@@ -18,7 +18,7 @@ dmenu to select and open one:
 		{ TERMMOD, XK_U, externalpipe, { .v = openurlcmd } },
 	};
 
-([xurls](https://raw.github.com/bobrippling/perlbin/master/xurls) and
+([xurls](https://raw.githubusercontent.com/bobrippling/perlbin/master/xurls) and
 [open](https://github.com/bobrippling/open) are external scripts)
 
 ### Example Shell Scripts

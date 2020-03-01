@@ -7,7 +7,7 @@ a 6.1 update and extension to [current desktop](../current_desktop). adds EWMH
 support for \_NET\_NUMBER\_OF\_DESKTOPS, \_NET\_CURRENT\_DESKTOP,
 \_NET\_DESKTOP\_NAMES, and \_NET\_DESKTOP\_VIEWPORT, which allows for
 compatibility with other bars and programs that request workspace information.
-for example, [polybar's](http://github.com/jaagr/polybar) xworkspaces module
+for example, [polybar's](https://github.com/polybar/polybar) xworkspaces module
 
 Download
 --------

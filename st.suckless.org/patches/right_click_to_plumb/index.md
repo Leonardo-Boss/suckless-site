@@ -48,7 +48,7 @@ Download
 
 Authors
 -------
-* [jerome](http://blog.jardinmagique.info) <jerome@gcu.info>
+* [jerome](https://blog.jardinmagique.info) <jerome@gcu.info>
 
 A simpler plumb patch
 =====================
@@ -68,4 +68,4 @@ Download
 
 Authors
 -------
-* [john](http://roxor.me) <j@roxor.me>
+* [john](https://roxor.me) <j@roxor.me>

@@ -19,8 +19,8 @@ patch to make dwm more colourful :D)
 
 Download
 --------
-* [dwm-5.2-gridmode.diff](http://www.v4hn.de/patches/dwm-5.2-gridmode.diff)
-* [dwm-4.4.1-gridmode.diff](http://schot.a-eskwadraat.nl/files/dwm-4.4.1-gridmode.diff)
+* [dwm-5.2-gridmode.diff](https://www.v4hn.de/patches/dwm-5.2-gridmode.diff)
+* [dwm-4.4.1-gridmode.diff](https://schot.a-eskwadraat.nl/files/dwm-4.4.1-gridmode.diff)
 * [dwm-4.3-gridmode.diff](http://dwm.slax.no-ip.biz/dwm-4.3-gridmode.diff)
 * [dwm-4.0-gridmode.diff](http://dwm.slax.no-ip.biz/dwm-4.0-gridmode.diff)
 * [dwm-3.9-gridmode.diff](http://dwm.slax.no-ip.biz/dwm-3.9-gridmode.diff)

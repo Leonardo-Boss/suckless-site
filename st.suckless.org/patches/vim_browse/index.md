@@ -76,7 +76,7 @@ Contributions + Bug Reports
 
 Notes
 -----
-* Currently based on the [Scrollback patch](https://st.suckless.org/patches/scrollback/),
+* Currently based on the [Scrollback patch](//st.suckless.org/patches/scrollback/),
   this dependency will be removed (see __Bugs__ section).
 * The patch is applied both to a non-patched version and to a patched version of st
   and can be tried out [here](https://github.com/juliusHuelsmann/st) (browse the available branches
@@ -118,7 +118,7 @@ operating e.g. with the current head of master (`26cdfeb`, 02-2020).
 **Most Recent based on `26cdfeb` **:
 * [st-vimBrowse-20200212-26cdfeb.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV3/st-vimBrowse-20200212-26cdfeb.diff)
 
-Authors of the [Scrollback patch](https://st.suckless.org/patches/scrollback/)
+Authors of the [Scrollback patch](//st.suckless.org/patches/scrollback/)
 ------------------------------------------------------------------------------
 * Jochen Sprickerhof - <st@jochen.sprickerhof.de>
 * M Farkas-Dyck - <strake888@gmail.com>

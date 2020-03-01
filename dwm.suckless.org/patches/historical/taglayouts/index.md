@@ -18,7 +18,7 @@ Known Bugs
 
 Author
 ------
-* http://na.srck.net/dwm
+* https://na.srck.net/dwm
 * Updated by Jan Christoph Ebersbach - <jceb@e-jc.de>
 
 

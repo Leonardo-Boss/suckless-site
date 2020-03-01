@@ -28,7 +28,7 @@ Author
 ------
 
 * The code was originally from Peter John Hartman, then filtered through pancake and nibble (see their bmarks) 
-  and now back to Peter John Hartman.  You can get the latest version at http://durandus.trilidun.org/durandus/code/surf/.
+  and now back to Peter John Hartman.  You can get the latest version at https://durandus.trilidun.org/durandus/code/surf/.
 
 Installation
 ------------
@@ -39,7 +39,7 @@ Code
 ----
 	#!/bin/sh
 	# v. 2.0 - upgrade based on surf 4.0
-	# Creative Commons License.  Peter John Hartman (http://individual.utoronto.ca/peterjh)
+	# Creative Commons License.  Peter John Hartman (https://individual.utoronto.ca/peterjh)
 	# Much thanks to nibble and pancake who have a different surf.sh script available which
 	# doesn't do the history bit.
 	#
@@ -104,7 +104,7 @@ Code
 		# bail on error and don't store
 		#if [[ $name != "Error" ]]; then
 		#	uri=`s_get_prop _SURF_URI`
-			# store to the bmarks file the OFFICIAL url (with http://whatever)
+			# store to the bmarks file the OFFICIAL url (with https://whatever)
 			s_write_f $bmarks "$1"
 			#grep "$uri" $bmarks >/dev/null 2>&1 || echo "$uri" >> $bmarks
 		#fi
@@ -135,25 +135,25 @@ Code
 		save=0
 		case "$opt" in
 		"d") # del.icio.us
-			uri="http://del.icio.us/save?url=`s_get_prop _SURF_URI`"
+			uri="https://del.icio.us/save?url=`s_get_prop _SURF_URI`"
 			;;
 		"g") # google for it
-			uri="http://www.google.com/search?q=$arg"
+			uri="https://www.google.com/search?q=$arg"
 			save=1
 			;;
 		"t") # tinyurl
-			uri="http://tinyurl.com/create.php?url=`s_get_prop _SURF_URI`"
+			uri="https://tinyurl.com/create.php?url=`s_get_prop _SURF_URI`"
 			;;
 		"w") # wikipedia
-			uri="http://wikipedia.org/wiki/$arg"
+			uri="https://wikipedia.org/wiki/$arg"
 			save=1
 			;;
 		"u") # utoronto
-			uri="http://search2.library.utoronto.ca/UTL/index?N=0&Ntk=Anywhere&Ntt=$arg&Ntx=mode%2Bmatchallpartial&Nu=p_work_normalized&Np=1&formName=search_form_simple"
+			uri="https://search2.library.utoronto.ca/UTL/index?N=0&Ntk=Anywhere&Ntt=$arg&Ntx=mode%2Bmatchallpartial&Nu=p_work_normalized&Np=1&formName=search_form_simple"
 			save=1
 			;;
 		"y") # youtube
-			uri="http://www.youtube.com/results?search_query=$arg&aq=f"
+			uri="https://www.youtube.com/results?search_query=$arg&aq=f"
 			save=1
 			;;
 		"x") # delete

@@ -125,7 +125,7 @@ Rationale
 
 Development
 -----------
-You can browse its [source code repository](//git.suckless.org/blind) or get a
+You can browse its [source code repository](//git.suckless.org/blind/) or get a
 copy using git with the following command:
 
 	git clone https://git.suckless.org/blind
@@ -146,7 +146,7 @@ Dependencies
 ------------
 * [ffmpeg](https://www.ffmpeg.org/) - for converting from or to other video
   formats.
-* [imagemagick](https://www.imagemagick.org/) - for converting regular images
+* [imagemagick](https://imagemagick.org/index.php) - for converting regular images
   to frames.
 
 Links

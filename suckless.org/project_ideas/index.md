@@ -23,14 +23,14 @@ environment from bare hardware to the graphical interface.
 Current small tasks
 -------------------
 * Write a gopher back-end using build-page.c:
-  <https://git.suckless.org/sites/file/build-page.c.html>
+  <//git.suckless.org/sites/file/build-page.c.html>
   This should use the geomyidae gopher server and the gph output format.
   Difficulty: medium-rare.
 * Improve the Markdown parser used by the suckless wiki called "smu" to
   conform more to Markdown.
   for example for nested codeblocks. Difficulty: trivial-medium.
-  * Specs: <http://daringfireball.net/projects/markdown/syntax.text> and
-    <http://commonmark.org/>.
+  * Specs: <https://daringfireball.net/projects/markdown/syntax.text> and
+    <https://commonmark.org/>.
   * smu: <https://github.com/Gottox/smu>
 * Fix broken patches on the wiki. Difficulty: trivial-medium.
 * Fix typos and formatting errors on the wiki. Difficulty: trivial.
@@ -52,7 +52,7 @@ somewhere. And this is what a suckless font rendering library should do: Give
 it a font string and render at some position the given font without having to
 care about font specifics.
 
-[Some work](https://git.ekleog.org/leo/dtext) has already been done to replace
+[Some work](http://git.ekleog.org/leo/dtext) has already been done to replace
 libXft and Fontconfig. Real-world testing is however still needed.
 
 ***Requirements:*** C knowledge, some X11 knowledge and of course knowledge
@@ -89,14 +89,14 @@ web mailing list archiving tool that follows the thread view concepts found in
 the mutt MUA and which is designed with low footprint and efficiency in mind.
 
 We expect this tool as a stand-alone UNIX tool written in C or shell. To get
-started you could use [Dovecot](http://dovecot.org/) to produce a sanitized
+started you could use [Dovecot](https://dovecot.org/) to produce a sanitized
 structure:
 
 	printf "1 select inbox\n2 thread references us-ascii all\n3 fetch 1:*
 	envelope\n4 logout\n" |
 	/usr/local/libexec/dovecot/imap  2>/dev/null
 
-* <http://www.codinghorror.com/blog/2012/12/web-discussions-flat-by-design.html>
+* <https://blog.codinghorror.com/web-discussions-flat-by-design/>
 
 ***Requirements:*** Good C/Shell/HTML knowledge would be desirable. Must not
 use Javascript.
@@ -129,9 +129,9 @@ See the
 how easy it is to write a `menu`, which can be seen as a directory.
 
 * [gopherproject.org](http://www.gopherproject.org)
-* [gopher proxy](http://gopher.floodgap.com/gopher/)
+* [gopher proxy](https://gopher.floodgap.com/gopher/)
 * [Gopher wikipedia article](https://en.wikipedia.org/wiki/Gopher_%28protocol%29)
-* [geomyidae](http://git.r-36.net/geomyidae/)
+* [geomyidae](https://r-36.net/scm/)
 
 Anyone creating a gopher interface to suckless.org will get a bonus.
 

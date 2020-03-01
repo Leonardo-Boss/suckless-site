@@ -12,7 +12,7 @@ Download
 
 Repository
 ----------
-You can [browse](//git.suckless.org/wmname) the source code or get a copy using
+You can [browse](//git.suckless.org/wmname/) the source code or get a copy using
 the following command:
 
 	git clone https://git.suckless.org/wmname

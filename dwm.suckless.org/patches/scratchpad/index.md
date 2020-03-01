@@ -6,7 +6,7 @@ Description
 The scratchpad patch allows you to spawn or restore a floating terminal window.
 It is usually useful to have one to do some short typing.
 
-A tool like detach (http://detach.sourceforge.net) turns it into a launchpad
+A tool like detach (https://detach.sourceforge.net) turns it into a launchpad
 for X applications.
 
 By default your terminal (st) is used, and the default key binding is

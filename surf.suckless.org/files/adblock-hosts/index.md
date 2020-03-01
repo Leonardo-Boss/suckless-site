@@ -6,9 +6,9 @@ Adblocking is a non-trivial task, but there are trivial solutions.
 host-gen
 --------
 
-Install hosts-gen from <http://git.r-36.net/hosts-gen/>
+Install hosts-gen from <https://r-36.net/scm/hosts-gen/file/README.html>
 
-	% git clone http://git.r-36.net/hosts-gen
+	% git clone https://git.r-36.net/hosts-gen
 	% cd hosts-gen
 	% sudo make install
 
@@ -46,7 +46,7 @@ places : [adaway](https://adaway.org/hosts.txt),
 They are written in `/etc/hosts` file to disable DNS resolution.
 
 Get the script from here :
-[zerohosts](https://dev.yeuxdelibad.net/OpenBSD-stuff/zerohosts).
+[zerohosts](https://yeuxdelibad.net/Logiciel-libre/Code/zerohosts.html).
 
 Include your own `/etc/hosts` rules by including a file as an argument
 

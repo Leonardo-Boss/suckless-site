@@ -16,5 +16,5 @@ Download
 Author
 ------
 
-* Nick White <http://njw.me.uk/>
-* v4hn <http://v4hn.de/>
+* Nick White <https://njw.me.uk/>
+* v4hn <https://v4hn.de/>

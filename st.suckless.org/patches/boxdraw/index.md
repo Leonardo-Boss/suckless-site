@@ -27,9 +27,9 @@ of font, size or other configuration values.
 Supported codepoints are U2500 - U259F except dashes and diagonals, and U28XX.
 
 See also: unicode references
-[U2500.pdf](http://www.unicode.org/charts/PDF/U2500.pdf),
-[U2580.pdf](http://www.unicode.org/charts/PDF/U2580.pdf),
-[U2800.pdf](http://www.unicode.org/charts/PDF/U2800.pdf),
+[U2500.pdf](https://www.unicode.org/charts/PDF/U2500.pdf),
+[U2580.pdf](https://www.unicode.org/charts/PDF/U2580.pdf),
+[U2800.pdf](https://www.unicode.org/charts/PDF/U2800.pdf),
 and example pages
 [utf8demo.txt](https://salsa.debian.org/printing-team/cups/raw/debian/master/cups/utf8demo.txt)
 and

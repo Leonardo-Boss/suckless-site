@@ -13,7 +13,7 @@ Another cool thing is to use it with splitvt so you have multitail windows on
 top and for example four lines of vim at the bottom.
 
 There is also a blog post which describes the whole configuration:
-[http://nion.modprobe.de/blog/archives/440-Using-the-ii-irc-client.html](http://nion.modprobe.de/blog/archives/440-Using-the-ii-irc-client.html)
+[https://nion.modprobe.de/blog/archives/440-Using-the-ii-irc-client.html](https://nion.modprobe.de/blog/archives/440-Using-the-ii-irc-client.html)
 
 Popup Chat Windows
 ------------------
@@ -31,7 +31,7 @@ Web frontend
 ------------
 phpii is a simple web frontend for ii. You can see a demo of it and download
 the php source here: [phpii
-homepage](http://yogan.meinungsverstaerker.de/phpii)
+homepage](https://yogan.meinungsverstaerker.de/phpii)
 
 iii
 ---
@@ -51,7 +51,7 @@ freenode and oftc.
 
 iil
 ---
-The [iil](http://chiselapp.com/user/onys/repository/iil/home) (short for
+The [iil](https://chiselapp.com/user/onys/repository/iil/home) (short for
 iiless) is fast viewer/reader for ii irc client, using your shell and less.
 
 uii
@@ -62,22 +62,22 @@ pops up notifications.
 
 im-scripts
 ----------
-[im-scripts](http://github.com/gravicappa/im-scripts) is a set of sh-scripts
+[im-scripts](https://github.com/gravicappa/im-scripts) is a set of sh-scripts
 for convenient use of ii and ji.
 
 wii
 ---
-[wii](http://github.com/younix/wii) is a simple web frontend for ii.
+[wii](https://github.com/younix/wii) is a simple web frontend for ii.
 It just uses HTML, java-script and shell-script.
 
 xii
 ---
-[xii](http://github.com/younix/xii) is a simple X11 frontend for ii.
+[xii](https://github.com/younix/xii) is a simple X11 frontend for ii.
 It is written in plain C based on Xaw and Xt library.
 
 hysteria
 --------
-[hysteria](http://git.2f30.org/hysteria/) is another set of scripts
+[hysteria](https://git.2f30.org/hysteria/) is another set of scripts
 (mostly shell) which provide support for highlighting, autojoining, etc.
 
 lchat
@@ -98,11 +98,11 @@ In `/etc/stunnel/stunnel.conf`:
 	accept = 127.0.0.1:<your-port>
 	connect = irc.oftc.net:6697
 
-[inetd](http://man.openbsd.org/inetd) listens on multiple TCP ports and can
+[inetd](https://man.openbsd.org/inetd) listens on multiple TCP ports and can
 connect a program standard input and output to a TCP socket.
 
 This enables it to act as a simple proxy using any command line TLS client,
-such as [openssl s_client](http://man.openbsd.org/openssl#S_CLIENT),
+such as [openssl s_client](https://man.openbsd.org/openssl#S_CLIENT),
 [brssl client](https://bearssl.org/gitweb/?p=BearSSL;a=blob;f=tools/brssl.c;h=91372b09f42149a503f9d13db0b78cf0a123611e;hb=HEAD#l43),
 nc -ssl, socat... or any other:
 

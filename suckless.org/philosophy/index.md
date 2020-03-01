@@ -1,7 +1,7 @@
 Philosophy
 ==========
 We are the home of quality software such as [dwm](//dwm.suckless.org),
-[dmenu](//tools.suckless.org/dmenu), [st](//st.suckless.org/) and plenty of
+[dmenu](//tools.suckless.org/dmenu/), [st](//st.suckless.org/) and plenty of
 other [tools](//tools.suckless.org), with a focus on simplicity, clarity and
 frugality. Our philosophy is about keeping things simple, minimal and usable.
 We believe this should become the mainstream philosophy in the IT sector.
@@ -57,10 +57,10 @@ shrinks, the more skilled you have become and the less your software sucks.
 
 Related links
 -------------
-* [The Duct Tape Programmer](http://www.joelonsoftware.com/items/2009/09/23.html)
-* [Why should I have written ZeroMQ in C, not C++](http://www.250bpm.com/blog:4)
-* [Best practices in application architecture: Use layers to decouple](http://geekandpoke.typepad.com/.a/6a00d8341d3df553ef014e5f920093970c-pi)
-* [Facebook's code quality problem](http://www.darkcoding.net/software/facebooks-code-quality-problem/)
-* [Minimal Viable Programs](http://joearms.github.io/published/2014-06-25-minimal-viable-program.html)
-* [Why I Write Games in C](http://jonathanwhiting.com/writing/blog/games_in_c/)
-* [Use of command-line tools for effective data processing](http://aadrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html)
+* [The Duct Tape Programmer](https://www.joelonsoftware.com/2009/09/23/the-duct-tape-programmer/)
+* [Why should I have written ZeroMQ in C, not C++](https://250bpm.com/blog:4)
+* [Best practices in application architecture: Use layers to decouple](https://geekandpoke.typepad.com/.a/6a00d8341d3df553ef014e5f920093970c-pi)
+* [Facebook's code quality problem](https://www.darkcoding.net/software/facebooks-code-quality-problem/)
+* [Minimal Viable Programs](https://joearms.github.io/published/2014-06-25-minimal-viable-program.html)
+* [Why I Write Games in C](https://jonathanwhiting.com/writing/blog/games_in_c/)
+* [Use of command-line tools for effective data processing](https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html)

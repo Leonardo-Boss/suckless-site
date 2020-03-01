@@ -1,7 +1,8 @@
 nldev - netlink device manager
 ==============================
-[nldev](http://git.r-36.net/nldev/) is a netlink frontend for mdev, replacing
+
+[nldev](https://r-36.net/scm/nldev/log.html) is a netlink frontend for mdev, replacing
 the over-engineered udevd.
 
-[nlmon](http://git.r-36.net/nlmon/) replaces udevadm for monitoring network
+[nlmon](https://r-36.net/scm/nlmon/log.html) replaces udevadm for monitoring network
 devices.

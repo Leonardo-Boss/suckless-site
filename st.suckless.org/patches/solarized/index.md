@@ -3,7 +3,7 @@ solarized
 
 Description
 -----------
-[Solarized](http://ethanschoonover.com/solarized) is a color scheme by Ethan
+[Solarized](https://ethanschoonover.com/solarized/) is a color scheme by Ethan
 Schoonover which exists in a dark and a light variant. These patches make the
 Solarized color scheme available for st.
 

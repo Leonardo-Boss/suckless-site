@@ -44,8 +44,8 @@ Things that have already been implemented are:
 * fallback fonts
 * line drawing
 
-See the [goals](//st.suckless.org/goals) for more details and the
-[TODO](//git.suckless.org/st/plain/TODO) for what still needs to be
+See the [goals](//st.suckless.org/goals/) for more details and the
+[TODO](//git.suckless.org/st/plain.html) for what still needs to be
 implemented or fixed.
 
 Configuration
@@ -56,12 +56,12 @@ Configuration is done with `config.h`. Read the comments in the generated
 
 FAQ
 ---
-The [FAQ](//git.suckless.org/st/plain/FAQ) is maintained in the st source code
+The [FAQ](//git.suckless.org/st/plain.html) is maintained in the st source code
 repository.
 
 Development
 -----------
-st is actively developed. You can [browse](//git.suckless.org/st) its source
+st is actively developed. You can [browse](//git.suckless.org/st/) its source
 code repository or get a copy using git with the following command:
 
 	git clone https://git.suckless.org/st
@@ -69,5 +69,5 @@ code repository or get a copy using git with the following command:
 Download
 --------
 * [st 0.8.2](//dl.suckless.org/st/st-0.8.2.tar.gz) (2019-02-09)
-* [LICENSE](//git.suckless.org/st/plain/LICENSE)
+* [LICENSE](//git.suckless.org/st/plain.html)
 

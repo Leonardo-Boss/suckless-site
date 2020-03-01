@@ -45,7 +45,7 @@ Status Monitors Submitted By Others
 Feel free to add your own status monitors here (keeping the list sorted).
 
 * [barM](barM.c) - can display all, time/date, ram usage, output of commands (the New BarMonitor).
-* [dstat](https://www.umaxx.net/dl)
+* [dstat](https://www.umaxx.net/dl/)
   [Screenshot](https://www.umaxx.net/dstat.png) - displays the current network
   throughput, CPU usage, performance settings, battery status, temperature,
   volume settings, as well as the current date and time (OpenBSD only, no support
@@ -60,7 +60,7 @@ Feel free to add your own status monitors here (keeping the list sorted).
   and battery status, written in Go using XGB.
 * [dwmsd](https://github.com/johnko/dwmsd) - a daemon that listens on localhost
   tcp (may be useful as a base for asynchronous updates)
-* [dwm-sss](https://github.com/roadkillcat/dwm_sss) - shell script providing
+* [dwm-sss](https://github.com/joeiddon/dwm_sss) - shell script providing
   date, time and CPU temperature
 * [dwmstat](https://notabug.org/kl3/dwmstat) - small and simple | IP, CPU
   temperature, system volume, current local time (and more) | config.h | OpenBSD

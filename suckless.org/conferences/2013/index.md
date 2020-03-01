@@ -34,7 +34,7 @@ Video:
 [![slcon-2013-1-20h-st-the_past_and_future.webm](//dl.suckless.org/slcon/2013/slcon-2013-1-20h-st-the_past_and_future.png)](//dl.suckless.org/slcon/2013/slcon-2013-1-20h-st-the_past_and_future.webm)
 
 
-(11:45-13:00) *Bugs found by musl*, Szabolcs Nagy ([slides](http://port70.net/~nsz/slcon/bugs_talk.html))
+(11:45-13:00) *Bugs found by musl*, Szabolcs Nagy ([slides](https://port70.net/~nsz/slcon/bugs_talk.html))
 
         Szabolcs picked a few issues found by musl and to show how a new libc can be
         (and is) beneficial.
@@ -54,7 +54,7 @@ Video:
 [![slcon-2013-3-chneukirchen-runit_and_ignite.webm](//dl.suckless.org/slcon/2013/slcon-2013-3-chneukirchen-runit_and_ignite.png)](//dl.suckless.org/slcon/2013/slcon-2013-3-chneukirchen-runit_and_ignite.webm)
 
 
-(15:20-16:20) *The costs of abstraction*, Szabolcs Nagy ([slides](http://port70.net/~nsz/slcon/abstraction_talk.html))
+(15:20-16:20) *The costs of abstraction*, Szabolcs Nagy ([slides](https://port70.net/~nsz/slcon/abstraction_talk.html))
 
         Szabolcs discussed why C is still the only serious programming language.
 

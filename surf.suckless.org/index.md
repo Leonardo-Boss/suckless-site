@@ -15,7 +15,7 @@ Getting Started
 ---------------
 Start the browser with
 
-	surf http://your-url
+	surf https://your-url
 
 You can navigate by clicking on links on the displayed page. Hit *Ctrl-g* to enter a new URL. For more commands consult
 
@@ -23,7 +23,7 @@ You can navigate by clicking on links on the displayed page. Hit *Ctrl-g* to ent
 
 Links
 -----
-* Mailing List: `dev+subscribe@suckless.org` ([Archives](//lists.suckless.org/dev))
+* Mailing List: `dev+subscribe@suckless.org` ([Archives](//lists.suckless.org/dev/))
 * IRC channel: #suckless at irc.oftc.net
 
 Note On Webkit Versions
@@ -35,14 +35,14 @@ version based on webkit1gtk is still available as a branch.
 
 Development
 -----------
-surf is actively developed. You can [browse](//git.suckless.org/surf) its
+surf is actively developed. You can [browse](//git.suckless.org/surf/) its
 source code repository or get a copy with the following command:
 
 	git clone https://git.suckless.org/surf
 
 Download
 --------
-* [MIT/X Consortium license](//git.suckless.org/surf/plain/LICENSE)
+* [MIT/X Consortium license](//git.suckless.org/surf/file/LICENSE.html)
 * [surf 2.0](//dl.suckless.org/surf/surf-2.0.tar.gz) (2017-03-28)
-* See also [dmenu](//tools.suckless.org/dmenu),
-  [tabbed](//tools.suckless.org/tabbed)
+* See also [dmenu](//tools.suckless.org/dmenu/),
+  [tabbed](//tools.suckless.org/tabbed/)

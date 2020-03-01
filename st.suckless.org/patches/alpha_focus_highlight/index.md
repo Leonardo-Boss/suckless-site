@@ -8,7 +8,7 @@ focused- and one for unfocused windows' background.  This enables the user to
 spot the focused window at a glance.
 
 The *Alpha Highlight Focus Patch* patch is based on the
-[Alpha Patch](https://st.suckless.org/patches/alpha/),
+[Alpha Patch](//st.suckless.org/patches/alpha/),
 which is already applied in the patch file below. Most of the work has been performed by the
 original authors of the Alpha Patch.
 

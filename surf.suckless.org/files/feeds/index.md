@@ -11,7 +11,7 @@ a list of the feeds.
 Author
 ------
 
-Charles Lehner <http://celehner.com>
+Charles Lehner <https://celehner.com>
 
 Code
 ----

@@ -7,7 +7,7 @@ Mailing lists
   reports and general discussion
 * `hackers@suckless.org` - for patches and patch discussion. Commit messages
   and diffs from all suckless projects are posted here and can be replied to.
-  [See patch/hacking guidelines here](//suckless.org/hacking).
+  [See patch/hacking guidelines here](//suckless.org/hacking/).
 * `news@suckless.org` - for release and other news. Please send release news to
   dev@ too.
 * `wiki@suckless.org` - for discussion about the wiki, also automatic wiki
@@ -107,16 +107,16 @@ An archive of all mails posted to the mailing lists is accessible via
 
 Related lists
 -------------
-* [9fans](http://plan9.bell-labs.com/wiki/plan9/mailing_lists/#9fans) - fans of
+* [9fans](https://9fans.github.io/plan9port/) - fans of
   the [Plan 9 from Bell Labs](http://9fans.net) operating system
-* [inferno-list](http://plan9.bell-labs.com/wiki/plan9/mailing_lists/#INFERNO-LIST)
+* [inferno-list](https://web.archive.org/web/20170602021708/https://plan9.bell-labs.com/wiki/plan9/mailing_lists/#INFERNO-LIST)
   - Inferno users and developers
-* [9front](http://9front.org/) - 9front users and hackers
-* [cat-v](http://cat-v.org/) - cat-v.org trolling
+* [9front](https://9front.org/) - 9front users and hackers
+* [cat-v](https://cat-v.org/) - cat-v.org trolling
 
 IRC
 ---
-The channels are in the [OFTC](http://www.oftc.net) IRC network:
+The channels are in the [OFTC](https://www.oftc.net) IRC network:
 [irc.oftc.net](irc://irc.oftc.net/)
 
 Official channel of suckless.org projects:

@@ -26,7 +26,7 @@ Usage
 
 Download
 --------
-* [dwm-5.2-movestack.diff](http://www.aplusbi.com/dwm/dwm-5.2-movestack.diff) (1.9k) (20081003)
+* [dwm-5.2-movestack.diff](https://www.aplusbi.com/dwm/dwm-5.2-movestack.diff) (1.9k) (20081003)
 
 Author
 ------

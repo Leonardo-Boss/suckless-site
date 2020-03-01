@@ -79,11 +79,11 @@ with `#` will be ignored. A `\\` at the beginning of the line escapes `@` and
 	thanks / questions?
 
 A deeper example can be found in
-[this file](//git.suckless.org/sent/tree/example) from the repository root.
+[this file](//git.suckless.org/sent/tree/example/) from the repository root.
 
 Development
 -----------
-You can [browse](//git.suckless.org/sent) its source code repository or get a
+You can [browse](//git.suckless.org/sent/) its source code repository or get a
 copy using the following command:
 
 	git clone https://git.suckless.org/sent

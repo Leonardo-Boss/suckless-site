@@ -13,7 +13,7 @@ Arrival day.
 (19:30) *Gathering in the "Waldgeist"*
 
 > We gathered together in and checked out the
-> [Waldgeist](http://www.derwaldgeist.de/) restaurant that was within
+> [Waldgeist](https://www.derwaldgeist.de/) restaurant that was within
 > walking distance of the hotel.
 
 Saturday, 2016-09-24
@@ -237,7 +237,7 @@ No talk session plans, hack sessions and departure day.
 
 Acknowledgment
 ==============
-We kindly thank [![genua GmbH](../genua.png)](http://www.genua.eu) for
+We kindly thank [![genua GmbH](../genua.png)](https://www.genua.de/en/) for
 lending us the equipment to record the slcon 2016 conference videos.
 
 Previous conferences

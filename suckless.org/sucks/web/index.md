@@ -4,9 +4,9 @@ It has enabled the global information exchange, mass surveillance, studies in
 social control, allowed revolutions, made a fortune for many billionaires and
 in the meanwhile ruined our climate: the web.
 
-* [This is a motherfucking website.](http://motherfuckingwebsite.com/)
-* [This is a better motherfucking website.](http://bettermotherfuckingwebsite.com/)
-* [This is the best motherfucking website.](http://bestmotherfucking.website/)
+* [This is a motherfucking website.](https://motherfuckingwebsite.com/)
+* [This is a better motherfucking website.](https://bettermotherfuckingwebsite.com/)
+* [This is the best motherfucking website.](https://bestmotherfucking.website/)
 
 For short: There is an industry which is specialized on extending the resource
 usage to display just some characters on your display. Millions of jobs are
@@ -28,5 +28,5 @@ Gopher
 ------
 For seeing a counter example in how to not suck, see the gopher. You can read
 more about it at the
-[gopherproject (http)](http://gopherproject.org) or [gopherproject
+[gopherproject (http)](https://gopherproject.org) or [gopherproject
 (gopher)](gopher://gopherproject.org).

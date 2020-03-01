@@ -7,5 +7,12 @@ all: build-page
 build-page: build-page.c
 	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ build-page.c
 
+check: md-printlinks
+	sh checklinks.sh
+
+fix: md-printlinks
+	find . -name '*.md' -exec sh fixlinks.sh {} +
+	sh checklinks.sh
+
 clean:
-	rm -f build-page
+	rm -f build-page md-printlinks

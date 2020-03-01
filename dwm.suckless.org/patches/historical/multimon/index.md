@@ -25,7 +25,7 @@ status all:
 
   * Show/update the status on all bars.
   * Based on
-    [statusbar on all monitors](//dwm.suckless.org/patches/statusallmons), but
+    [statusbar on all monitors](//dwm.suckless.org/patches/statusallmons/), but
     uses a configurable boolean.
 
 Each can be applied independently, if desired, except for "reset view" which

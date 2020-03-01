@@ -16,14 +16,14 @@ IRC. Remember to strip input for example with tr(1), tr -cd "0-9a-zA-Z" for
 example would only allow numbers and characters.
 
 If you want to see a live demonstration of a bot written for ii, join #grml on
-freenode, the grml-tips bot which searches for [grml](http://www.grml.org) tips
+freenode, the grml-tips bot which searches for [grml](https://grml.org/) tips
 and gives a link or error messages is written in 45 lines of /bin/sh. No, I
 will not publish the code since I really suck in shell programming :)
 
 Stat scripts
 ------------
-If you want to use for example [pisg](http://pisg.sf.net/) to generate channel
-stats this will also work if you choose the irssi log format.
+If you want to use for example [pisg](https://pisg.sourceforge.net/) to generate
+channel stats this will also work if you choose the irssi log format.
 
 Automatic reconnects
 --------------------
@@ -60,7 +60,7 @@ if you need help, do not hesitate to ask c00kiemon5ter on freenode and oftc.
 nagios
 ------
 Simple Perl script "nagios\_post.pl" as interface between
-[Nagios](http://www.nagios.org/) and ii:
+[Nagios](https://www.nagios.org/) and ii:
 
 	#!/usr/bin/perl -w
 
@@ -110,5 +110,5 @@ appropriate "service&#x5f;notification&#x5f;commands" and
 
 rsstail
 -------
-Just piping the output of [rsstail](http://www.vanheusden.com/rsstail/) into
+Just piping the output of [rsstail](https://www.vanheusden.com/rsstail/) into
 the fifo "in" should work. More detailed examples are welcome.

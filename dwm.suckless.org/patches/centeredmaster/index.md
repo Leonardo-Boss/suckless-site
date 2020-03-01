@@ -55,5 +55,5 @@ Download
 
 Authors
 -------
-* [Jérôme Andrieux](http://blog.jardinmagique.info) - <jerome@gcu.info>
+* [Jérôme Andrieux](https://blog.jardinmagique.info) - <jerome@gcu.info>
 * Laslo Hunhold - <dev@frign.de> (6.1, git ports)

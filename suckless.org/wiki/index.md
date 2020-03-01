@@ -58,7 +58,7 @@ A quick way to check what output will be generated on the site is to do:
 Changes
 -------
 The incoming changes to the wiki are all sent to the wiki@
-mailinglist. See [community](//suckless.org/community) for how to
+mailinglist. See [community](//suckless.org/community/) for how to
 subscribe to this list.
 
 Moderators

@@ -3,6 +3,8 @@ floatrules
 
 Description
 -----------
+Inspired by [smartborders](../smartborders/).
+
 This patch adds 5 extra variables to the 'rules' array in `config.def.h`. These are:
 * `floatx`, `floaty`, `floatw`, `floath` (if the window has the rule `isfloating`, the window will spawn with the geometry specified by these vairables)
 * `floatborderpx` (border width when window is floating)

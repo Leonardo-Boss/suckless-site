@@ -9,6 +9,13 @@ News
 
 [Atom feed](//suckless.org/atom.xml)
 
+2020-03-04
+----------
+Registrations are now open for [slcon7](conferences/2020) that will
+be held in Bad Liebenzell, Germany, on 2020-09-(17-20).
+
+The CfP for interested participants will end on 2020-07-30.
+
 2019-12-01
 ----------
 On Wednesday, 2019-12-04 there will be scheduled maintenance of the suckless
@@ -19,13 +26,6 @@ The mailinglist, website and source-code repositories will have some downtime.
 
 **Update:** the maintenance was finished at 2019-12-04 20:00 UTC+01:00.
 Please let us know if there are issues.
-
-2019-04-04
-----------
-Registrations are now open for [slcon6](conferences/2019) that will be held in
-Bad Liebenzell, Germany on 2019-10-(04-06).
-
-The CfP for interested participants will end on 2019-06-30.
 
 2019-03-30
 ----------

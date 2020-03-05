@@ -27,6 +27,13 @@ The mailinglist, website and source-code repositories will have some downtime.
 **Update:** the maintenance was finished at 2019-12-04 20:00 UTC+01:00.
 Please let us know if there are issues.
 
+2019-04-04
+----------
+Registrations are now open for [slcon6](conferences/2019) that will be held in
+Bad Liebenzell, Germany on 2019-10-(04-06).
+
+The CfP for interested participants will end on 2019-06-30.
+
 2019-03-30
 ----------
 There is now a [patch overview](//gunther.suckless.org/patches/) tool to have a

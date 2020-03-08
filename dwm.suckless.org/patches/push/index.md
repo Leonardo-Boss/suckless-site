@@ -22,6 +22,7 @@ Download
 * [dwm-6.0-push\_no\_master.diff](dwm-6.0-push_no_master.diff)
 * [dwm-push-6.1.diff](dwm-push-6.1.diff) (1402b) - 2014/2/9
 * [dwm-6.1-push\_no\_master.diff](dwm-6.1-push_no_master.diff) - 2015/11/21
+* [dwm-6.2-push\_no\_master.diff](dwm-6.2-push_no_master.diff) - 2020/03/08
 
 Note
 ----

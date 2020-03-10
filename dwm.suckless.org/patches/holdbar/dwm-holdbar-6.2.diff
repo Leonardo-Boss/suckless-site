@@ -1,13 +1,3 @@
-From 5c1a4a448007664439350ed645206198411eb9d1 Mon Sep 17 00:00:00 2001
-From: hsszyman <hsszyman@gmail.com>
-Date: Wed, 3 Jul 2019 23:32:57 -0400
-Subject: [PATCH] Fixed broken bottom bar and removed key hardcoding
-
----
- config.def.h |  2 ++
- dwm.c        | 40 ++++++++++++++++++++++++++++++++++++++++
- 2 files changed, 42 insertions(+)
-
 diff --git a/config.def.h b/config.def.h
 index 1c0b587..0e19b5d 100644
 --- a/config.def.h
@@ -29,7 +19,7 @@ index 1c0b587..0e19b5d 100644
  
  /* button definitions */
 diff --git a/dwm.c b/dwm.c
-index 4465af1..4237031 100644
+index 4465af1..9437707 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -176,6 +176,7 @@ static void grabbuttons(Client *c, int focused);
@@ -72,7 +62,7 @@ index 4465af1..4237031 100644
  	[KeyPress] = keypress,
  	[MappingNotify] = mappingnotify,
  	[MapRequest] = maprequest,
-@@ -275,6 +280,41 @@ static Window root, wmcheckwin;
+@@ -275,6 +280,51 @@ static Window root, wmcheckwin;
  struct NumTags { char limitexceeded[LENGTH(tags) > 31 ? -1 : 1]; };
  
  /* function implementations */
@@ -90,7 +80,17 @@ index 4465af1..4237031 100644
 +void
 +keyrelease(XEvent *e)
 +{
-+	if (e->xkey.keycode == XKeysymToKeycode(dpy, HOLDKEY)){
++	if (XEventsQueued(dpy, QueuedAfterReading)) {
++		XEvent ne;
++		XPeekEvent(dpy, &ne);
++
++		if (ne.type == KeyPress && ne.xkey.time == e->xkey.time &&
++				ne.xkey.keycode == e->xkey.keycode) {
++			XNextEvent(dpy, &ne);
++			return;
++		}
++	}
++	if (e->xkey.keycode == XKeysymToKeycode(dpy, HOLDKEY)) {
 +		selmon->showbar = 0;
 +		updateholdbarpos(selmon);
 +		XMoveResizeWindow(dpy, selmon->barwin, selmon->wx, selmon->by, selmon->ww, bh);
@@ -114,6 +114,3 @@ index 4465af1..4237031 100644
  void
  applyrules(Client *c)
  {
--- 
-2.22.0
-

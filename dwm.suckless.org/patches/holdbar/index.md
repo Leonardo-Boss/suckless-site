@@ -18,3 +18,4 @@ Download
 Author
 ------
 * Hayden Szymanski <hsszyman@gmail.com>
+* Nihal Jere <nihal@nihaljere.xyz> (fixed flickering)

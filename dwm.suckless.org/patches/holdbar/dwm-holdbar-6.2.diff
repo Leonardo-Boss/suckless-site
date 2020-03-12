@@ -1,3 +1,13 @@
+From 58507fca3c3c334f540700c5ed81815d9335138e Mon Sep 17 00:00:00 2001
+From: Nihal Jere <noocsharp@gmail.com>
+Date: Thu, 12 Mar 2020 10:16:48 -0500
+Subject: [PATCH] holdbar: fixed bar flickering caused by repeated key events
+
+---
+ config.def.h |  2 ++
+ dwm.c        | 50 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 52 insertions(+)
+
 diff --git a/config.def.h b/config.def.h
 index 1c0b587..0e19b5d 100644
 --- a/config.def.h
@@ -114,3 +124,6 @@ index 4465af1..9437707 100644
  void
  applyrules(Client *c)
  {
+-- 
+2.25.1
+

@@ -18,7 +18,7 @@ or
 
 Download
 --------
-* [st-workingdirectory-YYYYMMDD-hash.diff](st-anysize-0.8.1.diff)
+* [st-workingdir-20200317-51e19ea.diff](st-workingdir-20200317-51e19ea.diff)
 
 Authors
 -------

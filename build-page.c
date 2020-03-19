@@ -206,6 +206,32 @@ qsort_strcmp(const void *a, const void *b)
 	return strcmp(*(const char **)a, *(const char **)b);
 }
 
+int
+last_dir(char *this)
+{
+	DIR *dp;
+	struct dirent *de;
+	char newdir[PATH_MAX];
+	int dir;
+
+	if ((dp = opendir(this ? this : ".")) == NULL)
+		die_perror("opendir: %s", this ? this : ".");
+
+	dir = 0;
+	while (dir == 0 && (de = readdir(dp))) {
+		if (*de->d_name == '.')
+			continue;
+		snprintf(newdir, sizeof(newdir), this ? "%2$s/%1$s" : "%s", de->d_name, this);
+		if (!stat_isdir(newdir))
+			continue;
+
+		dir = 1;
+	}
+	closedir(dp);
+
+	return !dir;
+}
+
 void
 menu_panel(char *domain, char *page, char *this, int depth)
 {
@@ -251,11 +277,10 @@ menu_panel(char *domain, char *page, char *this, int depth)
 			fputs("/</a>", stdout);
 		}
 
-		if (highlight) {
+		if (highlight && !last_dir(newdir)) {
 			putchar('\n');
 			for (i = 0; i < depth + 2; ++i)
 				putchar('\t');
-			/* TODO: empty <ul></ul> is printed for subitems */
 			puts("<ul>");
 			menu_panel(domain, page, newdir, depth + 1);
 			for (i = 0; i < depth + 2; ++i)

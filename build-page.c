@@ -207,7 +207,7 @@ qsort_strcmp(const void *a, const void *b)
 }
 
 int
-last_dir(char *this)
+has_subdirs(char *this)
 {
 	DIR *dp;
 	struct dirent *de;
@@ -219,7 +219,7 @@ last_dir(char *this)
 
 	dir = 0;
 	while (dir == 0 && (de = readdir(dp))) {
-		if (*de->d_name == '.')
+		if (de->d_name[0] == '.')
 			continue;
 		snprintf(newdir, sizeof(newdir), this ? "%2$s/%1$s" : "%s", de->d_name, this);
 		if (stat_isdir(newdir))
@@ -227,7 +227,7 @@ last_dir(char *this)
 	}
 	closedir(dp);
 
-	return !dir;
+	return dir;
 }
 
 void
@@ -275,7 +275,7 @@ menu_panel(char *domain, char *page, char *this, int depth)
 			fputs("/</a>", stdout);
 		}
 
-		if (highlight && !last_dir(newdir)) {
+		if (highlight && has_subdirs(newdir)) {
 			putchar('\n');
 			for (i = 0; i < depth + 2; ++i)
 				putchar('\t');

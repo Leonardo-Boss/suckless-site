@@ -222,10 +222,8 @@ last_dir(char *this)
 		if (*de->d_name == '.')
 			continue;
 		snprintf(newdir, sizeof(newdir), this ? "%2$s/%1$s" : "%s", de->d_name, this);
-		if (!stat_isdir(newdir))
-			continue;
-
-		dir = 1;
+		if (stat_isdir(newdir))
+			dir = 1;
 	}
 	closedir(dp);
 

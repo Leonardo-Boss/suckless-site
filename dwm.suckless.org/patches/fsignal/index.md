@@ -35,8 +35,9 @@ This can then be triggered through dmenu with this script:
 
 Download
 --------
-* [dwm-fsignal-6.1.diff](dwm-fsignal-6.1.diff)
+* [dwm-fsignal-6.2.diff](dwm-fsignal-6.2.diff)
 
 Authors
 -------
 * Chris Noxz - <chris@noxz.tech>
+* Nihal Jere <nihal@nihaljere.xyz>

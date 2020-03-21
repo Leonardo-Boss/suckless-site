@@ -1,7 +1,18 @@
-diff -up dwm-6.1/config.def.h dwm-6.1_FSIGNAL/config.def.h
---- dwm-6.1/config.def.h	2015-11-08 23:11:48.000000000 +0100
-+++ dwm-6.1_FSIGNAL/config.def.h	2018-03-29 21:34:43.218114924 +0200
-@@ -111,3 +111,10 @@ static Button buttons[] = {
+From e7f523c898983c84ba3102675662dc33cbb5573e Mon Sep 17 00:00:00 2001
+From: Nihal Jere <noocsharp@gmail.com>
+Date: Sat, 21 Mar 2020 15:50:00 -0500
+Subject: [PATCH] fsignal
+
+---
+ config.def.h |  7 +++++++
+ dwm.c        | 54 ++++++++++++++++++++++++++++++++++++++++++++++++++--
+ 2 files changed, 59 insertions(+), 2 deletions(-)
+
+diff --git a/config.def.h b/config.def.h
+index 1c0b587..8d2e6e9 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -113,3 +113,10 @@ static Button buttons[] = {
  	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
  };
  
@@ -12,24 +23,24 @@ diff -up dwm-6.1/config.def.h dwm-6.1_FSIGNAL/config.def.h
 +	/* signum       function        argument  */
 +	{ 1,            setlayout,      {.v = 0} },
 +};
-Only in dwm-6.1_FSIGNAL/: config.h
-diff -up dwm-6.1/dwm.c dwm-6.1_FSIGNAL/dwm.c
---- dwm-6.1/dwm.c	2015-11-08 23:11:48.000000000 +0100
-+++ dwm-6.1_FSIGNAL/dwm.c	2018-03-29 21:22:07.697560231 +0200
-@@ -107,6 +107,12 @@ typedef struct {
+diff --git a/dwm.c b/dwm.c
+index 4465af1..db2ee08 100644
+--- a/dwm.c
++++ b/dwm.c
+@@ -106,6 +106,12 @@ typedef struct {
+ 	const Arg arg;
  } Key;
  
- typedef struct {
++typedef struct {
 +	unsigned int signum;
 +	void (*func)(const Arg *);
 +	const Arg arg;
 +} Signal;
 +
-+typedef struct {
+ typedef struct {
  	const char *symbol;
  	void (*arrange)(Monitor *);
- } Layout;
-@@ -177,6 +183,7 @@ static void grabbuttons(Client *c, int f
+@@ -176,6 +182,7 @@ static void grabbuttons(Client *c, int focused);
  static void grabkeys(void);
  static void incnmaster(const Arg *arg);
  static void keypress(XEvent *e);
@@ -37,7 +48,7 @@ diff -up dwm-6.1/dwm.c dwm-6.1_FSIGNAL/dwm.c
  static void killclient(const Arg *arg);
  static void manage(Window w, XWindowAttributes *wa);
  static void mappingnotify(XEvent *e);
-@@ -1013,6 +1020,47 @@ keypress(XEvent *e)
+@@ -998,6 +1005,47 @@ keypress(XEvent *e)
  			keys[i].func(&(keys[i].arg));
  }
  
@@ -85,13 +96,19 @@ diff -up dwm-6.1/dwm.c dwm-6.1_FSIGNAL/dwm.c
  void
  killclient(const Arg *arg)
  {
-@@ -1233,7 +1281,8 @@ propertynotify(XEvent *e)
+@@ -1215,8 +1263,10 @@ propertynotify(XEvent *e)
+ 	Window trans;
  	XPropertyEvent *ev = &e->xproperty;
  
- 	if ((ev->window == root) && (ev->atom == XA_WM_NAME))
+-	if ((ev->window == root) && (ev->atom == XA_WM_NAME))
 -		updatestatus();
++	if ((ev->window == root) && (ev->atom == XA_WM_NAME)) {
 +		if (!fake_signal())
 +			updatestatus();
++    }
  	else if (ev->state == PropertyDelete)
  		return; /* ignore */
  	else if ((c = wintoclient(ev->window))) {
+-- 
+2.25.1
+

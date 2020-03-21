@@ -22,4 +22,5 @@ Download
 Authors
 -------
 * Daniel Perez - <danielpza@protonmail.com>
-* Chris Noxz - <chris@noxz.tech> (original autor of fsignal)
+* Nihal Jere <nihal@nihaljere.xyz> (fixed window titles not updating)
+* Chris Noxz - <chris@noxz.tech> (original author of fsignal)

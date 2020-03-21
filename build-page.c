@@ -18,6 +18,9 @@
 #define TITLE_DEFAULT "suckless.org"
 #define DIR_MAX 1024
 
+#define GOPHER_ROW_MAX 80
+#define GOPHER_PORT 70
+
 char *html_header =
 	"<!doctype html>\n"
 	"<html>\n"
@@ -42,6 +45,8 @@ char *html_nav_bar =
 	"\t</span>\n";
 
 char *html_footer = "</html>\n";
+
+char *gopher_header = "suckless.org    %1$s\n\n";
 
 struct domain {
 	char *label;
@@ -330,26 +335,165 @@ print_footer(void)
 	fputs(html_footer, stdout);
 }
 
+void
+print_gopher_item(char type, char *disp, char *domain, char *path,
+                  char * file, int port, int level)
+{
+	char d[GOPHER_ROW_MAX];
+	int l;
+
+	strncpy(d, disp, sizeof d);
+	memset(d+GOPHER_ROW_MAX-1, '\0', 1);
+
+	printf("[%c|", type);
+
+	for (l = 0; l < level; ++l)
+		printf("  ");
+	print_name(d);
+	if (type == '1')
+		putchar('/');
+	putchar('|');
+
+	if (path)
+		printf("/%s", path);
+	if (file)
+		printf("/%s", file);
+
+	printf("|%s|%d]\n",  domain, port);
+}
+
+void
+print_gopher_header(void)
+{
+	char title[GOPHER_ROW_MAX];
+
+	printf(gopher_header, oneline(title, sizeof(title), ".title") ?
+	       title : TITLE_DEFAULT);
+}
+
+int
+has_index(char *this)
+{
+	DIR *dp;
+	struct dirent *de;
+	char newdir[PATH_MAX];
+	int index;
+
+	if ((dp = opendir(this ? this : ".")) == NULL)
+		die_perror("opendir: %s", this ? this : ".");
+
+	index = 0;
+	while (index == 0 && (de = readdir(dp))) {
+		if (de->d_name[0] == '.')
+			continue;
+		snprintf(newdir, sizeof(newdir), this ? "%2$s/%1$s" : "%s", de->d_name, this);
+		if (stat_isfile(newdir) && strcmp(de->d_name, "index.md") == 0)
+			index = 1;
+	}
+	closedir(dp);
+
+	return index;
+}
+
+void
+print_gopher_menu(char *domain, char *this)
+{
+	DIR *dp;
+	struct dirent *de;
+	char newdir[PATH_MAX];
+	char *d_list[DIR_MAX], *d;
+	size_t d_len, l;
+	int depth = this ? 1 : 0;
+
+	if ((dp = opendir(this ? this : ".")) == NULL)
+		die_perror("opendir: %s", this ? this : ".");
+
+	d_len = 0;
+	while (d_len < LEN(d_list) && (de = readdir(dp))) {
+		d_list[d_len++] = xstrdup(de->d_name);
+	}
+	closedir(dp);
+
+	qsort(d_list, d_len, sizeof *d_list, qsort_strcmp);
+
+	printf("%s/\n", this ? this : "");
+
+	if (has_index(this))
+		print_gopher_item('0', "about", domain, this ? this : NULL,
+		                  "index.md", GOPHER_PORT, depth);
+
+	for (l = 0; l < d_len; free(d_list[l++])) {
+		d = d_list[l];
+		if (*d == '.')
+			continue;
+		snprintf(newdir, sizeof(newdir), this ? "%2$s/%1$s" : "%s",
+		         d, this);
+		if (!stat_isdir(newdir))
+			continue;
+
+		if (has_subdirs(newdir))
+			print_gopher_item('1', d, domain, newdir, NULL,
+			                  GOPHER_PORT, depth);
+		else
+			print_gopher_item('0', d, domain, newdir, "index.md",
+			                  GOPHER_PORT, depth);
+	}
+}
+
+void
+print_gopher_nav(char *domain)
+{
+	struct domain *d;
+
+	for (d = domain_list; d->dir; ++d) {
+		if (strcmp(domain, d->dir) == 0)
+			printf("%s\n", d->label);
+		else
+			print_gopher_item('1', d->label, d->dir, NULL, NULL,
+			                  GOPHER_PORT, 0);
+	}
+
+	putchar('\n');
+	print_gopher_item('1', "download", "dl.suckless.org", NULL, NULL,
+	                  GOPHER_PORT, 0);
+	print_gopher_item('1', "source", "git.suckless.org", NULL, NULL,
+	                  GOPHER_PORT, 0);
+}
+
 int
 main(int argc, char *argv[])
 {
 	char *domain, *page;
+	int gopher = 0;
 
-	if (argc != 2)
-		die("usage: %s directory", argv[0]);
-	if ((page = strchr(argv[1], '/')))
+	if (argc != 2) {
+		if (argc != 3 || (strcmp(argv[2], "-g") != 0))
+			die("usage: %s directory [-g]", argv[0]);
+		gopher = 1;
+	}
+	if ((page = strchr(argv[1], '/'))) {
 		*page++ = '\0';
+		if (strlen(page) == 0)
+			page = NULL;
+	}
 	domain = argv[1];
 	if (chdir(domain) == -1)
 		die_perror("chdir: %s", domain);
 
-	print_header();
-	print_nav_bar(domain);
-	puts("<div id=\"content\">");
-	print_menu_panel(domain, page);
-	print_content(domain, page);
-	puts("</div>\n");
-	print_footer();
+	if (gopher) {
+		print_gopher_header();
+		print_gopher_menu(domain, page);
+		printf("-------------\n");
+		print_gopher_nav(domain);
+	} else {
+		print_header();
+		print_nav_bar(domain);
+		puts("<div id=\"content\">");
+		print_menu_panel(domain, page);
+		print_content(domain, page);
+		puts("</div>\n");
+		print_footer();
+	}
 
 	return 0;
 }

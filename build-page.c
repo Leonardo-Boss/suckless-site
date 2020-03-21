@@ -16,7 +16,6 @@
 #define LEN(x) (sizeof(x) / sizeof(x[0]))
 #define TITLE_MAX 1024
 #define TITLE_DEFAULT "suckless.org"
-#define DIR_MAX 1024
 
 #define GOPHER_ROW_MAX 80
 #define GOPHER_PORT 70
@@ -177,6 +176,32 @@ print_name(const char *name)
 }
 
 void
+print_gopher_name(const char *name)
+{
+	int c;
+
+	for (; (c = *name); ++name) {
+		switch (c) {
+		case '\r': /* ignore CR */
+		case '\n': /* ignore LF */
+			break;
+		case '_':
+		case '-':
+			putchar(' ');
+			break;
+		case '\t':
+			printf("        ");
+			break;
+		case '|': /* escape separators */
+			printf("\\|");
+			break;
+		default:
+			putchar(c);
+		}
+	}
+}
+
+void
 print_header(void)
 {
 	char title[TITLE_MAX];
@@ -241,7 +266,7 @@ menu_panel(char *domain, char *page, char *this, int depth)
 	DIR *dp;
 	struct dirent *de;
 	char newdir[PATH_MAX];
-	char *d_list[DIR_MAX], *d;
+	char *d_list[PATH_MAX], *d;
 	size_t d_len, l;
 	int i, highlight;
 
@@ -342,14 +367,14 @@ print_gopher_item(char type, char *disp, char *domain, char *path,
 	char d[GOPHER_ROW_MAX];
 	int l;
 
-	strncpy(d, disp, sizeof d);
-	memset(d+GOPHER_ROW_MAX-1, '\0', 1);
+	strncpy(d, disp, sizeof(d) - 1);
+	d[sizeof(d) - 1] = '\0';
 
 	printf("[%c|", type);
 
 	for (l = 0; l < level; ++l)
 		printf("  ");
-	print_name(d);
+	print_gopher_name(d);
 	if (type == '1')
 		putchar('/');
 	putchar('|');
@@ -401,7 +426,7 @@ print_gopher_menu(char *domain, char *this)
 	DIR *dp;
 	struct dirent *de;
 	char newdir[PATH_MAX];
-	char *d_list[DIR_MAX], *d;
+	char *d_list[PATH_MAX], *d;
 	size_t d_len, l;
 	int depth = this ? 1 : 0;
 
@@ -460,23 +485,44 @@ print_gopher_nav(char *domain)
 	                  GOPHER_PORT, 0);
 }
 
+void
+usage(char *argv0)
+{
+	die("usage: %s [-g] directory", argv0);
+}
+
 int
 main(int argc, char *argv[])
 {
-	char *domain, *page;
-	int gopher = 0;
+	char *domain = NULL, *page;
+	int gopher = 0, i, j;
 
-	if (argc != 2) {
-		if (argc != 3 || (strcmp(argv[2], "-g") != 0))
-			die("usage: %s directory [-g]", argv[0]);
-		gopher = 1;
+	for (i = 1; i < argc; i++) {
+		if (argv[i][0] != '-') {
+			if (domain)
+				usage(argv[0]);
+			domain = argv[i];
+			continue;
+		}
+		for (j = 1; j < argv[i][j]; j++) {
+			switch (argv[i][j]) {
+			case 'g':
+				gopher = 1;
+				break;
+			default:
+				usage(argv[0]);
+			}
+		}
 	}
-	if ((page = strchr(argv[1], '/'))) {
+	if (domain == NULL)
+		usage(argv[0]);
+
+	domain = xstrdup(domain);
+	if ((page = strchr(domain, '/'))) {
 		*page++ = '\0';
 		if (strlen(page) == 0)
 			page = NULL;
 	}
-	domain = argv[1];
 	if (chdir(domain) == -1)
 		die_perror("chdir: %s", domain);
 

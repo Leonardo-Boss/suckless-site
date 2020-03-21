@@ -4,7 +4,7 @@ LDFLAGS = -static -s
 all: html
 
 gph: build-page
-	find * -type d -exec sh -ec './build-page "$$0" -g >$$0/index.gph' {} \;
+	find * -type d -exec sh -ec './build-page -g "$$0" >$$0/index.gph' {} \;
 
 html: build-page
 	find * -type d -exec sh -ec './build-page "$$0" >$$0/index.html' {} \;

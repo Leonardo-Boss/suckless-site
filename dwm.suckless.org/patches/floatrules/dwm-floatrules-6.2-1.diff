@@ -23,7 +23,7 @@ diff -u dwm/dwm.c dwmnew/dwm.c
  	int bw, oldbw;
  	unsigned int tags;
  	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen;
-+	int floatbprderpx;
++	int floatborderpx;
  	Client *next;
  	Client *snext;
  	Monitor *mon;
@@ -40,7 +40,7 @@ diff -u dwm/dwm.c dwmnew/dwm.c
  		{
  			c->isfloating = r->isfloating;
  			c->tags |= r->tags;
-+			c->floatbw = r->borderpx;
++			c->floatborderpx = r->floatborderpx;
 +			if (r->isfloating) {
 +				c->x = r->floatx;
 +				c->y = r->floaty;

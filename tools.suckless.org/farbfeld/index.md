@@ -48,7 +48,7 @@ provide packages:
 * [NixOS](https://github.com/NixOS/nixpkgs/tree/master/pkgs/development/libraries/farbfeld)
 * [OpenBSD](http://ports.su/graphics/farbfeld)
 * [Ubuntu](https://packages.ubuntu.com/farbfeld)
-* [Void Linux](https://github.com/voidlinux/void-packages/tree/master/srcpkgs/farbfeld)
+* [Void Linux](https://github.com/void-linux/void-packages/tree/master/srcpkgs/farbfeld)
 
 Implementations
 ---------------

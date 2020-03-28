@@ -2,7 +2,7 @@
 
 tabbed
 ======
-Simple generic tabbed fronted to xembed aware applications, originally designed
+Simple generic tabbed frontend to xembed-aware applications, originally designed
 for [surf](//surf.suckless.org) but also usable with many other applications,
 i.e. [st](//st.suckless.org), [uzbl](http://uzbl.org),
 [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) and

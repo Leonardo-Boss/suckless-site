@@ -79,6 +79,9 @@ Feel free to add your own status monitors here (keeping the list sorted).
 * [suspend-statusbar.c](https://github.com/snobb/dwm-statusbar) - date,
   loadavg, battery and more. If battery goes below threshold - run suspend
   command
+* [ztatus](https://git.noxz.tech/ztatus/log.html) - simple statusbar and
+  notification daemon (through fifo). Displays only date and time normally.
+  Configured to work with 'statuscolors' patch by default.
 
 Helper Functions In The Shell
 -----------------------------

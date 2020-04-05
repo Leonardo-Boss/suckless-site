@@ -94,7 +94,7 @@ diff -upN dmenu-4.9/dmenu.c dmenu-4.9-fuzzyhighlight/dmenu.c
 +			highlight[1] = '\0';
 +			drw_text(
 +				drw,
-+				x + indent - (lrpad / 2) - 1,
++				x + indent - (lrpad / 2),
 +				y,
 +				MIN(maxw - indent, TEXTW(highlight) - lrpad),
 +				bh, 0, highlight, 0

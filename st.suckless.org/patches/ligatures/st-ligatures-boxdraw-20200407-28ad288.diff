@@ -6,8 +6,8 @@ index 470ac86..38240da 100644
  
  include config.mk
  
--SRC = st.c x.c
-+SRC = st.c x.c hb.c
+-SRC = st.c x.c boxdraw.c
++SRC = st.c x.c boxdraw.c hb.c
  OBJ = $(SRC:.c=.o)
  
  all: options st
@@ -18,9 +18,9 @@ index 470ac86..38240da 100644
 -x.o: arg.h config.h st.h win.h
 +x.o: arg.h config.h st.h win.h hb.h
 +hb.o: st.h
+ boxdraw.o: config.h st.h boxdraw_data.h
  
  $(OBJ): config.h config.mk
- 
 diff --git a/config.mk b/config.mk
 index 0cbb002..76c5c4f 100644
 --- a/config.mk
@@ -31,12 +31,12 @@ index 0cbb002..76c5c4f 100644
         `$(PKG_CONFIG) --cflags fontconfig` \
 -       `$(PKG_CONFIG) --cflags freetype2`
 +       `$(PKG_CONFIG) --cflags freetype2` \
-+			 `$(PKG_CONFIG) --cflags harfbuzz`
++       `$(PKG_CONFIG) --cflags harfbuzz`
  LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXft \
         `$(PKG_CONFIG) --libs fontconfig` \
 -       `$(PKG_CONFIG) --libs freetype2`
 +       `$(PKG_CONFIG) --libs freetype2` \
-+			 `$(PKG_CONFIG) --libs harfbuzz`
++       `$(PKG_CONFIG) --libs harfbuzz`
  
  # flags
  STCPPFLAGS = -DVERSION=\"$(VERSION)\" -D_XOPEN_SOURCE=600
@@ -45,7 +45,7 @@ new file mode 100644
 index 0000000..bb0bea8
 --- /dev/null
 +++ b/hb.c
-@@ -0,0 +1,127 @@
+@@ -0,0 +1,132 @@
 +#include <stdlib.h>
 +#include <stdio.h>
 +#include <math.h>
@@ -67,8 +67,10 @@ index 0000000..bb0bea8
 +static HbFontMatch *hbfontcache = NULL;
 +
 +void hbunloadfonts() {
-+	for (int i = 0; i < hbfontslen; i++)
++	for (int i = 0; i < hbfontslen; i++) {
 +		hb_font_destroy(hbfontcache[i].font);
++		XftUnlockFace(hbfontcache[i].match);
++	}
 +
 +	if (hbfontcache != NULL) {
 +		free(hbfontcache);
@@ -89,7 +91,6 @@ index 0000000..bb0bea8
 +	hb_font_t *font = hb_ft_font_create(face, NULL);
 +	if (font == NULL)
 +		die("Failed to load Harfbuzz font.");
-+	XftUnlockFace(match);
 +
 +	hbfontcache[hbfontslen].match = match;
 +	hbfontcache[hbfontslen].font = font;
@@ -129,6 +130,10 @@ index 0000000..bb0bea8
 +	for (int i = 0, specidx = 0; i < len; i++) {
 +		if (glyphs[i].mode & ATTR_WDUMMY)
 +			continue;
++		if (glyphs[i].mode & ATTR_BOXDRAW) {
++			specidx++;
++			continue;
++		}
 +
 +		if (codepoints[i] != specs[specidx].glyph)
 +			((Glyph *)glyphs)[i].mode |= ATTR_LIGA;
@@ -223,7 +228,8 @@ index a1928ca..07ba678 100644
  	ATTR_WRAP       = 1 << 8,
  	ATTR_WIDE       = 1 << 9,
  	ATTR_WDUMMY     = 1 << 10,
-+	ATTR_LIGA       = 1 << 11,
+ 	ATTR_BOXDRAW    = 1 << 11,
++	ATTR_LIGA       = 1 << 12,
  	ATTR_BOLD_FAINT = ATTR_BOLD | ATTR_FAINT,
  };
  

@@ -11,7 +11,7 @@ Download
 --------
 * [dwm-warp-5.9.diff](dwm-warp-5.9.diff) (20111028)
 * [dwm-warp-6.1.diff](dwm-warp-6.1.diff) (20151215)
-* [dwm-warp-git-20160626-7af4d43.diff](dwm-warp-git-20160626-7af4d43.diff)
+* [dwm-warp-6.2.diff](dwm-warp-6.2.diff)
 
 Author
 ------

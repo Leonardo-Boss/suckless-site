@@ -69,3 +69,23 @@ Download
 Authors
 -------
 * [john](http://roxor.me) <j@roxor.me>
+
+A simpler, more flexible plumb patch
+====================================
+A further development on the previous patch to allow for specifying the command line
+
+	static char *plumb_cmd[] = {"plumb", "-m", NULL, NULL};
+
+My plumb utility takes on the stdin by default, and requires another option to 
+be passed input on the command line, so I made this to allow for that.  It can be
+applied on its own, without the other patches.  It replaces the first NULL with
+the current selection.
+
+Download
+--------
+* [simple_plumb.diff](simple_plumb.diff) (2020-04-10)
+
+Authors
+-------
+* [dallin](dallinjdahl.github.io) <dallinjdahl@gmail.com>
+

@@ -30,7 +30,7 @@ modifier for scrolling is not needed anymore. **Note: patches before
 * [st-scrollback-mouse-altscreen-20170427-5a10aca.diff](st-scrollback-mouse-altscreen-20170427-5a10aca.diff)
 * [st-scrollback-mouse-altscreen-0.8.diff](st-scrollback-mouse-altscreen-0.8.diff)
 * [st-scrollback-mouse-altscreen-20190131-e23acb9.diff](st-scrollback-mouse-altscreen-20190131-e23acb9.diff)
-* [st-scrollback-mouse-altscreen-20191024-a2c479c.diff](st-scrollback-mouse-altscreen-20191024-a2c479c.diff)
+* [st-scrollback-mouse-altscreen-20200416-5703aa0.diff](st-scrollback-mouse-altscreen-20200416-5703aa0.diff)
 
 Apply the following patch on top of the first two to allow changing how fast the mouse scrolls.
 

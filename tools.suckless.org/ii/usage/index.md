@@ -84,6 +84,11 @@ lchat
 -----
 [lchat](https://github.com/younix/lchat) is a line oriented terminal font-end.
 
+yaic
+----
+[Yet Another Ii Client](https://github.com/cemkeylan/yaic) is a shell script
+for ii with channel switching, proper line folding, and pretty formatting.
+
 TLS/SSL
 -------
 To connect to a TLS/SSL encrypted channel, it is possible to use the [SSL

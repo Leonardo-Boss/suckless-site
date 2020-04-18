@@ -41,4 +41,4 @@ Authors
 * Updated by Ivan Tham - `pickfire at riseup dot net`
 * [Jochen Sprickerhof](mailto:project@firstname.lastname.de) (Updated to current git)
 * Lucas Gabriel Vuotto - <lvuotto92@gmail.com> (git ports)
-* Aaron Duxler - `aaron@duxler.xyz` (dwm-pertag-perseltag-6.2)
+* Aaron Duxler - <aaron@duxler.xyz> (dwm-pertag-perseltag-6.2)

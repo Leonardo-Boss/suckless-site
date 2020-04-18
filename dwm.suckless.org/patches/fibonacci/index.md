@@ -45,7 +45,7 @@ Download
 
 Maintainer
 ----------
-* Niki Yoshiuchi - <aplusbi@gmail.com>
+* Niki Yoshiuchi - <nyoshiuchi@gmail.com>
 
 Joe Thornber's spiral tiling for [Xmonad](http://www.xmonad.org) formed the
 inspiration for this patch. Thanks to Jan Christoph Ebersbach for updating this

@@ -24,6 +24,12 @@ Download
   * [dwm-6.0-pertag\_without\_bar.diff](dwm-6.0-pertag_without_bar.diff) (5578b) (20140530)
   * [dwm-5.8.2-pertag\_without\_bar.diff](dwm-5.8.2-pertag_without_bar.diff)
 
+* Pertag, but with this patch changes apply to all selected tags.<br/>
+  For exmaple: If tag 2 and tag 3 are selected, changes to barpos, lyaout, mfact, nmaster will apply to both tags.<br/>
+  With the original pertag patch, changes only effect one of the selected tags.
+  * [dwm-pertag-perseltag-6.2.diff](dwm-pertag-perseltag-6.2.diff) (20200418)
+
+
 Authors
 -------
 * Jan Christoph Ebersbach - <jceb@e-jc.de>
@@ -35,3 +41,4 @@ Authors
 * Updated by Ivan Tham - `pickfire at riseup dot net`
 * [Jochen Sprickerhof](mailto:project@firstname.lastname.de) (Updated to current git)
 * Lucas Gabriel Vuotto - <lvuotto92@gmail.com> (git ports)
+* Aaron Duxler - `aaron@duxler.xyz` (dwm-pertag-perseltag-6.2)

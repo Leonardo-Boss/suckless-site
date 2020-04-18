@@ -34,10 +34,14 @@ Usage
    		{ "(@)",                spiral },
    		{ "[\\]",               dwindle },
    	};
+3. Default key bindings are [Ctrl]+[r] for `spiral` and [Ctrl]+[Shift]+r for
+   `dwindle`.
 
 Download
 --------
 * [dwm-fibonacci-5.8.2.diff](dwm-fibonacci-5.8.2.diff)
+* [dwm-fibonacci-6.2.diff](dwm-fibonacci-6.2.diff)
+* [dwm-fibonacci-20200418-c82db69.diff](dwm-fibonacci-20200418-c82db69.diff)
 
 Maintainer
 ----------

@@ -44,9 +44,26 @@ where having certain unprintable characters such as '\n' in the status
 string can make dwm laggy is "fixed", since they are not copied to the
 string that is actually drawn.
 
+dwmblocks integration
+---------------------
+A program that sets the status for dwm such as
+[dwmblocks](https://github.com/torrinfail/dwmblocks) can be patched to manage
+the commands while dwm only finds the location clicked in the status bar.
+This way, no changes are needed in dwm when adding or reordering modules.
+
+Instead of running a command from within dwm using the control character
+as an index, the dwm-statuscmd-signal patch sends a SIGUSR1 signal to
+dwmblocks with the button and control character encoded into the signal value.
+
+The dwmblocks-statuscmd patch makes dwmblocks put each block's signal in
+front of its output text and handles the SIGUSR1 signal by running the
+block's command with $BUTTON exported.
+
 Download
 --------
 * [dwm-statuscmd-6.2.diff](dwm-statuscmd-6.2.diff)
+* [dwm-statuscmd-signal-6.2.diff](dwm-statuscmd-signal-6.2.diff)
+* [dwmblocks-statuscmd.diff](dwmblocks-statuscmd.diff)
 
 Author
 ------

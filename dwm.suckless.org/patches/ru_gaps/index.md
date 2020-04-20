@@ -23,15 +23,14 @@ Apply the following patches on top of the previous patch to add
 additional layouts with resizeable gap support.
 
 A copy of the [fibonacci](../fibonacci/), but with resizeable gaps. 
-	(Window sizes do not scale correctly. Feel free to fix it.)
+This patch is taken from [vanitygaps](https://github.com/bakkeby/dwm-vanitygaps/blob/master/patches/dwm-vanitygaps-6.2.diff)
 * [dwm-ru\_fibonacci-6.2.diff](dwm-ru_fibonacci-6.2.diff)
 
 A copy of the [gaplessgrid](../gaplessgrid/), but with resizeable gaps.
 * [dwm-ru\_gaplessgrid-6.2.diff](dwm-ru_gaplessgrid-6.2.diff) - 25-06-2019
 
 A copy of the [bottomstack](../bottomstack/), but with resizeable gaps.
-	(bstack layout works correctly. 
-	 bstackhorizontal layout windows do not scale 100% correctly. Feel free to fix it ;) )
+The bstackhoriz function of this patch is taken from [vanitygaps](https://github.com/bakkeby/dwm-vanitygaps/blob/master/patches/dwm-vanitygaps-6.2.diff)
 * [dwm-ru\_bottomstack-6.2.diff](dwm-ru_bottomstack-6.2.diff) - 24-07-2019
 
 A copy of the [centeredmaster](../centeredmaster/), but with resizeable gaps.
@@ -39,6 +38,12 @@ A copy of the [centeredmaster](../centeredmaster/), but with resizeable gaps.
 
 A copy of the [deck](../deck/), but with resizeable gaps.
 * [dwm-ru\_deck-6.2.diff](dwm-ru_deck-6.2.diff) - 24-07-2019
+
+Related patches
+---------------
+A different implemetation and more layouts. <br>
+[Github bakkeby dwm-vanitygaps](https://github.com/bakkeby/dwm-vanitygaps/tree/master/patches)<br>
+With this patch some layouts may scale differently with increasing gap pixels.
 
 Authors
 ------

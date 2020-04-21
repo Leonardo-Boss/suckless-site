@@ -25,4 +25,4 @@ Download
 
 Author
 ------
-* Aaron Duxler <aaron.duxler@gmail.com>
+* Aaron Duxler <aaron@duxler.xyz>

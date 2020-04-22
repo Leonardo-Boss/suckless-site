@@ -19,4 +19,3 @@ Authors
 * Mate Nagy - <mnagy@port70.net>
 * Jan Christoph Ebersbach - <jceb@e-jc.de> (6.0, 6.1 ports)
 * Laslo Hunhold - <dev@frign.de> (git port)
-* Kian Kasad - <kdkasad@gmail.com> (6.2 port)

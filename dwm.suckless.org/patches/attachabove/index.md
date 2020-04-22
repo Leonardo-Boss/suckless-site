@@ -12,9 +12,11 @@ Download
 * [dwm-attachabove-6.1.diff](dwm-attachabove-6.1.diff)
 * [dwm-attachabove-20160713-56a31dc.diff](dwm-attachabove-20160713-56a31dc.diff)
 * [dwm-attachabove-20180126-db22360.diff](dwm-attachabove-20180126-db22360.diff)
+* [dwm-attachabove-6.2-20200421.diff](dwm-attachabove-6.2-20200421.diff)
 
 Authors
 -------
 * Mate Nagy - <mnagy@port70.net>
 * Jan Christoph Ebersbach - <jceb@e-jc.de> (6.0, 6.1 ports)
 * Laslo Hunhold - <dev@frign.de> (git port)
+* Kian Kasad - <kdkasad@gmail.com> (6.2 port)

@@ -10,7 +10,7 @@ clients are ever moved, only resized.
 
 Download
 --------
-* [dwm-attachbottom-6.1.diff](dwm-attachbottom-6.1.diff)
+* [dwm-attachbottom-6.2.diff](dwm-attachbottom-6.2.diff)
 
 Authors
 -------

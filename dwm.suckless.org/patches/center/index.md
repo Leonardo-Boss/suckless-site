@@ -8,6 +8,7 @@ monitor.
 
 Download
 --------
+* [dwm-center-6.2.diff](dwm-center-6.2.diff)
 * [dwm-center-6.1.diff](dwm-center-6.1.diff)
 * [dwm-center-20160719-56a31dc.diff](dwm-center-20160719-56a31dc.diff)
 

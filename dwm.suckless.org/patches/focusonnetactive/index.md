@@ -21,6 +21,7 @@ management utilities.
 
 Download
 --------
+* [dwm-focusonnetactive-6.2.diff](dwm-focusonnetactive-6.2.diff)
 * [dwm-focusonnetactive-2017-12-24-3756f7f.diff](dwm-focusonnetactive-2017-12-24-3756f7f.diff)
 
 Author

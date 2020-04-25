@@ -17,7 +17,7 @@ You might want to set resizehints in config.h to zero to get smooth animations w
 
 Download
 --------
-* [dwm-ru\_gaps-6.2.diff](dwm-ru_gaps-6.2.diff) - 24-07-2019
+* [dwm-ru\_gaps-6.2.diff](dwm-ru_gaps-6.2.diff) - 25-04-2020
 
 Apply the following patches on top of the previous patch to add 
 additional layouts with resizeable gap support.
@@ -31,13 +31,13 @@ A copy of the [gaplessgrid](../gaplessgrid/), but with resizeable gaps.
 
 A copy of the [bottomstack](../bottomstack/), but with resizeable gaps.
 The bstackhoriz function of this patch is taken from [vanitygaps](https://github.com/bakkeby/dwm-vanitygaps/blob/master/patches/dwm-vanitygaps-6.2.diff)
-* [dwm-ru\_bottomstack-6.2.diff](dwm-ru_bottomstack-6.2.diff) - 24-07-2019
+* [dwm-ru\_bottomstack-6.2.diff](dwm-ru_bottomstack-6.2.diff) - 25-04-2020
 
 A copy of the [centeredmaster](../centeredmaster/), but with resizeable gaps.
-* [dwm-ru\_centeredmaster-6.2.diff](dwm-ru_centeredmaster-6.2.diff) - 24-07-2019
+* [dwm-ru\_centeredmaster-6.2.diff](dwm-ru_centeredmaster-6.2.diff) - 25-04-2020
 
 A copy of the [deck](../deck/), but with resizeable gaps.
-* [dwm-ru\_deck-6.2.diff](dwm-ru_deck-6.2.diff) - 24-07-2019
+* [dwm-ru\_deck-6.2.diff](dwm-ru_deck-6.2.diff) - 25-04-2020
 
 Related patches
 ---------------

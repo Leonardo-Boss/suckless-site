@@ -51,9 +51,10 @@ Just patch these on top of the original cfacts patch.
 
 * [dwm-cfacts\_bottomstack-6.2.diff](dwm-cfacts_bottomstack-6.2.diff)
 * [dwm-cfacts\_centeredmaster-6.2.diff](dwm-cfacts_centeredmaster-6.2.diff)
+* [dwm-cfacts\_deck-6.2.diff](dwm-cfacts_deck-6.2.diff)
 
 Author
 ------
 * Patrick Steinhardt (pks) <ps@pks.im>
-* Aaron Duxler <aaron@duxler.xyz> - Additional layouts bottomstack + centeredmaster
+* Aaron Duxler <aaron@duxler.xyz> - Additional layouts bottomstack + centeredmaster + deck
 * mss <mss@waifu.club> - dwm-6.2 port. 

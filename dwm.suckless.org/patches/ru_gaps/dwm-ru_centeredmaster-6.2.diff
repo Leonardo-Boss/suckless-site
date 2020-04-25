@@ -31,7 +31,7 @@ diff -up a/dwm.c b/dwm.c
  
  /* variables */
  static const char broken[] = "broken";
-@@ -2176,3 +2178,122 @@ main(int argc, char *argv[])
+@@ -2176,3 +2178,127 @@ main(int argc, char *argv[])
  	XCloseDisplay(dpy);
  	return EXIT_SUCCESS;
  }
@@ -85,17 +85,20 @@ diff -up a/dwm.c b/dwm.c
 +			resize(c, m->wx + mx + m->gappx/2, m->wy + my, mw - 2*c->bw - m->gappx, h - 2*c->bw - m->gappx, 0);
 +		else
 +			resize(c, m->wx + mx + m->gappx, m->wy + my, mw - 2*c->bw - m->gappx*3/2, h - 2*c->bw - m->gappx, 0);
-+		my += HEIGHT(c) + m->gappx;
++		if(my + HEIGHT(c) + m->gappx < m->mh)
++			my += HEIGHT(c) + m->gappx;
 +	} else {
 +		/* stack clients are stacked vertically */
 +		if ((i - m->nmaster) % 2) {
 +			h = (m->wh - ety) / ( (1 + n - i) / 2);
 +			resize(c, m->wx + m->gappx, m->wy + ety, tw - (2*c->bw) - m->gappx*3/2, h - 2*c->bw - m->gappx, 0);
-+			ety += HEIGHT(c) + m->gappx;
++			if(ety + HEIGHT(c) + m->gappx < m->mh)
++				ety += HEIGHT(c) + m->gappx;
 +		} else {
 +			h = (m->wh - oty) / ((1 + n - i) / 2);
 +			resize(c, m->wx + mx + mw + m->gappx/2, m->wy + oty, tw - (2*c->bw) - m->gappx*3/2, h - 2*c->bw - m->gappx, 0);
-+			oty += HEIGHT(c) + m->gappx;
++			if(oty + HEIGHT(c) + m->gappx < m->mh)
++				oty += HEIGHT(c) + m->gappx;
 +		}
 +	}
 +}
@@ -145,12 +148,14 @@ diff -up a/dwm.c b/dwm.c
 +		w = (mw + mxo - mx) / (MIN(n, m->nmaster) - i) + m->gappx;
 +		resize(c, m->wx + mx, m->wy + my + m->gappx, w - 2*(c->bw + m->gappx),
 +		       mh - 2*(c->bw + m->gappx), 0);
-+		mx += WIDTH(c) + m->gappx;
++		if(mx + WIDTH(c) + m->gappx < m->mw)
++			mx += WIDTH(c) + m->gappx;
 +	} else {
 +		/* stack clients are stacked horizontally */
 +		w = (m->ww - tx) / (n - i) + m->gappx;
 +		resize(c, m->wx + tx, m->wy + m->gappx, w - 2*(c->bw + m->gappx),
 +		       m->wh - 2*(c->bw + m->gappx), 0);
-+		tx += WIDTH(c) + m->gappx;
++		if(tx + WIDTH(c) + m->gappx < m->mw)
++			tx += WIDTH(c) + m->gappx;
 +	}
 +}

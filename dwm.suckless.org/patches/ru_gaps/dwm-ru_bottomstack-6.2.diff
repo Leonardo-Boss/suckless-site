@@ -31,7 +31,7 @@ diff -up a/dwm.c b/dwm.c
  static void togglebar(const Arg *arg);
  static void togglefloating(const Arg *arg);
  static void toggletag(const Arg *arg);
-@@ -2176,3 +2178,83 @@ main(int argc, char *argv[])
+@@ -2176,3 +2178,87 @@ main(int argc, char *argv[])
  	XCloseDisplay(dpy);
  	return EXIT_SUCCESS;
  }
@@ -63,14 +63,16 @@ diff -up a/dwm.c b/dwm.c
 +		if (i < m->nmaster) {
 +			w = (m->ww - mx) / (MIN(n, m->nmaster) - i) - m->gappx;
 +			resize(c, m->wx + mx, m->wy + m->gappx, w - 2*c->bw, mh - 2*c->bw - m->gappx*(5-ns)/2, 0);
-+			mx += WIDTH(c) + m->gappx;
++			if(mx + WIDTH(c) + m->gappx < m->mw)
++				mx += WIDTH(c) + m->gappx;
 +		} else {
 +			w = (m->ww - tx) / (n - i) - m->gappx;
 +			if(m->nmaster == 0)
 +				resize(c, m->wx + tx, m->wy + mh, w - (2*c->bw), m->wh - mh - 2*c->bw - m->gappx, False);
 +			else
 +				resize(c, m->wx + tx, m->wy + mh + m->gappx/ns, w - (2*c->bw), m->wh - mh - 2*c->bw - m->gappx*(5-ns)/2, False);
-+			tx += WIDTH(c) + m->gappx;
++			if (tx + WIDTH(c) + m->gappx < m->mw)
++				tx += WIDTH(c) + m->gappx;
 +		}
 +}
 +
@@ -108,10 +110,12 @@ diff -up a/dwm.c b/dwm.c
 +	for (i = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++) {
 +		if (i < m->nmaster) {
 +			resize(c, mx, my, mw / MIN(n, m->nmaster) - (2*c->bw), mh - (2*c->bw), 0);
-+			mx += WIDTH(c) + m->gappx;
++			if(mx + WIDTH(c) + m->gappx < m->mw)
++				mx += WIDTH(c) + m->gappx;
 +		} else {
 +			resize(c, sx, sy, sw - (2*c->bw), sh / (n - MIN(n, m->nmaster)) - (2*c->bw), 0);
-+			sy += HEIGHT(c) + m->gappx;
++			if(sy + HEIGHT(c) + m->gappx < m->mh)
++				sy += HEIGHT(c) + m->gappx;
 +		}
 +	}
 +}

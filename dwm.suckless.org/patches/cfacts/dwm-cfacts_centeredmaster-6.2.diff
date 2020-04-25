@@ -33,7 +33,7 @@ diff -up a/dwm.c b/dwm.c
  
  /* variables */
  static const char broken[] = "broken";
-@@ -2175,3 +2177,139 @@ main(int argc, char *argv[])
+@@ -2175,3 +2177,144 @@ main(int argc, char *argv[])
  	XCloseDisplay(dpy);
  	return EXIT_SUCCESS;
  }
@@ -89,7 +89,8 @@ diff -up a/dwm.c b/dwm.c
 +		h = (m->wh - my) * (c->cfact / mfacts);
 +		resize(c, m->wx + mx, m->wy + my, mw - 2*c->bw,
 +		      h - 2*c->bw, 0);
-+		my += HEIGHT(c);
++		if(my + HEIGHT(c) < m->mh)
++			my += HEIGHT(c);
 +		mfacts -= c->cfact;
 +	} else {
 +		/* stack clients are stacked vertically */
@@ -101,13 +102,15 @@ diff -up a/dwm.c b/dwm.c
 +			else
 +				resize(c, m->wx, m->wy + ety, tw - 2*c->bw,
 +			       h - 2*c->bw, 0);
-+			ety += HEIGHT(c);
++			if(ety + HEIGHT(c) < m->mh)
++				ety += HEIGHT(c);
 +			lfacts -= c->cfact;
 +		} else {
 +			h = (m->wh - oty) * (c->cfact / rfacts);
 +			resize(c, m->wx + mx + mw, m->wy + oty,
 +			       tw - 2*c->bw, h - 2*c->bw, 0);
-+			oty += HEIGHT(c);
++			if(oty + HEIGHT(c) < m->mh)
++				oty += HEIGHT(c);
 +			rfacts -= c->cfact;
 +		}
 +	}
@@ -162,14 +165,16 @@ diff -up a/dwm.c b/dwm.c
 +		w = (mw + mxo - mx) * (c->cfact / mfacts);
 +		resize(c, m->wx + mx, m->wy + my, w - 2*c->bw,
 +		       mh - 2*c->bw, 0);
-+		mx += WIDTH(c);
++		if(mx + WIDTH(c) < m->mw)
++			mx += WIDTH(c);
 +		mfacts -= c->cfact; 
 +	} else {
 +		/* stack clients are stacked horizontally */
 +		w = (m->ww - tx) * (c->cfact / sfacts);
 +		resize(c, m->wx + tx, m->wy, w - 2*c->bw,
 +		       m->wh - 2*c->bw, 0);
-+		tx += WIDTH(c);
++		if(tx + WIDTH(c) < m->mw)
++			tx += WIDTH(c);
 +		sfacts -= c->cfact; 
 +	}
 +}

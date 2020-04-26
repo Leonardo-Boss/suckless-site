@@ -19,6 +19,8 @@ Download
 --------
 * [dwm-ru\_gaps-6.2.diff](dwm-ru_gaps-6.2.diff) - 25-04-2020
 
+Additional Layouts
+------------------
 Apply the following patches on top of the previous patch to add 
 additional layouts with resizeable gap support.
 
@@ -46,6 +48,6 @@ A different implemetation and more layouts.
 With this patch some layouts may scale differently with increasing gap pixels.
 
 Authors
-------
+-------
 * Aaron Duxler <aaron@duxler.xyz>
 * Rob Livesey <rlives6789@gmail.com>

@@ -41,8 +41,8 @@ A copy of the [deck](../deck/), but with resizeable gaps.
 
 Related patches
 ---------------
-A different implemetation and more layouts. <br>
-[Github bakkeby dwm-vanitygaps](https://github.com/bakkeby/dwm-vanitygaps/tree/master/patches)<br>
+A different implemetation and more layouts.
+[Github bakkeby dwm-vanitygaps](https://github.com/bakkeby/dwm-vanitygaps/tree/master/patches)
 With this patch some layouts may scale differently with increasing gap pixels.
 
 Authors

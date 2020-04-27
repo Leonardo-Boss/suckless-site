@@ -24,7 +24,7 @@ Additional layouts
 Apply the following patches on top of the previous patch to add 
 additional layouts with resizeable gap support.
 
-A copy of the [fibonacci](../fibonacci/), but with resizeable gaps. 
+A copy of the [fibonacci](../fibonacci/), but with resizeable gaps.  
 This patch is taken from [vanitygaps](https://github.com/bakkeby/dwm-vanitygaps/blob/master/patches/dwm-vanitygaps-6.2.diff)
 * [dwm-ru\_fibonacci-6.2.diff](dwm-ru_fibonacci-6.2.diff)
 
@@ -43,8 +43,8 @@ A copy of the [deck](../deck/), but with resizeable gaps.
 
 Related patches
 ---------------
-A different implemetation and more layouts.
-[Github bakkeby dwm-vanitygaps](https://github.com/bakkeby/dwm-vanitygaps/tree/master/patches)
+A different implemetation and more layouts:  
+[Github bakkeby dwm-vanitygaps](https://github.com/bakkeby/dwm-vanitygaps/tree/master/patches)  
 With this patch some layouts may scale differently with increasing gap pixels.
 
 Authors

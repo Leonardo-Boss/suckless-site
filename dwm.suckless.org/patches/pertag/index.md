@@ -24,8 +24,8 @@ Download
   * [dwm-6.0-pertag\_without\_bar.diff](dwm-6.0-pertag_without_bar.diff) (5578b) (20140530)
   * [dwm-5.8.2-pertag\_without\_bar.diff](dwm-5.8.2-pertag_without_bar.diff)
 
-* Pertag, but with this patch applies changes to all selected tags.
-  For exmaple: If tag 2 and tag 3 are selected, changes to barpos, lyaout, mfact, nmaster will apply to both tags.
+* Pertag, but with this patch applies changes to all selected tags.  
+  For exmaple: If tag 2 and tag 3 are selected, changes to barpos, lyaout, mfact, nmaster will apply to both tags.  
   With the original pertag patch, changes only effect the tag which was selected first.
   * [dwm-pertag-perseltag-6.2.diff](dwm-pertag-perseltag-6.2.diff) (20200418)
 

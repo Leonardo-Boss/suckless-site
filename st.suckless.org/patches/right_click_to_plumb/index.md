@@ -87,5 +87,5 @@ Download
 
 Authors
 -------
-* [dallin](dallinjdahl.github.io) <dallinjdahl@gmail.com>
+* [dallin](https://dallinjdahl.github.io/) <dallinjdahl@gmail.com>
 

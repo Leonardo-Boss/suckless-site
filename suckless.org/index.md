@@ -9,6 +9,10 @@ News
 
 [Atom feed](//suckless.org/atom.xml)
 
+2020-04-27
+----------
+[st 0.8.3](//st.suckless.org/) released: [download](//dl.suckless.org/st/st-0.8.3.tar.gz)
+
 2020-03-04
 ----------
 Registrations are now open for [slcon7](conferences/2020) that will

@@ -44,11 +44,14 @@ Notes:
 
 Download
 --------
-[st-boxdraw_v2-0.8.2.diff](st-boxdraw_v2-0.8.2.diff)
+[st-boxdraw_v2-0.8.3.diff](st-boxdraw_v2-0.8.3.diff)
 
-Changelog
----------
-* boxdraw v2: adds shades, braille (U28XX), configurable bold.
+History
+-------
+* boxdraw v2-0.8.3: no code changed. Only rebased and adds patch meta-info for
+improved conflict resolution when `git am -3` is used.
+* boxdraw v2-0.8.2: adds shades, braille (U28XX), configurable bold.
+  * [st-boxdraw_v2-0.8.2.diff](st-boxdraw_v2-0.8.2.diff)
 * boxdraw (v1): U2500-U259F except dashes/diagonals/shades. Bold is thicker.
   * [st-boxdraw-20181101-30ec9a3.diff](st-boxdraw-20181101-30ec9a3.diff)
 

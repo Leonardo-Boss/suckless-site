@@ -19,7 +19,7 @@ Download
 --------
 * [dwm-ru\_gaps-6.2.diff](dwm-ru_gaps-6.2.diff) - 25-04-2020
 
-Additional Layouts
+Additional layouts
 ------------------
 Apply the following patches on top of the previous patch to add 
 additional layouts with resizeable gap support.

@@ -68,6 +68,6 @@ code repository or get a copy using git with the following command:
 
 Download
 --------
-* [st 0.8.3](//dl.suckless.org/st/st-0.8.3.tar.gz) (2019-04-27)
+* [st 0.8.3](//dl.suckless.org/st/st-0.8.3.tar.gz) (2020-04-27)
 * [LICENSE](//git.suckless.org/st/plain/LICENSE)
 

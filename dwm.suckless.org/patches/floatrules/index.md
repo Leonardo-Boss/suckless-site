@@ -16,9 +16,9 @@ Screenshots:
 
 Download
 --------
-* [dwm-floatrules-6.2-1.diff](dwm-floatrules-6.2-1.diff) (01.03.2020 - DD.MM.YYYY, fixed 22.03.2020)
+* [dwm-floatrules-6.2.diff](dwm-floatrules-6.2.diff) (2020-03-01)
 
 Author
 ------
 * Alex Cole
-* Jakub Profota (fix)
+* Jakub Profota (fix 2020-03-22)

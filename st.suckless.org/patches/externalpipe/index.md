@@ -39,6 +39,11 @@ Download
 * [st-externalpipe-20181016-3be4cf1.diff](st-externalpipe-20181016-3be4cf1.diff)
 * [st-externalpipe-0.8.2.diff](st-externalpipe-0.8.2.diff)
 
+When using the scrollback patch, you can apply this patch ontop in order to use
+externalpipe onto the entire terminal history:
+
+* [st-externalpipe-eternal-0.8.3.diff](st-externalpipe-eternal-0.8.3.diff)
+
 Authors
 -------
 * Rob Pilling - <robpilling@gmail.com>

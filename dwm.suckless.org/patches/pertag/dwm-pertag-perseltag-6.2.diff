@@ -70,7 +70,7 @@ diff -up a/dwm.c b/dwm.c
  	selmon->nmaster = MAX(selmon->nmaster + arg->i, 0);
 +	for(i=0; i<=LENGTH(tags); ++i)
 +		if(selmon->tagset[selmon->seltags] & 1<<i)
-+			selmon->pertag->nmasters[(i+1)%LENGTH(tags)] = selmon->nmaster;
++			selmon->pertag->nmasters[(i+1)%(LENGTH(tags)+1)] = selmon->nmaster;
  	arrange(selmon);
  }
  
@@ -88,8 +88,8 @@ diff -up a/dwm.c b/dwm.c
 +	for(i=0; i<=LENGTH(tags); ++i)
 +		if(selmon->tagset[selmon->seltags] & 1<<i)
 +		{
-+			selmon->pertag->ltidxs[(i+1)%LENGTH(tags)][selmon->sellt] = selmon->lt[selmon->sellt]; 
-+			selmon->pertag->sellts[(i+1)%LENGTH(tags)] = selmon->sellt;
++			selmon->pertag->ltidxs[(i+1)%(LENGTH(tags)+1)][selmon->sellt] = selmon->lt[selmon->sellt]; 
++			selmon->pertag->sellts[(i+1)%(LENGTH(tags)+1)] = selmon->sellt;
 +		}
 +
  	if (selmon->sel)
@@ -111,7 +111,7 @@ diff -up a/dwm.c b/dwm.c
  	selmon->mfact = f;
 +	for(i=0; i<=LENGTH(tags); ++i)
 +		if(selmon->tagset[selmon->seltags] & 1<<i)
-+			selmon->pertag->mfacts[(i+1)%LENGTH(tags)] = f;
++			selmon->pertag->mfacts[(i+1)%(LENGTH(tags)+1)] = f;
  	arrange(selmon);
  }
  
@@ -123,7 +123,7 @@ diff -up a/dwm.c b/dwm.c
  	selmon->showbar = !selmon->showbar;
 +	for(i=0; i<=LENGTH(tags); ++i)
 +		if(selmon->tagset[selmon->seltags] & 1<<i)
-+			selmon->pertag->showbars[(i+1)%LENGTH(tags)] = selmon->showbar;
++			selmon->pertag->showbars[(i+1)%(LENGTH(tags)+1)] = selmon->showbar;
  	updatebarpos(selmon);
  	XMoveResizeWindow(dpy, selmon->barwin, selmon->wx, selmon->by, selmon->ww, bh);
  	arrange(selmon);

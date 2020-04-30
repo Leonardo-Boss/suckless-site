@@ -1,4 +1,4 @@
-<video src="https://s.natalian.org/2020-04-30/st-083-scroll.mp4" width="600" controls autoplay></video>
+[![st screenshot](st-083-scroll.jpg)](https://s.natalian.org/2020-04-30/st-083-scroll.mp4)
 
 [![st screenshot](frign-2016-s.png)](frign-2016.png)
 

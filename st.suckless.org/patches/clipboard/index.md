@@ -1,26 +1,21 @@
 one clipboard
 =============
 
-Free Desktop mandates the user to remember which of two clipboards you are
-keeping selections in. If you switch between a terminal and browser, you might
-this UX jarring. This patch modifies st to work from one CLIPBOARD, the same as
-your browser.
+The [Freedesktop
+standard](http://standards.freedesktop.org/clipboards-spec/clipboards-latest.txt)
+requires you to remember which clipboard you are keeping selections in.  If you
+switch between a terminal and browser, you might find this UX jarring.
 
 Description
 -----------
-st by default only sets PRIMARY on selection since
-[March 2015](//git.suckless.org/st/commit/?id=28259f5750f0dc7f52bbaf8b746ec3dc576a58ee)
-according to the
-[Freedesktop standard](http://standards.freedesktop.org/clipboards-spec/clipboards-latest.txt).
-
-This patch makes st set CLIPBOARD on selection.
-Furthermore from `st-clipboard-0.8.2.diff` middle click pastes from CLIPBOARD.
+This trivial patch makes st set CLIPBOARD on selection, the same as your browser.
 
 You may want to replace selpaste with clippaste in your config.h to complete
 the affect.
 
 Download
 --------
+* [st-clipboard-0.8.3.diff](st-clipboard-0.8.3.diff)
 * [st-clipboard-0.8.2.diff](st-clipboard-0.8.2.diff)
 * [st-clipboard-0.8.1.diff](st-clipboard-0.8.1.diff)
 * [st-clipboard-0.6.diff](st-clipboard-0.6.diff)

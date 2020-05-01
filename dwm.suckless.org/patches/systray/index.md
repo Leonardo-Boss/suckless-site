@@ -17,6 +17,10 @@ Download
 * [dwm-git-20130119-systray.diff](dwm-git-20130119-systray.diff) (19946b)
 * [dwm-systray-6.0.diff](dwm-systray-6.0.diff) (19788b) (20130119)
 
+Apply the following patch on top of the systray patch to have a keybind for showing/hiding the systray.
+
+* [dwm-systray-toggle-6.2.diff](dwm-systray-6.2.diff) (2465b)
+
 Author
 ------
 * Jan Christoph Ebersbach <jceb@e-jc.de>
@@ -24,3 +28,4 @@ Author
 * David Phillips (5ed9c48 (6.1), 20160103, 20180314)
 * Eric Pruitt (7af4d43 (20160626))
 * Igor Gevka (cb3f58a (6.2), 20200216)
+* Christopher Witt <git@ch-witt.de> (systray-toggle-6.2)

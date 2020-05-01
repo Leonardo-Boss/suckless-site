@@ -37,5 +37,5 @@ corner.
 
 Repository
 ----------
-	git clone https://git.suckless.org/svkbd
+	git clone https://oldgit.suckless.org/svkbd
 

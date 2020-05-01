@@ -201,8 +201,7 @@ This covers most console-based programs and programs from
 
 ### Web browsers
 
-* [Abaco](http://lab-fgb.com/abaco/)
-  Another extension to make Firefox Vim-like. Less invasive than
+* [Abaco](http://lab-fgb.com/abaco/) - A graphical web browser for Plan 9 that supports most of HTML 4.01.
 * [Conkeror](http://www.conkeror.org/) - A Gecko based browser, with Emacs-style key bindings, appearances and behaviors.
 * [Dillo](https://www.dillo.org/) - Blazingly fast graphical browser with basic CSS support.
 * [edbrowse](http://edbrowse.org/) - ed-alike webbrowser. Unfortunately it is not the standard web browser.

@@ -1,5 +1,3 @@
-[![st screenshot](st-083-scroll.jpg)](https://s.natalian.org/2020-04-30/st-083-scroll.mp4)
-
 [![st screenshot](frign-2016-s.png)](frign-2016.png)
 
 [![st screenshot](putain-ouais-s.png)](putain-ouais.png)

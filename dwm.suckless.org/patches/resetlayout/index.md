@@ -15,7 +15,7 @@ resetlayout in config.def.h.
 
 Download
 --------
-* [dwm-attachaside-20200420-c82db69.diff](dwm-resetlayout-20200420-c82db69.diff)
+* [dwm-resetlayout-20200420-c82db69.diff](dwm-resetlayout-20200420-c82db69.diff)
 
 Authors
 -------

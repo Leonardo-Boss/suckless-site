@@ -15,7 +15,7 @@ There are several other projects which are inspired by the spirit of suckless.
 * [honden](https://github.com/joodan-van-github/honden) - flashcard system built on top of oboeta
 * [ired](https://github.com/radare/ired) - minimalistic hexadecimal editor inspired in radare
 * [kelp](http://kelp.sf.net) - source code annotation framework
-* [lgbt](https://dev.yeuxdelibad.net/lgbt.tgz) - Lets go blog this. A static blog generator 
+* [lgbt](https://dev.yead.name/lgbt.tgz) - Lets go blog this. A static blog generator
 * [librarian](https://github.com/maandree/librarian) - less sucky alternative to pkg-config
 * [micy](https://github.com/radare/toys/tree/master/micy) - minimalistic mouse handler (depends on driver)
 * [oboeta](https://github.com/joodan-van-github/oboeta) - minimalistic plain-text flashcard system

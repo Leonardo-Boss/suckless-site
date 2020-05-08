@@ -12,6 +12,7 @@ Download
 --------
 
 * [dwm-status2d-6.2.diff](dwm-status2d-6.2.diff)
+* [dwm-status2d-20200508-60bb3df.diff](dwm-status2d-20200508-60bb3df.diff)
 
 
 Usage

@@ -1,7 +1,8 @@
-From b2e1dfc554f2e12ecbf2dc0f2714aab99cae7174 Mon Sep 17 00:00:00 2001
+From 7b7773458c072e4b24d6ea32d0364a8e402e4a43 Mon Sep 17 00:00:00 2001
 From: swy7ch <swy7ch@protonmail.com>
-Date: Mon, 4 May 2020 03:53:40 +0200
-Subject: [PATCH] update dwm-fullgaps patch to be used with tile layout update
+Date: Fri, 8 May 2020 19:07:24 +0200
+Subject: [PATCH] [PATCH] update dwm-fullgaps patch to be used with tile layout
+ update
 
 the recent tile layout changes in commit HEAD~1 (f09418b) broke the
 patch
@@ -38,7 +39,7 @@ index 1c0b587..38d2f6c 100644
  	TAGKEYS(                        XK_2,                      1)
  	TAGKEYS(                        XK_3,                      2)
 diff --git a/dwm.1 b/dwm.1
-index 13b3729..0adb50c 100644
+index 13b3729..0202d96 100644
 --- a/dwm.1
 +++ b/dwm.1
 @@ -140,6 +140,16 @@ View all windows with any tag.
@@ -51,9 +52,9 @@ index 13b3729..0adb50c 100644
 +.B Mod1\-=
 +Increase the gaps around windows.
 +.TP
-+.B Mod1\-Shift\-=
++.B Mod1\-Shift-=
 +Reset the gaps around windows to
-+.BR 0.
++.BR 0 .
 +.TP
  .B Mod1\-Shift\-q
  Quit dwm.

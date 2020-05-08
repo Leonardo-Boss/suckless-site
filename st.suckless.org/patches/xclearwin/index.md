@@ -11,7 +11,7 @@ file, which I removed.
 
 Download
 --------
-* [st-xclearwin-20200419-6ee7143.diff](st-xresources-20180309-c5ba9c0.diff)
+* [st-xclearwin-20200419-6ee7143.diff](st-xclearwin-20200419-6ee7143.diff)
 
 Authors
 -------

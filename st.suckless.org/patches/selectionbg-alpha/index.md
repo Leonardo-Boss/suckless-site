@@ -1,5 +1,5 @@
 selectionbg-alpha
-===============
+=================
 
 Description
 -----------

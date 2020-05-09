@@ -24,6 +24,9 @@ doesn't follow X events - i.e. unattended output - e.g. during animation.
 Part 1: auto-sync
 -----------------
 
+*NOTE*: this patch (part 1) is not required if you use st-master. It was
+merged upsream on 2020-05-10 and will be included in the next release.
+
 This patch replaces the timing algorithm and uses a range instead of fixed
 timing values. The range gives it the flexibility to choose when to draw, and
 it tries to draw once an output "batch" is complete, i.e. when there's some
@@ -73,7 +76,7 @@ Part 1 is independent, but part 2 needs part 1 first. Both files are git
 patches and can be applied with either `git am` or with `patch`. Both files
 add values at `config.def.h`, and part 2 also updates `st.info`.
 
-* Part 1: [st-autosync-0.8.3.diff](st-autosync-0.8.3.diff)
+* Part 1 (merged upstream): [st-autosync-0.8.3.diff](st-autosync-0.8.3.diff)
 * Part 2: [st-appsync-0.8.3.diff](st-appsync-0.8.3.diff)
 
 

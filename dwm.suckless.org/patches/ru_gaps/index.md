@@ -25,14 +25,14 @@ Apply the following patches on top of the previous patch to add
 additional layouts with resizeable gap support.
 
 A copy of the [fibonacci](../fibonacci/), but with resizeable gaps.  
-This patch is taken from [vanitygaps](https://github.com/bakkeby/dwm-vanitygaps/blob/master/patches/dwm-vanitygaps-6.2.diff)
+This patch is taken from [vanitygaps](https://github.com/bakkeby/dwm-vanitygaps/blob/master/patches)
 * [dwm-ru\_fibonacci-6.2.diff](dwm-ru_fibonacci-6.2.diff)
 
 A copy of the [gaplessgrid](../gaplessgrid/), but with resizeable gaps.
 * [dwm-ru\_gaplessgrid-6.2.diff](dwm-ru_gaplessgrid-6.2.diff) - 25-06-2019
 
 A copy of the [bottomstack](../bottomstack/), but with resizeable gaps.
-The bstackhoriz function of this patch is taken from [vanitygaps](https://github.com/bakkeby/dwm-vanitygaps/blob/master/patches/dwm-vanitygaps-6.2.diff)
+The bstackhoriz function of this patch is taken from [vanitygaps](https://github.com/bakkeby/dwm-vanitygaps/blob/master/patches)
 * [dwm-ru\_bottomstack-6.2.diff](dwm-ru_bottomstack-6.2.diff) - 25-04-2020
 
 A copy of the [centeredmaster](../centeredmaster/), but with resizeable gaps.

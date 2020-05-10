@@ -11,7 +11,6 @@ find "$t" -name "*.md" -type f | while read -r f; do
 /^(http|https|gopher|irc|ircs|git):\/\// { next; }
 /^\/\/(lists|dl|git|gunther|oldgit)\./ { next; }
 /^mailto:/ { next }
-/^mailto:/ { next }
 /^\/\/suckless\.org\/atom\.xml$/ { next }
 {
 	print $0;

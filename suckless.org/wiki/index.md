@@ -10,7 +10,7 @@ or
 	git clone https://git.suckless.org/sites
 
 Then edit the wiki as you like. The markdown interpreter that is currently
-used on the suckless.org werc instance is
+used on suckless.org is
 [smu](https://github.com/Gottox/smu).
 
 For adding new files, after you created them, use:

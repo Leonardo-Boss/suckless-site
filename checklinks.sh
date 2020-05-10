@@ -7,9 +7,16 @@ find "$t" -name "*.md" -type f | while read -r f; do
 	b=$(basename "$f")
 
 	./md-printlinks < "$f" | \
-		grep -vE '^(http|https|gopher|irc|ircs|git)://' | \
-		grep -vE '^\/\/(lists|dl|git|gunther|oldgit)\.' | \
-		grep -vE '^mailto:' | \
+		awk -F '\t' '
+/^(http|https|gopher|irc|ircs|git):\/\// { next; }
+/^\/\/(lists|dl|git|gunther|oldgit)\./ { next; }
+/^mailto:/ { next }
+/^mailto:/ { next }
+/^\/\/suckless\.org\/atom\.xml$/ { next }
+{
+	print $0;
+}
+' | \
 		while read -r -- l; do
 
 		# // relative

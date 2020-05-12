@@ -1,4 +1,4 @@
-color\_schemes
+OSC 10, 11, 12
 ==============
 
 Description

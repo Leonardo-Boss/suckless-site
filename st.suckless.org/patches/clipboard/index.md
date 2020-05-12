@@ -4,14 +4,14 @@ one clipboard
 The [Freedesktop
 standard](http://standards.freedesktop.org/clipboards-spec/clipboards-latest.txt)
 requires you to remember which clipboard you are keeping selections in.  If you
-switch between a terminal and browser, you might find this UX jarring.
+switch between a terminal and browser, you may find this UX jarring.
 
 Description
 -----------
-This trivial patch makes st set CLIPBOARD on selection, the same as your browser.
+This trivial patch sets CLIPBOARD on selection, the same as your browser.
 
-You may want to replace selpaste with clippaste in your config.h to complete
-the affect.
+You may want to replace selpaste with clippaste in your config.h bindings to
+complete the affect.
 
 Download
 --------

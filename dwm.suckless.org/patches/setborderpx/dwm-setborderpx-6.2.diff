@@ -1,6 +1,6 @@
 diff -up a/config.def.h b/config.def.h
 --- a/config.def.h	2020-05-12 02:17:20.070933833 +0200
-+++ b/config.def.h	2020-05-13 03:22:42.208588454 +0200
++++ b/config.def.h	2020-05-13 03:27:51.018695798 +0200
 @@ -84,6 +84,9 @@ static Key keys[] = {
  	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
  	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
@@ -13,7 +13,7 @@ diff -up a/config.def.h b/config.def.h
  	TAGKEYS(                        XK_3,                      2)
 diff -up a/dwm.c b/dwm.c
 --- a/dwm.c	2020-05-12 02:17:20.070933833 +0200
-+++ b/dwm.c	2020-05-13 03:26:48.248734286 +0200
++++ b/dwm.c	2020-05-14 00:17:35.047919771 +0200
 @@ -119,6 +119,7 @@ struct Monitor {
  	int by;               /* bar geometry */
  	int mx, my, mw, mh;   /* screen size */
@@ -47,7 +47,7 @@ diff -up a/dwm.c b/dwm.c
  
  	wc.border_width = c->bw;
  	XConfigureWindow(dpy, w, CWBorderWidth, &wc);
-@@ -1424,6 +1427,41 @@ sendmon(Client *c, Monitor *m)
+@@ -1424,6 +1427,40 @@ sendmon(Client *c, Monitor *m)
  }
  
  void
@@ -68,18 +68,17 @@ diff -up a/dwm.c b/dwm.c
 +		if (c->bw + arg->i < 0)
 +			c->bw = selmon->borderpx = 0;
 +		else
-+		{
 +			c->bw = selmon->borderpx;
-+			
-+			if (c->isfloating || !selmon->lt[selmon->sellt]->arrange)
-+			{
-+				if (arg->i != 0)
-+					resize(c, c->x, c->y, c->w-(arg->i*2), c->h-(arg->i*2), 0);
-+				else if (prev_borderpx > borderpx)
-+					resize(c, c->x + prev_borderpx - borderpx, c->y + prev_borderpx - borderpx, c->w, c->h, 0);
-+				else if (prev_borderpx < borderpx)
-+					resize(c, c->x, c->y, c->w-2*(borderpx - prev_borderpx), c->h-2*(borderpx - prev_borderpx), 0);
-+			}
++		if (c->isfloating || !selmon->lt[selmon->sellt]->arrange)
++		{
++			if (arg->i != 0 && prev_borderpx + arg->i >= 0)
++				resize(c, c->x, c->y, c->w-(arg->i*2), c->h-(arg->i*2), 0);
++			else if (arg->i != 0)
++				resizeclient(c, c->x, c->y, c->w, c->h);
++			else if (prev_borderpx > borderpx)
++				resize(c, c->x + prev_borderpx - borderpx, c->y + prev_borderpx - borderpx, c->w, c->h, 0);
++			else if (prev_borderpx < borderpx)
++				resize(c, c->x, c->y, c->w-2*(borderpx - prev_borderpx), c->h-2*(borderpx - prev_borderpx), 0);
 +		}
 +	}
 +	arrange(selmon);

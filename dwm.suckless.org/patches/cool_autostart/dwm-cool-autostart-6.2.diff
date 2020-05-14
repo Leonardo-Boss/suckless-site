@@ -14,7 +14,7 @@ index 1c0b587..83f5275 100644
  static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
  
 diff --git a/dwm.c b/dwm.c
-index 4465af1..59836d7 100644
+index 4465af1..d65cf57 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -233,6 +233,7 @@ static int xerror(Display *dpy, XErrorEvent *ee);
@@ -61,3 +61,11 @@ index 4465af1..59836d7 100644
  	running = 0;
  }
  
+@@ -2136,6 +2159,7 @@ main(int argc, char *argv[])
+ 	if (!(dpy = XOpenDisplay(NULL)))
+ 		die("dwm: cannot open display");
+ 	checkotherwm();
++    autostart_exec();
+ 	setup();
+ #ifdef __OpenBSD__
+ 	if (pledge("stdio rpath proc exec", NULL) == -1)

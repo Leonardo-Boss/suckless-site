@@ -1,9 +1,9 @@
 Cool autostart
 ==============
 
-Deskription
+Description
 -----------
-Allow dwm to execute commands from `autostart` array in youre config.h file.
+Allow dwm to execute commands from `autostart` array in you're config.h file.
 And when you exit dwm all processes from `autostart` array would be killed.
 
 Example

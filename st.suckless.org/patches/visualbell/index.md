@@ -1,6 +1,5 @@
-*Note*: [visual bell 2](../visualbell2) was moved to its own page.
-
-# Visual bell
+visualbell
+==========
 
 Description
 -----------
@@ -16,9 +15,13 @@ Download
 * [st-visualbell-20160727-308bfbf.diff](st-visualbell-20160727-308bfbf.diff)
 * [st-visualbell-20180101-1f24bde.diff](st-visualbell-20180101-1f24bde.diff)
 * [st-visualbell-0.8.1.diff](st-visualbell-0.8.1.diff)
+* [st-visualbell-0.8.3.diff](st-visualbell-0.8.3.diff)
 
 Authors
 -------
 * Matthias Schoth - <mschoth@gmail.com>
 * Laslo Hunhold - <dev@frign.de> (git port)
 * Alexis Ben Miloud--Josselin; panpo; alexisbmj+code at protonmail dot com.
+
+*Note*: [visual bell 2](../visualbell2) was moved to its own page.
+

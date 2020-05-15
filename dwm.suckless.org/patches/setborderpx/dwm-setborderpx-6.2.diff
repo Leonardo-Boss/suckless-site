@@ -76,7 +76,7 @@ diff -up a/dwm.c b/dwm.c
 +			else if (arg->i != 0)
 +				resizeclient(c, c->x, c->y, c->w, c->h);
 +			else if (prev_borderpx > borderpx)
-+				resize(c, c->x + prev_borderpx - borderpx, c->y + prev_borderpx - borderpx, c->w, c->h, 0);
++				resize(c, c->x, c->y, c->w + 2*(prev_borderpx - borderpx), c->h + 2*(prev_borderpx - borderpx), 0);
 +			else if (prev_borderpx < borderpx)
 +				resize(c, c->x, c->y, c->w-2*(borderpx - prev_borderpx), c->h-2*(borderpx - prev_borderpx), 0);
 +		}

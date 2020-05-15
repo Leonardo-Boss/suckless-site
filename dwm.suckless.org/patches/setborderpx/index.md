@@ -21,7 +21,7 @@ when increasing or decreasing border pixels.
 
 Download
 --------
-* [dwm-setborderpx-6.2.diff](dwm-setborderpx-6.2.diff) - 14-05-2020
+* [dwm-setborderpx-6.2.diff](dwm-setborderpx-6.2.diff) - 15-05-2020
 
 Author
 ------

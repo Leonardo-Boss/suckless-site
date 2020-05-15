@@ -19,5 +19,5 @@ Download
 
 Author
 ------
-* Maciej Sumalvico <macjan@o2.pl>
+* Maciej Janicki <mail@macjanicki.eu>
 * David Julien <swy7ch@protonmail.com> (20200504-b2e1dfc port)

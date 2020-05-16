@@ -14,6 +14,8 @@ To demonstrate the available cursor styles, try these commands:
 	echo -e -n "\x1b[\x35 q" # blinking bar
 	echo -e -n "\x1b[\x36 q" # steady bar
 
+When drawing is triggered, the cursor does not blink.
+
 Notes
 -----
 * Only cursor styles 0, 1, 3, and 5 blink.  Set `cursorstyle` accordingly.
@@ -22,8 +24,10 @@ Notes
 Download
 --------
 * [st-blinking\_cursor-20200511-914fb82.diff](st-blinking_cursor-20200511-914fb82.diff)
+* [st-blinking\_cursor-20200515-045a0fa.diff](st-blinking_cursor-20200515-045a0fa.diff)
 
 Authors
 -------
 * Genki Sky - <https://lists.suckless.org/hackers/1708/15376.html>
-* Steve Ward - <planet36@gmail.com> (914fb82 change)
+* Steve Ward - <planet36@gmail.com>
+* jvyden

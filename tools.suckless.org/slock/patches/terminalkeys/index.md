@@ -19,6 +19,7 @@ Mappings:
 Download
 --------
 * [slock-terminalkeys-20160618-65b8d52.diff](slock-terminalkeys-20160618-65b8d52.diff)
+* [slock-terminalkeys-1.4.diff](slock-terminalkeys-1.4.diff)
 
 Authors
 -------

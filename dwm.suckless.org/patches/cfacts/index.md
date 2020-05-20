@@ -45,8 +45,8 @@ Download
 * [dwm-cfacts-6.1.diff](dwm-cfacts-6.1.diff)
 * [dwm-cfacts-6.2.diff](dwm-cfacts-6.2.diff)
 
-Additional layouts with cfact support
--------------------------------------
+Additional layouts with cfacts
+------------------------------
 Just patch these on top of the original cfacts patch.
 
 * [dwm-cfacts\_bottomstack-6.2.diff](dwm-cfacts_bottomstack-6.2.diff)

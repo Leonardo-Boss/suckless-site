@@ -54,7 +54,9 @@ There are several other nano key sequences that dwm will stomp on - use the abov
 
 To **focus on another _tag_**, press `[Alt]+[tag number]`.
 
-To **move a terminal to master or stack**, press `[Alt]+[d]` or `[Alt]+[i]`.
+To **change the amount of windows in the master area**, press `[Alt]+[d]` (Decrease) or `[Alt]+[i]` (Increase).
+
+To **toggle a window between the master and stack area**, press `[Alt]+[Return]`
 
 As stated in the dwm manpage, you can click tags with the left mouse button and simulating `[Alt]+[tag number]`, but you can also click another tag with the right mouse button in order to bring those windows additionally
 into your current focus.

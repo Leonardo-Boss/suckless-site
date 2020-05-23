@@ -21,10 +21,11 @@ overridden by command line arguments.
 
 Download
 --------
-* [dmenu-xresources-20200302-db6093f.diff](dmenu-xresources-20200302-db6093f.diff)
+* [dmenu-xresources-4.9.diff](dmenu-xresources-4.9.diff)
 
 Authors
 -------
 * Michał Lemke - @melek on [Bitbucket](https://bitbucket.org/melek/dmenu2/)
 * Pratik Bhusal - dmenu-xresources-4.9 port
 * Nihal Jere <nihal@nihaljere.xyz> (20200302)
+* Francesco Minnocci <ad17fmin@uwcad.it> - command line parameters fix

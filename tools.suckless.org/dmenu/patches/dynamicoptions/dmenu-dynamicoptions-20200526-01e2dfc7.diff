@@ -1,10 +1,11 @@
-From 410003e0d776f4038befbc3d2483a75c7e59b38f Mon Sep 17 00:00:00 2001
+From 01e2dfc79126a7600463b4cf9fa16b4be6886cae Mon Sep 17 00:00:00 2001
 From: Tiago Teles <tiago.sequeira.teles@gmail.com>
-Date: Tue, 26 May 2020 18:49:13 +0100
-Subject: [PATCH] dynamic menu updating added '-dy $command' will run `$command
- $currentinput` on input change and replace the options on dmenu with the
- output of said command.
+Date: Tue, 26 May 2020 19:55:55 +0100
+Subject: [PATCH] -dy flag for dynamic menu updating
 
+This patch adds a flag (`-dy`) which makes dmenu run the command given to it
+whenever input is changed with the current input as the last argument and
+update the option list according to the output of that command.
 ---
  config.def.h |  1 +
  dmenu.c      | 43 ++++++++++++++++++++++++++++++++++++-------
@@ -23,7 +24,7 @@ index 1edb6477..035b8777 100644
  	/*     fg         bg       */
  	[SchemeNorm] = { "#bbbbbb", "#222222" },
 diff --git a/dmenu.c b/dmenu.c
-index 6b8f51b5..2d7f2178 100644
+index 6b8f51b5..356d4cc9 100644
 --- a/dmenu.c
 +++ b/dmenu.c
 @@ -210,9 +210,33 @@ grabkeyboard(void)
@@ -36,7 +37,7 @@ index 6b8f51b5..2d7f2178 100644
 +refreshoptions(){
 +	int dynlen = strlen(dynamic);
 +	char* cmd= malloc(dynlen + strlen(text)+2);
-+	if(!cmd || cmd == NULL)
++	if(cmd == NULL)
 +		die("malloc:");
 +	sprintf(cmd,"%s %s",dynamic, text);
 +	FILE *stream = popen(cmd, "r");

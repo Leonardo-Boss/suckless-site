@@ -16,7 +16,7 @@ in dmenu and lets you select it)
 
 Download
 --------
-* [dmenu-dynamicoptions-20200526-410003e0.diff](dmenu-dynamicoptions-20200526-410003e0.diff)
+* [dmenu-dynamicoptions-20200526-01e2dfc7.diff](dmenu-dynamicoptions-20200526-01e2dfc7.diff)
 
 Author
 ------

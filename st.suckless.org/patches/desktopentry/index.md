@@ -3,7 +3,7 @@ desktopentry
 
 Description
 -----------
-Creates a desktop-entry for st. This enables to find st in a graphical menu and to display it with a nice icon. After applying this patch reinstall st. The *st.desktop* file should be automatically copied to */usr/share/applications* during install and removed during uninstall.
+Creates a desktop-entry for st. This enables to find st in a graphical menu and to display it with a nice icon. After applying this patch reinstall st. The *st.desktop* file is copied to *$(DESTDIR)$(PREFIX)/share/applications* during installation and removed during uninstallation.
 
 Download
 --------

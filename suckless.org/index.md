@@ -9,16 +9,14 @@ News
 
 [Atom feed](//suckless.org/atom.xml)
 
+2020-05-27
+----------
+The [slcon7](conferences/2020) has been cancelled due to the 2019-nCoV
+pandemic.
+
 2020-04-27
 ----------
 [st 0.8.3](//st.suckless.org/) released: [download](//dl.suckless.org/st/st-0.8.3.tar.gz)
-
-2020-03-04
-----------
-Registrations are now open for [slcon7](conferences/2020) that will
-be held in Bad Liebenzell, Germany, on 2020-09-(17-20).
-
-The CfP for interested participants will end on 2020-07-30.
 
 2019-12-01
 ----------

@@ -1,4 +1,4 @@
-script\_tags
+script_tags
 =====================
 
 Description
@@ -42,8 +42,12 @@ echo /tmp/dwm_tags| entr cat /tmp/dwm_tags | lemonbar
 
 Download
 -----------
-* [dwm-script\_tags-6.2.diff](dwm-script_tags-6.2.diff) (18.05.2020)
+* [dwm-script_tags-6.2.diff](dwm-script_tags-6.2.diff) (18.05.2020)
 
 Authors
 -----------
 * David Wiedemann <david.wiedemann2@gmail.com>
+
+
+
+

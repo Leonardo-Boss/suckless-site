@@ -46,7 +46,7 @@ places : [adaway](https://adaway.org/hosts.txt),
 They are written in `/etc/hosts` file to disable DNS resolution.
 
 Get the script from here :
-[zerohosts](https://dev.yeuxdelibad.net/OpenBSD-stuff/zerohosts).
+[zerohosts](https://dev.ybad.name/OpenBSD-stuff/zerohosts).
 
 Include your own `/etc/hosts` rules by including a file as an argument
 
@@ -58,9 +58,10 @@ Run the script each time you want to update the lists using a cronjob, or
 	/usr/local/sbin/zerohosts &
 
 
-* Main page : <https://yeuxdelibad.net/Logiciel-libre/Code/zerohosts.html>
-* Author : < thuban (at) yeuxdelibad (dot) net > (feel free to suggest
-improvements)
+* Main page : <https://ybad.name/Logiciel-libre/Code/zerohosts.html>
+* Author : < prx (at) ybad (dot) name > 
+  (feel free to suggest improvements)
+
 
 firejail
 --------

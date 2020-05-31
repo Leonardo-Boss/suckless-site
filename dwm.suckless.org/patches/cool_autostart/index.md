@@ -9,13 +9,14 @@ And when you exit dwm all processes from `autostart` array will be killed.
 Example
 -------
 
-	static char* const autostart[] = {
-		&(const char *[]){ "mpd-notification", NULL },
-		&(const char *[]){ "hsetroot", "-center", "/usr/home/bit6tream/pic/wallapper.png", NULL },
-		&(const char *[]){ "xrdb", "/usr/home/bit6tream/.config/X/Xresources", NULL },
-		&(const char *[]){ "sh", "-c", "while :; do dwmstatus.sh -; sleep 60; done", NULL },
-		&(const char *[]){ "dunst", NULL },
-		&(const char *[]){ "picom", NULL }
+	static const char *const autostart[] = {
+		"mpd-notification", NULL,
+		"hsetroot", "-center", "/usr/home/bit6tream/pic/wallapper.png", NULL,
+		"xrdb", "/usr/home/bit6tream/.config/X/Xresources", NULL,
+		"sh", "-c", "while :; do dwmstatus.sh -; sleep 60; done", NULL,
+		"dunst", NULL,
+		"picom", NULL,
+		NULL
 	};
 
 Attention
@@ -31,3 +32,4 @@ Download
 Authors
 -------
 * bit6tream <bit6tream@cock.li> [bit6tream's gitlab](https://gitlab.com/bit9tream)
+* zsugabubus <zsugabubus@national.shitposting.agency>

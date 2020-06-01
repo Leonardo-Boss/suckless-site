@@ -1,81 +1,88 @@
-Alpha Focus Highlight Patch
-===========================
+Patch for suckless' simple terminal (`st`), which allows the user to specify two distinct opacity
+values / background colors; one for the focused- and one for unfocused windows' background.
+This enables the user to spot the focused window at a glance.
+The patch is based on the [alpha patch](https://st.suckless.org/patches/alpha/); i.e. is to be
+applied after applying the alpha patch.
 
-Description
------------
-This patch allows the user to specify two distinct opacity values; one for the
-focused- and one for unfocused windows' background.  This enables the user to
-spot the focused window at a glance.
+The patch is released [on this release page](https://github.com/juliusHuelsmann/st/releases) and
+[on the suckless page](https://st.suckless.org/patches/alpha_focus_highlight/).
+Please [leave a star](https://github.com/juliusHuelsmann/st-focus).
 
-The *Alpha Highlight Focus Patch* patch is based on the
-[Alpha Patch](https://st.suckless.org/patches/alpha/),
-which is already applied in the patch file below. Most of the work has been performed by the
-original authors of the Alpha Patch.
+## Contributions & Bug Reports
+* [Report / Solve Patching issues](https://github.com/juliusHuelsmann/st) with a new version of `st`
+* [Contributions and Bug reports](https://github.com/juliusHuelsmann/st-focus)
 
-Screenshot
-----------
-![Screenshot](alphaFocus.gif)
+## Building, customizing and installing the patch
+**1. Optional Dependencies**
+The opacity functionality of this patch requires an `X composite manager` (e.g. `picom`, `compton`,
+`xcompmgr`), which can for instance be installed via `sudo pacman -S picom` on Arch Linux and
+launched via `picom -b`.  *The composite manager has to be relaunched after booting*.
 
-Contributions + Bug Reports
----------------------------
-* [Issues](https://github.com/juliusHuelsmann/st/issues?q=is%3Aopen+is%3Aissue+label%3AalphaFocusHighlight)
+**2. Applying the patch**
+Apply the patch to `st`'s source code and build code via `patch < [PATCH_NAME]`
 
+**3. Customization**
+This patch performs changes in the `config.def.h` file, which need to be manually merged into a
+pre-existing custom `config.h` file. The following four variables can be adapted:
+- `alpha`/`alphaUnfocused` opacity of the terminal when focused / not focused.
+- `bg`/`bgUnfocused` background color when focused / not focused.
 
-Notes Alpha Patch
------------------
-* Note that *you need an X composite manager* (e.g. compton, xcompmgr) to make
-  this patch effective.
-* The alpha value affects the default background only.
-* The color designated by 'defaultbg' should not be used elsewhere.
-* Embedding might fail after applying this patch.
+**4. Build & install** `make; sudo make install`
 
+## Download
+If you want to try out the current version of the patch before patching your own build,
+check out [this repository](https://github.com/juliusHuelsmann/st), which contains a
+merged version of this patch with a reasonable configuration.
 
-Notes
------
-* In i3WM, the focus event is triggered twice for one specific window on a workspace (root);
-  hence the alpha values are applied twice which appears as blinking.
-* The patch is applied both to a non-patched version and to a patched version of st
-  and can be tried out [here](https://github.com/juliusHuelsmann/st).
+The patch comes
+1. merged into the alpha patch (`alpha + focus`) or
+2. for patching on top of an already applied alpha patch (`focus`)
 
+I recommend downloading the alpha patch from the
+[alpha patch](https://st.suckless.org/patches/alpha/) page and using `Patch: focus`, that way you
+make sure that you apply the latest version of the alpha patch.
 
-Download
------------------------------------
+Note that patch errors can occur when the code in the st repo is updated.
+Please report an Issue or contribute a merged patch in that case.
 
-## Based on commit `2b8333f` of `st` (Okt 2019).
-*All versions (from old to new)*:
-* [Version 1.0 (attached)](st-alphafocushighlight-20191107-2b8333f.diff)
-* [Version 1.0 (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV3/st-alphaFocusHighlight-20191107-2b8333f.diff)
-* [Version1.1 (attached)](st-alphaFocusHighlight-20191218-2b8333f.diff)
-* [Version1.1 (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV3/st-alphaFocusHighlight-20191218-2b8333f.diff)
-* [Version1.2 (attached)](st-alphaFocusHighlight-20200212-2b8333f.diff)
-* [Version1.2 (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV3/st-alphaFocusHighlight-20200212-2b8333f.diff)
-
-*Most Recent*:
-* [st-alphaFocusHighlight-20200212-2b8333f.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV3/st-alphaFocusHighlight-20200212-2b8333f.diff)
-
-## Based on commit `cd78575` of `st` (February 2020).
-*All versions (from old to new)*:
-* [Version 1.2 (attached)](st-alphaFocusHighlight-20200216-26cdfeb.diff)
-
-*Most Recent*:
-* [st-alphaFocusHighlight-20200216-26cdfeb.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV3/st-alphaFocusHighlight-20200216-26cdfeb.diff)
-
-Note that patch errors can occur when the code in the st repo is updated. Please report [an
-Issue](https://github.com/juliusHuelsmann/st/issues) or contribute a merged patch in that case.
-
-Authors of the Alpha Patch
---------------------------
-* Eon S. Jeon - <esjeon@hyunmu.am>
-* pr - <protodev@gmx.net> (0.5 port)
-* Laslo Hunhold - <dev@frign.de> (0.6, git ports)
-* Ivan J. - <parazyd@dyne.org> (git port)
-* Matthew Parnell - <matt@parnmatt.co.uk> (0.7 port)
-* Johannes Mayrhofer - <jm.spam@gmx.net> (0.8.1 port)
-* Àlex Ramírez <aramirez@posteo.net> (0.8.1 pre-multiplication fix).
+### Patch: alpha + focus
 
 
-Authors of the Alpha-Focus Patch
---------------------------------
-* [Julius Hülsmann](https://github.com/juliusHuelsmann) - <juliusHuelsmann [at] gmail [dot] com>
+**st-0.8.3**
+- [Version 1 (attached)](st-focus-20200530-43a395a.diff)
+- Most recent release: [st-focus-20200530-43a395a.diff Github](https://github.com/juliusHuelsmann/st/releases/download/v2/st-focus-20200530-43a395a.diff)
+
+---
+
+### Patch: focus
+
+**st-0.8.3**
+- [Version 1 (attached)](st-focus-20200530-patch_alpha.diff)
+- Most recent release: [st-focus-20200530-patch_alpha.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/v2/st-focus-20200530-patch_alpha.diff)
+
+
+## MISC
+**Note:** The benefit of the `alpha` patch and the `Alpha Focus Highlight` patch are the ability to
+restrict the transparency only to the background color currently in use, hence keeping the font in
+the foreground solid and readable.
+
+If the goal is to apply transparency independent on the content, you do not require any patch for
+`st`, instead add
+`
+inactive-opacity = 0.2;
+active-opacity = 0.8;
+`
+to your `picom` configuration file and keep a vanilla `st` build.
+
+If you want to configure `inactive-opacity` and `active-opacity` rules in order to apply opacity to
+other applications, but keep the benefits of the st alpha patches, have a look at
+[this picom configuration
+file](https://github.com/juliusHuelsmann/Config/blob/master/.config/picom/picom.conf),
+in which opacity management configured to be performed by `st`.
+
+# Authors / Contributors
+* Julius Hülsmann - <juliusHuelsmann [at] gmail [dot] com>
 * [glpub](https://github.com/glpub): Fix: erroneous color reset
-* [Milos Stojanovic](https://github.com/M4444): Code formatting fix
+* [Milos Stojanovic](https://github.com/M4444): Code Formatting
+* [Yui](https://github.com/yuwui): Fix spelling errors
+* Authors of the shipped alpha patch: [Eon S. Jeon](esjeon@hyunmu.am), [pr](protodev@gmx.net), [Laslo Hunhold](dev@frign.de), [Ivan J.](parazyd@dyne.org), [Matthew Parnell](matt@parnmatt.co.uk), [Johannes Mayrhofer](jm.spam@gmx.net), [Àlex Ramírez](aramirez@posteo.net)

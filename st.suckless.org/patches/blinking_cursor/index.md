@@ -6,25 +6,26 @@ Description
 This patch allows the use of a blinking cursor.
 
 To demonstrate the available cursor styles, try these commands:
-	echo -e -n "\x1b[\x30 q" # blinking block
-	echo -e -n "\x1b[\x31 q" # blinking block (default)
-	echo -e -n "\x1b[\x32 q" # steady block
-	echo -e -n "\x1b[\x33 q" # blinking underline
-	echo -e -n "\x1b[\x34 q" # steady underline
-	echo -e -n "\x1b[\x35 q" # blinking bar
-	echo -e -n "\x1b[\x36 q" # steady bar
+	echo -e -n "\x1b[\x30 q" # Blinking block
+	echo -e -n "\x1b[\x31 q" # Blinking block (default)
+	echo -e -n "\x1b[\x32 q" # Steady block
+	echo -e -n "\x1b[\x33 q" # Blinking underline
+	echo -e -n "\x1b[\x34 q" # Steady underline
+	echo -e -n "\x1b[\x35 q" # Blinking bar
+	echo -e -n "\x1b[\x36 q" # Steady bar
+	echo -e -n "\x1b[\x37 q" # Blinking st cursor
+	echo -e -n "\x1b[\x38 q" # Steady st cursor
 
 When drawing is triggered, the cursor does not blink.
 
 Notes
 -----
-* Only cursor styles 0, 1, 3, and 5 blink.  Set `cursorstyle` accordingly.
+* Only cursor styles 0, 1, 3, 5, and 7 blink.  Set `cursorstyle` accordingly.
 * Cursor styles are defined [here](https://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h4-Functions-using-CSI-_-ordered-by-the-final-character-lparen-s-rparen:CSI-Ps-SP-q.1D81).
 
 Download
 --------
-* [st-blinking\_cursor-20200511-914fb82.diff](st-blinking_cursor-20200511-914fb82.diff)
-* [st-blinking\_cursor-20200515-045a0fa.diff](st-blinking_cursor-20200515-045a0fa.diff)
+* [st-blinking\_cursor-20200531-a2a7044.diff](st-blinking_cursor-20200531-a2a7044.diff)
 
 Authors
 -------

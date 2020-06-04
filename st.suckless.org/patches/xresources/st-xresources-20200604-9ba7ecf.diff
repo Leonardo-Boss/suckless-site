@@ -1,5 +1,5 @@
 From 2752a599ee01305a435729bfacf43b1dde7cf0ef Mon Sep 17 00:00:00 2001
-From: Benji Encalada Mora <benji@encalade.dev>
+From: Benji Encalada Mora <benji@encalada.dev>
 Date: Thu, 4 Jun 2020 00:41:10 -0500
 Subject: [PATCH] fix: replace xfps and actionfps variables
 

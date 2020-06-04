@@ -18,4 +18,4 @@ Authors
 * @dcat on [Github](https://github.com/dcat/st-xresources)
 * Devin J. Pohly - <djpohly@gmail.com> (git port)
 * Sai Praneeth Reddy - <spr.mora04@gmail.com> (read borderpx from xresources)
-* Benji Encalada Mora (replace xfps and actionfps)
+* Benji Encalada Mora - [@benjifs](https://github.com/benjifs) (replace xfps and actionfps)

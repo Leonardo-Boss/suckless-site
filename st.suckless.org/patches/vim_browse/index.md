@@ -114,9 +114,11 @@ operating e.g. with the current head of master (`26cdfeb`, 02-2020).
 **All versions based on `26cdfeb` (from old to new) **:
 * [st-vimBrowse-20200212-26cdfeb.diff (attached)](st-vimBrowse-20200212-26cdfeb.diff)
 * [st-vimBrowse-20200212-26cdfeb.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV3/st-vimBrowse-20200212-26cdfeb.diff)
-
-**Most Recent based on `26cdfeb` **:
 * [st-vimBrowse-20200212-26cdfeb.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/patchesV3/st-vimBrowse-20200212-26cdfeb.diff)
+
+**Most Recent based on `295a43f` **:
+[st-vimBrowse-20200604-295a43f.diff](st-vimBrowse-20200604-295a43f.diff)
+
 
 Authors of the [Scrollback patch](https://st.suckless.org/patches/scrollback/)
 ------------------------------------------------------------------------------

@@ -1,13 +1,13 @@
-From c6c814329bdfc419f50a27b538a1b983ea52a1d3 Mon Sep 17 00:00:00 2001
+From c2c9e874fa069bc24df0982505788ae14c3024f3 Mon Sep 17 00:00:00 2001
 From: Julius Huelsmann <juliusHuelsmann@gmail.com>
-Date: Sat, 30 May 2020 12:18:59 +0200
+Date: Sat, 6 Jun 2020 13:12:28 +0200
 Subject: [PATCH] patch: focus
 
 ---
  config.def.h |  5 +++--
  st.h         |  2 +-
- x.c          | 34 ++++++++++++++++++++--------------
- 3 files changed, 24 insertions(+), 17 deletions(-)
+ x.c          | 44 ++++++++++++++++++++++++++++++--------------
+ 3 files changed, 34 insertions(+), 17 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
 index b94b23c..577d1f1 100644
@@ -45,7 +45,7 @@ index 2c656af..b5f1cf6 100644
 -extern float alpha;
 +extern float alpha, alphaUnfocused;
 diff --git a/x.c b/x.c
-index 50da23c..2de16cb 100644
+index 50da23c..a0c3223 100644
 --- a/x.c
 +++ b/x.c
 @@ -254,6 +254,8 @@ static char *opt_line  = NULL;
@@ -110,7 +110,30 @@ index 50da23c..2de16cb 100644
  	loaded = 1;
  }
  
-@@ -2065,6 +2070,7 @@ run:
+@@ -1747,12 +1752,22 @@ focus(XEvent *ev)
+ 		xseturgency(0);
+ 		if (IS_SET(MODE_FOCUS))
+ 			ttywrite("\033[I", 3, 0);
++		if (!focused) {
++			focused = 1;
++			xloadcols();
++			redraw();
++		}
+ 	} else {
+ 		if (xw.ime.xic)
+ 			XUnsetICFocus(xw.ime.xic);
+ 		win.mode &= ~MODE_FOCUSED;
+ 		if (IS_SET(MODE_FOCUS))
+ 			ttywrite("\033[O", 3, 0);
++		if (focused) {
++			focused = 0;
++			xloadcols();
++			redraw();
++		}
+ 	}
+ }
+ 
+@@ -2065,6 +2080,7 @@ run:
  	XSetLocaleModifiers("");
  	cols = MAX(cols, 1);
  	rows = MAX(rows, 1);
@@ -119,5 +142,5 @@ index 50da23c..2de16cb 100644
  	xinit(cols, rows);
  	xsetenv();
 -- 
-2.26.2
+2.27.0
 

@@ -1,14 +1,14 @@
-From f4e9ea055675807817ba3648ee7f2de4cc1d0eca Mon Sep 17 00:00:00 2001
+From dfbb24bf5e02c9e365d4c0fe46aa8cbe27aed92f Mon Sep 17 00:00:00 2001
 From: Julius Huelsmann <juliusHuelsmann@gmail.com>
-Date: Sat, 30 May 2020 12:18:59 +0200
+Date: Sat, 6 Jun 2020 13:12:28 +0200
 Subject: [PATCH] patch: focus
 
 ---
- config.def.h |  5 +++++
+ config.def.h |  5 ++++
  config.mk    |  2 +-
  st.h         |  1 +
- x.c          | 62 +++++++++++++++++++++++++++++++++++++---------------
- 4 files changed, 51 insertions(+), 19 deletions(-)
+ x.c          | 72 +++++++++++++++++++++++++++++++++++++++-------------
+ 4 files changed, 61 insertions(+), 19 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
 index 0895a1f..577d1f1 100644
@@ -63,7 +63,7 @@ index d978458..b5f1cf6 100644
  extern unsigned int defaultbg;
 +extern float alpha, alphaUnfocused;
 diff --git a/x.c b/x.c
-index e5f1737..2de16cb 100644
+index e5f1737..a0c3223 100644
 --- a/x.c
 +++ b/x.c
 @@ -105,6 +105,7 @@ typedef struct {
@@ -204,7 +204,30 @@ index e5f1737..2de16cb 100644
  	XSetForeground(xw.dpy, dc.gc, dc.col[defaultbg].pixel);
  	XFillRectangle(xw.dpy, xw.buf, dc.gc, 0, 0, win.w, win.h);
  
-@@ -1994,6 +2016,9 @@ main(int argc, char *argv[])
+@@ -1730,12 +1752,22 @@ focus(XEvent *ev)
+ 		xseturgency(0);
+ 		if (IS_SET(MODE_FOCUS))
+ 			ttywrite("\033[I", 3, 0);
++		if (!focused) {
++			focused = 1;
++			xloadcols();
++			redraw();
++		}
+ 	} else {
+ 		if (xw.ime.xic)
+ 			XUnsetICFocus(xw.ime.xic);
+ 		win.mode &= ~MODE_FOCUSED;
+ 		if (IS_SET(MODE_FOCUS))
+ 			ttywrite("\033[O", 3, 0);
++		if (focused) {
++			focused = 0;
++			xloadcols();
++			redraw();
++		}
+ 	}
+ }
+ 
+@@ -1994,6 +2026,9 @@ main(int argc, char *argv[])
  	case 'a':
  		allowaltscreen = 0;
  		break;
@@ -214,7 +237,7 @@ index e5f1737..2de16cb 100644
  	case 'c':
  		opt_class = EARGF(usage());
  		break;
-@@ -2045,6 +2070,7 @@ run:
+@@ -2045,6 +2080,7 @@ run:
  	XSetLocaleModifiers("");
  	cols = MAX(cols, 1);
  	rows = MAX(rows, 1);
@@ -223,5 +246,5 @@ index e5f1737..2de16cb 100644
  	xinit(cols, rows);
  	xsetenv();
 -- 
-2.26.2
+2.27.0
 

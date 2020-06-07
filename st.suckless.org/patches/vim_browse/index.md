@@ -1,11 +1,11 @@
 Vim Browse
 ==========
-The vim-browse patch offers the possibility to move through the terminal history-buffer, search for strings using VIM-like motions, operations and quantifiers. It overlays the screen with highlighted search results and displays the current operation / motions / search string in the bottom right corner. The patch operates on top of the [history-patch](https://github.com/juliusHuelsmann/st-history-vim), which comes with a set of optional features that can be compiled-in as separate patches. Please [leave a star](https://github.com/juliusHuelsmann/st-focus).
+The vim-browse patch offers the possibility to move through the terminal history-buffer, search for strings using VIM-like motions, operations and quantifiers. It overlays the screen with highlighted search results and displays the current operation / motions / search string in the bottom right corner. The patch operates on top of the [history-patch](https://github.com/juliusHuelsmann/st-history-vim), which comes with a set of optional features that can be compiled-in as separate patches. Please [leave a star](https://github.com/juliusHuelsmann/st-history-vim).
 
 Contributions & Bug Reports
 ---------------------------
 * [Report / Solve Patching issues](https://github.com/juliusHuelsmann/st) with a new version of `st`
-* [Contributions and Bug reports](https://github.com/juliusHuelsmann/st-focus)
+* [Contributions and Bug reports](https://github.com/juliusHuelsmann/st-history-vim)
 
 
 Default Behavior:

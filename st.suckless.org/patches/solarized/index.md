@@ -56,6 +56,7 @@ or the dark color scheme:
 * [st-solarized-both-0.8.1.diff](st-solarized-both-0.8.1.diff)
 * [st-solarized-both-20170626-b331da5.diff](st-solarized-both-20170626-b331da5.diff)
 * [st-solarized-both-20190128-3be4cf1.diff](st-solarized-both-20190128-3be4cf1.diff)
+* [st-solarized-both-0.8.3.diff](st-solarized-both-0.8.3.diff)
 
 Authors
 -------
@@ -68,3 +69,4 @@ Authors
 * Linh Nguyen - <linhvng.2212@gmail.com> (0.8.1 port for no\_bold\_colors and swap versions)
 * Varun Iyer - <vi.mail@protonmail.ch> (20190129 port for swap version)
 * Paschalis Bizopoulos (20190306 port for light version)
+* Joachim Büchel - <jo@audijo.de> (0.8.3 port for swap version)

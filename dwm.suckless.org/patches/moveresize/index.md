@@ -81,5 +81,6 @@ Download
 
 Authors
 -------
+* Georgios Oxinos - <oxinosg@gmail.com>
 * Claudio M. Alessi - <smoppy@gmail.com>
 * Jan Christoph Ebersbach - <jceb@e-jc.de>

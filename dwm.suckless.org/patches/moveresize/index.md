@@ -47,6 +47,17 @@ Usage
 	{ MODKEY|ShiftMask,			XK_Right,	moveresize,		{.v = (int []){ 0, 0, 25, 0 }}},
 	{ MODKEY|ShiftMask,			XK_Left,	moveresize,		{.v = (int []){ 0, 0, -25, 0 }}},
 
+In latest version you can also add the following bindings to move client to the edge of screen (mod+ctrl+arrow) or resize client to edge of screen (mod+shift+ctrl+arrow). Pressing resize to edge of screen towards the same direction a second time, will resize client back to original size.
+
+	{ MODKEY|ControlMask,           XK_Up,     moveresizeedge, {.v = "t"} },
+	{ MODKEY|ControlMask,           XK_Down,   moveresizeedge, {.v = "b"} },
+	{ MODKEY|ControlMask,           XK_Left,   moveresizeedge, {.v = "l"} },
+	{ MODKEY|ControlMask,           XK_Right,  moveresizeedge, {.v = "r"} },
+	{ MODKEY|ControlMask|ShiftMask, XK_Up,     moveresizeedge, {.v = "T"} },
+	{ MODKEY|ControlMask|ShiftMask, XK_Down,   moveresizeedge, {.v = "B"} },
+	{ MODKEY|ControlMask|ShiftMask, XK_Left,   moveresizeedge, {.v = "L"} },
+	{ MODKEY|ControlMask|ShiftMask, XK_Right,  moveresizeedge, {.v = "R"} },
+
 If you want to automatically toggle the client floating when move/resize,
 then replace the second if statement in the moveresize function with this code:
 
@@ -62,6 +73,7 @@ sizes in a multi monitor setup. A second patch allows you to maximize windows.
 
 Download
 --------
+* [dwm-moveresize-20200609-46c8838.diff](dwm-moveresize-6.2.diff)
 * [dwm-moveresize-6.2.diff](dwm-moveresize-6.2.diff)
 * [dwm-moveresize-20160731-56a31dc.diff](dwm-moveresize-20160731-56a31dc.diff)
 * [dwm-moveresize-6.1.diff](dwm-moveresize-6.1.diff) (2095b) (20140209)

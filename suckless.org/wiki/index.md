@@ -26,7 +26,7 @@ There you enter some meaningful commit message and end the editor.
 To push your changes to the queue for the review by the suckless moderators,
 use:
 
-	git push
+	git push git://git.suckless.org/sites
 
 The review of your changes might take one day, due to the different timezones
 we all live in.

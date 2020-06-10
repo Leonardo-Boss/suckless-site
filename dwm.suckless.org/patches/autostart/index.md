@@ -14,7 +14,7 @@ bad idea to start X-applications here :)
 Download
 --------
 * [dwm-autostart-20161205-bb3bd6f.diff](dwm-autostart-20161205-bb3bd6f.diff)
-* [dwm-autostart-20200609-cb3f58a.diff](dwm-autostart-20200609-cb3f58a.diff)
+* [dwm-autostart-20200610-cb3f58a.diff](dwm-autostart-20200610-cb3f58a.diff)
 
   This patch modifies the dwm autostart feature to conform to the
   [XDG Base Directory specification](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html).

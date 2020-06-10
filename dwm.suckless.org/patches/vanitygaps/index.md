@@ -44,6 +44,7 @@ NB: You may also want to disable `resizehints` to get even gaps.
 
 Download
 --------
+* [dwm-vanitygaps-20200610-f09418b.diff](dwm-vanitygaps-20200610-f09418b.diff)
 * [dwm-vanitygaps-20190508-6.2.diff](dwm-vanitygaps-20190508-6.2.diff)
 
 Author

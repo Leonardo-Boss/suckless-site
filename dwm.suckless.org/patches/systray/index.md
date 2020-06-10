@@ -4,13 +4,14 @@ systray
 Description
 -----------
 A simple system tray implementation. Multi-monitor is also supported. The tray
-is following the selected monitor.
+follows the selected monitor.
 
 In case icons disappear when toggling the bar, try a different font size
 in dwm. This has helped at least in one case with pidgin.
 
 Download
 --------
+* [dwm-systray-20200610-f09418b.diff](dwm-systray-20200610-f09418b.diff) (24k) (20200610)
 * [dwm-systray-6.2.diff](dwm-systray-6.2.diff) (23923b) (20200216)
 * [dwm-systray-20190208-cb3f58a.diff](dwm-systray-20190208-cb3f58a.diff) (24K)
 * [dwm-6.1-systray.diff](dwm-6.1-systray.diff) (24K) (20190208)
@@ -29,3 +30,4 @@ Author
 * Eric Pruitt (7af4d43 (20160626))
 * Igor Gevka (cb3f58a (6.2), 20200216)
 * Christopher Witt <git@ch-witt.de> (systray-toggle-6.2)
+* Michel Boaventura <michel.boaventura@protonmail.com> (f09418b)

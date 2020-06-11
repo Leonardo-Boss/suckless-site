@@ -1,5 +1,5 @@
 staticstatus
-=====
+============
 
 Description
 -----------
@@ -16,4 +16,4 @@ Download
 
 Author
 ------
-* Ian Ressa <ianprb@posteo.us>
+* Ian Ressa <ian@eonndev.com>

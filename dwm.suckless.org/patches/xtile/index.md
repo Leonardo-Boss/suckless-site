@@ -169,8 +169,10 @@ cfacts, [stackmfact](../stackmfact/).
 
 Download
 --------
+* [dwm-xtile-6.2.diff](dwm-xtile-6.2.diff) 11/06/2020
 * [dwm-6.0-xtile.diff](dwm-6.0-xtile.diff)
 
 Author
 ------
+* MLquest8 (updated for 6.2) (miskuzius at gmail.com)
 * Carlos Pita (memeplex) <carlosjosepita@gmail.com>

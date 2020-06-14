@@ -22,7 +22,8 @@ There is no configuration for this version of the patch.
 
 Download
 --------
-* [dwm-sizehints-ruled-6.2.diff](dwm-sizehints-ruled-6.2.diff) (12/06/2020)
+* [dwm-sizehints-ruled-6.2.diff](dwm-sizehints-ruled-6.2.diff) (14/06/2020)
+* dwm-sizehints-ruled-6.2.diff (deprecated) (12/06/2020)
 * [dwm-sizehints-6.2.diff](dwm-sizehints-6.2.diff) (12/06/2020)
 * [dwm-sizehints-5.7.2.diff](dwm-sizehints-5.7.2.diff) (695B) (20091221)
 

@@ -1,5 +1,5 @@
 Multiple selection
-==============
+==================
 
 Description
 -----------

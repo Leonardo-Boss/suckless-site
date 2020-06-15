@@ -149,30 +149,46 @@ Fortunately, dwm provides a much better mechanism to restrict visibility: tags.
 IMO there is no need to provide a half-assed alternative to one of dwm's
 strongest selling points.
 
-Other patches
--------------
-Recommended complementary patches:
-
-* [gaps](../gaps/): to add mostly useless gaps that nevertheless make more
-  apparent which client has the focus.
-
-* [stacker](../stacker/): to better accommodate the clients to the more
-  elaborate layouts allowed by xtile. But I would add: subject to the caveats
-  that I've expressed above.
-
 Mandatory dependencies:
-
 * [pertag](../pertag/): we all know this one.
-
-Related patches: [bottom stack](../bottomstack/), [flextile](../flextile/),
-cfacts, [stackmfact](../stackmfact/).
 
 Download
 --------
-* [dwm-xtile-6.2.diff](dwm-xtile-6.2.diff) 11/06/2020
+* [dwm-xtile-6.2.diff](dwm-xtile-6.2.diff) (11/06/2020)
 * [dwm-6.0-xtile.diff](dwm-6.0-xtile.diff)
 
-Author
+Recommended complementary patches\:
+----------------------------------
+Gaps
+----
+Added a new patch with separate inner and outer gaps which can be adjusted  
+at runtime. Also includes an option to disable gaps when only one window  
+is open (on by default.)
+
+`Mod+Shift+i/o - increase size (i - inner, o - outer)` 
+`Mod+Control+i/o - decrease size (i - inner, o - outer)` 
+`Mod+Shift+Control+i/o - disable gaps (i - inner, o - outer)` 
+
+Download
+--------
+* [dwm-xtile-gaps-6.2.diff](dwm-xtile-gaps-6.2.diff) (15/06/2020)
+* Visit [gaps](../gaps/) page for older versions.
+
+Stacker
+-------
+A patch to better accommodate the clients to the more elaborate layouts allowed  
+by xtile. But I would add: subject to the caveats that I've expressed above.
+
+Download
+--------
+* Visit [stacker](../stacker/) page to download. (6.2 version available)
+
+Patches related to xtile:
+[bottom stack](../bottomstack/), [flextile](../flextile/), 
+[cfacts](../cfacts/), [stackmfact](../stackmfact/).
+
+
+Authors
 ------
-* MLquest8 (updated for 6.2) (miskuzius at gmail.com)
+* MLquest8 (gaps and update for 6.2) (miskuzius at gmail.com)
 * Carlos Pita (memeplex) <carlosjosepita@gmail.com>

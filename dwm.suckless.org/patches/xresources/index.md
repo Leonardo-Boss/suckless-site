@@ -26,7 +26,7 @@ This patch is a port of the st patch of the same name, it also borrows some code
 
 Download
 --------
-* [dwm-xresources-6.2.diff](dwm-xresources-6.2.diff) 11/06/2020
+* [dwm-xresources-6.2.diff](dwm-xresources-6.2.diff) (11/06/2020)
 
 Author
 ------

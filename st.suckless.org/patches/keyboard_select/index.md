@@ -50,6 +50,7 @@ Download
 * [st-keyboard\_select-20190207-3be4cf1.diff](st-keyboard_select-20190207-3be4cf1.diff)
 * [st-keyboard\_select-0.8.1.diff](st-keyboard_select-0.8.1.diff)
 * [st-keyboard\_select-0.8.2.diff](st-keyboard_select-0.8.2.diff)
+* [st-keyboard\_select-20200617-9ba7ecf.diff](st-keyboard_select-20200617-9ba7ecf.diff)
 
 Authors
 -------

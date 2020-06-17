@@ -44,6 +44,7 @@ Download
 --------
 * [dwm-cfacts-6.1.diff](dwm-cfacts-6.1.diff)
 * [dwm-cfacts-6.2.diff](dwm-cfacts-6.2.diff)
+* [dwm-cfacts-6.2-1.diff](dwm-cfacts-6.2-1.diff)
 
 Additional layouts with cfacts
 ------------------------------
@@ -58,3 +59,4 @@ Author
 * Patrick Steinhardt (pks) <ps@pks.im>
 * Aaron Duxler <aaron@duxler.xyz> - Additional layouts bottomstack + centeredmaster + deck
 * mss <mss@waifu.club> - dwm-6.2 port. 
+* Tobias Giess <tobias.giess@gmail.com> - Fix dwm-6.2 port not working on clients in the stack

@@ -73,7 +73,7 @@ sizes in a multi monitor setup. A second patch allows you to maximize windows.
 
 Download
 --------
-* [dwm-moveresize-20200609-46c8838.diff](dwm-moveresize-6.2.diff)
+* [dwm-moveresize-20200609-46c8838.diff](dwm-moveresize-20200609-46c8838.diff)
 * [dwm-moveresize-6.2.diff](dwm-moveresize-6.2.diff)
 * [dwm-moveresize-20160731-56a31dc.diff](dwm-moveresize-20160731-56a31dc.diff)
 * [dwm-moveresize-6.1.diff](dwm-moveresize-6.1.diff) (2095b) (20140209)

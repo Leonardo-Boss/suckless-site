@@ -77,7 +77,9 @@ patches and can be applied with either `git am` or with `patch`. Both files
 add values at `config.def.h`, and part 2 also updates `st.info`.
 
 * Part 1 (merged upstream): [st-autosync-0.8.3.diff](st-autosync-0.8.3.diff)
-* Part 2: [st-appsync-0.8.3.diff](st-appsync-0.8.3.diff)
+* Part 2 (st 0.8.3): [st-appsync-0.8.3.diff](st-appsync-0.8.3.diff)
+* Part 2 (st master 2020-06-17 or later):
+  [st-appsync-20200618-b27a383.diff](st-appsync-20200618-b27a383.diff)
 
 
 Author

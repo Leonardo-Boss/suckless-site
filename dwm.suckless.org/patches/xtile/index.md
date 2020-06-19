@@ -157,7 +157,7 @@ Download
 * [dwm-xtile-6.2.diff](dwm-xtile-6.2.diff) (11/06/2020)
 * [dwm-6.0-xtile.diff](dwm-6.0-xtile.diff)
 
-Recommended complementary patches\:
+Recommended complementary patches:
 ----------------------------------
 Gaps
 ----
@@ -165,9 +165,9 @@ Added a new patch with separate inner and outer gaps which can be adjusted
 at runtime. Also includes an option to disable gaps when only one window  
 is open (on by default.)
 
-`Mod+Shift+i/o - increase size (i - inner, o - outer)` 
-`Mod+Control+i/o - decrease size (i - inner, o - outer)` 
-`Mod+Shift+Control+i/o - disable gaps (i - inner, o - outer)` 
+`Mod+Shift+i/o - increase size (i - inner, o - outer)`    
+`Mod+Control+i/o - decrease size (i - inner, o - outer)`   
+`Mod+Shift+Control+i/o - disable gaps (i - inner, o - outer)`   
 
 Download
 --------
@@ -189,6 +189,6 @@ Patches related to xtile:
 
 
 Authors
-------
+-------
 * MLquest8 (gaps and update for 6.2) (miskuzius at gmail.com)
 * Carlos Pita (memeplex) <carlosjosepita@gmail.com>

@@ -9,6 +9,10 @@ News
 
 [Atom feed](//suckless.org/atom.xml)
 
+2020-06-19
+----------
+[st 0.8.4](//st.suckless.org/) released: [download](//dl.suckless.org/st/st-0.8.4.tar.gz)
+
 2020-05-27
 ----------
 The [slcon7](conferences/2020) has been cancelled due to the 2019-nCoV

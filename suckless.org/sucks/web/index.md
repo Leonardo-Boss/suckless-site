@@ -6,7 +6,7 @@ in the meanwhile ruined our climate: the web.
 
 * [This is a motherfucking website.](http://motherfuckingwebsite.com/)
 * [This is a better motherfucking website.](http://bettermotherfuckingwebsite.com/)
-* [This is the best motherfucking website.](https://thebestmotherfucking.website/)
+* [This is the best motherfucking website.](http://bestmotherfucking.website/)
 
 For short: There is an industry which is specialized on extending the resource
 usage to display just some characters on your display. Millions of jobs are

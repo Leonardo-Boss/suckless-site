@@ -27,7 +27,7 @@ Download
 * With this version of pertag, changes are always applied to all selected tags.  
   For exmaple: If tag 2 and tag 3 are selected, changes to barpos, layout, mfact, nmaster will apply to both tags.  
   With the original pertag patch, changes only effect the tag which was selected first.
-  * [dwm-pertag-perseltag-6.2.diff](dwm-pertag-perseltag-6.2.diff) (20200418)
+  * [dwm-pertag-perseltag-6.2.diff](dwm-pertag-perseltag-6.2.diff) (20200622)
 
 
 Authors

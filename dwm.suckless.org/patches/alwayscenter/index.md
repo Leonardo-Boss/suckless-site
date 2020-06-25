@@ -1,5 +1,5 @@
-awayscenter
-===========
+alwayscenter
+============
 
 Description
 -----------
@@ -8,7 +8,7 @@ without a rule.
 
 Download
 --------
-* [dwm-awayscenter-20200625-f04cac6.diff](dwm-awayscenter-20200625-f04cac6.diff)
+* [dwm-alwayscenter-20200625-f04cac6.diff](dwm-alwayscenter-20200625-f04cac6.diff)
 
 Authors
 -------

@@ -29,4 +29,4 @@ All alt screen detection code is from that patch.
 
 Author
 ------
-- [Dennis Lee](%6D%61%69%6C%74%6F%3A%44%65%6E%6E%69%73%40%44%65%6E%6E%69%73%4C%65%65%2E%78%79%7A)
+- [Dennis Lee](mailto:dennis@dennislee.xyz)

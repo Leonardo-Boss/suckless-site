@@ -42,7 +42,7 @@ index 4465af1..df1eb05 100644
  
  typedef union {
  	int i;
-@@ -1192,6 +1193,43 @@ movemouse(const Arg *arg)
+@@ -1192,6 +1193,44 @@ movemouse(const Arg *arg)
  	}
  }
  
@@ -81,6 +81,7 @@ index 4465af1..df1eb05 100644
 +            return;
 +    }
 +	resize(c, nx, ny, nw, nh, True);
++   XWarpPointer(dpy, None, c->win, 0, 0, 0, 0, nw/2, nh/2);
 +}
 +
  Client *

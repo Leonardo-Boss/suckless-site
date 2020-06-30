@@ -64,6 +64,9 @@ Feel free to add your own status monitors here (keeping the list sorted).
   date, time and CPU temperature
 * [dwmstat](https://notabug.org/kl3/dwmstat) - small and simple | IP, CPU
   temperature, system volume, current local time (and more) | config.h | OpenBSD
+* [goblocks](https://github.com/Stargarth/Goblocks) - Partially inspired by dwmblocks,
+  Go status bar that allows you to refresh each block independently. Includes built in
+  features for frequently refreshed blocks.
 * [go-dwmstatus](https://github.com/oniichaNj/go-dwmstatus) - A Go bar that
   prints current MPD song, load averages, time/date and battery percentage.
 * [gods](https://github.com/schachmat/gods) - implemented in Go. prints network

@@ -53,11 +53,11 @@ Feel free to add your own status monitors here (keeping the list sorted).
 * [dwm-bar](https://github.com/joestandring/dwm-bar) - modular status bar.
   modules for date/time, alsa volume, cmus track, countdown timer,
   current keyboard layout, mail count, system resources, and weather.
-* [dwmblocks](https://github.com/ashish-yadav11/dwmblocks) - rewrite of
-  dwmblocks with some removed and some added features.
 * [dwmblocks](https://github.com/torrinfail/dwmblocks) - i3blocks-like
   status bar where you can refresh each "block" independently by update time
   or signal.
+* [dwmblocks](https://github.com/ashish-yadav11/dwmblocks) - rewrite of
+  dwmblocks with some removed and some added features.
 * [dwms](https://github.com/ianremmler/dwms) - displays time, network, audio,
   and battery status, written in Go using XGB.
 * [dwmsd](https://github.com/johnko/dwmsd) - a daemon that listens on localhost

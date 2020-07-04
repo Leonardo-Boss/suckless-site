@@ -1,12 +1,12 @@
-From 16abaf4bbea01234abab27fbfdfc921aad2fc364 Mon Sep 17 00:00:00 2001
+From a06d0d3d7bbb3c0f5bad44934dbbf1e88e7d9558 Mon Sep 17 00:00:00 2001
 From: Miles Alan <m@milesalan.com>
-Date: Tue, 14 Jan 2020 21:50:04 -0600
+Date: Sat, 4 Jul 2020 11:49:04 -0500
 Subject: [PATCH] Highlight matched text in a different color scheme
 
 ---
  config.def.h |  2 ++
- dmenu.c      | 42 ++++++++++++++++++++++++++++++++++++++++--
- 2 files changed, 42 insertions(+), 2 deletions(-)
+ dmenu.c      | 43 +++++++++++++++++++++++++++++++++++++++++--
+ 2 files changed, 43 insertions(+), 2 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
 index 1edb647..64eab2a 100644
@@ -22,7 +22,7 @@ index 1edb647..64eab2a 100644
  };
  /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 diff --git a/dmenu.c b/dmenu.c
-index 6b8f51b..c82bb6d 100644
+index 6b8f51b..d5e1991 100644
 --- a/dmenu.c
 +++ b/dmenu.c
 @@ -26,7 +26,7 @@
@@ -34,7 +34,7 @@ index 6b8f51b..c82bb6d 100644
  
  struct item {
  	char *text;
-@@ -113,6 +113,42 @@ cistrstr(const char *s, const char *sub)
+@@ -113,6 +113,43 @@ cistrstr(const char *s, const char *sub)
  	return NULL;
  }
  
@@ -59,13 +59,14 @@ index 6b8f51b..c82bb6d 100644
 +			// Move highlight str end, draw highlight, & restore
 +			restorechar = highlight[strlen(token)];
 +			highlight[strlen(token)] = '\0';
-+			drw_text(
-+				drw,
-+				x + indentx - (lrpad / 2) - 1,
-+				y,
-+				MIN(maxw - indentx, TEXTW(highlight) - lrpad),
-+				bh, 0, highlight, 0
-+			);
++			if (indentx - (lrpad / 2) - 1 < maxw)
++				drw_text(
++					drw,
++					x + indentx - (lrpad / 2) - 1,
++					y,
++					MIN(maxw - indentx, TEXTW(highlight) - lrpad),
++					bh, 0, highlight, 0
++				);
 +			highlight[strlen(token)] = restorechar;
 +
 +			if (strlen(highlight) - strlen(token) < strlen(token)) break;
@@ -77,7 +78,7 @@ index 6b8f51b..c82bb6d 100644
  static int
  drawitem(struct item *item, int x, int y, int w)
  {
-@@ -123,7 +159,9 @@ drawitem(struct item *item, int x, int y, int w)
+@@ -123,7 +160,9 @@ drawitem(struct item *item, int x, int y, int w)
  	else
  		drw_setscheme(drw, scheme[SchemeNorm]);
  

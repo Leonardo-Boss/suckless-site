@@ -46,3 +46,4 @@ Authors
 * Laslo Hunhold - <dev@frign.de> (6.1, git port)
 * Petr Šabata - <contyk@redhat.com> (bugfixes)
 * wtl - <wtl144000@gmail.com> (bugfixes)
+* John Wilkes - <jdwilkesx@gmail.com> (bugfixes)

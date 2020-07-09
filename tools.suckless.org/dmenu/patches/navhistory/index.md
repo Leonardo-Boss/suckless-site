@@ -15,7 +15,17 @@ To change this behaviour, set 'histnodup' to 0 in config.h.
 Download
 --------
 * [dmenu-navhistory-4.6.diff](dmenu-navhistory-4.6.diff)
+* [dmenu-navhistory-20200709.diff](dmenu-navhistory-20200709.diff)
+
+### With Search
+This patch extends navhist with history-search functionality. Press
+ctrl-r, like in bash or ksh, and the suggestions will be replaced with
+the history. Press ctrl-r again to revert.
+
+* [dmenu-navhistory+search-20200709.diff](dmenu-navhistory+search-20200709.diff)
+
 
 Author
 ------
 * phi <crispyfrog@163.com>
+* zge <philip@warpmail.net>

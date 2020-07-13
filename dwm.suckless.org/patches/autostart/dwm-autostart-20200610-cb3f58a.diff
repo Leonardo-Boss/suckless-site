@@ -82,7 +82,7 @@ index 4465af1..2156b49 100644
  static char stext[256];
  static int screen;
  static int sw, sh;           /* X display screen geometry width, height */
-@@ -1380,6 +1386,81 @@ run(void)
+@@ -1380,6 +1386,83 @@ run(void)
  			handler[ev.type](&ev); /* call handler */
  }
  
@@ -127,10 +127,12 @@ index 4465af1..2156b49 100644
 +		/* the XDG conformant path does not exist or is no directory
 +		 * so we try ~/.dwm instead
 +		 */
-+		if (realloc(pathpfx, strlen(home) + strlen(dwmdir) + 3) == NULL) {
++		char *pathpfx_new = realloc(pathpfx, strlen(home) + strlen(dwmdir) + 3);
++		if(pathpfx_new == NULL) {
 +			free(pathpfx);
 +			return;
 +		}
++   pathpfx = pathpfx_new;
 +
 +		if (sprintf(pathpfx, "%s/.%s", home, dwmdir) <= 0) {
 +			free(pathpfx);

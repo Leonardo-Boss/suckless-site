@@ -8,7 +8,7 @@ Download
 
 Repository
 ----------
-	git clone https://oldgit.suckless.org/sprop
+	git clone https://git.suckless.org/sprop
 
 Links
 -----

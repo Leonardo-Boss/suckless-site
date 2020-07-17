@@ -8,17 +8,18 @@ This script looks for links to RSS or Atom feeds in the current web page. If it
 finds feeds, it places an icon in the corner of the page which toggles showing
 a list of the feeds.
 
+To install, put the code in `~/.surf/script.js`
+
 Author
 ------
 
-Charles Lehner <http://celehner.com>
+Charles E. Lehner <https://celehner.com/>
 
 Code
 ----
 
-	document.addEventListener('DOMContentLoaded', function fn() {
-		document.removeEventListener('DOMContentLoaded', fn, true);
-
+	(function () {
+		var urls = {}
 		var feeds = [].slice.call(document.querySelectorAll(
 			"link[href][rel~=alternate][type$=xml]," +
 			"   a[href][rel~=alternate][type$=xml]"))
@@ -28,6 +29,9 @@ Code
 					title: el.title || document.title,
 					type: /atom/i.test(el.type) ? 'Atom' : 'RSS'
 				};
+			}).filter(function (feed) {
+				if (urls[feed.href]) return false
+				return urls[feed.href] = true
 			});
 		if (!feeds.length) return;
 
@@ -80,11 +84,13 @@ Code
 			'BDQKRhAOsbICNEEAOw==';
 		toggleLink.appendChild(img);
 
-		toggleLink.appendChild(document.createTextNode(feeds.length));
+		if (feeds.length > 1) {
+			toggleLink.appendChild(document.createTextNode(feeds.length));
+		}
 
 		function toggleFeedList(e) {
 			e.preventDefault();
 			feedList.style.display = (feedList.style.display == 'none') ?
 				'inline-block' : 'none';
 		}
-	}, true);
+	})();

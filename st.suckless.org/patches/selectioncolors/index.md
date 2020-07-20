@@ -21,6 +21,6 @@ Download
 
 Authors
 -------
-* Aleksandrs Stier
+* Aleksandrs Stier (0.8.2)
 * Ashish Kumar Yadav - <ashishkumar.yadav@students.iiserpune.ac.in> (0.8.4,
   don't disable color reversing for external programs)

@@ -28,4 +28,4 @@ the history. Press ctrl-r again to revert.
 Author
 ------
 * phi <crispyfrog@163.com>
-* zge <philip@warpmail.net>
+* Philip K. - philipk (at) posteo (dot) net

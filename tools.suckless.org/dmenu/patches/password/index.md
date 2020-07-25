@@ -13,6 +13,6 @@ Download
 
 Authors
 -------
-* Philip K. - philippija (at) gmail (dot) com
+* Philip K. - philipk (at) posteo (dot) net
 
 

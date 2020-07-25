@@ -3,16 +3,16 @@ netwmicon
 
 Description
 -----------
-Enables to set *_NET_WM_ICON* which hardcodes an icon for st. An icon is
-already defined in the file *icon.h* which is stolen from
+Enables to set *\_NET\_WM\_ICON* which hardcodes an icon for st. An icon is
+already defined in the file *icon.h* which was created by the theme
 [flat-remix](https://github.com/daniruiz/flat-remix).
 
 Generally the icon of an application is defined by its desktop-entry. A patch
 with the name [desktopentry](../desktopentry) already exists for this purpose.
 However, some programs like tint2 do not respect the desktopentry and rely
-instead on an hardcoded icon which has to be defined by *_NET_WM_ICON*. Since
-st does not define *_NET_WM_ICON* those programs will display some default icon
-(which is ugly).
+instead on an hardcoded icon which has to be defined by *\_NET\_WM\_ICON*.
+Since st does not define *\_NET\_WM\_ICON* those programs will display some
+default icon (which is ugly).
 
 Defining your own icon
 ----------------------

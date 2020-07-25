@@ -19,10 +19,10 @@ Screenshots:
 
 Download
 --------
-* [dwm-barpadding-6.2.diff](dwm-barpadding-6.2.diff) (10.12.2019 - DD.MM.YYYY)
-* [dwm-barpadding-20200720-bb2e722.diff](dwm-barpadding-20200720-bb2e722.diff) (20.07.2020 - DD.MM.YYYY)
+* [dwm-barpadding-6.2.diff](dwm-barpadding-6.2.diff) (2019-12-10)
+* [dwm-barpadding-20200720-bb2e722.diff](dwm-barpadding-20200720-bb2e722.diff) (2020-07-20)
 
 Author
 ------
 * Alex Cole
-* Pavel Oborin [pavel@oborin.xyz](pavel@oborin.xyz) (20200720-bb2e722 port)
+* Pavel Oborin [pavel@oborin.xyz](mailto:pavel@oborin.xyz) (20200720-bb2e722 port)

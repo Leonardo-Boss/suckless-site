@@ -1,6 +1,6 @@
-From c9f4dcf17d5b5ce8ca4d5d6e46be26cca6a8442a Mon Sep 17 00:00:00 2001
+From 930156d1771a2af6c572856ea97b113e537cf13d Mon Sep 17 00:00:00 2001
 From: mihirlad55 <mihirlad55@gmail.com>
-Date: Fri, 24 Jul 2020 21:11:14 +0000
+Date: Sun, 26 Jul 2020 03:51:15 +0000
 Subject: [PATCH] Add IPC support through a unix socket
 
 This patch currently supports the following requests:
@@ -9,7 +9,8 @@ This patch currently supports the following requests:
 * Get all available layouts
 * Get available tags
 * Get client properties
-* Subscribe to tag change, selected client change, and layout change
+* Subscribe to tag change, client focus change, and layout change,
+  monitor focus change, focused title change, and client state change
   events
 
 This patch includes a dwm-msg cli program that supports all of the
@@ -1082,7 +1083,7 @@ index 9fd0286..c90c61a 100644
  void
 diff --git a/ipc.c b/ipc.c
 new file mode 100644
-index 0000000..1d435dc
+index 0000000..e527e23
 --- /dev/null
 +++ b/ipc.c
 @@ -0,0 +1,1202 @@
@@ -2212,7 +2213,7 @@ index 0000000..1d435dc
 +    }
 +
 +    Client *sel = m->sel;
-+    if (!sel) return;
++    if (!sel) continue;
 +    ClientState *o = &m->sel->prevstate;
 +    ClientState n = {.oldstate = sel->oldstate,
 +                     .isfixed = sel->isfixed,

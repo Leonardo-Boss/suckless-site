@@ -128,6 +128,7 @@ related projects
 * [cons-wm](http://github.com/dharmatech/psilab/tree/master/cons-wm) -- minimalist wm in scheme (not tiled)
 * [bug.n](https://github.com/fuhsjr00/bug.n) -- dwm for Windows written in AutoHotkey
 * [dvtm](http://www.brain-dump.org/projects/dvtm/) -- virtual terminal manager (dwm on the console)
+* [dwl](https://github.com/djpohly/dwl) -- hackable dwm for Wayland
 * [dwm-gtx](http://s01.de/~gottox/index.cgi/proj_dwm) -- dwm branch with Xinerama support, pointer movement, different layout
 * [dwm-sprinkles](http://0mark.unserver.de/dwm-sprinkles/) -- dwm with colorfull bar, transparency, pre-configured pertag and more
 * [dwm-win32](http://www.brain-dump.org/projects/dwm-win32/) -- dwm ported to windows

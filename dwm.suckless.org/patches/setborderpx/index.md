@@ -10,13 +10,13 @@ Default key bindings
 --------------------
 	 Key                    Argument   Description
 	----------------------------------------------------
-	 Mod-Shift-minus        +0.25      Increase borderpx
-	 Mod-Shift-plus         -0.25      Decrease borderpx
-	 Mod-Shift-numbersign    0.00      Reset borderpx
+	 Mod-Shift-minus        -1      Increase borderpx
+	 Mod-Shift-plus         +1      Decrease borderpx
+	 Mod-Shift-numbersign    0      Reset borderpx
 
 Notes
 -----
-You might want to set resizehints in config.h to zero to get smooth animations 
+You might want to set resizehints in config.h to zero to get smooth animations
 when increasing or decreasing border pixels.
 
 Download

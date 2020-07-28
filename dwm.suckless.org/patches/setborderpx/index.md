@@ -10,8 +10,8 @@ Default key bindings
 --------------------
 	 Key                    Argument   Description
 	----------------------------------------------------
-	 Mod-Shift-minus        -1         Increase borderpx
-	 Mod-Shift-plus         +1         Decrease borderpx
+	 Mod-Shift-plus         +1         Increase borderpx
+	 Mod-Shift-minus        -1         Decrease borderpx
 	 Mod-Shift-numbersign    0         Reset borderpx
 
 Notes

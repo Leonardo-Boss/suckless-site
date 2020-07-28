@@ -46,7 +46,8 @@ Feel free to add your own status monitors here (keeping the list sorted).
 
 * [barM](barM.c) - can display all, time/date, ram usage, output of commands (the New BarMonitor).
 * [dsblocks](https://github.com/ashish-yadav11/dsblocks) - modular status
-  monitor with support for clickability and color.
+  monitor, written and meant to be configured in C, with support for signaling,
+  clickability, cursor hinting and color.
 * [dstat](https://www.umaxx.net/dl)
   [Screenshot](https://www.umaxx.net/dstat.png) - displays the current network
   throughput, CPU usage, performance settings, battery status, temperature,

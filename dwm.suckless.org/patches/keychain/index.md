@@ -12,7 +12,7 @@ together which all starts with the specified Mod + ChainKey prefix.
 
 Download
 --------
-* [dwm-keychain-20200719-e9f3eec.diff](dwm-keychain-20200719-e9f3eec.diff)
+* [dwm-keychain-20200729-053e3a2.diff](dwm-keychain-20200729-053e3a2.diff)
 
 Author
 ------

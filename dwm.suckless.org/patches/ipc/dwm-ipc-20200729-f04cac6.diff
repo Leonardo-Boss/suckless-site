@@ -1,6 +1,6 @@
-From 930156d1771a2af6c572856ea97b113e537cf13d Mon Sep 17 00:00:00 2001
+From 1db4901625c20669b8e448b5c78b642fb792c844 Mon Sep 17 00:00:00 2001
 From: mihirlad55 <mihirlad55@gmail.com>
-Date: Sun, 26 Jul 2020 03:51:15 +0000
+Date: Wed, 29 Jul 2020 23:56:25 +0000
 Subject: [PATCH] Add IPC support through a unix socket
 
 This patch currently supports the following requests:
@@ -34,7 +34,7 @@ https://github.com/mihirlad55/dwm-ipc
  Makefile     |   10 +-
  config.def.h |   19 +
  config.mk    |    8 +-
- dwm-msg.c    |  519 ++++++++++++++++++++++
+ dwm-msg.c    |  543 +++++++++++++++++++++++
  dwm.c        |  150 ++++++-
  ipc.c        | 1202 ++++++++++++++++++++++++++++++++++++++++++++++++++
  ipc.h        |  320 ++++++++++++++
@@ -42,7 +42,7 @@ https://github.com/mihirlad55/dwm-ipc
  util.h       |   10 +
  yajl_dumps.c |  351 +++++++++++++++
  yajl_dumps.h |   65 +++
- 13 files changed, 2903 insertions(+), 13 deletions(-)
+ 13 files changed, 2927 insertions(+), 13 deletions(-)
  create mode 100644 IPCClient.c
  create mode 100644 IPCClient.h
  create mode 100644 dwm-msg.c
@@ -276,10 +276,10 @@ index 7084c33..8570938 100644
  CPPFLAGS = -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_POSIX_C_SOURCE=200809L -DVERSION=\"${VERSION}\" ${XINERAMAFLAGS}
 diff --git a/dwm-msg.c b/dwm-msg.c
 new file mode 100644
-index 0000000..c957adf
+index 0000000..606f6ce
 --- /dev/null
 +++ b/dwm-msg.c
-@@ -0,0 +1,519 @@
+@@ -0,0 +1,543 @@
 +#include <ctype.h>
 +#include <errno.h>
 +#include <inttypes.h>
@@ -328,6 +328,7 @@ index 0000000..c957adf
 +
 +const char *DEFAULT_SOCKET_PATH = "/tmp/dwm.sock";
 +static int sock_fd = -1;
++static unsigned int ignore_reply = 0;
 +
 +typedef enum IPCMessageType {
 +  IPC_TYPE_RUN_COMMAND = 0,
@@ -556,6 +557,18 @@ index 0000000..c957adf
 +}
 +
 +static void
++flush_socket_reply()
++{
++  IPCMessageType reply_type;
++  uint32_t reply_size;
++  char *reply;
++
++  read_socket(&reply_type, &reply_size, &reply);
++
++  free(reply);
++}
++
++static void
 +print_socket_reply()
 +{
 +  IPCMessageType reply_type;
@@ -565,6 +578,7 @@ index 0000000..c957adf
 +  read_socket(&reply_type, &reply_size, &reply);
 +
 +  printf("%.*s\n", reply_size, reply);
++  fflush(stdout);
 +  free(reply);
 +}
 +
@@ -604,7 +618,10 @@ index 0000000..c957adf
 +
 +  send_message(IPC_TYPE_RUN_COMMAND, msg_size, (uint8_t *)msg);
 +
-+  print_socket_reply();
++  if (!ignore_reply)
++    print_socket_reply();
++  else
++    flush_socket_reply();
 +
 +  yajl_gen_free(gen);
 +
@@ -690,7 +707,10 @@ index 0000000..c957adf
 +
 +  send_message(IPC_TYPE_SUBSCRIBE, msg_size, (uint8_t *)msg);
 +
-+  print_socket_reply();
++  if (!ignore_reply)
++    print_socket_reply();
++  else
++    flush_socket_reply();
 +
 +  yajl_gen_free(gen);
 +
@@ -715,7 +735,7 @@ index 0000000..c957adf
 +static void
 +print_usage(const char *name)
 +{
-+  printf("usage: %s <command> [...]\n", name);
++  printf("usage: %s [options] <command> [...]\n", name);
 +  puts("");
 +  puts("Commands:");
 +  puts("  run_command <name> [args...]    Run an IPC command");
@@ -738,14 +758,16 @@ index 0000000..c957adf
 +  puts("");
 +  puts("  help                            Display this message");
 +  puts("");
++  puts("Options:");
++  puts("  --ignore-reply                  Don't print reply messages from");
++  puts("                                  run_command and subscribe.");
++  puts("");
 +}
 +
 +int
 +main(int argc, char *argv[])
 +{
 +  const char *prog_name = argv[0];
-+  // Need at least command argument
-+  if (argc < 2) usage_error(prog_name, "Expected an argument, got none");
 +
 +  connect_to_socket();
 +  if (sock_fd == -1) {
@@ -753,51 +775,53 @@ index 0000000..c957adf
 +    return 1;
 +  }
 +
-+  for (int i = 1; i < argc; i++) {
-+    if (strcmp(argv[i], "help") == 0) {
-+      print_usage(prog_name);
-+      return 0;
-+    } else if (strcmp(argv[i], "run_command") == 0) {
-+      if (++i >= argc) usage_error(prog_name, "No command specified");
-+      // Command name
-+      char *command = argv[i];
-+      // Command arguments are everything after command name
-+      char **command_args = argv + ++i;
-+      // Number of command arguments
-+      int command_argc = argc - i;
-+      run_command(command, command_args, command_argc);
-+      return 0;
-+    } else if (strcmp(argv[i], "get_monitors") == 0) {
-+      get_monitors();
-+      return 0;
-+    } else if (strcmp(argv[i], "get_tags") == 0) {
-+      get_tags();
-+      return 0;
-+    } else if (strcmp(argv[i], "get_layouts") == 0) {
-+      get_layouts();
-+      return 0;
-+    } else if (strcmp(argv[i], "get_dwm_client") == 0) {
-+      if (++i < argc) {
-+        if (is_unsigned_int(argv[i])) {
-+          Window win = atol(argv[i]);
-+          get_dwm_client(win);
-+        } else
-+          usage_error(prog_name, "Expected unsigned integer argument");
-+      } else
-+        usage_error(prog_name, "Expected the window id");
-+      return 0;
-+    } else if (strcmp(argv[i], "subscribe") == 0) {
-+      if (++i < argc) {
-+        for (int j = i; j < argc; j++) subscribe(argv[j]);
-+      } else
-+        usage_error(prog_name, "Expected event name");
-+      // Keep listening for events forever
-+      while (1) {
-+        print_socket_reply();
-+      }
-+    } else
-+      usage_error(prog_name, "Invalid argument '%s'", argv[i]);
++  int i = 1;
++  if (strcmp(argv[i], "--ignore-reply") == 0) {
++    ignore_reply = 1;
++    i++;
 +  }
++
++  if (i >= argc) usage_error(prog_name, "Expected an argument, got none");
++
++  if (strcmp(argv[i], "help") == 0)
++    print_usage(prog_name);
++  else if (strcmp(argv[i], "run_command") == 0) {
++    if (++i >= argc) usage_error(prog_name, "No command specified");
++    // Command name
++    char *command = argv[i];
++    // Command arguments are everything after command name
++    char **command_args = argv + ++i;
++    // Number of command arguments
++    int command_argc = argc - i;
++    run_command(command, command_args, command_argc);
++  } else if (strcmp(argv[i], "get_monitors") == 0) {
++    get_monitors();
++  } else if (strcmp(argv[i], "get_tags") == 0) {
++    get_tags();
++  } else if (strcmp(argv[i], "get_layouts") == 0) {
++    get_layouts();
++  } else if (strcmp(argv[i], "get_dwm_client") == 0) {
++    if (++i < argc) {
++      if (is_unsigned_int(argv[i])) {
++        Window win = atol(argv[i]);
++        get_dwm_client(win);
++      } else
++        usage_error(prog_name, "Expected unsigned integer argument");
++    } else
++      usage_error(prog_name, "Expected the window id");
++  } else if (strcmp(argv[i], "subscribe") == 0) {
++    if (++i < argc) {
++      for (int j = i; j < argc; j++) subscribe(argv[j]);
++    } else
++      usage_error(prog_name, "Expected event name");
++    // Keep listening for events forever
++    while (1) {
++      print_socket_reply();
++    }
++  } else
++    usage_error(prog_name, "Invalid argument '%s'", argv[i]);
++
++  return 0;
 +}
 diff --git a/dwm.c b/dwm.c
 index 9fd0286..c90c61a 100644

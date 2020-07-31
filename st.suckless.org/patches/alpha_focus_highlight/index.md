@@ -53,8 +53,8 @@ Patch: alpha + focus
 --------------------
 
 **st-0.8.3**
-- [Version 1 (attached)](st-focus-20200530-43a395a.diff)
-- Most recent release: [st-focus-20200530-43a395a.diff Github](https://github.com/juliusHuelsmann/st/releases/download/v2/st-focus-20200530-43a395a.diff)
+- [Version 1 (attached)](st-focus-20200731-43a395a.diff)
+- Most recent release: [st-focus-20200530-43a395a.diff Github](https://github.com/juliusHuelsmann/st/releases/download/v2/st-focus-20200731-43a395a.diff)
 
 ---
 
@@ -62,8 +62,8 @@ Patch: focus
 ------------
 
 **st-0.8.3**
-- [Version 1 (attached)](st-focus-20200530-patch_alpha.diff)
-- Most recent release: [st-focus-20200530-patch_alpha.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/v2/st-focus-20200530-patch_alpha.diff)
+- [Version 1 (attached)](st-focus-20200731-patch_alpha.diff)
+- Most recent release: [st-focus-20200530-patch_alpha.diff (Github)](https://github.com/juliusHuelsmann/st/releases/download/v2/st-focus-20200731-patch_alpha.diff)
 
 
 MISC

@@ -1,12 +1,12 @@
-From 965f36e67825a790074c6860c52ccebb3791daa4 Mon Sep 17 00:00:00 2001
+From 9cd160c4ba9c345c24644a7da77cc4f04fc93c4e Mon Sep 17 00:00:00 2001
 From: Rob Pilling <robpilling@gmail.com>
 Date: Mon, 27 Jul 2020 20:11:08 +0100
 Subject: [PATCH] alwaysontop
 
 ---
  config.h |  1 +
- dwm.c    | 43 +++++++++++++++++++++++++++++++++++++++++--
- 2 files changed, 42 insertions(+), 2 deletions(-)
+ dwm.c    | 45 +++++++++++++++++++++++++++++++++++++++++++--
+ 2 files changed, 44 insertions(+), 2 deletions(-)
 
 diff --git a/config.h b/config.h
 index 7283a2d..c10bd8b 100644
@@ -21,7 +21,7 @@ index 7283a2d..c10bd8b 100644
  	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
  	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
 diff --git a/dwm.c b/dwm.c
-index cc36b03..cbd0dca 100644
+index cc36b03..95e69e1 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -92,7 +92,7 @@ struct Client {
@@ -72,10 +72,15 @@ index cc36b03..cbd0dca 100644
  	if (m->lt[m->sellt]->arrange) {
  		wc.stack_mode = Below;
  		wc.sibling = m->barwin;
-@@ -1803,6 +1818,30 @@ togglefloating(const Arg *arg)
- 	arrange(selmon);
- }
- 
+@@ -1800,6 +1815,32 @@ togglefloating(const Arg *arg)
+ 	if (selmon->sel->isfloating)
+ 		resize(selmon->sel, selmon->sel->x, selmon->sel->y,
+ 			selmon->sel->w, selmon->sel->h, 0);
++	else
++		selmon->sel->isalwaysontop = 0; /* disabled, turn this off too */
++	arrange(selmon);
++}
++
 +void
 +togglealwaysontop(const Arg *arg)
 +{
@@ -97,12 +102,9 @@ index cc36b03..cbd0dca 100644
 +		selmon->sel->isalwaysontop = 1;
 +	}
 +
-+	arrange(selmon);
-+}
-+
- void
- toggletag(const Arg *arg)
- {
+ 	arrange(selmon);
+ }
+ 
 -- 
 2.27.0
 

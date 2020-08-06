@@ -12,7 +12,7 @@ It has the following format:
 	╟────────┼─────────────────────────────────────────────────────────╢
 	║ 4      │ 32-Bit BE unsigned integer (height)                     ║
 	╟────────┼─────────────────────────────────────────────────────────╢
-	║ [2222] │ 4⋅16-Bit BE unsigned integers [RGBA] / pixel, row-major ║
+	║ [2222] │ 4x16-Bit BE unsigned integers [RGBA] / pixel, row-major ║
 	╚════════╧═════════════════════════════════════════════════════════╝
 
 The RGB-data should be sRGB for best interoperability and not

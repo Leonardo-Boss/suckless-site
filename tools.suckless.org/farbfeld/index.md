@@ -52,6 +52,7 @@ provide packages:
 
 Implementations
 ---------------
+* [image](https://crates.io/crates/image) Rust crate for image processing
 * [imlib2](https://sourceforge.net/projects/enlightenment/files/imlib2-src/) library (implies support in feh,
   w3m, giblib, sxiv, conky, magicpoint, scrot, libcaca, etc.)
 * [lel](https://git.codemadness.org/lel/) farbfeld image viewer

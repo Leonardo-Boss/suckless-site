@@ -302,7 +302,7 @@ index 9fd0286..e9f08f7 100644
 +        unsigned char *prop;
 +        pid_t ret;
 +
-+        if (XGetWindowProperty(dpy, w, XInternAtom(dpy, "_NET_WM_PID", 1), 0, 1, False, AnyPropertyType, &type, &format, &len, &bytes, &prop) != Success && !prop)
++        if (XGetWindowProperty(dpy, w, XInternAtom(dpy, "_NET_WM_PID", 1), 0, 1, False, AnyPropertyType, &type, &format, &len, &bytes, &prop) != Success || !prop)
 +               return 0;
 +
 +        ret = *(pid_t*)prop;

@@ -25,6 +25,7 @@ Resource Extension which is unsupported in vanilla Xlib.
 
 Download
 --------
+* [dwm-swallow-20200807-b2de9b0.diff](dwm-swallow-20200807-b2de9b0.diff)
 * [dwm-swallow-20200707-8d1e703.diff](dwm-swallow-20200707-8d1e703.diff)
 * [dwm-swallow-20200522-7accbcf.diff](dwm-swallow-20200522-7accbcf.diff)
 * [dwm-swallow-20170909-ceac8c9.diff](dwm-swallow-20170909-ceac8c9.diff)
@@ -34,9 +35,8 @@ Download
 Notes
 -----
 The window swallowing functionality requires `dwm` to walk the process tree,
-which is an inherently OS-specific task. Only Linux and FreeBSD are supported at
-this time. Please contact one of the authors if you would like to help expand the
-list of supported operating systems.
+which is an inherently OS-specific task. Please contact one of the authors
+if you would like to help expand the list of supported operating systems.
 
 Only terminals created by local processes can swallow windows, and only windows
 created by local processes can be swallowed.
@@ -48,3 +48,4 @@ Authors
 * Petr Šabata - <contyk@redhat.com> (bugfixes)
 * wtl - <wtl144000@gmail.com> (bugfixes)
 * John Wilkes - <jdwilkesx@gmail.com> (bugfixes)
+* Ben Raskin - <ben@0x1bi.net> (OpenBSD support)

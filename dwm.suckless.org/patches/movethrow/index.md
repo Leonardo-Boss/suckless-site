@@ -19,6 +19,6 @@ Download
 * [dwm-movethrow-6.2.diff](dwm-movethrow-6.2.diff)
 
 Authors
-------
-* Randoragon - `<`randoragongamedev@gmail.com`>`
+-------
+* Randoragon `<`randoragongamedev@gmail.com`>`
 * cd (original moveplace)

@@ -54,10 +54,12 @@ set to the correct value.
 
 Download
 --------
-* Anybar Patch v1.0.3:
-  [dwm-anybar-20200721-bb2e722.diff](dwm-anybar-20200721-bb2e722.diff)
-* Anybar Patch (with Polybar tray fix) v1.0.3:
-  [dwm-anybar-polybar-tray-fix-20200721-bb2e722.diff](dwm-anybar-polybar-tray-fix-20200721-bb2e722.diff)
+* Anybar Patch v1.1.0:
+  [dwm-anybar-20200810-bb2e722.diff](dwm-anybar-20200810-bb2e722.diff)
+* Anybar Patch v1.0.3 to v1.1.0 Update:
+  [dwm-anybar-v1.0.3-to-v1.1.0.diff](dwm-anybar-v1.0.3-to-v1.1.0.diff)
+* Anybar Patch (with Polybar tray fix) v1.1.0:
+  [dwm-anybar-polybar-tray-fix-20200810-bb2e722.diff](dwm-anybar-polybar-tray-fix-20200810-bb2e722.diff)
 
 The latest releases of the patch will always be available first on the project
 [Releases](https://github.com/mihirlad55/dwm-anybar/releases) page. There are

@@ -1,7 +1,7 @@
-From b10421c548c3cf3507b8ade1679407a5af6202e6 Mon Sep 17 00:00:00 2001
+From 01a1fa52c49cc22cee184c3b103a118db68bcce1 Mon Sep 17 00:00:00 2001
 From: Alexandre Hannedouche <hannedouche.alex@gmail.com>
-Date: Mon, 3 Aug 2020 18:37:01 +0200
-Subject: [PATCH] Adapting ssl patch
+Date: Mon, 10 Aug 2020 10:49:37 +0200
+Subject: [PATCH] porting ssl patch to 1.8
 
 ---
  config.mk |   2 +-
@@ -44,7 +44,7 @@ index 8e06af7..6d7704c 100644
  lets you specify an environment variable that contains your IRC password, e.g. IIPASS="foobar" ii -k IIPASS.
  This is done in order to prevent other users from eavesdropping the server password via the process list.
 diff --git a/ii.c b/ii.c
-index 426fcff..712f872 100644
+index 426fcff..9a09135 100644
 --- a/ii.c
 +++ b/ii.c
 @@ -20,6 +20,10 @@
@@ -113,7 +113,7 @@ index 426fcff..712f872 100644
  	fprintf(stderr, "usage: %s <-s host> [-i <irc dir>] [-p <port>] "
 -	        "[-u <sockname>] [-n <nick>] [-k <password>] "
 +		"[-e <ssl>] [-u <sockname>] [-n <nick>] [-k <password>] "
- 		"[-f <fullname>]\n", argv0);
+ 	        "[-f <fullname>]\n", argv0);
  	exit(1);
  }
  
@@ -156,7 +156,7 @@ index 426fcff..712f872 100644
 +loginuser(conn *ircfd, const char *host, const char *fullname)
  {
  	snprintf(msg, sizeof(msg), "NICK %s\r\nUSER %s localhost %s :%s\r\n",
- 		 nick, nick, host, fullname);
+ 	         nick, nick, host, fullname);
 @@ -359,12 +382,15 @@ udsopen(const char *uds)
  	return fd;
  }

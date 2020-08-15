@@ -9,7 +9,7 @@ Middle click link or text selection to send it to plumber.
 Download
 --------
 
- * [surf-middleclickplumb-20200815-23cefcc.diff](surf-middleclickplumb-20200815-23cefcc.diff)
+ * [surf-middleclickplumb-20200815-f675414.diff](surf-middleclickplumb-20200815-f675414.diff)
 
 Author
 ------

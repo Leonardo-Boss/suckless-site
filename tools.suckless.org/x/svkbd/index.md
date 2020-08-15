@@ -1,5 +1,5 @@
 SVKBD: Simple Virtual Keyboard
-=================================
+==============================
 This is a simple virtual keyboard, intended to be used in environments,
 where no keyboard is available.
 
@@ -20,7 +20,7 @@ This will take the file `layout.$layout.h` and create `svkbd-$layout`.
 `make install` will then pick up the new file and install it accordingly.
 
 Layouts
----------
+-------
 
 The following layouts are available:
 
@@ -74,7 +74,7 @@ also a key on the function layer of the keyboard itself to enable/disable this b
 ``≅`` when the overlay functionality is enabled and ``≇`` when not.
 
 Notes
----------
+-----
 
 This virtual keyboard does not actually modify the X keyboard layout, the ``mobile-intl``, ``mobile-plain`` and ``en`` layouts simply rely on a standard US QWERTY layout (setxkbmap us) being activated, the other layouts (``de``, ``ru``, ``sh``) require their respective XKB keymaps to be active.
 

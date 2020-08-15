@@ -1,12 +1,12 @@
-From 5544643861b3c7a6eec31ea413242bf224557e14 Mon Sep 17 00:00:00 2001
+From 23cefcc76ac69c5648be54c294ea14d5b09a9028 Mon Sep 17 00:00:00 2001
 From: 0x1bi <ben@0x1bi.net>
-Date: Fri, 14 Aug 2020 21:35:22 -0400
-Subject: [PATCH] added middle click plumb functionality
+Date: Sat, 15 Aug 2020 11:20:13 -0400
+Subject: [PATCH] added middle click to plumb functionality
 
 ---
  config.def.h |  2 +-
- surf.c       | 12 ++++++++++++
- 2 files changed, 13 insertions(+), 1 deletion(-)
+ surf.c       | 16 ++++++++++++++++
+ 2 files changed, 17 insertions(+), 1 deletion(-)
 
 diff --git a/config.def.h b/config.def.h
 index 34265f6..01d040a 100644
@@ -22,7 +22,7 @@ index 34265f6..01d040a 100644
  	{ OnLink,       MODKEY,         1,      clicknewwindow, { .i = 1 },     1 },
  	{ OnAny,        0,              8,      clicknavigate,  { .i = -1 },    1 },
 diff --git a/surf.c b/surf.c
-index 2b54e3c..04b7688 100644
+index 2b54e3c..0a4a601 100644
 --- a/surf.c
 +++ b/surf.c
 @@ -236,6 +236,7 @@ static void find(Client *c, const Arg *a);
@@ -33,18 +33,22 @@ index 2b54e3c..04b7688 100644
  
  static char winid[64];
  static char togglestats[12];
-@@ -1971,6 +1972,17 @@ clickexternplayer(Client *c, const Arg *a, WebKitHitTestResult *h)
+@@ -1971,6 +1972,21 @@ clickexternplayer(Client *c, const Arg *a, WebKitHitTestResult *h)
  	spawn(c, &arg);
  }
  
 +void
 +clickplumb(Client *c, const Arg *a, WebKitHitTestResult *h)
 +{
-+        Arg arg;
++	Arg arg;
 +
-+	char *s = gtk_clipboard_wait_for_text(gtk_clipboard_get(GDK_SELECTION_PRIMARY));
++	char *s;
++	WebKitHitTestResultContext e = webkit_hit_test_result_get_context(h);
++	if (e == 2)
++		return;
++	s = e == 6 ? s = webkit_hit_test_result_get_link_uri(h) : gtk_clipboard_wait_for_text(gtk_clipboard_get(GDK_SELECTION_PRIMARY));
 +
-+	arg = (Arg)PLUMB(s ? s : webkit_hit_test_result_get_link_uri(h));
++	arg = (Arg)PLUMB(s);
 +	spawn(c, &arg);
 +}
 +

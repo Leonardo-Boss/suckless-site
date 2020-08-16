@@ -4,9 +4,8 @@ alternativetags
 Description
 -----------
 Having icons as tags sure makes dwm look awesome, but having tags number
-simplifies tags related operations. This patch introduces alternative
-tags which can be switched on the fly for the sole purpose of providing
-visual aid.
+simplifies tags related operations. This patch introduces alternative tags
+which can be switched on the fly for the sole purpose of providing visual aid.
 
 Primary tags
 
@@ -18,7 +17,7 @@ Alternative tags
 
 Download
 --------
-* [dwm-alternativetags-6.2.diff](dwm-alternativetags-6.2.diff) (13.04.2019)
+* [dwm-alternativetags-6.2.diff](dwm-alternativetags-6.2.diff) (2019-04-13)
 
 Author
 -------

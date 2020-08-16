@@ -15,7 +15,7 @@ Create menu with the second item preselected:
 
 Download
 --------
-* [dmenu-preselect-20200513-db6093f](dmenu-preselect-20200513-db6093f.diff) (13.05.2020)
+* [dmenu-preselect-20200513-db6093f](dmenu-preselect-20200513-db6093f.diff) (2020-05-13)
 
 Authors
 -------

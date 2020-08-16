@@ -3,16 +3,16 @@ border
 
 Description
 -----------
-This patch adds a border around the dmenu window. It is intended to be used with
-the center or xyw patches, to make the menu stand out from similarly coloured
-windows.
+This patch adds a border around the dmenu window. It is intended to be used
+with the center or xyw patches, to make the menu stand out from similarly
+coloured windows.
 
 
 ![dmenu border screenshot](dmenu_border.png)
 
 Download
 --------
-* [dmenu-border-4.9.diff](dmenu-border-4.9.diff) (19.05.2019)
+* [dmenu-border-4.9.diff](dmenu-border-4.9.diff) (2019-05-19)
 
 Authors
 -------
@@ -32,7 +32,7 @@ Create menu with border width 3:
 
 Download
 --------
-* [dmenu-borderoption-20200217-bf60a1e.diff](dmenu-borderoption-20200217-bf60a1e.diff) (17.02.2020)
+* [dmenu-borderoption-20200217-bf60a1e.diff](dmenu-borderoption-20200217-bf60a1e.diff) (2020-02-17)
 
 Authors
 -------

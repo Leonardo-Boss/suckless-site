@@ -69,7 +69,7 @@ done  | lemonbar -d  -B "#292c2e" -F "#FFFFFF" -g x25
 
 Download
 -----------
-* [dwm-script_tags-6.2.diff](dwm-script_tags-6.2.diff) (30.07.2020)
+* [dwm-script_tags-6.2.diff](dwm-script_tags-6.2.diff) (2020-08-30)
 * Old version without fifo, wouldn't recommend it:[dwm-script_tags-without_fifo.diff](dwm-script_tags-without_fifo.diff)
 
 Authors

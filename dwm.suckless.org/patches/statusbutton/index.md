@@ -15,7 +15,7 @@ with Button1.
 
 Download
 --------
-* [dwm-statusbutton-20180524-c8e9479.diff](dwm-statusbutton-20180524-c8e9479.diff) (24.05.2018)
+* [dwm-statusbutton-20180524-c8e9479.diff](dwm-statusbutton-20180524-c8e9479.diff) (2018-05-24)
 
 Author
 ------

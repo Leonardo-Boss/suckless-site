@@ -8,9 +8,9 @@ mouse is warped to the nearest corner and you resize it from there.
 
 Download
 --------
-* [dwm-resizecorners-6.2.diff](dwm-resizecorners-6.2.diff) (03.02.2019)
-* [dwm-resizecorners-6.1.diff](dwm-resizecorners-6.1.diff) (17.02.2016)
-* [dwm-resizecorners-6.0.diff](dwm-resizecorners-6.0.diff) (12.05.2015)
+* [dwm-resizecorners-6.2.diff](dwm-resizecorners-6.2.diff) (2019-02-03)
+* [dwm-resizecorners-6.1.diff](dwm-resizecorners-6.1.diff) (2016-02-17)
+* [dwm-resizecorners-6.0.diff](dwm-resizecorners-6.0.diff) (2015-05-12)
 
 Author
 ------

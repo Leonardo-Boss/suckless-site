@@ -45,6 +45,7 @@ Rules
 * Please do not add unscaled large images. If needed provide a thumbnail.
 * Please do not add any binary files except screenshots or images related to
   our software.
+* For datetimes use the international date format: yyyy-mm-dd.
 * The patches should be hosted in the repository itself. Providing an
   additional mirror with the same content is OK.
 * Inline HTML, HTML files or inline JavaScript is not allowed and not supported.
@@ -92,7 +93,6 @@ This script makes sure the changes are pulled in with the correct permissions.
 
 Repositories
 ------------
-
 This is for moderators.
 
 To create a new repository just git init --bare and symlink the git hooks (see

@@ -21,6 +21,13 @@ This means that when the deck-layout is activated gaps are omitted.
 To make it work with the tilegap-patch apply the dwm-deck-tilegap patch
 on top of the dwm-deck patch.
 
+deck-double
+------------
+This patch variant adds a layout function named doubledeck which is
+similar to the deck layout. However, rather then just creating a deck
+area in the stack; it also creates a deck area in the master area. This
+pairs nicely with the [bartabgroups](/patches/bartabgroups/) patch.
+
 Showcase
 --------
 
@@ -51,9 +58,11 @@ Download
 * [dwm-deck-6.0.diff](dwm-deck-6.0.diff)
 * [dwm-deck-rmaster-6.1.diff](dwm-deck-rmaster-6.1.diff)
 * [dwm-deck-tilegap-6.1.diff](dwm-deck-tilegap-6.1.diff)
+* [dwm-deck-double-6.2.diff](dwm-deck-double-6.2.diff)
 
 Author
 ------
 * Jente Hidskes - `<jthidskes at outlook dot com>`
 * Joshua Haase - `<hahj87 at gmail dot com>`
 * Aleksandrs Stier
+* Miles Alan - `<m at milesalan dot com>` (deck double patch)

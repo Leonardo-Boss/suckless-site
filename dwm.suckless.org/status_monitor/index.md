@@ -99,7 +99,7 @@ Helper Functions In The Shell
 * Volume (device Master): `amixer get Master | awk -F'[][]' 'END{ print $4":"$2 }'`
 * Keyboard layout: `setxkbmap -query | awk '/layout/{ print $2 }'`
 * Empty disk space (mountpoint /home): `df -h | awk '{ if ($6 == "/home") print $4 }'`
-* wifi status (interface wlp3s0): `cat /sys/class/net/wlp3s0/opestate`
+* wifi status (interface wlp3s0): `cat /sys/class/net/wlp3s0/operstate`
 * CPU temperature: `sed 's/000$/°C/' /sys/class/thermal/thermal_zone0/temp`.
   Alternatively you can use `acpi -t` or `sensors` from lm-sensors package. For
   older systems you can get the cpu temperature from

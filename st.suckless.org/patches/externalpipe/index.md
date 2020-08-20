@@ -38,6 +38,7 @@ Download
 * [st-externalpipe-0.8.1.diff](st-externalpipe-0.8.1.diff)
 * [st-externalpipe-20181016-3be4cf1.diff](st-externalpipe-20181016-3be4cf1.diff)
 * [st-externalpipe-0.8.2.diff](st-externalpipe-0.8.2.diff)
+* [st-externalpipe-0.8.4.diff](st-externalpipe-0.8.4.diff)
 
 When using the scrollback patch, you can apply this patch ontop in order to use
 externalpipe onto the entire terminal history:
@@ -46,6 +47,6 @@ externalpipe onto the entire terminal history:
 
 Authors
 -------
-* Rob Pilling - <robpilling@gmail.com>
+* Rob Pilling - <robpilling@gmail.com> (original, 0.8, git ports)
 * Laslo Hunhold - <dev@frign.de> (0.4.1, 0.5, 0.6, git ports)
 * Lucas Gabriel Vuotto - <lvuotto92@gmail.com> (0.7, git ports)

@@ -50,8 +50,7 @@ because it makes them legally compatible with other suckless projects.
 
 ### Distros
 
-* [bare](https://git.uggedal.com/unmaintained/bare/) - A simple distro using suckless software.
-* [morpheus](https://morpheus.2f30.org) - A statically linked musl-based Linux distro. Unmaintained currently.
+* [morpheus](https://morpheus.2f30.org/) - A statically linked musl-based Linux distro. Unmaintained currently.
 
 Programs
 --------

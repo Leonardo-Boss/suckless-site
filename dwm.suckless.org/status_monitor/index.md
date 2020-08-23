@@ -95,7 +95,7 @@ Helper Functions In The Shell
 -----------------------------
 * [posix scripts](https://notabug.org/kl3/scripts) - basic collection of simple, fully POSIX sh compliant scripts to get various system information
 * [i3blocks-contrib](https://github.com/vivien/i3blocks-contrib) - collection of python, perl and shell scripts
-* Free memory: `free -h | awk '(NR==2){ print $3 }'`
+* Free memory: `free -h | awk '(NR==2){ print $4 }'`
 * Volume (device Master): `amixer get Master | awk -F'[][]' 'END{ print $4":"$2 }'`
 * Keyboard layout: `setxkbmap -query | awk '/layout/{ print $2 }'`
 * Empty disk space (mountpoint /home): `df -h | awk '{ if ($6 == "/home") print $4 }'`

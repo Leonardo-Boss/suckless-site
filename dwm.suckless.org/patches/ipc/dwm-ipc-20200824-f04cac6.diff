@@ -1,6 +1,6 @@
-From 1db4901625c20669b8e448b5c78b642fb792c844 Mon Sep 17 00:00:00 2001
+From 5ab24c98c2e884869977a1e67fe24cad30ab36cc Mon Sep 17 00:00:00 2001
 From: mihirlad55 <mihirlad55@gmail.com>
-Date: Wed, 29 Jul 2020 23:56:25 +0000
+Date: Mon, 24 Aug 2020 02:37:41 +0000
 Subject: [PATCH] Add IPC support through a unix socket
 
 This patch currently supports the following requests:
@@ -32,9 +32,9 @@ https://github.com/mihirlad55/dwm-ipc
  IPCClient.c  |   66 +++
  IPCClient.h  |   61 +++
  Makefile     |   10 +-
- config.def.h |   19 +
+ config.def.h |   18 +
  config.mk    |    8 +-
- dwm-msg.c    |  543 +++++++++++++++++++++++
+ dwm-msg.c    |  548 +++++++++++++++++++++++
  dwm.c        |  150 ++++++-
  ipc.c        | 1202 ++++++++++++++++++++++++++++++++++++++++++++++++++
  ipc.h        |  320 ++++++++++++++
@@ -42,7 +42,7 @@ https://github.com/mihirlad55/dwm-ipc
  util.h       |   10 +
  yajl_dumps.c |  351 +++++++++++++++
  yajl_dumps.h |   65 +++
- 13 files changed, 2927 insertions(+), 13 deletions(-)
+ 13 files changed, 2931 insertions(+), 13 deletions(-)
  create mode 100644 IPCClient.c
  create mode 100644 IPCClient.h
  create mode 100644 dwm-msg.c
@@ -228,10 +228,10 @@ index 77bcbc0..0456754 100644
  	sed "s/VERSION/${VERSION}/g" < dwm.1 > ${DESTDIR}${MANPREFIX}/man1/dwm.1
  	chmod 644 ${DESTDIR}${MANPREFIX}/man1/dwm.1
 diff --git a/config.def.h b/config.def.h
-index 1c0b587..3ad9785 100644
+index 1c0b587..059a831 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -113,3 +113,22 @@ static Button buttons[] = {
+@@ -113,3 +113,21 @@ static Button buttons[] = {
  	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
  };
  
@@ -245,7 +245,6 @@ index 1c0b587..3ad9785 100644
 +  IPCCOMMAND(  focusmon,            1,      {ARG_TYPE_SINT}   ),
 +  IPCCOMMAND(  focusstack,          1,      {ARG_TYPE_SINT}   ),
 +  IPCCOMMAND(  zoom,                1,      {ARG_TYPE_NONE}   ),
-+  IPCCOMMAND(  spawn,               1,      {ARG_TYPE_PTR}    ),
 +  IPCCOMMAND(  incnmaster,          1,      {ARG_TYPE_SINT}   ),
 +  IPCCOMMAND(  killclient,          1,      {ARG_TYPE_SINT}   ),
 +  IPCCOMMAND(  togglefloating,      1,      {ARG_TYPE_NONE}   ),
@@ -276,10 +275,10 @@ index 7084c33..8570938 100644
  CPPFLAGS = -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_POSIX_C_SOURCE=200809L -DVERSION=\"${VERSION}\" ${XINERAMAFLAGS}
 diff --git a/dwm-msg.c b/dwm-msg.c
 new file mode 100644
-index 0000000..606f6ce
+index 0000000..0071781
 --- /dev/null
 +++ b/dwm-msg.c
-@@ -0,0 +1,543 @@
+@@ -0,0 +1,548 @@
 +#include <ctype.h>
 +#include <errno.h>
 +#include <inttypes.h>
@@ -507,13 +506,18 @@ index 0000000..606f6ce
 +{
 +  size_t len = strlen(s);
 +  int is_dot_used = 0;
++  int is_minus_used = 0;
 +
 +  // Floats can only have one decimal point in between or digits
++  // Optionally, floats can also be below zero (negative)
 +  for (int i = 0; i < len; i++) {
 +    if (isdigit(s[i]))
 +      continue;
 +    else if (!is_dot_used && s[i] == '.' && i != 0 && i != len - 1) {
 +      is_dot_used = 1;
++      continue;
++    } else if (!is_minus_used && s[i] == '-' && i == 0) {
++      is_minus_used = 1;
 +      continue;
 +    } else
 +      return 0;
@@ -3238,5 +3242,5 @@ index 0000000..ee9948e
 +
 +#endif  // YAJL_DUMPS_H_
 -- 
-2.27.0
+2.28.0
 

@@ -18,6 +18,14 @@ Use this patch if you want to include the extrabar patch
 
 * [dwm-status2d-extrabar-6.2.diff](dwm-status2d-extrabar-6.2.diff)
 
+This patch adds the ability to use terminal colors from xrdb, allowing programs like pywal to change statusbar colors. Requires [xrdb patch](../xrdb/) as well.
+
+* [dwm-status2d-xrdb-6.2.diff](dwm-status2d-xrdb-6.2.diff)
+
+This patch adds some extra tags for managing colors described below
+
+* [dwm-status2d-swap-save-restore-6.2.diff](dwm-status2d-swap-save-restore-6.2.diff)
+
 Usage
 -----
 * __^rx,y,w,h^__
@@ -40,6 +48,27 @@ Usage
 * __^d^__
    Reset colors to SchemeNorm.
 
+
+* __^C<num>^__
+   Set foreground color to terminal color 0-15. Requires the xrdb sub-patch above.
+
+
+* __^B<num>^__
+   Set background color to terminal color 0-15. Requires the xrdb sub-patch above.
+
+
+* __^w^__
+   Swaps the current foreground/background colors. Useful when drawing multiple rectangles on top of one another. Requires the swap-save-restore sub-patch above.
+
+
+* __^v^__
+   Saves the current color scheme so it can be restored later with the __^t^__ tag. This way a script can modify color in the middle of the bar agnostic to what color was set previously. Requires the swap-save-restore sub-patch above.
+
+
+* __^t^__
+   Restores the last color scheme saved by the __^v^__ tag. Requires the swap-save-restore sub-patch above.
+
+
 Example
 -------
 `xsetroot -name "[status2d] ^c#FF0000^red text with blue
@@ -61,4 +90,4 @@ Authors
 -------
 * [sipi](https://github.com/sipi)
 * lhark - <lhark@ntymail.com> (6.2 port, ^b^ command)
-
+* [tdu](https://github.com/tdukv) (xrdb colors, ^w^, ^v^, ^t^ commands)

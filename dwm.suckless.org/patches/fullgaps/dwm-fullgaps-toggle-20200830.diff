@@ -22,14 +22,14 @@ index 1c0b587..b172f63 100644
  	TAGKEYS(                        XK_2,                      1)
  	TAGKEYS(                        XK_3,                      2)
 diff --git a/dwm.c b/dwm.c
-index 664c527..fc66348 100644
+index 664c527..25bc9b7 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -57,6 +57,9 @@
  #define TAGMASK                 ((1 << LENGTH(tags)) - 1)
  #define TEXTW(X)                (drw_fontset_getwidth(drw, (X)) + lrpad)
  
-+#define GAP_TOGGLE 1 << 32
++#define GAP_TOGGLE 100
 +#define GAP_RESET  0
 +
  /* enums */

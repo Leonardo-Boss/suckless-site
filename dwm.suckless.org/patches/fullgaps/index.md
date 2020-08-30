@@ -17,7 +17,15 @@ Download
 * [dwm-fullgaps-6.2.diff](dwm-fullgaps-6.2.diff)
 * [dwm-fullgaps-20200508-7b77734.diff](dwm-fullgaps-20200508-7b77734.diff)
 
+The following patch allows for gaps to be toggled, and also uses a `Gap` struct
+to contain the gap information, in anticipation of this being used with
+[pertag](../pertag/). (To use this, apply the patch *instead* of the default
+fullgaps patch.)
+
+* [dwm-fullgaps-toggle-20200830.diff](dwm-fullgaps-toggle-20200830.diff)
+
 Author
 ------
 * Maciej Janicki <mail@macjanicki.eu>
 * David Julien <swy7ch@protonmail.com> (20200504-b2e1dfc port)
+* Klein Bottle <kleinbottle4@gmail.com> (dwm-fullgaps-toggle...)

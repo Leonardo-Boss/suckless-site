@@ -3,7 +3,7 @@ singular borders
 
 Description
 -----------
-`singular borders` changes the way DWM handles the borders. Firsty, borders
+`singular borders` changes the way DWM handles the borders. Firstly, borders
 against the left, bottom and right screen edges are removed (they are placed
 off-screen) and secondly, borders between clients now overlap eachother.
 
@@ -39,9 +39,11 @@ Issues
 
 Download
 --------
+* [dwm-singularborders-6.2.diff](dwm-singularborders-6.2.diff)
 * [dwm-6.0-singularborders.diff](dwm-6.0-singularborders.diff)
 * [dwm-6.0-singularborders\_bstack.diff](dwm-6.0-singularborders_bstack.diff)
 
 Author
 ------
 * Jente Hidskes - `<jthidskes at outlook dot com>`
+* Aleksandrs Stier (6.2)

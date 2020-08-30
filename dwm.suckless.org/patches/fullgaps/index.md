@@ -22,6 +22,8 @@ to contain the gap information, in anticipation of this being used with
 [pertag](../pertag/). (To use this, apply the patch *instead* of the default
 fullgaps patch.)
 
+[Alt]+[Shift]+[=] to toggle. [Alt]+[Shift]+[-] to reset to `config.h` defaults.
+
 * [dwm-fullgaps-toggle-20200830.diff](dwm-fullgaps-toggle-20200830.diff)
 
 Author

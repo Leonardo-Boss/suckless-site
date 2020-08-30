@@ -13,12 +13,26 @@ Since this patch relies on knowing how big everything is in the taskbar, make su
 
 ![screenshot](dwm-awesomebar-screenshot.png)
 
+Changelog
+---------
+2020-08-29:
+* fix: crash on empty bar click
+* fix: hidden clients remain hidden after dwm restart
+* add: awesomebar-statuscmd and awesomebar-statuscmd-signal combined patches as separate files
+
+2019-03-10:
+* fix: uneven tabs count produce visual glitches
+
 Download
 --------
-* [dwm-awesomebar-20191003-80e2a76.diff](dwm-awesomebar-20191003-80e2a76.diff) (10/03/2019)
-* [dwm-awesomebar-6.2.diff](dwm-awesomebar-6.2.diff) (06/27/2019)
+Updated version from Yegor Bayev:
+* [dwm-awesomebar-20200829-6.2.diff](dwm-awesomebar-20200829-6.2.diff) (2020-08-29)
+* [dwm-awesomebar-statuscmd-6.2.diff](dwm-awesomebar-statuscmd-6.2.diff) (2020-08-29)
+* [dwm-awesomebar-statuscmd-signal-6.2.diff](dwm-awesomebar-statuscmd-signal-6.2.diff) (2020-08-29)
+Original ornx patch:
+* [dwm-awesomebar-6.2.diff](dwm-awesomebar-6.2.diff) (2019-06-27)
 
 Authors
 -------
 * ornx <ornx[at]protonmail.com>
-* Yegor Bayev <kodxpub@gmail.com> - patch to prevent visual glitches from uneven tabs count
+* Yegor Bayev <kodxpub@gmail.com>

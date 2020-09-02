@@ -11,7 +11,7 @@ News
 
 2020-09-02
 ----------
-[dmenu 5.0](//st.suckless.org/) released: [download](//dl.suckless.org/dmenu/dmenu-5.0.tar.gz)
+[dmenu 5.0](//dmenu.suckless.org/) released: [download](//dl.suckless.org/tools/dmenu-5.0.tar.gz)
 
 2020-06-19
 ----------

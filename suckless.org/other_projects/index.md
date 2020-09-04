@@ -25,7 +25,7 @@ There are several other projects which are inspired by the spirit of suckless.
 * [sj](https://github.com/younix/sj) - simple jabber: modular FIFO-based XMPP client
 * [slpm](https://github.com/radare/slpm) - suckless package manager
 * [sltar](https://github.com/Gottox/sltar) - suckless tar
-* [smu](https://github.com/Gottox/smu) - simple markup
+* [smu](https://github.com/Gottox/smu) - simple markup (see also [this fork](https://github.com/karlb/smu/) with improved markdown support)
 * [spp](https://github.com/radare/spp) - simple pre processor
 * [spt](https://github.com/pickfire/spt) - simple pomodoro timer
 * [srw](https://bitbucket.org/emg/srw) - simple read wrapper

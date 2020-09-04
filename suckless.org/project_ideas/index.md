@@ -26,12 +26,6 @@ Current small tasks
   <https://git.suckless.org/sites/file/build-page.c.html>
   This should use the geomyidae gopher server and the gph output format.
   Difficulty: medium-rare.
-* Improve the Markdown parser used by the suckless wiki called "smu" to
-  conform more to Markdown.
-  for example for nested codeblocks. Difficulty: trivial-medium.
-  * Specs: <http://daringfireball.net/projects/markdown/syntax.text> and
-    <http://commonmark.org/>.
-  * smu: <https://github.com/Gottox/smu>
 * Fix broken patches on the wiki. Difficulty: trivial-medium.
 * Fix typos and formatting errors on the wiki. Difficulty: trivial.
 

@@ -29,6 +29,7 @@ Updated version from Yegor Bayev:
 * [dwm-awesomebar-20200829-6.2.diff](dwm-awesomebar-20200829-6.2.diff) (2020-08-29)
 * [dwm-awesomebar-statuscmd-6.2.diff](dwm-awesomebar-statuscmd-6.2.diff) (2020-08-29)
 * [dwm-awesomebar-statuscmd-signal-6.2.diff](dwm-awesomebar-statuscmd-signal-6.2.diff) (2020-08-29)
+
 Original ornx patch:
 * [dwm-awesomebar-6.2.diff](dwm-awesomebar-6.2.diff) (2019-06-27)
 

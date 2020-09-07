@@ -12,7 +12,7 @@ because it makes them legally compatible with other suckless projects.
 
 ### Libc Implementations
 
-* [musl](http://www.musl-libc.org/) - standard C library that attempts to be even smaller than uClibc.
+* [musl](http://musl.libc.org/) - standard C library that attempts to be even smaller than uClibc.
   See also: [embedded libc comparison](http://www.etalabs.net/compare_libcs.html)
 * [uClibc](https://uclibc.org/) - strives to be a minimalist C library suitable for embedded computing.
 

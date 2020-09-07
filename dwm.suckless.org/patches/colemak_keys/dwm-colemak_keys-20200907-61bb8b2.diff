@@ -1,11 +1,12 @@
-From c3c1cc16518ed73fd169bb23aa59397588aba10a Mon Sep 17 00:00:00 2001
+From 4762fa3e13aca17818ed6fa6c7a71322c76be189 Mon Sep 17 00:00:00 2001
 From: runrin <run.rin@rin.run>
-Date: Sun, 12 Jul 2020 23:27:09 -0700
-Subject: [PATCH] colemak keybindings
+Date: Mon, 7 Sep 2020 07:20:07 -0700
+Subject: [PATCH] hnei colemak keys; update man page to reflect changes
 
 ---
  config.def.h | 10 +++++-----
- 1 file changed, 5 insertions(+), 5 deletions(-)
+ dwm.1        | 10 +++++-----
+ 2 files changed, 10 insertions(+), 10 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
 index 1c0b587..501fe4e 100644
@@ -29,6 +30,35 @@ index 1c0b587..501fe4e 100644
  	{ MODKEY,                       XK_Return, zoom,           {0} },
  	{ MODKEY,                       XK_Tab,    view,           {0} },
  	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
+diff --git a/dwm.1 b/dwm.1
+index ddc8321..776cd13 100644
+--- a/dwm.1
++++ b/dwm.1
+@@ -92,19 +92,19 @@ Sets monocle layout.
+ .B Mod1\-space
+ Toggles between current and previous layout.
+ .TP
+-.B Mod1\-j
++.B Mod1\-n
+ Focus next window.
+ .TP
+-.B Mod1\-k
++.B Mod1\-e
+ Focus previous window.
+ .TP
+-.B Mod1\-i
++.B Mod1\-l
+ Increase number of windows in master area.
+ .TP
+-.B Mod1\-d
++.B Mod1\-u
+ Decrease number of windows in master area.
+ .TP
+-.B Mod1\-l
++.B Mod1\-i
+ Increase master area size.
+ .TP
+ .B Mod1\-h
 -- 
-2.20.1
+2.28.0
 

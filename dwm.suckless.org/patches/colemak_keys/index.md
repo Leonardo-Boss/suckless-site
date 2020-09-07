@@ -3,11 +3,11 @@ colemak_keys
 
 Description
 -----------
-Colemak keybindings
+Colemak keybindings with updated man page to reflect new bindings
 
 Download
 --------
-* [dwm-colemak_keys-20200712-c3c1cc1.diff](dwm-colemak_keys-20200712-c3c1cc1.diff)
+* [dwm-colemak_keys-20200907-61bb8b2.diff](dwm-colemak_keys-20200907-61bb8b2.diff)
 
 Authors
 -------

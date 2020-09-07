@@ -12,8 +12,8 @@ because it makes them legally compatible with other suckless projects.
 
 ### Libc Implementations
 
-* [musl](http://musl.libc.org/) - standard C library that attempts to be even smaller than uClibc.
-  See also: [embedded libc comparison](http://www.etalabs.net/compare_libcs.html)
+* [musl](https://musl.libc.org/) - standard C library that attempts to be even smaller than uClibc.
+  See also: [embedded libc comparison](https://www.etalabs.net/compare_libcs.html)
 * [uClibc](https://uclibc.org/) - strives to be a minimalist C library suitable for embedded computing.
 
 ### Compilers
@@ -21,16 +21,16 @@ because it makes them legally compatible with other suckless projects.
 * [cproc](https://git.sr.ht/~mcf/cproc) - frontend for C11 for QBE.
 * [qbe](https://c9x.me/compile/) - compiler backend targetting x64.
 * [scc](https://www.simple-cc.org/) - Simple C Compiler.
-* [tcc](https://bellard.org/tcc/) - Tiny C Compiler [git repo](http://repo.or.cz/w/tinycc.git)
+* [tcc](https://bellard.org/tcc/) - Tiny C Compiler [git repo](https://repo.or.cz/w/tinycc.git)
 
 ### Compression
 
 * [liblzf](http://oldhome.schmorp.de/marc/liblzf.html) - very fast, legally unencumbered compression library.
-* [libz](https://sortix.org/libz/) - ABI and API compatible zlib fork with focus on correctness, proper portability, auditability, simplification and opportunities to optimize ([zlib license](http://zlib.net/zlib_license.html)).
+* [libz](https://sortix.org/libz/) - ABI and API compatible zlib fork with focus on correctness, proper portability, auditability, simplification and opportunities to optimize ([zlib license](https://zlib.net/zlib_license.html)).
 * [Lzip](http://lzip.nongnu.org) - Properly designed data compressor outperforming gzip and bzip2 (GPLv2+).
 * [miniz](https://github.com/richgel999/miniz) - single C-file reimplementation of zlib (MIT License).
 * [xz embedded](https://tukaani.org/xz/embedded.html) - lightweight decompressor for the xz LZMA compressor (public domain).
-* [zlib](http://zlib.net/) - the "standard" compression/decompression library, quite small, used in many applications ([zlib license](http://zlib.net/zlib_license.html)).
+* [zlib](https://zlib.net/) - the "standard" compression/decompression library, quite small, used in many applications ([zlib license](https://zlib.net/zlib_license.html)).
 
 ### Cryptography
 
@@ -99,7 +99,7 @@ This covers most console-based programs and programs from
 
 ### Gopher clients
 
-* [Lynx](http://lynx.invisible-island.net/) - text-mode web browser, supports the Gopher protocol.
+* [Lynx](https://lynx.invisible-island.net/) - text-mode web browser, supports the Gopher protocol.
 * [sacc](gopher://bitreich.org/1/releases/sacc) - terminal gopher client by [quinq](//suckless.org/people/quinq/).
 
 ### IRC clients
@@ -121,7 +121,7 @@ This covers most console-based programs and programs from
 * [jpg/gif/bmp/png](https://9fans.github.io/plan9port/) - Simple programs from Plan 9 to display images in no-frills windows. Included with [plan9port](https://9fans.github.io/plan9port/).
 * [meh](https://www.johnhawthorn.com/meh/) - image viewer using raw XLib, libjpeg, libpng and libgif.
 * [page](https://9fans.github.io/plan9port/man/man1/page.html) - Plan 9's image/document viewer program. Included with [plan9port](https://9fans.github.io/plan9port/).
-* [qiv](http://spiegl.de/qiv/) - Quick Image Viewer.
+* [qiv](https://spiegl.de/qiv/) - Quick Image Viewer.
 * [sxiv](https://github.com/muennich/sxiv) - Simple (or small or suckless) X Image Viewer. Depends on xlib and imlib2.
 * [xli](http://web.aanet.com.au/gwg/xli.html)
 * [xzgv](http://sourceforge.net/projects/xzgv/)
@@ -129,7 +129,7 @@ This covers most console-based programs and programs from
 ### Instant-Messaging clients
 
 * [bitlbee](https://www.bitlbee.org/main.php/news.r.html) - A program to translate IM protocols to IRC.
-* [CenterIM](http://www.centerim.org/index.php/Main_Page) - A centericq fork.
+* [CenterIM](https://www.centerim.org/index.php/Main_Page) - A centericq fork.
 * [irssi-xmpp](http://cybione.org/~irssi-xmpp/) - An irssi plugin to connect to the Jabber network.
 * [mcabber](http://mcabber.com/) - A console jabber client.
 * [ysm](http://ysmv7.sourceforge.net/) - A console-based ICQ client.

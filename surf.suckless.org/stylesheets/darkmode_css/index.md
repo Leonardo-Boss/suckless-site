@@ -1,15 +1,15 @@
-DARK css theme
-===============
+Dark CSS theme
+==============
 
 Description
 -----------
 
-PUT THE FILE IN  ~/.surf/styles/default.css to get a
-dark themed surf. Uses the same css as vimb's dark mode.
+Put the file in ~/.surf/styles/default.css to get a dark themed surf. It uses
+the same CSS as vimb's dark mode.
 
 It makes everything dark gray and makes images opacity lower unless you hover over them.
 
-	*,div,pre,textarea,body,input,td,tr,p {
+    *,div,pre,textarea,body,input,td,tr,p {
         background-color: #202020 !important;
         background-image: none !important;
         color: #bbbbbb !important;

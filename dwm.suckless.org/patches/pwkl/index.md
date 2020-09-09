@@ -15,8 +15,8 @@ alternate layout is activated". He kindly created a patch that fixes this:
 
 Download
 --------
-* [dwm-pwkl-5.9.diff](dwm-pwkl-5.9.diff) (1.4K) (20101013)
-* [dwm-pwkl-6.1.diff](dwm-pwkl-6.1.diff) (1.5K) (20170128)
+* [dwm-pwkl-5.9.diff](dwm-pwkl-5.9.diff) (1.4K) (2010-10-13)
+* [dwm-pwkl-6.1.diff](dwm-pwkl-6.1.diff) (1.5K) (2017-01-28)
 
 Author
 ------

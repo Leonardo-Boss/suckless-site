@@ -80,8 +80,16 @@ This virtual keyboard does not actually modify the X keyboard layout, the ``mobi
 
 If you use another XKB layout you will get unpredictable output that does not match the labels on the virtual keycaps!
 
-Repository
-----------
 
-	git clone https://git.suckless.org/svkbd
+Development
+-----------
+You can [browse](//git.suckless.org/svkbd) its source code repository or get a
+copy using git with the following command:
 
+        git clone https://git.suckless.org/svkbd
+
+
+Download
+--------
+* [MIT/X Consortium license](//git.suckless.org/svkbd/plain/LICENSE)
+* [svkbd 0.2](//dl.suckless.org/tools/svkbd-0.2.tar.gz) (20kb) (2020-09-13)

@@ -45,6 +45,7 @@ Download
 * [dwm-cfacts-6.1.diff](dwm-cfacts-6.1.diff)
 * [dwm-cfacts-6.2.diff](dwm-cfacts-6.2.diff)
 * [dwm-cfacts-6.2-1.diff](dwm-cfacts-6.2-1.diff)
+* [dwm-cfacts-20200913-61bb8b2.diff](dwm-cfacts-20200913-61bb8b2.diff)
 
 Additional layouts with cfacts
 ------------------------------

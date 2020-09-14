@@ -72,6 +72,9 @@ Feel free to add your own status monitors here (keeping the list sorted).
 * [goblocks](https://github.com/Stargarth/Goblocks) - Partially inspired by dwmblocks,
   Go status bar that allows you to refresh each block independently. Includes built in
   features for frequently refreshed blocks.
+* [goblocks](https://github.com/lordrusk/goblocks) - dwmblocks alternative written in go,
+Goblocks is a dwmblocks replacement meant to be simple, fast, and elegant. It tries to adhere
+to the suckless philosophy.
 * [go-dwmstatus](https://github.com/oniichaNj/go-dwmstatus) - A Go bar that
   prints current MPD song, load averages, time/date and battery percentage.
 * [gods](https://github.com/schachmat/gods) - implemented in Go. prints network

@@ -8,6 +8,7 @@ This patch keeps layout, mwfact, barpos and nmaster per tag.
 
 Download
 --------
+* [dwm-pertag-20200914-61bb8b2.diff](dwm-pertag-20200914-61bb8b2.diff)
 * [dwm-pertag-6.2.diff](dwm-pertag-6.2.diff)
 * [dwm-pertag-6.1.diff](dwm-pertag-6.1.diff) (6.4K) (20151109)
 * [dwm-git-20120406-pertag.diff](dwm-git-20120406-pertag.diff) (5955b)

@@ -154,6 +154,9 @@ This covers most console-based programs and programs from
 * [mplayer](http://www.mplayerhq.hu/design7/news.html)
 * [mpv](https://mpv.io/) - a free, open-source and cross-platform media player.
 
+### Notifications
+* [herbe](https://github.com/dudik/herbe) - Daemon-less notifications without D-Bus. Minimal and lightweight, written in C & supports patches.
+
 ### Password managers
 
 * [pass](https://www.passwordstore.org/) - "The standard UNIX password manager".

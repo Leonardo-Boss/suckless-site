@@ -155,7 +155,7 @@ This covers most console-based programs and programs from
 * [mpv](https://mpv.io/) - a free, open-source and cross-platform media player.
 
 ### Notifications
-* [herbe](https://github.com/dudik/herbe) - Daemon-less notifications without D-Bus. Minimal and lightweight, written in C & supports patches.
+* [herbe](https://github.com/dudik/herbe) - Daemon-less notifications without D-Bus. Minimal, lightweight & written in C.
 
 ### Password managers
 

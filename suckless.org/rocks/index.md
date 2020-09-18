@@ -155,7 +155,8 @@ This covers most console-based programs and programs from
 * [mpv](https://mpv.io/) - a free, open-source and cross-platform media player.
 
 ### Notifications
-* [herbe](https://github.com/dudik/herbe) - Daemon-less notifications without D-Bus. Minimal, lightweight & written in C.
+* [herbe](https://github.com/dudik/herbe) - Daemon-less notifications without D-Bus. Minimal, lightweight & written in C. Works well with [tiramisu](https://github.com/Sweets/tiramisu)
+* [tiramisu](https://github.com/Sweets/tiramisu) - "Desktop notifications, the UNIX way". Tiramisu is a notification daemon based on dunst that outputs notifications to STDOUT in order to allow the user to process notifications any way they prefer.
 
 ### Password managers
 

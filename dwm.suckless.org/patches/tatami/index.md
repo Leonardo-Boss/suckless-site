@@ -31,31 +31,24 @@ stack as shown in the `7+ windows` diagram below.
 		4 windows                  5 windows
 
 	+-----------+---+-------+  +-----------+-----------+
-        |           |   |   3   |  |           |    new    |
-        |           | 2 +---+---+  |           +---+-------+
-        |           |   |   |   |  |           |   |   4   |
-        |     1     |   | 4 |   |  |     1     | 3 +---+---+
-        |           |   |   | 5 |  |           |   | 5 |   |
-        |           +---+---+   |  |           +---+---+ 6 |
-        |           |   6   |   |  |           |   7   |   |
-        +-----------+-------+---+  +-----------+-------+---+
+	|           |   |   3   |  |           |    new    |
+	|           | 2 +---+---+  |           +---+-------+
+	|           |   |   |   |  |           |   |   4   |
+	|     1     |   | 4 |   |  |     1     | 3 +---+---+
+	|           |   |   | 5 |  |           |   | 5 |   |
+	|           +---+---+   |  |           +---+---+ 6 |
+	|           |   6   |   |  |           |   7   |   |
+	+-----------+-------+---+  +-----------+-------+---+
 		6 windows                  7+ windows
 
 
 Usage
 -----
 1. Download the patch and apply according to the [general instructions](.).
-2. Include the `tatami.c` source file and add `tatami` to the `Layout` 
-   section of your `config.h` file. Example from `config.default.h`:
-
-   	#include "tatami.c"
-   	static Layout layout[] = {
-   		/* symbol               function */
-   		{ "[]=",                tile }, /* first entry is default */
-   		{ "><>",                floating },
-   		{ "|+|",                tatami },
-   	};
-
+2. The patch automatically includes the `tatami.c` source file and adds `tatami` 
+to the `Layout` section of your `config.def.h` file. If you have already installed
+dwm, change config.def.h to be your config.h file.
+3. **Note that this patch ignores resize hints.**
 3. The default keybinding is [Alt]+[y] for tatami.
 
 Download

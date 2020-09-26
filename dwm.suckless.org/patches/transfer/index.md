@@ -18,7 +18,7 @@ effectively swapping the master and the stack. The new nmaster is adjusted
 to be the old number of clients in the stack.
 
 ## Download
-* [dwm-transfer-6.2.diff](dwm-transfer-6.2.diff) (01/25/2020)
+* [dwm-transfer-6.2.diff](dwm-transfer-6.2.diff) (09/26/2020)
 * [dwm-transferall-6.2.diff](dwm-transferall-6.2.diff) (02/01/2020)
 
 ## Author

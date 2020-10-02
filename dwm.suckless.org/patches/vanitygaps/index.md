@@ -13,7 +13,7 @@ monitoring purposes).
 The patch provides:
 
 * option to control all gaps in unison (like [fullgaps](../fullgaps))
-* option to control inner gaps in unison (like [gaps](../gaps/))
+* option to control inner gaps in unison (like [gaps](../gaps))
 * option to control inner and outer gaps separately
 * option to control the inner horizontal and vertical gaps separately
 * option to control the outer horizontal and vertical gaps separately
@@ -48,8 +48,11 @@ NB: You may also want to disable `resizehints` to get even gaps.
 
 Download
 --------
-* [dwm-vanitygaps-20190508-6.2.diff](dwm-vanitygaps-20190508-6.2.diff)
-* [dwm-vanitygaps-20200610-f09418b.diff](dwm-vanitygaps-20200610-f09418b.diff)
+* [dwm-vanitygaps-20190508-6.2.diff](dwm-vanitygaps-20190508-6.2.diff) (original, tile only)
+* [dwm-vanitygaps-20200610-f09418b.diff](dwm-vanitygaps-20200610-f09418b.diff) (original, tile only)
+* [dwm-vanitygaps-6.2.diff](dwm-vanitygaps-6.2.diff) (tile, bstack, bstackhoriz, centeredmaster, centeredfloatingmaster, deck, fibonacci (dwindle, spiral), grid, nrowgrid)
+* [dwm-cfacts-vanitygaps-6.2.diff](dwm-cfacts-vanitygaps-6.2.diff) (as above, on top of [cfacts](../cfacts))
+* [dwm-cfacts-vanitygaps-6.2_combo.diff](dwm-cfacts-vanitygaps-6.2_combo.diff) (as above, cfacts + vanitygaps combo)
 
 Author
 ------

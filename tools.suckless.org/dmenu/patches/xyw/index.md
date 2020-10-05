@@ -9,7 +9,7 @@ The patch adds options for setting window position and width.
 * The '-w' option sets the window width
 
 Please note that for the 5.0 version, the width parameter is '-z' to avoid conflict with '-w windowid'.
-If this change is not desired, the 4.7 version applies perfectly, but '-w windowid' will not work.
+If this change is not desired, the 4.7 version applies fine, but '-w windowid' will not work.
 
 Download
 --------

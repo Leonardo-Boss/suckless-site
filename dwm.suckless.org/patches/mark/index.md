@@ -34,18 +34,14 @@ Some ideas for combinations of key mappings:
 
 Download
 --------
-this patch has been revised, it's recommended to use dwm-6.1-mark-new.diff old
-behaviours of the patch(dwm-mark-6.1.diff):
+This patch has now been updated to 6.2.  
+The recommended version is dwm-6.2-mark-new.diff. (updated on 2020-10-05)
 
-1. crashes when using mark features while the marked client has been killed.
-2. swapclient clears the mark.
-3. swapclient falls back to zoom() if the mark is not set.
-4. swapfocus does not activate tags for the marked client
-5. swapfocus does not focus monitors correctly
-
-* [dwm-mark-new-6.1.diff](dwm-mark-new-6.1.diff)
-* [dwm-mark-6.1.diff](dwm-mark-6.1.diff)
+* [dwm-mark-new-6.2.diff](dwm-mark-new-6.2.diff)  
+* [dwm-mark-new-6.1.diff](dwm-mark-new-6.1.diff)  
+* [dwm-mark-6.1.diff](dwm-mark-6.1.diff)  
 
 Author
 ------
 * phi <crispyfrog@163.com>
+* mrkajetanp <kajetan.puchalski@tuta.io> (6.2 update)

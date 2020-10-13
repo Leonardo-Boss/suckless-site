@@ -71,6 +71,7 @@ This covers most console-based programs and programs from
 * [mpd](https://www.musicpd.org/) - A client/server based music player with console and graphical front-ends.
 * [mpg123](http://www.mpg123.de/) - A console MPG player which doesn't use auto*hell or extra libraries.
 * [mpg321](http://mpg321.sourceforge.net) - A command-line MP3 player.
+* [mus](https://sr.ht/~q3cpma/mus/) - Modular daemon/client CLI player consuming a plaintext album directory queue
 * [vorbis-tools](https://www.xiph.org/) (Ogg/FLAC) - Command-line tools to play Ogg and FLAC files.
 
 ### BitTorrent clients

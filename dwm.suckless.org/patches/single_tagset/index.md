@@ -18,6 +18,7 @@ Several deep changes needed to be made:
 
 Download
 --------
+* [dwm-single\_tagset-6.2.diff](dwm-single_tagset-6.2.diff)
 * [dwm-single\_tagset-20160731-56a31dc.diff](dwm-single_tagset-20160731-56a31dc.diff)
 * [dwm-6.1-single\_tagset.diff](dwm-6.1-single_tagset.diff) (16634b) (20140209)
 * [dwm-single\_tagset-6.0.diff](dwm-single_tagset-6.0.diff) (14417b) (20120406)
@@ -25,3 +26,4 @@ Download
 Authors
 -------
 * Jan Christoph Ebersbach - <jceb@e-jc.de>
+* Mohammad Zeinali - <mzeinali@tutanota.com>

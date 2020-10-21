@@ -27,12 +27,15 @@ pick one font once and for all, not on a char-by-char basis.
 The [Icons family](https://aur.archlinux.org/packages/ttf-font-icons/) is a
 non-overlapping merge of Awesome and Ionicons fonts I've made for my statusbar.
 
-In the latest patch (which is after version 6.2) there are a lot of changes to
+In the latest patch (20200428 - which is after version 6.2) there are a lot of changes to
 drw.c/h code base (maybe there is a better way of doing things, but it works
 as it is).
 
+The last patch fixes some vertical alignment issues which were obvious only for CJK fonts.
+
 Download
 --------
+* [dwm-pango-20201020-519f869.diff](dwm-pango-20201020-519f869.diff)
 * [dwm-pango-20200428-f09418b.diff](dwm-pango-20200428-f09418b.diff)
 * [dwm-pango-6.0.diff](dwm-pango-6.0.diff)
 

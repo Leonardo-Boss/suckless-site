@@ -60,7 +60,7 @@ Use block for single statement if inner statement needs a block.
 		}
 	}
 
-Use another branch of the same statement needs a block:
+Use block if another branch of the same statement needs a block:
 
 	if (foo) {
 		bar;

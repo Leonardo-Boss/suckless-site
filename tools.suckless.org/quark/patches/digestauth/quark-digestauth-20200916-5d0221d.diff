@@ -1,4 +1,4 @@
-From d006445858e709222093baaddb71d582654dc0e4 Mon Sep 17 00:00:00 2001
+From b62f5dbb095f337f62ed3379948da4283175d7fb Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Jos=C3=A9=20Miguel=20S=C3=A1nchez=20Garc=C3=ADa?=
  <soy.jmi2k@gmail.com>
 Date: Thu, 29 Oct 2020 10:05:27 +0000
@@ -523,7 +523,7 @@ index bfaa807..12de2eb 100644
  
  #endif /* HTTP_H */
 diff --git a/main.c b/main.c
-index d64774b..b23e165 100644
+index d64774b..b45ad15 100644
 --- a/main.c
 +++ b/main.c
 @@ -60,11 +60,17 @@ serve(struct connection *c, const struct server *srv)
@@ -638,8 +638,8 @@ index d64774b..b23e165 100644
 +		                                 sizeof(struct account)))) {
 +				die("reallocarray:");
 +		}
-+		realm->account[i].username = tok[1];
-+		realm->account[i].crypt    = tok[2];
++		realm->account[realm->account_len - 1].username = tok[1];
++		realm->account[realm->account_len - 1].crypt    = tok[2];
 +		break;
  	case 'd':
  		servedir = EARGF(usage());

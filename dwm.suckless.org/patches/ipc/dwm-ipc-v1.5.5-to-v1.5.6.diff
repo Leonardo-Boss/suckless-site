@@ -1,0 +1,26 @@
+From b1715f81a342efc118da2f07b1c0d8a639b96a95 Mon Sep 17 00:00:00 2001
+From: mihirlad55 <mihirlad55@gmail.com>
+Date: Sat, 31 Oct 2020 15:32:39 +0000
+Subject: [PATCH] Update from v1.5.5 to v1.5.6
+
+- Fix ARG_TYPE_NONE passing non-zero value to functions
+---
+ ipc.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ipc.c b/ipc.c
+index e527e23..c404791 100644
+--- a/ipc.c
++++ b/ipc.c
+@@ -362,7 +362,7 @@ ipc_parse_run_command(char *msg, IPCParsedCommand *parsed_command)
+     *args = (Arg *)malloc(sizeof(Arg));
+     *arg_types = (ArgType *)malloc(sizeof(ArgType));
+     (*arg_types)[0] = ARG_TYPE_NONE;
+-    (*args)[0].f = 0;
++    (*args)[0].i = 0;
+     (*argc)++;
+   } else if (*argc > 0) {
+     *args = (Arg *)calloc(*argc, sizeof(Arg));
+-- 
+2.29.0
+

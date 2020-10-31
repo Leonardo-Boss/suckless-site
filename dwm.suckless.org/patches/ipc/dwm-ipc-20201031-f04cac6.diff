@@ -1,6 +1,6 @@
-From 5ab24c98c2e884869977a1e67fe24cad30ab36cc Mon Sep 17 00:00:00 2001
+From a11b738714b35eab3847211f019b47b7290595c5 Mon Sep 17 00:00:00 2001
 From: mihirlad55 <mihirlad55@gmail.com>
-Date: Mon, 24 Aug 2020 02:37:41 +0000
+Date: Sat, 31 Oct 2020 15:32:39 +0000
 Subject: [PATCH] Add IPC support through a unix socket
 
 This patch currently supports the following requests:
@@ -1111,7 +1111,7 @@ index 9fd0286..c90c61a 100644
  void
 diff --git a/ipc.c b/ipc.c
 new file mode 100644
-index 0000000..e527e23
+index 0000000..c404791
 --- /dev/null
 +++ b/ipc.c
 @@ -0,0 +1,1202 @@
@@ -1479,7 +1479,7 @@ index 0000000..e527e23
 +    *args = (Arg *)malloc(sizeof(Arg));
 +    *arg_types = (ArgType *)malloc(sizeof(ArgType));
 +    (*arg_types)[0] = ARG_TYPE_NONE;
-+    (*args)[0].f = 0;
++    (*args)[0].i = 0;
 +    (*argc)++;
 +  } else if (*argc > 0) {
 +    *args = (Arg *)calloc(*argc, sizeof(Arg));
@@ -3242,5 +3242,5 @@ index 0000000..ee9948e
 +
 +#endif  // YAJL_DUMPS_H_
 -- 
-2.28.0
+2.29.0
 

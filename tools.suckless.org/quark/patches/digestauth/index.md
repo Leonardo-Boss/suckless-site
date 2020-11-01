@@ -14,6 +14,7 @@ with some limitations:
 
 Download
 --------
+* [quark-digestauth-20201101-dff98c0.diff](quark-digestauth-20201101-dff98c0.diff)
 * [quark-digestauth-20200916-5d0221d.diff](quark-digestauth-20200916-5d0221d.diff)
 
 Author

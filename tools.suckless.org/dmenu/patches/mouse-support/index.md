@@ -29,8 +29,12 @@ Download
 * [dmenu-mousesupport-4.7.diff](dmenu-mousesupport-4.7.diff)
 * [dmenu-mousesupport-4.6.diff](dmenu-mousesupport-4.6.diff)
 * [dmenu-mousesupport-20160702-3c91eed.diff](dmenu-mousesupport-20160702-3c91eed.diff)
+* [dmenu-mousesupporthoverbgcol-5.0.diff](dmenu-mousesupporthoverbgcol-5.0.diff)
+  set selectbg color on hovered item.
+
 
 Author
 ------
 * Hiltjo Posthuma - <hiltjo@codemadness.org>
 * Xarchus (for multisel support).
+* prx (for selectbg color on hovered item)

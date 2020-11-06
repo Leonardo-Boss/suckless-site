@@ -14,11 +14,17 @@ Please note that this patch needs `rm config.h` to be added to the `Makefile`.
 Screenshots:
 ![floatrules screenshot](floatrules.png)
 
+Updates
+-------
+* 2020-11-07: Added support for multiple monitors
+
 Download
 --------
+
+* [dwm-floatrules-20201107-61bb8b2.diff](dwm-floatrules-20201107-61bb8b2.diff) (multiple monitors version)
 * [dwm-floatrules-6.2.diff](dwm-floatrules-6.2.diff) (2020-03-01)
 
 Author
 ------
-* Alex Cole
+* Alex Cole (original and 2020-11-07 update)
 * Jakub Profota (fix 2020-03-22)

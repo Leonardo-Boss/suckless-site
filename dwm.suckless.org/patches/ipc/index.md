@@ -64,10 +64,10 @@ creating custom shell scripts to control dwm.
 
 Download
 --------
-* IPC Patch v1.5.6:
-  [dwm-ipc-20201031-f04cac6.diff](dwm-ipc-20201031-f04cac6.diff)
-* IPC Patch v1.5.5 to v1.5.6 Update:
-  [dwm-ipc-v1.5.5-to-v1.5.6.diff](dwm-ipc-v1.5.5-to-v1.5.6.diff)
+* IPC Patch v1.5.7:
+  [dwm-ipc-20201106-f04cac6.diff](dwm-ipc-20201106-f04cac6.diff)
+* IPC Patch v1.5.6 to v1.5.7 Update:
+  [dwm-ipc-v1.5.6-to-v1.5.7.diff](dwm-ipc-v1.5.6-to-v1.5.7.diff)
 
 The latest releases of the patch will always be available first on the project
 [Releases](https://github.com/mihirlad55/dwm-ipc/releases) page. There are also

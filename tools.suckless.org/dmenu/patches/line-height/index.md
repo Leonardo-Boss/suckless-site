@@ -26,10 +26,10 @@ The line height value is also used when dmenu is used in 'vertical' mode ('-l' o
 
 Download
 --------
+* [dmenu-lineheight-5.0.diff](dmenu-lineheight-5.0.diff)
+* [dmenu-lineheight-4.9.diff](dmenu-lineheight-4.9.diff)
 * [dmenu-lineheight-4.7.diff](dmenu-lineheight-4.7.diff)
 * [dmenu-lineheight-4.6.diff](dmenu-lineheight-4.6.diff)
-* [dmenu-lineheight-4.9.diff](dmenu-lineheight-4.9.diff)
-* [dmenu-lineheight-5.0.diff](dmenu-lineheight-5.0.diff)
 
 Author
 ------

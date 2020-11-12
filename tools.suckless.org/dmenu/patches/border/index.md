@@ -32,6 +32,7 @@ Create menu with border width 3:
 
 Download
 --------
+* [dmenu-border-20201112-1a13d04.diff](dmenu-border-20201112-1a13d04.diff) (2020-11-12)
 * [dmenu-borderoption-20200217-bf60a1e.diff](dmenu-borderoption-20200217-bf60a1e.diff) (2020-02-17)
 
 Authors

@@ -10,21 +10,24 @@ This patch adds 5 extra variables to the 'rules' array in `config.def.h`. These 
 * `floatborderpx` (border width when window is floating)
 
 Please note that this patch needs `rm config.h` to be added to the `Makefile`.
+Using the latest version is recommended, as there have been a couple of bug fixes since the first.
 
 Screenshots:
 ![floatrules screenshot](floatrules.png)
 
 Updates
 -------
-* 2020-11-07: Added support for multiple monitors
+* 2020-11-14: Fixed a bug that added borders to fullscreen windows (Alex Cole)
+* 2020-11-07: Added support for multiple monitors (Alex Cole)
+* 2020-03-22: Typo fix (Jakub Profota)
 
 Download
 --------
-
-* [dwm-floatrules-20201107-61bb8b2.diff](dwm-floatrules-20201107-61bb8b2.diff) (multiple monitors version)
+* [dwm-floatrules-20201107-d08dd9c.diff](dwm-floatrules-20201114-d08dd9c.diff)
+* [dwm-floatrules-20201107-61bb8b2.diff](dwm-floatrules-20201107-61bb8b2.diff)
 * [dwm-floatrules-6.2.diff](dwm-floatrules-6.2.diff) (2020-03-01)
 
 Author
 ------
-* Alex Cole (original and 2020-11-07 update)
-* Jakub Profota (fix 2020-03-22)
+* Alex Cole (original)
+* Jakub Profota

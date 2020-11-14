@@ -23,7 +23,7 @@ Updates
 
 Download
 --------
-* [dwm-floatrules-20201107-d08dd9c.diff](dwm-floatrules-20201114-d08dd9c.diff)
+* [dwm-floatrules-20201114-d08dd9c.diff](dwm-floatrules-20201114-d08dd9c.diff)
 * [dwm-floatrules-20201107-61bb8b2.diff](dwm-floatrules-20201107-61bb8b2.diff)
 * [dwm-floatrules-6.2.diff](dwm-floatrules-6.2.diff) (2020-03-01)
 

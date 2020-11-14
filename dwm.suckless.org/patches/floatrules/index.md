@@ -29,5 +29,5 @@ Download
 
 Author
 ------
-* Alex Cole (original)
+* Alex Cole (original) <ajzcole at airmail.cc>
 * Jakub Profota

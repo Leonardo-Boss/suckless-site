@@ -19,8 +19,10 @@ stack-areas dynamically.
 Download
 --------
 * [dwm-rmaster-6.1.diff](dwm-rmaster-6.1.diff) (20190418)
+* [dwm-rmaster-6.2.diff](dwm-rmaster-6.2.diff) (20201116)
 
 Author
 ------
 * phi <crispyfrog@163.com>
 * Aleksandrs Stier (Contributor)
+* Peter Skrypalle (6.2 port)

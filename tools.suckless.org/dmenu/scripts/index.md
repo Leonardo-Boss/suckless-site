@@ -19,6 +19,7 @@ Download
   dmenu_run alternative with command history
 * [dmenu_websearch](http://efe.kim/files/scripts/dmenu_websearch):
   browser independent address bar
+* [bmks](bmks): browser independent bookmark manager
 * [mpdmenu](https://github.com/cdown/mpdmenu): Music management using
   dmenu
 * [passmenu](http://git.zx2c4.com/password-store/tree/contrib/dmenu):

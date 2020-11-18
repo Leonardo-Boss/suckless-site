@@ -12,10 +12,18 @@ This patch adds 5 extra variables to the 'rules' array in `config.def.h`. These 
 Setting `floatborderpx` to `-1` (or any value less than zero) will mean that the regular border width is used.
 
 Please note that this patch needs `rm config.h` to be added to the `Makefile`.
-Using the latest version is recommended as there have been a couple of bug fixes since the first.
 
 Screenshots:
 ![floatrules screenshot](floatrules.png)
+
+Bugfixing
+---------
+From the original author: because I'm bad at programming and a bit lazy, the original patch had a few bugs in it.
+
+Each bugfix has its own diff file. This way, if you have installed an earlier version, you can run `diff` on your old patch and the new one.
+This provides an easy way for someone to see the changes and apply the updates themselves.
+
+If you have not installed an old patch, using the latest version is obviously recommended.
 
 Updates
 -------

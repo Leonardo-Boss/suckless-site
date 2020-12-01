@@ -17,6 +17,7 @@ Download
 --------
 * [dwm-pwkl-5.9.diff](dwm-pwkl-5.9.diff) (1.4K) (2010-10-13)
 * [dwm-pwkl-6.1.diff](dwm-pwkl-6.1.diff) (1.5K) (2017-01-28)
+* [dwm-pwkl-6.2.diff](dwm-pwkl-6.2.diff) (1.6K) (2020-12-01)
 
 Author
 ------

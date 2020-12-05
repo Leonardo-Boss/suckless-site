@@ -7,11 +7,8 @@ Scroll back through terminal output using Shift+{PageUp, PageDown}.
 
 Download
 --------
-* [st-scrollback-0.7.diff](st-scrollback-0.7.diff)
-* [st-scrollback-0.8.diff](st-scrollback-0.8.diff)
-* [st-scrollback-0.8.1.diff](st-scrollback-0.8.1.diff)
-* [st-scrollback-0.8.2.diff](st-scrollback-0.8.2.diff)
-* [st-scrollback-20200419-72e3f6c.diff](st-scrollback-20200419-72e3f6c.diff)
+* [st-scrollback-0.8.4.diff](st-scrollback-0.8.4.diff)
+* [st-scrollback-20201205-4ef0cbd.diff](st-scrollback-20201205-4ef0cbd.diff)
 
 Apply the following patch on top of the previous to allow scrolling
 using `Shift+MouseWheel`.

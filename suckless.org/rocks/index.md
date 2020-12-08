@@ -176,6 +176,7 @@ This covers most console-based programs and programs from
 * [dash](http://gondor.apana.org.au/~herbert/dash/) - DASH is a POSIX-compliant implementation of /bin/sh that aims to be as small as possible.
 * [mksh](https://www.mirbsd.org/mksh.htm) - MirBSD Korn Shell, an actively developed free implementation of the Korn Shell programming language
   and a successor to the Public Domain Korn Shell (pdksh).
+* [loksh](https://github.com/dimkr/loksh) - loksh is a Linux port of OpenBSD's ksh.
 
 ### Text editors
 

@@ -73,10 +73,10 @@ sizes in a multi monitor setup. A second patch allows you to maximize windows.
 
 
 Changelog
---------
+---------
 20201206:
- * moversizeedge: taking into account `topbar`
- * moversizeedge: correctly moves/resizes client on 2nd monitor
+* moversizeedge: taking into account `topbar`
+* moversizeedge: correctly moves/resizes client on 2nd monitor
 
 Download
 --------

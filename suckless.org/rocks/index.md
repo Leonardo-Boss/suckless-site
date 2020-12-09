@@ -127,6 +127,7 @@ This covers most console-based programs and programs from
 * [qiv](https://spiegl.de/qiv/) - Quick Image Viewer.
 * [sxiv](https://github.com/muennich/sxiv) - Simple (or small or suckless) X Image Viewer. Depends on xlib and imlib2.
 * [xli](http://web.aanet.com.au/gwg/xli.html)
+* [xwallpaper](https://github.com/stoeckmann/xwallpaper) Minimalistic wallpaper utility
 * [xzgv](http://sourceforge.net/projects/xzgv/)
 
 ### Instant-Messaging clients

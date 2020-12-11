@@ -8,7 +8,9 @@ dmenu list entry.
 Download
 --------
 * [dmenu-highlight-4.9.diff](dmenu-highlight-4.9.diff)
+* [dmenu-highlight-20201211-fcdc159.diff](dmenu-highlight-20201211-fcdc159.diff)
 
 Author
 ------
 * Miles Alan <m@milesalan.com>
+* Nathaniel Evan <nathanielevan@zohomail.com>

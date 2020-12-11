@@ -9,6 +9,10 @@ News
 
 [Atom feed](//suckless.org/atom.xml)
 
+2020-12-11
+----------
+[svkbd 0.2.2](//tools.suckless.org/x/svkbd/) released: [download](//dl.suckless.org/tools/svkbd-0.2.2.tar.gz)
+
 2020-09-18
 ----------
 [svkbd 0.2.1](//tools.suckless.org/x/svkbd/) released: [download](//dl.suckless.org/tools/svkbd-0.2.1.tar.gz)

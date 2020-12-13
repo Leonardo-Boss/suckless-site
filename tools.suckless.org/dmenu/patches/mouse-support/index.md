@@ -31,6 +31,8 @@ Download
 * [dmenu-mousesupport-20160702-3c91eed.diff](dmenu-mousesupport-20160702-3c91eed.diff)
 * [dmenu-mousesupporthoverbgcol-5.0.diff](dmenu-mousesupporthoverbgcol-5.0.diff)
   set selectbg color on hovered item.
+* [dmenu-mousesupportwithgrid-5.0.diff](dmenu-mousesupportwithgrid-5.0.diff)
+  variant compatible with [grid](../grid).
 
 
 Author
@@ -38,3 +40,4 @@ Author
 * Hiltjo Posthuma - <hiltjo@codemadness.org>
 * Xarchus (for multisel support).
 * prx (for selectbg color on hovered item)
+* Nathan Sketch (for grid compatibility) - <sketchn98@gmail.com>

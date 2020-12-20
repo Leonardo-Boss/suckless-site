@@ -60,7 +60,8 @@ Feel free to add your own status monitors here (keeping the list sorted).
   status bar where you can refresh each "block" independently by update time
   or signal.
 * [dwmblocks](https://github.com/ashish-yadav11/dwmblocks) - rewrite of
-  dwmblocks with some removed and some added features.
+  dwmblocks with added features including clickability, cursor hinting and
+  color.
 * [dwms](https://github.com/ianremmler/dwms) - displays time, network, audio,
   and battery status, written in Go using XGB.
 * [dwmsd](https://github.com/johnko/dwmsd) - a daemon that listens on localhost

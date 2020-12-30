@@ -44,6 +44,9 @@ Status Monitors Submitted By Others
 -----------------------------------
 Feel free to add your own status monitors here (keeping the list sorted).
 
+* [akuma-v-dwm](https://gitlab.com/narvin/avd) - event driven, modular,
+  and extensible with date/time, all batteries, volume (amixer), backlight,
+  memory and cpu usage out of the box.
 * [barM](barM.c) - can display all, time/date, ram usage, output of commands (the New BarMonitor).
 * [dsblocks](https://github.com/ashish-yadav11/dsblocks) - modular status
   monitor, written and meant to be extended in C, with support for signaling,

@@ -85,6 +85,7 @@ to the suckless philosophy.
   speed, cpu, ram, date/time
 * [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent
   and date/time
+* [rsblocks](https://github.com/MustafaSalih1993/rsblocks) - A fast multi threaded status bar written in Rust, configurable with a yaml file.
 * [sb](https://git.ckyln.com/sb/log.html) - another modular bar written in POSIX
   shell
 * [spoon](https://git.2f30.org/spoon/) - set dwm status. Supports battery,

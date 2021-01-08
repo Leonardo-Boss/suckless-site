@@ -37,3 +37,4 @@ Download
 command is started in a terminal. i.e. "top!".
 * [dmenu-launch](https://github.com/fsilveir/dmenu-launch): Simple and customizable
 dmenu launcher written in Python for acessing passwords, docs and application shortcuts.
+* [switch](switch): dmenu-based window switcher using wmctrl. If using dwm, requires the [ewmhtags](https://dwm.suckless.org/patches/ewmhtags/) or [focusonnetactive](//dwm.suckless.org/patches/focusonnetactive/) patch to be usefull.

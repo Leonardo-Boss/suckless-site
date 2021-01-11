@@ -7,6 +7,7 @@ Description
 
 Download
 --------
+* [dwm-focusonclick-20200110-61bb8b2.diff](dwm-focusonclick-20200110-61bb8b2.diff) (2020-01-10)
 * [dwm-focusonclick-20171030-6aa8e37.diff](dwm-focusonclick-20171030-6aa8e37.diff) (2017-10-17)
 * [dwm-focusonclick-20170104-bb3bd6f.diff](dwm-focusonclick-20170104-bb3bd6f.diff) (2017-01-04)
 * [dwm-focusonclick-6.0.diff](dwm-focusonclick-6.0.diff) (2012-11-24)

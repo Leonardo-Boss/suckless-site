@@ -122,6 +122,7 @@ This covers most console-based programs and programs from
 * [feh](https://feh.finalrewind.org/) - A highly customizable image viewer that can also set a desktop background image.
 * [imv](https://github.com/exec64/imv) - Simple X11/Wayland Image Viewer. Depends on SDL2 and FreeImage.
 * [jpg/gif/bmp/png](https://9fans.github.io/plan9port/) - Simple programs from Plan 9 to display images in no-frills windows. Included with [plan9port](https://9fans.github.io/plan9port/).
+* [lel](https://git.codemadness.org/lel/file/README.html) - Farbfeld image viewer.
 * [meh](https://www.johnhawthorn.com/meh/) - image viewer using raw XLib, libjpeg, libpng and libgif.
 * [page](https://9fans.github.io/plan9port/man/man1/page.html) - Plan 9's image/document viewer program. Included with [plan9port](https://9fans.github.io/plan9port/).
 * [qiv](https://spiegl.de/qiv/) - Quick Image Viewer.

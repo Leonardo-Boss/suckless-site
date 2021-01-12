@@ -11,7 +11,7 @@ clients are ever moved, only resized.
 Download
 --------
 * [dwm-attachbottom-6.2.diff](dwm-attachbottom-6.2.diff)
-* [dwm-attachbottom-20201226-61bb8b2.diff](dwm-attachbottom-20201226-61bb8b2.diff)
+* [dwm-attachbottom-20201227-61bb8b2.diff](dwm-attachbottom-20201227-61bb8b2.diff)
 
 Authors
 -------

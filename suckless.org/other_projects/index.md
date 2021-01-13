@@ -29,6 +29,7 @@ There are several other projects which are inspired by the spirit of suckless.
 * [spp](https://github.com/radare/spp) - simple pre processor
 * [spt](https://github.com/pickfire/spt) - simple pomodoro timer
 * [srw](https://bitbucket.org/emg/srw) - simple read wrapper
+* [ssfn](https://gitlab.com/bztsrc/scalable-font2) - single header bitmap, pixmap, vector font renderer
 * [ssg](https://github.com/jroimartin/ssg) - slide generation system with markdown-like syntax
 * [ssg](https://www.romanzolotarev.com/ssg.html) - Static site generator 180 LoC
 * [sup](//oldgit.suckless.org/sup/) - minimalistic sudo replacement

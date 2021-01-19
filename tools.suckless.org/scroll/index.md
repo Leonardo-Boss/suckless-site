@@ -27,16 +27,6 @@ as we thought in the fist place:
    alternative screens (curses mode).  For a proper end user experience we
    would need to write complete new a terminal emulator like screen or tmux.
 
-What is the performance impact of scroll?
------------------------------------------
-
-	indirect	OpenBSD
-- - -
-	0x		 7.53 s
-	1x		10.10 s
-	2x		12.00 s
-	3x		13.73 s
-
 Development
 -----------
 You can [browse](//git.suckless.org/scroll) its source code repository or get a

@@ -11,7 +11,7 @@ News
 
 2021-01-19
 ----------
-[scroll 0.2.2](//tools.suckless.org/scroll/) released: [download](//dl.suckless.org/tools/scroll-0.1.tar.gz)
+[scroll 0.1](//tools.suckless.org/scroll/) released: [download](//dl.suckless.org/tools/scroll-0.1.tar.gz)
 
 2020-12-11
 ----------

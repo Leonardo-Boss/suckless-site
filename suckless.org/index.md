@@ -9,6 +9,10 @@ News
 
 [Atom feed](//suckless.org/atom.xml)
 
+2021-01-19
+----------
+[scroll 0.2.2](//tools.suckless.org/scroll/) released: [download](//dl.suckless.org/tools/scroll-0.1.tar.gz)
+
 2020-12-11
 ----------
 [svkbd 0.2.2](//tools.suckless.org/x/svkbd/) released: [download](//dl.suckless.org/tools/svkbd-0.2.2.tar.gz)

@@ -29,8 +29,9 @@ Download
 * [dmenu-mousesupport-4.7.diff](dmenu-mousesupport-4.7.diff)
 * [dmenu-mousesupport-4.6.diff](dmenu-mousesupport-4.6.diff)
 * [dmenu-mousesupport-20160702-3c91eed.diff](dmenu-mousesupport-20160702-3c91eed.diff)
-* [dmenu-mousesupporthoverbgcol-5.0.diff](dmenu-mousesupporthoverbgcol-5.0.diff)
+* [dmenu-mousesupporthoverbgcol-20210123-1a13d04.diff](dmenu-mousesupporthoverbgcol-20210123-1a13d04.diff)
   set selectbg color on hovered item.
+* [dmenu-mousesupporthoverbgcol-5.0.diff](dmenu-mousesupporthoverbgcol-5.0.diff)
 * [dmenu-mousesupportwithgrid-5.0.diff](dmenu-mousesupportwithgrid-5.0.diff)
   variant compatible with [grid](../grid).
 

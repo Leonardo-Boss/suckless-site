@@ -9,7 +9,7 @@ Inspired by [canfocusrule](https://dwm.suckless.org/patches/canfocusrule/) patch
 
 Download
 --------
-* [dwm-cantogglefloating-20210124-e752d68.diff](dwm-cantogglefloating-20210124-e752d68.diff)
+* [dwm-cantogglefloating-20210125-fc30936.diff](dwm-cantogglefloating-20210125-fc30936.diff)
 
 Authors
 -------

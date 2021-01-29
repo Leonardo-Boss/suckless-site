@@ -21,6 +21,7 @@ Download
 Following patches also highlight the selected urls:
 
 * [st-copyurl-20190202-3be4cf1.diff](st-copyurl-20190202-3be4cf1.diff)
+* [st-copyurl-0.8.4.diff](st-copyurl-0.8.4.diff)
 
 Authors
 -------

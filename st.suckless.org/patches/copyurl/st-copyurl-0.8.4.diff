@@ -81,7 +81,7 @@ diff -up ../st-0.8.4/st.c ./st.c
 +		colend = 0, /* column of last occurrence */
 +		passes = 0; /* how many rows have been scanned */
 +
-+	char *linestr = calloc(sizeof(Rune), term.col+1);
++	char *linestr = calloc(term.col+1, sizeof(Rune));
 +	char *c = NULL,
 +		 *match = NULL;
 +

@@ -1,13 +1,13 @@
-From fc309367ecf8388a77f899d7f007524a84ed3ab7 Mon Sep 17 00:00:00 2001
+From f42c25cf04c10cd042f36346423256aae4e4b80c Mon Sep 17 00:00:00 2001
 From: Georgios Oxinos <georgios.oxinos.extern@elinvar.de>
-Date: Mon, 25 Jan 2021 10:24:45 +0100
-Subject: [PATCH] [dwm][patch] patch that allows disabling focus on floating
- clients
+Date: Fri, 5 Feb 2021 21:06:04 +0100
+Subject: [PATCH] [dwm][cantogglefloating] patch that allows disabling focus on
+ floating clients
 
 ---
  config.def.h |  1 +
- dwm.c        | 63 +++++++++++++++++++++++++++++++++++++++++++++++-----
- 2 files changed, 59 insertions(+), 5 deletions(-)
+ dwm.c        | 67 ++++++++++++++++++++++++++++++++++++++++++++++++----
+ 2 files changed, 63 insertions(+), 5 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
 index 1c0b587..005fb5d 100644
@@ -22,7 +22,7 @@ index 1c0b587..005fb5d 100644
  	{ MODKEY,                       XK_Tab,    view,           {0} },
  	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
 diff --git a/dwm.c b/dwm.c
-index 4465af1..d6417d6 100644
+index 664c527..a80f7b6 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -92,7 +92,7 @@ struct Client {
@@ -42,7 +42,7 @@ index 4465af1..d6417d6 100644
  	int monitor;
  } Rule;
  
-@@ -191,6 +192,7 @@ static Monitor *recttomon(int x, int y, int w, int h);
+@@ -192,6 +193,7 @@ static Monitor *recttomon(int x, int y, int w, int h);
  static void resize(Client *c, int x, int y, int w, int h, int interact);
  static void resizeclient(Client *c, int x, int y, int w, int h);
  static void resizemouse(const Arg *arg);
@@ -50,7 +50,7 @@ index 4465af1..d6417d6 100644
  static void restack(Monitor *m);
  static void run(void);
  static void scan(void);
-@@ -211,6 +213,7 @@ static void tagmon(const Arg *arg);
+@@ -212,6 +214,7 @@ static void tagmon(const Arg *arg);
  static void tile(Monitor *);
  static void togglebar(const Arg *arg);
  static void togglefloating(const Arg *arg);
@@ -58,16 +58,16 @@ index 4465af1..d6417d6 100644
  static void toggletag(const Arg *arg);
  static void toggleview(const Arg *arg);
  static void unfocus(Client *c, int setfocus);
-@@ -788,6 +791,8 @@ focus(Client *c)
+@@ -789,6 +792,8 @@ focus(Client *c)
  	if (selmon->sel && selmon->sel != c)
  		unfocus(selmon->sel, 0);
  	if (c) {
-+    if (c->cantfocus)
-+      return;
++		if (c->cantfocus)
++			return;
  		if (c->mon != selmon)
  			selmon = c->mon;
  		if (c->isurgent)
-@@ -837,16 +842,16 @@ focusstack(const Arg *arg)
+@@ -838,16 +843,16 @@ focusstack(const Arg *arg)
  	if (!selmon->sel)
  		return;
  	if (arg->i > 0) {
@@ -88,7 +88,7 @@ index 4465af1..d6417d6 100644
  					c = i;
  	}
  	if (c) {
-@@ -1716,6 +1721,54 @@ togglefloating(const Arg *arg)
+@@ -1719,6 +1724,58 @@ togglefloating(const Arg *arg)
  	if (selmon->sel->isfloating)
  		resize(selmon->sel, selmon->sel->x, selmon->sel->y,
  			selmon->sel->w, selmon->sel->h, 0);
@@ -121,9 +121,13 @@ index 4465af1..d6417d6 100644
 +	unsigned int i, n, y;
 +	Client *c, *tmp;
 +
-+	for (n = 0, c = selmon->clients; c; c = c->next, n++);
-+	if (n == 0)
++	for (n = 0, c = selmon->clients; c; c = c->next)
++		if (c && !c->isfloating)
++			n++;
++	if (n == 0) {
++		resetcanfocusfloating();
 +		return;
++	}
 +
 +	for (i = 0, y = 0, c = selmon->clients; c; c = c->next, i++)
 +    if (c->isfloating) {

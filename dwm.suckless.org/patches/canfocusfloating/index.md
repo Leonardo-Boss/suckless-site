@@ -1,5 +1,5 @@
-cantogglefloating
-============
+canfocusfloating
+================
 
 Description
 -----------
@@ -9,7 +9,7 @@ Inspired by [canfocusrule](https://dwm.suckless.org/patches/canfocusrule/) patch
 
 Download
 --------
-* [dwm-cantogglefloating-20210205-f42c25c.diff](dwm-cantogglefloating-20210205-f42c25c.diff)
+* [dwm-canfocusfloating-20210205-f42c25c.diff](dwm-canfocusfloating-20210205-f42c25c.diff)
 
 Authors
 -------

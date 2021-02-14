@@ -59,6 +59,7 @@ Download
 * [dwm-deck-rmaster-6.1.diff](dwm-deck-rmaster-6.1.diff)
 * [dwm-deck-tilegap-6.1.diff](dwm-deck-tilegap-6.1.diff)
 * [dwm-deck-double-6.2.diff](dwm-deck-double-6.2.diff)
+* [dwm-deck-double-smartborders-6.2.diff](dwm-deck-double-smartborders-6.2.diff) : can be applied after [/patches/smartborders/](smartborders)
 
 Author
 ------

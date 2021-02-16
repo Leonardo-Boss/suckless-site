@@ -9,6 +9,8 @@ follows the selected monitor.
 In case icons disappear when toggling the bar, try a different font size
 in dwm. This has helped at least in one case with pidgin.
 
+If you'd like the tray to appear to the left of the status text, apply the dwm-systray_left patch on the top of systray patch.
+
 Download
 --------
 * [dwm-systray-20200914-61bb8b2.diff](dwm-systray-20200914-61bb8b2.diff) (23k) (20200914)
@@ -17,6 +19,7 @@ Download
 * [dwm-6.1-systray.diff](dwm-6.1-systray.diff) (24K) (20190208)
 * [dwm-git-20130119-systray.diff](dwm-git-20130119-systray.diff) (19946b)
 * [dwm-systray-6.0.diff](dwm-systray-6.0.diff) (19788b) (20130119)
+* [dwm-systray_left-20210216-66ca60e.diff](dwm-systray_left-20210216-66ca60e.diff) (5K) (20210216)
 
 Author
 ------
@@ -26,3 +29,4 @@ Author
 * Eric Pruitt (7af4d43 (20160626))
 * Igor Gevka (cb3f58a (6.2), 20200216)
 * Michel Boaventura <michel.boaventura@protonmail.com> (f09418b)
+* Hritik Vijay <hr1t1k@protonmail.com> (66ca60e)

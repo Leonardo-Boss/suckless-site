@@ -94,6 +94,7 @@ This covers most console-based programs and programs from
 * [noice](https://git.2f30.org/noice/) - Small and portable file browser.
 * [ranger](https://ranger.github.io/) - ranger is a file manager with vi key bindings written in python but with an interface that rocks.
 * [rover](https://lecram.github.io/p/rover/) - Simple file browser for the terminal.
+* [sfm](https://github.com/afify/sfm/) - sfm is a simple file manager for unix-like systems.
 
 ### Git
 

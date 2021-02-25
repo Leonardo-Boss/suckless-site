@@ -1,80 +1,52 @@
-From 1115d1d45effebc728891f76b6c8a44568a81bb3 Mon Sep 17 00:00:00 2001
+From 01e706efbc13194a4a4404e91b93a9638a3c1bea Mon Sep 17 00:00:00 2001
 From: Kipras Melnikovas <kipras@kipras.org>
-Date: Thu, 25 Feb 2021 04:13:49 +0200
-Subject: [PATCH] improve cursor-color patch and add dynamic- prefix
-
-very thankful to Bakkeby [1] for helping out with various improvements,
-crash fixes etc., as seen in [2]!
-
-also renamed the patch (added dynamic- prefix),
-because I think this better describes it.
-
-[1] https://github.com/bakkeby
-[2] https://github.com/bakkeby/st-flexipatch/issues/10
+Date: Thu, 25 Feb 2021 14:31:26 +0200
+Subject: [PATCH] refactor dynamic-cursor-color patch
 
 Signed-off-by: Kipras Melnikovas <kipras@kipras.org>
 ---
- x.c | 39 ++++++++++++++++++++++++++++++++++++---
- 1 file changed, 36 insertions(+), 3 deletions(-)
+ x.c | 19 +++++++++++++++++--
+ 1 file changed, 17 insertions(+), 2 deletions(-)
 
 diff --git a/x.c b/x.c
-index 120e495..e47e236 100644
+index 120e495..ab66364 100644
 --- a/x.c
 +++ b/x.c
 @@ -1489,6 +1489,7 @@ void
  xdrawcursor(int cx, int cy, Glyph g, int ox, int oy, Glyph og)
  {
  	Color drawcol;
-+	XRenderColor colfg;
++	XRenderColor colbg;
  
  	/* remove the old cursor */
  	if (selected(ox, oy))
-@@ -1517,11 +1518,43 @@ xdrawcursor(int cx, int cy, Glyph g, int ox, int oy, Glyph og)
- 		if (selected(cx, cy)) {
+@@ -1518,10 +1519,24 @@ xdrawcursor(int cx, int cy, Glyph g, int ox, int oy, Glyph og)
  			g.fg = defaultfg;
  			g.bg = defaultrcs;
-+			drawcol = dc.col[g.bg];
  		} else {
--			g.fg = defaultbg;
++			/** this is the main part of the dynamic cursor color patch */
++			g.bg = g.fg;
+ 			g.fg = defaultbg;
 -			g.bg = defaultcs;
-+			/** this is the main part of the dynamic cursor color */
-+			if (IS_SET(MODE_FOCUSED)) {
-+				g.bg = g.fg;
-+				g.fg = defaultbg;
-+			}
-+
-+			/**
-+			 * the following 2 sections are identical,
-+			 * they differ only by either using `g.fg` or `g.bg`,
-+			 * and it depends on what background+foreground
-+			 * the user has configured (light+dark vs dark+light)
-+			 *
-+			 * otherwise, in one of the cases, the cursor will be invisible
-+			*/
-+
-+			if (IS_TRUECOL(g.fg)) {
-+				colfg.alpha = 0xffff;
-+				colfg.red = TRUERED(g.fg);
-+				colfg.green = TRUEGREEN(g.fg);
-+				colfg.blue = TRUEBLUE(g.fg);
-+				XftColorAllocValue(xw.dpy, xw.vis, xw.cmap, &colfg, &drawcol);
-+			} else {
-+				drawcol = dc.col[g.fg];
-+			}
-+
-+			if (IS_TRUECOL(g.bg)) {
-+				colfg.alpha = 0xffff;
-+				colfg.red = TRUERED(g.bg);
-+				colfg.green = TRUEGREEN(g.bg);
-+				colfg.blue = TRUEBLUE(g.bg);
-+				XftColorAllocValue(xw.dpy, xw.vis, xw.cmap, &colfg, &drawcol);
-+			} else {
-+				drawcol = dc.col[g.bg];
-+			}
  		}
 -		drawcol = dc.col[g.bg];
++
++		/**
++		 * and this is the second part of the dynamic cursor color patch.
++		 * it handles the `drawcol` variable
++		*/
++		if (IS_TRUECOL(g.bg)) {
++			colbg.alpha = 0xffff;
++			colbg.red = TRUERED(g.bg);
++			colbg.green = TRUEGREEN(g.bg);
++			colbg.blue = TRUEBLUE(g.bg);
++			XftColorAllocValue(xw.dpy, xw.vis, xw.cmap, &colbg, &drawcol);
++		} else {
++			drawcol = dc.col[g.bg];
++		}
  	}
  
  	/* draw the new one */
 -- 
 2.30.1
+

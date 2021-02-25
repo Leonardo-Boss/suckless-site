@@ -23,3 +23,5 @@ Authors
 -------
 * Kipras Melnikovas ([kipras.org](http://kipras.org)) <kipras@kipras.org>
 * Stein Gunnar Bakkeby ([github.com/bakkeby](http://github.com/bakkeby))
+
+See also: [github.com/bakkeby/st-flexipatch/issues/10](https://github.com/bakkeby/st-flexipatch/issues/10)

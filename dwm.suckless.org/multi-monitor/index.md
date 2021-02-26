@@ -19,7 +19,7 @@ Mirroring two outputs
 dwm will assume that two outputs should display identical windows and tags if:
 
 * one of them is configured to display in the same area as the other
-  (``--same-as` switch)
+  (`--same-as` switch)
 * they have the same resolution
 
 After connecting a monitor, this could be an example of a mirroring setup

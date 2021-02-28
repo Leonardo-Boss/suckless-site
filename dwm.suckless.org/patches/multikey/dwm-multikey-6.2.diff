@@ -1,4 +1,4 @@
-From eedcb256b8b83257716aa03d76b0709328a2171e Mon Sep 17 00:00:00 2001
+From b845451cde90c3b46f7863c27a184555b444e9af Mon Sep 17 00:00:00 2001
 From: Miles Alan <m@milesalan.com>
 Date: Sat, 18 Apr 2020 19:25:29 -0500
 Subject: [PATCH] Multikey: Run different actions for single keybinding based
@@ -12,10 +12,10 @@ In the example added to the config.def.h, the tiling layout is set when
 Mod+w is tapped once, float layout is set when Mod+w is tapped twice,
 and monocole layout is set when Mod+w is tapped three times (or held down).
 ---
- config.def.h |  84 ++++++++++++++++++++++-------------------
+ config.def.h |  84 ++++++++++++++++++++++------------------
  config.mk    |   2 +-
- dwm.c        | 103 +++++++++++++++++++++++++++++++++++++++++++++++++--
- 3 files changed, 146 insertions(+), 43 deletions(-)
+ dwm.c        | 107 +++++++++++++++++++++++++++++++++++++++++++++++++--
+ 3 files changed, 150 insertions(+), 43 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
 index 1c0b587..dc945b4 100644
@@ -134,7 +134,7 @@ index 6d36cb7..fe0a2ec 100644
  # flags
  CPPFLAGS = -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_POSIX_C_SOURCE=2 -DVERSION=\"${VERSION}\" ${XINERAMAFLAGS}
 diff --git a/dwm.c b/dwm.c
-index 4465af1..e8cc191 100644
+index 4465af1..975956c 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -27,6 +27,7 @@
@@ -210,7 +210,7 @@ index 4465af1..e8cc191 100644
  	if (!c)
  		return;
  	if (cme->message_type == netatom[NetWMState]) {
-@@ -991,11 +1007,88 @@ keypress(XEvent *e)
+@@ -991,11 +1007,92 @@ keypress(XEvent *e)
  
  	ev = &e->xkey;
  	keysym = XKeycodeToKeysym(dpy, (KeyCode)ev->keycode, 0);
@@ -246,13 +246,17 @@ index 4465af1..e8cc191 100644
 +{
 +	struct sigevent timer_signal_event;
 +	struct itimerspec timer_period;
++	static int multikeypendingtimer_created = 0;
 +	// Clear out the old timer if any set,and dispatch new timer
-+	if (multikeypendingtimer != NULL) timer_delete(multikeypendingtimer);
++	if (multikeypendingtimer_created) {
++		timer_delete(multikeypendingtimer);
++	}
 +	timer_signal_event.sigev_notify = SIGEV_THREAD;
 +	timer_signal_event.sigev_notify_function = keypresstimerdone;
 +	timer_signal_event.sigev_value.sival_int = data;
 +	timer_signal_event.sigev_notify_attributes = NULL;
 +	timer_create(CLOCK_MONOTONIC, &timer_signal_event, &multikeypendingtimer);
++	multikeypendingtimer_created = 1;
 +	timer_period.it_value.tv_sec = 0;
 +	timer_period.it_value.tv_nsec = msduration * 1000000;
 +	timer_period.it_interval.tv_sec = 0;
@@ -302,7 +306,7 @@ index 4465af1..e8cc191 100644
  }
  
  void
-@@ -2127,6 +2220,7 @@ zoom(const Arg *arg)
+@@ -2127,6 +2224,7 @@ zoom(const Arg *arg)
  int
  main(int argc, char *argv[])
  {
@@ -310,7 +314,7 @@ index 4465af1..e8cc191 100644
  	if (argc == 2 && !strcmp("-v", argv[1]))
  		die("dwm-"VERSION);
  	else if (argc != 1)
-@@ -2135,6 +2229,7 @@ main(int argc, char *argv[])
+@@ -2135,6 +2233,7 @@ main(int argc, char *argv[])
  		fputs("warning: no locale support\n", stderr);
  	if (!(dpy = XOpenDisplay(NULL)))
  		die("dwm: cannot open display");
@@ -319,5 +323,5 @@ index 4465af1..e8cc191 100644
  	setup();
  #ifdef __OpenBSD__
 -- 
-2.23.1
+2.30.1
 

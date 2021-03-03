@@ -22,31 +22,48 @@ is appreciated by the entire suckless community.
 Following people have donated to the suckless.org project certain amounts of
 money, which have been used for the dedicated server rent in the past:
 
-* Benedikt Brenner donated **375 EUR**
+* Benedikt Brenner donated **700 EUR**
+* Anonymous donated **80.10 EUR**
+* Marek Pilarcik donated **30 EUR**
+* Dominik Schreilechner donated **100 EUR**
+* Oliver Graute donated **20 EUR**
+* Heinrich Schafer donated **1 EUR**
+* WeTransfer B.V. donated **200 EUR**
+* Arnaud Gaydamour donated **10 EUR**
+* Ville Johan Witt donated **1024 DKK** and **130.84 EUR**
+* Sebastian Rassel donated **15.05 EUR**
+* Antonio Hawthorne donated **52.94 EUR**
+* Andrej Nabergoj donated **10 EUR**
+* Colin Ballast donated **10 EUR**
+* Austin Ramsay donated **4.06 EUR**
+* Florian Leuthner donated **31.41 EUR**
+* Andrii Savchenko donated **20.19 AUD** and **10.24 USD**
+* Niall Cushnahan donated **12.84 EUR**
+* James Cass donated **50 EUR**
+* Alexander Courtis donated **500 EUR**
+* Joel Hewitt donated **22.22 EUR**
+* Sven Franke donated **50 EUR**
+* Yoann le Touche donated **55 EUR**
+* Jordi Pla donated **1 EUR**
 * nxt donated **15 EUR**
 * Елена Филатова donated **10 EUR**
-* Anonymous donated **20.10 EUR**
-* Silvan Jegen donated **275 EUR**
+* Silvan Jegen donated **325 EUR**
 * Olivier Warin donated **110 EUR**
 * Andrew Mass donated **50 USD**
 * Łukasz Gruner donated **22.37 EUR**
 * Merlin Göttlinger donated **10 EUR**
 * Grant Ford donated **15 EUR**
-* Yoann le Touche donated **45 EUR**
 * Andreas Scharf donated **10 EUR**
 * Moritz Buhl donated **41 EUR**
 * Marc Chantreux **10 EUR**
 * Carsten Arzig donated **27.40 EUR**
-* Sebastian Rassel donated **0.05 EUR**
 * Kuroljov Viktor donated **20 EUR**
 * Fabian Kirsch donated **11 EUR**
 * Matteo Durante donated **100 EUR**
-* Andrii Savchenko donated **20.19 AUD**
 * Christian Jost donated **10 EUR**
 * Christoph Bischko donated **50 EUR**
 * John Brooks donated **8 CAD**
 * Luke Jahnke donated **25 EUR**
-* Sven Franke donated **20 EUR**
 * Daniel Vartanov donated **1 EUR**
 * Elvin Aslanov donated **20 EUR**
 * Jay Scott donated **15 EUR**
@@ -59,7 +76,6 @@ money, which have been used for the dedicated server rent in the past:
 * Mikko Nyman donated **100 EUR**
 * Aaron Kirkman donated **19.47 EUR**
 * Jeff Carr donated **500 EUR**
-* Ville Johan Witt donated **1024 DKK**
 * Lars Petter Mathiassen donated **1,000.00 EUR**
 * Mattias Andrée donated **50 EUR**
 * John Jago donated **18.08 EUR**

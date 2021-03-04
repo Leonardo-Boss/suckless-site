@@ -1,5 +1,5 @@
 dynamic-cursor-color
-============
+====================
 
 ![](dynamic-cursor-color.png)
 

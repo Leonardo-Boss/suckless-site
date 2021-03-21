@@ -10,7 +10,7 @@
 SURF_WINDOW="${1:-$(xprop -root | sed -n '/^_NET_ACTIVE_WINDOW/ s/.* //p')}"
 DMENU_PROMPT="${2:-Link}"
 
-function dump_links_with_titles() {
+dump_links_with_titles() {
   awk '{
     input = $0;
 
@@ -37,7 +37,7 @@ function dump_links_with_titles() {
   }'
 }
 
-function link_normalize() {
+link_normalize() {
   URI=$1
   awk -v uri=$URI '{
     gsub("&amp;", "\\&");
@@ -62,7 +62,7 @@ function link_normalize() {
   }'
 }
 
-function link_select() {
+link_select() {
   tr '\n\r' ' ' |
     xmllint --html --xpath "//a" - |
     dump_links_with_titles |

@@ -13,6 +13,7 @@ Download
 --------
 
 * [st-invert-0.8.2.diff](st-invert-0.8.2.diff)
+* [st-invert-0.8.4.diff](st-invert-0.8.4.diff)
 
 Author
 ------

@@ -11,6 +11,10 @@ News
 
 2021-03-28
 ----------
+[svkbd 0.3](//tools.suckless.org/x/svkbd/) released: [download](//dl.suckless.org/tools/svkbd-0.3.tar.gz)
+
+2021-03-28
+----------
 On Wednesday, 2021-03-31 there will be scheduled maintenance of the suckless
 servers. It's estimated this will take about 2-3 hours from about 19:00 to
 21:00 - 22:00 UTC+02:00.

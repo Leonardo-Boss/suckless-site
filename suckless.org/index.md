@@ -9,6 +9,14 @@ News
 
 [Atom feed](//suckless.org/atom.xml)
 
+2021-03-28
+----------
+On Wednesday, 2021-03-31 there will be scheduled maintenance of the suckless
+servers. It's estimated this will take about 2-3 hours from about 19:00 to
+21:00 - 22:00 UTC+02:00.
+
+The mailinglist, website and source-code repositories will have some downtime.
+
 2021-01-19
 ----------
 [scroll 0.1](//tools.suckless.org/scroll/) released: [download](//dl.suckless.org/tools/scroll-0.1.tar.gz)

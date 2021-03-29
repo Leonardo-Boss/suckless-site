@@ -1,19 +1,22 @@
-From 0ba2850930d2ef22a1774f3dc78884c978f2d8be Mon Sep 17 00:00:00 2001
+From b9ce8f6df1d2318d2aa8ec9668ec227cfe327e5c Mon Sep 17 00:00:00 2001
 From: aleks <aleks.stier@icloud.com>
-Date: Wed, 27 May 2020 01:20:00 +0200
-Subject: [PATCH] Create a desktop-entry for st
+Date: Wed, 27 May 2020 01:35:15 +0200
+Subject: [PATCH] Apply desktopentry-0.8.4
+
+Creates a desktop-entry for st. This enables to find st in a graphical
+menu and to display it with a nice icon.
 
 ---
  Makefile   | 3 +++
- st.desktop | 7 +++++++
- 2 files changed, 10 insertions(+)
+ st.desktop | 8 ++++++++
+ 2 files changed, 11 insertions(+)
  create mode 100644 st.desktop
 
 diff --git a/Makefile b/Makefile
-index ed19e70..29e25b9 100644
+index fd1321e..6e79a1c 100644
 --- a/Makefile
 +++ b/Makefile
-@@ -50,9 +50,12 @@ install: st
+@@ -49,9 +49,12 @@ install: st
  	chmod 644 $(DESTDIR)$(MANPREFIX)/man1/st.1
  	tic -sx st.info
  	@echo Please see the README file regarding the terminfo entry of st.
@@ -28,17 +31,18 @@ index ed19e70..29e25b9 100644
  .PHONY: all options clean dist install uninstall
 diff --git a/st.desktop b/st.desktop
 new file mode 100644
-index 0000000..a1b5116
+index 0000000..e4e0714
 --- /dev/null
 +++ b/st.desktop
-@@ -0,0 +1,7 @@
+@@ -0,0 +1,8 @@
 +[Desktop Entry]
-+Type=Application
 +Name=st
-+Comment=simple-terminal emulator for X
-+Icon=utilities-terminal
++Comment=st is a simple terminal implementation for X
 +Exec=st
-+Categories=System;TerminalEmulator
++Icon=terminal
++Terminal=false
++Type=Application
++Categories=System;TerminalEmulator;
 -- 
-2.26.2
+2.31.0
 

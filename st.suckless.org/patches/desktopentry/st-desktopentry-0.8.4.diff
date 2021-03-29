@@ -1,7 +1,7 @@
 From b9ce8f6df1d2318d2aa8ec9668ec227cfe327e5c Mon Sep 17 00:00:00 2001
 From: aleks <aleks.stier@icloud.com>
 Date: Wed, 27 May 2020 01:35:15 +0200
-Subject: [PATCH] Apply desktopentry-0.8.4
+Subject: [PATCH] Create a desktop-entry for st
 
 Creates a desktop-entry for st. This enables to find st in a graphical
 menu and to display it with a nice icon.

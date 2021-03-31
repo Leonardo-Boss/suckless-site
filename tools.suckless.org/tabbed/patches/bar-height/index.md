@@ -8,4 +8,4 @@ Download
 
 Author
 ------
-* Luna Hensley - hens25252@protonmail.com
+* Luna Hensley - lhdev25@gmail.com

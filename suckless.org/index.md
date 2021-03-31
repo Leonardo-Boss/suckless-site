@@ -21,6 +21,9 @@ servers. It's estimated this will take about 2-3 hours from about 19:00 to
 
 The mailinglist, website and source-code repositories will have some downtime.
 
+**Update:** the maintenance was finished at 2021-03-31 19:10 UTC+02:00.
+Please let us know if there are issues.
+
 2021-01-19
 ----------
 [scroll 0.1](//tools.suckless.org/scroll/) released: [download](//dl.suckless.org/tools/scroll-0.1.tar.gz)

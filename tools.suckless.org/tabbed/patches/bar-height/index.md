@@ -1,5 +1,5 @@
 Bar Height
-========
+==========
 This patch allows the height of the bar to be manually specified.
 
 Download

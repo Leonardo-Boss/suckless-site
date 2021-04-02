@@ -3,67 +3,101 @@ statuscmd
 
 Description
 -----------
-This patch adds the ability to execute shell commands based on the mouse
-button and position when clicking the status bar.
+This patch adds the ability to signal a status monitor program such as
+[dwmblocks](https://github.com/torrinfail/dwmblocks) the location and button
+when clicking on the status bar. Alternatively, there is a version that
+executes shell commands defined in config.h instead of using signals.
 
 Usage
 -----
-Fill 'statuscmds' with commands. Choose which command to run by prefixing
-the status text with a raw byte of the command's index in 'statuscmds',
-offset by +1 since '\0' terminates strings. statuscmds[0] runs by default
-if there is no index to the left of the mouse position. The mouse button
-clicked is exported as $BUTTON.
+Both the nosignal version and the dwmblocks version will run their respective
+shell commands/scripts with the environment variable BUTTON set to the button
+that was pressed.
 
-Example
--------
-With these commands:
+### With signals
+Apply the statuscmd patch and set the `STATUSBAR` macro in config.h
+to the name of the status monitor.
 
-	static const char *statuscmds[] = { "volume", "cpu", "battery" };
+Apply the corresponding statuscmd patch to your status monitor if there is
+one, or extend the program on your own. Feel free to add patches for other
+status monitors.
+
+#### Patching status monitors
+* Assosiate each section with a signal number in the range of 1-31.
+* When setting the status text, print each section's respective signal number
+  as a raw byte before its text.
+* Create a signal handler:
+
+	void sighandler(int signum, siginfo_t *si, void *ucontext)
+	{
+		int signal = signum - SIGRTMIN;
+		int button = si->si_value.sival_int; /* if button is zero, the signal is not from a button press */
+		... /* do whatever you want */
+	}
+
+* Register the signal handler for each section in the following way, with
+  'signal' being the same signal from the first step:
+
+	struct sigaction sa = { .sa_sigaction = sighandler, .sa_flags = SA_SIGINFO };
+	sigaction(SIGRTMIN+signal, &sa, NULL);
+
+### Without signals
+Apply the statuscmd-nosignal patch and fill the `statuscmds` array in config.h
+with `StatusCmd` structs, which take a shell command string and an integer
+identifier.
+
+When setting the status, print the integer identifier as a raw byte before its
+respective text.
+
+For example, with `statuscmds` defined as such:
+
+	static const StatusCmd statuscmds[] = {
+		{ "volume",  1 },
+		{ "cpu",     2 },
+		{ "battery", 3 },
+	};
 
 And root name set like this:
 
-	xsetroot -name "$(echo -e 'volume |\x02 cpu |\x03 battery')"
+	xsetroot -name "$(printf '\x01Volume |\x02 CPU |\x03 Battery')"
 
-Clicking on 'volume |' would run `volume`, clicking on ' cpu |'
-would run `cpu` and clicking on ' battery' would run `battery`.
+Clicking on 'Volume |' would run `volume`, clicking on ' CPU |'
+would run `cpu` and clicking on ' Battery' would run `battery`.
 
-The `cpu` script could look like this:
+Example
+-------
+A script run from dwm or dwmblocks with this patch might look like this:
 
 	#!/bin/sh
 
 	case $BUTTON in
-		1) notify-send "CPU usage" "$(ps axch -o cmd,%cpu --sort=-%cpu | head)";;
-		3) st -e htop;;
+		1) notify-send "CPU usage" "$(ps axch -o cmd,%cpu --sort=-%cpu | head)" ;;
+		3) st -e htop ;;
 	esac
 
 Notes
 -----
-If you have 10 or more commands, make sure to be careful when adding or
-removing newline characters since '\n' is equal to '\x0a'. The problem
-where having certain unprintable characters such as '\n' in the status
-string can make dwm laggy is "fixed", since they are not copied to the
-string that is actually drawn.
+The signal version is not compatible with OpenBSD since it relies on `sigqueue`.
 
-dwmblocks integration
----------------------
-A program that sets the status for dwm such as
-[dwmblocks](https://github.com/torrinfail/dwmblocks) can be patched to manage
-the commands while dwm only finds the location clicked in the status bar.
-This way, no changes are needed in dwm when adding or reordering modules.
-
-Instead of running a command from within dwm using the control character
-as an index, the dwm-statuscmd-signal patch sends a SIGUSR1 signal to
-dwmblocks with the button and control character encoded into the signal value.
-
-The dwmblocks-statuscmd patch makes dwmblocks put each block's signal in
-front of its output text and handles the SIGUSR1 signal by running the
-block's command with $BUTTON exported.
+Be careful with newline characters in the status text since '\n' is equal to
+'\x0a', which is a valid signal number. The problem where having certain
+undrawable characters in the status bar can make dwm laggy is fixed since dwm
+will not attempt to draw them with this patch.
 
 Download
 --------
-* [dwm-statuscmd-6.2.diff](dwm-statuscmd-6.2.diff)
-* [dwm-statuscmd-signal-6.2.diff](dwm-statuscmd-signal-6.2.diff)
-* [dwmblocks-statuscmd.diff](dwmblocks-statuscmd.diff)
+### dwm patches
+* [dwm-statuscmd-20210402-67d76bd.diff](dwm-statuscmd-20210402-67d76bd.diff)
+* [dwm-statuscmd-nosignal-20210402-67d76bd.diff](dwm-statuscmd-nosignal-20210402-67d76bd.diff)
+
+If using [status2d](https://dwm.suckless.org/patches/status2d/), use these patches instead of the
+above ones on top of a build already patched with status2d:
+
+* [dwm-statuscmd-status2d-20210402-60bb3df.diff](dwm-statuscmd-status2d-20210402-60bb3df.diff)
+* [dwm-statuscmd-nosignal-status2d-20210402-60bb3df.diff](dwm-statuscmd-nosignal-status2d-20210402-60bb3df.diff)
+
+### Status monitor patches
+* [dwmblocks-statuscmd-20210402-96cbb45.diff](dwmblocks-statuscmd-20210402-96cbb45.diff)
 
 Author
 ------

@@ -23,7 +23,7 @@ one, or extend the program on your own. Feel free to add patches for other
 status monitors.
 
 #### Patching status monitors
-* Assosiate each section with a signal number in the range of 1-31.
+* Associate each section with a signal number in the range of 1-31.
 * When setting the status text, print each section's respective signal number
   as a raw byte before its text.
 * Create a signal handler:
@@ -87,13 +87,13 @@ will not attempt to draw them with this patch.
 Download
 --------
 ### dwm patches
-* [dwm-statuscmd-20210402-67d76bd.diff](dwm-statuscmd-20210402-67d76bd.diff)
+* [dwm-statuscmd-20210405-67d76bd.diff](dwm-statuscmd-20210405-67d76bd.diff)
 * [dwm-statuscmd-nosignal-20210402-67d76bd.diff](dwm-statuscmd-nosignal-20210402-67d76bd.diff)
 
 If using [status2d](https://dwm.suckless.org/patches/status2d/), use these patches instead of the
 above ones on top of a build already patched with status2d:
 
-* [dwm-statuscmd-status2d-20210402-60bb3df.diff](dwm-statuscmd-status2d-20210402-60bb3df.diff)
+* [dwm-statuscmd-status2d-20210405-60bb3df.diff](dwm-statuscmd-status2d-20210405-60bb3df.diff)
 * [dwm-statuscmd-nosignal-status2d-20210402-60bb3df.diff](dwm-statuscmd-nosignal-status2d-20210402-60bb3df.diff)
 
 ### Status monitor patches

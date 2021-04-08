@@ -68,7 +68,7 @@ This covers most console-based programs and programs from
 
 ### Audio Players
 
-* [C* Music Player](https://cmus.github.io/) - aka cmus, a ncurses music player that can be controlled with an UNIX socket.
+* [C* Music Player](https://cmus.github.io/) - aka cmus, an ncurses music player that can be controlled with a UNIX socket.
 * [moc](https://moc.daper.net/) - console audio player for Linux/UNIX.
 * [mpd](https://www.musicpd.org/) - A client/server based music player with console and graphical front-ends.
 * [mpg123](http://www.mpg123.de/) - A console MPG player which doesn't use auto*hell or extra libraries.

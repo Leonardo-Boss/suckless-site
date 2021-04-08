@@ -103,7 +103,7 @@ Somewhen GNU tried to make the world a bit more miserable by inventing
 [texinfo](https://www.gnu.org/software/texinfo/). The result is that
 in 2019 man pages are still used and the documentation of GNU tools
 requires you to run `info $application`. The info browser is awkward and
-unintuitive and the reason why noone gets further than finding 'q' to
+unintuitive and the reason why no one gets further than finding 'q' to
 quit it.
 
 Look at GNU tools how to not handle documentation.

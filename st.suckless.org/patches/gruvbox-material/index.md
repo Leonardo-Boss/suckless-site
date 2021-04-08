@@ -16,4 +16,4 @@ Download
 
 Authors
 -------
-* Mauro Locatelli (Waifod) - <mauro@locatelli.dev>
+* Mauro Locatelli (Crivotz) - <crivotz@gmail.com>

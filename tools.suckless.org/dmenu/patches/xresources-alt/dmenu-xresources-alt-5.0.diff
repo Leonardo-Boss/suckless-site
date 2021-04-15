@@ -104,7 +104,7 @@ diff -rupN orig/dmenu.c patched/dmenu.c
 +	char fullname[256];
 +	char *type;
 +	XrmValue ret;
-+	snprintf(fullname, sizeof(fullname), "%s.%s", "dwm", name);
++	snprintf(fullname, sizeof(fullname), "%s.%s", "dmenu", name);
 +	fullname[sizeof(fullname) - 1] = '\0';
 +	XrmGetResource(db, fullname, "*", &type, &ret);
 +	if (!(ret.addr == NULL || strncmp("String", type, 64)))

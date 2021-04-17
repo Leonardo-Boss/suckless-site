@@ -29,4 +29,4 @@ Add at the end of you config.h:
 
 Author
 ------
-* prx <prx at ybad dot name>
+* prx <prx at si3t dot ch>

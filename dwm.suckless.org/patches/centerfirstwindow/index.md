@@ -38,7 +38,7 @@ With one and two clients in master respectively this results in:
 
 Download
 --------
-* [dwm-centerFirstWindow-6.2.diff](dwm-centerFirstWindow-6.2.diff)
+* [dwm-centerfirstwindow-6.2.diff](dwm-centerfirstwindow-6.2.diff)
 
 Authors
 -------

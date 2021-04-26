@@ -51,22 +51,18 @@ Download
 --------
 If you want to try out the current version of the patch before patching your own build, check out [this repository](https://github.com/juliusHuelsmann/st), which contains a merged version of this patch with a reasonable configuration.
 
-**Version 1**
-The previous version of this patch is based on the pre-applied [Scrollback patch](https://st.suckless.org/patches/scrollback/).
-- *Based on `295a43f`*: [st-vimBrowse-20200604-295a43f.diff](st-vimBrowse-20200604-295a43f.diff)
-
-**Version 2**
 Based on a [custom history patch](https://github.com/juliusHuelsmann/st-history-vim), which is already applied in the patches below with full set of `history` features.  A more minimal version of the vim patch can be generated from the [st-history repository](https://github.com/juliusHuelsmann/st-history-vim).
+- *Based on `st-0.8.4`*:
+- [Version 2.2 (latest)](https://github.com/juliusHuelsmann/st/releases/download/vim2_2/st-meta-vim-full-20210425-43a395a-8.4.patch)
+- [Version 2](st-vim-0.8.4.patch)
 - *Based on `st-0.8.3`*:
-- [st-vimBrowse-20200607-0.8.3.diff](st-vimBrowse-20200607-0.8.3.diff)
-- [st-vimBrowse-latestRelease-0.8.3.diff](https://github.com/juliusHuelsmann/st/releases/download/vim2_1/st-meta-vim-full-20200607-43a395a.diff)
-- *Based on `9ba7ecf`*:
-- [st-vimBrowse-20200607-9ba7ecf.diff](st-vimBrowse-20200607-9ba7ecf.diff)
-- [st-vimBrowse-latestRelease-9ba7ecf.diff](https://github.com/juliusHuelsmann/st/releases/download/vim2_1/st-meta-vim-full-20200607-9ba7ecf.diff)
+- [Version 2.2 (latest)](https://github.com/juliusHuelsmann/st/releases/download/vim2_2/st-meta-vim-full-20210425-43a395a.diff)
+- [Version 2](st-vim-0.8.3.patch)
 
 Authors of the Vim-Browse Patch
 --------------------------------
-* Julius Hülsmann - <juliusHuelsmann [at] gmail [dot] com>
+* [Julius Hülsmann](https://github.com/juliusHuelsmann) - <juliusHuelsmann [at] gmail [dot] com>
 * [Kevin Velghe](https://github.com/paretje): Fix: Underline highlight
 * [dadaurs](mailto:david.wiedemann@outlook.com): Port Version 1 to `st-295a43f`
+* [smartding](https://github.com/smartding): detect and fix clipboard bug
 

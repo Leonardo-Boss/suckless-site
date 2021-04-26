@@ -1,5 +1,5 @@
-centerFirstWindow
-=================
+center first window
+===================
 
 Description
 -----------
@@ -9,7 +9,7 @@ window opens, then they tile normally, and if all other windows will close, it
 will center again.
 
 It is usefull for apps like - terminal, if you don't want that it cover all of
-master area, when no other apps are open.
+the master area, when no other apps are opened.
 
 Usage
 -----
@@ -18,9 +18,9 @@ It can be enabled for any window in config file, by setting `CenterThisWindow`
 to `1`:
 
    /* class      	instance    title    tags mask     isfloating        CenterThisWindow?     monitor */
-   { "Xfce4-terminal",  NULL,       NULL,    0,            0,     	     1,		           -1 },
+   { "st",              NULL,       NULL,    0,            0,     	     1,		           -1 },
 
-With one and two clients in master respectively this results in:
+With one and two clients in master respectively results in:
 
        +-----------------------------+         +-----------------------------+
        |                             |         | +------------+ +----------+ |
@@ -43,4 +43,4 @@ Download
 Authors
 -------
 * ზურა დავითაშვილი - <zdavitashvili0@gmail.com>
-* Part of code is taken from reddit post from `johannesthyssen`
+* Part of code is taken from reddit's post by `johannesthyssen`

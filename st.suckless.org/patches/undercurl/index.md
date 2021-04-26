@@ -23,4 +23,4 @@ Download
 
 Authors
 -------
-* HexOctal - ([github.com/hexoctal](github.com/hexoctal)) <hex0octal@gmail.com>
+* HexOctal - ([github.com/hexoctal](https://github.com/hexoctal)) <hex0octal@gmail.com>

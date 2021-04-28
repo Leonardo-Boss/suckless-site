@@ -43,6 +43,10 @@ Download
 * [dwm-fibonacci-6.2.diff](dwm-fibonacci-6.2.diff)
 * [dwm-fibonacci-20200418-c82db69.diff](dwm-fibonacci-20200418-c82db69.diff)
 
+Author
+------
+* Jeroen Schot - <schot@a-eskwadraat.nl>
+
 Maintainer
 ----------
 * Niki Yoshiuchi - <nyoshiuchi@gmail.com>

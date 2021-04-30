@@ -40,3 +40,4 @@ dmenu launcher written in Python for acessing passwords, docs and application sh
 * [switch](switch): dmenu-based window switcher using wmctrl. If using dwm, requires the [ewmhtags](https://dwm.suckless.org/patches/ewmhtags/) or [focusonnetactive](//dwm.suckless.org/patches/focusonnetactive/) patch to be usefull.
 * [dmenu_bitwarden](https://gitlab.com/patriktrefil/dmenu-bitwarden): Script to get Bitwarden passwords to Your clipboard.
 * [dmenu_vcard](https://github.com/PatrikTrefil/dmenu_vcard): Script to get e-mails and phone numbers to your clipboard using dmenu.
+* [dmenu_shot](https://codeberg.org/mehrad/dmenu_shot): Script to take screenshot using Flameshot and do image manupulation on using ImageMagic the output.

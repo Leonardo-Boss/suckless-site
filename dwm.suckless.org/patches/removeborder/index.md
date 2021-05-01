@@ -12,3 +12,4 @@ Download
 Author
 -------
 * Max Amundsen - <massimo@cdrateline.com>
+* Cássio Ávila - <cassioavila@yandex.com> (window dimensions fix)

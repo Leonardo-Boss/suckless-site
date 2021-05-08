@@ -11,7 +11,7 @@ News
 
 2021-05-08
 ----------
-[surf 2.1](//surf.suckless.org/) released: [download](//dl.suckless.org/surf/surf/surf-2.1.tar.gz)
+[surf 2.1](//surf.suckless.org/) released: [download](//dl.suckless.org/surf/surf-2.1.tar.gz)
 
 2021-03-28
 ----------

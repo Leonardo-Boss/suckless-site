@@ -9,6 +9,14 @@ News
 
 [Atom feed](//suckless.org/atom.xml)
 
+2021-05-09
+----------
+On Tuesday, 2021-05-11 there will be scheduled maintenance of the suckless
+servers. It's estimated this will take about 1 hour from about 21:00 to
+22:00 UTC+02:00.
+
+The mailinglist, website and source-code repositories will have some downtime.
+
 2021-05-08
 ----------
 [surf 2.1](//surf.suckless.org/) released: [download](//dl.suckless.org/surf/surf-2.1.tar.gz)

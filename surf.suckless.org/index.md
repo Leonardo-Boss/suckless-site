@@ -43,6 +43,6 @@ source code repository or get a copy with the following command:
 Download
 --------
 * [MIT/X Consortium license](//git.suckless.org/surf/plain/LICENSE)
-* [surf 2.0](//dl.suckless.org/surf/surf-2.0.tar.gz) (2017-03-28)
+* [surf 2.1](//dl.suckless.org/surf/surf-2.1.tar.gz) (2021-05-08)
 * See also [dmenu](//tools.suckless.org/dmenu),
   [tabbed](//tools.suckless.org/tabbed)

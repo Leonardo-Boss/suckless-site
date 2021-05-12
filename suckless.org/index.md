@@ -17,6 +17,10 @@ servers. It's estimated this will take about 1 hour from about 21:00 to
 
 The mailinglist, website and source-code repositories will have some downtime.
 
+**Update:** the maintenance was finished at 2021-05-12 23:33 UTC+02:00.
+P.S.: It didn't actually take 26h30, I just had forgotten to do it.
+Please let us know if there are issues.
+
 2021-05-08
 ----------
 [surf 2.1](//surf.suckless.org/) released: [download](//dl.suckless.org/surf/surf-2.1.tar.gz)

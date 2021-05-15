@@ -9,8 +9,10 @@ half of the screen, while having the other half available for other tasks.
 
 Download
 --------
+* [dwm-fakefullscreen-20210515-67d76bd.diff](dwm-fakefullscreen-20210515-67d76bd.diff)
 * [dwm-fakefullscreen-20170508-ceac8c9.diff](dwm-fakefullscreen-20170508-ceac8c9.diff)
 
 Author
 ------
 * Jan Hendrik Farr - <farrjanhendrik@aol.de>
+* Tom Böhmer - <qtom.boehmer@googlemail.com> (20210515-67d76bd port)

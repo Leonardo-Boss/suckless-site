@@ -16,6 +16,7 @@ default a tag name "foo" given to tag 5 will become tag "5:foo".
 
 Download
 --------
+* [dwm-nametag-prepend-6.2.diff](dwm-nametag-prepend-6.2.diff)
 * [dwm-nametag-6.1.diff](dwm-nametag-6.1.diff)
 * [dwm-nametag-prepend-6.1.diff](dwm-nametag-prepend-6.1.diff)
 * [dwm-nametag-5.7.2.diff](dwm-nametag-5.7.2.diff)
@@ -24,3 +25,4 @@ Author
 ------
 * Evan Gates (emg) <evan.gates@gmail.com>
 * prepend version by [Ondřej Grover](mailto:ondrej.grover@gmail.com)
+* Cédric Macquat <cedric@vouivre.org> (nametag-prepend 6.2 port)

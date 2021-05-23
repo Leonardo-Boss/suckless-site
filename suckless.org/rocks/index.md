@@ -208,6 +208,7 @@ This covers most console-based programs and programs from
 * [abduco](http://www.brain-dump.org/projects/abduco/) - session {at,de}tach support.
 * [dvtm](http://www.brain-dump.org/projects/dvtm/) - dynamic virtual terminal manager.
 * [entr](http://entrproject.org/) - Run arbitrary commands when files change.
+* [mtm](https://github.com/deadpixi/mtm) - Micro Terminal Multiplexer.
 * [nq](https://github.com/chneukirchen/nq) - UNIX command line queue utility.
 * [slmenu](https://bitbucket.org/rafaelgg/slmenu) - Dmenu spinoff for the console.
 * [snore](https://github.com/clamiax/snore) - Sleep with feedback.

@@ -1,8 +1,8 @@
 diff --git a/config.def.h b/config.def.h
-index 1edb647..a4e775f 100644
+index 1edb647..ed3b175 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -4,18 +4,34 @@
+@@ -4,18 +4,33 @@
  static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
  /* -fn option overrides fonts[0]; default X11 font or font set */
  static const char *fonts[] = {
@@ -17,14 +17,13 @@ index 1edb647..a4e775f 100644
 -	[SchemeNorm] = { "#bbbbbb", "#222222" },
 -	[SchemeSel] = { "#eeeeee", "#005577" },
 -	[SchemeOut] = { "#000000", "#00ffff" },
-+static const char *colors[SchemeLast][11] = {
++static const char *colors[SchemeLast][10] = {
 +    /*     fg         bg       */
 +    [SchemeNorm] = { "#bbbbbb", "#222222", "#222222" },
 +    [SchemeSel] = { "#eeeeee", "#005577", "#005577" },
 +    [SchemeOut] = { "#000000", "#00ffff", "#00ffff" },
 +    [SchemeHighlight] = {"#f1fa8c", "#596377", "#3E485B"},
 +    [SchemeHover] = {"#ffffff", "#353D4B", "#3E485B"},
-+    [SchemeMid] = {"#A4ABAA", "#21222c", "#21222c"},
 +    [SchemeGreen] = {"#ffffff", "#52E067", "#41b252"},
 +    [SchemeRed] = {"#ffffff", "#e05252", "#c24343"},
 +    [SchemeYellow] = {"#ffffff", "#e0c452", "#bca33f"},
@@ -44,10 +43,10 @@ index 1edb647..a4e775f 100644
   * Characters not considered part of a word while deleting words
   * for example: " /?\"&[]"
 diff --git a/dmenu.c b/dmenu.c
-index 65f25ce..f1bda1b 100644
+index 65f25ce..a558fcb 100644
 --- a/dmenu.c
 +++ b/dmenu.c
-@@ -26,7 +26,21 @@
+@@ -26,7 +26,20 @@
  #define TEXTW(X)              (drw_fontset_getwidth(drw, (X)) + lrpad)
  
  /* enums */
@@ -59,7 +58,6 @@ index 65f25ce..f1bda1b 100644
 +  SchemeHover,
 +  SchemeSel,
 +  SchemeOut,
-+  SchemeMid,
 +  SchemeGreen,
 +  SchemeYellow,
 +  SchemeBlue,
@@ -70,7 +68,7 @@ index 65f25ce..f1bda1b 100644
  
  struct item {
  	char *text;
-@@ -37,6 +51,9 @@ struct item {
+@@ -37,6 +50,9 @@ struct item {
  static char text[BUFSIZ] = "";
  static char *embed;
  static int bh, mw, mh;
@@ -80,7 +78,7 @@ index 65f25ce..f1bda1b 100644
  static int inputw = 0, promptw;
  static int lrpad; /* sum of left and right padding */
  static size_t cursor;
-@@ -114,16 +131,119 @@ cistrstr(const char *s, const char *sub)
+@@ -114,16 +130,117 @@ cistrstr(const char *s, const char *sub)
  }
  
  static int
@@ -167,8 +165,6 @@ index 65f25ce..f1bda1b 100644
 +  } else {
 +    if (item == sel)
 +      drw_setscheme(drw, scheme[SchemeSel]);
-+    else if (item->left == sel || item->right == sel)
-+      drw_setscheme(drw, scheme[SchemeMid]);
 +    else if (item->out)
 +      drw_setscheme(drw, scheme[SchemeOut]);
 +    else
@@ -210,7 +206,7 @@ index 65f25ce..f1bda1b 100644
  }
  
  static void
-@@ -131,7 +251,7 @@ drawmenu(void)
+@@ -131,7 +248,7 @@ drawmenu(void)
  {
  	unsigned int curpos;
  	struct item *item;
@@ -219,7 +215,7 @@ index 65f25ce..f1bda1b 100644
  
  	drw_setscheme(drw, scheme[SchemeNorm]);
  	drw_rect(drw, 0, 0, mw, mh, 1, 1);
-@@ -148,7 +268,7 @@ drawmenu(void)
+@@ -148,7 +265,7 @@ drawmenu(void)
  	curpos = TEXTW(text) - TEXTW(&text[cursor]);
  	if ((curpos += lrpad / 2 - 1) < w) {
  		drw_setscheme(drw, scheme[SchemeNorm]);
@@ -228,7 +224,7 @@ index 65f25ce..f1bda1b 100644
  	}
  
  	if (lines > 0) {
-@@ -609,6 +729,7 @@ setup(void)
+@@ -609,6 +726,7 @@ setup(void)
  
  	/* calculate menu geometry */
  	bh = drw->fonts->h + 2;
@@ -236,7 +232,7 @@ index 65f25ce..f1bda1b 100644
  	lines = MAX(lines, 0);
  	mh = (lines + 1) * bh;
  #ifdef XINERAMA
-@@ -637,9 +758,9 @@ setup(void)
+@@ -637,9 +755,9 @@ setup(void)
  				if (INTERSECT(x, y, 1, 1, info[i]))
  					break;
  
@@ -249,7 +245,7 @@ index 65f25ce..f1bda1b 100644
  		XFree(info);
  	} else
  #endif
-@@ -647,9 +768,9 @@ setup(void)
+@@ -647,9 +765,9 @@ setup(void)
  		if (!XGetWindowAttributes(dpy, parentwin, &wa))
  			die("could not get embedding window attributes: 0x%lx",
  			    parentwin);
@@ -262,7 +258,7 @@ index 65f25ce..f1bda1b 100644
  	}
  	promptw = (prompt && *prompt) ? TEXTW(prompt) - lrpad / 4 : 0;
  	inputw = MIN(inputw, mw/3);
-@@ -689,7 +810,8 @@ setup(void)
+@@ -689,7 +807,8 @@ setup(void)
  static void
  usage(void)
  {
@@ -272,7 +268,7 @@ index 65f25ce..f1bda1b 100644
  	      "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]\n", stderr);
  	exit(1);
  }
-@@ -717,6 +839,16 @@ main(int argc, char *argv[])
+@@ -717,6 +836,16 @@ main(int argc, char *argv[])
  		/* these options take one argument */
  		else if (!strcmp(argv[i], "-l"))   /* number of lines in vertical list */
  			lines = atoi(argv[++i]);
@@ -289,7 +285,7 @@ index 65f25ce..f1bda1b 100644
  		else if (!strcmp(argv[i], "-m"))
  			mon = atoi(argv[++i]);
  		else if (!strcmp(argv[i], "-p"))   /* adds prompt to left of input field */
-@@ -752,6 +884,9 @@ main(int argc, char *argv[])
+@@ -752,6 +881,9 @@ main(int argc, char *argv[])
  		die("no fonts could be loaded.");
  	lrpad = drw->fonts->h;
  

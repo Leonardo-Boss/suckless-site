@@ -7,13 +7,13 @@ This patch will allow for emojis on the left side with a colored background when
 
 Notes
 -----------
-To use this please try `echo -e "here\nthere\n:b and here" | ./dmenu -p "Search..." -z 400 -l 20 -i -h -1`
+To use this please try `echo -e "here\nthere\n:b and here" | dmenu -p "Search..." -z 400 -l 20 -i -h -1`
 
-![emoji-highlight screenshot](emoji-highlight-5.0.png)
+![dmenu-emoji-highlight screenshot](dmenu-emoji-highlight-5.0.png)
 
 Download
 --------
-* [emoji-highlight-5.0.diff](emoji-highlight-5.0.diff)
+* [dmenu-emoji-highlight.diff](dmenu-emoji-highlight-5.0.diff)
 
 Author
 ------

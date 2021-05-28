@@ -11,11 +11,11 @@ patch, so that you can use stdout to feed stdin.
 Example:
 	# Make a fifo and read from it for dmenu's input
 	mkfifo foo
-	while true; do; cat foo; done | dmenu -w $(xdotool getactivewindow) -l 10
-
+	while true; do cat foo; done | dmenu -w "$(xdotool getactivewindow)" -l 10
+    
 	# Append some items
 	printf %b "foo\nbar\nbaz\n" > foo
-	# Append some more items 
+	# Append some more items
 	printf %b "food\nbarn" > foo
 
 ## nonblockingstdincontrol variant
@@ -35,7 +35,7 @@ Supported Control Characters:
 Example:
 	# Make a fifo and read from it for dmenu's input
 	mkfifo foo
-	while true; do; cat foo; done | dmenu -w $(xdotool getactivewindow) -l 10
+	while true; do cat foo; done | dmenu -w $(xdotool getactivewindow) -l 10
 	
 	# And then separately, load a first set of options:
 	printf %b "\ffoo\nbar\nbill" > foo

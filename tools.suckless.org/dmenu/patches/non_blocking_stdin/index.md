@@ -35,7 +35,7 @@ Supported Control Characters:
 Example:
 	# Make a fifo and read from it for dmenu's input
 	mkfifo foo
-	while true; do cat foo; done | dmenu -w $(xdotool getactivewindow) -l 10
+	while true; do cat foo; done | dmenu -w "$(xdotool getactivewindow)" -l 10
 	
 	# And then separately, load a first set of options:
 	printf %b "\ffoo\nbar\nbill" > foo

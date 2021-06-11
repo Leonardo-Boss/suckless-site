@@ -1,7 +1,9 @@
 #!/usr/bin/python
 # coding: utf-8
 """
-Custom CPU monitor, mainly for panels.
+GENMON APPLET USAGE EXAMPLE
+
+A Custom CPU monitor.
 
 Challenge: We want a bit of history and cpu monitoring anyway needs some delta t.
 
@@ -12,7 +14,7 @@ Hightlights:
 - cpu per core
 - top cpu eating process, customized with own config (not colliding with yours of ~/.config/procps)
 - arbitray long symbol lists, will pick per percent
-- output colorized using pandoc
+- output colorized using pango
 
 Lowlights:
 Linux Only. Not hard to rewrite, but now it's just Linux, looking into /proc/stat

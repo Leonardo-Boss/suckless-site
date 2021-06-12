@@ -1,11 +1,11 @@
 Using the `genmon` Applet
 -------------------------
 
-Any panel offers the possibility to include generic scripts output.   
+Any panel offers the possibility to include generic scripts output.
 In `xfce4-panel` this is done by the panel item: "Generic Monitor" (genmon). It features output styled with pango markup and mouseover/onclick hooks.
 
 Here are some `genmon` script collections:
-- [xfce4-genmon-scripts](https://awesomeopensource.com/project/xtonousou/xfce4-genmon-scripts) 
+- [xfce4-genmon-scripts](https://awesomeopensource.com/project/xtonousou/xfce4-genmon-scripts)
 - [xfce4-genmon-scripts-2](https://github.com/almaceleste/xfce4-genmon-scripts)
 - [xfce4-genmon-scripts-3](https://github.com/levimake/xfce4-genmon-panel-scripts)
 

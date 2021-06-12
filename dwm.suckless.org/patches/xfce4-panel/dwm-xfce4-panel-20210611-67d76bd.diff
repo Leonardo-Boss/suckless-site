@@ -31,12 +31,12 @@ index 1c0b587..3b9e7d6 100644
  static const int topbar             = 1;        /* 0 means bottom bar */
  static const char *fonts[]          = { "monospace:size=10" };
 @@ -29,6 +30,7 @@ static const Rule rules[] = {
- 	/* class      instance    title       tags mask     isfloating   monitor */
- 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
- 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	/* class      instance    title       tags mask     isfloating   monitor */
+	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
+	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 +	{ panel[1],   NULL,       NULL,       (1 << 9) - 1, 0,           -1 },
  };
- 
+
  /* layout(s) */
 diff --git a/dwm.c b/dwm.c
 index b0b3466..a3b618b 100644
@@ -51,18 +51,18 @@ index b0b3466..a3b618b 100644
  static void keypress(XEvent *e);
  static void killclient(const Arg *arg);
 @@ -710,6 +711,8 @@ drawbar(Monitor *m)
- 	}
+	}
  
- 	for (c = m->clients; c; c = c->next) {
+	for (c = m->clients; c; c = c->next) {
 +        // prevent showing the panel as active application:
 +        if (ispanel(c)) continue;
- 		occ |= c->tags;
- 		if (c->isurgent)
- 			urg |= c->tags;
+		occ |= c->tags;
+		if (c->isurgent)
+			urg |= c->tags;
 @@ -793,11 +796,14 @@ focus(Client *c)
- 			selmon = c->mon;
- 		if (c->isurgent)
- 			seturgent(c, 0);
+			selmon = c->mon;
+		if (c->isurgent)
+			seturgent(c, 0);
 -		detachstack(c);
 -		attachstack(c);
 -		grabbuttons(c, 1);
@@ -76,13 +76,13 @@ index b0b3466..a3b618b 100644
 +            XSetWindowBorder(dpy, c->win, scheme[SchemeSel][ColBorder].pixel);
 +            setfocus(c);
 +        }
- 	} else {
- 		XSetInputFocus(dpy, root, RevertToPointerRoot, CurrentTime);
- 		XDeleteProperty(dpy, root, netatom[NetActiveWindow]);
+	} else {
+		XSetInputFocus(dpy, root, RevertToPointerRoot, CurrentTime);
+		XDeleteProperty(dpy, root, netatom[NetActiveWindow]);
 @@ -964,6 +970,11 @@ grabkeys(void)
- 	}
+	}
  }
- 
+
 +int
 +ispanel(Client *c) {
 +    return !strcmp(c->name, panel[0]);
@@ -92,32 +92,32 @@ index b0b3466..a3b618b 100644
  incnmaster(const Arg *arg)
  {
 @@ -1049,7 +1060,8 @@ manage(Window w, XWindowAttributes *wa)
- 	c->y = MAX(c->y, ((c->mon->by == c->mon->my) && (c->x + (c->w / 2) >= c->mon->wx)
- 		&& (c->x + (c->w / 2) < c->mon->wx + c->mon->ww)) ? bh : c->mon->my);
- 	c->bw = borderpx;
+	c->y = MAX(c->y, ((c->mon->by == c->mon->my) && (c->x + (c->w / 2) >= c->mon->wx)
+		&& (c->x + (c->w / 2) < c->mon->wx + c->mon->ww)) ? bh : c->mon->my);
+	c->bw = borderpx;
 -
 +    // no border - even when active
 +    if (ispanel(c)) c->bw = c->oldbw = 0;
- 	wc.border_width = c->bw;
- 	XConfigureWindow(dpy, w, CWBorderWidth, &wc);
- 	XSetWindowBorder(dpy, w, scheme[SchemeNorm][ColBorder].pixel);
+	wc.border_width = c->bw;
+	XConfigureWindow(dpy, w, CWBorderWidth, &wc);
+	XSetWindowBorder(dpy, w, scheme[SchemeNorm][ColBorder].pixel);
 @@ -1283,6 +1295,7 @@ resizeclient(Client *c, int x, int y, int w, int h)
- 	c->oldw = c->w; c->w = wc.width = w;
- 	c->oldh = c->h; c->h = wc.height = h;
- 	wc.border_width = c->bw;
+	c->oldw = c->w; c->w = wc.width = w;
+	c->oldh = c->h; c->h = wc.height = h;
+	wc.border_width = c->bw;
 +    if (ispanel(c)) c->y = c->oldy = c->bw = wc.y = wc.border_width = 0;
- 	XConfigureWindow(dpy, c->win, CWX|CWY|CWWidth|CWHeight|CWBorderWidth, &wc);
- 	configure(c);
- 	XSync(dpy, False);
+	XConfigureWindow(dpy, c->win, CWX|CWY|CWWidth|CWHeight|CWBorderWidth, &wc);
+	configure(c);
+	XSync(dpy, False);
 @@ -1991,7 +2004,7 @@ void
  updatestatus(void)
  {
- 	if (!gettextprop(root, XA_WM_NAME, stext, sizeof(stext)))
+	if (!gettextprop(root, XA_WM_NAME, stext, sizeof(stext)))
 -		strcpy(stext, "dwm-"VERSION);
 +		strcpy(stext, " "); // no shining of dwm version thru panel, when transparent
- 	drawbar(selmon);
+	drawbar(selmon);
  }
- 
--- 
+
+--
 2.31.1
 

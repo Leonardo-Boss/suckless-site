@@ -4,8 +4,8 @@ xfce4-panel
 Description
 -----------
 
-When xfce4 tools are on the system anyway, it might make sense to use the xfce4-panel in dwm.  
-This patch modifies dwm, so that it treats the window with name `xfce4-panel` (default) 
+When xfce4 tools are on the system anyway, it might make sense to use the xfce4-panel in dwm.
+This patch modifies dwm, so that it treats the window with name `xfce4-panel` (default)
 as a status bar, i.e.:
 
 - it never has borders
@@ -49,11 +49,11 @@ Done via XFCE4 tools.
 - At Tab Display:
 
     - Mode Horizontal  
-    - Output: Your primary monitor (with y=0). Panel will stay there(!)   
-    - Lock Panel: false   
-    - Don't reserve space on borders: true   
-    - Row size: 23 pixel, 1 row works for me   
-    - Autom. increase the length: true   
+    - Output: Your primary monitor (with y=0). Panel will stay there(!)
+    - Lock Panel: false
+    - Don't reserve space on borders: true
+    - Row size: 23 pixel, 1 row works for me
+    - Autom. increase the length: true
 
 The _content_ of the panel you configure "normally", i.e. by adding items in the panel's items tab or via CLI tools.
 

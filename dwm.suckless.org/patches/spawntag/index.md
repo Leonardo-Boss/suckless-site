@@ -8,19 +8,17 @@ Spawn application whenever a tag is middle clicked. This patch also include
 
 Example usage:
 
-``
-static const Arg tagexec[] = {
-	{ .v = termcmd },
-	GTKCMD("org.gnome.Nautilus"),
-	GTKCMD("visual-studio-code"),
-	SHCMD("lxterminal -t AlsaMixer -e /usr/bin/alsamixer"),
-	GTKCMD("discord"),
-	SHCMD("lxterminal -t Cmus  -e /usr/bin/cmus"),
-	{ .v = termcmd },
-	GTKCMD("personal-firefox"),
-	GTKCMD("firefox")
-};
-``
+	static const Arg tagexec[] = {
+		{ .v = termcmd },
+		GTKCMD("org.gnome.Nautilus"),
+		GTKCMD("visual-studio-code"),
+		SHCMD("lxterminal -t AlsaMixer -e /usr/bin/alsamixer"),
+		GTKCMD("discord"),
+		SHCMD("lxterminal -t Cmus  -e /usr/bin/cmus"),
+		{ .v = termcmd },
+		GTKCMD("personal-firefox"),
+		GTKCMD("firefox")
+	};
 
 Download
 --------

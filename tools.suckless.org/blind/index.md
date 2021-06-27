@@ -100,8 +100,8 @@ streams from a video or add it to a video.
 
 ### Is it really feasible to edit video without a GUI?
 
-Depends on what you are doing. Many things can be done without a going, and
-some thing are easier to do without a GUI. If you find that you need GUI it
+Depends on what you are doing. Many things can be done without a GUI, and
+some thing are easier to do without one. If you find that you need GUI it
 possible to combine blind with a graphical editor. Furthermore, blind could be
 used in by a graphical editor if one were to write a graphical editor to use
 blind.

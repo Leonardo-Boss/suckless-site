@@ -13,26 +13,25 @@ as a status bar, i.e.:
 - always has y=0
 - it is never shown as active window in the tag indicators
 - it is shown on all tags (via a tag rule in the config)
+- it is ignored on `focusstack` (MOD+j / MOD+k)
 
 ![dwm_xfce4-panel.png](dwm_xfce4-panel.png)
 
 - The panel does act as systray for third party tools, i.e. the systray patch is no more required
-- Looks best when background is set to solid color, same as the dwm statusline (black in the example)
+- Looks best when background is set to same color as the dwm statusline (black in the example)
 - Using a compositor you can dimm or completely hide it, when not hovered
 
-The patch has been created against dwm6.2.
-
+The patch has been created against dwm6.2.  
 
 Download
 --------
 
-* [dwm-xfce4-panel-20210611-67d76bd.diff](dwm-xfce4-panel-20210611-67d76bd.diff) (2021-06-11)
-
+* [dwm-xfce4-panel-20210701-67d76bd.diff](dwm-xfce4-panel-20210701-67d76bd.diff) (2021-07-01)
 
 Notes
 -----
 
-- The workspace switcher won't work interactively, but dwm's interactive tag indicators remain  on the left anyway.
+- The workspace switcher won't work interactively, but dwm's interactive tag indicators remain on the left anyway.
 - Some actions in the "session menu" applet (the one with your name as title) won't work out of the box. You might supply your own sub menu or modify the actions of the existing one.
 - The rest of xfce4's 40 or so panel apps _should_ work (if installed) and also custom "applets" (see below) are working 
 - Startup: A start via xinitrc should be fine. I use the [autostart](https://dwm.suckless.org/patches/autostart/) patch to start

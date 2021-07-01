@@ -1,6 +1,6 @@
-From 7a9b83d0d74f9aca800c1ec0d2e698449c166e86 Mon Sep 17 00:00:00 2001
+From 4e33fe0d465fb24f6b42d4a1fb63d4d7902f1986 Mon Sep 17 00:00:00 2001
 From: Gunther Klessinger <gunther.klessinger@axiros.com>
-Date: Fri, 11 Jun 2021 21:54:29 +0200
+Date: Thu, 1 Jul 2021 09:19:07 +0200
 Subject: [PATCH] Supporting xfce4-panel in dwm
 
 We treat the panel as special window which
@@ -9,14 +9,13 @@ We treat the panel as special window which
 - always has y=0
 - is never shown as active window in the indicators
 - is shown on all tags (via config rule)
+- is ignored on focusstack (MOD+j, MOD+k)
 
 Which window? "xfce4-panel" - configurable in config.h
-
-=> Might work for other panels as well, if you adapt.
 ---
  config.def.h |  2 ++
- dwm.c        | 27 ++++++++++++++++++++-------
- 2 files changed, 22 insertions(+), 7 deletions(-)
+ dwm.c        | 28 +++++++++++++++++++++-------
+ 2 files changed, 23 insertions(+), 7 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
 index 1c0b587..3b9e7d6 100644
@@ -39,7 +38,7 @@ index 1c0b587..3b9e7d6 100644
 
  /* layout(s) */
 diff --git a/dwm.c b/dwm.c
-index b0b3466..a3b618b 100644
+index b0b3466..956d402 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -175,6 +175,7 @@ static long getstate(Window w);
@@ -79,7 +78,15 @@ index b0b3466..a3b618b 100644
 	} else {
 		XSetInputFocus(dpy, root, RevertToPointerRoot, CurrentTime);
 		XDeleteProperty(dpy, root, netatom[NetActiveWindow]);
-@@ -964,6 +970,11 @@ grabkeys(void)
+@@ -853,6 +859,7 @@ focusstack(const Arg *arg)
+	if (c) {
+		focus(c);
+		restack(selmon);
++        if (ispanel(c)) focusstack(arg);
+	}
+ }
+
+@@ -964,6 +971,11 @@ grabkeys(void)
 	}
  }
 
@@ -91,7 +98,7 @@ index b0b3466..a3b618b 100644
  void
  incnmaster(const Arg *arg)
  {
-@@ -1049,7 +1060,8 @@ manage(Window w, XWindowAttributes *wa)
+@@ -1049,7 +1061,8 @@ manage(Window w, XWindowAttributes *wa)
 	c->y = MAX(c->y, ((c->mon->by == c->mon->my) && (c->x + (c->w / 2) >= c->mon->wx)
 		&& (c->x + (c->w / 2) < c->mon->wx + c->mon->ww)) ? bh : c->mon->my);
 	c->bw = borderpx;
@@ -101,7 +108,7 @@ index b0b3466..a3b618b 100644
 	wc.border_width = c->bw;
 	XConfigureWindow(dpy, w, CWBorderWidth, &wc);
 	XSetWindowBorder(dpy, w, scheme[SchemeNorm][ColBorder].pixel);
-@@ -1283,6 +1295,7 @@ resizeclient(Client *c, int x, int y, int w, int h)
+@@ -1283,6 +1296,7 @@ resizeclient(Client *c, int x, int y, int w, int h)
 	c->oldw = c->w; c->w = wc.width = w;
 	c->oldh = c->h; c->h = wc.height = h;
 	wc.border_width = c->bw;
@@ -109,7 +116,7 @@ index b0b3466..a3b618b 100644
 	XConfigureWindow(dpy, c->win, CWX|CWY|CWWidth|CWHeight|CWBorderWidth, &wc);
 	configure(c);
 	XSync(dpy, False);
-@@ -1991,7 +2004,7 @@ void
+@@ -1991,7 +2005,7 @@ void
  updatestatus(void)
  {
 	if (!gettextprop(root, XA_WM_NAME, stext, sizeof(stext)))

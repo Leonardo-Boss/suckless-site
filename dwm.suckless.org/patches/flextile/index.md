@@ -50,8 +50,8 @@ Configuration
 		{ MODKEY|ControlMask,           XK_Tab,    rotatelayoutaxis, {.i = 1} },    /* 1 = master axis */
 		{ MODKEY|ControlMask|ShiftMask, XK_Tab,    rotatelayoutaxis, {.i = 2} },    /* 2 = stack axis */
 		{ MODKEY|ControlMask,           XK_Return, mirrorlayout,     {0} },
-		{ MODKEY|ControlMask,           XK_j,      shiftmastersplit, {.i = -1} },   /* reduce the number of tiled clients in the master area */
-		{ MODKEY|ControlMask,           XK_k,      shiftmastersplit, {.i = +1} },   /* increase the number of tiled clients in the master area */
+		{ MODKEY|ControlMask,           XK_h,      shiftmastersplit, {.i = -1} },   /* reduce the number of tiled clients in the master area */
+		{ MODKEY|ControlMask,           XK_l,      shiftmastersplit, {.i = +1} },   /* increase the number of tiled clients in the master area */
 
 
 Usage
@@ -67,6 +67,7 @@ pressing `ALT+m` (in the default configuration).
 
 Download
 --------
+* [dwm-flextile-6.2.diff](dwm-flextile-6.2.diff)
 * [dwm-flextile-5.8.2.diff](dwm-flextile-5.8.2.diff)
 * [dwm-flextile-5.8.1.diff](dwm-flextile-5.8.1.diff)
 
@@ -74,3 +75,4 @@ Authors
 -------
 * joten (at) freenet (dot) de
 * mail at pascal-wittmann dot de
+* Max Schillinger - <maxschillinger@web.de> (6.2 port)

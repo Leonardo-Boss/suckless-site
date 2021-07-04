@@ -19,7 +19,7 @@ arrangement can be seen below.
     +-----------+-----+-----+  +-----------+-----+-----+
              spiral                     dwindle
 
-[![dwm in spiral layout.](http://schot.a-eskwadraat.nl/images/dwm-spiral_small.png1)](http://schot.a-eskwadraat.nl/images/dwm-spiral.png)
+[![dwm in spiral layout.](https://schot.a-eskwadraat.nl/images/dwm-spiral_small.png)](https://schot.a-eskwadraat.nl/images/dwm-spiral.png)
 
 *Links2, sic, xterm & xclock in spiral layout.*
 

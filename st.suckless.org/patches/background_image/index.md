@@ -26,7 +26,7 @@ effects can be applied to the desktop background in an automated fashion.
 Pictured below is an example of the result of a darken and blur operation 
 invoked with the following command:
 
-	cat wallpaper.jpg | jpg2ff | ff-border e 50 | ff-bright rgba 0 0.5 1 | ff-blur 50 15 > st_wallpaper.ff
+	jpg2ff < wallpaper.jpg | ff-border e 50 | ff-bright rgba 0 0.5 1 | ff-blur 50 15 > st_wallpaper.ff
 
 ![Screenshot](pseudo-transparency.png)
 

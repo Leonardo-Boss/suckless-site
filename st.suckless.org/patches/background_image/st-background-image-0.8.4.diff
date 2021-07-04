@@ -1,12 +1,12 @@
-From a92db07df3cd81ee51ac9650b65adb8685e52187 Mon Sep 17 00:00:00 2001
+From fdf9692358326993f0dc6a6896cc0a7194ba6152 Mon Sep 17 00:00:00 2001
 From: Matthias Schoth <mschoth@gmail.com>
-Date: Sat, 24 Apr 2021 21:24:41 +0200
+Date: Sun, 4 Jul 2021 19:18:20 +0200
 Subject: [PATCH] Implements background image and pseudo transparancy support.
 
 ---
  config.def.h |  8 +++++
- x.c          | 93 ++++++++++++++++++++++++++++++++++++++++++++++++----
- 2 files changed, 95 insertions(+), 6 deletions(-)
+ x.c          | 91 ++++++++++++++++++++++++++++++++++++++++++++++++----
+ 2 files changed, 93 insertions(+), 6 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
 index 6f05dce..3d352db 100644
@@ -28,7 +28,7 @@ index 6f05dce..3d352db 100644
   * What program is execed by st depends of these precedence rules:
   * 1: program passed with -e
 diff --git a/x.c b/x.c
-index 210f184..400cceb 100644
+index 210f184..22653ea 100644
 --- a/x.c
 +++ b/x.c
 @@ -14,6 +14,7 @@
@@ -47,17 +47,16 @@ index 210f184..400cceb 100644
  	int ch; /* char height */
  	int cw; /* char width  */
  	int mode; /* window state/mode flags */
-@@ -101,6 +103,9 @@ typedef struct {
+@@ -101,6 +103,8 @@ typedef struct {
  		XVaNestedList spotlist;
  	} ime;
  	Draw draw;
-+	Drawable xftdraw; /* buffer that xft draws to */
 +	Drawable bgimg;   /* background image */
 +	GC bggc;          /* Graphics Context for background */
  	Visual *vis;
  	XSetWindowAttributes attrs;
  	int scr;
-@@ -151,6 +156,7 @@ static void ximinstantiate(Display *, XPointer, XPointer);
+@@ -151,6 +155,7 @@ static void ximinstantiate(Display *, XPointer, XPointer);
  static void ximdestroy(XIM, XPointer, XPointer);
  static int xicdestroy(XIC, XPointer, XPointer);
  static void xinit(int, int);
@@ -65,15 +64,7 @@ index 210f184..400cceb 100644
  static void cresize(int, int);
  static void xresize(int, int);
  static void xhints(void);
-@@ -736,6 +742,7 @@ xresize(int col, int row)
- 	xw.buf = XCreatePixmap(xw.dpy, xw.win, win.w, win.h,
- 			DefaultDepth(xw.dpy, xw.scr));
- 	XftDrawChange(xw.draw, xw.buf);
-+	xw.xftdraw = XftDrawDrawable(xw.draw);
- 	xclear(0, 0, win.w, win.h);
- 
- 	/* resize to new width */
-@@ -820,9 +827,9 @@ xsetcolorname(int x, const char *name)
+@@ -820,9 +825,9 @@ xsetcolorname(int x, const char *name)
  void
  xclear(int x1, int y1, int x2, int y2)
  {
@@ -82,19 +73,11 @@ index 210f184..400cceb 100644
 -			x1, y1, x2-x1, y2-y1);
 +	if (pseudotransparency)
 +		XSetTSOrigin(xw.dpy, xw.bggc, -win.x, -win.y);
-+	XFillRectangle(xw.dpy, xw.xftdraw, xw.bggc, x1, y1, x2-x1, y2-y1);
++	XFillRectangle(xw.dpy, xw.buf, xw.bggc, x1, y1, x2-x1, y2-y1);
  }
  
  void
-@@ -1158,6 +1165,7 @@ xinit(int cols, int rows)
- 
- 	/* Xft rendering context */
- 	xw.draw = XftDrawCreate(xw.dpy, xw.buf, xw.vis, xw.cmap);
-+	xw.xftdraw = XftDrawDrawable(xw.draw);
- 
- 	/* input methods */
- 	if (!ximopen(xw.dpy)) {
-@@ -1207,6 +1215,64 @@ xinit(int cols, int rows)
+@@ -1207,6 +1212,65 @@ xinit(int cols, int rows)
  		xsel.xtarget = XA_STRING;
  }
  
@@ -138,6 +121,7 @@ index 210f184..400cceb 100644
 +		image32[i++] = buf[6];
 +        }
 +
++	fclose(bgf);
 +	bgxi = XCreateImage(xw.dpy, DefaultVisual(xw.dpy, xw.scr),
 +		24, ZPixmap, 0, image32, bgw, bgh, 32, 0);
 +	xw.bgimg = XCreatePixmap(xw.dpy, xw.win, bgw, bgh,
@@ -159,7 +143,7 @@ index 210f184..400cceb 100644
  int
  xmakeglyphfontspecs(XftGlyphFontSpec *specs, const Glyph *glyphs, int len, int x, int y)
  {
-@@ -1447,7 +1513,10 @@ xdrawglyphfontspecs(const XftGlyphFontSpec *specs, Glyph base, int len, int x, i
+@@ -1447,7 +1511,10 @@ xdrawglyphfontspecs(const XftGlyphFontSpec *specs, Glyph base, int len, int x, i
  		xclear(winx, winy + win.ch, winx + width, win.h);
  
  	/* Clean up the region we want to draw to. */
@@ -171,7 +155,7 @@ index 210f184..400cceb 100644
  
  	/* Set the clip region because Xft is sometimes dirty. */
  	r.x = 0;
-@@ -1855,8 +1924,19 @@ cmessage(XEvent *e)
+@@ -1855,8 +1922,19 @@ cmessage(XEvent *e)
  void
  resize(XEvent *e)
  {
@@ -193,7 +177,7 @@ index 210f184..400cceb 100644
  
  	cresize(e->xconfigure.width, e->xconfigure.height);
  }
-@@ -2041,6 +2121,7 @@ run:
+@@ -2041,6 +2119,7 @@ run:
  	rows = MAX(rows, 1);
  	tnew(cols, rows);
  	xinit(cols, rows);
@@ -202,5 +186,5 @@ index 210f184..400cceb 100644
  	selinit();
  	run();
 -- 
-2.31.1
+2.32.0
 

@@ -34,6 +34,7 @@ There are several other projects which are inspired by the spirit of suckless.
 * [ssg](https://www.romanzolotarev.com/ssg.html) - Static site generator 180 LoC
 * [sup](//oldgit.suckless.org/sup/) - minimalistic sudo replacement
 * [sw](https://github.com/jroimartin/sw) - minimalistic web framework
+* [sxmo](https://sxmo.org/) - minimalistic phone environment which uses suckless tools
 * [tiv](https://github.com/radare/tiv) - terminal image viewer
 * [wjt](https://github.com/ianremmler/wjt) - slider widget for X
 * [xbmouse](https://github.com/vlaadbrain/xbmouse) - simply bind a mouse button to a command

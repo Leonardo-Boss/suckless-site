@@ -1,4 +1,4 @@
-center first window
+﻿center first window
 ===================
 
 Description
@@ -17,8 +17,8 @@ Usage
 It can be enabled for any window in config file, by setting `CenterThisWindow`
 to `1`:
 
-   /* class      	instance    title    tags mask     isfloating        CenterThisWindow?     monitor */
-   { "st",              NULL,       NULL,    0,            0,     	     1,		           -1 },
+	/* class      	instance    title    tags mask     isfloating        CenterThisWindow?     monitor */
+	{ "st",         NULL,       NULL,    0,            0,     	     1,		           -1 },
 
 With one and two clients in master respectively results in:
 

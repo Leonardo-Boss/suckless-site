@@ -1,3 +1,15 @@
+From a4a08baf35edb6b50ed14f76e99d0c6fe790759d Mon Sep 17 00:00:00 2001
+From: Max Schillinger <maxschillinger@web.de>
+Date: Fri, 9 Jul 2021 17:17:36 +0200
+Subject: [PATCH] Bug fix: Writing first entry to history file was skipped
+
+---
+ config.def.h |   2 +
+ dmenu.1      |   5 ++
+ dmenu.c      | 144 ++++++++++++++++++++++++++++++++++++++++++++++++++-
+ dmenu_run    |   2 +-
+ 4 files changed, 151 insertions(+), 2 deletions(-)
+
 diff --git a/config.def.h b/config.def.h
 index 1edb647..e3e1b53 100644
 --- a/config.def.h
@@ -8,7 +20,7 @@ index 1edb647..e3e1b53 100644
  static unsigned int lines      = 0;
 +static unsigned int maxhist    = 64;
 +static int histnodup           = 1;	/* if 0, record repeated histories */
-
+ 
  /*
   * Characters not considered part of a word while deleting words
 diff --git a/dmenu.1 b/dmenu.1
@@ -35,24 +47,24 @@ index 323f93c..ff496dd 100644
  dmenu is completely controlled by the keyboard.  Items are selected using the
  arrow keys, page up, page down, home, and end.
 diff --git a/dmenu.c b/dmenu.c
-index 65f25ce..9d15f78 100644
+index 65f25ce..5023257 100644
 --- a/dmenu.c
 +++ b/dmenu.c
 @@ -53,6 +53,10 @@ static XIC xic;
  static Drw *drw;
  static Clr *scheme[SchemeLast];
-
+ 
 +static char *histfile;
 +static char **history;
 +static size_t histsz, histpos;
 +
  #include "config.h"
-
+ 
  static int (*fstrncmp)(const char *, const char *, size_t) = strncmp;
 @@ -304,6 +308,129 @@ movewordedge(int dir)
  	}
  }
-
+ 
 +static void
 +loadhistory(void)
 +{
@@ -160,7 +172,7 @@ index 65f25ce..9d15f78 100644
 +			die("failed to write to %s", histfile);
 +		}
 +	}
-+	if (!histnodup || (histsz > 0 && strcmp(input, history[histsz-1]) != 0)) { /* TODO */
++	if (histsz == 0 || !histnodup || (histsz > 0 && strcmp(input, history[histsz-1]) != 0)) { /* TODO */
 +		if (0 >= fputs(input, fp)) {
 +			die("failed to write to %s", histfile);
 +		}
@@ -212,7 +224,7 @@ index 65f25ce..9d15f78 100644
 +	      "             [-H histfile]", stderr);
  	exit(1);
  }
-
+ 
 @@ -715,6 +853,8 @@ main(int argc, char *argv[])
  		} else if (i + 1 == argc)
  			usage();
@@ -225,7 +237,7 @@ index 65f25ce..9d15f78 100644
 @@ -757,6 +897,8 @@ main(int argc, char *argv[])
  		die("pledge");
  #endif
-
+ 
 +	loadhistory();
 +
  	if (fast && !isatty(0)) {
@@ -239,3 +251,6 @@ index 834ede5..59ec622 100755
  #!/bin/sh
 -dmenu_path | dmenu "$@" | ${SHELL:-"/bin/sh"} &
 +dmenu_path | dmenu -H "${XDG_CACHE_HOME:-$HOME/.cache/}/dmenu_run.hist" "$@" | ${SHELL:-"/bin/sh"} &
+-- 
+2.25.1
+

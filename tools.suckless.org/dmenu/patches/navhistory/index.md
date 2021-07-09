@@ -14,8 +14,8 @@ To change this behaviour, set 'histnodup' to 0 in config.h.
 
 Download
 --------
+* [dmenu-navhistory-5.0.diff](dmenu-navhistory-5.0.diff)
 * [dmenu-navhistory-4.6.diff](dmenu-navhistory-4.6.diff)
-* [dmenu-navhistory-20200709.diff](dmenu-navhistory-20200709.diff)
 
 ### With Search
 This patch extends navhist with history-search functionality. Press

@@ -14,7 +14,7 @@ Once applied, only the terminal colors are changed. You can find a
 
 Example
 -------
-[![Screenshot](st-moonfly.png)](st-moonfly.png)
+[![Screenshot](moonfly.png)](moonfly.png)
 
 Running zsh.
 

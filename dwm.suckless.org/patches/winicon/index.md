@@ -7,9 +7,18 @@ Description
 
 ![screenshots](screenshots.png)
 
-It is recommended to enable compiler flags: **-march=native**, **-ffast-math** and **-faggressive-loop-optimizations** to gain better performance.
+It is recommended to enable the compiler flag: **-march=native** to gain better performance.
 
-The project is being managed and developed on this GitHub [repo](https://github.com/AdamYuan/dwm-winicon). If you discover any bugs or have any idea to optimize it, feel free to create an issue there.
+The patch is being managed and developed on this GitHub [repo](https://github.com/AdamYuan/dwm-winicon). If you discover any bugs or have any idea to optimize it, feel free to create an issue there.
+
+Dependency
+----------
+The patch depends on Imlib2 for icon scaling, which can be easily installed in most distros.
+
+Arch Linux:
+	sudo pacman -S imlib2
+Debian:
+	sudo apt install libimlib2-dev
 
 Configuration
 -------------
@@ -18,8 +27,8 @@ Configuration
 
 Download
 --------
-* [dwm-winicon-6.2-v1.1.diff](dwm-winicon-6.2-v1.1.diff) (2021-07-10)
+* [dwm-winicon-6.2-v1.2.diff](dwm-winicon-6.2-v1.2.diff) (2021-07-11)
 
 Author
 ------
-* Adam Yuan - `<y13916619121 at 126 dot com>`
+* Adam Yuan - `<y13916619121@126.com>`

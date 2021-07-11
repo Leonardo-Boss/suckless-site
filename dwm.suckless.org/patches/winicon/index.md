@@ -7,6 +7,8 @@ Description
 
 ![screenshots](screenshots.png)
 
+It is recommended to enable compiler flags: **-march=native**, **-ffast-math** and **-faggressive-loop-optimizations** to gain better performance.
+
 The project is being managed and developed on this GitHub [repo](https://github.com/AdamYuan/dwm-winicon). If you discover any bugs or have any idea to optimize it, feel free to create an issue there.
 
 Configuration
@@ -16,7 +18,7 @@ Configuration
 
 Download
 --------
-* [dwm-winicon-6.2-v1.diff](dwm-winicon-6.2-v1.diff)
+* [dwm-winicon-6.2-v1.1.diff](dwm-winicon-6.2-v1.1.diff) (2021-07-10)
 
 Author
 ------

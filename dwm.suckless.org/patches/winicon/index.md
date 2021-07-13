@@ -27,7 +27,7 @@ Configuration
 
 Download
 --------
-* [dwm-winicon-6.2-v1.2.diff](dwm-winicon-6.2-v1.2.diff) (2021-07-11)
+* [dwm-winicon-6.2-v1.2.diff](dwm-winicon-6.2-v1.2.diff) (2021-07-13)
 
 Author
 ------

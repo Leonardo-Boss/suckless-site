@@ -9,7 +9,7 @@ not possible under barebone xft:
 
 **Simple markup** for status messages (optional in 6.0 patch, enable/disable it in your
 config.h) using
-[pango markup](https://developer.gnome.org/pango/stable/PangoMarkupFormat.html). So
+[pango markup](https://developer.gnome.org/pygtk/stable/pango-markup-language.html). So
 you can format your status messages specifying fg/bg colors, sizes,
 sub/superscripts, underline, emphasis, bold, etc. You can do dynamic font
 switching, also! To play safe with the rest of the status bar, markup support

@@ -45,13 +45,14 @@ Configuration
 	static const unsigned int mastersplit = 1;	/* number of tiled clients in the master area */
 
 	static Key keys[] = {
+    ...
+		{ MODKEY,                       XK_i,      shiftmastersplit, {.i = +1} },   /* increase the number of tiled clients in the master area */
+		{ MODKEY,                       XK_d,      shiftmastersplit, {.i = -1} },   /* reduce the number of tiled clients in the master area */
 	...
 		{ MODKEY|ControlMask,           XK_t,      rotatelayoutaxis, {.i = 0} },    /* 0 = layout axis */
 		{ MODKEY|ControlMask,           XK_Tab,    rotatelayoutaxis, {.i = 1} },    /* 1 = master axis */
 		{ MODKEY|ControlMask|ShiftMask, XK_Tab,    rotatelayoutaxis, {.i = 2} },    /* 2 = stack axis */
 		{ MODKEY|ControlMask,           XK_Return, mirrorlayout,     {0} },
-		{ MODKEY|ControlMask,           XK_h,      shiftmastersplit, {.i = -1} },   /* reduce the number of tiled clients in the master area */
-		{ MODKEY|ControlMask,           XK_l,      shiftmastersplit, {.i = +1} },   /* increase the number of tiled clients in the master area */
 
 
 Usage
@@ -67,7 +68,7 @@ pressing `ALT+m` (in the default configuration).
 
 Download
 --------
-* [dwm-flextile-6.2.diff](dwm-flextile-6.2.diff)
+* [dwm-flextile-20210722-138b405.diff](dwm-flextile-20210722-138b405.diff)
 * [dwm-flextile-5.8.2.diff](dwm-flextile-5.8.2.diff)
 * [dwm-flextile-5.8.1.diff](dwm-flextile-5.8.1.diff)
 

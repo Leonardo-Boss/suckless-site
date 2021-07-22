@@ -31,7 +31,7 @@ See also: unicode references
 [U2580.pdf](http://www.unicode.org/charts/PDF/U2580.pdf),
 [U2800.pdf](http://www.unicode.org/charts/PDF/U2800.pdf),
 and example pages
-[utf8demo.txt](https://salsa.debian.org/printing-team/cups/raw/debian/master/cups/utf8demo.txt)
+[UTF-8-demo.txt](https://www.cl.cam.ac.uk/~mgk25/ucs/examples/UTF-8-demo.txt)
 and
 [libvte test page](https://github.com/GNOME/vte/blob/master/doc/boxes.txt).
 

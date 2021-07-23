@@ -167,6 +167,7 @@ This covers most console-based programs and programs from
 
 ### Password managers
 
+* [pinentry-dmenu](https://github.com/ritze/pinentry-dmenu) - pinentry-dmenu is a pinentry program with the charm of dmenu. It is a nice interface to [pass](https://www.passwordstore.org/)
 * [pass](https://www.passwordstore.org/) - "The standard UNIX password manager".
 * [spm](https://notabug.org/kl3/spm/) - Simple password manager (actively maintained fork of nmeum's tpm).
 * [tpm](https://github.com/nmeum/tpm/) - Tiny password manager.

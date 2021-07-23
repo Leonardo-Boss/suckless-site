@@ -7,7 +7,7 @@ Description
 
 ![screenshots](screenshots.png)
 
-It is recommended to enable the compiler flag: **-march=native** to gain better performance.
+It is recommended to enable the compiler optimization flags: **-O3** and **-march=native** to enable auto loop vectorize, which leads to better performance.
 
 The patch is being managed and developed on this GitHub [repo](https://github.com/AdamYuan/dwm-winicon). If you discover any bugs or have any idea to optimize it, feel free to create an issue there.
 
@@ -27,7 +27,42 @@ Configuration
 
 Download
 --------
-* [dwm-winicon-6.2-v1.2.diff](dwm-winicon-6.2-v1.2.diff) (2021-07-13)
+* [dwm-winicon-6.2-v1.3.diff](dwm-winicon-6.2-v1.3.diff) (2021-07-23)
+
+Alpha Patch
+-----------
+If you also use [alpha patch](https://dwm.suckless.org/patches/alpha/), some changes are needed to make this patch work properly.
+
+After applying both patches,
+* change the last return statement in **geticonprop** function (dwm.c) to
+
+		return XCreateImage(drw->dpy, drw->visual, drw->depth, ZPixmap, 0, (char *)icbuf, icw, ich, 32, 0);
+
+* change **drw_img** and **blend** function (drw.c) to
+
+	inline static uint8_t div255(uint16_t x) { return (x*0x8081u) >> 23u; }
+	inline static uint32_t blend(uint32_t p1rb, uint32_t p1g, uint8_t p1a, uint32_t p2) {
+		uint8_t a = p2 >> 24u;
+		uint32_t rb = (p2 & 0xFF00FFu) + ( (a * p1rb) >> 8u );
+		uint32_t g = (p2 & 0x00FF00u) + ( (a * p1g) >> 8u );
+		return (rb & 0xFF00FFu) | (g & 0x00FF00u) | div255(~a * 255u + a * p1a) << 24u;
+	}
+		
+	void
+	drw_img(Drw *drw, int x, int y, XImage *img, uint32_t *tmp) 
+	{
+		if (!drw || !drw->scheme)
+			return;
+		uint32_t *data = (uint32_t *)img->data, p = drw->scheme[ColBg].pixel,
+				 prb = p & 0xFF00FFu, pg = p & 0x00FF00u;
+		uint8_t pa = p >> 24u;
+		int icsz = img->width * img->height, i;
+		for (i = 0; i < icsz; ++i) tmp[i] = blend(prb, pg, pa, data[i]);
+	
+		img->data = (char *) tmp;
+		XPutImage(drw->dpy, drw->drawable, drw->gc, img, 0, 0, x, y, img->width, img->height);
+		img->data = (char *) data;
+	}
 
 Author
 ------

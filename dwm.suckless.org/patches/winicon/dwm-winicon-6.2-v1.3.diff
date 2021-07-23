@@ -81,7 +81,7 @@ index 4bcd5ad..07b6433 100644
  /* Map functions */
  void drw_map(Drw *drw, Window win, int x, int y, unsigned int w, unsigned int h);
 diff --git a/dwm.c b/dwm.c
-index 4465af1..173504b 100644
+index 4465af1..850dbbf 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -28,6 +28,8 @@
@@ -153,7 +153,7 @@ index 4465af1..173504b 100644
  			if (m->sel->isfloating)
  				drw_rect(drw, x + boxs, boxs, boxw, boxw, m->sel->isfixed, 0);
  		} else {
-@@ -899,6 +908,87 @@ getstate(Window w)
+@@ -899,6 +908,85 @@ getstate(Window w)
  	return result;
  }
  
@@ -174,49 +174,47 @@ index 4465af1..173504b 100644
 +	if (XGetWindowProperty(dpy, win, netatom[NetWMIcon], 0L, LONG_MAX, False, AnyPropertyType, 
 +						   &real, &format, &n, &extra, (unsigned char **)&p) != Success)
 +		return NULL; 
-+	if (n == 0) { XFree(p); return NULL; }
++	if (n == 0 || format != 32) { XFree(p); return NULL; }
 +
-+	unsigned long *bstp = NULL, w, h;
++	unsigned long *bstp = NULL;
++	uint32_t w, h, sz;
 +
 +	{
 +		const unsigned long *end = p + n;
 +		unsigned long *i;
-+		int bstd = INT_MAX, d, m;
-+		for (i = p; i < end; ) {
-+			w = *i++; h = *i++;
-+			m = w > h ? w : h;
-+			if (m >= ICONSIZE && (d = m - ICONSIZE) < bstd) { bstd = d; bstp = i; }
-+			i += (w * h);
++		uint32_t bstd = UINT32_MAX, d, m;
++		for (i = p; i + 1 < end; ) {
++			if ((w = *i++) > UINT16_MAX || (h = *i++) > UINT16_MAX) { XFree(p); return NULL; }
++			m = w > h ? w : h; sz = w * h;
++			if ((i += sz) <= end && m >= ICONSIZE && (d = m - ICONSIZE) < bstd) { bstd = d; bstp = i - sz; }
 +		}
 +		if (!bstp) {
-+			for (i = p; i < end; ) {
-+				w = *i++; h = *i++;
-+				m = w > h ? w : h;
-+				if ((d = ICONSIZE - m) < bstd) { bstd = d; bstp = i; }
-+				i += (w * h);
++			for (i = p; i + 1 < end; ) {
++				if ((w = *i++) > UINT16_MAX || (h = *i++) > UINT16_MAX) { XFree(p); return NULL; }
++				m = w > h ? w : h; sz = w * h;
++				if ((i += sz) <= end && (d = ICONSIZE - m) < bstd) { bstd = d; bstp = i - sz; }
 +			}
 +		}
 +		if (!bstp) { XFree(p); return NULL; }
 +	}
 +
-+	w = *(bstp - 2); h = *(bstp - 1);
++	if ((w = *(bstp - 2)) == 0 || (h = *(bstp - 1)) == 0) { XFree(p); return NULL; }
 +
-+	int icw, ich, icsz;
++	uint32_t icw, ich, icsz;
 +	if (w <= h) {
 +		ich = ICONSIZE; icw = w * ICONSIZE / h;
-+		if (icw < 1) icw = 1;
++		if (icw == 0) icw = 1;
 +	}
 +	else {
 +		icw = ICONSIZE; ich = h * ICONSIZE / w;
-+		if (ich < 1) ich = 1;
++		if (ich == 0) ich = 1;
 +	}
 +	icsz = icw * ich;
 +
-+	int i;
++	uint32_t i;
 +#if ULONG_MAX > UINT32_MAX
-+	int sz = w * h;
 +	uint32_t *bstp32 = (uint32_t *)bstp;
-+	for (i = 0; i < sz; ++i) bstp32[i] = bstp[i];
++	for (sz = w * h, i = 0; i < sz; ++i) bstp32[i] = bstp[i];
 +#endif
 +	uint32_t *icbuf = malloc(icsz << 2); if(!icbuf) { XFree(p); return NULL; }
 +	if (w == icw && h == ich) memcpy(icbuf, bstp, icsz << 2);
@@ -241,7 +239,7 @@ index 4465af1..173504b 100644
  int
  gettextprop(Window w, Atom atom, char *text, unsigned int size)
  {
-@@ -1030,6 +1120,8 @@ manage(Window w, XWindowAttributes *wa)
+@@ -1030,6 +1118,8 @@ manage(Window w, XWindowAttributes *wa)
  	c->h = c->oldh = wa->height;
  	c->oldbw = wa->border_width;
  
@@ -250,7 +248,7 @@ index 4465af1..173504b 100644
  	updatetitle(c);
  	if (XGetTransientForHint(dpy, w, &trans) && (t = wintoclient(trans))) {
  		c->mon = t->mon;
-@@ -1240,6 +1332,11 @@ propertynotify(XEvent *e)
+@@ -1240,6 +1330,11 @@ propertynotify(XEvent *e)
  			if (c == c->mon->sel)
  				drawbar(c->mon);
  		}
@@ -262,7 +260,7 @@ index 4465af1..173504b 100644
  		if (ev->atom == netatom[NetWMWindowType])
  			updatewindowtype(c);
  	}
-@@ -1556,6 +1653,7 @@ setup(void)
+@@ -1556,6 +1651,7 @@ setup(void)
  	netatom[NetActiveWindow] = XInternAtom(dpy, "_NET_ACTIVE_WINDOW", False);
  	netatom[NetSupported] = XInternAtom(dpy, "_NET_SUPPORTED", False);
  	netatom[NetWMName] = XInternAtom(dpy, "_NET_WM_NAME", False);
@@ -270,7 +268,7 @@ index 4465af1..173504b 100644
  	netatom[NetWMState] = XInternAtom(dpy, "_NET_WM_STATE", False);
  	netatom[NetWMCheck] = XInternAtom(dpy, "_NET_SUPPORTING_WM_CHECK", False);
  	netatom[NetWMFullscreen] = XInternAtom(dpy, "_NET_WM_STATE_FULLSCREEN", False);
-@@ -1746,6 +1844,15 @@ toggleview(const Arg *arg)
+@@ -1746,6 +1842,15 @@ toggleview(const Arg *arg)
  	}
  }
  
@@ -286,7 +284,7 @@ index 4465af1..173504b 100644
  void
  unfocus(Client *c, int setfocus)
  {
-@@ -1767,6 +1874,7 @@ unmanage(Client *c, int destroyed)
+@@ -1767,6 +1872,7 @@ unmanage(Client *c, int destroyed)
  
  	detach(c);
  	detachstack(c);
@@ -294,7 +292,7 @@ index 4465af1..173504b 100644
  	if (!destroyed) {
  		wc.border_width = c->oldbw;
  		XGrabServer(dpy); /* avoid race conditions */
-@@ -2001,6 +2109,13 @@ updatetitle(Client *c)
+@@ -2001,6 +2107,13 @@ updatetitle(Client *c)
  		strcpy(c->name, broken);
  }
  

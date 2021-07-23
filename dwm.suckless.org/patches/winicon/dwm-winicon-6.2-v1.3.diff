@@ -81,7 +81,7 @@ index 4bcd5ad..07b6433 100644
  /* Map functions */
  void drw_map(Drw *drw, Window win, int x, int y, unsigned int w, unsigned int h);
 diff --git a/dwm.c b/dwm.c
-index 4465af1..850dbbf 100644
+index 4465af1..b02a80c 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -28,6 +28,8 @@
@@ -183,16 +183,16 @@ index 4465af1..850dbbf 100644
 +		const unsigned long *end = p + n;
 +		unsigned long *i;
 +		uint32_t bstd = UINT32_MAX, d, m;
-+		for (i = p; i + 1 < end; ) {
++		for (i = p; i < end - 1; i += sz) {
 +			if ((w = *i++) > UINT16_MAX || (h = *i++) > UINT16_MAX) { XFree(p); return NULL; }
-+			m = w > h ? w : h; sz = w * h;
-+			if ((i += sz) <= end && m >= ICONSIZE && (d = m - ICONSIZE) < bstd) { bstd = d; bstp = i - sz; }
++			if ((sz = w * h) > end - i) break;
++			if ((m = w > h ? w : h) >= ICONSIZE && (d = m - ICONSIZE) < bstd) { bstd = d; bstp = i; }
 +		}
 +		if (!bstp) {
-+			for (i = p; i + 1 < end; ) {
++			for (i = p; i < end - 1; i += sz) {
 +				if ((w = *i++) > UINT16_MAX || (h = *i++) > UINT16_MAX) { XFree(p); return NULL; }
-+				m = w > h ? w : h; sz = w * h;
-+				if ((i += sz) <= end && (d = ICONSIZE - m) < bstd) { bstd = d; bstp = i - sz; }
++				if ((sz = w * h) > end - i) break;
++				if ((d = ICONSIZE - (w > h ? w : h)) < bstd) { bstd = d; bstp = i; }
 +			}
 +		}
 +		if (!bstp) { XFree(p); return NULL; }

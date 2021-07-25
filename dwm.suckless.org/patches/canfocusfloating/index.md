@@ -13,7 +13,7 @@ Inspired by [canfocusrule](https://dwm.suckless.org/patches/canfocusrule/) patch
 
 Download
 --------
-* [dwm-canfocusfloating-20210724-b914109.diff](dwm-canfocusfloating-20210219-2d308d6.diff)
+* [dwm-canfocusfloating-20210724-b914109.diff](dwm-canfocusfloating-20210724-b914109.diff)
 
 Authors
 -------

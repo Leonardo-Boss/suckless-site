@@ -9,6 +9,10 @@ News
 
 [Atom feed](//suckless.org/atom.xml)
 
+2021-07-30
+----------
+[svkbd 0.4](//tools.suckless.org/x/svkbd/) released: [download](//dl.suckless.org/tools/svkbd-0.4.tar.gz)
+
 2021-05-09
 ----------
 On Tuesday, 2021-05-11 there will be scheduled maintenance of the suckless

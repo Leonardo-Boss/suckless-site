@@ -30,7 +30,7 @@ enforce upon you as a Linux user, because »they know better«.
 
 Please add all the links you can find! Generations after us have to know how
 to not do software and system development! See the
-[wiki instructions](//suckless.org/wiki) in how to contribute to this
+[wiki instructions](//suckless.org/wiki) on how to contribute to this
 page.
 
 The Never Ending Part

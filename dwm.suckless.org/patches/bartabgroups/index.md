@@ -25,6 +25,8 @@ and gaps patches in tile mode:
 
 ## Download
 * [dwm-bartabgroups-6.2.diff](dwm-bartabgroups-6.2.diff) (01/25/2020)
+* [dwm-bartabgroups-20210802-138b405.diff](dwm-bartabgroups-20210802-138b405.diff) (02/08/2021)
 
 ## Author
 - Miles Alan (m@milesalan.com)
+- Jack Bird (jack.bird@dur.ac.uk) (138b405 port)

@@ -161,7 +161,7 @@ index 210f184..6184a11 100644
 +		p = tstack.titles[tstack.i];
 +	} else {
 +		DEFAULT(p, opt_title);
-+		tstack.titles[tstack.i] = strdup(p);
++		tstack.titles[tstack.i] = xstrdup(p);
 +	}
 +
 +	Xutf8TextListToTextProperty(xw.dpy, &p, 1, XUTF8StringStyle, &prop);

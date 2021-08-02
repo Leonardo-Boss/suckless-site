@@ -21,6 +21,7 @@ information on this issue can be found in this
 Download
 --------
 * [st-openbsd-20160727-308bfbf.diff](st-openbsd-20160727-308bfbf.diff)
+* [st-openbsd-20210802-2ec571a.diff](st-openbsd-20210802-2ec571a.diff)
 
 Authors
 -------

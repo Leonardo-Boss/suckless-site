@@ -13,6 +13,9 @@ Setting `floatborderpx` to `-1` (or any value less than zero) will mean that the
 
 Please note that this patch needs `rm config.h` to be added to the `Makefile`.
 
+\[since dwm-floatrules-20210801-138b405.diff\]:  
+Setting any of `floatx`, `floaty`, `floatw`, `floath`  to `-1` (or any value less than zero) will mean that the geometry parameter should not be overwritten.
+
 Screenshots:
 ![floatrules screenshot](floatrules.png)
 
@@ -34,6 +37,7 @@ Updates
 
 Download
 --------
+* [dwm-floatrules-20210801-138b405.diff](dwm-floatrules-20210801-138b405.diff)
 * [dwm-floatrules-20201119-d08dd9c.diff](dwm-floatrules-20201119-d08dd9c.diff)
 * [dwm-floatrules-20201114-d08dd9c.diff](dwm-floatrules-20201114-d08dd9c.diff)
 * [dwm-floatrules-20201107-61bb8b2.diff](dwm-floatrules-20201107-61bb8b2.diff)
@@ -43,5 +47,6 @@ Author
 ------
 * Alex Cole (original) <ajzcole at airmail.cc>
 * Jakub Profota
+* Natanael J Rabello
 
 The original author would like to apologise for the several bugs that originally plagued even this relatively simple patch.

@@ -25,6 +25,7 @@ Download
 --------
 * [st-openclipboard-20190202-0.8.1.diff](st-openclipboard-20190202-0.8.1.diff)
 * [st-openclipboard-20190202-3be4cf1.diff](st-openclipboard-20190202-3be4cf1.diff)
+* [st-openclipboard-20210802-2ec571.diff](st-openclipboard-20210802-2ec571.diff)
 
 Authors
 -------

@@ -1,14 +1,14 @@
-From b53d1edf59c34792ca284c783afcc0eff1f0ae07 Mon Sep 17 00:00:00 2001
+From d7404b76afc7976b4340e4c0354ee00e110c3c54 Mon Sep 17 00:00:00 2001
 From: Ashish Kumar Yadav <ashishkumar.yadav@students.iiserpune.ac.in>
-Date: Sun, 1 Aug 2021 19:35:08 +0530
+Date: Wed, 4 Aug 2021 04:15:16 +0530
 Subject: [PATCH] Implement support for CSI 22 and 23
 
 This patch implements title stack into st.
 ---
  st.c  | 34 +++++++++++++++++++++++++++++++---
  win.h |  4 +++-
- x.c   | 43 +++++++++++++++++++++++++++++++++++++++----
- 3 files changed, 73 insertions(+), 8 deletions(-)
+ x.c   | 44 +++++++++++++++++++++++++++++++++++++++-----
+ 3 files changed, 73 insertions(+), 9 deletions(-)
 
 diff --git a/st.c b/st.c
 index 76b7e0d..9581b6f 100644
@@ -99,7 +99,7 @@ index a6ef1b9..e24337e 100644
  void xsetmode(int, unsigned int);
  void xsetpointermotion(int);
 diff --git a/x.c b/x.c
-index 210f184..6184a11 100644
+index 210f184..b4bebff 100644
 --- a/x.c
 +++ b/x.c
 @@ -63,6 +63,9 @@ static void ttysend(const Arg *);
@@ -112,59 +112,50 @@ index 210f184..6184a11 100644
  /* XEMBED messages */
  #define XEMBED_FOCUS_IN  4
  #define XEMBED_FOCUS_OUT 5
-@@ -116,6 +119,11 @@ typedef struct {
- 	struct timespec tclick2;
- } XSelection;
- 
-+typedef struct {
-+	int i;
-+	char *titles[TITLESTACKSIZE];
-+} XTitleStack;
-+
- /* Font structure */
- #define Font Font_
- typedef struct {
-@@ -219,6 +227,7 @@ static void (*handler[LASTEvent])(XEvent *) = {
- static DC dc;
+@@ -220,6 +223,8 @@ static DC dc;
  static XWindow xw;
  static XSelection xsel;
-+static XTitleStack tstack;
  static TermWindow win;
++static int tstki; /* title stack index */
++static char *titlestack[TITLESTACKSIZE]; /* title stack */
  
  /* Font Ring Cache */
-@@ -1580,18 +1589,44 @@ xsetenv(void)
+ enum {
+@@ -1580,18 +1585,47 @@ xsetenv(void)
  }
  
  void
 -xsettitle(char *p)
 +xfreetitlestack(void)
-+{
-+	for (int i = 0; i < TITLESTACKSIZE; i++) {
-+		free(tstack.titles[i]);
-+		tstack.titles[i] = NULL;
+ {
+-	XTextProperty prop;
+-	DEFAULT(p, opt_title);
++	for (int i = 0; i < LEN(titlestack); i++) {
++		free(titlestack[i]);
++		titlestack[i] = NULL;
 +	}
 +}
-+
-+void
-+xsettitle(char *p, int pop)
- {
- 	XTextProperty prop;
--	DEFAULT(p, opt_title);
  
 -	Xutf8TextListToTextProperty(xw.dpy, &p, 1, XUTF8StringStyle,
 -			&prop);
-+	free(tstack.titles[tstack.i]);
-+
++void
++xsettitle(char *p, int pop)
++{
++ 	XTextProperty prop;
++ 
++	free(titlestack[tstki]);
 +	if (pop) {
-+		tstack.titles[tstack.i] = NULL;
-+		tstack.i = (tstack.i - 1 + TITLESTACKSIZE) % TITLESTACKSIZE;
-+		p = tstack.titles[tstack.i] ? tstack.titles[tstack.i] : opt_title;
++		titlestack[tstki] = NULL;
++		tstki = (tstki - 1 + TITLESTACKSIZE) % TITLESTACKSIZE;
++		p = titlestack[tstki] ? titlestack[tstki] : opt_title;
++	} else if (p) {
++		titlestack[tstki] = xstrdup(p);
 +	} else {
-+		DEFAULT(p, opt_title);
-+		tstack.titles[tstack.i] = xstrdup(p);
++		titlestack[tstki] = NULL;
++		p = opt_title;
 +	}
-+
-+	Xutf8TextListToTextProperty(xw.dpy, &p, 1, XUTF8StringStyle, &prop);
++ 
++ 	Xutf8TextListToTextProperty(xw.dpy, &p, 1, XUTF8StringStyle, &prop);
  	XSetWMName(xw.dpy, xw.win, &prop);
  	XSetTextProperty(xw.dpy, xw.win, &prop, xw.netwmname);
  	XFree(prop.value);
@@ -173,9 +164,11 @@ index 210f184..6184a11 100644
 +void
 +xpushtitle(void)
 +{
-+	tstack.i = (tstack.i + 1) % TITLESTACKSIZE;
-+	free(tstack.titles[tstack.i]);
-+	tstack.titles[tstack.i] = NULL;
++	int tstkin = (tstki + 1) % TITLESTACKSIZE;
++
++	free(titlestack[tstkin]);
++	titlestack[tstkin] = titlestack[tstki] ? xstrdup(titlestack[tstki]) : NULL;
++	tstki = tstkin;
 +}
 +
  int

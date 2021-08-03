@@ -158,7 +158,7 @@ index 210f184..6184a11 100644
 +	if (pop) {
 +		tstack.titles[tstack.i] = NULL;
 +		tstack.i = (tstack.i - 1 + TITLESTACKSIZE) % TITLESTACKSIZE;
-+		p = tstack.titles[tstack.i];
++		p = tstack.titles[tstack.i] ? tstack.titles[tstack.i] : opt_title;
 +	} else {
 +		DEFAULT(p, opt_title);
 +		tstack.titles[tstack.i] = xstrdup(p);

@@ -1,22 +1,21 @@
-From 36c4e246ad47333f2b8a82610ba2adebeb2043b2 Mon Sep 17 00:00:00 2001
+From 6c6a6cfaa73bfd24014df5c810cc78756ec325b4 Mon Sep 17 00:00:00 2001
 From: Jack Bird <jack.bird@durham.ac.uk>
-Date: Thu, 29 Jul 2021 21:39:33 +0100
-Subject: [PATCH] Able to switch to master from anywhere in the stack and can
- also return to the previously selected client from the master
+Date: Wed, 4 Aug 2021 20:27:23 +0100
+Subject: [PATCH] Focus master and return supported over all tags
 
 ---
- dwm.c | 28 ++++++++++++++++++++++++++++
- 1 file changed, 28 insertions(+)
+ dwm.c | 37 +++++++++++++++++++++++++++++++++++++
+ 1 file changed, 37 insertions(+)
 
 diff --git a/dwm.c b/dwm.c
-index 5e4d494..eab8d57 100644
+index 5e4d494..dcb98b4 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -127,6 +127,7 @@ struct Monitor {
  	Client *clients;
  	Client *sel;
  	Client *stack;
-+	Client *stackfocused;
++	Client *tagmarked[32];
  	Monitor *next;
  	Window barwin;
  	const Layout *lt[2];
@@ -28,17 +27,18 @@ index 5e4d494..eab8d57 100644
  static void focusmon(const Arg *arg);
  static void focusstack(const Arg *arg);
  static Atom getatomprop(Client *c, Atom prop);
-@@ -660,6 +662,9 @@ detach(Client *c)
+@@ -660,6 +662,10 @@ detach(Client *c)
  {
  	Client **tc;
  
-+	if (c == c->mon->stackfocused)
-+		c->mon->stackfocused = NULL;
++	for (int i = 1; i < LENGTH(tags); i++)
++		if (c == c->mon->tagmarked[i])
++			c->mon->tagmarked[i] = NULL;
 +
  	for (tc = &c->mon->clients; *tc && *tc != c; tc = &(*tc)->next);
  	*tc = c->next;
  }
-@@ -816,6 +821,28 @@ focusin(XEvent *e)
+@@ -816,6 +822,32 @@ focusin(XEvent *e)
  		setfocus(selmon->sel);
  }
  
@@ -55,11 +55,15 @@ index 5e4d494..eab8d57 100644
 +	if (!master)
 +		return;
 +
++	int i;
++	for (i = 0; !(selmon->tagset[selmon->seltags] & 1 << i); i++);
++	i++;
++
 +	if (selmon->sel == master) {
-+		if (master->mon->stackfocused)
-+			focus(master->mon->stackfocused);
++		if (selmon->tagmarked[i] && ISVISIBLE(selmon->tagmarked[i]))
++			focus(selmon->tagmarked[i]);
 +	} else {
-+		master->mon->stackfocused = master->mon->sel;
++		selmon->tagmarked[i] = selmon->sel;
 +		focus(master);
 +	}
 +}
@@ -67,11 +71,15 @@ index 5e4d494..eab8d57 100644
  void
  focusmon(const Arg *arg)
  {
-@@ -1203,6 +1230,7 @@ nexttiled(Client *c)
+@@ -1203,6 +1235,11 @@ nexttiled(Client *c)
  void
  pop(Client *c)
  {
-+	c->mon->stackfocused = nexttiled(c->mon->clients);
++	int i;
++	for (i = 0; !(selmon->tagset[selmon->seltags] & 1 << i); i++);
++	i++;
++
++	c->mon->tagmarked[i] = nexttiled(c->mon->clients);
  	detach(c);
  	attach(c);
  	focus(c);

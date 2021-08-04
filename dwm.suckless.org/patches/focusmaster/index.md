@@ -19,9 +19,9 @@ Add the following line to the keys array in your config.h (or config.def.h) to b
 Download
 --------
 * [dwm-focusmaster-20200717-bb2e722.diff](dwm-focusmaster-20200717-bb2e722.diff) (2020.07.17)
-* [dwm-focusmaster-return-20210729-138b405.diff](dwm-focusmaster-return-20210729-138b405.diff) (2021.07.29)
+* [dwm-focusmaster-return-20210804-138b405.diff](dwm-focusmaster-return-20210804-138b405.diff) (2021.08.04)
 
 Author
 ------
 * Mateus Auler - <mateusauler at protonmail dot com>
-* Jack Bird - <jack.bird@dur.ac.uk> (focusmaster return patch)
+* Jack Bird - <jack.bird@dur.ac.uk> (focusmaster return)

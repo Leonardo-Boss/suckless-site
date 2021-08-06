@@ -1,5 +1,5 @@
 togglefloatingcenter
-============
+====================
 
 Description
 -----------

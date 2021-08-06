@@ -11,7 +11,7 @@ The original code is from [alwayscenter](../alwayscenter/) patch.
 
 Download
 --------
-* [dwm-togglefloatingcenter-20210806-61bb8b22.diff](dwm-togglefloatingcenter-20210806-61bb8b22.diff)
+* [dwm-togglefloatingcenter-20210806-138b405f.diff](dwm-togglefloatingcenter-20210806-138b405f.diff)
 
 Author
 ------

@@ -3,7 +3,7 @@ togglefloatingcenter
 
 Description
 -----------
-Default behaviour when togglefoating() is floating from top-left corner.
+Default behaviour when togglefloating() is floating from top-left corner.
 This patch will allows you to toggle floating window client will be centered
 position.
 

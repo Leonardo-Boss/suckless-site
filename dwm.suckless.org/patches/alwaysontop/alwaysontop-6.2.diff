@@ -4,44 +4,44 @@ Date: Mon, 27 Jul 2020 20:11:08 +0100
 Subject: [PATCH] alwaysontop
 
 ---
- config.h |  1 +
- dwm.c    | 45 +++++++++++++++++++++++++++++++++++++++++++--
+ config.def.h |  1 +
+ dwm.c        | 45 +++++++++++++++++++++++++++++++++++++++++++--
  2 files changed, 44 insertions(+), 2 deletions(-)
 
-diff --git a/config.h b/config.h
-index 7283a2d..c10bd8b 100644
---- a/config.h
-+++ b/config.h
-@@ -178,6 +178,7 @@ static Key keys[] = {
- 	{ MODKEY,                       XK_e,      setlayout,      {.v = &layouts[LAYOUT_I_grid]} },
- 
- 	{ MODKEY,                       XK_space,  togglefloating, {0} },
+diff --git a/config.def.h b/config.def.h
+index 1c0b587..c3c7edd 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -78,6 +78,7 @@ static Key keys[] = {
+ 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
+ 	{ MODKEY,                       XK_space,  setlayout,      {0} },
+ 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 +	{ MODKEY|ShiftMask,             XK_space,  togglealwaysontop, {0} },
  	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
  	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
  	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
 diff --git a/dwm.c b/dwm.c
-index cc36b03..95e69e1 100644
+index 4465af1..8d54b26 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -92,7 +92,7 @@ struct Client {
  	int basew, baseh, incw, inch, maxw, maxh, minw, minh;
  	int bw, oldbw;
  	unsigned int tags;
--	int isfixed, iscentered, isfloating, isurgent, neverfocus, oldstate, isfullscreen;
+-	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen;
 +	int isfixed, iscentered, isfloating, isalwaysontop, isurgent, neverfocus, oldstate, isfullscreen;
  	Client *next;
  	Client *snext;
  	Monitor *mon;
-@@ -220,6 +220,7 @@ static void bstack(Monitor *);
+@@ -211,6 +211,7 @@ static void tagmon(const Arg *arg);
+ static void tile(Monitor *);
  static void togglebar(const Arg *arg);
- static void togglebartrans(const Arg *arg);
  static void togglefloating(const Arg *arg);
 +static void togglealwaysontop(const Arg *arg);
  static void toggletag(const Arg *arg);
  static void toggleview(const Arg *arg);
  static void unfocus(Client *c, int setfocus);
-@@ -801,8 +802,11 @@ drawbar(Monitor *m)
+@@ -732,8 +733,11 @@ drawbar(Monitor *m)
  		if (m->sel) {
  			drw_setscheme(drw, scheme[m == selmon ? SchemeSel : SchemeNorm]);
  			drw_text(drw, x, 0, w, bh, lrpad / 2, m->sel->name, 0);
@@ -54,7 +54,7 @@ index cc36b03..95e69e1 100644
  		} else {
  			drw_setscheme(drw, scheme[SchemeNorm]);
  			drw_rect(drw, x, 0, w, bh, 1, 1);
-@@ -1430,6 +1434,17 @@ restack(Monitor *m)
+@@ -1356,6 +1360,17 @@ restack(Monitor *m)
  		return;
  	if (m->sel->isfloating || !m->lt[m->sellt]->arrange)
  		XRaiseWindow(dpy, m->sel->win);
@@ -72,7 +72,7 @@ index cc36b03..95e69e1 100644
  	if (m->lt[m->sellt]->arrange) {
  		wc.stack_mode = Below;
  		wc.sibling = m->barwin;
-@@ -1800,6 +1815,32 @@ togglefloating(const Arg *arg)
+@@ -1716,6 +1731,32 @@ togglefloating(const Arg *arg)
  	if (selmon->sel->isfloating)
  		resize(selmon->sel, selmon->sel->x, selmon->sel->y,
  			selmon->sel->w, selmon->sel->h, 0);
@@ -106,5 +106,5 @@ index cc36b03..95e69e1 100644
  }
  
 -- 
-2.27.0
+2.31.1
 

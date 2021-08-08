@@ -4,15 +4,15 @@ Date: Mon, 5 Oct 2020 11:04:31 +0100
 Subject: [PATCH] Updated Mark patch to work with 6.2
 
 ---
- config.h |  14 +++++--
+ config.def.h |  14 +++++--
  drw.h    |   2 +-
  dwm.c    | 111 +++++++++++++++++++++++++++++++++++++++++++++++++++++--
  3 files changed, 118 insertions(+), 9 deletions(-)
 
-diff --git a/config.h b/config.h
+diff --git a/config.def.h b/config.def.h
 index 3858d75..a416c97 100644
---- a/config.h
-+++ b/config.h
+--- a/config.def.h
++++ b/config.def.h
 @@ -12,10 +12,13 @@ static const char col_gray2[]       = "#444444";
  static const char col_gray3[]       = "#bbbbbb";
  static const char col_gray4[]       = "#eeeeee";

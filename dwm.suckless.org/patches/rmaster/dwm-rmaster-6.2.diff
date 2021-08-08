@@ -39,7 +39,7 @@ index 1c0b587..1d00282 100644
  	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
  	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
 diff --git a/dwm.c b/dwm.c
-index 664c527..cc9a7f6 100644
+index 4465af1..a2d118b 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -122,6 +122,7 @@ struct Monitor {
@@ -50,7 +50,7 @@ index 664c527..cc9a7f6 100644
  	int showbar;
  	int topbar;
  	Client *clients;
-@@ -212,6 +213,7 @@ static void tagmon(const Arg *arg);
+@@ -211,6 +212,7 @@ static void tagmon(const Arg *arg);
  static void tile(Monitor *);
  static void togglebar(const Arg *arg);
  static void togglefloating(const Arg *arg);
@@ -58,7 +58,7 @@ index 664c527..cc9a7f6 100644
  static void toggletag(const Arg *arg);
  static void toggleview(const Arg *arg);
  static void unfocus(Client *c, int setfocus);
-@@ -637,6 +639,7 @@ createmon(void)
+@@ -636,6 +638,7 @@ createmon(void)
  	m->tagset[0] = m->tagset[1] = 1;
  	m->mfact = mfact;
  	m->nmaster = nmaster;
@@ -66,7 +66,7 @@ index 664c527..cc9a7f6 100644
  	m->showbar = showbar;
  	m->topbar = topbar;
  	m->lt[0] = &layouts[0];
-@@ -1682,18 +1685,22 @@ tile(Monitor *m)
+@@ -1681,17 +1684,21 @@ tile(Monitor *m)
  		return;
  
  	if (n > m->nmaster)
@@ -82,17 +82,16 @@ index 664c527..cc9a7f6 100644
 -			resize(c, m->wx, m->wy + my, mw - (2*c->bw), h - (2*c->bw), 0);
 +			resize(c, m->rmaster ? m->wx + m->ww - mw : m->wx,
 +			       m->wy + my, mw - (2*c->bw), h - (2*c->bw), 0);
- 			if (my + HEIGHT(c) < m->wh)
- 				my += HEIGHT(c);
+ 			my += HEIGHT(c);
  		} else {
  			h = (m->wh - ty) / (n - i);
 -			resize(c, m->wx + mw, m->wy + ty, m->ww - mw - (2*c->bw), h - (2*c->bw), 0);
 +			resize(c, m->rmaster ? m->wx : m->wx + mw, m->wy + ty,
 +			       m->ww - mw - (2*c->bw), h - (2*c->bw), 0);
- 			if (ty + HEIGHT(c) < m->wh)
- 				ty += HEIGHT(c);
+ 			ty += HEIGHT(c);
  		}
-@@ -1722,6 +1729,16 @@ togglefloating(const Arg *arg)
+ }
+@@ -1719,6 +1726,16 @@ togglefloating(const Arg *arg)
  	arrange(selmon);
  }
  
@@ -110,5 +109,5 @@ index 664c527..cc9a7f6 100644
  toggletag(const Arg *arg)
  {
 -- 
-2.29.2
+2.31.1
 

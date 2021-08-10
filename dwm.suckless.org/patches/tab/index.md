@@ -111,7 +111,7 @@ Download
 --------
 * Tab patch alone
   * For dwm 6.1: [dwm-6.1-tab-v2b.diff](dwm-6.1-tab-v2b.diff)
-  * For dwm from the git master branch: [dwm-tab-v2b-56a31dc.diff](dwm-tab-v2b-56a31dc.diff)
+  * For dwm from the git master branch: [dwm-tab-v2b-20210810-7162335.diff](dwm-tab-v2b-20210810-7162335.diff)
   * For dwm 6.2: [dwm-6.2-tab-v2b.diff](dwm-6.2-tab-v2b.diff)
 * Combined patch of tab and the [pertag](../pertag/) patch from Jan Christoph
   Ebersbach.
@@ -123,6 +123,7 @@ Download
 
 Change log
 ----------
+* Fixed the standalone tab patch not applying to the current git master.
 * **v2b** Fixed in the pertag-tab patch the support for per-tag default layout
   specification. No change in the tab only patch.
 * **v2a** Typo corrected in the man page. For the combined pertag-tab patch,

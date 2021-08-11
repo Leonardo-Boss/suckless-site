@@ -1,50 +1,51 @@
-From d7404b76afc7976b4340e4c0354ee00e110c3c54 Mon Sep 17 00:00:00 2001
+From 49342f1039b41d2c95dde3f9cc26efbdc85d0272 Mon Sep 17 00:00:00 2001
 From: Ashish Kumar Yadav <ashishkumar.yadav@students.iiserpune.ac.in>
-Date: Wed, 4 Aug 2021 04:15:16 +0530
+Date: Wed, 11 Aug 2021 20:24:07 +0530
 Subject: [PATCH] Implement support for CSI 22 and 23
 
 This patch implements title stack into st.
 ---
- st.c  | 34 +++++++++++++++++++++++++++++++---
- win.h |  4 +++-
- x.c   | 44 +++++++++++++++++++++++++++++++++++++++-----
- 3 files changed, 73 insertions(+), 9 deletions(-)
+ st.c    | 34 +++++++++++++++++++++++++++++++---
+ st.info |  4 ++--
+ win.h   |  4 +++-
+ x.c     | 44 +++++++++++++++++++++++++++++++++++++++-----
+ 4 files changed, 75 insertions(+), 11 deletions(-)
 
 diff --git a/st.c b/st.c
-index 76b7e0d..9581b6f 100644
+index 76b7e0d..092b93c 100644
 --- a/st.c
 +++ b/st.c
 @@ -1806,6 +1806,33 @@ csihandle(void)
  			goto unknown;
  		}
  		break;
-+       case 't': /* title stack operations */
-+               switch (csiescseq.arg[0]) {
-+               case 22: /* pust current title on stack */
-+                       switch (csiescseq.arg[1]) {
-+                       case 0:
-+                       case 1:
-+                       case 2:
-+                               xpushtitle();
-+                               break;
-+                       default:
-+                               goto unknown;
-+                       }
-+                       break;
-+               case 23: /* pop last title from stack */
-+                       switch (csiescseq.arg[1]) {
-+                       case 0:
-+                       case 1:
-+                       case 2:
-+                               xsettitle(NULL, 1);
-+                               break;
-+                       default:
-+                               goto unknown;
-+                       }
-+                       break;
-+               default:
-+                       goto unknown;
-+               }
++	case 't': /* title stack operations */
++		switch (csiescseq.arg[0]) {
++		case 22: /* pust current title on stack */
++			switch (csiescseq.arg[1]) {
++			case 0:
++			case 1:
++			case 2:
++				xpushtitle();
++				break;
++			default:
++				goto unknown;
++			}
++			break;
++		case 23: /* pop last title from stack */
++			switch (csiescseq.arg[1]) {
++			case 0:
++			case 1:
++			case 2:
++				xsettitle(NULL, 1);
++				break;
++			default:
++				goto unknown;
++			}
++			break;
++		default:
++			goto unknown;
++		}
  	}
  }
  
@@ -83,6 +84,28 @@ index 76b7e0d..9581b6f 100644
  }
  
  void
+diff --git a/st.info b/st.info
+index 8201ad6..aeef606 100644
+--- a/st.info
++++ b/st.info
+@@ -161,7 +161,7 @@ st-mono| simpleterm monocolor,
+ 	rin=\E[%p1%dT,
+ 	ritm=\E[23m,
+ 	rmacs=\E(B,
+-	rmcup=\E[?1049l,
++	rmcup=\E[?1049l\E[23;0;0t,
+ 	rmir=\E[4l,
+ 	rmkx=\E[?1l\E>,
+ 	rmso=\E[27m,
+@@ -172,7 +172,7 @@ st-mono| simpleterm monocolor,
+ 	sitm=\E[3m,
+ 	sgr0=\E[0m,
+ 	smacs=\E(0,
+-	smcup=\E[?1049h,
++	smcup=\E[?1049h\E[22;0;0t,
+ 	smir=\E[4h,
+ 	smkx=\E[?1h\E=,
+ 	smso=\E[7m,
 diff --git a/win.h b/win.h
 index a6ef1b9..e24337e 100644
 --- a/win.h

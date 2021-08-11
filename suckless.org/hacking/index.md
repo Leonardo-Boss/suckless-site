@@ -37,11 +37,11 @@ Patches
 There are two types of patches: The ones that fit to your personal taste and
 the ones you think should be included in mainline.
 
-1. For patches that fit your personal taste and you want to share with the
+For patches that fit your personal taste and you want to share with the
 community, please follow the instructions on the [wiki](//suckless.org/wiki)
 page on how to edit the pages you see here.
 
-2. For patches that should be included in mainline see the
+For patches that should be included in mainline see the
 [community](//suckless.org/community) page and the hackers@ mailing list.
 Please note that only patches to be included in mainline repos are to be
 submitted to this list, customisation patches are to be submitted to the wiki!

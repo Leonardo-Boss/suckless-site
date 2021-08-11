@@ -37,9 +37,9 @@ Patches
 There are two types of patches: The ones that fit to your personal taste and
 the ones you think should be included in mainline.
 
-1. For patches that fit your personal taste and you want to show the community,
-please follow the instructions on the [wiki](//suckless.org/wiki) page on how
-to edit the pages you see here.
+1. For patches that fit your personal taste and you want to share with the
+community, please follow the instructions on the [wiki](//suckless.org/wiki)
+page on how to edit the pages you see here.
 
 2. For patches that should be included in mainline see the
 [community](//suckless.org/community) page and the hackers@ mailing list.

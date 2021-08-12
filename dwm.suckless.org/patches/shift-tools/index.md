@@ -1,12 +1,12 @@
 shift-tools
-================
+===========
 
 Description
 -----------
 A group of functions that shift. Inspired by
 [shiftview](https://lists.suckless.org/dev/1104/7590.html) and
 [focusadjacenttag](../focusadjacenttag). There is also a
-[version](shift-tools-scratchpads) compatible with the
+[version](shift-tools-scratchpads.c) compatible with the
 [scratchpads](../scratchpads) patch with only needs you to include the file
 (#include "shift-tools-scratchpads.c") before the keys[] array.
 

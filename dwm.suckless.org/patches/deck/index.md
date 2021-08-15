@@ -56,6 +56,7 @@ Showcase
 Download
 --------
 * [dwm-deck-6.0.diff](dwm-deck-6.0.diff)
+* [dwm-deck-6.2.diff](dwm-deck-6.2.diff)
 * [dwm-deck-rmaster-6.1.diff](dwm-deck-rmaster-6.1.diff)
 * [dwm-deck-tilegap-6.1.diff](dwm-deck-tilegap-6.1.diff)
 * [dwm-deck-double-6.2.diff](dwm-deck-double-6.2.diff)
@@ -67,3 +68,4 @@ Author
 * Joshua Haase - `<hahj87 at gmail dot com>`
 * Aleksandrs Stier
 * Miles Alan - `<m at milesalan dot com>` (deck double patch)
+* Jack Bird - `<jack.bird@dur.ac.uk>` (6.2 patch)

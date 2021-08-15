@@ -110,7 +110,7 @@ Related discussion
 * [http://the-monkeymind.blogspot.com/2007/03/dwm-dynamic-window-manager-home-page-at.html](http://the-monkeymind.blogspot.com/2007/03/dwm-dynamic-window-manager-home-page-at.html)
 * [http://tonytraductor.livejournal.com/120674.html](http://tonytraductor.livejournal.com/120674.html)
 * [http://forums.debian.net/viewtopic.php?f=16&t=65110](http://forums.debian.net/viewtopic.php?f=16&t=65110)
-* [http://wongdev.com/blog/dwm-tags-are-not-workspaces/](http://wongdev.com/blog/dwm-tags-are-not-workspaces/)
+* [http://wongdev.com/blog/dwm-tags-are-not-workspaces/](http://wongdev.com/blog/dwm-tags-are-not-workspaces/) ([archive](https://archive.is/Fw0Mk))
 * [dwm usage and configuration page (french)](http://yeuxdelibad.net/Logiciel-libre/Suckless/dwm/index.html)
 * [http://www.youtube.com/watch?v=GQ5s6T25jCc](http://www.youtube.com/watch?v=GQ5s6T25jCc)
 * [https://srobb.net/dwm.html](https://srobb.net/dwm.html)

@@ -25,7 +25,7 @@ index 6d36cb7..48c38d9 100644
  # flags
  CPPFLAGS = -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_POSIX_C_SOURCE=2 -DVERSION=\"${VERSION}\" ${XINERAMAFLAGS}
 diff --git a/drw.c b/drw.c
-index 8fd1ca4..e7e8f35 100644
+index 8fd1ca4..77e321a 100644
 --- a/drw.c
 +++ b/drw.c
 @@ -4,6 +4,7 @@
@@ -63,18 +63,17 @@ index 8fd1ca4..e7e8f35 100644
  	XFreePixmap(drw->dpy, drw->drawable);
  	XFreeGC(drw->dpy, drw->gc);
  	free(drw);
-@@ -235,6 +241,66 @@ drw_setscheme(Drw *drw, Clr *scm)
+@@ -235,6 +241,67 @@ drw_setscheme(Drw *drw, Clr *scm)
  		drw->scheme = scm;
  }
  
 +Picture
-+drw_create_resized_picture(Drw *drw, char *src, unsigned int srcw, unsigned int srch, unsigned int dstw, unsigned int dsth, char *tmp) {
++drw_picture_create_resized(Drw *drw, char *src, unsigned int srcw, unsigned int srch, unsigned int dstw, unsigned int dsth) {
 +	Pixmap pm;
 +	Picture pic;
 +	GC gc;
 +
 +	if (srcw <= (dstw << 1u) && srch <= (dsth << 1u)) {
-+		pm = XCreatePixmap(drw->dpy, drw->root, srcw, srch, 32);
 +		XImage img = {
 +			srcw, srch, 0, ZPixmap, src,
 +			ImageByteOrder(drw->dpy), BitmapUnit(drw->dpy), BitmapBitOrder(drw->dpy), 32,
@@ -82,6 +81,8 @@ index 8fd1ca4..e7e8f35 100644
 +			0, 0, 0
 +		};
 +		XInitImage(&img);
++
++		pm = XCreatePixmap(drw->dpy, drw->root, srcw, srch, 32);
 +		gc = XCreateGC(drw->dpy, pm, 0, NULL);
 +		XPutImage(drw->dpy, pm, gc, &img, 0, 0, 0, 0, srcw, srch);
 +		XFreeGC(drw->dpy, gc);
@@ -105,19 +106,19 @@ index 8fd1ca4..e7e8f35 100644
 +		if (!scaled) return None;
 +		imlib_context_set_image(scaled);
 +		imlib_image_set_has_alpha(1);
-+		memcpy(tmp, imlib_image_get_data_for_reading_only(), (dstw * dsth) << 2);
-+		imlib_free_image_and_decache();
 +
-+		pm = XCreatePixmap(drw->dpy, drw->root, dstw, dsth, 32);
 +		XImage img = {
-+			dstw, dsth, 0, ZPixmap, tmp,
-+			ImageByteOrder(drw->dpy), BitmapUnit(drw->dpy), BitmapBitOrder(drw->dpy), 32,
-+			32, 0, 32,
-+			0, 0, 0
++		    dstw, dsth, 0, ZPixmap, (char *)imlib_image_get_data_for_reading_only(),
++		    ImageByteOrder(drw->dpy), BitmapUnit(drw->dpy), BitmapBitOrder(drw->dpy), 32,
++		    32, 0, 32,
++		    0, 0, 0
 +		};
 +		XInitImage(&img);
++
++		pm = XCreatePixmap(drw->dpy, drw->root, dstw, dsth, 32);
 +		gc = XCreateGC(drw->dpy, pm, 0, NULL);
 +		XPutImage(drw->dpy, pm, gc, &img, 0, 0, 0, 0, dstw, dsth);
++		imlib_free_image_and_decache();
 +		XFreeGC(drw->dpy, gc);
 +
 +		pic = XRenderCreatePicture(drw->dpy, pm, XRenderFindStandardFormat(drw->dpy, PictStandardARGB32), 0, NULL);
@@ -130,7 +131,7 @@ index 8fd1ca4..e7e8f35 100644
  void
  drw_rect(Drw *drw, int x, int y, unsigned int w, unsigned int h, int filled, int invert)
  {
-@@ -378,6 +444,14 @@ drw_text(Drw *drw, int x, int y, unsigned int w, unsigned int h, unsigned int lp
+@@ -378,6 +445,14 @@ drw_text(Drw *drw, int x, int y, unsigned int w, unsigned int h, unsigned int lp
  	return x + (render ? w : 0);
  }
  
@@ -146,7 +147,7 @@ index 8fd1ca4..e7e8f35 100644
  drw_map(Drw *drw, Window win, int x, int y, unsigned int w, unsigned int h)
  {
 diff --git a/drw.h b/drw.h
-index 4bcd5ad..695b300 100644
+index 4bcd5ad..71aefa2 100644
 --- a/drw.h
 +++ b/drw.h
 @@ -21,6 +21,7 @@ typedef struct {
@@ -161,7 +162,7 @@ index 4bcd5ad..695b300 100644
  void drw_setfontset(Drw *drw, Fnt *set);
  void drw_setscheme(Drw *drw, Clr *scm);
  
-+Picture drw_create_resized_picture(Drw *drw, char *src, unsigned int src_w, unsigned int src_h, unsigned int dst_w, unsigned int dst_h, char *tmp);
++Picture drw_picture_create_resized(Drw *drw, char *src, unsigned int src_w, unsigned int src_h, unsigned int dst_w, unsigned int dst_h);
 +
  /* Drawing functions */
  void drw_rect(Drw *drw, int x, int y, unsigned int w, unsigned int h, int filled, int invert);
@@ -171,7 +172,7 @@ index 4bcd5ad..695b300 100644
  /* Map functions */
  void drw_map(Drw *drw, Window win, int x, int y, unsigned int w, unsigned int h);
 diff --git a/dwm.c b/dwm.c
-index 4465af1..a1b260e 100644
+index 4465af1..faf40b7 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -28,6 +28,8 @@
@@ -234,7 +235,7 @@ index 4465af1..a1b260e 100644
  			if (m->sel->isfloating)
  				drw_rect(drw, x + boxs, boxs, boxw, boxw, m->sel->isfixed, 0);
  		} else {
-@@ -871,6 +878,68 @@ getatomprop(Client *c, Atom prop)
+@@ -871,6 +878,67 @@ getatomprop(Client *c, Atom prop)
  	return atom;
  }
  
@@ -293,8 +294,7 @@ index 4465af1..a1b260e 100644
 +	uint32_t i, *bstp32 = (uint32_t *)bstp;
 +	for (sz = w * h, i = 0; i < sz; ++i) bstp32[i] = prealpha(bstp[i]);
 +
-+	static char tmp[ICONSIZE * ICONSIZE << 2];
-+	Picture ret = drw_create_resized_picture(drw, (char *)bstp, w, h, icw, ich, tmp);
++	Picture ret = drw_picture_create_resized(drw, (char *)bstp, w, h, icw, ich);
 +	XFree(p);
 +
 +	return ret;
@@ -303,7 +303,7 @@ index 4465af1..a1b260e 100644
  int
  getrootptr(int *x, int *y)
  {
-@@ -1030,6 +1099,7 @@ manage(Window w, XWindowAttributes *wa)
+@@ -1030,6 +1098,7 @@ manage(Window w, XWindowAttributes *wa)
  	c->h = c->oldh = wa->height;
  	c->oldbw = wa->border_width;
  
@@ -311,7 +311,7 @@ index 4465af1..a1b260e 100644
  	updatetitle(c);
  	if (XGetTransientForHint(dpy, w, &trans) && (t = wintoclient(trans))) {
  		c->mon = t->mon;
-@@ -1240,6 +1310,11 @@ propertynotify(XEvent *e)
+@@ -1240,6 +1309,11 @@ propertynotify(XEvent *e)
  			if (c == c->mon->sel)
  				drawbar(c->mon);
  		}
@@ -323,7 +323,7 @@ index 4465af1..a1b260e 100644
  		if (ev->atom == netatom[NetWMWindowType])
  			updatewindowtype(c);
  	}
-@@ -1556,6 +1631,7 @@ setup(void)
+@@ -1556,6 +1630,7 @@ setup(void)
  	netatom[NetActiveWindow] = XInternAtom(dpy, "_NET_ACTIVE_WINDOW", False);
  	netatom[NetSupported] = XInternAtom(dpy, "_NET_SUPPORTED", False);
  	netatom[NetWMName] = XInternAtom(dpy, "_NET_WM_NAME", False);
@@ -331,7 +331,7 @@ index 4465af1..a1b260e 100644
  	netatom[NetWMState] = XInternAtom(dpy, "_NET_WM_STATE", False);
  	netatom[NetWMCheck] = XInternAtom(dpy, "_NET_SUPPORTING_WM_CHECK", False);
  	netatom[NetWMFullscreen] = XInternAtom(dpy, "_NET_WM_STATE_FULLSCREEN", False);
-@@ -1746,6 +1822,15 @@ toggleview(const Arg *arg)
+@@ -1746,6 +1821,15 @@ toggleview(const Arg *arg)
  	}
  }
  
@@ -347,7 +347,7 @@ index 4465af1..a1b260e 100644
  void
  unfocus(Client *c, int setfocus)
  {
-@@ -1767,6 +1852,7 @@ unmanage(Client *c, int destroyed)
+@@ -1767,6 +1851,7 @@ unmanage(Client *c, int destroyed)
  
  	detach(c);
  	detachstack(c);
@@ -355,7 +355,7 @@ index 4465af1..a1b260e 100644
  	if (!destroyed) {
  		wc.border_width = c->oldbw;
  		XGrabServer(dpy); /* avoid race conditions */
-@@ -2001,6 +2087,13 @@ updatetitle(Client *c)
+@@ -2001,6 +2086,13 @@ updatetitle(Client *c)
  		strcpy(c->name, broken);
  }
  

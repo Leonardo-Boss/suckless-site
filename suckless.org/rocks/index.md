@@ -39,7 +39,6 @@ because it makes them legally compatible with other suckless projects.
 
 ### Miscellaneous
 
-* [admin](https://github.com/gek169/admin) - barebones, minimal doas/sudo replacement for Linux.
 * [baresip](https://github.com/alfredh/baresip) - barebone SIP stack (BSD licence).
 * [ccv](http://libccv.org/) - C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library.
 * [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modelled after libevent but much smaller (dual licensed under 2-clause BSD and GPL).
@@ -80,6 +79,10 @@ This covers most console-based programs and programs from
 ### BitTorrent clients
 
 * [btpd](https://github.com/btpd/btpd) - The BitTorrent Protocol Daemon.
+
+### Core Utilities
+
+* [admin](https://github.com/gek169/admin) - barebones, minimal doas/sudo replacement for Linux. Half the size of doas, single-file in C.
 
 ### Feed aggregators / newsreaders
 

@@ -80,10 +80,6 @@ This covers most console-based programs and programs from
 
 * [btpd](https://github.com/btpd/btpd) - The BitTorrent Protocol Daemon.
 
-### Core Utilities
-
-* [admin](https://github.com/gek169/admin) - barebones, minimal doas/sudo replacement for Linux. Half the size of doas, single-file in C.
-
 ### Feed aggregators / newsreaders
 
 * [sfeed](https://codemadness.org/sfeed.html) - RSS and Atom parser + CLI programs and [sfeed_curses UI](https://codemadness.org/sfeed_ui.html).

@@ -207,7 +207,6 @@ This covers most console-based programs and programs from
 ### Utilities / miscellaneous
 
 * [abduco](http://www.brain-dump.org/projects/abduco/) - session {at,de}tach support.
-* [admin](https://github.com/gek169/admin) - minimal doas replacement for linux
 * [dvtm](http://www.brain-dump.org/projects/dvtm/) - dynamic virtual terminal manager.
 * [entr](http://entrproject.org/) - Run arbitrary commands when files change.
 * [mtm](https://github.com/deadpixi/mtm) - Micro Terminal Multiplexer.

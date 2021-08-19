@@ -15,8 +15,10 @@ resetlayout in config.def.h.
 
 Download
 --------
+* [dwm-resetlayout-6.2.diff](dwm-resetlayout-6.2.diff)
 * [dwm-resetlayout-20200420-c82db69.diff](dwm-resetlayout-20200420-c82db69.diff)
 
 Authors
 -------
 * Chris Down - <chris@chrisdown.name>
+* Jack Bird - <jack.bird@dur.ac.uk>

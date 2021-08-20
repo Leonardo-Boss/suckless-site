@@ -20,7 +20,7 @@ because it makes them legally compatible with other suckless projects.
 
 * [cproc](https://git.sr.ht/~mcf/cproc) - frontend for C11 for QBE.
 * [lacc](https://github.com/larmel/lacc) - A simple, self-hosting C compiler.
-* [qbe](https://c9x.me/compile/) - compiler backend targetting x64.
+* [qbe](https://c9x.me/compile/) - compiler backend targetting ARM and x86-64.
 * [scc](https://www.simple-cc.org/) - Simple C Compiler.
 * [tcc](https://bellard.org/tcc/) - Tiny C Compiler [git repo](https://repo.or.cz/w/tinycc.git)
 

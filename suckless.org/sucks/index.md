@@ -24,7 +24,8 @@ alternatives.
   that ["static linking is not supported"](https://bugzilla.gnome.org/show_bug.cgi?id=768215#c16).
 
   Alternatives: [libmowgli](https://github.com/atheme/libmowgli-2),
-  [libulz](https://github.com/rofl0r/libulz)
+  [libulz](https://github.com/rofl0r/libulz),
+  BSD [queue.h](https://man.openbsd.org/queue)/[tree.h](https://man.openbsd.org/tree) macros.
 
 * [GMP](http://gmplib.org/) - GNU's bignum/arbitrary precision
   library. Quite bloated, slow and [calls abort() on failed

@@ -25,6 +25,10 @@ Configuration
 	#define ICONSIZE 20   /* icon size in pixels */
 	#define ICONSPACING 5 /* space (pixels) between icon and title */
 
+There are also some practical macro hacks:
+	#define ICONSIZE bh       /* make icon size equals to bar height */
+	#define ICONSIZE (bh - 4) /* or adaptively preserve 2 pixels each side */
+
 Download
 --------
 * [dwm-winicon-6.2-v2.0.diff](dwm-winicon-6.2-v2.0.diff) (2021-08-17)

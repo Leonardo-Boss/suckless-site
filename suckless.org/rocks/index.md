@@ -53,6 +53,10 @@ because it makes them legally compatible with other suckless projects.
 ### Distros
 
 * [morpheus](https://morpheus.2f30.org/) - A statically linked musl-based Linux distro. Unmaintained currently.
+* [oasis](https://github.com/oasislinux/oasis) - A statically linked small Linux system.
+* [sxmo](https://sxmo.org/): simple X Mobile, Sxmo is a minimalist environment
+  for Linux mobile devices, such as the pinephone.
+
 
 Programs
 --------
@@ -108,6 +112,7 @@ This covers most console-based programs and programs from
 
 ### IRC clients
 
+* [catgirl](https://git.causal.agency/catgirl) - is a TLS-only terminal IRC client.
 * [hii](https://github.com/nmeum/hii) - A file-based IRC client, inspired by ii, with a focus on easing [frontend development](https://github.com/nmeum/insomnia)
 * [ii](//tools.suckless.org/ii/) - A FIFO based IRC client which is part of the suckless.org project.
 * [irc.c from mpu](https://c9x.me/irc/) - A minimal curses IRC client.

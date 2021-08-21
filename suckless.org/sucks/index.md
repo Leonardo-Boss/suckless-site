@@ -3,8 +3,8 @@ Stuff that sucks
 See the [philosophy](//suckless.org/philosophy) page about what applies
 to this page.
 
-Bigger topics that suck: [systemd](//suckless.org/sucks/systemd), [the
-web](//suckless.org/sucks/web)
+Bigger topics that suck: [systemd](//suckless.org/sucks/systemd),
+[the web](//suckless.org/sucks/web)
 
 Libraries
 ---------
@@ -55,8 +55,9 @@ As these build systems are often used to compile C programs, one has to
 set up a C++ compiler or Python interpreter respectively just in order
 to be able to build some C code.
 
-Alternatives: [mk](http://doc.cat-v.org/plan_9/4th_edition/papers/mk),
-[make](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/make.html)
+Alternatives:
+[make](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/make.html),
+[mk](http://doc.cat-v.org/plan_9/4th_edition/papers/mk)
 
 Version Control Systems
 -----------------------
@@ -117,15 +118,17 @@ way to jump to that line in the source code, is not worth the time.
 The suckless way is to have a short usage and a descriptive manpage. The
 complete details are in the source.
 
+Alternatives: roff, [mdoc](https://mandoc.bsd.lv/).
+
 C Compilers
 -----------
-* [GCC](http://gcc.gnu.org/) is the virus which has spread into nearly
-  every Linux distribution and has added its language extensions to be not
-  easily replacable. As of 2016 it is now written in C++ and so complete
-  suck. Why can't a compiler just be a simple binary doing its work
+* [GCC](http://gcc.gnu.org/): as of 2016 it is now written in C++ and so
+  complete suck. Why can't a compiler just be a simple binary doing its work
   instead of adding path dependencies deep into the system?
 * [Clang](http://clang.llvm.org/) is written in C++. If you don't
   believe that it sucks, try to build clang by hand.
+
+Alternatives: see the Compilers section of the [/rocks/] page.
 
 See also
 --------

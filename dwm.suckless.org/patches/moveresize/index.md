@@ -80,7 +80,6 @@ Changelog
 
 Download
 --------
-* [dwm-moveresize-20210822-a786211.diff](dwm-moveresize-20210822-a786211.diff)
 * [dwm-moveresize-20201206-cce77d8.diff](dwm-moveresize-20201206-cce77d8.diff)
 * [dwm-moveresize-20200609-46c8838.diff](dwm-moveresize-20200609-46c8838.diff)
 * [dwm-moveresize-6.2.diff](dwm-moveresize-6.2.diff)
@@ -93,4 +92,3 @@ Authors
 * Georgios Oxinos - <oxinosg@gmail.com>
 * Claudio M. Alessi - <smoppy@gmail.com>
 * Jan Christoph Ebersbach - <jceb@e-jc.de>
-* howoz - <howoz@hitler.rocks>

@@ -12,6 +12,9 @@ following [SGR](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR) parameters:
 * 58:2:r:g:b - Where r, g and b are the red, green and blue color values of the underline respectively.
 * 59 - Resets the underline color to the foreground color.
 
+Three styles are available to choose from. You can do so in the `config.def.h`
+file by editing the `UNDERCURL_STYLE` define.
+
 Notes
 -----
 These escape codes aren't standard, but they are supported by most other
@@ -19,7 +22,7 @@ terminal emulators, as well as many terminal programs (Such as Vim).
 
 Download
 --------
-* [st-undercurl-0.8.4.diff](st-undercurl-0.8.4.diff)
+* [st-undercurl-0.8.4-20210822.diff](st-undercurl-0.8.4-20210822.diff)
 
 Authors
 -------

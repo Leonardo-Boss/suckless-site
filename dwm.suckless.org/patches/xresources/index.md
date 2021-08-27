@@ -29,6 +29,7 @@ Download
 --------
 * [dwm-xresources-6.2.diff](dwm-xresources-6.2.diff) (11/06/2020)
 * [dwm-xresources-20210314.diff](dwm-xresources-20210314.diff) (14/03/2021)
+* [dwm-xresources-20210827-138b405.diff](dwm-xresources-20210827-138b405.diff)
 
 
 Author

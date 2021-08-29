@@ -17,8 +17,10 @@ Alternative tags
 
 Download
 --------
-* [dwm-alternativetags-6.2.diff](dwm-alternativetags-6.2.diff) (2019-04-13)
+* [dwm-alternativetags-6.2.diff](dwm-alternativetags-6.2.diff) (2021-08-29)
+* [dwm-alternativetags-20210829-ed3ab6b4.diff](dwm-alternativetags-20210829-ed3ab6b4.diff) (2021-08-29)
 
 Author
 -------
 * Piyush Pangtey <gokuvsvegita@gmail.com>
+* Jack Bird <jack.bird@dur.ac.uk> (momentary switch)

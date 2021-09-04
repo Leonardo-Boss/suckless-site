@@ -1,8 +1,19 @@
 diff --git a/dmenu.1 b/dmenu.1
-index 323f93c..a07e0f4 100644
+index f9e0db7..af3a6f5 100644
 --- a/dmenu.1
 +++ b/dmenu.1
-@@ -80,6 +80,14 @@ prints version information to stdout, then exits.
+@@ -22,6 +22,10 @@ dmenu \- dynamic menu
+ .IR color ]
+ .RB [ \-w
+ .IR windowid ]
++.RB [ \-d
++.IR separator ]
++.RB [ \-D
++.IR separator ]
+ .P
+ .BR dmenu_run " ..."
+ .SH DESCRIPTION
+@@ -83,6 +87,14 @@ prints version information to stdout, then exits.
  .TP
  .BI \-w " windowid"
  embed into windowid.

@@ -8,7 +8,7 @@ host-gen
 
 Install hosts-gen from <http://git.r-36.net/hosts-gen/>
 
-	% git clone http://git.r-36.net/hosts-gen
+	% git clone git://git.r-36.net/hosts-gen
 	% cd hosts-gen
 	% sudo make install
 

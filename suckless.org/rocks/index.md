@@ -94,7 +94,7 @@ This covers most console-based programs and programs from
 
 * [lf](https://github.com/gokcehan/lf) - ranger-like file manager written in Go (WIP but usable).
 * [mc](https://midnight-commander.org/) - Midnight Commander is a free cross-platform orthodox file manager.
-* [nnn](https://github.com/jarun/nnn) - Noice is Not Noice, a fork of noice with more features.
+* [nnn](https://github.com/jarun/nnn) - Nnn's Not Noice, a fork of noice with more features.
 * [noice](https://git.2f30.org/noice/) - Small and portable file browser.
 * [ranger](https://ranger.github.io/) - ranger is a file manager with vi key bindings written in python but with an interface that rocks.
 * [rover](https://lecram.github.io/p/rover/) - Simple file browser for the terminal.

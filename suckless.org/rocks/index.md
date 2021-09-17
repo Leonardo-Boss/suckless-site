@@ -144,6 +144,7 @@ This covers most console-based programs and programs from
 * [CenterIM](https://www.centerim.org/index.php/Main_Page) - A centericq fork.
 * [irssi-xmpp](http://cybione.org/~irssi-xmpp/) - An irssi plugin to connect to the Jabber network.
 * [mcabber](http://mcabber.com/) - A console jabber client.
+* [profanity](https://profanity-im.github.io/) - A console XMPP client written in C. OMEMO/GPG/OTR supported.
 * [ysm](http://ysmv7.sourceforge.net/) - A console-based ICQ client.
 
 ### Mail clients

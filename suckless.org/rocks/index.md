@@ -48,7 +48,7 @@ because it makes them legally compatible with other suckless projects.
 * [sdhcp](https://git.2f30.org/sdhcp/) - IPv4 DHCP client.
 * [TinyGL](https://github.com/C-Chads/tinygl) - free software-only subset of OpenGL 1.1 implemented in C
 * [small3dlib](https://gitlab.com/drummyfish/small3dlib) - Single-header public domain C software 3D renderer with no dependencies, using only integer math.
-* [termbox](https://github.com/nsf/termbox) - simple ncurses-like library for creating TUIs.
+* [termbox](https://github.com/termbox/termbox) - simple ncurses-like library for creating TUIs.
 
 ### Distros
 

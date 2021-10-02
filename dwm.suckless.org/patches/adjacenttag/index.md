@@ -9,7 +9,7 @@ to it, the version with 'skipvacant' will skip vacant tags
 Download
 --------
 * [dwm-adjacenttag-6.2.diff](dwm-adjacenttag-6.2.diff)
-* [dwm-adjacenttag-skipvacant-6.2.diff](dwm-adjacenttag_skipvacant-6.2.diff)
+* [dwm-adjacenttag-skipvacant-6.2.diff](dwm-adjacenttag-skipvacant-6.2.diff)
 
 Authors
 -------

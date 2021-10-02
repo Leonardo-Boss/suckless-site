@@ -13,4 +13,4 @@ Download
 
 Authors
 -------
-* Ayoub Khater - (ayoub khater at protonmail dot com)
+* Ayoub Khater - (leo martin 05 at tutanota dot com)

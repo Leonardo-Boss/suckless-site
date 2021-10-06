@@ -122,7 +122,7 @@ Related discussion
 
 related projects
 ----------------
-* [awesome](http://awesome.naquadah.org/) -- dwm fork with XCB, EWMH, Lua script, Xft, D-Bus, multihead.. support
+* [awesome](https://awesomewm.org) -- dwm fork with XCB, EWMH, Lua script, Xft, D-Bus, multihead.. support
 * [awm](https://github.com/Alpt/awm/blob/master/README) -- (old) modified dwm with workspaces and /proc like interface
 * [bwm](//lists.suckless.org/dwm/0708/3085.html) -- (old) modified dwm with extensive mouse support
 * [cons-wm](http://github.com/dharmatech/psilab/tree/master/cons-wm) -- minimalist wm in scheme (not tiled)

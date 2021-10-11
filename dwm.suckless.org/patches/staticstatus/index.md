@@ -12,6 +12,7 @@ Configuration
 
 Download
 --------
+* [dwm-staticstatus-20211010-a786211.diff](dwm-staticstatus-20211010-a786211.diff)
 * [dwm-staticstatus-6.2.diff](dwm-staticstatus-6.2.diff)
 
 Author

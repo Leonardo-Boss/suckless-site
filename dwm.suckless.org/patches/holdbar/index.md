@@ -13,7 +13,7 @@ The holdbar-modkey patch is a variant where holdbar is only active when the bar 
 
 holdbar and pertag
 ------------------
-This version is combined with pertag patch - the state of the bar is not sotred per tag - if you hide the bar on one tag, it will stay hidden on all tags. This patch applies cleanly on dwm-6.2. The holdkey is enabled by default and mapped to Mod1.
+This version is combined with pertag patch - the state of the bar is not stored per tag - if you hide the bar on one tag, it will stay hidden on all tags. This patch applies cleanly on dwm-6.2. The holdkey is enabled by default and mapped to Mod1.
 
 
 Download

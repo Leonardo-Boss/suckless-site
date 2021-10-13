@@ -12,7 +12,7 @@ description would be to re-view a tag.
 
 
 This is done with Imlib2, so it is a dependency. This patch is extracted from
-siduck76 [chadwm]( https://github.com/siduck76/chadwm)
+siduck76 [chadwm](https://github.com/siduck76/chadwm)
 
 Download
 --------

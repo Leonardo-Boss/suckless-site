@@ -1,5 +1,5 @@
 diff --git a/dmenu.1 b/dmenu.1
-index f9e0db7..af3a6f5 100644
+index 323f93c..d511148 100644
 --- a/dmenu.1
 +++ b/dmenu.1
 @@ -22,6 +22,10 @@ dmenu \- dynamic menu
@@ -13,7 +13,7 @@ index f9e0db7..af3a6f5 100644
  .P
  .BR dmenu_run " ..."
  .SH DESCRIPTION
-@@ -83,6 +87,14 @@ prints version information to stdout, then exits.
+@@ -80,6 +84,14 @@ prints version information to stdout, then exits.
  .TP
  .BI \-w " windowid"
  embed into windowid.
@@ -29,7 +29,7 @@ index f9e0db7..af3a6f5 100644
  dmenu is completely controlled by the keyboard.  Items are selected using the
  arrow keys, page up, page down, home, and end.
 diff --git a/dmenu.c b/dmenu.c
-index 98507d9..2ac2c9a 100644
+index 98507d9..82227c8 100644
 --- a/dmenu.c
 +++ b/dmenu.c
 @@ -30,12 +30,16 @@ enum { SchemeNorm, SchemeSel, SchemeOut, SchemeLast }; /* color schemes */
@@ -62,28 +62,26 @@ index 98507d9..2ac2c9a 100644
  			*p = '\0';
  		if (!(items[i].text = strdup(buf)))
  			die("cannot strdup %u bytes:", strlen(buf) + 1);
-+		if (separator && (p = (separator_greedy) ?
-+			strrchr(items[i].text, separator) : strchr(items[i].text, separator))) {
++		if (separator && (p = separator_greedy ?
++		    strrchr(items[i].text, separator) : strchr(items[i].text, separator))) {
 +			*p = '\0';
 +			items[i].text_output = ++p;
 +		} else {
 +			items[i].text_output = items[i].text;
 +		}
 +		if (separator_reverse) {
-+			char *tmp = items[i].text;
++			p = items[i].text;
 +			items[i].text = items[i].text_output;
-+			items[i].text_output = tmp;
++			items[i].text_output = p;
 +		}
  		items[i].out = 0;
  		drw_font_getexts(drw->fonts, buf, strlen(buf), &tmpmax, NULL);
  		if (tmpmax > inputw) {
-@@ -700,8 +716,9 @@ setup(void)
- static void
+@@ -701,7 +717,8 @@ static void
  usage(void)
  {
--	fputs("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
+ 	fputs("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
 -	      "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]\n", stderr);
-+	fputs("usage: dmenu [-bfinv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
 +	      "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]\n"
 +	      "             [-d separator] [-D separator]\n", stderr);
  	exit(1);
@@ -93,10 +91,10 @@ index 98507d9..2ac2c9a 100644
  			colors[SchemeSel][ColFg] = argv[++i];
  		else if (!strcmp(argv[i], "-w"))   /* embedding window id */
  			embed = argv[++i];
-+		else if (!strcmp(argv[i], "-d") || !strcmp(argv[i], "-D")) { /* field separator */
-+			separator_reverse = (*(argv[i+1]+1) == '|');
-+			separator_greedy = !strcmp(argv[i], "-D");
-+			separator = *argv[++i];
++		else if (!strcmp(argv[i], "-d") || /* field separator */
++		         (separator_greedy = !strcmp(argv[i], "-D"))) {
++			separator = argv[++i][0];
++			separator_reverse = argv[i][1] == '|';
 +		}
  		else
  			usage();

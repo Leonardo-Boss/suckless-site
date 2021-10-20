@@ -21,6 +21,7 @@ Download
 --------
 * [dwm-barpadding-6.2.diff](dwm-barpadding-6.2.diff) (2019-12-10)
 * [dwm-barpadding-20200720-bb2e722.diff](dwm-barpadding-20200720-bb2e722.diff) (2020-07-20)
+* [dwm-barpadding-20211020-a786211.diff](dwm-barpadding-20211020-a786211.diff) (2021-10-20)
 
 Author
 ------

@@ -50,6 +50,7 @@ Download
 * [surf-tip-history.diff](surf-tip-history.diff) (2952) (20091215)
 * [surf-0.4.1-history.diff](surf-0.4.1-history.diff) (1346) (20101225)
 * [surf-history-20181009-2b71a22.diff](surf-history-20181009-2b71a22.diff) (3405) (20181009)
+* [surf-2.1-history.diff](surf-2.1-history.diff) (1645) (20211114)
 
 Authors
 -------
@@ -58,3 +59,4 @@ Authors
 * Peter John Hartman (wart_) <http://durandus.trilidun.org/durandus/>
 * Samuel Baldwin (shardz) <recursive.forest@gmail.com>
 * Marcin sZpak <szpak@reakcja.org>
+* Howard Cornwell <h@abbcd.net>

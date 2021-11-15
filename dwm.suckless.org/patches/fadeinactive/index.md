@@ -9,7 +9,7 @@ This patch is based on the clientopacity patch by Fabian Blatz.
 
 Download
 --------
-* [dwm-fadeinactive-20200607-67d76bd.diff](dwm-fadeinactive-20200607-67d76bd.diff)
+* [dwm-fadeinactive-20211114-a786211.diff](dwm-fadeinactive-20211114-a786211.diff)
 
 Authors
 -------

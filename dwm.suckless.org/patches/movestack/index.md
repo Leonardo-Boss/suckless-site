@@ -25,6 +25,7 @@ Usage
 
 Download
 --------
+* [dwm-movestack-20211115-a786211.diff](dwm-movestack-20211115-a786211.diff)
 * [dwm-movestack-6.1.diff](dwm-movestack-6.1.diff)
 * [dwm-movestack-5.8.2.diff](dwm-movestack-5.8.2.diff)
 

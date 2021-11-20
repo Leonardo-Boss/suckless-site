@@ -31,7 +31,7 @@ There are also some practical macro hacks:
 
 Download
 --------
-* [dwm-winicon-6.2-v2.0.diff](dwm-winicon-6.2-v2.0.diff) (2021-08-17)
+* [dwm-winicon-6.2-v2.1.diff](dwm-winicon-6.2-v2.1.diff) (2021-08-17)
 
 Alpha Patch
 -----------

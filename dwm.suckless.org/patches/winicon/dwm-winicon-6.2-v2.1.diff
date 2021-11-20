@@ -172,7 +172,7 @@ index 4bcd5ad..71aefa2 100644
  /* Map functions */
  void drw_map(Drw *drw, Window win, int x, int y, unsigned int w, unsigned int h);
 diff --git a/dwm.c b/dwm.c
-index 4465af1..faf40b7 100644
+index 4465af1..2f88466 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -28,6 +28,8 @@
@@ -264,13 +264,13 @@ index 4465af1..faf40b7 100644
 +		unsigned long *i; const unsigned long *end = p + n;
 +		uint32_t bstd = UINT32_MAX, d, m;
 +		for (i = p; i < end - 1; i += sz) {
-+			if ((w = *i++) > UINT16_MAX || (h = *i++) > UINT16_MAX) { XFree(p); return None; }
++			if ((w = *i++) >= 16384 || (h = *i++) >= 16384) { XFree(p); return None; }
 +			if ((sz = w * h) > end - i) break;
 +			if ((m = w > h ? w : h) >= ICONSIZE && (d = m - ICONSIZE) < bstd) { bstd = d; bstp = i; }
 +		}
 +		if (!bstp) {
 +			for (i = p; i < end - 1; i += sz) {
-+				if ((w = *i++) > UINT16_MAX || (h = *i++) > UINT16_MAX) { XFree(p); return None; }
++				if ((w = *i++) >= 16384 || (h = *i++) >= 16384) { XFree(p); return None; }
 +				if ((sz = w * h) > end - i) break;
 +				if ((d = ICONSIZE - (w > h ? w : h)) < bstd) { bstd = d; bstp = i; }
 +			}

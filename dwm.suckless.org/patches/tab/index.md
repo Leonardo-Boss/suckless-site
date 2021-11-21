@@ -113,6 +113,7 @@ Download
   * For dwm 6.1: [dwm-6.1-tab-v2b.diff](dwm-6.1-tab-v2b.diff)
   * For dwm from the git master branch: [dwm-tab-v2b-20210810-7162335.diff](dwm-tab-v2b-20210810-7162335.diff)
   * For dwm 6.2: [dwm-6.2-tab-v2b.diff](dwm-6.2-tab-v2b.diff)
+  * i3 like tabs for dwm master branch: [dwm-tab-i3like-20211121-a786211.diff](dwm-tab-i3like-20211121-a786211.diff)
 * Combined patch of tab and the [pertag](../pertag/) patch from Jan Christoph
   Ebersbach.
   * Follow the [link](../pertag/) for the description of this patch and the
@@ -123,6 +124,7 @@ Download
 
 Change log
 ----------
+* Add i3 like tabs that cover whole screen width
 * Fixed the standalone tab patch not applying to the current git master.
 * **v2b** Fixed in the pertag-tab patch the support for per-tag default layout
   specification. No change in the tab only patch.
@@ -136,3 +138,4 @@ Authors
 -------
 * Philippe Gras - `<philippe dot gras at free dot fr>`
 * Varun Iyer (6.2 ver) - `<varun_iyer@protonmail.com>`
+* howoz - `<howoz@airmail.cc>`

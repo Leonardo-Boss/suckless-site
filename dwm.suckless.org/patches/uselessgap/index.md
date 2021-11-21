@@ -47,6 +47,7 @@ tile mode...
 
 Download
 --------
+* [dwm-uselessgap-20211119-58414bee958f2.diff] (dwm-uselessgap-20211119-58414bee958f2.diff) (20211119) Fixed a bug that caused the inner vertical gap between the master and stack to be wider than the rest of the gaps. Disabled resizehints.
 * [dwm-uselessgap-20200719-bb2e722.diff](dwm-uselessgap-20200719-bb2e722.diff) (20200719)
   Fixed a bug where when moving a client to a different monitor, sometimes the gaps and the border wolud be drawn, when they shouldn't.
 * [dwm-uselessgap-6.2.diff](dwm-uselessgap-6.2.diff)
@@ -61,3 +62,4 @@ Author
 * [jerome](http://blog.jardinmagique.info) -  <jerome@gcu.info>
 * [Cyril Cressent](https://cressent.org) - <cyril@cressent.org> (6.2 port)
 * Mateus Auler - <mateusauler at protonmail dot com> (Bugfix)
+* Thim Cederlund - <thim at cederlund dot de>

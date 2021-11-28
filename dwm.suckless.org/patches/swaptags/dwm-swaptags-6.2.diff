@@ -1,37 +1,42 @@
-From 66122d908f338538f4af0e09332dec80b90524d8 Mon Sep 17 00:00:00 2001
-From: Ricardo Jesus <rj.bcjesus@gmail.com>
-Date: Sat, 29 Jun 2019 11:48:54 +0100
-Subject: [PATCH] Allow swapping the contents of two tags
+From 9513cc776dc8114967988d4abc32fd7f37446ddb Mon Sep 17 00:00:00 2001
+From: fossy <fossy@dnmx.org>
+Date: Sun, 28 Nov 2021 21:34:37 +0100
+Subject: [PATCH] Move function and it's prototype from config.def.h to dwm.c
 
 ---
- config.def.h | 26 +++++++++++++++++++++++++-
- 1 file changed, 25 insertions(+), 1 deletion(-)
+ config.def.h |  3 ++-
+ dwm.c        | 23 +++++++++++++++++++++++
+ 2 files changed, 25 insertions(+), 1 deletion(-)
 
 diff --git a/config.def.h b/config.def.h
-index 1c0b587..701f8da 100644
+index a2ac963..f31a66d 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -43,13 +43,16 @@ static const Layout layouts[] = {
- 	{ "[M]",      monocle },
- };
- 
-+void swaptags(const Arg *arg);
-+
- /* key definitions */
- #define MODKEY Mod1Mask
- #define TAGKEYS(KEY,TAG) \
+@@ -50,7 +50,8 @@ static const Layout layouts[] = {
  	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
  	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
  	{ MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
 -	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
 +	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} }, \
-+	{ Mod4Mask|ShiftMask,           KEY,      swaptags,       {.ui = 1 << TAG} },
++  { Mod4Mask|ShiftMask,           KEY,      swaptags,       {.ui = 1 << TAG} },
  
  /* helper for spawning shell commands in the pre dwm-5.0 fashion */
  #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
-@@ -113,3 +116,24 @@ static Button buttons[] = {
- 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
- };
+diff --git a/dwm.c b/dwm.c
+index 5e4d494..d11addd 100644
+--- a/dwm.c
++++ b/dwm.c
+@@ -234,6 +234,7 @@ static int xerror(Display *dpy, XErrorEvent *ee);
+ static int xerrordummy(Display *dpy, XErrorEvent *ee);
+ static int xerrorstart(Display *dpy, XErrorEvent *ee);
+ static void zoom(const Arg *arg);
++static void swaptags(const Arg *arg);
+ 
+ /* variables */
+ static const char broken[] = "broken";
+@@ -2127,6 +2128,28 @@ zoom(const Arg *arg)
+ 	pop(c);
+ }
  
 +void
 +swaptags(const Arg *arg)
@@ -54,6 +59,10 @@ index 1c0b587..701f8da 100644
 +	focus(NULL);
 +	arrange(selmon);
 +}
++
+ int
+ main(int argc, char *argv[])
+ {
 -- 
-2.22.0
+2.34.1
 

@@ -16,8 +16,10 @@ in dmenu and lets you select it)
 
 Download
 --------
-* [dmenu-dynamicoptions-20200526-01e2dfc7.diff](dmenu-dynamicoptions-20200526-01e2dfc7.diff)
+* [dmenu-dynamicoptions-5.0.diff](dmenu-dynamicoptions-5.0.diff) (with proper command quoting)
+* [dmenu-dynamicoptions-20200526-01e2dfc7.diff](dmenu-dynamicoptions-20200526-01e2dfc7.diff) (2020-05-26)
 
 Author
 ------
-* ttmx - tiago.sequeira.teles@gmail.com
+* ttmx - tiago.sequeira.teles@gmail.com (2020-05-26)
+* Ziad EL KHOURY HANNA - me@ziadkh.ovh (5.0)

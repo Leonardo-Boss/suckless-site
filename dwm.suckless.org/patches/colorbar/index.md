@@ -16,4 +16,4 @@ Download
 
 Author
 ------
-* Lars Niesen - <lars@larsniesen.de>
+* Lars Niesen - <lars.niesen@gmx.de>

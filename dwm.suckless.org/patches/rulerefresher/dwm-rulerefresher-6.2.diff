@@ -1,0 +1,49 @@
+From 94b9518be54da9c52d59465f41c403c6e35efb9f Mon Sep 17 00:00:00 2001
+From: Lars Niesen <lars.niesen@gmx.de>
+Date: Fri, 3 Dec 2021 12:15:04 +0100
+Subject: [PATCH] rerun rules on window name chage
+
+---
+ dwm.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+
+diff --git a/dwm.c b/dwm.c
+index 4465af1..8fab7e3 100644
+--- a/dwm.c
++++ b/dwm.c
+@@ -223,6 +223,7 @@ static int updategeom(void);
+ static void updatenumlockmask(void);
+ static void updatesizehints(Client *c);
+ static void updatestatus(void);
++static void updaterules(Client *c);
+ static void updatetitle(Client *c);
+ static void updatewindowtype(Client *c);
+ static void updatewmhints(Client *c);
+@@ -1237,6 +1238,7 @@ propertynotify(XEvent *e)
+ 		}
+ 		if (ev->atom == XA_WM_NAME || ev->atom == netatom[NetWMName]) {
+ 			updatetitle(c);
++            updaterules(c);
+ 			if (c == c->mon->sel)
+ 				drawbar(c->mon);
+ 		}
+@@ -1992,6 +1994,16 @@ updatestatus(void)
+ 	drawbar(selmon);
+ }
+ 
++void
++updaterules(Client *c)
++{
++    applyrules(c);
++	if (c->isfloating)
++		resize(c, c->x, c->y,
++			c->w, c->h, 0);
++	arrange(c->mon);
++}
++
+ void
+ updatetitle(Client *c)
+ {
+-- 
+2.34.1
+

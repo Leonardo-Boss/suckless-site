@@ -17,7 +17,7 @@ With this patch the rules are reapplied after the rename.
 
 Download
 --------
-* [dwm-rulerefresher-6.2.diff](dwm-rulerefresher-6.2.diff)(2021-12-03)
+* [dwm-rulerefresher-6.2.diff](dwm-rulerefresher-6.2.diff)(2021-12-09)
 
 Author
 ------

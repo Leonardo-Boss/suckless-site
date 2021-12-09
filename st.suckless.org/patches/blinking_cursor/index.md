@@ -25,7 +25,7 @@ Notes
 
 Download
 --------
-* [st-blinking\_cursor-20200531-a2a7044.diff](st-blinking_cursor-20200531-a2a7044.diff)
+* [st-blinking\_cursor-20211116-2f6e597.diff](st-blinking_cursor-20211116-2f6e597.diff)
 
 Authors
 -------

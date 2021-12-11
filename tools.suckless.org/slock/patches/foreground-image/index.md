@@ -1,5 +1,5 @@
 Foreground Image
-=======
+================
 
 Description
 -----------

@@ -33,7 +33,7 @@ index af0fa74..338045c 100644
  		                 G_CALLBACK(initwebextensions), c);
  
 +		webkit_web_context_register_uri_scheme(context, "zoommtg",
-+    					(WebKitURISchemeRequestCallback)handle_zoommtg, NULL, NULL);
++						(WebKitURISchemeRequestCallback)handle_zoommtg, NULL, NULL);
 +
  		v = g_object_new(WEBKIT_TYPE_WEB_VIEW,
  		    "settings", settings,
@@ -42,7 +42,7 @@ index af0fa74..338045c 100644
  		gtk_main_quit();
  }
  
-+void 
++void
 +handle_zoommtg(WebKitURISchemeRequest *request)
 +{
 +	char* uri = webkit_uri_scheme_request_get_uri (request);

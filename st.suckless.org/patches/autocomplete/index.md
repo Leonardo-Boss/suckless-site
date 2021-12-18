@@ -26,11 +26,8 @@ possible completions.
 Advanced usage
 --------------
 
-For more advanced completions use `aAtt:fuzzy-word-complete`
-(Alt-Shift-slash) and `aAtt:skeleton-complete`. It's behavior is inspired by
-[skeleton-complete](https://github.com/baohaojun/skeleton-complete), please see
-[its readme](http://baohaojun.github.io/skeleton-complete.html) for a more
-detailed explanation.
+For more advanced completions use `ACMPL_FUZZY_WORD` and `ACMPL_FUZZY`. It's
+behavior is inspired by [skeleton-complete](https://github.com/baohaojun/skeleton-complete), please see [its readme](http://baohaojun.github.io/skeleton-complete.html) for a more detailed explanation.
 
 Available commands
 -------------------
@@ -77,6 +74,7 @@ Download
 This patch is under testing phase:
 * [st-autocomplete-20211215-181216-st-0.8.4-testrelease.diff](st-autocomplete-20211215-181216-st-0.8.4-testrelease.diff)
 * [st-autocomplete-20211216-221700-st-0.8.4-testrelease.diff](st-autocomplete-20211216-221700-st-0.8.4-testrelease.diff)
+* [st-autocomplete-20211218-131244-st-0.8.4-testrelease.diff](st-autocomplete-20211218-131244-st-0.8.4-testrelease.diff)
 
 Contribution
 ------------

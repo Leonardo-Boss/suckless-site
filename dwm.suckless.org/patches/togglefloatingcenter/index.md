@@ -1,18 +1,14 @@
-togglefloatingcenter
+gaplessgridleftright
 ====================
 
 Description
 -----------
-Default behaviour when togglefloating() is floating from top-left corner.
-This patch will allows you to toggle floating window client will be centered
-position.
-
-The original code is from [alwayscenter](../alwayscenter/) patch.
+This patch incorporates [gaplessgrid](../gaplessgrid/) patch. This patch adds the ability to focus on left or right window of the current window (works in gaplessgrid layout only)
 
 Download
 --------
-* [dwm-togglefloatingcenter-20210806-138b405f.diff](dwm-togglefloatingcenter-20210806-138b405f.diff)
+* [dwm-gaplessgridleftright-20211216-76d72e24.diff](dwm-gaplessgridleftright-20211216-76d72e24.diff)
 
 Author
 ------
-* Rizqi Nur Assyaufi - <bandithijo@gmail.com>
+* Shlomo Aknin - <shlomi.aknin@gmail.com>

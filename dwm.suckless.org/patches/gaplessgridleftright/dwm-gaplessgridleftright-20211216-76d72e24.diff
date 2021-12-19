@@ -1,0 +1,154 @@
+From 76d72e24117a5626827cfb0ef49515ec7f7dd4fe Mon Sep 17 00:00:00 2001
+From: shlomi-aknin <shlomi.aknin@gmail.com>
+Date: Thu, 16 Dec 2021 14:53:02 +0200
+Subject: [PATCH] This patch incorporates gaplessgrid patch. This patch adds
+ the ability to focus on left or right window of the current window (works in
+ gaplessgrid layout only)
+
+---
+ config.def.h |  5 +++-
+ dwm.c        | 74 +++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 2 files changed, 77 insertions(+), 2 deletions(-)
+
+diff --git a/config.def.h b/config.def.h
+index a2ac963..c63a640 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -42,6 +42,7 @@ static const Layout layouts[] = {
+ 	{ "[]=",      tile },    /* first entry is default */
+ 	{ "><>",      NULL },    /* no layout function means floating behavior */
+ 	{ "[M]",      monocle },
++  { "###",      gaplessgrid },
+ };
+
+ /* key definitions */
+@@ -77,6 +78,7 @@ static Key keys[] = {
+ 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
+ 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
+ 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
++	{ MODKEY,                       XK_g,      setlayout,      {.v = &layouts[3]} },
+ 	{ MODKEY,                       XK_space,  setlayout,      {0} },
+ 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+ 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
+@@ -85,6 +87,8 @@ static Key keys[] = {
+ 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
+ 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
+ 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
++	{ MODKEY|ControlMask,           XK_l,      gaplessgridleftright,  {.i = +1 } },
++	{ MODKEY|ControlMask,           XK_h,      gaplessgridleftright,  {.i = -1 } },
+ 	TAGKEYS(                        XK_1,                      0)
+ 	TAGKEYS(                        XK_2,                      1)
+ 	TAGKEYS(                        XK_3,                      2)
+@@ -113,4 +117,3 @@ static Button buttons[] = {
+ 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
+ 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
+ };
+-
+diff --git a/dwm.c b/dwm.c
+index 5e4d494..a7fb265 100644
+--- a/dwm.c
++++ b/dwm.c
+@@ -91,6 +91,7 @@ struct Client {
+ 	int oldx, oldy, oldw, oldh;
+ 	int basew, baseh, incw, inch, maxw, maxh, minw, minh;
+ 	int bw, oldbw;
++  int gridrow, gridcol;
+ 	unsigned int tags;
+ 	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen;
+ 	Client *next;
+@@ -169,6 +170,8 @@ static void focus(Client *c);
+ static void focusin(XEvent *e);
+ static void focusmon(const Arg *arg);
+ static void focusstack(const Arg *arg);
++static void gaplessgrid(Monitor *m);
++static void gaplessgridleftright(const Arg *arg);
+ static Atom getatomprop(Client *c, Atom prop);
+ static int getrootptr(int *x, int *y);
+ static long getstate(Window w);
+@@ -856,6 +859,76 @@ focusstack(const Arg *arg)
+ 	}
+ }
+
++void
++gaplessgrid(Monitor *m)
++{
++	unsigned int n, cols, rows, cn, rn, i, cx, cy, cw, ch;
++	Client *c;
++
++	for(n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++) ;
++	if(n == 0)
++		return;
++
++	/* grid dimensions */
++	for(cols = 0; cols <= n/2; cols++)
++		if(cols*cols >= n)
++			break;
++	if(n == 5) /* set layout against the general calculation: not 1:2:2, but 2:3 */
++		cols = 2;
++	rows = n/cols;
++
++	/* window geometries */
++	cw = cols ? m->ww / cols : m->ww;
++	cn = 0; /* current column number */
++	rn = 0; /* current row number */
++	for(i = 0, c = nexttiled(m->clients); c; i++, c = nexttiled(c->next)) {
++		if(i/rows + 1 > cols - n%cols)
++			rows = n/cols + 1;
++		ch = rows ? m->wh / rows : m->wh;
++		cx = m->wx + cn*cw;
++		cy = m->wy + rn*ch;
++   c->gridrow = rn;
++   c->gridcol = cn;
++		resize(c, cx, cy, cw - 2 * c->bw, ch - 2 * c->bw, False);
++		rn++;
++		if(rn >= rows) {
++			rn = 0;
++			cn++;
++		}
++	}
++}
++
++void
++gaplessgridleftright(const Arg *arg)
++{
++  Client *c = selmon->sel;
++  Client *t = NULL;
++  int found = 0;
++  if(selmon->lt[selmon->sellt]->arrange != gaplessgrid || !ISVISIBLE(c)) return;
++
++  if (arg->i > 0) {
++    for(t = selmon->sel->next; t; t = t->next) {
++      if (t->gridcol == c->gridcol + 1 && t->gridrow == c->gridrow) break;
++    }
++  } else {
++    for(t = selmon->clients; t; t = t->next) {
++      if (t->gridcol == c->gridcol - 1 && t->gridrow == c->gridrow) {
++        found = 1;
++        break;
++      }
++    }
++
++    if (found == 0) {
++      for(t = selmon->clients; t; t = t->next) {
++        if (t->gridcol == c->gridcol - 1 && t->gridrow == c->gridrow - 1) break;
++      }
++    }
++  }
++
++  focus(t);
++  arrange(selmon);
++}
++
+ Atom
+ getatomprop(Client *c, Atom prop)
+ {
+@@ -1597,7 +1670,6 @@ setup(void)
+ 	focus(NULL);
+ }
+
+-
+ void
+ seturgent(Client *c, int urg)
+ {
+--
+2.34.1

@@ -12,8 +12,10 @@ except provides for vertical instead of horizontal master windows.
 Download
 --------
 * [dwm-columns-6.0.diff](dwm-columns-6.0.diff)
+* [dwm-columns-6.2.diff](dwm-columns-6.2.diff)
 
 Author
 ------
 * Evan Gates (emg)<evan.gates@gmail.com>
 * Noah Rosser <noah.rosser@gmail.com>
+* Louis Bettens <louis@bettens.info> (6.2 port)

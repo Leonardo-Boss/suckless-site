@@ -58,8 +58,55 @@ the respective folders. Access the manual under libgrapheme(7) by typing
 
 	man libgrapheme
 
-and looking at the referred pages, e.g. grapheme_next_character_break(3).
-Each page contains code-examples.
+and looking at the referred pages, e.g. grapheme\_next\_character\_break(3).
+Each page contains code-examples and an extensive description. To give
+one example that is also given in the manuals, the following code
+separates a given string 'Tëst 👨‍👩‍👦 🇺🇸 नी நி!'
+into its user-perceived characters:
+
+	#include <grapheme.h>
+	#include <stdint.h>
+	#include <stdio.h>
+
+	int
+	main(void)
+	{
+		/* UTF-8 encoded input */
+		char *s = "T\xC3\xABst \xF0\x9F\x91\xA8\xE2\x80\x8D\xF0"
+		          "\x9F\x91\xA9\xE2\x80\x8D\xF0\x9F\x91\xA6 \xF0"
+		          "\x9F\x87\xBA\xF0\x9F\x87\xB8 \xE0\xA4\xA8\xE0"
+		          "\xA5\x80 \xE0\xAE\xA8\xE0\xAE\xBF!";
+		size_t ret, off;
+
+		printf("Input: \"%s\"\n", s);
+
+		for (off = 0; s[off] != '\0'; off += ret) {
+			ret = grapheme_next_character_break(s + off, SIZE_MAX);
+			printf("%2zu bytes | %.*s\n", ret, (int)ret, s + off, ret);
+		}
+
+		return 0;
+	}
+
+This code can be compiled with
+
+	cc (-static) -o example example.c -lgrapheme
+
+and the output is
+
+	 1 bytes | T
+	 2 bytes | ë
+	 1 bytes | s
+	 1 bytes | t
+	 1 bytes |  
+	18 bytes | 👨‍👩‍👦
+	 1 bytes |  
+	 8 bytes | 🇺🇸
+	 1 bytes |  
+	 6 bytes | नी
+	 1 bytes |  
+	 6 bytes | நி
+	 1 bytes | !
 
 Development
 -----------

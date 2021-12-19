@@ -94,6 +94,7 @@ This code can be compiled with
 
 and the output is
 
+	Input: "Tëst 👨‍👩‍👦 🇺🇸 नी நி!"
 	 1 bytes | T
 	 2 bytes | ë
 	 1 bytes | s

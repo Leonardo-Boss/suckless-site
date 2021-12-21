@@ -15,7 +15,7 @@ index a2ac963..9af5393 100644
  	/* symbol     arrange function */
  	{ "[]=",      tile },    /* first entry is default */
 diff --git dwm.c dwm.c
-index 5eeb496..f83a555 100644
+index 5eeb496..b71cac9 100644
 --- dwm.c
 +++ dwm.c
 @@ -111,6 +111,13 @@ typedef struct {
@@ -59,7 +59,7 @@ index 5eeb496..f83a555 100644
 +
 +			if (selmon->mw >= lmr->mw &&
 +			    selmon->mh >= lmr->mh &&
-+			    selmon->pertag->sellts[t] == lmr->layout)
++			    selmon->lt[selmon->pertag->sellts[t]] == &layouts[lmr->layout])
 +			{
 +				new_mfact = lmr->mfact;
 +				new_nmaster = lmr->nmaster;

@@ -1,10 +1,10 @@
 ![libgrapheme](libgrapheme.svg)
 
 libgrapheme is an extremely simple C99 library providing utilities for
-properly handling user-perceived characters ('grapheme clusters')
-according to the Unicode standard. While providing convenience functions
-to operate on UTF-8-strings, you can also use libgrapheme for any other
-encoding as well.
+properly handling Unicode strings made up of user-perceived characters
+('grapheme clusters') according to the Unicode standard. While providing
+convenience functions to operate on UTF-8-encoded strings, you can also
+use libgrapheme for any other encoding as well.
 
 The necessary lookup-tables and test-data are automatically generated
 from the Unicode standard data, ensuring correctness and validation.

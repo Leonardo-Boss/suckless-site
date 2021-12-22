@@ -116,6 +116,10 @@ repository or get a copy with the following command:
 
 	git clone https://git.suckless.org/libgrapheme
 
+Download
+--------
+* [libgrapheme-1](//dl.suckless.org/libgrapheme/libgrapheme-1.tar.gz) (2021-12-22)
+
 Author
 ------
 * Laslo Hunhold (dev@frign.de)

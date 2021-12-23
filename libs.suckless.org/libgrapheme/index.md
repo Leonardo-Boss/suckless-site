@@ -67,7 +67,7 @@ into its user-perceived characters:
 	#include <grapheme.h>
 	#include <stdint.h>
 	#include <stdio.h>
-
+	
 	int
 	main(void)
 	{
@@ -77,14 +77,14 @@ into its user-perceived characters:
 		          "\x9F\x87\xBA\xF0\x9F\x87\xB8 \xE0\xA4\xA8\xE0"
 		          "\xA5\x80 \xE0\xAE\xA8\xE0\xAE\xBF!";
 		size_t ret, off;
-
+	
 		printf("Input: \"%s\"\n", s);
-
+	
 		for (off = 0; s[off] != '\0'; off += ret) {
 			ret = grapheme_next_character_break(s + off, SIZE_MAX);
 			printf("%2zu bytes | %.*s\n", ret, (int)ret, s + off, ret);
 		}
-
+	
 		return 0;
 	}
 

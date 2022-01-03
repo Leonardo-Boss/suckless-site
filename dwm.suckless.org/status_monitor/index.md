@@ -65,6 +65,9 @@ Feel free to add your own status monitors here (keeping the list sorted).
 * [dwmblocks](https://github.com/ashish-yadav11/dwmblocks) - rewrite of
   dwmblocks with added features including clickability, cursor hinting and
   color.
+* [dwmblocks-async](https://github.com/UtkarshVerma/dwmblocks-async) - Asynchronous version of
+  dwmblocks with support for clickability. Unlike dwmblocks, each block is executed
+  asynchronously so that the status bar never goes stale when a block takes time to execute.
 * [dwms](https://github.com/ianremmler/dwms) - displays time, network, audio,
   and battery status, written in Go using XGB.
 * [dwmsd](https://github.com/johnko/dwmsd) - a daemon that listens on localhost

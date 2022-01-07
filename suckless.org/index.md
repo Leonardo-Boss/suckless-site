@@ -123,9 +123,8 @@ This release has mostly bugfixes.
 
 2019-02-03
 ----------
-[dwm 6.2](//dwm.suckless.org) released: [download](//dl.suckless.org/dwm/dwm-6.2.tar.gz)
-
-[dmenu 4.9](//tools.suckless.org/dmenu/) released: [download](//dl.suckless.org/tools/dmenu-4.9.tar.gz)
+* [dwm 6.2](//dwm.suckless.org) released: [download](//dl.suckless.org/dwm/dwm-6.2.tar.gz)
+* [dmenu 4.9](//tools.suckless.org/dmenu/) released: [download](//dl.suckless.org/tools/dmenu-4.9.tar.gz)
 
 2018-06-01
 ----------
@@ -156,9 +155,8 @@ Registrations for [slcon5](/conferences/2018/) are now open.
 
 2018-03-14
 ----------
-[dmenu 4.8](//tools.suckless.org/dmenu/) released: [download](//dl.suckless.org/tools/dmenu-4.8.tar.gz)
-
-[st 0.8](//st.suckless.org/) released: [download](//dl.suckless.org/st/st-0.8.tar.gz)
+* [dmenu 4.8](//tools.suckless.org/dmenu/) released: [download](//dl.suckless.org/tools/dmenu-4.8.tar.gz)
+* [st 0.8](//st.suckless.org/) released: [download](//dl.suckless.org/st/st-0.8.tar.gz)
 
 2018-02-04
 ----------

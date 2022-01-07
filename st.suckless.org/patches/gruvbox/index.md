@@ -15,6 +15,8 @@ Download
 --------
 * [st-gruvbox-dark-0.8.2.diff](st-gruvbox-dark-0.8.2.diff)
 * [st-gruvbox-light-0.8.2.diff](st-gruvbox-light-0.8.2.diff)
+* [st-gruvbox-dark-0.8.5.diff](st-gruvbox-dark-0.8.5.diff)
+* [st-gruvbox-light-0.8.5.diff](st-gruvbox-light-0.8.5.diff)
 
 Authors
 -------

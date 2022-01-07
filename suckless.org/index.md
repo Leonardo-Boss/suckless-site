@@ -16,6 +16,10 @@ News
 * [st 0.8.5](//st.suckless.org/) released: [download](//dl.suckless.org/st/st-0.8.5.tar.gz)
 * [svkbd 0.4.1](//tools.suckless.org/x/svkbd/) released: [download](//dl.suckless.org/tools/svkbd-0.4.1.tar.gz)
 
+2021-12-22
+----------
+[libgrapheme 1](//libs.suckless.org/libgrapheme) released: [download](//dl.suckless.org/libgrapheme/libgrapheme-1.tar.gz)
+
 2021-07-30
 ----------
 [svkbd 0.4](//tools.suckless.org/x/svkbd/) released: [download](//dl.suckless.org/tools/svkbd-0.4.tar.gz)

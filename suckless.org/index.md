@@ -11,10 +11,10 @@ News
 
 2022-01-07
 ----------
-[dwm 6.3](//dwm.suckless.org) released: [download](//dl.suckless.org/dwm/dwm-6.3.tar.gz)
-[ii 1.9](//tools.suckless.org/ii) released: [download](//dl.suckless.org/tools/ii-1.9.tar.gz)
-[st 0.8.5](//st.suckless.org/) released: [download](//dl.suckless.org/st/st-0.8.5.tar.gz)
-[svkbd 0.4.1](//tools.suckless.org/x/svkbd/) released: [download](//dl.suckless.org/tools/svkbd-0.4.1.tar.gz)
+* [dwm 6.3](//dwm.suckless.org) released: [download](//dl.suckless.org/dwm/dwm-6.3.tar.gz)
+* [ii 1.9](//tools.suckless.org/ii) released: [download](//dl.suckless.org/tools/ii-1.9.tar.gz)
+* [st 0.8.5](//st.suckless.org/) released: [download](//dl.suckless.org/st/st-0.8.5.tar.gz)
+* [svkbd 0.4.1](//tools.suckless.org/x/svkbd/) released: [download](//dl.suckless.org/tools/svkbd-0.4.1.tar.gz)
 
 2021-07-30
 ----------

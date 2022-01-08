@@ -12,6 +12,7 @@ There are several other projects which are inspired by the spirit of suckless.
 * [dmc](//oldgit.suckless.org/dmc/) - dynamic mail client
 * [dvtm](http://www.brain-dump.org/projects/dvtm/) - screen-like dwm (curses)
 * [dzen](https://github.com/robm/dzen) - display status/notification/menu windows
+* [gendoc](https://bztsrc.gitlab.io/gendoc) - a suckless documentation generation alternative to Shpinx and ReadtheDocs
 * [honden](https://github.com/joodan-van-github/honden) - flashcard system built on top of oboeta
 * [ired](https://github.com/radare/ired) - minimalistic hexadecimal editor inspired in radare
 * [kelp](http://kelp.sf.net) - source code annotation framework

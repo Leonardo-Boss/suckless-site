@@ -75,6 +75,7 @@ This patch is under testing phase:
 * [st-autocomplete-20211215-181216-st-0.8.4-testrelease.diff](st-autocomplete-20211215-181216-st-0.8.4-testrelease.diff)
 * [st-autocomplete-20211216-221700-st-0.8.4-testrelease.diff](st-autocomplete-20211216-221700-st-0.8.4-testrelease.diff)
 * [st-autocomplete-20211218-131244-st-0.8.4-testrelease.diff](st-autocomplete-20211218-131244-st-0.8.4-testrelease.diff)
+* [st-autocomplete-20220110-234714-st-0.8.4-testrelease.diff](st-autocomplete-20220110-234714-st-0.8.4-testrelease.diff)
 
 Contribution
 ------------

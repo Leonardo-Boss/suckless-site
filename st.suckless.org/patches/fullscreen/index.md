@@ -9,7 +9,7 @@ Two key bindings are defined: F11 which is typical with other applications and A
 
 Notes
 -----
-This patch is inspired by the go_fullscreen() patch included in this build: [https://github.com/mcaimi/st](https://github.com/mcaimi/st)
+This patch is inspired by the go_fullscreen() patch included in this build: [https://github.com/mcaimi/st](https://github.com/mcaimi/st/commit/e7c66e955a336a0a2de1b4b1dc5c1574934da549)
 However, by using the NET_WM_STATE_TOGGLE flag, as opposed to ADD and REMOVE, this implementation is simpler.
 
 Download

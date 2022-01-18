@@ -18,7 +18,6 @@ Several deep changes needed to be made:
 
 Download
 --------
-* [dwm-single\_tagset-20211114-a786211.diff](dwm-single_tagset-20211114-a786211.diff) (Add _NET_WM_DESKTOP attribute)
 * [dwm-single\_tagset-20211015-a786211.diff](dwm-single_tagset-20211015-a786211.diff)
 * [dwm-single\_tagset-20210623-67d76bd.diff](dwm-single_tagset-20210623-67d76bd.diff)
 * [dwm-single\_tagset-6.2.diff](dwm-single_tagset-6.2.diff)

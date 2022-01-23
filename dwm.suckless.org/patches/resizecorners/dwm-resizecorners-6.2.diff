@@ -1,5 +1,6 @@
---- a/dwm.c	2019-02-02 10:55:28.000000000 -0200
-+++ b/dwm.c	2020-06-11 20:09:16.786504007 -0300
+diff -r -u a/dwm.c b/dwm.c
+--- a/dwm.c	2019-02-02 07:55:28.000000000 -0500
++++ b/dwm.c	2022-01-17 22:38:33.614493243 -0500
 @@ -1291,9 +1291,14 @@
  resizemouse(const Arg *arg)
  {
@@ -35,10 +36,12 @@
  	do {
  		XMaskEvent(dpy, MOUSEMASK|ExposureMask|SubstructureRedirectMask, &ev);
  		switch(ev.type) {
-@@ -1322,6 +1335,11 @@
+@@ -1320,8 +1333,11 @@
+ 				continue;
+ 			lasttime = ev.xmotion.time;
  
- 			nw = MAX(ev.xmotion.x - ocx - 2 * c->bw + 1, 1);
- 			nh = MAX(ev.xmotion.y - ocy - 2 * c->bw + 1, 1);
+-			nw = MAX(ev.xmotion.x - ocx - 2 * c->bw + 1, 1);
+-			nh = MAX(ev.xmotion.y - ocy - 2 * c->bw + 1, 1);
 +			nx = horizcorner ? ev.xmotion.x : c->x;
 +			ny = vertcorner ? ev.xmotion.y : c->y;
 +			nw = MAX(horizcorner ? (ocx2 - nx) : (ev.xmotion.x - ocx - 2 * c->bw + 1), 1);
@@ -47,7 +50,7 @@
  			if (c->mon->wx + nw >= selmon->wx && c->mon->wx + nw <= selmon->wx + selmon->ww
  			&& c->mon->wy + nh >= selmon->wy && c->mon->wy + nh <= selmon->wy + selmon->wh)
  			{
-@@ -1330,11 +1348,13 @@
+@@ -1330,11 +1346,13 @@
  					togglefloating(NULL);
  			}
  			if (!selmon->lt[selmon->sellt]->arrange || c->isfloating)

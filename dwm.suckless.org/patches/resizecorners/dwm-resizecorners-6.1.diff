@@ -1,8 +1,7 @@
-diff --git a/dwm.c b/dwm.c
-index ff7e096..b6ce27c 100644
---- a/dwm.c
-+++ b/dwm.c
-@@ -1313,9 +1313,14 @@ void
+diff -r -u a/dwm.c b/dwm.c
+--- a/dwm.c	2015-11-08 17:39:37.000000000 -0500
++++ b/dwm.c	2022-01-17 22:49:20.598478626 -0500
+@@ -1308,9 +1308,14 @@
  resizemouse(const Arg *arg)
  {
  	int ocx, ocy, nw, nh;
@@ -17,7 +16,7 @@ index ff7e096..b6ce27c 100644
  	Time lasttime = 0;
  
  	if (!(c = selmon->sel))
-@@ -1325,10 +1330,19 @@ resizemouse(const Arg *arg)
+@@ -1320,10 +1325,19 @@
  	restack(selmon);
  	ocx = c->x;
  	ocy = c->y;
@@ -38,10 +37,12 @@ index ff7e096..b6ce27c 100644
  	do {
  		XMaskEvent(dpy, MOUSEMASK|ExposureMask|SubstructureRedirectMask, &ev);
  		switch(ev.type) {
-@@ -1344,6 +1358,11 @@ resizemouse(const Arg *arg)
+@@ -1337,8 +1351,11 @@
+ 				continue;
+ 			lasttime = ev.xmotion.time;
  
- 			nw = MAX(ev.xmotion.x - ocx - 2 * c->bw + 1, 1);
- 			nh = MAX(ev.xmotion.y - ocy - 2 * c->bw + 1, 1);
+-			nw = MAX(ev.xmotion.x - ocx - 2 * c->bw + 1, 1);
+-			nh = MAX(ev.xmotion.y - ocy - 2 * c->bw + 1, 1);
 +			nx = horizcorner ? ev.xmotion.x : c->x;
 +			ny = vertcorner ? ev.xmotion.y : c->y;
 +			nw = MAX(horizcorner ? (ocx2 - nx) : (ev.xmotion.x - ocx - 2 * c->bw + 1), 1);
@@ -50,7 +51,7 @@ index ff7e096..b6ce27c 100644
  			if (c->mon->wx + nw >= selmon->wx && c->mon->wx + nw <= selmon->wx + selmon->ww
  			&& c->mon->wy + nh >= selmon->wy && c->mon->wy + nh <= selmon->wy + selmon->wh)
  			{
-@@ -1352,11 +1371,13 @@ resizemouse(const Arg *arg)
+@@ -1347,11 +1364,13 @@
  					togglefloating(NULL);
  			}
  			if (!selmon->lt[selmon->sellt]->arrange || c->isfloating)

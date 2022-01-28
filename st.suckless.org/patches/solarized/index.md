@@ -42,7 +42,7 @@ or the dark color scheme:
 * [st-solarized-light-0.7.diff](st-solarized-light-0.7.diff)
 * [st-solarized-light-20170623-b331da5.diff](st-solarized-light-20170623-b331da5.diff)
 * [st-solarized-light-20190306-ed68fe7.diff](st-solarized-light-20190306-ed68fe7.diff)
-* [st-solarized-light-20220123-2c5edf2.diff](st-solarized-light-20220123-2c5edf2.diff)
+* [st-solarized-light-0.8.5.diff](st-solarized-light-0.8.5.diff)
 
 *Dark*:
 

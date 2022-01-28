@@ -51,6 +51,7 @@ or the dark color scheme:
 * [st-solarized-dark-0.7.diff](st-solarized-dark-0.7.diff)
 * [st-solarized-dark-20170623-b331da5.diff](st-solarized-dark-20170623-b331da5.diff)
 * [st-solarized-dark-20180411-041912a.diff](st-solarized-dark-20180411-041912a.diff)
+* [st-solarized-dark-0.8.5.diff](st-solarized-dark-0.8.5.diff)
 
 *Both (swap between light/dark with F6)*:
 
@@ -71,3 +72,4 @@ Authors
 * Linh Nguyen - <linhvng.2212@gmail.com> (0.8.1 port for no\_bold\_colors and swap versions)
 * Varun Iyer - <vi.mail@protonmail.ch> (20190129 port for swap version)
 * Joachim Büchel - <jo@audijo.de> (0.8.3 port for swap version)
+* Povilas Balzaravičius - <povilas@balzaravicius.lt> (0.8.5, dark)

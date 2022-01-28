@@ -2,6 +2,10 @@ xtheme
 ======
 Simple xresources theme management system for st
 
+Usage
+-----
+Simply *xrdb -merge* new theme and run *./xtheme; make install* to apply a new theme.
+
 GitLab
 ------
 [https://gitlab.com/-/snippets/2243455](https://gitlab.com/-/snippets/2243455)

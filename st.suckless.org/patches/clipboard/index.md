@@ -11,7 +11,7 @@ Description
 This trivial patch sets CLIPBOARD on selection, the same as your browser.
 
 You may want to replace selpaste with clippaste in your config.h bindings to
-complete the affect.
+complete the effect.
 
 Download
 --------

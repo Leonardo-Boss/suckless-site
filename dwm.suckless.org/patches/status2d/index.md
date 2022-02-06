@@ -11,8 +11,12 @@ an example of my status bar with multi-cpu and battery.
 Download
 --------
 
+* [dwm-status2d-6.3.diff](dwm-status2d-6.3.diff)
+* [dwm-status2d-systray-6.3.diff](dwm-status2d-systray-6.3.diff) 
+
+This patch embeds systray patch.
+
 * [dwm-status2d-6.2.diff](dwm-status2d-6.2.diff)
-* [dwm-status2d-20200508-60bb3df.diff](dwm-status2d-20200508-60bb3df.diff)
 
 Use this patch if you want to include the extrabar patch
 
@@ -25,6 +29,8 @@ This patch adds the ability to use terminal colors from xrdb, allowing programs 
 This patch adds some extra tags for managing colors described below
 
 * [dwm-status2d-swap-save-restore-6.2.diff](dwm-status2d-swap-save-restore-6.2.diff)
+
+* [dwm-status2d-20200508-60bb3df.diff](dwm-status2d-20200508-60bb3df.diff)
 
 Usage
 -----
@@ -91,3 +97,7 @@ Authors
 * [sipi](https://github.com/sipi)
 * lhark - <lhark@ntymail.com> (6.2 port, ^b^ command)
 * [tdu](https://github.com/tdukv) (xrdb colors, ^w^, ^v^, ^t^ commands)
+
+Repo
+----
+[https://github.com/sipi/dwm-status2d](https://github.com/sipi/dwm-status2d)

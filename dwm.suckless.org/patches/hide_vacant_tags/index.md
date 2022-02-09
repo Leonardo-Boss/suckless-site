@@ -15,12 +15,14 @@ contrast than if there were filled/empty rectangles.
 
 Download
 --------
+* [dwm-hide\_vacant\_tags-6.3.diff](dwm-hide_vacant_tags-6.3.diff) - 2022-02-09
 * [dwm-hide\_vacant\_tags-6.1.diff](dwm-hide_vacant_tags-6.1.diff) - 2016-01-22
 * [dwm-hide\_vacant\_tags-git-20160626-7af4d43.diff](dwm-hide_vacant_tags-git-20160626-7af4d43.diff)
 * [dwm-hide\_vacant\_tags-6.2.diff](dwm-hide_vacant_tags-6.2.diff)
 
 Author
 ------
+* Adrian Amaglio (Update to dwm 6.3)
 * [Ondřej Grover](mailto:ondrej.grover@gmail.com)
 * Matthew Boswell - mordervomubel+suckless at lockmail dot us (mechanical update for dwm 6.1 release)
 * [Jochen Sprickerhof](mailto:project@firstname.lastname.de) (hide 0 tagged clients)

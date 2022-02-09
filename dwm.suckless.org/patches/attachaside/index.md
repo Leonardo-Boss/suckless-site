@@ -43,6 +43,7 @@ always becoming the new master. It's basically an
 
 Download
 --------
+* [dwm-attachaside-6.3.diff](dwm-attachaside-6.3.diff)
 * [dwm-attachaside-6.1.diff](dwm-attachaside-6.1.diff)
 * [dwm-attachaside-20160718-56a31dc.diff](dwm-attachaside-20160718-56a31dc.diff)
 * [dwm-attachaside-20180126-db22360.diff](dwm-attachaside-20180126-db22360.diff)
@@ -50,6 +51,7 @@ Download
 
 Authors
 -------
+* Adrian Amaglio - (6.3 port and fixes)
 * Jerome Andrieux - <jerome@gcu.info>
 * Chris Down - <chris@chrisdown.name> (6.1 port and fixes)
 * Laslo Hunhold - <dev@frign.de> (git port)

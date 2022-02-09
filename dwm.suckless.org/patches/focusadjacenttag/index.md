@@ -18,9 +18,11 @@ Default key bindings
 
 Download
 --------
+* [dwm-focusadjacenttag-6.3.diff](dwm-focusadjacenttag-6.3.diff)
 * [dwm-focusadjacenttag-6.0.diff](dwm-focusadjacenttag-6.0.diff)
   (Unclean patch, Author emailed about this issue already)
 
 Authors
 -------
+* Adrian Amaglio - 6.3 patch and config place fix
 * Fabio Banfi - `<fbanfi90 at gmail dot com>`

@@ -24,6 +24,7 @@ Mouse actions supported:
 
 Download
 --------
+* [dmenu-mousesupport-5.1.diff](dmenu-mousesupport-5.1.diff)
 * [dmenu-mousesupport-5.0.diff](dmenu-mousesupport-5.0.diff)
 * [dmenu-mousesupport-4.9.diff](dmenu-mousesupport-4.9.diff)
 * [dmenu-mousesupport-4.7.diff](dmenu-mousesupport-4.7.diff)

@@ -9,6 +9,10 @@ News
 
 [Atom feed](//suckless.org/atom.xml)
 
+2022-02-11
+----------
+[dmenu 5.1](//tools.suckless.org/dmenu/) released: [download](//dl.suckless.org/tools/dmenu-5.1.tar.gz)
+
 2022-01-07
 ----------
 * [dwm 6.3](//dwm.suckless.org) released: [download](//dl.suckless.org/dwm/dwm-6.3.tar.gz)

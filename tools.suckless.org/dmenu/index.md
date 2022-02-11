@@ -7,7 +7,7 @@ efficiently.
 
 Download
 --------
-* [dmenu-5.0](//dl.suckless.org/tools/dmenu-5.0.tar.gz) (2020-09-02)
+* [dmenu-5.1](//dl.suckless.org/tools/dmenu-5.1.tar.gz) (2022-02-11)
 
 
 Mailing list

@@ -22,6 +22,14 @@ But if the alternative resource too doesn't found, the default resource is used
 
 specified in *$themedefaults* file.
 
+Applying new resources
+----------------------
+[This](https://gitlab.com/GasparVardanyan/dwm/-/commit/51e56cbf91645e8f81de15a1591c104eddf7385c) is how you can apply new resources (the example is for dwm version of xtheme).
+
+NOTE: *xresources.defaults* is the *$themedefaults* of dwm's xtheme. Modify
+
+*themes/st-defaults.h* for st.
+
 GitLab
 ------
 [https://gitlab.com/GasparVardanyan/st/-/tree/xtheme](https://gitlab.com/GasparVardanyan/st/-/tree/xtheme)

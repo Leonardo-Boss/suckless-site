@@ -27,11 +27,9 @@ The result will be a little button that says "surf" at the top bar. When you cli
 
 Download
 --------
-* [dwm-launchers-20221502-6.3.diff](dwm-launchers-20221502-6.3.diff)
 * [dwm-launchers-20200527-f09418b.diff](dwm-launchers-20200527-f09418b.diff)
 
 Author
 ------
 * [Adham Zahran](mailto:adhamzahranfms@gmail.com)
-* [Baron Leonardo](mailto:mohamed.a.elmeligy@protonmail.com)
 

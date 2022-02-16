@@ -9,6 +9,7 @@ GitLab
 Download
 --------
 * [dwm-xtheme-20220214-135624-dwm-6.3.diff](dwm-xtheme-20220214-135624-dwm-6.3.diff)
+* [dwm-xtheme-20220216-044040-dwm-6.3.diff](dwm-xtheme-20220216-044040-dwm-6.3.diff)
 
 
 Authors

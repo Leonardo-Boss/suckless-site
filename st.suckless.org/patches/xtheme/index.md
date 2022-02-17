@@ -18,6 +18,7 @@ Download
 * [st-xtheme-20220211-234150-st-0.8.5.diff](st-xtheme-20220211-234150-st-0.8.5.diff)
 * [st-xtheme-20220213-170120.st-0.8.5.diff](st-xtheme-20220213-170120.st-0.8.5.diff)
 * [st-xtheme-20220216-035000-st-0.8.5.diff](st-xtheme-20220216-035000-st-0.8.5.diff)
+* [st-xtheme-20220218-001337-st-0.8.5.diff](st-xtheme-20220218-001337-st-0.8.5.diff)
 
 
 Authors

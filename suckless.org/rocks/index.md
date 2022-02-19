@@ -217,7 +217,6 @@ This covers most console-based programs and programs from
 * [entr](http://entrproject.org/) - Run arbitrary commands when files change.
 * [mtm](https://github.com/deadpixi/mtm) - Micro Terminal Multiplexer.
 * [nq](https://github.com/chneukirchen/nq) - UNIX command line queue utility.
-* [slmenu](https://bitbucket.org/rafaelgg/slmenu) - Dmenu spinoff for the console.
 * [snore](https://github.com/clamiax/snore) - Sleep with feedback.
 
 ### Web browsers

@@ -2,6 +2,8 @@ xtheme
 ======
 Simple, suckless, xresources theme management system for st
 
+![Demo](demo.png)
+
 Usage
 -----
 Simply *xrdb -merge* new theme and run *./xtheme; make install* to apply the new theme.

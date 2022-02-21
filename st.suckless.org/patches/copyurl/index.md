@@ -22,7 +22,12 @@ Following patches also highlight the selected urls:
 
 * [st-copyurl-20190202-3be4cf1.diff](st-copyurl-20190202-3be4cf1.diff)
 * [st-copyurl-0.8.4.diff](st-copyurl-0.8.4.diff)
-* [st-copyurl-20220217-0.8.5.diff](st-copyurl-20220217-0.8.5.diff)
+* [st-copyurl-20220221-0.8.5.diff](st-copyurl-20220221-0.8.5.diff)
+
+Following patches also allow urls that span multiple lines:
+
+* [st-copyurl-multiline-20220221-0.8.5.diff](st-copyurl-multiline-20220221-0.8.5.diff)
+
 
 Authors
 -------
@@ -31,3 +36,4 @@ Authors
 * David Phillips - <david@sighup.nz> (git port)
 * Matthew Parnell - <matt@parnmatt.co.uk> (0.7, git ports)
 * Michael Buch - <michaelbuch12@gmail.com> (0.8+ git port, url highlighting)
+* Santtu Lakkala - <inz@inz.fi> (multiline url support)

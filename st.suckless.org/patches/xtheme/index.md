@@ -2,7 +2,6 @@ xtheme
 ======
 Simple, suckless, xresources theme management system for st
 
-![Demo](demo.png)
 
 Usage
 -----

@@ -18,6 +18,7 @@ Download
 
 * [st-newterm-0.8.2.diff](st-newterm-0.8.2.diff)
 * [st-newterm-orphan-20210712-4536f46.diff](st-newterm-orphan-20210712-4536f46.diff)
+* [st-newterm-20220221-0.8.5.diff](st-newterm-20220221-0.8.5.diff)
 
 Authors
 -------

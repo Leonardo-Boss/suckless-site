@@ -37,6 +37,10 @@ Download
 * [st-alpha-0.8.2.diff](st-alpha-0.8.2.diff)
 * [st-alpha-0.8.5.diff](st-alpha-20220206-0.8.5.diff)
 
+Following patch also applies alpha to background color set with OSC 11:
+
+* [st-alpha-osc11-20220222-0.8.5.diff](st-alpha-osc11-20220222-0.8.5.diff)
+
 Authors
 -------
 * Eon S. Jeon - <esjeon@hyunmu.am>

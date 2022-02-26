@@ -98,6 +98,7 @@ above ones on top of a build already patched with status2d:
 
 ### Status monitor patches
 * [dwmblocks-statuscmd-20210402-96cbb45.diff](dwmblocks-statuscmd-20210402-96cbb45.diff)
+* [gocaudices](https://github.com/LordRusk/gocaudices/tree/master/patches/statuscmd)
 
 Author
 ------

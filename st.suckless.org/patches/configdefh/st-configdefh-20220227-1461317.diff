@@ -1,0 +1,82 @@
+From 14613172141adaa17c3cc1b4b67d6bbc90b25905 Mon Sep 17 00:00:00 2001
+From: Rebecca White <rtiannew@outlook.com>
+Date: Sun, 27 Feb 2022 15:07:38 +0000
+Subject: [PATCH] Use config.def.h Instead of config.h
+
+Use 'config.def.h' instead of using the 'config.h' file for
+configuration. This avoids conflicts with other patches that use
+'config.def.h'
+---
+ Makefile |  9 +++------
+ x.c      | 10 +++++-----
+ 2 files changed, 8 insertions(+), 11 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index 470ac86..ab1d9b8 100644
+--- a/Makefile
++++ b/Makefile
+@@ -15,16 +15,13 @@ options:
+ 	@echo "LDFLAGS = $(STLDFLAGS)"
+ 	@echo "CC      = $(CC)"
+ 
+-config.h:
+-	cp config.def.h config.h
+-
+ .c.o:
+ 	$(CC) $(STCFLAGS) -c $<
+ 
+-st.o: config.h st.h win.h
+-x.o: arg.h config.h st.h win.h
++st.o: config.def.h st.h win.h
++x.o: arg.h config.def.h st.h win.h
+ 
+-$(OBJ): config.h config.mk
++$(OBJ): config.def.h config.mk
+ 
+ st: $(OBJ)
+ 	$(CC) -o $@ $(OBJ) $(STLDFLAGS)
+diff --git a/x.c b/x.c
+index cd96575..0c78b1a 100644
+--- a/x.c
++++ b/x.c
+@@ -20,7 +20,7 @@ char *argv0;
+ #include "st.h"
+ #include "win.h"
+ 
+-/* types used in config.h */
++/* types used in config.def.h */
+ typedef struct {
+ 	uint mod;
+ 	KeySym keysym;
+@@ -50,7 +50,7 @@ typedef struct {
+ #define XK_NO_MOD     0
+ #define XK_SWITCH_MOD (1<<13|1<<14)
+ 
+-/* function definitions used in config.h */
++/* function definitions used in config.def.h */
+ static void clipcopy(const Arg *);
+ static void clippaste(const Arg *);
+ static void numlock(const Arg *);
+@@ -60,8 +60,8 @@ static void zoomabs(const Arg *);
+ static void zoomreset(const Arg *);
+ static void ttysend(const Arg *);
+ 
+-/* config.h for applying patches and the configuration. */
+-#include "config.h"
++/* config.def.h for applying patches and the configuration. */
++#include "config.def.h"
+ 
+ /* XEMBED messages */
+ #define XEMBED_FOCUS_IN  4
+@@ -1855,7 +1855,7 @@ kpress(XEvent *ev)
+ 		}
+ 	}
+ 
+-	/* 2. custom keys from config.h */
++	/* 2. custom keys from config.def.h */
+ 	if ((customkey = kmap(ksym, e->state))) {
+ 		ttywrite(customkey, strlen(customkey), 1);
+ 		return;
+-- 
+2.35.1
+

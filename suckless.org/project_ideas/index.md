@@ -100,7 +100,7 @@ structure:
 * <http://www.codinghorror.com/blog/2012/12/web-discussions-flat-by-design.html>
 
 ***Requirements:*** Good C/Shell/HTML knowledge would be desirable. Must not
-use Javascript.
+use JavaScript.
 
 
 ### Write cookie handler for surf
@@ -143,7 +143,7 @@ daemon is required. Everyone can do this.
 ### A sane backend for surf
 
 There is dillo, netsurf and abaco which implement HTML. The problem is
-Javascript and extensions to replace webkit as the big dependency hell for web
+JavaScript and extensions to replace webkit as the big dependency hell for web
 rendering in surf.
 
 If you prepare to work on this project, plan ahead in recruiting more

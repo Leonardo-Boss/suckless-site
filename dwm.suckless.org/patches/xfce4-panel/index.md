@@ -4,38 +4,44 @@ xfce4-panel
 Description
 -----------
 
-When xfce4 tools are on the system anyway, it might make sense to use the xfce4-panel in dwm.
+When xfce4 tools are on the system anyway, it might make sense to try `xfce4-panel` in dwm.
+
 This patch modifies dwm, so that it treats any window with name `xfce4-panel` (default)
 as a status bar, i.e.:
 
 - it never has borders
-- it never has focus
-- always has y=0
+- always has y=0 on the monitor it is shown at (see below)
 - it is never shown as active window in the tag indicators
 - it is shown on all tags (via a tag rule in the config)
 - it is ignored on `focusstack` (MOD+j / MOD+k)
 
 ![dwm_xfce4-panel.png](dwm_xfce4-panel.png)
 
-- The panel does act as systray for third party tools, i.e. the systray patch is no more required
+- The panel does also act as **systray** for third party tools
 - Looks best when background is set to same color as the dwm statusline (black in the example)
 - Using a compositor you can dimm or completely hide it, when not hovered
 
-The patch has been created against dwm6.2.  
+The patch has been created against dwm6.3 but will apply on 6.2 as well.  
 
 Download
 --------
 
-* [dwm-xfce4-panel-20210701-67d76bd.diff](dwm-xfce4-panel-20210701-67d76bd.diff) (2021-07-01)
+* [dwm-xfce4-panel-20220306-d39e2f3.diff](dwm-xfce4-panel-20220306-d39e2f3.diff) (2022-03-06)
+
+* Older version(s):
+
+    - [dwm-xfce4-panel-20210701-67d76bd.diff](dwm-xfce4-panel-20210701-67d76bd.diff) (2021-07-01)
 
 Notes
 -----
 
-- The workspace switcher won't work interactively, but dwm's interactive tag indicators remain on the left anyway.
-- Some actions in the "session menu" applet (the one with your name as title) won't work out of the box. You might supply your own sub menu or modify the actions of the existing one.
-- The rest of xfce4's 40 or so panel apps _should_ work (if installed) and also custom "applets" (see below) are working 
-- Startup: A start via xinitrc should be fine. I use the [autostart](https://dwm.suckless.org/patches/autostart/) patch to start
-  in background:
+- The workspace switcher won't work interactively, but dwm's interactive tag indicators remain on
+  the left anyway.
+- Some actions in the "session menu" applet (the one with your name as title) won't work out of the
+  box. You might supply your own sub menu or modify the actions of the existing one.
+- The rest of xfce4's 40 or so panel apps _should_ work (if installed) and also custom "applets"
+  (see below) are working 
+- Startup: A start via xinitrc should be fine. I use the [autostart](https://dwm.suckless.org/patches/autostart/) patch to start in background:
 
         sleep 0.3
         xfce4-panel --disable-wm-check
@@ -44,42 +50,56 @@ Notes
 Panel Config
 ------------
 
-**dwm**  
-In dwm's rules, the panel should be configured to be shown on all tags - see the patch.
+**dwm**
 
-**xrandr**:  
-Since the panel will reside always at `y=0`, a matching xrandr screenlayout must contain `--pos 0x0` for the monitor where the panel should be shown. That monitor must be connected, otherwise the panel won't be visible or pop up in the middle of another monitor. When you unplug that monitor, you need to have a valid new screen layout loaded. I use the monitor marked `--primary`. The [`arandr`](https://christian.amsuess.com/tools/arandr/) tool will create valid configs. I always have a fallback layout, with the laptop display configured primary, at `0x0`.
+In dwm `config.h` rules, the panel should be configured to be shown on all tags and floating - see the patch.
 
-    # Example:
-    xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal
+**xfce4-panel**
 
-You can verify your screen layout using e.g. the `xev` tool, which reports the mouse coordinates relative to root.
+You can inspect and set attributes in the command line via `xconf-query` (you could also do it via
+right mouse click and go to panel settings).
 
-**xfce4-panel config**:  
-The rest of the config is done via XFCE4's internal tools, available e.g. via `xfce4-settings-manager` -> panel:
+Here are *all* settings as I have it:
 
-- Configure exactly one Panel, e.g. via `xfce4-settings-manager` -> `panel`
-- At Tab Display:
+    ~ ❯ xfconf-query -c xfce4-panel -p /panels/panel-1 -lv
+    /panels/panel-1/autohide-behavior  0
+    /panels/panel-1/background-alpha   1
+    /panels/panel-1/background-rgba    <<UNSUPPORTED>>
+    /panels/panel-1/background-style   1
+    /panels/panel-1/disable-struts     true
+    /panels/panel-1/enter-opacity      100
+    /panels/panel-1/icon-size          0
+    /panels/panel-1/leave-opacity      45
+    /panels/panel-1/length             5
+    /panels/panel-1/length-adjust      true
+    /panels/panel-1/nrows              1
+    /panels/panel-1/output-name        Primary
+    /panels/panel-1/plugin-ids         <<UNSUPPORTED>>
+    /panels/panel-1/position           p=0;x=5000;y=0
+    /panels/panel-1/position-locked    true
+    /panels/panel-1/size               21
+    /panels/panel-1/span-monitors      false
 
-    - Mode Horizontal   
-    - Output: Your primary monitor (with y=0). Panel will stay there(!)  
-    - Lock Panel: false  
-    - Row size: Should probably match height of dwm statusbar, which depends on your dwm font size.
-    - Autom. increase the length: true  
-    - Length: 1% (will auto adapt)  
+Discussion:
 
-- At Tab Appearance:
+- `position`: Configure the position to be at `y=0` and `x=<a big number>` to get a panel top right
+  (it will *use* the maximum possible x). See [here](https://forum.xfce.org/viewtopic.php?id=12149) for more on that.
+        xfconf-query -c xfce4-panel -p /panels/panel-1/position -s 'p=0;x=5000;y=0' # -s: Set a value
+- `leave-opacity`: Requires a compositor like picom. Set it to 0 to completely hide the panel when
+  not hovered.
+- `size`: 21 matches the height of dwm status bar
+- `output-name`: Set to "Primary" instead of a fixed display name, in order to have support for
+  multi monitor layouts.
 
-    - Adjust icon size automatically  
-    - Autohide when not hovered: Run a compositor e.g. `picom` and set panel's "leave opacity" to 0. That way you could have a minimalistic dwm statusbar normally and the full interactive status bar only on mouse over. I prefer to rather dimm it down to an unobtrusive 30%.
+**Multi Monitor Support**
 
-Also the _content_ of the panel you configure "normally", i.e. by adding items in the panel's items tab or via [CLI tools](https://docs.xfce.org/xfce/xfconf/xfconf-query).
+I recommend using 
 
-Tips:
+- [`arandr`](https://christian.amsuess.com/tools/arandr/) to *create* a new layout
+- [`autorandr`](https://github.com/phillipberndt/autorandr) to store and *apply* a layout automatically after
+  state changes (via `autorandr -c`). This also supports hooks after switching.
 
-- The warning `Failed to connect to session manager` at panel startup is normal. I do not advise to start `xfce4-session` from within dwm to fix it. This will try auto explore your available workspaces - and possibly conclude you have `2**9 * monitor count`, writing that back into the xfce4 config. I had to manually clean up the config via [xfconf](https://docs.xfce.org/xfce/xfconf/xfconf-query).
-- Using xfconf and the panel config backup/restore tool might be the best way to have *different* panel setups in xfce4 and dwm, should you want to use xfce4 as well, where people often run more than one panel.
-
+---
 
 Below is a usage example for adding your own information into the panel.
 

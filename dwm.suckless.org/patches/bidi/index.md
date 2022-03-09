@@ -17,7 +17,8 @@ with dwm-bidi:
 
 Download
 --------
-* [dwm-bidi-20220219-302953a.diff](dwm-bidi-20220219-302953a.diff)
+* [dwm-bidi-20220309-0386419.diff](dwm-bidi-20220309-0386419.diff)
+* [dwm-bidi-20220219-302953a.diff](dwm-bidi-20220219-302953a.diff) (old)
 
 Authors
 -------

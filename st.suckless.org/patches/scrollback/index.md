@@ -11,6 +11,11 @@ Download
 * [st-scrollback-20201205-4ef0cbd.diff](st-scrollback-20201205-4ef0cbd.diff)
 * [st-scrollback-20210507-4536f46.diff](st-scrollback-20210507-4536f46.diff)
 
+Alternative implementation that uses a ring buffer for more
+efficient scrolling:
+
+* [st-scrollback-ringbuffer-0.8.5.diff](st-scrollback-ringbuffer-0.8.5.diff)
+
 Apply the following patch on top of the previous to allow scrolling
 using `Shift+MouseWheel`.
 
@@ -62,3 +67,4 @@ Authors
 * Kamil Kleban - <funmaker95@gmail.com> (fix altscreen detection)
 * Avi Halachmi - <avihpit@yahoo.com> (mouse + altscreen rewrite after `a2c479c`)
 * Jacob Prosser - <geriatricjacob@cumallover.me>
+* Timo Röhling - <timo@gaussglocke.de> (ring buffer implementation)

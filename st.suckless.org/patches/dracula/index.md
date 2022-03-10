@@ -22,7 +22,9 @@ Running zsh and tmux.
 Download
 --------
 * [st-dracula-0.8.2.diff](st-dracula-0.8.2.diff)
+* [st-dracula-0.8.5.diff](st-dracula-0.8.5.diff)
 
 Authors
 -------
 * Jesús López - <jsus90@gmail.com>
+* gildasio - <gildasiojunior@riseup.net> (0.8.5 port)

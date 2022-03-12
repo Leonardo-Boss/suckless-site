@@ -8,6 +8,7 @@ a unicode codepoint that will be converted to a glyph and then pushed to st.
 
 Download
 --------
+* [st-iso14755-0.8.5.diff](st-iso14755-0.8.5.diff)
 * [st-iso14755-0.8.3.diff](st-iso14755-0.8.3.diff)
 * [st-iso14755-0.8.2.diff](st-iso14755-0.8.2.diff)
 * [st-iso14755-20180911-67d0cb6.diff](st-iso14755-20180911-67d0cb6.diff)

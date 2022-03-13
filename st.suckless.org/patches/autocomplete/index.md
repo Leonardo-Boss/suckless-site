@@ -71,12 +71,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 Download
 --------
-This patch is under testing phase:
-* [st-autocomplete-20211215-181216-st-0.8.4-testrelease.diff](st-autocomplete-20211215-181216-st-0.8.4-testrelease.diff)
-* [st-autocomplete-20211216-221700-st-0.8.4-testrelease.diff](st-autocomplete-20211216-221700-st-0.8.4-testrelease.diff)
-* [st-autocomplete-20211218-131244-st-0.8.4-testrelease.diff](st-autocomplete-20211218-131244-st-0.8.4-testrelease.diff)
-* [st-autocomplete-20220110-234714-st-0.8.4-testrelease.diff](st-autocomplete-20220110-234714-st-0.8.4-testrelease.diff)
-* [st-0.8.5-autocomplete-20220313-024831-testrelease.diff](st-0.8.5-autocomplete-20220313-024831-testrelease.diff) (the freezing bug was fixed!)
+* [st-0.8.5-autocomplete-20220314-032311.diff](st-0.8.5-autocomplete-20220314-032311.diff)
 
 Contribution
 ------------

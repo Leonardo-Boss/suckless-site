@@ -95,7 +95,6 @@ to the suckless philosophy.
   cpu freq, date, file, load avg, keyboard layout, mpd, network speed,
   screen brightness, temperature, wifi, volume mixer.
   Works well on OpenBSD and Linux.
-* [ssm](https://github.com/abdul2906/ssm) - A simple status monitor written in C.
 * [suspend-statusbar.c](https://github.com/snobb/dwm-statusbar) - date,
   loadavg, battery and more. If battery goes below threshold - run suspend
   command

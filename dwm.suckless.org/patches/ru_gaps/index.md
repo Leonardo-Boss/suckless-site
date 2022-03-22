@@ -17,6 +17,7 @@ You might want to set resizehints in config.h to zero to get smooth animations w
 
 Download
 --------
+* [dwm-ru\_gaps-6.3.diff](dwm-ru_gaps-6.3.diff) - 22-03-2022
 * [dwm-ru\_gaps-6.2.diff](dwm-ru_gaps-6.2.diff) - 25-04-2020
 
 Additional layouts

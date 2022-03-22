@@ -41,3 +41,4 @@ dmenu launcher written in Python for acessing passwords, docs and application sh
 * [dmenu_bitwarden](https://gitlab.com/patriktrefil/dmenu-bitwarden): Script to get Bitwarden passwords to Your clipboard.
 * [dmenu_vcard](https://github.com/PatrikTrefil/dmenu_vcard): Script to get e-mails and phone numbers to your clipboard using dmenu.
 * [dmenu_shot](https://codeberg.org/mehrad/dmenu_shot): Script to take screenshot using Flameshot and do image manupulation on using ImageMagic the output.
+* [dmenu-translate](https://github.com/NikitaIvanovV/dmenu-translate): Script to quickly translate text and look up word definitions

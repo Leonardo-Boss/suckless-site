@@ -73,8 +73,8 @@ Download
 * [dwm-statuscolors-5.9.diff](dwm-statuscolors-5.9.diff)
 * [dwm-statuscolors-6.1.diff](dwm-statuscolors-6.1.diff)
 * [dwm-statuscolors-20181008-b69c870.diff](dwm-statuscolors-20181008-b69c870.diff)
-  This patch applies cleanly on mainline dwm from Jan 7 2017 to at least Oct
-  8 2018. It includes additional config.def.h color entries.
+* [dwm-statuscolors-20220322-bece862.diff](dwm-statuscolors-20220322-bece862.diff)
+Minor update to make Danny's patch apply again.
 
 Authors
 -------
@@ -84,3 +84,4 @@ Authors
 * Daniel Raloff (update to 6.1)
 * Dave Kennedy (fixes to 6.1)
 * Danny O'Brien - [danny@spesh.com](mailto:danny@spesh.com) (20181008 patch)
+* [danso](https://danso.ca) (20220322 patch)

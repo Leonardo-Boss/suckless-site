@@ -22,7 +22,7 @@ windows between the **master** and **stack**. A new terminal appears on the
 the screen. `[Alt]+[Enter]` toggles windows between master and stack.
 
         +------+----------------------------------+--------+
-        | tags | title                            | status +
+        | tags | title                            | status |
         +------+---------------------+------------+--------+
         |                            |                     |
         |                            |                     |

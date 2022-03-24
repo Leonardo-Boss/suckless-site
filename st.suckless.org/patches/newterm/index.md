@@ -13,10 +13,14 @@ terminal window being swallowd. The orphan variant of this patch works around th
 issue by spawning the new terminal window as an orphan instead (meaning that it
 will have no parent process).
 
+To have newterm working with tabbed, apply the st-newterm-0.8.2-tabbed.diff patch
+on top of st-newterm-0.8.2.diff.
+
 Download
 --------
 
 * [st-newterm-0.8.2.diff](st-newterm-0.8.2.diff)
+  * [st-newterm-0.8.2-tabbed.diff](st-newterm-0.8.2-tabbed.diff)
 * [st-newterm-orphan-20210712-4536f46.diff](st-newterm-orphan-20210712-4536f46.diff)
 * [st-newterm-20220221-0.8.5.diff](st-newterm-20220221-0.8.5.diff)
 
@@ -24,3 +28,4 @@ Authors
 -------
 * Matías Lang
 * Stein Bakkeby (orphan version)
+* Gaspar Vardanyan (tabbed support)

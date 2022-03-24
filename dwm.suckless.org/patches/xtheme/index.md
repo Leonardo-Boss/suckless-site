@@ -1,6 +1,6 @@
 xtheme
 ======
-st's [xthem](https://st.suckless.org/patches/xtheme/) patch's integration with dwm
+st's [xtheme](https://st.suckless.org/patches/xtheme/) patch's integration with dwm
 
 GitLab
 ------

@@ -11,7 +11,6 @@ Adds the option *[SchemeHp]* to *colors* in config.def.h and the flags *hb*, *hf
 * *hf*: Foreground color of the high priority items
 * *hp*: A CSV (comma-seperated list) of high priority items
 
-
 [![Screenshot dmenu with highpriority patch](dmenu-highpriority.gif)](dmenu-highpriority.gif)
 
 In this case, *chromium* is added to *hp* and it came first on search instead of *chromedriver*
@@ -19,7 +18,9 @@ In this case, *chromium* is added to *hp* and it came first on search instead of
 Download
 --------
 * [dmenu-highpriority-4.9.diff](dmenu-highpriority-4.9.diff)
+* [dmenu-highpriority-5.1.diff](dmenu-highpriority-5.1.diff)
 
 Author
 ------
 * Takase
+* NRK (v5.1 rebase, allocation related cleanup)

@@ -72,6 +72,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 Download
 --------
 * [st-0.8.5-autocomplete-20220314-032311.diff](st-0.8.5-autocomplete-20220314-032311.diff)
+* [st-0.8.5-autocomplete-20220326-155356.diff](st-0.8.5-autocomplete-20220326-155356.diff)
 
 Contribution
 ------------

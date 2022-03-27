@@ -1,7 +1,6 @@
 autocomplete
 ============
-urxvt's autocomplete-ALL-the-things extension's port for st
-The original extension: https://github.com/Vifon/autocomplete-ALL-the-things
+urxvt's [autocomplete-ALL-the-things](https://github.com/Vifon/autocomplete-ALL-the-things) extension's port for st
 
 Description
 -----------
@@ -71,8 +70,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 Download
 --------
-* [st-0.8.5-autocomplete-20220314-032311.diff](st-0.8.5-autocomplete-20220314-032311.diff)
-* [st-0.8.5-autocomplete-20220326-155356.diff](st-0.8.5-autocomplete-20220326-155356.diff)
+* [st-0.8.5-autocomplete-20220327-230120.diff](st-0.8.5-autocomplete-20220327-230120.diff)
 
 Contribution
 ------------

@@ -76,8 +76,8 @@ diff -uraN st-0.8.5/Makefile st-autocomplete/Makefile
  .PHONY: all options clean dist install uninstall
 diff -uraN st-0.8.5/st-autocomplete st-autocomplete/st-autocomplete
 --- st-0.8.5/st-autocomplete	1970-01-01 04:00:00.000000000 +0400
-+++ st-autocomplete/st-autocomplete	2022-03-14 03:23:02.995498786 +0400
-@@ -0,0 +1,292 @@
++++ st-autocomplete/st-autocomplete	2022-03-27 22:57:29.018288223 +0400
+@@ -0,0 +1,310 @@
 +#!/usr/bin/perl
 +#########################################################################
 +# Copyright (C) 2012-2017  Wojciech Siewierski                          #
@@ -99,24 +99,34 @@ diff -uraN st-0.8.5/st-autocomplete st-autocomplete/st-autocomplete
 +my ($cmd, $cursor_row, $cursor_column) = @ARGV;
 +
 +my $lines = [];
++my $lines1 = [];
 +
 +my $last_line = -1;
-+my $lines_after_cursor = 0;
++my $lines_before_cursor = 0;
 +
 +while (<stdin>)
 +{
 +	$last_line++;
 +
-+	if ($last_line <= $cursor_row)
++	s/[^[:print:]]/?/g;
++
++	if ($last_line < $cursor_row)
 +	{
-+		push @{$lines}, $_;
++		unshift @{$lines1}, $_;
++		$lines_before_cursor++;
 +	}
 +	else
 +	{
 +		unshift @{$lines}, $_;
-+		$lines_after_cursor++;
 +	}
 +}
++
++foreach (@{$lines1})
++{
++	unshift @{$lines}, $_;
++}
++
++my $cursor_row_in = $cursor_row;
 +
 +$cursor_row = $last_line;
 +
@@ -227,12 +237,7 @@ diff -uraN st-0.8.5/st-autocomplete st-autocomplete/st-autocomplete
 +									$char_class_before,
 +									$char_class_at_end);
 +		if ($completion) {
-+			# save the last completed word unless continuing the last search
-+			highlight_match($self,
-+							$self->{next_row}+1,
-+							$completion);
-+
-+			print stdout $completion." ".join (" ", @{$self->{highlight}})."\n";
++			print stdout $completion."\n".join ("\n", @{$self->{highlight}})."\n";
 +		}
 +		else {
 +			last;
@@ -255,13 +260,12 @@ diff -uraN st-0.8.5/st-autocomplete st-autocomplete/st-autocomplete
 +    my $beg = $-[0];
 +    my $end = $+[0];
 +
-+	if ($linenum >= $lines_after_cursor)
++	if ($linenum >= $lines_before_cursor)
 +	{
-+		$linenum -= $lines_after_cursor;
-+	}
-+	else
-+	{
-+		$linenum = $last_line - $linenum;
++		$lline = $last_line - $lines_before_cursor;
++		$linenum -= $lines_before_cursor;
++		$linenum = $lline - $linenum;
++		$linenum += $lines_before_cursor;
 +	}
 +
 +
@@ -306,8 +310,17 @@ diff -uraN st-0.8.5/st-autocomplete st-autocomplete/st-autocomplete
 +# Takes all the arguments that find_match() would take, to make a
 +# mutually recursive call.
 +sub skip_duplicates {
-+    my $self = $_[0];
-+    my $completion = shift @{$self->{matches_in_row}}; # get the rightmost one
++    my ($self, $word_to_match, $current_row, $regexp, $char_class_before, $char_class_at_end) = @_;
++    my $completion;
++
++	if ($current_row <= $lines_before_cursor)
++	{
++		$completion = shift @{$self->{matches_in_row}}; # get the leftmost one
++	}
++	else
++	{
++		$completion = pop @{$self->{matches_in_row}}; # get the leftmost one
++	}
 +
 +    # check for duplicates
 +    if (exists $self->{already_completed}{$completion}) {
@@ -315,6 +328,11 @@ diff -uraN st-0.8.5/st-autocomplete st-autocomplete/st-autocomplete
 +        return find_match(@_);
 +    } else {
 +        $self->{already_completed}{$completion} = 1;
++
++		highlight_match($self,
++						$self->{next_row}+1,
++						$completion);
++
 +        return $completion;
 +    }
 +}
@@ -372,7 +390,7 @@ diff -uraN st-0.8.5/st-autocomplete st-autocomplete/st-autocomplete
 +}
 diff -uraN st-0.8.5/st.c st-autocomplete/st.c
 --- st-0.8.5/st.c	2022-03-13 02:45:34.586842452 +0400
-+++ st-autocomplete/st.c	2022-03-14 03:23:02.995498786 +0400
++++ st-autocomplete/st.c	2022-03-27 22:28:39.041693478 +0400
 @@ -17,6 +17,7 @@
  #include <unistd.h>
  #include <wchar.h>
@@ -390,7 +408,7 @@ diff -uraN st-0.8.5/st.c st-autocomplete/st.c
  	/*
  	 * slide screen to keep cursor where we expect it -
  	 * tscrollup would work here, but we can optimize to
-@@ -2688,3 +2691,250 @@
+@@ -2688,3 +2691,256 @@
  	tfulldirt();
  	draw();
  }
@@ -514,19 +532,25 @@ diff -uraN st-0.8.5/st.c st-autocomplete/st.c
 +		FILE * stbuf = fopen (stbuffile, "w"); // ACMPL_ISSUE: check for opening error ...
 +		char * stbufline = malloc (term.col + 2); // ACMPL_ISSUE: check for allocating error ...
 +
++		int cxp = 0;
++
 +		for (size_t y = 0; y < term.row; y++)
 +		{
++			if (y == term.c.y) cx += cxp * term.col;
++
 +			size_t x = 0;
 +			for (; x < term.col; x++)
 +				utf8encode (term.line [y] [x].u, stbufline + x);
 +			if (term.line [y] [x - 1].mode & ATTR_WRAP)
 +			{
 +				x--;
-+				if (y <= cy) cy--;
++				if (y <= term.c.y) cy--;
++				cxp++;
 +			}
 +			else
 +			{
 +				stbufline [x] = '\n';
++				cxp = 0;
 +			}
 +			stbufline [x + 1] = 0;
 +			fputs (stbufline, stbuf);
@@ -561,7 +585,7 @@ diff -uraN st-0.8.5/st.c st-autocomplete/st.c
 +
 +	unsigned line, beg, end;
 +
-+	acmpl_status = fscanf (acmpl_exec, "%500s %u %u %u\n", completion, & line, & beg, & end);
++	acmpl_status = fscanf (acmpl_exec, "%500[^\n]\n%u\n%u\n%u\n", completion, & line, & beg, & end);
 +												// ACMPL_ISSUE: why 500? use term.col instead
 +
 +// Exit if no completions found
@@ -637,7 +661,7 @@ diff -uraN st-0.8.5/st.c st-autocomplete/st.c
 +
 +	end--;
 +
-+	selstart (beg, line + wl, 0);
++	selstart (beg % term.col, line + wl + beg / term.col, 0);
 +	selextend (end % term.col, line + wl + end / term.col, 1, 0);
 +	xsetsel (getsel ());
 +}

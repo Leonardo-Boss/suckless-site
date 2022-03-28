@@ -7,6 +7,7 @@ Scroll back through terminal output using Shift+{PageUp, PageDown}.
 
 Download
 --------
+* [st-scrollback-0.8.5.diff](st-scrollback-0.8.5.diff)
 * [st-scrollback-0.8.4.diff](st-scrollback-0.8.4.diff)
 * [st-scrollback-20201205-4ef0cbd.diff](st-scrollback-20201205-4ef0cbd.diff)
 * [st-scrollback-20210507-4536f46.diff](st-scrollback-20210507-4536f46.diff)
@@ -68,3 +69,4 @@ Authors
 * Avi Halachmi - <avihpit@yahoo.com> (mouse + altscreen rewrite after `a2c479c`)
 * Jacob Prosser - <geriatricjacob@cumallover.me>
 * Timo Röhling - <timo@gaussglocke.de> (ring buffer implementation)
+* [Alexander Arkhipov](gopher://mineeyes.cyou/) - <scm_2022@mineeyes.cyou> (0.8.5 update)

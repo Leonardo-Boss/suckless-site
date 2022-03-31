@@ -133,7 +133,8 @@ This covers most console-based programs and programs from
 * [meh](https://www.johnhawthorn.com/meh/) - image viewer using raw XLib, libjpeg, libpng and libgif.
 * [page](https://9fans.github.io/plan9port/man/man1/page.html) - Plan 9's image/document viewer program. Included with [plan9port](https://9fans.github.io/plan9port/).
 * [qiv](https://spiegl.de/qiv/) - Quick Image Viewer.
-* [sxiv](https://github.com/muennich/sxiv) - Simple (or small or suckless) X Image Viewer. Depends on xlib and imlib2.
+* [sxiv](https://github.com/muennich/sxiv) - Simple (or small or suckless) X Image Viewer. Depends on xlib and imlib2. Unmaintained currently.
+* [nsxiv](https://github.com/muennich/sxiv) - Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer, a fork of now unmaintained sxiv. Depends on xlib and imlib2.
 * [xli](http://web.aanet.com.au/gwg/xli.html)
 * [xwallpaper](https://github.com/stoeckmann/xwallpaper) Minimalistic wallpaper utility
 * [xzgv](http://sourceforge.net/projects/xzgv/)

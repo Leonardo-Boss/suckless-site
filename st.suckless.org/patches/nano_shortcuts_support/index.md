@@ -4,7 +4,7 @@ nano shortcuts support
 Description
 -----------
 When use nano editor with st, some shortcuts (e.g. alt+del, ctrl+end, alt+ins
-alt+PgUp ... ) would not work. This patch gets those shortcuts fully supported. 
+alt+PgUp ... ) would not work. This patch gets those shortcuts fully supported.
 
 Notes:
 ------

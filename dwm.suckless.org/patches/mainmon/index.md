@@ -11,13 +11,13 @@ This can be an annoyance in a couple of scenarios:
 * If you use your computer in public (i.e. using a projector), you might not
   want others to see the contents of the status bar.
 
-This patch add a configurable `mainmon` option to the `config.def.h` which
+This patch adds a configurable `mainmon` option to the `config.def.h` which
 defines the monitor where the status bar is shown. It no longer follows
 focus.
 
 Download
 --------
-* [dwm-autoresize-20160718-56a31dc.diff](dwm-mainmon-20220330-bece862.diff)
+* [dwm-mainmon-20220330-bece862.diff](dwm-mainmon-20220330-bece862.diff)
 
 Author
 -------

@@ -33,6 +33,10 @@ because it makes them legally compatible with other suckless projects.
 * [xz embedded](https://tukaani.org/xz/embedded.html) - lightweight decompressor for the xz LZMA compressor (public domain).
 * [zlib](https://zlib.net/) - the "standard" compression/decompression library, quite small, used in many applications ([zlib license](https://zlib.net/zlib_license.html)).
 
+### GUI
+
+* [Nuklear](https://github.com/Immediate-Mode-UI/Nuklear) - A single-header ANSI C immediate mode cross-platform GUI library.
+
 ### Cryptography
 
 * [LibreSSL](https://www.libressl.org/) - LibreSSL is a version of the TLS/crypto stack forked from OpenSSL in 2014.

@@ -14,7 +14,9 @@ pidof st | xargs kill -s USR1
 Download
 --------
 * [st-xresources-signal-reloading-20220309-1bb14b1.diff](st-xresources-signal-reloading-20220309-1bb14b1.diff)
+* [st-xresources-signal-reloading-20220407-ef05519.diff](st-xresources-signal-reloading-20220407-ef05519.diff)
 
 Authors
 -------
 * Mahdi Mirzade - <http://mahdi.pw>
+* wael - 40663@protonmail.com fix variables + arg.h st.h removal

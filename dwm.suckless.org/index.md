@@ -1,5 +1,3 @@
-![dwm](dwm.svg)
-
 dwm is a dynamic window manager for X. It manages windows in tiled, monocle and
 floating layouts. All of the layouts can be applied dynamically, optimising the
 environment for the application in use and the task performed.
@@ -36,8 +34,7 @@ In contrast to ion, larswm, and wmii, dwm is much smaller, faster and simpler.
 * dwm has no Lua integration, no 9P support, no shell-based configuration, no
   remote control, and comes without any additional tools, such as for printing
   the selection or warping the mouse.
-* dwm is only a single binary, and its source code is intended to never exceed
-  2000 SLOC.
+* dwm is only a single binary, and its source code is intended to be kept small.
 * dwm doesn't distinguish between layers: there is no floating or tiled layer.
   Whether or not the clients of currently selected tag(s) are in tiled layout,
   you can rearrange them on the fly. Popup and fixed-size windows are always
@@ -73,8 +70,8 @@ Download
 
 Support
 -------
-See the [faq](//dwm.suckless.org/faq) for the frequent problems that
-arise. The next step is to look at the sourcecode and the config.h for obvious
+See the [faq](//dwm.suckless.org/faq) for the frequent questions that are
+asked. The next step is to look at the source-code and the config.h for obvious
 names, which could be related to the problem that arose. If that does not help
 to fix the problem, then there is the #suckless IRC channel and the
 mailinglist.
@@ -133,7 +130,6 @@ related projects
 * [dwm-sprinkles](http://0mark.unserver.de/dwm-sprinkles/) -- dwm with colorfull bar, transparency, pre-configured pertag and more
 * [dwm-win32](http://www.brain-dump.org/projects/dwm-win32/) -- dwm ported to windows
 * [echinus](http://www.rootshell.be/~polachok/code/) -- dwm fork with EWMH, Xft support
-* [gemini](http://gemini.digitalmediaplanet.net) -- terminal manager
 * [i3](http://i3.zekjur.net/) -- wmii fork with XCB, multihead, vertical column, command mode
 * [qtile](http://www.qtile.org/) -- pure python wm, used ideas from dwm
 * [scrotwm](http://www.peereboom.us/scrotwm/html/scrotwm.html) -- dwm clone with multihead, config file, restart.. support

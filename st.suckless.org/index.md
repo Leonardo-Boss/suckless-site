@@ -4,7 +4,7 @@ st is a simple terminal implementation for X.
 
 Motivation
 ----------
-Here's an excerpt from the README:
+Here's an excerpt from the xterm(1) README:
 
 > Abandon All Hope, Ye Who Enter Here
 > 

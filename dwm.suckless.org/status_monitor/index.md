@@ -98,6 +98,7 @@ to the suckless philosophy.
 * [suspend-statusbar.c](https://github.com/snobb/dwm-statusbar) - date,
   loadavg, battery and more. If battery goes below threshold - run suspend
   command
+* [zara](https://github.com/lordrusk/zara) - Extremely simple status bar modeled after [gocaudices](https://github.com/lordrusk/gocaudices) expandable in Go through an interface. Modules include, beyond the basics, corona stats, weather, cpubars, network traffic, moonphase, and many more.
 * [ztatus](https://git.noxz.tech/ztatus/log.html) - simple statusbar and
   notification daemon (through fifo). Displays only date and time normally.
   Configured to work with 'statuscolors' patch by default.

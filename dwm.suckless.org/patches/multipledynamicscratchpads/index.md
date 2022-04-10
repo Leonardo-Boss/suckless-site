@@ -14,7 +14,7 @@ A `config.def.h` change is included in the patch.
 
 Download
 --------
-* [dwm-multiple-dynamic-scratchpads.diff](dwm-multiple-dynamic-scratchpads.diff) - 2021-10-30
+* [dwm-multiple-dynamic-scratchpads.diff](dwm-multiple-dynamic-scratchpads.diff) - 2022-04-10
 
 Authors
 -------

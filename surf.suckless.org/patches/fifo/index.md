@@ -22,7 +22,7 @@ Download
 
 Scripts
 -------
-* Bitwarden autofiller: (bw-dmenu-fill)[bw-dmenu-fill] (2.4K)
+* Bitwarden autofiller: [bw-dmenu-fill](bw-dmenu-fill) (2.4K)
 
 Authors
 -------

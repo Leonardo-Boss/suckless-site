@@ -7,7 +7,7 @@ In the origin version of dwm, even you defined window opens in which tag in rule
 
 Download
 --------
-* [dwm-viewonrulesdefinedtag-20220407-bece862a.diff](dwm-viewonrulesdefinedtag-20220407-bece862a.diff)
+* [dwm-viewonrulestag-20220410-bece862.diff](dwm-viewonrulestag-20220410-bece862.diff)
 
 Author
 ------

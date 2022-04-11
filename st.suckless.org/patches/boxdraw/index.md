@@ -44,7 +44,8 @@ Notes:
 
 Download
 --------
-[st-boxdraw_v2-0.8.3.diff](st-boxdraw_v2-0.8.3.diff)
+* [st-boxdraw_v2-0.8.3.diff](st-boxdraw_v2-0.8.3.diff)
+* [st-boxdraw_v2-0.8.5.diff](st-boxdraw_v2-0.8.5.diff)
 
 History
 -------

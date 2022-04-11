@@ -24,5 +24,5 @@ except StatusText now has left padding in addition to right padding.
 
 ## Authors
 
-- taep96 - <taep96@protonmail.com> (6.3 Fix)
+- taep96 - <taep96@cock.li> (6.3 Fix)
 - cd

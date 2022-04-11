@@ -9,7 +9,9 @@ restore window title (for instance nvim does this when opening and closing).
 Download
 --------
 * [st-csi\_22\_23-0.8.4.diff](st-csi_22_23-0.8.4.diff)
+* [st-csi\_22\_23-0.8.5.diff](st-csi_22_23-0.8.5.diff)
 
 Authors
 -------
 * Ashish Kumar Yadav - <ashishkumar.yadav@students.iiserpune.ac.in>
+* wael - 40663@protonmail.com (0.8.5 fix)

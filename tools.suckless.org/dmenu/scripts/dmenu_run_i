@@ -1,14 +1,13 @@
 #!/bin/sh
+
 # dmenu_run improved
-# if a command ends with "!", it is started in term.
+# command ending with '!', is started in the terminal.
 
-termcmd="st -e"
-test -s $HOME/.dmenurc && . $HOME/.dmenurc
+test -s "$HOME"/.dmenurc && . "$HOME"/.dmenurc
 
-cmd="$(dmenu_path | dmenu $@)"
+cmd="$(dmenu_path | dmenu "$@")"
+
 case $cmd in
-    *\! ) ${termcmd} "${cmd%?}" ;;
-    * ) ${cmd} ;;
+    *\!) "${TERMINAL:-st}" -e "${cmd%?}" & ;;
+    *)   "${cmd}" & ;;
 esac
-exit
-

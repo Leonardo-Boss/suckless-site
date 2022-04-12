@@ -7,7 +7,7 @@ test -s $HOME/.dmenurc && . $HOME/.dmenurc
 
 cmd="$(dmenu_path | dmenu $@)"
 case $cmd in
-    *\! ) ${termcmd} "$(printf "%s" "${cmd}" | cut -d'!' -f1)";;
+    *\! ) ${termcmd} "${cmd%?}" ;;
     * ) ${cmd} ;;
 esac
 exit

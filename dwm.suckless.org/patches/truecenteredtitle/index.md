@@ -1,5 +1,5 @@
-centertitle proportionally
-==========================
+truecenteredtitle
+=================
 
 Description
 -----------

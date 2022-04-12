@@ -17,7 +17,7 @@ siduck76 [chadwm](https://github.com/siduck76/chadwm)
 Download
 --------
 * [dwm-tag-preview-6.2.diff](dwm-tag-preview-6.2.diff)
-* [github mirror](https://github.com/explosion-mental/Dwm/blob/main/Patches/dwm-tag-preview-6.2.diff)
+* [codeberg mirror](https://codeberg.org/explosion-mental/Dwm/src/branch/main/Patches/dwm-tag-preview-6.2.diff)
 
 Authors
 -------

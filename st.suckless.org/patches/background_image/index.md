@@ -32,7 +32,29 @@ invoked with the following command:
 
 Download
 --------
+
 * [st-background-image-0.8.4.diff](st-background-image-0.8.4.diff)
+* [st-background-image-0.8.5.diff](st-background-image-0.8.5.diff)
+
+Signal Reloading
+----------------
+
+Apply the following patch on top of the previous to enable reloading the
+background image when a USR1 signal occurs:
+
+* [st-background-image-signal-reload-0.8.5.diff](st-background-image-signal-reload-0.8.5.diff)
+
+If you use the [xresources with signal reloading](//st.suckless.org/patches/xresources-with-reload-signal)
+patch ignore the patch above and simply add these two lines to the beginning of
+the `reload` function located in the file `x.c`:
+
+	XFreeGC(xw.dpy, xw.bggc);
+	bginit();
+
+*Hint*: You can send a USR1 signal to all st processes with the following
+command:
+
+	pidof st | xargs kill -s USR1
 
 Authors
 -------

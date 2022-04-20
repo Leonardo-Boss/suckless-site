@@ -11,7 +11,7 @@ News
 
 2022-04-19
 ----------
-Suckless now has a dark mode CSS style for it's pages.
+Suckless now has a dark mode CSS style for its pages.
 Surf also now has support for [dark mode](https://git.suckless.org/surf/commit/1f5b8f3bd1f37d4d3dc45d21285f34ef4752dbaa.html).
 
 2022-02-11

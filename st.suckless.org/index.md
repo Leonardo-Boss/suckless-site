@@ -15,7 +15,7 @@ Here's an excerpt from the xterm(1) README:
 > clean things up as we go, but there is still a lot of work to do.
 
 It has over 65K lines of code and emulates obscure and obsolete terminals you
-will [never need](http://www.science.uva.nl/museum/tek4014.php).
+will [never need](https://ub.fnwi.uva.nl/computermuseum//tek4014.html).
 
 The popular alternative, rxvt has *only* 32K lines of code. This is just too
 much for something as simple as a terminal emulator; it's yet another example

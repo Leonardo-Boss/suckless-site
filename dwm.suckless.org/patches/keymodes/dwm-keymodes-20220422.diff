@@ -106,19 +106,6 @@ index a2ac963..3bde49d 100644
  	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
  };
 -
-diff --git a/config.mk b/config.mk
-index b6eb7e0..c9334e2 100644
---- a/config.mk
-+++ b/config.mk
-@@ -18,7 +18,7 @@ XINERAMAFLAGS = -DXINERAMA
- FREETYPELIBS = -lfontconfig -lXft
- FREETYPEINC = /usr/include/freetype2
- # OpenBSD (uncomment)
--#FREETYPEINC = ${X11INC}/freetype2
-+FREETYPEINC = ${X11INC}/freetype2
- 
- # includes and libs
- INCS = -I${X11INC} -I${FREETYPEINC}
 diff --git a/dwm.c b/dwm.c
 index 0fc328a..487484e 100644
 --- a/dwm.c

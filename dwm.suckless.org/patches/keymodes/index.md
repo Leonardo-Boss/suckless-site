@@ -65,3 +65,4 @@ Download
 --------
 * [dwm-keymodes-5.8.2.diff](dwm-keymodes-5.8.2.diff) (20100611, joten (at) freenet (dot) de)
 * [dwm-keymodes-vim-5.8.2.diff](dwm-keymodes-vim-5.8.2.diff) (20100611, joten (at) freenet (dot) de)
+* [dwm-keymodes-20220422.diff](dwm-keymodes-20220422.diff) (michael@ndrix.org)

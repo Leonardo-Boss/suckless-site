@@ -17,6 +17,11 @@ efficient scrolling:
 
 * [st-scrollback-ringbuffer-0.8.5.diff](st-scrollback-ringbuffer-0.8.5.diff)
 
+Apply the following patch on top of the [original scrollback patch (=>0.8.5)](st-scrollback-0.8.5.diff) to allow
+column and row reflow.
+
+* [st-scrollback-reflow-0.8.5.diff](st-scrollback-reflow-0.8.5.diff)
+
 Apply the following patch on top of the previous to allow scrolling
 using `Shift+MouseWheel`.
 
@@ -70,3 +75,4 @@ Authors
 * Jacob Prosser - <geriatricjacob@cumallover.me>
 * Timo Röhling - <timo@gaussglocke.de> (ring buffer implementation)
 * [Alexander Arkhipov](gopher://mineeyes.cyou/) - <scm_2022@mineeyes.cyou> (0.8.5 update)
+* Ashish Kumar Yadav - <ashishkumar.yadav@students.iiserpune.ac.in> (reflow implementation)

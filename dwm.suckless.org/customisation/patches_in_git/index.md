@@ -39,8 +39,9 @@ Then record the changes as commits
 
 	# tell git to add the changes in the given file(s) to be recorded
 	git add some_file.ext
-	# git will ask you to provide a message	describing your changes
-	git commit
+	# git will ask you to provide a message describing your changes,
+	# while showing a diff of what's being commited.
+	git commit -v
 
 ### Experimenting with different combinations of customizations
 

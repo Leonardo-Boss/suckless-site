@@ -1,3 +1,5 @@
+![st](st.svg)
+
 st is a simple terminal implementation for X.
 
 [![Screenshot of dwm & st](screenshots/frign-2016-s.png)](screenshots/frign-2016.png)

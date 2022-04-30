@@ -27,12 +27,21 @@ It uses the following shortcuts :
 		{ TERMMOD, XK_F8, setpalette, {.i = 7} },
 		{ TERMMOD, XK_F9, setpalette, {.i = 8} },
 	};
+	
+256 Colours
+-----------
++ Uses the 256 colours of Xterm as a base.
++ Can have separate foreground, background, cursor and reverse colours
+for each theme.
++ If to be used, use instead of normal patch.
 
 Download
 --------
 * [st-color\_schemes-0.8.1.diff](st-color_schemes-0.8.1.diff)
+* [st-palette-256.diff](st-palette-256.diff)
 
 
 Authors
 -------
 * Tonton Couillon - <la dot luge at free dot fr>
+* kleinbottle4 - <kleinbottle4 at gmail dot com>

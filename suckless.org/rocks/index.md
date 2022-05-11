@@ -223,6 +223,7 @@ This covers most console-based programs and programs from
 * [mtm](https://github.com/deadpixi/mtm) - Micro Terminal Multiplexer.
 * [nq](https://github.com/chneukirchen/nq) - UNIX command line queue utility.
 * [snore](https://github.com/clamiax/snore) - Sleep with feedback.
+* [mrandr](https://gitlab.com/mhdy/mrandr) - Simple and lightweight monitor (display) profile manager written in POSIX shell.
 
 ### Web browsers
 

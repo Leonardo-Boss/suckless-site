@@ -7,8 +7,10 @@ corner of dmenu.
 
 Download
 --------
+* [dmenu-numbers-20220512-28fb3e2.diff](dmenu-numbers-20220512-28fb3e2.diff)
 * [dmenu-numbers-4.9.diff](dmenu-numbers-4.9.diff)
 
-Author
-------
+Authors
+-------
 * Miles Alan <m@milesalan.com>
+* Ehsan Ghorbannezhad <ehsan@disroot.org> (bugfixes)

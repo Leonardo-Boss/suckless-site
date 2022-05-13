@@ -138,7 +138,7 @@ This covers most console-based programs and programs from
 * [page](https://9fans.github.io/plan9port/man/man1/page.html) - Plan 9's image/document viewer program. Included with [plan9port](https://9fans.github.io/plan9port/).
 * [qiv](https://spiegl.de/qiv/) - Quick Image Viewer.
 * [sxiv](https://github.com/muennich/sxiv) - Simple (or small or suckless) X Image Viewer. Depends on xlib and imlib2. Unmaintained currently.
-* [nsxiv](https://github.com/nsxiv/nsxiv) - Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer, a fork of now unmaintained sxiv. Depends on xlib and imlib2.
+* [nsxiv](https://github.com/nsxiv/nsxiv) - Neo Simple X Image Viewer, a fork of now unmaintained sxiv. Depends on xlib and imlib2.
 * [xli](http://web.aanet.com.au/gwg/xli.html)
 * [xwallpaper](https://github.com/stoeckmann/xwallpaper) Minimalistic wallpaper utility
 * [xzgv](http://sourceforge.net/projects/xzgv/)
@@ -232,7 +232,6 @@ This covers most console-based programs and programs from
 ### Web browsers
 
 * [Abaco](http://lab-fgb.com/abaco/) - A graphical web browser for Plan 9 that supports most of HTML 4.01.
-* [Conkeror](http://www.conkeror.org/) - A Gecko based browser, with Emacs-style key bindings, appearances and behaviors.
 * [Dillo](https://www.dillo.org/) - Blazingly fast graphical browser with basic CSS support.
 * [edbrowse](http://edbrowse.org/) - ed-alike webbrowser. Unfortunately it is not the standard web browser.
 * [ELinks](http://elinks.or.cz/) -  Feature-rich fork of Links, but without the graphical mode.
@@ -242,8 +241,6 @@ This covers most console-based programs and programs from
 * [surf](//surf.suckless.org/) - WebKit2 browser that can be embedded into other applications and uses dmenu as the address bar.
 * [Tridactyl](https://github.com/cmcaine/tridactyl) - A WebExtension that tries to make Firefox Vim like. Unlike many similar extensions it works with firefox 57+.
 * [uzbl](https://www.uzbl.org/) - Web interface tools which adhere to the UNIX philosophy.
-* [VimFX](https://addons.mozilla.org/en-US/firefox/addon/vimfx/) -
-  Vimperator (Doesn't work with Firefox 57+)
 * [Vimperator](http://vimperator.org/) - An extension to make Firefox keyboard friendly and Vim-like. (Doesn't work with Firefox 57+).
 * [w3m](http://w3m.sourceforge.net/) - Text-based browser which can view images in the terminal (X11 hack).
 

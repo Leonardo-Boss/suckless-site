@@ -90,7 +90,7 @@ This covers most console-based programs and programs from
 
 ### Feed aggregators / newsreaders
 
-* [sfeed](https://codemadness.org/sfeed.html) - RSS and Atom parser + CLI programs and [sfeed_curses UI](https://codemadness.org/sfeed_ui.html).
+* [sfeed](https://codemadness.org/sfeed.html) - RSS and Atom parser, CLI programs and [sfeed_curses UI](https://codemadness.org/sfeed_curses.html).
 * [snownews](https://github.com/kouya/snownews/) - Text mode RSS newsreader for Linux and Unix.
 * [zs](http://r-36.net/scm/zs/) - Zeitungsschau RSS to email converter.
 
@@ -178,6 +178,7 @@ This covers most console-based programs and programs from
 
 ### Password managers
 
+* [oathtool](https://www.nongnu.org/oath-toolkit/oathtool.1.html) - Open AuTHentication (OATH) one-time password tool.
 * [pinentry-dmenu](https://github.com/ritze/pinentry-dmenu) - pinentry-dmenu is a pinentry program with the charm of dmenu. It is a nice interface to [pass](https://www.passwordstore.org/)
 * [pass](https://www.passwordstore.org/) - "The standard UNIX password manager".
 * [spm](https://notabug.org/kl3/spm/) - Simple password manager (actively maintained fork of nmeum's tpm).
@@ -213,17 +214,20 @@ This covers most console-based programs and programs from
 
 ### Text processing
 
-* [json2tsv](https://codemadness.org/json2tsv.html) - a JSON to TAB-Separated Value (TSV) converter (and parser code).
+* [json2tsv](https://codemadness.org/json2tsv.html) - a JSON to TAB-Separated Value (TSV) converter and stand-alone JSON parser code.
 
 ### Utilities / miscellaneous
 
 * [abduco](http://www.brain-dump.org/projects/abduco/) - session {at,de}tach support.
 * [dvtm](http://www.brain-dump.org/projects/dvtm/) - dynamic virtual terminal manager.
 * [entr](http://entrproject.org/) - Run arbitrary commands when files change.
+* [mrandr](https://gitlab.com/mhdy/mrandr) - Simple and lightweight monitor (display) profile manager written in POSIX shell.
 * [mtm](https://github.com/deadpixi/mtm) - Micro Terminal Multiplexer.
 * [nq](https://github.com/chneukirchen/nq) - UNIX command line queue utility.
+* [pv](https://www.ivarch.com/programs/pv.shtml) - tool for monitoring the progress of data through a pipeline.
 * [snore](https://github.com/clamiax/snore) - Sleep with feedback.
-* [mrandr](https://gitlab.com/mhdy/mrandr) - Simple and lightweight monitor (display) profile manager written in POSIX shell.
+* [yt-dlp](https://github.com/yt-dlp/yt-dlp) - youtube-dl fork, download videos from youtube.com or other video platforms.
+* [zbar](http://zbar.sourceforge.net/) - software suite for reading bar codes from various sources, such as video streams, image files.
 
 ### Web browsers
 

@@ -7,8 +7,7 @@ Vereinsregister der Stadt München mit der VR-Nr. 207405 eingetragen.
 Anschrift
 ---------
 	suckless.org e.V.
-	c/o Jan Klemkow
-	Ottilienstr. 55
+	Ottilienstr. 53a
 	81827 München
 	Germany
 

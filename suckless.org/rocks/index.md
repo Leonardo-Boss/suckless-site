@@ -207,6 +207,7 @@ This covers most console-based programs and programs from
 * [nvi](https://sites.google.com/a/bostic.com/keithbostic/vi) - A small, multiple file vi-alike.
 * [micro](https://micro-editor.github.io/) - A terminal text editor, written in go with common key bindings like ctrl-c to copy and ctrl-v to paste.
 * [sam](http://sam.cat-v.org/) - An editor by Rob Pike with inspiration from ed.
+* [sim](https://sim.ssnf.xyz/) - The sim text editor. Based on vim and sam.
 * [traditional vi](http://ex-vi.sourceforge.net/) - A fixed version of the original vi.
 * [vim](https://www.vim.org) (With the GUI, use `:set go+=c` to kill popup dialogs). It can be compiled to be as minimal as possible (see vim-tiny in Debian repos).
 * [vis](https://github.com/martanne/vis) - A modern, legacy free, simple yet efficient vim-like editor.

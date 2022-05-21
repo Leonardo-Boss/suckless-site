@@ -140,7 +140,7 @@ This covers most console-based programs and programs from
 * [sxiv](https://github.com/muennich/sxiv) - Simple (or small or suckless) X Image Viewer. Depends on xlib and imlib2. Unmaintained currently.
 * [nsxiv](https://github.com/nsxiv/nsxiv) - Neo Simple X Image Viewer, a fork of now unmaintained sxiv. Depends on xlib and imlib2.
 * [xli](http://web.aanet.com.au/gwg/xli.html)
-* [xwallpaper](https://github.com/stoeckmann/xwallpaper) Minimalistic wallpaper utility
+* [xwallpaper](https://github.com/stoeckmann/xwallpaper) - Minimalistic wallpaper utility
 * [xzgv](http://sourceforge.net/projects/xzgv/)
 
 ### Instant-Messaging clients

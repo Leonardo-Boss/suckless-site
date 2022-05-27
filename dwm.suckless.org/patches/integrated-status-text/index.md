@@ -3,26 +3,40 @@ integrated status text
 
 Description
 -----------
-Allows dwm to handle the text by itself This is a dwmblocks integration into
-dwm itself. You can update the blocks only with signals of with mouseclicks.
-The 'interval' value does nothing and is meant to be there to 're-use' on
-future patches. You can checkout my build with more features like 'async'
-updates
-[https://codeberg.org/explosion-mental/Dwm](https://codeberg.org/explosion-mental/Dwm),
-which is were I'm extracting this patch, if you want a much better experience.
+Allows dwm to handle the text by itself. You can
+ think of it like a dwmblocks integration into dwm itself. This is extracted
+ from my dwm build[0] in which you can find even more information.
 
-What you need to know:
-- This patch makes dwm sets a enviromental variable with the PID of itself to
-  be more 'friendly'. With this you can do `kill -35 $STATUSBAR`, which updates
-  block with signal 1 (34 + signal of the block)
-- Other way to update a block is inside dwm itself, with the `updateblock`
-  function. It accepts an unsigned int (non negative) number which value
-  indicates the signal of the block you want to update.
-- Mouse clicks are handled with `sendstatusbar` (a mouse function only!) which
-  accepts the value that you want to pass to the block command as a 'variable'
-  called `BLOCK_BUTTON`, which should be handled in the script (block command)
-- Since this uses real time signals to handle the updates, shouldn't work in
-  openbsd, but I could be wrong.
+Example:
+```
+/* fg         command             interval  signal */
+{ "#000000",  "echo 'dwm block!",   10,       3},
+```
+
+- fg: the foreground color of the individual block, for the background it uses
+  the bg of SchemeStatus. You can swap behaviour uncommenting a comment in
+  dwm.c (search for 'uncomment to inverse the colors')
+
+- command: it uses the output of the commands for the status text interval: in
+  seconds, how much does it have to pass before updating the block.
+
+- interval: in seconds, how many seconds until the block it's updated
+
+- signal: have to be less than 30. This lets you update the block with `kill`
+  by adding 35 to this value.
+  For the block above it would be 34 + 3 = 37 -> `kill -37 $(pidof dwm)`.
+  These signals are linux dependant.
+
+You can change `$(pidof dwm)` with `$STATUSBAR` to 'fix' signaling multiple
+instances of dwm, since this patch also wraps the PID of dwm into the
+`$STATUSBAR` enviromental variable.
+
+Last thing, mouse actions. For this you need to handle the env variable
+`$BLOCK_BUTTON` in a script, this is so you can easily reuse the scripts used
+in dwmblocks. And remember that mouse actions update the block.
+
+[0] https://github.com/explosion-mental/Dwm or
+https://codeberg.org/explosion-mental/Dwm
 
 Download
 --------

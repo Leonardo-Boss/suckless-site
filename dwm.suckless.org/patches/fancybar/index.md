@@ -12,7 +12,7 @@ Download
 * [dwm-fancybar-5.6.1.diff](dwm-fancybar-5.6.1.diff)
 * [dwm-fancybar-6.1.diff](dwm-fancybar-6.1.diff)
 * [dwm-fancybar-6.2.diff](dwm-fancybar-6.2.diff)
-* [dwm-fancybar-20200423-ed3ab6b.diff](dwm-fancybar-20200423-ed3ab6b.diff)
+* [dwm-fancybar-20220527-d3f93c7.diff](dwm-fancybar-20220527-d3f93c7.diff)
 
 Author
 ------

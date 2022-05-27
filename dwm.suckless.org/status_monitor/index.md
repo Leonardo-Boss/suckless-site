@@ -86,6 +86,9 @@ to the suckless philosophy.
   prints current MPD song, load averages, time/date and battery percentage.
 * [gods](https://github.com/schachmat/gods) - implemented in Go. prints network
   speed, cpu, ram, date/time
+* [integrated-status-text](../patches/integrated-status-text) - A patch to have
+  dwm itself handle the blocks asynchronously: this way we can handle mouse
+  clicks, colors, etc. much easier.
 * [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent
   and date/time
 * [rsblocks](https://github.com/MustafaSalih1993/rsblocks) - A fast multi threaded status bar written in Rust, configurable with a yaml file.

@@ -57,7 +57,7 @@ diff --git a/dwm.c b/dwm.c
 +					continue;
 +				tw = MIN(m->sel == c ? w : mw, TEXTW(c->name));
 +
-+				drw_setscheme(drw, scheme[m == selmon ? SchemeSel : SchemeNorm]);
++				drw_setscheme(drw, scheme[m == selmon && m->sel == c ? SchemeSel : SchemeNorm]);
 +				if (tw > lrpad / 2)
 +					drw_text(drw, x, 0, tw, bh, lrpad / 2, c->name, 0);
 +				if (c->isfloating)

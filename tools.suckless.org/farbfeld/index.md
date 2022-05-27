@@ -63,7 +63,7 @@ Implementations
 * [resize](https://github.com/ender672/farbfeld-resize) image filter
 * [gamut](https://github.com/erik/gamut) image filter collection
 * [gimp-farbfeld](https://github.com/ids1024/gimp-farbfeld) gimp plug-in
-* [farbfeld utilities](http://zzo38computer.org/fossil/farbfeld.ui/) huge collection of image filters
+* [farbfeld utilities](https://web.archive.org/web/20211205013032/http://zzo38computer.org/fossil/farbfeld.ui/index) huge collection of image filters
 * [ff2sixel](https://gitlab.com/link2xt/ff2sixel) farbfeld image viewer for SIXEL terminals
 * [xscreenshot](https://git.codemadness.org/xscreenshot/file/README.html) screen capture tool
 

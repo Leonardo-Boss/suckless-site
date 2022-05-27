@@ -12,7 +12,7 @@ Example Usage
 -------------
 If monitor A is on tag 1, and monitor B is on tag 2, and the
 user inputs `Alt+Super+3`,
-both Monitors will switch to tag 3 (the currently selected monitor will not change).
+both monitors will switch to tag 3.
 
 Download
 --------

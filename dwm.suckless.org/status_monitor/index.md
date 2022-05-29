@@ -47,6 +47,8 @@ Feel free to add your own status monitors here (keeping the list sorted).
 * [akuma-v-dwm](https://gitlab.com/narvin/avd) - event driven, modular,
   and extensible with date/time, all batteries, volume (amixer), backlight,
   memory and cpu usage out of the box.
+* [babashka-status-bar](https://github.com/perpen/babashka-status-bar) - dynamic
+  status bar for dwm/tmux/etc, written in clojure. Supports external triggers.
 * [barM](barM.c) - can display all, time/date, ram usage, output of commands (the New BarMonitor).
 * [dsblocks](https://github.com/ashish-yadav11/dsblocks) - modular status
   monitor, written and meant to be configured in C, with support for signaling,

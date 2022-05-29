@@ -80,8 +80,8 @@ Feel free to add your own status monitors here (keeping the list sorted).
   Go status bar that allows you to refresh each block independently. Includes built in
   features for frequently refreshed blocks.
 * [gocaudices](https://github.com/lordrusk/gocaudices) - dwmblocks alternative written in go,
-Gocaudices is a dwmblocks replacement meant to be simple, fast, and elegant. It tries to adhere
-to the suckless philosophy.
+  Gocaudices is a dwmblocks replacement meant to be simple, fast, and elegant. It tries to
+  adhere to the suckless philosophy.
 * [go-dwmstatus](https://github.com/oniichaNj/go-dwmstatus) - A Go bar that
   prints current MPD song, load averages, time/date and battery percentage.
 * [gods](https://github.com/schachmat/gods) - implemented in Go. prints network

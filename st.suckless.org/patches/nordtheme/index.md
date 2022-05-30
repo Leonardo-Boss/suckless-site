@@ -3,11 +3,17 @@ nordtheme
 
 Description
 -----------
-*"Inspired by the beauty of the arctic, the colors reflect the cold, yet harmonious world of ice and the colorfulness of the Aurora Borealis."* - [Nord Theme](https://www.nordtheme.com/)
+*"Inspired by the beauty of the arctic, the colors reflect the cold, yet
+harmonious world of ice and the colorfulness of the Aurora Borealis."*
+- [Nord Theme](https://www.nordtheme.com/)
 
 Selection-Colors
 ----------------
-The default behaviour of st is to reverse the fore- and background colors of each selected cell. If you don't want the selection-colors to be reveresed but instead have fixed fore- and background colors apply on top of this patch the [selectioncolors](../selectioncolors/)-patch. Then set the following settings in your config.h:
+The default behaviour of st is to reverse the fore- and background colors of
+each selected cell. If you don't want the selection-colors to be reveresed but
+instead have fixed fore- and background colors apply on top of this patch the
+[selectioncolors](../selectioncolors/)-patch. Then set the following settings in
+your config.h:
 
 	static unsigned int defaultrcs = 257;
 	unsigned int selectionbg = 0;

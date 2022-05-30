@@ -12,8 +12,8 @@ icon which has to be stored by st in the \_NET\_WM\_ICON window-property.
 
 Download
 --------
-* [st-desktopentry-0.8.4.diff](st-desktopentry-0.8.4.diff)
 * [st-desktopentry-0.8.5.diff](st-desktopentry-0.8.5.diff)
+* [st-desktopentry-0.8.4.diff](st-desktopentry-0.8.4.diff)
 
 Authors
 -------

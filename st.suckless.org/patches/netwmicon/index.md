@@ -14,6 +14,11 @@ itself with the window-propery *\_NET\_WM\_ICON*. Since st doesn't define
 *\_NET\_WM\_ICON* this programs can't display the correct icon for st even if a
 desktop-entry exists. This patch solves this problem.
 
+Dependencies
+------------
+- gd
+- glib
+
 Defining an icon
 ----------------
 By default each time st starts it will search for a file with the name *st.png*
@@ -40,6 +45,13 @@ Call to action
 --------------
 Maybe somebody would like to create an icon with the st-logo so we could add it
 here as the official icon. If it already exists tell me.
+
+Credits
+-------
+The code for loading and transforming the image to an appropriate format is,
+except for minor modifications, from
+[xseticon](https://www.leonerd.org.uk/code/xseticon/) which is developed by Paul
+Evans.
 
 Download
 --------

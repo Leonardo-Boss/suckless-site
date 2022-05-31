@@ -15,9 +15,8 @@ instead have fixed fore- and background colors apply on top of this patch the
 [selectioncolors](../selectioncolors/)-patch. Then set the following settings in
 your config.h:
 
-	static unsigned int defaultrcs = 257;
 	unsigned int selectionbg = 0;
-	unsigned int selectionfg = 257;
+	unsigned int selectionfg = 256;
 
 Download
 --------

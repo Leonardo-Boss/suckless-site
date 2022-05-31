@@ -1,6 +1,6 @@
-From 62f19180465432584cb756756a69181553f5dc58 Mon Sep 17 00:00:00 2001
+From 1904cbc9af2d518a77331deb082750366aaec90b Mon Sep 17 00:00:00 2001
 From: aleks <aleks.stier@icloud.com>
-Date: Tue, 31 May 2022 01:14:58 +0200
+Date: Tue, 31 May 2022 13:09:47 +0200
 Subject: [PATCH] Use nord-theme
 
 *"Inspired by the beauty of the arctic, the colors reflect the cold, yet
@@ -13,15 +13,14 @@ be reveresed but instead have fixed fore- and background colors apply on
 top of this patch the [selectioncolors](../selectioncolors/)-patch. Then
 set the following settings in your config.h:
 
-static unsigned int defaultrcs = 257;
 unsigned int selectionbg = 0;
-unsigned int selectionfg = 257;
+unsigned int selectionfg = 256;
 ---
- config.def.h | 46 ++++++++++++++++++++++------------------------
- 1 file changed, 22 insertions(+), 24 deletions(-)
+ config.def.h | 42 ++++++++++++++++++++----------------------
+ 1 file changed, 20 insertions(+), 22 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
-index 91ab8ca..ef4caaa 100644
+index 91ab8ca..afd00fd 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -96,32 +96,30 @@ unsigned int tabspaces = 8;
@@ -70,26 +69,22 @@ index 91ab8ca..ef4caaa 100644
 -	"#555555",
 -	"gray90", /* default foreground colour */
 -	"black", /* default background colour */
-+	"#2e3440", /* default foreground colour */
-+	"#d8dee9", /* default background colour */
++	"#d8dee9", /* default foreground colour */
++	"#2e3440", /* default background colour */
  };
  
  
-@@ -129,10 +127,10 @@ static const char *colorname[] = {
+@@ -129,8 +127,8 @@ static const char *colorname[] = {
   * Default colors (colorname index)
   * foreground, background, cursor, reverse cursor
   */
 -unsigned int defaultfg = 258;
 -unsigned int defaultbg = 259;
--unsigned int defaultcs = 256;
--static unsigned int defaultrcs = 257;
-+unsigned int defaultfg = 257;
-+unsigned int defaultbg = 256;
-+unsigned int defaultcs = 257;
-+static unsigned int defaultrcs = 256;
++unsigned int defaultfg = 256;
++unsigned int defaultbg = 257;
+ unsigned int defaultcs = 256;
+ static unsigned int defaultrcs = 257;
  
- /*
-  * Default shape of cursor
 -- 
 2.36.1
 

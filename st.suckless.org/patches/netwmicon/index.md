@@ -3,34 +3,52 @@ netwmicon
 
 Description
 -----------
-Enables to set *\_NET\_WM\_ICON* which hardcodes an icon for st. An icon is
-already defined in the file *icon.h* which was created by the theme
-[flat-remix](https://github.com/daniruiz/flat-remix).
+Enables to set *\_NET\_WM\_ICON* with a png-image.
 
-Generally the icon of an application is defined by its desktop-entry. A patch
-with the name [desktopentry](../desktopentry) already exists for this purpose.
-However, some programs like tint2 do not respect the desktopentry and rely
-instead on an hardcoded icon which has to be defined by *\_NET\_WM\_ICON*.
-Since st does not define *\_NET\_WM\_ICON* those programs will display some
-default icon (which is ugly).
+Generally the icon of an application is defined by its desktop-entry. The patch
+[desktopentry](../desktopentry) serves this purpose. Unfortunately, some
+programs like [tint2](https://gitlab.com/o9000/tint2) or
+[alttab](https://github.com/sagb/alttab) can't make use of the desktop-entry and
+rely instead on a hardcoded icon which has to be defined by the application
+itself with the window-propery *\_NET\_WM\_ICON*. Since st doesn't define
+*\_NET\_WM\_ICON* this programs can't display the correct icon for st even if a
+desktop-entry exists. This patch solves this problem.
 
-Defining your own icon
-----------------------
-You can of course change the icon to any icon you want. Just grab some icon
-from your favorite icon-theme. The tricky part is that it needs to be encoded
-as *"an array of 32bit packed CARDINAL ARGB with high byte being A, low byte
-being B" -
-[Source](https://specifications.freedesktop.org/wm-spec/1.3/ar01s05.html)*.
-This can be done with the script [netwmicon.sh](netwmicon.sh). It takes as
-argument the icon-file and prints to stdout the encoded icon. Redirect it to
-icon.h to save it and reinstall st. You need to install both *imagemagick* and
-*inkscape* for the script to work.
+Defining an icon
+----------------
+By default each time st starts it will search for a file with the name *st.png*
+under */usr/local/share/pixmaps/*. If you put an image with this name in the
+root-directory of the st-repository and call *make install* the image will be
+installed in */usr/local/share/pixmaps/* automatically. Otherwise you have to
+put the file there manually. You can try it out with the following icon (credit:
+[flat-remix](https://github.com/daniruiz/flat-remix)).
+[st.png](st.png "Example Icon")
+
+Using with desktopentry
+-----------------------
+If you use the [desktopentry](../desktopentry)-patch you should adjust the icon
+in the file *st.desktop* by replacing the line *Icon=utilities-terminal* with
+*Icon=st*.
+
+Most programs which use the desktop-file to determine the icon should be able to
+find *st.png* under */usr/local/share/pixmaps/*. If not report it to me and try
+changing in *confing.mk* the line *ICONPREFIX = $(PREFIX)/share/pixmaps* to
+*ICONPREFIX = $(PREFIX)/share/icons/hicolor/256x256/apps/* and install the icon
+there.
+
+Call to action
+--------------
+Maybe somebody would like to create an icon with the st-logo so we could add it
+here as the official icon. If it already exists tell me.
 
 Download
 --------
-* [st-netwmicon-0.8.4.diff](st-netwmicon-0.8.4.diff)
-* [netwmicon.sh](netwmicon.sh)
+* [st-netwmicon-0.8.5.diff](st-netwmicon-0.8.5.diff)
+* [st-netwmicon-0.8.4.diff](st-netwmicon-0.8.4.diff) (Deprecated)
+* [netwmicon.sh](netwmicon.sh) (Deprecated. Used for 0.8.4-patch. Look at
+  patch-description to understand how its supposed to work. It seems to distort
+  the icon.)
 
 Authors
 -------
-* Aleksandrs Stier
+* Aleksandrs Stier (aleks.stier@icloud.com)

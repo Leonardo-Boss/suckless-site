@@ -15,7 +15,7 @@ Download
 * [dwm-bar-height-6.2.diff](dwm-bar-height-6.2.diff)
 
 The following patch is following the way mentioned in [Archwiki](https://wiki.archlinux.org/title/Dwm#Space_around_font_in_dwm's_bar): the variable (renamed from `user_bh` to `barspacing`) is instead added to the font size. As a result, the bar height respects the DPI (which defines the font height).
-* [dwm-bar-height-spacing-6.3.diff](dwm-bar-height-spacing-6.3) (2022-05-19)
+* [dwm-bar-height-spacing-6.3.diff](dwm-bar-height-spacing-6.3.diff) (2022-05-19)
 
 Authors
 -------

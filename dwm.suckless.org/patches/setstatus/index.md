@@ -8,6 +8,10 @@ To change the status to `foo bar` execute:
 
     dwm -s "foo bar"
 
+You can set the status with this command even if dwm is already running as your
+wm. It will start a new process, set the status and exit. The parameter `-s` is
+not meant to be used at startup when you launch dwm as your wm.
+
 Piping into `dwm -s` is currently not supported but you can set the
 status to the output of any command by doing something like:
 
@@ -23,4 +27,4 @@ Download
 
 Author
 ------
-* Aleksandrs Stier (6.2)
+* Aleksandrs Stier - <aleks.stier@icloud.com> (6.2)

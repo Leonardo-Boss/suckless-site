@@ -25,4 +25,4 @@ Download
 
 Authors
 -------
-* Aleksandrs Stier
+* Aleksandrs Stier - <aleks.stier@icloud.com>

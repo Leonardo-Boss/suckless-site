@@ -51,4 +51,4 @@ Download
 
 Authors
 -------
-* Aleksandrs Stier (aleks.stier@icloud.com)
+* Aleksandrs Stier - <aleks.stier@icloud.com>

@@ -3,7 +3,6 @@ selectioncolors
 
 Description
 -----------
-
 This patch adds the two color-settings *selectionfg* and *selectionbg* to
 config.def.h. Those define the fore- and background colors which are used when
 text on the screen is selected with the mouse. This removes the default
@@ -21,6 +20,6 @@ Download
 
 Authors
 -------
-* Aleksandrs Stier (0.8.2)
 * Ashish Kumar Yadav - <ashishkumar.yadav@students.iiserpune.ac.in> (0.8.4,
   don't disable color reversing for external programs)
+* Aleksandrs Stier - <aleks.stier@icloud.com> (0.8.2)

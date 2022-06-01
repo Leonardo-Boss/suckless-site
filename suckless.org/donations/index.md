@@ -28,7 +28,7 @@ money, which have been used for the dedicated server rent in the past:
 * Oliver Graute donated **20 EUR**
 * Davyd Orynbaev donated **20 EUR**
 * Anonymous donated **85.10 EUR**
-* Carsten Arzig donated **32.40 EUR**	+5 (ueberweisen)
+* Carsten Arzig donated **32.40 EUR**
 * Praveen Bhamidipati donated **11.68 EUR**
 * Reinier de Groot donated **10 EUR**
 * Gilberto Vidal donated **25 USD**
@@ -38,7 +38,7 @@ money, which have been used for the dedicated server rent in the past:
 * James Cass donated **100 EUR**
 * Jonny Lindqvist donated **100 EUR**
 * Bret Fontecchio donated **82.62 EUR**
-* Ben Gardner donated **101.01**
+* Ben Gardner donated **101.01 EUR**
 * Quentin Franchi donated **10 EUR**
 * Damien Thiriet donated **31.03 EUR**
 * Elias Stöger donated **36 EUR**

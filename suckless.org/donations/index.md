@@ -22,8 +22,35 @@ is appreciated by the entire suckless community.
 Following people have donated to the suckless.org project certain amounts of
 money, which have been used for the dedicated server rent in the past:
 
-* Benedikt Brenner donated **700 EUR**
-* Anonymous donated **80.10 EUR**
+* Benedikt Brenner donated **775 EUR**
+* Jonas Schambeck donated **30 EUR**
+* Lennart Emmerich donated **100 EUR**
+* Oliver Graute donated **20 EUR**
+* Davyd Orynbaev donated **20 EUR**
+* Anonymous donated **85.10 EUR**
+* Carsten Arzig donated **32.40 EUR**	+5 (ueberweisen)
+* Praveen Bhamidipati donated **11.68 EUR**
+* Reinier de Groot donated **10 EUR**
+* Gilberto Vidal donated **25 USD**
+* Mikel Ward donated **30 USD**
+* Colin Ballast donated **40.67 EUR**
+* Mahmoud Khalaf donated **20 EUR**
+* James Cass donated **100 EUR**
+* Jonny Lindqvist donated **100 EUR**
+* Bret Fontecchio donated **82.62 EUR**
+* Ben Gardner donated **101.01**
+* Quentin Franchi donated **10 EUR**
+* Damien Thiriet donated **31.03 EUR**
+* Elias Stöger donated **36 EUR**
+* Steve Ward doanted **42.26 EUR**
+* Silvan Jegen donated **375 EUR**
+* 旸 李 donated **42,26 EUR**
+* André Desgualdo Pereira donated **7.61 EUR**
+* 友紀 中村 donated **23.43 EUR**
+* Rizqi Nur Assyaufi donated **0.87 EUR**
+* Farzin Firouzi donated **15 EUR**
+* Luke PJ donated **9.40 EUR**
+* Andrej Nabergoj donated **20 EUR**
 * Marek Pilarcik donated **30 EUR**
 * Dominik Schreilechner donated **100 EUR**
 * Oliver Graute donated **20 EUR**
@@ -33,13 +60,10 @@ money, which have been used for the dedicated server rent in the past:
 * Ville Johan Witt donated **1024 DKK** and **130.84 EUR**
 * Sebastian Rassel donated **15.05 EUR**
 * Antonio Hawthorne donated **52.94 EUR**
-* Andrej Nabergoj donated **10 EUR**
-* Colin Ballast donated **10 EUR**
 * Austin Ramsay donated **4.06 EUR**
 * Florian Leuthner donated **31.41 EUR**
 * Andrii Savchenko donated **20.19 AUD** and **10.24 USD**
 * Niall Cushnahan donated **12.84 EUR**
-* James Cass donated **50 EUR**
 * Alexander Courtis donated **500 EUR**
 * Joel Hewitt donated **22.22 EUR**
 * Sven Franke donated **50 EUR**
@@ -47,7 +71,6 @@ money, which have been used for the dedicated server rent in the past:
 * Jordi Pla donated **1 EUR**
 * nxt donated **15 EUR**
 * Елена Филатова donated **10 EUR**
-* Silvan Jegen donated **325 EUR**
 * Olivier Warin donated **110 EUR**
 * Andrew Mass donated **50 USD**
 * Łukasz Gruner donated **22.37 EUR**
@@ -56,7 +79,6 @@ money, which have been used for the dedicated server rent in the past:
 * Andreas Scharf donated **10 EUR**
 * Moritz Buhl donated **41 EUR**
 * Marc Chantreux **10 EUR**
-* Carsten Arzig donated **27.40 EUR**
 * Kuroljov Viktor donated **20 EUR**
 * Fabian Kirsch donated **11 EUR**
 * Matteo Durante donated **100 EUR**

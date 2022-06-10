@@ -10,6 +10,11 @@ It can be easily set and retrieved using standard Unix tools.
 	xprop -root -notype -f WM_NAME "8u" \
 		| sed -n -r 's/WM_NAME = \"(.*)\"/\1/p'
 
+Alternatively, instead of xsetroot also xprop can be used to set the
+status-bar-text.
+
+	xprop -root -set WM_NAME $status
+
 Set The Status Using A Shell Script
 -----------------------------------
 	while true; do

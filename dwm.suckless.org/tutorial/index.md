@@ -112,6 +112,10 @@ Using the tools of X.org, this can be set using:
 
 	% xsetroot -name "Some Text"
 
+or
+
+	% xprop -root -set WM_NAME "Some Text"
+
 There are various tools and methods to populate this text with useful
 information from your system or services running on your system. A barebone for
 doing this in C is [dwmstatus](../status_monitor/). See the

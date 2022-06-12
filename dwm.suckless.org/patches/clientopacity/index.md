@@ -15,7 +15,7 @@ It is based on the transparency patch of Christop Lohmann.
 
 Download
 --------
-* [dwm-clientopacity-20201012-61bb8b2.diff](dwm-clientopacity-20201012-61bb8b2.diff)
+* [dwm-clientopacity-20220612-d3f93c7.diff](dwm-clientopacity-20220612-d3f93c7.diff)
 
 Authors
 -------

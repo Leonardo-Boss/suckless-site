@@ -41,6 +41,7 @@ The Never Ending Part
 
 Part 4
 ------
+* [systemd breaks POSIX IPC](https://github.com/systemd/systemd/issues/2039)
 * [systemd-logind deletes your message queues](https://knzl.de/systemd-removeipc)
 * [systemd breaks the mouse(again)](https://github.com/systemd/systemd/issues/8579)
 

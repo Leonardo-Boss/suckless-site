@@ -31,6 +31,7 @@ It uses the following shortcuts :
 Download
 --------
 * [st-color\_schemes-0.8.1.diff](st-color_schemes-0.8.1.diff)
+* [st-color\_schemes-20220615-baa9357.diff](st-color_schemes-20220615-baa9357.diff)
 
 
 Authors

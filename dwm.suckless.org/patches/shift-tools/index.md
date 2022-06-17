@@ -35,10 +35,10 @@ or 9 to 1.  Also remember that the default argument is 1/-1 and you can change i
 Download
 --------
 * [dwm-shif-tools-6.2.diff](dwm-shif-tools-6.2.diff)
-* [codeberg mirror](https://codeberg.org/explosion-mental/Dwm/src/branch/main/Patches/dwm-shif-tools-6.2.diff)
+* [codeberg mirror](https://codeberg.org/explosion-mental/demwm/src/branch/patches/dwm-shif-tools-6.2.diff)
 * [shift-tools.c](shift-tools.c)
 * [shift-tools-scratchpads.c](shift-tools-scratchpads.c)
 
-Authors
--------
+Author
+------
 * explosion-mental - <explosion0mental@gmail.com>

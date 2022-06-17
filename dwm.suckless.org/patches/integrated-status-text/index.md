@@ -3,15 +3,14 @@ integrated status text
 
 Description
 -----------
-Allows dwm to handle the text by itself. You can
- think of it like a dwmblocks integration into dwm itself. This is extracted
- from my dwm build[0] in which you can find even more information.
+Allows dwm to handle the text by itself. You can think of it like a dwmblocks
+integration into dwm itself. This is extracted from demwm, dwm fork[0], in
+which you can find even more information.
 
 Example:
-```
-/* fg         command             interval  signal */
-{ "#000000",  "echo 'dwm block!",   10,       3},
-```
+
+	/* fg         command             interval  signal */
+	{ "#000000",  "echo 'dwm block!",   10,       3},
 
 - fg: the foreground color of the individual block, for the background it uses
   the bg of SchemeStatus. You can swap behaviour uncommenting a comment in
@@ -35,14 +34,14 @@ Last thing, mouse actions. For this you need to handle the env variable
 `$BLOCK_BUTTON` in a script, this is so you can easily reuse the scripts used
 in dwmblocks. And remember that mouse actions update the block.
 
-[0] https://github.com/explosion-mental/Dwm or
-https://codeberg.org/explosion-mental/Dwm
+[0] https://github.com/explosion-mental/demwm or
+https://codeberg.org/explosion-mental/demwm
 
 Download
 --------
 * [dwm-integrated-status-text-6.3.diff](dwm-integrated-status-text-6.3.diff)
-* [codeberg mirror](https://codeberg.org/explosion-mental/Dwm/src/branch/main/Patches/dwm-integrated-status-text-6.3.diff)
+* [codeberg mirror](https://codeberg.org/explosion-mental/demwm/src/branch/patches/dwm-integrated-status-text-6.3.diff)
 
-Authors
--------
+Author
+------
 * explosion-mental - <explosion0mental@gmail.com>

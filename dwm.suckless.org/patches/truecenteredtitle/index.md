@@ -14,7 +14,7 @@ will back up to the default behaviour, which is to truncate the title.
 Download
 --------
 * [dwm-truecenteredtitle-6.3.diff](dwm-truecenteredtitle-6.3.diff)
-* [codeberg mirror](https://codeberg.org/explosion-mental/Dwm/src/branch/main/Patches/dwm-truecenteredtitle-6.3.diff)
+* [codeberg mirror](https://codeberg.org/explosion-mental/demwm/src/branch/patches/dwm-truecenteredtitle-6.3.diff)
 
 Author
 ------

@@ -60,6 +60,7 @@ or the dark color scheme:
 * [st-solarized-both-20190128-3be4cf1.diff](st-solarized-both-20190128-3be4cf1.diff)
 * [st-solarized-both-0.8.3.diff](st-solarized-both-0.8.3.diff)
 * [st-solarized-both-0.8.4.diff](st-solarized-both-0.8.4.diff)
+* [st-solarized-both-20220617-baa9357.diff](st-solarized-both-20220617-baa9357.diff)
 
 Authors
 -------
@@ -73,3 +74,4 @@ Authors
 * Varun Iyer - <vi.mail@protonmail.ch> (20190129 port for swap version)
 * Joachim Büchel - <jo@audijo.de> (0.8.3 port for swap version)
 * Povilas Balzaravičius - <povilas@balzaravicius.lt> (0.8.5, dark)
+* Max Schillinger - <maxschillinger@web.de> (20220617 port for swap version)

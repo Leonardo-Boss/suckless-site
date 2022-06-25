@@ -216,6 +216,13 @@ This covers most console-based programs and programs from
 ### Text processing
 
 * [json2tsv](https://codemadness.org/json2tsv.html) - a JSON to TAB-Separated Value (TSV) converter and stand-alone JSON parser code.
+* [csvquote](https://github.com/skeeto/scratch/tree/master/csvquote) - tool to
+  encode troublesome CSV characters such that unix tools can correctly process
+  them. SIMD optimized by default, portable C fallback can be enabled at build
+  time.
+* [md4c](https://github.com/mity/md4c) - markdown to html converter.  Fast,
+  [CommonMark](https://commonmark.org/) compliant, offers extensions which can
+  be switched on/off via cli args.
 
 ### Utilities / miscellaneous
 

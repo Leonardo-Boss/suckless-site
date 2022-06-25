@@ -76,10 +76,10 @@ This covers most console-based programs and programs from
 
 ### Audio Players
 
-* [C* Music Player](https://cmus.github.io/) - aka cmus, an ncurses music player that can be controlled with a UNIX socket.
+* [C\* Music Player](https://cmus.github.io/) - aka cmus, an ncurses music player that can be controlled with a UNIX socket.
 * [moc](https://moc.daper.net/) - console audio player for Linux/UNIX.
 * [mpd](https://www.musicpd.org/) - A client/server based music player with console and graphical front-ends.
-* [mpg123](http://www.mpg123.de/) - A console MPG player which doesn't use auto*hell or extra libraries.
+* [mpg123](http://www.mpg123.de/) - A console MPG player which doesn't use auto\*hell or extra libraries.
 * [mpg321](http://mpg321.sourceforge.net) - A command-line MP3 player.
 * [mus](https://sr.ht/~q3cpma/mus/) - Modular daemon/client CLI player consuming a plaintext album directory queue
 * [vorbis-tools](https://www.xiph.org/) (Ogg/FLAC) - Command-line tools to play Ogg and FLAC files.
@@ -200,7 +200,7 @@ This covers most console-based programs and programs from
 
 * [acme](http://acme.cat-v.org) - Rob Pike's framing text editor for Plan 9. Included in [plan9port](https://9fans.github.io/plan9port/).
 * [ed](https://9fans.github.io/plan9port/man/man1/ed.html) - [ED IS THE STANDARD TEXT EDITOR!](https://www.gnu.org/fun/jokes/ed-msg.html)
-* [ired](http://www.radare.org/r/) - A minimalist hexadecimal editor and bindiffer for p9, w32 and *nix.
+* [ired](http://www.radare.org/r/) - A minimalist hexadecimal editor and bindiffer for p9, w32 and \*nix.
 * [mg](https://homepage.boetes.org/software/mg/) - A portable version of mg maintained by the OpenBSD team.
 * [mle](https://github.com/adsr/mle) - A small, flexible console text editor.
 * [nano](https://www.nano-editor.org/) - A pico clone - this is small simple code and easy to use.
@@ -266,7 +266,7 @@ This section is dedicated to daemons that are related to the UNIX philosophy.
 
 * [darkhttpd](https://unix4lyfe.org/darkhttpd/) - Darkhttpd is a simple, fast HTTP 1.1 web server for static content.
 * [merecat](https://github.com/troglobit/merecat/) - thttpd with vhost support.
-* [mini_httpd](http://acme.com/software/mini_httpd/) - By the thttpd developers.  Even smaller subset of thttpd with support for .htpasswd, CGI, dirlisting, HTTP errors and SSL, nothing more or less than that.
+* [mini\_httpd](http://acme.com/software/mini_httpd/) - By the thttpd developers.  Even smaller subset of thttpd with support for .htpasswd, CGI, dirlisting, HTTP errors and SSL, nothing more or less than that.
 * [OpenBSD httpd/relayd](https://bsd.plumbing/) - Designed to combat the feature creep of modern webservers. Boasts concise configuration, with sane defaults.
 * [quark](//tools.suckless.org/quark/) - suckless simple static web server.
 * [thttpd](http://acme.com/software/thttpd/) - Outperforms many bigger httpds. Old, still works very well!

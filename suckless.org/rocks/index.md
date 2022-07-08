@@ -108,6 +108,7 @@ This covers most console-based programs and programs from
 
 * [stagit](https://git.codemadness.org/stagit/) - static git page generator (HTML).
 * [stagit-gopher](https://git.codemadness.org/stagit-gopher/) - static git page generator for gopher (geomyidae .gph pages).
+* [stagit-gemini](https://git.milotier.net/stagit-gemini/) - static git page generator for gemini (gemtext .gmi pages).
 
 ### Gopher clients
 

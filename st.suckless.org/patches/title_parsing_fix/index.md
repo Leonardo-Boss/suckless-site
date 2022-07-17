@@ -17,4 +17,4 @@ Download
 Authors
 -------
 * Ashish Kumar Yadav - <ashishkumar.yadav@students.iiserpune.ac.in>
-* Rizqi Nur Assyaufi - <bandithijo@gmail.com>
+* Rizqi Nur Assyaufi <bandithijo@gmail.com> (0.8.5 port)

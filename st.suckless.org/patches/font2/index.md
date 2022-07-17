@@ -28,6 +28,7 @@ Download
 --------
 * [st-font2-20190326-f64c2f8.diff](st-font2-20190326-f64c2f8.diff)
 * [st-font2-20190416-ba72400.diff](st-font2-20190416-ba72400.diff)
+* [st-font2-0.8.5.diff](st-font2-0.8.5.diff)
 
 Changelog
 ---------
@@ -38,3 +39,4 @@ Changelog
 Author
 -------
 * Kirill Bugaev <kirill.bugaev87@gmail.com>
+* Rizqi Nur Assyaufi <bandithijo@gmail.com> (0.8.5 port)

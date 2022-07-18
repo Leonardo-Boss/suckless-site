@@ -19,6 +19,7 @@ Download
 * [st-anysize-0.8.1.diff](st-anysize-0.8.1.diff)
 * [st-anysize-20201003-407a3d0.diff](st-anysize-20201003-407a3d0.diff)
 * [st-anysize-0.8.4.diff](st-anysize-0.8.4.diff)
+* [st-anysize-20220718-baa9357.diff](st-anysize-20220718-baa9357.diff)
 
 Authors
 -------

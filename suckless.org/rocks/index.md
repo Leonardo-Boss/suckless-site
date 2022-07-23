@@ -196,6 +196,7 @@ This covers most console-based programs and programs from
 * [mksh](https://www.mirbsd.org/mksh.htm) - MirBSD Korn Shell, an actively developed free implementation of the Korn Shell programming language
   and a successor to the Public Domain Korn Shell (pdksh).
 * [oksh](https://github.com/ibara/oksh) - Portable OpenBSD ksh.
+* [yash](https://yash.osdn.jp) - Yet another shell, is intended to be the most POSIX-compliant shell in the world while supporting features for daily interactive and scripting use.
 
 ### Text editors
 

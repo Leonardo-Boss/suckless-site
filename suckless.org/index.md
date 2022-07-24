@@ -43,7 +43,6 @@ The mailinglist, website and source-code repositories will have some downtime.
 
 **Update:** the maintenance was finished at 2021-05-12 23:33 UTC+02:00.
 P.S.: It didn't actually take 26h30, I just had forgotten to do it.
-Please let us know if there are issues.
 
 2021-05-08
 ----------
@@ -62,7 +61,6 @@ servers. It's estimated this will take about 2-3 hours from about 19:00 to
 The mailinglist, website and source-code repositories will have some downtime.
 
 **Update:** the maintenance was finished at 2021-03-31 19:10 UTC+02:00.
-Please let us know if there are issues.
 
 2021-01-19
 ----------
@@ -106,7 +104,6 @@ servers. It's estimated this will take about 2-3 hours from about 19:00 to
 The mailinglist, website and source-code repositories will have some downtime.
 
 **Update:** the maintenance was finished at 2019-12-04 20:00 UTC+01:00.
-Please let us know if there are issues.
 
 2019-04-04
 ----------

@@ -128,7 +128,7 @@ C Compilers
 * [Clang](http://clang.llvm.org/) is written in C++. If you don't
   believe that it sucks, try to build clang by hand.
 
-Alternatives: see the Compilers section of the [/rocks/] page.
+Alternatives: see the Compilers section of the [/rocks/](../rocks) page.
 
 See also
 --------

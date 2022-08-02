@@ -91,3 +91,17 @@ Authors
 * [dallin](https://dallinjdahl.github.io/) <dallinjdahl@gmail.com>
 * [Alexander Arkhipov](gopher://mineeyes.cyou/) (0.8.5 port)
 
+Double click to plumb
+=====================
+Adds additional functionality to the simple_plumb patch that allows the user to plumb a selected word
+via double clicking while a mask key is held down.
+
+This patch should be applied after simple_plumb.
+
+Download
+--------
+* [simple\_plumb\_double\_click-0.8.5.diff](simple_plumb_double_click-0.8.5.diff) (2022-08-01)
+
+Author
+------
+* yasumori <ysmr@protonmail.com>

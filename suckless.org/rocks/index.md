@@ -230,7 +230,7 @@ This covers most console-based programs and programs from
 
 * [abduco](http://www.brain-dump.org/projects/abduco/) - session {at,de}tach support.
 * [dvtm](http://www.brain-dump.org/projects/dvtm/) - dynamic virtual terminal manager.
-* [entr](http://entrproject.org/) - Run arbitrary commands when files change.
+* [entr](http://eradman.com/entrproject/) - Run arbitrary commands when files change.
 * [mrandr](https://gitlab.com/mhdy/mrandr) - Simple and lightweight monitor (display) profile manager written in POSIX shell.
 * [mtm](https://github.com/deadpixi/mtm) - Micro Terminal Multiplexer.
 * [nq](https://github.com/chneukirchen/nq) - UNIX command line queue utility.

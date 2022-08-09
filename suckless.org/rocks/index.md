@@ -60,8 +60,6 @@ because it makes them legally compatible with other suckless projects.
 * [oasis](https://github.com/oasislinux/oasis) - A statically linked small Linux system.
 * [sxmo](https://sxmo.org/): simple X Mobile, Sxmo is a minimalist environment
   for Linux mobile devices, such as the pinephone.
-* [kisslinux](https://kisslinux.org/) - a meta-distribution for the x86_64 architecture with a focus on simplicity, sustainability and user freedom.
-  The creator, [https://github.com/dylanaraps](dylanaraps) has gone on a hiatus from public development of KISS, please refer to the [KISS Commmunity](https://github.com/kiss-community/).
 
 
 Programs

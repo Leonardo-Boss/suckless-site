@@ -81,7 +81,7 @@ into its user-perceived characters:
 		printf("Input: \"%s\"\n", s);
 	
 		for (off = 0; s[off] != '\0'; off += ret) {
-			ret = grapheme_next_character_break(s + off, SIZE_MAX);
+			ret = grapheme_next_character_break_utf8(s + off, SIZE_MAX);
 			printf("%2zu bytes | %.*s\n", ret, (int)ret, s + off, ret);
 		}
 	

@@ -29,10 +29,10 @@ index 323f93c..d511148 100644
  dmenu is completely controlled by the keyboard.  Items are selected using the
  arrow keys, page up, page down, home, and end.
 diff --git a/dmenu.c b/dmenu.c
-index 98507d9..82227c8 100644
+index 571bc35..f2add3b 100644
 --- a/dmenu.c
 +++ b/dmenu.c
-@@ -30,12 +30,16 @@ enum { SchemeNorm, SchemeSel, SchemeOut, SchemeLast }; /* color schemes */
+@@ -30,12 +30,15 @@ enum { SchemeNorm, SchemeSel, SchemeOut, SchemeLast }; /* color schemes */
  
  struct item {
  	char *text;
@@ -43,13 +43,21 @@ index 98507d9..82227c8 100644
  
  static char text[BUFSIZ] = "";
  static char *embed;
-+static char separator;
-+static int separator_greedy;
-+static int separator_reverse;
++static char separator, separator_reverse;
++static char * (*sepchr)(const char *, int);
  static int bh, mw, mh;
  static int inputw = 0, promptw;
  static int lrpad; /* sum of left and right padding */
-@@ -473,7 +477,7 @@ insert:
+@@ -105,7 +108,7 @@ cleanup(void)
+ 	for (i = 0; i < SchemeLast; i++)
+ 		free(scheme[i]);
+ 	for (i = 0; items && items[i].text; ++i)
+-		free(items[i].text);
++		free(separator_reverse ? items[i].text_output : items[i].text);
+ 	free(items);
+ 	drw_free(drw);
+ 	XSync(dpy, False);
+@@ -490,7 +493,7 @@ insert:
  		break;
  	case XK_Return:
  	case XK_KP_Enter:
@@ -58,12 +66,11 @@ index 98507d9..82227c8 100644
  		if (!(ev->state & ControlMask)) {
  			cleanup();
  			exit(0);
-@@ -545,6 +549,18 @@ readstdin(void)
+@@ -561,6 +564,17 @@ readstdin(void)
  			*p = '\0';
  		if (!(items[i].text = strdup(buf)))
- 			die("cannot strdup %u bytes:", strlen(buf) + 1);
-+		if (separator && (p = separator_greedy ?
-+		    strrchr(items[i].text, separator) : strchr(items[i].text, separator))) {
+ 			die("cannot strdup %zu bytes:", strlen(buf) + 1);
++		if (separator && (p = sepchr(items[i].text, separator)) != NULL) {
 +			*p = '\0';
 +			items[i].text_output = ++p;
 +		} else {
@@ -75,9 +82,9 @@ index 98507d9..82227c8 100644
 +			items[i].text_output = p;
 +		}
  		items[i].out = 0;
- 		drw_font_getexts(drw->fonts, buf, strlen(buf), &tmpmax, NULL);
- 		if (tmpmax > inputw) {
-@@ -701,7 +717,8 @@ static void
+ 	}
+ 	if (items)
+@@ -711,7 +725,8 @@ static void
  usage(void)
  {
  	fputs("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
@@ -87,12 +94,13 @@ index 98507d9..82227c8 100644
  	exit(1);
  }
  
-@@ -744,6 +761,11 @@ main(int argc, char *argv[])
+@@ -754,6 +769,12 @@ main(int argc, char *argv[])
  			colors[SchemeSel][ColFg] = argv[++i];
  		else if (!strcmp(argv[i], "-w"))   /* embedding window id */
  			embed = argv[++i];
 +		else if (!strcmp(argv[i], "-d") || /* field separator */
-+		         (separator_greedy = !strcmp(argv[i], "-D"))) {
++		         !strcmp(argv[i], "-D")) {
++			sepchr = argv[i][1] == 'D' ? strrchr : strchr;
 +			separator = argv[++i][0];
 +			separator_reverse = argv[i][1] == '|';
 +		}

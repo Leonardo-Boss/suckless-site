@@ -8,9 +8,7 @@ The following example will split the input into two halves on the _first_
 occurrence of ' ' (space).  Meaning "alpha" will be displayed on dmenu, and
 "beta charlie" will be printed to stdout upon selection.
 
-`
-echo "alpha beta charlie" | dmenu -d ' '
-`
+	echo "alpha beta charlie" | dmenu -d ' '
 
 `-D` is similar but it separates the input based on the _last_ occurrence instead.
 
@@ -20,7 +18,8 @@ and display the latter half on dmenu while printing the first half upon selectio
 
 Download
 --------
-* [dmenu-separator-20210904-d78ff08.diff](dmenu-separator-20210904-d78ff08.diff)
+
+* [dmenu-separator-e35976f.diff](dmenu-separator-e35976f.diff)
 
 Author
 ------

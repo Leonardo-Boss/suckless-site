@@ -19,8 +19,9 @@ Download
 --------
 * [dmenu-highpriority-4.9.diff](dmenu-highpriority-4.9.diff)
 * [dmenu-highpriority-5.1.diff](dmenu-highpriority-5.1.diff)
+* [dmenu-highpriority-e35976f.diff](dmenu-highpriority-e35976f.diff)
 
 Author
 ------
 * Takase
-* NRK (v5.1 rebase, allocation related cleanup)
+* NRK (v5.1 and `e35976f` rebase, allocation related cleanup)

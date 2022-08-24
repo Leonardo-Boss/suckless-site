@@ -214,6 +214,8 @@ This covers most console-based programs and programs from
 * [vim](https://www.vim.org) (With the GUI, use `:set go+=c` to kill popup dialogs). It can be compiled to be as minimal as possible (see vim-tiny in Debian repos).
 * [vis](https://github.com/martanne/vis) - A modern, legacy free, simple yet efficient vim-like editor.
 * [wily](http://www.cse.yorku.ca/~oz/wily/) - An acme clone for POSIX.
+* [neatvi](https://github.com/aligrudi/neatvi) - A minimal vi implementation supporting bidirectional UTF-8
+* [nextvi](https://github.com/kyx0r/nextvi) - A continuation of neatvi development with more features.
 
 ### Text processing
 

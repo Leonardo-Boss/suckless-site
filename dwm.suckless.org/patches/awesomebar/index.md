@@ -14,6 +14,7 @@ You can also hide and unhide windows from the keyboard. The default bindings are
 * M-J/M-K to cycle through all windows in the current workspace - hidden windows shown this way are re-hidden once focus is lost
 * M-h to hide the current active window
 * M-s to unhide a window made visible by M-J/M-K
+* M-S to show all windows in the current workspace including hidden windows
   
 Since this patch relies on knowing how big everything is in the taskbar, make sure to adjust the buttonpress()/drawbar() functions to account for any space in the taskbar used by other patches (such as systray).
 
@@ -21,6 +22,11 @@ Since this patch relies on knowing how big everything is in the taskbar, make su
 
 Changelog
 ---------
+2022-08-29:
+* Adapted to recent version
+* fix: crash on using shortcut `M-J/M-K` when all windows are hidden
+* add: new function to show all windows(hidden or shown) in the current workspace and a keyboard shortcut for it
+
 2020-09-07:
 * add: manage hidden windows via keyboard
 
@@ -34,6 +40,9 @@ Changelog
 
 Download
 --------
+Updated version from Xac:
+* [dwm-awesomebar-20220829-6.3.diff](dwm-awesomebar-20220829-6.3.diff) (2022-08-29) 
+
 2020-09-07 version:
 * [dwm-awesomebar-20200907-6.2.diff](dwm-awesomebar-20200907-6.2.diff) (2020-09-07)
 
@@ -49,3 +58,4 @@ Authors
 -------
 * ornx <ornx[at]protonmail.com>
 * Yegor Bayev <kodxpub@gmail.com>
+* Xac <jiangfengxi.c@gmail.com>

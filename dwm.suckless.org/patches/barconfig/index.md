@@ -19,6 +19,7 @@ By default, this patch leaves the bar as is.
 Download
 --------
 * [dwm-barconfig-6.3.diff](dwm-barconfig-6.3.diff) (2022-02-22)
+* [dwm-barconfig-20220906-c2b748e.diff](dwm-barconfig-20220906-c2b748e.diff) (2022-09-06)
 
 Author
 -------

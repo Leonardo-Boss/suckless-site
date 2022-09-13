@@ -10,7 +10,8 @@ Notes
 -----
 
 The path to the image file has to be configured in `config.h` using the variable
-`bgimg` (patch modifies `config.def.h`). The image format is expected to be 
+`bgfile` (patch modifies `config.def.h`, changes made there need to be ported to
+`config.h` if it already exists). The image format is expected to be
 [farbfeld](//tools.suckless.org/farbfeld). In case the background image 
 is smaller than the window size the background will be tiled.
 

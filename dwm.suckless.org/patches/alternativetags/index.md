@@ -17,6 +17,7 @@ Alternative tags
 
 Download
 --------
+* [dwm-alternativetags-6.3.diff](dwm-alternativetags-6.3.diff) (2022-09-19)
 * [dwm-alternativetags-6.2.diff](dwm-alternativetags-6.2.diff) (2021-08-29)
 * [dwm-alternativetags-20210829-ed3ab6b4.diff](dwm-alternativetags-20210829-ed3ab6b4.diff) (2021-08-29)
 
@@ -24,3 +25,4 @@ Author
 -------
 * Piyush Pangtey <gokuvsvegita@gmail.com>
 * Jack Bird <jack.bird@dur.ac.uk> (momentary switch)
+* Tom Schwindl <schwindl@posteo.de> (6.3 port, cleanup)

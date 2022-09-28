@@ -41,7 +41,7 @@ Changelog
 Download
 --------
 Updated version from Xac:
-* [dwm-awesomebar-20220829-6.3.diff](dwm-awesomebar-20220829-6.3.diff) (2022-08-29) 
+* [dwm-awesomebar-20220925-6.3.diff](dwm-awesomebar-20220925-6.3.diff) (2022-09-25) 
 
 2020-09-07 version:
 * [dwm-awesomebar-20200907-6.2.diff](dwm-awesomebar-20200907-6.2.diff) (2020-09-07)

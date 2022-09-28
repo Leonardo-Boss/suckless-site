@@ -83,6 +83,9 @@ Feel free to add your own status monitors here (keeping the list sorted).
   date, time and CPU temperature
 * [dwmstat](https://notabug.org/kl3/dwmstat) - small and simple | IP, CPU
   temperature, system volume, current local time (and more) | config.h | OpenBSD
+* [estadobar](https://lee-phillips.org/estadobarpage/) - Volume, CPU load, Wifi, free memory, battery charge, +
+  colored icon warnings on high temperature, high load, and low or charging battery. Needs
+  'statuscolors' patch; written in Python.
 * [goblocks](https://github.com/Stargarth/Goblocks) - Partially inspired by dwmblocks,
   Go status bar that allows you to refresh each block independently. Includes built in
   features for frequently refreshed blocks.

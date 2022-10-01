@@ -20,7 +20,7 @@ because it makes them legally compatible with other suckless projects.
 
 * [cproc](https://git.sr.ht/~mcf/cproc) - frontend for C11 for QBE.
 * [lacc](https://github.com/larmel/lacc) - A simple, self-hosting C compiler.
-* [qbe](https://c9x.me/compile/) - compiler backend targeting amd64 (linux and osx), arm64, and riscv64.
+* [qbe](https://c9x.me/compile/) - compiler backend targeting AMD64 (Linux and OSX), ARM64, and RISC-V64.
 * [scc](https://www.simple-cc.org/) - Simple C Compiler.
 * [tcc](https://bellard.org/tcc/) - Tiny C Compiler [git repo](https://repo.or.cz/w/tinycc.git)
 
@@ -47,7 +47,7 @@ because it makes them legally compatible with other suckless projects.
 * [ccv](http://libccv.org/) - C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library.
 * [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modelled after libevent but much smaller (dual licensed under 2-clause BSD and GPL).
 * [mandoc](http://mandoc.bsd.lv/) - The mandoc UNIX manpage compiler toolset.
-* [pjsip](http://www.pjsip.org/) - open-source SIP stack (GPL).
+* [pjsip](https://www.pjsip.org/) - open-source SIP stack (GPL).
 * [raycastlib](https://gitlab.com/drummyfish/raycastlib) - Single-header public domain C raycasting renderer with no dependencies, using only integer math.
 * [sdhcp](https://git.2f30.org/sdhcp/) - IPv4 DHCP client.
 * [TinyGL](https://github.com/C-Chads/tinygl) - free software-only subset of OpenGL 1.1 implemented in C
@@ -79,7 +79,7 @@ This covers most console-based programs and programs from
 * [C\* Music Player](https://cmus.github.io/) - aka cmus, an ncurses music player that can be controlled with a UNIX socket.
 * [moc](https://moc.daper.net/) - console audio player for Linux/UNIX.
 * [mpd](https://www.musicpd.org/) - A client/server based music player with console and graphical front-ends.
-* [mpg123](http://www.mpg123.de/) - A console MPG player which doesn't use auto\*hell or extra libraries.
+* [mpg123](https://www.mpg123.de/) - A console MPG player which doesn't use auto\*hell or extra libraries.
 * [mpg321](http://mpg321.sourceforge.net) - A command-line MP3 player.
 * [mus](https://sr.ht/~q3cpma/mus/) - Modular daemon/client CLI player consuming a plaintext album directory queue
 * [vorbis-tools](https://www.xiph.org/) (Ogg/FLAC) - Command-line tools to play Ogg and FLAC files.

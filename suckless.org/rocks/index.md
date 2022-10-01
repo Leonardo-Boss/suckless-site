@@ -48,11 +48,12 @@ because it makes them legally compatible with other suckless projects.
 * [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modelled after libevent but much smaller (dual licensed under 2-clause BSD and GPL).
 * [mandoc](http://mandoc.bsd.lv/) - The mandoc UNIX manpage compiler toolset.
 * [pjsip](https://www.pjsip.org/) - open-source SIP stack (GPL).
-* [raycastlib](https://gitlab.com/drummyfish/raycastlib) - Single-header public domain C raycasting renderer with no dependencies, using only integer math.
 * [sdhcp](https://git.2f30.org/sdhcp/) - IPv4 DHCP client.
-* [TinyGL](https://github.com/C-Chads/tinygl) - free software-only subset of OpenGL 1.1 implemented in C
+* [raycastlib](https://gitlab.com/drummyfish/raycastlib) - Single-header public domain C raycasting renderer with no dependencies, using only integer math.
 * [small3dlib](https://gitlab.com/drummyfish/small3dlib) - Single-header public domain C software 3D renderer with no dependencies, using only integer math.
+* [stb](https://github.com/nothings/stb) - single-file public domain (or MIT licensed) libraries for C/C++: various image, font, audio loaders etc.
 * [termbox](https://github.com/termbox/termbox) - simple ncurses-like library for creating TUIs.
+* [TinyGL](https://github.com/C-Chads/tinygl) - free software-only subset of OpenGL 1.1 implemented in C
 
 ### Distros
 
@@ -206,6 +207,8 @@ This covers most console-based programs and programs from
 * [mg](https://homepage.boetes.org/software/mg/) - A portable version of mg maintained by the OpenBSD team.
 * [mle](https://github.com/adsr/mle) - A small, flexible console text editor.
 * [nano](https://www.nano-editor.org/) - A pico clone - this is small simple code and easy to use.
+* [neatvi](https://github.com/aligrudi/neatvi) - A minimal vi implementation supporting bidirectional UTF-8
+* [nextvi](https://github.com/kyx0r/nextvi) - A continuation of neatvi development with more features.
 * [nvi](https://sites.google.com/a/bostic.com/keithbostic/vi) - A small, multiple file vi-alike.
 * [micro](https://micro-editor.github.io/) - A terminal text editor, written in go with common key bindings like ctrl-c to copy and ctrl-v to paste.
 * [sam](http://sam.cat-v.org/) - An editor by Rob Pike with inspiration from ed.
@@ -214,16 +217,14 @@ This covers most console-based programs and programs from
 * [vim](https://www.vim.org) (With the GUI, use `:set go+=c` to kill popup dialogs). It can be compiled to be as minimal as possible (see vim-tiny in Debian repos).
 * [vis](https://github.com/martanne/vis) - A modern, legacy free, simple yet efficient vim-like editor.
 * [wily](http://www.cse.yorku.ca/~oz/wily/) - An acme clone for POSIX.
-* [neatvi](https://github.com/aligrudi/neatvi) - A minimal vi implementation supporting bidirectional UTF-8
-* [nextvi](https://github.com/kyx0r/nextvi) - A continuation of neatvi development with more features.
 
 ### Text processing
 
-* [json2tsv](https://codemadness.org/json2tsv.html) - a JSON to TAB-Separated Value (TSV) converter and stand-alone JSON parser code.
 * [csvquote](https://github.com/skeeto/scratch/tree/master/csvquote) - tool to
   encode troublesome CSV characters such that unix tools can correctly process
   them. SIMD optimized by default, portable C fallback can be enabled at build
   time.
+* [json2tsv](https://codemadness.org/json2tsv.html) - a JSON to TAB-Separated Value (TSV) converter and stand-alone JSON parser code.
 * [md4c](https://github.com/mity/md4c) - markdown to html converter.  Fast,
   [CommonMark](https://commonmark.org/) compliant, offers extensions which can
   be switched on/off via cli args.

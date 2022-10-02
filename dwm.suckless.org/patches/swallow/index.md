@@ -25,14 +25,14 @@ Resource Extension which is unsupported in vanilla Xlib.
 
 Download
 --------
+* [dwm-swallow-6.3.diff](dwm-swallow-6.3.diff)
+* [dwm-swallow-6.2.diff](dwm-swallow-6.2.diff)
+* [dwm-swallow-6.1.diff](dwm-swallow-6.1.diff)
 * [dwm-swallow-20201211-61bb8b2.diff](dwm-swallow-20201211-61bb8b2.diff)
 * [dwm-swallow-20200807-b2de9b0.diff](dwm-swallow-20200807-b2de9b0.diff)
 * [dwm-swallow-20200707-8d1e703.diff](dwm-swallow-20200707-8d1e703.diff)
 * [dwm-swallow-20200522-7accbcf.diff](dwm-swallow-20200522-7accbcf.diff)
-* [dwm-swallow-6.3.diff](dwm-swallow-6.3.diff)
-* [dwm-swallow-6.2.diff](dwm-swallow-6.2.diff)
 * [dwm-swallow-20170909-ceac8c9.diff](dwm-swallow-20170909-ceac8c9.diff)
-* [dwm-swallow-6.1.diff](dwm-swallow-6.1.diff)
 * [dwm-swallow-20160717-56a31dc.diff](dwm-swallow-20160717-56a31dc.diff)
 
 Notes

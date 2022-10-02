@@ -23,5 +23,5 @@ Authors
 * Eric Pruitt - <eric.pruitt@gmail.com>
 * Laslo Hunhold - <dev@frign.de> (6.1, git port)
 * Markus Teich - markus(DOT)teich(AT)stusta(DOT)de (simplification)
-* Aidan Hall - <aidan.hall@outlook.com> (floating fix)
+* Aidan Hall - aidan DOT hall AT outlook DOT com (floating fix)
 * Chris Down - <chris@chrisdown.name> (flicker fix)

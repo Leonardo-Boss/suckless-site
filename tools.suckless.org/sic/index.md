@@ -5,7 +5,7 @@ code. It is the little brother of [irc it](/ii).
 
 Download
 --------
-* [sic 1.2](//dl.suckless.org/tools/sic-1.2.tar.gz) (5KB) (20130616)
+* [sic 1.3](//dl.suckless.org/tools/sic-1.3.tar.gz) (5KB) (2022-10-04)
 
 Development
 -----------

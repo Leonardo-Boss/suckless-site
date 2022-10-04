@@ -9,6 +9,16 @@ News
 
 [Atom feed](//suckless.org/atom.xml)
 
+2022-10-04
+----------
+* [dmenu 5.2](//tools.suckless.org/dmenu/) released: [download](//dl.suckless.org/tools/dmenu-5.2.tar.gz)
+* [dwm 6.4](//dwm.suckless.org) released: [download](//dl.suckless.org/dwm/dwm-6.4.tar.gz)
+* [ii 2.0](//tools.suckless.org/ii) released: [download](//dl.suckless.org/tools/ii-2.0.tar.gz)
+* [sic 1.3](//tools.suckless.org/sic) released: [download](//dl.suckless.org/tools/sic-1.3.tar.gz)
+* [slock 1.5](//tools.suckless.org/slock) released: [download](//dl.suckless.org/tools/slock-1.5.tar.gz)
+* [st 0.9](//st.suckless.org/) released: [download](//dl.suckless.org/st/st-0.9.tar.gz)
+* [tabbed 0.7](//tools.suckless.org/tabbed) released: [download](//dl.suckless.org/tools/tabbed-0.7.tar.gz)
+
 2022-04-19
 ----------
 Suckless now has a dark mode CSS style for its pages.

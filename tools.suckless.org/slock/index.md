@@ -20,7 +20,7 @@ copy using the following command:
 
 Download
 --------
-* [slock-1.4](//dl.suckless.org/tools/slock-1.4.tar.gz) (20161120)
+* [slock-1.5](//dl.suckless.org/tools/slock-1.5.tar.gz) (2022-10-04)
 
 Xautolock
 ---------

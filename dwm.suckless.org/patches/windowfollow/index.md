@@ -11,8 +11,8 @@ The behaviour is affected in strange ways by which monitor the cursor is on, but
 this is true for dwm normally.
 
 An icon indicating whether this behaviour is active is added to the bar:
-* <code>v</code> means window following is off.
-* <code>&gt;</code> means window following is on.
+* v means window following is off.
+* &gt; means window following is on.
 
 The `togglefollow` function toggles whether this occurs on the current monitor.
 By default, this is triggered by `MODKEY+n` and by clicking the icon.
@@ -25,13 +25,15 @@ looks different.
 
 Download
 --------
-* [dwm-windowfollow-6.3.diff](dwm-windowfollow-6.3.diff)
-(Probably compatible with 6.2 and older.)
 
-* [dwm-windowfollow-20221002-69d5652.diff](dwm-windowfollow-20221002-69d5652.diff)
-(Accounts for commit
+Commit
 [`5799dd1fca6576b662d299e210cd5933b29d502d`
-](https://git.suckless.org/dwm/commit/5799dd1fca6576b662d299e210cd5933b29d502d.html))
+](https://git.suckless.org/dwm/commit/5799dd1fca6576b662d299e210cd5933b29d502d.html)
+breaks the 6.3 version.
+
+* [dwm-windowfollow-6.3.diff](dwm-windowfollow-6.3.diff) (Working on 6.2 & 6.3)
+
+* [dwm-windowfollow-20221002-69d5652.diff](dwm-windowfollow-20221002-69d5652.diff) (Working on 6.4)
 
 Author
 ------

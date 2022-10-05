@@ -22,6 +22,9 @@ Since this patch relies on knowing how big everything is in the taskbar, make su
 
 Changelog
 ---------
+2022-10-04:
+* Fix typo in titlebar theme switches
+
 2022-08-29:
 * Adapted to recent version
 * fix: crash on using shortcut `M-J/M-K` when all windows are hidden

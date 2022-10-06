@@ -9,6 +9,10 @@ News
 
 [Atom feed](//suckless.org/atom.xml)
 
+2022-10-06
+----------
+[libgrapheme 2.0.0](//libs.suckless.org/libgrapheme) released: [download](//dl.suckless.org/libgrapheme/libgrapheme-2.0.0.tar.gz)
+
 2022-10-04
 ----------
 * [dmenu 5.2](//tools.suckless.org/dmenu/) released: [download](//dl.suckless.org/tools/dmenu-5.2.tar.gz)
@@ -37,7 +41,7 @@ Surf also now has support for [dark mode](https://git.suckless.org/surf/commit/1
 
 2021-12-22
 ----------
-[libgrapheme 1](//libs.suckless.org/libgrapheme) released: [download](//dl.suckless.org/libgrapheme/libgrapheme-1.tar.gz)
+[libgrapheme 1.0.0](//libs.suckless.org/libgrapheme) released: [download](//dl.suckless.org/libgrapheme/libgrapheme-1.0.0.tar.gz)
 
 2021-07-30
 ----------

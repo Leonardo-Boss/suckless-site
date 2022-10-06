@@ -21,7 +21,8 @@ ensure conformance and correctness.
 
 There is no complicated build-system involved and it's all done using
 one POSIX-compliant Makefile. All you need is a C99 compiler, given
-the lookup-table-generators and compressors are also written in C99.
+the lookup-table-generators and compressors that are only run at
+build-time are also written in C99.
 The resulting library is freestanding and thus not even dependent on a
 standard library to be present at runtime, making it a suitable choice
 for bare metal applications.
@@ -40,7 +41,8 @@ Download
 --------
 libgrapheme follows the [semantic versioning](https://semver.org/) scheme.
 
-* [libgrapheme-1.0.0](//dl.suckless.org/libgrapheme/libgrapheme-1.tar.gz) (2021-12-22)
+* [libgrapheme-2.0.0](//dl.suckless.org/libgrapheme/libgrapheme-2.0.0.tar.gz) (2022-10-06)
+* [libgrapheme-1.0.0](//dl.suckless.org/libgrapheme/libgrapheme-1.0.0.tar.gz) (2021-12-22)
 
 
 Getting Started

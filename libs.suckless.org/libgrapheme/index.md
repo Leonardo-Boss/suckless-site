@@ -34,7 +34,7 @@ repository or get a copy with the following command:
 
 Download
 --------
-libgrapheme follows the semantic versioning scheme.
+libgrapheme follows the [semantic versioning](https://semver.org/) scheme.
 
 * [libgrapheme-1.0.0](//dl.suckless.org/libgrapheme/libgrapheme-1.tar.gz) (2021-12-22)
 
@@ -60,7 +60,7 @@ You can access the manual [here](man/) or via libgrapheme(7) by typing
 	man libgrapheme
 
 and looking at the referred pages, e.g.
-[grapheme\_next\_character\_break_utf8(3)](man/grapheme next character break utf8\(3\)/).
+[grapheme\_next\_character\_break_utf8(3)](man/grapheme next character break utf8(3)/).
 Each page contains code-examples and an extensive description. To give
 one example that is also given in the manuals, the following code
 separates a given string 'Tëst 👨‍👩‍👦 🇺🇸 नी நி!'

@@ -133,7 +133,7 @@ This covers most console-based programs and programs from
 ### Image viewers
 
 * [feh](https://feh.finalrewind.org/) - A highly customizable image viewer that can also set a desktop background image.
-* [imv](https://github.com/exec64/imv) - Simple X11/Wayland Image Viewer. Depends on SDL2 and FreeImage.
+* [imv](https://sr.ht/~exec64/imv/) - Simple X11/Wayland Image Viewer. Depends on SDL2 and FreeImage.
 * [jpg/gif/bmp/png](https://9fans.github.io/plan9port/) - Simple programs from Plan 9 to display images in no-frills windows. Included with [plan9port](https://9fans.github.io/plan9port/).
 * [lel](https://git.codemadness.org/lel/file/README.html) - Farbfeld image viewer.
 * [meh](https://www.johnhawthorn.com/meh/) - image viewer using raw XLib, libjpeg, libpng and libgif.
@@ -175,6 +175,7 @@ This covers most console-based programs and programs from
 * [mpv](https://mpv.io/) - a free, open-source and cross-platform media player.
 
 ### Notifications
+
 * [herbe](https://github.com/dudik/herbe) - Daemon-less notifications without D-Bus. Minimal, lightweight & written in C. You can use [tiramisu](https://github.com/Sweets/tiramisu) to call herbe.
 * [tiramisu](https://github.com/Sweets/tiramisu) - Tiramisu is a notification daemon based on dunst that outputs notifications to STDOUT in order to allow the user to process notifications any way they prefer, like in your dwm statusbar for example.
 

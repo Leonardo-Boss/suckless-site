@@ -23,7 +23,11 @@ There is no complicated build-system involved and it's all done using
 one POSIX-compliant Makefile. All you need is a C99 compiler, given
 the lookup-table-generators and compressors are also written in C99.
 The resulting library is freestanding and thus not even dependent on a
-standard library to be present at runtime.
+standard library to be present at runtime, making it a suitable choice
+for bare metal applications.
+
+It is also way smaller and much faster than the other established Unicode
+string libraries (ICU, GNU's libunistring, libutf8proc).
 
 Development
 -----------

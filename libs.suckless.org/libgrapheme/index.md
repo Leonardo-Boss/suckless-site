@@ -1,60 +1,61 @@
 ![libgrapheme](libgrapheme.svg)
 
-libgrapheme is an extremely simple C99 library providing utilities for
-properly handling Unicode strings made up of user-perceived characters
-('grapheme clusters') according to the Unicode standard. While providing
-convenience functions to operate on UTF-8-encoded strings, you can also
-use libgrapheme for any other encoding as well.
+libgrapheme is an extremely simple freestanding C99 library providing
+utilities for properly handling strings according to the latest
+Unicode standard 15.0.0. It offers fully Unicode compliant
 
-The necessary lookup-tables and test-data are automatically generated
-from the Unicode standard data, ensuring correctness and validation.
-A specialized 'Heisenstate' state-handling combined with
-O(log(n))-binary-search on the lookup-tables and data-recycling provides
-great processing-performance in the order of millions of codepoints per
-second.
+* __grapheme cluster__ (i.e. user-perceived character) __segmentation__
+* __word segmentation__
+* __sentence segmentation__
+* detection of permissible __line break opportunities__
+* __case detection__ (lower-, upper- and title-case)
+* __case conversion__ (to lower-, upper- and title-case)
+
+on UTF-8 strings and codepoint arrays, which both can also be
+null-terminated.
+
+The necessary lookup-tables are automatically generated from the Unicode
+standard data (contained in the tarball) and heavily compressed. Over
+10,000 automatically generated conformance tests and over 150 unit tests
+ensure conformance and correctness.
 
 There is no complicated build-system involved and it's all done using
-one POSIX-compliant Makefile. All you need is a C99 compiler, because
-the data-generators are also written in C99.
+one POSIX-compliant Makefile. All you need is a C99 compiler, given
+the lookup-table-generators and compressors are also written in C99.
+The resulting library is freestanding and thus not even dependent on a
+standard library to be present at runtime.
 
-Motivation
-----------
-The goal of this project is to be a suckless and statically linkable
-alternative to the existing bloated, complicated and overscoped solutions
-for Unicode string handling (ICU, GNU's libunistring, etc.), motivating
-more hackers to properly handle Unicode strings in their projects and
-allowing this even in embedded applications.
+Development
+-----------
+You can [browse](//git.suckless.org/libgrapheme) the source code
+repository or get a copy with the following command:
 
-The problem can be easily seen when looking at the sizes of the respective
-libraries: The ICU library (libicudata.a, libicui18n.a, libicuio.a,
-libicutest.a, libicutu.a, libicuuc.a) is around 38MB and libunistring
-(libunistring.a) is around 2MB, which is unacceptable for static
-linking. Both take many minutes to compile even on a good computer and
-require a lot of dependencies, including Python for ICU. On
-the other hand libgrapheme (libgrapheme.a) only weighs in at around 40K
-and is compiled (including Unicode data parsing) in fractions of a
-second, requiring nothing but a C99 compiler and make(1).
+	git clone https://git.suckless.org/libgrapheme
 
-While ICU and libunistring offer a lot of functions and the weight mostly
-comes from locale-data provided by the Unicode standard, which is applied
-implementation-specifically (!) for some things, the same standard always
-defines a sane 'default' behaviour as an alternative in such cases that
-is satisfying in 99% of the cases and which you can rely on.
+Download
+--------
+libgrapheme follows the semantic versioning scheme.
 
-For some languages, for instance, it is necessary to have a dictionary
-on hand to always accurately determine when a word begins and ends. The
-defaults provided by the standard, though, already do a good job
-respecting the language's boundaries in the general case and are not too
-taxing in terms of performance.
+* [libgrapheme-1.0.0](//dl.suckless.org/libgrapheme/libgrapheme-1.tar.gz) (2021-12-22)
 
-Handling user-perceived characters is not locale-dependent, though, and
-does not require locale-data.
 
 Getting Started
 ---------------
-Installing libgrapheme will install the header grapheme.h and both the
-static library libgrapheme.a and the dynamic library libgrapheme.so in
-the respective folders. Access the manual under libgrapheme(7) by typing
+Installing libgrapheme via
+
+	make install
+
+will install the header grapheme.h and both the static library
+libgrapheme.a and the dynamic library libgrapheme.so (with symlinks) in
+the respective folders. The conformance and unit tests can be run with
+
+	make test
+
+and comparative benchmarks against libutf8proc can be run with
+
+	make benchmark
+
+You can access the manual via libgrapheme(7) by typing
 
 	man libgrapheme
 
@@ -109,16 +110,44 @@ and the output is
 	 6 bytes | நி
 	 1 bytes | !
 
-Development
------------
-You can [browse](//git.suckless.org/libgrapheme) the source code
-repository or get a copy with the following command:
 
-	git clone https://git.suckless.org/libgrapheme
+Motivation
+----------
+The goal of this project is to be a suckless and statically linkable
+alternative to the existing bloated, complicated, overscoped and/or
+incorrect solutions for Unicode string handling (ICU, GNU's
+libunistring, libutf8proc, etc.), motivating more hackers to properly
+handle Unicode strings in their projects and allowing this even in
+embedded applications.
 
-Download
---------
-* [libgrapheme-1](//dl.suckless.org/libgrapheme/libgrapheme-1.tar.gz) (2021-12-22)
+The problem can be easily seen when looking at the sizes of the respective
+libraries: The ICU library (libicudata.a, libicui18n.a, libicuio.a,
+libicutest.a, libicutu.a, libicuuc.a) is around 38MB and libunistring
+(libunistring.a) is around 2MB, which is unacceptable for static
+linking. Both take many minutes to compile even on a good computer and
+require a lot of dependencies, including Python for ICU. On
+the other hand libgrapheme (libgrapheme.a) only weighs in at around 300K
+and is compiled (including Unicode data parsing and compression) in
+under a second, requiring nothing but a C99 compiler and POSIX make(1).
+
+Some libraries, like libutf8proc and libunistring, are incorrect by
+basing their API on assumptions that haven't been true for years
+(e.g. offering stateless grapheme cluster segmentation even though the
+underlying algorithm is not stateless). As an additional factor,
+libutf8proc's UTF-8-decoder is unsafe, as it allows overlong encodings
+that can be easily used for exploits.
+
+While ICU and libunistring offer a lot of functions and the weight mostly
+comes from locale-data provided by the Unicode standard, which is applied
+implementation-specifically (!) for some things, the same standard always
+defines a sane 'default' behaviour as an alternative in such cases that
+is satisfying in 99% of the cases and which you can rely on.
+
+For some languages, for instance, it is necessary to have a dictionary
+on hand to always accurately determine when a word begins and ends. The
+defaults provided by the standard, though, already do a great job
+respecting the language's boundaries in the general case and are not too
+taxing in terms of performance.
 
 Author
 ------

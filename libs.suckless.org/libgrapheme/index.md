@@ -78,12 +78,23 @@ into its user-perceived characters:
 		          "\x9F\x91\xA9\xE2\x80\x8D\xF0\x9F\x91\xA6 \xF0"
 		          "\x9F\x87\xBA\xF0\x9F\x87\xB8 \xE0\xA4\xA8\xE0"
 		          "\xA5\x80 \xE0\xAE\xA8\xE0\xAE\xBF!";
-		size_t ret, off;
+		size_t ret, len, off;
 	
 		printf("Input: \"%s\"\n", s);
 	
+		/* print each grapheme cluster with byte-length */
+		printf("grapheme clusters in NUL-delimited input:\n");
 		for (off = 0; s[off] != '\0'; off += ret) {
 			ret = grapheme_next_character_break_utf8(s + off, SIZE_MAX);
+			printf("%2zu bytes | %.*s\n", ret, (int)ret, s + off, ret);
+		}
+		printf("\n");
+	
+		/* do the same, but this time string is length-delimited */
+		len = 17;
+		printf("grapheme clusters in input delimited to %zu bytes:\n", len);
+		for (off = 0; off < len; off += ret) {
+			ret = grapheme_next_character_break_utf8(s + off, len - off);
 			printf("%2zu bytes | %.*s\n", ret, (int)ret, s + off, ret);
 		}
 	
@@ -97,6 +108,7 @@ This code can be compiled with
 and the output is
 
 	Input: "Tëst 👨‍👩‍👦 🇺🇸 नी நி!"
+	grapheme clusters in NUL-delimited input:
 	 1 bytes | T
 	 2 bytes | ë
 	 1 bytes | s
@@ -110,7 +122,14 @@ and the output is
 	 1 bytes |  
 	 6 bytes | நி
 	 1 bytes | !
-
+	
+	grapheme clusters in input delimited to 17 bytes:
+	 1 bytes | T
+	 2 bytes | ë
+	 1 bytes | s
+	 1 bytes | t
+	 1 bytes |  
+	11 bytes | 👨‍👩
 
 Motivation
 ----------
@@ -154,4 +173,4 @@ Author
 ------
 * Laslo Hunhold (dev@frign.de)
 
-Please contact me if you find information that could be added to this page.
+Please contact me if you have information that could be added to this page.

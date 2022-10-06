@@ -1,3 +1,13 @@
+From db596234b244382e984228791e840190d82967ea Mon Sep 17 00:00:00 2001
+From: NRK <nrk@disroot.org>
+Date: Fri, 3 Sep 2021 11:11:14 +0600
+Subject: [PATCH] patch: seperator
+
+---
+ dmenu.1 | 12 ++++++++++++
+ dmenu.c | 31 +++++++++++++++++++++++++++----
+ 2 files changed, 39 insertions(+), 4 deletions(-)
+
 diff --git a/dmenu.1 b/dmenu.1
 index 323f93c..d511148 100644
 --- a/dmenu.1
@@ -29,7 +39,7 @@ index 323f93c..d511148 100644
  dmenu is completely controlled by the keyboard.  Items are selected using the
  arrow keys, page up, page down, home, and end.
 diff --git a/dmenu.c b/dmenu.c
-index 571bc35..f2add3b 100644
+index 7cf253b..a8eb321 100644
 --- a/dmenu.c
 +++ b/dmenu.c
 @@ -30,12 +30,15 @@ enum { SchemeNorm, SchemeSel, SchemeOut, SchemeLast }; /* color schemes */
@@ -66,10 +76,20 @@ index 571bc35..f2add3b 100644
  		if (!(ev->state & ControlMask)) {
  			cleanup();
  			exit(0);
-@@ -561,6 +564,17 @@ readstdin(void)
- 			*p = '\0';
- 		if (!(items[i].text = strdup(buf)))
- 			die("cannot strdup %zu bytes:", strlen(buf) + 1);
+@@ -549,7 +552,7 @@ paste(void)
+ static void
+ readstdin(void)
+ {
+-	char *line = NULL;
++	char *p, *line = NULL;
+ 	size_t i, junk, size = 0;
+ 	ssize_t len;
+ 
+@@ -561,6 +564,19 @@ readstdin(void)
+ 		if (line[len - 1] == '\n')
+ 			line[len - 1] = '\0';
+ 		items[i].text = line;
++
 +		if (separator && (p = sepchr(items[i].text, separator)) != NULL) {
 +			*p = '\0';
 +			items[i].text_output = ++p;
@@ -81,20 +101,21 @@ index 571bc35..f2add3b 100644
 +			items[i].text = items[i].text_output;
 +			items[i].text_output = p;
 +		}
++
  		items[i].out = 0;
  	}
  	if (items)
-@@ -711,7 +725,8 @@ static void
+@@ -711,7 +727,8 @@ static void
  usage(void)
  {
- 	fputs("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
--	      "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]\n", stderr);
-+	      "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]\n"
-+	      "             [-d separator] [-D separator]\n", stderr);
- 	exit(1);
+ 	die("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
+-	    "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]");
++	    "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]\n"
++	    "             [-d separator] [-D separator]");
  }
  
-@@ -754,6 +769,12 @@ main(int argc, char *argv[])
+ int
+@@ -753,6 +770,12 @@ main(int argc, char *argv[])
  			colors[SchemeSel][ColFg] = argv[++i];
  		else if (!strcmp(argv[i], "-w"))   /* embedding window id */
  			embed = argv[++i];
@@ -107,3 +128,6 @@ index 571bc35..f2add3b 100644
  		else
  			usage();
  
+-- 
+2.35.1
+

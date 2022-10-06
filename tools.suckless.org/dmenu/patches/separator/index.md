@@ -19,7 +19,7 @@ and display the latter half on dmenu while printing the first half upon selectio
 Download
 --------
 
-* [dmenu-separator-e35976f.diff](dmenu-separator-e35976f.diff)
+* [dmenu-separator-5.2.patch](dmenu-separator-5.2.patch)
 
 Author
 ------

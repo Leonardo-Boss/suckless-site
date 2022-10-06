@@ -1,1 +1,1 @@
-The manuals of the current version are given in the following subpages.
+The manual of the current version is given in the following subpages.

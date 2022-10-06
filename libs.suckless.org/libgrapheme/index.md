@@ -55,7 +55,8 @@ the respective folders. The conformance and unit tests can be run with
 
 	make test
 
-and comparative benchmarks against libutf8proc can be run with
+and comparative benchmarks against libutf8proc (which is the only Unicode
+library compliant enough to be comparable to) can be run with
 
 	make benchmark
 

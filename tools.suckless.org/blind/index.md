@@ -95,7 +95,7 @@ instead of colours in a video.
 ### Doesn't blind have any audio support?
 
 No, it is not clear that there is actually a need for this. There are good
-tools for editing audio, and ffmpeg can be used be used to extract the audio
+tools for editing audio, and ffmpeg can be used to extract the audio
 streams from a video or add it to a video.
 
 ### Is it really feasible to edit video without a GUI?

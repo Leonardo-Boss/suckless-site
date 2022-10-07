@@ -75,7 +75,7 @@ is
 		printf("sentences in NUL-delimited input:\n");
 		for (off = 0; s[off] != '\0'; off += ret) {
 			ret = grapheme_next_sentence_break_utf8(s + off, SIZE_MAX);
-			printf("%2zu bytes | %.*s\n", ret, (int)ret, s + off, ret);
+			printf("%2zu bytes | %.*s\n", ret, (int)ret, s + off);
 		}
 		printf("\n");
 	
@@ -84,7 +84,7 @@ is
 		printf("sentences in input delimited to %zu bytes:\n", len);
 		for (off = 0; off < len; off += ret) {
 			ret = grapheme_next_sentence_break_utf8(s + off, len - off);
-			printf("%2zu bytes | %.*s\n", ret, (int)ret, s + off, ret);
+			printf("%2zu bytes | %.*s\n", ret, (int)ret, s + off);
 		}
 	
 		return 0;

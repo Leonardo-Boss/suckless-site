@@ -93,7 +93,7 @@ into its user-perceived characters:
 		printf("grapheme clusters in NUL-delimited input:\n");
 		for (off = 0; s[off] != '\0'; off += ret) {
 			ret = grapheme_next_character_break_utf8(s + off, SIZE_MAX);
-			printf("%2zu bytes | %.*s\n", ret, (int)ret, s + off, ret);
+			printf("%2zu bytes | %.*s\n", ret, (int)ret, s + off);
 		}
 		printf("\n");
 	
@@ -102,7 +102,7 @@ into its user-perceived characters:
 		printf("grapheme clusters in input delimited to %zu bytes:\n", len);
 		for (off = 0; off < len; off += ret) {
 			ret = grapheme_next_character_break_utf8(s + off, len - off);
-			printf("%2zu bytes | %.*s\n", ret, (int)ret, s + off, ret);
+			printf("%2zu bytes | %.*s\n", ret, (int)ret, s + off);
 		}
 	
 		return 0;

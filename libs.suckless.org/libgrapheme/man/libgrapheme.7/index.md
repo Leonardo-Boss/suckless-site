@@ -6,7 +6,7 @@ LIBGRAPHEME(7) - Miscellaneous Information Manual
 
 # SYNOPSIS
 
-**#include &lt;grapheme.h>**
+**#include <grapheme.h>**
 
 # DESCRIPTION
 
@@ -173,6 +173,6 @@ is to make unicode handling suck less and abide by the UNIX philosophy.
 
 # AUTHORS
 
-Laslo Hunhold &lt;[dev@frign.de](mailto:dev@frign.de)&gt;
+Laslo Hunhold <[dev@frign.de](mailto:dev@frign.de)>
 
 suckless.org - 2022-10-06

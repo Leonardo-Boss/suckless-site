@@ -6,7 +6,7 @@ GRAPHEME\_DECODE\_UTF8(3) - Library Functions Manual
 
 # SYNOPSIS
 
-**#include &lt;grapheme.h>**
+**#include <grapheme.h>**
 
 *size\_t*  
 **grapheme\_decode\_utf8**(*const char \*str*, *size\_t len*, *uint\_least32\_t \*cp*);
@@ -107,6 +107,6 @@ libgrapheme(7)
 
 # AUTHORS
 
-Laslo Hunhold &lt;[dev@frign.de](mailto:dev@frign.de)&gt;
+Laslo Hunhold <[dev@frign.de](mailto:dev@frign.de)>
 
 suckless.org - 2022-10-06

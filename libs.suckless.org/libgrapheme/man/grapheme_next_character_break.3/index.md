@@ -6,7 +6,7 @@ GRAPHEME\_NEXT\_CHARACTER\_BREAK(3) - Library Functions Manual
 
 # SYNOPSIS
 
-**#include &lt;grapheme.h>**
+**#include <grapheme.h>**
 
 *size\_t*  
 **grapheme\_next\_character\_break**(*const uint\_least32\_t \*str*, *size\_t len*);
@@ -65,6 +65,6 @@ is compliant with the Unicode 15.0.0 specification.
 
 # AUTHORS
 
-Laslo Hunhold &lt;[dev@frign.de](mailto:dev@frign.de)&gt;
+Laslo Hunhold <[dev@frign.de](mailto:dev@frign.de)>
 
 suckless.org - 2022-10-06

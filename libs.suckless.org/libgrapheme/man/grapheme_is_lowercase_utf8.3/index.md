@@ -6,7 +6,7 @@ GRAPHEME\_IS\_LOWERCASE\_UTF8(3) - Library Functions Manual
 
 # SYNOPSIS
 
-**#include &lt;grapheme.h>**
+**#include <grapheme.h>**
 
 *size\_t*  
 **grapheme\_is\_lowercase\_utf8**(*const char \*str*, *size\_t len*, *size\_t \*caselen*);
@@ -60,6 +60,6 @@ is compliant with the Unicode 15.0.0 specification.
 
 # AUTHORS
 
-Laslo Hunhold &lt;[dev@frign.de](mailto:dev@frign.de)&gt;
+Laslo Hunhold <[dev@frign.de](mailto:dev@frign.de)>
 
 suckless.org - 2022-10-06

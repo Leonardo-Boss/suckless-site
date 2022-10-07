@@ -6,7 +6,7 @@ GRAPHEME\_IS\_CHARACTER\_BREAK(3) - Library Functions Manual
 
 # SYNOPSIS
 
-**#include &lt;grapheme.h>**
+**#include <grapheme.h>**
 
 *size\_t*  
 **grapheme\_is\_character\_break**(*uint\_least32\_t cp1*, *uint\_least32\_t cp2*, *uint\_least16\_t \*state*);
@@ -90,6 +90,6 @@ is compliant with the Unicode 15.0.0 specification.
 
 # AUTHORS
 
-Laslo Hunhold &lt;[dev@frign.de](mailto:dev@frign.de)&gt;
+Laslo Hunhold <[dev@frign.de](mailto:dev@frign.de)>
 
 suckless.org - 2022-10-06

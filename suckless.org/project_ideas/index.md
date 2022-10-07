@@ -26,7 +26,10 @@ Current small tasks
   <https://git.suckless.org/sites/file/build-page.c.html>
   This should use the geomyidae gopher server and the gph output format.
   Difficulty: medium-rare.
-* Fix broken patches on the wiki. Difficulty: trivial-medium.
+* Fix broken patches on the wiki. Difficulty: trivial-medium.  
+  See: <https://gunther.suckless.org/patches/>
+* Fix broken links on the wiki. Difficulty: trivial.  
+  See: <https://git.suckless.org/sites/file/checklinks.sh.html>
 * Fix typos and formatting errors on the wiki. Difficulty: trivial.
 
 
@@ -48,13 +51,6 @@ care about font specifics.
 
 [Some work](https://git.ekleog.org/leo/dtext) has already been done to replace
 libXft and Fontconfig. Real-world testing is however still needed.
-
-A simple solution is [Scalable Screen Font](https://gitlab.com/bztsrc/scalable-font2),
-which is a dependency-free, single ANSI C89 header file that can render bitmap,
-pixmap and vector fonts using the same API. Uses a very efficient font format and
-includes a multiplatform command line tool to convert virtually all font files
-into .sfn files. Comparable to professional font rendering engines, supports
-UNICODE, scaling, anti-aliasing, alpha-blending, kerning, ligatures etc.
 
 ***Requirements:*** C knowledge, some X11 knowledge and of course knowledge
 about the font formats and how to handle them.

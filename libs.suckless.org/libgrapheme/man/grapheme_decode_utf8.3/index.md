@@ -107,6 +107,6 @@ libgrapheme(7)
 
 # AUTHORS
 
-Laslo Hunhold <[dev@frign.de](mailto:dev@frign.de)>
+Laslo Hunhold ([dev@frign.de](mailto:dev@frign.de))
 
 suckless.org - 2022-10-06

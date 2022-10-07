@@ -173,6 +173,6 @@ is to make unicode handling suck less and abide by the UNIX philosophy.
 
 # AUTHORS
 
-Laslo Hunhold <[dev@frign.de](mailto:dev@frign.de)>
+Laslo Hunhold ([dev@frign.de](mailto:dev@frign.de))
 
 suckless.org - 2022-10-06

@@ -65,6 +65,6 @@ is compliant with the Unicode 15.0.0 specification.
 
 # AUTHORS
 
-Laslo Hunhold <[dev@frign.de](mailto:dev@frign.de)>
+Laslo Hunhold ([dev@frign.de](mailto:dev@frign.de))
 
 suckless.org - 2022-10-06

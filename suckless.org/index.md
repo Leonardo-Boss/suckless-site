@@ -9,6 +9,10 @@ News
 
 [Atom feed](//suckless.org/atom.xml)
 
+2022-10-08
+----------
+[libgrapheme 2.0.1](//libs.suckless.org/libgrapheme) released: [download](//dl.suckless.org/libgrapheme/libgrapheme-2.0.1.tar.gz)
+
 2022-10-06
 ----------
 [libgrapheme 2.0.0](//libs.suckless.org/libgrapheme) released: [download](//dl.suckless.org/libgrapheme/libgrapheme-2.0.0.tar.gz)

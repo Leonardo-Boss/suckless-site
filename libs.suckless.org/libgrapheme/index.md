@@ -41,7 +41,7 @@ Download
 --------
 libgrapheme follows the [semantic versioning](https://semver.org/) scheme.
 
-* [libgrapheme-2.0.0](//dl.suckless.org/libgrapheme/libgrapheme-2.0.0.tar.gz) (2022-10-06)
+* [libgrapheme-2.0.1](//dl.suckless.org/libgrapheme/libgrapheme-2.0.1.tar.gz) (2022-10-08)
 * [libgrapheme-1.0.0](//dl.suckless.org/libgrapheme/libgrapheme-1.0.0.tar.gz) (2021-12-22)
 
 

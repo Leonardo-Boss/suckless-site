@@ -47,8 +47,9 @@ libgrapheme follows the [semantic versioning](https://semver.org/) scheme.
 
 Getting Started
 ---------------
-Installing libgrapheme via
+Automatically configuring and installing libgrapheme via
 
+	./configure
 	make install
 
 will install the header grapheme.h and both the static library

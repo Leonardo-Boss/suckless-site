@@ -72,7 +72,7 @@ Be sure to have setup your sender address in git and be subscribed to the
 mailing list so you can see eventual comments on your patches.
 
 For further help of setting up git to send emails, please refer to
-[the website](https://git-send-email.io/).
+[this website](https://git-send-email.io/).
 
 * `hackers+subscribe@MAILHOST` - subscribe to the mailing list (read/write)
 * `hackers+subscribe-digest@MAILHOST` - subscribe to the digest version of the mailing list (read/write)

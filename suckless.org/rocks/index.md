@@ -28,7 +28,7 @@ because it makes them legally compatible with other suckless projects.
 
 * [liblzf](http://oldhome.schmorp.de/marc/liblzf.html) - very fast, legally unencumbered compression library.
 * [libz](https://sortix.org/libz/) - ABI and API compatible zlib fork with focus on correctness, proper portability, auditability, simplification and opportunities to optimize ([zlib license](https://zlib.net/zlib_license.html)).
-* [Lzip](http://lzip.nongnu.org) - Properly designed data compressor outperforming gzip and bzip2 (GPLv2+).
+* [Lzip](https://lzip.nongnu.org) - Properly designed data compressor outperforming gzip and bzip2 (GPLv2+).
 * [miniz](https://github.com/richgel999/miniz) - single C-file reimplementation of zlib (MIT License).
 * [xz embedded](https://tukaani.org/xz/embedded.html) - lightweight decompressor for the xz LZMA compressor (public domain).
 * [zlib](https://zlib.net/) - the "standard" compression/decompression library, quite small, used in many applications ([zlib license](https://zlib.net/zlib_license.html)).
@@ -46,7 +46,7 @@ because it makes them legally compatible with other suckless projects.
 * [baresip](https://github.com/alfredh/baresip) - barebone SIP stack (BSD licence).
 * [ccv](http://libccv.org/) - C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library.
 * [libev](http://software.schmorp.de/pkg/libev.html) - high performance event-loop modelled after libevent but much smaller (dual licensed under 2-clause BSD and GPL).
-* [mandoc](http://mandoc.bsd.lv/) - The mandoc UNIX manpage compiler toolset.
+* [mandoc](https://mandoc.bsd.lv/) - The mandoc UNIX manpage compiler toolset.
 * [pjsip](https://www.pjsip.org/) - open-source SIP stack (GPL).
 * [sdhcp](https://git.2f30.org/sdhcp/) - IPv4 DHCP client.
 * [raycastlib](https://gitlab.com/drummyfish/raycastlib) - Single-header public domain C raycasting renderer with no dependencies, using only integer math.
@@ -159,12 +159,12 @@ This covers most console-based programs and programs from
 * [aerc](https://git.sr.ht/~sircmpwn/aerc) - email client for your terminal.
 * [fdm](https://github.com/nicm/fdm) - fetch and deliver mail.
 * [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
-* [isync](http://isync.sourceforge.net/) - MDA that can work better for IMAP, also known as mbsync.
+* [isync](https://isync.sourceforge.net/) - MDA that can work better for IMAP, also known as mbsync.
 * [mblaze](https://github.com/chneukirchen/mblaze) - UNIX utilities to deal with Maildir.
 * [mmh](http://marmaro.de/prog/mmh/) - Meillo's mail handler (mmh), a fork of nmh.
 * [mpop](https://marlam.de/mpop/) - a POP3 mail client. It is much [faster and simpler than fetchmail](https://marlam.de/mpop/documentation).
 * [mutt](http://www.mutt.org/) - A ncurses mail client for fetching, reading and sending email.
-* [nmh](http://www.nongnu.org/nmh/) - Message Handling System.
+* [nmh](https://www.nongnu.org/nmh/) - Message Handling System.
 * [plan9port/Mail](https://9fans.github.io/usr/local/plan9/mail/) - A mail client for acme. Included with [plan9port](https://9fans.github.io/plan9port/).
 * [s-nail](https://www.sdaoden.eu/code.html) - An improved heirloom-mailx.
 
@@ -232,9 +232,9 @@ This covers most console-based programs and programs from
 
 ### Utilities / miscellaneous
 
-* [abduco](http://www.brain-dump.org/projects/abduco/) - session {at,de}tach support.
-* [dvtm](http://www.brain-dump.org/projects/dvtm/) - dynamic virtual terminal manager.
-* [entr](http://eradman.com/entrproject/) - Run arbitrary commands when files change.
+* [abduco](https://www.brain-dump.org/projects/abduco/) - session {at,de}tach support.
+* [dvtm](https://www.brain-dump.org/projects/dvtm/) - dynamic virtual terminal manager.
+* [entr](https://eradman.com/entrproject/) - Run arbitrary commands when files change.
 * [mrandr](https://gitlab.com/mhdy/mrandr) - Simple and lightweight monitor (display) profile manager written in POSIX shell.
 * [mtm](https://github.com/deadpixi/mtm) - Micro Terminal Multiplexer.
 * [nq](https://github.com/chneukirchen/nq) - UNIX command line queue utility.

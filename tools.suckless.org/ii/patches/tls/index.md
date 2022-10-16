@@ -4,7 +4,7 @@ TLS
 Description
 -----------
 Adds tls encryption support via the `-t` argument.
-This patch depends on libtls from [https://www.libressl.org/](LibreSSL).
+This patch depends on libtls from [LibreSSL](https://www.libressl.org/).
 
 Download
 --------

@@ -99,6 +99,7 @@ Feel free to add your own status monitors here (keeping the list sorted).
 * [integrated-status-text](../patches/integrated-status-text) - A patch to have
   dwm itself handle the blocks asynchronously: this way we can handle mouse
   clicks, colors, etc. much easier.
+* [mblocks](https://gitlab.com/mhdy/mblocks) - A multi-threaded, memory-safe and elegant status monitor written in Rust.
 * [profil-dwmstatus-1.0.c](profil-dwmstatus-1.0.c) - cpufreq, battery percent
   and date/time
 * [rsblocks](https://github.com/MustafaSalih1993/rsblocks) - A fast multi threaded status bar written in Rust, configurable with a yaml file.

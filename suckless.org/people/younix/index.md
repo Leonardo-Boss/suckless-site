@@ -1,7 +1,7 @@
 younix
 ======
 
-I am the maintainer of [lchat](//git.suckless.org/lchat/) and
+I am the maintainer of [lchat](//tools.suckless.org/lchat) and
 the ucspi patch of [ii](//tools.suckless.org/ii/patches/ucspi).
 
 I am also the treasurer of the [suckless.org e.V.](//ev.suckless.org/)

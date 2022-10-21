@@ -11,9 +11,10 @@ socks](https://github.com/younix/ucspi).
 
 Download
 --------
+* [ii-2.0-ucspi.diff](ii-2.0-ucspi.diff)
 * [ii-1.8-ucspi.diff](ii-1.8-ucspi.diff)
 * [ii-1.7-ucspi.diff](ii-1.7-ucspi.diff)
 
 Author
 ------
-* Jan Klemkow (younix) <j.klemkow@wemelug.de>
+* Jan Klemkow <j.klemkow@wemelug.de>

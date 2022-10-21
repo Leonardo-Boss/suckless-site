@@ -5,7 +5,7 @@ It handles the input from keyboard and output file in parallel.  Thus, you are
 able to type messages while new chat lines are arriving.  Its main focus is on
 usability and simplicity.
 
-You can use lchat as frontend for the follwoing programs and protocols:
+You can use lchat as frontend for the following programs and protocols:
 
 * [ii](https://tools.suckless.org/ii) for IRC
 * [ratox](https://git.2f30.org/ratox) for Tox

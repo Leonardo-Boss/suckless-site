@@ -20,7 +20,7 @@ Requirements
 
 Development
 -----------
-You can [browse](//git.suckless.org/scroll) its source code repository or get a
+You can [browse](//git.suckless.org/lchat) its source code repository or get a
 copy using the following command:
 
-	git clone https://git.suckless.org/scroll
+	git clone https://git.suckless.org/lchat

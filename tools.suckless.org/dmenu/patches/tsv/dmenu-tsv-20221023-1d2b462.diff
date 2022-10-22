@@ -1,0 +1,52 @@
+From 3f37b2fc545b90e80658c6489846cca23d936939 Mon Sep 17 00:00:00 2001
+From: prenev <an2qzavok@gmail.com>
+Date: Sun, 23 Oct 2022 02:16:54 +0300
+Subject: [PATCH] tab-separate input lines and only display first parts
+
+---
+ dmenu.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+
+diff --git a/dmenu.c b/dmenu.c
+index 7cf253b..8eed38a 100644
+--- a/dmenu.c
++++ b/dmenu.c
+@@ -30,6 +30,7 @@ enum { SchemeNorm, SchemeSel, SchemeOut, SchemeLast }; /* color schemes */
+ 
+ struct item {
+ 	char *text;
++	char *stext;
+ 	struct item *left, *right;
+ 	int out;
+ };
+@@ -140,7 +141,7 @@ drawitem(struct item *item, int x, int y, int w)
+ 	else
+ 		drw_setscheme(drw, scheme[SchemeNorm]);
+ 
+-	return drw_text(drw, x, y, w, bh, lrpad / 2, item->text, 0);
++	return drw_text(drw, x, y, w, bh, lrpad / 2, item->stext, 0);
+ }
+ 
+ static void
+@@ -182,7 +183,7 @@ drawmenu(void)
+ 		}
+ 		x += w;
+ 		for (item = curr; item != next; item = item->right)
+-			x = drawitem(item, x, 0, textw_clamp(item->text, mw - x - TEXTW(">")));
++			x = drawitem(item, x, 0, textw_clamp(item->stext, mw - x - TEXTW(">")));
+ 		if (next) {
+ 			w = TEXTW(">");
+ 			drw_setscheme(drw, scheme[SchemeNorm]);
+@@ -560,7 +561,8 @@ readstdin(void)
+ 				die("cannot realloc %zu bytes:", size);
+ 		if (line[len - 1] == '\n')
+ 			line[len - 1] = '\0';
+-		items[i].text = line;
++		items[i].text = strdup(line);
++		items[i].stext = strsep(&line, "\t");
+ 		items[i].out = 0;
+ 	}
+ 	if (items)
+-- 
+2.37.3
+

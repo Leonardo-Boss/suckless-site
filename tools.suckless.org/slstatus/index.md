@@ -3,6 +3,12 @@
 slstatus is a status monitor for window managers that use WM\_NAME or stdin to
 fill the status bar.
 
+Mailing list
+------------
+* `dev+subscribe@suckless.org` ([Archives](//lists.suckless.org/dev/)) 
+  ([Old Archives](//lists.suckless.org/)) (see
+  [community](//suckless.org/community/) for details)
+
 Development
 -----------
 You can [browse](//git.suckless.org/slstatus) its source code repository or get

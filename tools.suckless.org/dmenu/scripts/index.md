@@ -8,6 +8,8 @@ Download
 * [dbdb.sh](dbdb.sh): dmenu-based directory browser
 * [dbrowse](https://github.com/clamiax/scripts/blob/master/src/dbrowse):
   little files navigator
+* [DFM](https://github.com/amarakon/dfm):
+  file manager based on dbrowse with more capabilities and customization
 * [dmenu_pass](http://efe.kim/files/scripts/dmenu_pass): A simpler pass menu
   implementation.
 * [dmenu\_path\_recent](https://github.com/ema/dotfiles/blob/master/bin/dmenu_path):
@@ -16,8 +18,7 @@ Download
   rather than a cache. As such, it also takes into account programs executed from
   the terminal.
 * [dmenu\_run\_history](dmenu_run_with_command_history):
-  dmenu_run alternative with command history
-* [dmenu_websearch](http://efe.kim/files/scripts/dmenu_websearch):
+  dmenu_run alternative with command history * [dmenu_websearch](http://efe.kim/files/scripts/dmenu_websearch):
   browser independent address bar
 * [bmks](bmks): browser independent bookmark manager
 * [mpdmenu](https://github.com/cdown/mpdmenu): Music management using

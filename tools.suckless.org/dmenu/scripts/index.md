@@ -18,7 +18,8 @@ Download
   rather than a cache. As such, it also takes into account programs executed from
   the terminal.
 * [dmenu\_run\_history](dmenu_run_with_command_history):
-  dmenu_run alternative with command history * [dmenu_websearch](http://efe.kim/files/scripts/dmenu_websearch):
+  dmenu_run alternative with command history
+* [dmenu_websearch](http://efe.kim/files/scripts/dmenu_websearch):
   browser independent address bar
 * [bmks](bmks): browser independent bookmark manager
 * [mpdmenu](https://github.com/cdown/mpdmenu): Music management using
@@ -35,11 +36,11 @@ Download
 * [via](https://github.com/xalexalex/via): simple dmenu-based launcher for apps,
   files, folders and shell commands
 * [dmenu\_run\_i](./dmenu_run_i): When dmenu_path input end with "!", the
-command is started in a terminal. i.e. "top!".
+  command is started in a terminal. i.e. "top!".
 * [dmenu-launch](https://github.com/fsilveir/dmenu-launch): Simple and customizable
-dmenu launcher written in Python for acessing passwords, docs and application shortcuts.
+  dmenu launcher written in Python for accessing passwords, docs and application shortcuts.
 * [switch](switch): dmenu-based window switcher using wmctrl. If using dwm, requires the [ewmhtags](https://dwm.suckless.org/patches/ewmhtags/) or [focusonnetactive](//dwm.suckless.org/patches/focusonnetactive/) patch to be usefull.
 * [dmenu_bitwarden](https://gitlab.com/patriktrefil/dmenu-bitwarden): Script to get Bitwarden passwords to Your clipboard.
 * [dmenu_vcard](https://github.com/PatrikTrefil/dmenu_vcard): Script to get e-mails and phone numbers to your clipboard using dmenu.
-* [dmenu_shot](https://codeberg.org/mehrad/dmenu_shot): Script to take screenshot using Flameshot and do image manupulation on using ImageMagic the output.
+* [dmenu_shot](https://codeberg.org/mehrad/dmenu_shot): Script to take screenshot using Flameshot and do image manipulation on using ImageMagic the output.
 * [dmenu-translate](https://github.com/NikitaIvanovV/dmenu-translate): Script to quickly translate text and look up word definitions

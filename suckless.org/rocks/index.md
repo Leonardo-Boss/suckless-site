@@ -156,7 +156,7 @@ This covers most console-based programs and programs from
 
 ### Mail clients
 
-* [aerc](https://git.sr.ht/~rjarry/aerc) - email client for your terminal.
+* [aerc](https://sr.ht/~rjarry/aerc) - email client for your terminal.
 * [fdm](https://github.com/nicm/fdm) - fetch and deliver mail.
 * [heirloom-mailx](http://heirloom.sourceforge.net/mailx.html) - A mail client based on the original Berkeley Mail 8.1 with many new features.
 * [isync](https://isync.sourceforge.net/) - MDA that can work better for IMAP, also known as mbsync.

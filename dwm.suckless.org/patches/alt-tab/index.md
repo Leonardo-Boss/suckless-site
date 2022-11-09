@@ -17,7 +17,7 @@ Configuration Options
 
 keycode
 -------
-tabModkye and tabCycleKey are keycodes values.
+tabModkey and tabCycleKey are keycodes values.
 If you want to change them you can get different keycode values from "get-xkey" program bellow.
 
 Compile get-xkey

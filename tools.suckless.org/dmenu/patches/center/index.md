@@ -18,6 +18,7 @@ Download
 --------
 * [dmenu-center-4.8.diff](dmenu-center-4.8.diff)
 * [dmenu-center-20200111-8cd37e1.diff](dmenu-center-20200111-8cd37e1.diff)
+* [dmenu-center-5.2.diff](dmenu-center-5.2.diff)
 
 Authors
 -------

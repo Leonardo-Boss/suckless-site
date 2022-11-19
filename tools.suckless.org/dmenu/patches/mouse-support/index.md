@@ -22,7 +22,7 @@ Mouse actions supported:
   * In horizontal mode: same as left-clicking on right arrow.
   * In vertical mode: show items below.
 * Motion:
-  * Will select stuff.
+  * Will select the hovered item.
 
 Download
 --------

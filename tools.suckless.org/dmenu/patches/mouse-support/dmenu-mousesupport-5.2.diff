@@ -1,8 +1,8 @@
 diff --git a/dmenu.c b/dmenu.c
-index 27b7a30..c9bc84f 100644
+index 27b7a30..5363aa1 100644
 --- a/dmenu.c
 +++ b/dmenu.c
-@@ -528,6 +528,151 @@ draw:
+@@ -528,6 +528,153 @@ draw:
  	drawmenu();
  }
  
@@ -122,7 +122,7 @@ index 27b7a30..c9bc84f 100644
 +static void
 +motionevent(XButtonEvent *ev)
 +{
-+	struct item *it;
++	struct item *it, *psel = sel;
 +
 +	if (ev->window != win)
 +		return;
@@ -132,29 +132,31 @@ index 27b7a30..c9bc84f 100644
 +		for (it = curr; it && it != next; it = it->right) {
 +			if (ev->y >= y && ev->y < (y + bh)) {
 +				sel = it;
-+				drawmenu();
 +				break;
 +			}
 +			y += bh;
 +		}
 +	} else if (matches) {
-+		int x = inputw + TEXTW("<");
++		int x = inputw + promptw + TEXTW("<");
 +		for (it = curr; it && it != next; it = it->right) {
 +			int w = textw_clamp(it->text, mw - x - TEXTW(">"));
 +			if (ev->x >= x && ev->x < (x + w)) {
 +				sel = it;
-+				drawmenu();
 +				break;
 +			}
 +			x += w;
 +		}
++	}
++	if (psel != sel) {
++		calcoffsets();
++		drawmenu();
 +	}
 +}
 +
  static void
  paste(void)
  {
-@@ -586,6 +731,12 @@ run(void)
+@@ -586,6 +733,12 @@ run(void)
  				break;
  			cleanup();
  			exit(1);
@@ -167,7 +169,7 @@ index 27b7a30..c9bc84f 100644
  		case Expose:
  			if (ev.xexpose.count == 0)
  				drw_map(drw, win, 0, 0, mw, mh);
-@@ -683,7 +834,8 @@ setup(void)
+@@ -683,7 +836,8 @@ setup(void)
  	/* create menu window */
  	swa.override_redirect = True;
  	swa.background_pixel = scheme[SchemeNorm][ColBg].pixel;

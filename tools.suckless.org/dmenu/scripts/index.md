@@ -22,6 +22,8 @@ Download
 * [dmenu_websearch](http://efe.kim/files/scripts/dmenu_websearch):
   browser independent address bar
 * [bmks](bmks): browser independent bookmark manager
+* [mdmenu](https://codeberg.org/NRK/mpv-toolbox/src/branch/master/mdmenu):
+  An mpv script for using dmenu to select audio/subtitle/chapters etc.
 * [mpdmenu](https://github.com/cdown/mpdmenu): Music management using
   dmenu
 * [passmenu](http://git.zx2c4.com/password-store/tree/contrib/dmenu):

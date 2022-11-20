@@ -21,8 +21,6 @@ Mouse actions supported:
 * Scroll down:
   * In horizontal mode: same as left-clicking on right arrow.
   * In vertical mode: show items below.
-* Motion:
-  * Will select stuff.
 
 Download
 --------
@@ -46,4 +44,3 @@ Author
 * Xarchus (for multisel support).
 * prx (for selectbg color on hovered item)
 * Nathan Sketch (for grid compatibility) - <sketchn98@gmail.com>
-* NRK <nrk@disroot.org> - Motion support

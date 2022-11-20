@@ -21,6 +21,8 @@ Mouse actions supported:
 * Scroll down:
   * In horizontal mode: same as left-clicking on right arrow.
   * In vertical mode: show items below.
+* Motion (needs motion-support patch):
+  * Selects the hovered item.
 
 Download
 --------
@@ -31,6 +33,11 @@ Download
 * [dmenu-mousesupport-4.7.diff](dmenu-mousesupport-4.7.diff)
 * [dmenu-mousesupport-4.6.diff](dmenu-mousesupport-4.6.diff)
 * [dmenu-mousesupport-20160702-3c91eed.diff](dmenu-mousesupport-20160702-3c91eed.diff)
+
+Motion Support
+--------------
+* [dmenu-mousesupport-motion-5.2.diff](dmenu-mousesupport-motion-5.2.diff)
+  (Applies on top of the original mouse-support patch).
 * [dmenu-mousesupporthoverbgcol-20210123-1a13d04.diff](dmenu-mousesupporthoverbgcol-20210123-1a13d04.diff)
   set selectbg color on hovered item.
 * [dmenu-mousesupporthoverbgcol-5.0.diff](dmenu-mousesupporthoverbgcol-5.0.diff)
@@ -44,3 +51,4 @@ Author
 * Xarchus (for multisel support).
 * prx (for selectbg color on hovered item)
 * Nathan Sketch (for grid compatibility) - <sketchn98@gmail.com>
+* NRK <nrk@disroot.org> - Motion support for v5.2

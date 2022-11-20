@@ -1,0 +1,64 @@
+diff --git a/dmenu.c b/dmenu.c
+index 48d4980..5363aa1 100644
+--- a/dmenu.c
++++ b/dmenu.c
+@@ -641,6 +641,40 @@ buttonpress(XEvent *e)
+ 	}
+ }
+ 
++static void
++motionevent(XButtonEvent *ev)
++{
++	struct item *it, *psel = sel;
++
++	if (ev->window != win)
++		return;
++
++	if (lines > 0) { /* vertical list */
++		int y = bh;
++		for (it = curr; it && it != next; it = it->right) {
++			if (ev->y >= y && ev->y < (y + bh)) {
++				sel = it;
++				break;
++			}
++			y += bh;
++		}
++	} else if (matches) {
++		int x = inputw + promptw + TEXTW("<");
++		for (it = curr; it && it != next; it = it->right) {
++			int w = textw_clamp(it->text, mw - x - TEXTW(">"));
++			if (ev->x >= x && ev->x < (x + w)) {
++				sel = it;
++				break;
++			}
++			x += w;
++		}
++	}
++	if (psel != sel) {
++		calcoffsets();
++		drawmenu();
++	}
++}
++
+ static void
+ paste(void)
+ {
+@@ -702,6 +736,9 @@ run(void)
+ 		case ButtonPress:
+ 			buttonpress(&ev);
+ 			break;
++		case MotionNotify:
++			motionevent(&ev.xbutton);
++			break;
+ 		case Expose:
+ 			if (ev.xexpose.count == 0)
+ 				drw_map(drw, win, 0, 0, mw, mh);
+@@ -800,7 +837,7 @@ setup(void)
+ 	swa.override_redirect = True;
+ 	swa.background_pixel = scheme[SchemeNorm][ColBg].pixel;
+ 	swa.event_mask = ExposureMask | KeyPressMask | VisibilityChangeMask |
+-	                 ButtonPressMask;
++	                 ButtonPressMask | PointerMotionMask;
+ 	win = XCreateWindow(dpy, parentwin, x, y, mw, mh, 0,
+ 	                    CopyFromParent, CopyFromParent, CopyFromParent,
+ 	                    CWOverrideRedirect | CWBackPixel | CWEventMask, &swa);

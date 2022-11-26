@@ -27,6 +27,15 @@ Boxdraw
 
 Download
 --------
+**0.9**:
+* [st-ligatures-0.9](0.9/st-ligatures-20221120-0.9.diff)
+* [st-ligatures-scrollback-0.9](0.9/st-ligatures-scrollback-20221120-0.9.diff)
+* [st-ligatures-scrollback-ringbuffer-0.9](0.9/st-ligatures-scrollback-ringbuffer-20221120-0.9.diff)
+* [st-ligatures-alpha-0.9](0.9/st-ligatures-alpha-20221120-0.9.diff)
+* [st-ligatures-alpha-scrollback-0.9](0.9/st-ligatures-alpha-scrollback-20221120-0.9.diff)
+* [st-ligatures-alpha-scrollback-ringbuffer-0.9](0.9/st-ligatures-alpha-scrollback-ringbuffer-20221120-0.9.diff)
+* [st-ligatures-boxdraw-0.9](0.9/st-ligatures-boxdraw-20221120-0.9.diff)
+
 **0.8.4**:
 * [st-ligatures-0.8.4](0.8.4/st-ligatures-20210824-0.8.4.diff)
 * [st-ligatures-scrollback-0.8.4](0.8.4/st-ligatures-scrollback-20210824-0.8.4.diff)

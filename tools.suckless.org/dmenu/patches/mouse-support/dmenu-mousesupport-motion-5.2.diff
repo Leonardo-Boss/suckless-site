@@ -1,49 +1,38 @@
 diff --git a/dmenu.c b/dmenu.c
-index 48d4980..5363aa1 100644
+index 48d4980..7677401 100644
 --- a/dmenu.c
 +++ b/dmenu.c
-@@ -641,6 +641,40 @@ buttonpress(XEvent *e)
+@@ -641,6 +641,29 @@ buttonpress(XEvent *e)
  	}
  }
  
 +static void
 +motionevent(XButtonEvent *ev)
 +{
-+	struct item *it, *psel = sel;
++	struct item *it;
++	int xy, ev_xy;
 +
-+	if (ev->window != win)
++	if (ev->window != win || matches == 0)
 +		return;
 +
-+	if (lines > 0) { /* vertical list */
-+		int y = bh;
-+		for (it = curr; it && it != next; it = it->right) {
-+			if (ev->y >= y && ev->y < (y + bh)) {
-+				sel = it;
-+				break;
-+			}
-+			y += bh;
++	xy = lines > 0 ? bh : inputw + promptw + TEXTW("<");
++	ev_xy = lines > 0 ? ev->y : ev->x;
++	for (it = curr; it && it != next; it = it->right) {
++		int wh = lines > 0 ? bh : textw_clamp(it->text, mw - xy - TEXTW(">"));
++		if (ev_xy >= xy && ev_xy < (xy + wh)) {
++			sel = it;
++			calcoffsets();
++			drawmenu();
++			break;
 +		}
-+	} else if (matches) {
-+		int x = inputw + promptw + TEXTW("<");
-+		for (it = curr; it && it != next; it = it->right) {
-+			int w = textw_clamp(it->text, mw - x - TEXTW(">"));
-+			if (ev->x >= x && ev->x < (x + w)) {
-+				sel = it;
-+				break;
-+			}
-+			x += w;
-+		}
-+	}
-+	if (psel != sel) {
-+		calcoffsets();
-+		drawmenu();
++		xy += wh;
 +	}
 +}
 +
  static void
  paste(void)
  {
-@@ -702,6 +736,9 @@ run(void)
+@@ -702,6 +725,9 @@ run(void)
  		case ButtonPress:
  			buttonpress(&ev);
  			break;
@@ -53,7 +42,7 @@ index 48d4980..5363aa1 100644
  		case Expose:
  			if (ev.xexpose.count == 0)
  				drw_map(drw, win, 0, 0, mw, mh);
-@@ -800,7 +837,7 @@ setup(void)
+@@ -800,7 +826,7 @@ setup(void)
  	swa.override_redirect = True;
  	swa.background_pixel = scheme[SchemeNorm][ColBg].pixel;
  	swa.event_mask = ExposureMask | KeyPressMask | VisibilityChangeMask |

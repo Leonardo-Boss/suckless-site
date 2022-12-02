@@ -52,6 +52,7 @@ provide packages:
 
 Implementations
 ---------------
+* [farbfeld.js](https://github.com/cheznewa/farbfeld.js) Farbfeld Javascript-polyfill using canvas-elements
 * [image](https://crates.io/crates/image) Rust crate for image processing
 * [imlib2](https://sourceforge.net/projects/enlightenment/files/imlib2-src/) library (implies support in feh,
   w3m, giblib, sxiv, conky, magicpoint, scrot, libcaca, etc.)

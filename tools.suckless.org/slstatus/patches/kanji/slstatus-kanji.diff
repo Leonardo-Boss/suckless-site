@@ -1,0 +1,40 @@
+--- b/config.def.h
++++ a/config.def.h
+@@ -30,6 +30,7 @@
+  * hostname            hostname                        NULL
+  * ipv4                IPv4 address                    interface name (eth0)
+  * ipv6                IPv6 address                    interface name (eth0)
++ * kanji               japanese day of week kanji      NULL
+  * kernel_release      `uname -r`                      NULL
+  * keyboard_indicators caps/num lock indicators        format string (c?n?)
+  *                                                     see keyboard_indicators.c
+--- a/Makefile
++++ b/Makefile
+@@ -14,6 +14,7 @@
+ 	components/entropy\
+ 	components/hostname\
+ 	components/ip\
++	components/kanji\
+ 	components/kernel_release\
+ 	components/keyboard_indicators\
+ 	components/keymap\
+@@ -31,7 +32,7 @@
+ 
+ all: slstatus
+ 
+-$(COM:=.o): config.mk $(REQ:=.h) slstatus.h
++$(COM:=.o): config.mk $(REQ:=.h)
+ slstatus.o: slstatus.c slstatus.h arg.h config.h config.mk $(REQ:=.h)
+ 
+ .c.o:
+--- a/slstatus.h
++++ b/slstatus.h
+@@ -31,6 +31,9 @@
+ const char *ipv4(const char *interface);
+ const char *ipv6(const char *interface);
+ 
++/* kanji */
++const char *kanji(const char *unused);
++
+ /* kernel_release */
+ const char *kernel_release(const char *unused);

@@ -18,15 +18,6 @@
  	components/kernel_release\
  	components/keyboard_indicators\
  	components/keymap\
-@@ -31,7 +32,7 @@
- 
- all: slstatus
- 
--$(COM:=.o): config.mk $(REQ:=.h) slstatus.h
-+$(COM:=.o): config.mk $(REQ:=.h)
- slstatus.o: slstatus.c slstatus.h arg.h config.h config.mk $(REQ:=.h)
- 
- .c.o:
 --- a/slstatus.h
 +++ b/slstatus.h
 @@ -31,6 +31,9 @@

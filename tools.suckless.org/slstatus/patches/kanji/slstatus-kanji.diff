@@ -1,6 +1,6 @@
 --- b/config.def.h
 +++ a/config.def.h
-@@ -30,6 +30,7 @@
+@@ -31,6 +31,7 @@
   * hostname            hostname                        NULL
   * ipv4                IPv4 address                    interface name (eth0)
   * ipv6                IPv6 address                    interface name (eth0)
@@ -8,6 +8,23 @@
   * kernel_release      `uname -r`                      NULL
   * keyboard_indicators caps/num lock indicators        format string (c?n?)
   *                                                     see keyboard_indicators.c
+--- a/components/kanji.c
++++ b/components/kanji.c
+@@ -0,0 +1,14 @@
++/* See LICENSE file for copyright and license details. */
++#include <time.h>
++
++const char *
++kanji(const char *unused) {
++	char *kanji[]={"月","火","水","木","金","土","日"};
++	int map[]={0,3,2,5,0,3,5,1,4,6,2,4};
++	time_t t=time(NULL);
++	struct tm tm=*localtime(&t);
++	int m=tm.tm_mon+1,y=tm.tm_year+1900;
++	y-=m<3;
++	int wd=(y+y/4-y/100+y/400+map[m-1]+tm.tm_mday)%7;
++	return kanji[wd-1];
++}
 --- a/Makefile
 +++ b/Makefile
 @@ -14,6 +14,7 @@

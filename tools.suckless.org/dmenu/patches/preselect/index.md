@@ -15,8 +15,10 @@ Create menu with the second item preselected:
 
 Download
 --------
+* [dmenu-preselect-5.2](dmenu-preselect-5.2.diff) (2022-12-10)
 * [dmenu-preselect-20200513-db6093f](dmenu-preselect-20200513-db6093f.diff) (2020-05-13)
 
 Authors
 -------
 * Mathieu Moneyron <mathieu.moneyron@gmail.com>
+* NRK <nrk@disroot.org> (v5.2 port)

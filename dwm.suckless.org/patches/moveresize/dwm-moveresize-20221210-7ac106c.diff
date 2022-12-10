@@ -1,19 +1,18 @@
-From dd4d21ad7cebab8b6927f1446e5d1edd9cea94d5 Mon Sep 17 00:00:00 2001
-From: howoz <howoz@airmail.cc>
-Date: Mon, 23 Aug 2021 01:24:31 +0300
-Subject: [PATCH]  [dwm][patch][moveresize] patch:
+From 7ac106cad72c909fbb05d302f84191cdec8f2ac0 Mon Sep 17 00:00:00 2001
+From: oxinosg <oxinosg@gmail.com>
+Date: Sat, 10 Dec 2022 15:24:14 +0100
+Subject: [PATCH] [dwm][moveresize]: fix for resize to edge
 
-    prevent the cursor from going out of the window when resizing
 ---
  config.def.h |  16 ++++++
  dwm.c        | 154 +++++++++++++++++++++++++++++++++++++++++++++++++++
  2 files changed, 170 insertions(+)
 
 diff --git a/config.def.h b/config.def.h
-index a2ac963..87baa38 100644
+index 9efa774..99049e7 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -79,6 +79,22 @@ static Key keys[] = {
+@@ -79,6 +79,22 @@ static const Key keys[] = {
  	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
  	{ MODKEY,                       XK_space,  setlayout,      {0} },
  	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
@@ -37,7 +36,7 @@ index a2ac963..87baa38 100644
  	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
  	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
 diff --git a/dwm.c b/dwm.c
-index 5e4d494..0898236 100644
+index 03baf42..89ec70d 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -183,6 +183,8 @@ static void mappingnotify(XEvent *e);
@@ -48,8 +47,8 @@ index 5e4d494..0898236 100644
 +static void moveresizeedge(const Arg *arg);
  static void movemouse(const Arg *arg);
  static Client *nexttiled(Client *c);
- static void pop(Client *);
-@@ -1193,6 +1195,158 @@ movemouse(const Arg *arg)
+ static void pop(Client *c);
+@@ -1203,6 +1205,158 @@ movemouse(const Arg *arg)
  	}
  }
  
@@ -193,7 +192,7 @@ index 5e4d494..0898236 100644
 +
 +	XRaiseWindow(dpy, c->win);
 +	Bool xqp = XQueryPointer(dpy, root, &dummy, &dummy, &msx, &msy, &dx, &dy, &dui);
-+	resize(c, nx, ny, nw, nh, True);
++	resizeclient(c, nx, ny, nw, nh);
 +
 +	/* move cursor along with the window to avoid problems caused by the sloppy focus */
 +	if (xqp && ox <= msx && (ox + ow) >= msx && oy <= msy && (oy + oh) >= msy) {
@@ -209,5 +208,5 @@ index 5e4d494..0898236 100644
  nexttiled(Client *c)
  {
 -- 
-2.33.0
+2.34.1
 

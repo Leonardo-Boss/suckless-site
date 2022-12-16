@@ -10,8 +10,8 @@ pressing `MODKEY+s` again.
 
 Download
 --------
-* [dwm-sticky-6.1.diff](dwm-sticky-6.1.diff)
-* [dwm-sticky-20160911-ab9571b.diff](dwm-sticky-20160911-ab9571b.diff)
+* [dwm-sticky-6.4.diff](dwm-sticky-6.4.diff)
+* [dwm-sticky-2022-12-05-d47ba0b.diff](dwm-sticky-2022-12-05-d47ba0b.diff)
 
 Author
 ------

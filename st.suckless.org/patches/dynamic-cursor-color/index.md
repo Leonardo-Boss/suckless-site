@@ -17,6 +17,7 @@ Might be incomplete - I'm new and improvements are very welcome!
 
 Download
 --------
+* [st-dynamic-cursor-color-0.9.diff](st-dynamic-cursor-color-0.9.diff)
 * [st-dynamic-cursor-color-0.8.4.diff](st-dynamic-cursor-color-0.8.4.diff)
 
 Authors

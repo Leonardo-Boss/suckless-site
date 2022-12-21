@@ -116,14 +116,6 @@ index a96f33c..c375ba3 100644
  static void unfocus(Client *c, int setfocus);
  static void unmanage(Client *c, int destroyed);
  static void unmapnotify(XEvent *e);
-@@ -241,6 +253,7 @@
- static int screen;
- static int sw, sh;           /* X display screen geometry width, height */
- static int bh;               /* bar height */
-+static int blw;
- static int lrpad;            /* sum of left and right padding for text */
- static int (*xerrorxlib)(Display *, XErrorEvent *);
- static unsigned int numlockmask = 0;
 @@ -440,10 +452,25 @@ buttonpress(XEvent *e)
  			arg.ui = 1 << i;
  		} else if (ev->x < x + blw)
@@ -263,7 +255,7 @@ index a96f33c..c375ba3 100644
 -
 -	if (!selmon->sel || (selmon->sel->isfullscreen && lockfullscreen))
 +	// if no client selected AND exclude hidden client; if client selected but fullscreened
-+	if ((!selmon->sel && !hid) || (selmon->sel && selmon->sel->isfullscreen && lockfullscreen)) 
++	if ((!selmon->sel && !hid) || (selmon->sel && selmon->sel->isfullscreen && lockfullscreen))
  		return;
 -	if (arg->i > 0) {
 -		for (c = selmon->sel->next; c && !ISVISIBLE(c); c = c->next);
@@ -398,7 +390,7 @@ index a96f33c..c375ba3 100644
 +}
 +
 +void
-+showall(const Arg *arg) 
++showall(const Arg *arg)
 +{
 +	Client *c = NULL;
 +	selmon->hidsel = 0;

@@ -22,6 +22,9 @@ Since this patch relies on knowing how big everything is in the taskbar, make su
 
 Changelog
 ---------
+2022-12-20:
+* Fixed broken patch (specifically, the 6.3 Xac version)
+
 2022-10-04:
 * Fix typo in titlebar theme switches
 

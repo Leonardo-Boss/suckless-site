@@ -18,6 +18,10 @@ Requirements
 * tail(1)
 * grep(1)
 
+Download
+--------
+* [lchat 1.0](//dl.suckless.org/tools/lchat-1.0.tar.gz) (2022-12-28)
+
 Development
 -----------
 You can [browse](//git.suckless.org/lchat) its source code repository or get a

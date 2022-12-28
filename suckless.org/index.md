@@ -9,6 +9,10 @@ News
 
 [Atom feed](//suckless.org/atom.xml)
 
+2022-12-28
+----------
+[lchat 1.0](//tools.suckless.org/lchat) released: [download](//dl.suckless.org/tools/lchat-1.0.tar.gz)
+
 2022-11-02
 ----------
 [libgrapheme 2.0.2](//libs.suckless.org/libgrapheme) released: [download](//dl.suckless.org/libgrapheme/libgrapheme-2.0.2.tar.gz)

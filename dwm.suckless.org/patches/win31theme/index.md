@@ -19,4 +19,4 @@ Download
 
 Authors
 -------
-* Matteo Bini - <matteobin, protonmail.com>
+* Matteo Bini - <matteobin@tiepi.it>

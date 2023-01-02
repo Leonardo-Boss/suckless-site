@@ -24,5 +24,6 @@ Extra layouts
 ## Download
 * [dwm-layoutmenu-6.2.diff](dwm-layoutmenu-6.2.diff)
 
-## Author
-* [tdu](https://github.com/tdukv) - < tdukv at protonmail com>
+## Authors
+* [tdu](https://github.com/tdukv) - < tdukv at protonmail com >
+* 8dcc - 8dcc.git@gmail.com (`-Waddress` fix)

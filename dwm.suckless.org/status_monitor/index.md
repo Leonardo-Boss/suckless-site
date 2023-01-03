@@ -105,6 +105,9 @@ Feel free to add your own status monitors here (keeping the list sorted).
 * [rsblocks](https://github.com/MustafaSalih1993/rsblocks) - A fast multi threaded status bar written in Rust, configurable with a yaml file.
 * [sb](https://git.ckyln.com/sb/log.html) - another modular bar written in POSIX
   shell
+* [sdwmbar](https://github.com/sakhmatd/sdwmbar) - Simple DWM Bar written in 
+  pure C; written for FreeBSD and OpenBSD, can be easily modified to work for
+  Linux
 * [spoon](https://git.2f30.org/spoon/) - set dwm status. Supports battery,
   cpu freq, date, file, load avg, keyboard layout, mpd, network speed,
   screen brightness, temperature, wifi, volume mixer.

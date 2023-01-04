@@ -91,6 +91,7 @@ This covers most console-based programs and programs from
 
 ### Feed aggregators / newsreaders
 
+* [newsraft](https://codeberg.org/grisha/newsraft) - lightweight feed reader with ncurses user interface.
 * [sfeed](https://codemadness.org/sfeed.html) - RSS and Atom parser, CLI programs and [sfeed_curses UI](https://codemadness.org/sfeed_curses.html).
 * [snownews](https://github.com/kouya/snownews/) - Text mode RSS newsreader for Linux and Unix.
 * [zs](http://r-36.net/scm/zs/) - Zeitungsschau RSS to email converter.

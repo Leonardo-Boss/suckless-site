@@ -1,5 +1,5 @@
 leakedip
-====
+========
 
 Description
 -----------
@@ -13,8 +13,8 @@ Note also that by default `ip-api.com` limits the rate of queries to **45** by t
 
 Download
 --------
-  * [slstatus-leakedip-20230105-c919def.diff](slstatus-leakedip-20230105-c919def.diff)
+* [slstatus-leakedip-20230105-c919def.diff](slstatus-leakedip-20230105-c919def.diff)
   
 Authors
 -------
-  * Matvey Kiselyov <mathway.home@gmail.com>
+* Matvey Kiselyov <mathway.home@gmail.com>

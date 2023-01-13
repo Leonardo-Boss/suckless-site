@@ -9,9 +9,10 @@ dwm function. I usually call spawn.
 
 Download
 --------
-* [dwm-5.8-gestures.diff](dwm-5.8-gestures.diff) (unclean patch,
-Author email bounced (removed it), patch needs fixed)
+* [dwm-gestures-6.4.diff](dwm-gestures-6.4.diff)
+* [dwm-5.8-gestures.diff](dwm-5.8-gestures.diff) (unclean old patch)
 
 Author
 ------
 * David Galos
+* speedie <speedie@duck.com>

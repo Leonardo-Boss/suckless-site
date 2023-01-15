@@ -20,6 +20,8 @@ Default key to reload is `Mod+F5`.
 
 Download
 --------
+* [dwm-xrdb-6.4.diff](dwm-xrdb-6.4.diff)
+* [dwm-xrdb-6.3.diff](dwm-xrdb-6.3.diff)
 * [dwm-xrdb-6.2.diff](dwm-xrdb-6.2.diff)
 * [dwm-xrdb-6.1.diff](dwm-xrdb-6.1.diff)
 
@@ -27,3 +29,4 @@ Authors
 -------
 * Petr Schmied - <https://github.com/JBlackN/dwm-xrdb>
 * Rob Livesey - <rlives6789@gmail.com> (v6.2 port)
+* Vasily Doylov - <nekodevelopper@gmail.com> (v6.3, 6.4 port)

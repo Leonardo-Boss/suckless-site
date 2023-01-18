@@ -40,6 +40,8 @@ because it makes them legally compatible with other suckless projects.
 ### Cryptography
 
 * [LibreSSL](https://www.libressl.org/) - LibreSSL is a version of the TLS/crypto stack forked from OpenSSL in 2014.
+* [Monocypher](https://monocypher.org/) - Small and freestanding cryptographic
+  library with relatively good performance written in C99.
 
 ### Miscellaneous
 

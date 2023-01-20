@@ -18,5 +18,5 @@ Download
 
 Authors
 -------
-* Mahdi Mirzade - <http://mahdi.pw>
+* Mahdi Mirzadeh - <https://mirzadeh.pro>
 * wael - 40663@protonmail.com fix variables + arg.h st.h removal

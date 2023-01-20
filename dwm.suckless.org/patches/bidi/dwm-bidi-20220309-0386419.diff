@@ -1,5 +1,5 @@
 From 0386419cfb5311d4a7516ece8f3f8fe923c43098 Mon Sep 17 00:00:00 2001
-From: MahdiMirzade <me@mahdym.ir>
+From: MahdiMirzadeh <mahdi@mirzadeh.pro>
 Date: Wed, 9 Mar 2022 17:44:42 +0330
 Subject: [PATCH] [PATCH] Added support for RTL languages (Farsi, Arabic and
  Hebrew using the FriBiDi library) - 9th Mar 2022 Fix

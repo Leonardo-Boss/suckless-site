@@ -22,4 +22,4 @@ Download
 
 Authors
 -------
-* Mahdi Mirzade - <http://mahdi.pw>
+* Mahdi Mirzadeh - <https://mirzadeh.pro>

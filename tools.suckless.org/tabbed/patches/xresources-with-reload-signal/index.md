@@ -4,7 +4,7 @@ xresources with signal reloading
 Description
 -----------
 This patch adds the ability to configure tabbed via Xresources and signal reloading.
-This patch is not based on [tabbed's xresources patch](https://tools.suckless.org/tabbed/patches/xresources) and is extended from [my build of tabbed](https://git.mahdi.pw/tabbed).
+This patch is not based on [tabbed's xresources patch](https://tools.suckless.org/tabbed/patches/xresources) and is extended from [my build of tabbed](https://git.mirzadeh.pro/tabbed).
 
 You can basically pass a `USR1` signal to all tabbed processes, after updating your Xresources to reload the settings:
 
@@ -18,4 +18,4 @@ Download
 
 Authors
 -------
-* Mahdi Mirzade - <http://mahdi.pw>
+* Mahdi Mirzadeh - <https://mirzadeh.pro>

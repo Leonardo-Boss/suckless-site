@@ -1,5 +1,5 @@
 From 014eabf578fb7d4b37c368c6e110e99897b6013d Mon Sep 17 00:00:00 2001
-From: Mahdi Mirzade <me@mahdi.pw>
+From: Mahdi Mirzadeh <mahdi@mirzadeh.pro>
 Date: Wed, 22 Jun 2022 04:26:22 +0430
 Subject: [PATCH] handle tabbed settings from Xresources + reload all tabbed
  instances by running 'pidof tabbed | xargs kill -s USR1'

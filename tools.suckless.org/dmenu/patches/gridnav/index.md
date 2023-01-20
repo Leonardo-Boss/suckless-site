@@ -6,6 +6,7 @@ Apply this patch after grid.
 Download
 --------
 * [dmenu-gridnav-5.0.diff](dmenu-gridnav-5.0.diff)
+* [dmenu-gridnav-5.2.diff](dmenu-gridnav-5.2.diff)
 
 Author
 ------

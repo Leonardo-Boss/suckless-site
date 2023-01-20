@@ -13,6 +13,7 @@ coloured windows.
 Download
 --------
 * [dmenu-border-4.9.diff](dmenu-border-4.9.diff) (2019-05-19)
+* [dmenu-border-5.2.diff](dmenu-border-5.2.diff) (2023-01-20)
 
 Authors
 -------

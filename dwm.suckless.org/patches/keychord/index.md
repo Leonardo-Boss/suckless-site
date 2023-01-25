@@ -5,7 +5,7 @@ Description
 -----------
 A patch that change the Key struct to Keychord, letting user map a sequence of key instead of one singular keystroke.
 
-*update 01/19/2021:
+*update 01/19/2022:
 change implementation to use array and pointer instead of dynamic heap allocation to minimize crash due heap allocation being too slow.
 
 

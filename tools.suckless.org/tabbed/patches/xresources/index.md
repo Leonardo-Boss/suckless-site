@@ -11,7 +11,9 @@ Most of the code has been copied from the [st patch of the same name](https://st
 Download
 --------
 * [tabbed-xresources-20210317-dabf6a2.diff](tabbed-xresources-20210317-dabf6a2.diff)
+* [tabbed-xresources-20230128-41e2b8f.diff](tabbed-xresources-20230128-41e2b8f.diff)
 
-Author
+Authors
 -------
-* @6d6f7274686f6e on [Github](https://github.com/6d6f7274686f6e/tabbed-xresources)
+* 20210317  [@6d6f7274686f6e](https://github.com/6d6f7274686f6e/tabbed-xresources)
+* 20230128  [Casey Fitzpatrick](https://github.com/kcghost/tabbed)

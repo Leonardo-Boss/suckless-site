@@ -187,7 +187,7 @@ This covers most console-based programs and programs from
 * [oathtool](https://www.nongnu.org/oath-toolkit/oathtool.1.html) - Open AuTHentication (OATH) one-time password tool.
 * [pinentry-dmenu](https://github.com/ritze/pinentry-dmenu) - pinentry-dmenu is a pinentry program with the charm of dmenu. It is a nice interface to [pass](https://www.passwordstore.org/)
 * [pass](https://www.passwordstore.org/) - "The standard UNIX password manager".
-* [spm](https://notabug.org/kl3/spm/) - Simple password manager (actively maintained fork of nmeum's tpm).
+* [spm](https://github.com/BioBox/spm) - Simple password manager (actively maintained fork of nmeum's tpm).
 * [tpm](https://github.com/nmeum/tpm/) - Tiny password manager.
 
 ### PDF viewers

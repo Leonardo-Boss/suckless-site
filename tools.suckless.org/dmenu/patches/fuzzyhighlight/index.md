@@ -21,6 +21,12 @@ Download
 --------
 * [dmenu-fuzzyhighlight-4.9.diff](dmenu-fuzzyhighlight-4.9.diff)
 
+This patch fixes the shift of highlighted symbols, it also supports case-insensitive 
+item matching behavior.
+
+* [dmenu-fuzzyhighlight-caseinsensitive-4.9.diff](dmenu-fuzzyhighlight-caseinsensitive-4.9.diff)
+
 Authors
 -------
 * Chris Noxz - <chris@noxz.tech>
+* Oleh Kopeykin - <olehkopeykin@yandex.by> (case-insensitive)

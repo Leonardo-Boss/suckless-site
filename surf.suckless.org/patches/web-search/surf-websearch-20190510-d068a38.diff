@@ -26,7 +26,7 @@ index 34265f6..69657bf 100644
  
 +#define SEARCH() { \
 +        .v = (const char *[]){ "/bin/sh", "-c", \
-+             "xprop -id $1 -f $2 8s -set $2 \"" \
++             "xprop -id $1 -f $2 8u -set $2 \"" \
 +             "$(dmenu -p Search: -w $1 < /dev/null)\"", \
 +             "surf-search", winid, "_SURF_SEARCH", NULL \
 +        } \

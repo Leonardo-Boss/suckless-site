@@ -10,3 +10,4 @@ search engine and keybinding can be configured.
 ## Author
 
 * Bryon Meinka <bryon.meinka@gmail.com>
+* Paras Kumar Langyan <paras.klangyan@gmail.com>

@@ -245,7 +245,7 @@ This covers most console-based programs and programs from
 * [nq](https://github.com/chneukirchen/nq) - UNIX command line queue utility.
 * [pv](https://www.ivarch.com/programs/pv.shtml) - tool for monitoring the progress of data through a pipeline.
 * [smenu](https://github.com/p-gen/smenu) - A powerful and versatile CLI selection tool for interactive or scripting use.
-* [snore](https://github.com/clamiax/snore) - Sleep with feedback.
+* [snore](https://github.com/bitsmanent/snore) - Sleep with feedback.
 * [yt-dlp](https://github.com/yt-dlp/yt-dlp) - youtube-dl fork, download videos from youtube.com or other video platforms.
 * [zbar](http://zbar.sourceforge.net/) - software suite for reading bar codes from various sources, such as video streams, image files.
 

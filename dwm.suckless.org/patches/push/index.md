@@ -24,6 +24,7 @@ Download
 * [dwm-push\_no\_master-6.0.diff](dwm-push_no_master-6.0.diff)
 * [dwm-push\_no\_master-6.1.diff](dwm-push_no_master-6.1.diff) - 2015/11/21
 * [dwm-push\_no\_master-6.2.diff](dwm-push_no_master-6.2.diff) - 2020/03/08
+* [dwm-push\_no\_master-6.4.diff](dwm-push_no_master-6.4.diff) - 2023/02/16
 
 Note
 ----
@@ -35,4 +36,4 @@ Author
 * Updated regular version for 6.2 (61bb8b2) Alex Cole <ajzcole@airmail.cc>
 * Updated by Jan Christoph Ebersbach <jceb@e-jc.de>
 * push\_no\_master by Jente Hidskes <jthidskes@outlook.com>
-
+* Updated push\_no\_master for 6.4 Matt Nakama <matt+suckless@mattnakama.com>

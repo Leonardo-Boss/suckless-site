@@ -11,12 +11,13 @@ an example of my status bar with multi-cpu and battery.
 Download
 --------
 
+* [dwm-status2d-6.2.diff](dwm-status2d-6.2.diff)
 * [dwm-status2d-6.3.diff](dwm-status2d-6.3.diff)
-* [dwm-status2d-systray-6.3.diff](dwm-status2d-systray-6.3.diff) 
 
 This patch embeds systray patch.
 
-* [dwm-status2d-6.2.diff](dwm-status2d-6.2.diff)
+* [dwm-status2d-systray-6.3.diff](dwm-status2d-systray-6.3.diff)
+* [dwm-status2d-systray-6.4.diff](dwm-status2d-systray-6.4.diff)
 
 Use this patch if you want to include the extrabar patch
 

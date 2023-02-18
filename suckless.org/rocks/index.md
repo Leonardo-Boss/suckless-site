@@ -275,7 +275,7 @@ This covers most console-based programs and programs from
 * [xbanish](https://github.com/jcs/xbanish) - Hide the cursor while typing.
 * [xclip](https://github.com/astrand/xclip) - A tool for controlling the X11 clipboard.
 * [xdotool](http://www.semicomplete.com/projects/xdotool/) - A tool for scripting X11 actions.
-* [xdo](https://github.com/baskerville/xdo) - Similar to xdotool but it's smaller and has a much saner codebase.
+* [xdo](https://github.com/baskerville/xdo) - Similar to xdotool but it's smaller and has a much cleaner codebase.
 * [xzoom](http://r-36.net/scm/xzoom/) - A simple zoom application.
 
 Daemons

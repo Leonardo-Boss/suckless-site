@@ -46,7 +46,8 @@ provide packages:
 * [FreeBSD](https://svnweb.freebsd.org/ports/head/graphics/farbfeld/)
 * [Gentoo](https://packages.gentoo.org/packages/media-gfx/farbfeld)
 * [NixOS](https://github.com/NixOS/nixpkgs/tree/master/pkgs/development/libraries/farbfeld)
-* [OpenBSD](http://ports.su/graphics/farbfeld)
+* [OpenBSD](https://ports.su/graphics/farbfeld)
+* [Slackware](https://slackbuilds.org/repository/15.0/graphics/farbfeld/)
 * [Ubuntu](https://packages.ubuntu.com/farbfeld)
 * [Void Linux](https://github.com/void-linux/void-packages/tree/master/srcpkgs/farbfeld)
 

@@ -7,5 +7,5 @@ concise ones.
 Useful external components
 --------------------------
 * [mksh](https://www.mirbsd.org/mksh.htm)
-* [musl libc](http://www.musl-libc.org/)
+* [musl libc](https://musl.libc.org/)
 * [one true awk](http://www.cs.princeton.edu/~bwk/btl.mirror/)

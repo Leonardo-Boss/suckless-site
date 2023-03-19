@@ -6,6 +6,7 @@ xev to adapt config.h)
 
 Download
 --------
+* [dwm-keycodes-6.4.diff](dwm-keycodes-6.4.diff)
 * [dwm-keycodes-6.1.diff](dwm-keycodes-6.1.diff)
 * [dwm-keycodes-20170511-ceac8c9.diff](dwm-keycodes-20170511-ceac8c9.diff)
 

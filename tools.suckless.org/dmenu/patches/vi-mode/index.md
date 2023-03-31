@@ -7,7 +7,7 @@ With this patch dmenu will have basic vi mode capabilities.
 Implemented actions
 -------------------
 * movements inside typed text with `[h|l|w|b|e|0|$]`
-* movements through list with `[j|k|g|G]`
+* movements through list with `[j|k|g|G|C-d|C-u]`
 * standard insertions with `[a|A|i|I]`
 * paste after|before cursor with `[p|P]`, use `ctrl` to use clipboard
 * delete from cursor to eol with `D`

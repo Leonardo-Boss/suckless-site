@@ -22,6 +22,10 @@ Since this patch relies on knowing how big everything is in the taskbar, make su
 
 Changelog
 ---------
+2023-04-31:
+* Updated to dwm 6.4
+* add: awesomebarwithhover patch for visual hover effects in the bar with configurable colours (could probably be improved greatly)
+
 2022-12-20:
 * Fixed broken patch (specifically, the 6.3 Xac version)
 
@@ -46,6 +50,10 @@ Changelog
 
 Download
 --------
+Updated version from G-OD:
+* [dwm-awesomebar-20230431-6.4.diff](dwm-awesomebar-20230431-6.4.diff) (2023-04-31) 
+* [dwm-awesomebarwithhover-20230431-6.4.diff](dwm-awesomebarwithhover-20230431-6.4.diff) (2023-04-31) 
+
 Updated version from Xac:
 * [dwm-awesomebar-20220925-6.3.diff](dwm-awesomebar-20220925-6.3.diff) (2022-09-25) 
 
@@ -65,3 +73,4 @@ Authors
 * ornx <ornx[at]protonmail.com>
 * Yegor Bayev <kodxpub@gmail.com>
 * Xac <jiangfengxi.c@gmail.com>
+* [G-OD](https://github.com/G-OD)

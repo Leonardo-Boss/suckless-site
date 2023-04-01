@@ -43,7 +43,7 @@ index 061ad66..82a3ed2 100644
  	{ ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
  	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
 diff --git a/dwm.c b/dwm.c
-index e5efb6a..a51f35e 100644
+index e5efb6a..8cb5171 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -50,6 +50,7 @@
@@ -357,7 +357,7 @@ index e5efb6a..a51f35e 100644
  	focus(NULL);
  }
  
-@@ -1119,18 +1235,65 @@ monocle(Monitor *m)
+@@ -1119,18 +1235,76 @@ monocle(Monitor *m)
  void
  motionnotify(XEvent *e)
  {
@@ -406,30 +406,41 @@ index e5efb6a..a51f35e 100644
 +	do
 +		x += TEXTW(tags[i]);
 +	while (ev->x >= x && ++i < LENGTH(tags));
-+	x += TEXTW(selmon->ltsymbol);
-+	if (c) {
-+		do {
-+			if (!ISVISIBLE(c))
-+				continue;
++	if (i < LENGTH(tags) || ev->x < x + TEXTW(selmon->ltsymbol) || ev->x > selmon->ww - TEXTW(stext) + lrpad - 2) {
++		if (selmon->hov) {
++			if (selmon->hov != selmon->sel)
++				XSetWindowBorder(dpy, selmon->hov->win, scheme[SchemeNorm][ColBorder].pixel);
 +			else
-+				x +=(1.0 / (double)m->bt) * m->btw;
-+		} while (ev->x > x && (c = c->next));
-+		if (c) {
-+			if (selmon->hov) {
-+				if (selmon->hov != selmon->sel)
-+					XSetWindowBorder(dpy, selmon->hov->win, scheme[SchemeNorm][ColBorder].pixel);
-+				else
-+					XSetWindowBorder(dpy, selmon->hov->win, scheme[SchemeSel][ColBorder].pixel);
-+			}
-+			selmon->hov = c;
-+			XSetWindowBorder(dpy, c->win, scheme[SchemeHov][ColBorder].pixel);
++				XSetWindowBorder(dpy, selmon->hov->win, scheme[SchemeSel][ColBorder].pixel);
++			selmon->hov = NULL;
++			drawbar(m);
 +		}
++	} else {
++		x += TEXTW(selmon->ltsymbol);
++		if (c) {
++			do {
++				if (!ISVISIBLE(c))
++					continue;
++				else
++					x +=(1.0 / (double)m->bt) * m->btw;
++			} while (ev->x > x && (c = c->next));
++			if (c) {
++				if (selmon->hov) {
++					if (selmon->hov != selmon->sel)
++						XSetWindowBorder(dpy, selmon->hov->win, scheme[SchemeNorm][ColBorder].pixel);
++					else
++						XSetWindowBorder(dpy, selmon->hov->win, scheme[SchemeSel][ColBorder].pixel);
++				}
++				selmon->hov = c;
++				XSetWindowBorder(dpy, c->win, scheme[SchemeHov][ColBorder].pixel);
++			}
++		}
++		drawbar(m);
 +	}
-+	drawbar(m);
  }
  
  void
-@@ -1196,7 +1359,7 @@ movemouse(const Arg *arg)
+@@ -1196,7 +1370,7 @@ movemouse(const Arg *arg)
  Client *
  nexttiled(Client *c)
  {
@@ -438,7 +449,7 @@ index e5efb6a..a51f35e 100644
  	return c;
  }
  
-@@ -1249,6 +1412,16 @@ propertynotify(XEvent *e)
+@@ -1249,6 +1423,16 @@ propertynotify(XEvent *e)
  void
  quit(const Arg *arg)
  {
@@ -455,7 +466,7 @@ index e5efb6a..a51f35e 100644
  	running = 0;
  }
  
-@@ -1610,6 +1783,42 @@ seturgent(Client *c, int urg)
+@@ -1610,6 +1794,42 @@ seturgent(Client *c, int urg)
  	XFree(wmh);
  }
  
@@ -498,7 +509,7 @@ index e5efb6a..a51f35e 100644
  void
  showhide(Client *c)
  {
-@@ -1744,6 +1953,23 @@ toggleview(const Arg *arg)
+@@ -1744,6 +1964,23 @@ toggleview(const Arg *arg)
  	}
  }
  
@@ -522,7 +533,7 @@ index e5efb6a..a51f35e 100644
  void
  unfocus(Client *c, int setfocus)
  {
-@@ -1815,6 +2041,7 @@ updatebars(void)
+@@ -1815,6 +2052,7 @@ updatebars(void)
  				CWOverrideRedirect|CWBackPixmap|CWEventMask, &wa);
  		XDefineCursor(dpy, m->barwin, cursor[CurNormal]->cursor);
  		XMapRaised(dpy, m->barwin);

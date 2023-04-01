@@ -20,6 +20,7 @@ might use fixborders patch instead.
 
 Download
 --------
+* [dwm-alpha-20230401-348f655.diff](dwm-alpha-20230401-348f655.diff)
 * [dwm-alpha-6.4.diff](dwm-alpha-6.4.diff)
 * [dwm-alpha-6.1.diff](dwm-alpha-6.1.diff)
 * [dwm-alpha-20180613-b69c870.diff](dwm-alpha-20180613-b69c870.diff)
@@ -34,4 +35,4 @@ Authors
 * Petrus Karell - <pk@petruskarell.fi> (20201019-61bb8b2 port)
 * Jakub Leszczak - <szatan@gecc.xyz> (fixborders patch)
 * Vasily Doylov - <nekodevelopper@gmail.com> (v6.3, 6.4 port)
-
+* getimiskon - <getimiskon@disroot.org> (20230401-348f655 port)

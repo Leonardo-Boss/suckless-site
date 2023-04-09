@@ -41,18 +41,30 @@ index 5828a3b..9663fa6 100644
  static char *opt_class = NULL;
  static char **opt_cmd  = NULL;
  static char *opt_embed = NULL;
-@@ -960,7 +965,10 @@ xloadfonts(char *fontstr, double fontsize)
+@@ -966,17 +971,20 @@ xloadfonts(char *fontstr, double fontsize)
  	win.ch = ceilf(dc.font.height * chscale);
  
  	FcPatternDel(pattern, FC_SLANT);
 -	FcPatternAddInteger(pattern, FC_SLANT, FC_SLANT_ITALIC);
 +	if (!disableitalic)
 +		FcPatternAddInteger(pattern, FC_SLANT, FC_SLANT_ITALIC);
-+	if (!disableroman)
-+		FcPatternAddInteger(pattern, FC_SLANT, FC_SLANT_ROMAN);
  	if (xloadfont(&dc.ifont, pattern))
  		die("can't open font %s\n", fontstr);
  
+ 	FcPatternDel(pattern, FC_WEIGHT);
+-	FcPatternAddInteger(pattern, FC_WEIGHT, FC_WEIGHT_BOLD);
++	if (!disablebold)
++	    FcPatternAddInteger(pattern, FC_WEIGHT, FC_WEIGHT_BOLD);
+ 	if (xloadfont(&dc.ibfont, pattern))
+ 		die("can't open font %s\n", fontstr);
+ 
+ 	FcPatternDel(pattern, FC_SLANT);
+-	FcPatternAddInteger(pattern, FC_SLANT, FC_SLANT_ROMAN);
++	if (!disableroman)
++	    FcPatternAddInteger(pattern, FC_SLANT, FC_SLANT_ROMAN);
+ 	if (xloadfont(&dc.bfont, pattern))
+ 		die("can't open font %s\n", fontstr);
+ 
 -- 
-2.21.0
+2.39.2
 

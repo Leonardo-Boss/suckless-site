@@ -27,7 +27,7 @@ index 1edb647..7bf5f4a 100644
 +	{ XK_q,		0 }
 +};
 diff --git a/dmenu.c b/dmenu.c
-index 4e7df12..14fbde3 100644
+index 62f1089..8066271 100644
 --- a/dmenu.c
 +++ b/dmenu.c
 @@ -26,7 +26,7 @@
@@ -76,7 +76,7 @@ index 4e7df12..14fbde3 100644
  		drw_setscheme(drw, scheme[SchemeNorm]);
  		drw_rect(drw, x + curpos, 2, 2, bh - 4, 1, 0);
  	}
-@@ -321,6 +335,179 @@ movewordedge(int dir)
+@@ -321,6 +335,181 @@ movewordedge(int dir)
  	}
  }
  
@@ -108,6 +108,8 @@ index 4e7df12..14fbde3 100644
 +		case XK_c:
 +			cleanup();
 +			exit(1);
++		case XK_Return: /* fallthrough */
++		case XK_KP_Enter: break;
 +		default: return;
 +		}
 +	}
@@ -256,7 +258,7 @@ index 4e7df12..14fbde3 100644
  static void
  keypress(XKeyEvent *ev)
  {
-@@ -340,6 +527,18 @@ keypress(XKeyEvent *ev)
+@@ -340,6 +529,18 @@ keypress(XKeyEvent *ev)
  		break;
  	}
  
@@ -275,7 +277,7 @@ index 4e7df12..14fbde3 100644
  	if (ev->state & ControlMask) {
  		switch(ksym) {
  		case XK_a: ksym = XK_Home;      break;
-@@ -543,6 +742,8 @@ paste(void)
+@@ -543,6 +744,8 @@ paste(void)
  		insert(p, (q = strchr(p, '\n')) ? q - p : (ssize_t)strlen(p));
  		XFree(p);
  	}
@@ -284,7 +286,7 @@ index 4e7df12..14fbde3 100644
  	drawmenu();
  }
  
-@@ -737,6 +938,11 @@ main(int argc, char *argv[])
+@@ -738,6 +941,11 @@ main(int argc, char *argv[])
  		else if (!strcmp(argv[i], "-i")) { /* case-insensitive item matching */
  			fstrncmp = strncasecmp;
  			fstrstr = cistrstr;

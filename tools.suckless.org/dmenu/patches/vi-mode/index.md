@@ -43,7 +43,7 @@ There is a new color scheme included in this patch.  It is an inversion of
 
 Download
 --------
-* [dmenu-vi_mode-20230416-0fe460d.diff](dmenu-vi_mode-20230330-0fe460d.diff)
+* [dmenu-vi_mode-20230416-0fe460d.diff](dmenu-vi_mode-20230416-0fe460d.diff)
 
 Author
 ------

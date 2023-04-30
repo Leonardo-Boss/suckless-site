@@ -14,6 +14,7 @@ The configuration variable `gappx` contains the default gap size.
 
 Download
 --------
+* [dwm-fullgaps-6.4.diff](dwm-fullgaps-6.4.diff)
 * [dwm-fullgaps-6.2.diff](dwm-fullgaps-6.2.diff)
 * [dwm-fullgaps-20200508-7b77734.diff](dwm-fullgaps-20200508-7b77734.diff)
 
@@ -31,3 +32,4 @@ Author
 * Maciej Janicki <mail@macjanicki.eu>
 * David Julien <swy7ch@protonmail.com> (20200504-b2e1dfc port)
 * Klein Bottle <kleinbottle4@gmail.com> (dwm-fullgaps-toggle...)
+* Luka Rapava <luka.rapava2004@gmail.com> (6.4 port)

@@ -115,6 +115,8 @@ Feel free to add your own status monitors here (keeping the list sorted).
 * [suspend-statusbar.c](https://github.com/snobb/dwm-statusbar) - date,
   loadavg, battery and more. If battery goes below threshold - run suspend
   command
+* [sysmon](https://github.com/blmayer/sysmon) - Net in/out, mem, swap, CPU and
+  date info. Written in go using xgb and xproto to not spawn other processes.
 * [zara](https://github.com/lordrusk/zara) - Extremely simple status bar modeled after [gocaudices](https://github.com/lordrusk/gocaudices) expandable in Go through an interface. Modules include, beyond the basics, corona stats, weather, cpubars, network traffic, moonphase, and many more.
 * [ztatus](https://git.noxz.tech/ztatus/log.html) - simple statusbar and
   notification daemon (through fifo). Displays only date and time normally.

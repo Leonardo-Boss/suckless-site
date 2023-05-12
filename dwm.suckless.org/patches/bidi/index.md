@@ -17,6 +17,7 @@ with dwm-bidi:
 
 Download
 --------
+* [dwm-bidi-restricted-20230512-e81f17d.diff](dwm-bidi-restricted-20230512-e81f17d.diff)
 * [dwm-bidi-20220309-0386419.diff](dwm-bidi-20220309-0386419.diff)
 * [dwm-bidi-20220219-302953a.diff](dwm-bidi-20220219-302953a.diff) (old)
 

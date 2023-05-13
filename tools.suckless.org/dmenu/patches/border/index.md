@@ -14,6 +14,7 @@ Download
 --------
 * [dmenu-border-4.9.diff](dmenu-border-4.9.diff) (2019-05-19)
 * [dmenu-border-5.2.diff](dmenu-border-5.2.diff) (2023-01-20)
+* [dmenu-border-20230512-0fe460d](dmenu-border-20230512-0fe460d.diff) (2023-05-12)
 
 Authors
 -------
@@ -39,3 +40,15 @@ Download
 Authors
 -------
 * Ben Raskin <ben[at]0x1bi.net>
+
+separate border color
+=====================
+
+Description
+-----------
+This patch is based on the border patch, but adds another colorscheme to
+set the border color independently from SelBg
+
+Download
+--------
+* [dmenu-bordercolor-20230512-0fe460d](dmenu-bordercolor-20230512-0fe460d.diff) (2023-05-12)

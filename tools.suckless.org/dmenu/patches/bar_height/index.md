@@ -8,5 +8,5 @@ Download
 
 Authors
 -------
-* tch69 (fa2_l at outlook dot com): dmenu port
+* tch69 (ifa26417 at aol dot com): dmenu port
 * bit6tream [bit6tream@cock.li](mailto:bit6tream@cock.li): original dwm patch

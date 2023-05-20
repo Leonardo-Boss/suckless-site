@@ -35,6 +35,7 @@ The last patch fixes some vertical alignment issues which were obvious only for 
 
 Download
 --------
+* [dwm-pango-20230520-e81f17d.diff](dwm-pango-20230520-e81f17d.diff)
 * [dwm-pango-20201020-519f869.diff](dwm-pango-20201020-519f869.diff)
 * [dwm-pango-20200428-f09418b.diff](dwm-pango-20200428-f09418b.diff)
 * [dwm-pango-6.0.diff](dwm-pango-6.0.diff)

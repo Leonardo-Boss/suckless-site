@@ -10,7 +10,7 @@ Example
 -------
 
 See
-[here](https://github.com/danielpza/dotfiles/blob/master/dwm/etc/xdg/sxhkd/sxhkdrc#L24)
+[here](https://github.com/danielpza/dotfiles-old/blob/master/dwm/etc/xdg/sxhkd/sxhkdrc#L24)
 for an example of usage with sxhkd.
 
 	dwmc setmfact +0.05

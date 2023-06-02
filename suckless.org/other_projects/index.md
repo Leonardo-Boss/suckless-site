@@ -19,6 +19,7 @@ There are several other projects which are inspired by the spirit of suckless.
 * [librarian](https://github.com/maandree/librarian) - less sucky alternative to pkg-config
 * [micy](https://github.com/radare/toys/tree/master/micy) - minimalistic mouse handler (depends on driver)
 * [mosaic](https://dreamless.digital/src/mosaic) - UNIX style music tools
+* [nt](https://github.com/ashish-yadav11/nt) - 'at' wrapper for setting one time notification alarms.
 * [oboeta](https://github.com/joodan-van-github/oboeta) - minimalistic plain-text flashcard system
 * [pcw](https://bitbucket.org/emg/pcw) - popup chat windows (ii front end)
 * [ptar](https://github.com/joodan-van-github/ptar) - plain-text archives: like tar, but better

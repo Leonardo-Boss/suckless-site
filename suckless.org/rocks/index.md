@@ -243,6 +243,7 @@ This covers most console-based programs and programs from
 * [mrandr](https://gitlab.com/mhdy/mrandr) - Simple and lightweight monitor (display) profile manager written in POSIX shell.
 * [mtm](https://github.com/deadpixi/mtm) - Micro Terminal Multiplexer.
 * [nq](https://github.com/chneukirchen/nq) - UNIX command line queue utility.
+* [nt](https://github.com/ashish-yadav11/nt) - 'at' wrapper for setting one time notification alarms.
 * [pv](https://www.ivarch.com/programs/pv.shtml) - tool for monitoring the progress of data through a pipeline.
 * [smenu](https://github.com/p-gen/smenu) - A powerful and versatile CLI selection tool for interactive or scripting use.
 * [snore](https://github.com/bitsmanent/snore) - Sleep with feedback.

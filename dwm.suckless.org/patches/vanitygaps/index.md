@@ -53,6 +53,7 @@ Download
 * [dwm-vanitygaps-6.2.diff](dwm-vanitygaps-6.2.diff) (tile, bstack, bstackhoriz, centeredmaster, centeredfloatingmaster, deck, fibonacci (dwindle, spiral), grid, nrowgrid)
 * [dwm-cfacts-vanitygaps-6.2.diff](dwm-cfacts-vanitygaps-6.2.diff) (as above, on top of [cfacts](../cfacts))
 * [dwm-cfacts-vanitygaps-6.2_combo.diff](dwm-cfacts-vanitygaps-6.2_combo.diff) (as above, cfacts + vanitygaps combo)
+* [dwm-cfacts-vanitygaps-6.4_combo.diff](dwm-cfacts-vanitygaps-6.4_combo.diff) (as above, cfacts + vanitygaps combo)
 
 Author
 ------

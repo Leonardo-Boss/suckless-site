@@ -105,3 +105,24 @@ Download
 Author
 ------
 * yasumori <ysmr@protonmail.com>
+
+An even simpler plumb patch
+===========================
+The differences of this patch to the simple, flexible plumb patch:
+
+* The code for retrieving and setting the current working directory and executing is the 
+  same as newterm, if patching with newterm it is suggested to keep the same function, hence 
+  no global variables and initialization, and current selection of plumb.
+* Double-fork execution of the plumber program, while this may have no benefit with programs
+  that only launch in CLI, this may interfere with the swallow patch if launching GUI programs.
+* No arguments are passed to the plumber program, only the plumber program name is accepted.
+* The plumb function can be passed to the mouse shortcuts in `config.h`,
+  instead of being hard-coded.
+
+Download
+--------
+* [simpler\_plumb-0.9.diff](simpler_plumb-0.9.diff)
+
+Author
+------
+* sewn <sewn@disroot.org>

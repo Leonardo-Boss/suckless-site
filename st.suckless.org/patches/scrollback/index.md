@@ -17,10 +17,11 @@ efficient scrolling:
 
 * [st-scrollback-ringbuffer-0.8.5.diff](st-scrollback-ringbuffer-0.8.5.diff)
 
-Apply the following patch on top of the [original scrollback patch (=>0.8.5)](st-scrollback-0.8.5.diff) to allow
-column and row reflow.
+Apply the following patch on top of the previous to allow column and row reflow.
 
 * [st-scrollback-reflow-0.8.5.diff](st-scrollback-reflow-0.8.5.diff)
+* [st-scrollback-reflow-0.9.diff](st-scrollback-reflow-0.9.diff)
+* [st-scrollback-reflow-20230607-211964d.diff](st-scrollback-reflow-20230607-211964d.diff)
 
 Apply the following patch on top of the previous to allow scrolling
 using `Shift+MouseWheel`.

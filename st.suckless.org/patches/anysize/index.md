@@ -24,3 +24,24 @@ Download
 Authors
 -------
 * Augusto Born de Oliveira - <augustoborn@gmail.com>
+
+Expected anysize
+================
+
+As said above, the anysize patch will automatically balance the left/right and
+top/bottom borders, with the terminals contents centered and the borders dynamic.
+This behavior may be unexpected, such as terminal content placement, and the
+terminal contents 'swimming'; constantly moving/shaking while the terminal is
+being resized, which isn't very good to look at.
+
+This variant will only add the border paddings to the bottom and the right of the
+window, which is usually expected as english is left to right and the terminal
+output comes from the top.
+
+The change is very small, and only requires 2 lines to be changed in `x.c`.
+
+The outcome of this behavior is what should be expected from an 'anysize' patch.
+
+Download
+--------
+* [st-expected-anysize-0.9.diff](st-expected-anysize-0.9.diff)

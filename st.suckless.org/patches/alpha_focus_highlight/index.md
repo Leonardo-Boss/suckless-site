@@ -52,6 +52,10 @@ Please report an Issue or contribute a merged patch in that case.
 Patch: alpha + focus
 --------------------
 
+**st-0.9**
+- [Version 2(attached)](st-focus-20230610-68d1ad9.diff)
+- Most recent release [st-focus-20230610-68d1ad9.diff Github](https://github.com/juliusHuelsmann/st/releases/download/alpha_09/st-focus-20230610-68d1ad9.diff)
+
 **st-0.8.3**
 - [Version 1 (attached)](st-focus-20200731-43a395a.diff)
 - Most recent release: [st-focus-20200530-43a395a.diff Github](https://github.com/juliusHuelsmann/st/releases/download/v2/st-focus-20200731-43a395a.diff)
@@ -89,6 +93,7 @@ in which opacity management configured to be performed by `st`.
 Authors / Contributors
 ----------------------
 * Julius Hülsmann - <juliusHuelsmann [at] gmail [dot] com>
+* [Wim Stockman](https://github.com/wimstockman): Fix erroneous color reset
 * [glpub](https://github.com/glpub): Fix: erroneous color reset
 * [Milos Stojanovic](https://github.com/M4444): Code Formatting
 * [Yui](https://github.com/yuwui): Fix spelling errors

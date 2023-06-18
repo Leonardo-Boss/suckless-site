@@ -17,6 +17,7 @@ There are several other projects which are inspired by the spirit of suckless.
 * [ired](https://github.com/radare/ired) - minimalistic hexadecimal editor inspired in radare
 * [kelp](http://kelp.sf.net) - source code annotation framework
 * [librarian](https://github.com/maandree/librarian) - less sucky alternative to pkg-config
+* [maan](http://people.tuebingen.mpg.de/maan/) - various projects which adhere to the suckless philosophy
 * [micy](https://github.com/radare/toys/tree/master/micy) - minimalistic mouse handler (depends on driver)
 * [mosaic](https://dreamless.digital/src/mosaic) - UNIX style music tools
 * [nt](https://github.com/ashish-yadav11/nt) - 'at' wrapper for setting one time notification alarms.

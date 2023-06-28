@@ -22,6 +22,7 @@ is appreciated by the entire suckless community.
 Following people have donated to the suckless.org project certain amounts of
 money, which have been used for the dedicated server rent in the past:
 
+* Macrocosm LLC donated **5.000 EUR**
 * Benedikt Brenner donated **775 EUR**
 * Jonas Schambeck donated **30 EUR**
 * Lennart Emmerich donated **100 EUR**

@@ -15,3 +15,7 @@ You can [browse](//git.suckless.org/slstatus) its source code repository or get
 a copy using the following command:
 
 	git clone https://git.suckless.org/slstatus
+
+Download
+--------
+* [slstatus 1.0](//dl.suckless.org/tools/slstatus-1.0.tar.gz) (2023-07-04)

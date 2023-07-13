@@ -19,7 +19,8 @@ terminals on each of the 2 monitors.
 	echo term > /tmp/dwm.fifo
 
 The sleep in between is currently needed to avoid buffering up more than a
-single command. You may experiment with the actual sleep value.
+single command. You may experiment with the actual sleep value. Sleeps are no
+longer needed with the 20230713 version.
 
 Similarly you can modify your config.h and add more commands that you may want
 to execute (like tabbed-surf or similar).
@@ -27,7 +28,9 @@ to execute (like tabbed-surf or similar).
 Download
 --------
 * [dwm-dwmfifo-6.1.diff](dwm-dwmfifo-6.1.diff) (6.9k) (2014-01-29)
+* [dwm-dwmfifo-20230713-e81f17d.diff](dwm-dwmfifo-20230713-e81f17d.diff) (8.1k) (2023-07-13)
 
 Author
 ------
 * sin - <sin@2f30.org>
+* inz - <inz@inz.fi>

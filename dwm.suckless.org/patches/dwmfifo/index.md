@@ -28,7 +28,7 @@ to execute (like tabbed-surf or similar).
 Download
 --------
 * [dwm-dwmfifo-6.1.diff](dwm-dwmfifo-6.1.diff) (6.9k) (2014-01-29)
-* [dwm-dwmfifo-20230713-e81f17d.diff](dwm-dwmfifo-20230713-e81f17d.diff) (8.1k) (2023-07-13)
+* [dwm-dwmfifo-20230713-e81f17d.diff](dwm-dwmfifo-20230714-e81f17d.diff) (8.1k) (2023-07-14)
 
 Author
 ------

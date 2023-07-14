@@ -1,4 +1,4 @@
-From a37879a10bbca1591a2677ddecd641a4bcb8ffbd Mon Sep 17 00:00:00 2001
+From 898a3f86703be6fb6f3690916797b80bf1d4dbc8 Mon Sep 17 00:00:00 2001
 From: Santtu Lakkala <inz@inz.fi>
 Date: Thu, 13 Jul 2023 15:48:14 +0300
 Subject: [PATCH] Command FIFO for dwm
@@ -47,7 +47,7 @@ index 9efa774..fc4db01 100644
 +	{ "toggletag",       toggletag,      .parse = parsetag },
 +};
 diff --git a/dwm.c b/dwm.c
-index f1d86b2..202ed6a 100644
+index f1d86b2..13537fc 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -21,6 +21,7 @@
@@ -281,7 +281,7 @@ index f1d86b2..202ed6a 100644
  	XSelectInput(dpy, root, wa.event_mask);
  	grabkeys();
  	focus(NULL);
-+	fifofd = open(dwmfifo, O_RDONLY | O_CLOEXEC | O_NONBLOCK);
++	fifofd = open(dwmfifo, O_RDWR | O_CLOEXEC | O_NONBLOCK);
 +	if (fifofd < 0)
 +		die("Failed to open() DWM fifo %s:", dwmfifo);
  }

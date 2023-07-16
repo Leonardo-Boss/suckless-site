@@ -139,7 +139,7 @@ Headers
   * Try to avoid cyclic header inclusion dependencies.
   * Instead ensure they are included where and when they are needed.
   * Read <https://talks.golang.org/2012/splash.article#TOC_5.>
-  * Read <http://plan9.bell-labs.com/sys/doc/comp.html>
+  * Read <http://plan9.io/sys/doc/comp.html>
 
 
 User Defined Types

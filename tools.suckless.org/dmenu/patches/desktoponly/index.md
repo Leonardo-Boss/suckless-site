@@ -11,7 +11,7 @@ It is recommended to use with a patch [desktoponly](https://dwm.suckless.org/pat
 
 Download
 --------
-* [dwm-desktoponly-20230805-7ab0cb5.diff](dwm-desktoponly-20230805-7ab0cb5.diff) (2.5K) (2023-08-05)
+* [dmenu-desktoponly-20230805-7ab0cb5.diff](dmenu-desktoponly-20230805-7ab0cb5.diff) (2.5K) (2023-08-05)
 
 Author
 ------

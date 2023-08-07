@@ -18,7 +18,6 @@ resources that can be changed and what they change:
 
 Note: Values in Xresources will override values in config.h, but will be
 overridden by command line arguments.
-
 Download
 --------
 * [dmenu-xresources-4.9.diff](dmenu-xresources-4.9.diff)

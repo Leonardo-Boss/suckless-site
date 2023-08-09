@@ -22,7 +22,7 @@ Download
 * [dwm-tilewide-6.4.diff](dwm-tilewide-6.4.diff)
 * [dwm-tilewide-6.3.diff](dwm-tilewide-6.3.diff)
 
-Download for Users of Useless Gap 
+Download for Users of Useless Gap
 ---------------------------------
 * [dwm-tilewide-6.4-for-uselessgap-20211119-58414bee958f2.diff](dwm-tilewide-6.4-for-uselessgap-20211119-58414bee958f2.diff) If you have already applied [dwm-uselessgap-20211119-58414bee958f2.diff](../uselessgap/dwm-uselessgap-20211119-58414bee958f2.diff), use this patch instead of either of the ones above. Applying this patch after [dwm-uselessgap-20211119-58414bee958f2.diff](../uselessgap/dwm-uselessgap-20211119-58414bee958f2.diff) will prevent the inner vertical gap between the master and stack being wider than the rest of the gaps in the `tilewide` layout.
 

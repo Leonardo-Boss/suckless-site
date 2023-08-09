@@ -8,7 +8,7 @@ This patch adds default transparency parameters to config.h which specify the st
 It also adds opacities to the ruleset, enabling override of the opacities on a per client basis for both focus and unfocus.
 
 Additionally, it adds some shortcuts:
-	
+
 * [Alt]+[Shift]+[a] -> increase focus opacity of currently focused window
 * [Alt]+[Shift]+[s] -> decrease focus opacity of currently focused window
 

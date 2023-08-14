@@ -1,0 +1,80 @@
+From 17c7c0ae9713c782eb032a4be67a42311269059a Mon Sep 17 00:00:00 2001
+From: fami fish <19bors.steriann@gmail.com>
+Date: Mon, 14 Aug 2023 22:23:51 +0300
+Subject: [PATCH] dwm-logging-6.4
+
+---
+ config.def.h |  3 +++
+ dwm.c        | 22 ++++++++++++++++++++++
+ 2 files changed, 25 insertions(+)
+
+diff --git a/config.def.h b/config.def.h
+index 9efa774..f86ab67 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -1,5 +1,8 @@
+ /* See LICENSE file for copyright and license details. */
+ 
++/* logging & debugging */
++static const unsigned int logfile        = 1;   /* 1 means enable logging to a file*/    
++
+ /* appearance */
+ static const unsigned int borderpx  = 1;        /* border pixel of windows */
+ static const unsigned int snap      = 32;       /* snap pixel */
+diff --git a/dwm.c b/dwm.c
+index f1d86b2..d0f6db7 100644
+--- a/dwm.c
++++ b/dwm.c
+@@ -25,6 +25,7 @@
+ #include <signal.h>
+ #include <stdarg.h>
+ #include <stdio.h>
++#include <time.h>
+ #include <stdlib.h>
+ #include <string.h>
+ #include <unistd.h>
+@@ -222,6 +223,7 @@ static void updateclientlist(void);
+ static int updategeom(void);
+ static void updatenumlockmask(void);
+ static void updatesizehints(Client *c);
++static void logstr(char *c);
+ static void updatestatus(void);
+ static void updatetitle(Client *c);
+ static void updatewindowtype(Client *c);
+@@ -2001,6 +2003,24 @@ updatesizehints(Client *c)
+ 	c->isfixed = (c->maxw && c->maxh && c->maxw == c->minw && c->maxh == c->minh);
+ 	c->hintsvalid = 1;
+ }
++void 
++logstr(char* c) {
++    FILE *f;
++    time_t now;
++    struct tm tm;
++
++    f = fopen("dwm.log", "a+");
++    setbuf(f, NULL); /* disables buffering */
++    if (f == NULL) { 
++        return;
++    }
++    
++    now = time(NULL);
++    tm = *localtime(&now);
++
++    fprintf(f, "[%02d:%02d:%02d] %s", tm.tm_hour, tm.tm_min, tm.tm_sec, c);
++    return;
++}
+ 
+ void
+ updatestatus(void)
+@@ -2143,6 +2163,8 @@ zoom(const Arg *arg)
+ int
+ main(int argc, char *argv[])
+ {
++    logstr("DWM started");
++
+ 	if (argc == 2 && !strcmp("-v", argv[1]))
+ 		die("dwm-"VERSION);
+ 	else if (argc != 1)
+-- 
+2.41.0
+

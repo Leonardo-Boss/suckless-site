@@ -25,10 +25,10 @@ Notes
 
 Download
 --------
-* [st-blinking\_cursor-20211116-2f6e597.diff](st-blinking_cursor-20211116-2f6e597.diff)
+* [st-blinking\_cursor-20230819-3a6d6d7.diff](st-blinking_cursor-20230819-3a6d6d7.diff)
 
 Authors
 -------
 * Genki Sky - <https://lists.suckless.org/hackers/1708/15376.html>
-* Steve Ward - <planet36@gmail.com>
+* Steven Ward - <planet36@gmail.com>
 * jvyden

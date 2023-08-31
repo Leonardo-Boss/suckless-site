@@ -15,7 +15,11 @@ Download
 --------
 * [slstatus-alsa-4bd78c9.patch](slstatus-alsa-4bd78c9.patch)
 
+For adding support regarding mute status:
+* [slstatus-alsa-mute-1.0.diff](slstatus-alsa-mute-1.0.diff)
+
 Authors
 -------
 * Ivan Krylov <krylov.r00t@gmail.com>
 * drkhsh <me@drkhsh.at>
+* sewn <sewn@disroot.org> (mute support)

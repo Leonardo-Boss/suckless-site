@@ -43,6 +43,7 @@ always becoming the new master. It's basically an
 
 Download
 --------
+* [dwm-attachaside-6.4.diff](dwm-attachaside-6.4.diff)
 * [dwm-attachaside-6.3.diff](dwm-attachaside-6.3.diff)
 * [dwm-attachaside-6.1.diff](dwm-attachaside-6.1.diff)
 * [dwm-attachaside-20160718-56a31dc.diff](dwm-attachaside-20160718-56a31dc.diff)

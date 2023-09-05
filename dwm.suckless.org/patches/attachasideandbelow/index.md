@@ -9,6 +9,7 @@ client.
 
 Download
 --------
+* [dwm-attachasideandbelow-6.4.diff](dwm-attachasideandbelow-6.4.diff)
 * [dwm-attachasideandbelow-20200702-f04cac6.diff](dwm-attachasideandbelow-20200702-f04cac6.diff)
 
 

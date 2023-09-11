@@ -25,3 +25,4 @@ Author
 ------
 * Takase
 * NRK (v5.1 and `e35976f` rebase, allocation related cleanup)
+* Bhargav Das Gupta (v5.2)

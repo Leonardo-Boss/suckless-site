@@ -3,7 +3,7 @@ adjacenttag
 
 Description
 -----------
-This patch allow to focus on the adjacent tag (left or right) or tag a client
+This patch allow to focus on the adjacent tag (left or right) or move a client
 to it, the version with 'skipvacant' will skip vacant tags
 
 Default keybindings

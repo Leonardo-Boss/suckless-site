@@ -30,6 +30,9 @@ Download
   With the original pertag patch, changes only effect the tag which was selected first.
   * [dwm-pertag-perseltag-6.2.diff](dwm-pertag-perseltag-6.2.diff) (20200622)
 
+* Pertag but storing client focus (selection) as well
+  * [dwm-pertag_with_sel-20231003-9f88553.diff](dwm-pertag_with_sel-20231003-9f88553.diff) (6.1K)
+
 
 Authors
 -------
@@ -43,3 +46,4 @@ Authors
 * [Jochen Sprickerhof](mailto:project@firstname.lastname.de) (Updated to current git)
 * Lucas Gabriel Vuotto - <lvuotto92@gmail.com> (git ports)
 * Aaron Duxler - <aaron@duxler.xyz> (dwm-pertag-perseltag-6.2)
+* Leonardo Boss - <leonardoboss2001@gmail.com> (dwm-pertag_with_sel-20231003-9f88553)

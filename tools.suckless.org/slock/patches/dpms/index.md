@@ -15,6 +15,7 @@ The time until the monitor is disabled is configurable as `monitortime` in the
 Download
 --------
 * [slock-dpms-1.4.diff](slock-dpms-1.4.diff)
+* [slock-dpms-20231017-4f04554.diff](slock-dpms-20231017-4f04554.diff)
 
 Authors
 -------

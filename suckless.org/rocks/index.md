@@ -287,7 +287,7 @@ This section is dedicated to daemons that are related to the UNIX philosophy.
 * [darkhttpd](https://unix4lyfe.org/darkhttpd/) - Darkhttpd is a simple, fast HTTP 1.1 web server for static content.
 * [merecat](https://github.com/troglobit/merecat/) - thttpd with vhost support.
 * [mini\_httpd](http://acme.com/software/mini_httpd/) - By the thttpd developers.  Even smaller subset of thttpd with support for .htpasswd, CGI, dirlisting, HTTP errors and SSL, nothing more or less than that.
-* [OpenBSD httpd/relayd](https://bsd.plumbing/) - Designed to combat the feature creep of modern webservers. Boasts concise configuration, with sane defaults.
+* [OpenBSD httpd](https://cvsweb.openbsd.org/src/usr.sbin/httpd/) - OpenBSD HTTP daemon. Concise configuration, sane defaults, secure.
 * [quark](//tools.suckless.org/quark/) - suckless simple static web server.
 * [thttpd](http://acme.com/software/thttpd/) - Outperforms many bigger httpds. Old, still works very well!
 

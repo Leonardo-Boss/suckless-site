@@ -11,8 +11,10 @@ Download
 --------
 * [dwm-tilegap-6.0.diff](dwm-tilegap-6.0.diff) (948b) (20150707)
 * [dwm-tilegap-6.2.diff](dwm-tilegap-6.2.diff) (20190227)
+* [dwm-tilegap-6.4.diff](dwm-tilegap-6.4.diff) (20231104)
 
 Author
 ------
 * Brandon Mulcahy - <brandon@jangler.info>
 * Aleksandrs Stier (6.2 port)
+* Midspec (6.4 port)

@@ -243,6 +243,7 @@ This covers most console-based programs and programs from
 * [mtm](https://github.com/deadpixi/mtm) - Micro Terminal Multiplexer.
 * [nq](https://github.com/chneukirchen/nq) - UNIX command line queue utility.
 * [pv](https://www.ivarch.com/programs/pv.shtml) - tool for monitoring the progress of data through a pipeline.
+* [piscou](https://github.com/lucas-mior/piscou) - Simple file previewer written in C.
 * [smenu](https://github.com/p-gen/smenu) - A powerful and versatile CLI selection tool for interactive or scripting use.
 * [snore](https://github.com/bitsmanent/snore) - Sleep with feedback.
 * [yt-dlp](https://github.com/yt-dlp/yt-dlp) - youtube-dl fork, download videos from youtube.com or other video platforms.

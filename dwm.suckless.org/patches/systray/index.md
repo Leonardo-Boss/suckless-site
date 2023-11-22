@@ -11,7 +11,7 @@ in dwm. This has helped at least in one case with pidgin.
 
 Download
 --------
-* [dwm-systray-6.4.diff](dwm-systray-6.4.diff) (24K) (20221221)
+* [dwm-systray-20230922-9f88553.diff](dwm-systray-20230922-9f88553.diff) (24K) (20230922)
 * [dwm-systray-6.3.diff](dwm-systray-6.3.diff) (25K)
 * [dwm-systray-20210418-67d76bd.diff](dwm-systray-20210418-67d76bd.diff) (24K) (20210418)
 * [dwm-systray-20200914-61bb8b2.diff](dwm-systray-20200914-61bb8b2.diff) (23k) (20200914)

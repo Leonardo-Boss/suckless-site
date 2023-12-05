@@ -1,4 +1,4 @@
-From 5ca6bef53a42cdfac1b95a90d8d0e6a5f8a81a99 Mon Sep 17 00:00:00 2001
+From cc85ae2c548660f7ccbcd244dbcfb52420160973 Mon Sep 17 00:00:00 2001
 From: Drew Marino <drewmarino25@gmail.com>
 Date: Sat, 2 Dec 2023 02:30:59 -0500
 Subject: [PATCH] Allow for per-status images instead of colors
@@ -6,8 +6,8 @@ Subject: [PATCH] Allow for per-status images instead of colors
 ---
  config.def.h |  3 +-
  config.mk    |  2 +-
- slock.c      | 81 +++++++++++++++++++++++++++++++++++++++++++++-------
- 3 files changed, 73 insertions(+), 13 deletions(-)
+ slock.c      | 78 ++++++++++++++++++++++++++++++++++++++++++++--------
+ 3 files changed, 70 insertions(+), 13 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
 index 9855e21..ee79df9 100644
@@ -37,7 +37,7 @@ index 514c236..db0641c 100644
  # flags
  CPPFLAGS = -DVERSION=\"${VERSION}\" -D_DEFAULT_SOURCE -DHAVE_SHADOW_H
 diff --git a/slock.c b/slock.c
-index b2f14e3..ce225a3 100644
+index b2f14e3..a0378df 100644
 --- a/slock.c
 +++ b/slock.c
 @@ -18,6 +18,7 @@
@@ -84,7 +84,7 @@ index b2f14e3..ce225a3 100644
  
  	if (dpy == NULL || screen < 0 || !(lock = malloc(sizeof(struct lock))))
  		return NULL;
-@@ -235,15 +242,51 @@ lockscreen(Display *dpy, struct xrandr *rr, int screen)
+@@ -235,15 +242,48 @@ lockscreen(Display *dpy, struct xrandr *rr, int screen)
  	lock->screen = screen;
  	lock->root = RootWindow(dpy, lock->screen);
  
@@ -106,8 +106,6 @@ index b2f14e3..ce225a3 100644
 +			                                DisplayWidth(dpy, lock->screen),
 +			                                DisplayHeight(dpy, lock->screen),
 +			                                DefaultDepth(dpy, lock->screen));
-+			if (images[i] == NULL)
-+				die("fuck my LIFE: %s\n", colorname[i]);
 +			imlib_context_set_image(images[i]);
 +			img_width = imlib_image_get_width();
 +			img_height = imlib_image_get_height();
@@ -123,7 +121,6 @@ index b2f14e3..ce225a3 100644
 +				                             monitors[j].y,
 +				                             monitors[j].width,
 +				                             monitors[j].height);
-+			imlib_context_set_image(image);
 +			imlib_context_set_drawable(lock->colors[i]);
 +			imlib_render_image_on_drawable(0, 0);
 +			imlib_free_image();
@@ -140,7 +137,7 @@ index b2f14e3..ce225a3 100644
  	lock->win = XCreateWindow(dpy, lock->root, 0, 0,
  	                          DisplayWidth(dpy, lock->screen),
  	                          DisplayHeight(dpy, lock->screen),
-@@ -313,7 +356,8 @@ main(int argc, char **argv) {
+@@ -313,7 +353,8 @@ main(int argc, char **argv) {
  	gid_t dgid;
  	const char *hash;
  	Display *dpy;
@@ -150,7 +147,7 @@ index b2f14e3..ce225a3 100644
  
  	ARGBEGIN {
  	case 'v':
-@@ -347,6 +391,14 @@ main(int argc, char **argv) {
+@@ -347,6 +388,14 @@ main(int argc, char **argv) {
  	if (!(dpy = XOpenDisplay(NULL)))
  		die("slock: cannot open display\n");
  
@@ -165,7 +162,7 @@ index b2f14e3..ce225a3 100644
  	/* drop privileges */
  	if (setgroups(0, NULL) < 0)
  		die("slock: setgroups: %s\n", strerror(errno));
-@@ -363,7 +415,7 @@ main(int argc, char **argv) {
+@@ -363,7 +412,7 @@ main(int argc, char **argv) {
  	if (!(locks = calloc(nscreens, sizeof(struct lock *))))
  		die("slock: out of memory\n");
  	for (nlocks = 0, s = 0; s < nscreens; s++) {
@@ -174,7 +171,7 @@ index b2f14e3..ce225a3 100644
  			nlocks++;
  		else
  			break;
-@@ -374,6 +426,13 @@ main(int argc, char **argv) {
+@@ -374,6 +423,13 @@ main(int argc, char **argv) {
  	if (nlocks != nscreens)
  		return 1;
  

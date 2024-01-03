@@ -1,7 +1,7 @@
 undercurl
 =========
 
-![](undercurl.png)
+![undercurl example](undercurl.png)
 
 Description
 -----------
@@ -18,12 +18,13 @@ file by editing the `UNDERCURL_STYLE` define.
 Notes
 -----
 These escape codes aren't standard, but they are supported by most other
-terminal emulators, as well as many terminal programs (Such as Vim).
+terminal emulators, as well as many terminal programs (Such as Vim and NeoVim).
 
 Download
 --------
+* [st-undercurl-0.9-20240103.diff](st-undercurl-0.9-20240103.diff)
 * [st-undercurl-0.8.4-20210822.diff](st-undercurl-0.8.4-20210822.diff)
 
 Authors
 -------
-* HexOctal - ([github.com/hexoctal](https://github.com/hexoctal)) <hex0octal@gmail.com>
+* vyun - ([github.com/vyuun](https://github.com/vyuun)) <hex0octal@gmail.com>

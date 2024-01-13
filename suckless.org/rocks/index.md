@@ -233,7 +233,6 @@ This covers most console-based programs and programs from
 * [md4c](https://github.com/mity/md4c) - markdown to html converter.  Fast,
   [CommonMark](https://commonmark.org/) compliant, offers extensions which can
   be switched on/off via cli args.
-* [blog-gen](https://git.dravenmonti.dev/blog-gen/about/) - output HTML logs from a directory, supports tagging
 
 ### Utilities / miscellaneous
 

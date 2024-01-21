@@ -272,6 +272,7 @@ This covers most console-based programs and programs from
 * [grabc](http://www.muquit.com/muquit/software/grabc/grabc.html) - Grab the color of some pixel in X11.
 * [keynav](http://www.semicomplete.com/projects/keynav/) - A new way for keyboard selection.
 * [wmutils](https://github.com/wmutils/core) - A set of utilities for managing windows. Can be used on their own or to augment a WM itself. Support for tiling present.
+* [wjt](https://github.com/ianremmler/wjt) - A slider widget for X.
 * [xbanish](https://github.com/jcs/xbanish) - Hide the cursor while typing.
 * [xclip](https://github.com/astrand/xclip) - A tool for controlling the X11 clipboard.
 * [xdotool](http://www.semicomplete.com/projects/xdotool/) - A tool for scripting X11 actions.

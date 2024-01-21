@@ -129,6 +129,7 @@ This covers most console-based programs and programs from
 * [irc.c from mpu](https://c9x.me/irc/) - A minimal curses IRC client.
 * [Irc](https://swtch.com/irc/) - IRC client for ACME.
 * [ircrc](http://plan9.bell-labs.com/sources/contrib/fgb/rc/ircrc) - An rc-based IRC client similar to ircc. Needs minor modification to run on UNIX.
+* [irssi](https://irssi.org/) - Text-mode IRC client.
 * [jj](https://github.com/aaronNGi/jj) - A rework of ii that offloads all the IRC protocol parsing to an awk script, permitting triggers.
 * [kirc](https://github.com/mcpcpc/kirc) - A tiny IRC client written in POSIX C99.
 * [quIRC](https://github.com/ec429/quIRC) - a lightweight console IRC client.

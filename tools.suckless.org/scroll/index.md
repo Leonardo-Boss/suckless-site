@@ -13,7 +13,7 @@ What is the state of scroll?
 ----------------------------
 
 The project is faced with some hard facts, that our original plan is not doable
-as we thought in the fist place:
+as we thought in the first place:
 
 1. [crtl]+[e] is used in emacs mode (default) on the shell to jump to the end
    of the line.  But, its also used so signal a scroll down mouse event from

@@ -15,9 +15,12 @@ possible without dirty hacks.
 Download
 --------
 * [slstatus-backlight-4bd78c9.diff](slstatus-backlight-4bd78c9.diff)
+Updated patch, with FreeBSD support:
+* [slstatus-backlight-20240127-f68f492.diff](slstatus-backlight-20240127-f68f492.diff)
 
 Authors
 -------
 * Tobias Tschinkowitz <he4d@posteo.de>
 * David Demelier <markand@malikania.fr>
 * drkhsh <me@drkhsh.at>
+* Son Phan Trung <phantrungson17@gmail.com> (FreeBSD support)

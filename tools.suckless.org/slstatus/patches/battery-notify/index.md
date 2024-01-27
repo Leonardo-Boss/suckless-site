@@ -15,8 +15,8 @@ Important
 
 Download
 --------
-* [slstatus-battery-notify-20240119-a9ebd00.diff](slstatus-battery-notify-20240119-a9ebd00.diff)
+* [slstatus-battery-notify-20240127-a56a0a5.diff](slstatus-battery-notify-20240127-a56a0a5.diff)
 
 Authors
 -------
-* keroles <krls97@proton.me>
+* keroles [github](https://github.com/keroles-ashraf-dev)

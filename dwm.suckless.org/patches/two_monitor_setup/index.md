@@ -19,7 +19,7 @@ otherwise, it will do nothing.
 
 Download
 --------
-* [dwm-twomonitorsetup-6.4.diff](dwm-twomonitorsetup-6.4.diff)
+* [dwm-twomonitorsetup-20240209-0b01a94.diff](dwm-twomonitorsetup-20240209-0b01a94.diff)
 
 Authors
 -------

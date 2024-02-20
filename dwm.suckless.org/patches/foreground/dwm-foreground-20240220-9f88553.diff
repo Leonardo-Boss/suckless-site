@@ -1,14 +1,14 @@
-From 601ad7a18345fbbcfe634143a0cced0de7d94dbe Mon Sep 17 00:00:00 2001
+From 507895940574e77386d53f81df541e3903bf1ba3 Mon Sep 17 00:00:00 2001
 From: espro1 <ericspero@icloud.com>
-Date: Tue, 20 Feb 2024 15:19:41 -0500
+Date: Tue, 20 Feb 2024 16:11:05 -0500
 Subject: [PATCH] Essentially a layout for a special class of floating windows.
  When a window is foregrounded, it is floated, resized, and moved to a
  predictable location
 
 ---
  config.def.h |  3 ++
- dwm.c        | 77 +++++++++++++++++++++++++++++++++++++++++++++++++++-
- 2 files changed, 79 insertions(+), 1 deletion(-)
+ dwm.c        | 82 +++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 2 files changed, 84 insertions(+), 1 deletion(-)
 
 diff --git a/config.def.h b/config.def.h
 index 9efa774..718e7c3 100644
@@ -32,7 +32,7 @@ index 9efa774..718e7c3 100644
  	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
  	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 diff --git a/dwm.c b/dwm.c
-index f1d86b2..cf6deb0 100644
+index f1d86b2..12b037d 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -92,9 +92,10 @@ struct Client {
@@ -150,7 +150,19 @@ index f1d86b2..cf6deb0 100644
  void
  togglefloating(const Arg *arg)
  {
-@@ -1783,6 +1852,12 @@ unmanage(Client *c, int destroyed)
+@@ -1732,6 +1801,11 @@ togglefloating(const Arg *arg)
+ 	if (selmon->sel->isfloating)
+ 		resize(selmon->sel, selmon->sel->x, selmon->sel->y,
+ 			selmon->sel->w, selmon->sel->h, 0);
++	if (selmon->sel->isforegrounded) {
++		selmon->sel->isforegrounded = 0;
++		detachforegrounded(selmon->sel);
++		arrangeforegrounded(selmon);
++	}
+ 	arrange(selmon);
+ }
+ 
+@@ -1783,6 +1857,12 @@ unmanage(Client *c, int destroyed)
  
  	detach(c);
  	detachstack(c);

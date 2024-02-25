@@ -39,6 +39,7 @@ Download
 * [st-externalpipe-20181016-3be4cf1.diff](st-externalpipe-20181016-3be4cf1.diff)
 * [st-externalpipe-0.8.2.diff](st-externalpipe-0.8.2.diff)
 * [st-externalpipe-0.8.4.diff](st-externalpipe-0.8.4.diff)
+* [st-externalpipe-0.8.5.diff](st-externalpipe-0.8.5.diff)
 
 When using the scrollback patch, you can apply this patch ontop in order to use
 externalpipe onto the entire terminal history:

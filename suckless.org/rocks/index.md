@@ -129,7 +129,6 @@ This covers most console-based programs and programs from
 * [irc.c from mpu](https://c9x.me/irc/) - A minimal curses IRC client.
 * [Irc](https://swtch.com/irc/) - IRC client for ACME.
 * [ircrc](http://plan9.bell-labs.com/sources/contrib/fgb/rc/ircrc) - An rc-based IRC client similar to ircc. Needs minor modification to run on UNIX.
-* [irssi](https://irssi.org/) - Text-mode IRC client.
 * [jj](https://github.com/aaronNGi/jj) - A rework of ii that offloads all the IRC protocol parsing to an awk script, permitting triggers.
 * [kirc](https://github.com/mcpcpc/kirc) - A tiny IRC client written in POSIX C99.
 * [quIRC](https://github.com/ec429/quIRC) - a lightweight console IRC client.
@@ -153,7 +152,6 @@ This covers most console-based programs and programs from
 
 * [bitlbee](https://www.bitlbee.org/main.php/news.r.html) - A program to translate IM protocols to IRC.
 * [CenterIM](https://www.centerim.org/index.php/Main_Page) - A centericq fork.
-* [irssi-xmpp](http://cybione.org/~irssi-xmpp/) - An irssi plugin to connect to the Jabber network.
 * [mcabber](http://mcabber.com/) - A console jabber client.
 * [profanity](https://profanity-im.github.io/) - A console XMPP client written in C. OMEMO/GPG/OTR supported.
 * [ysm](http://ysmv7.sourceforge.net/) - A console-based ICQ client.

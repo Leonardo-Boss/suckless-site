@@ -9,6 +9,14 @@ News
 
 [Atom feed](//suckless.org/atom.xml)
 
+2024-03-19
+----------
+
+* [dmenu 5.3](//tools.suckless.org/dmenu/) released: [download](//dl.suckless.org/tools/dmenu-5.3.tar.gz)
+* [dwm 6.5](//dwm.suckless.org) released: [download](//dl.suckless.org/dwm/dwm-6.5.tar.gz)
+* [st 0.9.1](//st.suckless.org/) released: [download](//dl.suckless.org/st/st-0.9.1.tar.gz)
+* [tabbed 0.8](//tools.suckless.org/tabbed) released: [download](//dl.suckless.org/tools/tabbed-0.8.tar.gz)
+
 2023-07-04
 ----------
 [slstatus 1.0](//tools.suckless.org/slstatus) released: [download](//dl.suckless.org/tools/slstatus-1.0.tar.gz)

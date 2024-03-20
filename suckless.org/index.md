@@ -34,7 +34,7 @@ Respect (more) the package manager and build system flags (CFLAGS, LDFLAGS, etc)
 * Ignore C1 control characters in UTF-8 mode.
 * Improvements to cell handling and wide characters.
 * Default config: decrease the default minlatency.
-* [https://git.suckless.org/st/log.html](Various other terminal fixes and compatibility improvements).
+* [Various other terminal fixes and compatibility improvements.](https://git.suckless.org/st/log.html)
 
 [tabbed](https://git.suckless.org/tabbed/log.html):
 * Fix: faulty zombie process reaping.

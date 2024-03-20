@@ -10,6 +10,7 @@ tool included with this patch.
 
 - [dwm-dynamicswallow-20210221-61bb8b2.diff](dwm-dynamicswallow-20210221-61bb8b2.diff)
 - [dwm-dynamicswallow-6.4.diff](dwm-dynamicswallow-6.4.diff)
+- [dwm-dynamicswallow-6.5.diff](dwm-dynamicswallow-6.5.diff)
 
 ## 1. Usage
 

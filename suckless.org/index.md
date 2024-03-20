@@ -9,9 +9,42 @@ News
 
 [Atom feed](//suckless.org/atom.xml)
 
+
+
+2024-03-20
+----------
+Below are some highlights of the changes for the recent releases of dmenu, dwm,
+st and tabbed, see the git logs for all details:
+
+General small Makefile improvements, rationale being: just be verbose and show
+what is done: do not abstract/hide details from the user/developer.
+Respect (more) the package manager and build system flags (CFLAGS, LDFLAGS, etc).
+
+[dwm](https://git.suckless.org/dwm/log.html):
+* Improvements to signal handling.
+* Fix: Avoid missing events when a keysym maps to multiple keycodes.
+
+[dmenu](https://git.suckless.org/dmenu/log.html):
+* Reduce memory usage for reading the lines.
+* Fix: X11 BadMatch error when embedding on some windows.
+
+[st](https://git.suckless.org/st/log.html):
+* Fix: bounds checks of dc.col.
+* Fix: buffer overflow when handling long composed input.
+* Ignore C1 control characters in UTF-8 mode.
+* Improvements to cell handling and wide characters.
+* Default config: decrease the default minlatency.
+* [https://git.suckless.org/st/log.html](Various other terminal fixes and compatibility improvements).
+
+[tabbed](https://git.suckless.org/tabbed/log.html):
+* Fix: faulty zombie process reaping.
+* Improvements to signal handling.
+* Improve compatibility with compiling on older systems such as Slackware 11.
+
+Thanks to all contributors who submitted patches.
+
 2024-03-19
 ----------
-
 * [dmenu 5.3](//tools.suckless.org/dmenu/) released: [download](//dl.suckless.org/tools/dmenu-5.3.tar.gz)
 * [dwm 6.5](//dwm.suckless.org) released: [download](//dl.suckless.org/dwm/dwm-6.5.tar.gz)
 * [st 0.9.1](//st.suckless.org/) released: [download](//dl.suckless.org/st/st-0.9.1.tar.gz)

@@ -1,9 +1,6 @@
 startpage.com
 =============
 
-Startpage is a nice searchengine, providing the same results as google, but
-hiding your identity in the anonymity set of all startpage users.
-
 No ads css
 ----------
 

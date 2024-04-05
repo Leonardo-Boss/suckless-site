@@ -10,6 +10,12 @@ News
 [Atom feed](//suckless.org/atom.xml)
 
 
+2024-04-05
+----------
+* [st 0.9.2](//st.suckless.org/) released: [download](//dl.suckless.org/st/st-0.9.2.tar.gz)
+
+This reverts a commit and a regression with cursor move with wide glyphs, for
+example with GNU readline.
 
 2024-03-20
 ----------

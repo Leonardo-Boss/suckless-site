@@ -1,14 +1,14 @@
-From c47ac6d407ccf5f36f59ff9281b33f96efbd6de9 Mon Sep 17 00:00:00 2001
+From d5b492049f48dc411b0dd7dc01a403304c20438d Mon Sep 17 00:00:00 2001
 From: Jishnu Sen <jishnu1@gmail.com>
-Date: Sun, 7 Apr 2024 21:45:32 -0700
+Date: Sun, 7 Apr 2024 22:54:46 -0700
 Subject: [PATCH] Highlight URLs with control and follow with click
 
 ---
  config.def.h | 11 +++++++
- st.c         | 88 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ st.c         | 89 ++++++++++++++++++++++++++++++++++++++++++++++++++++
  st.h         |  9 ++++++
  x.c          | 24 +++++++++++++-
- 4 files changed, 131 insertions(+), 1 deletion(-)
+ 4 files changed, 132 insertions(+), 1 deletion(-)
 
 diff --git a/config.def.h b/config.def.h
 index 91ab8ca..4961830 100644
@@ -30,10 +30,10 @@ index 91ab8ca..4961830 100644
 +	"0123456789-._~:/?#@!$&'*+,;=%";
 +char* urlprefixes[] = {"http://", "https://", NULL};
 diff --git a/st.c b/st.c
-index 51049ba..244a91a 100644
+index 51049ba..8f2156c 100644
 --- a/st.c
 +++ b/st.c
-@@ -643,6 +643,94 @@ getsel(void)
+@@ -643,6 +643,95 @@ getsel(void)
  	return str;
  }
  
@@ -110,6 +110,7 @@ index 51049ba..244a91a 100644
 +		}
 +	}
 +	if (url_start == -1) {
++		free(linestr);
 +		return;
 +	}
 +

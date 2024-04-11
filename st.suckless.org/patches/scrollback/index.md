@@ -15,6 +15,7 @@ Download
 Alternative implementation that uses a ring buffer for more
 efficient scrolling:
 
+* [st-scrollback-ringbuffer-0.9.2.diff](st-scrollback-ringbuffer-0.9.2.diff)
 * [st-scrollback-ringbuffer-0.8.5.diff](st-scrollback-ringbuffer-0.8.5.diff)
 
 Apply the following patch on top of the previous to allow column and row reflow.

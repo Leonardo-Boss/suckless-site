@@ -1,13 +1,21 @@
-From: Michal Cizek <cizek.michal@gmail.com>
-Date: Sat, 28 Oct 2023 16:46:42 -0400
-Subject: [PATCH] Patch that displays current date and time on the locked
- screen.
-
----
- config.mk |  2 +-
- slock.c   | 89 ++++++++++++++++++++++++++++++++++++++++++++++++++++---
- 2 files changed, 86 insertions(+), 5 deletions(-)
-
+diff --git a/config.def.h b/config.def.h
+index 9855e21..bc883ad 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -1,6 +1,11 @@
+-/* user and group to drop privileges to */
+-static const char *user  = "nobody";
++/* user and group to drop privileges to */ static const char *user  = "nobody";
+ static const char *group = "nogroup";
++/*Font settings for the time text*/
++static const float textsize=64.0;
++static const char* textfamily="serif";
++static const double textcolorred=255;
++static const double textcolorgreen=255;
++static const double textcolorblue=255;
+ 
+ static const char *colorname[NUMCOLS] = {
+ 	[INIT] =   "black",     /* after initialization */
 diff --git a/config.mk b/config.mk
 index 514c236..c42e301 100644
 --- a/config.mk
@@ -22,7 +30,7 @@ index 514c236..c42e301 100644
  # flags
  CPPFLAGS = -DVERSION=\"${VERSION}\" -D_DEFAULT_SOURCE -DHAVE_SHADOW_H
 diff --git a/slock.c b/slock.c
-index b2f14e3..03839bc 100644
+index b2f14e3..d370a00 100644
 --- a/slock.c
 +++ b/slock.c
 @@ -5,6 +5,7 @@
@@ -69,11 +77,11 @@ index b2f14e3..03839bc 100644
 +	int xpos,ypos;
 +	xpos=DisplayWidth(dpy, screen)/4;
 +	ypos=DisplayHeight(dpy, screen)/2;
-+	sprintf(tm,"%02d/%02d/%d %02d:%02d",time.tm_mday,time.tm_mon,time.tm_year+1900,time.tm_hour,time.tm_min);
++	sprintf(tm,"%02d/%02d/%d %02d:%02d",time.tm_mday,time.tm_mon + 1,time.tm_year+1900,time.tm_hour,time.tm_min);
 +	XClearWindow(dpy, win);
-+    cairo_set_source_rgb(cr, 256, 256, 256);
-+	cairo_select_font_face(cr, "serif", CAIRO_FONT_SLANT_NORMAL, CAIRO_FONT_WEIGHT_BOLD);
-+    cairo_set_font_size(cr, 64.0);
++    cairo_set_source_rgb(cr, textcolorred, textcolorgreen, textcolorblue);
++	cairo_select_font_face(cr, textfamily, CAIRO_FONT_SLANT_NORMAL, CAIRO_FONT_WEIGHT_BOLD);
++    cairo_set_font_size(cr, textsize);
 +	cairo_move_to(cr, xpos, ypos);
 +	cairo_show_text(cr, tm);
 +	cairo_surface_flush(sfc);
@@ -183,6 +191,3 @@ index b2f14e3..03839bc 100644
  
  	return 0;
  }
--- 
-2.34.1
-

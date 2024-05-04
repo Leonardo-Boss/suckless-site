@@ -11,6 +11,7 @@ Download
 * [st-scrollback-0.8.4.diff](st-scrollback-0.8.4.diff)
 * [st-scrollback-20201205-4ef0cbd.diff](st-scrollback-20201205-4ef0cbd.diff)
 * [st-scrollback-20210507-4536f46.diff](st-scrollback-20210507-4536f46.diff)
+* [st-scrollback-0.9.2.diff](st-scrollback-0.9.2.diff)
 
 Alternative implementation that uses a ring buffer for more
 efficient scrolling:
@@ -23,6 +24,7 @@ Apply the following patch on top of the previous to allow column and row reflow.
 * [st-scrollback-reflow-0.8.5.diff](st-scrollback-reflow-0.8.5.diff)
 * [st-scrollback-reflow-0.9.diff](st-scrollback-reflow-0.9.diff)
 * [st-scrollback-reflow-20230607-211964d.diff](st-scrollback-reflow-20230607-211964d.diff)
+* [st-scrollback-reflow-0.9.2.diff](st-scrollback-reflow-0.9.2.diff)
 
 Apply the following patch on top of the previous to allow scrolling
 using `Shift+MouseWheel`.

@@ -19,6 +19,11 @@ efficient scrolling:
 * [st-scrollback-ringbuffer-0.9.2.diff](st-scrollback-ringbuffer-0.9.2.diff)
 * [st-scrollback-ringbuffer-0.8.5.diff](st-scrollback-ringbuffer-0.8.5.diff)
 
+Apply the following patch on top of the previous to use float argument in
+kscrollup/kscrolldown.
+
+* [st-scrollback-float-0.9.2.diff](st-scrollback-float-0.9.2.diff)
+
 Apply the following patch on top of the previous to allow column and row reflow.
 
 * [st-scrollback-reflow-0.8.5.diff](st-scrollback-reflow-0.8.5.diff)

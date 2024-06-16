@@ -14,13 +14,18 @@ works globally.
 
 With `dmenu-center-20200111-8cd37e1.diff`, you can use _-c_ to center dmenu.
 
+With `dmenu-center-20240616-36c3d68.diff`, you can not only center dmenu
+but also adjust its height.
+
 Download
 --------
 * [dmenu-center-4.8.diff](dmenu-center-4.8.diff)
 * [dmenu-center-20200111-8cd37e1.diff](dmenu-center-20200111-8cd37e1.diff)
 * [dmenu-center-5.2.diff](dmenu-center-5.2.diff)
+* [dmenu-center-20240616-36c3d68.diff](dmenu-center-20240616-36c3d68.diff)
 
 Authors
 -------
 * Ed van Bruggen <edvb@uw.edu>
 * Nihal Jere <nihal@nihaljere.xyz> (20200111)
+* El Bachir Kassimi <bachiralfa@gmail.com> (20240616)

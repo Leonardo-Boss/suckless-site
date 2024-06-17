@@ -1,32 +1,26 @@
-fuzzyhighlight
-==============
+# fuzzyhighlight
 
-Description
------------
-This patch make it so that fuzzy matches gets highlighted and is therefore
-meant to be used together with the patch fuzzymatch.
+## Description
 
-To make this patch fully integrated with fuzzymatch and support 'case 
-insensitive' features the following line must be changed:
+Make dmenu highlight the fuzzy matching characters of items. Best used alongside
+the [fuzzymatch](https://tools.suckless.org/dmenu/patches/fuzzymatch/) patch.
 
-	if (*highlight == text[i]) {
+![Screenshot of fuzzyhighlight and fuzzymatch patches applied](fuzzyhighlight.png)
 
-into:
+## Notes
 
-	if (!fstrncmp(&(*highlight), &text[i], 1)) {
+- Supports case insensitive mode.
+- Works without fuzzy matching (as a more flexible / expensive alternative to
+  the [highlight](https://tools.suckless.org/dmenu/patches/highlight/) patch).
 
-[![Screenshot dmenu with the patch](fuzzyhighlight.png)](fuzzyhighlight.png)
+## Download
 
-Download
---------
-* [dmenu-fuzzyhighlight-4.9.diff](dmenu-fuzzyhighlight-4.9.diff)
+- [dmenu-fuzzyhighlight-4.9.diff](dmenu-fuzzyhighlight-4.9.diff)
+- [dmenu-fuzzyhighlight-caseinsensitive-4.9.diff](dmenu-fuzzyhighlight-caseinsensitive-4.9.diff)
+- [dmenu-fuzzyhighlight-5.3.diff](./dmenu-fuzzyhighlight-5.3.diff)
 
-This patch fixes the shift of highlighted symbols, it also supports case-insensitive 
-item matching behavior.
+## Authors
 
-* [dmenu-fuzzyhighlight-caseinsensitive-4.9.diff](dmenu-fuzzyhighlight-caseinsensitive-4.9.diff)
-
-Authors
--------
-* Chris Noxz - <chris@noxz.tech>
-* Oleh Kopeykin - <olehkopeykin@yandex.by> (case-insensitive)
+- Chris Noxz - <chris@noxz.tech>
+- Oleh Kopeykin - <olehkopeykin@yandex.by> (case-insensitive)
+- Justinas Grigas <dev@jstnas.com> (5.3)

@@ -242,8 +242,8 @@ This covers most console-based programs and programs from
 * [mrandr](https://gitlab.com/mhdy/mrandr) - Simple and lightweight monitor (display) profile manager written in POSIX shell.
 * [mtm](https://github.com/deadpixi/mtm) - Micro Terminal Multiplexer.
 * [nq](https://github.com/chneukirchen/nq) - UNIX command line queue utility.
-* [pv](https://www.ivarch.com/programs/pv.shtml) - tool for monitoring the progress of data through a pipeline.
 * [piscou](https://github.com/lucas-mior/piscou) - Simple file previewer written in C.
+* [pv](https://www.ivarch.com/programs/pv.shtml) - tool for monitoring the progress of data through a pipeline.
 * [smenu](https://github.com/p-gen/smenu) - A powerful and versatile CLI selection tool for interactive or scripting use.
 * [snore](https://github.com/bitsmanent/snore) - Sleep with feedback.
 * [yt-dlp](https://github.com/yt-dlp/yt-dlp) - youtube-dl fork, download videos from youtube.com or other video platforms.
@@ -271,8 +271,8 @@ This covers most console-based programs and programs from
 * [ffcast](https://github.com/lolilolicon/FFcast) - Simple screencasting.
 * [grabc](http://www.muquit.com/muquit/software/grabc/grabc.html) - Grab the color of some pixel in X11.
 * [keynav](http://www.semicomplete.com/projects/keynav/) - A new way for keyboard selection.
-* [wmutils](https://github.com/wmutils/core) - A set of utilities for managing windows. Can be used on their own or to augment a WM itself. Support for tiling present.
 * [wjt](https://github.com/ianremmler/wjt) - A slider widget for X.
+* [wmutils](https://github.com/wmutils/core) - A set of utilities for managing windows. Can be used on their own or to augment a WM itself. Support for tiling present.
 * [xbanish](https://github.com/jcs/xbanish) - Hide the cursor while typing.
 * [xclip](https://github.com/astrand/xclip) - A tool for controlling the X11 clipboard.
 * [xdotool](http://www.semicomplete.com/projects/xdotool/) - A tool for scripting X11 actions.

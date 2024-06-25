@@ -17,5 +17,5 @@ Download
 
 Author
 ------
-* [El Bachir](bachiralfa@gmail.com)
+* [El Bachir](mailto:bachiralfa@gmail.com)
 * [Shubham](https://github.com/shubham-cpp)

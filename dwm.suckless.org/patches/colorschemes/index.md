@@ -16,7 +16,7 @@ Default keybindings
 
 Download
 --------
-* [dwm-colorschemes-6.5.diff](dwm-colorschemes-6.5.diff) (2024-04-22)
+* [dwm-colorschemes-6.5.diff](dwm-colorschemes-6.5.diff) (2024-06-26)
 
 Authors
 -------

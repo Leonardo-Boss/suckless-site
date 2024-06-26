@@ -1,6 +1,6 @@
-From 3f7b5b2ebdbd43f562229085802a16e1b1a4ee22 Mon Sep 17 00:00:00 2001
+From 4a8fb76f746eec25b965f8615f1a0bf6bd63fc17 Mon Sep 17 00:00:00 2001
 From: Listeria monocytogenes <listeria@disroot.org>
-Date: Mon, 22 Apr 2024 14:28:01 -0300
+Date: Wed, 26 Jun 2024 11:49:20 -0300
 Subject: [PATCH] add setscheme() to cycle between colorschemes
 
 ---
@@ -42,7 +42,7 @@ index 9efa774..f87f707 100644
  	TAGKEYS(                        XK_2,                      1)
  	TAGKEYS(                        XK_3,                      2)
 diff --git a/dwm.c b/dwm.c
-index f1d86b2..53b1eaf 100644
+index f1d86b2..41b18a5 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -59,7 +59,7 @@
@@ -114,7 +114,7 @@ index f1d86b2..53b1eaf 100644
 -	scheme = ecalloc(LENGTH(colors), sizeof(Clr *));
 -	for (i = 0; i < LENGTH(colors); i++)
 -		scheme[i] = drw_scm_create(drw, colors[i], 3);
-+	schemes = ecalloc(LENGTH(colors), SchemeN * sizeof(Clr **));
++	schemes = ecalloc(LENGTH(colors), SchemeN * sizeof(Clr *));
 +	for (j = LENGTH(colors) - 1; j >= 0; j--) {
 +		scheme = &schemes[j * SchemeN];
 +		for (i = 0; i < SchemeN; i++)
@@ -124,5 +124,5 @@ index f1d86b2..53b1eaf 100644
  	updatebars();
  	updatestatus();
 -- 
-2.44.0
+2.45.2
 

@@ -39,6 +39,7 @@ using `Shift+MouseWheel`.
 * [st-scrollback-mouse-0.8.2.diff](st-scrollback-mouse-0.8.2.diff)
 * [st-scrollback-mouse-20191024-a2c479c.diff](st-scrollback-mouse-20191024-a2c479c.diff)
 * [st-scrollback-mouse-20220127-2c5edf2.diff](st-scrollback-mouse-20220127-2c5edf2.diff)
+* [st-scrollback-mouse-0.9.2.diff](st-scrollback-mouse-0.9.2.diff)
 
 Apply the following patch on top of the previous two to allow scrollback using
 mouse wheel only when not in `MODE_ALTSCREEN`. For example the content is being
@@ -55,6 +56,7 @@ modifier for scrolling is not needed anymore. **Note: patches before
 Apply the following patch on top of the first two to allow changing how fast the mouse scrolls.
 
 * [st-scrollback-mouse-increment-0.8.2.diff](st-scrollback-mouse-increment-0.8.2.diff)
+* [st-scrollback-mouse-increment-0.9.2.diff](st-scrollback-mouse-increment-0.9.2.diff)
 
 Notes
 -----

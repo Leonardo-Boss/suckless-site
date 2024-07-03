@@ -72,6 +72,9 @@ Download
 --------
 * [st-0.8.5-autocomplete-20220327-230120.diff](st-0.8.5-autocomplete-20220327-230120.diff)
 
+The use of `tmpnam' is dangerous, better use `mkstemp'
+* [st-autocomplete-20240703-6508693.diff](st-autocomplete-20240703-6508693.diff)
+
 Contribution
 ------------
 You can create issues and do pull requests on [this gitlab repo](https://gitlab.com/GasparVardanyan/st-autocomplete).
@@ -80,3 +83,4 @@ Authors
 -------
 * [Wojciech Siewierski](https://github.com/vifon)
 * [Gaspar Vardanyan](https://gitlab.com/GasparVardanyan)
+* [El Bachir](https://github.com/elbachir-one)

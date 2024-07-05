@@ -58,6 +58,10 @@ Apply the following patch on top of the first two to allow changing how fast the
 * [st-scrollback-mouse-increment-0.8.2.diff](st-scrollback-mouse-increment-0.8.2.diff)
 * [st-scrollback-mouse-increment-0.9.2.diff](st-scrollback-mouse-increment-0.9.2.diff)
 
+Apply the following patch on top of the first two to allow a `\e[ m` escape,
+marking the line to quickly scroll to with Control+{PageUp, PageDown}.
+* [st-scrollback-mark-0.9.2.diff](st-scrollback-mark-0.9.2.diff)
+
 Notes
 -----
 * Patches modify config.def.h, you need to add mkeys to your own config.h

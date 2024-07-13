@@ -24,7 +24,9 @@ due to said commit changing how stdin is read.
 Download
 --------
 * [dmenu-tsv-alt-20220919-fce06f4.diff](dmenu-tsv-alt-20220919-fce06f4.diff)
+* [dmenu-tsv-alt-5.3.diff](dmenu-tsv-alt-5.3.diff)
 
-Author
-------
+Authors
+-------
 * yosh
+* Max Schillinger - <maxschillinger@web.de> (5.3 version)

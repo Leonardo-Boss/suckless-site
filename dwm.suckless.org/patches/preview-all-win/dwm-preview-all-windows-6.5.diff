@@ -83,7 +83,7 @@ index 67c6b2b..bf30141 100644
 +    return;
 +  }
 +  Monitor *m = selmon;
-+  Client *c;
++  Client *c, *focus_c = NULL;
 +  unsigned int n;
 +  for (n = 0, c = m->clients; c; c = c->next, n++){
 +    /* If you hit actualfullscreen patch Unlock the notes below */
@@ -120,7 +120,8 @@ index 67c6b2b..bf30141 100644
 +              if (event.xbutton.window == c->pre.win){
 +                selmon->seltags ^= 1; /* toggle sel tagset */
 +                m->tagset[selmon->seltags] = c->tags;
-+                focus(c);
++                focus_c = c;
++                focus(NULL);
 +                /* If you hit awesomebar patch Unlock the notes below */
 +                // if (HIDDEN(c)){
 +                //   showwin(c);
@@ -154,6 +155,7 @@ index 67c6b2b..bf30141 100644
 +              }
 +  }
 +  arrange(m);
++  focus(focus_c);
 +}
 +
 +void setpreviewwindowsizepositions(unsigned int n, Monitor *m, unsigned int gappo, unsigned int gappi){

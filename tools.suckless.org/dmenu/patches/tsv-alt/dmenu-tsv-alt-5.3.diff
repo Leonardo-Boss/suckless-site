@@ -1,4 +1,4 @@
-From 89ff978d15ff6b58e21bf871f09ceab2bf813138 Mon Sep 17 00:00:00 2001
+From abc8bfeaaa5e62ce957d8a33ad1f5ca7c793513e Mon Sep 17 00:00:00 2001
 From: Max Schillinger <maxschillinger@web.de>
 Date: Sat, 13 Jul 2024 21:06:57 +0200
 Subject: [PATCH] tsv-alt patch for dmenu 5.3
@@ -6,8 +6,8 @@ Subject: [PATCH] tsv-alt patch for dmenu 5.3
 ---
  config.def.h |  5 +++++
  dmenu.1      |  6 +++++-
- dmenu.c      | 26 ++++++++++++++++++--------
- 3 files changed, 28 insertions(+), 9 deletions(-)
+ dmenu.c      | 21 ++++++++++++++-------
+ 3 files changed, 24 insertions(+), 8 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
 index 1edb647..bd0fcef 100644
@@ -47,7 +47,7 @@ index 323f93c..e767276 100644
  dmenu is completely controlled by the keyboard.  Items are selected using the
  arrow keys, page up, page down, home, and end.
 diff --git a/dmenu.c b/dmenu.c
-index 40f93e0..04bb085 100644
+index 40f93e0..bee6b19 100644
 --- a/dmenu.c
 +++ b/dmenu.c
 @@ -29,6 +29,7 @@ enum { SchemeNorm, SchemeSel, SchemeOut, SchemeLast }; /* color schemes */
@@ -85,21 +85,17 @@ index 40f93e0..04bb085 100644
  	size_t i, itemsiz = 0, linesiz = 0;
  	ssize_t len;
  
-@@ -561,14 +562,21 @@ readstdin(void)
+@@ -561,14 +562,18 @@ readstdin(void)
  		}
  		if (line[len - 1] == '\n')
  			line[len - 1] = '\0';
 -		if (!(items[i].text = strdup(line)))
 +		if (!(items[i].text = items[i].otext = strdup(line)))
  			die("strdup:");
--
-+		if ((items[i].otext = strchr(items[i].otext, '\t'))) {
-+			*items[i].otext++ = '\0';
-+			if (revtab) {
-+				tmp = items[i].text;
-+				items[i].text = items[i].otext;
-+				items[i].otext = tmp;
-+			}
+ 
++		if ((tmp = strchr(items[i].text, '\t'))) {
++			*tmp++ = '\0';
++			revtab ? (items[i].text = tmp) : (items[i].otext = tmp);
 +		}
  		items[i].out = 0;
  	}
@@ -110,7 +106,7 @@ index 40f93e0..04bb085 100644
  	lines = MIN(lines, i);
  }
  
-@@ -715,7 +723,7 @@ setup(void)
+@@ -715,7 +720,7 @@ setup(void)
  static void
  usage(void)
  {
@@ -119,7 +115,7 @@ index 40f93e0..04bb085 100644
  	    "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]");
  }
  
-@@ -737,7 +745,9 @@ main(int argc, char *argv[])
+@@ -737,7 +742,9 @@ main(int argc, char *argv[])
  		else if (!strcmp(argv[i], "-i")) { /* case-insensitive item matching */
  			fstrncmp = strncasecmp;
  			fstrstr = cistrstr;

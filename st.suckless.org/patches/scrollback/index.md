@@ -7,17 +7,17 @@ Scroll back through terminal output using Shift+{PageUp, PageDown}.
 
 Download
 --------
-* [st-scrollback-0.8.5.diff](st-scrollback-0.8.5.diff)
 * [st-scrollback-0.8.4.diff](st-scrollback-0.8.4.diff)
 * [st-scrollback-20201205-4ef0cbd.diff](st-scrollback-20201205-4ef0cbd.diff)
 * [st-scrollback-20210507-4536f46.diff](st-scrollback-20210507-4536f46.diff)
+* [st-scrollback-0.8.5.diff](st-scrollback-0.8.5.diff)
 * [st-scrollback-0.9.2.diff](st-scrollback-0.9.2.diff)
 
 Alternative implementation that uses a ring buffer for more
 efficient scrolling:
 
-* [st-scrollback-ringbuffer-0.9.2.diff](st-scrollback-ringbuffer-0.9.2.diff)
 * [st-scrollback-ringbuffer-0.8.5.diff](st-scrollback-ringbuffer-0.8.5.diff)
+* [st-scrollback-ringbuffer-0.9.2.diff](st-scrollback-ringbuffer-0.9.2.diff)
 
 Apply the following patch on top of the previous to use float argument in
 kscrollup/kscrolldown.

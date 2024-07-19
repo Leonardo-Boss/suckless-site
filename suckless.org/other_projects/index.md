@@ -13,7 +13,7 @@ There are several other projects which are inspired by the spirit of suckless.
 * [dvtm](http://www.brain-dump.org/projects/dvtm/) - screen-like dwm (curses)
 * [dzen](https://github.com/robm/dzen) - display status/notification/menu windows
 * [gendoc](https://bztsrc.gitlab.io/gendoc) - a suckless documentation generation alternative to Shpinx and ReadtheDocs
-* [honden](https://github.com/joodan-van-github/honden) - flashcard system built on top of oboeta
+* [honden](https://github.com/stefan-peng/honden) - flashcard system built on top of oboeta
 * [ired](https://github.com/radare/ired) - minimalistic hexadecimal editor inspired in radare
 * [kelp](http://kelp.sf.net) - source code annotation framework
 * [librarian](https://github.com/maandree/librarian) - less sucky alternative to pkg-config
@@ -21,9 +21,9 @@ There are several other projects which are inspired by the spirit of suckless.
 * [micy](https://github.com/radare/toys/tree/master/micy) - minimalistic mouse handler (depends on driver)
 * [mosaic](https://dreamless.digital/src/mosaic) - UNIX style music tools
 * [nt](https://github.com/ashish-yadav11/nt) - 'at' wrapper for setting one time notification alarms.
-* [oboeta](https://github.com/joodan-van-github/oboeta) - minimalistic plain-text flashcard system
+* [oboeta](https://github.com/stefan-peng/oboeta) - minimalistic plain-text flashcard system
 * [pcw](https://bitbucket.org/emg/pcw) - popup chat windows (ii front end)
-* [ptar](https://github.com/joodan-van-github/ptar) - plain-text archives: like tar, but better
+* [ptar](https://github.com/lpsantil/ptar) - plain-text archives: like tar, but better
 * [sat](https://github.com/maandree/sat) - simple incompatible alternative to at
 * [sdhcp](https://git.2f30.org/sdhcp) - tiny dhcp client
 * [sj](https://github.com/younix/sj) - simple jabber: modular FIFO-based XMPP client

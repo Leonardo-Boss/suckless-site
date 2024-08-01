@@ -39,5 +39,4 @@ Download
 
 Authors
 -------
-* Lee Fallat (lf94)<ircsurfer33@gmail.com>
 * [Eric Pruitt](https://github.com/ericpruitt/)

@@ -12,7 +12,9 @@ When the delimiter character is not present, the behavior is the same as w/o thi
 Download
 --------
 * [dmenu-tmenu-5.2.diff](dmenu-tmenu-5.2.diff)
+* [dmenu-tmenu-20240811-475d809.diff](dmenu-tmenu-20240811-475d809.diff)
 
 Author
 ------
 * Tim Keller <tjk@tjkeller.xyz>
+* Robert Bilski - <robert at rbilski com>

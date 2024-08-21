@@ -7,7 +7,7 @@ The **Centered Tags** patch for DWM centers the tag area, positioning it symmetr
 
 Screenshot
 ----------
-![Centered Tags](centered_tags.png)
+![Centered Tags](centered-tags.png)
 
 Download
 --------

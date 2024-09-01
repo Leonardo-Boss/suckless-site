@@ -16,6 +16,7 @@ Download
 --------
 * [dwm-movecenter-6.2.diff](dwm-movecenter-6.2.diff) - 2021-10-31
 * [dwm-movecenter-6.4.diff](dwm-movecenter-6.4.diff) - 2024-02-10
+* [dwm-movecenter-6.5.diff](dwm-movecenter-6.5.diff) - 2024-09-02
 
 Author
 ------

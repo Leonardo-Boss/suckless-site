@@ -1,10 +1,10 @@
 Proxy Config
-===========
+============
 
 Description
 -----------
 
-This patch allows you to specify proxy settings in your config.h file.
+This patch allows you to specify proxy settings in your `config.h` file.
 
 It supports the three proxy modes in Webkit:
 
@@ -17,11 +17,9 @@ Usage
 
 Once the patch is applied, modify the ProxyMode, ProxyUrl and ProxyIgnoreHosts variables as required. For example, if using a custom proxy server then the variables might be set as:
 
-``
-[ProxyIgnoreHosts]    =       { { .v = (char *[]){ "localhost","local.lan",NULL } }, },
-[ProxyMode]           =       { { .i = CustomProxy }, },
-[ProxyUrl]            =       { { .v = (char *) "http://proxy.local.lan:8080/"}, },
-``
+    [ProxyIgnoreHosts]    =       { { .v = (char *[]){ "localhost","local.lan",NULL } }, },
+    [ProxyMode]           =       { { .i = CustomProxy }, },
+    [ProxyUrl]            =       { { .v = (char *) "http://proxy.local.lan:8080/"}, },
 
 The default value is SystemProxy, which preserves the default behavior of surf.
 

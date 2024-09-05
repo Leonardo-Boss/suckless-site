@@ -1,20 +1,8 @@
-From d0ba61a0e75cfc7b8e6d70d6f323d53295e628ad Mon Sep 17 00:00:00 2001
-From: weirdling <maddy@clappe.rs>
-Date: Mon, 3 May 2021 14:46:24 +0100
-Subject: [PATCH] Implement proxy settings
-
----
- config.def.h |  3 +++
- surf.c       | 32 ++++++++++++++++++++++++++++++++
- 2 files changed, 35 insertions(+)
-
-diff --git a/config.def.h b/config.def.h
-index be168ab..46d164e 100644
---- a/config.def.h
-+++ b/config.def.h
-@@ -43,6 +43,9 @@ static Parameter defconfig[ParameterLast] = {
+--- config.def.h.orig	2024-09-05 06:51:02 UTC
++++ config.def.h
+@@ -36,6 +36,9 @@ static Parameter defconfig[ParameterLast] = {
+ 	[LoadImages]          =       { { .i = 1 },     },
  	[MediaManualPlay]     =       { { .i = 1 },     },
- 	[Plugins]             =       { { .i = 1 },     },
  	[PreferredLanguages]  =       { { .v = (char *[]){ NULL } }, },
 +	[ProxyIgnoreHosts]    =       { { .v = (char *[]){ NULL } }, },
 +	[ProxyMode]           =       { { .i = SystemProxy }, },
@@ -22,10 +10,8 @@ index be168ab..46d164e 100644
  	[RunInFullscreen]     =       { { .i = 0 },     },
  	[ScrollBars]          =       { { .i = 1 },     },
  	[ShowIndicators]      =       { { .i = 1 },     },
-diff --git a/surf.c b/surf.c
-index ac832ff..5c74560 100644
---- a/surf.c
-+++ b/surf.c
+--- surf.c.orig	2024-09-05 06:51:09 UTC
++++ surf.c
 @@ -50,6 +50,12 @@ enum {
  	OnAny   = OnDoc | OnLink | OnImg | OnMedia | OnEdit | OnBar | OnSel,
  };
@@ -33,23 +19,23 @@ index ac832ff..5c74560 100644
 +enum {
 +	CustomProxy = WEBKIT_NETWORK_PROXY_MODE_CUSTOM,
 +	SystemProxy = WEBKIT_NETWORK_PROXY_MODE_DEFAULT,
-+	NoProxy		= WEBKIT_NETWORK_PROXY_MODE_NO_PROXY,
++	NoProxy   = WEBKIT_NETWORK_PROXY_MODE_NO_PROXY,
 +};
 +
  typedef enum {
- 	AcceleratedCanvas,
  	AccessMicrophone,
-@@ -73,6 +79,9 @@ typedef enum {
+ 	AccessWebcam,
+@@ -72,6 +78,9 @@ typedef enum {
  	LoadImages,
  	MediaManualPlay,
- 	Plugins,
+ 	PreferredLanguages,
 +	ProxyIgnoreHosts,
 +	ProxyMode,
 +	ProxyUrl,
- 	PreferredLanguages,
  	RunInFullscreen,
  	ScrollBars,
-@@ -1111,6 +1120,7 @@ newview(Client *c, WebKitWebView *rv)
+ 	ShowIndicators,
+@@ -1099,6 +1108,7 @@ newview(Client *c, WebKitWebView *rv)
  	WebKitWebContext *context;
  	WebKitCookieManager *cookiemanager;
  	WebKitUserContentManager *contentmanager;
@@ -57,7 +43,7 @@ index ac832ff..5c74560 100644
  
  	/* Webview */
  	if (rv) {
-@@ -1171,6 +1181,28 @@ newview(Client *c, WebKitWebView *rv)
+@@ -1157,6 +1167,28 @@ newview(Client *c, WebKitWebView *rv)
  		webkit_web_context_set_tls_errors_policy(context,
  		    curconfig[StrictTLS].val.i ? WEBKIT_TLS_ERRORS_POLICY_FAIL :
  		    WEBKIT_TLS_ERRORS_POLICY_IGNORE);
@@ -86,6 +72,3 @@ index ac832ff..5c74560 100644
  		/* disk cache */
  		webkit_web_context_set_cache_model(context,
  		    curconfig[DiskCache].val.i ? WEBKIT_CACHE_MODEL_WEB_BROWSER :
--- 
-2.31.1
-

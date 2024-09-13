@@ -1,12 +1,12 @@
-From 08c9d252bb855b5a77b9bbcd29b31b71219d0e72 Mon Sep 17 00:00:00 2001
+From 7ec52e9f292fa50fae646d89302a3aa0c326b83e Mon Sep 17 00:00:00 2001
 From: sewn <sewn@disroot.org>
-Date: Thu, 2 May 2024 15:53:30 +0300
+Date: Fri, 13 Sep 2024 11:51:02 +0300
 Subject: [PATCH] implement signals & intervals
 
 ---
  config.def.h |  11 ++++--
- slstatus.c   | 110 +++++++++++++++++++++++++++++++++------------------
- 2 files changed, 78 insertions(+), 43 deletions(-)
+ slstatus.c   | 109 +++++++++++++++++++++++++++++++++------------------
+ 2 files changed, 77 insertions(+), 43 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
 index d805331..7fbd164 100644
@@ -36,7 +36,7 @@ index d805331..7fbd164 100644
 +/* maximum output string length */
 +#define MAXLEN CMDLEN * LEN(args)
 diff --git a/slstatus.c b/slstatus.c
-index fd31313..2c953cc 100644
+index fd31313..41ef7a9 100644
 --- a/slstatus.c
 +++ b/slstatus.c
 @@ -15,20 +15,19 @@ struct arg {
@@ -65,7 +65,7 @@ index fd31313..2c953cc 100644
  
  static void
  difftimespec(struct timespec *res, struct timespec *a, struct timespec *b)
-@@ -44,17 +43,67 @@ usage(void)
+@@ -44,17 +43,68 @@ usage(void)
  	die("usage: %s [-v] [-s] [-1]", argv0);
  }
  
@@ -78,8 +78,9 @@ index fd31313..2c953cc 100644
 +	const char *res;
 +
 +	for (i = 0; i < LEN(args); i++) {
-+		if (!(((args[i].interval > 0 && it > 0 && !(it % args[i].interval)) && upsig < 0) ||
-+		     (upsig > -1 && args[i].signal == upsig) || (it == -1 && upsig == -1)))
++		if (!((args[i].interval > 0 && !(it % args[i].interval)) ||
++		     (!it || (args[i].signal > -1 && upsig == args[i].signal)) ||
++		     (it < 0 && upsig < 0)))
 +			continue;
 +
 +		update = 1;
@@ -138,7 +139,7 @@ index fd31313..2c953cc 100644
  	ARGBEGIN {
  	case 'v':
  		die("slstatus-"VERSION);
-@@ -72,41 +121,23 @@ main(int argc, char *argv[])
+@@ -72,11 +122,12 @@ main(int argc, char *argv[])
  		usage();
  
  	memset(&act, 0, sizeof(act));
@@ -153,10 +154,7 @@ index fd31313..2c953cc 100644
  
  	if (!sflag && !(dpy = XOpenDisplay(NULL)))
  		die("XOpenDisplay: Failed to open display");
- 
-+	printstatus(-1, -1);
-+
- 	do {
+@@ -85,28 +136,7 @@ main(int argc, char *argv[])
  		if (clock_gettime(CLOCK_MONOTONIC, &start) < 0)
  			die("clock_gettime:");
  
@@ -186,7 +184,7 @@ index fd31313..2c953cc 100644
  
  		if (!done) {
  			if (clock_gettime(CLOCK_MONOTONIC, &current) < 0)
-@@ -117,10 +148,11 @@ main(int argc, char *argv[])
+@@ -117,10 +147,11 @@ main(int argc, char *argv[])
  			intspec.tv_nsec = (interval % 1000) * 1E6;
  			difftimespec(&wait, &intspec, &diff);
  
@@ -203,5 +201,5 @@ index fd31313..2c953cc 100644
  	} while (!done);
  
 -- 
-2.44.0
+2.46.0
 

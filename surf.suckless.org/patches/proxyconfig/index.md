@@ -33,9 +33,10 @@ To apply this patch to the `www/surf` port on FreeBSD, create the `files` direct
 Download
 --------
 
-* [patch-proxyconfig-20240905.diff](patch-proxyconfig-20240905.diff)
+* [surf-proxyconfig-20240905-9ef79b.diff](surf-proxyconfig-20240905-9ef79b.diff)
 
 Reference
 ---------
 
-* [https://webkitgtk.org/reference/webkit2gtk/2.35.1/WebKitNetworkProxySettings.html](Webkit Network Proxy Settings Reference)
+* [Webkit Network Proxy Settings Reference](https://webkitgtk.org/reference/webkit2gtk/2.35.1/WebKitNetworkProxySettings.html)
+

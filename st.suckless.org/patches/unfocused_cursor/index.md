@@ -10,4 +10,4 @@ By default, when an st window is unfocused, the cursor appears as an outlined re
 
 ## Author
 
-* Endiexz [endiexz.top](endiexz.top)
+* Endiexz <http://endiexz.top/>

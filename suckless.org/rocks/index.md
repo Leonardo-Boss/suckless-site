@@ -233,6 +233,7 @@ This covers most console-based programs and programs from
 * [md4c](https://github.com/mity/md4c) - markdown to html converter.  Fast,
   [CommonMark](https://commonmark.org/) compliant, offers extensions which can
   be switched on/off via cli args.
+* [wak](https://github.com/raygard/wak) - A small, POSIX compliant awk implementation.
 
 ### Utilities / miscellaneous
 

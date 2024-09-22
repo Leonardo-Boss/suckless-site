@@ -1,12 +1,12 @@
-From 5096afab5ccc582ba8c25f795e44a5e4c4761925 Mon Sep 17 00:00:00 2001
+From c282f86559f3c7858e34888c1fa0204c22ede89c Mon Sep 17 00:00:00 2001
 From: elbachir-one <bachiralfa@gmail.com>
-Date: Thu, 19 Sep 2024 05:28:42 +0100
-Subject: [PATCH] Automatically switch to monocle mode after opening N window
+Date: Sat, 21 Sep 2024 22:59:53 +0100
+Subject: [PATCH] Allowing manual switch of monocle mode.
 
 ---
- config.def.h |  7 +++---
- dwm.c        | 62 ++++++++++++++++++++++++++++++++++++++--------------
- 2 files changed, 49 insertions(+), 20 deletions(-)
+ config.def.h |  7 ++---
+ dwm.c        | 72 +++++++++++++++++++++++++++++++++++++++-------------
+ 2 files changed, 59 insertions(+), 20 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
 index 9efa774..32fafc9 100644
@@ -42,10 +42,18 @@ index 9efa774..32fafc9 100644
  	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
  	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 diff --git a/dwm.c b/dwm.c
-index 67c6b2b..f8add6d 100644
+index 67c6b2b..9561896 100644
 --- a/dwm.c
 +++ b/dwm.c
-@@ -227,6 +227,7 @@ static void updatetitle(Client *c);
+@@ -130,6 +130,7 @@ struct Monitor {
+ 	Monitor *next;
+ 	Window barwin;
+ 	const Layout *lt[2];
++	int manualswitch;
+ };
+ 
+ typedef struct {
+@@ -227,6 +228,7 @@ static void updatetitle(Client *c);
  static void updatewindowtype(Client *c);
  static void updatewmhints(Client *c);
  static void view(const Arg *arg);
@@ -53,7 +61,7 @@ index 67c6b2b..f8add6d 100644
  static Client *wintoclient(Window w);
  static Monitor *wintomon(Window w);
  static int xerror(Display *dpy, XErrorEvent *ee);
-@@ -382,15 +383,25 @@ applysizehints(Client *c, int *x, int *y, int *w, int *h, int interact)
+@@ -382,15 +384,31 @@ applysizehints(Client *c, int *x, int *y, int *w, int *h, int interact)
  void
  arrange(Monitor *m)
  {
@@ -74,11 +82,17 @@ index 67c6b2b..f8add6d 100644
 +	for (Monitor *mon = (m ? m : mons); mon; mon = (m ? NULL : mon->next)) {
 +		unsigned int n = visibleclientcount(mon);
 +
-+		if (n >= monoclemode && mon->lt[mon->sellt]->arrange != monocle)
-+			setlayout(&(Arg) {.v = &layouts[1]});
++		if (!mon->manualswitch) {
++			if (n >= monoclemode && mon->lt[mon->sellt]->arrange != monocle) {
++				setlayout(&(Arg) {.v = &layouts[1]});
++			} else if (n < monoclemode && mon->lt[mon->sellt]->arrange == monocle) {
++				setlayout(&(Arg) {.v = &layouts[0]});
++			}
++		}
 +
-+		if (n < monoclemode && mon->lt[mon->sellt]->arrange == monocle)
-+			setlayout(&(Arg) {.v = &layouts[0]});
++		if (mon->manualswitch && (n < monoclemode || n >= monoclemode)) {
++			mon->manualswitch = 0;
++		}
 +
 +		arrangemon(mon);
 +		if (!m)
@@ -87,7 +101,7 @@ index 67c6b2b..f8add6d 100644
  }
  
  void
-@@ -1510,15 +1521,19 @@ setfullscreen(Client *c, int fullscreen)
+@@ -1510,15 +1528,22 @@ setfullscreen(Client *c, int fullscreen)
  void
  setlayout(const Arg *arg)
  {
@@ -108,6 +122,9 @@ index 67c6b2b..f8add6d 100644
 +		selmon->lt[selmon->sellt] = newlayout;
 +		strncpy(selmon->ltsymbol, selmon->lt[selmon->sellt]->symbol, sizeof(selmon->ltsymbol));
 +		selmon->ltsymbol[sizeof(selmon->ltsymbol) - 1] = '\0';
++
++		selmon->manualswitch = 1;
++
 +		if (selmon->sel)
 +			arrange(selmon);
 +		else
@@ -116,7 +133,7 @@ index 67c6b2b..f8add6d 100644
  }
  
  /* arg > 1.0 will set mfact absolutely */
-@@ -2062,6 +2077,19 @@ view(const Arg *arg)
+@@ -2062,6 +2087,19 @@ view(const Arg *arg)
  	arrange(selmon);
  }
  

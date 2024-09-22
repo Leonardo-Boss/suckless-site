@@ -14,7 +14,7 @@ This patch is inspired by a Reddit post [this post](https://www.reddit.com/r/suc
 
 Download
 --------
-* [dwm-autoswitch-20240919-5096afab.diff](dwm-autoswitch-20240919-5096afab.diff) (2024-09-19)
+* [dwm-autoswitch-20240921-c282f865.diff](dwm-autoswitch-20240921-c282f865.diff) (2024-09-21)
 
 Author
 ------

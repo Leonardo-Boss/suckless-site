@@ -10,9 +10,11 @@ pressing `MODKEY+s` again.
 
 Download
 --------
-* [dwm-sticky-6.4.diff](dwm-sticky-6.4.diff)
-* [dwm-sticky-2022-12-05-d47ba0b.diff](dwm-sticky-2022-12-05-d47ba0b.diff)
+* [dwm-sticky-6.5.diff](dwm-sticky-6.5.diff)
+* [dwm-sticky-20240927-60f7034.diff](dwm-sticky-20240927-60f7034.diff)
 
 Author
 ------
 * Ryan Roden-Corrent <ryan@rcorre.net>
+* [El Bachir](mailto:bachiralfa@gmail.com)
+

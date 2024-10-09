@@ -26,6 +26,8 @@ status monitors.
 * Associate each section with a signal number in the range of 1-31.
 * When setting the status text, print each section's respective signal number
   as a raw byte before its text.
+* With the 20241009 patch, printing the raw byte again at the end of block
+	output will end the clickable region.
 * Create a signal handler:
 
 	void sighandler(int signum, siginfo_t *si, void *ucontext)
@@ -59,7 +61,7 @@ For example, with `statuscmds` defined as such:
 
 And root name set like this:
 
-	xsetroot -name "$(printf '\x01Volume |\x02 CPU |\x03 Battery')"
+	xsetroot -name "$(printf '\x01 Volume \x01|\x02 CPU \x02|\x03 Battery\x03')"
 
 Clicking on 'Volume |' would run `volume`, clicking on ' CPU |'
 would run `cpu` and clicking on ' Battery' would run `battery`.
@@ -75,6 +77,8 @@ A script run from dwm or dwmblocks with this patch might look like this:
 		3) st -e htop ;;
 	esac
 
+	printf '\x01Click Me!\x01'
+
 Notes
 -----
 The signal version is not compatible with OpenBSD since it relies on `sigqueue`.
@@ -88,6 +92,7 @@ Download
 --------
 ### dwm patches
 * [dwm-statuscmd-20210405-67d76bd.diff](dwm-statuscmd-20210405-67d76bd.diff)
+* [dwm-statuscmd-20241009-8933ebc.diff](./dwm-statuscmd-20241009-8933ebc.diff)
 * [dwm-statuscmd-nosignal-20210402-67d76bd.diff](dwm-statuscmd-nosignal-20210402-67d76bd.diff)
 
 If using [status2d](https://dwm.suckless.org/patches/status2d/), use these patches instead of the
@@ -103,3 +108,4 @@ above ones on top of a build already patched with status2d:
 Author
 ------
 * Daniel Bylinka - <daniel.bylinka@gmail.com>
+* Justinas Grigas - <dev@jstnas.com> (20241009)

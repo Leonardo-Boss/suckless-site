@@ -19,6 +19,14 @@ This patch embeds systray patch.
 * [dwm-status2d-systray-6.3.diff](dwm-status2d-systray-6.3.diff)
 * [dwm-status2d-systray-6.4.diff](dwm-status2d-systray-6.4.diff)
 
+This patch embeds barpadding patch.
+
+* [dwm-status2d-barpadding-20241018-44e9799.diff](dwm-status2d-barpadding-20241018-44e9799.diff)
+
+This patch embeds systray and barpadding patches.
+
+* [dwm-status2d-barpadding-systray-20241014-b663875.diff](dwm-status2d-barpadding-systray-20241014-b663875.diff)
+
 Use this patch if you want to include the extrabar patch
 
 * [dwm-status2d-extrabar-6.2.diff](dwm-status2d-extrabar-6.2.diff)
@@ -98,6 +106,7 @@ Authors
 * [sipi](https://github.com/sipi)
 * lhark - <lhark@ntymail.com> (6.2 port, ^b^ command)
 * [tdu](https://github.com/tdukv) (xrdb colors, ^w^, ^v^, ^t^ commands)
+* [El Bachir](https://github.com/elbachir-one) (barpadding+systray)
 
 Repo
 ----

@@ -22,6 +22,10 @@ is appreciated by the entire suckless community.
 Following people have donated to the suckless.org project certain amounts of
 money, which have been used for the dedicated server rent in the past:
 
+* D. Roio donated **31 EUR**
+* Sven Franke donated **184 EUR**
+* J.G. van der Teems donated **20 EUR**
+* Nathan Klindworth donated **4 EUR**
 * Martín Olivera Hernandez donated **1.76 EUR**
 * Ian Mason doanted **870 EUR**
 * Silvan Jegen donated **475 EUR**
@@ -49,7 +53,6 @@ money, which have been used for the dedicated server rent in the past:
 * Arnaud Gaydamour donated **50 EUR**
 * Kimi Kasper Koivula donated **5 EUR**
 * Robi Novak donated **35 EUR**
-* Sven Franke donated **104 EUR**
 * Paul Erickson donated **50 EUR**
 * Eric Holzbach donated **100 EUR**
 * David Carey donated **8 EUR**

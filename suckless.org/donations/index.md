@@ -23,6 +23,17 @@ Following people have donated to the suckless.org project certain amounts of
 money, which have been used for the dedicated server rent in the past:
 
 * Macrocosm LLC donated **5.000 EUR**
+* Rajeev Ranjan donated **2.15 EUR**
+* 友紀 中村donated **32 EUR**
+* Luke PJ donated **21 EUR**
+* Arnaud Gaydamour donated **50 EUR**
+* Kimi Kasper Koivula donated **5 EUR**
+* Robi Novak donated **35 EUR**
+* Sven Franke donated **104 EUR**
+* Paul Erickson donated **50 EUR**
+* Eric Holzbach donated **100 EUR**
+* David Carey donated **8 EUR**
+* Rizqi Nur Assyaufi donated **2.68 EUR**
 * Benedikt Brenner donated **775 EUR**
 * Jonas Schambeck donated **30 EUR**
 * Lennart Emmerich donated **100 EUR**
@@ -48,9 +59,7 @@ money, which have been used for the dedicated server rent in the past:
 * 旸 李 donated **42,26 EUR**
 * André Desgualdo Pereira donated **7.61 EUR**
 * 友紀 中村 donated **23.43 EUR**
-* Rizqi Nur Assyaufi donated **0.87 EUR**
 * Farzin Firouzi donated **15 EUR**
-* Luke PJ donated **9.40 EUR**
 * Andrej Nabergoj donated **20 EUR**
 * Marek Pilarcik donated **30 EUR**
 * Dominik Schreilechner donated **100 EUR**
@@ -67,7 +76,6 @@ money, which have been used for the dedicated server rent in the past:
 * Niall Cushnahan donated **12.84 EUR**
 * Alexander Courtis donated **500 EUR**
 * Joel Hewitt donated **22.22 EUR**
-* Sven Franke donated **50 EUR**
 * Yoann le Touche donated **55 EUR**
 * Jordi Pla donated **1 EUR**
 * nxt donated **15 EUR**

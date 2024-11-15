@@ -22,9 +22,27 @@ is appreciated by the entire suckless community.
 Following people have donated to the suckless.org project certain amounts of
 money, which have been used for the dedicated server rent in the past:
 
+* Philipp Eschwe donated **50 EUR**
+* Macuyler Dunn donated **5 EUR**
+* 友紀 中村 donated **74 EUR**
+* Jacob Butcher donated **44 EUR**
+* Justin Meiners donated **30 EUR**
+* Florian Leuthner donated **48 EUR**
+* David Uhden Collado donated **10 EUR**
+* Kevin Stec donated **11.000 HUF**
+* Camden Mecklem donated **20 EUR**
+* David De Poorter donated **5 EUR**
+* Daniel Würl donated **10 EUR**
+* Jose Cabrera donated **50 EUR**
 * Macrocosm LLC donated **5.000 EUR**
+* Jeremy Bobbin donated **220 EUR**
+* 旸 李 donated **13 EUR**
+* Shawn Moogk donated **17 EUR**
+* Brendan Kelley donated **18 EUR**
+* 轶凡 许 donated **17 EUR**
+* Ville Johan Witt donated **1024 DKK** and **150 EUR**
+* Silvan Jegen donated **425 EUR**
 * Rajeev Ranjan donated **2.15 EUR**
-* 友紀 中村donated **32 EUR**
 * Luke PJ donated **21 EUR**
 * Arnaud Gaydamour donated **50 EUR**
 * Kimi Kasper Koivula donated **5 EUR**
@@ -55,10 +73,8 @@ money, which have been used for the dedicated server rent in the past:
 * Damien Thiriet donated **31.03 EUR**
 * Elias Stöger donated **36 EUR**
 * Steve Ward doanted **42.26 EUR**
-* Silvan Jegen donated **375 EUR**
 * 旸 李 donated **42,26 EUR**
 * André Desgualdo Pereira donated **7.61 EUR**
-* 友紀 中村 donated **23.43 EUR**
 * Farzin Firouzi donated **15 EUR**
 * Andrej Nabergoj donated **20 EUR**
 * Marek Pilarcik donated **30 EUR**
@@ -67,11 +83,9 @@ money, which have been used for the dedicated server rent in the past:
 * Heinrich Schafer donated **1 EUR**
 * WeTransfer B.V. donated **200 EUR**
 * Arnaud Gaydamour donated **10 EUR**
-* Ville Johan Witt donated **1024 DKK** and **130.84 EUR**
 * Sebastian Rassel donated **15.05 EUR**
 * Antonio Hawthorne donated **52.94 EUR**
 * Austin Ramsay donated **4.06 EUR**
-* Florian Leuthner donated **31.41 EUR**
 * Andrii Savchenko donated **20.19 AUD** and **10.24 USD**
 * Niall Cushnahan donated **12.84 EUR**
 * Alexander Courtis donated **500 EUR**

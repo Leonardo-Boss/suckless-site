@@ -1,4 +1,4 @@
-bold is not bright
+borderpx option
 ==================
 
 Description
@@ -6,7 +6,7 @@ Description
 
 This patch allow to set the ``borderpx`` value at runtime. This is useful, for
 example, when using ``ranger`` in conjunction with ``w3mimg`` to correct
-misalignment of images.
+misalignment of images. See ``man st`` or ``st --help``.
 
 Download
 --------

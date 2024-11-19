@@ -16,7 +16,7 @@ Download
 Notes
 -----
 
-Here is the link to the GitHub [issue](https://github.com/bakkeby/st-flexipatch/issues/34), along with another [similar patch](https://github.com/abhaysp95/st_custom/blob/master/patches/st-columnredraw-20210722-e40efda.diff) for reference.
+Here is the link to the github [issue](https://github.com/bakkeby/st-flexipatch/issues/34), along with another [similar patch](https://github.com/abhaysp95/st_custom/blob/master/patches/st-columnredraw-20210722-e40efda.diff) for reference.
 
 Authors
 -------

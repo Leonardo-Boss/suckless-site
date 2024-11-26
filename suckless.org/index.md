@@ -10,6 +10,10 @@ News
 [Atom feed](//suckless.org/atom.xml)
 
 
+2024-11-26
+----------
+* [svkbd 0.4.2](//tools.suckless.org/x/svkbd/) released: [download](//dl.suckless.org/tools/svkbd-0.4.2.tar.gz)
+
 2024-04-05
 ----------
 * [st 0.9.2](//st.suckless.org/) released: [download](//dl.suckless.org/st/st-0.9.2.tar.gz)

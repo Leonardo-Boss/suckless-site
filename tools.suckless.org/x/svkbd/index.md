@@ -92,4 +92,4 @@ copy using git with the following command:
 Download
 --------
 * [MIT/X Consortium license](//git.suckless.org/svkbd/plain/LICENSE)
-* [svkbd 0.4.1](//dl.suckless.org/tools/svkbd-0.4.1.tar.gz) (24kb) (2022-01-07)
+* [svkbd 0.4.2](//dl.suckless.org/tools/svkbd-0.4.2.tar.gz) (25kb) (2024-11-26)

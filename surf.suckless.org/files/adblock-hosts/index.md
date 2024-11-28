@@ -6,9 +6,9 @@ Adblocking is a non-trivial task, but there are trivial solutions.
 host-gen
 --------
 
-Install hosts-gen from <http://git.r-36.net/hosts-gen/>
+Install hosts-gen from <https://r-36.net/scm/hosts-gen>
 
-	% git clone git://git.r-36.net/hosts-gen
+	% git clone git://r-36.net/hosts-gen
 	% cd hosts-gen
 	% sudo make install
 
@@ -43,22 +43,20 @@ places : [adaway](https://adaway.org/hosts.txt),
 [someonewhocares](https://someonewhocares.org/hosts/zero/hosts),
 [pgl.yoyo](https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext)...
 
-They are written in `/etc/hosts` file to disable DNS resolution.
+They are supposed to be written in `/etc/hosts` file to disable DNS resolution.
 
-Get the script in an archive from here :
-[zerohosts.tgz](https://si3t.ch/code/zerohosts.tgz).
+Get the script from here :
+[zerohosts.sh](https://si3t.ch/code/zerohosts/zerohost.sh).
 
 Include your own `/etc/hosts` rules by including a file as an argument
 
-	zerohosts /etc/myhosts.txt
+	zerohosts.sh /etc/myhosts.txt > /etc/hosts
 
 Run the script each time you want to update the lists using a cronjob, or
-`/etc/rc.local` : 
-
-	/usr/local/sbin/zerohosts &
+`/etc/rc.local`.
 
 
-* Main page : <https://si3t.ch/Logiciel-libre/Code/zerohosts.xhtml>
+* Main page : <https://si3t.ch/code/zerohosts/>
 * Author : < prx (at) si3t (dot) ch > 
   (feel free to suggest improvements)
 

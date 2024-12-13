@@ -1,5 +1,5 @@
 dash_above_activeWindow
-=============
+=======================
 
 Description
 -----------

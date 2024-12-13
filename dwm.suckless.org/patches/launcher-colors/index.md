@@ -1,5 +1,5 @@
 launcher-colors
-========
+===============
 
 Description
 -----------

@@ -1,5 +1,5 @@
 statusbarfont
-============
+=============
 
 Description
 -----------

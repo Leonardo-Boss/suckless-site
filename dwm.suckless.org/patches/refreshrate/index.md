@@ -1,5 +1,5 @@
 refreshrate
-========
+===========
 
 Description
 -----------

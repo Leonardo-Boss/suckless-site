@@ -1,5 +1,5 @@
 Two Monitor Setup
-=====
+=================
 
 Description
 -----------

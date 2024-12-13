@@ -1,4 +1,4 @@
-## unfocused-cursor
+# unfocused-cursor
 
 ## Description
 

@@ -1,5 +1,5 @@
 Multi Monitor Scratchpads
-================
+=========================
 
 Description
 -----------

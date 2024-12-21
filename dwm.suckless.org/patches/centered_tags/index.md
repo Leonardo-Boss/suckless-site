@@ -1,9 +1,13 @@
-centered tags
-=============
+centeredtags
+============
 
 Description
 -----------
-The **Centered Tags** patch for DWM centers the tag area, positioning it symmetrically in the bar. The layout icon is placed on the left side of the bar, while the status text is aligned to the right. This configuration excludes the title area, allowing for a clean and balanced appearance in the DWM status bar.
+The **Centered Tags** patch for DWM centers the tag area,
+positioning it symmetrically in the bar. The layout icon is placed on
+the left side of the bar, while the status text is aligned to the right.
+This configuration excludes the title area, allowing for a clean and
+balanced appearance in the DWM status bar.
 
 Screenshot
 ----------

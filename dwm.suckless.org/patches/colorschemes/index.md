@@ -16,8 +16,9 @@ Default keybindings
 
 Download
 --------
-* [dwm-colorschemes-6.5.diff](dwm-colorschemes-6.5.diff) (2024-06-26)
+* [dwm-colorschemes-6.5.diff](dwm-colorschemes-6.5.diff) (2024-12-23)
 
 Authors
 -------
 * Listeria monocytogenes <listeria@disroot.org>
+* Dhruv Trivedi

@@ -102,7 +102,7 @@ This covers most console-based programs and programs from
 
 ### File managers
 
-* [lf](https://github.com/gokcehan/lf) - ranger-like file manager written in Go (WIP but usable).
+* [lf](https://github.com/gokcehan/lf) - ranger-like file manager written in Go.
 * [mc](https://midnight-commander.org/) - Midnight Commander is a free cross-platform orthodox file manager.
 * [nnn](https://github.com/jarun/nnn) - Nnn's Not Noice, a fork of noice with more features.
 * [noice](https://git.2f30.org/noice/) - Small and portable file browser.

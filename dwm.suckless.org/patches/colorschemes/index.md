@@ -21,4 +21,7 @@ Download
 Authors
 -------
 * Listeria monocytogenes <listeria@disroot.org>
+
+Contributors
+------------
 * Dhruv Trivedi

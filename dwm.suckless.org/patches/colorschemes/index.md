@@ -3,16 +3,13 @@ colorschemes
 
 Description
 -----------
-This patches provides the ability to cycle between any number of colorschemes
+This patch provides the ability to cycle through any number of color schemes
 defined in config.h.
 
 Usage
 -----
-Append alternative colorschemes to the `colors[]` array.
-
-Default keybindings
---------------------
-* `s` - Cycle between colorschemes.
+Append alternative color schemes to the `colors[]` array.
+Use the default keybinding `s` to cycle between color schemes.
 
 Download
 --------
@@ -21,7 +18,4 @@ Download
 Authors
 -------
 * Listeria monocytogenes <listeria@disroot.org>
-
-Contributors
-------------
 * Dhruv Trivedi

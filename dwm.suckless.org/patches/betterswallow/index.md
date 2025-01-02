@@ -21,7 +21,7 @@ repository.
 
 ## Download
 
-- [dwm-betterswallow-20241215-6.3.diff](dwm-betterswallow-20241215-6.3.diff)
+- [dwm-betterswallow-20241215-89eeca1.diff](dwm-betterswallow-20241215-89eeca1.diff)
 - [better-swallow](https://github.com/afishhh/better-swallow)
 
 ## Patching

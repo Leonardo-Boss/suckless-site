@@ -3,8 +3,8 @@ defaultmfact
 
 Description
 -----------
-Allows the master tile separator to be reset to its default value (DEFAULT_MFACT).
-The default keybinding for this behavior is MODMASK + XK_equal.
+Allows the master tile separator to be reset to its default value (DEFAULT\_MFACT).
+The default keybinding for this behavior is MODMASK + XK\_equal.
 This functionality has been tested only with the Tiled layout so far.
 
 Download

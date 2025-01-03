@@ -1,15 +1,17 @@
-From c22678978ff22d2c40c56ffecd7a9306183872f5 Mon Sep 17 00:00:00 2001
+From 7c770d00c0010e93b37042e9fdff34e3d161ff15 Mon Sep 17 00:00:00 2001
 From: Rumen <rumenmitov@protonmail.com>
-Date: Fri, 3 Jan 2025 12:36:19 +0100
-Subject: [PATCH] patch: setting default mfact + example keybind
+Date: Fri, 3 Jan 2025 17:14:51 +0100
+Subject: [PATCH] patch: defaultmfact
 
+patch adds a default value for mfact, which can be used through
+setmfact
 ---
  config.def.h | 4 +++-
  dwm.c        | 7 +++++++
  2 files changed, 10 insertions(+), 1 deletion(-)
 
 diff --git a/config.def.h b/config.def.h
-index 9efa774..368fc0e 100644
+index 9efa774..acb43cb 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -32,7 +32,8 @@ static const Rule rules[] = {
@@ -31,22 +33,22 @@ index 9efa774..368fc0e 100644
  	{ MODKEY,                       XK_Tab,    view,           {0} },
  	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
 diff --git a/dwm.c b/dwm.c
-index 1443802..057fde7 100644
+index 1443802..bf3a66e 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -1521,9 +1521,16 @@ setlayout(const Arg *arg)
  }
  
  /* arg > 1.0 will set mfact absolutely */
-+/* arg <= -1.0 will set mfact to MASTER_DEFAULT */
++/* arg <= -1.0 will set mfact to DEFAULT_MFACT */
  void
  setmfact(const Arg *arg)
  {
-+	if (arg->f <= -1.0) {
-+		selmon->mfact = DEFAULT_MFACT;
-+		arrange(selmon);
-+		return;
-+	}
++    if (arg->f <= -1.0) {
++        selmon->mfact = DEFAULT_MFACT;
++        arrange(selmon);
++        return;
++    }
 +
  	float f;
  

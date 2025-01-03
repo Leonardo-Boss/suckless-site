@@ -17,7 +17,7 @@ index 9efa774..368fc0e 100644
  
  /* layout(s) */
 -static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
-+#define DEFAULT_MFACT
++#define DEFAULT_MFACT 0.55
 +static const float mfact     = DEFAULT_MFACT; /* factor of master area size [0.05..0.95] */
  static const int nmaster     = 1;    /* number of clients in master area */
  static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
@@ -42,11 +42,11 @@ index 1443802..057fde7 100644
  void
  setmfact(const Arg *arg)
  {
-+    if (arg->f <= -1.0) {
-+        selmon->mfact = MASTER_DEFAULT;
-+        arrange(selmon);
-+        return;
-+    }
++	if (arg->f <= -1.0) {
++		selmon->mfact = DEFAULT_MFACT;
++		arrange(selmon);
++		return;
++	}
 +
  	float f;
  

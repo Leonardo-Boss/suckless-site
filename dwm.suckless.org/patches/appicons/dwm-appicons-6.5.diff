@@ -1,13 +1,13 @@
-From f967b9b49ab3522d84fba8d95bbd90b6b5db0052 Mon Sep 17 00:00:00 2001
+From dbae98a1cf614908ff0075c5f4a3d4ad619f0519 Mon Sep 17 00:00:00 2001
 From: Rumen <rumenmitov@protonmail.com>
-Date: Mon, 6 Jan 2025 14:22:39 +0100
+Date: Mon, 6 Jan 2025 16:39:08 +0100
 Subject: [PATCH] appicons patch
 
 Adds support for app icons that can replace the tag indicator and tag name.
 ---
- config.def.h |  14 ++++--
- dwm.c        | 140 +++++++++++++++++++++++++++++++++++++++++++++++++--
- 2 files changed, 147 insertions(+), 7 deletions(-)
+ config.def.h |  14 +++--
+ dwm.c        | 142 +++++++++++++++++++++++++++++++++++++++++++++++++--
+ 2 files changed, 149 insertions(+), 7 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
 index 9efa774..3045af6 100644
@@ -40,7 +40,7 @@ index 9efa774..3045af6 100644
  
  /* layout(s) */
 diff --git a/dwm.c b/dwm.c
-index 1443802..35327af 100644
+index 1443802..bad8815 100644
 --- a/dwm.c
 +++ b/dwm.c
 @@ -85,6 +85,7 @@ typedef struct Monitor Monitor;
@@ -109,25 +109,27 @@ index 1443802..35327af 100644
  		while (ev->x >= x && ++i < LENGTH(tags));
  		if (i < LENGTH(tags)) {
  			click = ClkTagBar;
-@@ -508,6 +522,12 @@ cleanupmon(Monitor *mon)
+@@ -508,6 +522,14 @@ cleanupmon(Monitor *mon)
  	}
  	XUnmapWindow(dpy, mon->barwin);
  	XDestroyWindow(dpy, mon->barwin);
 +
 +    for (int i = 0; i < LENGTH(tags); i++) {
-+        free(mon->tag_icons[i]);
++        if (mon->tag_icons[i]) free(mon->tag_icons[i]);
 +        mon->tag_icons[i] = NULL;
 +    }
++
++    if (mon->tag_icons) free(mon->tag_icons);
 +
  	free(mon);
  }
  
-@@ -643,6 +663,13 @@ createmon(void)
+@@ -643,6 +665,13 @@ createmon(void)
  	m->lt[0] = &layouts[0];
  	m->lt[1] = &layouts[1 % LENGTH(layouts)];
  	strncpy(m->ltsymbol, layouts[0].symbol, sizeof m->ltsymbol);
 +
-+    m->tag_icons = (char**) malloc(LENGTH(tags));
++    m->tag_icons = (char**) malloc(LENGTH(tags) * sizeof(char*));
 +    if (m->tag_icons == NULL) perror("dwm: malloc()");
 +    for (int i = 0; i < LENGTH(tags); i++) {
 +        m->tag_icons[i] = NULL;
@@ -136,7 +138,7 @@ index 1443802..35327af 100644
  	return m;
  }
  
-@@ -694,6 +721,96 @@ dirtomon(int dir)
+@@ -694,6 +723,96 @@ dirtomon(int dir)
  	return m;
  }
  
@@ -233,7 +235,7 @@ index 1443802..35327af 100644
  void
  drawbar(Monitor *m)
  {
-@@ -713,22 +830,37 @@ drawbar(Monitor *m)
+@@ -713,22 +832,37 @@ drawbar(Monitor *m)
  		drw_text(drw, m->ww - tw, 0, tw, bh, 0, stext, 0);
  	}
  

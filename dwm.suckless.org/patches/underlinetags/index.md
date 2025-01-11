@@ -17,4 +17,4 @@ Download
 
 Author
 ------
-* Timmy Keller <applesrcol8796@gmail.com>
+* Tim Keller <tjk@tjkeller.xyz>

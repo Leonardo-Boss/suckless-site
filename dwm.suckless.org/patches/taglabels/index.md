@@ -18,4 +18,4 @@ This patch looks best with [hide\_vacant\_tags](../hide_vacant_tags), and, as su
 
 Author
 ------
-* Timmy Keller <applesrcol8796@gmail.com>
+* Tim Keller <tjk@tjkeller.xyz>

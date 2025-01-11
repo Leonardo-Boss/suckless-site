@@ -21,4 +21,4 @@ Tip: make sure to install this on top of [sticky](../sticky).
 
 Author
 ------
-* Timmy Keller <applesrcol8796@gmail.com>
+* Tim Keller <tjk@tjkeller.xyz>

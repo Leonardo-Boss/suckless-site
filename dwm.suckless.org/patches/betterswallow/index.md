@@ -48,7 +48,7 @@ chain rather than just one step up. Open an issue if you encounter this.
 
 Download
 --------
-* [dwm-betterswallow-20241215-89eeca1.diff](dwm-betterswallow-20241215-89eeca1.diff) (2024-12-15)
+* [dwm-betterswallow-20250116-89eeca1.diff](dwm-betterswallow-20250116-89eeca1.diff) (2025-01-16)
 
 Author
 ------

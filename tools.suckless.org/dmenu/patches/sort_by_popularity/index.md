@@ -1,28 +1,25 @@
-sort_by_popularity
-=============
+Sort By Popularity
+==================
 
-The list of programs is sorted by popularity.
+Description
+-----------
 
-Each time you run the program, its popularity will increase by 1.
+The list of programs is sorted by popularity. Each time you run the program,
+its popularity score increases by 1. The popularity data is saved in the cache
+file located at: `{CACHE_PATH}/dmenu_pop.txt`.
 
-The popularity cache file is stored in: `{CACHE_PATH}/dmenu_pop.txt`.
-
-Requirements
-------------
+#### Requirements
 
 * One of the following system env **shall** be set `XDG_CACHE_HOME` or `HOME`
 * Folder `$XDG_CACHE_HOME` or `$HOME/.cache` **shall** exist
 
-How it works
-------------
+#### How it works
 
-The order of programs is determined by popularity.
+The order of programs is based on their popularity, with more popular programs
+appearing first. Programs with the same popularity are ordered according to
+their position in the cache file.
 
-Programs with higher popularity come first.
-
-The order of programs with the same popularity depends on their position in the cache file.
-
-Let's assume that we have the following programs: `A`, `B1`, `B2`, `C`
+For example, consider the following programs: `A`, `B1`, `B2`, `C`
 
 `[User input] -> [dmenu output] -> [User's choice] -> {PROGRAM: POPULARITY}`
 
@@ -35,7 +32,7 @@ Let's assume that we have the following programs: `A`, `B1`, `B2`, `C`
 
 Download
 --------
-* [dmenu-sort_by_popularity-20250117-86f0b51.diff](dmenu-sort_by_popularity-20250117-86f0b51.diff)
+* [dmenu-sort_by_popularity-20250117-86f0b51.diff](dmenu-sort_by_popularity-20250117-86f0b51.diff) (2025-01-17)
 
 Author
 ------

@@ -1,12 +1,12 @@
-From 8eaf9e1d101d93c784b12902eb71d5b2985a6985 Mon Sep 17 00:00:00 2001
+From fabec4fb9f3cb749f33dc97188106c73a20ca7db Mon Sep 17 00:00:00 2001
 From: sewn <sewn@disroot.org>
-Date: Sat, 12 Oct 2024 20:45:16 +0300
+Date: Wed, 5 Feb 2025 16:00:52 +0300
 Subject: [PATCH] implement signals & turns
 
 ---
  config.def.h |  11 ++++--
- slstatus.c   | 108 ++++++++++++++++++++++++++++++++-------------------
- 2 files changed, 75 insertions(+), 44 deletions(-)
+ slstatus.c   | 107 ++++++++++++++++++++++++++++++++-------------------
+ 2 files changed, 74 insertions(+), 44 deletions(-)
 
 diff --git a/config.def.h b/config.def.h
 index d805331..a89127b 100644
@@ -36,7 +36,7 @@ index d805331..a89127b 100644
 +/* maximum output string length */
 +#define MAXLEN CMDLEN * LEN(args)
 diff --git a/slstatus.c b/slstatus.c
-index fd31313..d5efd35 100644
+index fd31313..b3dbae8 100644
 --- a/slstatus.c
 +++ b/slstatus.c
 @@ -15,20 +15,19 @@ struct arg {
@@ -178,7 +178,7 @@ index fd31313..d5efd35 100644
  
  		if (!done) {
  			if (clock_gettime(CLOCK_MONOTONIC, &current) < 0)
-@@ -117,10 +140,15 @@ main(int argc, char *argv[])
+@@ -117,10 +140,14 @@ main(int argc, char *argv[])
  			intspec.tv_nsec = (interval % 1000) * 1E6;
  			difftimespec(&wait, &intspec, &diff);
  
@@ -186,18 +186,17 @@ index fd31313..d5efd35 100644
 -			    nanosleep(&wait, NULL) < 0 &&
 -			    errno != EINTR)
 -					die("nanosleep:");
-+			do {
-+					if (errno == EINTR) {
-+						printstatus(0);
-+						errno = upsigno = 0;
-+					}
-+					ret = nanosleep(&wait, &wait);
-+			} while (wait.tv_sec >= 0 && ret < 0 && !done);
++			while(wait.tv_sec >= 0 &&
++			      (ret = nanosleep(&wait, &wait)) < 0 &&
++			      errno == EINTR && !done) {
++				printstatus(0);
++				errno = upsigno = 0;
++			}
 +			if (ret < 0 && errno != EINTR)
 +				die("nanosleep:");
  		}
  	} while (!done);
  
 -- 
-2.46.2
+2.47.1
 

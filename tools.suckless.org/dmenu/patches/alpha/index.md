@@ -12,8 +12,10 @@ Download
 --------
 * [dmenu-alpha-20210605-1a13d04.diff](dmenu-alpha-20210605-1a13d04.diff) (2021-06-05)
 * [dmenu-alpha-20230110-5.2.diff](dmenu-alpha-20230110-5.2.diff) (2023-01-10)
+* [dmenu-alpha-20250213-86f0b51.diff](dmenu-alpha-20250213-86f0b51.diff) (2025-02-13)
 
 Authors
 -------
 * Marcin Lukow <marcin[at]nerdy.cat>
 * Andrew Slice <easlice[at]protonmail.com>
+* Leonardo Boss <leonardoboss2001[at]gmail.com>
